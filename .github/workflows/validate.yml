@@ -10,7 +10,7 @@ jobs:
   validate:
     runs-on: ubuntu-latest
     env:
-      SOURCEY_CANDIDATE_VERIFIER_DIGEST: 40f0f58f8112f4ea02dc008441d3f62bb2df373ce244305674941aa278a369b1
+      SOURCEY_CANDIDATE_VERIFIER_DIGEST: 8adf575f7afac20101baea97e9b0859bdd579c2942a4c258d9abd67ab2ffa214
     steps:
       - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
         with:
