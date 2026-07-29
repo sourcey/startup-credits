@@ -115,7 +115,7 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: |
           tag="catalog-candidate-sha256-${SOURCEY_CANDIDATE_HEX}"
-          existing="$(gh api "repos/$GITHUB_REPOSITORY/git/ref/tags/$tag" --jq '.object.sha' 2>/dev/null || true)"
+          existing="$(git ls-remote --refs origin "refs/tags/$tag" | awk '{print $1}')"
           if [[ -n "$existing" ]]; then
             if [[ "$existing" != "$GITHUB_SHA" ]]; then
               echo "Immutable candidate tag already binds different source." >&2
