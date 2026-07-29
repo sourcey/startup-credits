@@ -1,0 +1,177 @@
+name: release-catalog-candidate
+
+on:
+  workflow_dispatch:
+    inputs:
+      candidate_digest:
+        description: Exact immutable candidate digest
+        required: true
+        type: string
+
+permissions:
+  contents: write
+  id-token: write
+  attestations: write
+
+concurrency:
+  group: sourcey-catalog-candidate-${{ inputs.candidate_digest }}
+  cancel-in-progress: false
+
+jobs:
+  release:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      SOURCEY_CANDIDATE_VERIFIER_DIGEST: 8adf575f7afac20101baea97e9b0859bdd579c2942a4c258d9abd67ab2ffa214
+    steps:
+      - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444 # v5
+        with:
+          node-version: 22.12.0
+      - name: Fetch the exact immutable candidate
+        env:
+          CANDIDATE_DIGEST: ${{ inputs.candidate_digest }}
+        run: |
+          if [[ ! "$CANDIDATE_DIGEST" =~ ^sha256:[a-f0-9]{64}$ ]]; then
+            echo "candidate_digest must be an exact SHA-256 digest." >&2
+            exit 64
+          fi
+          candidate_hex="${CANDIDATE_DIGEST#sha256:}"
+          archive="sourcey-release-candidate-sha256-${candidate_hex}.tar.gz"
+          origin="https://artifacts.sourcey.com/catalog/data/candidates/sha256-${candidate_hex}"
+          curl --fail-with-body --silent --show-error --max-time 120 \
+            --output "$RUNNER_TEMP/$archive" "$origin/$archive"
+          curl --fail-with-body --silent --show-error --max-time 120 \
+            --output "$RUNNER_TEMP/$archive.sha256" "$origin/$archive.sha256"
+          (
+            cd "$RUNNER_TEMP"
+            sha256sum --check "$archive.sha256"
+          )
+          tar -tzf "$RUNNER_TEMP/$archive" > "$RUNNER_TEMP/candidate-members.txt"
+          if grep -Eq '(^$|^/|(^|/)\.\.?(/|$)|\\)' "$RUNNER_TEMP/candidate-members.txt"; then
+            echo "Candidate archive contains an unsafe member path." >&2
+            exit 1
+          fi
+          if sort "$RUNNER_TEMP/candidate-members.txt" | uniq -d | grep -q .; then
+            echo "Candidate archive repeats a member path." >&2
+            exit 1
+          fi
+          if tar -tvzf "$RUNNER_TEMP/$archive" \
+            | awk 'substr($0, 1, 1) != "-" { found=1 } END { exit !found }'; then
+            echo "Candidate archive contains a non-regular member." >&2
+            exit 1
+          fi
+          mkdir "$RUNNER_TEMP/candidate"
+          tar -xzf "$RUNNER_TEMP/$archive" -C "$RUNNER_TEMP/candidate"
+          {
+            echo "SOURCEY_CANDIDATE_DIGEST=$CANDIDATE_DIGEST"
+            echo "SOURCEY_CANDIDATE_HEX=$candidate_hex"
+            echo "SOURCEY_CANDIDATE_ARCHIVE=$archive"
+          } >> "$GITHUB_ENV"
+      - name: Install the exact Sourcey Candidate Verifier
+        run: |
+          digest="$SOURCEY_CANDIDATE_VERIFIER_DIGEST"
+          name="sourcey-candidate-verifier-sha256-${digest}.tgz"
+          origin="https://artifacts.sourcey.com/catalog/code/candidate-verifier/sha256-${digest}"
+          curl --fail-with-body --silent --show-error --max-time 120 \
+            --output "$RUNNER_TEMP/$name" "$origin/$name"
+          curl --fail-with-body --silent --show-error --max-time 120 \
+            --output "$RUNNER_TEMP/$name.sha256" "$origin/$name.sha256"
+          (
+            cd "$RUNNER_TEMP"
+            sha256sum --check "$name.sha256"
+          )
+          mkdir "$RUNNER_TEMP/candidate-verifier"
+          tar -xzf "$RUNNER_TEMP/$name" \
+            --strip-components=1 \
+            -C "$RUNNER_TEMP/candidate-verifier"
+      - name: Verify the candidate and exact source binding
+        run: |
+          candidate="$RUNNER_TEMP/candidate/candidate.json"
+          source_commit="$(jq -er '.source_revision.commit' "$candidate")"
+          source_tree="$(jq -er '.source_revision.tree' "$candidate")"
+          trusted_root="$(jq -er '.release.snapshot_core.root_set_digest' "$candidate")"
+          if [[ "$(jq -er '.candidate_digest' "$candidate")" != "$SOURCEY_CANDIDATE_DIGEST" ]] \
+            || [[ "$(jq -er '.source_repository' "$candidate")" != "https://github.com/sourcey/startup-credits" ]] \
+            || [[ "$source_commit" != "$GITHUB_SHA" ]] \
+            || [[ "$source_tree" != "$(git rev-parse "$GITHUB_SHA^{tree}")" ]]; then
+            echo "Candidate identity does not bind this exact main source." >&2
+            exit 1
+          fi
+          node "$RUNNER_TEMP/candidate-verifier/dist/packages/candidate-verifier/src/cli.js" \
+            verify-candidate \
+            --release "$RUNNER_TEMP/candidate" \
+            --trusted-root-digest "$trusted_root"
+          {
+            echo "SOURCEY_RELEASE_SEQUENCE=$(jq -er '.release.release_core.release_sequence' "$candidate")"
+            echo "SOURCEY_PARENT_RELEASE=$(jq -er '.release.release_core.parent_release_id' "$candidate")"
+            echo "SOURCEY_RELEASE_ID=$(jq -er '.release.release_id' "$candidate")"
+          } >> "$GITHUB_ENV"
+      - name: Bind the digest tag to the exact source commit
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          tag="catalog-candidate-sha256-${SOURCEY_CANDIDATE_HEX}"
+          existing="$(gh api "repos/$GITHUB_REPOSITORY/git/ref/tags/$tag" --jq '.object.sha' 2>/dev/null || true)"
+          if [[ -n "$existing" ]]; then
+            if [[ "$existing" != "$GITHUB_SHA" ]]; then
+              echo "Immutable candidate tag already binds different source." >&2
+              exit 1
+            fi
+          else
+            git tag "$tag" "$GITHUB_SHA"
+            git push origin "refs/tags/$tag"
+          fi
+      - name: Attest both exact release assets
+        uses: actions/attest@f7c74d28b9d84cb8768d0b8ca14a4bac6ef463e6 # v4
+        with:
+          subject-path: |
+            ${{ runner.temp }}/${{ env.SOURCEY_CANDIDATE_ARCHIVE }}
+            ${{ runner.temp }}/${{ env.SOURCEY_CANDIDATE_ARCHIVE }}.sha256
+      - name: Publish the immutable GitHub release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          tag="catalog-candidate-sha256-${SOURCEY_CANDIDATE_HEX}"
+          title="Sourcey catalog candidate ${SOURCEY_CANDIDATE_DIGEST} sequence:${SOURCEY_RELEASE_SEQUENCE} parent:${SOURCEY_PARENT_RELEASE} release:${SOURCEY_RELEASE_ID}"
+          if gh release view "$tag" >/dev/null 2>&1; then
+            actual_title="$(gh release view "$tag" --json name --jq '.name')"
+            if [[ "$actual_title" != "$title" ]]; then
+              echo "Immutable release already has different metadata." >&2
+              exit 1
+            fi
+          else
+            gh release create "$tag" \
+              "$RUNNER_TEMP/$SOURCEY_CANDIDATE_ARCHIVE" \
+              "$RUNNER_TEMP/$SOURCEY_CANDIDATE_ARCHIVE.sha256" \
+              --verify-tag \
+              --title "$title" \
+              --notes "Immutable Sourcey catalog delta candidate."
+          fi
+      - name: Read back the exact immutable release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          tag="catalog-candidate-sha256-${SOURCEY_CANDIDATE_HEX}"
+          gh release view "$tag" --json isDraft,isPrerelease,assets,name \
+            > "$RUNNER_TEMP/release-readback.json"
+          jq -e \
+            --arg archive "$SOURCEY_CANDIDATE_ARCHIVE" \
+            --arg title "Sourcey catalog candidate ${SOURCEY_CANDIDATE_DIGEST} sequence:${SOURCEY_RELEASE_SEQUENCE} parent:${SOURCEY_PARENT_RELEASE} release:${SOURCEY_RELEASE_ID}" \
+            '
+              .isDraft == false
+              and .isPrerelease == false
+              and .name == $title
+              and ([.assets[].name] | sort) == ([$archive, ($archive + ".sha256")] | sort)
+            ' "$RUNNER_TEMP/release-readback.json" >/dev/null
+          mkdir "$RUNNER_TEMP/release-readback"
+          gh release download "$tag" --dir "$RUNNER_TEMP/release-readback"
+          cmp \
+            "$RUNNER_TEMP/$SOURCEY_CANDIDATE_ARCHIVE" \
+            "$RUNNER_TEMP/release-readback/$SOURCEY_CANDIDATE_ARCHIVE"
+          cmp \
+            "$RUNNER_TEMP/$SOURCEY_CANDIDATE_ARCHIVE.sha256" \
+            "$RUNNER_TEMP/release-readback/$SOURCEY_CANDIDATE_ARCHIVE.sha256"
