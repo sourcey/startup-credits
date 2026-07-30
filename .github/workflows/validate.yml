@@ -9,8 +9,6 @@ permissions:
 jobs:
   validate:
     runs-on: ubuntu-latest
-    env:
-      SOURCEY_CANDIDATE_VERIFIER_DIGEST: 8adf575f7afac20101baea97e9b0859bdd579c2942a4c258d9abd67ab2ffa214
     steps:
       - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
         with:
@@ -24,7 +22,7 @@ jobs:
         run: |
           invalid="$(
             git ls-tree -r --name-only "$HEAD_REVISION" |
-              grep -Ev '^(AGENTS\.md|CONTRIBUTING\.md|DATA-LICENSE\.md|LICENSE|README\.md|vendors/[a-z0-9][a-z0-9-]?/[a-z0-9][a-z0-9-]*\.yaml|\.github/CODEOWNERS|\.github/pull_request_template\.md|\.github/workflows/(validate|release)\.yml)$' ||
+              grep -Ev '^(AGENTS\.md|CONTRIBUTING\.md|DATA-LICENSE\.md|LICENSE|README\.md|vendors/[a-z0-9][a-z0-9-]?/[a-z0-9][a-z0-9-]*\.yaml|\.github/CODEOWNERS|\.github/pull_request_template\.md|\.github/sourcey-candidate-verifier\.sha256|\.github/workflows/(validate|release)\.yml)$' ||
               true
           )"
           if [[ -n "$invalid" ]]; then
@@ -33,8 +31,12 @@ jobs:
           fi
       - name: Install the exact Sourcey Candidate Verifier
         run: |
-          digest="$SOURCEY_CANDIDATE_VERIFIER_DIGEST"
-          name="sourcey-candidate-verifier-sha256-${digest}.tgz"
+          digest="$(<.github/sourcey-candidate-verifier.sha256)"
+          if [[ ! "$digest" =~ ^[a-f0-9]{64}$ ]]; then
+            echo "Candidate Verifier pin must be one exact SHA-256 digest." >&2
+            exit 1
+          fi
+          name="sourcey-candidate-verifier-sha256-${digest}.tar.gz"
           origin="https://artifacts.sourcey.com/catalog/code/candidate-verifier/sha256-${digest}"
           curl --fail-with-body --silent --show-error --max-time 120 \
             --output "$RUNNER_TEMP/$name" "$origin/$name"
@@ -54,7 +56,7 @@ jobs:
           BASE_REVISION: ${{ github.event.pull_request.base.sha }}
           HEAD_REVISION: ${{ github.event.pull_request.head.sha }}
         run: |
-          node "$RUNNER_TEMP/candidate-verifier/dist/packages/candidate-verifier/src/cli.js" \
+          node "$RUNNER_TEMP/candidate-verifier/sourcey-candidate-verifier.js" \
             validate-change \
             --repository "$GITHUB_WORKSPACE" \
             --base "$BASE_REVISION" \
