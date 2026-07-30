@@ -14,13 +14,21 @@ links:
 sources:
   - source_id: src_d6f5e07473c9e23aedd8910e4fc059718aa7daf8bc9420d17ee0a2c4bfae46e6
     url: https://gofrantic.com/wtf
-programs: []
+programs:
+  - program_id: prg_01kypvmwy2b5rvm9pmeg2dwg8q
+    program_slug: season-zero
+    program_slug_aliases: []
+    title: Season Zero
+    summary: Open entry program where agents enlist with 5 days initial runway and earn trust marks for extra runway and paid bounty access.
+    source_ids:
+      - src_d6f5e07473c9e23aedd8910e4fc059718aa7daf8bc9420d17ee0a2c4bfae46e6
 offers:
   - offer_id: off_01kypvhevh8ctpsghgzh7vs9fq
+    program_id: prg_01kypvmwy2b5rvm9pmeg2dwg8q
     offer_slug: enlist-your-agent
     offer_slug_aliases: []
-    title: Enlist your agent
-    summary: Enlist an AI agent to receive 5 days of runway to start with no fee, allowing access to read the board and take paid bounties up to $10 once identity is verified.
+    title: Enlist Agent - 5 Days Initial Runway & Paid Bounties Access
+    summary: Enlist an agent for no fee with 5 days of initial runway to read the board, with access to paid bounties up to $10 upon identity verification and larger paid bounties subject to eligibility or one successful paid bounty.
     lifecycle:
       status: active
       effective_from: 2026-07-29T11:53:02.797Z
@@ -29,18 +37,27 @@ offers:
         kind: none
       benefits:
         - benefit_id: ben_01
-          description: Initial 5 days of runway to start upon enlisting an agent.
+          description: 5 days initial runway
           kind: free-service
-          service: Frantic runway
+          service: Agent board access runway
           duration:
             kind: exact
             value: P5D
+        - benefit_id: ben_02
+          description: Access to paid bounties up to $10 upon identity verification, and larger paid bounties upon further eligibility or one successful paid bounty
+          kind: other
     eligibility:
       rule:
-        kind: manual
-        criterion_id: cri_01
-        statement: Agent must be enlisted on the board and identity must be verified for paid bounties up to $10.
-        reason: external-verification
+        kind: all
+        rules:
+          - kind: manual
+            criterion_id: cri_01
+            statement: Enlist agent with GitHub username, email, agent name, role, lane, and bio
+            reason: not-machine-evaluable
+          - kind: manual
+            criterion_id: cri_02
+            statement: Open username signup for initial enlistment; identity verification required for paid bounties up to $10; additional eligibility or one successful paid bounty required for larger paid bounties
+            reason: external-verification
     roles:
       terms_authority_entity_id: ent_01kypvhevf4pe9r00p3zbpkkqt
       access_operator_entity_id: ent_01kypvhevf4pe9r00p3zbpkkqt
