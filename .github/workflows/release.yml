@@ -1,12 +1,13 @@
 name: release-catalog-candidate
 
 on:
+  push:
+    branches: [main]
+    paths:
+      - "vendors/**"
+  schedule:
+    - cron: "*/5 * * * *"
   workflow_dispatch:
-    inputs:
-      candidate_digest:
-        description: Exact immutable candidate digest
-        required: true
-        type: string
 
 permissions:
   contents: write
@@ -14,7 +15,7 @@ permissions:
   attestations: write
 
 concurrency:
-  group: sourcey-catalog-candidate-${{ inputs.candidate_digest }}
+  group: sourcey-catalog-candidate-publication
   cancel-in-progress: false
 
 jobs:
@@ -31,9 +32,62 @@ jobs:
       - uses: actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444 # v5
         with:
           node-version: 22.12.0
+      - name: Select the exact next candidate from immutable Catalog custody
+        id: candidate
+        run: |
+          curl --fail-with-body --silent --show-error --max-time 30 \
+            --output "$RUNNER_TEMP/live-release.json" \
+            https://api.sourcey.com/v1/release
+          live_release="$(jq -er '.release_id' "$RUNNER_TEMP/live-release.json")"
+          live_sequence="$(jq -er '.release_sequence' "$RUNNER_TEMP/live-release.json")"
+          next_sequence="$((live_sequence + 1))"
+          queue_url="https://artifacts.sourcey.com/catalog/data/queue/sequence-${next_sequence}/candidate.json"
+          status="$(
+            curl --silent --show-error --location --max-time 30 \
+              --write-out '%{http_code}' \
+              --output "$RUNNER_TEMP/queued-candidate.json" \
+              "$queue_url"
+          )"
+          if [[ "$status" == "404" ]]; then
+            echo "pending=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          if [[ "$status" != "200" ]]; then
+            echo "Candidate queue lookup failed with HTTP $status." >&2
+            exit 1
+          fi
+          jq -e \
+            --arg live_release "$live_release" \
+            --argjson next_sequence "$next_sequence" \
+            '
+              .candidate_contract == "sourcey.release-candidate/v1alpha1"
+              and .source_repository == "https://github.com/sourcey/startup-credits"
+              and .source_revision.kind == "git"
+              and (.source_revision.commit | test("^[a-f0-9]{40}$"))
+              and (.source_revision.tree | test("^[a-f0-9]{40}$"))
+              and (.candidate_digest | test("^sha256:[a-f0-9]{64}$"))
+              and .release.release_core.release_sequence == $next_sequence
+              and .release.release_core.parent_release_id == $live_release
+            ' "$RUNNER_TEMP/queued-candidate.json" >/dev/null
+          source_commit="$(jq -er '.source_revision.commit' "$RUNNER_TEMP/queued-candidate.json")"
+          source_tree="$(jq -er '.source_revision.tree' "$RUNNER_TEMP/queued-candidate.json")"
+          git cat-file -e "$source_commit^{commit}"
+          if [[ "$(git rev-parse "$source_commit^{tree}")" != "$source_tree" ]]; then
+            echo "Queued candidate source tree does not match its exact commit." >&2
+            exit 1
+          fi
+          candidate_digest="$(jq -er '.candidate_digest' "$RUNNER_TEMP/queued-candidate.json")"
+          {
+            echo "pending=true"
+            echo "candidate_digest=$candidate_digest"
+            echo "candidate_hex=${candidate_digest#sha256:}"
+            echo "source_commit=$source_commit"
+            echo "source_tree=$source_tree"
+          } >> "$GITHUB_OUTPUT"
       - name: Fetch the exact immutable candidate
+        if: steps.candidate.outputs.pending == 'true'
         env:
-          CANDIDATE_DIGEST: ${{ inputs.candidate_digest }}
+          CANDIDATE_DIGEST: ${{ steps.candidate.outputs.candidate_digest }}
         run: |
           if [[ ! "$CANDIDATE_DIGEST" =~ ^sha256:[a-f0-9]{64}$ ]]; then
             echo "candidate_digest must be an exact SHA-256 digest." >&2
@@ -66,12 +120,14 @@ jobs:
           fi
           mkdir "$RUNNER_TEMP/candidate"
           tar -xzf "$RUNNER_TEMP/$archive" -C "$RUNNER_TEMP/candidate"
+          cmp "$RUNNER_TEMP/queued-candidate.json" "$RUNNER_TEMP/candidate/candidate.json"
           {
             echo "SOURCEY_CANDIDATE_DIGEST=$CANDIDATE_DIGEST"
             echo "SOURCEY_CANDIDATE_HEX=$candidate_hex"
             echo "SOURCEY_CANDIDATE_ARCHIVE=$archive"
           } >> "$GITHUB_ENV"
       - name: Install the exact Sourcey Candidate Verifier
+        if: steps.candidate.outputs.pending == 'true'
         run: |
           digest="$SOURCEY_CANDIDATE_VERIFIER_DIGEST"
           name="sourcey-candidate-verifier-sha256-${digest}.tgz"
@@ -89,6 +145,10 @@ jobs:
             --strip-components=1 \
             -C "$RUNNER_TEMP/candidate-verifier"
       - name: Verify the candidate and exact source binding
+        if: steps.candidate.outputs.pending == 'true'
+        env:
+          SOURCEY_SOURCE_COMMIT: ${{ steps.candidate.outputs.source_commit }}
+          SOURCEY_SOURCE_TREE: ${{ steps.candidate.outputs.source_tree }}
         run: |
           candidate="$RUNNER_TEMP/candidate/candidate.json"
           source_commit="$(jq -er '.source_revision.commit' "$candidate")"
@@ -96,9 +156,9 @@ jobs:
           trusted_root="$(jq -er '.release.snapshot_core.root_set_digest' "$candidate")"
           if [[ "$(jq -er '.candidate_digest' "$candidate")" != "$SOURCEY_CANDIDATE_DIGEST" ]] \
             || [[ "$(jq -er '.source_repository' "$candidate")" != "https://github.com/sourcey/startup-credits" ]] \
-            || [[ "$source_commit" != "$GITHUB_SHA" ]] \
-            || [[ "$source_tree" != "$(git rev-parse "$GITHUB_SHA^{tree}")" ]]; then
-            echo "Candidate identity does not bind this exact main source." >&2
+            || [[ "$source_commit" != "$SOURCEY_SOURCE_COMMIT" ]] \
+            || [[ "$source_tree" != "$SOURCEY_SOURCE_TREE" ]]; then
+            echo "Candidate identity does not bind its exact public source." >&2
             exit 1
           fi
           node "$RUNNER_TEMP/candidate-verifier/dist/packages/candidate-verifier/src/cli.js" \
@@ -111,27 +171,31 @@ jobs:
             echo "SOURCEY_RELEASE_ID=$(jq -er '.release.release_id' "$candidate")"
           } >> "$GITHUB_ENV"
       - name: Bind the digest tag to the exact source commit
+        if: steps.candidate.outputs.pending == 'true'
         env:
           GH_TOKEN: ${{ github.token }}
+          SOURCEY_SOURCE_COMMIT: ${{ steps.candidate.outputs.source_commit }}
         run: |
           tag="catalog-candidate-sha256-${SOURCEY_CANDIDATE_HEX}"
           existing="$(git ls-remote --refs origin "refs/tags/$tag" | awk '{print $1}')"
           if [[ -n "$existing" ]]; then
-            if [[ "$existing" != "$GITHUB_SHA" ]]; then
+            if [[ "$existing" != "$SOURCEY_SOURCE_COMMIT" ]]; then
               echo "Immutable candidate tag already binds different source." >&2
               exit 1
             fi
           else
-            git tag "$tag" "$GITHUB_SHA"
+            git tag "$tag" "$SOURCEY_SOURCE_COMMIT"
             git push origin "refs/tags/$tag"
           fi
       - name: Attest both exact release assets
+        if: steps.candidate.outputs.pending == 'true'
         uses: actions/attest@f7c74d28b9d84cb8768d0b8ca14a4bac6ef463e6 # v4
         with:
           subject-path: |
             ${{ runner.temp }}/${{ env.SOURCEY_CANDIDATE_ARCHIVE }}
             ${{ runner.temp }}/${{ env.SOURCEY_CANDIDATE_ARCHIVE }}.sha256
       - name: Publish the immutable GitHub release
+        if: steps.candidate.outputs.pending == 'true'
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
@@ -152,6 +216,7 @@ jobs:
               --notes "Immutable Sourcey catalog delta candidate."
           fi
       - name: Read back the exact immutable release
+        if: steps.candidate.outputs.pending == 'true'
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
