@@ -14,6 +14,27 @@ downloads Sourcey's exact content-addressed verifier and validates only the
 changed vendor files plus their identity dependencies. It does not scan or
 rebuild the complete catalog.
 
+That verifier is public, so you can run the same check locally first. It prints
+`{"status":"valid",...}` or names the exact path and permitted values of every
+problem it finds.
+
+```sh
+digest="$(sed -n 's/.*SOURCEY_CANDIDATE_VERIFIER_DIGEST: //p' .github/workflows/validate.yml)"
+name="sourcey-candidate-verifier-sha256-$digest.tgz"
+dir="../sourcey-candidate-verifier"
+
+mkdir -p "$dir"
+curl -fsSL -o "$dir/$name" \
+  "https://artifacts.sourcey.com/catalog/code/candidate-verifier/sha256-$digest/$name"
+echo "$digest  $dir/$name" | shasum -a 256 -c -
+tar -xzf "$dir/$name" --strip-components=1 -C "$dir"
+
+node "$dir/dist/packages/candidate-verifier/src/cli.js" validate-change \
+  --repository . \
+  --base "$(git rev-parse origin/main)" \
+  --head "$(git rev-parse HEAD)"
+```
+
 See [CONTRIBUTING.md](CONTRIBUTING.md) for the data rules.
 
 ## Publication
