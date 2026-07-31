@@ -22,7 +22,7 @@ jobs:
         run: |
           invalid="$(
             git ls-tree -r --name-only "$HEAD_REVISION" |
-              grep -Ev '^(AGENTS\.md|CONTRIBUTING\.md|DATA-LICENSE\.md|LICENSE|README\.md|vendors/[a-z0-9][a-z0-9-]?/[a-z0-9][a-z0-9-]*\.yaml|\.github/CODEOWNERS|\.github/pull_request_template\.md|\.github/sourcey-candidate-verifier\.sha256|\.github/workflows/(validate|release)\.yml)$' ||
+              grep -Ev '^(AGENTS\.md|CONTRIBUTING\.md|DATA-LICENSE\.md|LICENSE|README\.md|vendors/[a-z0-9][a-z0-9-]?/[a-z0-9][a-z0-9-]*\.yaml|\.github/CODEOWNERS|\.github/pull_request_template\.md|\.github/sourcey-candidate-verifier\.sha256|\.github/workflows/validate\.yml)$' ||
               true
           )"
           if [[ -n "$invalid" ]]; then
