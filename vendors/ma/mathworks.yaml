@@ -1,0 +1,128 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kyy3083w3k33krxmrqx1kr49
+slug: mathworks
+slug_aliases: []
+name: MathWorks
+domains:
+  - value: mathworks.com
+    role: primary
+    valid_from: 2026-08-01T07:07:51.497Z
+category: devtools-other
+description: MathWorks is the leading developer of mathematical computing software for engineers and scientists.
+links:
+  site: https://www.mathworks.com/products/startups.html
+sources:
+  - source_id: src_3b83e62c852dbbf91a7d58a7f8372156d657bf8ddeb387125048874a39c634ef
+    url: https://www.mathworks.com/products/startups.html
+programs:
+  - program_id: prg_01kyy33f479f70d96vrf3y53cc
+    program_slug: startup-program
+    program_slug_aliases: []
+    title: MathWorks Startup Program
+    summary: Program providing early-stage startups low-cost access to MATLAB and Simulink suites, technical support, discounted training, and accelerator partnerships.
+    source_ids:
+      - src_3b83e62c852dbbf91a7d58a7f8372156d657bf8ddeb387125048874a39c634ef
+offers:
+  - offer_id: off_01kyy3083w3k33krxmrqx1kr4b
+    program_id: prg_01kyy33f479f70d96vrf3y53cc
+    offer_slug: startup-program
+    offer_slug_aliases: []
+    access:
+      availability: public
+      method: form
+      url: https://www.mathworks.com/products/startups.html
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Low startup pricing on MATLAB Suite or MATLAB and Simulink Suite annual individual licenses with add-on products
+          kind: other
+        - benefit_id: ben_02
+          description: Free access to the Online Training Suite Subscription for suite license holders
+          kind: free-service
+          service: Online Training Suite Subscription
+        - applies_to: Training credits
+          benefit_id: ben_03
+          description: 50% off training credits
+          kind: discount
+          percentage:
+            basis_points: 5000
+            kind: exact
+        - benefit_id: ben_04
+          description: Support from application engineers and technical support, and co-marketing opportunities
+          kind: other
+      consideration:
+        description: Low startup pricing (exact amounts vary by suite option selected)
+        kind: unknown
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.age_months
+            kind: predicate
+            operator: lte
+            statement: Company was founded within the last 5 years
+            value:
+              type: number
+              value: 60
+          - criterion_id: cri_02
+            fact: company.employee_count
+            kind: predicate
+            operator: lt
+            statement: Fewer than 15 engineers
+            value:
+              type: number
+              value: 15
+          - criterion_id: cri_03
+            fact: company.annual_revenue_usd
+            kind: predicate
+            operator: lt
+            statement: Less than $1 million USD in annual revenue
+            value:
+              type: number
+              value: 1000000
+    lifecycle:
+      effective_from: 2026-08-01T07:07:51.497Z
+      status: active
+    roles:
+      terms_authority_entity_id: ent_01kyy3083w3k33krxmrqx1kr49
+      access_operator_entity_id: ent_01kyy3083w3k33krxmrqx1kr49
+    summary: Eligible early-stage startups get low startup pricing on MATLAB and Simulink product suites, technical support, 50% off training credits, and co-marketing opportunities.
+    title: MathWorks Startup Program
+    source_ids:
+      - src_3b83e62c852dbbf91a7d58a7f8372156d657bf8ddeb387125048874a39c634ef
+  - offer_id: off_01kyy3083w3k33krxmrqx1kr4a
+    program_id: prg_01kyy33f479f70d96vrf3y53cc
+    offer_slug: accelerator-program
+    offer_slug_aliases: []
+    access:
+      availability: membership
+      method: other
+      url: https://www.mathworks.com/products/startups.html
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Free licensing to startups via accelerator partnerships
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        fact: company.partner_memberships
+        kind: predicate
+        operator: contains
+        statement: Must be a startup affiliated with a partnered accelerator (over 500 partner accelerators)
+        value:
+          type: string
+          value: partnered_accelerator
+    lifecycle:
+      effective_from: 2026-08-01T07:07:51.497Z
+      status: active
+    roles:
+      terms_authority_entity_id: ent_01kyy3083w3k33krxmrqx1kr49
+      access_operator_entity_id: ent_01kyy3083w3k33krxmrqx1kr49
+    summary: Free MATLAB and Simulink licensing for startups participating in partnered accelerators.
+    title: MathWorks Accelerator Program
+    source_ids:
+      - src_3b83e62c852dbbf91a7d58a7f8372156d657bf8ddeb387125048874a39c634ef

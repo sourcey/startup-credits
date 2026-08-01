@@ -1,0 +1,114 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kyy3083w3k33krxmrqx1kr3t
+slug: stream
+slug_aliases: []
+name: Stream
+domains:
+  - value: getstream.io
+    role: primary
+    valid_from: 2026-08-01T06:41:47.766Z
+category: communication
+description: Stream provides APIs and SDKs to build chat messaging, activity feeds, video and audio calling, and content moderation.
+links:
+  site: https://getstream.io
+sources:
+  - source_id: src_74aa65916bac8aee9d14b901778840e2d0aee544eebd1ecc0d33baf0bafe6012
+    url: https://getstream.io/partners
+programs: []
+offers:
+  - offer_id: off_01kyy3083w3k33krxmrqx1kr3w
+    offer_slug: yc-under-3m-discount
+    offer_slug_aliases: []
+    access:
+      availability: membership
+      method: form
+      url: https://getstream.io/partners/
+    economics:
+      benefits:
+        - applies_to: Stream APIs
+          benefit_id: ben_01
+          description: 25% discount on Stream APIs
+          kind: discount
+          percentage:
+            basis_points: 2500
+            kind: exact
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.partner_memberships
+            kind: predicate
+            operator: contains
+            statement: Must be a Y Combinator startup
+            value:
+              type: string
+              value: Y Combinator
+          - criterion_id: cri_02
+            fact: company.funding_raised_usd
+            kind: predicate
+            operator: lt
+            statement: Must have raised under $3,000,000 in funding
+            value:
+              type: number
+              value: 3000000
+    lifecycle:
+      effective_from: 2026-08-01T06:41:47.766Z
+      status: active
+    roles:
+      terms_authority_entity_id: ent_01kyy3083w3k33krxmrqx1kr3t
+      access_operator_entity_id: ent_01kyy3083w3k33krxmrqx1kr3t
+    summary: Y Combinator startups that have raised under $3M receive 25% off Stream Chat, Video, Feeds, and Moderation APIs.
+    title: Stream x YC Discount (Under $3M Raised)
+    source_ids:
+      - src_74aa65916bac8aee9d14b901778840e2d0aee544eebd1ecc0d33baf0bafe6012
+  - offer_id: off_01kyy3083w3k33krxmrqx1kr3x
+    offer_slug: yc-under-10m-discount
+    offer_slug_aliases: []
+    access:
+      availability: membership
+      method: form
+      url: https://getstream.io/partners/
+    economics:
+      benefits:
+        - applies_to: Stream APIs
+          benefit_id: ben_01
+          description: 15% discount on Stream APIs
+          kind: discount
+          percentage:
+            basis_points: 1500
+            kind: exact
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.partner_memberships
+            kind: predicate
+            operator: contains
+            statement: Must be a Y Combinator startup
+            value:
+              type: string
+              value: Y Combinator
+          - criterion_id: cri_02
+            fact: company.funding_raised_usd
+            kind: predicate
+            operator: lt
+            statement: Must have raised under $10,000,000 in funding
+            value:
+              type: number
+              value: 10000000
+    lifecycle:
+      effective_from: 2026-08-01T06:41:47.766Z
+      status: active
+    roles:
+      terms_authority_entity_id: ent_01kyy3083w3k33krxmrqx1kr3t
+      access_operator_entity_id: ent_01kyy3083w3k33krxmrqx1kr3t
+    summary: Y Combinator startups that have raised under $10M receive 15% off Stream Chat, Video, Feeds, and Moderation APIs.
+    title: Stream x YC Discount (Under $10M Raised)
+    source_ids:
+      - src_74aa65916bac8aee9d14b901778840e2d0aee544eebd1ecc0d33baf0bafe6012

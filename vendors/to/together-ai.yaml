@@ -1,0 +1,176 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kyy3083w3k33krxmrqx1kr4e
+slug: together-ai
+slug_aliases: []
+name: Together AI
+domains:
+  - value: together.ai
+    role: primary
+    valid_from: 2026-08-01T07:08:27.771Z
+category: ai-ml
+description: Together AI gives startups the fastest path from idea to scale, across model training, fine-tuning, and inference, on the most performant and cost-efficient platform.
+links:
+  site: https://www.together.ai
+sources:
+  - source_id: src_5cc27a2787e67f1c577d136f167c25d59b92eed9f0abd1b4f301ea2fb7996447
+    url: https://www.together.ai/startup-accelerator
+programs:
+  - program_id: prg_01kyy3083w3k33krxmrqx1kr4f
+    program_slug: startup-accelerator
+    program_slug_aliases: []
+    title: Together AI Startup Accelerator
+    summary: A targeted selection-based program for startups offering compute credits, forward-deployed engineering, exclusive content, joint GTM, community access, and VC network connections.
+    source_ids:
+      - src_5cc27a2787e67f1c577d136f167c25d59b92eed9f0abd1b4f301ea2fb7996447
+offers:
+  - offer_id: off_01kyy3083w3k33krxmrqx1kr4g
+    program_id: prg_01kyy3083w3k33krxmrqx1kr4f
+    offer_slug: build-tier
+    offer_slug_aliases: []
+    access:
+      availability: public
+      method: form
+      url: https://www.together.ai/startup-accelerator
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to $15K in free platform credits (does not apply to Reserved GPU Clusters)
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 1500000
+            kind: up-to
+        - benefit_id: ben_02
+          description: 3 hours of free forward-deployed engineering time
+          duration:
+            kind: exact
+            value: PT3H
+          kind: free-service
+          service: forward-deployed engineering time
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        fact: company.funding_raised_usd
+        kind: predicate
+        operator: lte
+        statement: Startup has raised up to $5M
+        value:
+          type: number
+          value: 5000000
+    lifecycle:
+      effective_from: 2026-08-01T07:08:27.771Z
+      status: active
+    roles:
+      terms_authority_entity_id: ent_01kyy3083w3k33krxmrqx1kr4e
+      access_operator_entity_id: ent_01kyy3083w3k33krxmrqx1kr4e
+    summary: Build tier startups with up to $5M raised receive up to $15K in free platform credits and 3 hours of forward-deployed engineering time.
+    title: Together AI Startup Accelerator - Build Tier
+    source_ids:
+      - src_5cc27a2787e67f1c577d136f167c25d59b92eed9f0abd1b4f301ea2fb7996447
+  - offer_id: off_01kyy3083w3k33krxmrqx1kr4j
+    program_id: prg_01kyy3083w3k33krxmrqx1kr4f
+    offer_slug: grow-tier
+    offer_slug_aliases: []
+    access:
+      availability: public
+      method: form
+      url: https://www.together.ai/startup-accelerator
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to $50K in free platform credits (does not apply to Reserved GPU Clusters)
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 5000000
+            kind: up-to
+        - benefit_id: ben_02
+          description: 10 hours of free forward-deployed engineering time
+          duration:
+            kind: exact
+            value: PT10H
+          kind: free-service
+          service: forward-deployed engineering time
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        fact: company.funding_raised_usd
+        kind: predicate
+        operator: gt
+        statement: Startup has raised over $10M
+        value:
+          type: number
+          value: 10000000
+    lifecycle:
+      effective_from: 2026-08-01T07:08:27.771Z
+      status: active
+    roles:
+      terms_authority_entity_id: ent_01kyy3083w3k33krxmrqx1kr4e
+      access_operator_entity_id: ent_01kyy3083w3k33krxmrqx1kr4e
+    summary: Grow tier startups with over $10M raised receive up to $50K in free platform credits and 10 hours of forward-deployed engineering time.
+    title: Together AI Startup Accelerator - Grow Tier
+    source_ids:
+      - src_5cc27a2787e67f1c577d136f167c25d59b92eed9f0abd1b4f301ea2fb7996447
+  - offer_id: off_01kyy3083w3k33krxmrqx1kr4h
+    program_id: prg_01kyy3083w3k33krxmrqx1kr4f
+    offer_slug: scale-tier
+    offer_slug_aliases: []
+    access:
+      availability: public
+      method: form
+      url: https://www.together.ai/startup-accelerator
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to $30K in free platform credits (does not apply to Reserved GPU Clusters)
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 3000000
+            kind: up-to
+        - benefit_id: ben_02
+          description: 6 hours of free forward-deployed engineering time
+          duration:
+            kind: exact
+            value: PT6H
+          kind: free-service
+          service: forward-deployed engineering time
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.funding_raised_usd
+            kind: predicate
+            operator: gte
+            statement: Startup has raised at least $5M
+            value:
+              type: number
+              value: 5000000
+          - criterion_id: cri_02
+            fact: company.funding_raised_usd
+            kind: predicate
+            operator: lte
+            statement: Startup has raised up to $10M
+            value:
+              type: number
+              value: 10000000
+    lifecycle:
+      effective_from: 2026-08-01T07:08:27.771Z
+      status: active
+    roles:
+      terms_authority_entity_id: ent_01kyy3083w3k33krxmrqx1kr4e
+      access_operator_entity_id: ent_01kyy3083w3k33krxmrqx1kr4e
+    summary: Scale tier startups with $5M–$10M raised receive up to $30K in free platform credits and 6 hours of forward-deployed engineering time.
+    title: Together AI Startup Accelerator - Scale Tier
+    source_ids:
+      - src_5cc27a2787e67f1c577d136f167c25d59b92eed9f0abd1b4f301ea2fb7996447

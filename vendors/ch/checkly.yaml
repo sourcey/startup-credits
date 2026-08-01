@@ -1,0 +1,56 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kyy3083w3k33krxmrqx1kr3r
+slug: checkly
+slug_aliases: []
+name: Checkly
+domains:
+  - value: checklyhq.com
+    role: primary
+    valid_from: 2026-08-01T06:47:55.295Z
+category: observability
+description: Synthetic monitoring, uptime monitoring, and alerting for APIs, websites, and applications, defined and deployed as monitoring-as-code.
+links:
+  site: https://www.checklyhq.com
+sources:
+  - source_id: src_8d51763913c4bee6156f8e1c68c2540161d4d727b0d81d4da91c33ff729b4d12
+    url: https://www.checklyhq.com/pricing
+programs: []
+offers:
+  - offer_id: off_01kyy3083w3k33krxmrqx1kr3s
+    offer_slug: startup-discount
+    offer_slug_aliases: []
+    access:
+      availability: public
+      method: form
+      url: https://www.checklyhq.com/pricing/
+    economics:
+      benefits:
+        - applies_to: all plans
+          benefit_id: ben_01
+          description: 30% discount on all Checkly plans
+          kind: discount
+          percentage:
+            basis_points: 3000
+            kind: exact
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        fact: company.age_months
+        kind: predicate
+        operator: lt
+        statement: Company must be an early-stage startup younger than two years.
+        value:
+          type: number
+          value: 24
+    lifecycle:
+      effective_from: 2026-08-01T06:47:55.295Z
+      status: active
+    roles:
+      terms_authority_entity_id: ent_01kyy3083w3k33krxmrqx1kr3r
+      access_operator_entity_id: ent_01kyy3083w3k33krxmrqx1kr3r
+    summary: Early-stage startups younger than two years get a 30% discount on all Checkly plans.
+    title: Checkly Startup Discount
+    source_ids:
+      - src_8d51763913c4bee6156f8e1c68c2540161d4d727b0d81d4da91c33ff729b4d12

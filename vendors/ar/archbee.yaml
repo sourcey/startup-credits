@@ -1,0 +1,68 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kyy3083w3k33krxmrqx1kr43
+slug: archbee
+slug_aliases: []
+name: Archbee
+domains:
+  - value: archbee.com
+    role: primary
+    valid_from: 2026-08-01T07:03:40.270Z
+category: devtools-other
+description: Knowledge portal platform for creating, managing, and sharing external and internal documentation.
+links:
+  site: https://www.archbee.com
+sources:
+  - source_id: src_f282545a7eecaddec966984fc10e581a19f30b641e7058bf7efccc309ac7738a
+    url: https://www.archbee.com/pricing
+programs:
+  - program_id: prg_01kyy34e2e59kg833c1jzmrvgk
+    program_slug: startup-program
+    program_slug_aliases: []
+    title: Startup Program
+    summary: 50% discount on any plan for 2 years for early-stage companies.
+    source_ids:
+      - src_f282545a7eecaddec966984fc10e581a19f30b641e7058bf7efccc309ac7738a
+offers:
+  - offer_id: off_01kyy3083w3k33krxmrqx1kr44
+    program_id: prg_01kyy34e2e59kg833c1jzmrvgk
+    offer_slug: startup-program
+    offer_slug_aliases: []
+    access:
+      availability: public
+      method: form
+      url: https://www.archbee.com/pricing
+    economics:
+      benefits:
+        - applies_to: Any Archbee plan
+          benefit_id: ben_01
+          description: 50% discount on any plan for 2 years
+          duration:
+            kind: exact
+            value: P2Y
+          kind: discount
+          percentage:
+            basis_points: 5000
+            kind: exact
+      consideration:
+        description: Selected Archbee plan subscription
+        kind: unknown
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        fact: company.stage
+        kind: predicate
+        operator: eq
+        statement: Company must be an early-stage product & company
+        value:
+          type: string
+          value: early-stage
+    lifecycle:
+      effective_from: 2026-08-01T07:03:40.270Z
+      status: active
+    roles:
+      terms_authority_entity_id: ent_01kyy3083w3k33krxmrqx1kr43
+      access_operator_entity_id: ent_01kyy3083w3k33krxmrqx1kr43
+    summary: Early-stage product companies get a 50% discount on any Archbee plan for 2 years.
+    title: Archbee Startup Program
+    source_ids:
+      - src_f282545a7eecaddec966984fc10e581a19f30b641e7058bf7efccc309ac7738a

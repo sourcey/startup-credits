@@ -1,0 +1,51 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kyy3083t4kpnqzc9xp0acpf2
+slug: agenta
+slug_aliases: []
+name: Agenta
+domains:
+  - value: agenta.ai
+    role: primary
+    valid_from: 2026-08-01T06:40:08.661Z
+category: devtools-other
+description: Open-source agent workspace with prompt management, evaluation, and observability.
+links:
+  site: https://agenta.ai
+sources:
+  - source_id: src_3e71879f94b2a315503688d82fb5a8e88ca1dd69c541c214c14d2f11daabf736
+    url: https://agenta.ai/pricing
+programs: []
+offers:
+  - offer_id: off_01kyy3083w3k33krxmrqx1kr3q
+    offer_slug: startup-student-researcher-discount
+    offer_slug_aliases: []
+    access:
+      availability: public
+      method: contact
+      url: https://agenta.ai/pricing
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Discounted or free access to Agenta.
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: any
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: vendor-discretion
+            statement: Applicant is an early-stage startup, student, or researcher.
+    lifecycle:
+      effective_from: 2026-08-01T06:40:08.661Z
+      status: active
+    roles:
+      terms_authority_entity_id: ent_01kyy3083t4kpnqzc9xp0acpf2
+      access_operator_entity_id: ent_01kyy3083t4kpnqzc9xp0acpf2
+    summary: Early-stage startups, students, and researchers can email Agenta to request discounted or free access by sharing what they are building and how they plan to use Agenta.
+    terms_url: https://agenta.ai/pricing
+    title: Discounted or Free Access for Startups, Students, and Researchers
+    source_ids:
+      - src_3e71879f94b2a315503688d82fb5a8e88ca1dd69c541c214c14d2f11daabf736

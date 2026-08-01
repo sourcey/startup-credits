@@ -1,0 +1,111 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kyy3083w3k33krxmrqx1kr45
+slug: configcat
+slug_aliases: []
+name: ConfigCat
+domains:
+  - value: configcat.com
+    role: primary
+    valid_from: 2026-08-01T06:57:54.944Z
+category: devtools-other
+description: ConfigCat is a feature flag service for teams with unlimited seats, awesome support, and a reasonable price tag.
+links:
+  site: https://configcat.com/
+sources:
+  - source_id: src_2751dfe5080d170834dfe4e9da4d51737ee8a819d84b85c926f21d80d376c14c
+    url: https://configcat.com/startup-program
+programs:
+  - program_id: prg_01kyy34e2g5qnaej7jz1vx37ab
+    program_slug: startup-program
+    program_slug_aliases: []
+    title: ConfigCat Startup Program
+    summary: ConfigCat Startup Program offers early-stage startups discounted access to feature flag plans along with early feature access in exchange for community feedback.
+    source_ids:
+      - src_2751dfe5080d170834dfe4e9da4d51737ee8a819d84b85c926f21d80d376c14c
+offers:
+  - offer_id: off_01kyy3083w3k33krxmrqx1kr46
+    program_id: prg_01kyy34e2g5qnaej7jz1vx37ab
+    offer_slug: startup-program
+    offer_slug_aliases: []
+    access:
+      availability: public
+      method: form
+      url: https://configcat.com/startup-program/
+    economics:
+      benefits:
+        - applies_to: ConfigCat Pro or Smart annual plans
+          benefit_id: ben_01
+          description: 50% off ConfigCat Pro or Smart annual plans during your first year.
+          duration:
+            kind: exact
+            value: P1Y
+          kind: discount
+          percentage:
+            basis_points: 5000
+            kind: exact
+        - applies_to: ConfigCat Pro or Smart annual plans
+          benefit_id: ben_02
+          description: 25% off ConfigCat Pro or Smart annual plans in your second year upon completing agreed feedback commitments.
+          duration:
+            kind: exact
+            value: P1Y
+          kind: discount
+          percentage:
+            basis_points: 2500
+            kind: exact
+        - benefit_id: ben_03
+          description: Early access to upcoming feature flag capabilities and platform improvements.
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.age_months
+            kind: predicate
+            operator: lt
+            statement: Your company was founded less than 5 years ago
+            value:
+              type: number
+              value: 60
+          - criterion_id: cri_02
+            fact: company.funding_raised_usd
+            kind: predicate
+            operator: lt
+            statement: You've raised under $5M USD in total funding
+            value:
+              type: number
+              value: 5000000
+          - criterion_id: cri_03
+            fact: company.has_live_product
+            kind: predicate
+            operator: eq
+            statement: You have a live website or product
+            value:
+              type: boolean
+              value: true
+          - criterion_id: cri_04
+            fact: company.is_current_customer
+            kind: predicate
+            operator: eq
+            statement: You haven't had a paid ConfigCat subscription in the past 12 months
+            value:
+              type: boolean
+              value: false
+          - criterion_id: cri_05
+            kind: manual
+            reason: not-machine-evaluable
+            statement: Sharing an honest public review on platforms like G2, TrustRadius or Trustpilot, contributing a short case study, and providing occasional feedback through surveys or short conversations to receive the second-year discount.
+    lifecycle:
+      effective_from: 2026-08-01T06:57:54.944Z
+      status: active
+    roles:
+      terms_authority_entity_id: ent_01kyy3083w3k33krxmrqx1kr45
+      access_operator_entity_id: ent_01kyy3083w3k33krxmrqx1kr45
+    summary: Eligible early-stage startups receive 50% off Pro or Smart annual plans in Year 1, 25% off in Year 2 upon completing partner feedback commitments, and early access to new features.
+    terms_url: https://configcat.com/startup-program/
+    title: ConfigCat Startup Program
+    source_ids:
+      - src_2751dfe5080d170834dfe4e9da4d51737ee8a819d84b85c926f21d80d376c14c

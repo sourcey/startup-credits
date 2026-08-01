@@ -1,0 +1,154 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kyy3083w3k33krxmrqx1kr4c
+slug: nvidia
+slug_aliases: []
+name: NVIDIA
+domains:
+  - value: nvidia.com
+    role: primary
+    valid_from: 2026-08-01T07:07:27.100Z
+category: ai-ml
+description: NVIDIA Inception is a free program designed to nurture startups, providing co-marketing support, and opportunities to connect with NVIDIA experts.
+links:
+  site: https://www.nvidia.com/en-us/startups
+sources:
+  - source_id: src_f7c1020816fa353e5a80ce3916288595bf4779b64b7d7163ca19626fab3a7844
+    url: https://www.nvidia.com/en-us/startups
+programs:
+  - program_id: prg_01kyy34e2h771sj46tqgzsw431
+    program_slug: inception
+    program_slug_aliases: []
+    title: NVIDIA Inception Program
+    summary: NVIDIA Inception is a free program guiding AI startups from prototype to production with technical training, preferred pricing on hardware and software, partner cloud credits, and investor access.
+    source_ids:
+      - src_f7c1020816fa353e5a80ce3916288595bf4779b64b7d7163ca19626fab3a7844
+offers:
+  - offer_id: off_01kyy3083w3k33krxmrqx1kr4d
+    program_id: prg_01kyy34e2h771sj46tqgzsw431
+    offer_slug: inception-program
+    offer_slug_aliases: []
+    access:
+      availability: public
+      method: form
+      url: https://www.nvidia.com/en-us/startups/
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Preferred pricing on select enterprise-grade NVIDIA hardware and software (functioning as a rebate deducted from standard supplier price)
+          kind: other
+        - benefit_id: ben_02
+          description: Free self-paced technical courses through NVIDIA Deep Learning Institute
+          kind: free-service
+          service: Free self-paced technical courses through NVIDIA Deep Learning Institute
+        - benefit_id: ben_03
+          description: Discounted expert-led / instructor-led workshops through NVIDIA Deep Learning Institute
+          kind: other
+        - benefit_id: ben_04
+          description: Access to free cloud credits from NVIDIA and partners
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 0
+            kind: at-least
+        - benefit_id: ben_05
+          description: Exposure to investors in NVIDIA's VC network through Inception Capital Connect for eligible startups
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.employee_count
+            kind: predicate
+            operator: gte
+            statement: Company must employ at least one developer.
+            value:
+              type: number
+              value: 1
+          - criterion_id: cri_02
+            fact: company.website_status
+            kind: predicate
+            operator: eq
+            statement: Company must maintain a working website.
+            value:
+              type: string
+              value: working
+          - criterion_id: cri_03
+            fact: company.is_incorporated
+            kind: predicate
+            operator: eq
+            statement: Company must be officially incorporated.
+            value:
+              type: boolean
+              value: true
+          - criterion_id: cri_04
+            fact: company.age_months
+            kind: predicate
+            operator: lt
+            statement: Company must be less than 10 years old.
+            value:
+              type: number
+              value: 120
+          - kind: not
+            rule:
+              criterion_id: cri_05
+              fact: company.industry
+              kind: predicate
+              operator: eq
+              statement: Consulting and outsourced development firms do not qualify.
+              value:
+                type: string
+                value: consulting_or_outsourced_development
+          - kind: not
+            rule:
+              criterion_id: cri_06
+              fact: company.industry
+              kind: predicate
+              operator: eq
+              statement: Companies associated with cryptocurrency do not qualify.
+              value:
+                type: string
+                value: cryptocurrency
+          - kind: not
+            rule:
+              criterion_id: cri_07
+              fact: company.industry
+              kind: predicate
+              operator: eq
+              statement: Cloud service providers do not qualify.
+              value:
+                type: string
+                value: cloud_service_provider
+          - kind: not
+            rule:
+              criterion_id: cri_08
+              fact: company.business_model
+              kind: predicate
+              operator: eq
+              statement: Resellers and distributors do not qualify.
+              value:
+                type: string
+                value: reseller_or_distributor
+          - kind: not
+            rule:
+              criterion_id: cri_09
+              fact: company.is_public
+              kind: predicate
+              operator: eq
+              statement: Public companies do not qualify.
+              value:
+                type: boolean
+                value: true
+    lifecycle:
+      effective_from: 2026-08-01T07:07:27.100Z
+      status: active
+    roles:
+      terms_authority_entity_id: ent_01kyy3083w3k33krxmrqx1kr4c
+      access_operator_entity_id: ent_01kyy3083w3k33krxmrqx1kr4c
+    summary: Free membership program for AI, data science, and HPC startups offering preferred pricing on select NVIDIA hardware and software, free self-paced courses, cloud credits, and investor exposure.
+    title: NVIDIA Inception Program for Startups
+    source_ids:
+      - src_f7c1020816fa353e5a80ce3916288595bf4779b64b7d7163ca19626fab3a7844

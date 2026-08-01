@@ -1,0 +1,89 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kyy3083w3k33krxmrqx1kr4k
+slug: zoom
+slug_aliases: []
+name: Zoom Communications
+domains:
+  - value: zoom.com
+    role: primary
+    valid_from: 2026-08-01T07:09:00.969Z
+category: communication
+description: "Modernize workflows with Zoom's trusted collaboration tools: including video meetings, Zoom Chat, VoIP phone, webinars, whiteboard, contact center, and events."
+links:
+  site: https://www.zoom.com/
+sources:
+  - source_id: src_e152a28231129176c62cdaa48879f305bae1d3b7fcf39e1a425f0c83712e552e
+    url: https://www.zoom.com/en/lp/zoom-for-startups
+programs:
+  - program_id: prg_01kyy34e2h771sj46tqgzsw432
+    program_slug: zoom-for-startups
+    program_slug_aliases: []
+    title: Zoom for Startups
+    summary: Zoom's program providing early-stage startups with collaboration tools and benefits.
+    source_ids:
+      - src_e152a28231129176c62cdaa48879f305bae1d3b7fcf39e1a425f0c83712e552e
+offers:
+  - offer_id: off_01kyy3083w3k33krxmrqx1kr4m
+    program_id: prg_01kyy34e2h771sj46tqgzsw432
+    offer_slug: startup-business-plus
+    offer_slug_aliases: []
+    access:
+      availability: referral
+      method: form
+      url: https://www.zoom.com/en/lp/zoom-for-startups/
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: One year of Zoom Workplace Business Plus for up to 25 seats
+          duration:
+            kind: exact
+            value: P1Y
+          kind: free-service
+          service: Zoom Workplace Business Plus (up to 25 seats)
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.stage
+            kind: predicate
+            operator: in
+            statement: Pre-Seed to Series A Companies
+            value:
+              type: string-set
+              values:
+                - Pre-Seed
+                - Seed
+                - Series A
+          - criterion_id: cri_02
+            fact: company.employee_count
+            kind: predicate
+            operator: lt
+            statement: Fewer than 50 employees
+            value:
+              type: number
+              value: 50
+          - criterion_id: cri_03
+            kind: manual
+            reason: external-verification
+            statement: Affiliated with select startup partners
+          - criterion_id: cri_04
+            fact: company.is_current_customer
+            kind: predicate
+            operator: eq
+            statement: Not an existing paid customer
+            value:
+              type: boolean
+              value: false
+    lifecycle:
+      effective_from: 2026-08-01T07:09:00.969Z
+      status: active
+    roles:
+      terms_authority_entity_id: ent_01kyy3083w3k33krxmrqx1kr4k
+      access_operator_entity_id: ent_01kyy3083w3k33krxmrqx1kr4k
+    summary: Eligible early-stage startups affiliated with select startup partners receive one year of Zoom Workplace Business Plus for up to 25 seats.
+    title: One year of Zoom Workplace Business Plus for up to 25 seats
+    source_ids:
+      - src_e152a28231129176c62cdaa48879f305bae1d3b7fcf39e1a425f0c83712e552e

@@ -1,0 +1,68 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kyy3083w3k33krxmrqx1kr3y
+slug: helicone
+slug_aliases: []
+name: Helicone
+domains:
+  - value: helicone.ai
+    role: primary
+    valid_from: 2026-08-01T06:42:24.370Z
+category: observability
+description: Usage-based pricing that scales with you. Ship your AI app with confidence.
+links:
+  site: https://helicone.ai/pricing
+sources:
+  - source_id: src_08748e1772018d22159b79a5bb6028806188d25f8fb84b3e68fa7554606b6a6b
+    url: https://helicone.ai/pricing
+programs: []
+offers:
+  - offer_id: off_01kyy3083w3k33krxmrqx1kr3z
+    offer_slug: startup-discount
+    offer_slug_aliases: []
+    access:
+      availability: public
+      method: form
+      url: https://helicone.ai/pricing
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 50% off first year
+          duration:
+            kind: exact
+            value: P1Y
+          kind: discount
+          percentage:
+            basis_points: 5000
+            kind: exact
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.age_months
+            kind: predicate
+            operator: lt
+            statement: Startup is under 2 years old
+            value:
+              type: number
+              value: 24
+          - criterion_id: cri_02
+            fact: company.funding_raised_usd
+            kind: predicate
+            operator: lt
+            statement: Startup has raised less than $5M in funding
+            value:
+              type: number
+              value: 5000000
+    lifecycle:
+      effective_from: 2026-08-01T06:42:24.370Z
+      status: active
+    roles:
+      terms_authority_entity_id: ent_01kyy3083w3k33krxmrqx1kr3y
+      access_operator_entity_id: ent_01kyy3083w3k33krxmrqx1kr3y
+    summary: Eligible startups under 2 years old with under $5M in funding receive 50% off their first year.
+    title: Startups Discount
+    source_ids:
+      - src_08748e1772018d22159b79a5bb6028806188d25f8fb84b3e68fa7554606b6a6b
