@@ -1,0 +1,18 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kyyr9svgcxd42r9s8g3knssn
+slug: perkbook
+slug_aliases: []
+name: PerkBook
+domains:
+  - value: perkbook.co
+    role: primary
+    valid_from: 2026-08-01T13:29:02.000Z
+category: startup
+description: Manage, distribute and discover startup perks in one searchable, branded platform. Built for founders, communities, and vendors.
+links:
+  site: https://perkbook.co
+sources:
+  - source_id: src_0a115e044cfe5af7f2cb5c5d5cc113ccdf327f3c64ce99308ad0055dfcf51d8d
+    url: https://perkbook.co/
+programs: []
+offers: []

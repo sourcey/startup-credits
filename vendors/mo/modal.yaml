@@ -14,7 +14,16 @@ links:
 sources:
   - source_id: src_12f9a93d061e0e5f58df0d8d7ac914e89e2bd620062a3842e3ea4bae69118813
     url: https://modal.com/startups
-programs: []
+  - source_id: src_4eefce2dfc395cad64047bb4aa6d75151f2df72dcaadf1e595c26ed82e1c5d9d
+    url: https://perkbook.co/vendor-directory/modal
+programs:
+  - program_id: prg_01kyyr9svhh7n947rd6m78efaf
+    program_slug: modal-for-startups
+    program_slug_aliases: []
+    title: Modal for Startups
+    summary: Modal for Startups provides compute credits to qualifying early-stage AI companies using Modal's serverless GPU compute platform.
+    source_ids:
+      - src_4eefce2dfc395cad64047bb4aa6d75151f2df72dcaadf1e595c26ed82e1c5d9d
 offers:
   - offer_id: off_01kyh8fpe4fyz5pxzv154ah0y4
     offer_slug: modal-for-startups
@@ -47,3 +56,53 @@ offers:
       url: https://modal.com/startups
     source_ids:
       - src_12f9a93d061e0e5f58df0d8d7ac914e89e2bd620062a3842e3ea4bae69118813
+  - offer_id: off_01kyyr9svhq579q2kgwtr3djcx
+    program_id: prg_01kyyr9svhh7n947rd6m78efaf
+    offer_slug: 25-000-in-modal-compute-credits
+    offer_slug_aliases: []
+    title: $25,000 in Modal compute credits
+    summary: Qualifying early-stage AI startups and new Modal customers receive $25,000 in compute credits on Modal's serverless GPU compute platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-01T08:15:22.418Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: $25,000 in compute credits for serverless GPU compute
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 2500000
+            kind: exact
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.industry
+            kind: predicate
+            operator: contains
+            statement: Must be an early-stage AI startup building AI applications requiring GPU compute.
+            value:
+              type: string
+              value: AI
+          - criterion_id: cri_02
+            fact: company.is_current_customer
+            kind: predicate
+            operator: eq
+            statement: Must be a new Modal customer.
+            value:
+              type: boolean
+              value: false
+    roles:
+      terms_authority_entity_id: ent_01kyh8fpe43gqa08cvashmf19y
+      access_operator_entity_id: ent_01kyyr9svgcxd42r9s8g3knssn
+    access:
+      availability: membership
+      method: form
+      url: https://perkbook.co/vendor-directory/modal
+    source_ids:
+      - src_4eefce2dfc395cad64047bb4aa6d75151f2df72dcaadf1e595c26ed82e1c5d9d

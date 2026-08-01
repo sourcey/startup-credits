@@ -14,7 +14,16 @@ links:
 sources:
   - source_id: src_79a5ba0b58a5334728f4b66261d11e87dd01f1b9c98e8c82c9ad5805be0c2327
     url: https://www.digitalocean.com/startups
-programs: []
+  - source_id: src_30a5f4587a36fc6cc338e47bd0185250c99f64a15e057bd464c2248ea16c192c
+    url: https://perkbook.co/vendor-directory/digitalocean
+programs:
+  - program_id: prg_01kyyr9svgytm49k59kkp561mf
+    program_slug: digitalocean-hatch
+    program_slug_aliases: []
+    title: DigitalOcean Hatch
+    summary: DigitalOcean's global startup program to help startups grow and build in the cloud.
+    source_ids:
+      - src_30a5f4587a36fc6cc338e47bd0185250c99f64a15e057bd464c2248ea16c192c
 offers:
   - offer_id: off_01kyh8fpe2dwqnfrbb6nejb5zz
     offer_slug: digitalocean-startups-program
@@ -47,3 +56,158 @@ offers:
       url: https://www.digitalocean.com/startups
     source_ids:
       - src_79a5ba0b58a5334728f4b66261d11e87dd01f1b9c98e8c82c9ad5805be0c2327
+  - offer_id: off_01kyyr9svgr2njarjcjtya6n9q
+    program_id: prg_01kyyr9svgytm49k59kkp561mf
+    offer_slug: 20-000-in-cloud-credits-and-partner-perks-via-digitalocean-hatch-partner-tier
+    offer_slug_aliases: []
+    title: $20,000 in cloud credits and partner perks via DigitalOcean Hatch — partner tier
+    summary: Receive $20,000 in credits over 12 months, 15 months of free Standard support, and extra ecosystem perks when referred by an approved partner.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-01T08:14:06.110Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: $20,000 in cloud infrastructure credits
+          duration:
+            kind: exact
+            value: P12M
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 2000000
+            kind: exact
+        - benefit_id: ben_02
+          description: Standard support
+          duration:
+            kind: exact
+            value: P15M
+          kind: free-service
+          service: Standard support
+        - benefit_id: ben_03
+          description: Connections to DO PMs and engineers, plus Segment and HubSpot credits in a welcome kit
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: external-verification
+            statement: Affiliated with an approved DigitalOcean Hatch partner (VC/accelerator/incubator)
+          - criterion_id: cri_02
+            kind: manual
+            reason: external-verification
+            statement: New DigitalOcean business account
+          - criterion_id: cri_03
+            kind: manual
+            reason: external-verification
+            statement: Business domain email
+    roles:
+      terms_authority_entity_id: ent_01kyh8fpe29kn3bm05h7kyqyka
+      access_operator_entity_id: ent_01kyyr9svgcxd42r9s8g3knssn
+    access:
+      availability: referral
+      method: other
+      url: https://perkbook.co/vendor-directory/digitalocean
+    source_ids:
+      - src_30a5f4587a36fc6cc338e47bd0185250c99f64a15e057bd464c2248ea16c192c
+  - offer_id: off_01kyyr9svg4h7qprerkpb8pjkj
+    program_id: prg_01kyyr9svgytm49k59kkp561mf
+    offer_slug: up-to-1-000-in-credits-via-digitalocean-hatch-direct-tier
+    offer_slug_aliases: []
+    title: Up to $1,000 in credits via DigitalOcean Hatch — direct tier
+    summary: Get up to $1,000 in cloud infrastructure credits directly through DigitalOcean Hatch for new business accounts.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-01T08:14:06.110Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to $1,000 of cloud infrastructure credits
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 100000
+            kind: up-to
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: external-verification
+            statement: New DigitalOcean business account
+          - criterion_id: cri_02
+            kind: manual
+            reason: external-verification
+            statement: Business domain email
+          - criterion_id: cri_03
+            kind: manual
+            reason: external-verification
+            statement: Team account
+    roles:
+      terms_authority_entity_id: ent_01kyh8fpe29kn3bm05h7kyqyka
+      access_operator_entity_id: ent_01kyyr9svgcxd42r9s8g3knssn
+    access:
+      availability: public
+      method: other
+      url: https://perkbook.co/vendor-directory/digitalocean
+    source_ids:
+      - src_30a5f4587a36fc6cc338e47bd0185250c99f64a15e057bd464c2248ea16c192c
+  - offer_id: off_01kyyr9svgad3pab4t761tkz0y
+    program_id: prg_01kyyr9svgytm49k59kkp561mf
+    offer_slug: up-to-100-000-in-compute-credits-via-digitalocean-hatch-ai-ml-tier
+    offer_slug_aliases: []
+    title: Up to $100,000 in compute credits via DigitalOcean Hatch — AI/ML tier
+    summary: AI-focused startups receive up to $100,000 in compute credits and preferred GPU Droplet pricing at $1.90/hr.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-01T08:14:06.110Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to $100,000 in compute credits
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 10000000
+            kind: up-to
+        - benefit_id: ben_02
+          description: Preferred GPU Droplet pricing at $1.90/hr
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: external-verification
+            statement: AI/ML-focused startup
+          - criterion_id: cri_02
+            kind: manual
+            reason: external-verification
+            statement: Affiliated with an approved DigitalOcean partner
+          - criterion_id: cri_03
+            kind: manual
+            reason: external-verification
+            statement: New DigitalOcean business account
+    roles:
+      terms_authority_entity_id: ent_01kyh8fpe29kn3bm05h7kyqyka
+      access_operator_entity_id: ent_01kyyr9svgcxd42r9s8g3knssn
+    access:
+      availability: referral
+      instructions: Contact hatch@digitalocean.com for AI tier details.
+      method: contact
+      url: https://perkbook.co/vendor-directory/digitalocean
+    source_ids:
+      - src_30a5f4587a36fc6cc338e47bd0185250c99f64a15e057bd464c2248ea16c192c

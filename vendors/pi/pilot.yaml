@@ -14,6 +14,8 @@ links:
 sources:
   - source_id: src_03280047fb9243ba29a16274b0569d4376e75b97b65e938c2a9045faf5ef21ca
     url: https://pilot.com/pricing
+  - source_id: src_5af15c175b972ada7f6e0487dc9385f214ca5825c52bf7ecdb54e53d1946183d
+    url: https://pulley.com/perks
 programs: []
 offers:
   - offer_id: off_01kyh8fpe4pawgdejcqq2q04f9
@@ -48,3 +50,56 @@ offers:
       url: https://pilot.com/pricing
     source_ids:
       - src_03280047fb9243ba29a16274b0569d4376e75b97b65e938c2a9045faf5ef21ca
+  - offer_id: off_01kyyr9svgz7xdd7m6ct69rcyw
+    offer_slug: pilot-startup-booster-and-partner-offer
+    offer_slug_aliases: []
+    title: Pilot Startup Booster and Partner Offer
+    summary: Get tax filings and monthly bookkeeping for $750 for young companies, plus 20% off Pilot Core for 6 months and 10% off CFO services.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-01T12:27:57.374Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Tax filings and monthly bookkeeping for just $750 for companies less than a year old
+          kind: other
+        - applies_to: Pilot Core
+          benefit_id: ben_02
+          description: 20% off Pilot Core for six months
+          duration:
+            kind: exact
+            value: P6M
+          kind: discount
+          percentage:
+            basis_points: 2000
+            kind: exact
+        - applies_to: CFO services
+          benefit_id: ben_03
+          description: 10% off CFO services
+          kind: discount
+          percentage:
+            basis_points: 1000
+            kind: exact
+      consideration:
+        amount:
+          currency: USD
+          minor_units: 75000
+        kind: fixed
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        fact: company.age_months
+        kind: predicate
+        operator: lt
+        statement: Companies that are less than a year old.
+        value:
+          type: number
+          value: 12
+    roles:
+      terms_authority_entity_id: ent_01kyh8fpe4nr3y7st8xcm8gryv
+      access_operator_entity_id: ent_01kyyr9svfavvhqt4vy0e0b25k
+    access:
+      availability: membership
+      method: other
+    source_ids:
+      - src_5af15c175b972ada7f6e0487dc9385f214ca5825c52bf7ecdb54e53d1946183d

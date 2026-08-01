@@ -14,6 +14,8 @@ links:
 sources:
   - source_id: src_149b7d73a9ecaa8fe56a5cfe59571a489f490e14e2f9a3c6ecf8ec48c1c1199c
     url: https://www.cloudflare.com/startups/
+  - source_id: src_6969ed732394ce7e5a91a81dab949751ebcf9db069f27007ca75f3cf8e6db441
+    url: https://perkbook.co/vendor-directory/cloudflare
 programs:
   - program_id: prg_01kyh8jtf667atcvk4kp9spgx9
     program_slug: cloudflare-for-startups
@@ -21,6 +23,7 @@ programs:
     title: Cloudflare for Startups
     source_ids:
       - src_149b7d73a9ecaa8fe56a5cfe59571a489f490e14e2f9a3c6ecf8ec48c1c1199c
+      - src_6969ed732394ce7e5a91a81dab949751ebcf9db069f27007ca75f3cf8e6db441
 offers:
   - offer_id: off_01kyh8jtf6rzp78sqz25kvpe3v
     program_id: prg_01kyh8jtf667atcvk4kp9spgx9
@@ -118,3 +121,67 @@ offers:
       url: https://www.cloudflare.com/startups/
     source_ids:
       - src_149b7d73a9ecaa8fe56a5cfe59571a489f490e14e2f9a3c6ecf8ec48c1c1199c
+  - offer_id: off_01kyyr9svg32mtqwp0bwy6yv8y
+    program_id: prg_01kyh8jtf667atcvk4kp9spgx9
+    offer_slug: free-cloud-credits-with-cloudflare-for-startups-250-000-usd
+    offer_slug_aliases: []
+    title: Free cloud credits with Cloudflare for Startups ($250,000 USD)
+    summary: Cloudflare for Startups provides up to $250,000 in enterprise credits for Workers, CDN, DDoS protection, AI gateway, databases, and more to eligible companies.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-01T08:13:34.674Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to $250,000 in enterprise credits covering Workers, CDN, DDoS protection, AI gateway, databases, and more.
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 250000000
+            kind: up-to
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.age_months
+            kind: predicate
+            operator: lte
+            statement: Founded in last 5 years
+            value:
+              type: number
+              value: 60
+          - criterion_id: cri_02
+            fact: company.funding_raised_usd
+            kind: predicate
+            operator: gte
+            statement: Funded $5M+
+            value:
+              type: number
+              value: 5000000
+          - kind: any
+            rules:
+              - criterion_id: cri_03
+                kind: manual
+                reason: external-verification
+                statement: Tier 1 VC or accelerator partner
+              - criterion_id: cri_04
+                kind: manual
+                reason: not-machine-evaluable
+                statement: High-growth/AI company
+              - criterion_id: cri_05
+                kind: manual
+                reason: external-verification
+                statement: Participating in Workers Launchpad Program
+    roles:
+      terms_authority_entity_id: ent_01kyh8jtf535570d9z2bng6j1t
+      access_operator_entity_id: ent_01kyyr9svgcxd42r9s8g3knssn
+    access:
+      availability: membership
+      method: form
+      url: https://perkbook.co/vendor-directory/cloudflare
+    source_ids:
+      - src_6969ed732394ce7e5a91a81dab949751ebcf9db069f27007ca75f3cf8e6db441

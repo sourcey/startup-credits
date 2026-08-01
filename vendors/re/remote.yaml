@@ -16,6 +16,8 @@ sources:
     url: https://remote.com/global-hr/small-business
   - source_id: src_5637f24101627f4de80403d0704f41e07d9054bd83948cf0018b653001047fa4
     url: https://remote.com/global-hr/startups
+  - source_id: src_5af15c175b972ada7f6e0487dc9385f214ca5825c52bf7ecdb54e53d1946183d
+    url: https://pulley.com/perks
 programs:
   - program_id: prg_01kyy6rm11sqz3yrwfb6j21620
     program_slug: remote-for-startups
@@ -109,3 +111,43 @@ offers:
       url: https://remote.com/global-hr/startups
     source_ids:
       - src_5637f24101627f4de80403d0704f41e07d9054bd83948cf0018b653001047fa4
+  - offer_id: off_01kyyr9svgdd81b5ac861syvps
+    offer_slug: 20-off-full-time-hires-20-off-contractor-management
+    offer_slug_aliases: []
+    title: 20% off full time hires + 20% off contractor management
+    summary: Get 20% off full-time hires and 20% off contractor management with Remote.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-01T12:27:57.374Z
+    economics:
+      benefits:
+        - applies_to: full time hires
+          benefit_id: ben_01
+          description: 20% off full time hires
+          kind: discount
+          percentage:
+            basis_points: 2000
+            kind: exact
+        - applies_to: contractor management
+          benefit_id: ben_02
+          description: 20% off contractor management
+          kind: discount
+          percentage:
+            basis_points: 2000
+            kind: exact
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: constant
+        statement: Available to Pulley users.
+        value: true
+    roles:
+      terms_authority_entity_id: ent_01kyh8fpe4dkt6qsga03ep38rk
+      access_operator_entity_id: ent_01kyyr9svfavvhqt4vy0e0b25k
+    access:
+      availability: membership
+      method: other
+    source_ids:
+      - src_5af15c175b972ada7f6e0487dc9385f214ca5825c52bf7ecdb54e53d1946183d

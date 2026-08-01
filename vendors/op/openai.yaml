@@ -14,7 +14,16 @@ links:
 sources:
   - source_id: src_9223b16ab8e30ece5c495a1ed47b811ce538fbf172483fa3e1bbb3013c5433c8
     url: https://openai.com/business/why-openai/startups/
-programs: []
+  - source_id: src_f0897f1deaf5cdccfab9fda163fcfb40fcd734a1c9adb5e35c96ada602cc65f1
+    url: https://perkbook.co/vendor-directory/openai
+programs:
+  - program_id: prg_01kyyr9svh0pbsy1aaq4gwthwn
+    program_slug: openai-for-startups
+    program_slug_aliases: []
+    title: Openai for Startups
+    summary: OpenAI's startup program provides early-stage companies with API credits to build products powered by GPT-4, DALL-E, Whisper, and other cutting-edge AI models.
+    source_ids:
+      - src_f0897f1deaf5cdccfab9fda163fcfb40fcd734a1c9adb5e35c96ada602cc65f1
 offers:
   - offer_id: off_01kyh8fpe4jecj8crezg4618sc
     offer_slug: openai-startup-credits-and-vc-partner-support
@@ -47,3 +56,49 @@ offers:
       url: https://openai.com/business/why-openai/startups/
     source_ids:
       - src_9223b16ab8e30ece5c495a1ed47b811ce538fbf172483fa3e1bbb3013c5433c8
+  - offer_id: off_01kyyr9svh5zk20r29dskcmpgt
+    program_id: prg_01kyyr9svh0pbsy1aaq4gwthwn
+    offer_slug: free-api-credits-with-openai-for-startups
+    offer_slug_aliases: []
+    title: Free API credits with OpenAI for Startups
+    summary: Early-stage startups can receive $2,500 in OpenAI API credits when applying through partner programs like Ramp, Microsoft for Startups, or approved VC partners.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-01T08:15:42.602Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: $2,500 in OpenAI API credits for building products powered by AI models.
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 250000
+            kind: exact
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: external-verification
+            statement: Available through partner programs including Ramp, Microsoft for Startups, or approved VC partners
+          - criterion_id: cri_02
+            fact: company.is_current_customer
+            kind: predicate
+            operator: eq
+            statement: Must be a new OpenAI API customer
+            value:
+              type: boolean
+              value: false
+    roles:
+      terms_authority_entity_id: ent_01kyh8fpe4qj5yt6msnarsc8kz
+      access_operator_entity_id: ent_01kyyr9svgcxd42r9s8g3knssn
+    access:
+      availability: referral
+      method: form
+      url: https://perkbook.co/vendor-directory/openai
+    source_ids:
+      - src_f0897f1deaf5cdccfab9fda163fcfb40fcd734a1c9adb5e35c96ada602cc65f1

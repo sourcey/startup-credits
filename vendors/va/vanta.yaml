@@ -14,6 +14,8 @@ links:
 sources:
   - source_id: src_45f3cb169494b2ede38440ee5f20d21796d5bd4c4859976ae3659673b955c52b
     url: https://www.vanta.com/solutions/startup
+  - source_id: src_5af15c175b972ada7f6e0487dc9385f214ca5825c52bf7ecdb54e53d1946183d
+    url: https://pulley.com/perks
 programs: []
 offers:
   - offer_id: off_01kyh8fpe5gjd9624g0mqdk3mf
@@ -47,3 +49,36 @@ offers:
       url: https://www.vanta.com/solutions/startup
     source_ids:
       - src_45f3cb169494b2ede38440ee5f20d21796d5bd4c4859976ae3659673b955c52b
+  - offer_id: off_01kyyr9svgm4vq06cr78n8p2cr
+    offer_slug: 25-off-vanta
+    offer_slug_aliases: []
+    title: 25% off Vanta
+    summary: Get 25% off Vanta compliance automation platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-01T12:27:57.374Z
+    economics:
+      benefits:
+        - applies_to: Vanta services
+          benefit_id: ben_01
+          description: 25% off Vanta
+          kind: discount
+          percentage:
+            basis_points: 2500
+            kind: exact
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: constant
+        statement: Available to Pulley users.
+        value: true
+    roles:
+      terms_authority_entity_id: ent_01kyh8fpe5mhzs20zrae013w4h
+      access_operator_entity_id: ent_01kyyr9svfavvhqt4vy0e0b25k
+    access:
+      availability: membership
+      method: other
+    source_ids:
+      - src_5af15c175b972ada7f6e0487dc9385f214ca5825c52bf7ecdb54e53d1946183d

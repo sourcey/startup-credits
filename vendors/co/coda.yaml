@@ -14,7 +14,16 @@ links:
 sources:
   - source_id: src_5701585bdefc1cf5026883ef2214ba9f3f2d6c4155378e8cfbaaa4a194973432
     url: https://coda.io/for/startups
-programs: []
+  - source_id: src_a871822fe0eb911cba69805f8814e91191c235ad3ead82e0c72851983a4e9a2e
+    url: https://perkbook.co/vendor-directory/coda
+programs:
+  - program_id: prg_01kyyr9svgzba5w8b8hnr2wxry
+    program_slug: coda-startup-program
+    program_slug_aliases: []
+    title: Coda Startup Program
+    summary: Coda for Startups provides special perks and free team plan access to eligible early-stage companies.
+    source_ids:
+      - src_a871822fe0eb911cba69805f8814e91191c235ad3ead82e0c72851983a4e9a2e
 offers:
   - offer_id: off_01kyygma8278f4c4xbhahf8a2j
     offer_slug: 1-000-startup-credit
@@ -51,3 +60,72 @@ offers:
       url: https://coda.io/for/startups
     source_ids:
       - src_5701585bdefc1cf5026883ef2214ba9f3f2d6c4155378e8cfbaaa4a194973432
+  - offer_id: off_01kyyr9svgpmay2axw8cj4cawa
+    program_id: prg_01kyyr9svgzba5w8b8hnr2wxry
+    offer_slug: 6-months-free-team-plan-with-coda-for-startups
+    offer_slug_aliases: []
+    title: 6 months free Team Plan with Coda for Startups
+    summary: Qualifying early-stage startups get 6 months free on the Coda Team plan with unlimited AI.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-01T08:13:34.666Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 6 months free on the Coda Team plan with unlimited AI
+          duration:
+            kind: exact
+            value: P6M
+          kind: free-service
+          service: Coda Team plan with unlimited AI
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.age_months
+            kind: predicate
+            operator: lt
+            statement: Company must be under 5 years old
+            value:
+              type: number
+              value: 60
+          - criterion_id: cri_02
+            fact: company.funding_raised_usd
+            kind: predicate
+            operator: lt
+            statement: Company raised less than $10M
+            value:
+              type: number
+              value: 10000000
+          - criterion_id: cri_03
+            fact: company.employee_count
+            kind: predicate
+            operator: gte
+            statement: Team size must be 2 or more
+            value:
+              type: number
+              value: 2
+          - criterion_id: cri_04
+            kind: manual
+            reason: not-machine-evaluable
+            statement: Must use a business domain email
+          - criterion_id: cri_05
+            fact: company.is_current_customer
+            kind: predicate
+            operator: eq
+            statement: Must be new Coda customers
+            value:
+              type: boolean
+              value: false
+    roles:
+      terms_authority_entity_id: ent_01kyygma82v52ygt9gw9f3prhb
+      access_operator_entity_id: ent_01kyyr9svgcxd42r9s8g3knssn
+    access:
+      availability: membership
+      method: form
+      url: https://perkbook.co/vendor-directory/coda
+    source_ids:
+      - src_a871822fe0eb911cba69805f8814e91191c235ad3ead82e0c72851983a4e9a2e

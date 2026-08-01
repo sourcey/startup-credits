@@ -14,7 +14,16 @@ links:
 sources:
   - source_id: src_9b15185aa771c52c1d89f35b03b4f42245dffe8eae1a7e78c9fa15162a753119
     url: https://www.xero.com/au/startups
-programs: []
+  - source_id: src_44b6d6f584535a273533712965405c509c56178a6c49055805fcbbf7524128a2
+    url: https://perkbook.co/vendor-directory/xero
+programs:
+  - program_id: prg_01kyyr9svhy3sy9mek6jrdnx43
+    program_slug: xero-for-startups
+    program_slug_aliases: []
+    title: Xero for Startups
+    summary: Xero for Startups program offers discounts on cloud accounting software for qualifying early-stage startups.
+    source_ids:
+      - src_44b6d6f584535a273533712965405c509c56178a6c49055805fcbbf7524128a2
 offers:
   - offer_id: off_01kyypqp9xt0zcgfjvpyncvejs
     offer_slug: xero-plans-80-off-first-3-months
@@ -52,3 +61,51 @@ offers:
       url: https://www.xero.com/au/small-businesses/startup/
     source_ids:
       - src_9b15185aa771c52c1d89f35b03b4f42245dffe8eae1a7e78c9fa15162a753119
+  - offer_id: off_01kyyr9svh3rrj9axka2qr0r66
+    program_id: prg_01kyyr9svhy3sy9mek6jrdnx43
+    offer_slug: 90-off-for-6-months-with-xero-for-startups
+    offer_slug_aliases: []
+    title: 90% off for 6 months with Xero for Startups
+    summary: Qualifying early-stage startups receive a 90% discount on Xero subscription plans for 6 months.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-01T08:17:55.653Z
+    economics:
+      benefits:
+        - applies_to: subscription
+          benefit_id: ben_01
+          description: 90% off subscription for 6 months
+          duration:
+            kind: exact
+            value: P6M
+          kind: discount
+          percentage:
+            basis_points: 9000
+            kind: exact
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.is_current_customer
+            kind: predicate
+            operator: eq
+            statement: New Xero customers only
+            value:
+              type: boolean
+              value: false
+          - criterion_id: cri_02
+            kind: manual
+            reason: not-machine-evaluable
+            statement: Any early-stage startup
+    roles:
+      terms_authority_entity_id: ent_01kyypqp9x4hw483erw4fnzdgy
+      access_operator_entity_id: ent_01kyyr9svgcxd42r9s8g3knssn
+    access:
+      availability: public
+      instructions: Apply via Startup Grind partner link or directly at xero.com/startups
+      method: other
+    source_ids:
+      - src_44b6d6f584535a273533712965405c509c56178a6c49055805fcbbf7524128a2

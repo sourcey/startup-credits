@@ -14,6 +14,8 @@ links:
 sources:
   - source_id: src_4410dda4d44891aad0cc0b21bb409ed3d27032c5bc1852a256708b3df0b1ff45
     url: https://stripe.com/startups
+  - source_id: src_5af15c175b972ada7f6e0487dc9385f214ca5825c52bf7ecdb54e53d1946183d
+    url: https://pulley.com/perks
 programs:
   - program_id: prg_01kyygma8309wepbqk3a8d21wm
     program_slug: stripe-startup-programme
@@ -63,3 +65,37 @@ offers:
       url: https://stripe.com/au/startups
     source_ids:
       - src_4410dda4d44891aad0cc0b21bb409ed3d27032c5bc1852a256708b3df0b1ff45
+  - offer_id: off_01kyyr9svgdkega07z9phrrjdn
+    offer_slug: 20-000-in-processing-credit
+    offer_slug_aliases: []
+    title: $20,000 in Processing Credit
+    summary: Get $20,000 in payment processing credits for Stripe.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-01T12:27:57.374Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: $20,000 in payment processing credit
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 2000000
+            kind: exact
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: constant
+        statement: Available to Pulley users.
+        value: true
+    roles:
+      terms_authority_entity_id: ent_01kyygma830fqh16kvj744sk1c
+      access_operator_entity_id: ent_01kyyr9svfavvhqt4vy0e0b25k
+    access:
+      availability: membership
+      method: other
+    source_ids:
+      - src_5af15c175b972ada7f6e0487dc9385f214ca5825c52bf7ecdb54e53d1946183d

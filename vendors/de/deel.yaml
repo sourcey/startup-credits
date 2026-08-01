@@ -16,6 +16,8 @@ sources:
     url: https://www.deel.com/segments/startups/
   - source_id: src_11482e30b1e1cf00925499a7a256cc5c36accecf3c0d790c06af55f3ccde94c7
     url: https://www.deel.com/segments/startups
+  - source_id: src_5af15c175b972ada7f6e0487dc9385f214ca5825c52bf7ecdb54e53d1946183d
+    url: https://pulley.com/perks
 programs: []
 offers:
   - offer_id: off_01kyh8fpe2r151y0shvrzcmkwt
@@ -85,3 +87,41 @@ offers:
       url: https://www.deel.com/segments/startups/
     source_ids:
       - src_11482e30b1e1cf00925499a7a256cc5c36accecf3c0d790c06af55f3ccde94c7
+  - offer_id: off_01kyyr9svgyw201n7evr25kcjb
+    offer_slug: up-to-5-000-in-deel-credits-and-free-us-payroll-for-founders
+    offer_slug_aliases: []
+    title: Up to $5,000 in Deel credits and free US Payroll for founders.
+    summary: Get up to $5,000 in Deel credits and free US Payroll.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-01T12:27:57.374Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to $5,000 in Deel credits
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 500000
+            kind: up-to
+        - benefit_id: ben_02
+          description: free US Payroll for founders
+          kind: free-service
+          service: US Payroll
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: constant
+        statement: Available to startup founders using Pulley.
+        value: true
+    roles:
+      terms_authority_entity_id: ent_01kyh8fpe2k0kd5rfqh8es0ccs
+      access_operator_entity_id: ent_01kyyr9svfavvhqt4vy0e0b25k
+    access:
+      availability: membership
+      method: other
+    source_ids:
+      - src_5af15c175b972ada7f6e0487dc9385f214ca5825c52bf7ecdb54e53d1946183d

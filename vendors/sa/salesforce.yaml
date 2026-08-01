@@ -14,7 +14,16 @@ links:
 sources:
   - source_id: src_de248238da7faac44fa1bff72d2bcf4525bc36ccdb8b20a93ad9bbedd00f3748
     url: https://www.salesforce.com/launchpad/?bc=OTH
-programs: []
+  - source_id: src_a6d9fdf624ddc31e96c7f991192cf02a9b45373c89aecfc03609393c55e35d69
+    url: https://perkbook.co/vendor-directory/salesforce
+programs:
+  - program_id: prg_01kyyr9svhvjac4av1162f05j1
+    program_slug: salesforce-launchpad
+    program_slug_aliases: []
+    title: Salesforce Launchpad
+    summary: Salesforce Launchpad gives venture-backed startups of all stages free and discounted access to Salesforce products - CRM; Agentforce; Slack; Tableau - plus expert GTM coaching; community; and ecosystem partnerships.
+    source_ids:
+      - src_a6d9fdf624ddc31e96c7f991192cf02a9b45373c89aecfc03609393c55e35d69
 offers:
   - offer_id: off_01kyh8fpe5a27280hssp9jdt7q
     offer_slug: salesforce-launchpad-free-and-discounted-solutions
@@ -47,3 +56,199 @@ offers:
       url: https://www.salesforce.com/launchpad/?bc=OTH
     source_ids:
       - src_de248238da7faac44fa1bff72d2bcf4525bc36ccdb8b20a93ad9bbedd00f3748
+  - offer_id: off_01kyyr9svh98n6tst8agy4n8wv
+    program_id: prg_01kyyr9svhvjac4av1162f05j1
+    offer_slug: 12-months-free-starter-suite-with-salesforce-launchpad
+    offer_slug_aliases: []
+    title: 12 months free Starter Suite with Salesforce Launchpad
+    summary: Venture-backed startups can access 12 months of free Starter Suite through the Salesforce Launchpad program.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-01T08:16:59.678Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 12 months free Starter Suite
+          duration:
+            kind: exact
+            value: P1Y
+          kind: free-service
+          service: Starter Suite
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: not-machine-evaluable
+            statement: Venture-backed or growth-stage startup
+          - criterion_id: cri_02
+            kind: manual
+            reason: external-verification
+            statement: Salesforce Launchpad member
+          - criterion_id: cri_03
+            fact: company.is_current_customer
+            kind: predicate
+            operator: eq
+            statement: New Starter Suite customers
+            value:
+              type: boolean
+              value: false
+    roles:
+      terms_authority_entity_id: ent_01kyh8fpe55a2m2njc8y4xs2df
+      access_operator_entity_id: ent_01kyyr9svgcxd42r9s8g3knssn
+    access:
+      availability: membership
+      method: form
+      url: https://perkbook.co/vendor-directory/salesforce
+    source_ids:
+      - src_a6d9fdf624ddc31e96c7f991192cf02a9b45373c89aecfc03609393c55e35d69
+  - offer_id: off_01kyyr9svhk9h0e6bapg0btkt4
+    program_id: prg_01kyyr9svhvjac4av1162f05j1
+    offer_slug: 25-off-slack-pro-or-business-with-salesforce-launchpad
+    offer_slug_aliases: []
+    title: 25% off Slack Pro or Business+ with Salesforce Launchpad
+    summary: Eligible startups with 200 or fewer employees receive 25% off Slack Pro or Business+ through Salesforce Launchpad.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-01T08:16:59.678Z
+    economics:
+      benefits:
+        - applies_to: Slack Pro or Business+
+          benefit_id: ben_01
+          description: 25% off Slack Pro or Business+
+          kind: discount
+          percentage:
+            basis_points: 2500
+            kind: exact
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: not-machine-evaluable
+            statement: Venture-backed or growth-stage startup
+          - criterion_id: cri_02
+            kind: manual
+            reason: external-verification
+            statement: Salesforce Launchpad member
+          - criterion_id: cri_03
+            fact: company.employee_count
+            kind: predicate
+            operator: lte
+            statement: 200 or fewer employees
+            value:
+              type: number
+              value: 200
+          - criterion_id: cri_04
+            fact: company.is_current_customer
+            kind: predicate
+            operator: eq
+            statement: New Slack customers
+            value:
+              type: boolean
+              value: false
+    roles:
+      terms_authority_entity_id: ent_01kyh8fpe55a2m2njc8y4xs2df
+      access_operator_entity_id: ent_01kyyr9svgcxd42r9s8g3knssn
+    access:
+      availability: membership
+      method: form
+      url: https://perkbook.co/vendor-directory/salesforce
+    source_ids:
+      - src_a6d9fdf624ddc31e96c7f991192cf02a9b45373c89aecfc03609393c55e35d69
+  - offer_id: off_01kyyr9svh8pman77qjzfxrjzd
+    program_id: prg_01kyyr9svhvjac4av1162f05j1
+    offer_slug: 50-off-pro-suite-with-salesforce-launchpad
+    offer_slug_aliases: []
+    title: 50% off Pro Suite with Salesforce Launchpad
+    summary: New Pro Suite customers who are Salesforce Launchpad members receive 50% off Pro Suite.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-01T08:16:59.678Z
+    economics:
+      benefits:
+        - applies_to: Pro Suite
+          benefit_id: ben_01
+          description: 50% off Pro Suite
+          kind: discount
+          percentage:
+            basis_points: 5000
+            kind: exact
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: not-machine-evaluable
+            statement: Venture-backed or growth-stage startup
+          - criterion_id: cri_02
+            kind: manual
+            reason: external-verification
+            statement: Salesforce Launchpad member
+          - criterion_id: cri_03
+            fact: company.is_current_customer
+            kind: predicate
+            operator: eq
+            statement: New Pro Suite customers
+            value:
+              type: boolean
+              value: false
+    roles:
+      terms_authority_entity_id: ent_01kyh8fpe55a2m2njc8y4xs2df
+      access_operator_entity_id: ent_01kyyr9svgcxd42r9s8g3knssn
+    access:
+      availability: membership
+      method: form
+      url: https://perkbook.co/vendor-directory/salesforce
+    source_ids:
+      - src_a6d9fdf624ddc31e96c7f991192cf02a9b45373c89aecfc03609393c55e35d69
+  - offer_id: off_01kyyr9svhdgk1rr8v16whzzk7
+    program_id: prg_01kyyr9svhvjac4av1162f05j1
+    offer_slug: 50-off-sales-cloud-enterprise-with-salesforce-launchpad
+    offer_slug_aliases: []
+    title: 50% off Sales Cloud Enterprise with Salesforce Launchpad
+    summary: Venture-backed or growth-stage startups in Salesforce Launchpad get 50% off Sales Cloud Enterprise.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-01T08:16:59.678Z
+    economics:
+      benefits:
+        - applies_to: Sales Cloud Enterprise
+          benefit_id: ben_01
+          description: 50% off Sales Cloud Enterprise
+          kind: discount
+          percentage:
+            basis_points: 5000
+            kind: exact
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: not-machine-evaluable
+            statement: Venture-backed or growth-stage startup
+          - criterion_id: cri_02
+            kind: manual
+            reason: external-verification
+            statement: Salesforce Launchpad member
+    roles:
+      terms_authority_entity_id: ent_01kyh8fpe55a2m2njc8y4xs2df
+      access_operator_entity_id: ent_01kyyr9svgcxd42r9s8g3knssn
+    access:
+      availability: membership
+      method: form
+      url: https://perkbook.co/vendor-directory/salesforce
+    source_ids:
+      - src_a6d9fdf624ddc31e96c7f991192cf02a9b45373c89aecfc03609393c55e35d69

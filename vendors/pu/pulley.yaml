@@ -1,0 +1,60 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kyyr9svfavvhqt4vy0e0b25k
+slug: pulley
+slug_aliases: []
+name: Pulley
+domains:
+  - value: pulley.com
+    role: primary
+    valid_from: 2026-08-01T13:29:02.000Z
+category: equity
+description: Pulley has helped thousands of companies manage their cap table and equity. Onboard with us today.
+links:
+  site: https://pulley.com
+sources:
+  - source_id: src_a4659f14a829868c42b77c01a286a3995330172a4358114042c00010c532816c
+    url: https://pulley.com/privacy
+  - source_id: src_ed107b1b269378ea0fa71e20da6f86dd93fb9d9bff167afbf4b60d7c500dcefb
+    url: https://site.pulley.com/techstars
+programs: []
+offers:
+  - offer_id: off_01kyyr9svgh90r2kg9j37jzdaw
+    offer_slug: pulley-for-techstars-1-year-free-cap-table-management
+    offer_slug_aliases: []
+    title: "Pulley for Techstars: 1 Year Free Cap Table Management"
+    summary: Techstars companies can sign up within 1 year of Demo Day to get 1 year free of Pulley's cap table management and equity platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-01T11:05:10.949Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: First year free of Pulley's equity management platform
+          duration:
+            kind: exact
+            value: P1Y
+          kind: free-service
+          service: Pulley cap table and equity management platform
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: external-verification
+            statement: Must be affiliated with Techstars (Techstars company).
+          - criterion_id: cri_02
+            kind: manual
+            reason: external-verification
+            statement: Sign up within 1 year of Demo Day.
+    roles:
+      terms_authority_entity_id: ent_01kyyr9svfavvhqt4vy0e0b25k
+      access_operator_entity_id: ent_01kyyr9svfavvhqt4vy0e0b25k
+    access:
+      availability: membership
+      method: form
+      url: https://site.pulley.com/techstars
+    source_ids:
+      - src_ed107b1b269378ea0fa71e20da6f86dd93fb9d9bff167afbf4b60d7c500dcefb

@@ -14,6 +14,8 @@ links:
 sources:
   - source_id: src_d19ab8f87d18dd699257e5a42cd736410ef08227d0e692940cae6deb10f48850
     url: https://ramp.com/startups
+  - source_id: src_5af15c175b972ada7f6e0487dc9385f214ca5825c52bf7ecdb54e53d1946183d
+    url: https://pulley.com/perks
 programs: []
 offers:
   - offer_id: off_01kyh8fpe4322h35pkyczap998
@@ -47,3 +49,32 @@ offers:
       url: https://ramp.com/startups
     source_ids:
       - src_d19ab8f87d18dd699257e5a42cd736410ef08227d0e692940cae6deb10f48850
+  - offer_id: off_01kyyr9svgg173dw51edxbh53y
+    offer_slug: 500-amazon-gift-card
+    offer_slug_aliases: []
+    title: $500 Amazon Gift card
+    summary: Receive a $500 Amazon Gift Card when signing up for Ramp.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-01T12:27:57.374Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: $500 Amazon Gift Card
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: constant
+        statement: Available to Pulley users.
+        value: true
+    roles:
+      terms_authority_entity_id: ent_01kyh8fpe4g7kgfr7x2skc0vt3
+      access_operator_entity_id: ent_01kyyr9svfavvhqt4vy0e0b25k
+    access:
+      availability: membership
+      method: other
+    source_ids:
+      - src_5af15c175b972ada7f6e0487dc9385f214ca5825c52bf7ecdb54e53d1946183d
