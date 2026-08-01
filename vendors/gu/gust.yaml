@@ -1,0 +1,52 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kyyn497f0nep173b2rpvn4nz
+slug: gust
+slug_aliases: []
+name: Gust
+domains:
+  - value: gust.com
+    role: primary
+    valid_from: 2026-08-01T07:22:37.901Z
+category: legal-compliance
+description: Gust Launch has everything you need to start, incorporate, and grow your company, including legal, cap table, fundraising, and governance tools.
+links:
+  site: https://gust.com/launch
+sources:
+  - source_id: src_a910f4d24d7a0c8a7322e66dd8df69940a065ee7930fc166274ad3e49f6b4987
+    url: https://gust.com/launch
+programs: []
+offers:
+  - offer_id: off_01kyyn497f8df0aqjnj52tg8y6
+    offer_slug: gust-launch-incorporation
+    offer_slug_aliases: []
+    title: Gust Launch Incorporation
+    summary: File online for a new Delaware C-Corporation and EIN, including company setup, stock issuance, board actions, agreements, and platform management.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-01T07:22:37.901Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Delaware C-Corporation incorporation and EIN filing
+          kind: free-service
+          service: Delaware C-Corporation incorporation and EIN filing
+      consideration:
+        amount:
+          currency: USD
+          minor_units: 45000
+        kind: fixed
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: constant
+        statement: Open to startups seeking online Delaware C-Corporation incorporation and entity management.
+        value: true
+    roles:
+      terms_authority_entity_id: ent_01kyyn497f0nep173b2rpvn4nz
+      access_operator_entity_id: ent_01kyyn497f0nep173b2rpvn4nz
+    access:
+      availability: public
+      method: form
+      url: https://gust.com/launch/
+    source_ids:
+      - src_a910f4d24d7a0c8a7322e66dd8df69940a065ee7930fc166274ad3e49f6b4987

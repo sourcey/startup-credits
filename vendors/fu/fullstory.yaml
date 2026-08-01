@@ -1,0 +1,49 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kyyn497eydcx3scesdb2vywe
+slug: fullstory
+slug_aliases: []
+name: Fullstory
+domains:
+  - value: fullstory.com
+    role: primary
+    valid_from: 2026-08-01T10:31:29.847Z
+category: observability
+description: Behavioral data platform
+links:
+  site: https://www.fullstory.com
+sources:
+  - source_id: src_46f0bb3d2f7965dd176d1926e99e0073ed5481f7d71199a508b20d72b74b03b7
+    url: https://www.fullstory.com/startup
+programs: []
+offers:
+  - offer_id: off_01kyyn497fqyxnxvbhq18bp1kn
+    offer_slug: fullstory-startup-plan
+    offer_slug_aliases: []
+    title: Fullstory Startup Plan
+    summary: Special plan offered to qualifying early-stage businesses to help them manage and optimize their digital customer experience.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-01T10:31:29.847Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Access to the Fullstory Startup Plan for early-stage businesses.
+          kind: other
+      consideration:
+        description: Specific pricing and consideration details are not stated on the page.
+        kind: unknown
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Must be a qualifying, early-stage business.
+    roles:
+      terms_authority_entity_id: ent_01kyyn497eydcx3scesdb2vywe
+      access_operator_entity_id: ent_01kyyn497eydcx3scesdb2vywe
+    access:
+      availability: public
+      method: contact
+      url: https://www.fullstory.com/startup/
+    source_ids:
+      - src_46f0bb3d2f7965dd176d1926e99e0073ed5481f7d71199a508b20d72b74b03b7

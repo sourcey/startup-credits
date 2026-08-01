@@ -1,0 +1,53 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kyyn497f929rqvgqcbzpdt5w
+slug: socket
+slug_aliases: []
+name: Socket
+domains:
+  - value: socket.dev
+    role: primary
+    valid_from: 2026-08-01T10:27:29.811Z
+category: auth-security
+description: Socket fights vulnerabilities and provides visibility, defense-in-depth, and proactive supply chain protection for JavaScript, Python, and Go dependencies.
+links:
+  site: https://socket.dev
+sources:
+  - source_id: src_311123bcaa11c9f839c421e584d9f1270b07f22536e734f97e4b7be714595642
+    url: https://socket.dev/pricing
+programs: []
+offers:
+  - offer_id: off_01kyyn497fx5a6tydrkvs2fwcy
+    offer_slug: startup-special-pricing
+    offer_slug_aliases: []
+    title: Startup Special Pricing
+    summary: Special pricing available for early stage startups upon contacting Socket.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-01T10:27:29.811Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Special discounted pricing for early stage startups.
+          kind: other
+      consideration:
+        description: Contact Socket for pricing details
+        kind: unknown
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        fact: company.stage
+        kind: predicate
+        operator: eq
+        statement: Must be an early stage startup.
+        value:
+          type: string
+          value: early-stage
+    roles:
+      terms_authority_entity_id: ent_01kyyn497f929rqvgqcbzpdt5w
+      access_operator_entity_id: ent_01kyyn497f929rqvgqcbzpdt5w
+    access:
+      availability: public
+      method: contact
+      url: https://socket.dev/pricing
+    source_ids:
+      - src_311123bcaa11c9f839c421e584d9f1270b07f22536e734f97e4b7be714595642

@@ -1,0 +1,93 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kyyn497f41473xthwzfbdp7z
+slug: payhawk
+slug_aliases: []
+name: Payhawk
+domains:
+  - value: payhawk.com
+    role: primary
+    valid_from: 2026-08-01T07:00:43.182Z
+category: finance-accounting
+description: Payhawk's Growth Program empowers small businesses with an enterprise-ready spend management solution, enabling them to control spending at a fraction of the cost.
+links:
+  site: https://payhawk.com
+sources:
+  - source_id: src_17af9bae0ec5d2db056dac7a73239a3d14b081176d5dbd3f9b8b8f505b756376
+    url: https://payhawk.com/growth-program
+programs:
+  - program_id: prg_01kyyn497f1kh3eh44enqfav41
+    program_slug: growth-program
+    program_slug_aliases: []
+    title: Growth Program
+    summary: Payhawk's Growth Program offers small businesses an enterprise-ready solution to control spending at a fraction of the regular price.
+    source_ids:
+      - src_17af9bae0ec5d2db056dac7a73239a3d14b081176d5dbd3f9b8b8f505b756376
+offers:
+  - offer_id: off_01kyyn497f4kw7n874rmkjdtdc
+    program_id: prg_01kyyn497f1kh3eh44enqfav41
+    offer_slug: payhawk-growth-program
+    offer_slug_aliases: []
+    title: Payhawk Growth Program
+    summary: Discounted spend management package for small businesses in the EEA or UK with up to 10 employees, offering full spend management features for up to 2 years.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-01T07:00:43.182Z
+    economics:
+      benefits:
+        - applies_to: Payhawk spend management plan
+          benefit_id: ben_01
+          description: Access to Payhawk spend management product suite including 10 debit cards, 8 employee seats, 2 admin/accountant seats, unlimited card transactions, and 15 reimbursements and 15 invoices per month for 2 years.
+          kind: discount
+          percentage:
+            basis_points: 8500
+            kind: exact
+      consideration:
+        description: £149 per month
+        kind: variable
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.is_current_customer
+            kind: predicate
+            operator: eq
+            statement: Must not be an existing Payhawk customer
+            value:
+              type: boolean
+              value: false
+          - criterion_id: cri_02
+            fact: company.employee_count
+            kind: predicate
+            operator: lt
+            statement: Must have fewer than 10 employees
+            value:
+              type: number
+              value: 10
+          - criterion_id: cri_03
+            fact: company.country_code
+            kind: predicate
+            operator: in
+            statement: Company must be registered in the EEA or UK
+            value:
+              type: string-set
+              values:
+                - EEA
+                - UK
+          - criterion_id: cri_04
+            kind: manual
+            reason: external-verification
+            statement: In the UK, services are not available for micro-enterprises or small charities as defined in the UK Consumer Duty Regulations (less than 10 people and turnover or balance sheet under €2 million)
+          - criterion_id: cri_05
+            kind: manual
+            reason: vendor-discretion
+            statement: If part of a group, must not be applying as the parent entity
+    roles:
+      terms_authority_entity_id: ent_01kyyn497f41473xthwzfbdp7z
+      access_operator_entity_id: ent_01kyyn497f41473xthwzfbdp7z
+    access:
+      availability: public
+      method: form
+      url: https://payhawk.com/growth-program
+    source_ids:
+      - src_17af9bae0ec5d2db056dac7a73239a3d14b081176d5dbd3f9b8b8f505b756376

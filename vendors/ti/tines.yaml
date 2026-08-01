@@ -1,0 +1,64 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kyyn497f8c2dh8ts6zrpppyj
+slug: tines
+slug_aliases: []
+name: Tines
+domains:
+  - value: tines.com
+    role: primary
+    valid_from: 2026-08-01T06:54:01.858Z
+category: no-code
+description: Tines 3B enables every team to build AI agents, apps, and automation in one safe, secure environment — with the control Security and IT need to govern it at scale.
+links:
+  site: https://www.tines.com/
+sources:
+  - source_id: src_79ad9ae83a71dce689e705f5e67f59369dbef1f68797d0d317154c12360bb762
+    url: https://www.tines.com/pricing
+programs: []
+offers:
+  - offer_id: off_01kyyn497f73w67140rrsyppvq
+    offer_slug: tines-startup-program
+    offer_slug_aliases: []
+    title: Tines Startup Program
+    summary: A heavily-discounted, fully-featured Tines Stories tenant for small, growing teams.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-01T06:54:01.858Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Heavily-discounted rate on a fully-featured Tines Stories tenant.
+          kind: other
+      consideration:
+        description: Specific discounted pricing is determined upon contact or application with the vendor.
+        kind: unknown
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: vendor-discretion
+            statement: Small, growing team (subject to vendor evaluation).
+          - kind: not
+            rule:
+              criterion_id: cri_02
+              fact: company.industry
+              kind: predicate
+              operator: in
+              statement: Services companies (e.g. managed services providers, consultancies, holding companies, etc) are excluded.
+              value:
+                type: string-set
+                values:
+                  - managed services provider
+                  - consultancy
+                  - holding company
+    roles:
+      terms_authority_entity_id: ent_01kyyn497f8c2dh8ts6zrpppyj
+      access_operator_entity_id: ent_01kyyn497f8c2dh8ts6zrpppyj
+    access:
+      availability: public
+      method: contact
+      url: https://www.tines.com/pricing
+    source_ids:
+      - src_79ad9ae83a71dce689e705f5e67f59369dbef1f68797d0d317154c12360bb762

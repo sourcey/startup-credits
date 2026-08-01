@@ -1,0 +1,53 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kyyn497fymbxq5b9t4er223p
+slug: mercury-technologies-inc
+slug_aliases: []
+name: Mercury Technologies, Inc
+domains:
+  - value: mercury.com
+    role: primary
+    valid_from: 2026-08-01T07:24:19.717Z
+category: banking
+description: Everything you do with money. All in one place. Apply in 10 minutes for business banking that transforms how you operate.
+links:
+  site: https://mercury.com/
+sources:
+  - source_id: src_f14375d57b4e5a5fecf6bde4ff61275a7df49f74fe04845234e9b6039823764f
+    url: https://mercury.com/
+programs: []
+offers:
+  - offer_id: off_01kyyn497f34trvz4y3ym44xf3
+    offer_slug: mercury-business-credit-card-cashback
+    offer_slug_aliases: []
+    title: Mercury Business Credit Card Cashback
+    summary: Earn 1.5% cashback on credit card spend with unlimited, automatic deposits into your Mercury account.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-01T07:24:19.717Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 1.5% cashback on credit card spend automatically deposited into your account.
+          kind: cashback
+          value:
+            kind: percentage
+            value:
+              basis_points: 150
+              kind: exact
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Access business credit cards as soon as day one — no minimums, credit checks, or personal guarantees.
+    roles:
+      terms_authority_entity_id: ent_01kyyn497fymbxq5b9t4er223p
+      access_operator_entity_id: ent_01kyyn497fymbxq5b9t4er223p
+    access:
+      availability: public
+      method: form
+      url: https://mercury.com/
+    source_ids:
+      - src_f14375d57b4e5a5fecf6bde4ff61275a7df49f74fe04845234e9b6039823764f

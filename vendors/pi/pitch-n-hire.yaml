@@ -1,0 +1,87 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kyyn497fdszj65rx1evphhmw
+slug: pitch-n-hire
+slug_aliases: []
+name: Pitch N Hire
+domains:
+  - value: pitchnhire.com
+    role: primary
+    valid_from: 2026-08-01T07:01:42.426Z
+category: hr-people
+description: Pitch N Hire is an AI-native applicant tracking system (ATS) that unifies sourcing, screening, and hiring decisions on one platform, with native AI video interviews and candidate sourcing.
+links:
+  site: https://www.pitchnhire.com/
+sources:
+  - source_id: src_75e5fe6196ce1e46bebcb4de303a24a8b6c5d862633391cab5bfd9c70fc8724a
+    url: https://pitchnhire.com/startup-program
+programs:
+  - program_id: prg_01kyyn497fepf8zp54256193zh
+    program_slug: pitch-n-hire-startup-program
+    program_slug_aliases: []
+    title: Pitch N Hire Startup Program
+    summary: Pitch N Hire's Startup Program offers early-stage, unfunded startups under 3 years old and under $1M in annual revenue special discounted rates on their Standard ATS for up to 3 users.
+    source_ids:
+      - src_75e5fe6196ce1e46bebcb4de303a24a8b6c5d862633391cab5bfd9c70fc8724a
+offers:
+  - offer_id: off_01kyyn497f2bx2j8w1js48b1am
+    program_id: prg_01kyyn497fepf8zp54256193zh
+    offer_slug: pitch-n-hire-startup-program-discount
+    offer_slug_aliases: []
+    title: Pitch N Hire Startup Program Discount
+    summary: Eligible early-stage startups receive special discounted rates on Pitch N Hire's Standard ATS for up to 3 users.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-01T07:01:42.426Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Special discounted rates on the Standard ATS for up to 3 users.
+          kind: other
+      consideration:
+        description: The captured page states startups receive special discounted rates for Standard ATS up to 3 users, but exact pricing amounts are determined upon application review.
+        kind: unknown
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.age_months
+            kind: predicate
+            operator: lt
+            statement: Your business must be a registered startup (less than 3 years old).
+            value:
+              type: number
+              value: 36
+          - criterion_id: cri_02
+            fact: company.annual_revenue_usd
+            kind: predicate
+            operator: lt
+            statement: Annual revenue should be under $1 million.
+            value:
+              type: number
+              value: 1000000
+          - criterion_id: cri_03
+            fact: company.is_current_customer
+            kind: predicate
+            operator: eq
+            statement: Only applicable to new customers signing up for the first time.
+            value:
+              type: boolean
+              value: false
+          - criterion_id: cri_04
+            fact: company.funding_raised_usd
+            kind: predicate
+            operator: eq
+            statement: Your startup should not have secured any funding yet.
+            value:
+              type: number
+              value: 0
+    roles:
+      terms_authority_entity_id: ent_01kyyn497fdszj65rx1evphhmw
+      access_operator_entity_id: ent_01kyyn497fdszj65rx1evphhmw
+    access:
+      availability: public
+      method: form
+      url: https://www.pitchnhire.com/startup-program
+    source_ids:
+      - src_75e5fe6196ce1e46bebcb4de303a24a8b6c5d862633391cab5bfd9c70fc8724a
