@@ -51,7 +51,6 @@ jobs:
             --strip-components=1 \
             -C "$RUNNER_TEMP/candidate-verifier"
       - name: Validate only the changed identity closure
-        id: change
         env:
           BASE_REVISION: ${{ github.event.pull_request.base.sha }}
           HEAD_REVISION: ${{ github.event.pull_request.head.sha }}
@@ -61,38 +60,19 @@ jobs:
             --repository "$GITHUB_WORKSPACE" \
             --base "$BASE_REVISION" \
             --head "$HEAD_REVISION"
-          if git diff --quiet "$BASE_REVISION" "$HEAD_REVISION" -- vendors; then
-            echo "vendors=false" >> "$GITHUB_OUTPUT"
-          else
-            echo "vendors=true" >> "$GITHUB_OUTPUT"
-          fi
-      - name: Verify the exact reviewed data admission
-        if: steps.change.outputs.vendors == 'true'
+      - name: Verify Developer Certificate of Origin sign-off
         env:
+          BASE_REVISION: ${{ github.event.pull_request.base.sha }}
           HEAD_REVISION: ${{ github.event.pull_request.head.sha }}
         run: |
-          source_tree="$(git rev-parse "$HEAD_REVISION^{tree}")"
-          origin="https://artifacts.sourcey.com/catalog/data/admissions/tree-${source_tree}"
-          archive="sourcey-catalog-admission.tar.gz"
-          curl --fail-with-body --silent --show-error --max-time 120 \
-            --output "$RUNNER_TEMP/$archive" "$origin/$archive"
-          curl --fail-with-body --silent --show-error --max-time 120 \
-            --output "$RUNNER_TEMP/$archive.sha256" "$origin/$archive.sha256"
-          (
-            cd "$RUNNER_TEMP"
-            sha256sum --check "$archive.sha256"
-          )
-          tar -tzf "$RUNNER_TEMP/$archive" > "$RUNNER_TEMP/admission-members.txt"
-          if grep -Eq '(^$|^/|(^|/)\.\.?(/|$)|\\)' "$RUNNER_TEMP/admission-members.txt"; then
-            echo "Admission archive contains an unsafe member path." >&2
-            exit 1
-          fi
-          if sort "$RUNNER_TEMP/admission-members.txt" | uniq -d | grep -q .; then
-            echo "Admission archive repeats a member path." >&2
-            exit 1
-          fi
-          if tar -tvzf "$RUNNER_TEMP/$archive" \
-            | awk 'substr($0, 1, 1) != "-" { found=1 } END { exit !found }'; then
-            echo "Admission archive contains a non-regular member." >&2
+          missing=()
+          while IFS= read -r commit; do
+            if ! git show -s --format=%B "$commit" \
+              | grep -Eq '^Signed-off-by: .+ <[^>]+>$'; then
+              missing+=("$commit")
+            fi
+          done < <(git rev-list "$BASE_REVISION..$HEAD_REVISION")
+          if (( ${#missing[@]} > 0 )); then
+            printf 'Commits missing Signed-off-by certification:\n%s\n' "${missing[*]}" >&2
             exit 1
           fi

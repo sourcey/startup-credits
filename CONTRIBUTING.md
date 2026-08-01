@@ -19,7 +19,9 @@ that identity-derived path.
 - Sign off commits using `Signed-off-by: Name <email>` to certify the
   [Developer Certificate of Origin](https://developercertificate.org/).
 
-CI validates only the changed dependency closure through the exact
-digest-pinned Sourcey Candidate Verifier. A required external admission check
-binds evidence to the exact pull-request head. Once an admitted pull request is
-merged, publication and live activation are automatic.
+The repository's `validate` check validates only the changed dependency closure
+through the exact digest-pinned Sourcey Candidate Verifier and enforces the DCO.
+Sourcey's separate required `sourcey/admission` check proves that private,
+replayable evidence and authority were admitted for the exact pull-request Git
+tree; contributors never upload that private material. Once both checks pass and
+the pull request is merged, publication and live activation are automatic.
