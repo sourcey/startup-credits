@@ -1,0 +1,107 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kyypqp9xn8ymms4jtyhc4npw
+slug: freshworks
+slug_aliases: []
+name: Freshworks
+domains:
+  - value: freshworks.com
+    role: primary
+    valid_from: 2026-08-01T12:56:46.088Z
+category: crm-sales
+description: Freshworks provides software tools for sales, marketing, and support including Freshsales, Freshdesk, and Freshchat.
+links:
+  site: https://www.freshworks.com
+sources:
+  - source_id: src_0a52c5f034e4feadb8168735d025d77121e252e5a06bd1e94275e85566ec81f3
+    url: https://www.freshworks.com/company/partners/startup-program
+programs:
+  - program_id: prg_01kyypqp9xcjqgk9xac9rxjzpf
+    program_slug: freshworks-for-startups
+    program_slug_aliases: []
+    title: Freshworks for Startups
+    summary: Freshworks program providing discounts on product suites to startups associated with partner VCs, accelerators, and incubators.
+    source_ids:
+      - src_0a52c5f034e4feadb8168735d025d77121e252e5a06bd1e94275e85566ec81f3
+offers:
+  - offer_id: off_01kyypqp9xgz8mheqg704c62d5
+    program_id: prg_01kyypqp9xcjqgk9xac9rxjzpf
+    offer_slug: freshworks-for-startups-discount-under-4m-raised
+    offer_slug_aliases: []
+    title: Freshworks for Startups Discount (Under $4M Raised)
+    summary: Eligible startups with up to $4 million in funding receive 90% off in their first year, 50% off in year two, and 25% off from year three onwards on Freshworks Pro plans for accounts under 30 agents.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-01T12:56:46.088Z
+    economics:
+      benefits:
+        - applies_to: Pro plans
+          benefit_id: ben_01
+          description: 90% off Pro plans in the first year
+          duration:
+            kind: exact
+            value: P1Y
+          kind: discount
+          percentage:
+            basis_points: 9000
+            kind: exact
+        - applies_to: Pro plans
+          benefit_id: ben_02
+          description: 50% off Pro plans in the second year
+          duration:
+            kind: exact
+            value: P1Y
+          kind: discount
+          percentage:
+            basis_points: 5000
+            kind: exact
+        - applies_to: Pro plans
+          benefit_id: ben_03
+          description: 25% off Pro plans 3rd year onwards
+          kind: discount
+          percentage:
+            basis_points: 2500
+            kind: exact
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.partner_memberships
+            kind: predicate
+            operator: present
+            statement: Must be associated with a Freshworks partner
+          - criterion_id: cri_02
+            fact: company.funding_raised_usd
+            kind: predicate
+            operator: lte
+            statement: Total funding received must be less than or equal to USD 4 million
+            value:
+              type: number
+              value: 4000000
+          - criterion_id: cri_03
+            fact: company.is_current_customer
+            kind: predicate
+            operator: eq
+            statement: Must be a new customer or on a free plan
+            value:
+              type: boolean
+              value: false
+          - criterion_id: cri_04
+            fact: company.employee_count
+            kind: predicate
+            operator: lt
+            statement: Account must have fewer than 30 agents
+            value:
+              type: number
+              value: 30
+    roles:
+      terms_authority_entity_id: ent_01kyypqp9xn8ymms4jtyhc4npw
+      access_operator_entity_id: ent_01kyypqp9xn8ymms4jtyhc4npw
+    access:
+      availability: referral
+      method: form
+      url: https://www.freshworks.com/company/partners/startup-program/
+    source_ids:
+      - src_0a52c5f034e4feadb8168735d025d77121e252e5a06bd1e94275e85566ec81f3

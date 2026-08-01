@@ -1,0 +1,103 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kyypqp9xhfg48ahr7mzen3ks
+slug: imagekit
+slug_aliases: []
+name: ImageKit
+domains:
+  - value: imagekit.io
+    role: primary
+    valid_from: 2026-08-01T12:56:03.394Z
+category: hosting-infra
+description: Helping startups streamline image and video delivery and management for the web
+links:
+  site: https://imagekit.io
+sources:
+  - source_id: src_cecce3421b2866fa66624dbeb4abce438ce0a05bf59d1b7058f967f84d795e24
+    url: https://imagekit.io/startup-program
+programs:
+  - program_id: prg_01kyypqp9x1dsvsdfvwa51pt63
+    program_slug: imagekit-startup-program
+    program_slug_aliases: []
+    title: ImageKit Startup Program
+    summary: ImageKit Startup Program offers usage-based discounted pricing and media management tools to eligible VC-, incubator-, and accelerator-backed startups.
+    source_ids:
+      - src_cecce3421b2866fa66624dbeb4abce438ce0a05bf59d1b7058f967f84d795e24
+offers:
+  - offer_id: off_01kyypqp9x66145g8gkwd47xh2
+    program_id: prg_01kyypqp9x1dsvsdfvwa51pt63
+    offer_slug: imagekit-startup-program
+    offer_slug_aliases: []
+    title: ImageKit Startup Program
+    summary: Eligible early-stage startups backed by recognized accelerators, incubators, or VCs get discounted usage-based pricing on media delivery bandwidth, DAM storage, processing units, custom domains, and extra users with no monthly fixed costs.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-01T12:56:03.394Z
+    economics:
+      benefits:
+        - applies_to: ImageKit media delivery, storage, processing, and usage-based features
+          benefit_id: ben_01
+          description: "Exclusive startup discounts on all billing components: bandwidth ($0.10/GB), storage ($8/100GB), Video Processing Units ($8/10K units), Extension Units ($8/5K units), Custom Domain ($8/month), and additional users ($8 each) with no monthly fixed costs."
+          kind: discount
+          percentage:
+            basis_points: 10000
+            kind: exact
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.age_months
+            kind: predicate
+            operator: lt
+            statement: Startup must be less than 4 years old.
+            value:
+              type: number
+              value: 48
+          - criterion_id: cri_02
+            kind: manual
+            reason: external-verification
+            statement: Must be associated with an accelerator, incubator, or VC firm mentioned by ImageKit, supported by proof (public announcement, verification email, or partner letter).
+          - criterion_id: cri_03
+            fact: company.funding_raised_usd
+            kind: predicate
+            operator: lte
+            statement: Must have raised up to $20 million in funding.
+            value:
+              type: number
+              value: 20000000
+          - criterion_id: cri_04
+            fact: company.has_working_website_or_app
+            kind: predicate
+            operator: eq
+            statement: Must have a working company website or app.
+            value:
+              type: boolean
+              value: true
+          - criterion_id: cri_05
+            fact: company.is_current_customer
+            kind: predicate
+            operator: eq
+            statement: Must not be an existing paid customer of ImageKit.
+            value:
+              type: boolean
+              value: false
+          - criterion_id: cri_06
+            kind: manual
+            reason: external-verification
+            statement: Must not have received previous ImageKit credits.
+          - criterion_id: cri_07
+            kind: manual
+            reason: external-verification
+            statement: Must sign up using a business email.
+    roles:
+      terms_authority_entity_id: ent_01kyypqp9xhfg48ahr7mzen3ks
+      access_operator_entity_id: ent_01kyypqp9xhfg48ahr7mzen3ks
+    access:
+      availability: public
+      method: form
+      url: https://imagekit.io/startup-program
+    terms_url: https://imagekit.io/startup-program
+    source_ids:
+      - src_cecce3421b2866fa66624dbeb4abce438ce0a05bf59d1b7058f967f84d795e24

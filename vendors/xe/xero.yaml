@@ -1,0 +1,54 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kyypqp9x4hw483erw4fnzdgy
+slug: xero
+slug_aliases: []
+name: Xero
+domains:
+  - value: xero.com
+    role: primary
+    valid_from: 2026-08-01T12:57:23.902Z
+category: finance-accounting
+description: Intuitive accounting software providing bookkeeping, invoicing, and cash flow tracking.
+links:
+  site: https://www.xero.com
+sources:
+  - source_id: src_9b15185aa771c52c1d89f35b03b4f42245dffe8eae1a7e78c9fa15162a753119
+    url: https://www.xero.com/au/startups
+programs: []
+offers:
+  - offer_id: off_01kyypqp9xt0zcgfjvpyncvejs
+    offer_slug: xero-plans-80-off-first-3-months
+    offer_slug_aliases: []
+    title: Xero Plans 80% Off First 3 Months
+    summary: Get 80% off Xero plans for the first 3 months.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-01T12:57:23.902Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 80% discount on plan price for the first 3 months
+          duration:
+            kind: exact
+            value: P3M
+          kind: discount
+          percentage:
+            basis_points: 8000
+            kind: exact
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: constant
+        statement: Available for Xero plan purchases as presented on page
+        value: true
+    roles:
+      terms_authority_entity_id: ent_01kyypqp9x4hw483erw4fnzdgy
+      access_operator_entity_id: ent_01kyypqp9x4hw483erw4fnzdgy
+    access:
+      availability: public
+      method: form
+      url: https://www.xero.com/au/small-businesses/startup/
+    source_ids:
+      - src_9b15185aa771c52c1d89f35b03b4f42245dffe8eae1a7e78c9fa15162a753119

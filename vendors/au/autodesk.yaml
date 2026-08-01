@@ -14,6 +14,8 @@ links:
 sources:
   - source_id: src_0cc9c54ff00a1c374e9b96d2ff30d32618f6b18598e44c4bede5d50d754bcfcc
     url: https://www.autodesk.com/products/fusion-360/startups
+  - source_id: src_02aeef534dae2cbac5e9f78db5835e1c4b06595d9e459205ce1e3cbaf197ebf7
+    url: https://www.autodesk.com/sustainability/technology-impact-program
 programs:
   - program_id: prg_01kyxthgprfn3x2yekadhrd83f
     program_slug: fusion-startup-program
@@ -22,6 +24,13 @@ programs:
     summary: Autodesk's program offering qualifying startups and entrepreneurs access to Autodesk Fusion.
     source_ids:
       - src_0cc9c54ff00a1c374e9b96d2ff30d32618f6b18598e44c4bede5d50d754bcfcc
+  - program_id: prg_01kyypqp9wvpk9r9s0qd7ptaew
+    program_slug: technology-impact-program
+    program_slug_aliases: []
+    title: Technology Impact Program
+    summary: Autodesk donates software to nonprofits and startups that are using design for environmental or social good.
+    source_ids:
+      - src_02aeef534dae2cbac5e9f78db5835e1c4b06595d9e459205ce1e3cbaf197ebf7
 offers:
   - offer_id: off_01kyxthgpsbxen55xqbsg5cv6f
     program_id: prg_01kyxthgprfn3x2yekadhrd83f
@@ -125,3 +134,60 @@ offers:
     terms_url: https://www.autodesk.com/company/terms-of-use/en/general-terms
     source_ids:
       - src_0cc9c54ff00a1c374e9b96d2ff30d32618f6b18598e44c4bede5d50d754bcfcc
+  - offer_id: off_01kyypqp9xfg8j49fn9r985pds
+    program_id: prg_01kyypqp9wvpk9r9s0qd7ptaew
+    offer_slug: technology-impact-program-for-startups
+    offer_slug_aliases: []
+    title: Technology Impact Program for Startups
+    summary: Eligible social impact startups receive donated Autodesk software subscriptions for three years.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-01T11:36:16.812Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Donated 3-year Autodesk software subscriptions for social impact startups.
+          duration:
+            kind: exact
+            value: P3Y
+          kind: free-service
+          service: Autodesk software subscriptions
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.age_months
+            kind: predicate
+            operator: lt
+            statement: Startup must be less than six years old.
+            value:
+              type: number
+              value: 72
+          - criterion_id: cri_02
+            fact: company.employee_count
+            kind: predicate
+            operator: lte
+            statement: Startup must have 10 or fewer employees.
+            value:
+              type: number
+              value: 10
+          - criterion_id: cri_03
+            kind: manual
+            reason: external-verification
+            statement: Startup must earn annual revenue of less than $1 million USD.
+          - criterion_id: cri_04
+            kind: manual
+            reason: not-machine-evaluable
+            statement: Startup must innovate in a social or environmental impact area.
+    roles:
+      terms_authority_entity_id: ent_01kyxthgpr3a3ds3stc9xvvrgt
+      access_operator_entity_id: ent_01kyxthgpr3a3ds3stc9xvvrgt
+    access:
+      availability: public
+      method: form
+      url: https://autodesk.fluxx.io/apply/technology-impact-program-nonprofit
+    source_ids:
+      - src_02aeef534dae2cbac5e9f78db5835e1c4b06595d9e459205ce1e3cbaf197ebf7

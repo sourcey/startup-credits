@@ -1,0 +1,156 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kyypqp9x1fgh5rtq71mrtakc
+slug: aiven
+slug_aliases: []
+name: Aiven
+domains:
+  - value: aiven.io
+    role: primary
+    valid_from: 2026-08-01T12:56:21.965Z
+category: databases
+description: Aiven makes setting up and running cloud data infrastructure simple, secure, and fully managed, offering reliable open-source technologies on major cloud platforms.
+links:
+  site: https://aiven.io
+sources:
+  - source_id: src_3228f71d4029385215c61272d11450d0864cb3ff305d1a283b8443e85eaf4492
+    url: https://aiven.io/startups
+programs:
+  - program_id: prg_01kyypqp9x2exr1pg3rheyh3vn
+    program_slug: aiven-for-startups
+    program_slug_aliases: []
+    title: Aiven for Startups
+    summary: Offers data infra support to up and coming startups so they can scale up and grow.
+    source_ids:
+      - src_3228f71d4029385215c61272d11450d0864cb3ff305d1a283b8443e85eaf4492
+offers:
+  - offer_id: off_01kyypqp9xca0ahxwc1hg383cz
+    program_id: prg_01kyypqp9x2exr1pg3rheyh3vn
+    offer_slug: aiven-for-startups
+    offer_slug_aliases: []
+    title: Aiven for Startups
+    summary: Get up to $100,000 in Aiven credits to run fully managed open-source data services for 12 months, plus technical guidance, mentoring, community access, and promotion.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-01T12:56:21.965Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to $100,000 in Aiven credits to run fully managed open-source data services.
+          duration:
+            kind: exact
+            value: P12M
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 10000000
+            kind: up-to
+        - benefit_id: ben_02
+          description: Direct access to technical experts and startup advisors for office hours and 1:1 mentoring.
+          kind: other
+        - benefit_id: ben_03
+          description: Access to Startup Slack for community support and knowledge sharing.
+          kind: other
+        - benefit_id: ben_04
+          description: Opportunities for promotion on Aiven blog, social channels, and events.
+          kind: other
+        - benefit_id: ben_05
+          description: Special virtual events tailored for startups on scaling data infrastructure and product development.
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.age_months
+            kind: predicate
+            operator: lte
+            statement: Startup was founded no more than 7 years ago.
+            value:
+              type: number
+              value: 84
+          - criterion_id: cri_02
+            fact: company.stage
+            kind: predicate
+            operator: in
+            statement: Startup has raised external funding up to Series B.
+            value:
+              type: string-set
+              values:
+                - pre-seed
+                - seed
+                - series-a
+                - series-b
+          - criterion_id: cri_03
+            fact: company.business_email_present
+            kind: predicate
+            operator: eq
+            statement: Startup must apply with a company website and business email address.
+            value:
+              type: boolean
+              value: true
+          - kind: not
+            rule:
+              criterion_id: cri_04
+              fact: company.industry
+              kind: predicate
+              operator: in
+              statement: Agencies, consulting companies, NGOs, or educational institutions are not eligible.
+              value:
+                type: string-set
+                values:
+                  - agency
+                  - consulting
+                  - ngo
+                  - educational-institution
+          - kind: any
+            rules:
+              - criterion_id: cri_05
+                fact: company.partner_memberships
+                kind: predicate
+                operator: contains
+                statement: Proof of affiliation with a VC investor.
+                value:
+                  type: string
+                  value: vc_investor
+              - criterion_id: cri_06
+                fact: company.partner_memberships
+                kind: predicate
+                operator: contains
+                statement: Affiliation with an accelerator, incubator, or co-working space in Aiven's partner network.
+                value:
+                  type: string
+                  value: partner_network
+          - kind: any
+            rules:
+              - criterion_id: cri_07
+                fact: company.is_current_customer
+                kind: predicate
+                operator: eq
+                statement: Not a current paying Aiven customer.
+                value:
+                  type: boolean
+                  value: false
+              - criterion_id: cri_08
+                fact: company.monthly_invoice_usd
+                kind: predicate
+                operator: lt
+                statement: Current paying customer with a monthly invoice under $400.
+                value:
+                  type: number
+                  value: 400
+          - criterion_id: cri_09
+            kind: manual
+            reason: external-verification
+            statement: Applicant has not previously received Startup credits.
+    roles:
+      terms_authority_entity_id: ent_01kyypqp9x1fgh5rtq71mrtakc
+      access_operator_entity_id: ent_01kyypqp9x1fgh5rtq71mrtakc
+    access:
+      availability: public
+      method: form
+      url: https://aiven.io/startups
+    source_ids:
+      - src_3228f71d4029385215c61272d11450d0864cb3ff305d1a283b8443e85eaf4492
