@@ -1,0 +1,70 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kyxthgq0zvqdgfges3ksm4s0
+slug: onshape
+slug_aliases: []
+name: Onshape
+domains:
+  - value: onshape.com
+    role: primary
+    valid_from: 2026-07-31T23:26:39.362Z
+category: design
+description: Onshape provides cloud-native CAD and PDM tools for product development.
+links:
+  site: https://www.onshape.com
+sources:
+  - source_id: src_fa36ae6c7f92a74ea8829266dc10d54710b9e3e5ca3429159a11794b1e0f960c
+    url: https://www.onshape.com/en/startups
+programs:
+  - program_id: prg_01kyxthgq0mw620x12tm8jhr9k
+    program_slug: onshape-startup-program
+    program_slug_aliases: []
+    title: Onshape Startup Program
+    summary: Empowers qualifying innovative startups with free access to cloud-native CAD and PDM tools along with partner perks and resources.
+    source_ids:
+      - src_fa36ae6c7f92a74ea8829266dc10d54710b9e3e5ca3429159a11794b1e0f960c
+offers:
+  - offer_id: off_01kyxthgq0x3sc8pben3b8mtj1
+    program_id: prg_01kyxthgq0mw620x12tm8jhr9k
+    offer_slug: onshape-startup-program
+    offer_slug_aliases: []
+    title: Onshape Startup Program
+    summary: Qualifying new-customer startups receive five free seats of Onshape Professional or Onshape Government, plus training, support, and co-marketing opportunities.
+    lifecycle:
+      status: active
+      effective_from: 2026-07-31T23:26:39.362Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 5 seats of Onshape Professional or Onshape Government at no cost
+          kind: free-service
+          service: Onshape Professional or Onshape Government (5 seats)
+        - benefit_id: ben_04
+          description: Access to trusted advisors, co-marketing opportunities, and training/support resources
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.is_current_customer
+            kind: predicate
+            operator: eq
+            statement: Must be a new customer
+            value:
+              type: boolean
+              value: false
+          - criterion_id: cri_02
+            kind: manual
+            reason: vendor-discretion
+            statement: Must qualify for the Onshape Startup Program
+    roles:
+      terms_authority_entity_id: ent_01kyxthgq0zvqdgfges3ksm4s0
+      access_operator_entity_id: ent_01kyxthgq0zvqdgfges3ksm4s0
+    access:
+      availability: public
+      method: form
+      url: https://www.onshape.com/en/startups
+    source_ids:
+      - src_fa36ae6c7f92a74ea8829266dc10d54710b9e3e5ca3429159a11794b1e0f960c

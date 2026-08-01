@@ -1,0 +1,88 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kyxthgq20tdr3fcw7pwzjp96
+slug: plain
+slug_aliases: []
+name: Plain
+domains:
+  - value: plain.com
+    role: primary
+    valid_from: 2026-07-31T23:27:43.072Z
+category: support
+description: Plain is composable AI support infrastructure that gives B2B teams complete flexibility to build support their way — no-code or all-code.
+links:
+  site: https://www.plain.com
+sources:
+  - source_id: src_97f2952b7b135af65b38120ee3f9dd21e4fa680b940d5652c57cde6ef96caa91
+    url: https://www.plain.com/startups
+programs:
+  - program_id: prg_01kyxthgq23kty7wtpxcset2yk
+    program_slug: plain-for-startups
+    program_slug_aliases: []
+    title: Plain for Startups
+    summary: Plain for Startups offers eligible early-stage VC-backed companies 50% off the Horizon plan.
+    source_ids:
+      - src_97f2952b7b135af65b38120ee3f9dd21e4fa680b940d5652c57cde6ef96caa91
+offers:
+  - offer_id: off_01kyxthgq2jxzkbn0wjy7fgyz1
+    program_id: prg_01kyxthgq23kty7wtpxcset2yk
+    offer_slug: plain-horizon-startup-discount
+    offer_slug_aliases: []
+    title: Plain for Startups — 50% Off Horizon Plan
+    summary: Eligible early-stage, VC-backed startups get 50% off Plain's Horizon plan for 12 months, providing 10 seats for a flat fee of $6,000.
+    lifecycle:
+      status: active
+      effective_from: 2026-07-31T23:27:43.072Z
+    economics:
+      benefits:
+        - applies_to: Horizon plan
+          benefit_id: ben_01
+          description: 50% discount on the Horizon plan for 12 months, including 10 seats.
+          duration:
+            kind: exact
+            value: P1Y
+          kind: discount
+          percentage:
+            basis_points: 5000
+            kind: exact
+      consideration:
+        amount:
+          currency: USD
+          minor_units: 600000
+        kind: fixed
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.funding_raised_usd
+            kind: predicate
+            operator: lte
+            statement: Must be VC backed with up to $5m in funding
+            value:
+              type: number
+              value: 5000000
+          - criterion_id: cri_02
+            fact: company.employee_count
+            kind: predicate
+            operator: lte
+            statement: Must have 10 or fewer members on support team
+            value:
+              type: number
+              value: 10
+          - criterion_id: cri_03
+            fact: company.is_current_customer
+            kind: predicate
+            operator: eq
+            statement: Must not already be a Plain customer
+            value:
+              type: boolean
+              value: false
+    roles:
+      terms_authority_entity_id: ent_01kyxthgq20tdr3fcw7pwzjp96
+      access_operator_entity_id: ent_01kyxthgq20tdr3fcw7pwzjp96
+    access:
+      availability: public
+      method: form
+      url: https://www.plain.com/startups
+    source_ids:
+      - src_97f2952b7b135af65b38120ee3f9dd21e4fa680b940d5652c57cde6ef96caa91

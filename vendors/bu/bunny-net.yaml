@@ -1,0 +1,70 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kyxthgpwy1zgaymr4eje0zxe
+slug: bunny-net
+slug_aliases: []
+name: bunny.net
+domains:
+  - value: bunny.net
+    role: primary
+    valid_from: 2026-07-31T23:16:21.225Z
+category: hosting-infra
+description: HopStart is the startup program that helps early-stage founders build on bunny.net with credits, feedback, and early access to new tools.
+links:
+  site: https://bunny.net/hopstart/
+sources:
+  - source_id: src_d56d2242e18f411306fd32619f82d5967e1f4f2e238ee737a7e97c76dcfcdab8
+    url: https://bunny.net/hopstart
+programs:
+  - program_id: prg_01kyxthgpw2yt9abmprbsqsva7
+    program_slug: hopstart
+    program_slug_aliases: []
+    title: HopStart
+    summary: HopStart is bunny.net's startup program helping early-stage founders build with credits, feedback, and early access to tools.
+    source_ids:
+      - src_d56d2242e18f411306fd32619f82d5967e1f4f2e238ee737a7e97c76dcfcdab8
+offers:
+  - offer_id: off_01kyxthgpwh475dqg2qmtacx92
+    program_id: prg_01kyxthgpw2yt9abmprbsqsva7
+    offer_slug: hopstart-startup-credits
+    offer_slug_aliases: []
+    title: HopStart Startup Program Credits
+    summary: Early-stage startups can apply to HopStart to receive up to $50,000 in bunny.net credits valid for one year, alongside early access and check-ins.
+    lifecycle:
+      status: active
+      effective_from: 2026-07-31T23:16:21.225Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to $50,000 in bunny.net credits usable across all products for one year.
+          duration:
+            kind: exact
+            value: P1Y
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 5000000
+            kind: up-to
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: not-machine-evaluable
+            statement: Open to early-stage startups that are just getting off the ground.
+          - criterion_id: cri_02
+            kind: manual
+            reason: vendor-discretion
+            statement: Application form review by bunny.net seeking bold ideas with real impact and clear fit.
+    roles:
+      terms_authority_entity_id: ent_01kyxthgpwy1zgaymr4eje0zxe
+      access_operator_entity_id: ent_01kyxthgpwy1zgaymr4eje0zxe
+    access:
+      availability: public
+      method: form
+      url: https://bunny.net/hopstart/
+    source_ids:
+      - src_d56d2242e18f411306fd32619f82d5967e1f4f2e238ee737a7e97c76dcfcdab8

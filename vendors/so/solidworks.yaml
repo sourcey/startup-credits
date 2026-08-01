@@ -1,0 +1,108 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kyxthgq36x1akfx7cy4k7268
+slug: solidworks
+slug_aliases: []
+name: SOLIDWORKS
+domains:
+  - value: solidworks.com
+    role: primary
+    valid_from: 2026-07-31T23:29:28.594Z
+category: design
+description: For early-stage hardware startups that meet the eligibility criteria, the 3DEXPERIENCE® Works for Startups program offers software, training, and co-marketing resources at no cost to help you succeed.
+links:
+  site: https://www.solidworks.com
+sources:
+  - source_id: src_433d56e774807e78fc005d416ccb032dbfbbb0c9b1bb085d12afc14c32023f3c
+    url: https://www.solidworks.com/solution/organization-type/entrepreneurs-startups
+programs:
+  - program_id: prg_01kyxthgq3a24stg4hc5egbvpc
+    program_slug: 3dexperience-works-for-startups
+    program_slug_aliases: []
+    title: 3DEXPERIENCE Works for Startups
+    summary: Provides software, training, co-marketing resources, and tiered discounts to early-stage hardware startups.
+    source_ids:
+      - src_433d56e774807e78fc005d416ccb032dbfbbb0c9b1bb085d12afc14c32023f3c
+offers:
+  - offer_id: off_01kyxthgq3t3rdpyt22ban6wyv
+    program_id: prg_01kyxthgq3a24stg4hc5egbvpc
+    offer_slug: 3dexperience-works-for-startups
+    offer_slug_aliases: []
+    title: 3DEXPERIENCE Works for Startups Program
+    summary: Free 12-month software accounts, training, and support for eligible early-stage hardware startups, with tiered discounts in subsequent years.
+    lifecycle:
+      status: active
+      effective_from: 2026-07-31T23:29:28.594Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 12-month accounts of 3DEXPERIENCE Works including SOLIDWORKS for CAD, simulation, visualization, and more at no cost.
+          duration:
+            kind: exact
+            value: P12M
+          kind: free-service
+          service: 3DEXPERIENCE Works including SOLIDWORKS for CAD, simulation, visualization, and more
+        - benefit_id: ben_02
+          description: MySolidWorks online training, design guidance, white papers, videos, and feature articles.
+          kind: other
+        - benefit_id: ben_03
+          description: Co-marketing opportunities such as speaking at SOLIDWORKS events and promotion in campaigns and social communities.
+          kind: other
+        - applies_to: all cloud solutions
+          benefit_id: ben_04
+          description: 70% off all cloud solutions in Year 2.
+          duration:
+            kind: exact
+            value: P1Y
+          kind: discount
+          percentage:
+            basis_points: 7000
+            kind: exact
+        - applies_to: all cloud solutions
+          benefit_id: ben_05
+          description: 50% off all cloud solutions in Year 3.
+          duration:
+            kind: exact
+            value: P1Y
+          kind: discount
+          percentage:
+            basis_points: 5000
+            kind: exact
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.funding_raised_usd
+            kind: predicate
+            operator: lt
+            statement: Funding must be less than $1MM
+            value:
+              type: number
+              value: 1000000
+          - criterion_id: cri_02
+            fact: company.revenue_usd
+            kind: predicate
+            operator: lt
+            statement: Lifetime revenue must be less than $1MM
+            value:
+              type: number
+              value: 1000000
+          - criterion_id: cri_03
+            kind: manual
+            reason: not-machine-evaluable
+            statement: Must be an early-stage hardware startup selling their own physical product (service companies and consultants excluded)
+          - criterion_id: cri_04
+            kind: manual
+            reason: vendor-discretion
+            statement: Requires approval of startup application and license order completion with a local value-added partner
+    roles:
+      terms_authority_entity_id: ent_01kyxthgq36x1akfx7cy4k7268
+      access_operator_entity_id: ent_01kyxthgq36x1akfx7cy4k7268
+    access:
+      availability: public
+      method: form
+      url: https://www.solidworks.com/solution/organization-type/entrepreneurs-startups
+    source_ids:
+      - src_433d56e774807e78fc005d416ccb032dbfbbb0c9b1bb085d12afc14c32023f3c

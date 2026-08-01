@@ -1,0 +1,56 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kyxthgpysbdqrhgkn47914ad
+slug: gem
+slug_aliases: []
+name: Gem
+domains:
+  - value: gem.com
+    role: primary
+    valid_from: 2026-07-31T23:25:55.211Z
+category: hr-people
+description: Gem provides candidate sourcing, CRM, ATS, scheduling, and recruiting solutions.
+links:
+  site: https://www.gem.com
+sources:
+  - source_id: src_9b016e1bd98af786a0994f8ff9fe4c56d91cad5f33a3877f0d268ad9fb2bc113
+    url: https://www.gem.com/solutions/startups
+programs: []
+offers:
+  - offer_id: off_01kyxthgpy9bpx9bm1vnpfx11v
+    offer_slug: gem-free-for-startups
+    offer_slug_aliases: []
+    title: Gem Free for 6 Months for Startups Under 30 Employees
+    summary: Startups with under 30 employees can get Gem for free for their first six months.
+    lifecycle:
+      status: active
+      effective_from: 2026-07-31T23:25:55.211Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Gem free for your first six months
+          duration:
+            kind: exact
+            value: P6M
+          kind: free-service
+          service: Gem
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        fact: company.employee_count
+        kind: predicate
+        operator: lt
+        statement: Company has under 30 employees
+        value:
+          type: number
+          value: 30
+    roles:
+      terms_authority_entity_id: ent_01kyxthgpysbdqrhgkn47914ad
+      access_operator_entity_id: ent_01kyxthgpysbdqrhgkn47914ad
+    access:
+      availability: public
+      method: form
+      url: https://www.gem.com/solutions/startups
+    source_ids:
+      - src_9b016e1bd98af786a0994f8ff9fe4c56d91cad5f33a3877f0d268ad9fb2bc113

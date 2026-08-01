@@ -1,0 +1,124 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kyxthgq13qgq95n7s290ddp5
+slug: plaid
+slug_aliases: []
+name: Plaid
+domains:
+  - value: plaid.com
+    role: primary
+    valid_from: 2026-07-31T23:18:33.772Z
+category: apis-integration
+description: Plaid Accelerate is a fintech accelerator program supporting founders who are Black, Indigenous, or People of Color.
+links:
+  site: https://plaid.com/accelerate
+sources:
+  - source_id: src_b8ff0fb19552d2916c10768d92f1c8a06b72a8560446dcb5635941902febecf9
+    url: https://plaid.com/accelerate
+programs:
+  - program_id: prg_01kyxthgq10y0g05rp1eah0yps
+    program_slug: plaid-accelerate
+    program_slug_aliases: []
+    title: Plaid Accelerate
+    summary: Plaid Accelerate is a fintech accelerator program supporting founders who are Black, Indigenous, or People of Color.
+    source_ids:
+      - src_b8ff0fb19552d2916c10768d92f1c8a06b72a8560446dcb5635941902febecf9
+offers:
+  - offer_id: off_01kyxthgq17czm0h3eedn4fz3c
+    program_id: prg_01kyxthgq10y0g05rp1eah0yps
+    offer_slug: plaid-accelerate
+    offer_slug_aliases: []
+    title: Plaid Accelerate
+    summary: A 5-month accelerator program for BIPOC-founded US fintech startups offering mentorship, workshops, bootcamp access, and 5 months of free access to Plaid technology.
+    lifecycle:
+      status: ended
+      effective_from: 2022-05-05T00:00:00Z
+      effective_until: 2022-05-31T23:59:59Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 5 months of free access to Plaid’s technology
+          duration:
+            kind: exact
+            value: P5M
+          kind: free-service
+          service: Plaid technology
+        - benefit_id: ben_02
+          description: Mentorship, training, virtual bootcamp, fundraising workshops, and partner network support
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.bipoc_majority_owned
+            kind: predicate
+            operator: eq
+            statement: Business is majority-owned by Black, Indigenous, or People of Color (BIPOC) founders
+            value:
+              type: boolean
+              value: true
+          - criterion_id: cri_02
+            fact: applicant.age_years
+            kind: predicate
+            operator: gte
+            statement: Applicant must be 18 years or older
+            value:
+              type: number
+              value: 18
+          - criterion_id: cri_03
+            fact: company.incorporation_country_code
+            kind: predicate
+            operator: eq
+            statement: Business must be incorporated in the United States
+            value:
+              type: string
+              value: USA
+          - criterion_id: cri_04
+            fact: company.headquarters_country_code
+            kind: predicate
+            operator: eq
+            statement: Technology startups must be headquartered in the US
+            value:
+              type: string
+              value: USA
+          - criterion_id: cri_05
+            fact: company.capital_status
+            kind: predicate
+            operator: in
+            statement: Startups must have seed funding or sufficient capital to operate full-time
+            value:
+              type: string-set
+              values:
+                - seed_funded
+                - sufficient_operating_capital
+          - criterion_id: cri_06
+            fact: company.full_time_employee_count
+            kind: predicate
+            operator: gte
+            statement: Must be a full-time founder team with at least 1 full-time employee
+            value:
+              type: number
+              value: 1
+          - criterion_id: cri_07
+            fact: company.product_status
+            kind: predicate
+            operator: eq
+            statement: Must have product(s) released to general availability with meaningful customer traction
+            value:
+              type: string
+              value: ga_with_traction
+          - criterion_id: cri_08
+            kind: manual
+            reason: vendor-discretion
+            statement: Participating companies should leverage financial data in their products, service, or operations (or show interest in leveraging this technology in the future for selection preference)
+    roles:
+      terms_authority_entity_id: ent_01kyxthgq13qgq95n7s290ddp5
+      access_operator_entity_id: ent_01kyxthgq13qgq95n7s290ddp5
+    access:
+      availability: public
+      method: form
+      url: https://plaid.com/accelerate/
+    source_ids:
+      - src_b8ff0fb19552d2916c10768d92f1c8a06b72a8560446dcb5635941902febecf9

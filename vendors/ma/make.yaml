@@ -1,0 +1,94 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kyxthgpy3tfte8bd2eng1ncw
+slug: make
+slug_aliases: []
+name: Make
+domains:
+  - value: make.com
+    role: primary
+    valid_from: 2026-07-31T23:16:47.469Z
+category: no-code
+description: Make provides an AI Automation & Orchestration Platform that helps early stage companies scale.
+links:
+  site: https://f.make.com/startup-program
+sources:
+  - source_id: src_db3296af0447f0e07ac4ca90f90dde3d7df547a077af2257e2b77323c2e912c7
+    url: https://f.make.com/startup-program
+programs:
+  - program_id: prg_01kyxthgpy4wnbhzr8b5hv4nz8
+    program_slug: make-startup-program
+    program_slug_aliases: []
+    title: Make Startup Program
+    summary: Make Startup Program offers free access and plan discounts with automation credits to early-stage startups.
+    source_ids:
+      - src_db3296af0447f0e07ac4ca90f90dde3d7df547a077af2257e2b77323c2e912c7
+offers:
+  - offer_id: off_01kyxthgpyakq6wbdhypr9wn51
+    program_id: prg_01kyxthgpy4wnbhzr8b5hv4nz8
+    offer_slug: make-partner-startup-tier
+    offer_slug_aliases: []
+    title: Make Startup Program - Partner Startup Tier
+    summary: Qualifying startups associated with a Make Startup Partner receive 6 months free plus a 50% discount on Pro or Teams plans with 480k credits (valued at over $1,500).
+    lifecycle:
+      status: active
+      effective_from: 2026-07-31T23:16:47.469Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 6 months free plus 50% discount on Pro or Teams Plan with 480k credits (>$1,500)
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.is_current_customer
+            kind: predicate
+            operator: eq
+            statement: Must not be a paying customer of Make
+            value:
+              type: boolean
+              value: false
+          - criterion_id: cri_02
+            fact: company.age_months
+            kind: predicate
+            operator: lt
+            statement: Must be less than 5 years old
+            value:
+              type: number
+              value: 60
+          - criterion_id: cri_03
+            fact: company.employee_count
+            kind: predicate
+            operator: lt
+            statement: Must have less than 50 people
+            value:
+              type: number
+              value: 50
+          - criterion_id: cri_04
+            fact: company.industry
+            kind: predicate
+            operator: neq
+            statement: Must not be providing AI Automation Services
+            value:
+              type: string
+              value: AI Automation Services
+          - criterion_id: cri_05
+            fact: company.partner_memberships
+            kind: predicate
+            operator: contains
+            statement: Must work with one of Make's Startup Partners (Accelerators, Incubators, VCs..)
+            value:
+              type: string
+              value: Startup Partner
+    roles:
+      terms_authority_entity_id: ent_01kyxthgpy3tfte8bd2eng1ncw
+      access_operator_entity_id: ent_01kyxthgpy3tfte8bd2eng1ncw
+    access:
+      availability: public
+      method: form
+      url: https://f.make.com/startup-program
+    source_ids:
+      - src_db3296af0447f0e07ac4ca90f90dde3d7df547a077af2257e2b77323c2e912c7

@@ -1,0 +1,77 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kyxthgq0q8dvmhtpsdfgsw7e
+slug: oyster
+slug_aliases: []
+name: Oyster
+domains:
+  - value: oysterhr.com
+    role: primary
+    valid_from: 2026-07-31T23:27:27.514Z
+category: hr-people
+description: Oyster is a global employment platform that helps companies hire, pay, and provide benefits to global talent.
+links:
+  site: https://www.oysterhr.com
+sources:
+  - source_id: src_bd7759ead613166fc56a78398a50f0a6e10593c95b28fb18188f64f9a5d83ddf
+    url: https://www.oysterhr.com/startups
+programs: []
+offers:
+  - offer_id: off_01kyxthgq0fn90vxt1b14yqd1z
+    offer_slug: oyster-startup-discount
+    offer_slug_aliases: []
+    title: Oyster Startup Discount
+    summary: Save up to $1,200 per team member annually for your first 12 months on Oyster Employer of Record (EOR) service for eligible early-stage or bootstrapped startups.
+    lifecycle:
+      status: active
+      effective_from: 2026-07-31T23:27:27.514Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Save up to $1,200 per team member during the first 12 months of Oyster Employer of Record service.
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - kind: any
+            rules:
+              - criterion_id: cri_01
+                fact: company.stage
+                kind: predicate
+                operator: in
+                statement: Raised pre-seed, seed, or Series A funding
+                value:
+                  type: string-set
+                  values:
+                    - pre-seed
+                    - seed
+                    - series-a
+              - kind: all
+                rules:
+                  - criterion_id: cri_02
+                    fact: company.stage
+                    kind: predicate
+                    operator: eq
+                    statement: Bootstrapped startup
+                    value:
+                      type: string
+                      value: bootstrapped
+                  - criterion_id: cri_03
+                    fact: company.employee_count
+                    kind: predicate
+                    operator: lt
+                    statement: Under 50 employees
+                    value:
+                      type: number
+                      value: 50
+    roles:
+      terms_authority_entity_id: ent_01kyxthgq0q8dvmhtpsdfgsw7e
+      access_operator_entity_id: ent_01kyxthgq0q8dvmhtpsdfgsw7e
+    access:
+      availability: public
+      method: form
+      url: https://www.oysterhr.com/startups
+    source_ids:
+      - src_bd7759ead613166fc56a78398a50f0a6e10593c95b28fb18188f64f9a5d83ddf

@@ -1,0 +1,64 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kyxthgq3w0q894h0tadvr0cq
+slug: sentry
+slug_aliases: []
+name: Sentry
+domains:
+  - value: sentry.io
+    role: primary
+    valid_from: 2026-07-31T23:18:44.534Z
+category: observability
+description: Explore Sentry's startup program through our interactive terminal. Get up to $5,000 in credits and priority support.
+links:
+  site: https://sentry.io
+sources:
+  - source_id: src_484194fe6e46cdb17fe602f86146a5d1eb048c41209b9cc18c3d6e4f48d48d4f
+    url: https://sentry.io/for/startups
+programs:
+  - program_id: prg_01kyxthgq330mjqv7kg53rce6b
+    program_slug: sentry-for-startups
+    program_slug_aliases: []
+    title: Sentry for Startups
+    summary: Explore Sentry's startup program through our interactive terminal. Get up to $5,000 in credits and priority support.
+    source_ids:
+      - src_484194fe6e46cdb17fe602f86146a5d1eb048c41209b9cc18c3d6e4f48d48d4f
+offers:
+  - offer_id: off_01kyxthgq37tfmcpjfevy084na
+    program_id: prg_01kyxthgq330mjqv7kg53rce6b
+    offer_slug: sentry-for-startups
+    offer_slug_aliases: []
+    title: Sentry for Startups
+    summary: Startups can get up to $5,000 in credits and priority support through the Sentry for Startups program.
+    lifecycle:
+      status: active
+      effective_from: 2026-07-31T23:18:44.534Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to $5,000 in Sentry credits
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 500000
+            kind: up-to
+        - benefit_id: ben_02
+          description: Priority support
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Qualify for the Sentry for Startups program
+    roles:
+      terms_authority_entity_id: ent_01kyxthgq3w0q894h0tadvr0cq
+      access_operator_entity_id: ent_01kyxthgq3w0q894h0tadvr0cq
+    access:
+      availability: public
+      method: form
+      url: https://sentry.io/for/startups/
+    source_ids:
+      - src_484194fe6e46cdb17fe602f86146a5d1eb048c41209b9cc18c3d6e4f48d48d4f

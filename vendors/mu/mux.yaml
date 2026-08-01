@@ -1,0 +1,70 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kyxthgpz8h4df3xgadbvrgqh
+slug: mux
+slug_aliases: []
+name: Mux
+domains:
+  - value: mux.com
+    role: primary
+    valid_from: 2026-07-31T23:26:21.312Z
+category: hosting-infra
+description: Mux is video infrastructure for the internet, empowering developers to build world-class video experiences.
+links:
+  site: https://www.mux.com
+sources:
+  - source_id: src_de91f1f0eb41288578887ae49dbe48195d1c50fee87d9d2f84fa29382014789a
+    url: https://www.mux.com/startups
+programs: []
+offers:
+  - offer_id: off_01kyxthgpzryb7ncdvet0ydxnt
+    offer_slug: mux-startup-credits
+    offer_slug_aliases: []
+    title: $500 in free credits for startups
+    summary: Eligible startups receive $500 in free Mux credits to build video experiences, valid for 1 year from activation.
+    lifecycle:
+      status: active
+      effective_from: 2026-07-31T23:26:21.312Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: $500 in free credits for Mux video infrastructure
+          duration:
+            kind: exact
+            value: P1Y
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 50000
+            kind: exact
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: vendor-discretion
+            statement: Offer only valid for startups
+          - criterion_id: cri_02
+            fact: company.is_current_customer
+            kind: predicate
+            operator: eq
+            statement: Must not be an existing Mux customer
+            value:
+              type: boolean
+              value: false
+          - criterion_id: cri_03
+            kind: manual
+            reason: external-verification
+            statement: Must be a first-time recipient of Mux credits
+    roles:
+      terms_authority_entity_id: ent_01kyxthgpz8h4df3xgadbvrgqh
+      access_operator_entity_id: ent_01kyxthgpz8h4df3xgadbvrgqh
+    access:
+      availability: public
+      method: form
+      url: https://www.mux.com/startups
+    source_ids:
+      - src_de91f1f0eb41288578887ae49dbe48195d1c50fee87d9d2f84fa29382014789a

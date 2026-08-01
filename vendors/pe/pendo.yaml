@@ -1,0 +1,53 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kyxthgq1sdec38x7v2xbgs3t
+slug: pendo
+slug_aliases: []
+name: Pendo.io
+domains:
+  - value: pendo.io
+    role: primary
+    valid_from: 2026-07-31T23:27:27.796Z
+category: data-analytics
+description: Product analytics, in-app guides, and NPS built for startups—no dev team required.
+links:
+  site: https://www.pendo.io
+sources:
+  - source_id: src_349ecc8ad2b97a1af0be16c8890361e77de3f12b4fac0f81d60797ef2f367eb9
+    url: https://www.pendo.io/pendo-for-startups
+programs: []
+offers:
+  - offer_id: off_01kyxthgq1xywaqnts1ry9tdz8
+    offer_slug: pendo-for-startups
+    offer_slug_aliases: []
+    title: Pendo for Free
+    summary: Free product analytics, in-app guides, roadmaps, and NPS for startups with up to 500 monthly active users, no credit card required.
+    lifecycle:
+      status: active
+      effective_from: 2026-07-31T23:27:27.796Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Product analytics, in-app guides, roadmaps, and NPS for up to 500 monthly active users.
+          kind: free-service
+          service: Pendo product analytics, in-app guides, roadmaps, and NPS
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        fact: company.monthly_active_users
+        kind: predicate
+        operator: lte
+        statement: Up to 500 monthly active users
+        value:
+          type: number
+          value: 500
+    roles:
+      terms_authority_entity_id: ent_01kyxthgq1sdec38x7v2xbgs3t
+      access_operator_entity_id: ent_01kyxthgq1sdec38x7v2xbgs3t
+    access:
+      availability: public
+      method: form
+      url: https://www.pendo.io/pendo-for-startups/
+    source_ids:
+      - src_349ecc8ad2b97a1af0be16c8890361e77de3f12b4fac0f81d60797ef2f367eb9

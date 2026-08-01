@@ -1,0 +1,63 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kyxthgq2d5azvrkqbbyckj61
+slug: postmark
+slug_aliases: []
+name: Postmark
+domains:
+  - value: postmarkapp.com
+    role: primary
+    valid_from: 2026-07-31T23:18:01.604Z
+category: communication
+description: Postmark provides exceptional email delivery at an affordable price for bootstrapped companies.
+links:
+  site: https://postmarkapp.com
+sources:
+  - source_id: src_e963497d76c0d1824bce8d34ba07535eb142fc3edd67d916ad0278637cf77bd6
+    url: https://postmarkapp.com/for/bootstrapped-startups
+programs: []
+offers:
+  - offer_id: off_01kyxthgq27zfwqte6anxr0710
+    offer_slug: postmark-bootstrapper-credit
+    offer_slug_aliases: []
+    title: $75 Bootstrapper Credit
+    summary: Get $75 account credit for email costs if you have launched your product, are charging for it, and haven't taken outside investment.
+    lifecycle:
+      status: active
+      effective_from: 2026-07-31T23:18:01.604Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: $75 account credit to help with email costs
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 7500
+            kind: exact
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: not-machine-evaluable
+            statement: You have launched your product.
+          - criterion_id: cri_02
+            kind: manual
+            reason: not-machine-evaluable
+            statement: You are charging for your product.
+          - criterion_id: cri_03
+            kind: manual
+            reason: not-machine-evaluable
+            statement: You haven't taken outside investment.
+    roles:
+      terms_authority_entity_id: ent_01kyxthgq2d5azvrkqbbyckj61
+      access_operator_entity_id: ent_01kyxthgq2d5azvrkqbbyckj61
+    access:
+      availability: public
+      instructions: Contact Postmark support team to claim the credit.
+      method: contact
+    source_ids:
+      - src_e963497d76c0d1824bce8d34ba07535eb142fc3edd67d916ad0278637cf77bd6

@@ -1,0 +1,53 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kyxthgq47fqqnj39090hy27y
+slug: upcloud
+slug_aliases: []
+name: UpCloud
+domains:
+  - value: upcloud.com
+    role: primary
+    valid_from: 2026-07-31T23:19:28.203Z
+category: hosting-infra
+description: Global high-performance cloud platform providing cloud servers, databases, Kubernetes, and storage.
+links:
+  site: https://upcloud.com
+sources:
+  - source_id: src_8daf1508d5c3e60d18b9a320f3a251c802255dfbf4d173b20802d03fd928eeca
+    url: https://upcloud.com/startup-program
+programs: []
+offers:
+  - offer_id: off_01kyxthgq4qxtcyybqae9x11sy
+    offer_slug: upcloud-startup-credits
+    offer_slug_aliases: []
+    title: Free Trial $500 Cloud Credits
+    summary: Sign up to receive $500 in cloud credits to deploy servers, Kubernetes, and storage risk-free on a trial basis.
+    lifecycle:
+      status: active
+      effective_from: 2026-07-31T23:19:28.203Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: $500 in cloud credits for deploying servers, Kubernetes, and storage.
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 50000
+            kind: exact
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: constant
+        statement: Available upon sign up for new trial accounts.
+        value: true
+    roles:
+      terms_authority_entity_id: ent_01kyxthgq47fqqnj39090hy27y
+      access_operator_entity_id: ent_01kyxthgq47fqqnj39090hy27y
+    access:
+      availability: public
+      method: form
+      url: https://upcloud.com/startup-program
+    source_ids:
+      - src_8daf1508d5c3e60d18b9a320f3a251c802255dfbf4d173b20802d03fd928eeca

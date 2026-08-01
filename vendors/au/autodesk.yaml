@@ -1,0 +1,127 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kyxthgpr3a3ds3stc9xvvrgt
+slug: autodesk
+slug_aliases: []
+name: Autodesk
+domains:
+  - value: autodesk.com
+    role: primary
+    valid_from: 2026-07-31T23:20:29.349Z
+category: design
+description: Autodesk provides 3D design, engineering, and entertainment software and services, including Autodesk Fusion for product design, CAD, CAM, CAE, and PCB development.
+links:
+  site: https://www.autodesk.com
+sources:
+  - source_id: src_0cc9c54ff00a1c374e9b96d2ff30d32618f6b18598e44c4bede5d50d754bcfcc
+    url: https://www.autodesk.com/products/fusion-360/startups
+programs:
+  - program_id: prg_01kyxthgprfn3x2yekadhrd83f
+    program_slug: fusion-startup-program
+    program_slug_aliases: []
+    title: Fusion 360 Startup program
+    summary: Autodesk's program offering qualifying startups and entrepreneurs access to Autodesk Fusion.
+    source_ids:
+      - src_0cc9c54ff00a1c374e9b96d2ff30d32618f6b18598e44c4bede5d50d754bcfcc
+offers:
+  - offer_id: off_01kyxthgpsbxen55xqbsg5cv6f
+    program_id: prg_01kyxthgprfn3x2yekadhrd83f
+    offer_slug: autodesk-fusion-for-startups
+    offer_slug_aliases: []
+    title: Autodesk Fusion for startups
+    summary: Qualifying startups get 3-year access to Autodesk Fusion for up to 10 users per startup.
+    lifecycle:
+      status: active
+      effective_from: 2026-07-31T23:20:29.349Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 3-year access to Autodesk Fusion for up to 10 users per startup
+          duration:
+            kind: exact
+            value: P3Y
+          kind: free-service
+          service: Autodesk Fusion
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.is_registered
+            kind: predicate
+            operator: eq
+            statement: Registered companies (e.g., LLC)
+            value:
+              type: boolean
+              value: true
+          - criterion_id: cri_02
+            fact: company.has_professional_email_and_website
+            kind: predicate
+            operator: eq
+            statement: Professional email domain and a valid company website
+            value:
+              type: boolean
+              value: true
+          - criterion_id: cri_03
+            fact: company.funding_type
+            kind: predicate
+            operator: in
+            statement: Venture, angel-backed, or bootstrapped status
+            value:
+              type: string-set
+              values:
+                - venture
+                - angel
+                - bootstrapped
+          - criterion_id: cri_04
+            fact: company.has_previous_fusion_subscription
+            kind: predicate
+            operator: eq
+            statement: No previous subscription to Autodesk Fusion
+            value:
+              type: boolean
+              value: false
+          - criterion_id: cri_05
+            fact: company.designs_or_manufactures_physical_products
+            kind: predicate
+            operator: eq
+            statement: Focus on designing or manufacturing physical products
+            value:
+              type: boolean
+              value: true
+          - kind: not
+            rule:
+              criterion_id: cri_06
+              fact: company.type
+              kind: predicate
+              operator: in
+              statement: "Exclusions: Service providers, resellers, contract manufacturers, consultants, makerspaces, non-profits, and design agencies are not eligible"
+              value:
+                type: string-set
+                values:
+                  - service_provider
+                  - reseller
+                  - contract_manufacturer
+                  - consultant
+                  - makerspace
+                  - non_profit
+                  - design_agency
+          - criterion_id: cri_07
+            kind: manual
+            reason: not-machine-evaluable
+            statement: Participant represents and warrants that the information submitted to Autodesk as part of the Participant’s Program application is accurate and true at the time of submission.
+          - criterion_id: cri_08
+            kind: manual
+            reason: external-verification
+            statement: Participants who are selected for the Program may not re-apply after completing the Program or upon removal from the Program.
+    roles:
+      terms_authority_entity_id: ent_01kyxthgpr3a3ds3stc9xvvrgt
+      access_operator_entity_id: ent_01kyxthgpr3a3ds3stc9xvvrgt
+    access:
+      availability: public
+      method: form
+      url: https://www.autodesk.com/products/fusion-360/startups
+    terms_url: https://www.autodesk.com/company/terms-of-use/en/general-terms
+    source_ids:
+      - src_0cc9c54ff00a1c374e9b96d2ff30d32618f6b18598e44c4bede5d50d754bcfcc
