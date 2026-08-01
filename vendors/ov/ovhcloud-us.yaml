@@ -1,0 +1,125 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kyy6rm11f3azdjg2dn90sz49
+slug: ovhcloud-us
+slug_aliases: []
+name: OVHcloud US
+domains:
+  - value: us.ovhcloud.com
+    role: primary
+    valid_from: 2026-08-01T07:46:23.051Z
+category: hosting-infra
+description: OVHcloud is a global cloud provider delivering hosted private cloud, public cloud, and dedicated server solutions.
+links:
+  site: https://us.ovhcloud.com/startup-program
+sources:
+  - source_id: src_903d24dc7be1a157fecf269fed025f305b10c490ba94c0d6ac491c91dd57e3d7
+    url: https://us.ovhcloud.com/startup-program
+programs:
+  - program_id: prg_01kyy6rm11jz304jdn8r48wajj
+    program_slug: ovhcloud-us-startup-program
+    program_slug_aliases: []
+    title: OVHcloud US Startup Program
+    summary: Provides startups and scaleups with cloud resources, technical expertise, and mentorship to accelerate growth on OVHcloud public cloud solutions.
+    source_ids:
+      - src_903d24dc7be1a157fecf269fed025f305b10c490ba94c0d6ac491c91dd57e3d7
+offers:
+  - offer_id: off_01kyy6rm11xpww455ebgve5tbd
+    program_id: prg_01kyy6rm11jz304jdn8r48wajj
+    offer_slug: ovhcloud-us-startup-program-start-level
+    offer_slug_aliases: []
+    title: OVHcloud US Startup Program - START Level
+    summary: Offers pre-seed and seed startups up to $12,000 in free public cloud credits, 6 hours of 1-on-1 technical support with an engineer, and mentoring over 12 months.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-01T07:46:23.051Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to $12,000 of OVHcloud free public cloud credits
+          duration:
+            kind: exact
+            value: P1Y
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 1200000
+            kind: up-to
+        - benefit_id: ben_02
+          description: 6 hours of 1-on-1 time with an engineer (free)
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        fact: company.stage
+        kind: predicate
+        operator: in
+        statement: Must be a pre-seed or seed stage startup.
+        value:
+          type: string-set
+          values:
+            - pre-seed
+            - seed
+    roles:
+      terms_authority_entity_id: ent_01kyy6rm11f3azdjg2dn90sz49
+      access_operator_entity_id: ent_01kyy6rm11f3azdjg2dn90sz49
+    access:
+      availability: public
+      method: form
+      url: https://us.ovhcloud.com/startup-program/
+    source_ids:
+      - src_903d24dc7be1a157fecf269fed025f305b10c490ba94c0d6ac491c91dd57e3d7
+  - offer_id: off_01kyy6rm113fsmr0y3r9m40hsr
+    program_id: prg_01kyy6rm11jz304jdn8r48wajj
+    offer_slug: ovhcloud-us-startup-program-scale-level
+    offer_slug_aliases: []
+    title: OVHcloud US Startup Program - SCALE Level
+    summary: Offers series A and above startups up to $120,000 in free public cloud credits, 20 hours of 1-on-1 technical support with an engineer, and mentoring over 12 months.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-01T07:46:23.051Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to $120,000 of OVHcloud free public cloud credits
+          duration:
+            kind: exact
+            value: P1Y
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 12000000
+            kind: up-to
+        - benefit_id: ben_02
+          description: 20 hours of 1-on-1 time with an engineer (free)
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        fact: company.stage
+        kind: predicate
+        operator: in
+        statement: Must be a series A or above startup.
+        value:
+          type: string-set
+          values:
+            - series-a
+            - series-b
+            - series-c
+            - series-d
+            - series-e
+            - growth
+    roles:
+      terms_authority_entity_id: ent_01kyy6rm11f3azdjg2dn90sz49
+      access_operator_entity_id: ent_01kyy6rm11f3azdjg2dn90sz49
+    access:
+      availability: public
+      method: form
+      url: https://us.ovhcloud.com/startup-program/
+    source_ids:
+      - src_903d24dc7be1a157fecf269fed025f305b10c490ba94c0d6ac491c91dd57e3d7

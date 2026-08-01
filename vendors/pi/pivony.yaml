@@ -1,0 +1,53 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kyy6rm1156gc8nnj32x880vw
+slug: pivony
+slug_aliases: []
+name: Pivony
+domains:
+  - value: pivony.com
+    role: primary
+    valid_from: 2026-08-01T07:35:34.029Z
+category: data-analytics
+description: Pivony is a new-generation, Agentic AI-powered Voice of Customer (VoC) and Customer Experience (CX) analytics platform operating across Turkey and global markets.
+links:
+  site: https://pivony.com/
+sources:
+  - source_id: src_e1cf6479807e9b0688a5398650ed2217131c5a7250f79d70504944368fe37d3d
+    url: https://pivony.com/startups
+programs: []
+offers:
+  - offer_id: off_01kyy6rm11a6hc0qe8rqwar8bj
+    offer_slug: free-rca-in-48h
+    offer_slug_aliases: []
+    title: Free RCA in 48h
+    summary: Upload data to receive a free Root Cause Analysis (RCA) in 48 hours.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-01T07:35:34.029Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Free Root Cause Analysis (RCA) delivered in 48 hours.
+          duration:
+            kind: exact
+            value: P2D
+          kind: free-service
+          service: Free RCA Analysis
+      consideration:
+        description: Upload data
+        kind: variable
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: not-machine-evaluable
+        statement: Upload data for analysis.
+    roles:
+      terms_authority_entity_id: ent_01kyy6rm1156gc8nnj32x880vw
+      access_operator_entity_id: ent_01kyy6rm1156gc8nnj32x880vw
+    access:
+      availability: public
+      method: other
+      url: https://pivony.com/
+    source_ids:
+      - src_e1cf6479807e9b0688a5398650ed2217131c5a7250f79d70504944368fe37d3d

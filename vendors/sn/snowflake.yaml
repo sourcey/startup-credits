@@ -1,0 +1,56 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kyy6rm11pm9wrmnakg0t25vh
+slug: snowflake
+slug_aliases: []
+name: Snowflake
+domains:
+  - value: snowflake.com
+    role: primary
+    valid_from: 2026-08-01T07:53:58.007Z
+category: data-analytics
+description: Snowflake powers startups with scalability, native-AI capabilities, and free usage opportunities.
+links:
+  site: https://www.snowflake.com/en/why-snowflake/startup-program
+sources:
+  - source_id: src_9e63740f68ee8a8689d37d925d23723c170ddb7749e52e803a8d7ac28031aab6
+    url: https://www.snowflake.com/en/why-snowflake/startup-program
+programs:
+  - program_id: prg_01kyy6rm117hynccw661eqhyns
+    program_slug: snowflake-for-startups
+    program_slug_aliases: []
+    title: Snowflake for Startups
+    summary: Snowflake for Startups provides eligible startups with access to technical expertise, free usage, go-to-market guidance, and an ecosystem network.
+    source_ids:
+      - src_9e63740f68ee8a8689d37d925d23723c170ddb7749e52e803a8d7ac28031aab6
+offers:
+  - offer_id: off_01kyy6rm11by32ytvdebnjzdma
+    program_id: prg_01kyy6rm117hynccw661eqhyns
+    offer_slug: snowflake-startup-package
+    offer_slug_aliases: []
+    title: Snowflake Startup Package
+    summary: Snowflake offers eligible startups free usage on their first contract to help build their business on Snowflake.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-01T07:53:58.007Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Free usage on first Snowflake contract
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startup eligibility verified by Snowflake
+    roles:
+      terms_authority_entity_id: ent_01kyy6rm11pm9wrmnakg0t25vh
+      access_operator_entity_id: ent_01kyy6rm11pm9wrmnakg0t25vh
+    access:
+      availability: public
+      method: form
+      url: https://www.snowflake.com/en/why-snowflake/startup-program
+    source_ids:
+      - src_9e63740f68ee8a8689d37d925d23723c170ddb7749e52e803a8d7ac28031aab6

@@ -14,6 +14,8 @@ links:
 sources:
   - source_id: src_433d56e774807e78fc005d416ccb032dbfbbb0c9b1bb085d12afc14c32023f3c
     url: https://www.solidworks.com/solution/organization-type/entrepreneurs-startups
+  - source_id: src_a92e46f2ccaee87e57cfa15b48adfc6116cc6ba3a6cac24bc15bb1ae6a007284
+    url: https://www.solidworks.com/solution/solidworks-for-startups-program
 programs:
   - program_id: prg_01kyxthgq3a24stg4hc5egbvpc
     program_slug: 3dexperience-works-for-startups
@@ -22,6 +24,7 @@ programs:
     summary: Provides software, training, co-marketing resources, and tiered discounts to early-stage hardware startups.
     source_ids:
       - src_433d56e774807e78fc005d416ccb032dbfbbb0c9b1bb085d12afc14c32023f3c
+      - src_a92e46f2ccaee87e57cfa15b48adfc6116cc6ba3a6cac24bc15bb1ae6a007284
 offers:
   - offer_id: off_01kyxthgq3t3rdpyt22ban6wyv
     program_id: prg_01kyxthgq3a24stg4hc5egbvpc
@@ -106,3 +109,58 @@ offers:
       url: https://www.solidworks.com/solution/organization-type/entrepreneurs-startups
     source_ids:
       - src_433d56e774807e78fc005d416ccb032dbfbbb0c9b1bb085d12afc14c32023f3c
+  - offer_id: off_01kyy6rm11e42frzp0yxx17z9n
+    offer_slug: solidworks-for-startups-scale-up-software-discount
+    offer_slug_aliases: []
+    title: SOLIDWORKS for Startups - Scale-Up Software Discount
+    summary: 70% discount on software for hardware startups with revenue or funding between $1M and $5M.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-01T07:56:05.560Z
+    economics:
+      benefits:
+        - applies_to: SOLIDWORKS software
+          benefit_id: ben_01
+          description: 70% discount on software for scale-up hardware startups
+          kind: discount
+          percentage:
+            basis_points: 7000
+            kind: exact
+      consideration:
+        description: Specific discounted purchase terms determined upon application review.
+        kind: unknown
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - kind: all
+            rules:
+              - criterion_id: cri_01
+                fact: company.revenue_usd
+                kind: predicate
+                operator: gte
+                statement: Revenue or funding is at least $1M
+                value:
+                  type: number
+                  value: 1000000
+              - criterion_id: cri_02
+                fact: company.revenue_usd
+                kind: predicate
+                operator: lte
+                statement: Revenue or funding is at most $5M
+                value:
+                  type: number
+                  value: 5000000
+          - criterion_id: cri_03
+            kind: manual
+            reason: vendor-discretion
+            statement: Reserved right to consider company as a Scale-Up and offer 70% discount
+    roles:
+      terms_authority_entity_id: ent_01kyxthgq36x1akfx7cy4k7268
+      access_operator_entity_id: ent_01kyxthgq36x1akfx7cy4k7268
+    access:
+      availability: public
+      method: form
+      url: https://www.solidworks.com/solution/solidworks-for-startups-program
+    source_ids:
+      - src_a92e46f2ccaee87e57cfa15b48adfc6116cc6ba3a6cac24bc15bb1ae6a007284

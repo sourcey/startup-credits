@@ -1,0 +1,116 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kyy6rm11txma0afjpbmd0wr7
+slug: openrouter
+slug_aliases: []
+name: OpenRouter
+domains:
+  - value: openrouter.ai
+    role: primary
+    valid_from: 2026-08-01T07:25:22.175Z
+category: ai-ml
+description: Everything an early-stage team needs to build, experiment, and scale with AI — without managing multiple providers.
+links:
+  site: https://openrouter.ai
+sources:
+  - source_id: src_4426499e39beb6ef34e0c6908222fc3526896f1dbc2517568a83e65f051fea96
+    url: https://openrouter.ai/startup-program
+programs:
+  - program_id: prg_01kyy6rm114c1epkc37ek9hm0n
+    program_slug: openrouter-for-startups
+    program_slug_aliases: []
+    title: OpenRouter for Startups
+    summary: Program offering credits, fee waivers, and multi-model API access to early-stage startups building with AI.
+    source_ids:
+      - src_4426499e39beb6ef34e0c6908222fc3526896f1dbc2517568a83e65f051fea96
+offers:
+  - offer_id: off_01kyy6rm11sx0g8q587c41vrgp
+    program_id: prg_01kyy6rm114c1epkc37ek9hm0n
+    offer_slug: openrouter-for-startups
+    offer_slug_aliases: []
+    title: OpenRouter for Startups
+    summary: Eligible early-stage startups get up to $5,000 in universal inference credits and 0% processing fees for 12 months across models on OpenRouter.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-01T07:25:22.175Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to $5,000 in universal inference credits usable across all models on OpenRouter.
+          duration:
+            kind: exact
+            value: P6M
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 500000
+            kind: up-to
+        - applies_to: OpenRouter processing fees
+          benefit_id: ben_02
+          description: 0% processing fees (including platform fees and BYOK fees) for 12 months.
+          duration:
+            kind: exact
+            value: P1Y
+          kind: discount
+          percentage:
+            basis_points: 10000
+            kind: exact
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.stage
+            kind: predicate
+            operator: eq
+            statement: Pre-Series B stage startup
+            value:
+              type: string
+              value: Pre-Series B
+          - criterion_id: cri_02
+            fact: company.industry
+            kind: predicate
+            operator: contains
+            statement: Building an AI-native product
+            value:
+              type: string
+              value: AI
+          - criterion_id: cri_03
+            kind: manual
+            reason: external-verification
+            statement: Referred by an approved OpenRouter partner
+          - criterion_id: cri_04
+            fact: company.has_public_website
+            kind: predicate
+            operator: eq
+            statement: Have a public company website
+            value:
+              type: boolean
+              value: true
+          - criterion_id: cri_05
+            kind: manual
+            reason: external-verification
+            statement: Apply with a company email address, associated with an OpenRouter account
+          - criterion_id: cri_06
+            fact: company.openrouter_spend_usd
+            kind: predicate
+            operator: lt
+            statement: Have less than $500 in lifetime OpenRouter spend
+            value:
+              type: number
+              value: 500
+          - criterion_id: cri_07
+            kind: manual
+            reason: external-verification
+            statement: Haven't previously received startup credits
+    roles:
+      terms_authority_entity_id: ent_01kyy6rm11txma0afjpbmd0wr7
+      access_operator_entity_id: ent_01kyy6rm11txma0afjpbmd0wr7
+    access:
+      availability: referral
+      method: form
+      url: https://openrouter.ai/startup-program
+    source_ids:
+      - src_4426499e39beb6ef34e0c6908222fc3526896f1dbc2517568a83e65f051fea96

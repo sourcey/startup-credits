@@ -1,0 +1,98 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kyy6rm11ae69evf2r3g632h2
+slug: perplexity
+slug_aliases: []
+name: Perplexity
+domains:
+  - value: perplexity.ai
+    role: primary
+    valid_from: 2026-08-01T07:52:57.012Z
+category: ai-ml
+description: Perplexity provides AI research capabilities and web search APIs including Enterprise Pro and Sonar API.
+links:
+  site: https://www.perplexity.ai
+sources:
+  - source_id: src_a78bd3849b7d3d6ca9f419e200e7674aac987c078d8cd59fe997d213018782eb
+    url: https://www.perplexity.ai/startups
+programs:
+  - program_id: prg_01kyy6rm11dawpz4q5vrsq64kr
+    program_slug: perplexity-for-startups
+    program_slug_aliases: []
+    title: Perplexity for Startups
+    summary: Perplexity for Startups provides eligible early-stage startups with free Enterprise Pro access and Sonar API credits.
+    source_ids:
+      - src_a78bd3849b7d3d6ca9f419e200e7674aac987c078d8cd59fe997d213018782eb
+offers:
+  - offer_id: off_01kyy6rm11h1kf0nkv41d720c9
+    program_id: prg_01kyy6rm11dawpz4q5vrsq64kr
+    offer_slug: perplexity-for-startups-benefit-bundle
+    offer_slug_aliases: []
+    title: Perplexity for Startups Benefit Bundle
+    summary: Eligible startups get 3 months of free Perplexity Enterprise Pro for up to 50 seats, plus $5,000 in API credits for growth.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-01T07:52:57.012Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 3 months of free Perplexity Enterprise Pro for up to 50 seats
+          duration:
+            kind: exact
+            value: P3M
+          kind: free-service
+          service: Perplexity Enterprise Pro (up to 50 seats)
+        - benefit_id: ben_02
+          description: $5,000 in API credits
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 500000
+            kind: exact
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.funding_raised_usd
+            kind: predicate
+            operator: lte
+            statement: Raised no more than $20M in equity funding
+            value:
+              type: number
+              value: 20000000
+          - criterion_id: cri_02
+            fact: company.age_months
+            kind: predicate
+            operator: lt
+            statement: Less than 5 years old
+            value:
+              type: number
+              value: 60
+          - criterion_id: cri_03
+            fact: company.partner_memberships
+            kind: predicate
+            operator: contains
+            statement: Associated with one of the approved Startup Partners
+            value:
+              type: string
+              value: approved_startup_partner
+          - criterion_id: cri_04
+            fact: company.is_current_customer
+            kind: predicate
+            operator: eq
+            statement: Not an existing Enterprise Pro subscriber
+            value:
+              type: boolean
+              value: false
+    roles:
+      terms_authority_entity_id: ent_01kyy6rm11ae69evf2r3g632h2
+      access_operator_entity_id: ent_01kyy6rm11ae69evf2r3g632h2
+    access:
+      availability: membership
+      method: form
+      url: https://www.perplexity.ai/startups/
+    source_ids:
+      - src_a78bd3849b7d3d6ca9f419e200e7674aac987c078d8cd59fe997d213018782eb

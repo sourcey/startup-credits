@@ -14,7 +14,16 @@ links:
 sources:
   - source_id: src_53cc73a8bcbb3adc5cb83545f0f51aacbd955a1a644b465dc1878aebbe49333e
     url: https://remote.com/global-hr/small-business
-programs: []
+  - source_id: src_5637f24101627f4de80403d0704f41e07d9054bd83948cf0018b653001047fa4
+    url: https://remote.com/global-hr/startups
+programs:
+  - program_id: prg_01kyy6rm11sqz3yrwfb6j21620
+    program_slug: remote-for-startups
+    program_slug_aliases: []
+    title: Remote for Startups
+    summary: Remote for Startups offers eligible early-stage startups promotional pricing and discounts on global HR, payroll, contractor management, EOR, and PEO services.
+    source_ids:
+      - src_5637f24101627f4de80403d0704f41e07d9054bd83948cf0018b653001047fa4
 offers:
   - offer_id: off_01kyh8fpe408k67p925g1km9bt
     offer_slug: remote-startups-discount
@@ -51,3 +60,52 @@ offers:
       public_code: RFS15OFF
     source_ids:
       - src_53cc73a8bcbb3adc5cb83545f0f51aacbd955a1a644b465dc1878aebbe49333e
+  - offer_id: off_01kyy6rm11y74fg69yjhv6dqrm
+    program_id: prg_01kyy6rm11sqz3yrwfb6j21620
+    offer_slug: vc-referral-additional-discount
+    offer_slug_aliases: []
+    title: VC Referral Additional Discount
+    summary: Get an additional 5% discount (up to 20% total) on Remote services by introducing Remote to your venture capital or private equity firm.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-01T07:35:57.208Z
+    economics:
+      benefits:
+        - applies_to: Remote services
+          benefit_id: ben_01
+          description: Additional 5% discount (up to 20% total discount)
+          kind: discount
+          percentage:
+            basis_points: 500
+            kind: exact
+      consideration:
+        description: Introduce Remote to your venture capital or private equity firm
+        kind: variable
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.stage
+            kind: predicate
+            operator: in
+            statement: Must have raised pre-seed, seed, or Series A funding from a venture capital firm, accelerator, incubator, or other startup-enabling organisation.
+            value:
+              type: string-set
+              values:
+                - pre-seed
+                - seed
+                - series-a
+          - criterion_id: cri_02
+            kind: manual
+            reason: not-machine-evaluable
+            statement: Introduce your non-partner investor (venture capital or private equity firm) to Remote.
+    roles:
+      terms_authority_entity_id: ent_01kyh8fpe4dkt6qsga03ep38rk
+      access_operator_entity_id: ent_01kyh8fpe4dkt6qsga03ep38rk
+    access:
+      availability: referral
+      method: contact
+      url: https://remote.com/global-hr/startups
+    source_ids:
+      - src_5637f24101627f4de80403d0704f41e07d9054bd83948cf0018b653001047fa4

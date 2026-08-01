@@ -1,0 +1,64 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kyy6rm1109h04rp6g2q31qz2
+slug: scalingo
+slug_aliases: []
+name: Scalingo
+domains:
+  - value: scalingo.com
+    role: primary
+    valid_from: 2026-08-01T07:36:57.844Z
+category: hosting-infra
+description: Scalingo is a European Platform as a Service (PaaS) offering cloud hosting for web applications and databases.
+links:
+  site: https://scalingo.com/
+sources:
+  - source_id: src_c916f732e6f752b46d716b7833b802341ababbdc519dc43530a4d935ac4b2f40
+    url: https://scalingo.com/startup-program
+programs:
+  - program_id: prg_01kyy6rm11nyb13stz3q9apfvh
+    program_slug: scalingo-s-startup-program
+    program_slug_aliases: []
+    title: Scalingo's Startup Program
+    summary: Scalingo's program tailored for startups and incubators to help build, deploy, and scale web applications.
+    source_ids:
+      - src_c916f732e6f752b46d716b7833b802341ababbdc519dc43530a4d935ac4b2f40
+offers:
+  - offer_id: off_01kyy6rm1110hhawrq7k6818zd
+    program_id: prg_01kyy6rm11nyb13stz3q9apfvh
+    offer_slug: scalingo-startup-program
+    offer_slug_aliases: []
+    title: Scalingo Startup Program
+    summary: Eligible startups receive up to 1800€ in free cloud hosting over their first 9 months (up to 200€ per month).
+    lifecycle:
+      status: active
+      effective_from: 2026-08-01T07:36:57.844Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to 1800€ of free cloud hosting over 9 months (up to 200€ per month)
+          duration:
+            kind: exact
+            value: P9M
+          kind: credit
+          value:
+            amount:
+              currency: EUR
+              minor_units: 180000
+            kind: up-to
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: external-verification
+        statement: The program is made for startup and incubators.
+    roles:
+      terms_authority_entity_id: ent_01kyy6rm1109h04rp6g2q31qz2
+      access_operator_entity_id: ent_01kyy6rm1109h04rp6g2q31qz2
+    access:
+      availability: public
+      method: form
+      url: https://scalingo.com/startup-program
+    source_ids:
+      - src_c916f732e6f752b46d716b7833b802341ababbdc519dc43530a4d935ac4b2f40

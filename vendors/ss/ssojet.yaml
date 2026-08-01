@@ -1,0 +1,101 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kyy6rm115469bs2038mts3wv
+slug: ssojet
+slug_aliases: []
+name: SSOJet
+domains:
+  - value: ssojet.com
+    role: primary
+    valid_from: 2026-08-01T07:37:11.016Z
+category: auth-security
+description: SSOJet provides a turnkey solution for B2B SaaS companies to integrate any SSO provider, eliminating complexity and accelerating enterprise customer onboarding.
+links:
+  site: https://ssojet.com
+sources:
+  - source_id: src_c53f8c0d22be1cfbf7b674bb5776bb964996edbc75d41c15cb4cfe5e250187cd
+    url: https://ssojet.com/startup
+programs:
+  - program_id: prg_01kyy6rm115bw54wf0hbzrxv72
+    program_slug: startup-and-non-profit-program
+    program_slug_aliases: []
+    title: Startup & Non-Profit Program
+    summary: Qualified startups and non-profits get 50% off enterprise SSO for 12 months.
+    source_ids:
+      - src_c53f8c0d22be1cfbf7b674bb5776bb964996edbc75d41c15cb4cfe5e250187cd
+offers:
+  - offer_id: off_01kyy6rm11s7thnevckejfz79j
+    program_id: prg_01kyy6rm115bw54wf0hbzrxv72
+    offer_slug: startup-and-non-profit-program-50-off-enterprise-sso
+    offer_slug_aliases: []
+    title: Startup & Non-Profit Program - 50% Off Enterprise SSO
+    summary: Qualified startups and non-profits get 50% off all paid plans for 12 months.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-01T07:37:11.016Z
+    economics:
+      benefits:
+        - applies_to: all paid plans
+          benefit_id: ben_01
+          description: 50% discount on all paid plans for 12 months
+          duration:
+            kind: exact
+            value: P12M
+          kind: discount
+          percentage:
+            basis_points: 5000
+            kind: exact
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: any
+        rules:
+          - kind: all
+            rules:
+              - criterion_id: cri_01
+                fact: company.funding_raised_usd
+                kind: predicate
+                operator: lt
+                statement: Less than $5M in total funding OR less than $3M ARR
+                value:
+                  type: number
+                  value: 5000000
+              - criterion_id: cri_02
+                fact: company.age_months
+                kind: predicate
+                operator: lte
+                statement: Founded in the last 5 years
+                value:
+                  type: number
+                  value: 60
+              - criterion_id: cri_03
+                kind: manual
+                reason: not-machine-evaluable
+                statement: B2B SaaS product with enterprise sales motion
+              - criterion_id: cri_04
+                kind: manual
+                reason: not-machine-evaluable
+                statement: Commitment to implementing within 30 days
+          - kind: all
+            rules:
+              - criterion_id: cri_05
+                kind: manual
+                reason: external-verification
+                statement: Registered 501(c)(3) or equivalent non-profit organization
+              - criterion_id: cri_06
+                kind: manual
+                reason: external-verification
+                statement: Valid proof of non-profit status required
+              - criterion_id: cri_07
+                kind: manual
+                reason: not-machine-evaluable
+                statement: Using SSOJet for organizational or mission-driven purposes
+    roles:
+      terms_authority_entity_id: ent_01kyy6rm115469bs2038mts3wv
+      access_operator_entity_id: ent_01kyy6rm115469bs2038mts3wv
+    access:
+      availability: public
+      method: form
+      url: https://ssojet.com/startup/
+    source_ids:
+      - src_c53f8c0d22be1cfbf7b674bb5776bb964996edbc75d41c15cb4cfe5e250187cd

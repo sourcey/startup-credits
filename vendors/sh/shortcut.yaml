@@ -1,0 +1,98 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kyy6rm110xattc8fm7p4z3h4
+slug: shortcut
+slug_aliases: []
+name: Shortcut
+domains:
+  - value: shortcut.com
+    role: primary
+    valid_from: 2026-08-01T07:53:58.333Z
+category: productivity
+description: Fast, powerful project management.
+links:
+  site: https://www.shortcut.com
+sources:
+  - source_id: src_fba28d9e98cf5fd96f29947462623a8a41e819dbd3320f7bf9fcedbadf6952bb
+    url: https://www.shortcut.com/startups
+programs:
+  - program_id: prg_01kyy6rm1199bvxcse3ya91bbb
+    program_slug: shortcut-startup-program
+    program_slug_aliases: []
+    title: Shortcut Startup Program
+    summary: Get 12 months of free access to the Shortcut Business Plan plus SAML SSO for eligible early-stage startups.
+    source_ids:
+      - src_fba28d9e98cf5fd96f29947462623a8a41e819dbd3320f7bf9fcedbadf6952bb
+offers:
+  - offer_id: off_01kyy6rm11cv7shbfhj6jcmwex
+    program_id: prg_01kyy6rm1199bvxcse3ya91bbb
+    offer_slug: shortcut-startup-program
+    offer_slug_aliases: []
+    title: Shortcut Startup Program
+    summary: Eligible early-stage startups get 12 months free on the Shortcut Business Plan, including SAML SSO.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-01T07:53:58.333Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 12 months free access to the Business Plan including unlimited everything plus SAML SSO
+          duration:
+            kind: exact
+            value: P1Y
+          kind: free-service
+          service: Shortcut Business Plan + SAML SSO
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.is_current_customer
+            kind: predicate
+            operator: eq
+            statement: You're a new Shortcut customer
+            value:
+              type: boolean
+              value: false
+          - criterion_id: cri_02
+            fact: company.employee_count
+            kind: predicate
+            operator: lt
+            statement: You have fewer than 50 employees
+            value:
+              type: number
+              value: 50
+          - criterion_id: cri_03
+            fact: company.industry
+            kind: predicate
+            operator: neq
+            statement: You're not a service provider or consulting agency
+            value:
+              type: string
+              value: service provider or consulting agency
+          - criterion_id: cri_04
+            fact: company.funding_raised_usd
+            kind: predicate
+            operator: lt
+            statement: You have raised less than $10M USD in external funding
+            value:
+              type: number
+              value: 10000000
+          - criterion_id: cri_05
+            fact: company.age_months
+            kind: predicate
+            operator: lt
+            statement: You are a business that's less than 5 years old
+            value:
+              type: number
+              value: 60
+    roles:
+      terms_authority_entity_id: ent_01kyy6rm110xattc8fm7p4z3h4
+      access_operator_entity_id: ent_01kyy6rm110xattc8fm7p4z3h4
+    access:
+      availability: public
+      method: form
+      url: https://www.shortcut.com/startups/
+    source_ids:
+      - src_fba28d9e98cf5fd96f29947462623a8a41e819dbd3320f7bf9fcedbadf6952bb

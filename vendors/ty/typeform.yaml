@@ -1,0 +1,85 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kyy6rm11pr34gjj52the9v91
+slug: typeform
+slug_aliases: []
+name: Typeform
+domains:
+  - value: typeform.com
+    role: primary
+    valid_from: 2026-08-01T07:22:34.797Z
+category: no-code
+description: Getting started isn’t easy. That’s why we increased our startup discount to help give you a head start and scale with Typeform for a full year.
+links:
+  site: https://www.typeform.com
+sources:
+  - source_id: src_2142b211d7f3a133a55a0454789308aa35b4ea13453a4ade8c56f485a2a0e8a9
+    url: https://help.typeform.com/hc/en-us/articles/360045878891-Startup-discount-at-Typeform
+programs: []
+offers:
+  - offer_id: off_01kyy6rm11g27a3qdqh4bedb2x
+    offer_slug: typeform-startup-discount
+    offer_slug_aliases: []
+    title: Typeform Startup Discount
+    summary: Eligible seed-stage startups can get 75% off Typeform's Business plan for one year when purchasing a yearly plan.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-01T07:22:34.797Z
+    economics:
+      benefits:
+        - applies_to: Business plan (yearly)
+          benefit_id: ben_01
+          description: 75% off the Business plan for a year (available on yearly plan)
+          duration:
+            kind: exact
+            value: P1Y
+          kind: discount
+          percentage:
+            basis_points: 7500
+            kind: exact
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.stage
+            kind: predicate
+            operator: eq
+            statement: Your startup must be at a seed stage.
+            value:
+              type: string
+              value: seed
+          - criterion_id: cri_02
+            fact: company.funding_raised_usd
+            kind: predicate
+            operator: lt
+            statement: Your startup must have less than $1 million in funding.
+            value:
+              type: number
+              value: 1000000
+          - criterion_id: cri_03
+            fact: company.lifetime_revenue_usd
+            kind: predicate
+            operator: lt
+            statement: Your startup must have less than $1 million in lifetime revenue.
+            value:
+              type: number
+              value: 1000000
+          - criterion_id: cri_04
+            fact: company.is_current_customer
+            kind: predicate
+            operator: eq
+            statement: Your startup must not be an existing Typeform customer.
+            value:
+              type: boolean
+              value: false
+    roles:
+      terms_authority_entity_id: ent_01kyy6rm11pr34gjj52the9v91
+      access_operator_entity_id: ent_01kyy6rm11pr34gjj52the9v91
+    access:
+      availability: public
+      method: form
+      url: https://help.typeform.com/hc/en-us/articles/360045878891-Startup-discount-at-Typeform
+    source_ids:
+      - src_2142b211d7f3a133a55a0454789308aa35b4ea13453a4ade8c56f485a2a0e8a9

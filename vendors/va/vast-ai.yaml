@@ -1,0 +1,57 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kyy6rm11ep927174p948h6wx
+slug: vast-ai
+slug_aliases: []
+name: Vast.ai
+domains:
+  - value: vast.ai
+    role: primary
+    valid_from: 2026-08-01T07:46:37.400Z
+category: hosting-infra
+description: AI compute platform connecting developers with high-performance GPU cloud resources.
+links:
+  site: https://vast.ai
+sources:
+  - source_id: src_cb22dbf0d690f481efa2d6b9618252c3d6e9c781448c57b22f31e6893dd82888
+    url: https://vast.ai/article/vast-ai-startup-program
+programs: []
+offers:
+  - offer_id: off_01kyy6rm11p5gpykb3sgc4xd69
+    offer_slug: vast-ai-startup-program
+    offer_slug_aliases: []
+    title: Vast.ai Startup Program
+    summary: Startups can get up to $2,500 in free GPU credits when moving workloads to Vast.ai, along with 24/7 priority support during the credit period.
+    lifecycle:
+      status: active
+      effective_from: 2026-02-06T00:00:00Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to $2,500 in free GPU compute credits
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 250000
+            kind: up-to
+        - benefit_id: ben_02
+          description: 24/7 priority support throughout the credit period
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Contact the Vast.ai team to share project details and compute needs for approval and finalized credit offer.
+    roles:
+      terms_authority_entity_id: ent_01kyy6rm11ep927174p948h6wx
+      access_operator_entity_id: ent_01kyy6rm11ep927174p948h6wx
+    access:
+      availability: public
+      instructions: Get in touch with the Vast.ai team to share project details and compute needs to finalize the credit offer.
+      method: contact
+      url: https://vast.ai/article/vast-ai-startup-program
+    source_ids:
+      - src_cb22dbf0d690f481efa2d6b9618252c3d6e9c781448c57b22f31e6893dd82888

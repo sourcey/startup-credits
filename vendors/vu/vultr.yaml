@@ -1,0 +1,90 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kyy6rm11awx10js3n0fnwqpv
+slug: vultr
+slug_aliases: []
+name: Vultr
+domains:
+  - value: vultr.com
+    role: primary
+    valid_from: 2026-08-01T07:21:35.161Z
+category: hosting-infra
+description: Vultr provides high-performance cloud compute, bare metal, and storage infrastructure for startups and digital businesses.
+links:
+  site: https://discover.vultr.com/startup-program
+sources:
+  - source_id: src_9f9528cc7020f1d4183efb65e78f0abb5ea5aa94f1b71d9ba88b9b6cb25add44
+    url: https://discover.vultr.com/startup-program
+programs:
+  - program_id: prg_01kyy6rm11pt717z74bkg8mfms
+    program_slug: vultr-digital-start-up-program
+    program_slug_aliases: []
+    title: Vultr Digital Start-up Program
+    summary: The Vultr Digital Start-up Program provides up to $100K in cloud credits, discounts, and expert support to help startups migrate and scale.
+    source_ids:
+      - src_9f9528cc7020f1d4183efb65e78f0abb5ea5aa94f1b71d9ba88b9b6cb25add44
+offers:
+  - offer_id: off_01kyy6rm11tv21p9aekaqjz3y3
+    program_id: prg_01kyy6rm11pt717z74bkg8mfms
+    offer_slug: vultr-digital-start-up-program
+    offer_slug_aliases: []
+    title: Vultr Digital Start-up Program
+    summary: Eligible high-growth startups with recent Series A–E funding can receive up to $100K in cloud credits, up to 35% long-term discounts, and expert support.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-01T07:21:35.161Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to $100K in cloud credits
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 10000000
+            kind: up-to
+        - benefit_id: ben_02
+          description: Up to 35% long-term discounts
+          kind: discount
+          percentage:
+            basis_points: 3500
+            kind: up-to
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.stage
+            kind: predicate
+            operator: in
+            statement: Your startup must have secured recent Series A, B, C, D, or E financing to be eligible for the program.
+            value:
+              type: string-set
+              values:
+                - series_a
+                - series_b
+                - series_c
+                - series_d
+                - series_e
+          - criterion_id: cri_02
+            kind: manual
+            reason: not-machine-evaluable
+            statement: Provide the name and contact details of your senior-most technical executive, such as your CTO or equivalent.
+          - criterion_id: cri_03
+            kind: manual
+            reason: not-machine-evaluable
+            statement: Submit the name and contact details of your senior-most technical cloud infrastructure leader.
+          - criterion_id: cri_04
+            kind: manual
+            reason: external-verification
+            statement: Share your last 6 months of cloud compute invoices and agree to be publicly referenceable as a member of the Vultr Digital Start-up Program.
+    roles:
+      terms_authority_entity_id: ent_01kyy6rm11awx10js3n0fnwqpv
+      access_operator_entity_id: ent_01kyy6rm11awx10js3n0fnwqpv
+    access:
+      availability: public
+      method: form
+      url: https://discover.vultr.com/startup-program
+    source_ids:
+      - src_9f9528cc7020f1d4183efb65e78f0abb5ea5aa94f1b71d9ba88b9b6cb25add44

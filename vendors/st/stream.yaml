@@ -14,6 +14,8 @@ links:
 sources:
   - source_id: src_74aa65916bac8aee9d14b901778840e2d0aee544eebd1ecc0d33baf0bafe6012
     url: https://getstream.io/partners
+  - source_id: src_eaebbb45fbc11438d7174ce8cbdf133c75f0952abcf82795eb9ea09de9b9543c
+    url: https://getstream.io/maker-account
 programs: []
 offers:
   - offer_id: off_01kyy3083w3k33krxmrqx1kr3w
@@ -112,3 +114,73 @@ offers:
     title: Stream x YC Discount (Under $10M Raised)
     source_ids:
       - src_74aa65916bac8aee9d14b901778840e2d0aee544eebd1ecc0d33baf0bafe6012
+  - offer_id: off_01kyy6rm11jmrkybf0xv2dnm3c
+    offer_slug: maker-account
+    offer_slug_aliases: []
+    title: Maker Account
+    summary: Free access to Stream Chat, Activity Feeds, Moderation ($100/mo credit), and Video & Audio for qualifying small teams.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-01T07:22:14.798Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Stream Chat modified Start Plan (up to 2,000 MAU and 100 concurrent connections)
+          kind: free-service
+          service: Stream Chat modified Start Plan
+        - benefit_id: ben_02
+          description: Activity Feeds Start Plan
+          kind: free-service
+          service: Activity Feeds Start Plan
+        - benefit_id: ben_03
+          description: AI Moderation Pay-as-You-Go with $100 Monthly Credit
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 10000
+            kind: exact
+        - benefit_id: ben_04
+          description: Video & Audio Build Plan
+          kind: free-service
+          service: Video & Audio Build Plan
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.employee_count
+            kind: predicate
+            operator: lte
+            statement: Five or less team members
+            value:
+              type: number
+              value: 5
+          - criterion_id: cri_02
+            fact: company.funding_raised_usd
+            kind: predicate
+            operator: lt
+            statement: Less than $100k in funding
+            value:
+              type: number
+              value: 100000
+          - criterion_id: cri_03
+            fact: company.monthly_revenue_usd
+            kind: predicate
+            operator: lt
+            statement: Less than $10k/mo revenue
+            value:
+              type: number
+              value: 10000
+    roles:
+      terms_authority_entity_id: ent_01kyy3083w3k33krxmrqx1kr3t
+      access_operator_entity_id: ent_01kyy3083w3k33krxmrqx1kr3t
+    access:
+      availability: public
+      method: form
+      url: https://getstream.io/maker-account/
+    terms_url: https://getstream.io/terms/
+    source_ids:
+      - src_eaebbb45fbc11438d7174ce8cbdf133c75f0952abcf82795eb9ea09de9b9543c
