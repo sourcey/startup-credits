@@ -14,7 +14,16 @@ links:
 sources:
   - source_id: src_87fa40e252a9c0c03f4ac9ffad48bd99a2d2b8e7777d03753698a2b1458074fe
     url: https://www.mongodb.com/solutions/startups
-programs: []
+  - source_id: src_e0bda57ca6e319ab92324c417a2a85c8ebc6df9632a7fa410a23ae14b296fa6e
+    url: https://www.mongodb.com/startups
+programs:
+  - program_id: prg_01kyyts97vc8jaej2hsbpjwt81
+    program_slug: mongodb-for-startups
+    program_slug_aliases: []
+    title: MongoDB for Startups
+    summary: MongoDB for Startups supports early-stage startups with MongoDB Atlas credits, Voyage AI tokens, expert technical advice, and access to partner resources.
+    source_ids:
+      - src_e0bda57ca6e319ab92324c417a2a85c8ebc6df9632a7fa410a23ae14b296fa6e
 offers:
   - offer_id: off_01kyh8fpe4x7t8nptwjhqh6var
     offer_slug: mongodb-for-startups-program
@@ -47,3 +56,75 @@ offers:
       url: https://www.mongodb.com/solutions/startups
     source_ids:
       - src_87fa40e252a9c0c03f4ac9ffad48bd99a2d2b8e7777d03753698a2b1458074fe
+  - offer_id: off_01kyyts97vfba6xyhnp22d9ayx
+    program_id: prg_01kyyts97vc8jaej2hsbpjwt81
+    offer_slug: mongodb-for-startups
+    offer_slug_aliases: []
+    title: MongoDB for Startups
+    summary: Access MongoDB Atlas credits, Voyage AI tokens, technical advice, one-on-one expert guidance, and partner network access for early-stage startups.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-01T06:51:28.753Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: MongoDB Atlas credits
+          kind: other
+        - benefit_id: ben_02
+          description: Voyage AI tokens for high-performance retrieval and embeddings
+          kind: other
+        - benefit_id: ben_03
+          description: Exclusive access to a one-on-one session with a professional services expert for best practices and startup guidance
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.age_months
+            kind: predicate
+            operator: lt
+            statement: Startup must be less than 7 years old
+            value:
+              type: number
+              value: 84
+          - criterion_id: cri_02
+            fact: company.stage
+            kind: predicate
+            operator: in
+            statement: Startup funding stage must be Series A or earlier
+            value:
+              type: string-set
+              values:
+                - Bootstrapped
+                - Pre-seed
+                - Seed
+                - Series A
+          - criterion_id: cri_03
+            fact: company.industry
+            kind: predicate
+            operator: neq
+            statement: Startup must be focused on a single software-based product or service
+            value:
+              type: string
+              value: agency_or_dev_shop
+          - criterion_id: cri_04
+            fact: company.is_current_customer
+            kind: predicate
+            operator: absent
+            statement: Must not be a previous participant accepted into MongoDB for Startups
+          - criterion_id: cri_05
+            kind: manual
+            reason: external-verification
+            statement: Must have an active company website and LinkedIn profile
+    roles:
+      terms_authority_entity_id: ent_01kyh8fpe4ys74qx1k4zfcqpjv
+      access_operator_entity_id: ent_01kyh8fpe4ys74qx1k4zfcqpjv
+    access:
+      availability: public
+      method: form
+      url: https://www.mongodb.com/startups
+    source_ids:
+      - src_e0bda57ca6e319ab92324c417a2a85c8ebc6df9632a7fa410a23ae14b296fa6e

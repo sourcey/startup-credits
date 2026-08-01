@@ -1,0 +1,83 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kyyts97tdz1rtzzt919cthny
+slug: slack
+slug_aliases: []
+name: Slack
+domains:
+  - value: slack.com
+    role: primary
+    valid_from: 2026-08-01T13:50:00.000Z
+category: communication
+description: We care about your privacy. Our privacy policy will help you understand what information is collected, how it’s used and what choices you have.
+links:
+  site: https://slack.com
+sources:
+  - source_id: src_a5703a08dde126a8dceb545480be5629e0d825b2850010d50a47e9bdfb86b1f0
+    url: https://slack.com/intl/en-au/trust/privacy/privacy-policy
+  - source_id: src_aa37358989ed750304cec4c78e160fdf97b853f7a730ba6c39a35dea038dc117
+    url: https://perkbook.co/vendor-directory/slack
+programs:
+  - program_id: prg_01kyyts97x1wsbyazz8cez8dwd
+    program_slug: salesforce-launchpad
+    program_slug_aliases: []
+    title: Salesforce Launchpad
+    summary: Salesforce Launchpad provides perks for enrolled startups.
+    source_ids:
+      - src_aa37358989ed750304cec4c78e160fdf97b853f7a730ba6c39a35dea038dc117
+offers:
+  - offer_id: off_01kyyts97x6wp1yp57apfrmyz1
+    program_id: prg_01kyyts97x1wsbyazz8cez8dwd
+    offer_slug: 25-off-pro-and-business-with-slack-via-salesforce-launchpad
+    offer_slug_aliases: []
+    title: 25% off Pro and Business+ with Slack — via Salesforce Launchpad
+    summary: Startups enrolled in Salesforce Launchpad receive 25% off Slack Pro or Business+ plans.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-01T08:16:59.668Z
+    economics:
+      benefits:
+        - applies_to: Slack Pro or Business+ plans
+          benefit_id: ben_01
+          description: 25% off Slack Pro or Business+ plans
+          kind: discount
+          percentage:
+            basis_points: 2500
+            kind: exact
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.partner_memberships
+            kind: predicate
+            operator: contains
+            statement: Enrolled in Salesforce Launchpad
+            value:
+              type: string
+              value: Salesforce Launchpad
+          - kind: any
+            rules:
+              - criterion_id: cri_02
+                fact: company.is_current_customer
+                kind: predicate
+                operator: eq
+                statement: New Slack customer
+                value:
+                  type: boolean
+                  value: false
+              - criterion_id: cri_03
+                kind: manual
+                reason: external-verification
+                statement: Upgrading from free plan
+    roles:
+      terms_authority_entity_id: ent_01kyyts97tdz1rtzzt919cthny
+      access_operator_entity_id: ent_01kyyr9svgcxd42r9s8g3knssn
+    access:
+      availability: membership
+      instructions: Sign Up to Unlock
+      method: other
+      url: https://perkbook.co/vendor-directory/slack
+    source_ids:
+      - src_aa37358989ed750304cec4c78e160fdf97b853f7a730ba6c39a35dea038dc117

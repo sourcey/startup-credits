@@ -14,7 +14,16 @@ links:
 sources:
   - source_id: src_eff2a2761c28380060aff060d1ded39584133534a4efdfd00c06bdf343be6509
     url: https://auth0.com/pricing
-programs: []
+  - source_id: src_d156267470a665ea8499168361817d8f0640966eaa65a8f8fa81a83aa33c63ce
+    url: https://auth0.com/startups
+programs:
+  - program_id: prg_01kyyts97t4myy46bkav6fwyds
+    program_slug: auth0-for-startups
+    program_slug_aliases: []
+    title: Auth0 for Startups
+    summary: The Auth0 for Startups program offers eligible early-stage companies one year of the B2B Professional plan for free.
+    source_ids:
+      - src_d156267470a665ea8499168361817d8f0640966eaa65a8f8fa81a83aa33c63ce
 offers:
   - offer_id: off_01kyh8fpe1wf99w38mgbaz7mzp
     offer_slug: auth0-for-startups
@@ -48,3 +57,74 @@ offers:
       url: https://auth0.com/pricing
     source_ids:
       - src_eff2a2761c28380060aff060d1ded39584133534a4efdfd00c06bdf343be6509
+  - offer_id: off_01kyyts97tenfzgyxkvvcgyy15
+    program_id: prg_01kyyts97t4myy46bkav6fwyds
+    offer_slug: auth0-for-startups-plan
+    offer_slug_aliases: []
+    title: Auth0 for Startups Plan
+    summary: Eligible early-stage startups receive one free year of Auth0's B2B Professional plan capabilities, including up to 100k Monthly Active Users (MAUs).
+    lifecycle:
+      status: active
+      effective_from: 2026-08-01T07:17:32.617Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: One year free of Auth0's B2B Professional plan capabilities (including up to 100k MAUs, Enterprise MFA, Unlimited Organizations, 3 Third-Party APIs, Inbound SCIM, 5 Enterprise Connections, and Token Vault)
+          duration:
+            kind: exact
+            value: P1Y
+          kind: free-service
+          service: Auth0 B2B Professional plan
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.funding_raised_usd
+            kind: predicate
+            operator: lt
+            statement: Venture-backed with less than $5M in funding
+            value:
+              type: number
+              value: 5000000
+          - criterion_id: cri_02
+            fact: company.annual_recurring_revenue_usd
+            kind: predicate
+            operator: lt
+            statement: Less than $1M in annual recurring revenue
+            value:
+              type: number
+              value: 1000000
+          - criterion_id: cri_03
+            fact: company.age_months
+            kind: predicate
+            operator: lt
+            statement: Less than two years from the date of incorporation
+            value:
+              type: number
+              value: 24
+          - kind: not
+            rule:
+              criterion_id: cri_04
+              fact: company.is_current_customer
+              kind: predicate
+              operator: eq
+              statement: Existing paid Auth0/Okta customers
+              value:
+                type: boolean
+                value: true
+          - criterion_id: cri_05
+            kind: manual
+            reason: external-verification
+            statement: Startups that have previously been members of the Auth0 for Startups program
+    roles:
+      terms_authority_entity_id: ent_01kyh8fpe1tcv01nxjfked7v1g
+      access_operator_entity_id: ent_01kyh8fpe1tcv01nxjfked7v1g
+    access:
+      availability: public
+      method: form
+      url: https://auth0.com/startups
+    source_ids:
+      - src_d156267470a665ea8499168361817d8f0640966eaa65a8f8fa81a83aa33c63ce

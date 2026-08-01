@@ -14,7 +14,16 @@ links:
 sources:
   - source_id: src_c1f2a9f31452ef5949b6e57fa22689e15e08347e9aac2371969f2c38c0cbbd89
     url: https://redis.io/startups/
-programs: []
+  - source_id: src_cfad910dd54bf9485e7124063448a4ab2b3d59660d3338e89c9355a69ff8efbe
+    url: https://redis.io/startups
+programs:
+  - program_id: prg_01kyyts97vc4p2yndr23a0nyt4
+    program_slug: redis-startup-program
+    program_slug_aliases: []
+    title: Redis Startup Program
+    summary: The Redis startup program offers growing businesses free Redis for 6 months, support, and go-to-market opportunities to build fast apps fast.
+    source_ids:
+      - src_cfad910dd54bf9485e7124063448a4ab2b3d59660d3338e89c9355a69ff8efbe
 offers:
   - offer_id: off_01kyh8fpe41sm83gbe300tdt1m
     offer_slug: free-redis-for-qualifying-startups
@@ -48,3 +57,47 @@ offers:
       url: https://redis.io/startups/
     source_ids:
       - src_c1f2a9f31452ef5949b6e57fa22689e15e08347e9aac2371969f2c38c0cbbd89
+  - offer_id: off_01kyyts97vf8dj3p88aahvj5vj
+    program_id: prg_01kyyts97vc4p2yndr23a0nyt4
+    offer_slug: redis-startup-program
+    offer_slug_aliases: []
+    title: Redis Startup Program
+    summary: Free Redis for 6 months with usage limits, early access to features, dedicated customer support, monthly office hours, basic support, and co-marketing opportunities for qualifying startups.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-01T06:44:43.244Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Free Redis for 6 months (usage limits apply)
+          duration:
+            kind: exact
+            value: P6M
+          kind: free-service
+          service: Redis
+        - benefit_id: ben_02
+          description: Early access to new Redis features and products
+          kind: other
+        - benefit_id: ben_03
+          description: Dedicated customer support, including monthly office hours and a basic support plan
+          kind: other
+        - benefit_id: ben_04
+          description: Access co-marketing opportunities and lead generation programs
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Qualifying startups
+    roles:
+      terms_authority_entity_id: ent_01kyh8fpe4zndzypt528e2ntzg
+      access_operator_entity_id: ent_01kyh8fpe4zndzypt528e2ntzg
+    access:
+      availability: public
+      method: form
+      url: https://redis.io/startups/
+    source_ids:
+      - src_cfad910dd54bf9485e7124063448a4ab2b3d59660d3338e89c9355a69ff8efbe

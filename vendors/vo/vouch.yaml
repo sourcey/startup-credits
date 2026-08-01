@@ -1,0 +1,53 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kyyts97tryy2fc40wrck4qj1
+slug: vouch
+slug_aliases: []
+name: Vouch
+domains:
+  - value: vouch.us
+    role: primary
+    valid_from: 2026-08-01T13:50:00.000Z
+category: insurance
+description: Vouch is the technology-powered insurance broker for growing companies. Expert coverage, digital tools, and industry-specific protection built for your next milestone.
+links:
+  site: https://vouch.us
+sources:
+  - source_id: src_e2d13c48367aee606d15d7eef91db7b99ec9987debb764340686ff930a2367c5
+    url: https://www.vouch.us/
+  - source_id: src_5af15c175b972ada7f6e0487dc9385f214ca5825c52bf7ecdb54e53d1946183d
+    url: https://pulley.com/perks
+programs: []
+offers:
+  - offer_id: off_01kyyts97x2xzetfat5waejvtb
+    offer_slug: 5-off-insurance-with-vouch
+    offer_slug_aliases: []
+    title: 5% off insurance with Vouch
+    summary: Get 5% off insurance coverage for your startup with Vouch.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-01T12:27:57.374Z
+    economics:
+      benefits:
+        - applies_to: insurance
+          benefit_id: ben_01
+          description: 5% off insurance with Vouch
+          kind: discount
+          percentage:
+            basis_points: 500
+            kind: exact
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: constant
+        statement: Available to Pulley users.
+        value: true
+    roles:
+      terms_authority_entity_id: ent_01kyyts97tryy2fc40wrck4qj1
+      access_operator_entity_id: ent_01kyyr9svfavvhqt4vy0e0b25k
+    access:
+      availability: membership
+      method: other
+    source_ids:
+      - src_5af15c175b972ada7f6e0487dc9385f214ca5825c52bf7ecdb54e53d1946183d

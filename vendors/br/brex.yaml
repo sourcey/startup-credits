@@ -1,0 +1,95 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kyyts97rczvy7tt3n9gd0y3n
+slug: brex
+slug_aliases: []
+name: Brex
+domains:
+  - value: brex.com
+    role: primary
+    valid_from: 2026-08-01T13:50:00.000Z
+category: banking
+description: Simplify expense management with Brex's finance platform. From company cards to banking, Brex helps you drive growth, automate processes, & earn more.
+links:
+  site: https://brex.com
+sources:
+  - source_id: src_00130686bd808622092b40ba7497fdabb93c0b4c96254703bafb2de1cb7db73e
+    url: https://www.brex.com/
+  - source_id: src_450a31a18e797b943952f91dccda6d8e21cc9c15b2cc9a67afc33bedb13c184e
+    url: https://www.brex.com/startups
+  - source_id: src_5af15c175b972ada7f6e0487dc9385f214ca5825c52bf7ecdb54e53d1946183d
+    url: https://pulley.com/perks
+programs: []
+offers:
+  - offer_id: off_01kyyts97v83smhzwvc8gkb5k5
+    offer_slug: brex-saas-and-ai-partner-discounts
+    offer_slug_aliases: []
+    title: Brex SaaS and AI Partner Discounts
+    summary: Access over $350K in discounts and credits on AI and SaaS software through Brex for startups.
+    lifecycle:
+      status: active
+      effective_from: 2026-07-31T23:22:39.535Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Over $350K in discounts and credits on AI and SaaS
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 35000000
+            kind: at-least
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Available to Brex startup account holders.
+    roles:
+      terms_authority_entity_id: ent_01kyyts97rczvy7tt3n9gd0y3n
+      access_operator_entity_id: ent_01kyyts97rczvy7tt3n9gd0y3n
+    access:
+      availability: membership
+      method: form
+      url: https://www.brex.com/startups
+    source_ids:
+      - src_450a31a18e797b943952f91dccda6d8e21cc9c15b2cc9a67afc33bedb13c184e
+  - offer_id: off_01kyyts97wb2srnvwkqykxtep7
+    offer_slug: up-to-100-000-brex-bonus-points
+    offer_slug_aliases: []
+    title: Up to 100,000 Brex bonus points
+    summary: Get a 50,000 point bonus after depositing $100,000 into Brex and an additional 50,000 points after spending $10,000 on Brex cards.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-01T12:27:57.374Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 50,000 point sign up bonus after depositing $100,000 into a Brex business account
+          kind: other
+        - benefit_id: ben_02
+          description: additional 50,000 point sign up bonus after spending $10,000 on Brex card(s)
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: external-verification
+            statement: Deposit $100,000 into a Brex business account for first 50,000 points.
+          - criterion_id: cri_02
+            kind: manual
+            reason: external-verification
+            statement: Spend $10,000 on Brex card(s) for second 50,000 points.
+    roles:
+      terms_authority_entity_id: ent_01kyyts97rczvy7tt3n9gd0y3n
+      access_operator_entity_id: ent_01kyyr9svfavvhqt4vy0e0b25k
+    access:
+      availability: referral
+      method: other
+    source_ids:
+      - src_5af15c175b972ada7f6e0487dc9385f214ca5825c52bf7ecdb54e53d1946183d

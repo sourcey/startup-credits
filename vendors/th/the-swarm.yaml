@@ -1,0 +1,62 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kyyts97tpxmfh63db6h6jmxx
+slug: the-swarm
+slug_aliases: []
+name: The Swarm
+domains:
+  - value: theswarm.com
+    role: primary
+    valid_from: 2026-08-01T13:50:00.000Z
+category: sales
+description: The Swarm curates a rich dataset of 580M profiles with daily job changes, 100M companies with fundraising data, and a unique relationship mapping technology for builders and investors.
+links:
+  site: https://theswarm.com
+sources:
+  - source_id: src_542c2b80b81a62939836f767735b1c430b78501e58f3c5e15f598ee2f8415574
+    url: https://www.theswarm.com/
+  - source_id: src_eaddcd07533be82597727c39ed4bf892af10e6ccea2fa80d98148d92705976f9
+    url: https://perkbook.co/vendor-directory/the
+programs:
+  - program_id: prg_01kyyts97xhd7eqb8jn4ath6rm
+    program_slug: the-swarm-startup-program
+    program_slug_aliases: []
+    title: The Swarm Startup Program
+    summary: The Swarm Startup Program provides offers and perks for startups using The Swarm network intelligence platform.
+    source_ids:
+      - src_eaddcd07533be82597727c39ed4bf892af10e6ccea2fa80d98148d92705976f9
+offers:
+  - offer_id: off_01kyyts97x2gnknxdt3n2jsxgr
+    program_id: prg_01kyyts97xhd7eqb8jn4ath6rm
+    offer_slug: 1-year-free-with-the-swarm-for-startups
+    offer_slug_aliases: []
+    title: 1 year free with The Swarm for Startups
+    summary: Startups get 1 year of free access to The Swarm network intelligence platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-01T08:17:26.928Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 1 year of free service with The Swarm for Startups
+          duration:
+            kind: exact
+            value: P1Y
+          kind: free-service
+          service: The Swarm for Startups
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: constant
+        statement: Available to all startups
+        value: true
+    roles:
+      terms_authority_entity_id: ent_01kyyts97tpxmfh63db6h6jmxx
+      access_operator_entity_id: ent_01kyyr9svgcxd42r9s8g3knssn
+    access:
+      availability: membership
+      method: other
+      url: https://perkbook.co/vendor-directory/the
+    source_ids:
+      - src_eaddcd07533be82597727c39ed4bf892af10e6ccea2fa80d98148d92705976f9

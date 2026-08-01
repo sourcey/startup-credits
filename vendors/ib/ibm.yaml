@@ -1,0 +1,55 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kyyts97s6yk21ew7jmrwvj53
+slug: ibm
+slug_aliases: []
+name: IBM
+domains:
+  - value: ibm.com
+    role: primary
+    valid_from: 2026-08-01T13:50:00.000Z
+category: infra
+description: For more than a century, IBM has been a global technology innovator, leading advances in AI, automation and hybrid cloud solutions that help businesses grow.
+links:
+  site: https://ibm.com
+sources:
+  - source_id: src_c5a7735b1035270e2caf8c82c4cf0850e0d521e2d798ad9179e4e5d29040b92a
+    url: https://www.ibm.com/au-en
+  - source_id: src_1e556a4ddf545e3c2ad695bc37512aab8e6d25e5f1964abd75e56c5fc6612b3f
+    url: https://www.ibm.com/cloud/startups
+programs: []
+offers:
+  - offer_id: off_01kyyts97ve9xwf6ccn7j7mj6q
+    offer_slug: ibm-cloud-free-tier
+    offer_slug_aliases: []
+    title: IBM Cloud Free Tier
+    summary: Create a free IBM Cloud account to get access to over 40 always-free products and a $200 credit to use on any product in the IBM Cloud catalog.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-01T07:52:32.871Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: USD 200 credit on any product in the IBM Cloud catalog
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 20000
+            kind: exact
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: constant
+        statement: Create your free IBM Cloud account
+        value: true
+    roles:
+      terms_authority_entity_id: ent_01kyyts97s6yk21ew7jmrwvj53
+      access_operator_entity_id: ent_01kyyts97s6yk21ew7jmrwvj53
+    access:
+      availability: public
+      method: form
+      url: https://www.ibm.com/products
+    source_ids:
+      - src_1e556a4ddf545e3c2ad695bc37512aab8e6d25e5f1964abd75e56c5fc6612b3f

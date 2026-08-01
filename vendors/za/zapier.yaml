@@ -1,0 +1,70 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kyyts97tghgjktasgc05vqj2
+slug: zapier
+slug_aliases: []
+name: Zapier
+domains:
+  - value: zapier.com
+    role: primary
+    valid_from: 2026-08-01T13:50:00.000Z
+category: code
+description: Build and scale AI workflows and agents across 9,000+ apps with Zapier—the most connected AI orchestration platform. Trusted by 3 million+ businesses.
+links:
+  site: https://zapier.com
+sources:
+  - source_id: src_1ac2e617ebbc05ad032583bbb8dde7022d9ed6ecf594c0493ae4edb3996dd4d6
+    url: https://zapier.com/
+  - source_id: src_ab9c2c5701f886bfd3cf14d56f949f7894854b1026181d7273931856c10e7472
+    url: https://perkbook.co/vendor-directory/zapier
+programs:
+  - program_id: prg_01kyyts97xbwwymek4ge0064ym
+    program_slug: zapier-for-startups
+    program_slug_aliases: []
+    title: Zapier for Startups
+    summary: Zapier for Startups offers early-stage teams discounts and free trial access to Zapier's no-code automation platform.
+    source_ids:
+      - src_ab9c2c5701f886bfd3cf14d56f949f7894854b1026181d7273931856c10e7472
+offers:
+  - offer_id: off_01kyyts97xp750r16w9why4kj3
+    program_id: prg_01kyyts97xbwwymek4ge0064ym
+    offer_slug: 33-off-annual-plans-with-zapier-for-startups
+    offer_slug_aliases: []
+    title: 33% off annual plans with Zapier for Startups
+    summary: Early-stage startups get a 14-day free trial plus 33% off annual plans with Zapier for Startups.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-01T08:17:55.660Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 14 days free
+          duration:
+            kind: exact
+            value: P14D
+          kind: free-service
+          service: Zapier annual plan
+        - applies_to: annual plans
+          benefit_id: ben_02
+          description: 33% off annual plans
+          kind: discount
+          percentage:
+            basis_points: 3300
+            kind: exact
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Available to qualifying early-stage startups
+    roles:
+      terms_authority_entity_id: ent_01kyyts97tghgjktasgc05vqj2
+      access_operator_entity_id: ent_01kyyr9svgcxd42r9s8g3knssn
+    access:
+      availability: membership
+      instructions: Sign Up to Unlock
+      method: other
+      url: https://perkbook.co/vendor-directory/zapier
+    source_ids:
+      - src_ab9c2c5701f886bfd3cf14d56f949f7894854b1026181d7273931856c10e7472

@@ -1,0 +1,53 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kyyts97t9540w53gq2fq5cwg
+slug: rippling
+slug_aliases: []
+name: Rippling
+domains:
+  - value: rippling.com
+    role: primary
+    valid_from: 2026-08-01T13:50:00.000Z
+category: people
+description: Rippling eliminates the friction from running a business, combining HR, IT, and Finance apps on a unified data platform.
+links:
+  site: https://rippling.com
+sources:
+  - source_id: src_49f89780293baa1f31c4eefecc5684f1d6b8e769e132db4e9bd44b877a86f2aa
+    url: https://www.rippling.com/
+  - source_id: src_5af15c175b972ada7f6e0487dc9385f214ca5825c52bf7ecdb54e53d1946183d
+    url: https://pulley.com/perks
+programs: []
+offers:
+  - offer_id: off_01kyyts97wz7abt05wxcc73qk4
+    offer_slug: 6-months-free
+    offer_slug_aliases: []
+    title: 6 months free
+    summary: Get 6 months free on Rippling's employee management platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-01T12:27:57.374Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 6 months free
+          duration:
+            kind: exact
+            value: P6M
+          kind: free-service
+          service: Rippling platform
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: constant
+        statement: Available to Pulley users.
+        value: true
+    roles:
+      terms_authority_entity_id: ent_01kyyts97t9540w53gq2fq5cwg
+      access_operator_entity_id: ent_01kyyr9svfavvhqt4vy0e0b25k
+    access:
+      availability: membership
+      method: other
+    source_ids:
+      - src_5af15c175b972ada7f6e0487dc9385f214ca5825c52bf7ecdb54e53d1946183d

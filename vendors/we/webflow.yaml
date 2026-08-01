@@ -1,0 +1,88 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kyyts97tw201a54k874p582j
+slug: webflow
+slug_aliases: []
+name: Webflow
+domains:
+  - value: webflow.com
+    role: primary
+    valid_from: 2026-08-01T13:50:00.000Z
+category: code
+description: Design, build, optimize, and rank in AI search — all in Webflow. Enterprise-grade security, CMS, hosting, and AEO built in. Trusted by over 300k teams.
+links:
+  site: https://webflow.com
+sources:
+  - source_id: src_3b7f0693c2fe4e9389779a6465308c00b52f2b7b0912be86c2dddba240b6f7b8
+    url: https://webflow.com/
+  - source_id: src_6cc03b5900b9769f04004bc9827f822fbf78372f5c83295afa4f08803dca29e7
+    url: https://perkbook.co/vendor-directory/webflow
+programs:
+  - program_id: prg_01kyyts97xvxe61g6c13paysdv
+    program_slug: webflow-for-startups
+    program_slug_aliases: []
+    title: Webflow for Startups
+    summary: Webflow for Startups offers eligible early-stage companies free access to Webflow's CMS plan for building marketing sites.
+    source_ids:
+      - src_6cc03b5900b9769f04004bc9827f822fbf78372f5c83295afa4f08803dca29e7
+offers:
+  - offer_id: off_01kyyts97x4wqg62nam8yejq5e
+    program_id: prg_01kyyts97xvxe61g6c13paysdv
+    offer_slug: 1-year-free-cms-plan-with-webflow-for-startups
+    offer_slug_aliases: []
+    title: 1 year free CMS Plan with Webflow for Startups
+    summary: Eligible startups receive one full year free on the Webflow CMS Site plan.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-01T08:17:55.654Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 1 year free on the Webflow CMS Site plan
+          duration:
+            kind: exact
+            value: P1Y
+          kind: free-service
+          service: CMS Site plan
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.employee_count
+            kind: predicate
+            operator: lt
+            statement: Under 50 employees
+            value:
+              type: number
+              value: 50
+          - criterion_id: cri_02
+            fact: company.funding_raised_usd
+            kind: predicate
+            operator: lt
+            statement: Raised less than $15M
+            value:
+              type: number
+              value: 15000000
+          - criterion_id: cri_03
+            fact: company.is_current_customer
+            kind: predicate
+            operator: eq
+            statement: New Webflow customer
+            value:
+              type: boolean
+              value: false
+          - criterion_id: cri_04
+            kind: manual
+            reason: external-verification
+            statement: Referred by an approved Webflow startup partner
+    roles:
+      terms_authority_entity_id: ent_01kyyts97tw201a54k874p582j
+      access_operator_entity_id: ent_01kyyr9svgcxd42r9s8g3knssn
+    access:
+      availability: referral
+      instructions: Sign Up to Unlock
+      method: other
+    source_ids:
+      - src_6cc03b5900b9769f04004bc9827f822fbf78372f5c83295afa4f08803dca29e7

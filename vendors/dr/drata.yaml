@@ -1,0 +1,72 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kyyts97tv5vmpzna1nna08rb
+slug: drata
+slug_aliases: []
+name: Drata
+domains:
+  - value: drata.com
+    role: primary
+    valid_from: 2026-08-01T13:50:00.000Z
+  - value: help.drata.com
+    role: alias
+    valid_from: 2026-08-01T13:50:00.000Z
+category: security
+description: Drata Help Center
+links:
+  site: https://drata.com
+sources:
+  - source_id: src_2e7079c3b4306a5cf769d77f11dd9f26f6cb1064857461abdc44797adcbd6693
+    url: https://help.drata.com/en/
+  - source_id: src_67b6b47342f8646ee4596a42c3407f248389fee37d569fb5ca77a0d1190151d5
+    url: https://perkbook.co/vendor-directory/drata
+programs:
+  - program_id: prg_01kyyts97yk1gdq9zb89ht24nf
+    program_slug: drata-for-startups
+    program_slug_aliases: []
+    title: Drata for Startups
+    summary: Drata for Startups offers discounted access to Drata's continuous compliance platform for qualifying early-stage startups.
+    source_ids:
+      - src_67b6b47342f8646ee4596a42c3407f248389fee37d569fb5ca77a0d1190151d5
+offers:
+  - offer_id: off_01kyyts97y4yk035z9vrfwkfwd
+    program_id: prg_01kyyts97yk1gdq9zb89ht24nf
+    offer_slug: startup-discount-on-compliance-automation-with-drata-for-startups
+    offer_slug_aliases: []
+    title: Startup discount on compliance automation with Drata for Startups
+    summary: Qualifying early-stage companies affiliated with an approved Drata investor partner get discounted access to the Drata continuous compliance platform as new customers.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-01T08:14:06.104Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Discounted access to the Drata continuous compliance platform.
+          kind: other
+      consideration:
+        description: Specific discounted pricing is not stated in the source text.
+        kind: unknown
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: external-verification
+            statement: Affiliated with an approved Drata investor partner
+          - criterion_id: cri_02
+            fact: company.is_current_customer
+            kind: predicate
+            operator: eq
+            statement: New Drata customer
+            value:
+              type: boolean
+              value: false
+    roles:
+      terms_authority_entity_id: ent_01kyyts97tv5vmpzna1nna08rb
+      access_operator_entity_id: ent_01kyyr9svgcxd42r9s8g3knssn
+    access:
+      availability: membership
+      method: form
+      url: https://perkbook.co/vendor-directory/drata
+    source_ids:
+      - src_67b6b47342f8646ee4596a42c3407f248389fee37d569fb5ca77a0d1190151d5

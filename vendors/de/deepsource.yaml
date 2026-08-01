@@ -1,0 +1,76 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kyyts97tr0y197z74vgbm0sw
+slug: deepsource
+slug_aliases: []
+name: DeepSource
+domains:
+  - value: deepsource.io
+    role: primary
+    valid_from: 2026-08-01T13:50:00.000Z
+  - value: deepsource.com
+    role: alias
+    valid_from: 2026-08-01T13:50:00.000Z
+category: code
+description: Your team is writing more code with AI. DeepSource automates code reviews so you ship to production faster — catching security issues, improving code quality, and helping your team write better code.
+links:
+  site: https://deepsource.com
+sources:
+  - source_id: src_5a11621d2c5d34598bd03ebef5aedda31fe39b5aafea8c3ae4c5582112dc4cc3
+    url: https://deepsource.com/
+  - source_id: src_bcd1c7246e1c9cdae35fc3392b1e1381ad70bdd096c9565a9a86c694a70d496e
+    url: https://perkbook.co/vendor-directory/deepsource
+programs:
+  - program_id: prg_01kyyts97yn3x8683d4tn4vt3z
+    program_slug: deepsource-startup-program
+    program_slug_aliases: []
+    title: DeepSource Startup Program
+    summary: DeepSource Startup Program / DeepSource for Startups provides perks and free access to its automated code review and static analysis platform for qualifying early-stage startups.
+    source_ids:
+      - src_bcd1c7246e1c9cdae35fc3392b1e1381ad70bdd096c9565a9a86c694a70d496e
+offers:
+  - offer_id: off_01kyyts97ymbdnevwsgawnkb3x
+    program_id: prg_01kyyts97yn3x8683d4tn4vt3z
+    offer_slug: free-code-quality-and-static-analysis-with-deepsource-for-startups
+    offer_slug_aliases: []
+    title: Free code quality and static analysis with DeepSource for Startups
+    summary: Eligible early-stage startups receive free access to the DeepSource static analysis platform for automated code review.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-01T08:13:34.666Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Free access to the DeepSource static analysis platform
+          kind: free-service
+          service: DeepSource static analysis platform
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: vendor-discretion
+            statement: Early-stage startups
+          - criterion_id: cri_02
+            fact: company.is_current_customer
+            kind: predicate
+            operator: eq
+            statement: New DeepSource customers
+            value:
+              type: boolean
+              value: false
+          - criterion_id: cri_03
+            kind: manual
+            reason: not-machine-evaluable
+            statement: Engineering teams using GitHub, GitLab, or Bitbucket
+    roles:
+      terms_authority_entity_id: ent_01kyyts97tr0y197z74vgbm0sw
+      access_operator_entity_id: ent_01kyyr9svgcxd42r9s8g3knssn
+    access:
+      availability: membership
+      method: form
+      url: https://perkbook.co/vendor-directory/deepsource
+    source_ids:
+      - src_bcd1c7246e1c9cdae35fc3392b1e1381ad70bdd096c9565a9a86c694a70d496e

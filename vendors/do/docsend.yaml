@@ -1,0 +1,226 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kyyts97s803mp8w4cmgxa1en
+slug: docsend
+slug_aliases: []
+name: DocSend
+domains:
+  - value: docsend.com
+    role: primary
+    valid_from: 2026-08-01T13:50:00.000Z
+  - value: dropbox.com
+    role: alias
+    valid_from: 2026-08-01T13:50:00.000Z
+category: productivity
+description: Learn how DocSend lets you take control of your business with real-time shared document analytics that unlock data-driven decision making.
+links:
+  site: https://dropbox.com
+sources:
+  - source_id: src_041ab6b6d66f29e0291b59c4b8ada19f54e6a4bb9867fb5ecb8f00b396099d25
+    url: https://www.dropbox.com/docsend
+  - source_id: src_bd9ba13a47d267f4788593e8dc00306da6bdec3415b5ecec62ed9c32acc5c52b
+    url: https://perkbook.co/vendor-directory/docsend
+programs:
+  - program_id: prg_01kyyts97wxmzh9m06kxxcb1h2
+    program_slug: docsend-for-startups
+    program_slug_aliases: []
+    title: DocSend for Startups
+    summary: DocSend for Startups offers discounts on annual DocSend Advanced plans based on startup funding stage.
+    source_ids:
+      - src_bd9ba13a47d267f4788593e8dc00306da6bdec3415b5ecec62ed9c32acc5c52b
+offers:
+  - offer_id: off_01kyyts97w4za5zns8kyebftv1
+    program_id: prg_01kyyts97wxmzh9m06kxxcb1h2
+    offer_slug: 20-off-with-docsend-startup-program-series-b
+    offer_slug_aliases: []
+    title: 20% off with DocSend Startup Program — Series B
+    summary: DocSend for Startups gives Series B companies between $10M and $20M raised 20% off their annual DocSend Advanced plan.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-01T08:14:06.095Z
+    economics:
+      benefits:
+        - applies_to: annual DocSend Advanced plan
+          benefit_id: ben_01
+          description: 20% off annual DocSend Advanced plan
+          duration:
+            kind: exact
+            value: P1Y
+          kind: discount
+          percentage:
+            basis_points: 2000
+            kind: exact
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.stage
+            kind: predicate
+            operator: eq
+            statement: Series B startup
+            value:
+              type: string
+              value: series_b
+          - criterion_id: cri_02
+            fact: company.funding_raised_usd
+            kind: predicate
+            operator: gte
+            statement: between $10M and $20M raised
+            value:
+              type: number
+              value: 10000000
+          - criterion_id: cri_03
+            fact: company.funding_raised_usd
+            kind: predicate
+            operator: lte
+            statement: between $10M and $20M raised
+            value:
+              type: number
+              value: 20000000
+          - criterion_id: cri_04
+            fact: company.is_current_customer
+            kind: predicate
+            operator: eq
+            statement: new DocSend customer
+            value:
+              type: boolean
+              value: false
+    roles:
+      terms_authority_entity_id: ent_01kyyts97s803mp8w4cmgxa1en
+      access_operator_entity_id: ent_01kyyr9svgcxd42r9s8g3knssn
+    access:
+      availability: membership
+      instructions: Sign Up to Unlock
+      method: other
+    source_ids:
+      - src_bd9ba13a47d267f4788593e8dc00306da6bdec3415b5ecec62ed9c32acc5c52b
+  - offer_id: off_01kyyts97whz9w3fwh91xpskt6
+    program_id: prg_01kyyts97wxmzh9m06kxxcb1h2
+    offer_slug: 50-off-with-docsend-startup-program-series-a
+    offer_slug_aliases: []
+    title: 50% off with DocSend Startup Program — Series A
+    summary: DocSend for Startups gives Series A companies between $2M and $10M raised 50% off their annual DocSend Advanced plan.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-01T08:14:06.095Z
+    economics:
+      benefits:
+        - applies_to: annual DocSend Advanced plan
+          benefit_id: ben_01
+          description: 50% off annual DocSend Advanced plan
+          duration:
+            kind: exact
+            value: P1Y
+          kind: discount
+          percentage:
+            basis_points: 5000
+            kind: exact
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.stage
+            kind: predicate
+            operator: eq
+            statement: Series A startup
+            value:
+              type: string
+              value: series_a
+          - criterion_id: cri_02
+            fact: company.funding_raised_usd
+            kind: predicate
+            operator: gte
+            statement: between $2M and $10M raised
+            value:
+              type: number
+              value: 2000000
+          - criterion_id: cri_03
+            fact: company.funding_raised_usd
+            kind: predicate
+            operator: lte
+            statement: between $2M and $10M raised
+            value:
+              type: number
+              value: 10000000
+          - criterion_id: cri_04
+            fact: company.is_current_customer
+            kind: predicate
+            operator: eq
+            statement: new DocSend customer
+            value:
+              type: boolean
+              value: false
+    roles:
+      terms_authority_entity_id: ent_01kyyts97s803mp8w4cmgxa1en
+      access_operator_entity_id: ent_01kyyr9svgcxd42r9s8g3knssn
+    access:
+      availability: membership
+      instructions: Sign Up to Unlock
+      method: other
+    source_ids:
+      - src_bd9ba13a47d267f4788593e8dc00306da6bdec3415b5ecec62ed9c32acc5c52b
+  - offer_id: off_01kyyts97wf5yq8nvzs4wadhjj
+    program_id: prg_01kyyts97wxmzh9m06kxxcb1h2
+    offer_slug: 90-off-with-docsend-startup-program-seed
+    offer_slug_aliases: []
+    title: 90% off with DocSend Startup Program — Seed
+    summary: DocSend for Startups gives Seed-stage companies under $2M raised 90% off their annual DocSend Advanced plan.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-01T08:14:06.095Z
+    economics:
+      benefits:
+        - applies_to: annual DocSend Advanced plan
+          benefit_id: ben_01
+          description: 90% off annual DocSend Advanced plan
+          duration:
+            kind: exact
+            value: P1Y
+          kind: discount
+          percentage:
+            basis_points: 9000
+            kind: exact
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.stage
+            kind: predicate
+            operator: eq
+            statement: Seed-stage startup
+            value:
+              type: string
+              value: seed
+          - criterion_id: cri_02
+            fact: company.funding_raised_usd
+            kind: predicate
+            operator: lt
+            statement: under $2M raised
+            value:
+              type: number
+              value: 2000000
+          - criterion_id: cri_03
+            fact: company.is_current_customer
+            kind: predicate
+            operator: eq
+            statement: new DocSend customer
+            value:
+              type: boolean
+              value: false
+    roles:
+      terms_authority_entity_id: ent_01kyyts97s803mp8w4cmgxa1en
+      access_operator_entity_id: ent_01kyyr9svgcxd42r9s8g3knssn
+    access:
+      availability: membership
+      instructions: Sign Up to Unlock
+      method: other
+    source_ids:
+      - src_bd9ba13a47d267f4788593e8dc00306da6bdec3415b5ecec62ed9c32acc5c52b

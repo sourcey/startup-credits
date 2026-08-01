@@ -14,6 +14,8 @@ links:
 sources:
   - source_id: src_db3296af0447f0e07ac4ca90f90dde3d7df547a077af2257e2b77323c2e912c7
     url: https://f.make.com/startup-program
+  - source_id: src_52c7cfef76238693c49b022554f5d5ebcae3cf0fc5dc5360e48fae867f013be5
+    url: https://perkbook.co/vendor-directory/make
 programs:
   - program_id: prg_01kyxthgpy4wnbhzr8b5hv4nz8
     program_slug: make-startup-program
@@ -22,6 +24,7 @@ programs:
     summary: Make Startup Program offers free access and plan discounts with automation credits to early-stage startups.
     source_ids:
       - src_db3296af0447f0e07ac4ca90f90dde3d7df547a077af2257e2b77323c2e912c7
+      - src_52c7cfef76238693c49b022554f5d5ebcae3cf0fc5dc5360e48fae867f013be5
 offers:
   - offer_id: off_01kyxthgpyakq6wbdhypr9wn51
     program_id: prg_01kyxthgpy4wnbhzr8b5hv4nz8
@@ -92,3 +95,84 @@ offers:
       url: https://f.make.com/startup-program
     source_ids:
       - src_db3296af0447f0e07ac4ca90f90dde3d7df547a077af2257e2b77323c2e912c7
+  - offer_id: off_01kyyts97x7ytcbchydkafk13x
+    program_id: prg_01kyxthgpy4wnbhzr8b5hv4nz8
+    offer_slug: 1-year-free-teams-plan-with-make-for-startups-partner-tier
+    offer_slug_aliases: []
+    title: 1 year free Teams Plan with Make for Startups — partner tier
+    summary: Qualifying partner-affiliated early-stage startups receive 1 year free on the Make Teams plan with up to 480k operations.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-01T08:15:22.414Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 1 year free on the Make Teams plan with 480k operations (worth $1,100+).
+          duration:
+            kind: exact
+            value: P1Y
+          kind: free-service
+          service: Make Teams plan with 480k operations
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.is_current_customer
+            kind: predicate
+            operator: eq
+            statement: Not a paying Make customer
+            value:
+              type: boolean
+              value: false
+          - criterion_id: cri_02
+            fact: company.funding_raised_usd
+            kind: predicate
+            operator: lt
+            statement: Raised less than $5M
+            value:
+              type: number
+              value: 5000000
+          - criterion_id: cri_03
+            fact: company.age_months
+            kind: predicate
+            operator: lt
+            statement: Less than 5 years old
+            value:
+              type: number
+              value: 60
+          - criterion_id: cri_04
+            fact: company.employee_count
+            kind: predicate
+            operator: lt
+            statement: Fewer than 100 employees
+            value:
+              type: number
+              value: 100
+          - criterion_id: cri_05
+            fact: company.industry
+            kind: predicate
+            operator: neq
+            statement: Not providing AI automation as a service
+            value:
+              type: string
+              value: AI automation as a service
+          - criterion_id: cri_06
+            fact: company.partner_memberships
+            kind: predicate
+            operator: contains
+            statement: Affiliated with a Make partner
+            value:
+              type: string
+              value: Make partner
+    roles:
+      terms_authority_entity_id: ent_01kyxthgpy3tfte8bd2eng1ncw
+      access_operator_entity_id: ent_01kyyr9svgcxd42r9s8g3knssn
+    access:
+      availability: membership
+      method: form
+      url: https://perkbook.co/vendor-directory/make
+    source_ids:
+      - src_52c7cfef76238693c49b022554f5d5ebcae3cf0fc5dc5360e48fae867f013be5

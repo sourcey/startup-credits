@@ -14,7 +14,16 @@ links:
 sources:
   - source_id: src_69ffb8925d5967c3d95dc1708b78eea0ec83de27d1a390b28c4e5a1ccf716811
     url: https://neo4j.com/startup-program/
-programs: []
+  - source_id: src_fca2323e44d4a96f3541993271951a026fef1b4043106ee184efddf0a05b2184
+    url: https://neo4j.com/startup-program
+programs:
+  - program_id: prg_01kyyts97t489dn9xs9cnyy2zv
+    program_slug: neo4j-startup-program
+    program_slug_aliases: []
+    title: Neo4j startup program
+    summary: Neo4j startup program provides early-stage startups with Aura credits, expert guidance, and co-marketing opportunities.
+    source_ids:
+      - src_fca2323e44d4a96f3541993271951a026fef1b4043106ee184efddf0a05b2184
 offers:
   - offer_id: off_01kyh8fpe481pd2jnjrc9fr9qr
     offer_slug: neo4j-startup-program
@@ -47,3 +56,67 @@ offers:
       url: https://neo4j.com/startup-program/
     source_ids:
       - src_69ffb8925d5967c3d95dc1708b78eea0ec83de27d1a390b28c4e5a1ccf716811
+  - offer_id: off_01kyyts97vrwvjk2hzser10zjz
+    program_id: prg_01kyyts97t489dn9xs9cnyy2zv
+    offer_slug: up-to-16k-in-aura-credits
+    offer_slug_aliases: []
+    title: Up to $16K in Aura credits
+    summary: Eligible early-stage startups at Series B or earlier receive up to $16,000 in Aura credits to build and scale on Neo4j's production-ready graph database.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-01T06:42:55.540Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to $16,000 in Neo4j Aura credits
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 1600000
+            kind: up-to
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.stage
+            kind: predicate
+            operator: in
+            statement: Startup must be at Series B or earlier.
+            value:
+              type: string-set
+              values:
+                - Pre-Seed
+                - Seed
+                - Series A
+                - Series B
+          - criterion_id: cri_02
+            fact: company.business_model
+            kind: predicate
+            operator: neq
+            statement: Startup must build a single product for many customers, not a custom product for individual customers.
+            value:
+              type: string
+              value: agency_or_consulting
+          - criterion_id: cri_03
+            fact: company.website_url
+            kind: predicate
+            operator: present
+            statement: Startup must have a live, functioning website.
+          - criterion_id: cri_04
+            fact: company.linkedin_profile
+            kind: predicate
+            operator: present
+            statement: Startup must have a valid company profile on LinkedIn and a direct association with the person who is applying.
+    roles:
+      terms_authority_entity_id: ent_01kyh8fpe4m8296zng9ncsnbqs
+      access_operator_entity_id: ent_01kyh8fpe4m8296zng9ncsnbqs
+    access:
+      availability: public
+      method: form
+      url: https://neo4j.com/startup-program/
+    source_ids:
+      - src_fca2323e44d4a96f3541993271951a026fef1b4043106ee184efddf0a05b2184

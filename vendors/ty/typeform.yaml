@@ -14,7 +14,16 @@ links:
 sources:
   - source_id: src_2142b211d7f3a133a55a0454789308aa35b4ea13453a4ade8c56f485a2a0e8a9
     url: https://help.typeform.com/hc/en-us/articles/360045878891-Startup-discount-at-Typeform
-programs: []
+  - source_id: src_45ff19615a1aeaf68137fedfd0c3c1d7090d550af82d4fd44925756fc139a08d
+    url: https://typeform.com/typeform-startups
+programs:
+  - program_id: prg_01kyyts97vvvzftz25kpmyqexd
+    program_slug: typeform-for-startups
+    program_slug_aliases: []
+    title: Typeform for Startups
+    summary: Typeform for Startups provides eligible early-stage startups with discounts on Typeform annual Business plans.
+    source_ids:
+      - src_45ff19615a1aeaf68137fedfd0c3c1d7090d550af82d4fd44925756fc139a08d
 offers:
   - offer_id: off_01kyy6rm11g27a3qdqh4bedb2x
     offer_slug: typeform-startup-discount
@@ -83,3 +92,68 @@ offers:
       url: https://help.typeform.com/hc/en-us/articles/360045878891-Startup-discount-at-Typeform
     source_ids:
       - src_2142b211d7f3a133a55a0454789308aa35b4ea13453a4ade8c56f485a2a0e8a9
+  - offer_id: off_01kyyts97v6ykdrf6fks01qdgz
+    program_id: prg_01kyyts97vvvzftz25kpmyqexd
+    offer_slug: typeform-for-startups-discount
+    offer_slug_aliases: []
+    title: Typeform for Startups Discount
+    summary: Eligible startups receive up to 75% off Typeform annual Business plans.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-01T07:46:21.027Z
+    economics:
+      benefits:
+        - applies_to: Annual Business plans
+          benefit_id: ben_01
+          description: Up to 75% off annual Business plans
+          kind: discount
+          percentage:
+            basis_points: 7500
+            kind: up-to
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.is_current_customer
+            kind: predicate
+            operator: eq
+            statement: Must not already be a paying Typeform customer
+            value:
+              type: boolean
+              value: false
+          - criterion_id: cri_02
+            fact: company.funding_raised_usd
+            kind: predicate
+            operator: lt
+            statement: Less than $5M in funding
+            value:
+              type: number
+              value: 5000000
+          - criterion_id: cri_03
+            fact: company.employee_count
+            kind: predicate
+            operator: lt
+            statement: Less than 50 employees
+            value:
+              type: number
+              value: 50
+          - criterion_id: cri_04
+            fact: company.age_months
+            kind: predicate
+            operator: lt
+            statement: Less than 5 years old
+            value:
+              type: number
+              value: 60
+    roles:
+      terms_authority_entity_id: ent_01kyy6rm11pr34gjj52the9v91
+      access_operator_entity_id: ent_01kyy6rm11pr34gjj52the9v91
+    access:
+      availability: public
+      method: form
+      url: https://typeform.com/typeform-startups
+    source_ids:
+      - src_45ff19615a1aeaf68137fedfd0c3c1d7090d550af82d4fd44925756fc139a08d

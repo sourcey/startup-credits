@@ -1,0 +1,55 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kyyts97txs24gjrczw3tepqw
+slug: magicbell
+slug_aliases: []
+name: MagicBell
+domains:
+  - value: magicbell.com
+    role: primary
+    valid_from: 2026-08-01T13:50:00.000Z
+category: other
+description: Push notification service for email, mobile push, web push, Slack, and SMS. API & SDKs with built-in user preferences and delivery tracking. Free to start.
+links:
+  site: https://magicbell.com
+sources:
+  - source_id: src_177c983f9979709e2267efd818c466c1c3178b76ae16e43ab366a37ac608acbd
+    url: https://www.magicbell.com/
+  - source_id: src_5af15c175b972ada7f6e0487dc9385f214ca5825c52bf7ecdb54e53d1946183d
+    url: https://pulley.com/perks
+programs: []
+offers:
+  - offer_id: off_01kyyts97w5pnkr5ewb1pdjh9p
+    offer_slug: 50-off-for-the-first-24-months-1200-value-with-code-pulley1200
+    offer_slug_aliases: []
+    title: $50 off for the first 24 months ($1200 value) with code PULLEY1200
+    summary: Get $50 off per month for the first 24 months ($1,200 value) with promo code PULLEY1200.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-01T12:27:57.374Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: $50 off for the first 24 months ($1200 value)
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 120000
+            kind: exact
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: constant
+        statement: Use code PULLEY1200.
+        value: true
+    roles:
+      terms_authority_entity_id: ent_01kyyts97txs24gjrczw3tepqw
+      access_operator_entity_id: ent_01kyyr9svfavvhqt4vy0e0b25k
+    access:
+      availability: public
+      method: code
+      public_code: PULLEY1200
+    source_ids:
+      - src_5af15c175b972ada7f6e0487dc9385f214ca5825c52bf7ecdb54e53d1946183d

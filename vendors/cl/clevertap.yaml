@@ -14,6 +14,8 @@ links:
 sources:
   - source_id: src_0fc453e4f6b1de982643df397dbd46b660735ac717f84d78864510b870a77d76
     url: https://clevertap.com/startup-pricing
+  - source_id: src_3397aa0b845d66a1d4036debf67e9b0ff478c50a9268fd8ad361d78cb040ec7a
+    url: https://clevertap.com/startups
 programs: []
 offers:
   - offer_id: off_01kyygma8266wg2s2zfn9xtepr
@@ -54,3 +56,40 @@ offers:
       url: https://clevertap.com/pricing/
     source_ids:
       - src_0fc453e4f6b1de982643df397dbd46b660735ac717f84d78864510b870a77d76
+  - offer_id: off_01kyyts97tj62hzzk02kaags0m
+    offer_slug: clevertap-essentials-mid-year-sale
+    offer_slug_aliases: []
+    title: CleverTap Essentials Mid Year Sale
+    summary: Get 90% off CleverTap Essentials plan for 6 months.
+    lifecycle:
+      status: active
+      effective_from: 2026-07-31T23:16:39.223Z
+    economics:
+      benefits:
+        - applies_to: CleverTap Essentials
+          benefit_id: ben_01
+          description: 90% off CleverTap Essentials for 6 months
+          duration:
+            kind: exact
+            value: P6M
+          kind: discount
+          percentage:
+            basis_points: 9000
+            kind: exact
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: constant
+        statement: Offer is presented as Mid-Year Sale for CleverTap Essentials.
+        value: true
+    roles:
+      terms_authority_entity_id: ent_01kyygma82taj75edn8k8jdj6h
+      access_operator_entity_id: ent_01kyygma82taj75edn8k8jdj6h
+    access:
+      availability: public
+      method: form
+      url: https://clevertap.com/pricing/
+    source_ids:
+      - src_3397aa0b845d66a1d4036debf67e9b0ff478c50a9268fd8ad361d78cb040ec7a

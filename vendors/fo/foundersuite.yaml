@@ -1,0 +1,54 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kyyts97tv71kntfsyxy6e3pp
+slug: foundersuite
+slug_aliases: []
+name: foundersuite
+domains:
+  - value: foundersuite.com
+    role: primary
+    valid_from: 2026-08-01T13:50:00.000Z
+category: fundraising
+description: Software for raising venture capital and managing investor relations. Used by startups, investors, accelerators and financial intermediaries
+links:
+  site: https://foundersuite.com
+sources:
+  - source_id: src_fc50644b5ed5275deffd6f7c39aad168cc34ad56f77e0d6a8d1f867a104b4e4e
+    url: https://foundersuite.com/
+  - source_id: src_5af15c175b972ada7f6e0487dc9385f214ca5825c52bf7ecdb54e53d1946183d
+    url: https://pulley.com/perks
+programs: []
+offers:
+  - offer_id: off_01kyyts97wq93er3t1zrs20n1b
+    offer_slug: get-40-off-any-annual-subscription-using-code-pulley
+    offer_slug_aliases: []
+    title: Get 40% off any Annual Subscription using code “Pulley”
+    summary: Get 40% off any Foundersuite Annual Subscription using coupon code Pulley.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-01T12:27:57.374Z
+    economics:
+      benefits:
+        - applies_to: Annual Subscription
+          benefit_id: ben_01
+          description: 40% off any Annual Subscription
+          kind: discount
+          percentage:
+            basis_points: 4000
+            kind: exact
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: constant
+        statement: Use code Pulley.
+        value: true
+    roles:
+      terms_authority_entity_id: ent_01kyyts97tv71kntfsyxy6e3pp
+      access_operator_entity_id: ent_01kyyr9svfavvhqt4vy0e0b25k
+    access:
+      availability: public
+      method: code
+      public_code: Pulley
+    source_ids:
+      - src_5af15c175b972ada7f6e0487dc9385f214ca5825c52bf7ecdb54e53d1946183d

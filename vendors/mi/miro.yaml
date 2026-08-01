@@ -14,6 +14,8 @@ links:
 sources:
   - source_id: src_cd12d5b849bd137660d1748c1f441203536c41948b97eef4e1122804a2620037
     url: https://miro.com/startups/
+  - source_id: src_eec011578cba1a7a91df90a049196d57b38721f4119f616e91939105a9d5bac4
+    url: https://perkbook.co/vendor-directory/miro
 programs:
   - program_id: prg_01kyh8fpe335dxj6tsyk7tb78w
     program_slug: miro-for-startups
@@ -21,6 +23,13 @@ programs:
     title: Miro for Startups
     source_ids:
       - src_cd12d5b849bd137660d1748c1f441203536c41948b97eef4e1122804a2620037
+  - program_id: prg_01kyyts97xgd034zqh77z1n3r9
+    program_slug: miro-startup-program
+    program_slug_aliases: []
+    title: Miro Startup Program
+    summary: Miro Startup Program offers credits for eligible startups.
+    source_ids:
+      - src_eec011578cba1a7a91df90a049196d57b38721f4119f616e91939105a9d5bac4
 offers:
   - offer_id: off_01kyh8fpe335dxj6tsyk7tb78w
     program_id: prg_01kyh8fpe335dxj6tsyk7tb78w
@@ -89,3 +98,140 @@ offers:
       url: https://miro.com/startups/
     source_ids:
       - src_cd12d5b849bd137660d1748c1f441203536c41948b97eef4e1122804a2620037
+  - offer_id: off_01kyyts97xm14v7h68xprfng2a
+    program_id: prg_01kyyts97xgd034zqh77z1n3r9
+    offer_slug: free-credits-with-miro-startup-program-individual-tier
+    offer_slug_aliases: []
+    title: Free credits with Miro Startup Program — individual tier
+    summary: $500 in Miro credits for individual startups without a Miro partner, accepted on a case-by-case basis.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-01T08:15:22.413Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: $500 in Miro credits
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 50000
+            kind: exact
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.partner_memberships
+            kind: predicate
+            operator: absent
+            statement: Not affiliated with a Miro partner
+          - criterion_id: cri_02
+            fact: company.is_current_customer
+            kind: predicate
+            operator: eq
+            statement: Not a paying Miro subscriber
+            value:
+              type: boolean
+              value: false
+          - criterion_id: cri_03
+            fact: company.age_months
+            kind: predicate
+            operator: lt
+            statement: Under 2 years old
+            value:
+              type: number
+              value: 24
+          - criterion_id: cri_04
+            fact: company.funding_raised_usd
+            kind: predicate
+            operator: lt
+            statement: Under $5M raised
+            value:
+              type: number
+              value: 5000000
+          - criterion_id: cri_05
+            kind: manual
+            reason: external-verification
+            statement: Work/startup domain email
+          - criterion_id: cri_06
+            kind: manual
+            reason: vendor-discretion
+            statement: Accepted on a case-by-case basis
+    roles:
+      terms_authority_entity_id: ent_01kyh8fpe3h966sfgy1aghhjce
+      access_operator_entity_id: ent_01kyyr9svgcxd42r9s8g3knssn
+    access:
+      availability: public
+      method: form
+      url: https://perkbook.co/vendor-directory/miro
+    source_ids:
+      - src_eec011578cba1a7a91df90a049196d57b38721f4119f616e91939105a9d5bac4
+  - offer_id: off_01kyyts97xnz2014phy8xa4m45
+    program_id: prg_01kyyts97xgd034zqh77z1n3r9
+    offer_slug: free-credits-with-miro-startup-program-partner-tier
+    offer_slug_aliases: []
+    title: Free credits with Miro Startup Program — partner tier
+    summary: $1,000 in Miro credits for startups affiliated with an approved Miro Startup Program partner (VC, accelerator, or incubator).
+    lifecycle:
+      status: active
+      effective_from: 2026-08-01T08:15:22.413Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: $1,000 in Miro credits
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 100000
+            kind: exact
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: external-verification
+            statement: Affiliated with an approved Miro Startup Program partner (VC, accelerator, or incubator)
+          - criterion_id: cri_02
+            fact: company.is_current_customer
+            kind: predicate
+            operator: eq
+            statement: Not a paying Miro subscriber
+            value:
+              type: boolean
+              value: false
+          - criterion_id: cri_03
+            fact: company.age_months
+            kind: predicate
+            operator: lt
+            statement: Under 2 years old
+            value:
+              type: number
+              value: 24
+          - criterion_id: cri_04
+            fact: company.funding_raised_usd
+            kind: predicate
+            operator: lt
+            statement: Under $5M raised
+            value:
+              type: number
+              value: 5000000
+          - criterion_id: cri_05
+            kind: manual
+            reason: external-verification
+            statement: Work/startup domain email
+    roles:
+      terms_authority_entity_id: ent_01kyh8fpe3h966sfgy1aghhjce
+      access_operator_entity_id: ent_01kyyr9svgcxd42r9s8g3knssn
+    access:
+      availability: membership
+      method: form
+      url: https://perkbook.co/vendor-directory/miro
+    source_ids:
+      - src_eec011578cba1a7a91df90a049196d57b38721f4119f616e91939105a9d5bac4

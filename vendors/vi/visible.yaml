@@ -1,0 +1,51 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kyyts97tqh1939spnpyz6kef
+slug: visible
+slug_aliases: []
+name: Visible
+domains:
+  - value: visible.vc
+    role: primary
+    valid_from: 2026-08-01T13:50:00.000Z
+category: fundraising
+description: 950+ VC funds use Visible to turn scattered portfolio data into answers. 7,000+ founders use it to raise faster and keep investors close.
+links:
+  site: https://visible.vc
+sources:
+  - source_id: src_32296addae3433f07c07985960a055ab74f2d7e4c72ddca7e1294e09bbee18fd
+    url: https://visible.vc/
+  - source_id: src_5af15c175b972ada7f6e0487dc9385f214ca5825c52bf7ecdb54e53d1946183d
+    url: https://pulley.com/perks
+programs: []
+offers:
+  - offer_id: off_01kyyts97xxdjs3vncd5p0qhwj
+    offer_slug: companies-get-access-to-the-starter-plan-at-no-cost-with-the-code-pulley690
+    offer_slug_aliases: []
+    title: Companies get access to the Starter Plan at no cost with the code PULLEY690.
+    summary: Get access to the Visible Starter Plan at no cost using code PULLEY690.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-01T12:27:57.374Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Access to Starter Plan at no cost
+          kind: free-service
+          service: Visible Starter Plan
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: constant
+        statement: Use code PULLEY690.
+        value: true
+    roles:
+      terms_authority_entity_id: ent_01kyyts97tqh1939spnpyz6kef
+      access_operator_entity_id: ent_01kyyr9svfavvhqt4vy0e0b25k
+    access:
+      availability: public
+      method: code
+      public_code: PULLEY690
+    source_ids:
+      - src_5af15c175b972ada7f6e0487dc9385f214ca5825c52bf7ecdb54e53d1946183d

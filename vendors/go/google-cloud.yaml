@@ -14,6 +14,8 @@ links:
 sources:
   - source_id: src_d4247606b801f684842c4b4a07967eb180fa8d99005a5a5c67247deb0c04d2c8
     url: https://cloud.google.com/startup
+  - source_id: src_1818590e2301ade4655e5d8bf9c89bb4f091f6032c63f17bc3a19f11f3ab0260
+    url: https://perkbook.co/vendor-directory/google
 programs:
   - program_id: prg_01kyh8fpe243m25ep0wtvz068s
     program_slug: google-for-startups-cloud-program
@@ -21,6 +23,13 @@ programs:
     title: Google for Startups Cloud Program
     source_ids:
       - src_d4247606b801f684842c4b4a07967eb180fa8d99005a5a5c67247deb0c04d2c8
+  - program_id: prg_01kyyts97xc8p500ajkf2n1774
+    program_slug: google-cloud-for-startups
+    program_slug_aliases: []
+    title: Google Cloud for Startups
+    summary: Google Cloud program providing startup cloud credits and discounts.
+    source_ids:
+      - src_1818590e2301ade4655e5d8bf9c89bb4f091f6032c63f17bc3a19f11f3ab0260
 offers:
   - offer_id: off_01kyh8fpe243m25ep0wtvz068s
     program_id: prg_01kyh8fpe243m25ep0wtvz068s
@@ -86,3 +95,52 @@ offers:
       url: https://cloud.google.com/startup
     source_ids:
       - src_d4247606b801f684842c4b4a07967eb180fa8d99005a5a5c67247deb0c04d2c8
+  - offer_id: off_01kyyts97x2jp0pmtbzfdervh2
+    program_id: prg_01kyyts97xc8p500ajkf2n1774
+    offer_slug: google-cloud-for-startups-credits-and-usage-coverage
+    offer_slug_aliases: []
+    title: Google Cloud for Startups Credits and Usage Coverage
+    summary: Up to $100,000 in Google Cloud credits during year one, plus 20% usage coverage in year two up to an additional $100,000.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-01T08:14:29.305Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to $100,000 in credits to use with Google Cloud during your first year
+          duration:
+            kind: exact
+            value: P1Y
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 10000000
+            kind: up-to
+        - applies_to: Google Cloud usage during your second year
+          benefit_id: ben_02
+          description: 20% of your usage covered during your second year, up to an additional $100,000
+          duration:
+            kind: exact
+            value: P1Y
+          kind: discount
+          percentage:
+            basis_points: 2000
+            kind: exact
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Available to all startups
+    roles:
+      terms_authority_entity_id: ent_01kyh8fpe210m3jqn5xgzztgv8
+      access_operator_entity_id: ent_01kyyr9svgcxd42r9s8g3knssn
+    access:
+      availability: membership
+      method: form
+      url: https://perkbook.co/vendor-directory/google
+    source_ids:
+      - src_1818590e2301ade4655e5d8bf9c89bb4f091f6032c63f17bc3a19f11f3ab0260

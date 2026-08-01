@@ -1,0 +1,121 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kyyts97t7e1mjd9afe1c2b6k
+slug: nebius
+slug_aliases: []
+name: nebius
+domains:
+  - value: nebius.com
+    role: primary
+    valid_from: 2026-08-01T13:50:00.000Z
+category: infra
+description: Build and scale faster on the purpose-built AI cloud, engineered from silicon to API.
+links:
+  site: https://nebius.com
+sources:
+  - source_id: src_6412a02cb1ef633dc301c4840a8f6f52f6699572e99e3fbd1b206d1eb162f9a2
+    url: https://nebius.com/
+  - source_id: src_e5f8862d901702ee28addc2b5d482e2f4049d47452e2f8dd3b51d83028a5478d
+    url: https://perkbook.co/vendor-directory/nebius
+programs:
+  - program_id: prg_01kyyts97wfw7w8brz2xw4psa6
+    program_slug: nebius-for-startups
+    program_slug_aliases: []
+    title: Nebius for Startups
+    summary: Program providing AI-focused early-stage companies with immediate GPU credits and discounted compute on enterprise-grade H100 infrastructure.
+    source_ids:
+      - src_e5f8862d901702ee28addc2b5d482e2f4049d47452e2f8dd3b51d83028a5478d
+offers:
+  - offer_id: off_01kyyts97wajf01q9g41ztvarp
+    program_id: prg_01kyyts97wfw7w8brz2xw4psa6
+    offer_slug: free-compute-credits-with-nebius-for-startups-base-tier
+    offer_slug_aliases: []
+    title: Free compute credits with Nebius for Startups — base tier
+    summary: Provides $5,000 in immediate GPU credits for early-stage AI startups with under $5M in funding.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-01T08:15:42.602Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: $5,000 USD in immediate GPU compute credits
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 500000
+            kind: exact
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: not-machine-evaluable
+            statement: Must be an early-stage AI-focused startup.
+          - criterion_id: cri_02
+            fact: company.is_current_customer
+            kind: predicate
+            operator: eq
+            statement: Must be a new Nebius customer.
+            value:
+              type: boolean
+              value: false
+          - criterion_id: cri_03
+            fact: company.funding_raised_usd
+            kind: predicate
+            operator: lt
+            statement: Must have raised under $5M in funding.
+            value:
+              type: number
+              value: 5000000
+    roles:
+      terms_authority_entity_id: ent_01kyyts97t7e1mjd9afe1c2b6k
+      access_operator_entity_id: ent_01kyyr9svgcxd42r9s8g3knssn
+    access:
+      availability: membership
+      method: other
+    source_ids:
+      - src_e5f8862d901702ee28addc2b5d482e2f4049d47452e2f8dd3b51d83028a5478d
+  - offer_id: off_01kyyts97wzz52bdfhxbhhkk41
+    program_id: prg_01kyyts97wfw7w8brz2xw4psa6
+    offer_slug: free-compute-credits-with-nebius-for-startups-high-growth-tier
+    offer_slug_aliases: []
+    title: Free compute credits with Nebius for Startups — high-growth tier
+    summary: Provides $100,000 USD in compute credits for high-growth AI startups with significant compute needs.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-01T08:15:42.602Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: $100,000 USD in compute credits
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 10000000
+            kind: exact
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: not-machine-evaluable
+            statement: Must be a high-growth AI startup with significant compute needs.
+          - criterion_id: cri_02
+            kind: manual
+            reason: vendor-discretion
+            statement: Assessed case by case by Nebius.
+    roles:
+      terms_authority_entity_id: ent_01kyyts97t7e1mjd9afe1c2b6k
+      access_operator_entity_id: ent_01kyyr9svgcxd42r9s8g3knssn
+    access:
+      availability: membership
+      method: other
+    source_ids:
+      - src_e5f8862d901702ee28addc2b5d482e2f4049d47452e2f8dd3b51d83028a5478d

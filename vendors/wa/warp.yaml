@@ -1,0 +1,59 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kyyts97tcznwmnxa1ehcfvaa
+slug: warp
+slug_aliases: []
+name: Warp
+domains:
+  - value: joinwarp.com
+    role: primary
+    valid_from: 2026-08-01T13:50:00.000Z
+  - value: warp.co
+    role: alias
+    valid_from: 2026-08-01T13:50:00.000Z
+category: hr
+description: Warp is the AI-native employee management platform for high-growth companies. Payroll, compliance, and benefits that scale from 10 to 1000+ employees—all on autopilot.
+links:
+  site: https://warp.co
+sources:
+  - source_id: src_b342e78c18af71c0e3fad78b9b15e12d7920db5552ddc90f0d6277230349b290
+    url: https://www.warp.co/
+  - source_id: src_5af15c175b972ada7f6e0487dc9385f214ca5825c52bf7ecdb54e53d1946183d
+    url: https://pulley.com/perks
+programs: []
+offers:
+  - offer_id: off_01kyyts97x0p3v0w8vx6qz42gc
+    offer_slug: get-3-months-free-a-dedicated-account-manager-and-a-benefits-advisor-when-you-si
+    offer_slug_aliases: []
+    title: Get 3 months free, a dedicated Account Manager, and a Benefits Advisor when you sign up for any plan on Warp.
+    summary: Receive 3 months free, a dedicated Account Manager, and a Benefits Advisor on Warp.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-01T12:27:57.374Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 3 months free when you sign up for any plan on Warp
+          duration:
+            kind: exact
+            value: P3M
+          kind: free-service
+          service: Warp platform
+        - benefit_id: ben_02
+          description: Dedicated Account Manager and Benefits Advisor
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: constant
+        statement: Sign up for any plan on Warp via Pulley.
+        value: true
+    roles:
+      terms_authority_entity_id: ent_01kyyts97tcznwmnxa1ehcfvaa
+      access_operator_entity_id: ent_01kyyr9svfavvhqt4vy0e0b25k
+    access:
+      availability: membership
+      method: other
+    source_ids:
+      - src_5af15c175b972ada7f6e0487dc9385f214ca5825c52bf7ecdb54e53d1946183d

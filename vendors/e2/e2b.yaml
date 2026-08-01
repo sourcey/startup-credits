@@ -1,0 +1,93 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kyyts97s1bxxwa11s6wbm0r2
+slug: e2b
+slug_aliases: []
+name: E2B
+domains:
+  - value: e2b.dev
+    role: primary
+    valid_from: 2026-08-01T13:50:00.000Z
+category: other
+description: E2B Gives AI Agents Secure Computers with Real-World Tools. E2B is Used by 88% of Fortune 100 Companies for Frontier Agentic Workflows.
+links:
+  site: https://e2b.dev
+sources:
+  - source_id: src_0e33303f9e66813d619253e4b5f2b39c6abce3ddad223c01cbe96accd65a8293
+    url: https://e2b.dev/privacy
+  - source_id: src_a534ac470b986affc207b6f52ec5e66f285bf7972ac2f6026137f7d743b0c1e8
+    url: https://e2b.dev/startups
+programs:
+  - program_id: prg_01kyyts97vcfchqrykv2cg0v2e
+    program_slug: e2b-for-startups-program
+    program_slug_aliases: []
+    title: E2B for Startups Program
+    summary: E2B program providing startup credits and Pro Tier plan access to eligible early-stage AI agent startups.
+    source_ids:
+      - src_a534ac470b986affc207b6f52ec5e66f285bf7972ac2f6026137f7d743b0c1e8
+offers:
+  - offer_id: off_01kyyts97vfy9btzmsqx8hp75k
+    program_id: prg_01kyyts97vcfchqrykv2cg0v2e
+    offer_slug: e2b-for-startups-program
+    offer_slug_aliases: []
+    title: E2B for Startups Program
+    summary: Eligible early-stage startups get $20,000 in one-time E2B credits and membership in the E2B Pro Tier plan.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-01T11:36:15.140Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: $20,000 of usage in credits
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 2000000
+            kind: exact
+        - benefit_id: ben_02
+          description: Membership in E2B Pro Tier plan
+          kind: free-service
+          service: E2B Pro Tier plan
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.funding_raised_usd
+            kind: predicate
+            operator: lt
+            statement: Raised less than $5M
+            value:
+              type: number
+              value: 5000000
+          - criterion_id: cri_02
+            fact: company.age_months
+            kind: predicate
+            operator: lt
+            statement: Less than 3 years old
+            value:
+              type: number
+              value: 36
+          - criterion_id: cri_03
+            fact: company.is_current_customer
+            kind: predicate
+            operator: eq
+            statement: First time E2B users only
+            value:
+              type: boolean
+              value: false
+          - criterion_id: cri_04
+            kind: manual
+            reason: vendor-discretion
+            statement: Early-stage startups working on AI agents or AI-based applications evaluated by E2B
+    roles:
+      terms_authority_entity_id: ent_01kyyts97s1bxxwa11s6wbm0r2
+      access_operator_entity_id: ent_01kyyts97s1bxxwa11s6wbm0r2
+    access:
+      availability: public
+      method: form
+      url: https://e2b.dev/startups
+    source_ids:
+      - src_a534ac470b986affc207b6f52ec5e66f285bf7972ac2f6026137f7d743b0c1e8

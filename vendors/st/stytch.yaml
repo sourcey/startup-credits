@@ -1,0 +1,84 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kyyts97t86xxhk66xc34bjvs
+slug: stytch
+slug_aliases: []
+name: Stytch
+domains:
+  - value: stytch.com
+    role: primary
+    valid_from: 2026-08-01T13:50:00.000Z
+category: security
+description: APIs and SDKs to integrate authentication and security into your app.
+links:
+  site: https://stytch.com
+sources:
+  - source_id: src_57b4079771e2b0b3f248e940d92e2833f727ff5f362c909241183a21e3b09c76
+    url: https://stytch.com/
+  - source_id: src_1d28545b15b0f85210fb42564078baece3e558a8f4fe4e95250f680f9abce844
+    url: https://perkbook.co/vendor-directory/stytch
+programs:
+  - program_id: prg_01kyyts97y0k39nb4pa1hhays8
+    program_slug: stytch-for-startups
+    program_slug_aliases: []
+    title: Stytch for Startups
+    summary: Stytch for Startups gives qualifying early-stage companies free access to the Stytch authentication platform.
+    source_ids:
+      - src_1d28545b15b0f85210fb42564078baece3e558a8f4fe4e95250f680f9abce844
+offers:
+  - offer_id: off_01kyyts97yaqe3dscp7brf8t2r
+    program_id: prg_01kyyts97y0k39nb4pa1hhays8
+    offer_slug: free-authentication-platform-with-stytch-for-startups
+    offer_slug_aliases: []
+    title: Free authentication platform with Stytch for Startups
+    summary: Qualifying early-stage startups get free access to the Stytch auth and fraud prevention platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-01T08:17:26.920Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Free access to the Stytch authentication platform
+          kind: free-service
+          service: Stytch authentication platform
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.funding_raised_usd
+            kind: predicate
+            operator: lt
+            statement: Must have raised under $10M
+            value:
+              type: number
+              value: 10000000
+          - criterion_id: cri_02
+            fact: company.is_current_customer
+            kind: predicate
+            operator: eq
+            statement: Must be new Stytch customers
+            value:
+              type: boolean
+              value: false
+          - criterion_id: cri_03
+            fact: company.industry
+            kind: predicate
+            operator: in
+            statement: Must be B2B SaaS, fintech, or e-commerce startups
+            value:
+              type: string-set
+              values:
+                - B2B SaaS
+                - fintech
+                - e-commerce
+    roles:
+      terms_authority_entity_id: ent_01kyyts97t86xxhk66xc34bjvs
+      access_operator_entity_id: ent_01kyyr9svgcxd42r9s8g3knssn
+    access:
+      availability: membership
+      method: form
+      url: https://perkbook.co/vendor-directory/stytch
+    source_ids:
+      - src_1d28545b15b0f85210fb42564078baece3e558a8f4fe4e95250f680f9abce844

@@ -66,3 +66,38 @@ offers:
     title: Archbee Startup Program
     source_ids:
       - src_f282545a7eecaddec966984fc10e581a19f30b641e7058bf7efccc309ac7738a
+  - offer_id: off_01kyyts97v87hhqz5e0xhsx516
+    offer_slug: free-growing-plan-for-open-source-software
+    offer_slug_aliases: []
+    title: Free Growing Plan for Open Source Software
+    summary: Free Growing plan available for open source software projects.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-01T07:03:40.270Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Free Growing plan
+          kind: waiver
+          waived_item: Growing plan subscription fee
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        fact: company.is_open_source
+        kind: predicate
+        operator: eq
+        statement: Must be an open source software project
+        value:
+          type: boolean
+          value: true
+    roles:
+      terms_authority_entity_id: ent_01kyy3083w3k33krxmrqx1kr43
+      access_operator_entity_id: ent_01kyy3083w3k33krxmrqx1kr43
+    access:
+      availability: public
+      method: contact
+      url: https://www.archbee.com/pricing
+    source_ids:
+      - src_f282545a7eecaddec966984fc10e581a19f30b641e7058bf7efccc309ac7738a

@@ -1,0 +1,53 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kyyts97tgx2a9v0rnxxwvjpr
+slug: growsurf
+slug_aliases: []
+name: GrowSurf
+domains:
+  - value: growsurf.com
+    role: primary
+    valid_from: 2026-08-01T13:50:00.000Z
+category: marketing
+description: Referral software for marketing and product teams. Launch customer referral and affiliate programs in days, not weeks, without heavy engineering work.
+links:
+  site: https://growsurf.com
+sources:
+  - source_id: src_9883517dd9c1c1de62856b871636dcf5d0c2719924df9b3b092922b9a0cbc896
+    url: https://growsurf.com/
+  - source_id: src_5af15c175b972ada7f6e0487dc9385f214ca5825c52bf7ecdb54e53d1946183d
+    url: https://pulley.com/perks
+programs: []
+offers:
+  - offer_id: off_01kyyts97wjy5ssdmvkjbsc7gw
+    offer_slug: 20-off-any-growsurf-plan
+    offer_slug_aliases: []
+    title: 20% off any GrowSurf plan
+    summary: Get 20% off any GrowSurf referral software plan.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-01T12:27:57.374Z
+    economics:
+      benefits:
+        - applies_to: GrowSurf plan
+          benefit_id: ben_01
+          description: 20% off any GrowSurf plan
+          kind: discount
+          percentage:
+            basis_points: 2000
+            kind: exact
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: constant
+        statement: Available to Pulley users.
+        value: true
+    roles:
+      terms_authority_entity_id: ent_01kyyts97tgx2a9v0rnxxwvjpr
+      access_operator_entity_id: ent_01kyyr9svfavvhqt4vy0e0b25k
+    access:
+      availability: membership
+      method: other
+    source_ids:
+      - src_5af15c175b972ada7f6e0487dc9385f214ca5825c52bf7ecdb54e53d1946183d

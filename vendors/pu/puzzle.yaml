@@ -1,0 +1,93 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kyyts97s1w9c31cbzyjwye2h
+slug: puzzle
+slug_aliases: []
+name: Puzzle
+domains:
+  - value: puzzle.io
+    role: primary
+    valid_from: 2026-08-01T13:50:00.000Z
+category: accounting
+description: Automate your bookkeeping with Puzzle’s AI-native accounting software. Get real-time financial insights, seamless integrations (Stripe, Brex, Gusto), and tax-ready financials instantly.
+links:
+  site: https://puzzle.io
+sources:
+  - source_id: src_71c84f48edff421fd0d325aadd1afb668a81affea8256b629118e70d8aa18f2f
+    url: https://puzzle.io/
+  - source_id: src_1218c0e1006047b76dbdb4f12f087fce02bb36ebbd981ba5508a74f39c0432b0
+    url: https://puzzle.io/pricing
+  - source_id: src_5af15c175b972ada7f6e0487dc9385f214ca5825c52bf7ecdb54e53d1946183d
+    url: https://pulley.com/perks
+programs: []
+offers:
+  - offer_id: off_01kyyts97vew8dq1f25mejswen
+    offer_slug: starter-plan-2-months-free
+    offer_slug_aliases: []
+    title: Starter Plan - 2 Months Free
+    summary: Get 100% off for 2 months on Puzzle's Starter plan for early-stage accounting.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-01T06:44:14.430Z
+    economics:
+      benefits:
+        - applies_to: Puzzle Starter plan
+          benefit_id: ben_01
+          description: 100% off the Starter plan for 2 months.
+          duration:
+            kind: exact
+            value: P2M
+          kind: discount
+          percentage:
+            basis_points: 10000
+            kind: exact
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: constant
+        statement: Available to users signing up for the Starter plan.
+        value: true
+    roles:
+      terms_authority_entity_id: ent_01kyyts97s1w9c31cbzyjwye2h
+      access_operator_entity_id: ent_01kyyts97s1w9c31cbzyjwye2h
+    access:
+      availability: public
+      method: form
+      url: https://puzzle.io/pricing
+    source_ids:
+      - src_1218c0e1006047b76dbdb4f12f087fce02bb36ebbd981ba5508a74f39c0432b0
+  - offer_id: off_01kyyts97wvcdryhjrw1sbmz4g
+    offer_slug: mention-pulley-during-onboarding-and-get-6-months-free
+    offer_slug_aliases: []
+    title: Mention Pulley during onboarding and get 6 months free
+    summary: Get 6 months of Puzzle financial accounting software free when mentioning Pulley during onboarding.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-01T12:27:57.374Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 6 months free Puzzle accounting software
+          duration:
+            kind: exact
+            value: P6M
+          kind: free-service
+          service: Puzzle platform
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: constant
+        statement: Mention Pulley during onboarding.
+        value: true
+    roles:
+      terms_authority_entity_id: ent_01kyyts97s1w9c31cbzyjwye2h
+      access_operator_entity_id: ent_01kyyr9svfavvhqt4vy0e0b25k
+    access:
+      availability: membership
+      instructions: Mention Pulley during onboarding.
+      method: contact
+    source_ids:
+      - src_5af15c175b972ada7f6e0487dc9385f214ca5825c52bf7ecdb54e53d1946183d

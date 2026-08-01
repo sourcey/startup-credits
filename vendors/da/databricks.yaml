@@ -14,7 +14,14 @@ links:
 sources:
   - source_id: src_379412354a02bdd589f71378373ca1d9a3e5cd11d7b2b5502d51384938dd7035
     url: https://www.databricks.com/product/startups
-programs: []
+programs:
+  - program_id: prg_01kyyts97vhf5ezsgeeb8xcv4v
+    program_slug: databricks-for-startups-program
+    program_slug_aliases: []
+    title: Databricks for Startups Program
+    summary: Helps startups grow and deliver their data and AI strategy with platform access and startup credits.
+    source_ids:
+      - src_379412354a02bdd589f71378373ca1d9a3e5cd11d7b2b5502d51384938dd7035
 offers:
   - offer_id: off_01kyh8fpe2j3bzhymycrhggghe
     offer_slug: databricks-ai-accelerator-program
@@ -69,6 +76,46 @@ offers:
         criterion_id: cri_requirement_01
         statement: Available to qualifying startups (founders can apply directly or ask their investor).
         reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01kyh8fpe20b7d3zws8zfya66r
+      access_operator_entity_id: ent_01kyh8fpe20b7d3zws8zfya66r
+    access:
+      availability: public
+      method: form
+      url: https://www.databricks.com/product/startups
+    source_ids:
+      - src_379412354a02bdd589f71378373ca1d9a3e5cd11d7b2b5502d51384938dd7035
+  - offer_id: off_01kyyts97v21z78gt9fvpcajr2
+    program_id: prg_01kyyts97vhf5ezsgeeb8xcv4v
+    offer_slug: databricks-for-startups-program
+    offer_slug_aliases: []
+    title: Databricks for Startups Program
+    summary: Qualifying startups can receive up to $200K in credits for Databricks and Neon.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-01T07:05:36.101Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Credits for Databricks and Neon
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 20000000
+            kind: up-to
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        fact: company.stage
+        kind: predicate
+        operator: eq
+        statement: Must be a qualifying startup.
+        value:
+          type: string
+          value: startup
     roles:
       terms_authority_entity_id: ent_01kyh8fpe20b7d3zws8zfya66r
       access_operator_entity_id: ent_01kyh8fpe20b7d3zws8zfya66r

@@ -1,0 +1,76 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kyyts97sdsn61rze854rtsjc
+slug: descope
+slug_aliases: []
+name: Descope
+domains:
+  - value: descope.com
+    role: primary
+    valid_from: 2026-08-01T13:50:00.000Z
+category: security
+description: Build secure, frictionless identity journeys for your users, business customers, partners, AI agents, and MCP servers with the Descope External IAM Platform.
+links:
+  site: https://descope.com
+sources:
+  - source_id: src_ab04b4eaba7fd527dc58484e7f4d00dcffc5fff0c0c632888d14244d107a67d9
+    url: https://www.descope.com/
+  - source_id: src_bf52821693023034ce9171d3206ccbcd7a24ea6bf390c3add220bba84ba4492d
+    url: https://perkbook.co/vendor-directory/descope
+programs:
+  - program_id: prg_01kyyts97wa9d7s999d5d5bas6
+    program_slug: descope-for-startups
+    program_slug_aliases: []
+    title: Descope for Startups
+    summary: Descope for Startups provides early-stage companies access to Descope's authentication platform and perks.
+    source_ids:
+      - src_bf52821693023034ce9171d3206ccbcd7a24ea6bf390c3add220bba84ba4492d
+offers:
+  - offer_id: off_01kyyts97wny98pf77e1dsxaay
+    program_id: prg_01kyyts97wa9d7s999d5d5bas6
+    offer_slug: 12-months-free-authentication-platform-with-descope-for-startups
+    offer_slug_aliases: []
+    title: 12 months free authentication platform with Descope for Startups
+    summary: Qualifying early-stage companies receive 12 months free on the Descope Pro tier through the Descope Hello World Startup Plan.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-01T08:14:06.100Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 12 months free on the Descope Pro tier authentication platform
+          duration:
+            kind: exact
+            value: P1Y
+          kind: free-service
+          service: Descope Pro tier authentication platform
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.age_months
+            kind: predicate
+            operator: lte
+            statement: Founded within last 3 years
+            value:
+              type: number
+              value: 36
+          - criterion_id: cri_02
+            fact: company.annual_recurring_revenue_usd
+            kind: predicate
+            operator: lt
+            statement: Under $1M ARR
+            value:
+              type: number
+              value: 1000000
+    roles:
+      terms_authority_entity_id: ent_01kyyts97sdsn61rze854rtsjc
+      access_operator_entity_id: ent_01kyyr9svgcxd42r9s8g3knssn
+    access:
+      availability: membership
+      method: form
+      url: https://perkbook.co/vendor-directory/descope
+    source_ids:
+      - src_bf52821693023034ce9171d3206ccbcd7a24ea6bf390c3add220bba84ba4492d

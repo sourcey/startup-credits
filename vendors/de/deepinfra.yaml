@@ -1,0 +1,68 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kyyts97sfrxp00s21jt9b95y
+slug: deepinfra
+slug_aliases: []
+name: DeepInfra
+domains:
+  - value: deepinfra.com
+    role: primary
+    valid_from: 2026-08-01T13:50:00.000Z
+category: ml
+description: DeepInfra offers cost-effective, scalable, easy-to-deploy, and production-ready machine-learning models and infrastructures for deep-learning models.
+links:
+  site: https://deepinfra.com
+sources:
+  - source_id: src_4372169c5433326be66d10fc58f66eaf7c58c84bd90379afee5e9f29e1438bd8
+    url: https://deepinfra.com/
+  - source_id: src_8b0cde8a6977f3aaa2bd936f824af4066338da00472d6e50c6526ae811c4c40c
+    url: https://perkbook.co/vendor-directory/deepinfra
+programs:
+  - program_id: prg_01kyyts97w2qshjx2e2yqz6as2
+    program_slug: deepinfra-deepstart
+    program_slug_aliases: []
+    title: DeepInfra DeepStart
+    summary: DeepInfra DeepStart gives qualifying early-stage AI companies up to 1 billion free inference tokens for running open-source models in production.
+    source_ids:
+      - src_8b0cde8a6977f3aaa2bd936f824af4066338da00472d6e50c6526ae811c4c40c
+offers:
+  - offer_id: off_01kyyts97wx07k6ckfa6np5rd6
+    program_id: prg_01kyyts97w2qshjx2e2yqz6as2
+    offer_slug: free-ai-inference-tokens-with-deepinfra-deepstart
+    offer_slug_aliases: []
+    title: Free AI inference tokens with DeepInfra DeepStart
+    summary: Qualifying early-stage AI startups can receive up to 1 billion free inference tokens to run open-source models on DeepInfra.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-01T08:13:34.662Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to 1 billion free inference tokens
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: vendor-discretion
+            statement: Early-stage AI startups building with open-source models
+          - criterion_id: cri_02
+            fact: company.is_current_customer
+            kind: predicate
+            operator: eq
+            statement: new DeepInfra customers
+            value:
+              type: boolean
+              value: false
+    roles:
+      terms_authority_entity_id: ent_01kyyts97sfrxp00s21jt9b95y
+      access_operator_entity_id: ent_01kyyr9svgcxd42r9s8g3knssn
+    access:
+      availability: membership
+      method: form
+      url: https://perkbook.co/vendor-directory/deepinfra
+    source_ids:
+      - src_8b0cde8a6977f3aaa2bd936f824af4066338da00472d6e50c6526ae811c4c40c

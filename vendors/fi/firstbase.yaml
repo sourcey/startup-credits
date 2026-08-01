@@ -1,0 +1,53 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kyyts97tdzqkfecknpaf5e0p
+slug: firstbase
+slug_aliases: []
+name: Firstbase
+domains:
+  - value: firstbase.io
+    role: primary
+    valid_from: 2026-08-01T13:50:00.000Z
+category: compliance
+description: Firstbase helps anyone to build a US business. Start a company, set up banking, payments, and payroll, and manage a business — online, from anywhere.
+links:
+  site: https://firstbase.io
+sources:
+  - source_id: src_f9fb388f23a3452e9a7bb3ba060e62543325cebe53a99aa55e169c583449092e
+    url: https://www.firstbase.io/
+  - source_id: src_5af15c175b972ada7f6e0487dc9385f214ca5825c52bf7ecdb54e53d1946183d
+    url: https://pulley.com/perks
+programs: []
+offers:
+  - offer_id: off_01kyyts97wxz856wm49a4m7v1r
+    offer_slug: receive-10-off-standard-pricing-for-u-s-incorporation-services
+    offer_slug_aliases: []
+    title: Receive 10% off standard pricing for U.S. incorporation services
+    summary: Receive 10% off standard pricing for Firstbase U.S. incorporation services.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-01T12:27:57.374Z
+    economics:
+      benefits:
+        - applies_to: U.S. incorporation services
+          benefit_id: ben_01
+          description: 10% off standard pricing for U.S. incorporation services
+          kind: discount
+          percentage:
+            basis_points: 1000
+            kind: exact
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: constant
+        statement: Available to Pulley users.
+        value: true
+    roles:
+      terms_authority_entity_id: ent_01kyyts97tdzqkfecknpaf5e0p
+      access_operator_entity_id: ent_01kyyr9svfavvhqt4vy0e0b25k
+    access:
+      availability: membership
+      method: other
+    source_ids:
+      - src_5af15c175b972ada7f6e0487dc9385f214ca5825c52bf7ecdb54e53d1946183d

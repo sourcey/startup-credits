@@ -103,3 +103,38 @@ offers:
       method: other
     source_ids:
       - src_5af15c175b972ada7f6e0487dc9385f214ca5825c52bf7ecdb54e53d1946183d
+  - offer_id: off_01kyyts97v3m4t28cc4zgp3eza
+    offer_slug: pre-revenue-tax-discount
+    offer_slug_aliases: []
+    title: Pre-revenue Tax Discount
+    summary: Exclusive tax filing discounts for pre-revenue businesses.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-01T06:43:53.069Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Exclusive discount on tax filing services.
+          kind: other
+      consideration:
+        description: Discounted fee for tax filing services.
+        kind: unknown
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        fact: company.is_pre_revenue
+        kind: predicate
+        operator: eq
+        statement: Business must be pre-revenue.
+        value:
+          type: boolean
+          value: true
+    roles:
+      terms_authority_entity_id: ent_01kyh8fpe4nr3y7st8xcm8gryv
+      access_operator_entity_id: ent_01kyh8fpe4nr3y7st8xcm8gryv
+    access:
+      availability: public
+      method: contact
+      url: https://pilot.com/pricing
+    source_ids:
+      - src_03280047fb9243ba29a16274b0569d4376e75b97b65e938c2a9045faf5ef21ca

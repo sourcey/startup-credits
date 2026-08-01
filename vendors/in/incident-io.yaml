@@ -47,3 +47,57 @@ offers:
       url: https://incident.io/industry/startups
     source_ids:
       - src_0c09093713ab461ce2b22ca3fef2c2042b6be1fe35db093c686a5215ea7a9565
+  - offer_id: off_01kyyts97t7narfpd5cet2r8dt
+    offer_slug: incident-io-startup-program-1-500-off-team-plan
+    offer_slug_aliases: []
+    title: incident.io Startup Program - $1,500 off Team plan
+    summary: Eligible startups with under 20 employees can get $1,500 off the incident.io Team plan upon signing up, completing their first payment, and emailing support.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-01T07:23:37.441Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: $1,500 off the Team plan
+          duration:
+            kind: exact
+            value: P1Y
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 150000
+            kind: exact
+      consideration:
+        description: Sign up for the Team plan and complete the first payment
+        kind: variable
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.is_current_customer
+            kind: predicate
+            operator: eq
+            statement: Must be a new incident.io customer
+            value:
+              type: boolean
+              value: false
+          - criterion_id: cri_02
+            fact: company.employee_count
+            kind: predicate
+            operator: lt
+            statement: Must have under 20 employees
+            value:
+              type: number
+              value: 20
+    roles:
+      terms_authority_entity_id: ent_01kyh8fpe322z5v22fkrz422xa
+      access_operator_entity_id: ent_01kyh8fpe322z5v22fkrz422xa
+    access:
+      availability: public
+      instructions: To claim your credits, sign up for the Team plan, complete your first payment, and then email credits@incident.io to have the credits added to your account
+      method: contact
+      url: https://incident.io/industry/startups
+    source_ids:
+      - src_0c09093713ab461ce2b22ca3fef2c2042b6be1fe35db093c686a5215ea7a9565

@@ -21,6 +21,13 @@ programs:
     title: Neon Startup Program
     source_ids:
       - src_65083022096f10c52db27a04aa8e3bba73fd9c0d619c10d1027fceec3d80cf19
+  - program_id: prg_01kyyts97vnde5z7v1mc0fcxjf
+    program_slug: databricks-startup-program
+    program_slug_aliases: []
+    title: Databricks Startup Program
+    summary: Credits and support for qualifying self-funded and venture-backed startups.
+    source_ids:
+      - src_65083022096f10c52db27a04aa8e3bba73fd9c0d619c10d1027fceec3d80cf19
 offers:
   - offer_id: off_01kyh8fpe4n0a9h3p60g60ppdj
     program_id: prg_01kyh8fpe4n0a9h3p60g60ppdj
@@ -77,6 +84,136 @@ offers:
         criterion_id: cri_requirement_01
         statement: VC-backed startups with at least $1M in funding or participating in recognized accelerators like Y Combinator, building an early-stage product or MVP.
         reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01kyh8fpe42ws3zbxkkaybx2ea
+      access_operator_entity_id: ent_01kyh8fpe42ws3zbxkkaybx2ea
+    access:
+      availability: public
+      method: form
+      url: https://neon.com/startups
+    source_ids:
+      - src_65083022096f10c52db27a04aa8e3bba73fd9c0d619c10d1027fceec3d80cf19
+  - offer_id: off_01kyyts97v9xesen17q0yd2ge9
+    program_id: prg_01kyyts97vnde5z7v1mc0fcxjf
+    offer_slug: databricks-startup-program-self-funded
+    offer_slug_aliases: []
+    title: Databricks Startup Program - Self-Funded
+    summary: Up to $1,000 in Neon credits, onboarding support, and early access to features for early-stage self-funded startups with less than $1M in funding.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-01T06:43:53.496Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to $1,000 in Neon credits valid for 12 months.
+          duration:
+            kind: exact
+            value: P1Y
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 100000
+            kind: up-to
+        - benefit_id: ben_02
+          description: Onboarding support from the Neon product team.
+          kind: other
+        - benefit_id: ben_03
+          description: Early access to new Neon features.
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.funding_raised_usd
+            kind: predicate
+            operator: lt
+            statement: Company has raised less than $1,000,000 in funding.
+            value:
+              type: number
+              value: 1000000
+          - criterion_id: cri_02
+            fact: company.stage
+            kind: predicate
+            operator: eq
+            statement: Company stage is early-stage, self-funded startup building an early-stage product or MVP.
+            value:
+              type: string
+              value: early-stage
+    roles:
+      terms_authority_entity_id: ent_01kyh8fpe42ws3zbxkkaybx2ea
+      access_operator_entity_id: ent_01kyh8fpe42ws3zbxkkaybx2ea
+    access:
+      availability: public
+      method: form
+      url: https://neon.com/startups
+    source_ids:
+      - src_65083022096f10c52db27a04aa8e3bba73fd9c0d619c10d1027fceec3d80cf19
+  - offer_id: off_01kyyts97v1nqhyspc5vgs7yt9
+    program_id: prg_01kyyts97vnde5z7v1mc0fcxjf
+    offer_slug: databricks-startup-program-venture-backed
+    offer_slug_aliases: []
+    title: Databricks Startup Program - Venture-Backed
+    summary: Up to $200K in Neon and Databricks credits, onboarding support, feature access, and co-marketing opportunities for VC-backed or accelerator startups.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-01T06:43:53.496Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to $200,000 in Neon and Databricks credits valid for 12 months.
+          duration:
+            kind: exact
+            value: P1Y
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 20000000
+            kind: up-to
+        - benefit_id: ben_02
+          description: Onboarding support from the Neon product team.
+          kind: other
+        - benefit_id: ben_03
+          description: Early access to new Neon features.
+          kind: other
+        - benefit_id: ben_04
+          description: Speaking opportunities at Neon developer events.
+          kind: other
+        - benefit_id: ben_05
+          description: Co-marketing opportunities and visibility with Neon.
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.stage
+            kind: predicate
+            operator: eq
+            statement: Company stage is early-stage building an early-stage product or MVP.
+            value:
+              type: string
+              value: early-stage
+          - kind: any
+            rules:
+              - criterion_id: cri_02
+                fact: company.funding_raised_usd
+                kind: predicate
+                operator: gte
+                statement: Company has raised at least $1,000,000 in VC funding.
+                value:
+                  type: number
+                  value: 1000000
+              - criterion_id: cri_03
+                kind: manual
+                reason: external-verification
+                statement: Participant in a recognized startup accelerator (e.g. Y Combinator).
     roles:
       terms_authority_entity_id: ent_01kyh8fpe42ws3zbxkkaybx2ea
       access_operator_entity_id: ent_01kyh8fpe42ws3zbxkkaybx2ea

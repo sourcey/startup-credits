@@ -1,0 +1,53 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kyyts97t8ebaxn89bv0d6qm6
+slug: simpleclosure
+slug_aliases: []
+name: SimpleClosure
+domains:
+  - value: simpleclosure.com
+    role: primary
+    valid_from: 2026-08-01T13:50:00.000Z
+category: compliance
+description: The shutdown standard for founders and business owners. Clarity, structure, and expert handling from the first step to the final filing.
+links:
+  site: https://simpleclosure.com
+sources:
+  - source_id: src_939c69516fd213b9aed69456f29226eec4c5653f2ddd9154770fc870f7032f23
+    url: https://simpleclosure.com/
+  - source_id: src_5af15c175b972ada7f6e0487dc9385f214ca5825c52bf7ecdb54e53d1946183d
+    url: https://pulley.com/perks
+programs: []
+offers:
+  - offer_id: off_01kyyts97xzmdvdpgfw3nsmr63
+    offer_slug: get-10-off-visit-to-redeem
+    offer_slug_aliases: []
+    title: Get 10% off. Visit to redeem
+    summary: Get 10% off SimpleClosure shutdown and legal filing services.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-01T12:27:57.374Z
+    economics:
+      benefits:
+        - applies_to: SimpleClosure services
+          benefit_id: ben_01
+          description: 10% off SimpleClosure services
+          kind: discount
+          percentage:
+            basis_points: 1000
+            kind: exact
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: constant
+        statement: Available to Pulley users.
+        value: true
+    roles:
+      terms_authority_entity_id: ent_01kyyts97t8ebaxn89bv0d6qm6
+      access_operator_entity_id: ent_01kyyr9svfavvhqt4vy0e0b25k
+    access:
+      availability: membership
+      method: other
+    source_ids:
+      - src_5af15c175b972ada7f6e0487dc9385f214ca5825c52bf7ecdb54e53d1946183d

@@ -185,3 +185,115 @@ offers:
       url: https://perkbook.co/vendor-directory/cloudflare
     source_ids:
       - src_6969ed732394ce7e5a91a81dab949751ebcf9db069f27007ca75f3cf8e6db441
+  - offer_id: off_01kyyts97xytgjbbb65n1mm574
+    program_id: prg_01kyh8jtf667atcvk4kp9spgx9
+    offer_slug: free-cloud-credits-with-cloudflare-for-startups-bootstrapped-tier
+    offer_slug_aliases: []
+    title: Free cloud credits with Cloudflare for Startups — bootstrapped tier
+    summary: Get $5,000 in credits for the Cloudflare Developer Platform for bootstrapped and stealth startups.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-01T08:13:34.674Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: $5,000 in credits to build on the Cloudflare Developer Platform covering Workers, R2 storage, KV, Durable Objects, Pages, and AI inference.
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 500000
+            kind: exact
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: not-machine-evaluable
+            statement: Bootstrapped startup building a software product
+          - criterion_id: cri_02
+            fact: company.age_months
+            kind: predicate
+            operator: lte
+            statement: Founded in last 5 years
+            value:
+              type: number
+              value: 60
+          - criterion_id: cri_03
+            kind: manual
+            reason: external-verification
+            statement: Valid matching company email
+          - criterion_id: cri_04
+            kind: manual
+            reason: not-machine-evaluable
+            statement: No investor required
+    roles:
+      terms_authority_entity_id: ent_01kyh8jtf535570d9z2bng6j1t
+      access_operator_entity_id: ent_01kyyr9svgcxd42r9s8g3knssn
+    access:
+      availability: membership
+      method: form
+      url: https://perkbook.co/vendor-directory/cloudflare
+    source_ids:
+      - src_6969ed732394ce7e5a91a81dab949751ebcf9db069f27007ca75f3cf8e6db441
+  - offer_id: off_01kyyts97xqa1stjgf3d8bn73q
+    program_id: prg_01kyh8jtf667atcvk4kp9spgx9
+    offer_slug: free-cloud-credits-with-cloudflare-for-startups-early-stage-tier
+    offer_slug_aliases: []
+    title: Free cloud credits with Cloudflare for Startups — early-stage tier
+    summary: Get $25,000 in credits for the Cloudflare Developer Platform for early-stage startups with up to $1M raised.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-01T08:13:34.674Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: $25,000 in credits to build on the Cloudflare Developer Platform covering Workers, R2, Durable Objects, Pages, AI inference, and more.
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 2500000
+            kind: exact
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: not-machine-evaluable
+            statement: Building a software product
+          - criterion_id: cri_02
+            fact: company.age_months
+            kind: predicate
+            operator: lte
+            statement: Founded in last 5 years
+            value:
+              type: number
+              value: 60
+          - criterion_id: cri_03
+            kind: manual
+            reason: external-verification
+            statement: Active LinkedIn
+          - criterion_id: cri_04
+            fact: company.funding_raised_usd
+            kind: predicate
+            operator: lte
+            statement: Funded up to $1M
+            value:
+              type: number
+              value: 1000000
+    roles:
+      terms_authority_entity_id: ent_01kyh8jtf535570d9z2bng6j1t
+      access_operator_entity_id: ent_01kyyr9svgcxd42r9s8g3knssn
+    access:
+      availability: membership
+      method: form
+      url: https://perkbook.co/vendor-directory/cloudflare
+    source_ids:
+      - src_6969ed732394ce7e5a91a81dab949751ebcf9db069f27007ca75f3cf8e6db441

@@ -1,0 +1,49 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kyyts97tfc5g1ehvpqpz9b3g
+slug: techdollar
+slug_aliases: []
+name: techdollar
+domains:
+  - value: techdollar.com
+    role: primary
+    valid_from: 2026-08-01T13:50:00.000Z
+category: financial
+description: Structured lending for individuals and investors at leading frontier technology companies.
+links:
+  site: https://techdollar.com
+sources:
+  - source_id: src_64d173cb144512b1379ed78cd22b951c147365e95d4a64a35a3b4fdada6cc062
+    url: https://techdollar.com/
+  - source_id: src_5af15c175b972ada7f6e0487dc9385f214ca5825c52bf7ecdb54e53d1946183d
+    url: https://pulley.com/perks
+programs: []
+offers:
+  - offer_id: off_01kyyts97y0dasyvjykmzkas6a
+    offer_slug: discounted-rates-for-borrowers-with-equity-held-on-pulley
+    offer_slug_aliases: []
+    title: Discounted rates for borrowers with equity held on Pulley
+    summary: Receive discounted loan borrowing rates when collateralizing equity held on Pulley.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-01T12:27:57.374Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Discounted borrowing rates
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: constant
+        statement: Borrowers with equity held on Pulley.
+        value: true
+    roles:
+      terms_authority_entity_id: ent_01kyyts97tfc5g1ehvpqpz9b3g
+      access_operator_entity_id: ent_01kyyr9svfavvhqt4vy0e0b25k
+    access:
+      availability: membership
+      method: other
+    source_ids:
+      - src_5af15c175b972ada7f6e0487dc9385f214ca5825c52bf7ecdb54e53d1946183d

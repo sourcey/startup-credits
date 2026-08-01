@@ -1,0 +1,50 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kyyts97tvcvr85cjbh5f7rsf
+slug: pave
+slug_aliases: []
+name: Pave
+domains:
+  - value: pave.com
+    role: primary
+    valid_from: 2026-08-01T13:50:00.000Z
+category: people
+description: View Pave's privacy policy.
+links:
+  site: https://pave.com
+sources:
+  - source_id: src_a474861d4940b546e1a67bc160f0698c22101701704fbb702ee9c055cbe5621e
+    url: https://www.pave.com/company/legal/privacy-policy
+  - source_id: src_5af15c175b972ada7f6e0487dc9385f214ca5825c52bf7ecdb54e53d1946183d
+    url: https://pulley.com/perks
+programs: []
+offers:
+  - offer_id: off_01kyyts97wvqj3eqwn9xwszrc5
+    offer_slug: free-real-time-global-cash-and-equity-compensation-market-data-through-pave-mark
+    offer_slug_aliases: []
+    title: Free, real-time global cash and equity compensation market data through Pave Market Data Lite
+    summary: Unlock free benchmarks by connecting your HRIS and Pulley account to Pave Market Data Lite.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-01T12:27:57.374Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Free, real-time global cash and equity compensation market data through Pave Market Data Lite
+          kind: free-service
+          service: Pave Market Data Lite
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: constant
+        statement: Simply connect your HRIS and Pulley account in minutes and instantly unlock free benchmarks.
+        value: true
+    roles:
+      terms_authority_entity_id: ent_01kyyts97tvcvr85cjbh5f7rsf
+      access_operator_entity_id: ent_01kyyr9svfavvhqt4vy0e0b25k
+    access:
+      availability: membership
+      method: other
+    source_ids:
+      - src_5af15c175b972ada7f6e0487dc9385f214ca5825c52bf7ecdb54e53d1946183d

@@ -1,0 +1,54 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kyyts97ty4y9cavw4wr3kcz3
+slug: rise
+slug_aliases: []
+name: Rise
+domains:
+  - value: rise.com
+    role: primary
+    valid_from: 2026-08-01T13:50:00.000Z
+category: training
+description: Rise is the online training system your employees will love. Easily create, share, and manage interactive training, performance support content, guides, and online courses that work perfectly on any
+links:
+  site: https://rise.com
+sources:
+  - source_id: src_6c5f48ae73b928b5fcb0efdfd68e0ea5719ecd9c654bc2abdf25ff6e189004f2
+    url: https://rise.com/
+  - source_id: src_5af15c175b972ada7f6e0487dc9385f214ca5825c52bf7ecdb54e53d1946183d
+    url: https://pulley.com/perks
+programs: []
+offers:
+  - offer_id: off_01kyyts97x9m5c492x4m8ygvys
+    offer_slug: get-10-off-when-you-mention-pulley-in-your-message
+    offer_slug_aliases: []
+    title: Get 10% off when you mention Pulley in your message
+    summary: Get 10% off Rise hybrid payroll platform when mentioning Pulley.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-01T12:27:57.374Z
+    economics:
+      benefits:
+        - applies_to: Rise services
+          benefit_id: ben_01
+          description: 10% off Rise services
+          kind: discount
+          percentage:
+            basis_points: 1000
+            kind: exact
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: constant
+        statement: Mention Pulley in your message.
+        value: true
+    roles:
+      terms_authority_entity_id: ent_01kyyts97ty4y9cavw4wr3kcz3
+      access_operator_entity_id: ent_01kyyr9svfavvhqt4vy0e0b25k
+    access:
+      availability: membership
+      instructions: Mention Pulley in your message.
+      method: contact
+    source_ids:
+      - src_5af15c175b972ada7f6e0487dc9385f214ca5825c52bf7ecdb54e53d1946183d

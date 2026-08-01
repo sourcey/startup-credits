@@ -1,0 +1,56 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kyyts97sza9n1ez4b19p3104
+slug: ashby
+slug_aliases: []
+name: Ashby
+domains:
+  - value: ashbyhq.com
+    role: primary
+    valid_from: 2026-08-01T13:50:00.000Z
+category: people
+description: Ashby’s all-in-one recruiting software consolidates your ATS, Analytics, Scheduling, and CRM
+links:
+  site: https://ashbyhq.com
+sources:
+  - source_id: src_60e39384ef94c75cda597aa0dbc8ec842cc5be073244332be0836ca629e23893
+    url: https://www.ashbyhq.com/
+  - source_id: src_5af15c175b972ada7f6e0487dc9385f214ca5825c52bf7ecdb54e53d1946183d
+    url: https://pulley.com/perks
+programs: []
+offers:
+  - offer_id: off_01kyyts97w8akha9e3gmshpmwv
+    offer_slug: get-20-off-your-first-year-with-ashby
+    offer_slug_aliases: []
+    title: Get 20% off your first year with Ashby
+    summary: Get 20% off your first year on Ashby's recruiting platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-01T12:27:57.374Z
+    economics:
+      benefits:
+        - applies_to: Ashby recruiting platform
+          benefit_id: ben_01
+          description: 20% off first year with Ashby
+          duration:
+            kind: exact
+            value: P1Y
+          kind: discount
+          percentage:
+            basis_points: 2000
+            kind: exact
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: constant
+        statement: Available to Pulley users.
+        value: true
+    roles:
+      terms_authority_entity_id: ent_01kyyts97sza9n1ez4b19p3104
+      access_operator_entity_id: ent_01kyyr9svfavvhqt4vy0e0b25k
+    access:
+      availability: membership
+      method: other
+    source_ids:
+      - src_5af15c175b972ada7f6e0487dc9385f214ca5825c52bf7ecdb54e53d1946183d

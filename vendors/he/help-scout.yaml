@@ -14,7 +14,16 @@ links:
 sources:
   - source_id: src_05ba8d34222f2831b597e210e029fd69a347b4be2c4b3e658b256d675beca04a
     url: https://www.helpscout.com/startups/
-programs: []
+  - source_id: src_c9dc9cc8fc004b3411c9c32170a3aafe299b3d7fa70088053905208158decd19
+    url: https://www.helpscout.com/startups
+programs:
+  - program_id: prg_01kyyts97td7qwt101xj261h5z
+    program_slug: help-scout-for-startups
+    program_slug_aliases: []
+    title: Help Scout for Startups
+    summary: Help Scout's startup program offering six months of free access to Help Scout Plus for eligible early-stage startups.
+    source_ids:
+      - src_c9dc9cc8fc004b3411c9c32170a3aafe299b3d7fa70088053905208158decd19
 offers:
   - offer_id: off_01kyh8fpe3764vaa0pa94p6myj
     offer_slug: help-scout-for-startups
@@ -48,3 +57,68 @@ offers:
       url: https://www.helpscout.com/startups/
     source_ids:
       - src_05ba8d34222f2831b597e210e029fd69a347b4be2c4b3e658b256d675beca04a
+  - offer_id: off_01kyyts97t6zmpyza6edxsy08b
+    program_id: prg_01kyyts97td7qwt101xj261h5z
+    offer_slug: 6-months-free-help-scout-plus-for-startups
+    offer_slug_aliases: []
+    title: 6 months free Help Scout Plus for Startups
+    summary: Eligible incorporated tech startups under two years old with under $1M in ARR get six months of free access to Help Scout Plus.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-01T07:06:11.535Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Six months free on Help Scout Plus plan
+          duration:
+            kind: exact
+            value: P6M
+          kind: free-service
+          service: Help Scout Plus
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.is_current_customer
+            kind: predicate
+            operator: eq
+            statement: Must be a new Help Scout customer
+            value:
+              type: boolean
+              value: false
+          - criterion_id: cri_02
+            fact: company.industry
+            kind: predicate
+            operator: contains
+            statement: Must be an incorporated tech startup
+            value:
+              type: string
+              value: tech
+          - criterion_id: cri_03
+            fact: company.age_months
+            kind: predicate
+            operator: lt
+            statement: Must be less than two years old
+            value:
+              type: number
+              value: 24
+          - criterion_id: cri_04
+            fact: company.arr_usd
+            kind: predicate
+            operator: lt
+            statement: Generating under $1 million in annual recurring revenue (ARR)
+            value:
+              type: number
+              value: 1000000
+    roles:
+      terms_authority_entity_id: ent_01kyh8fpe3c80bycfhyx7m3jym
+      access_operator_entity_id: ent_01kyh8fpe3c80bycfhyx7m3jym
+    access:
+      availability: public
+      method: form
+      url: https://www.helpscout.com/startups/
+    source_ids:
+      - src_c9dc9cc8fc004b3411c9c32170a3aafe299b3d7fa70088053905208158decd19

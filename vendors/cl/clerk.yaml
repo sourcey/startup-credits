@@ -47,3 +47,51 @@ offers:
       url: https://clerk.com/startups
     source_ids:
       - src_636c918f86d4037ce06c2b193a4e6a37c74bc41a2c188ddbcfb8ae35014ee456
+  - offer_id: off_01kyyts97v4fkdpj9tswbveqxc
+    offer_slug: clerk-pro-discount-for-startups
+    offer_slug_aliases: []
+    title: Clerk Pro Discount for Startups
+    summary: Eligible early-stage startups receive Clerk Pro features at a discount.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-01T06:41:08.884Z
+    economics:
+      benefits:
+        - applies_to: Clerk Pro features
+          benefit_id: ben_01
+          description: Discount on Clerk Pro features
+          kind: discount
+          percentage:
+            basis_points: 1
+            kind: at-least
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.age_months
+            kind: predicate
+            operator: lte
+            statement: Company launch was up to 1 year ago
+            value:
+              type: number
+              value: 12
+          - criterion_id: cri_02
+            fact: company.funding_raised_usd
+            kind: predicate
+            operator: lte
+            statement: Company has up to $5 million in venture funding
+            value:
+              type: number
+              value: 5000000
+    roles:
+      terms_authority_entity_id: ent_01kyh8fpe1p3qgn8mxp3ev5328
+      access_operator_entity_id: ent_01kyh8fpe1p3qgn8mxp3ev5328
+    access:
+      availability: public
+      method: form
+      url: https://clerk.com/startups
+    source_ids:
+      - src_636c918f86d4037ce06c2b193a4e6a37c74bc41a2c188ddbcfb8ae35014ee456

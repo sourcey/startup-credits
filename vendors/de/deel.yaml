@@ -18,7 +18,25 @@ sources:
     url: https://www.deel.com/segments/startups
   - source_id: src_5af15c175b972ada7f6e0487dc9385f214ca5825c52bf7ecdb54e53d1946183d
     url: https://pulley.com/perks
-programs: []
+  - source_id: src_3487831c6727db95f17272a5eb83728fc1bcda1aea4d6e4640ae61ea5b58f60f
+    url: https://www.deel.com/pitch
+  - source_id: src_a154479d2eb92aeaa803c4a05e86083a2ac869c5d378a17823c78219471d026f
+    url: https://perkbook.co/vendor-directory/deel
+programs:
+  - program_id: prg_01kyyts97vhv6dbsc02y0sf1z9
+    program_slug: the-pitch-by-deel
+    program_slug_aliases: []
+    title: The Pitch by Deel
+    summary: Global tournament rewarding startup founders with SAFE funding, travel coverage, networking, and access to a perks marketplace.
+    source_ids:
+      - src_3487831c6727db95f17272a5eb83728fc1bcda1aea4d6e4640ae61ea5b58f60f
+  - program_id: prg_01kyyts97xta5b1pjrq41crq84
+    program_slug: deel-startup-program
+    program_slug_aliases: []
+    title: Deel Startup Program
+    summary: Deel Startup Program provides offers and perks for startups, including platform credits and discounts via partner networks.
+    source_ids:
+      - src_a154479d2eb92aeaa803c4a05e86083a2ac869c5d378a17823c78219471d026f
 offers:
   - offer_id: off_01kyh8fpe2r151y0shvrzcmkwt
     offer_slug: first-5-seats-free-for-life-for-venture-backed-startups
@@ -125,3 +143,131 @@ offers:
       method: other
     source_ids:
       - src_5af15c175b972ada7f6e0487dc9385f214ca5825c52bf7ecdb54e53d1946183d
+  - offer_id: off_01kyyts97v8wq67b3qqzjfxryq
+    program_id: prg_01kyyts97vhv6dbsc02y0sf1z9
+    offer_slug: the-pitch-2026-startup-competition-and-perks-access
+    offer_slug_aliases: []
+    title: The Pitch 2026 Startup Competition & Perks Access
+    summary: Startups applying to The Pitch 2026 compete for SAFE investments ($50k regional, $1M grand finale), travel coverage, and access to an exclusive perks marketplace and startup community.
+    lifecycle:
+      status: ended
+      effective_from: 2026-08-01T07:51:51.161Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Free access to exclusive marketplace of startup software perks and deals
+          kind: other
+        - benefit_id: ben_02
+          description: Opportunity for up to 100 regional winners to receive a $50,000 SAFE investment
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 5000000
+            kind: exact
+        - benefit_id: ben_03
+          description: Opportunity for up to 10 global champions to win $1,000,000 SAFE investment
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 100000000
+            kind: exact
+        - benefit_id: ben_04
+          description: Travel and accommodation coverage for global finale / regional events as applicable
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: vendor-discretion
+            statement: Must be a startup typically at pre-Seed, Seed, or Series A stage with an MVP
+          - criterion_id: cri_02
+            kind: manual
+            reason: vendor-discretion
+            statement: Must have full-time founders
+          - criterion_id: cri_03
+            kind: manual
+            reason: vendor-discretion
+            statement: Must have a registered legal entity by the time of the competition
+          - criterion_id: cri_04
+            kind: manual
+            reason: vendor-discretion
+            statement: Building a product or service with scaling potential
+    roles:
+      terms_authority_entity_id: ent_01kyh8fpe2k0kd5rfqh8es0ccs
+      access_operator_entity_id: ent_01kyh8fpe2k0kd5rfqh8es0ccs
+    access:
+      availability: public
+      method: form
+      url: https://www.deel.com/pitch
+    terms_url: https://www.deel.com/pitch
+    source_ids:
+      - src_3487831c6727db95f17272a5eb83728fc1bcda1aea4d6e4640ae61ea5b58f60f
+  - offer_id: off_01kyyts97xw6824xjva5gmkmnj
+    program_id: prg_01kyyts97xta5b1pjrq41crq84
+    offer_slug: 50-off-year-1-with-deel-for-startups-via-brex
+    offer_slug_aliases: []
+    title: 50% off year 1 with Deel for Startups — via Brex
+    summary: Brex customers who are new to Deel get up to $5,000 in platform credits or 50% off their first year across global payroll, EOR, contractor management, and Deel IT.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-01T08:13:34.673Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to $5,000 in platform credits or 50% off the first year for Deel services including global payroll, employer of record (EOR), contractor management, and Deel IT across 150+ countries.
+          duration:
+            kind: exact
+            value: P1Y
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 500000
+            kind: up-to
+        - applies_to: Deel platform services for the first year
+          benefit_id: ben_02
+          description: 50% off the first year for Deel services including global payroll, employer of record (EOR), contractor management, and Deel IT.
+          duration:
+            kind: exact
+            value: P1Y
+          kind: discount
+          percentage:
+            basis_points: 5000
+            kind: exact
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.partner_memberships
+            kind: predicate
+            operator: contains
+            statement: Must open a Brex account / be a Brex customer.
+            value:
+              type: string
+              value: Brex
+          - criterion_id: cri_02
+            fact: company.is_current_customer
+            kind: predicate
+            operator: eq
+            statement: Must be a new Deel customer.
+            value:
+              type: boolean
+              value: false
+    roles:
+      terms_authority_entity_id: ent_01kyh8fpe2k0kd5rfqh8es0ccs
+      access_operator_entity_id: ent_01kyyts97rczvy7tt3n9gd0y3n
+    access:
+      availability: membership
+      method: other
+      url: https://perkbook.co/vendor-directory/deel
+    source_ids:
+      - src_a154479d2eb92aeaa803c4a05e86083a2ac869c5d378a17823c78219471d026f
