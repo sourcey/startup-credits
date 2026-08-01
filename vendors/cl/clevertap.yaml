@@ -1,0 +1,56 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kyygma82taj75edn8k8jdj6h
+slug: clevertap
+slug_aliases: []
+name: CleverTap
+domains:
+  - value: clevertap.com
+    role: primary
+    valid_from: 2026-08-01T10:20:39.587Z
+category: marketing
+description: All-in-One Customer Engagement Platform providing customer data & analytics, personalization, campaign orchestration, and retention capabilities.
+links:
+  site: https://clevertap.com
+sources:
+  - source_id: src_0fc453e4f6b1de982643df397dbd46b660735ac717f84d78864510b870a77d76
+    url: https://clevertap.com/startup-pricing
+programs: []
+offers:
+  - offer_id: off_01kyygma8266wg2s2zfn9xtepr
+    offer_slug: mid-year-sale-90-off-essentials-for-6-months
+    offer_slug_aliases: []
+    title: Mid-Year Sale - 90% off Essentials for 6 months
+    summary: Get 90% off CleverTap Essentials for 6 months during the Mid-Year Sale 2026.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-01T10:20:39.587Z
+    economics:
+      benefits:
+        - applies_to: CleverTap Essentials
+          benefit_id: ben_01
+          description: 90% off CleverTap Essentials for 6 months
+          duration:
+            kind: exact
+            value: P6M
+          kind: discount
+          percentage:
+            basis_points: 9000
+            kind: exact
+      consideration:
+        description: Subscription fee following trial or applicable pricing plan
+        kind: unknown
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: not-machine-evaluable
+        statement: Applies to CleverTap Essentials plan under the Mid-Year Sale promotion.
+    roles:
+      terms_authority_entity_id: ent_01kyygma82taj75edn8k8jdj6h
+      access_operator_entity_id: ent_01kyygma82taj75edn8k8jdj6h
+    access:
+      availability: public
+      method: form
+      url: https://clevertap.com/pricing/
+    source_ids:
+      - src_0fc453e4f6b1de982643df397dbd46b660735ac717f84d78864510b870a77d76

@@ -1,0 +1,83 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kyygma82q9t8nnvsv35gp4yn
+slug: cake-equity
+slug_aliases: []
+name: Cake Equity
+domains:
+  - value: cakeequity.com
+    role: primary
+    valid_from: 2026-08-01T10:31:07.188Z
+category: finance-accounting
+description: Cake Equity offers cap table management, equity incentives, and 409A valuations for startups.
+links:
+  site: https://www.cakeequity.com
+sources:
+  - source_id: src_0f43bc86113bc41b2b7fcba125fb521723ae4ba190462dd966eb6ef981a307ce
+    url: https://www.cakeequity.com/pricing
+programs: []
+offers:
+  - offer_id: off_01kyygma82p9pqf1kqebddppkd
+    offer_slug: cake-free-plan
+    offer_slug_aliases: []
+    title: Cake Free Plan
+    summary: Free cap table management and equity features for early-stage companies with up to 5 stakeholders.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-01T10:31:07.188Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Free plan including cap table, stock options, and SAFE notes for up to 5 stakeholders.
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        fact: company.stakeholder_count
+        kind: predicate
+        operator: lte
+        statement: Company has 5 or fewer stakeholders.
+        value:
+          type: number
+          value: 5
+    roles:
+      terms_authority_entity_id: ent_01kyygma82q9t8nnvsv35gp4yn
+      access_operator_entity_id: ent_01kyygma82q9t8nnvsv35gp4yn
+    access:
+      availability: public
+      method: form
+      url: https://www.cakeequity.com/pricing
+    source_ids:
+      - src_0f43bc86113bc41b2b7fcba125fb521723ae4ba190462dd966eb6ef981a307ce
+  - offer_id: off_01kyygma82pfbkmheyj3qe5bnv
+    offer_slug: free-migration-service
+    offer_slug_aliases: []
+    title: Free Migration Service
+    summary: Compliant human-in-the-loop cap table migration to Cake provided at no cost with every plan.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-01T10:31:07.188Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Free full migration and reconciliation of cap table data from Carta, competing platforms, or spreadsheets.
+          kind: waiver
+          waived_item: Cap table migration fee
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: not-machine-evaluable
+        statement: Customer subscribes to or signs up for a Cake plan and submits cap table data for migration.
+    roles:
+      terms_authority_entity_id: ent_01kyygma82q9t8nnvsv35gp4yn
+      access_operator_entity_id: ent_01kyygma82q9t8nnvsv35gp4yn
+    access:
+      availability: public
+      method: form
+      url: https://www.cakeequity.com/pricing
+    source_ids:
+      - src_0f43bc86113bc41b2b7fcba125fb521723ae4ba190462dd966eb6ef981a307ce

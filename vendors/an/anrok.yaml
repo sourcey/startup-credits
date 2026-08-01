@@ -1,0 +1,62 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kyygma818xh1yt3zwbkvnrfe
+slug: anrok
+slug_aliases: []
+name: Anrok
+domains:
+  - value: anrok.com
+    role: primary
+    valid_from: 2026-07-31T23:39:27.108Z
+category: finance-accounting
+description: Anrok eliminates the complexity of sales tax and VAT for early-stage companies.
+links:
+  site: https://www.anrok.com/startups
+sources:
+  - source_id: src_7361e77d7af58f280c8b3a9a26a676b05a9690a24e4a57c4c7b10e8294bd8d7f
+    url: https://www.anrok.com/startups
+programs: []
+offers:
+  - offer_id: off_01kyygma828k05cy7kgwe2xmqy
+    offer_slug: anrok-starter-plan-for-startups
+    offer_slug_aliases: []
+    title: Anrok Starter Plan for Startups
+    summary: Statewide sales tax and VAT compliance for early-stage companies at $100 per market per month.
+    lifecycle:
+      status: active
+      effective_from: 2026-07-31T23:39:27.108Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Statewide tax compliance including global exposure monitoring, real-time tax calculation, filing and remittance, exemption certificate management, and physical nexus tracking.
+          kind: other
+      consideration:
+        amount:
+          currency: USD
+          minor_units: 10000
+        kind: fixed
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.stage
+            kind: predicate
+            operator: eq
+            statement: Applies to startups and early-stage companies.
+            value:
+              type: string
+              value: startup
+          - criterion_id: cri_02
+            kind: manual
+            reason: external-verification
+            statement: Sellers with high transaction volumes may be subject to additional fees as outlined in their contract.
+    roles:
+      terms_authority_entity_id: ent_01kyygma818xh1yt3zwbkvnrfe
+      access_operator_entity_id: ent_01kyygma818xh1yt3zwbkvnrfe
+    access:
+      availability: public
+      method: form
+      url: https://www.anrok.com/startups
+    terms_url: https://www.anrok.com/startups
+    source_ids:
+      - src_7361e77d7af58f280c8b3a9a26a676b05a9690a24e4a57c4c7b10e8294bd8d7f

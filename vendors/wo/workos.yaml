@@ -1,0 +1,53 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kyygma822smsegab8rym0sqk
+slug: workos
+slug_aliases: []
+name: WorkOS
+domains:
+  - value: workos.com
+    role: primary
+    valid_from: 2026-07-31T23:20:01.615Z
+category: auth-security
+description: WorkOS is an enterprise platform for user management, enterprise SSO, directory sync, MFA, RBAC, audit logs, and authentication.
+links:
+  site: https://workos.com
+sources:
+  - source_id: src_8789e905c49e7d05c098a0f21794a9f9de31de90992065d262508e304c3724c3
+    url: https://workos.com/startups
+programs: []
+offers:
+  - offer_id: off_01kyygma82eet0aqhpceg6n1ba
+    offer_slug: workos-user-management-free-tier
+    offer_slug_aliases: []
+    title: WorkOS User Management Free Tier
+    summary: WorkOS provides free user management and auth backend services for up to 1 million monthly active users (MAUs).
+    lifecycle:
+      status: active
+      effective_from: 2026-07-31T23:20:01.615Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Free User Management and auth backend services for up to 1 million monthly active users (MAUs).
+          kind: free-service
+          service: WorkOS User Management for up to 1M MAUs
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        fact: company.monthly_active_users
+        kind: predicate
+        operator: lte
+        statement: Monthly active users count is less than or equal to 1,000,000.
+        value:
+          type: number
+          value: 1000000
+    roles:
+      terms_authority_entity_id: ent_01kyygma822smsegab8rym0sqk
+      access_operator_entity_id: ent_01kyygma822smsegab8rym0sqk
+    access:
+      availability: public
+      method: form
+      url: https://workos.com/startups
+    source_ids:
+      - src_8789e905c49e7d05c098a0f21794a9f9de31de90992065d262508e304c3724c3

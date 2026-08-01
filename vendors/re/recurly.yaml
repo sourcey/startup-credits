@@ -1,0 +1,56 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kyygma82ztm6pmnrj8rmgcx9
+slug: recurly
+slug_aliases: []
+name: Recurly
+domains:
+  - value: recurly.com
+    role: primary
+    valid_from: 2026-08-01T10:27:30.674Z
+category: payments-fintech
+description: Recurly is the leading subscription management & billing platform.
+links:
+  site: https://recurly.com/
+sources:
+  - source_id: src_8e771f2e65a895cee88d63fb0da6db1f5a29d3fa51547435adc34998a280705b
+    url: https://recurly.com/plans
+programs: []
+offers:
+  - offer_id: off_01kyygma82b0xvpc6zxzcgnszd
+    offer_slug: starter-plan-90-day-free-trial
+    offer_slug_aliases: []
+    title: Starter Plan 90-Day Free Trial
+    summary: Get a 90-day free trial on the Recurly Starter subscription billing plan.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-01T10:27:30.674Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 90-day free trial of Recurly Starter plan
+          duration:
+            kind: exact
+            value: P90D
+          kind: free-service
+          service: Recurly Starter Plan
+        - benefit_id: ben_02
+          description: First $40K of monthly billings included at no charge each month
+          kind: waiver
+          waived_item: Billing volume fee on first $40K per month
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: constant
+        statement: Available to subscription businesses getting started.
+        value: true
+    roles:
+      terms_authority_entity_id: ent_01kyygma82ztm6pmnrj8rmgcx9
+      access_operator_entity_id: ent_01kyygma82ztm6pmnrj8rmgcx9
+    access:
+      availability: public
+      method: automatic
+      url: https://recurly.com/pricing/
+    source_ids:
+      - src_8e771f2e65a895cee88d63fb0da6db1f5a29d3fa51547435adc34998a280705b

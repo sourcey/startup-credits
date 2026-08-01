@@ -1,0 +1,60 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kyygma82bz44sj39nyjey393
+slug: cerebras
+slug_aliases: []
+name: Cerebras
+domains:
+  - value: cerebras.ai
+    role: primary
+    valid_from: 2026-08-01T10:27:09.837Z
+category: ai-ml
+description: Cerebras is the go-to platform for fast and effortless AI training.
+links:
+  site: https://cerebras.ai
+sources:
+  - source_id: src_1f007d1fc9ecf96aa64cd3ce2c190873f30e2ea303557c3ad9019b788775f09a
+    url: https://cerebras.ai/yc-startup-deal
+programs: []
+offers:
+  - offer_id: off_01kyygma82043qa4t5myk78z8c
+    offer_slug: yc-startup-deal
+    offer_slug_aliases: []
+    title: YC Startup Deal
+    summary: YC startups from any batch receive up to $22,500 worth of inference on Cerebras Cloud, along with priority support and co-marketing opportunities.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-01T10:27:09.837Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Inference on Cerebras Cloud up to $22,500 in value
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 2250000
+            kind: up-to
+        - benefit_id: ben_02
+          description: Priority support and co-marketing opportunities
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        fact: company.partner_memberships
+        kind: predicate
+        operator: contains
+        statement: Company is a YC startup from any batch
+        value:
+          type: string
+          value: y-combinator
+    roles:
+      terms_authority_entity_id: ent_01kyygma82bz44sj39nyjey393
+      access_operator_entity_id: ent_01kyygma82bz44sj39nyjey393
+    access:
+      availability: membership
+      method: form
+      url: https://cerebras.ai/yc-startup-deal
+    source_ids:
+      - src_1f007d1fc9ecf96aa64cd3ce2c190873f30e2ea303557c3ad9019b788775f09a

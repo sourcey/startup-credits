@@ -1,0 +1,74 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kyygma82z322ysvajabjkvmd
+slug: teamwork-com
+slug_aliases: []
+name: Teamwork.com
+domains:
+  - value: teamwork.com
+    role: primary
+    valid_from: 2026-08-01T10:21:27.104Z
+category: productivity
+description: Teamwork.com provides project management, resource planning, time tracking, and productivity tools for managing client work and business operations.
+links:
+  site: https://www.teamwork.com/startups/
+sources:
+  - source_id: src_ca367cfb37f0a443846d9bb68418aa4c64435f5d92a07641c52d7d1bb87588eb
+    url: https://www.teamwork.com/startups
+programs:
+  - program_id: prg_01kyygma82rtv4gjnchpbjxg9c
+    program_slug: teamwork-for-startups
+    program_slug_aliases: []
+    title: Teamwork for Startups
+    summary: Teamwork for Startups provides eligible early-stage businesses with free access to Teamwork products for one year.
+    source_ids:
+      - src_ca367cfb37f0a443846d9bb68418aa4c64435f5d92a07641c52d7d1bb87588eb
+offers:
+  - offer_id: off_01kyygma83pxvmge0wyrtv3n2g
+    program_id: prg_01kyygma82rtv4gjnchpbjxg9c
+    offer_slug: teamwork-for-startups
+    offer_slug_aliases: []
+    title: Teamwork for Startups
+    summary: Get all Teamwork.com products on the Basics plan or equivalent free for one year, subject to eligibility criteria and a testimonial requirement.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-01T10:21:27.104Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: All Teamwork.com products (Basics plan or equivalent) free for one year (365 days).
+          duration:
+            kind: exact
+            value: P1Y
+          kind: free-service
+          service: Teamwork.com products (Basics plan or equivalent)
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: vendor-discretion
+            statement: Eligibility is determined based on length of time in business, revenue, and employee numbers.
+          - criterion_id: cri_02
+            fact: company.is_current_customer
+            kind: predicate
+            operator: eq
+            statement: The program is not available on accounts where there is already a monthly or annual subscription.
+            value:
+              type: boolean
+              value: false
+          - criterion_id: cri_03
+            kind: manual
+            reason: external-verification
+            statement: The program and its continued use is subject to a testimonial/case study during the course of the program.
+    roles:
+      terms_authority_entity_id: ent_01kyygma82z322ysvajabjkvmd
+      access_operator_entity_id: ent_01kyygma82z322ysvajabjkvmd
+    access:
+      availability: public
+      method: form
+      url: https://www.teamwork.com/startups/
+    source_ids:
+      - src_ca367cfb37f0a443846d9bb68418aa4c64435f5d92a07641c52d7d1bb87588eb

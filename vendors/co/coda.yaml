@@ -1,0 +1,53 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kyygma82v52ygt9gw9f3prhb
+slug: coda
+slug_aliases: []
+name: Coda
+domains:
+  - value: coda.io
+    role: primary
+    valid_from: 2026-08-01T10:21:18.818Z
+category: productivity
+description: Coda is an all-in-one flexible doc tool with building blocks, tables, customized views, and integrations to power team, product, and knowledge management.
+links:
+  site: https://coda.io/for/startups
+sources:
+  - source_id: src_5701585bdefc1cf5026883ef2214ba9f3f2d6c4155378e8cfbaaa4a194973432
+    url: https://coda.io/for/startups
+programs: []
+offers:
+  - offer_id: off_01kyygma8278f4c4xbhahf8a2j
+    offer_slug: 1-000-startup-credit
+    offer_slug_aliases: []
+    title: $1,000 startup credit
+    summary: Startups can apply to receive a $1,000 credit to run their business on Coda.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-01T10:21:18.818Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: $1,000 credit for Coda
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 100000
+            kind: exact
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Apply for the startup credit and meet Coda startup eligibility criteria.
+    roles:
+      terms_authority_entity_id: ent_01kyygma82v52ygt9gw9f3prhb
+      access_operator_entity_id: ent_01kyygma82v52ygt9gw9f3prhb
+    access:
+      availability: public
+      method: form
+      url: https://coda.io/for/startups
+    source_ids:
+      - src_5701585bdefc1cf5026883ef2214ba9f3f2d6c4155378e8cfbaaa4a194973432

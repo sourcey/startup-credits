@@ -1,0 +1,49 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kyygma836y4jv9n2210zgyq4
+slug: wiz
+slug_aliases: []
+name: Wiz
+domains:
+  - value: wiz.io
+    role: primary
+    valid_from: 2026-08-01T07:56:18.512Z
+category: auth-security
+description: Wiz Go is a complete cloud security bundle for fast-moving teams—offering full visibility, protection, and flexibility with startup-friendly pricing.
+links:
+  site: https://www.wiz.io/lp/startups
+sources:
+  - source_id: src_e10dc2ef42ff4c06dd0e194be3a951c491eb07ca7e75f7102a215bdcd876d430
+    url: https://www.wiz.io/lp/startups
+programs: []
+offers:
+  - offer_id: off_01kyygma830fgn90asc8pctkj3
+    offer_slug: wiz-go-for-startups
+    offer_slug_aliases: []
+    title: Wiz Go for Startups
+    summary: Wiz Go is a tailored cloud security bundle for startups, combining Wiz Code, Wiz Cloud, and Wiz Defend & Runtime Sensor with startup-friendly pricing.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-01T07:56:18.512Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Special startup-friendly pricing for Wiz cloud security bundle including Wiz Code, Wiz Cloud, and Wiz Defend & Runtime Sensor.
+          kind: other
+      consideration:
+        description: Startup-friendly pricing is offered, but exact consideration details are not stated in the capture.
+        kind: unknown
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Tailored for lean, fast-moving startups.
+    roles:
+      terms_authority_entity_id: ent_01kyygma836y4jv9n2210zgyq4
+      access_operator_entity_id: ent_01kyygma836y4jv9n2210zgyq4
+    access:
+      availability: public
+      method: form
+      url: https://www.wiz.io/lp/startups
+    source_ids:
+      - src_e10dc2ef42ff4c06dd0e194be3a951c491eb07ca7e75f7102a215bdcd876d430

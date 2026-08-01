@@ -1,0 +1,69 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kyygma83yg4pyars3qr8vcxk
+slug: telnyx
+slug_aliases: []
+name: Telnyx
+domains:
+  - value: telnyx.com
+    role: primary
+    valid_from: 2026-08-01T10:30:06.973Z
+category: communication
+description: Helping startups scale with enterprise-grade communications at no cost. Access up to $20,000 in credits, discounts, and expert support.
+links:
+  site: https://telnyx.com
+sources:
+  - source_id: src_6c264902e4457e7b720d52247fc0c2def700d750d054dc283ec0e89aa9325f71
+    url: https://telnyx.com/resources/ai-accelerator
+programs: []
+offers:
+  - offer_id: off_01kyygma83me3nnpqq68dvf14v
+    offer_slug: telnyx-ai-accelerator
+    offer_slug_aliases: []
+    title: Telnyx AI Accelerator
+    summary: Startups accepted into the program receive up to $20,000 in credits, exclusive discounts, and direct expert support to build their communications stack.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-01T10:30:06.973Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to $20,000 in credits to access enterprise-grade communications.
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 2000000
+            kind: up-to
+        - benefit_id: ben_02
+          description: Exclusive discounts as startups grow.
+          kind: other
+        - benefit_id: ben_03
+          description: Priority and direct access to Telnyx experts.
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.stage
+            kind: predicate
+            operator: eq
+            statement: Must be a startup.
+            value:
+              type: string
+              value: startup
+          - criterion_id: cri_02
+            kind: manual
+            reason: vendor-discretion
+            statement: Application acceptance into the Telnyx AI Accelerator program.
+    roles:
+      terms_authority_entity_id: ent_01kyygma83yg4pyars3qr8vcxk
+      access_operator_entity_id: ent_01kyygma83yg4pyars3qr8vcxk
+    access:
+      availability: public
+      method: contact
+      url: https://telnyx.com/resources/ai-accelerator
+    source_ids:
+      - src_6c264902e4457e7b720d52247fc0c2def700d750d054dc283ec0e89aa9325f71

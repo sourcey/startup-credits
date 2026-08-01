@@ -1,0 +1,82 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kyygma82p0jwn11hvnaprqa6
+slug: esri
+slug_aliases: []
+name: Esri
+domains:
+  - value: esri.com
+    role: primary
+    valid_from: 2026-08-01T07:51:50.052Z
+category: data-analytics
+description: Esri provides ArcGIS mapping technology and location intelligence solutions, helping early-stage startups build and scale integrated location products.
+links:
+  site: https://www.esri.com/startups
+sources:
+  - source_id: src_510789beac8838eef08166a9ed9c9014df527a881e964b2e33b6f9eeb987ed5e
+    url: https://www.esri.com/startups
+programs:
+  - program_id: prg_01kyygma82y5n2y18b70j8hz1c
+    program_slug: esri-startup-program
+    program_slug_aliases: []
+    title: Esri Startup Program
+    summary: An exclusive global program that helps early-stage startups build mapping technology and location intelligence into their products using ArcGIS software.
+    source_ids:
+      - src_510789beac8838eef08166a9ed9c9014df527a881e964b2e33b6f9eeb987ed5e
+offers:
+  - offer_id: off_01kyygma8291t9cg8ryve6xrdf
+    program_id: prg_01kyygma82y5n2y18b70j8hz1c
+    offer_slug: esri-startup-program
+    offer_slug_aliases: []
+    title: Esri Startup Program
+    summary: Access Esri ArcGIS software and partnership resources for early-stage software and technology startups founded within the last 5 years with less than $2M in annual revenue.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-01T07:51:50.052Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Resources to develop or migrate software, host solutions, or deliver content offerings on Esri ArcGIS technology.
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.industry
+            kind: predicate
+            operator: neq
+            statement: Business must build a software product, host a solution, or deliver content offerings integrated with ArcGIS, and cannot be a consulting or professional services organization.
+            value:
+              type: string
+              value: consulting or professional services
+          - criterion_id: cri_02
+            fact: company.age_months
+            kind: predicate
+            operator: lte
+            statement: Business must be founded within the last five years.
+            value:
+              type: number
+              value: 60
+          - criterion_id: cri_03
+            fact: company.annual_revenue_usd
+            kind: predicate
+            operator: lt
+            statement: Business must generate less than US$2 million annually.
+            value:
+              type: number
+              value: 2000000
+          - criterion_id: cri_04
+            kind: manual
+            reason: vendor-discretion
+            statement: Must be strategically aligned with Esri and ArcGIS, offer a solid go-to-market strategy, and have team commitment to long-term partnership.
+    roles:
+      terms_authority_entity_id: ent_01kyygma82p0jwn11hvnaprqa6
+      access_operator_entity_id: ent_01kyygma82p0jwn11hvnaprqa6
+    access:
+      availability: public
+      method: form
+      url: https://www.esri.com/startups
+    source_ids:
+      - src_510789beac8838eef08166a9ed9c9014df527a881e964b2e33b6f9eeb987ed5e

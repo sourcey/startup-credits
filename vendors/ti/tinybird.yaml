@@ -1,0 +1,97 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kyygma8321r4cj67y73vec8q
+slug: tinybird
+slug_aliases: []
+name: Tinybird
+domains:
+  - value: tinybird.co
+    role: primary
+    valid_from: 2026-08-01T07:08:28.136Z
+category: data-analytics
+description: All the infrastructure you need to ship analytics in your app. Capture, store, transform, and serve data without dependencies on external tools or teams.
+links:
+  site: https://www.tinybird.co
+sources:
+  - source_id: src_7fb5b5e82f4a81615b777cc0141b5c340103178a3a81b8e0dbd78a836a23a4eb
+    url: https://www.tinybird.co/open-source-program
+programs:
+  - program_id: prg_01kyygma83qb7mrawtrgzbyekr
+    program_slug: tinybird-open-source-program
+    program_slug_aliases: []
+    title: Tinybird Open Source Program
+    summary: Program providing plan discounts, marketing, engineering support, and swag kits to open source project maintainers.
+    source_ids:
+      - src_7fb5b5e82f4a81615b777cc0141b5c340103178a3a81b8e0dbd78a836a23a4eb
+offers:
+  - offer_id: off_01kyygma832fdhz1axc31cdwy0
+    program_id: prg_01kyygma83qb7mrawtrgzbyekr
+    offer_slug: tinybird-open-source-program
+    offer_slug_aliases: []
+    title: Tinybird Open Source Program
+    summary: Eligible open source projects receive an 80% discount on Tinybird Developer Plans for 6 months, followed by a 20% ongoing discount, along with marketing support, engineering support, and swag.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-01T07:08:28.136Z
+    economics:
+      benefits:
+        - applies_to: Tinybird Developer Plan
+          benefit_id: ben_01
+          description: 80% off any Tinybird Developer Plan for the first 6 months
+          duration:
+            kind: exact
+            value: P6M
+          kind: discount
+          percentage:
+            basis_points: 8000
+            kind: exact
+        - applies_to: Tinybird Developer Plan
+          benefit_id: ben_02
+          description: 20% off any Tinybird Developer Plan in continuum for eligible projects
+          kind: discount
+          percentage:
+            basis_points: 2000
+            kind: exact
+        - benefit_id: ben_03
+          description: Featured blog post, founder interview on YouTube, social media highlights, and retweets
+          kind: other
+        - benefit_id: ben_04
+          description: Slack support with Growth Engineers, integration support via code review/contributions, and ClickHouse migration support
+          kind: other
+        - benefit_id: ben_05
+          description: Tinybird Swag Kits (one per founder/maintainer)
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: external-verification
+            statement: Source code hosted on a public git provider
+          - criterion_id: cri_02
+            kind: manual
+            reason: external-verification
+            statement: Active contributions within the last 30 days
+          - criterion_id: cri_03
+            fact: company.github_stars
+            kind: predicate
+            operator: gte
+            statement: At least 25 GitHub stars (or equivalent on other providers)
+            value:
+              type: number
+              value: 25
+          - criterion_id: cri_04
+            kind: manual
+            reason: external-verification
+            statement: Commercial or hosted versions must use the same open core code
+    roles:
+      terms_authority_entity_id: ent_01kyygma8321r4cj67y73vec8q
+      access_operator_entity_id: ent_01kyygma8321r4cj67y73vec8q
+    access:
+      availability: public
+      method: form
+      url: https://www.tinybird.co/open-source-program
+    source_ids:
+      - src_7fb5b5e82f4a81615b777cc0141b5c340103178a3a81b8e0dbd78a836a23a4eb

@@ -1,0 +1,90 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kyygma83ghr6dea0nzbdvpa1
+slug: turso
+slug_aliases: []
+name: Turso
+domains:
+  - value: turso.tech
+    role: primary
+    valid_from: 2026-07-31T23:19:17.294Z
+category: databases
+description: Turso offers generous credits, priority technical support, early feature access, and co-marketing opportunities for early-stage venture-backed startups.
+links:
+  site: https://turso.tech
+sources:
+  - source_id: src_0037ff97a23a44d0e1a4dee4b6f47e198d11ea11a8e59da76fa2d1bcd5cdec03
+    url: https://turso.tech/startups
+programs:
+  - program_id: prg_01kyygma83xz5b5aajd3d7h6kg
+    program_slug: turso-for-startups
+    program_slug_aliases: []
+    title: Turso for Startups
+    summary: Turso for Startups provides credits, hands-on technical support, early feature access, and co-marketing opportunities to venture-backed founders.
+    source_ids:
+      - src_0037ff97a23a44d0e1a4dee4b6f47e198d11ea11a8e59da76fa2d1bcd5cdec03
+offers:
+  - offer_id: off_01kyygma83ahsg4w90th99cvs9
+    program_id: prg_01kyygma83xz5b5aajd3d7h6kg
+    offer_slug: turso-for-startups
+    offer_slug_aliases: []
+    title: Turso for Startups
+    summary: Eligible early-stage venture-backed startups receive Turso credits, priority technical support, early access to new features, and co-marketing opportunities.
+    lifecycle:
+      status: active
+      effective_from: 2026-07-31T23:19:17.294Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Generous Turso credits to run databases.
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 1
+            kind: at-least
+        - benefit_id: ben_02
+          description: Priority access to engineering team for onboarding, architecture reviews, and ongoing support.
+          kind: other
+        - benefit_id: ben_03
+          description: Early access to try new features and capabilities before public release.
+          kind: other
+        - benefit_id: ben_04
+          description: Co-marketing opportunities to be featured in blog, case studies, and social channels.
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.funding_rounds_count
+            kind: predicate
+            operator: gte
+            statement: Venture-backed startup with at least one round of funding
+            value:
+              type: number
+              value: 1
+          - criterion_id: cri_02
+            fact: company.stage
+            kind: predicate
+            operator: in
+            statement: Building an early-stage product or actively scaling
+            value:
+              type: string-set
+              values:
+                - early-stage
+                - scaling
+          - criterion_id: cri_03
+            kind: manual
+            reason: external-verification
+            statement: Verifiable funding from recognized investors or accelerators
+    roles:
+      terms_authority_entity_id: ent_01kyygma83ghr6dea0nzbdvpa1
+      access_operator_entity_id: ent_01kyygma83ghr6dea0nzbdvpa1
+    access:
+      availability: public
+      method: form
+      url: https://turso.tech/startups
+    source_ids:
+      - src_0037ff97a23a44d0e1a4dee4b6f47e198d11ea11a8e59da76fa2d1bcd5cdec03

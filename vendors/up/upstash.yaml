@@ -1,0 +1,64 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kyygma8214q65cdtzx9ssgqe
+slug: upstash
+slug_aliases: []
+name: Upstash
+domains:
+  - value: upstash.com
+    role: primary
+    valid_from: 2026-08-01T10:30:05.504Z
+category: databases
+description: Serverless Redis, Vector and Search databases with low latency and pay-as-you-go pricing.
+links:
+  site: https://upstash.com
+sources:
+  - source_id: src_ed317188c83efebc17cb6618f8c4bf888ff1d2b10d1c035aa616fb56905b5063
+    url: https://upstash.com/open-source
+programs:
+  - program_id: prg_01kyygma8245hc3gn3dffw02k3
+    program_slug: upstash-open-source-program
+    program_slug_aliases: []
+    title: Upstash Open Source Program
+    summary: We support open-source projects building on Upstash with credit grants and exclusive access to support.
+    source_ids:
+      - src_ed317188c83efebc17cb6618f8c4bf888ff1d2b10d1c035aa616fb56905b5063
+offers:
+  - offer_id: off_01kyygma82q19jnfr527sc7wtm
+    program_id: prg_01kyygma8245hc3gn3dffw02k3
+    offer_slug: upstash-open-source-program
+    offer_slug_aliases: []
+    title: Upstash Open Source Program
+    summary: $1,000 monthly credit grant, direct technical support, priority team access, and co-marketing opportunities for open-source projects building on Upstash.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-01T10:30:05.504Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: $1,000 monthly credit grant covering all Upstash-related costs up to $1,000 per month.
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 100000
+            kind: exact
+        - benefit_id: ben_02
+          description: Direct technical support, priority team access, and co-marketing opportunities.
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Must be an open-source project building on Upstash.
+    roles:
+      terms_authority_entity_id: ent_01kyygma8214q65cdtzx9ssgqe
+      access_operator_entity_id: ent_01kyygma8214q65cdtzx9ssgqe
+    access:
+      availability: public
+      method: form
+      url: https://upstash.com/open-source
+    source_ids:
+      - src_ed317188c83efebc17cb6618f8c4bf888ff1d2b10d1c035aa616fb56905b5063

@@ -1,0 +1,65 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kyygma830fqh16kvj744sk1c
+slug: stripe
+slug_aliases: []
+name: Stripe
+domains:
+  - value: stripe.com
+    role: primary
+    valid_from: 2026-07-31T23:19:01.190Z
+category: payments-fintech
+description: Stripe provides payments and financial infrastructure to help venture-backed start-ups build, iterate, and scale faster.
+links:
+  site: https://stripe.com/startups
+sources:
+  - source_id: src_4410dda4d44891aad0cc0b21bb409ed3d27032c5bc1852a256708b3df0b1ff45
+    url: https://stripe.com/startups
+programs:
+  - program_id: prg_01kyygma8309wepbqk3a8d21wm
+    program_slug: stripe-startup-programme
+    program_slug_aliases: []
+    title: Stripe Startup Programme
+    summary: Designed to support venture-backed businesses with financial benefits, exclusive discounts, community, and expert resources.
+    source_ids:
+      - src_4410dda4d44891aad0cc0b21bb409ed3d27032c5bc1852a256708b3df0b1ff45
+offers:
+  - offer_id: off_01kyygma8386545a4wn8g6q28y
+    program_id: prg_01kyygma8309wepbqk3a8d21wm
+    offer_slug: stripe-startup-programme
+    offer_slug_aliases: []
+    title: Stripe Startup Programme
+    summary: Provides venture-backed startups with financial benefits including credits to offset Stripe fees and special pricing on Stripe invoices, alongside expert resources and community access.
+    lifecycle:
+      status: active
+      effective_from: 2026-07-31T23:19:01.190Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Credits to offset Stripe fees and special pricing on Stripe invoices
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 0
+            kind: at-least
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        fact: company.stage
+        kind: predicate
+        operator: eq
+        statement: Must be a venture-backed business
+        value:
+          type: string
+          value: venture-backed
+    roles:
+      terms_authority_entity_id: ent_01kyygma830fqh16kvj744sk1c
+      access_operator_entity_id: ent_01kyygma830fqh16kvj744sk1c
+    access:
+      availability: public
+      method: form
+      url: https://stripe.com/au/startups
+    source_ids:
+      - src_4410dda4d44891aad0cc0b21bb409ed3d27032c5bc1852a256708b3df0b1ff45

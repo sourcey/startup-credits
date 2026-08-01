@@ -1,0 +1,79 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kyygma823nzqdmttehnq0v5m
+slug: msg91
+slug_aliases: []
+name: MSG91
+domains:
+  - value: msg91.com
+    role: primary
+    valid_from: 2026-08-01T07:24:20.328Z
+category: communication
+description: Expand your vision with us. Get a complimentary communication API package tailored to meet your needs.
+links:
+  site: https://msg91.com/
+sources:
+  - source_id: src_6d0a1ea568a46600063c63e8e96ce21d7cc292d70ab1bf01915108c9c5275eda
+    url: https://msg91.com/startups
+programs:
+  - program_id: prg_01kyygma825rkqa5hr6srr4p68
+    program_slug: msg91-for-startups
+    program_slug_aliases: []
+    title: MSG91 for Startups
+    summary: Complimentary communication API package and startup balance for startups associated with partner accelerators and incubators.
+    source_ids:
+      - src_6d0a1ea568a46600063c63e8e96ce21d7cc292d70ab1bf01915108c9c5275eda
+offers:
+  - offer_id: off_01kyygma822z14kmscq4q60djz
+    program_id: prg_01kyygma825rkqa5hr6srr4p68
+    offer_slug: msg91-startup-program
+    offer_slug_aliases: []
+    title: MSG91 Startup Program
+    summary: Get a complimentary communication API package with options for SMS credits, emails, WhatsApp sessions, OTP credits, and application access.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-01T07:24:20.328Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Startup Balance usable for SMS credits, Emails, WhatsApp Sessions, OTP credits, or application access
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.is_current_customer
+            kind: predicate
+            operator: eq
+            statement: Must be a new MSG91 user.
+            value:
+              type: boolean
+              value: false
+          - criterion_id: cri_02
+            fact: company.email_domain_type
+            kind: predicate
+            operator: eq
+            statement: Must register with a private domain email ID.
+            value:
+              type: string
+              value: private
+          - criterion_id: cri_03
+            kind: manual
+            reason: external-verification
+            statement: Startup should be associated with one of MSG91's collaborators.
+          - criterion_id: cri_04
+            kind: manual
+            reason: external-verification
+            statement: Startup has to add MSG91's Startup Badge on their website with tagline - Communication Partner.
+    roles:
+      terms_authority_entity_id: ent_01kyygma823nzqdmttehnq0v5m
+      access_operator_entity_id: ent_01kyygma823nzqdmttehnq0v5m
+    access:
+      availability: referral
+      method: form
+      url: https://msg91.com/startups
+    terms_url: https://msg91.com/startups
+    source_ids:
+      - src_6d0a1ea568a46600063c63e8e96ce21d7cc292d70ab1bf01915108c9c5275eda

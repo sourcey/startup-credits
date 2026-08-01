@@ -1,0 +1,49 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kyygma82b2qehpp99y8q0619
+slug: agency-cybersecurity
+slug_aliases: []
+name: Agency Cybersecurity
+domains:
+  - value: getagency.com
+    role: primary
+    valid_from: 2026-08-01T07:22:13.711Z
+category: auth-security
+description: All-in SOC 2 readiness for startups — work, audit, pen test, and tooling — from $2,500 to $12,500.
+links:
+  site: https://getagency.com
+sources:
+  - source_id: src_e887a3a0e3a35ad056b4f882cb319a1237f745b50ad97b4fcb61099be7d04902
+    url: https://getagency.com/startups
+programs: []
+offers:
+  - offer_id: off_01kyygma8297z91f07vvvxxf3j
+    offer_slug: agency-for-startup-credits
+    offer_slug_aliases: []
+    title: Agency for Startup Credits
+    summary: All-in SOC 2 readiness package including audit, pen test, tooling discounts, and management for startups at $2,500 to $12,500 depending on stage.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-01T07:22:13.711Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: All-in SOC 2 readiness, audit, penetration test, tooling, and stacked partner credits/discounts up to $50,000 applied over 1 to 4 years.
+          kind: other
+      consideration:
+        description: All-in package pricing ranges from $2,500 to $12,500 USD depending on startup funding stage and stack.
+        kind: variable
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Pricing and credits depend on startup funding stage and tech stack.
+    roles:
+      terms_authority_entity_id: ent_01kyygma82b2qehpp99y8q0619
+      access_operator_entity_id: ent_01kyygma82b2qehpp99y8q0619
+    access:
+      availability: public
+      method: form
+      url: https://getagency.com/startups
+    source_ids:
+      - src_e887a3a0e3a35ad056b4f882cb319a1237f745b50ad97b4fcb61099be7d04902

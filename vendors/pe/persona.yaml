@@ -1,0 +1,158 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kyygma83pse5k9e9ry0ngfyc
+slug: persona
+slug_aliases: []
+name: Persona
+domains:
+  - value: withpersona.com
+    role: primary
+    valid_from: 2026-08-01T10:20:42.153Z
+category: auth-security
+description: Persona provides identity verification, orchestration, and platform tools to manage Personal Identifiable Information (PII) and stay compliant.
+links:
+  site: https://withpersona.com/
+sources:
+  - source_id: src_99c20c72fefd3c85ac13f2eb7bda59e11bdb736fb57a6bce19cf1083544a783a
+    url: https://withpersona.com/startups
+programs:
+  - program_id: prg_01kyygma83xffge4x55yxjcckx
+    program_slug: persona-startup-program
+    program_slug_aliases: []
+    title: Persona Startup Program
+    summary: Designed to help startups and small businesses grow utilizing Persona's identity verification, orchestration, and platform tools.
+    source_ids:
+      - src_99c20c72fefd3c85ac13f2eb7bda59e11bdb736fb57a6bce19cf1083544a783a
+offers:
+  - offer_id: off_01kyygma83kptje8sqq3jrh629
+    program_id: prg_01kyygma83xffge4x55yxjcckx
+    offer_slug: persona-startup-program-fintech-cohort
+    offer_slug_aliases: []
+    title: Persona Startup Program - Fintech Cohort
+    summary: Up to 12 months free access to Persona's configurable identity platform including 500 free monthly verifications, watchlist screening, and PEP reports.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-01T10:20:42.153Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to 12 months free access to Persona identity tools with 500 free monthly verifications, watchlists, and PEP reports.
+          duration:
+            kind: up-to
+            value: P1Y
+          kind: free-service
+          service: Persona configurable platform, 500 monthly verifications, watchlists, and PEP reports
+        - benefit_id: ben_02
+          description: Exclusive access to founder events in SF, NYC, and London.
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.industry
+            kind: predicate
+            operator: in
+            statement: For incorporated startups and small businesses in banking, payments, personal finance, lending, or wealth, or partnering with a sponsor bank or carrier
+            value:
+              type: string-set
+              values:
+                - banking
+                - payments
+                - personal finance
+                - lending
+                - wealth
+                - sponsor bank partner
+                - carrier partner
+          - criterion_id: cri_02
+            fact: company.is_current_customer
+            kind: predicate
+            operator: eq
+            statement: Current Persona customers are not eligible
+            value:
+              type: boolean
+              value: false
+          - criterion_id: cri_03
+            kind: manual
+            reason: external-verification
+            statement: Falsely misrepresenting eligibility constitutes a breach and may result in termination
+    roles:
+      terms_authority_entity_id: ent_01kyygma83pse5k9e9ry0ngfyc
+      access_operator_entity_id: ent_01kyygma83pse5k9e9ry0ngfyc
+    access:
+      availability: public
+      method: form
+      url: https://withpersona.com/startups/
+    terms_url: https://withpersona.com/startups/
+    source_ids:
+      - src_99c20c72fefd3c85ac13f2eb7bda59e11bdb736fb57a6bce19cf1083544a783a
+  - offer_id: off_01kyygma836yqdmsa4ahzjw8c2
+    program_id: prg_01kyygma83xffge4x55yxjcckx
+    offer_slug: persona-startup-program-general-cohort
+    offer_slug_aliases: []
+    title: Persona Startup Program - General Cohort
+    summary: Up to 12 months free access to Persona's core identity verification tools, including 500 free monthly Government ID (with optional selfie) verifications and $1 pricing thereafter.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-01T10:20:42.153Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to 12 months free access to Persona's core identity tools with 500 free monthly Government ID verifications.
+          duration:
+            kind: up-to
+            value: P1Y
+          kind: free-service
+          service: Persona core identity tools and 500 monthly Government ID verifications
+        - benefit_id: ben_02
+          description: Exclusive access to founder events in SF, NYC, and London.
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.stage
+            kind: predicate
+            operator: in
+            statement: Operating an incorporated small business or early-stage company
+            value:
+              type: string-set
+              values:
+                - incorporated small business
+                - early-stage
+          - criterion_id: cri_02
+            fact: company.product_status
+            kind: predicate
+            operator: in
+            statement: Product or service that's launched or ready to launch
+            value:
+              type: string-set
+              values:
+                - launched
+                - ready-to-launch
+          - criterion_id: cri_03
+            fact: company.is_current_customer
+            kind: predicate
+            operator: eq
+            statement: Current Persona customers are not eligible
+            value:
+              type: boolean
+              value: false
+          - criterion_id: cri_04
+            kind: manual
+            reason: external-verification
+            statement: Falsely misrepresenting eligibility constitutes a breach and may result in termination
+    roles:
+      terms_authority_entity_id: ent_01kyygma83pse5k9e9ry0ngfyc
+      access_operator_entity_id: ent_01kyygma83pse5k9e9ry0ngfyc
+    access:
+      availability: public
+      method: form
+      url: https://withpersona.com/startups/
+    terms_url: https://withpersona.com/startups/
+    source_ids:
+      - src_99c20c72fefd3c85ac13f2eb7bda59e11bdb736fb57a6bce19cf1083544a783a
