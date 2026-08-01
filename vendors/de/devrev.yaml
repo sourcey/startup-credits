@@ -1,0 +1,92 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kyy6rm10t4ab53aq8rxhxqjp
+slug: devrev
+slug_aliases: []
+name: DevRev
+domains:
+  - value: devrev.ai
+    role: primary
+    valid_from: 2026-08-01T07:21:38.391Z
+category: support
+description: DevRev marries a beautifully designed, in-app support experience, with a scalable and customizable ticketing platform that unifies support and engineering.
+links:
+  site: https://devrev.ai
+sources:
+  - source_id: src_4aebab453dfd4d505385c94699df8bd86e359be221a5b6e0d7ce886981848da3
+    url: https://devrev.ai/startups/apply
+programs:
+  - program_id: prg_01kyy6rm10y0hz9abjhrnfv0a3
+    program_slug: startup-program
+    program_slug_aliases: []
+    title: Startup Program
+    summary: Program providing technical and business benefits to accelerate early-stage startups on their AI-first journey.
+    source_ids:
+      - src_4aebab453dfd4d505385c94699df8bd86e359be221a5b6e0d7ce886981848da3
+offers:
+  - offer_id: off_01kyy6rm103s425h55jcec794t
+    program_id: prg_01kyy6rm10y0hz9abjhrnfv0a3
+    offer_slug: devrev-startup-program
+    offer_slug_aliases: []
+    title: DevRev Startup Program
+    summary: Eligible early-stage startups get up to $10k in credits for 12 months free, 50% off their first paid commitments, and access to technical and business enablement.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-01T07:21:38.391Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Get up to $10k in credits at sign-up
+          duration:
+            kind: exact
+            value: P1Y
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 1000000
+            kind: up-to
+        - applies_to: first paid commitments
+          benefit_id: ben_02
+          description: 50% off your first paid commitments
+          kind: discount
+          percentage:
+            basis_points: 5000
+            kind: exact
+        - benefit_id: ben_03
+          description: Get access to technical experts, training modules and learning guides.
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: external-verification
+            statement: Seed or Series A funded startups.
+          - criterion_id: cri_02
+            fact: company.is_current_customer
+            kind: predicate
+            operator: eq
+            statement: Must be a new DevRev customer
+            value:
+              type: boolean
+              value: false
+          - criterion_id: cri_03
+            fact: company.age_months
+            kind: predicate
+            operator: lte
+            statement: Companies founded within the last 5 years
+            value:
+              type: number
+              value: 60
+    roles:
+      terms_authority_entity_id: ent_01kyy6rm10t4ab53aq8rxhxqjp
+      access_operator_entity_id: ent_01kyy6rm10t4ab53aq8rxhxqjp
+    access:
+      availability: public
+      method: form
+      url: https://devrev.ai/startups/apply
+    source_ids:
+      - src_4aebab453dfd4d505385c94699df8bd86e359be221a5b6e0d7ce886981848da3

@@ -1,0 +1,65 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kyy6rm0yk2csvrbxjgcd7r1k
+slug: aikido
+slug_aliases: []
+name: Aikido
+domains:
+  - value: aikido.dev
+    role: primary
+    valid_from: 2026-08-01T07:17:32.298Z
+category: auth-security
+description: Aikido Security is an all-in-one application security platform.
+links:
+  site: https://www.aikido.dev
+sources:
+  - source_id: src_2c305f68d98ef708655b53cd12e291e78aaf984a74b77901f4cfbb2e0990e15a
+    url: https://aikido.dev/industries/aikido-for-startups
+programs: []
+offers:
+  - offer_id: off_01kyy6rm0zc3q32b8z73rj2nm4
+    offer_slug: aikido-startup-discount
+    offer_slug_aliases: []
+    title: Aikido Startup Discount
+    summary: Get up to 30% off Aikido for eligible startups that raised less than $1.5M in funding or nonprofit organizations.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-01T07:17:32.298Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Discounts of up to 30% on Aikido.
+          kind: discount
+          percentage:
+            basis_points: 3000
+            kind: up-to
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: any
+        rules:
+          - criterion_id: cri_01
+            fact: company.funding_raised_usd
+            kind: predicate
+            operator: lt
+            statement: Raised less than $1.5M in funding
+            value:
+              type: number
+              value: 1500000
+          - criterion_id: cri_02
+            fact: company.is_nonprofit
+            kind: predicate
+            operator: eq
+            statement: Is a nonprofit organization
+            value:
+              type: boolean
+              value: true
+    roles:
+      terms_authority_entity_id: ent_01kyy6rm0yk2csvrbxjgcd7r1k
+      access_operator_entity_id: ent_01kyy6rm0yk2csvrbxjgcd7r1k
+    access:
+      availability: public
+      method: form
+      url: https://aikido.dev/industries/aikido-for-startups
+    source_ids:
+      - src_2c305f68d98ef708655b53cd12e291e78aaf984a74b77901f4cfbb2e0990e15a

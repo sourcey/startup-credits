@@ -14,6 +14,8 @@ links:
 sources:
   - source_id: src_6e369733bfa8e965ff97164c047da6f18a586e5e58fef7db3c7225d5142b6c70
     url: https://www.deel.com/segments/startups/
+  - source_id: src_11482e30b1e1cf00925499a7a256cc5c36accecf3c0d790c06af55f3ccde94c7
+    url: https://www.deel.com/segments/startups
 programs: []
 offers:
   - offer_id: off_01kyh8fpe2r151y0shvrzcmkwt
@@ -48,3 +50,38 @@ offers:
       url: https://www.deel.com/segments/startups/
     source_ids:
       - src_6e369733bfa8e965ff97164c047da6f18a586e5e58fef7db3c7225d5142b6c70
+  - offer_id: off_01kyy6rm10k6r1bdkckarf7wh9
+    offer_slug: free-u-s-payroll-for-founders
+    offer_slug_aliases: []
+    title: Free U.S. Payroll for Founders
+    summary: Free U.S. Payroll for founders for life.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-01T07:51:50.371Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Free U.S. Payroll for founders for life
+          kind: free-service
+          service: U.S. Payroll for founders
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        fact: company.is_founder
+        kind: predicate
+        operator: eq
+        statement: User must be a founder using U.S. payroll
+        value:
+          type: boolean
+          value: true
+    roles:
+      terms_authority_entity_id: ent_01kyh8fpe2k0kd5rfqh8es0ccs
+      access_operator_entity_id: ent_01kyh8fpe2k0kd5rfqh8es0ccs
+    access:
+      availability: public
+      method: form
+      url: https://www.deel.com/segments/startups/
+    source_ids:
+      - src_11482e30b1e1cf00925499a7a256cc5c36accecf3c0d790c06af55f3ccde94c7

@@ -1,0 +1,76 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kyy6rm112acrfvna23vhdx0y
+slug: linode
+slug_aliases: []
+name: Linode
+domains:
+  - value: linode.com
+    role: primary
+    valid_from: 2026-08-01T07:52:41.220Z
+category: hosting-infra
+description: Grow your startup with powerful and easy-to-use cloud infrastructure, cut your monthly cloud bills in half, plus these and other benefits.
+links:
+  site: https://www.linode.com
+sources:
+  - source_id: src_aef2895dcfeab0ea63144f42ecaea5d7a30ad59fe505c2df0a3c026a20020312
+    url: https://www.linode.com/content/rise-startup-program
+programs:
+  - program_id: prg_01kyy6rm11nqabqtytn5x220kn
+    program_slug: linode-rise-startup-program
+    program_slug_aliases: []
+    title: Linode Rise Startup Program
+    summary: Linode Rise Startup Program offers startups up to $120,000 in free cloud infrastructure credits during their first year alongside consulting, IT services, community access, and prioritized support.
+    source_ids:
+      - src_aef2895dcfeab0ea63144f42ecaea5d7a30ad59fe505c2df0a3c026a20020312
+offers:
+  - offer_id: off_01kyy6rm11bj4d10zfpz0y23c3
+    program_id: prg_01kyy6rm11nqabqtytn5x220kn
+    offer_slug: linode-rise-startup-program
+    offer_slug_aliases: []
+    title: Linode Rise Startup Program
+    summary: Qualify for up to $120,000 in free cloud infrastructure credits during your first year, along with cloud consulting, IT services guidance, community access, and prioritized 24/7/365 support.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-01T07:52:41.220Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to $120,000 in free cloud infrastructure credits during your first year as a Linode Rise member.
+          duration:
+            kind: exact
+            value: P1Y
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 12000000
+            kind: up-to
+        - benefit_id: ben_02
+          description: Cloud consulting leveraging cloud architecture experts to help build, launch, and scale your business.
+          kind: other
+        - benefit_id: ben_03
+          description: IT services guidance on architecture, migrations, and more ($250/hour value).
+          kind: other
+        - benefit_id: ben_04
+          description: Connect with other program members, alumni, advisors, and Linode resources.
+          kind: other
+        - benefit_id: ben_05
+          description: Prioritized 24/7/365 award-winning customer support via phone, email, or social media.
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Qualify for the Linode Rise Startup Program.
+    roles:
+      terms_authority_entity_id: ent_01kyy6rm112acrfvna23vhdx0y
+      access_operator_entity_id: ent_01kyy6rm112acrfvna23vhdx0y
+    access:
+      availability: public
+      method: other
+      url: https://www.linode.com/content/rise-startup-program/
+    source_ids:
+      - src_aef2895dcfeab0ea63144f42ecaea5d7a30ad59fe505c2df0a3c026a20020312

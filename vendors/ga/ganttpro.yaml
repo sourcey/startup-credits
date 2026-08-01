@@ -1,0 +1,94 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kyy6rm10p1vw9wg6ww029c6v
+slug: ganttpro
+slug_aliases: []
+name: GanttPRO
+domains:
+  - value: ganttpro.com
+    role: primary
+    valid_from: 2026-08-01T07:22:15.489Z
+category: productivity
+description: Online Gantt chart software for project management, timeline planning, resource allocation, and team collaboration.
+links:
+  site: https://ganttpro.com
+sources:
+  - source_id: src_048684c6adda2f84883d8b55a12bb6c6c8682c11a439c73932b94b961d185f2b
+    url: https://ganttpro.com/startup-program
+programs:
+  - program_id: prg_01kyy6rm10p40vqp6xyfvevsj7
+    program_slug: ganttpro-startup-program
+    program_slug_aliases: []
+    title: GanttPRO Startup Program
+    summary: GanttPRO program providing qualifying startups with discounted access to annual GanttPRO plans.
+    source_ids:
+      - src_048684c6adda2f84883d8b55a12bb6c6c8682c11a439c73932b94b961d185f2b
+offers:
+  - offer_id: off_01kyy6rm10jm4dk6v7v20g9sap
+    program_id: prg_01kyy6rm10p40vqp6xyfvevsj7
+    offer_slug: ganttpro-startup-program-50-off-first-annual-subscription
+    offer_slug_aliases: []
+    title: GanttPRO Startup Program 50% Off First Annual Subscription
+    summary: Eligible early-stage startups receive 50% off their first annual subscription on any GanttPRO plan.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-01T07:22:15.489Z
+    economics:
+      benefits:
+        - applies_to: GanttPRO first annual subscription
+          benefit_id: ben_01
+          description: 50% off first annual subscription on any GanttPRO plan
+          duration:
+            kind: exact
+            value: P1Y
+          kind: discount
+          percentage:
+            basis_points: 5000
+            kind: exact
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.age_months
+            kind: predicate
+            operator: lte
+            statement: Incorporated less than 3 years ago or an accelerator/incubator operating for 3 years or less
+            value:
+              type: number
+              value: 36
+          - criterion_id: cri_02
+            fact: company.domain
+            kind: predicate
+            operator: present
+            statement: Unique website and company domain
+          - criterion_id: cri_03
+            fact: company.employee_count
+            kind: predicate
+            operator: lte
+            statement: 30 team members or less
+            value:
+              type: number
+              value: 30
+          - criterion_id: cri_04
+            kind: manual
+            reason: external-verification
+            statement: Have raised a max of Series B round funding or not undergone a funding round/change of control/IPO
+          - criterion_id: cri_05
+            fact: company.is_current_customer
+            kind: predicate
+            operator: eq
+            statement: Never had a paid subscription to GanttPRO or received another coupon code/discount
+            value:
+              type: boolean
+              value: false
+    roles:
+      terms_authority_entity_id: ent_01kyy6rm10p1vw9wg6ww029c6v
+      access_operator_entity_id: ent_01kyy6rm10p1vw9wg6ww029c6v
+    access:
+      availability: public
+      method: form
+      url: https://ganttpro.com/startup-program
+    source_ids:
+      - src_048684c6adda2f84883d8b55a12bb6c6c8682c11a439c73932b94b961d185f2b

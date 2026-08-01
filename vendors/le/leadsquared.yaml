@@ -1,0 +1,104 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kyy6rm11kwr4wc8z78k88vpf
+slug: leadsquared
+slug_aliases: []
+name: LeadSquared
+domains:
+  - value: leadsquared.com
+    role: primary
+    valid_from: 2026-08-01T07:52:32.914Z
+category: crm-sales
+description: LeadSquared provides sales CRM, service CRM, and marketing automation solutions to help businesses manage leads and scale operations.
+links:
+  site: https://www.leadsquared.com
+sources:
+  - source_id: src_9103159771e2eeda06ba7f868d6fd9f9aefe53085b1d91a7dfd7d0b19eb2d40d
+    url: https://www.leadsquared.com/startup-crm-plan
+programs: []
+offers:
+  - offer_id: off_01kyy6rm1148f41n9qkdtpnj5p
+    offer_slug: leadsquared-crm-plan-for-start-ups
+    offer_slug_aliases: []
+    title: LeadSquared CRM Plan For Start-ups
+    summary: Eligible startups in India can receive up to 60% off LeadSquared Super or Enterprise plans for their first 15 users for one year, along with free admin certification and a named account manager.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-01T07:52:32.914Z
+    economics:
+      benefits:
+        - applies_to: first 15 users on Super/ Enterprise plans
+          benefit_id: ben_01
+          description: 60% off on the first 15 users on Super/ Enterprise plans
+          duration:
+            kind: exact
+            value: P1Y
+          kind: discount
+          percentage:
+            basis_points: 6000
+            kind: exact
+        - benefit_id: ben_02
+          description: Free admin certification for 1 user
+          kind: waiver
+          waived_item: admin certification for 1 user
+        - benefit_id: ben_03
+          description: Named account manager
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.user_count
+            kind: predicate
+            operator: gte
+            statement: Minimum of 5 users
+            value:
+              type: number
+              value: 5
+          - criterion_id: cri_02
+            fact: company.age_months
+            kind: predicate
+            operator: lt
+            statement: Startup should be launched less than 5 years ago
+            value:
+              type: number
+              value: 60
+          - criterion_id: cri_03
+            fact: company.stage
+            kind: predicate
+            operator: in
+            statement: Funding stage up to series B
+            value:
+              type: string-set
+              values:
+                - pre-seed
+                - seed
+                - series-a
+                - series-b
+          - criterion_id: cri_04
+            fact: company.country_code
+            kind: predicate
+            operator: eq
+            statement: Only for startups registered in India
+            value:
+              type: string
+              value: IND
+          - criterion_id: cri_05
+            fact: company.is_current_customer
+            kind: predicate
+            operator: eq
+            statement: Only for startups with no prior billing history with LeadSquared
+            value:
+              type: boolean
+              value: false
+    roles:
+      terms_authority_entity_id: ent_01kyy6rm11kwr4wc8z78k88vpf
+      access_operator_entity_id: ent_01kyy6rm11kwr4wc8z78k88vpf
+    access:
+      availability: public
+      method: form
+      url: https://www.leadsquared.com/startup-crm-plan
+    source_ids:
+      - src_9103159771e2eeda06ba7f868d6fd9f9aefe53085b1d91a7dfd7d0b19eb2d40d

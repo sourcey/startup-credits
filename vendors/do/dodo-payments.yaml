@@ -1,0 +1,105 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kyy6rm10pd1y04n0aymh2g2f
+slug: dodo-payments
+slug_aliases: []
+name: Dodo Payments
+domains:
+  - value: dodopayments.com
+    role: primary
+    valid_from: 2026-08-01T07:21:33.644Z
+category: payments-fintech
+description: Billing and payments platform for fast-growing startups.
+links:
+  site: https://dodopayments.com
+sources:
+  - source_id: src_68c0fc301e39ab507fda9f0d9e3752fde0c49d6960828e193aa305722bffa7f1
+    url: https://dodopayments.com/startups
+programs:
+  - program_id: prg_01kyy6rm106pxqdg14jf5mqh2r
+    program_slug: dodo-payments-for-startups
+    program_slug_aliases: []
+    title: Dodo Payments for Startups
+    summary: Program providing early-stage SaaS, AI, and digital product startups with up to 12 months of free credits, ongoing startup pricing, and full access to the Dodo Payments platform.
+    source_ids:
+      - src_68c0fc301e39ab507fda9f0d9e3752fde0c49d6960828e193aa305722bffa7f1
+offers:
+  - offer_id: off_01kyy6rm10f65rtfgytey9g3mb
+    program_id: prg_01kyy6rm106pxqdg14jf5mqh2r
+    offer_slug: dodo-payments-for-startups
+    offer_slug_aliases: []
+    title: Dodo Payments for Startups
+    summary: Eligible early-stage startups get up to 12 months of free credits applied upfront, forever startup pricing, and full access to the Dodo Payments platform without tier-gating.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-01T07:21:33.644Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to 12 months of free credits applied upfront.
+          duration:
+            kind: up-to
+            value: P12M
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 0
+            kind: exact
+        - benefit_id: ben_02
+          description: Forever startup pricing with preferential rates that scale as you grow.
+          kind: other
+        - benefit_id: ben_03
+          description: Full Dodo Payments platform access with no tier-gating including subscriptions, usage metering, credit-based billing, and 40+ payment methods.
+          kind: free-service
+          service: Full Dodo Payments platform access with no tier-gating
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.industry
+            kind: predicate
+            operator: in
+            statement: Building SaaS, AI, or digital products.
+            value:
+              type: string-set
+              values:
+                - SaaS
+                - AI
+                - digital products
+          - criterion_id: cri_02
+            fact: company.sells_internationally
+            kind: predicate
+            operator: eq
+            statement: Selling (or planning to sell) internationally.
+            value:
+              type: boolean
+              value: true
+          - criterion_id: cri_03
+            fact: company.stage
+            kind: predicate
+            operator: in
+            statement: Bootstrapped through Series B.
+            value:
+              type: string-set
+              values:
+                - bootstrapped
+                - pre-seed
+                - seed
+                - series-a
+                - series-b
+          - criterion_id: cri_04
+            kind: manual
+            reason: external-verification
+            statement: Must complete standard business verification/onboarding.
+    roles:
+      terms_authority_entity_id: ent_01kyy6rm10pd1y04n0aymh2g2f
+      access_operator_entity_id: ent_01kyy6rm10pd1y04n0aymh2g2f
+    access:
+      availability: public
+      method: form
+      url: https://dodopayments.com/startups
+    source_ids:
+      - src_68c0fc301e39ab507fda9f0d9e3752fde0c49d6960828e193aa305722bffa7f1

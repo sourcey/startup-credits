@@ -1,0 +1,94 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kyy6rm0zzbgrxey2r7n3nm0v
+slug: ansys
+slug_aliases: []
+name: Ansys
+domains:
+  - value: ansys.com
+    role: primary
+    valid_from: 2026-08-01T07:20:23.974Z
+category: devtools-other
+description: Ansys provides simulation software bundles custom bundled and priced for early-stage startups with limited funding and revenue.
+links:
+  site: https://www.ansys.com/experiences/startup-program
+sources:
+  - source_id: src_b80bed90d7f4ee8728a49a49319cf6568976994bd269ca4d5440c4c2e4f960e4
+    url: https://ansys.com/experiences/startup-program
+programs:
+  - program_id: prg_01kyy6rm0z5hqqw2zmn89wr8vw
+    program_slug: ansys-startup-program
+    program_slug_aliases: []
+    title: Ansys Startup Program
+    summary: The Ansys Startup Program provides early-stage startups with access to discounted simulation software bundles across multiple physics disciplines, high-performance computing, and technical support.
+    source_ids:
+      - src_b80bed90d7f4ee8728a49a49319cf6568976994bd269ca4d5440c4c2e4f960e4
+offers:
+  - offer_id: off_01kyy6rm0zc6gjtteqae4x2q3b
+    program_id: prg_01kyy6rm0z5hqqw2zmn89wr8vw
+    offer_slug: ansys-startup-program
+    offer_slug_aliases: []
+    title: Ansys Startup Program
+    summary: Eligible early-stage startups get access to discounted multiphysics simulation software bundles (Structures & Fluids, Electromagnetics, Embedded Software, Optics and Photonics) along with high-performance computing and technical support.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-01T07:20:23.974Z
+    economics:
+      benefits:
+        - applies_to: Ansys simulation software bundles
+          benefit_id: ben_01
+          description: Discounted access to simulation software product bundles spanning Structures & Fluids, Electromagnetics, Embedded Software, Optics and Photonics.
+          kind: discount
+          percentage:
+            basis_points: 9900
+            kind: up-to
+        - benefit_id: ben_02
+          description: Technical support and opportunities to engage on mutually beneficial marketing opportunities.
+          kind: other
+      consideration:
+        description: Priced for early-stage startups; exact discounted pricing is not specified on the page.
+        kind: unknown
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.is_private
+            kind: predicate
+            operator: eq
+            statement: Must be a privately held company.
+            value:
+              type: boolean
+              value: true
+          - criterion_id: cri_02
+            fact: company.age_months
+            kind: predicate
+            operator: lt
+            statement: Company age must be less than 10 years.
+            value:
+              type: number
+              value: 120
+          - criterion_id: cri_03
+            fact: company.annual_revenue_usd
+            kind: predicate
+            operator: lt
+            statement: Annual revenue must be less than USD $5 million.
+            value:
+              type: number
+              value: 5000000
+          - criterion_id: cri_04
+            fact: company.industry
+            kind: predicate
+            operator: neq
+            statement: Must not be an engineering consulting or simulation services company.
+            value:
+              type: string
+              value: engineering consulting or simulation services
+    roles:
+      terms_authority_entity_id: ent_01kyy6rm0zzbgrxey2r7n3nm0v
+      access_operator_entity_id: ent_01kyy6rm0zzbgrxey2r7n3nm0v
+    access:
+      availability: membership
+      method: form
+      url: https://www.ansys.com/experiences/startup-program
+    source_ids:
+      - src_b80bed90d7f4ee8728a49a49319cf6568976994bd269ca4d5440c4c2e4f960e4

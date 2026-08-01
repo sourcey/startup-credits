@@ -1,0 +1,91 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kyy6rm10g6b7jtmft8n6qr0n
+slug: heroku
+slug_aliases: []
+name: Heroku
+domains:
+  - value: heroku.com
+    role: primary
+    valid_from: 2026-08-01T07:52:32.793Z
+category: hosting-infra
+description: Heroku is a cloud application platform based on a managed container system, providing PaaS features and managed data services.
+links:
+  site: https://www.heroku.com/
+sources:
+  - source_id: src_d382abbba5efb102619acb5f82ed5b847d8e5be62c9ee1bd05d2c745443c74ae
+    url: https://www.heroku.com/open-source-credit-program
+programs:
+  - program_id: prg_01kyy6rm10n2rph7sn8jaxhpnq
+    program_slug: heroku-open-source-software-credit-program
+    program_slug_aliases: []
+    title: Heroku Open Source Software Credit Program
+    summary: Provides platform credits to qualifying open source software projects hosted on Heroku for one year.
+    source_ids:
+      - src_d382abbba5efb102619acb5f82ed5b847d8e5be62c9ee1bd05d2c745443c74ae
+offers:
+  - offer_id: off_01kyy6rm11g847yyf4psvfj6xj
+    program_id: prg_01kyy6rm10n2rph7sn8jaxhpnq
+    offer_slug: heroku-open-source-software-credit-program
+    offer_slug_aliases: []
+    title: Heroku Open Source Software Credit Program
+    summary: Qualifying open source software projects hosted on Heroku receive 12 months of monthly platform credits, typically ranging between $25 and $500 USD per month, applicable to Heroku products.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-01T07:52:32.793Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Set monthly credit allocation for 12 months, expected to range between $25 and $500 USD per month, applicable to Heroku products like Dynos, Postgres, and Key-Value Store.
+          duration:
+            kind: exact
+            value: P1Y
+          kind: credit
+          value:
+            kind: range
+            maximum:
+              currency: USD
+              minor_units: 50000
+            minimum:
+              currency: USD
+              minor_units: 2500
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: external-verification
+            statement: Must be a maintainer on the open source software project.
+          - criterion_id: cri_02
+            kind: manual
+            reason: not-machine-evaluable
+            statement: Supporting infrastructure must run or intend to run on Heroku.
+          - criterion_id: cri_03
+            kind: manual
+            reason: external-verification
+            statement: Must have an active Heroku account (personal or team) verified with a valid credit or debit card on file.
+          - criterion_id: cri_04
+            kind: manual
+            reason: external-verification
+            statement: Must maintain and adhere to a Code of Conduct.
+          - criterion_id: cri_05
+            kind: manual
+            reason: external-verification
+            statement: Project must use an open source standard license.
+          - kind: not
+            rule:
+              criterion_id: cri_06
+              kind: manual
+              reason: external-verification
+              statement: Salesforce employees or officials of government entities are not eligible.
+    roles:
+      terms_authority_entity_id: ent_01kyy6rm10g6b7jtmft8n6qr0n
+      access_operator_entity_id: ent_01kyy6rm10g6b7jtmft8n6qr0n
+    access:
+      availability: public
+      method: form
+      url: https://www.heroku.com/open-source-credit-program/
+    source_ids:
+      - src_d382abbba5efb102619acb5f82ed5b847d8e5be62c9ee1bd05d2c745443c74ae

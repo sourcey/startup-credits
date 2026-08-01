@@ -1,0 +1,61 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kyy6rm118txnxw89bwedy5za
+slug: infobip
+slug_aliases: []
+name: Infobip
+domains:
+  - value: infobip.com
+    role: primary
+    valid_from: 2026-08-01T07:45:57.212Z
+category: communication
+description: Infobip Startup Tribe is a global perks program supporting startups and providing them with tools and resources to help their growth.
+links:
+  site: https://startups.infobip.com/
+sources:
+  - source_id: src_40ad940d613ab9ddb36a242856dd077f8f37a49a2682058f75ad4cbd185e014c
+    url: https://startups.infobip.com/
+programs:
+  - program_id: prg_01kyy6rm11xak7d44a8h0nbxts
+    program_slug: infobip-startup-tribe
+    program_slug_aliases: []
+    title: Infobip Startup Tribe
+    summary: Infobip Startup Tribe is a global perks program supporting startups and providing them with tools and resources to help their growth.
+    source_ids:
+      - src_40ad940d613ab9ddb36a242856dd077f8f37a49a2682058f75ad4cbd185e014c
+offers:
+  - offer_id: off_01kyy6rm113283702knrn3jd2r
+    program_id: prg_01kyy6rm11xak7d44a8h0nbxts
+    offer_slug: infobip-startup-tribe-product-credits
+    offer_slug_aliases: []
+    title: Infobip Startup Tribe Product Credits
+    summary: Eligible startups can receive up to $60,000 in product credits for Infobip solutions alongside dedicated support service.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-01T07:45:57.212Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to $60,000 in product credits for Infobip solutions and dedicated support service.
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 6000000
+            kind: up-to
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Qualify as a startup eligible for the Infobip Startup Tribe program.
+    roles:
+      terms_authority_entity_id: ent_01kyy6rm118txnxw89bwedy5za
+      access_operator_entity_id: ent_01kyy6rm118txnxw89bwedy5za
+    access:
+      availability: public
+      method: form
+      url: https://startups.infobip.com/
+    source_ids:
+      - src_40ad940d613ab9ddb36a242856dd077f8f37a49a2682058f75ad4cbd185e014c

@@ -1,0 +1,84 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kyy6rm0zntgna8jr7617kxrm
+slug: bright-data
+slug_aliases: []
+name: Bright Data
+domains:
+  - value: brightdata.com
+    role: primary
+    valid_from: 2026-08-01T07:20:42.184Z
+category: data-analytics
+description: Bright Data provides web data platform services, proxy infrastructure, web access APIs, and dataset solutions.
+links:
+  site: https://brightdata.com
+sources:
+  - source_id: src_23f98d23d268fa2ce9d9dbcf099506f5e72aa586e5245e650affc4e67352acae
+    url: https://brightdata.com/ai/ai-startups-program
+programs:
+  - program_id: prg_01kyy6rm0zthh4dryyrtxcz9cw
+    program_slug: ai-startup-program
+    program_slug_aliases: []
+    title: AI Startup Program
+    summary: Bright Data's program offering credits, expert support, and marketing opportunities to early-stage AI startups.
+    source_ids:
+      - src_23f98d23d268fa2ce9d9dbcf099506f5e72aa586e5245e650affc4e67352acae
+offers:
+  - offer_id: off_01kyy6rm0zjk5k4w0d5536t8dy
+    program_id: prg_01kyy6rm0zthh4dryyrtxcz9cw
+    offer_slug: ai-startup-program
+    offer_slug_aliases: []
+    title: AI Startup Program
+    summary: Eligible startups can receive up to $20,000 in Bright Data credits along with expert support and co-marketing opportunities.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-01T07:20:42.184Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to $20,000 in platform credits for Bright Data services.
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 2000000
+            kind: up-to
+        - benefit_id: ben_02
+          description: Expert support and technical resources.
+          kind: other
+        - benefit_id: ben_03
+          description: Mutually beneficial co-marketing opportunities.
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: not-machine-evaluable
+            statement: AI is central to your product
+          - criterion_id: cri_02
+            fact: company.stage
+            kind: predicate
+            operator: in
+            statement: Startup stage must be between Pre-Seed and Series A
+            value:
+              type: string-set
+              values:
+                - pre-seed
+                - seed
+                - series-a
+          - criterion_id: cri_03
+            kind: manual
+            reason: not-machine-evaluable
+            statement: You need public web data to grow
+    roles:
+      terms_authority_entity_id: ent_01kyy6rm0zntgna8jr7617kxrm
+      access_operator_entity_id: ent_01kyy6rm0zntgna8jr7617kxrm
+    access:
+      availability: public
+      method: form
+      url: https://brightdata.com/ai/ai-startups-program
+    source_ids:
+      - src_23f98d23d268fa2ce9d9dbcf099506f5e72aa586e5245e650affc4e67352acae

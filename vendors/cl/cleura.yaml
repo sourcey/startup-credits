@@ -1,0 +1,74 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kyy6rm10vdr56kt6h38bk4ny
+slug: cleura
+slug_aliases: []
+name: Cleura
+domains:
+  - value: cleura.com
+    role: primary
+    valid_from: 2026-08-01T07:21:02.787Z
+category: hosting-infra
+description: European cloud provider offering sovereign, open-source infrastructure built on OpenStack and Ceph.
+links:
+  site: https://cleura.com
+sources:
+  - source_id: src_283d106a3bf9626121f6cc8746a584fbbe847f65d66b78d7b29002a0fb4ecc99
+    url: https://cleura.com/cleura-startup-program
+programs:
+  - program_id: prg_01kyy6rm10s3dtz0scyj6cc4bc
+    program_slug: cleura-startup-program
+    program_slug_aliases: []
+    title: Cleura Startup Program
+    summary: Cleura Startup Program offers free European cloud credits and resources to support early-stage startups building on an open-source, compliant foundation.
+    source_ids:
+      - src_283d106a3bf9626121f6cc8746a584fbbe847f65d66b78d7b29002a0fb4ecc99
+offers:
+  - offer_id: off_01kyy6rm10vr28zp4fbgp5sgx4
+    program_id: prg_01kyy6rm10s3dtz0scyj6cc4bc
+    offer_slug: cleura-startup-program
+    offer_slug_aliases: []
+    title: Cleura Startup Program
+    summary: Get up to €20,000 in free Cleura Public Cloud credits for compute, storage, and networking, valid for up to 18 months for early-stage startups legally registered in Europe.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-01T07:21:02.787Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to €20,000 in free Cleura Public Cloud credits for compute, storage, and networking.
+          duration:
+            kind: up-to
+            value: P18M
+          kind: credit
+          value:
+            amount:
+              currency: EUR
+              minor_units: 2000000
+            kind: up-to
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: external-verification
+            statement: Open to early-stage, legally registered startups in Europe (proof may be required).
+          - criterion_id: cri_02
+            fact: company.is_subsidiary
+            kind: predicate
+            operator: eq
+            statement: Subsidiaries or corporate-owned startups are not eligible.
+            value:
+              type: boolean
+              value: false
+    roles:
+      terms_authority_entity_id: ent_01kyy6rm10vdr56kt6h38bk4ny
+      access_operator_entity_id: ent_01kyy6rm10vdr56kt6h38bk4ny
+    access:
+      availability: public
+      method: form
+      url: https://cleura.com/cleura-startup-program/
+    source_ids:
+      - src_283d106a3bf9626121f6cc8746a584fbbe847f65d66b78d7b29002a0fb4ecc99

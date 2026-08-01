@@ -1,0 +1,98 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kyy6rm10e74gkywq5bgr0xyg
+slug: document360
+slug_aliases: []
+name: Document360
+domains:
+  - value: document360.com
+    role: primary
+    valid_from: 2026-08-01T07:51:51.676Z
+category: support
+description: Instantly create a knowledge base for your customers and teams. Build FAQ, User guides, Product Documentation, Standard Operating Procedures and many more
+links:
+  site: https://document360.com
+sources:
+  - source_id: src_d492f932dbaec08ed988c2cd06512cba203a77e7ae00747c82de83def97bd0f6
+    url: https://www.document360.com/partners/startup-program
+programs:
+  - program_id: prg_01kyy6rm10sn87x4crqqntrvee
+    program_slug: document360-startup-program
+    program_slug_aliases: []
+    title: Document360 Startup Program
+    summary: Join Document360's startup program to access exclusive benefits, including discounted pricing on Business and Enterprise plans and white-glove onboarding for early-stage startups.
+    source_ids:
+      - src_d492f932dbaec08ed988c2cd06512cba203a77e7ae00747c82de83def97bd0f6
+offers:
+  - offer_id: off_01kyy6rm105402mvyagm168cjb
+    program_id: prg_01kyy6rm10sn87x4crqqntrvee
+    offer_slug: document360-startup-program-offer
+    offer_slug_aliases: []
+    title: Document360 Startup Program Offer
+    summary: Eligible early-stage startups get a 12-month subscription to Document360 Business or Enterprise plans for the price of 6 months (50% off), plus a personalized KB site setup.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-01T07:51:51.676Z
+    economics:
+      benefits:
+        - applies_to: Business and Enterprise plans
+          benefit_id: ben_01
+          description: 50% discount on 12-month subscription (billed for 6 months, receive 12 months)
+          duration:
+            kind: exact
+            value: P1Y
+          kind: discount
+          percentage:
+            basis_points: 5000
+            kind: exact
+        - benefit_id: ben_02
+          description: Wow site – personalized setup and implementation for your knowledge base site
+          kind: other
+      consideration:
+        description: Billed for six months of subscription
+        kind: variable
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.is_current_customer
+            kind: predicate
+            operator: eq
+            statement: Must be a new customer
+            value:
+              type: boolean
+              value: false
+          - criterion_id: cri_02
+            fact: company.employee_count
+            kind: predicate
+            operator: lt
+            statement: Must have less than 50 employees
+            value:
+              type: number
+              value: 50
+          - criterion_id: cri_03
+            fact: company.funding_raised_usd
+            kind: predicate
+            operator: lt
+            statement: Must have raised under $5M in funding
+            value:
+              type: number
+              value: 5000000
+          - criterion_id: cri_04
+            fact: company.partner_memberships
+            kind: predicate
+            operator: present
+            statement: Must be associated with one of the startup accelerators, incubators, VCs or startup communities
+          - criterion_id: cri_05
+            kind: manual
+            reason: external-verification
+            statement: Bootstrapped startups must submit all relevant documents to validate eligibility criteria
+    roles:
+      terms_authority_entity_id: ent_01kyy6rm10e74gkywq5bgr0xyg
+      access_operator_entity_id: ent_01kyy6rm10e74gkywq5bgr0xyg
+    access:
+      availability: membership
+      method: form
+      url: https://document360.com/partners/startup-program/
+    source_ids:
+      - src_d492f932dbaec08ed988c2cd06512cba203a77e7ae00747c82de83def97bd0f6

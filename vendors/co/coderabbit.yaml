@@ -1,0 +1,81 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kyy6rm10vssbvzayfspaare9
+slug: coderabbit
+slug_aliases: []
+name: CodeRabbit
+domains:
+  - value: coderabbit.ai
+    role: primary
+    valid_from: 2026-08-01T07:51:13.783Z
+category: ai-ml
+description: AI-first pull request reviewer with context-aware feedback, line-by-line code suggestions, and real-time chat.
+links:
+  site: https://www.coderabbit.ai
+sources:
+  - source_id: src_7cbed5d00777f5371620a7e5f022f258d67bd6883f4e6673e3aebb04c3c3cb91
+    url: https://www.coderabbit.ai/startup-program
+programs:
+  - program_id: prg_01kyy6rm100x8e6ndff4qc6vaa
+    program_slug: coderabbit-startup-program
+    program_slug_aliases: []
+    title: CodeRabbit Startup Program
+    summary: CodeRabbit's program for eligible VC or accelerator-backed startups to get discounted access to AI code review tools.
+    source_ids:
+      - src_7cbed5d00777f5371620a7e5f022f258d67bd6883f4e6673e3aebb04c3c3cb91
+offers:
+  - offer_id: off_01kyy6rm109kpd8xe2gynsjc5p
+    program_id: prg_01kyy6rm100x8e6ndff4qc6vaa
+    offer_slug: 50-off-coderabbit-pro-plus-for-6-months
+    offer_slug_aliases: []
+    title: 50% off CodeRabbit Pro Plus for 6 months
+    summary: Eligible startups receive a 50% discount on a Pro Plus annual plan for 6 months.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-01T07:51:13.783Z
+    economics:
+      benefits:
+        - applies_to: CodeRabbit Pro Plus annual plan
+          benefit_id: ben_01
+          description: 50% off CodeRabbit Pro Plus annual plan for 6 months
+          duration:
+            kind: exact
+            value: P6M
+          kind: discount
+          percentage:
+            basis_points: 5000
+            kind: exact
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: external-verification
+            statement: VC or accelerator-backed startups.
+          - criterion_id: cri_02
+            fact: company.funding_raised_usd
+            kind: predicate
+            operator: lt
+            statement: Limited to funding of less than $25 million.
+            value:
+              type: number
+              value: 25000000
+          - criterion_id: cri_03
+            kind: manual
+            reason: vendor-discretion
+            statement: Requires a Pro Plus annual plan
+          - criterion_id: cri_04
+            kind: manual
+            reason: not-machine-evaluable
+            statement: Sign up with your organization's GitHub or GitLab account and submit this form to claim the offer.
+    roles:
+      terms_authority_entity_id: ent_01kyy6rm10vssbvzayfspaare9
+      access_operator_entity_id: ent_01kyy6rm10vssbvzayfspaare9
+    access:
+      availability: public
+      method: form
+      url: https://www.coderabbit.ai/startup-program
+    source_ids:
+      - src_7cbed5d00777f5371620a7e5f022f258d67bd6883f4e6673e3aebb04c3c3cb91

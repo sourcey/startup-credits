@@ -1,0 +1,101 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kyy6rm10nyqc4zemqs24a6db
+slug: grafana
+slug_aliases: []
+name: Grafana Labs
+domains:
+  - value: grafana.com
+    role: primary
+    valid_from: 2026-08-01T07:22:35.202Z
+category: observability
+description: At Grafana Labs, we believe in providing observability solutions for organizations of every size and stage.
+links:
+  site: https://grafana.com
+sources:
+  - source_id: src_b68d66e5e5699aadab7955ae4cd44a8d2834e4f1d45a8bcdf6867735d08436e1
+    url: https://grafana.com/blog/grafana-labs-startup-program
+programs:
+  - program_id: prg_01kyy6rm102ahn1a0mqjx9aypj
+    program_slug: grafana-labs-startup-program
+    program_slug_aliases: []
+    title: Grafana Labs Startup Program
+    summary: The Grafana Labs Startup Program provides eligible startups with up to $100,000 in Grafana Cloud credits for 12 months, support, enterprise plugins, and ongoing discounts.
+    source_ids:
+      - src_b68d66e5e5699aadab7955ae4cd44a8d2834e4f1d45a8bcdf6867735d08436e1
+offers:
+  - offer_id: off_01kyy6rm10gcph1hq63c1h7ery
+    program_id: prg_01kyy6rm102ahn1a0mqjx9aypj
+    offer_slug: grafana-labs-startup-program
+    offer_slug_aliases: []
+    title: Grafana Labs Startup Program
+    summary: Eligible startups receive up to $100,000 in Grafana Cloud credits for 12 months, free Enterprise data source plugins and 24x7 support, integration team access, and a guaranteed minimum 20% discount after credits or duration end.
+    lifecycle:
+      status: active
+      effective_from: 2024-09-25T00:00:00Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: $100,000 in credits for any Grafana Cloud services for 12 months.
+          duration:
+            kind: exact
+            value: P12M
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 10000000
+            kind: up-to
+        - benefit_id: ben_02
+          description: All Enterprise data source plugins and 24x7 Grafana support
+          kind: waiver
+          waived_item: Fees for Enterprise data source plugins and 24x7 Grafana support
+        - applies_to: Grafana Cloud list prices after credits depletion or 12 months
+          benefit_id: ben_03
+          description: Guaranteed 20% discount from list prices after credits are depleted or 12 months completed.
+          kind: discount
+          percentage:
+            basis_points: 2000
+            kind: at-least
+        - benefit_id: ben_04
+          description: Access to integrations team to strategize creation of a plugin and/or solution to better integrate with Grafana Cloud ecosystem.
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.funding_raised_usd
+            kind: predicate
+            operator: lt
+            statement: Applicants ideally have raised less than $10 million in funding.
+            value:
+              type: number
+              value: 10000000
+          - criterion_id: cri_02
+            fact: company.employee_count
+            kind: predicate
+            operator: lt
+            statement: Applicants ideally have under 25 employees.
+            value:
+              type: number
+              value: 25
+          - criterion_id: cri_03
+            kind: manual
+            reason: vendor-discretion
+            statement: All new customers (including Grafana Cloud Free accounts) and Grafana OSS users moving to managed solution are eligible to apply; Grafana Labs determines admission at sole discretion.
+          - criterion_id: cri_04
+            kind: manual
+            reason: not-machine-evaluable
+            statement: Accepted startups agree to be a reference customer and may be asked to mutually agree to marketing activities.
+    roles:
+      terms_authority_entity_id: ent_01kyy6rm10nyqc4zemqs24a6db
+      access_operator_entity_id: ent_01kyy6rm10nyqc4zemqs24a6db
+    access:
+      availability: public
+      method: form
+      url: https://grafana.com/blog/grafana-labs-startup-program/
+    terms_url: https://grafana.com/legal/terms-of-service/
+    source_ids:
+      - src_b68d66e5e5699aadab7955ae4cd44a8d2834e4f1d45a8bcdf6867735d08436e1

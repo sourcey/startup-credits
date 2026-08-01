@@ -1,0 +1,76 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kyy6rm10yjjvvwknhb5m556g
+slug: granola
+slug_aliases: []
+name: Granola
+domains:
+  - value: granola.ai
+    role: primary
+    valid_from: 2026-08-01T07:22:34.528Z
+category: productivity
+description: The AI notepad for back-to-back meetings.
+links:
+  site: https://www.granola.ai
+sources:
+  - source_id: src_c15d51e8b8144b84eeac6cbd0a6df455a10bed13567240f8db1818c6f1331712
+    url: https://granola.ai/startups
+programs:
+  - program_id: prg_01kyy6rm10a571xgrmesdyg5ej
+    program_slug: granola-for-startups
+    program_slug_aliases: []
+    title: Granola for Startups
+    summary: Granola's startup program offering 1 year free of Granola Business for eligible early-stage startups.
+    source_ids:
+      - src_c15d51e8b8144b84eeac6cbd0a6df455a10bed13567240f8db1818c6f1331712
+offers:
+  - offer_id: off_01kyy6rm10t38zvf3ysjv0ph0g
+    program_id: prg_01kyy6rm10a571xgrmesdyg5ej
+    offer_slug: 1-year-free-of-granola-business
+    offer_slug_aliases: []
+    title: 1 year free of Granola Business
+    summary: Eligible pre-seed or seed startups with fewer than 30 employees get 1 year free of Granola Business.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-01T07:22:34.528Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 1 year free of Granola Business
+          duration:
+            kind: exact
+            value: P1Y
+          kind: free-service
+          service: Granola Business
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.employee_count
+            kind: predicate
+            operator: lt
+            statement: Company has fewer than 30 employees
+            value:
+              type: number
+              value: 30
+          - criterion_id: cri_02
+            fact: company.stage
+            kind: predicate
+            operator: in
+            statement: Company has raised pre-seed or seed funding
+            value:
+              type: string-set
+              values:
+                - pre-seed
+                - seed
+    roles:
+      terms_authority_entity_id: ent_01kyy6rm10yjjvvwknhb5m556g
+      access_operator_entity_id: ent_01kyy6rm10yjjvvwknhb5m556g
+    access:
+      availability: public
+      method: form
+      url: https://granola.ai/startups
+    source_ids:
+      - src_c15d51e8b8144b84eeac6cbd0a6df455a10bed13567240f8db1818c6f1331712

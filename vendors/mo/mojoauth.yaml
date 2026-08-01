@@ -1,0 +1,95 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kyy6rm11tqmdj1t2djz0e5n9
+slug: mojoauth
+slug_aliases: []
+name: MojoAuth
+domains:
+  - value: mojoauth.com
+    role: primary
+    valid_from: 2026-08-01T07:24:19.707Z
+category: auth-security
+description: MojoAuth provides passwordless authentication solutions supporting magic links, biometrics, OTPs, passkeys, and social logins for web and mobile applications.
+links:
+  site: https://mojoauth.com/startup/
+sources:
+  - source_id: src_f531867c7c84fc043f4d8583bce8c4b741a8a0a8a4186d76b1b47268939ec364
+    url: https://mojoauth.com/startup
+programs: []
+offers:
+  - offer_id: off_01kyy6rm11rehsejy2wess6stj
+    offer_slug: startup-and-non-profit-discount
+    offer_slug_aliases: []
+    title: Startup and Non-Profit Discount
+    summary: MojoAuth offers eligible early-stage startups and non-profit organizations a 50% discount on annual Business Pro plans.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-01T07:24:19.707Z
+    economics:
+      benefits:
+        - applies_to: annual Business Pro plans
+          benefit_id: ben_01
+          description: 50% discount on annual Business Pro authentication plans.
+          kind: discount
+          percentage:
+            basis_points: 5000
+            kind: exact
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - kind: any
+            rules:
+              - kind: all
+                rules:
+                  - criterion_id: cri_01
+                    fact: company.age_months
+                    kind: predicate
+                    operator: lt
+                    statement: Company was founded less than 5 years ago.
+                    value:
+                      type: number
+                      value: 60
+                  - criterion_id: cri_02
+                    fact: company.funding_raised_usd
+                    kind: predicate
+                    operator: lte
+                    statement: Company has raised not more than $10M USD in total funding.
+                    value:
+                      type: number
+                      value: 10000000
+              - criterion_id: cri_03
+                fact: company.industry
+                kind: predicate
+                operator: eq
+                statement: Organization is a non-profit / NGO.
+                value:
+                  type: string
+                  value: non-profit
+          - criterion_id: cri_04
+            kind: manual
+            reason: external-verification
+            statement: Ensure the business email in your application matches your organization's website domain.
+          - criterion_id: cri_05
+            fact: company.website_url
+            kind: predicate
+            operator: present
+            statement: Must have a publicly available website.
+          - criterion_id: cri_06
+            fact: company.is_current_customer
+            kind: predicate
+            operator: eq
+            statement: Must not be an existing MojoAuth customer.
+            value:
+              type: boolean
+              value: false
+    roles:
+      terms_authority_entity_id: ent_01kyy6rm11tqmdj1t2djz0e5n9
+      access_operator_entity_id: ent_01kyy6rm11tqmdj1t2djz0e5n9
+    access:
+      availability: public
+      method: form
+      url: https://mojoauth.com/startup/
+    source_ids:
+      - src_f531867c7c84fc043f4d8583bce8c4b741a8a0a8a4186d76b1b47268939ec364

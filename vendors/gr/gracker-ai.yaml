@@ -1,0 +1,126 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kyy6rm10fqjjtev2tra9xbgf
+slug: gracker-ai
+slug_aliases: []
+name: GrackerAI
+domains:
+  - value: gracker.ai
+    role: primary
+    valid_from: 2026-08-01T07:22:13.864Z
+category: marketing
+description: Cybersecurity and DevTools startups get 50% off GrackerAI. Become the brand AI search engines cite when buyers ask 'What's the best [your category] tool?' Other B2B SaaS startups welcome to apply.
+links:
+  site: https://gracker.ai
+sources:
+  - source_id: src_7d43a5c544b34600b29fb06a5e2be68f7f12cfe379c95aac09627ebe146854ad
+    url: https://gracker.ai/startup
+programs: []
+offers:
+  - offer_id: off_01kyy6rm10thw471czngxh1zp4
+    offer_slug: grackerai-for-startups
+    offer_slug_aliases: []
+    title: GrackerAI for Startups
+    summary: Qualified Cybersecurity, DevTools, and B2B SaaS startups receive a 50% discount on the GrackerAI Scale plan for 12 months in exchange for participating in a published case study after seeing results.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-01T07:22:13.864Z
+    economics:
+      benefits:
+        - applies_to: GrackerAI Scale plan
+          benefit_id: ben_01
+          description: 50% off the standard Scale plan for 12 months.
+          duration:
+            kind: exact
+            value: P12M
+          kind: discount
+          percentage:
+            basis_points: 5000
+            kind: exact
+      consideration:
+        description: Participation in a published case study documenting success story, baseline, and outcomes once results are achieved (around month 3-4).
+        kind: variable
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - kind: any
+            rules:
+              - criterion_id: cri_01
+                fact: company.industry
+                kind: predicate
+                operator: in
+                statement: Company primary focus is Cybersecurity or DevTools, or another B2B SaaS vertical.
+                value:
+                  type: string-set
+                  values:
+                    - Cybersecurity
+                    - DevTools
+                    - B2B SaaS
+              - criterion_id: cri_02
+                fact: company.industry
+                kind: predicate
+                operator: in
+                statement: Sub-category belongs to AppSec, CloudSec, Identity, SOC tooling, GRC, threat intel, observability, CI/CD, API tooling, infra, or internal dev platforms.
+                value:
+                  type: string-set
+                  values:
+                    - AppSec
+                    - CloudSec
+                    - Identity
+                    - SOC tooling
+                    - GRC
+                    - threat intel
+                    - observability
+                    - CI/CD
+                    - API tooling
+                    - infra
+                    - internal dev platforms
+          - criterion_id: cri_03
+            fact: company.arr_usd
+            kind: predicate
+            operator: lt
+            statement: Annual recurring revenue is less than $5M.
+            value:
+              type: number
+              value: 5000000
+          - criterion_id: cri_04
+            fact: company.age_years
+            kind: predicate
+            operator: lt
+            statement: Company was incorporated less than 5 years ago.
+            value:
+              type: number
+              value: 5
+          - criterion_id: cri_05
+            fact: company.funding_raised_usd
+            kind: predicate
+            operator: lt
+            statement: Total external funding raised is less than $10M.
+            value:
+              type: number
+              value: 10000000
+          - criterion_id: cri_06
+            fact: company.has_active_product
+            kind: predicate
+            operator: eq
+            statement: Company has an active product with at least one paying customer or live free tier.
+            value:
+              type: boolean
+              value: true
+          - criterion_id: cri_07
+            fact: company.is_current_customer
+            kind: predicate
+            operator: eq
+            statement: Company has no prior GrackerAI subscription.
+            value:
+              type: boolean
+              value: false
+    roles:
+      terms_authority_entity_id: ent_01kyy6rm10fqjjtev2tra9xbgf
+      access_operator_entity_id: ent_01kyy6rm10fqjjtev2tra9xbgf
+    access:
+      availability: public
+      method: form
+      url: https://gracker.ai/startup/
+    source_ids:
+      - src_7d43a5c544b34600b29fb06a5e2be68f7f12cfe379c95aac09627ebe146854ad

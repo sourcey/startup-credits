@@ -1,0 +1,63 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kyy6rm0zk1x5yqj2mbyypt8m
+slug: arm
+slug_aliases: []
+name: Arm
+domains:
+  - value: arm.com
+    role: primary
+    valid_from: 2026-08-01T07:51:14.289Z
+category: devtools-other
+description: Arm Flexible Access for Startups offers broad access to verified IP, tools, and support for efficient SoC development with transparent, upfront pricing.
+links:
+  site: https://www.arm.com/products/flexible-access/startup
+sources:
+  - source_id: src_45d7632820aec1cb24d21e7526ab92b5ec8269eaf51efd8ec84260b2586393a3
+    url: https://www.arm.com/products/flexible-access/startup
+programs: []
+offers:
+  - offer_id: off_01kyy6rm0zp8hr58y9gjqe8dzy
+    offer_slug: arm-flexible-access-for-startups
+    offer_slug_aliases: []
+    title: Arm Flexible Access for Startups
+    summary: Provides $0 upfront access to Arm SoC design IP, tools, training, and technical support to build prototypes, with license fees due only when manufacturing.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-01T07:51:14.289Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: $0 access to Arm IP, tools, training, and support for SoC development, with license fees due only at manufacture.
+          kind: free-service
+          service: Arm SoC design IP, tools, training, and support
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.funding_raised_usd
+            kind: predicate
+            operator: lt
+            statement: Funding raised must be less than $50,000,000.
+            value:
+              type: number
+              value: 50000000
+          - criterion_id: cri_02
+            fact: company.annual_revenue_usd
+            kind: predicate
+            operator: lt
+            statement: Annual revenue must be less than $5,000,000.
+            value:
+              type: number
+              value: 5000000
+    roles:
+      terms_authority_entity_id: ent_01kyy6rm0zk1x5yqj2mbyypt8m
+      access_operator_entity_id: ent_01kyy6rm0zk1x5yqj2mbyypt8m
+    access:
+      availability: public
+      method: form
+      url: https://www.arm.com/products/flexible-access/startup
+    source_ids:
+      - src_45d7632820aec1cb24d21e7526ab92b5ec8269eaf51efd8ec84260b2586393a3
