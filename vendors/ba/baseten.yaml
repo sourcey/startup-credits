@@ -14,7 +14,16 @@ links:
 sources:
   - source_id: src_fbaa9953817b55dee9141c07a6dcbec03e39a4046c2eaeadc56db0100b7cfde9
     url: https://www.baseten.co/startup-program/
-programs: []
+  - source_id: src_94770c0c3d8587aa4dc037f613e2c7e1e71342e57a34363ec2f14d60ecb6527b
+    url: https://www.baseten.co/startup-program
+programs:
+  - program_id: prg_01kyyjpn044rdyrt2q8afs6kcs
+    program_slug: ai-startup-program
+    program_slug_aliases: []
+    title: AI Startup Program
+    summary: Baseten's program for early-stage AI startups offering platform credits for inference, model APIs, training, and technical support.
+    source_ids:
+      - src_94770c0c3d8587aa4dc037f613e2c7e1e71342e57a34363ec2f14d60ecb6527b
 offers:
   - offer_id: off_01kyh8fpe11y56961zxm7q6sd4
     offer_slug: baseten-ai-startup-program
@@ -47,3 +56,78 @@ offers:
       url: https://www.baseten.co/startup-program/
     source_ids:
       - src_fbaa9953817b55dee9141c07a6dcbec03e39a4046c2eaeadc56db0100b7cfde9
+  - offer_id: off_01kyyjpn04x1cdycrwbq4t7r08
+    program_id: prg_01kyyjpn044rdyrt2q8afs6kcs
+    offer_slug: ai-startup-program
+    offer_slug_aliases: []
+    title: AI Startup Program
+    summary: Eligible early-stage AI startups can receive up to $25,000 in credits for Dedicated Inference or Training and up to $2,500 in credits for Model APIs, along with technical support and GTM assistance.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-01T11:36:14.423Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to $25,000 in credits for Dedicated Inference or Training
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 2500000
+            kind: up-to
+        - benefit_id: ben_02
+          description: Up to $2,500 in credits for Model APIs
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 250000
+            kind: up-to
+        - benefit_id: ben_03
+          description: Support with response times within a few business hours, shared slack channels, zoom calls, networking, and GTM support
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: vendor-discretion
+            statement: Artificial intelligence must be core to primary products or solutions.
+          - criterion_id: cri_02
+            fact: company.stage
+            kind: predicate
+            operator: in
+            statement: Funding stage should be Seed to Series A.
+            value:
+              type: string-set
+              values:
+                - Seed
+                - Series A
+          - criterion_id: cri_03
+            fact: company.age_months
+            kind: predicate
+            operator: lt
+            statement: Started less than 5 years ago.
+            value:
+              type: number
+              value: 60
+          - criterion_id: cri_04
+            fact: company.is_current_customer
+            kind: predicate
+            operator: eq
+            statement: Must be net new customers who have never received any credits from Baseten before.
+            value:
+              type: boolean
+              value: false
+    roles:
+      terms_authority_entity_id: ent_01kyh8fpe1r4t2ewb8ym69qbre
+      access_operator_entity_id: ent_01kyh8fpe1r4t2ewb8ym69qbre
+    access:
+      availability: public
+      method: form
+      url: https://www.baseten.co/startup-program/
+    source_ids:
+      - src_94770c0c3d8587aa4dc037f613e2c7e1e71342e57a34363ec2f14d60ecb6527b

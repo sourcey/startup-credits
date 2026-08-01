@@ -1,0 +1,95 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kyyjpn045qy3g8mdxf4x2f4f
+slug: speechmatics
+slug_aliases: []
+name: Speechmatics
+domains:
+  - value: speechmatics.com
+    role: primary
+    valid_from: 2026-08-01T11:46:59.310Z
+category: ai-ml
+description: Speechmatics provides speech technology and Voice AI for enterprises, offering Speech-to-Text, Text-to-Speech, and Voice Agent solutions.
+links:
+  site: https://www.speechmatics.com
+sources:
+  - source_id: src_41fa42e7769d0bbd5c71ab3e752ce7062e72173848c71152f31ed6182a56d84e
+    url: https://www.speechmatics.com/startup-program
+programs:
+  - program_id: prg_01kyyjpn04hb9m9aneqvx96pyh
+    program_slug: speechmatics-startup-program
+    program_slug_aliases: []
+    title: Speechmatics Startup Program
+    summary: Speechmatics Startup Program offers credits and engineering support for early-stage startups building with voice AI.
+    source_ids:
+      - src_41fa42e7769d0bbd5c71ab3e752ce7062e72173848c71152f31ed6182a56d84e
+offers:
+  - offer_id: off_01kyyjpn042c4p32er1bb0atgy
+    program_id: prg_01kyyjpn04hb9m9aneqvx96pyh
+    offer_slug: speechmatics-startup-program
+    offer_slug_aliases: []
+    title: Speechmatics Startup Program
+    summary: Eligible early-stage startups receive up to $50,000 in Speechmatics usage credits along with technical support and co-marketing opportunities.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-01T11:46:59.310Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to $50,000 in Speechmatics usage credits across real-time, batch, text-to-speech, and on-prem APIs.
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 5000000
+            kind: up-to
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.funding_raised_usd
+            kind: predicate
+            operator: lt
+            statement: Company has raised less than $10 million total funding.
+            value:
+              type: number
+              value: 10000000
+          - criterion_id: cri_02
+            fact: company.stage
+            kind: predicate
+            operator: in
+            statement: Company has a functional MVP in production or a committed launch within 1-2 months.
+            value:
+              type: string-set
+              values:
+                - mvp_in_production
+                - launch_within_1_2_months
+          - kind: not
+            rule:
+              criterion_id: cri_03
+              fact: company.is_current_paid_enterprise_customer
+              kind: predicate
+              operator: eq
+              statement: Company is currently on a paid Speechmatics enterprise plan.
+              value:
+                type: boolean
+                value: true
+          - criterion_id: cri_04
+            kind: manual
+            reason: external-verification
+            statement: Company has an active development team and defined ASR use case.
+          - criterion_id: cri_05
+            kind: manual
+            reason: external-verification
+            statement: Company completes a 30-minute call with the Speechmatics team to discuss use case and mission prior to approval.
+    roles:
+      terms_authority_entity_id: ent_01kyyjpn045qy3g8mdxf4x2f4f
+      access_operator_entity_id: ent_01kyyjpn045qy3g8mdxf4x2f4f
+    access:
+      availability: public
+      method: form
+      url: https://www.speechmatics.com/startup-program
+    source_ids:
+      - src_41fa42e7769d0bbd5c71ab3e752ce7062e72173848c71152f31ed6182a56d84e

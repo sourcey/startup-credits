@@ -1,0 +1,73 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kyyjpn04s63h40x2bw6snymy
+slug: svix
+slug_aliases: []
+name: Svix
+domains:
+  - value: svix.com
+    role: primary
+    valid_from: 2026-08-01T11:46:59.243Z
+category: devtools-other
+description: Svix is the enterprise ready webhook service.
+links:
+  site: https://www.svix.com
+sources:
+  - source_id: src_303b8048f9094ad5c9b8820bd5bdd79824ae7bef300d9aa4af9ba938d4de31db
+    url: https://www.svix.com/startups
+programs: []
+offers:
+  - offer_id: off_01kyyjpn04rad383jhbbe2x3ca
+    offer_slug: svix-for-startups
+    offer_slug_aliases: []
+    title: Svix for Startups
+    summary: Eligible startups get $12,000 of free Svix credits valid for 12 months ($1,000 per month) plus concierge onboarding.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-01T11:46:59.243Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: $12,000 of free credits valid for 12 months ($1k / month)
+          duration:
+            kind: exact
+            value: P1Y
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 1200000
+            kind: exact
+        - benefit_id: ben_02
+          description: Concierge Onboarding to connect with the Svix team
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.age_months
+            kind: predicate
+            operator: lte
+            statement: Incorporated in the last 3 years
+            value:
+              type: number
+              value: 36
+          - criterion_id: cri_02
+            fact: company.funding_raised_usd
+            kind: predicate
+            operator: lte
+            statement: Raised no more than $7MM in total funding
+            value:
+              type: number
+              value: 7000000
+    roles:
+      terms_authority_entity_id: ent_01kyyjpn04s63h40x2bw6snymy
+      access_operator_entity_id: ent_01kyyjpn04s63h40x2bw6snymy
+    access:
+      availability: public
+      method: form
+      url: https://www.svix.com/startups/
+    source_ids:
+      - src_303b8048f9094ad5c9b8820bd5bdd79824ae7bef300d9aa4af9ba938d4de31db

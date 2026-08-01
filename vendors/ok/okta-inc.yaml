@@ -1,0 +1,60 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kyyjpn04p2nymzqhm9m613vw
+slug: okta-inc
+slug_aliases: []
+name: Okta, Inc.
+domains:
+  - value: okta.com
+    role: primary
+    valid_from: 2026-08-01T11:36:40.331Z
+category: auth-security
+description: Okta provides identity tools through the Okta Identity Cloud, including single sign-on, automated provisioning/deprovisioning, and basic MFA.
+links:
+  site: https://www.okta.com/
+sources:
+  - source_id: src_23e0231418d15c7e75a1147e3164033cc6627bef8f6aa4c93c6b35cd480fa5eb
+    url: https://www.okta.com/contact-sales-okta-for-startups
+programs:
+  - program_id: prg_01kyyjpn04m57mpvca9fhx305m
+    program_slug: okta-for-startups
+    program_slug_aliases: []
+    title: Okta for Startups
+    summary: Okta for Startups allows young companies to use Okta’s identity tools for up to 25 employees, contractors and partners through the Okta Identity Cloud for free.
+    source_ids:
+      - src_23e0231418d15c7e75a1147e3164033cc6627bef8f6aa4c93c6b35cd480fa5eb
+offers:
+  - offer_id: off_01kyyjpn04pdy11tg3as9srb0x
+    program_id: prg_01kyyjpn04m57mpvca9fhx305m
+    offer_slug: okta-for-startups
+    offer_slug_aliases: []
+    title: Okta for Startups
+    summary: Eligible startups receive one year of free access for up to 25 users with Okta IT Products, including standard support.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-01T11:36:40.331Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: One year of free access for up to 25 users with Okta IT Products, including single sign-on, automated provisioning / deprovisioning, basic MFA, and standard support.
+          duration:
+            kind: exact
+            value: P1Y
+          kind: free-service
+          service: Okta IT Products and standard support for up to 25 users
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Eligibility determination by contacting the Okta team.
+    roles:
+      terms_authority_entity_id: ent_01kyyjpn04p2nymzqhm9m613vw
+      access_operator_entity_id: ent_01kyyjpn04p2nymzqhm9m613vw
+    access:
+      availability: public
+      method: form
+      url: https://www.okta.com/contact-sales-okta-for-startups
+    source_ids:
+      - src_23e0231418d15c7e75a1147e3164033cc6627bef8f6aa4c93c6b35cd480fa5eb

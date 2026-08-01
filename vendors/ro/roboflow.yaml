@@ -1,0 +1,71 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kyyjpn04wzrm50s4m4p2w6p4
+slug: roboflow
+slug_aliases: []
+name: Roboflow
+domains:
+  - value: roboflow.com
+    role: primary
+    valid_from: 2026-08-01T11:46:22.538Z
+category: ai-ml
+description: End-to-End Computer Vision Platform to train and deploy state-of-the-art models.
+links:
+  site: https://roboflow.com
+sources:
+  - source_id: src_3cc962408d7eefc1591ee05f8af8096b75b08a174a77ad7544799895d7a13513
+    url: https://startups.roboflow.com/
+programs: []
+offers:
+  - offer_id: off_01kyyjpn0433vgweswcfb0nkmg
+    offer_slug: 1-free-year-on-core-plan
+    offer_slug_aliases: []
+    title: 1 Free Year on Core Plan
+    summary: Eligible startups in partner startup programs receive 1 free year of Roboflow Core Plan ($948 value) including platform credits, 20 private projects, and 3 user seats.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-01T11:46:22.538Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 1 Free Year on Core Plan ($948 value)
+          duration:
+            kind: exact
+            value: P1Y
+          kind: free-service
+          service: Roboflow Core Plan
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.partner_memberships
+            kind: predicate
+            operator: present
+            statement: Startup must be part of a partner accelerator, VC, or startup program.
+          - criterion_id: cri_02
+            fact: company.funding_raised_usd
+            kind: predicate
+            operator: lt
+            statement: Startup must have raised less than $5 million in funding.
+            value:
+              type: number
+              value: 5000000
+          - criterion_id: cri_03
+            fact: company.is_current_customer
+            kind: predicate
+            operator: eq
+            statement: Must be a new Roboflow customer.
+            value:
+              type: boolean
+              value: false
+    roles:
+      terms_authority_entity_id: ent_01kyyjpn04wzrm50s4m4p2w6p4
+      access_operator_entity_id: ent_01kyyjpn04wzrm50s4m4p2w6p4
+    access:
+      availability: membership
+      instructions: Email your program manager or visit your program's perks & discounts list, or contact startups@roboflow.com to connect your program manager.
+      method: contact
+    source_ids:
+      - src_3cc962408d7eefc1591ee05f8af8096b75b08a174a77ad7544799895d7a13513

@@ -1,0 +1,125 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kyyjpn046y6zh8fhwt58gg1w
+slug: prisma
+slug_aliases: []
+name: Prisma
+domains:
+  - value: prisma.io
+    role: primary
+    valid_from: 2026-08-01T11:46:59.053Z
+category: databases
+description: "Prisma gives TypeScript and Node.js teams Prisma ORM, Prisma Postgres, and Prisma Compute: a type-safe ORM, managed Postgres, and Compute for deploying TypeScript apps, from schema to deployed app."
+links:
+  site: https://www.prisma.io
+sources:
+  - source_id: src_d8a0b75a1444b4bc9a893805524d0cc9922872402e132eccfbd4f41a6785e57f
+    url: https://www.prisma.io/startups
+programs:
+  - program_id: prg_01kyyjpn0481vjewfjfd887h11
+    program_slug: prisma-startup-program
+    program_slug_aliases: []
+    title: Prisma Startup Program
+    summary: The Prisma Startup Program provides early-stage startups with database credits and technical support.
+    source_ids:
+      - src_d8a0b75a1444b4bc9a893805524d0cc9922872402e132eccfbd4f41a6785e57f
+offers:
+  - offer_id: off_01kyyjpn04f08bxqpf2cezbd87
+    program_id: prg_01kyyjpn0481vjewfjfd887h11
+    offer_slug: prisma-startup-program
+    offer_slug_aliases: []
+    title: Prisma Startup Program
+    summary: Eligible early-stage startups get up to $10,000 in database credits for one year along with 1:1 guidance from Prisma database experts and direct Slack support.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-01T11:46:59.053Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to $10,000 in credits covering your database bill for a year
+          duration:
+            kind: exact
+            value: P1Y
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 1000000
+            kind: up-to
+        - benefit_id: ben_02
+          description: 1:1 guidance from Prisma's database experts
+          kind: other
+        - benefit_id: ben_03
+          description: Direct support in Slack
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.business_model
+            kind: predicate
+            operator: eq
+            statement: Building a software product or service with an active website
+            value:
+              type: string
+              value: software product or service with active website
+          - kind: any
+            rules:
+              - kind: all
+                rules:
+                  - criterion_id: cri_02
+                    fact: company.stage
+                    kind: predicate
+                    operator: in
+                    statement: Pre-seed, seed, or series-A stage
+                    value:
+                      type: string-set
+                      values:
+                        - pre-seed
+                        - seed
+                        - series-a
+                  - criterion_id: cri_03
+                    fact: company.last_funding_round_months_ago
+                    kind: predicate
+                    operator: lte
+                    statement: Raised venture funding in the last 12 months
+                    value:
+                      type: number
+                      value: 12
+                  - criterion_id: cri_04
+                    fact: company.age_months
+                    kind: predicate
+                    operator: lte
+                    statement: Founded in the last 5 years
+                    value:
+                      type: number
+                      value: 60
+              - kind: all
+                rules:
+                  - criterion_id: cri_05
+                    fact: company.mrr_usd
+                    kind: predicate
+                    operator: gte
+                    statement: At least 5k MRR for the last 6 months
+                    value:
+                      type: number
+                      value: 5000
+                  - criterion_id: cri_06
+                    fact: company.employee_count
+                    kind: predicate
+                    operator: gte
+                    statement: Two full-time team members
+                    value:
+                      type: number
+                      value: 2
+    roles:
+      terms_authority_entity_id: ent_01kyyjpn046y6zh8fhwt58gg1w
+      access_operator_entity_id: ent_01kyyjpn046y6zh8fhwt58gg1w
+    access:
+      availability: public
+      method: form
+      url: https://www.prisma.io/startups
+    source_ids:
+      - src_d8a0b75a1444b4bc9a893805524d0cc9922872402e132eccfbd4f41a6785e57f

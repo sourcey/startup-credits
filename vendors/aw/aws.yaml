@@ -14,7 +14,16 @@ links:
 sources:
   - source_id: src_76d24dd13896e7193963f92a4af2a17cf151c8909a0598a41567c53d2b202d97
     url: https://aws.amazon.com/startups/
-programs: []
+  - source_id: src_e7804e1c8a7ac1fff655584c226c25f4be1e67fee3e9e2659ff6f336ffe95894
+    url: https://aws.amazon.com/startups
+programs:
+  - program_id: prg_01kyyjpn03angf9erfjwke4c42
+    program_slug: aws-activate
+    program_slug_aliases: []
+    title: AWS Activate
+    summary: AWS Activate provides credits, technical guidance, and resources to help startups test, build, and scale.
+    source_ids:
+      - src_e7804e1c8a7ac1fff655584c226c25f4be1e67fee3e9e2659ff6f336ffe95894
 offers:
   - offer_id: off_01kyh8fpe12z6fgn1ywg2ykth8
     offer_slug: aws-activate-credits
@@ -47,3 +56,39 @@ offers:
       url: https://aws.amazon.com/startups/join?destination=/credits/apply
     source_ids:
       - src_76d24dd13896e7193963f92a4af2a17cf151c8909a0598a41567c53d2b202d97
+  - offer_id: off_01kyyjpn04w8sm169c7ybetjs9
+    program_id: prg_01kyyjpn03angf9erfjwke4c42
+    offer_slug: aws-activate-credits-2
+    offer_slug_aliases: []
+    title: AWS Activate Credits
+    summary: Get up to $200,000 in AWS Activate Credits to offset costs on infrastructure, data services, and AI/ML models, including models on Amazon Bedrock.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-01T11:36:14.695Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: AWS Activate Credits to offset costs on infrastructure, data services, and AI/ML models
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 20000000
+            kind: up-to
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Apply for AWS Activate Credits as a startup
+    roles:
+      terms_authority_entity_id: ent_01kyh8fpe10b164tj935t8k5zb
+      access_operator_entity_id: ent_01kyh8fpe10b164tj935t8k5zb
+    access:
+      availability: public
+      method: form
+      url: https://aws.amazon.com/startups/join?destination=/credits/apply
+    source_ids:
+      - src_e7804e1c8a7ac1fff655584c226c25f4be1e67fee3e9e2659ff6f336ffe95894
