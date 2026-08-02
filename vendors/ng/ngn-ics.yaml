@@ -1,0 +1,93 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kz1mwfk034xdsm4fd6zammfm
+slug: ngn-ics
+slug_aliases: []
+name: NGN ICS
+domains:
+  - value: ngnics.com
+    role: primary
+    valid_from: 2026-08-02T16:28:32.300Z
+category: communication
+description: NGN ICS provides global telecom infrastructure and AI-powered communication solutions for carriers, enterprises, contact centers, cloud platforms, and startups.
+links:
+  site: https://ngnics.com
+sources:
+  - source_id: src_e1dcc51e42c5fb4b7eb9d29e808102311e39dabcd6c52e31312bad27ba572d40
+    url: https://ngnics.com/startups/overview/
+  - source_id: src_c0008619b2baa9792d9662abc400256231eee86436064e6d78085d3d89e2a9f0
+    url: https://ngnics.com/startups/apply/
+programs:
+  - program_id: prg_01kz1mwfk0dcn84z48hy0bkq69
+    program_slug: ngn-ics-for-startups
+    program_slug_aliases: []
+    title: NGN ICS for Startups
+    summary: NGN ICS for Startups gives qualified emerging technology companies free service credits for carrier-grade global communication infrastructure.
+    source_ids:
+      - src_e1dcc51e42c5fb4b7eb9d29e808102311e39dabcd6c52e31312bad27ba572d40
+      - src_c0008619b2baa9792d9662abc400256231eee86436064e6d78085d3d89e2a9f0
+offers:
+  - offer_id: off_01kz1mwfk0qg2vfmf1bacn93e7
+    program_id: prg_01kz1mwfk0dcn84z48hy0bkq69
+    offer_slug: ngn-ics-startup-service-credits
+    offer_slug_aliases: []
+    title: NGN ICS Startup Service Credits
+    summary: Qualified startups can receive up to $100,000 in NGN ICS service credits valid for 12 months, usable for voice, cloud numbers, IPX, IMS, SMS, and messaging services.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-02T16:28:32.300Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to $100,000 in NGN ICS service credits valid for 12 months.
+          duration:
+            kind: exact
+            value: P12M
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 10000000
+            kind: up-to
+        - benefit_id: ben_02
+          description: Credits can be applied toward international voice, cloud numbers and DIDs, IPX and IMS services, and SMS and messaging.
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.age_years
+            kind: predicate
+            operator: lt
+            statement: Company must be legally registered and operating for less than five years.
+            value:
+              type: number
+              value: 5
+          - criterion_id: cri_02
+            fact: company.employee_count
+            kind: predicate
+            operator: lt
+            statement: Company must have fewer than 100 employees.
+            value:
+              type: number
+              value: 100
+          - criterion_id: cri_03
+            kind: manual
+            reason: external-verification
+            statement: Application requires eligibility review, including non-customer status with NGN ICS, a valid business domain, and regulatory alignment.
+          - criterion_id: cri_04
+            kind: manual
+            reason: vendor-discretion
+            statement: Accelerator or VC-backed startups may be eligible for expedited verification or higher-tier credit packages.
+    roles:
+      terms_authority_entity_id: ent_01kz1mwfk034xdsm4fd6zammfm
+      access_operator_entity_id: ent_01kz1mwfk034xdsm4fd6zammfm
+    access:
+      availability: public
+      method: form
+      url: https://ngnics.com/startups/apply/
+    source_ids:
+      - src_e1dcc51e42c5fb4b7eb9d29e808102311e39dabcd6c52e31312bad27ba572d40
+      - src_c0008619b2baa9792d9662abc400256231eee86436064e6d78085d3d89e2a9f0
