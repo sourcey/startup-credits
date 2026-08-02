@@ -1,0 +1,97 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kz203neexth2rmc5bb2jctr2
+slug: kiro
+slug_aliases: []
+name: Kiro
+domains:
+  - value: kiro.dev
+    role: primary
+    valid_from: 2026-08-02T19:47:00Z
+category: ai-ml
+description: Kiro is an AI development environment with IDE, CLI, web, and mobile tools for structured, agent-assisted software development.
+links:
+  site: https://kiro.dev
+sources:
+  - source_id: src_8aa167718dee1636140b1f287fb84da903c647b42395e283910bc47663cebc73
+    url: https://kiro.dev/startups/
+  - source_id: src_fb2aadf381cd6ffded4978636e7d798c1f3872b1c7063215279ec66ccd9d5cc4
+    url: https://kiro.dev/startups/terms/
+  - source_id: src_1abd9fb9f121682698280bac8ea2ee213278b0d8e2ffa2338804971e3e274647
+    url: https://kiro.dev/pricing/
+programs:
+  - program_id: prg_01kz203nehdb86t8xp5nzh64xd
+    program_slug: kiro-startup-credits-program
+    program_slug_aliases: []
+    title: Kiro Startup Credits Program
+    summary: Kiro's limited-time program gives eligible early-stage through Series A startups complimentary Kiro Pro+ credits for up to one year.
+    source_ids:
+      - src_8aa167718dee1636140b1f287fb84da903c647b42395e283910bc47663cebc73
+      - src_fb2aadf381cd6ffded4978636e7d798c1f3872b1c7063215279ec66ccd9d5cc4
+offers:
+  - offer_id: off_01kz203neh9j8xy1jpexfsj4vt
+    program_id: prg_01kz203nehdb86t8xp5nzh64xd
+    offer_slug: up-to-one-year-free-kiro-pro-plus
+    offer_slug_aliases: []
+    title: Up to one year of Kiro Pro+ for startups
+    summary: Eligible early-stage through Series A startups can receive up to one year of Kiro Pro+ credits for as many as 2, 10, or 30 users, depending on the approved tier; Kiro Pro+ is listed at $40 USD per user per month.
+    lifecycle:
+      status: active
+      effective_from: 2026-04-07T00:00:00Z
+      effective_until: 2026-12-31T23:59:59Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to one year of Kiro Pro+ credits, with approved tiers covering up to 2, 10, or 30 users
+          duration:
+            kind: up-to
+            value: P1Y
+          kind: free-service
+          service: Kiro Pro+
+      consideration:
+        kind: variable
+        description: No charge within the awarded Pro+ credits and approved user tier; exceeding the user limit or selecting a plan above Pro+ may add fees, and after credits are exhausted or expire the AWS Account automatically switches to standard monthly Pro+ billing on its associated card.
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: external-verification
+            statement: Applicant must be an early-stage through Series A startup.
+          - criterion_id: cri_02
+            kind: manual
+            reason: external-verification
+            statement: Applicant must use an official business email matching the startup's website domain and an AWS Account ID registered with that matching email address.
+          - criterion_id: cri_03
+            kind: manual
+            reason: external-verification
+            statement: Startups currently participating in AWS Activate are not eligible for this promotion.
+          - criterion_id: cri_04
+            kind: manual
+            reason: external-verification
+            statement: Applicant must be at least 18 years old.
+          - criterion_id: cri_05
+            kind: manual
+            reason: external-verification
+            statement: Applicant must not reside in a location excluded by the promotional terms updated July 24, 2026.
+          - criterion_id: cri_06
+            kind: manual
+            reason: external-verification
+            statement: Applicant's country or region must support Kiro startup credits under the current program FAQ.
+          - criterion_id: cri_07
+            kind: manual
+            reason: external-verification
+            statement: Offer is limited to one subscription and one award of credits per startup.
+    roles:
+      terms_authority_entity_id: ent_01kz203neexth2rmc5bb2jctr2
+      access_operator_entity_id: ent_01kyh8fpe10b164tj935t8k5zb
+    access:
+      availability: public
+      instructions: Apply with the matching corporate AWS account; approved startups must sign in to Kiro through AWS IAM Identity Center because AWS Builder ID and social logins cannot redeem the startup credits.
+      method: form
+      url: https://aws.amazon.com/startups/credits/kiro
+    terms_url: https://kiro.dev/startups/terms/
+    source_ids:
+      - src_8aa167718dee1636140b1f287fb84da903c647b42395e283910bc47663cebc73
+      - src_fb2aadf381cd6ffded4978636e7d798c1f3872b1c7063215279ec66ccd9d5cc4
+      - src_1abd9fb9f121682698280bac8ea2ee213278b0d8e2ffa2338804971e3e274647
