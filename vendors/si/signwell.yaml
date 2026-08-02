@@ -1,0 +1,105 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kz1dmh5b20kbkjbn8b9h43mv
+slug: signwell
+slug_aliases: []
+name: SignWell
+domains:
+  - value: signwell.com
+    role: primary
+    valid_from: 2026-08-02T14:22:13.821Z
+category: legal-compliance
+description: SignWell provides electronic-signature software and a developer API for embedded signing and document workflows.
+links:
+  site: https://www.signwell.com
+sources:
+  - source_id: src_db3aa32eb98dcaa550397908abfe36a7c94f0230ab15917ebf917dc6801c9147
+    url: https://www.signwell.com/signwell-for-startups/
+programs:
+  - program_id: prg_01kz1dmh5cqq9hkh757z5fh8j8
+    program_slug: signwell-for-startups
+    program_slug_aliases: []
+    title: SignWell for Startups
+    summary: SignWell's startup program provides approved early-stage technology companies with credits, implementation support, and early feature access.
+    source_ids:
+      - src_db3aa32eb98dcaa550397908abfe36a7c94f0230ab15917ebf917dc6801c9147
+offers:
+  - offer_id: off_01kz1dmh5cgqbye8b01q5q58gz
+    program_id: prg_01kz1dmh5cqq9hkh757z5fh8j8
+    offer_slug: signwell-startup-credits
+    offer_slug_aliases: []
+    title: SignWell Startup Credits
+    summary: Approved technology-driven startups at Series A or below with under $5 million in funding can receive up to $500 in credits for SignWell API or SaaS usage, plus implementation support and early feature access.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-02T14:22:13.821Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to $500 in SignWell credits applicable to API and SaaS usage.
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 50000
+            kind: up-to
+        - benefit_id: ben_02
+          description: Direct implementation support.
+          kind: other
+        - benefit_id: ben_03
+          description: Early access to new features.
+          kind: other
+      consideration:
+        kind: variable
+        description: Applicant must be willing to serve as a reference through a case study, quote, or video.
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.is_technology_driven
+            kind: predicate
+            operator: eq
+            statement: Company is a technology-driven startup.
+            value:
+              type: boolean
+              value: true
+          - criterion_id: cri_02
+            fact: company.stage
+            kind: predicate
+            operator: in
+            statement: Company is at Series A or an earlier stage.
+            value:
+              type: string-set
+              values:
+                - pre-seed
+                - seed
+                - series-a
+          - criterion_id: cri_03
+            fact: company.funding_raised_usd
+            kind: predicate
+            operator: lt
+            statement: Company has raised less than $5,000,000 in funding.
+            value:
+              type: number
+              value: 5000000
+          - criterion_id: cri_04
+            fact: company.is_current_paid_customer
+            kind: predicate
+            operator: eq
+            statement: Company is not currently on a paid SignWell plan.
+            value:
+              type: boolean
+              value: false
+          - criterion_id: cri_05
+            kind: manual
+            reason: vendor-discretion
+            statement: Applicant is willing to serve as a reference through a case study, quote, or video.
+    roles:
+      terms_authority_entity_id: ent_01kz1dmh5b20kbkjbn8b9h43mv
+      access_operator_entity_id: ent_01kz1dmh5b20kbkjbn8b9h43mv
+    access:
+      availability: public
+      method: form
+      url: https://www.signwell.com/signwell-for-startups/
+    source_ids:
+      - src_db3aa32eb98dcaa550397908abfe36a7c94f0230ab15917ebf917dc6801c9147
