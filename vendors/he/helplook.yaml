@@ -1,0 +1,82 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kz208bdfsmjn5y8b3fdxt5c4
+slug: helplook
+slug_aliases: []
+name: HelpLook
+domains:
+  - value: helplook.com
+    role: primary
+    valid_from: 2026-08-02T19:50:00Z
+  - value: helplook.net
+    role: alias
+    valid_from: 2026-08-02T19:50:00Z
+category: support
+description: HelpLook provides AI-powered knowledge-base, help-center, documentation-site, and embedded support tools.
+links:
+  site: https://www.helplook.com
+sources:
+  - source_id: src_fc4dbf020cd133e6c6546f3e10ac1b17182c4eb84eddbae0454ea78a8bb69d77
+    url: https://www.helplook.com/startup
+  - source_id: src_b141c7942385df7414b629fe37e0509b2ecf55d81376da8924b414e5f90add68
+    url: https://www.helplook.com/agreement
+programs:
+  - program_id: prg_01kz208bdj2ahf3fgfxa277d6y
+    program_slug: helplook-startup-program
+    program_slug_aliases: []
+    title: HelpLook Startup Program
+    summary: HelpLook's program gives qualifying early-stage startups 12 months of its Enterprise knowledge-base platform at no cost.
+    source_ids:
+      - src_fc4dbf020cd133e6c6546f3e10ac1b17182c4eb84eddbae0454ea78a8bb69d77
+offers:
+  - offer_id: off_01kz208bdjrmzez8ww641znpkp
+    program_id: prg_01kz208bdj2ahf3fgfxa277d6y
+    offer_slug: twelve-months-free-helplook-enterprise
+    offer_slug_aliases: []
+    title: Twelve months of HelpLook Enterprise for startups
+    summary: Eligible incorporated startups under two years old with documented fundraising through Series A receive HelpLook Enterprise free for 12 months, a vendor-stated $690 value, with unlimited storage and visits plus AI summarization.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-02T19:50:00Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: HelpLook Enterprise free for 12 months, stated by HelpLook as a $690 value, with unlimited storage and visits, custom-domain branding, AI summarization, and customer-manager support
+          duration:
+            kind: exact
+            value: P1Y
+          kind: free-service
+          service: HelpLook Enterprise
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: external-verification
+            statement: Applicant must be an incorporated startup.
+          - criterion_id: cri_02
+            fact: company.age_months
+            kind: predicate
+            operator: lt
+            statement: Startup must be less than two years old.
+            value:
+              type: number
+              value: 24
+          - criterion_id: cri_03
+            kind: manual
+            reason: external-verification
+            statement: Applicant must provide a documented fundraising record at a stage up to Series A.
+    roles:
+      terms_authority_entity_id: ent_01kz208bdfsmjn5y8b3fdxt5c4
+      access_operator_entity_id: ent_01kz208bdfsmjn5y8b3fdxt5c4
+    access:
+      availability: public
+      instructions: Use the Apply Now portal linked from HelpLook's startup page to sign in or register.
+      method: form
+      url: https://portal.helplook.net/
+    terms_url: https://www.helplook.com/agreement
+    source_ids:
+      - src_fc4dbf020cd133e6c6546f3e10ac1b17182c4eb84eddbae0454ea78a8bb69d77
+      - src_b141c7942385df7414b629fe37e0509b2ecf55d81376da8924b414e5f90add68
