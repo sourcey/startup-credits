@@ -1,0 +1,66 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kz1rshzksgn0nvezs7rs7q8h
+slug: koyeb
+slug_aliases: []
+name: Koyeb
+domains:
+  - value: koyeb.com
+    role: primary
+    valid_from: 2026-08-02T17:36:51.187Z
+category: hosting-infra
+description: Koyeb provides serverless cloud infrastructure for deploying applications, APIs, databases, and AI workloads on CPU and GPU instances.
+links:
+  site: https://www.koyeb.com
+sources:
+  - source_id: src_f853bf368bc8e11b8a390d405b32b492166ff61ffadc866b6edd3de99e7cc0bd
+    url: https://www.koyeb.com/blog/koyeb-for-startups-accelerate-with-credits-for-high-performance-infrastructure
+  - source_id: src_7513386c495c5a67f1bd4d7b26d6eadb888e493a8b35e0cc3cbe092b8d05353c
+    url: https://www.koyeb.com/pricing
+programs:
+  - program_id: prg_01kz1rshzk9y08nnp1e7hpdq64
+    program_slug: koyeb-startup-program
+    program_slug_aliases: []
+    title: Koyeb Startup Program
+    summary: Koyeb's startup program provides eligible early-stage companies with free compute credits, onboarding, support, migration help, and early feature access.
+    source_ids:
+      - src_f853bf368bc8e11b8a390d405b32b492166ff61ffadc866b6edd3de99e7cc0bd
+      - src_7513386c495c5a67f1bd4d7b26d6eadb888e493a8b35e0cc3cbe092b8d05353c
+offers:
+  - offer_id: off_01kz1rshzkjq729h9d1v86b9zr
+    program_id: prg_01kz1rshzk9y08nnp1e7hpdq64
+    offer_slug: up-to-30000-usd-compute-credits
+    offer_slug_aliases: []
+    title: Up to $30,000 in Koyeb compute credits
+    summary: Eligible early-stage startups can receive up to $30,000 in free credits for Koyeb Standard CPU and GPU compute.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-02T17:36:51.187Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to $30,000 in free credits for Standard CPU and GPU compute
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 3000000
+            kind: up-to
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_01
+        statement: Designed for seed-stage companies in a partner accelerator or with $1 million to $5 million in VC funding; other early-stage and bootstrapped startups are reviewed case-by-case.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01kz1rshzksgn0nvezs7rs7q8h
+      access_operator_entity_id: ent_01kz1rshzksgn0nvezs7rs7q8h
+    access:
+      availability: public
+      method: form
+      url: https://tally.so/r/w4kzad
+    terms_url: https://www.koyeb.com/blog/koyeb-for-startups-accelerate-with-credits-for-high-performance-infrastructure
+    source_ids:
+      - src_f853bf368bc8e11b8a390d405b32b492166ff61ffadc866b6edd3de99e7cc0bd
+      - src_7513386c495c5a67f1bd4d7b26d6eadb888e493a8b35e0cc3cbe092b8d05353c
