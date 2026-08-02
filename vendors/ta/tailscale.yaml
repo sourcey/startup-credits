@@ -49,7 +49,7 @@ offers:
         kind: variable
     eligibility:
       rule:
-        criterion_id: cri_01
+        criterion_id: cri_requirement_01
         kind: manual
         reason: vendor-discretion
         statement: Tailscale reviews applications individually. Public criteria require a first-time customer, a live company domain and matching work email, an early-stage product-focused software or hardware startup, and generally fewer than 50 employees; service businesses, retail, and ecommerce companies are not eligible.
