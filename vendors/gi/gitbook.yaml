@@ -1,0 +1,83 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kz1mhcd8y5dwg183vwmypzr9
+slug: gitbook
+slug_aliases: []
+name: GitBook
+domains:
+  - value: gitbook.com
+    role: primary
+    valid_from: 2026-08-02T16:22:29.018Z
+category: productivity
+description: GitBook is a documentation platform for publishing developer documentation, API references, help centers, and internal knowledge bases.
+links:
+  site: https://www.gitbook.com/industries/startups
+sources:
+  - source_id: src_ee1aef6bdd4a28432e6afb9794ff23595e5f9cd236a1cd7062b7f35c99443043
+    url: https://www.gitbook.com/industries/startups
+programs:
+  - program_id: prg_01kz1mhcd9smrz7dcp2xsw0bx3
+    program_slug: gitbook-startups-program
+    program_slug_aliases: []
+    title: GitBook Startups Program
+    summary: GitBook's program gives eligible startups six months of free platform access plus dedicated support and documentation resources.
+    source_ids:
+      - src_ee1aef6bdd4a28432e6afb9794ff23595e5f9cd236a1cd7062b7f35c99443043
+offers:
+  - offer_id: off_01kz1mhcd9fcez2yagerhsj3h5
+    program_id: prg_01kz1mhcd9smrz7dcp2xsw0bx3
+    offer_slug: six-months-free-platform-access
+    offer_slug_aliases: []
+    title: Six months of free GitBook platform access
+    summary: Eligible startups receive six months at no cost with full access to GitBook's platform, dedicated support, a documentation playbook, and startup spotlight support.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-02T16:22:29.018Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Six months at no cost with full access to GitBook's platform
+          duration:
+            kind: exact
+            value: P6M
+          kind: free-service
+          service: GitBook full platform access
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.age_months
+            kind: predicate
+            operator: lt
+            statement: Startup must have been founded less than two years ago
+            value:
+              type: number
+              value: 24
+          - criterion_id: cri_02
+            fact: company.funding_raised_usd
+            kind: predicate
+            operator: lte
+            statement: Startup must have raised no more than $2 million USD in total funding
+            value:
+              type: number
+              value: 2000000
+          - criterion_id: cri_03
+            kind: manual
+            reason: external-verification
+            statement: Startup must not currently be on one of GitBook's paid plans
+          - criterion_id: cri_04
+            kind: manual
+            reason: not-machine-evaluable
+            statement: Startup must be non-crypto
+    roles:
+      terms_authority_entity_id: ent_01kz1mhcd8y5dwg183vwmypzr9
+      access_operator_entity_id: ent_01kz1mhcd8y5dwg183vwmypzr9
+    access:
+      availability: public
+      method: form
+      url: https://www.gitbook.com/industries/startups
+    terms_url: https://www.gitbook.com/industries/startups
+    source_ids:
+      - src_ee1aef6bdd4a28432e6afb9794ff23595e5f9cd236a1cd7062b7f35c99443043
