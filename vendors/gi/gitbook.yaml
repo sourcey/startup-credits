@@ -41,6 +41,15 @@ offers:
             value: P6M
           kind: free-service
           service: GitBook full platform access
+        - benefit_id: ben_02
+          description: Direct access to GitBook's support team without the standard support queue
+          kind: other
+        - benefit_id: ben_03
+          description: A documentation playbook with practical guidance for developer documentation, APIs, and internal knowledge bases
+          kind: other
+        - benefit_id: ben_04
+          description: Startup spotlight support to help amplify the startup's story across GitBook's channels
+          kind: other
       consideration:
         kind: none
     eligibility:
