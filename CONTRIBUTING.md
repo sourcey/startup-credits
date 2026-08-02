@@ -7,6 +7,17 @@ The shard is the first two characters of the vendor slug (or the whole slug
 when it is shorter), and the filename is exactly `{slug}.yaml`; CI verifies
 that identity-derived path.
 
+Keep a data pull request data-only; do not mix vendor YAML with documentation or workflow edits.
+For a new record, copy a nearby vendor file and preserve the shape:
+
+- allocate fresh ULIDs with the existing `ent_`, `prg_`, and `off_` prefixes; never reuse an ID;
+- use a stable file-local `source_id` for each public URL and reference it from the Programs and
+  Offers it supports;
+- add a Program only when the vendor publicly names a real umbrella program; standalone Offers do
+  not need one; and
+- keep separate Offers for materially different economics, eligibility, duration, access, or
+  terms. Do not split one application bundle into a card per benefit.
+
 - Describe only public vendor, program, and offer facts supported by the URLs
   in the record.
 - Keep stable IDs stable. Correct or end an offer instead of deleting its

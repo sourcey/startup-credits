@@ -16,17 +16,19 @@ jobs:
       - uses: actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444 # v5
         with:
           node-version: 22.12.0
-      - name: Enforce the data-only repository boundary
+      - name: Enforce the changed-path repository boundary
         env:
+          BASE_REVISION: ${{ github.event.pull_request.base.sha }}
           HEAD_REVISION: ${{ github.event.pull_request.head.sha }}
         run: |
-          invalid="$(
-            git ls-tree -r --name-only "$HEAD_REVISION" |
-              grep -Ev '^(AGENTS\.md|CONTRIBUTING\.md|DATA-LICENSE\.md|LICENSE|README\.md|vendors/[a-z0-9][a-z0-9-]?/[a-z0-9][a-z0-9-]*\.yaml|\.github/CODEOWNERS|\.github/pull_request_template\.md|\.github/sourcey-candidate-verifier\.sha256|\.github/workflows/validate\.yml)$' ||
-              true
-          )"
-          if [[ -n "$invalid" ]]; then
-            printf 'startup-credits contains forbidden paths:\n%s\n' "$invalid" >&2
+          invalid=()
+          while IFS= read -r -d '' path; do
+            if [[ ! "$path" =~ ^(AGENTS\.md|CONTRIBUTING\.md|DATA-LICENSE\.md|LICENSE|README\.md|vendors/[a-z0-9][a-z0-9-]?/[a-z0-9][a-z0-9-]*\.yaml|\.github/CODEOWNERS|\.github/pull_request_template\.md|\.github/sourcey-candidate-verifier\.sha256|\.github/workflows/validate\.yml)$ ]]; then
+              invalid+=("$path")
+            fi
+          done < <(git diff --name-only -z --no-renames "$BASE_REVISION" "$HEAD_REVISION")
+          if (( ${#invalid[@]} > 0 )); then
+            printf 'startup-credits contains forbidden changed paths:\n%s\n' "${invalid[@]}" >&2
             exit 1
           fi
       - name: Install the exact Sourcey Candidate Verifier
