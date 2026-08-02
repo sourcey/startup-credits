@@ -1,0 +1,119 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kz21fhdyy01wfsztv2xp8avc
+slug: braintrust
+slug_aliases: []
+name: Braintrust
+domains:
+  - value: braintrust.dev
+    role: primary
+    valid_from: 2026-08-02T20:08:40Z
+category: ai-ml
+description: Braintrust provides observability and evaluation tools for AI applications and agents, including tracing, experiments, scoring, datasets, and production analysis.
+links:
+  site: https://www.braintrust.dev
+sources:
+  - source_id: src_64f7b22cd1e562425f133eba6bb3ced7f5fa5bb46799c447df0ebef88edd5c8f
+    url: https://www.braintrust.dev/startups
+  - source_id: src_42933217d3acd203d76eae1d752a002640d141a23c0a2c742a6fb5b79078821b
+    url: https://www.braintrust.dev/pricing
+  - source_id: src_206e21c3031d17edfb96b73c49621c57c30cd465a3115652d6885be863c0be89
+    url: https://www.braintrust.dev/legal/terms-of-service
+  - source_id: src_9d955cc958b96610eaf8f557c463ad01d2f80bec3207e97ddb0d99effe535502
+    url: https://www.braintrust.dev/blog/braintrust-for-startups
+programs:
+  - program_id: prg_01kz21fhe3v5t1g2dy6eaabs0h
+    program_slug: braintrust-for-startups
+    program_slug_aliases: []
+    title: Braintrust for Startups
+    summary: Braintrust's rolling program gives approved early-stage startups six to twelve months of Pro access, office hours, and invitations to executive events.
+    source_ids:
+      - src_64f7b22cd1e562425f133eba6bb3ced7f5fa5bb46799c447df0ebef88edd5c8f
+      - src_9d955cc958b96610eaf8f557c463ad01d2f80bec3207e97ddb0d99effe535502
+offers:
+  - offer_id: off_01kz21fhe49dwpz6fcgzx3gan5
+    program_id: prg_01kz21fhe3v5t1g2dy6eaabs0h
+    offer_slug: six-to-twelve-months-free-braintrust-pro
+    offer_slug_aliases: []
+    title: Six to twelve months of Braintrust Pro for startups
+    summary: Approved new customers at Series A or earlier receive Braintrust Pro free for six months, or twelve months when funded by a partner VC, plus office hours and executive-event invitations.
+    lifecycle:
+      status: active
+      effective_from: 2026-06-30T00:00:00Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Six months of Braintrust Pro at no platform fee; Pro is currently listed at $249 USD per month and includes $249 in monthly model credits, 5 GB processed data, 50,000 scores, and 30-day retention
+          duration:
+            kind: exact
+            value: P6M
+          kind: free-service
+          service: Braintrust Pro
+        - benefit_id: ben_02
+          description: Six additional months of Braintrust Pro for qualifying startups funded by a Braintrust partner VC at Series A or earlier
+          duration:
+            kind: exact
+            value: P6M
+          kind: free-service
+          service: Braintrust Pro
+        - benefit_id: ben_03
+          description: Access to exclusive Braintrust office hours
+          kind: other
+        - benefit_id: ben_04
+          description: Invitations to Braintrust executive events
+          kind: other
+      consideration:
+        kind: variable
+        description: No Pro platform fee applies during the awarded six or twelve months; usage above Pro's included model credits, processed data, scores, or retention allowances can incur Braintrust's published overage charges.
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.is_current_customer
+            kind: predicate
+            operator: eq
+            statement: Applicant must be a new Braintrust customer.
+            value:
+              type: boolean
+              value: false
+          - criterion_id: cri_02
+            fact: company.stage
+            kind: predicate
+            operator: in
+            statement: Applicant must be at Series A or an earlier startup stage.
+            value:
+              type: string-set
+              values:
+                - pre-seed
+                - seed
+                - series-a
+          - criterion_id: cri_03
+            fact: company.funding_raised_usd
+            kind: predicate
+            operator: gte
+            statement: Applicant must have raised at least $100,000 USD in funding; approved applicants receive six months of Pro.
+            value:
+              type: number
+              value: 100000
+          - criterion_id: cri_04
+            kind: manual
+            reason: vendor-discretion
+            statement: Applications are reviewed and approved by Braintrust on a rolling basis.
+          - criterion_id: cri_05
+            kind: manual
+            reason: external-verification
+            statement: The applicant must be at least 18 years old or the age of legal majority and able to enter a binding agreement.
+    roles:
+      terms_authority_entity_id: ent_01kz21fhdyy01wfsztv2xp8avc
+      access_operator_entity_id: ent_01kz21fhdyy01wfsztv2xp8avc
+    access:
+      availability: public
+      instructions: Complete the embedded application with a full name, work email, company website, and optional referral source, then accept Braintrust's terms and await rolling review.
+      method: form
+      url: https://www.braintrust.dev/startups
+    terms_url: https://www.braintrust.dev/legal/terms-of-service
+    source_ids:
+      - src_64f7b22cd1e562425f133eba6bb3ced7f5fa5bb46799c447df0ebef88edd5c8f
+      - src_42933217d3acd203d76eae1d752a002640d141a23c0a2c742a6fb5b79078821b
+      - src_206e21c3031d17edfb96b73c49621c57c30cd465a3115652d6885be863c0be89
+      - src_9d955cc958b96610eaf8f557c463ad01d2f80bec3207e97ddb0d99effe535502
