@@ -53,7 +53,7 @@ offers:
         description: The public program page does not establish separate consideration.
     eligibility:
       rule:
-        criterion_id: cri_01
+        criterion_id: cri_requirement_01
         kind: manual
         reason: not-machine-evaluable
         statement: Company must be pre-Series A and have less than $1 million in annual revenue.
