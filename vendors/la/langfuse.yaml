@@ -1,0 +1,95 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kz1vtse508ajv7yz8q1rykpq
+slug: langfuse
+slug_aliases: []
+name: Langfuse
+domains:
+  - value: langfuse.com
+    role: primary
+    valid_from: 2026-08-02T18:29:57.000Z
+category: observability
+description: Open-source LLM engineering platform with a startup discount for qualifying early-stage companies.
+links:
+  site: https://langfuse.com
+sources:
+  - source_id: src_b9ebbb8b41a25b59bf14a801d938fe2828d0281f5b8a7a3915de9df4a1fd2d5c
+    url: https://langfuse.com/startups
+programs:
+  - program_id: prg_01kz1vtsefng2y6b7jwyqers7x
+    program_slug: langfuse-for-startups
+    program_slug_aliases: []
+    title: Langfuse for Startups
+    summary: Langfuse offers a 12-month cloud discount to qualifying early-stage startups.
+    source_ids:
+      - src_b9ebbb8b41a25b59bf14a801d938fe2828d0281f5b8a7a3915de9df4a1fd2d5c
+offers:
+  - offer_id: off_01kz1vtsef9mx6gw64epnvtqsg
+    program_id: prg_01kz1vtsefng2y6b7jwyqers7x
+    offer_slug: fifty-percent-off-for-twelve-months
+    offer_slug_aliases: []
+    title: 50% off Langfuse Cloud for 12 months
+    summary: Eligible startups receive 50% off their entire Langfuse Cloud bill for 12 consecutive months.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-02T18:29:57.000Z
+    economics:
+      consideration:
+        description: The startup pays 50% of its Langfuse Cloud bill during the 12-month discount period.
+        kind: variable
+      benefits:
+        - benefit_id: ben_01
+          applies_to: Langfuse Cloud
+          description: 50% off the entire Langfuse Cloud bill for 12 consecutive months
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 5000
+          duration:
+            kind: exact
+            value: P1Y
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.funding_raised_usd
+            kind: predicate
+            operator: lte
+            statement: Bootstrapped or no more than $5 million in total venture funding
+            value:
+              type: number
+              value: 5000000
+          - criterion_id: cri_02
+            fact: company.age_months
+            kind: predicate
+            operator: lte
+            statement: Incorporated no more than 5 years ago
+            value:
+              type: number
+              value: 60
+          - criterion_id: cri_03
+            fact: company.is_private
+            kind: predicate
+            operator: eq
+            statement: Privately held company
+            value:
+              type: boolean
+              value: true
+          - criterion_id: cri_04
+            kind: manual
+            reason: external-verification
+            statement: Company is independent
+          - criterion_id: cri_05
+            kind: manual
+            reason: external-verification
+            statement: New or existing Langfuse Cloud customer
+    roles:
+      terms_authority_entity_id: ent_01kz1vtse508ajv7yz8q1rykpq
+      access_operator_entity_id: ent_01kz1vtse508ajv7yz8q1rykpq
+    access:
+      availability: public
+      method: form
+      url: https://langfuse.com/startups
+    terms_url: https://langfuse.com/startups
+    source_ids:
+      - src_b9ebbb8b41a25b59bf14a801d938fe2828d0281f5b8a7a3915de9df4a1fd2d5c
