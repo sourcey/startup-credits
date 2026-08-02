@@ -1,0 +1,82 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kz0n0vm1ny7a1fwg2b0jba92
+slug: rootly
+slug_aliases: []
+name: Rootly
+domains:
+  - value: rootly.com
+    role: primary
+    valid_from: 2026-08-02T07:11:41.000Z
+category: observability
+description: Incident response and on-call software with a startup program for qualifying young companies.
+links:
+  site: https://rootly.com
+sources:
+  - source_id: src_b1e882a862616a5a0bac567462189ad58b8238c6b5b35b7036d05b859bde9fb3
+    url: https://rootly.com/startups
+programs:
+  - program_id: prg_01kz0n0vm1gmbhedb6avnh04pf
+    program_slug: rootly-for-startups
+    program_slug_aliases: []
+    title: Rootly for Startups
+    summary: Rootly's startup program offers discounted incident response and on-call software to qualifying companies.
+    source_ids:
+      - src_b1e882a862616a5a0bac567462189ad58b8238c6b5b35b7036d05b859bde9fb3
+offers:
+  - offer_id: off_01kz0n0vm1xvf7z7bfda51r0k8
+    program_id: prg_01kz0n0vm1gmbhedb6avnh04pf
+    offer_slug: up-to-50-percent-off
+    offer_slug_aliases: []
+    title: Up to 50% off Rootly for startups
+    summary: Qualifying startups can receive up to 50% off Rootly.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-02T07:11:41.000Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_01
+          description: Up to 50% off Rootly
+          kind: discount
+          percentage:
+            kind: up-to
+            basis_points: 5000
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.employee_count
+            kind: predicate
+            operator: lt
+            statement: Company has fewer than 100 employees
+            value:
+              type: number
+              value: 100
+          - criterion_id: cri_02
+            fact: company.funding_raised_usd
+            kind: predicate
+            operator: lt
+            statement: Company has raised less than $50 million
+            value:
+              type: number
+              value: 50000000
+          - criterion_id: cri_03
+            fact: company.age_months
+            kind: predicate
+            operator: lt
+            statement: Company has been in business for fewer than 5 years
+            value:
+              type: number
+              value: 60
+    roles:
+      terms_authority_entity_id: ent_01kz0n0vm1ny7a1fwg2b0jba92
+      access_operator_entity_id: ent_01kz0n0vm1ny7a1fwg2b0jba92
+    access:
+      availability: public
+      method: form
+      url: https://rootly.com/demo
+    terms_url: https://rootly.com/startups
+    source_ids:
+      - src_b1e882a862616a5a0bac567462189ad58b8238c6b5b35b7036d05b859bde9fb3
