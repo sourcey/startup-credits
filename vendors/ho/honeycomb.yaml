@@ -55,7 +55,7 @@ offers:
         criterion_id: cri_requirement_01
         kind: manual
         reason: not-machine-evaluable
-        statement: Startup must be active in a recognized startup accelerator or VC-backed program and actively use or build with OpenTelemetry.
+        statement: Startup must be active in a recognized startup accelerator and actively use or build with OpenTelemetry.
     roles:
       terms_authority_entity_id: ent_01kz1hadm9g752n3ezhxvfj669
       access_operator_entity_id: ent_01kz1hadm9g752n3ezhxvfj669
