@@ -8,7 +8,7 @@ domains:
     role: primary
     valid_from: 2026-08-02T22:39:02.726Z
 category: hosting-infra
-description: Daytona provides secure, elastic infrastructure for running AI-generated code.
+description: Daytona provides fast, scalable, stateful infrastructure for AI agents.
 links:
   site: https://www.daytona.io
 sources:
@@ -51,7 +51,7 @@ offers:
         criterion_id: cri_01
         kind: manual
         reason: vendor-discretion
-        statement: Startup applicants submit company, funding, team, deck, story, and use-case details for Daytona review.
+        statement: Startup applicants submit Daytona's public application form for vendor review.
     roles:
       terms_authority_entity_id: ent_01kz2a2wj1kjbz8rnxmgrfyv61
       access_operator_entity_id: ent_01kz2a2wj1kjbz8rnxmgrfyv61
