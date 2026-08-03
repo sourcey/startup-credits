@@ -20,13 +20,15 @@ jobs:
           ref: ${{ github.event.pull_request.base.sha }}
           path: trusted
           persist-credentials: false
-      - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
-        with:
-          repository: ${{ github.event.pull_request.head.repo.full_name }}
-          ref: ${{ github.event.pull_request.head.sha }}
-          path: candidate
-          fetch-depth: 0
-          persist-credentials: false
+      - name: Fetch the exact candidate SHA as inert data
+        env:
+          CANDIDATE_ORIGIN: ${{ github.event.pull_request.head.repo.clone_url }}
+          HEAD_REVISION: ${{ github.event.pull_request.head.sha }}
+        run: |
+          git init candidate
+          git -C candidate remote add origin "$CANDIDATE_ORIGIN"
+          git -C candidate fetch --no-tags --depth=1 origin "$HEAD_REVISION"
+          git -C candidate checkout --detach "$HEAD_REVISION"
       - uses: actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444 # v5
         with:
           node-version: 22.12.0
