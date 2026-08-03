@@ -1,0 +1,63 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kz4wz8r27nkft76rhz8a8tg8
+slug: plivo
+slug_aliases: []
+name: Plivo
+domains:
+  - value: plivo.com
+    role: primary
+    valid_from: 2026-08-03T22:47:36Z
+category: communication
+description: Plivo is a communications platform offering voice, SMS, WhatsApp, and chat APIs plus AI agent tooling for building customer-facing communication products.
+links:
+  site: https://www.plivo.com/startups/
+sources:
+  - source_id: src_a0e3357d6f7b1da3f4e82973f17568da8c5e7e1b0e551a2696957ff43d90bfa1
+    url: https://www.plivo.com/startups/
+programs:
+  - program_id: prg_01kz4wz8r6q7b8dy1s21w829gt
+    program_slug: plivo-startup-credits-program
+    program_slug_aliases: []
+    title: Plivo Startup Credits Program
+    summary: Plivo offers startups backed by partner funds credits for voice, SMS, WhatsApp, and chat platform usage.
+    source_ids:
+      - src_a0e3357d6f7b1da3f4e82973f17568da8c5e7e1b0e551a2696957ff43d90bfa1
+offers:
+  - offer_id: off_01kz4wz8r6pee2qm5xctamjwth
+    program_id: prg_01kz4wz8r6q7b8dy1s21w829gt
+    offer_slug: plivo-startup-credits
+    offer_slug_aliases: []
+    title: Plivo credits for startups
+    summary: Startups backed by a Plivo partner fund can claim Plivo platform credits for voice, SMS, WhatsApp, and chat services.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-03T22:47:36Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_01
+          description: Plivo platform credits for voice, SMS, WhatsApp, and chat services
+          kind: free-service
+          service: Plivo platform credits
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            statement: Applicant must have a Plivo account to claim the credits
+            reason: external-verification
+          - criterion_id: cri_02
+            kind: manual
+            statement: Startup must be backed by a Plivo partner fund (e.g. Y Combinator, Techstars, Antler, Lightspeed, Initialized Capital, Boldstart Ventures, South Park Commons)
+            reason: external-verification
+    roles:
+      terms_authority_entity_id: ent_01kz4wz8r27nkft76rhz8a8tg8
+      access_operator_entity_id: ent_01kz4wz8r27nkft76rhz8a8tg8
+    access:
+      availability: public
+      method: form
+      url: https://www.plivo.com/startups/
+    source_ids:
+      - src_a0e3357d6f7b1da3f4e82973f17568da8c5e7e1b0e551a2696957ff43d90bfa1
