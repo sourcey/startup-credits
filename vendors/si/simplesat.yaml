@@ -88,7 +88,7 @@ offers:
       access_operator_entity_id: ent_01kz2jjg3qrnghektf4m83jmrq
     access:
       availability: public
-      method: form
+      method: contact
       url: https://www.simplesat.io/simplesat-for-startups
     terms_url: https://www.simplesat.io/simplesat-for-startups
     source_ids:
