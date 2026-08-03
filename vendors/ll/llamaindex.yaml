@@ -1,0 +1,106 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kz3vagvfpc2t5j4k4yrr01pz
+slug: llamaindex
+slug_aliases: []
+name: LlamaIndex
+domains:
+  - value: llamaindex.ai
+    role: primary
+    valid_from: 2026-08-03T13:20:00Z
+category: ai-ml
+description: LlamaIndex builds document parsing and agent frameworks for LLM applications, including the LlamaParse document processing platform and its open-source Python and TypeScript libraries.
+links:
+  site: https://www.llamaindex.ai
+  pricing: https://www.llamaindex.ai/pricing
+sources:
+  - source_id: src_d08a4f9ddbba27931d3832f9763ce6b94aba9226e79962fc04e38d0a7972d069
+    url: https://www.llamaindex.ai/startups
+programs:
+  - program_id: prg_01kz3vagvhb5307n3p6qx565n3
+    program_slug: llamaindex-startup-program
+    program_slug_aliases: []
+    title: LlamaIndex Startup Program
+    summary: LlamaIndex's startup program gives approved early-stage companies free platform credits, priority engineering support, and early access to pre-release LlamaParse features.
+    source_ids:
+      - src_d08a4f9ddbba27931d3832f9763ce6b94aba9226e79962fc04e38d0a7972d069
+offers:
+  - offer_id: off_01kz3vagvhh9c80zn8kzaj3wbq
+    program_id: prg_01kz3vagvhb5307n3p6qx565n3
+    offer_slug: startup-program-platform-credits
+    offer_slug_aliases: []
+    title: $2K in LlamaIndex platform credits for eligible startups
+    summary: Approved startups receive $2K in free LlamaIndex platform credits available for one year, a priority support Slack channel with a dedicated AI engineer, and early access to pre-release features.
+    description: LlamaIndex publishes the program on its startup page, which states the credits come with "No strings". Eligibility is limited to first-time customers that have raised at least $250k and less than $50M to date, and access is by application form.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-03T13:20:00Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_01
+          description: $2K in free LlamaIndex platform credits, available for one year
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 200000
+            kind: exact
+          duration:
+            kind: exact
+            value: P1Y
+        - benefit_id: ben_02
+          description: Priority support Slack channel with a dedicated AI engineer
+          kind: free-service
+          service: Priority support Slack channel with a dedicated AI engineer
+        - benefit_id: ben_03
+          description: Alignment call with LlamaIndex co-founder Jerry Liu and front-row seats at LlamaIndex community events
+          kind: free-service
+          service: Alignment call with LlamaIndex leadership and community event access
+        - benefit_id: ben_04
+          description: Discounts on bulk credit purchases in production; LlamaIndex does not publish the discount rate
+          kind: other
+        - benefit_id: ben_05
+          description: Exclusive access to pre-release features before they are available to the public
+          kind: other
+        - benefit_id: ben_06
+          description: Dedicated post on LlamaIndex social channels and newsletter
+          kind: other
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.is_current_customer
+            kind: predicate
+            operator: eq
+            statement: Applicant is a first-time LlamaIndex customer
+            value:
+              type: boolean
+              value: false
+          - criterion_id: cri_02
+            fact: company.funding_raised_usd
+            kind: predicate
+            operator: gte
+            statement: Applicant has raised at least $250,000 to date
+            value:
+              type: number
+              value: 250000
+          - criterion_id: cri_03
+            fact: company.funding_raised_usd
+            kind: predicate
+            operator: lt
+            statement: Applicant has raised less than $50,000,000
+            value:
+              type: number
+              value: 50000000
+    roles:
+      terms_authority_entity_id: ent_01kz3vagvfpc2t5j4k4yrr01pz
+      access_operator_entity_id: ent_01kz3vagvfpc2t5j4k4yrr01pz
+    access:
+      availability: public
+      instructions: Submit the "Apply now" application form on the LlamaIndex startup program page with company, funding, and product details.
+      method: form
+      url: https://www.llamaindex.ai/startups
+    source_ids:
+      - src_d08a4f9ddbba27931d3832f9763ce6b94aba9226e79962fc04e38d0a7972d069
