@@ -27,7 +27,7 @@ jobs:
         run: |
           git init candidate
           git -C candidate remote add origin "$CANDIDATE_ORIGIN"
-          git -C candidate fetch --no-tags --depth=1 origin "$HEAD_REVISION"
+          git -C candidate fetch --filter=blob:none --no-tags origin "$HEAD_REVISION"
           git -C candidate checkout --detach "$HEAD_REVISION"
       - uses: actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444 # v5
         with:
@@ -36,10 +36,19 @@ jobs:
         env:
           BASE_REVISION: ${{ github.event.pull_request.base.sha }}
         working-directory: candidate
-        run: git fetch --no-tags --depth=1 https://github.com/sourcey/startup-credits.git "$BASE_REVISION"
-      - name: Enforce the changed-path repository boundary
+        run: git fetch --filter=blob:none --no-tags https://github.com/sourcey/startup-credits.git "$BASE_REVISION"
+      - name: Resolve the pull request change base
+        id: revisions
         env:
           BASE_REVISION: ${{ github.event.pull_request.base.sha }}
+          HEAD_REVISION: ${{ github.event.pull_request.head.sha }}
+        working-directory: candidate
+        run: |
+          change_base="$(git merge-base "$BASE_REVISION" "$HEAD_REVISION")"
+          echo "base=$change_base" >> "$GITHUB_OUTPUT"
+      - name: Enforce the changed-path repository boundary
+        env:
+          BASE_REVISION: ${{ steps.revisions.outputs.base }}
           HEAD_REVISION: ${{ github.event.pull_request.head.sha }}
         working-directory: candidate
         run: |
@@ -76,7 +85,7 @@ jobs:
             -C "$RUNNER_TEMP/candidate-verifier"
       - name: Validate only the changed identity closure
         env:
-          BASE_REVISION: ${{ github.event.pull_request.base.sha }}
+          BASE_REVISION: ${{ steps.revisions.outputs.base }}
           HEAD_REVISION: ${{ github.event.pull_request.head.sha }}
         run: |
           node "$RUNNER_TEMP/candidate-verifier/sourcey-candidate-verifier.js" \
@@ -86,7 +95,7 @@ jobs:
             --head "$HEAD_REVISION"
       - name: Verify Developer Certificate of Origin sign-off
         env:
-          BASE_REVISION: ${{ github.event.pull_request.base.sha }}
+          BASE_REVISION: ${{ steps.revisions.outputs.base }}
           HEAD_REVISION: ${{ github.event.pull_request.head.sha }}
         working-directory: candidate
         run: |
