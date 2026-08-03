@@ -8,7 +8,7 @@ domains:
     role: primary
     valid_from: 2026-08-02T15:26:15.177Z
 category: observability
-description: Observability platform for exploring production telemetry, debugging distributed systems, and analyzing application behavior.
+description: Observability platform for software engineering teams.
 links:
   site: https://www.honeycomb.io
 sources:
@@ -48,8 +48,7 @@ offers:
           description: Honeycomb swag
           kind: other
       consideration:
-        kind: unknown
-        description: The public program page does not establish separate consideration.
+        kind: none
     eligibility:
       rule:
         criterion_id: cri_requirement_01
