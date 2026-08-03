@@ -1,0 +1,90 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kz2grfzs6zg4fswzshmvh8cn
+slug: featureos
+slug_aliases: []
+name: FeatureOS
+domains:
+  - value: featureos.com
+    role: primary
+    valid_from: 2026-04-13T00:00:00Z
+category: productivity
+description: Product feedback, roadmap, changelog, and knowledge-base software for product teams.
+links:
+  site: https://featureos.com
+sources:
+  - source_id: src_c3d1fa4a4b0ccabc849942952bf4b009747eee9f05849908290cdaf4a092c047
+    url: https://featureos.com/startups
+  - source_id: src_bfcb729e2318a10a3f5a8ad6d92855b07c85701bd85799e30c25ad4cee14d442
+    url: https://featureos.com/support
+programs:
+  - program_id: prg_01kz2grfztqpqwznx6z9t2mttj
+    program_slug: featureos-startup-program
+    program_slug_aliases: []
+    title: FeatureOS Startup Program
+    summary: FeatureOS gives qualifying early-stage startups six months of its Starter plan at no cost.
+    source_ids:
+      - src_c3d1fa4a4b0ccabc849942952bf4b009747eee9f05849908290cdaf4a092c047
+offers:
+  - offer_id: off_01kz2grfzt0y7tta49s70906zc
+    program_id: prg_01kz2grfztqpqwznx6z9t2mttj
+    offer_slug: six-months-free-starter
+    offer_slug_aliases: []
+    title: Six months free on FeatureOS Starter
+    summary: Eligible startups receive the full FeatureOS Starter plan, valued by FeatureOS at $60 per month, free for six months.
+    lifecycle:
+      status: active
+      effective_from: 2026-04-13T00:00:00Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_01
+          description: Six months of the FeatureOS Starter plan at no cost
+          kind: free-service
+          service: FeatureOS Starter plan
+          duration:
+            kind: exact
+            value: P6M
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.age_months
+            kind: predicate
+            operator: lt
+            statement: Company was founded or began operating less than 24 months ago
+            value:
+              type: number
+              value: 24
+          - criterion_id: cri_02
+            fact: company.employee_count
+            kind: predicate
+            operator: lt
+            statement: Company has fewer than 15 employees, including full-time, part-time, and contractors
+            value:
+              type: number
+              value: 15
+          - criterion_id: cri_03
+            fact: company.funding_raised_usd
+            kind: predicate
+            operator: lt
+            statement: Company has raised less than $1 million across all funding rounds
+            value:
+              type: number
+              value: 1000000
+          - criterion_id: cri_04
+            kind: manual
+            statement: Applicant is not currently on a paid FeatureOS plan; free-plan users may apply
+            reason: external-verification
+    roles:
+      terms_authority_entity_id: ent_01kz2grfzs6zg4fswzshmvh8cn
+      access_operator_entity_id: ent_01kz2grfzs6zg4fswzshmvh8cn
+    access:
+      availability: public
+      method: form
+      url: https://portal.featureos.app/new?utm_medium=startups_hero&utm_source=featureos_website
+    terms_url: https://featureos.com/startups
+    source_ids:
+      - src_c3d1fa4a4b0ccabc849942952bf4b009747eee9f05849908290cdaf4a092c047
+      - src_bfcb729e2318a10a3f5a8ad6d92855b07c85701bd85799e30c25ad4cee14d442
