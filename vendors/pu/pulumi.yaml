@@ -8,7 +8,7 @@ domains:
     role: primary
     valid_from: 2026-08-02T15:16:42.695Z
 category: infra
-description: Infrastructure as code and cloud infrastructure management platform supporting general-purpose programming languages and multiple cloud providers.
+description: Infrastructure as code platform for defining, deploying, and managing cloud resources with familiar programming languages.
 links:
   site: https://www.pulumi.com
 sources:
@@ -49,8 +49,7 @@ offers:
           description: Exclusive office hours, workshops, and events
           kind: other
       consideration:
-        kind: unknown
-        description: The public program page does not establish separate consideration.
+        kind: none
     eligibility:
       rule:
         criterion_id: cri_requirement_01
