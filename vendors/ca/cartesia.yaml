@@ -25,17 +25,17 @@ programs:
 offers:
   - offer_id: off_01kz1mc896ght5a16087hbbkv8
     program_id: prg_01kz1mc896bvvhc06ftj9hwh0d
-    offer_slug: cartesia-startups-grant
-    offer_slug_aliases: []
-    title: Cartesia Startups Grant
+    offer_slug: twelve-months-free-full-voice-ai-stack
+    offer_slug_aliases:
+      - cartesia-startups-grant
+    title: 12 months free on the full Cartesia voice AI stack
     summary: "12 months free on the full Cartesia voice AI stack: 8M Sonic & Ink credits/month, $300/month agent credits, 2x rollover, higher concurrency; over $8,000 in total value."
     lifecycle:
       status: active
       effective_from: 2026-08-02T16:00:00.000Z
     economics:
       consideration:
-        kind: unknown
-        description: The source record did not establish separate consideration.
+        kind: none
       benefits:
         - benefit_id: ben_primary
           description: 12 months free on the full Cartesia stack, including 8M Sonic & Ink credits per month plus $300/month in agent credits, with 2x credit rollover and high concurrency limits; advertised as over $8,000 in total value
