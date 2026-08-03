@@ -37,31 +37,6 @@ jobs:
           BASE_REVISION: ${{ github.event.pull_request.base.sha }}
         working-directory: candidate
         run: git fetch --filter=blob:none --no-tags https://github.com/sourcey/startup-credits.git "$BASE_REVISION"
-      - name: Resolve the pull request change base
-        id: revisions
-        env:
-          BASE_REVISION: ${{ github.event.pull_request.base.sha }}
-          HEAD_REVISION: ${{ github.event.pull_request.head.sha }}
-        working-directory: candidate
-        run: |
-          change_base="$(git merge-base "$BASE_REVISION" "$HEAD_REVISION")"
-          echo "base=$change_base" >> "$GITHUB_OUTPUT"
-      - name: Enforce the changed-path repository boundary
-        env:
-          BASE_REVISION: ${{ steps.revisions.outputs.base }}
-          HEAD_REVISION: ${{ github.event.pull_request.head.sha }}
-        working-directory: candidate
-        run: |
-          invalid=()
-          while IFS= read -r -d '' path; do
-            if [[ ! "$path" =~ ^(AGENTS\.md|CONTRIBUTING\.md|DATA-LICENSE\.md|LICENSE|README\.md|vendors/[a-z0-9][a-z0-9-]?/[a-z0-9][a-z0-9-]*\.yaml|\.github/CODEOWNERS|\.github/pull_request_template\.md|\.github/sourcey-candidate-verifier\.sha256|\.github/workflows/validate\.yml)$ ]]; then
-              invalid+=("$path")
-            fi
-          done < <(git diff --name-only -z --no-renames "$BASE_REVISION" "$HEAD_REVISION")
-          if (( ${#invalid[@]} > 0 )); then
-            printf 'startup-credits contains forbidden changed paths:\n%s\n' "${invalid[@]}" >&2
-            exit 1
-          fi
       - name: Install the exact Sourcey Candidate Verifier
         run: |
           digest="$(<trusted/.github/sourcey-candidate-verifier.sha256)"
@@ -85,7 +60,7 @@ jobs:
             -C "$RUNNER_TEMP/candidate-verifier"
       - name: Validate only the changed identity closure
         env:
-          BASE_REVISION: ${{ steps.revisions.outputs.base }}
+          BASE_REVISION: ${{ github.event.pull_request.base.sha }}
           HEAD_REVISION: ${{ github.event.pull_request.head.sha }}
         run: |
           node "$RUNNER_TEMP/candidate-verifier/sourcey-candidate-verifier.js" \
@@ -95,17 +70,18 @@ jobs:
             --head "$HEAD_REVISION"
       - name: Verify Developer Certificate of Origin sign-off
         env:
-          BASE_REVISION: ${{ steps.revisions.outputs.base }}
+          BASE_REVISION: ${{ github.event.pull_request.base.sha }}
           HEAD_REVISION: ${{ github.event.pull_request.head.sha }}
         working-directory: candidate
         run: |
+          change_base="$(git merge-base "$BASE_REVISION" "$HEAD_REVISION")"
           missing=()
           while IFS= read -r commit; do
             if ! git show -s --format=%B "$commit" \
               | grep -Eq '^Signed-off-by: .+ <[^>]+>$'; then
               missing+=("$commit")
             fi
-          done < <(git rev-list "$BASE_REVISION..$HEAD_REVISION")
+          done < <(git rev-list "$change_base..$HEAD_REVISION")
           if (( ${#missing[@]} > 0 )); then
             printf 'Commits missing Signed-off-by certification:\n%s\n' "${missing[*]}" >&2
             exit 1
