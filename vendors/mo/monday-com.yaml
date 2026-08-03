@@ -1,0 +1,58 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kz3h34g83qrsz0qkk2mn9ptp
+slug: monday-com
+slug_aliases: []
+name: monday.com
+domains:
+  - value: monday.com
+    role: primary
+    valid_from: 2026-08-03T09:40:00.000Z
+category: productivity
+description: Work operating system offering project management, workflow automation, and development platform products.
+links:
+  site: https://monday.com
+sources:
+  - source_id: src_b4347c20caf049cc3a3769cac39d8d720a1ea38b3accd2a6f3587d6f382d22b3
+    url: https://monday.com/l/miscellaneous/startup/
+programs:
+  - program_id: prg_01kz3h34g83qrsz0qkk2mn9ptp
+    program_slug: monday-dev-startup-program
+    program_slug_aliases: []
+    title: monday dev Startup Program
+    summary: The monday dev Startup Program lets eligible startups purchase a one-year 10-seat monday dev Pro plan for a one-off payment.
+    source_ids:
+      - src_b4347c20caf049cc3a3769cac39d8d720a1ea38b3accd2a6f3587d6f382d22b3
+offers:
+  - offer_id: off_01kz3h34g83qrsz0qkk2mn9ptp
+    program_id: prg_01kz3h34g83qrsz0qkk2mn9ptp
+    offer_slug: one-year-10-seat-monday-dev-pro-for-240-usd
+    offer_slug_aliases: []
+    title: One-year 10-seat monday dev Pro plan for a one-off $240
+    summary: Eligible startups can purchase a one-year subscription to the 10-seat monday dev Pro plan at a one-off payment of $240 USD.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-03T09:40:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_primary
+          description: One-year subscription to the monday dev Pro plan for 10 seats
+          kind: other
+      consideration:
+        kind: variable
+        description: One-off payment of $240 USD, exclusive of taxes, levies, or duties.
+    eligibility:
+      rule:
+        criterion_id: cri_requirement_01
+        kind: manual
+        reason: not-machine-evaluable
+        statement: Organizations with up to 50 employees, formed or established within the last two years, supported by a venture capital firm, startup accelerator, or incubator, and not currently paying monday.com customers.
+    roles:
+      terms_authority_entity_id: ent_01kz3h34g83qrsz0qkk2mn9ptp
+      access_operator_entity_id: ent_01kz3h34g83qrsz0qkk2mn9ptp
+    access:
+      availability: public
+      method: form
+      url: https://monday.com/l/miscellaneous/startup/
+    terms_url: https://monday.com/l/miscellaneous/startup/
+    source_ids:
+      - src_b4347c20caf049cc3a3769cac39d8d720a1ea38b3accd2a6f3587d6f382d22b3
