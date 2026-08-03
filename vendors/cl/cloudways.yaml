@@ -1,0 +1,77 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kz4xsd0me2nx4f45qyvkz9sg
+slug: cloudways
+slug_aliases: []
+name: Cloudways
+domains:
+  - value: cloudways.com
+    role: primary
+    valid_from: 2026-08-04T00:00:00Z
+category: hosting-infra
+description: Cloudways provides managed cloud hosting with application deployment, infrastructure management, support, monitoring, and scaling tools.
+links:
+  site: https://www.cloudways.com
+sources:
+  - source_id: src_729cc0bdc3330ff674a347af66848f998f77e85b2699743290a5a287da4bf9d1
+    url: https://www.cloudways.com/en/startup-program.php
+programs:
+  - program_id: prg_01kz4xsd0n5fkqb3trc9g9qq1w
+    program_slug: cloudways-startup-program
+    program_slug_aliases: []
+    title: Cloudways Startup Program
+    summary: A tiered program for startups at launch and growth stages, combining Cloudways platform credits and discounts with support, mentorship, training, and co-marketing.
+    source_ids:
+      - src_729cc0bdc3330ff674a347af66848f998f77e85b2699743290a5a287da4bf9d1
+offers:
+  - offer_id: off_01kz4xsd0n9zcv3s30hprewb2t
+    program_id: prg_01kz4xsd0n5fkqb3trc9g9qq1w
+    offer_slug: startup-program-benefits
+    offer_slug_aliases: []
+    title: Cloudways Startup Program Benefits
+    summary: Approved startups receive tier-dependent Cloudways credits of up to $50,000, invoice discounts, priority support, mentorship, technical training, and co-marketing opportunities.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-04T00:00:00Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Tier-dependent Cloudways platform credits of up to $50,000.
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 5000000
+            kind: up-to
+        - benefit_id: ben_02
+          description: A tier-dependent discount is deducted from each Cloudways invoice and applied against the allocated platform credits.
+          kind: other
+        - benefit_id: ben_03
+          description: Priority technical support, startup mentorship, technical training, and co-marketing opportunities.
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: vendor-discretion
+            statement: Cloudways reviews each application and assigns benefits according to the applicant's startup stage and selected program tier.
+          - criterion_id: cri_02
+            kind: manual
+            reason: external-verification
+            statement: Applicants must be Cloudways platform users, but do not need to be paying customers; bootstrapped startups may apply.
+          - criterion_id: cri_03
+            kind: manual
+            reason: external-verification
+            statement: Applicants cannot use the Startup Program together with another Cloudways promotion or offer unless Cloudways agrees otherwise.
+    roles:
+      terms_authority_entity_id: ent_01kz4xsd0me2nx4f45qyvkz9sg
+      access_operator_entity_id: ent_01kz4xsd0me2nx4f45qyvkz9sg
+    access:
+      availability: public
+      method: form
+      url: https://www.cloudways.com/en/startup-program.php
+    source_ids:
+      - src_729cc0bdc3330ff674a347af66848f998f77e85b2699743290a5a287da4bf9d1
