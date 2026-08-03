@@ -1,0 +1,68 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kz4e6ea0ae0jznrhwhe6wyr0
+slug: anyscale
+slug_aliases: []
+name: Anyscale
+domains:
+  - value: anyscale.com
+    role: primary
+    valid_from: 2026-08-04T00:00:00Z
+category: ai-ml
+description: Anyscale is the AI compute platform powered by Ray, used to run and scale production ML and LLM workloads on any cloud.
+links:
+  site: https://www.anyscale.com
+sources:
+  - source_id: src_e89b015d0ae5f3287ed5b45e1138c3e1fa1633a9fa134b18769a695385ffd195
+    url: https://www.anyscale.com/startups
+  - source_id: src_ae45e28dff0fa77a9c1ba8d96bed7d35cec2c491d8d5b3002a015dd9f956955c
+    url: https://www.anyscale.com/pricing
+programs:
+  - program_id: prg_01kz4e6ea2ypp3m0tpmsetx48z
+    program_slug: anyscale-startup-program
+    program_slug_aliases: []
+    title: Anyscale Startup Program
+    summary: Anyscale publishes a Startups page describing its program for early-stage teams building with Ray and the Anyscale platform, with a $100 onboarding credit referenced from the platform pricing surface.
+    source_ids:
+      - src_e89b015d0ae5f3287ed5b45e1138c3e1fa1633a9fa134b18769a695385ffd195
+      - src_ae45e28dff0fa77a9c1ba8d96bed7d35cec2c491d8d5b3002a015dd9f956955c
+offers:
+  - offer_id: off_01kz4e6ea2kxv1x2kkep5pnpr7
+    program_id: prg_01kz4e6ea2ypp3m0tpmsetx48z
+    offer_slug: anyscale-startup-onboarding-credit
+    offer_slug_aliases: []
+    title: $100 Anyscale onboarding credit for startups
+    summary: Anyscale advertises a $100 Get Started credit to qualifying teams creating a new Anyscale account through the platform's Startups page, applied to Anyscale compute charges.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-04T00:00:00Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_01
+          description: $100 credit applied to Anyscale compute charges for a new qualifying account
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 10000
+            kind: exact
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            statement: Applicant creates a new Anyscale account through the Startups sign-up flow and is approved by Anyscale
+            reason: external-verification
+    roles:
+      terms_authority_entity_id: ent_01kz4e6ea0ae0jznrhwhe6wyr0
+      access_operator_entity_id: ent_01kz4e6ea0ae0jznrhwhe6wyr0
+    access:
+      availability: public
+      method: form
+      url: https://authkit.anyscale.com/
+    terms_url: https://www.anyscale.com/startups
+    source_ids:
+      - src_e89b015d0ae5f3287ed5b45e1138c3e1fa1633a9fa134b18769a695385ffd195
+      - src_ae45e28dff0fa77a9c1ba8d96bed7d35cec2c491d8d5b3002a015dd9f956955c
