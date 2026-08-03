@@ -7,7 +7,7 @@ domains:
   - value: kiro.dev
     role: primary
     valid_from: 2026-08-03T01:53:44Z
-category: code
+category: devtools-other
 description: Kiro is an AI development environment for turning product requirements into specifications, code, tests, documentation, and reviews.
 links:
   site: https://kiro.dev
