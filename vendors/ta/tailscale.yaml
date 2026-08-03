@@ -1,0 +1,65 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kz1ghbndzyjy5wgaq0043m1p
+slug: tailscale
+slug_aliases: []
+name: Tailscale
+domains:
+  - value: tailscale.com
+    role: primary
+    valid_from: 2026-08-02T15:12:33.965Z
+category: security
+description: Secure networking software for connecting resources securely across clouds.
+links:
+  site: https://tailscale.com
+sources:
+  - source_id: src_327dc5446dab556a796c046575bc5a1c7505d29f407a22adc694211e055aa958
+    url: https://tailscale.com/startup-program
+programs:
+  - program_id: prg_01kz1ghbnd6at0q0aynyxqp1jb
+    program_slug: tailscale-for-startups
+    program_slug_aliases: []
+    title: Tailscale for Startups
+    summary: Tailscale's startup program provides accepted early-stage companies with a free Business plan for one year.
+    source_ids:
+      - src_327dc5446dab556a796c046575bc5a1c7505d29f407a22adc694211e055aa958
+offers:
+  - offer_id: off_01kz1ghbnd76qgjc5h66bjy0a2
+    program_id: prg_01kz1ghbnd6at0q0aynyxqp1jb
+    offer_slug: free-business-plan-for-one-year-up-to-30-users
+    offer_slug_aliases: []
+    title: Free Tailscale Business plan for one year for up to 30 users
+    summary: Accepted startups receive a Tailscale Business plan at no cost for one year for up to 30 users.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-02T15:12:33.965Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: One year of a Tailscale Business plan at no cost for up to 30 users
+          duration:
+            kind: exact
+            value: P1Y
+          kind: free-service
+          service: Tailscale Business plan for up to 30 users
+        - benefit_id: ben_02
+          description: Priority support during the startup program
+          kind: other
+      consideration:
+        description: Accepted startups agree to provide logo rights, participate in a case study, and participate in research.
+        kind: variable
+    eligibility:
+      rule:
+        criterion_id: cri_requirement_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Tailscale reviews applications individually. Public criteria require a first-time customer, a live company domain and matching work email, and a product-focused software or hardware startup. Companies with fewer than 25 employees are prioritized, one-off exceptions are possible, and the program is not intended for companies with over 50 employees. Service businesses, retail, and ecommerce companies are not eligible.
+    roles:
+      terms_authority_entity_id: ent_01kz1ghbndzyjy5wgaq0043m1p
+      access_operator_entity_id: ent_01kz1ghbndzyjy5wgaq0043m1p
+    access:
+      availability: public
+      method: form
+      url: https://tailscale.com/startup-program
+    terms_url: https://tailscale.com/startup-program
+    source_ids:
+      - src_327dc5446dab556a796c046575bc5a1c7505d29f407a22adc694211e055aa958
