@@ -1,0 +1,71 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kz4yvf7nvrd36xvyvreb06st
+slug: paypal
+slug_aliases: []
+name: PayPal
+domains:
+  - value: paypal.com
+    role: primary
+    valid_from: 2026-08-04T00:00:00Z
+category: payments-fintech
+description: PayPal is a digital payments platform offering online checkout, credit card processing, and business payment services for merchants worldwide.
+links:
+  site: https://www.paypal.com/us/business/startups
+sources:
+  - source_id: src_598fd72040ea5acd80e6087a07a920685bba049f94a0d79118c0fe5ef71de452
+    url: https://www.paypal.com/us/business/startups
+programs:
+  - program_id: prg_01kz4yvf7tv2gc3je1w3mvtx8c
+    program_slug: paypal-for-startups
+    program_slug_aliases: []
+    title: PayPal for Startups
+    summary: PayPal for Startups offers qualified VC-backed startups a waiver of PayPal Checkout and domestic processing fees for the first 12 months.
+    source_ids:
+      - src_598fd72040ea5acd80e6087a07a920685bba049f94a0d79118c0fe5ef71de452
+offers:
+  - offer_id: off_01kz4yvf7tr1kn2zmr4eq9m072
+    program_id: prg_01kz4yvf7tv2gc3je1w3mvtx8c
+    offer_slug: paypal-startup-fee-waiver
+    offer_slug_aliases: []
+    title: PayPal Startup Fee Waiver
+    summary: Qualified US startups backed by venture capital can get PayPal Checkout and domestic credit card processing fees waived for their first 12 months.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-04T00:00:00Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_01
+          kind: waiver
+          waived_item: PayPal Checkout and domestic PayPal Credit Card Processing fees
+          description: Waiver of PayPal Checkout and domestic PayPal Credit Card Processing fees for 12 months from the first live transaction
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            statement: Applicant must be a US resident aged 18 or older with a US PayPal business account in good standing
+            reason: external-verification
+          - criterion_id: cri_02
+            kind: manual
+            statement: Applicant's startup must be venture capital backed at seed or Series A stage
+            reason: external-verification
+          - criterion_id: cri_03
+            kind: manual
+            statement: Applicant must be a new PayPal customer who has not used PayPal Checkout or PayPal Credit Card processing before
+            reason: external-verification
+          - criterion_id: cri_04
+            kind: manual
+            statement: Applicant must add PayPal Checkout to their website or app and process at least one live transaction within 6 months of accepting the offer
+            reason: external-verification
+    roles:
+      terms_authority_entity_id: ent_01kz4yvf7nvrd36xvyvreb06st
+      access_operator_entity_id: ent_01kz4yvf7nvrd36xvyvreb06st
+    access:
+      availability: public
+      method: form
+      url: https://www.paypal.com/us/business/startups
+    source_ids:
+      - src_598fd72040ea5acd80e6087a07a920685bba049f94a0d79118c0fe5ef71de452
