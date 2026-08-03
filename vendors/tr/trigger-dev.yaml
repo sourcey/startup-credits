@@ -8,7 +8,7 @@ domains:
     role: primary
     valid_from: 2026-08-03T03:13:46Z
 category: devtools-other
-description: Trigger.dev is an open-source platform for building durable AI agents and long-running workflows with TypeScript.
+description: Trigger.dev helps teams build durable AI agents and long-running workflows with TypeScript.
 links:
   site: https://trigger.dev
 sources:
@@ -20,7 +20,7 @@ offers:
     offer_slug: current-yc-batch-credits
     offer_slug_aliases: []
     title: $10,000 in credits for the current YC batch
-    summary: Companies in the current Y Combinator batch receive $10,000 in Trigger.dev credits for 12 months, a dedicated Slack channel, technical support, and an optional customer story.
+    summary: Companies in the current Y Combinator batch receive $10,000 in Trigger.dev credits for 12 months, a dedicated Slack channel, technical support, and a customer story feature.
     lifecycle:
       status: active
       effective_from: 2026-08-03T03:13:46Z
@@ -46,7 +46,7 @@ offers:
           description: Hands-on evaluation, setup, and technical support
           kind: other
         - benefit_id: ben_04
-          description: Optional feature as a customer story on the Trigger.dev website
+          description: Featured as a customer story on the Trigger.dev website
           kind: other
     eligibility:
       rule:
@@ -63,16 +63,17 @@ offers:
       access_operator_entity_id: ent_01kz2ssxy6nvs40rhybfcrbck4
     access:
       availability: membership
-      instructions: Submit a work email and YC verification link.
+      instructions: Submit a work email, company name, and YC verification link.
       method: form
       url: https://trigger.dev/yc
+    terms_url: https://trigger.dev/yc
     source_ids:
       - src_1255bb72695ce4619536142379251a6a9dff342aa7908373eeabbe5b631373c2
   - offer_id: off_01kz2ssxy9zcbkrmvmyrtx3nsv
     offer_slug: yc-alumni-credits
     offer_slug_aliases: []
     title: $5,000 in credits for YC alumni
-    summary: Y Combinator alumni companies receive $5,000 in Trigger.dev credits for 12 months, a dedicated Slack channel, technical support, and an optional customer story.
+    summary: Y Combinator alumni companies receive $5,000 in Trigger.dev credits for 12 months.
     lifecycle:
       status: active
       effective_from: 2026-08-03T03:13:46Z
@@ -91,15 +92,6 @@ offers:
           duration:
             kind: exact
             value: P1Y
-        - benefit_id: ben_02
-          description: Dedicated Slack channel with the founders and engineering team
-          kind: other
-        - benefit_id: ben_03
-          description: Hands-on evaluation, setup, and technical support
-          kind: other
-        - benefit_id: ben_04
-          description: Optional feature as a customer story on the Trigger.dev website
-          kind: other
     eligibility:
       rule:
         criterion_id: cri_01
@@ -115,8 +107,9 @@ offers:
       access_operator_entity_id: ent_01kz2ssxy6nvs40rhybfcrbck4
     access:
       availability: membership
-      instructions: Submit a work email and YC verification link.
+      instructions: Submit a work email, company name, and YC verification link.
       method: form
       url: https://trigger.dev/yc
+    terms_url: https://trigger.dev/yc
     source_ids:
       - src_1255bb72695ce4619536142379251a6a9dff342aa7908373eeabbe5b631373c2
