@@ -1,0 +1,58 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kz347dmfeg8czpkkhd727p33
+slug: cohere
+slug_aliases: []
+name: Cohere
+domains:
+  - value: cohere.com
+    role: primary
+    valid_from: 2026-08-03T06:15:54Z
+category: ai-ml
+description: Cohere develops language models and an API platform for enterprise and research applications.
+links:
+  site: https://cohere.com
+sources:
+  - source_id: src_42e4aebe93458e465c610cbcb5fc6aea41719f944c951510256716d9203bfe91
+    url: https://cohere.com/research/grants
+programs:
+  - program_id: prg_01kz347dmny3paacegy2xk3619
+    program_slug: catalyst-grant-program
+    program_slug_aliases: []
+    title: Cohere Labs Catalyst Grant Program
+    summary: Cohere Labs provides API access and compute credits to academic, civic, and public-impact projects advancing public benefit or open science.
+    source_ids:
+      - src_42e4aebe93458e465c610cbcb5fc6aea41719f944c951510256716d9203bfe91
+offers:
+  - offer_id: off_01kz347dmn8v8aha1hsf2zsbjn
+    program_id: prg_01kz347dmny3paacegy2xk3619
+    offer_slug: catalyst-grant-api-compute-credits
+    offer_slug_aliases: []
+    title: Cohere API compute credits through Catalyst Grants
+    summary: Academic partners and civic or public-impact organizations can apply on a rolling basis for Cohere API compute credits for public-benefit or open-science projects.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-03T06:15:54Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The public grant page does not state separate monetary consideration.
+      benefits:
+        - benefit_id: ben_01
+          description: Cohere API compute credits applied to usage under a Production API key
+          kind: other
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: external-verification
+        statement: Applicants must be academic partners, civic organizations, or public-impact organizations proposing work for public benefit or open science; supported areas include education, healthcare, climate, sustainability, safety, multilingual AI, and related research.
+    roles:
+      terms_authority_entity_id: ent_01kz347dmfeg8czpkkhd727p33
+      access_operator_entity_id: ent_01kz347dmfeg8czpkkhd727p33
+    access:
+      availability: public
+      method: form
+      url: https://cohere.com/research/grants/application
+      instructions: Submit the Catalyst Grant Program application; applications are considered on a rolling basis.
+    source_ids:
+      - src_42e4aebe93458e465c610cbcb5fc6aea41719f944c951510256716d9203bfe91
