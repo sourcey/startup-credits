@@ -1,0 +1,79 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_jvrd6fz36szqng54b64fewejr7
+slug: fivetran
+slug_aliases: []
+name: Fivetran
+domains:
+  - value: fivetran.com
+    role: primary
+    valid_from: 2026-08-03T00:25:44.000Z
+category: data-analytics
+description: Fivetran is an automated data movement platform that centralizes data from various sources so teams can deliver better insights, faster.
+links:
+  site: https://www.fivetran.com
+  pricing: https://www.fivetran.com/pricing
+sources:
+  - source_id: src_8e222e3f70d575b4b01e8c8fecfe850564c0f57fca5ed79349e62593ada20bea
+    url: https://www.fivetran.com
+  - source_id: src_415db05dd4fa8014e7bd5e09be585b7c83b3f5661709e79750c690f98483b1ea
+    url: https://www.fivetran.com/pricing/startups
+programs: []
+offers:
+  - offer_id: off_krpp4xxf85s9p1akxn6ncarkbr
+    offer_slug: fivetran-startup-program
+    offer_slug_aliases: []
+    title: Fivetran Startup Program
+    summary: Y Combinator companies with 50 or fewer employees that are not a current or former Fivetran customer can receive $50,000 in free Standard plan usage over 12 months, plus technical support and onboarding resources.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-03T00:25:44.000Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_01
+          description: $50,000 in free usage on the Fivetran Standard plan, available over 12 months.
+          kind: credit
+          value:
+            kind: exact
+            amount:
+              currency: USD
+              minor_units: 5000000
+          duration:
+            kind: exact
+            value: P12M
+        - benefit_id: ben_02
+          description: Complimentary access to Fivetran's technical support team throughout the program.
+          kind: other
+        - benefit_id: ben_03
+          description: Set-up guides and live workshops to help get up and running quickly.
+          kind: other
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - kind: predicate
+            criterion_id: cri_01
+            fact: company.employee_count
+            operator: lte
+            statement: Has 50 or fewer employees.
+            value:
+              type: number
+              value: 50
+          - kind: manual
+            criterion_id: cri_02
+            statement: Enrolled in any Y Combinator batch.
+            reason: external-verification
+          - kind: manual
+            criterion_id: cri_03
+            statement: Not a current or former Fivetran customer.
+            reason: external-verification
+    roles:
+      terms_authority_entity_id: ent_jvrd6fz36szqng54b64fewejr7
+      access_operator_entity_id: ent_jvrd6fz36szqng54b64fewejr7
+    access:
+      availability: public
+      method: form
+      url: https://www.fivetran.com/pricing/startups
+    source_ids:
+      - src_415db05dd4fa8014e7bd5e09be585b7c83b3f5661709e79750c690f98483b1ea
