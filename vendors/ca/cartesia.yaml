@@ -35,7 +35,8 @@ offers:
       effective_from: 2026-08-02T16:00:00.000Z
     economics:
       consideration:
-        kind: none
+        kind: variable
+        description: Company permits Cartesia to use its name and logo to publicly identify it as a program participant and customer, and agrees to post about the grant on social media accounts if Cartesia requests it.
       benefits:
         - benefit_id: ben_primary
           description: 12 months free on the full Cartesia stack, including 8M Sonic & Ink credits per month plus $300/month in agent credits, with 2x credit rollover and high concurrency limits; advertised as over $8,000 in total value
