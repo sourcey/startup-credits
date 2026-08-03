@@ -1,0 +1,82 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kz3zks4jag4trh8y6fdsx0md
+slug: runware
+slug_aliases: []
+name: Runware
+domains:
+  - value: runware.ai
+    role: primary
+    valid_from: 2026-08-03T14:14:30Z
+category: ai-ml
+description: Runware provides a unified inference API for image, video, audio, language, 3D, and vision models on managed infrastructure.
+links:
+  site: https://runware.ai
+sources:
+  - source_id: src_40900b19a3a69289ca9143843e530ae04f703fdff5365f65872b46e8bed73087
+    url: https://runware.ai/grant-program
+programs:
+  - program_id: prg_01kz3zks4kqpqmns0w4204j3mg
+    program_slug: runware-grant-program
+    program_slug_aliases: []
+    title: Runware Grant Program
+    summary: Runware gives eligible early-stage generative AI startups API credits and direct access to its team and builder community.
+    source_ids:
+      - src_40900b19a3a69289ca9143843e530ae04f703fdff5365f65872b46e8bed73087
+offers:
+  - offer_id: off_01kz3zks4k4s92rgkypqty53jj
+    program_id: prg_01kz3zks4kqpqmns0w4204j3mg
+    offer_slug: up-to-30000-runware-api-credits
+    offer_slug_aliases: []
+    title: Up to $30,000 in Runware API credits
+    summary: Eligible early-stage startups can receive up to $30,000 in Runware API credits for 12 months, plus direct access to the Runware team and builder community.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-03T14:14:30Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_01
+          description: Up to $30,000 USD in Runware API credits
+          duration:
+            kind: exact
+            value: P12M
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 3000000
+            kind: up-to
+        - benefit_id: ben_02
+          description: Direct access to the Runware team and builder community channels
+          kind: other
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            statement: Applicant must have a real product or credible MVP with a genuine need for generative AI at its core
+            reason: not-machine-evaluable
+          - criterion_id: cri_02
+            kind: manual
+            statement: Applicant must be an early-stage startup before Series A; bootstrapped teams are welcome
+            reason: not-machine-evaluable
+          - criterion_id: cri_03
+            kind: manual
+            statement: Applicant must be building or launching on Runware within the next six months
+            reason: not-machine-evaluable
+          - criterion_id: cri_04
+            kind: manual
+            statement: Applicant must be reachable at a business email tied to the product or company and commit to actively building with Runware once accepted
+            reason: external-verification
+    roles:
+      terms_authority_entity_id: ent_01kz3zks4jag4trh8y6fdsx0md
+      access_operator_entity_id: ent_01kz3zks4jag4trh8y6fdsx0md
+    access:
+      availability: public
+      method: form
+      url: https://runware.ai/grant-program
+    terms_url: https://runware.ai/grant-program
+    source_ids:
+      - src_40900b19a3a69289ca9143843e530ae04f703fdff5365f65872b46e8bed73087
