@@ -1,0 +1,95 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kz2jjg3qrnghektf4m83jmrq
+slug: simplesat
+slug_aliases: []
+name: Simplesat
+domains:
+  - value: simplesat.io
+    role: primary
+    valid_from: 2026-08-03T01:08:18Z
+category: support
+description: Customer feedback software for creating surveys, measuring satisfaction, and reporting customer experience insights.
+links:
+  site: https://www.simplesat.io
+sources:
+  - source_id: src_881e6b7af294f47b336e15dc1bb9552de60c90fb491df0272d1a821d4a92e703
+    url: https://www.simplesat.io/simplesat-for-startups
+programs:
+  - program_id: prg_01kz2jjg3vf0mjy8mb4sseegnf
+    program_slug: simplesat-for-startups
+    program_slug_aliases: []
+    title: Simplesat for Startups
+    summary: Simplesat gives qualifying early-stage technology startups six months of its Standard plan at no cost.
+    source_ids:
+      - src_881e6b7af294f47b336e15dc1bb9552de60c90fb491df0272d1a821d4a92e703
+offers:
+  - offer_id: off_01kz2jjg3vk9q3amty4x9cqe9z
+    program_id: prg_01kz2jjg3vf0mjy8mb4sseegnf
+    offer_slug: six-months-free-standard
+    offer_slug_aliases: []
+    title: Six months free on Simplesat Standard
+    summary: Eligible startups receive all features of the Simplesat Standard plan and live customer support free for six months.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-03T01:08:18Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_01
+          description: Six months of the Simplesat Standard plan at no cost
+          kind: free-service
+          service: Simplesat Standard plan
+          duration:
+            kind: exact
+            value: P6M
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.is_incorporated
+            kind: predicate
+            operator: eq
+            statement: Applicant is an incorporated startup
+            value:
+              type: boolean
+              value: true
+          - criterion_id: cri_02
+            fact: company.industry
+            kind: predicate
+            operator: contains
+            statement: Applicant is a technology startup
+            value:
+              type: string
+              value: technology
+          - criterion_id: cri_03
+            fact: company.age_months
+            kind: predicate
+            operator: lt
+            statement: Company is fewer than two years old
+            value:
+              type: number
+              value: 24
+          - criterion_id: cri_04
+            kind: manual
+            statement: Applicant is using Simplesat for the first time
+            reason: external-verification
+          - criterion_id: cri_05
+            fact: company.annual_recurring_revenue_usd
+            kind: predicate
+            operator: lt
+            statement: Company has less than $500,000 in annual recurring revenue
+            value:
+              type: number
+              value: 500000
+    roles:
+      terms_authority_entity_id: ent_01kz2jjg3qrnghektf4m83jmrq
+      access_operator_entity_id: ent_01kz2jjg3qrnghektf4m83jmrq
+    access:
+      availability: public
+      method: form
+      url: https://www.simplesat.io/simplesat-for-startups
+    terms_url: https://www.simplesat.io/simplesat-for-startups
+    source_ids:
+      - src_881e6b7af294f47b336e15dc1bb9552de60c90fb491df0272d1a821d4a92e703
