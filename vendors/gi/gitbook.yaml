@@ -1,0 +1,65 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kz3h34g8vfvpkns60masbhep
+slug: gitbook
+slug_aliases: []
+name: GitBook
+domains:
+  - value: gitbook.com
+    role: primary
+    valid_from: 2026-08-03T09:40:00.000Z
+category: productivity
+description: Documentation platform for teams to create, publish, and maintain product and developer documentation.
+links:
+  site: https://www.gitbook.com
+sources:
+  - source_id: src_f96cc56e0eb376e7537cf17ec56cadf52aab1ca290ae6d0e97b2e8493657fa3d
+    url: https://www.gitbook.com/industries/startups
+programs:
+  - program_id: prg_01kz3h34g8vfvpkns60masbhep
+    program_slug: gitbook-startups-program
+    program_slug_aliases: []
+    title: GitBook Startups Program
+    summary: The GitBook Startups Program gives venture-backed teams free access to GitBook's full platform for six months.
+    source_ids:
+      - src_f96cc56e0eb376e7537cf17ec56cadf52aab1ca290ae6d0e97b2e8493657fa3d
+offers:
+  - offer_id: off_01kz3h34g8vfvpkns60masbhep
+    program_id: prg_01kz3h34g8vfvpkns60masbhep
+    offer_slug: six-months-free-gitbook-platform-access
+    offer_slug_aliases: []
+    title: Six months of free GitBook platform access for startups
+    summary: Venture-backed teams accepted into the program receive six months of GitBook at no cost, dedicated support, and startup spotlight opportunities.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-03T09:40:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_primary
+          description: Six months of free access to GitBook's full platform
+          duration:
+            kind: exact
+            value: P6M
+          kind: free-service
+          service: GitBook full platform
+        - benefit_id: ben_support
+          description: Dedicated support and startup spotlight across GitBook channels
+          kind: other
+      consideration:
+        kind: unknown
+        description: The public program page does not establish separate consideration.
+    eligibility:
+      rule:
+        criterion_id: cri_requirement_01
+        kind: manual
+        reason: vendor-discretion
+        statement: The program is built for venture-backed teams; GitBook reviews applications individually.
+    roles:
+      terms_authority_entity_id: ent_01kz3h34g8vfvpkns60masbhep
+      access_operator_entity_id: ent_01kz3h34g8vfvpkns60masbhep
+    access:
+      availability: public
+      method: form
+      url: https://www.gitbook.com/industries/startups
+    terms_url: https://www.gitbook.com/industries/startups
+    source_ids:
+      - src_f96cc56e0eb376e7537cf17ec56cadf52aab1ca290ae6d0e97b2e8493657fa3d
