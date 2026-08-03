@@ -1,0 +1,68 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kz1gryj77dfqm921h66ayb21
+slug: pulumi
+slug_aliases: []
+name: Pulumi
+domains:
+  - value: pulumi.com
+    role: primary
+    valid_from: 2026-08-02T15:16:42.695Z
+category: infra
+description: Infrastructure as code platform for defining, deploying, and managing cloud resources with familiar programming languages.
+links:
+  site: https://www.pulumi.com
+sources:
+  - source_id: src_4d4f95e744a141d40db74035e9ad9b22069df29517bc620533e1a59248c654bb
+    url: https://www.pulumi.com/pulumi-for-startups/
+programs:
+  - program_id: prg_01kz1gryj7ccst1jmsvtvtjgvn
+    program_slug: pulumi-for-startups
+    program_slug_aliases: []
+    title: Pulumi for Startups
+    summary: Pulumi's startup program provides eligible early-stage companies with cloud infrastructure credits, office hours, and events.
+    source_ids:
+      - src_4d4f95e744a141d40db74035e9ad9b22069df29517bc620533e1a59248c654bb
+offers:
+  - offer_id: off_01kz1gryj7ehs47aa5zdtcac98
+    program_id: prg_01kz1gryj7ccst1jmsvtvtjgvn
+    offer_slug: up-to-10000-in-pulumi-credits-for-12-months
+    offer_slug_aliases: []
+    title: Up to $10,000 in Pulumi credits for up to 12 months
+    summary: Eligible pre-Series A companies with less than $1 million in annual revenue can receive up to $10,000 in Pulumi credits for up to 12 months, plus exclusive office hours and events.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-02T15:16:42.695Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to $10,000 in free Pulumi credits for the startup's team
+          duration:
+            kind: up-to
+            value: P12M
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 1000000
+            kind: up-to
+        - benefit_id: ben_02
+          description: Exclusive office hours, workshops, and events
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_requirement_01
+        kind: manual
+        reason: not-machine-evaluable
+        statement: Company must be pre-Series A and have less than $1 million in annual revenue.
+    roles:
+      terms_authority_entity_id: ent_01kz1gryj77dfqm921h66ayb21
+      access_operator_entity_id: ent_01kz1gryj77dfqm921h66ayb21
+    access:
+      availability: public
+      method: form
+      url: https://www.pulumi.com/pulumi-for-startups/#apply
+    terms_url: https://www.pulumi.com/pulumi-for-startups/
+    source_ids:
+      - src_4d4f95e744a141d40db74035e9ad9b22069df29517bc620533e1a59248c654bb
