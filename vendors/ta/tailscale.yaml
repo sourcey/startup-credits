@@ -8,7 +8,7 @@ domains:
     role: primary
     valid_from: 2026-08-02T15:12:33.965Z
 category: security
-description: Secure networking software for connecting resources across clouds with end-to-end encrypted connections.
+description: Secure networking software for connecting resources securely across clouds.
 links:
   site: https://tailscale.com
 sources:
@@ -28,7 +28,7 @@ offers:
     offer_slug: free-business-plan-for-one-year-up-to-30-users
     offer_slug_aliases: []
     title: Free Tailscale Business plan for one year for up to 30 users
-    summary: Accepted startups receive a Tailscale Business plan at no cost for one year for up to 30 users, plus priority support.
+    summary: Accepted startups receive a Tailscale Business plan at no cost for one year for up to 30 users.
     lifecycle:
       status: active
       effective_from: 2026-08-02T15:12:33.965Z
