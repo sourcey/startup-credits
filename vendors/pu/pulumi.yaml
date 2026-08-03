@@ -62,7 +62,7 @@ offers:
     access:
       availability: public
       method: form
-      url: https://www.pulumi.com/pulumi-for-startups/#apply
+      url: https://www.pulumi.com/pulumi-for-startups/
     terms_url: https://www.pulumi.com/pulumi-for-startups/
     source_ids:
       - src_4d4f95e744a141d40db74035e9ad9b22069df29517bc620533e1a59248c654bb
