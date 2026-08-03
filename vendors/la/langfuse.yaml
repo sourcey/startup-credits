@@ -8,7 +8,7 @@ domains:
     role: primary
     valid_from: 2026-08-02T18:29:57.000Z
 category: observability
-description: Open-source LLM engineering platform with a startup discount for qualifying early-stage companies.
+description: Open-source LLM engineering and observability platform.
 links:
   site: https://langfuse.com
 sources:
