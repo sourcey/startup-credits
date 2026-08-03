@@ -1,0 +1,95 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kz2n7d079wb6ffkxswdm8hc7
+slug: kiro
+slug_aliases: []
+name: Kiro
+domains:
+  - value: kiro.dev
+    role: primary
+    valid_from: 2026-08-03T01:53:44Z
+category: code
+description: Kiro is an AI development environment for turning product requirements into specifications, code, tests, documentation, and reviews.
+links:
+  site: https://kiro.dev
+sources:
+  - source_id: src_8aa167718dee1636140b1f287fb84da903c647b42395e283910bc47663cebc73
+    url: https://kiro.dev/startups/
+  - source_id: src_fb2aadf381cd6ffded4978636e7d798c1f3872b1c7063215279ec66ccd9d5cc4
+    url: https://kiro.dev/startups/terms/
+programs:
+  - program_id: prg_01kz2n7d2qzcrapyt1we7p6gs7
+    program_slug: kiro-startup-credits
+    program_slug_aliases: []
+    title: Kiro Startup Credits Program
+    summary: Kiro offers qualifying venture-backed startups from early stage through Series A up to one year of Kiro Pro+ at no cost.
+    source_ids:
+      - src_8aa167718dee1636140b1f287fb84da903c647b42395e283910bc47663cebc73
+      - src_fb2aadf381cd6ffded4978636e7d798c1f3872b1c7063215279ec66ccd9d5cc4
+offers:
+  - offer_id: off_01kz2n7d2qzs80cnn406ykz3qd
+    program_id: prg_01kz2n7d2qzcrapyt1we7p6gs7
+    offer_slug: one-year-kiro-pro-plus
+    offer_slug_aliases: []
+    title: Up to one year of Kiro Pro+
+    summary: Approved startups receive Kiro Pro+ credits for up to one year, with packages for up to 2, 10, or 30 users depending on the selected tier.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-03T01:53:44Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_01
+          description: Up to one year of Kiro Pro+ credits for the approved Starter, Growth, or Scale package
+          kind: free-service
+          service: Kiro Pro+
+          duration:
+            kind: up-to
+            value: P1Y
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.stage
+            kind: predicate
+            operator: in
+            statement: Company is an early-stage through Series A startup
+            value:
+              type: string-set
+              values:
+                - early-stage
+                - pre-seed
+                - seed
+                - series-a
+          - criterion_id: cri_02
+            kind: manual
+            statement: Applicant is a venture-backed startup
+            reason: external-verification
+          - criterion_id: cri_03
+            kind: manual
+            statement: Applicant has a valid AWS Account ID and uses an official business email matching both the startup domain and the AWS primary development account
+            reason: external-verification
+          - criterion_id: cri_04
+            kind: manual
+            statement: Applicant does not currently participate in AWS Activate
+            reason: external-verification
+          - criterion_id: cri_05
+            kind: manual
+            statement: Applicant is at least 18 years old and resides in a supported country; the terms exclude Argentina, Belarus, Brazil, China/GCR, Cuba, France, Germany, Iran, Italy, Mexico, North Korea, Poland, Russia, Spain, Syria, Crimea, DNR, LNR, and the United Arab Emirates
+            reason: external-verification
+          - criterion_id: cri_06
+            kind: manual
+            statement: Application is submitted during the April 7 through December 31, 2026 promotion period and is approved by Kiro
+            reason: vendor-discretion
+    roles:
+      terms_authority_entity_id: ent_01kz2n7d079wb6ffkxswdm8hc7
+      access_operator_entity_id: ent_01kyh8fpe10b164tj935t8k5zb
+    access:
+      availability: public
+      method: form
+      url: https://aws.amazon.com/startups/credits/kiro
+    terms_url: https://kiro.dev/startups/terms/
+    source_ids:
+      - src_8aa167718dee1636140b1f287fb84da903c647b42395e283910bc47663cebc73
+      - src_fb2aadf381cd6ffded4978636e7d798c1f3872b1c7063215279ec66ccd9d5cc4
