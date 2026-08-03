@@ -1,0 +1,67 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kzoracle0000000000000000
+slug: oracle
+slug_aliases: []
+name: Oracle
+domains:
+  - value: oracle.com
+    role: primary
+    valid_from: 2026-08-03T00:00:00.000Z
+category: hosting-infra
+description: Oracle for Startups provides cloud credits and discounted Oracle Cloud Infrastructure for qualifying technology startups.
+links:
+  site: https://www.oracle.com/cloud/
+sources:
+  - source_id: src_9fd4a623b98aa5971b108bb25b71001e8c106a2cafd07e587307dcc6bca5c816
+    url: https://www.oracle.com/a/ocom/docs/free-cloud.pdf
+programs:
+  - program_id: prg_01kzoracle0000000000000000
+    program_slug: oracle-for-startups
+    program_slug_aliases: []
+    title: Oracle for Startups
+    source_ids:
+      - src_9fd4a623b98aa5971b108bb25b71001e8c106a2cafd07e587307dcc6bca5c816
+offers:
+  - offer_id: off_01kzoracle0000000000000000
+    program_id: prg_01kzoracle0000000000000000
+    offer_slug: oracle-for-startups-cloud-credits
+    offer_slug_aliases: []
+    title: Oracle for Startups - Cloud Credits
+    summary: Qualifying technology startups can receive $500 in Oracle Cloud credits and a 70% discount on Oracle Cloud from day one.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-03T00:00:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_ora_cloud_credits
+          description: $500 of free Oracle Cloud credits
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 50000
+            kind: exact
+        - benefit_id: ben_ora_discount
+          description: 70% discount on Oracle Cloud from day one
+          kind: discount
+          value:
+            percentage:
+              basis_points: 7000
+              kind: exact
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_ora_startup
+        kind: manual
+        reason: vendor-discretion
+        statement: Technology companies and startups applying through Oracle's startup program may be eligible; Oracle determines qualification.
+    roles:
+      terms_authority_entity_id: ent_01kzoracle0000000000000000
+      access_operator_entity_id: ent_01kzoracle0000000000000000
+    access:
+      availability: public
+      method: form
+      url: https://www.oracle.com/startup
+    source_ids:
+      - src_9fd4a623b98aa5971b108bb25b71001e8c106a2cafd07e587307dcc6bca5c816
