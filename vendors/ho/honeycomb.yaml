@@ -1,0 +1,67 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kz1hadm9g752n3ezhxvfj669
+slug: honeycomb
+slug_aliases: []
+name: Honeycomb
+domains:
+  - value: honeycomb.io
+    role: primary
+    valid_from: 2026-08-02T15:26:15.177Z
+category: observability
+description: Observability platform for software engineering teams.
+links:
+  site: https://www.honeycomb.io
+sources:
+  - source_id: src_33fbc4485ce3309211dd1a0ecde87755148bed43fc0e8af639c7dacdbf8d82d5
+    url: https://www.honeycomb.io/honeycomb-for-builders
+programs:
+  - program_id: prg_01kz1hadm9kdvb5mgm6q8zcznn
+    program_slug: honeycomb-for-builders
+    program_slug_aliases: []
+    title: Honeycomb for Builders
+    summary: Honeycomb's builders program provides observability benefits to qualifying startups, nonprofit and academic organizations, and open-source projects.
+    source_ids:
+      - src_33fbc4485ce3309211dd1a0ecde87755148bed43fc0e8af639c7dacdbf8d82d5
+offers:
+  - offer_id: off_01kz1hadm9pg87y88bgtzdxpqc
+    program_id: prg_01kz1hadm9kdvb5mgm6q8zcznn
+    offer_slug: pro-gold-free-for-one-year
+    offer_slug_aliases: []
+    title: Honeycomb Pro Gold free for one year
+    summary: Qualifying startups receive the Honeycomb Pro750 plan at no cost for one year, plus community onboarding sessions, office hours, and Honeycomb swag.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-02T15:26:15.177Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Honeycomb Pro750 plan at no cost for one year
+          duration:
+            kind: exact
+            value: P1Y
+          kind: free-service
+          service: Honeycomb Pro750
+        - benefit_id: ben_02
+          description: Community onboarding sessions and office hours
+          kind: other
+        - benefit_id: ben_03
+          description: Honeycomb swag
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_requirement_01
+        kind: manual
+        reason: not-machine-evaluable
+        statement: Startup must be active in a recognized startup accelerator and actively use or build with OpenTelemetry.
+    roles:
+      terms_authority_entity_id: ent_01kz1hadm9g752n3ezhxvfj669
+      access_operator_entity_id: ent_01kz1hadm9g752n3ezhxvfj669
+    access:
+      availability: public
+      method: form
+      url: https://www.honeycomb.io/honeycomb-for-builders
+    terms_url: https://www.honeycomb.io/honeycomb-for-builders
+    source_ids:
+      - src_33fbc4485ce3309211dd1a0ecde87755148bed43fc0e8af639c7dacdbf8d82d5
