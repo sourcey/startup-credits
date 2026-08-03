@@ -1,0 +1,60 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kz3qpk7g85gqmx3rqex6krdb
+slug: mintlify
+slug_aliases: []
+name: Mintlify
+domains:
+  - value: mintlify.com
+    role: primary
+    valid_from: 2026-08-03T12:00:00.000Z
+category: devtools-other
+description: Mintlify is a documentation platform that helps teams build and keep self-updating docs, with AI features for search, support, and content automation.
+links:
+  site: https://www.mintlify.com
+  pricing: https://www.mintlify.com/pricing
+sources:
+  - source_id: src_cd21c43db6dc413558a07cc97493745198996681a5d77d9066e13fba3c3adfd4
+    url: https://www.mintlify.com/startups
+programs:
+  - program_id: prg_01kz3qpk7gzq0jset4027014q1
+    program_slug: mintlify-startup-program
+    program_slug_aliases: []
+    title: Mintlify Startup Program
+    summary: Mintlify's startup program gives venture-backed startups free access to Mintlify's AI features for six months.
+    source_ids:
+      - src_cd21c43db6dc413558a07cc97493745198996681a5d77d9066e13fba3c3adfd4
+offers:
+  - offer_id: off_01kz3qpk7gsz158s4nskrpc0kv
+    program_id: prg_01kz3qpk7gzq0jset4027014q1
+    offer_slug: six-months-of-ai-free
+    offer_slug_aliases: []
+    title: Mintlify Startup Program
+    summary: Venture-backed startups get 26,000 AI credits per month, free for six months, plus priority support and partnership resources.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-03T12:00:00.000Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_01
+          description: 26,000 AI credits every month, free for six months, to use across Workflows, the Agent, and the Assistant.
+          kind: other
+        - benefit_id: ben_02
+          description: Priority support and partnership resources to help accelerate growth.
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_01
+        statement: Must be a venture-backed business just getting started.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01kz3qpk7g85gqmx3rqex6krdb
+      access_operator_entity_id: ent_01kz3qpk7g85gqmx3rqex6krdb
+    access:
+      availability: public
+      method: form
+      url: https://www.mintlify.com/startups
+    source_ids:
+      - src_cd21c43db6dc413558a07cc97493745198996681a5d77d9066e13fba3c3adfd4
