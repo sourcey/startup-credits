@@ -15,6 +15,8 @@ links:
 sources:
   - source_id: src_cd21c43db6dc413558a07cc97493745198996681a5d77d9066e13fba3c3adfd4
     url: https://www.mintlify.com/startups
+  - source_id: src_28da635c3b66ed5f2522f3b92062589fd1dd505ce98e7be0ca17614e4d637d0d
+    url: https://www.mintlify.com/pricing
 programs:
   - program_id: prg_01kz3qpk7gzq0jset4027014q1
     program_slug: mintlify-startup-program
@@ -28,7 +30,7 @@ offers:
     program_id: prg_01kz3qpk7gzq0jset4027014q1
     offer_slug: six-months-of-ai-free
     offer_slug_aliases: []
-    title: Mintlify Startup Program
+    title: 26,000 free Mintlify AI credits per month for six months
     summary: Venture-backed startups get 26,000 AI credits per month, free for six months, plus priority support and partnership resources.
     lifecycle:
       status: active
@@ -39,7 +41,11 @@ offers:
       benefits:
         - benefit_id: ben_01
           description: 26,000 AI credits every month, free for six months, to use across Workflows, the Agent, and the Assistant.
-          kind: other
+          kind: free-service
+          service: 26,000 AI credits per month across Workflows, the Agent, and the Assistant
+          duration:
+            kind: exact
+            value: P6M
         - benefit_id: ben_02
           description: Priority support and partnership resources to help accelerate growth.
           kind: other
@@ -58,3 +64,4 @@ offers:
       url: https://www.mintlify.com/startups
     source_ids:
       - src_cd21c43db6dc413558a07cc97493745198996681a5d77d9066e13fba3c3adfd4
+      - src_28da635c3b66ed5f2522f3b92062589fd1dd505ce98e7be0ca17614e4d637d0d
