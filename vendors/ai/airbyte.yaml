@@ -34,8 +34,7 @@ offers:
       effective_from: 2026-08-02T18:22:53.000Z
     economics:
       consideration:
-        kind: unknown
-        description: The public promotion page does not establish separate consideration.
+        kind: none
       benefits:
         - benefit_id: ben_01
           description: $75,000 in Airbyte credits
