@@ -83,7 +83,7 @@ offers:
     access:
       availability: public
       method: form
-      url: https://portal.featureos.app/new?utm_medium=startups_hero&utm_source=featureos_website
+      url: https://portal.featureos.app/new
     terms_url: https://featureos.com/startups
     source_ids:
       - src_c3d1fa4a4b0ccabc849942952bf4b009747eee9f05849908290cdaf4a092c047
