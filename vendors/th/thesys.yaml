@@ -1,0 +1,61 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kz4x7kfj9cg4zpvj2c0v5kdy
+slug: thesys
+slug_aliases: []
+name: Thesys
+domains:
+  - value: thesys.dev
+    role: primary
+    valid_from: 2026-08-03T22:52:09.163Z
+category: ai-ml
+description: Thesys provides generative user-interface tools for building AI dashboards, copilots, search, assistants, embeddable widgets, presentations, and reports.
+links:
+  site: https://www.thesys.dev
+sources:
+  - source_id: src_69c919bd42d41c295d00e8bae0de78fef214c4b9c5bcd44eeab9f6c905f8fd9b
+    url: https://www.thesys.dev/startups
+programs:
+  - program_id: prg_01kz4x7kfpmkrp2dxvyqmh0v2x
+    program_slug: thesys-startup-program
+    program_slug_aliases: []
+    title: Thesys Startup Program
+    summary: Thesys supports early-stage teams building AI applications with product credits, priority support, and hands-on implementation resources.
+    source_ids:
+      - src_69c919bd42d41c295d00e8bae0de78fef214c4b9c5bcd44eeab9f6c905f8fd9b
+offers:
+  - offer_id: off_01kz4x7kfqvkdyw57hj29rb4rq
+    program_id: prg_01kz4x7kfpmkrp2dxvyqmh0v2x
+    offer_slug: thesys-startup-credits
+    offer_slug_aliases: []
+    title: Thesys Startup Credits
+    summary: Accepted early-stage startups, AI-first teams, and solopreneurs can receive up to $1,000 in Thesys credits plus priority support and implementation resources.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-03T22:52:09.163Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to $1,000 in credits for Thesys Generative UI applications
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 100000
+            kind: up-to
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Applicant must be an early-stage startup, AI-first team, or solopreneur building with AI and submit the public application for Thesys review.
+    roles:
+      terms_authority_entity_id: ent_01kz4x7kfj9cg4zpvj2c0v5kdy
+      access_operator_entity_id: ent_01kz4x7kfj9cg4zpvj2c0v5kdy
+    access:
+      availability: public
+      method: form
+      url: https://www.thesys.dev/startups
+    source_ids:
+      - src_69c919bd42d41c295d00e8bae0de78fef214c4b9c5bcd44eeab9f6c905f8fd9b
