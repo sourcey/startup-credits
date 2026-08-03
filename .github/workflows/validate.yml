@@ -81,7 +81,7 @@ jobs:
               | grep -Eq '^Signed-off-by: .+ <[^>]+>$'; then
               missing+=("$commit")
             fi
-          done < <(git rev-list "$change_base..$HEAD_REVISION")
+          done < <(git rev-list --no-merges "$change_base..$HEAD_REVISION")
           if (( ${#missing[@]} > 0 )); then
             printf 'Commits missing Signed-off-by certification:\n%s\n' "${missing[*]}" >&2
             exit 1
