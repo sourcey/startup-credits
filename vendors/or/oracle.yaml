@@ -44,10 +44,9 @@ offers:
         - benefit_id: ben_ora_discount
           description: 70% discount on Oracle Cloud from day one
           kind: discount
-          value:
-            percentage:
-              basis_points: 7000
-              kind: exact
+          percentage:
+            basis_points: 7000
+            kind: exact
       consideration:
         kind: none
     eligibility:
