@@ -8,7 +8,7 @@ domains:
     role: primary
     valid_from: 2026-08-02T15:12:33.965Z
 category: security
-description: Secure networking software that connects devices, services, and infrastructure using encrypted peer-to-peer connections.
+description: Secure networking software for connecting resources across clouds with end-to-end encrypted connections.
 links:
   site: https://tailscale.com
 sources:
@@ -52,7 +52,7 @@ offers:
         criterion_id: cri_requirement_01
         kind: manual
         reason: vendor-discretion
-        statement: Tailscale reviews applications individually. Public criteria require a first-time customer, a live company domain and matching work email, an early-stage product-focused software or hardware startup, and generally fewer than 50 employees; service businesses, retail, and ecommerce companies are not eligible.
+        statement: Tailscale reviews applications individually. Public criteria require a first-time customer, a live company domain and matching work email, and a product-focused software or hardware startup. Companies with fewer than 25 employees are prioritized, one-off exceptions are possible, and the program is not intended for companies with over 50 employees. Service businesses, retail, and ecommerce companies are not eligible.
     roles:
       terms_authority_entity_id: ent_01kz1ghbndzyjy5wgaq0043m1p
       access_operator_entity_id: ent_01kz1ghbndzyjy5wgaq0043m1p
