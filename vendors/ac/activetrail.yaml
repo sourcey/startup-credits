@@ -76,6 +76,14 @@ offers:
             value:
               type: number
               value: 15
+          - criterion_id: cri_05
+            fact: company.funding_raised_usd
+            kind: predicate
+            operator: lte
+            statement: If the applicant has raised funding, total funding must not exceed $1,000,000
+            value:
+              type: number
+              value: 1000000
     roles:
       terms_authority_entity_id: ent_01kz3mz8randcy8a0ebq5frmfd
       access_operator_entity_id: ent_01kz3mz8randcy8a0ebq5frmfd
