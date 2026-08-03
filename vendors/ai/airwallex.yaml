@@ -1,0 +1,81 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kz4xsd0m76d5ensjb8150avj
+slug: airwallex
+slug_aliases: []
+name: Airwallex
+domains:
+  - value: airwallex.com
+    role: primary
+    valid_from: 2026-08-04T00:00:00Z
+category: payments-fintech
+description: Airwallex is a global financial platform for managing business accounts, payments, treasury, spend, and embedded finance across currencies and markets.
+links:
+  site: https://www.airwallex.com
+sources:
+  - source_id: src_cb2be51ba472b23a2aafd3e4eeb23ab61713dc5150e7d67d4ea9b6f4303237eb
+    url: https://www.airwallex.com/en-au/startups
+programs:
+  - program_id: prg_01kz4xsd0mbk63mas9eb1z6szw
+    program_slug: airwallex-for-startups
+    program_slug_aliases: []
+    title: Airwallex for Startups
+    summary: A regional program for venture-backed startups offering fee savings, Airwallex plan access, partner perks, and startup-focused support.
+    source_ids:
+      - src_cb2be51ba472b23a2aafd3e4eeb23ab61713dc5150e7d67d4ea9b6f4303237eb
+offers:
+  - offer_id: off_01kz4xsd0mf5p7jsxw22kp5n7k
+    program_id: prg_01kz4xsd0mbk63mas9eb1z6szw
+    offer_slug: australia-startup-offer
+    offer_slug_aliases: []
+    title: Airwallex for Startups Australia Offer
+    summary: Eligible Australian startups get three months of Airwallex plan access plus fee waivers on up to AUD $100,000 of payments and AUD $100,000 of foreign-exchange conversions.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-04T00:00:00Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Three months of Airwallex Explore for pre-seed startups or Airwallex Grow for seed-stage startups.
+          duration:
+            kind: exact
+            value: P3M
+          kind: free-service
+          service: Airwallex Explore or Grow plan, according to startup stage
+        - benefit_id: ben_02
+          description: Fees waived on the first AUD $100,000 of payments collected by eligible seed-stage startups.
+          kind: waiver
+          waived_item: Payment collection fees on the first AUD $100,000 collected
+        - benefit_id: ben_03
+          description: Foreign-exchange fees waived on the first AUD $100,000 converted by eligible seed-stage startups.
+          kind: waiver
+          waived_item: Foreign-exchange fees on the first AUD $100,000 converted
+        - benefit_id: ben_04
+          description: Access to Airwallex Yield for eligible seed-stage startups.
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: external-verification
+            statement: Must be a venture-backed startup at pre-seed, seed, or Series A stage with an active Airwallex account.
+          - criterion_id: cri_02
+            kind: manual
+            reason: external-verification
+            statement: Must have a business entity registered in Australia or New Zealand with a valid ABN or NZBN.
+          - criterion_id: cri_03
+            kind: manual
+            reason: external-verification
+            statement: The listed special offers are available to new customers and are subject to program approval and terms.
+    roles:
+      terms_authority_entity_id: ent_01kz4xsd0m76d5ensjb8150avj
+      access_operator_entity_id: ent_01kz4xsd0m76d5ensjb8150avj
+    access:
+      availability: public
+      method: form
+      url: https://www.airwallex.com/en-au/startups
+    source_ids:
+      - src_cb2be51ba472b23a2aafd3e4eeb23ab61713dc5150e7d67d4ea9b6f4303237eb
