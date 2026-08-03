@@ -1,0 +1,62 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kz4x5seq5e3412pm7tb4a11q
+slug: frontegg
+slug_aliases: []
+name: Frontegg
+domains:
+  - value: frontegg.com
+    role: primary
+    valid_from: 2026-08-03T22:51:09.735Z
+category: auth-security
+description: Frontegg is a customer identity and access management platform for authentication, authorization, SSO, roles, permissions, and user management.
+links:
+  site: https://frontegg.com
+sources:
+  - source_id: src_080e328a0896b51ab41d964b61ff7daf793353730354878d29dd10e0fbb276f0
+    url: https://frontegg.com/sap-application
+programs:
+  - program_id: prg_01kz4x5setgav7zcbebf24gype
+    program_slug: frontegg-startup-acceleration-program
+    program_slug_aliases: []
+    title: Frontegg Startup Acceleration Program
+    summary: Frontegg's startup program gives accepted companies free Pro-tier CIAM access for one year with guided onboarding and support.
+    source_ids:
+      - src_080e328a0896b51ab41d964b61ff7daf793353730354878d29dd10e0fbb276f0
+offers:
+  - offer_id: off_01kz4x5setcjzzv17dhx6qves0
+    program_id: prg_01kz4x5setgav7zcbebf24gype
+    offer_slug: free-pro-tier-ciam-for-one-year
+    offer_slug_aliases: []
+    title: Free Frontegg Pro Tier for One Year
+    summary: Accepted startups receive Frontegg's complete Pro-tier CIAM platform, including all add-ons, free for one year with guided onboarding and support.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-03T22:51:09.735Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 100% off Frontegg Pro-tier CIAM access for one year
+          duration:
+            kind: exact
+            value: P1Y
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 10000
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Applicant must be a startup and submit the public program form for Frontegg review.
+    roles:
+      terms_authority_entity_id: ent_01kz4x5seq5e3412pm7tb4a11q
+      access_operator_entity_id: ent_01kz4x5seq5e3412pm7tb4a11q
+    access:
+      availability: public
+      method: form
+      url: https://frontegg.com/sap-application
+    source_ids:
+      - src_080e328a0896b51ab41d964b61ff7daf793353730354878d29dd10e0fbb276f0
