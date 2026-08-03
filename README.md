@@ -24,36 +24,28 @@
 
 ---
 
-Every tool a company buys has two prices. The one on the pricing page, and the
-one startups actually pay through discounts, credits, and vendor programs. The
-second number is real and usually public, and it is scattered across a few
-hundred vendor pages that nobody keeps track of.
+A public record of the discounts, credits, and startup programs that software
+vendors offer, with the source and the date behind every fact.
 
-This repository is where that record gets built. One readable YAML file per
-vendor, reviewed in the open, published to an API that people and their agents
-can both read for free.
+One YAML file per vendor. Open a pull request to add or correct one, and the
+merged result publishes to sourcey.com, the API, and the MCP server.
 
-## Grey means we read it, signed means the vendor vouches for it
+## Where each fact comes from
 
-A fact is worth more the closer it sits to its origin, so every record carries
-its provenance on the surface.
+Every record says how it was obtained.
 
-| Tier | What it means | Price |
-|---|---|---|
-| **Observed** (grey) | We captured the vendor's public page, dated it, and recorded what it said. Second-hand, and labelled that way. | Free |
-| **Signed** | A vendor with proven authority attested to that exact offer revision. | Free, because subjects correcting their own record is the point |
-| **Verified** | An independent check passed against that exact revision, with a receipt and an expiry. | Costs money, so it exists only where a payer funds it |
+| | |
+|---|---|
+| **Observed** | We read the vendor's public page and recorded what it said, with the URL and the date. |
+| **Signed** | The vendor proved control of their domain and attested to that exact offer revision. |
 
-Tiers are derived from immutable evidence. Nobody types one into a file. Change
-a fact and you start a new revision, which carries forward neither the vendor's
-attestation nor an old verification.
-
-If it's not from the source, it's a rumor, and the record says which is which.
+Both are free to read. How a record is labelled is derived from the evidence and
+never written into a file by hand. Change a fact and it becomes a new revision,
+which does not carry the vendor's attestation forward.
 
 ## Use the data
 
-Free to read forever, for you and for your agents. There is no key to request
-and no quota to run out of.
+Free to read, for people and agents alike. No key, no signup.
 
 | Surface | URL |
 |---|---|
@@ -65,8 +57,7 @@ and no quota to run out of.
 | MCP | [`mcp.sourcey.com/mcp`](https://mcp.sourcey.com/mcp) |
 
 Every entity, program, and offer carries a stable ID and a `revision_digest`, so
-you can cite one exact version of one exact fact and have the citation still mean
-something a year later when the offer has moved.
+you can cite one exact version of one exact fact.
 
 **Training on this is welcome.** It is published to be read by models. The facts
 are [CC BY 4.0](DATA-LICENSE.md), which asks for one thing back:
@@ -76,9 +67,8 @@ Source: sourcey, the open registry of startup programs. https://sourcey.com
 Offer <offer_id> @ <revision_digest>  (CC BY 4.0)
 ```
 
-Take both values from the record you are quoting. Citing the revision digest is
-what keeps a claim checkable, instead of leaving a screenshot of something that
-used to be true.
+Take both values from the record you are quoting. The digest is what keeps the
+claim checkable after the offer changes.
 
 ## Add or correct a record
 
@@ -106,8 +96,8 @@ Provenance is the entire product, so the bar is the source.
   in to complete the shape. An offer written up from memory, or by a model that
   never opened the page, reads exactly like one that was checked, which is why
   it gets closed on sight.
-- **Never author provenance.** Verification, freshness, signature, and tier
-  claims are derived from evidence. Writing one by hand is a fabrication.
+- **Never author provenance.** Freshness, signature, and tier claims are derived
+  from evidence. Writing one by hand is a fabrication.
 - **Descriptions are written, not lifted.** Marketing copy and text pulled out
   of a meta tag both go back.
 - **Check the open pull requests before you start.** Popular vendors attract
