@@ -1,7 +1,7 @@
 name: validate-catalog-change
 
 on:
-  pull_request:
+  pull_request_target:
 
 permissions:
   contents: read
@@ -17,14 +17,29 @@ jobs:
     steps:
       - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
         with:
+          ref: ${{ github.event.pull_request.base.sha }}
+          path: trusted
+          persist-credentials: false
+      - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
+        with:
+          repository: ${{ github.event.pull_request.head.repo.full_name }}
+          ref: ${{ github.event.pull_request.head.sha }}
+          path: candidate
           fetch-depth: 0
+          persist-credentials: false
       - uses: actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444 # v5
         with:
           node-version: 22.12.0
+      - name: Fetch the exact trusted comparison base
+        env:
+          BASE_REVISION: ${{ github.event.pull_request.base.sha }}
+        working-directory: candidate
+        run: git fetch --no-tags --depth=1 https://github.com/sourcey/startup-credits.git "$BASE_REVISION"
       - name: Enforce the changed-path repository boundary
         env:
           BASE_REVISION: ${{ github.event.pull_request.base.sha }}
           HEAD_REVISION: ${{ github.event.pull_request.head.sha }}
+        working-directory: candidate
         run: |
           invalid=()
           while IFS= read -r -d '' path; do
@@ -38,7 +53,7 @@ jobs:
           fi
       - name: Install the exact Sourcey Candidate Verifier
         run: |
-          digest="$(<.github/sourcey-candidate-verifier.sha256)"
+          digest="$(<trusted/.github/sourcey-candidate-verifier.sha256)"
           if [[ ! "$digest" =~ ^[a-f0-9]{64}$ ]]; then
             echo "Candidate Verifier pin must be one exact SHA-256 digest." >&2
             exit 1
@@ -64,13 +79,14 @@ jobs:
         run: |
           node "$RUNNER_TEMP/candidate-verifier/sourcey-candidate-verifier.js" \
             validate-change \
-            --repository "$GITHUB_WORKSPACE" \
+            --repository "$GITHUB_WORKSPACE/candidate" \
             --base "$BASE_REVISION" \
             --head "$HEAD_REVISION"
       - name: Verify Developer Certificate of Origin sign-off
         env:
           BASE_REVISION: ${{ github.event.pull_request.base.sha }}
           HEAD_REVISION: ${{ github.event.pull_request.head.sha }}
+        working-directory: candidate
         run: |
           missing=()
           while IFS= read -r commit; do
