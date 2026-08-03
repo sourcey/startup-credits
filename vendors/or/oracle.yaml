@@ -1,5 +1,5 @@
 schema_version: sourcey.vendor-authoring/v1alpha1
-entity_id: ent_01kzoracle0000000000000000
+entity_id: ent_01kz0r4c1e0000000000000000
 slug: oracle
 slug_aliases: []
 name: Oracle
@@ -15,15 +15,15 @@ sources:
   - source_id: src_9fd4a623b98aa5971b108bb25b71001e8c106a2cafd07e587307dcc6bca5c816
     url: https://www.oracle.com/a/ocom/docs/free-cloud.pdf
 programs:
-  - program_id: prg_01kzoracle0000000000000000
+  - program_id: prg_01kz0r4c1e0000000000000001
     program_slug: oracle-for-startups
     program_slug_aliases: []
     title: Oracle for Startups
     source_ids:
       - src_9fd4a623b98aa5971b108bb25b71001e8c106a2cafd07e587307dcc6bca5c816
 offers:
-  - offer_id: off_01kzoracle0000000000000000
-    program_id: prg_01kzoracle0000000000000000
+  - offer_id: off_01kz0r4c1e0000000000000002
+    program_id: prg_01kz0r4c1e0000000000000001
     offer_slug: oracle-for-startups-cloud-credits
     offer_slug_aliases: []
     title: Oracle for Startups - Cloud Credits
@@ -57,8 +57,8 @@ offers:
         reason: vendor-discretion
         statement: Technology companies and startups applying through Oracle's startup program may be eligible; Oracle determines qualification.
     roles:
-      terms_authority_entity_id: ent_01kzoracle0000000000000000
-      access_operator_entity_id: ent_01kzoracle0000000000000000
+      terms_authority_entity_id: ent_01kz0r4c1e0000000000000000
+      access_operator_entity_id: ent_01kz0r4c1e0000000000000000
     access:
       availability: public
       method: form
