@@ -31,17 +31,16 @@ offers:
     offer_slug: six-months-free-business-plan
     offer_slug_aliases: []
     title: Six months free on Composio Business
-    summary: Eligible software startups with under $5M raised receive the Composio Business plan free for six months; accelerator affiliation is not required.
+    summary: Accepted startups receive the Composio Business plan free for six months.
     lifecycle:
       status: active
       effective_from: 2026-08-03T05:18:43.821Z
     economics:
       consideration:
-        kind: variable
-        description: No charge during the six-month program period. Unless canceled before that period ends, the plan automatically renews at the then-current standard Business plan rate.
+        kind: none
       benefits:
         - benefit_id: ben_01
-          description: Six months of the Composio Business plan at no charge; the standard plan is currently listed at $229 per month.
+          description: Six months of the Composio Business plan at no charge.
           kind: free-service
           service: Composio Business plan
           duration:
@@ -51,8 +50,8 @@ offers:
       rule:
         kind: manual
         criterion_id: cri_01
-        statement: Open to early-stage and growth-stage companies building software products that have raised less than $5 million; accelerator affiliation is optional.
-        reason: not-machine-evaluable
+        statement: Applicants must be accepted into Composio's startup program.
+        reason: vendor-discretion
     roles:
       terms_authority_entity_id: ent_01kz30yqnfe6gkpjqqjb3fj1e9
       access_operator_entity_id: ent_01kz30yqnfe6gkpjqqjb3fj1e9
