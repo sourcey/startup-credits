@@ -49,10 +49,24 @@ offers:
         description: The discounted Core or Superpowers plan fee is due in full after approval and plan selection.
     eligibility:
       rule:
-        criterion_id: cri_01
-        kind: manual
-        reason: vendor-discretion
-        statement: Startup must have been founded less than 3 years ago and have raised under $5 million in total funding; Beefree reviews applications and may make exceptions.
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.age_months
+            kind: predicate
+            operator: lt
+            statement: Startup must have been founded less than 3 years ago.
+            value:
+              type: number
+              value: 36
+          - criterion_id: cri_02
+            fact: company.funding_raised_usd
+            kind: predicate
+            operator: lt
+            statement: Startup must have raised under $5 million in total funding.
+            value:
+              type: number
+              value: 5000000
     roles:
       terms_authority_entity_id: ent_01kz4x2e7r5fg0xfv0vhcsg1xw
       access_operator_entity_id: ent_01kz4x2e7r5fg0xfv0vhcsg1xw
