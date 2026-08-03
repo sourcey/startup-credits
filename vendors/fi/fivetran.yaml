@@ -1,0 +1,66 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kz3h34g8htepq5zvxdn13eqk
+slug: fivetran
+slug_aliases: []
+name: Fivetran
+domains:
+  - value: fivetran.com
+    role: primary
+    valid_from: 2026-08-03T09:40:00.000Z
+category: data-analytics
+description: Automated data movement platform that centralizes connectors to sync data from sources into warehouses.
+links:
+  site: https://www.fivetran.com
+sources:
+  - source_id: src_4e59203252d654e00759ed72e3d25c4704bc5729adea7e6bb60d37df8be465b4
+    url: https://www.fivetran.com/pricing/startups
+programs:
+  - program_id: prg_01kz3h34g8htepq5zvxdn13eqk
+    program_slug: fivetran-startup-program
+    program_slug_aliases: []
+    title: Fivetran Startup Program
+    summary: Fivetran's Startup Program offers Y Combinator companies free Fivetran usage on the Standard plan for 12 months.
+    source_ids:
+      - src_4e59203252d654e00759ed72e3d25c4704bc5729adea7e6bb60d37df8be465b4
+offers:
+  - offer_id: off_01kz3h34g8htepq5zvxdn13eqk
+    program_id: prg_01kz3h34g8htepq5zvxdn13eqk
+    offer_slug: 50000-in-free-fivetran-usage-for-12-months
+    offer_slug_aliases: []
+    title: $50,000 in free Fivetran usage over 12 months
+    summary: Y Combinator companies accepted into the program receive $50,000 in free Fivetran usage on the Standard plan over the course of 12 months.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-03T09:40:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_primary
+          description: $50,000 in free Fivetran usage on the Standard plan
+          duration:
+            kind: up-to
+            value: P12M
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 5000000
+            kind: up-to
+      consideration:
+        kind: unknown
+        description: The public program page does not establish separate consideration.
+    eligibility:
+      rule:
+        criterion_id: cri_requirement_01
+        kind: manual
+        reason: not-machine-evaluable
+        statement: Companies must be enrolled in a current or previous Y Combinator batch and in the early stages of development.
+    roles:
+      terms_authority_entity_id: ent_01kz3h34g8htepq5zvxdn13eqk
+      access_operator_entity_id: ent_01kz3h34g8htepq5zvxdn13eqk
+    access:
+      availability: public
+      method: form
+      url: https://www.fivetran.com/pricing/startups
+    terms_url: https://www.fivetran.com/pricing/startups
+    source_ids:
+      - src_4e59203252d654e00759ed72e3d25c4704bc5729adea7e6bb60d37df8be465b4
