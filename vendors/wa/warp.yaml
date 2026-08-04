@@ -10,7 +10,7 @@ domains:
   - value: warp.co
     role: alias
     valid_from: 2026-08-01T13:50:00.000Z
-category: hr
+category: hr-people
 description: Warp is the AI-native employee management platform for high-growth companies. Payroll, compliance, and benefits that scale from 10 to 1000+ employees—all on autopilot.
 links:
   site: https://warp.co

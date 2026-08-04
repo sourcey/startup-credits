@@ -7,7 +7,7 @@ domains:
   - value: tailscale.com
     role: primary
     valid_from: 2026-08-02T15:12:33.965Z
-category: security
+category: auth-security
 description: Secure networking software for connecting resources securely across clouds.
 links:
   site: https://tailscale.com

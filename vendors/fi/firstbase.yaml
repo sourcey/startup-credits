@@ -7,7 +7,7 @@ domains:
   - value: firstbase.io
     role: primary
     valid_from: 2026-08-01T13:50:00.000Z
-category: compliance
+category: legal-compliance
 description: Firstbase helps anyone to build a US business. Start a company, set up banking, payments, and payroll, and manage a business — online, from anywhere.
 links:
   site: https://firstbase.io

@@ -7,7 +7,7 @@ domains:
   - value: deepinfra.com
     role: primary
     valid_from: 2026-08-01T13:50:00.000Z
-category: ml
+category: ai-ml
 description: DeepInfra offers cost-effective, scalable, easy-to-deploy, and production-ready machine-learning models and infrastructures for deep-learning models.
 links:
   site: https://deepinfra.com

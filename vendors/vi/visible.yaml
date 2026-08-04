@@ -7,7 +7,7 @@ domains:
   - value: visible.vc
     role: primary
     valid_from: 2026-08-01T13:50:00.000Z
-category: fundraising
+category: finance-accounting
 description: 950+ VC funds use Visible to turn scattered portfolio data into answers. 7,000+ founders use it to raise faster and keep investors close.
 links:
   site: https://visible.vc

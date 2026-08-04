@@ -7,7 +7,7 @@ domains:
   - value: puzzle.io
     role: primary
     valid_from: 2026-08-01T13:50:00.000Z
-category: accounting
+category: finance-accounting
 description: Automate your bookkeeping with Puzzle’s AI-native accounting software. Get real-time financial insights, seamless integrations (Stripe, Brex, Gusto), and tax-ready financials instantly.
 links:
   site: https://puzzle.io

@@ -7,7 +7,7 @@ domains:
   - value: pave.com
     role: primary
     valid_from: 2026-08-01T13:50:00.000Z
-category: people
+category: hr-people
 description: View Pave's privacy policy.
 links:
   site: https://pave.com

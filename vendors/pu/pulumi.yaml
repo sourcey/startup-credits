@@ -7,7 +7,7 @@ domains:
   - value: pulumi.com
     role: primary
     valid_from: 2026-08-02T15:16:42.695Z
-category: infra
+category: hosting-infra
 description: Infrastructure as code platform for defining, deploying, and managing cloud resources with familiar programming languages.
 links:
   site: https://www.pulumi.com

@@ -7,7 +7,7 @@ domains:
   - value: ellis.com
     role: primary
     valid_from: 2026-08-01T13:50:00.000Z
-category: compliance
+category: legal-compliance
 description: Ellis is a business immigration platform helping People teams secure U.S. visas and green cards for skilled talent and improve your immigration program.
 links:
   site: https://ellis.com

@@ -10,7 +10,7 @@ domains:
   - value: deepsource.com
     role: alias
     valid_from: 2026-08-01T13:50:00.000Z
-category: code
+category: devtools-other
 description: Your team is writing more code with AI. DeepSource automates code reviews so you ship to production faster — catching security issues, improving code quality, and helping your team write better code.
 links:
   site: https://deepsource.com

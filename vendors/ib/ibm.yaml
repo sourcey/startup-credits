@@ -7,7 +7,7 @@ domains:
   - value: ibm.com
     role: primary
     valid_from: 2026-08-01T13:50:00.000Z
-category: infra
+category: hosting-infra
 description: For more than a century, IBM has been a global technology innovator, leading advances in AI, automation and hybrid cloud solutions that help businesses grow.
 links:
   site: https://ibm.com

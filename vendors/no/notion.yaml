@@ -10,7 +10,7 @@ domains:
   - value: notion.com
     role: alias
     valid_from: 2026-08-01T13:50:00.000Z
-category: workspace
+category: productivity
 description: Build Custom Agents, search across all your apps, and automate busywork. The AI workspace where teams get more done, faster.
 links:
   site: https://notion.com

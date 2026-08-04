@@ -7,7 +7,7 @@ domains:
   - value: zapier.com
     role: primary
     valid_from: 2026-08-01T13:50:00.000Z
-category: code
+category: no-code
 description: Build and scale AI workflows and agents across 9,000+ apps with Zapier—the most connected AI orchestration platform. Trusted by 3 million+ businesses.
 links:
   site: https://zapier.com

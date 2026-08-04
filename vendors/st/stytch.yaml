@@ -7,7 +7,7 @@ domains:
   - value: stytch.com
     role: primary
     valid_from: 2026-08-01T13:50:00.000Z
-category: security
+category: auth-security
 description: APIs and SDKs to integrate authentication and security into your app.
 links:
   site: https://stytch.com

@@ -7,7 +7,7 @@ domains:
   - value: rise.com
     role: primary
     valid_from: 2026-08-01T13:50:00.000Z
-category: training
+category: hr-people
 description: Rise is the online training system your employees will love. Easily create, share, and manage interactive training, performance support content, guides, and online courses that work perfectly on any
 links:
   site: https://rise.com

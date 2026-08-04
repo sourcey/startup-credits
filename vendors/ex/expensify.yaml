@@ -7,7 +7,7 @@ domains:
   - value: expensify.com
     role: primary
     valid_from: 2026-08-01T13:50:00.000Z
-category: accounting
+category: finance-accounting
 description: Expensify's spend management software simplifies receipt and expense tracking. Automate reports, control spending, and save time with our easy-to-use platform.
 links:
   site: https://expensify.com
