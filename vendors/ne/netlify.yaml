@@ -27,8 +27,8 @@ offers:
     program_id: prg_01kz4xsd0nmarcjg5n62g20k6v
     offer_slug: discounted-startup-access
     offer_slug_aliases: []
-    title: Discounted Netlify access
-    summary: Eligible portfolio companies of approved venture, accelerator, incubator, or startup-studio partners receive discounted Netlify access plus structured support and platform tooling.
+    title: Ship in Days. Scale for Years.
+    summary: Eligible teams get discounted access plus structured support to move faster.
     lifecycle:
       status: active
       effective_from: 2026-08-04T00:00:00Z
@@ -66,6 +66,6 @@ offers:
       availability: membership
       method: other
       url: https://www.netlify.com/partners/startups/
-      instructions: Request startup access through an approved VC, incubator, accelerator, or startup-studio partner and confirm that affiliation; Netlify approval is required.
+      instructions: Confirm eligibility, request access, then start shipping.
     source_ids:
       - src_6324cb2d791d084cc52da615b38ddd5f57b9827bd3ce63938578fbb596865ed5
