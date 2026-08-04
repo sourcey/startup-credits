@@ -23,6 +23,7 @@ programs:
     title: DigitalOcean Hatch
     summary: DigitalOcean's global startup program to help startups grow and build in the cloud.
     source_ids:
+      - src_79a5ba0b58a5334728f4b66261d11e87dd01f1b9c98e8c82c9ad5805be0c2327
       - src_30a5f4587a36fc6cc338e47bd0185250c99f64a15e057bd464c2248ea16c192c
 offers:
   - offer_id: off_01kyh8fpe2dwqnfrbb6nejb5zz
@@ -203,11 +204,12 @@ offers:
             statement: New DigitalOcean business account
     roles:
       terms_authority_entity_id: ent_01kyh8fpe29kn3bm05h7kyqyka
-      access_operator_entity_id: ent_01kyyr9svgcxd42r9s8g3knssn
+      access_operator_entity_id: ent_01kyh8fpe29kn3bm05h7kyqyka
     access:
-      availability: referral
-      instructions: Contact hatch@digitalocean.com for AI tier details.
+      availability: public
+      instructions: Contact DigitalOcean's Hatch team using the contact details published on the offer page for AI tier details.
       method: contact
       url: https://perkbook.co/vendor-directory/digitalocean
     source_ids:
+      - src_79a5ba0b58a5334728f4b66261d11e87dd01f1b9c98e8c82c9ad5805be0c2327
       - src_30a5f4587a36fc6cc338e47bd0185250c99f64a15e057bd464c2248ea16c192c

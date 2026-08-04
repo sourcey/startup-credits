@@ -96,7 +96,7 @@ offers:
       access_operator_entity_id: ent_01kyh8fpe322z5v22fkrz422xa
     access:
       availability: public
-      instructions: To claim your credits, sign up for the Team plan, complete your first payment, and then email credits@incident.io to have the credits added to your account
+      instructions: To claim your credits, sign up for the Team plan, complete your first payment, and then email incident.io using the contact details published on the offer page to have the credits added to your account.
       method: contact
       url: https://incident.io/industry/startups
     source_ids:
