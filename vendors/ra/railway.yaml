@@ -1,0 +1,60 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kz6f50mpw4yzhv9f47pbttwk
+slug: railway
+slug_aliases: []
+name: Railway
+domains:
+  - value: railway.app
+    role: primary
+    valid_from: 2026-08-04T14:25:00.000Z
+category: hosting-infra
+description: Railway is a cloud platform that enables developers to deploy and scale applications with zero configuration.
+links:
+  site: https://railway.app
+sources:
+  - source_id: src_01kz6f50mpw4yzhv9f47pbttwk02
+    url: https://railway.app/startup-program
+programs:
+  - program_id: prg_01kz6f50msrqvfz69z8a46e8ks
+    program_slug: railway-startup-program
+    program_slug_aliases: []
+    title: Railway Startup Program
+    summary: Railway offers eligible startups infrastructure credits and premium support to help them build and launch faster.
+    source_ids:
+      - src_01kz6f50mpw4yzhv9f47pbttwk02
+offers:
+  - offer_id: off_01kz6f50msc5qdzsg588nm2yb6
+    program_id: prg_01kz6f50msrqvfz69z8a46e8ks
+    offer_slug: railway-startup-credits
+    offer_slug_aliases: []
+    title: Railway Startup Credits
+    summary: Eligible early-stage startups receive Railway platform credits to deploy and scale their applications.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-04T14:25:00.000Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_primary
+          description: Railway platform credits for eligible early-stage startups
+          kind: credit
+          duration:
+            kind: exact
+            value: P12M
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be an early-stage startup with a working prototype or live product, not previously used Railway credits, and building a technology product.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01kz6f50mpw4yzhv9f47pbttwk
+      access_operator_entity_id: ent_01kz6f50mpw4yzhv9f47pbttwk
+    access:
+      availability: public
+      method: form
+      url: https://railway.app/startup-program
+    terms_url: https://railway.app/startup-program
+    source_ids:
+      - src_01kz6f50mpw4yzhv9f47pbttwk02
