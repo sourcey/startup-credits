@@ -1,0 +1,57 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kz5hkd1t5nxqwg94347gx6p7
+slug: buffer
+slug_aliases: []
+name: Buffer
+domains:
+  - value: buffer.com
+    role: primary
+    valid_from: 2026-08-04T00:00:00.000Z
+category: marketing
+description: Buffer helps founders and early teams plan, publish, and analyze social media content.
+links:
+  site: https://buffer.com
+sources:
+  - source_id: src_b75774c1c268e7a118bacd953586112eb936a97c96c8d7769bf5b7582228d98b
+    url: https://buffer.com/made-for/startups
+  - source_id: src_e2d7c2a3a69452ca0e292e04b16db98d89b9d6549aa96dea937ef1981ba41846
+    url: https://support.buffer.com/article/971-buffers-startup-program
+programs: []
+offers:
+  - offer_id: off_01kz5hkd1ws24181nj3sgqtwxn
+    offer_slug: buffer-startup-program
+    offer_slug_aliases: []
+    title: Buffer Startup Program
+    summary: Qualifying early-stage startups can receive 50% off any paid Buffer plan for their first 12 months.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-04T00:00:00.000Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_01kz5hkd1wz8dpq132hmqcr0e6
+          description: 50% off any paid Buffer plan for the first 12 months.
+          duration:
+            kind: exact
+            value: P1Y
+          kind: discount
+          percentage:
+            basis_points: 5000
+            kind: exact
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_buffer_startup_program
+        statement: The company must have fewer than 50 employees, be 2 years old or younger from incorporation, be at the pre-seed, seed, or Series A stage, have a live company website, use a matching company-domain work email, be new to paid Buffer, and be a product- or service-based company rather than an agency, marketing consultancy, or dev shop.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01kz5hkd1t5nxqwg94347gx6p7
+      access_operator_entity_id: ent_01kz5hkd1t5nxqwg94347gx6p7
+    access:
+      availability: public
+      method: form
+      url: https://buffer.com/made-for/startups
+    source_ids:
+      - src_b75774c1c268e7a118bacd953586112eb936a97c96c8d7769bf5b7582228d98b
+      - src_e2d7c2a3a69452ca0e292e04b16db98d89b9d6549aa96dea937ef1981ba41846
