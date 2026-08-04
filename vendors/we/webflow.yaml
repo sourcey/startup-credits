@@ -7,7 +7,7 @@ domains:
   - value: webflow.com
     role: primary
     valid_from: 2026-08-01T13:50:00.000Z
-category: code
+category: no-code
 description: Design, build, optimize, and rank in AI search — all in Webflow. Enterprise-grade security, CMS, hosting, and AEO built in. Trusted by over 300k teams.
 links:
   site: https://webflow.com

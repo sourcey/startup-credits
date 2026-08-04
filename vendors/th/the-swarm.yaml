@@ -7,7 +7,7 @@ domains:
   - value: theswarm.com
     role: primary
     valid_from: 2026-08-01T13:50:00.000Z
-category: sales
+category: crm-sales
 description: The Swarm curates a rich dataset of 580M profiles with daily job changes, 100M companies with fundraising data, and a unique relationship mapping technology for builders and investors.
 links:
   site: https://theswarm.com

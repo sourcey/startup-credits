@@ -1,0 +1,44 @@
+name: Missing vendor or offer
+description: Reserve or report a valuable startup offer that is not in the catalog.
+title: "Missing: "
+body:
+  - type: markdown
+    attributes:
+      value: Search open issues and pull requests first. One issue is the shared reservation surface for one vendor.
+  - type: input
+    id: vendor
+    attributes:
+      label: Vendor
+      description: Public vendor name.
+      placeholder: Example Cloud
+    validations:
+      required: true
+  - type: input
+    id: domain
+    attributes:
+      label: Canonical domain
+      placeholder: example.com
+    validations:
+      required: true
+  - type: textarea
+    id: offers
+    attributes:
+      label: Startup offer
+      description: Briefly identify the startup-specific credit, discount, or program that appears to be missing.
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: First-party sources
+      description: One vendor-owned URL per line. Do not submit directories, roundups, or inferred terms.
+      placeholder: https://example.com/startups
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Duplicate check
+      options:
+        - label: I searched the open issues and pull requests for this vendor.
+          required: true

@@ -12,10 +12,12 @@ description: Amazon Web Services provides cloud infrastructure, data services, a
 links:
   site: https://aws.amazon.com/startups/
 sources:
-  - source_id: src_76d24dd13896e7193963f92a4af2a17cf151c8909a0598a41567c53d2b202d97
-    url: https://aws.amazon.com/startups/
   - source_id: src_e7804e1c8a7ac1fff655584c226c25f4be1e67fee3e9e2659ff6f336ffe95894
-    url: https://aws.amazon.com/startups
+    url: https://aws.amazon.com/startups/
+  - source_id: src_f6197d69cf4158099548005ec44644b6d0d768eff10c139830a6989688f59fd0
+    url: https://aws.amazon.com/startups/credits/?lang=en-US
+  - source_id: src_cf2af0a7186d9689ec442ec8389c719ceca156824afc8c204bf2ebd32be186f0
+    url: https://aws.amazon.com/aws-startups/learn/applying-for-aws-activate-credits-a-step-by-step-guide/
 programs:
   - program_id: prg_01kyyjpn03angf9erfjwke4c42
     program_slug: aws-activate
@@ -24,29 +26,47 @@ programs:
     summary: AWS Activate provides credits, technical guidance, and resources to help startups test, build, and scale.
     source_ids:
       - src_e7804e1c8a7ac1fff655584c226c25f4be1e67fee3e9e2659ff6f336ffe95894
+      - src_f6197d69cf4158099548005ec44644b6d0d768eff10c139830a6989688f59fd0
+      - src_cf2af0a7186d9689ec442ec8389c719ceca156824afc8c204bf2ebd32be186f0
 offers:
   - offer_id: off_01kyh8fpe12z6fgn1ywg2ykth8
-    offer_slug: aws-activate-credits
-    offer_slug_aliases: []
-    title: AWS Activate Credits
-    summary: Eligible startups can receive up to $200,000 in AWS Activate Credits to offset costs for cloud infrastructure, data services, and AI/ML models, including third-party models on Amazon Bedrock.
+    program_id: prg_01kyyjpn03angf9erfjwke4c42
+    offer_slug: aws-activate-portfolio-credits
+    offer_slug_aliases:
+      - aws-activate-credits
+    title: AWS Activate Portfolio credits
+    summary: Pre-Series B startups with an AWS Activate Provider Org ID can apply for up to $200,000 in AWS Activate credits.
     lifecycle:
       status: active
       effective_from: 2026-07-27T07:35:36.165Z
     economics:
-      consideration:
-        kind: unknown
-        description: The source record did not establish separate consideration.
       benefits:
-        - benefit_id: ben_primary
-          description: Up to $200,000 in credits
-          kind: other
+        - benefit_id: portfolio_credits
+          description: Up to $200,000 in AWS credits
+          kind: credit
+          value:
+            kind: up-to
+            amount:
+              currency: USD
+              minor_units: 20000000
+      consideration:
+        kind: none
     eligibility:
       rule:
-        kind: manual
-        criterion_id: cri_requirement_01
-        statement: Startups must apply to receive credits; AI startups ready to scale may qualify for additional credits beyond Activate.
-        reason: not-machine-evaluable
+        kind: all
+        rules:
+          - kind: predicate
+            criterion_id: company_age
+            fact: company.age_months
+            operator: lte
+            value:
+              type: number
+              value: 120
+            statement: Company was founded within the last 10 years.
+          - kind: manual
+            criterion_id: portfolio_access
+            statement: Must be pre-Series B and apply with an AWS Activate Provider Org ID; AWS also reviews prior credits and other application requirements.
+            reason: external-verification
     roles:
       terms_authority_entity_id: ent_01kyh8fpe10b164tj935t8k5zb
       access_operator_entity_id: ent_01kyh8fpe10b164tj935t8k5zb
@@ -55,20 +75,103 @@ offers:
       method: form
       url: https://aws.amazon.com/startups/join?destination=/credits/apply
     source_ids:
-      - src_76d24dd13896e7193963f92a4af2a17cf151c8909a0598a41567c53d2b202d97
+      - src_f6197d69cf4158099548005ec44644b6d0d768eff10c139830a6989688f59fd0
+  - offer_id: off_01kz5x2kqcj2pfkaqpdwx0ywsd
+    program_id: prg_01kyyjpn03angf9erfjwke4c42
+    offer_slug: aws-activate-founders-credits
+    offer_slug_aliases: []
+    title: AWS Activate Founders
+    summary: Self-funded, pre-Series B startups founded within the last 10 years can apply for $1,000 in AWS credits, with selected participants eligible for up to $5,000.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-04T08:07:04.112Z
+    economics:
+      benefits:
+        - benefit_id: founders_credits
+          description: Up to $5,000 in AWS credits for selected Founders participants
+          kind: credit
+          value:
+            kind: up-to
+            amount:
+              currency: USD
+              minor_units: 500000
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - kind: predicate
+            criterion_id: company_age
+            fact: company.age_months
+            operator: lte
+            value:
+              type: number
+              value: 120
+            statement: Company was founded within the last 10 years.
+          - kind: manual
+            criterion_id: founders_access
+            statement: Must be self-funded, pre-Series B, have an AWS account on a paid tier, and be new to Activate credits or request more credits than previously received.
+            reason: external-verification
+    roles:
+      terms_authority_entity_id: ent_01kyh8fpe10b164tj935t8k5zb
+      access_operator_entity_id: ent_01kyh8fpe10b164tj935t8k5zb
+    access:
+      availability: public
+      method: form
+      url: https://aws.amazon.com/startups/join?destination=/credits/apply
+    source_ids:
+      - src_f6197d69cf4158099548005ec44644b6d0d768eff10c139830a6989688f59fd0
+      - src_cf2af0a7186d9689ec442ec8389c719ceca156824afc8c204bf2ebd32be186f0
+  - offer_id: off_01kz5x2kqewkrs4sn2ybx19j4n
+    program_id: prg_01kyyjpn03angf9erfjwke4c42
+    offer_slug: aws-activate-ai-credits
+    offer_slug_aliases: []
+    title: AWS credits for AI startups
+    summary: Invite-only AI startups ready to scale after AWS Activate Portfolio can receive more than $200,000 in AWS credits.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-04T08:07:04.112Z
+    economics:
+      benefits:
+        - benefit_id: ai_credits
+          description: More than $200,000 in AWS credits
+          kind: credit
+          value:
+            kind: at-least
+            amount:
+              currency: USD
+              minor_units: 20000000
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: ai_invitation
+        statement: Must be an invited AI startup ready to scale after AWS Activate Portfolio.
+        reason: vendor-discretion
+    roles:
+      terms_authority_entity_id: ent_01kyh8fpe10b164tj935t8k5zb
+      access_operator_entity_id: ent_01kyh8fpe10b164tj935t8k5zb
+    access:
+      availability: invite
+      method: contact
+      instructions: Talk with your AWS account manager.
+    source_ids:
+      - src_f6197d69cf4158099548005ec44644b6d0d768eff10c139830a6989688f59fd0
   - offer_id: off_01kyyjpn04w8sm169c7ybetjs9
     program_id: prg_01kyyjpn03angf9erfjwke4c42
     offer_slug: aws-activate-credits-2
     offer_slug_aliases: []
     title: AWS Activate Credits
-    summary: Get up to $200,000 in AWS Activate Credits to offset costs on infrastructure, data services, and AI/ML models, including models on Amazon Bedrock.
+    summary: Eligible startups can apply for up to $200,000 in AWS Activate credits.
     lifecycle:
       status: active
       effective_from: 2026-08-01T11:36:14.695Z
     economics:
       benefits:
         - benefit_id: ben_01
-          description: AWS Activate Credits to offset costs on infrastructure, data services, and AI/ML models
+          description: Up to $200,000 in AWS Activate credits
           kind: credit
           value:
             amount:
@@ -91,4 +194,4 @@ offers:
       method: form
       url: https://aws.amazon.com/startups/join?destination=/credits/apply
     source_ids:
-      - src_e7804e1c8a7ac1fff655584c226c25f4be1e67fee3e9e2659ff6f336ffe95894
+      - src_f6197d69cf4158099548005ec44644b6d0d768eff10c139830a6989688f59fd0

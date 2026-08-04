@@ -7,7 +7,7 @@ domains:
   - value: descope.com
     role: primary
     valid_from: 2026-08-01T13:50:00.000Z
-category: security
+category: auth-security
 description: Build secure, frictionless identity journeys for your users, business customers, partners, AI agents, and MCP servers with the Descope External IAM Platform.
 links:
   site: https://descope.com

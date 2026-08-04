@@ -7,7 +7,7 @@ domains:
   - value: alibabacloud.com
     role: primary
     valid_from: 2026-08-01T13:50:00.000Z
-category: cloud
+category: hosting-infra
 description: How we handle your personal data and your rights - Alibaba Cloud International Website Privacy Policy - Alibaba Cloud,Legal:This Privacy Policy applies to the access and use of the Alibaba Cloud
 links:
   site: https://alibabacloud.com

@@ -7,7 +7,7 @@ domains:
   - value: dover.com
     role: primary
     valid_from: 2026-08-01T13:50:00.000Z
-category: people
+category: hr-people
 description: 2,000+ companies hire with Dover - the best way for startups to find recruiting help. Access a marketplace of top fractional tech recruiters and run your process in our free ATS built for startups.
 links:
   site: https://dover.com
@@ -21,7 +21,7 @@ offers:
   - offer_id: off_01kyyts97w5gemywn56dycqgqw
     offer_slug: free-access-to-ats-and-33-discount
     offer_slug_aliases: []
-    title: Free Access to ATS & 33% Discount
+    title: Forever-free Dover ATS and Sourcing Copilot, plus 33% off
     summary: Get forever-free access to Dover ATS and Sourcing Copilot plus 33% off your first year of Dover Embedded or Sourcing Autopilot for new customers.
     lifecycle:
       status: active
@@ -56,10 +56,10 @@ offers:
           value: false
     roles:
       terms_authority_entity_id: ent_01kyyts97thnsffv3e7r9m1270
-      access_operator_entity_id: ent_01kyyr9svfavvhqt4vy0e0b25k
+      access_operator_entity_id: ent_01kyyts97thnsffv3e7r9m1270
     access:
       availability: membership
-      instructions: Email vip@dover.com and mention Pulley deal to sales rep.
+      instructions: Email Dover using the contact details published for the offer and mention the Pulley deal to the sales representative.
       method: contact
     source_ids:
       - src_5af15c175b972ada7f6e0487dc9385f214ca5825c52bf7ecdb54e53d1946183d

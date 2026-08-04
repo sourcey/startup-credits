@@ -1,0 +1,65 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kz2a2wj1kjbz8rnxmgrfyv61
+slug: daytona
+slug_aliases: []
+name: Daytona
+domains:
+  - value: daytona.io
+    role: primary
+    valid_from: 2026-08-02T22:39:02.726Z
+category: hosting-infra
+description: Daytona provides fast, scalable, stateful infrastructure for AI agents.
+links:
+  site: https://www.daytona.io
+sources:
+  - source_id: src_316e96ca899f3bf844a13f49d7f3d225dd4345e6e40e574cddf4229156e9dcde
+    url: https://www.daytona.io/startups
+  - source_id: src_de82b63bdb1a3e78163d761cd278246f5f6c0dfdaf011f78c29d7ec93c4ff173
+    url: https://www.daytona.io/dotfiles/supercharging-ai-startups-with-up-to-50k-in-credits
+programs:
+  - program_id: prg_01kz2a2wj6mdegpg4ycpqwqjtf
+    program_slug: daytona-startup-grid
+    program_slug_aliases: []
+    title: Daytona Startup Grid
+    summary: Daytona's startup program provides credits and technical guidance to early-stage companies building AI agents, LLM applications, and developer tools.
+    source_ids:
+      - src_de82b63bdb1a3e78163d761cd278246f5f6c0dfdaf011f78c29d7ec93c4ff173
+offers:
+  - offer_id: off_01kz2a2wj61xgve421hbs3psev
+    program_id: prg_01kz2a2wj6mdegpg4ycpqwqjtf
+    offer_slug: up-to-50000-in-daytona-credits
+    offer_slug_aliases: []
+    title: Up to $50,000 in Daytona credits
+    summary: Accepted startups receive $10,000 in Daytona credits and can unlock up to $50,000 as their infrastructure needs grow.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-02T22:39:02.726Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to $50,000 in Daytona credits, including $10,000 upon acceptance.
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 5000000
+            kind: up-to
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startup applicants submit Daytona's public application form for vendor review.
+    roles:
+      terms_authority_entity_id: ent_01kz2a2wj1kjbz8rnxmgrfyv61
+      access_operator_entity_id: ent_01kz2a2wj1kjbz8rnxmgrfyv61
+    access:
+      availability: public
+      method: form
+      url: https://www.daytona.io/startups
+    terms_url: https://www.daytona.io/startups
+    source_ids:
+      - src_316e96ca899f3bf844a13f49d7f3d225dd4345e6e40e574cddf4229156e9dcde
+      - src_de82b63bdb1a3e78163d761cd278246f5f6c0dfdaf011f78c29d7ec93c4ff173

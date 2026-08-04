@@ -1,0 +1,96 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kz2ssxy9yrqn0egk7abn2ayt
+slug: clickhouse
+slug_aliases: []
+name: ClickHouse
+domains:
+  - value: clickhouse.com
+    role: primary
+    valid_from: 2026-08-03T03:13:46Z
+category: databases
+description: ClickHouse is a fast, open-source OLAP database for real-time analytics.
+links:
+  site: https://clickhouse.com
+sources:
+  - source_id: src_a6c773b745e9bf437c51fc2e749c22eb67dede631d13538b6a0c0fee25327a4c
+    url: https://clickhouse.com/deals/ycombinator
+  - source_id: src_1f6156f04e6f01d00ac9ec86a4344d14cf701f444bf133c49ced541a92e07f9c
+    url: https://clickhouse.com/legal/agreements/cloud-startup-program
+programs:
+  - program_id: prg_01kz2ssxy9bcqm3d826mayqwqg
+    program_slug: clickhouse-cloud-startup-program
+    program_slug_aliases: []
+    title: ClickHouse Cloud Startup Program
+    summary: ClickHouse's startup program provides approved companies with ClickHouse Cloud credits and related support benefits under its published program agreement.
+    source_ids:
+      - src_a6c773b745e9bf437c51fc2e749c22eb67dede631d13538b6a0c0fee25327a4c
+      - src_1f6156f04e6f01d00ac9ec86a4344d14cf701f444bf133c49ced541a92e07f9c
+offers:
+  - offer_id: off_01kz2ssxy9rpr6b860z2dwfpxg
+    program_id: prg_01kz2ssxy9bcqm3d826mayqwqg
+    offer_slug: y-combinator-clickhouse-cloud-credits
+    offer_slug_aliases: []
+    title: $10,000 in ClickHouse Cloud credits for YC startups
+    summary: Eligible Y Combinator startups receive $10,000 in ClickHouse Cloud credits valid for 24 months, Basic Support, expert training, and promotional opportunities.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-03T03:13:46Z
+    economics:
+      consideration:
+        kind: variable
+        description: Company permits ClickHouse to use its name and logo to publicly identify it as a program participant and customer, and agrees to consider blog-post and event-speaking requests in good faith.
+      benefits:
+        - benefit_id: ben_01
+          description: $10,000 in ClickHouse Cloud credits valid for 24 months
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 1000000
+            kind: exact
+          duration:
+            kind: exact
+            value: P2Y
+        - benefit_id: ben_02
+          description: ClickHouse Basic Support
+          kind: free-service
+          service: ClickHouse Basic Support
+        - benefit_id: ben_03
+          description: One-hour expert training session
+          kind: free-service
+          service: ClickHouse expert training session
+        - benefit_id: ben_04
+          description: Opportunities for a joint blog post, promotion, and speaking at ClickHouse community events
+          kind: other
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            statement: Applicant is in the current Y Combinator program and has a valid YC secret code for verification
+            reason: external-verification
+          - criterion_id: cri_02
+            kind: manual
+            statement: Applicant has not raised a Series D or later round
+            reason: external-verification
+          - criterion_id: cri_03
+            fact: company.is_current_customer
+            kind: predicate
+            operator: eq
+            statement: Applicant is not a current ClickHouse Cloud customer
+            value:
+              type: boolean
+              value: false
+    roles:
+      terms_authority_entity_id: ent_01kz2ssxy9yrqn0egk7abn2ayt
+      access_operator_entity_id: ent_01kz2ssxy9yrqn0egk7abn2ayt
+    access:
+      availability: membership
+      instructions: Start a ClickHouse Cloud trial, then submit the application form with the ClickHouse Organization ID and company details.
+      method: form
+      url: https://clickhouse.com/deals/ycombinator
+    terms_url: https://clickhouse.com/legal/agreements/cloud-startup-program
+    source_ids:
+      - src_a6c773b745e9bf437c51fc2e749c22eb67dede631d13538b6a0c0fee25327a4c
+      - src_1f6156f04e6f01d00ac9ec86a4344d14cf701f444bf133c49ced541a92e07f9c

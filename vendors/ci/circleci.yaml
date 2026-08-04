@@ -1,0 +1,73 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kz1h126eq3ythxz7dvdc1sw3
+slug: circleci
+slug_aliases: []
+name: CircleCI
+domains:
+  - value: circleci.com
+    role: primary
+    valid_from: 2026-08-02T15:21:08.558Z
+category: ci-cd
+description: Continuous integration and delivery platform for automating software builds, tests, and deployment workflows.
+links:
+  site: https://circleci.com
+sources:
+  - source_id: src_e5a5ed476ffee42b40459b102d2dd846b9b34a19ac568e98ed1ce703a86f5645
+    url: https://circleci.com/startup-program/
+programs:
+  - program_id: prg_01kz1h126es3ktb8dba9pcfwn6
+    program_slug: circleci-for-startups
+    program_slug_aliases: []
+    title: CircleCI for Startups
+    summary: CircleCI's startup program provides qualifying early-stage companies with compute credits, support, and onboarding assistance.
+    source_ids:
+      - src_e5a5ed476ffee42b40459b102d2dd846b9b34a19ac568e98ed1ce703a86f5645
+offers:
+  - offer_id: off_01kz1h126ej4ffat76gjdzhnpg
+    program_id: prg_01kz1h126es3ktb8dba9pcfwn6
+    offer_slug: up-to-20000-in-compute-credits-for-up-to-24-months
+    offer_slug_aliases: []
+    title: Up to $20,000 in CircleCI compute credits for up to 24 months
+    summary: Qualifying startups can receive up to $20,000 in CircleCI compute credits for up to 24 months, free Starter Support during the program, and guided onboarding and pipeline configuration support.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-02T15:21:08.558Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to $20,000 in CircleCI compute credits
+          duration:
+            kind: up-to
+            value: P24M
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 2000000
+            kind: up-to
+        - benefit_id: ben_02
+          description: Starter Support at no cost during the program
+          kind: free-service
+          service: CircleCI Starter Support
+        - benefit_id: ben_03
+          description: Guided onboarding and pipeline configuration support
+          kind: other
+      consideration:
+        kind: unknown
+        description: The public program page does not establish separate consideration.
+    eligibility:
+      rule:
+        criterion_id: cri_requirement_01
+        kind: manual
+        reason: not-machine-evaluable
+        statement: Startup must be new to CircleCI or on the Free plan, be pre-Seed through Series A, have been founded within the last five years, and be part of a recognized accelerator or VC program or show at least $500,000 in funding.
+    roles:
+      terms_authority_entity_id: ent_01kz1h126eq3ythxz7dvdc1sw3
+      access_operator_entity_id: ent_01kz1h126eq3ythxz7dvdc1sw3
+    access:
+      availability: public
+      method: form
+      url: https://circleci.com/startup-program/
+    terms_url: https://circleci.com/startup-program/
+    source_ids:
+      - src_e5a5ed476ffee42b40459b102d2dd846b9b34a19ac568e98ed1ce703a86f5645

@@ -13,7 +13,7 @@ links:
   site: https://www.salesforce.com
 sources:
   - source_id: src_de248238da7faac44fa1bff72d2bcf4525bc36ccdb8b20a93ad9bbedd00f3748
-    url: https://www.salesforce.com/launchpad/?bc=OTH
+    url: https://www.salesforce.com/launchpad/
   - source_id: src_a6d9fdf624ddc31e96c7f991192cf02a9b45373c89aecfc03609393c55e35d69
     url: https://perkbook.co/vendor-directory/salesforce
 programs:
@@ -28,7 +28,7 @@ offers:
   - offer_id: off_01kyh8fpe5a27280hssp9jdt7q
     offer_slug: salesforce-launchpad-free-and-discounted-solutions
     offer_slug_aliases: []
-    title: Salesforce Launchpad Free and Discounted Solutions
+    title: Free and discounted Salesforce solutions
     summary: Salesforce Launchpad offers venture-backed startups free and discounted Salesforce solutions, including special offers on Starter Suite, Pro Suite, Sales Cloud Enterprise Edition, Agentforce, Tableau, and Slack.
     lifecycle:
       status: active
@@ -53,7 +53,7 @@ offers:
     access:
       availability: public
       method: form
-      url: https://www.salesforce.com/launchpad/?bc=OTH
+      url: https://www.salesforce.com/launchpad/
     source_ids:
       - src_de248238da7faac44fa1bff72d2bcf4525bc36ccdb8b20a93ad9bbedd00f3748
   - offer_id: off_01kyyr9svh98n6tst8agy4n8wv

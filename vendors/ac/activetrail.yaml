@@ -1,0 +1,96 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kz3mz8randcy8a0ebq5frmfd
+slug: activetrail
+slug_aliases:
+  - active-trail
+name: ActiveTrail
+domains:
+  - value: activetrail.com
+    role: primary
+    valid_from: 2026-08-03T11:09:34+00:00
+category: marketing
+description: ActiveTrail provides email marketing, marketing automation, landing pages, SMS marketing, signup forms, and online survey tools.
+links:
+  site: https://www.activetrail.com
+sources:
+  - source_id: src_821b334635a318d5c42784781af7783748de97d762c7270ac6541b8206ce7575
+    url: https://www.activetrail.com/exclusive-startups-offer/
+programs:
+  - program_id: prg_01kz3n48pd6ffsebsv15tkn6fp
+    program_slug: activetrail-startup-booster-program
+    program_slug_aliases: []
+    title: ActiveTrail Startup Booster Program
+    summary: ActiveTrail offers eligible startups six months of free access to its platform.
+    source_ids:
+      - src_821b334635a318d5c42784781af7783748de97d762c7270ac6541b8206ce7575
+offers:
+  - offer_id: off_01kz3mz8rbxnzbhbnc8pmp7qw6
+    program_id: prg_01kz3n48pd6ffsebsv15tkn6fp
+    offer_slug: six-months-free-activetrail
+    offer_slug_aliases: []
+    title: Six months free ActiveTrail for startups
+    summary: Eligible startups receive six months of free ActiveTrail access for up to 5,000 contacts and 50,000 email sends.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-03T11:09:34+00:00
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_01
+          description: Six months of ActiveTrail free for up to 5,000 contacts and 50,000 email sends
+          duration:
+            kind: exact
+            value: P6M
+          kind: free-service
+          service: ActiveTrail platform
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            statement: Applicant must be a new ActiveTrail user with no existing or previous account
+            reason: external-verification
+          - criterion_id: cri_02
+            fact: company.industry
+            kind: predicate
+            operator: contains
+            statement: Company must be a technology or internet company
+            value:
+              type: string
+              value: technology or internet
+          - criterion_id: cri_03
+            fact: company.age_months
+            kind: predicate
+            operator: lt
+            statement: Company must be less than one year old
+            value:
+              type: number
+              value: 12
+          - criterion_id: cri_04
+            fact: company.employee_count
+            kind: predicate
+            operator: lt
+            statement: Company must have fewer than 15 staff members
+            value:
+              type: number
+              value: 15
+          - criterion_id: cri_05
+            fact: company.funding_raised_usd
+            kind: predicate
+            operator: lte
+            statement: If the applicant has raised funding, total funding must not exceed $1,000,000
+            value:
+              type: number
+              value: 1000000
+    roles:
+      terms_authority_entity_id: ent_01kz3mz8randcy8a0ebq5frmfd
+      access_operator_entity_id: ent_01kz3mz8randcy8a0ebq5frmfd
+    access:
+      availability: public
+      method: form
+      url: https://www.activetrail.com/exclusive-startups-offer/
+    terms_url: https://www.activetrail.com/exclusive-startups-offer/
+    source_ids:
+      - src_821b334635a318d5c42784781af7783748de97d762c7270ac6541b8206ce7575

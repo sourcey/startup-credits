@@ -7,7 +7,7 @@ domains:
   - value: foundersuite.com
     role: primary
     valid_from: 2026-08-01T13:50:00.000Z
-category: fundraising
+category: finance-accounting
 description: Software for raising venture capital and managing investor relations. Used by startups, investors, accelerators and financial intermediaries
 links:
   site: https://foundersuite.com

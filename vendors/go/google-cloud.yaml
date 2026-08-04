@@ -14,6 +14,10 @@ links:
 sources:
   - source_id: src_d4247606b801f684842c4b4a07967eb180fa8d99005a5a5c67247deb0c04d2c8
     url: https://cloud.google.com/startup
+  - source_id: src_84f0c52caee24529e96b8bd940f89ae2c75ef35f01bbce28e4f622fd6197a187
+    url: https://cloud.google.com/startup/benefits?hl=en
+  - source_id: src_4b01fb5b8e17cea8210588d7cce301f3551b2892b58d395ad7eed8e33a7a3453
+    url: https://cloud.google.com/startup/faq?hl=en
   - source_id: src_1818590e2301ade4655e5d8bf9c89bb4f091f6032c63f17bc3a19f11f3ab0260
     url: https://perkbook.co/vendor-directory/google
 programs:
@@ -21,8 +25,11 @@ programs:
     program_slug: google-for-startups-cloud-program
     program_slug_aliases: []
     title: Google for Startups Cloud Program
+    summary: Google for Startups Cloud Program provides separate Start, Scale, and AI credit tiers with different economics and eligibility.
     source_ids:
       - src_d4247606b801f684842c4b4a07967eb180fa8d99005a5a5c67247deb0c04d2c8
+      - src_84f0c52caee24529e96b8bd940f89ae2c75ef35f01bbce28e4f622fd6197a187
+      - src_4b01fb5b8e17cea8210588d7cce301f3551b2892b58d395ad7eed8e33a7a3453
   - program_id: prg_01kyyts97xc8p500ajkf2n1774
     program_slug: google-cloud-for-startups
     program_slug_aliases: []
@@ -33,68 +40,142 @@ programs:
 offers:
   - offer_id: off_01kyh8fpe243m25ep0wtvz068s
     program_id: prg_01kyh8fpe243m25ep0wtvz068s
-    offer_slug: google-for-startups-cloud-program-early-stage
-    offer_slug_aliases: []
-    title: Google for Startups Cloud Program - Early Stage
-    summary: Build and grow with $200,000 in cloud credits, or up to $350,000 for AI-first startups, through the Google for Startups Cloud Program.
+    offer_slug: google-for-startups-cloud-program-scale
+    offer_slug_aliases:
+      - google-for-startups-cloud-program-early-stage
+    title: Google Cloud Scale tier
+    summary: VC-funded startups ready to grow and scale can receive up to $100,000 in Google Cloud credits in year one, then 20% up to another $100,000 in year two.
     lifecycle:
       status: active
       effective_from: 2026-07-27T07:35:54.326Z
     economics:
-      consideration:
-        kind: unknown
-        description: The source record did not establish separate consideration.
       benefits:
-        - benefit_id: ben_primary
-          description: Up to $350,000 in credits
-          kind: other
+        - benefit_id: scale_year_one
+          description: Year 1 — 100% up to $100,000 in Google Cloud credits
+          kind: credit
+          value:
+            kind: up-to
+            amount:
+              currency: USD
+              minor_units: 10000000
+        - benefit_id: scale_year_two
+          description: Year 2 — 20% up to an additional $100,000 in Google Cloud credits
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 2000
+      consideration:
+        kind: none
     eligibility:
       rule:
         kind: manual
-        criterion_id: cri_requirement_01
-        statement: Seed to Series A startups (or AI-first startups).
-        reason: not-machine-evaluable
+        criterion_id: scale_review
+        statement: Must be a VC-funded startup that raised Pre-Seed or Seed within the last five years, or Series A within the last 12 months, was founded within five years, and has not received more than $5,000 in Google Cloud credits.
+        reason: external-verification
     roles:
       terms_authority_entity_id: ent_01kyh8fpe210m3jqn5xgzztgv8
       access_operator_entity_id: ent_01kyh8fpe210m3jqn5xgzztgv8
     access:
       availability: public
       method: form
-      url: https://cloud.google.com/startup
+      url: https://cloud.google.com/startup/apply
     source_ids:
-      - src_d4247606b801f684842c4b4a07967eb180fa8d99005a5a5c67247deb0c04d2c8
+      - src_84f0c52caee24529e96b8bd940f89ae2c75ef35f01bbce28e4f622fd6197a187
+      - src_4b01fb5b8e17cea8210588d7cce301f3551b2892b58d395ad7eed8e33a7a3453
   - offer_id: off_01kyh8fpe26twnnyavn9r2fxx1
     program_id: prg_01kyh8fpe243m25ep0wtvz068s
-    offer_slug: google-for-startups-cloud-program-pre-funded
-    offer_slug_aliases: []
-    title: Google for Startups Cloud Program - Pre-Funded
-    summary: Ideate and iterate your MVP with $2,000 in cloud credits through the Google for Startups Cloud Program.
+    offer_slug: google-for-startups-cloud-program-start
+    offer_slug_aliases:
+      - google-for-startups-cloud-program-pre-funded
+    title: Google Cloud Start tier
+    summary: Technology startups founded within the last 24 months that plan to seek venture funding can receive up to $2,000 in Google Cloud credits for one year.
     lifecycle:
       status: active
       effective_from: 2026-07-27T07:35:54.326Z
     economics:
-      consideration:
-        kind: unknown
-        description: The source record did not establish separate consideration.
       benefits:
-        - benefit_id: ben_primary
-          description: $2,000 in credits
-          kind: other
+        - benefit_id: start_credits
+          description: Up to $2,000 in Google Cloud credits for one year
+          kind: credit
+          value:
+            kind: up-to
+            amount:
+              currency: USD
+              minor_units: 200000
+          duration:
+            kind: exact
+            value: P1Y
+      consideration:
+        kind: none
     eligibility:
       rule:
-        kind: manual
-        criterion_id: cri_requirement_01
-        statement: Pre-funded startups.
-        reason: not-machine-evaluable
+        kind: all
+        rules:
+          - kind: predicate
+            criterion_id: company_age
+            fact: company.age_months
+            operator: lte
+            value:
+              type: number
+              value: 24
+            statement: Company was founded within the last 24 months.
+          - kind: manual
+            criterion_id: start_review
+            statement: Must be a technology startup planning to seek venture funding and must not have received prior Google Cloud credits beyond the free trial.
+            reason: external-verification
     roles:
       terms_authority_entity_id: ent_01kyh8fpe210m3jqn5xgzztgv8
       access_operator_entity_id: ent_01kyh8fpe210m3jqn5xgzztgv8
     access:
       availability: public
       method: form
-      url: https://cloud.google.com/startup
+      url: https://cloud.google.com/startup/apply
     source_ids:
-      - src_d4247606b801f684842c4b4a07967eb180fa8d99005a5a5c67247deb0c04d2c8
+      - src_84f0c52caee24529e96b8bd940f89ae2c75ef35f01bbce28e4f622fd6197a187
+      - src_4b01fb5b8e17cea8210588d7cce301f3551b2892b58d395ad7eed8e33a7a3453
+  - offer_id: off_01kz5x2kqemq0cjk00sy3tzjd1
+    program_id: prg_01kyh8fpe243m25ep0wtvz068s
+    offer_slug: google-for-startups-cloud-program-ai
+    offer_slug_aliases: []
+    title: AI startups
+    summary: AI-first startups can receive up to $250,000 in Google Cloud credits in year one, then 20% up to another $100,000 in year two.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-04T08:07:10.759Z
+    economics:
+      benefits:
+        - benefit_id: ai_year_one
+          description: Year 1 — 100% up to $250,000 in Google Cloud credits for AI-first startups
+          kind: credit
+          value:
+            kind: up-to
+            amount:
+              currency: USD
+              minor_units: 25000000
+        - benefit_id: ai_year_two
+          description: Year 2 — 20% up to an additional $100,000 in Google Cloud credits
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 2000
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: ai_review
+        statement: Google admits AI-first startups case by case and requires AI to be foundational to the product rather than an add-on, alongside the Scale-tier application requirements.
+        reason: vendor-discretion
+    roles:
+      terms_authority_entity_id: ent_01kyh8fpe210m3jqn5xgzztgv8
+      access_operator_entity_id: ent_01kyh8fpe210m3jqn5xgzztgv8
+    access:
+      availability: public
+      method: form
+      url: https://cloud.google.com/startup/apply
+    source_ids:
+      - src_84f0c52caee24529e96b8bd940f89ae2c75ef35f01bbce28e4f622fd6197a187
+      - src_4b01fb5b8e17cea8210588d7cce301f3551b2892b58d395ad7eed8e33a7a3453
   - offer_id: off_01kyyts97x2jp0pmtbzfdervh2
     program_id: prg_01kyyts97xc8p500ajkf2n1774
     offer_slug: google-cloud-for-startups-credits-and-usage-coverage
