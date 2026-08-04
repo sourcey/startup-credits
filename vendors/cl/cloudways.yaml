@@ -8,7 +8,7 @@ domains:
     role: primary
     valid_from: 2026-08-04T00:00:00Z
 category: hosting-infra
-description: Cloudways is a managed cloud hosting platform for deploying, managing, monitoring, and scaling web applications.
+description: Cloudways is a managed cloud hosting platform.
 links:
   site: https://www.cloudways.com
 sources:
@@ -79,6 +79,10 @@ offers:
             kind: manual
             reason: external-verification
             statement: Agencies are not eligible and may apply to the separate Cloudways partner program instead.
+          - criterion_id: cri_05
+            kind: manual
+            reason: external-verification
+            statement: Must not be using another Cloudways promotion or offer unless Cloudways agrees otherwise.
     roles:
       terms_authority_entity_id: ent_01kz4xsd0me2nx4f45qyvkz9sg
       access_operator_entity_id: ent_01kz4xsd0me2nx4f45qyvkz9sg
@@ -145,6 +149,10 @@ offers:
             kind: manual
             reason: external-verification
             statement: Agencies are not eligible and may apply to the separate Cloudways partner program instead.
+          - criterion_id: cri_05
+            kind: manual
+            reason: external-verification
+            statement: Must not be using another Cloudways promotion or offer unless Cloudways agrees otherwise.
     roles:
       terms_authority_entity_id: ent_01kz4xsd0me2nx4f45qyvkz9sg
       access_operator_entity_id: ent_01kz4xsd0me2nx4f45qyvkz9sg
@@ -212,6 +220,10 @@ offers:
             kind: manual
             reason: external-verification
             statement: Agencies are not eligible and may apply to the separate Cloudways partner program instead.
+          - criterion_id: cri_05
+            kind: manual
+            reason: external-verification
+            statement: Must not be using another Cloudways promotion or offer unless Cloudways agrees otherwise.
     roles:
       terms_authority_entity_id: ent_01kz4xsd0me2nx4f45qyvkz9sg
       access_operator_entity_id: ent_01kz4xsd0me2nx4f45qyvkz9sg
