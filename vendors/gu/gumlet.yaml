@@ -1,0 +1,70 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kz6rwbzmqdr6y50wn32nhf3v
+slug: gumlet
+slug_aliases: []
+name: Gumlet
+domains:
+  - value: gumlet.com
+    role: primary
+    valid_from: 2026-08-04T16:14:35.000Z
+category: hosting-infra
+description: Gumlet provides video hosting, streaming, analytics, image optimization, and media-delivery infrastructure for web applications.
+links:
+  site: https://www.gumlet.com
+sources:
+  - source_id: src_08003e8f02035f57f9322fae7809617cdf8b027223bd46d97ac68c01450838e3
+    url: https://www.gumlet.com/startups/
+programs:
+  - program_id: prg_01kz6rwbzprwp5cmfsq3yqfx7s
+    program_slug: gumlet-startup-credits-program
+    program_slug_aliases: []
+    title: Gumlet Startup Credits Program
+    summary: Gumlet's startup program supports eligible young businesses and registered nonprofits with discounted media infrastructure, product access, onboarding, and migration assistance.
+    source_ids:
+      - src_08003e8f02035f57f9322fae7809617cdf8b027223bd46d97ac68c01450838e3
+offers:
+  - offer_id: off_01kz6rwbzp4zbgff7w1qymtxt8
+    program_id: prg_01kz6rwbzprwp5cmfsq3yqfx7s
+    offer_slug: gumlet-business-plan-startup-discount
+    offer_slug_aliases: []
+    title: Gumlet Business Plan startup discount
+    summary: Eligible startups and registered nonprofits can receive up to 50% off Gumlet's Business Plan for the first year, plus personalized onboarding and migration support.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-04T16:14:35.000Z
+    economics:
+      benefits:
+        - applies_to: Gumlet Business Plan
+          benefit_id: ben_01
+          description: Up to 50% off the Gumlet Business Plan for the first year.
+          duration:
+            kind: exact
+            value: P1Y
+          kind: discount
+          percentage:
+            basis_points: 5000
+            kind: up-to
+        - benefit_id: ben_02
+          description: Access to Gumlet video, video insights, and image optimization products.
+          kind: other
+        - benefit_id: ben_03
+          description: Personalized onboarding and migration support.
+          kind: other
+      consideration:
+        description: The applicant pays the remaining discounted Business Plan price.
+        kind: variable
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: not-machine-evaluable
+        statement: Published criteria cover businesses registered within the last four years and registered nonprofits or NGOs; applicants must have received less than $10 million in funding and must not already be paying Gumlet customers.
+    roles:
+      terms_authority_entity_id: ent_01kz6rwbzmqdr6y50wn32nhf3v
+      access_operator_entity_id: ent_01kz6rwbzmqdr6y50wn32nhf3v
+    access:
+      availability: public
+      method: form
+      url: https://www.gumlet.com/startups/
+    source_ids:
+      - src_08003e8f02035f57f9322fae7809617cdf8b027223bd46d97ac68c01450838e3
