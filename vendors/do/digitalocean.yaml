@@ -24,6 +24,7 @@ programs:
       - src_01kz6f50mpw4yzhv9f47pbttwk01
 offers:
   - offer_id: off_01kz6f50msc5qdzsg588nm2yb5
+    program_id: prg_01kz6f50msrqvfz69z8a46e8kr
     offer_slug: digitalocean-hatch-credits
     offer_slug_aliases: []
     title: DigitalOcean Hatch Credits
@@ -32,17 +33,15 @@ offers:
       status: active
       effective_from: 2026-08-04T13:15:00.000Z
     economics:
+      consideration:
+        kind: none
       benefits:
         - benefit_id: ben_primary
           description: $5,000 in DigitalOcean credits for 12 months
           kind: credit
-          value:
-            amount:
-              currency: USD
-              minor_units: 500000
-              kind: exact
-      consideration:
-        kind: none
+          duration:
+            kind: exact
+            value: P12M
     eligibility:
       rule:
         kind: manual
@@ -51,9 +50,11 @@ offers:
         reason: not-machine-evaluable
     roles:
       terms_authority_entity_id: ent_01kz6f50mpw4yzhv9f47pbttwk
+      access_operator_entity_id: ent_01kz6f50mpw4yzhv9f47pbttwk
     access:
       availability: public
       method: form
       url: https://www.digitalocean.com/hatch
-      source_ids:
-        - src_01kz6f50mpw4yzhv9f47pbttwk01
+    terms_url: https://www.digitalocean.com/hatch
+    source_ids:
+      - src_01kz6f50mpw4yzhv9f47pbttwk01
