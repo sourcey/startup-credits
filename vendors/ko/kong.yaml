@@ -1,0 +1,78 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kz6r9fwdfngaqc0fcaq3yhcq
+slug: kong
+slug_aliases: []
+name: Kong
+domains:
+  - value: konghq.com
+    role: primary
+    valid_from: 2026-08-04T16:04:21.000Z
+category: apis-integration
+description: Kong provides API and AI connectivity infrastructure, including gateways, service mesh, developer portals, and usage metering.
+links:
+  site: https://konghq.com
+sources:
+  - source_id: src_cd60c4aeb7849e84157656a2700b645439a803ba90d38f7ae7e4fe46e2c7853f
+    url: https://konghq.com/solutions/startup-program
+programs:
+  - program_id: prg_01kz6r9fwf17k3r213f52sv0c9
+    program_slug: kong-for-startups
+    program_slug_aliases: []
+    title: Kong for Startups
+    summary: Kong for Startups supports early-stage AI and API companies with Konnect Plus credits, discounted pricing, product access, and direct technical guidance.
+    source_ids:
+      - src_cd60c4aeb7849e84157656a2700b645439a803ba90d38f7ae7e4fe46e2c7853f
+offers:
+  - offer_id: off_01kz6r9fwfspntesr2e7mantrf
+    program_id: prg_01kz6r9fwf17k3r213f52sv0c9
+    offer_slug: kong-for-startups-credits-and-discount
+    offer_slug_aliases: []
+    title: Kong for Startups credits and discount
+    summary: Selected early-stage AI and API startups can receive up to $100,000 in Kong Konnect Plus credits for 12 months, followed by 50% off list pricing for 24 months.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-04T16:04:21.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to $100,000 in Kong Konnect Plus credits valid for 12 months.
+          duration:
+            kind: exact
+            value: P1Y
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 10000000
+            kind: up-to
+        - applies_to: Kong Konnect Plus products in use
+          benefit_id: ben_02
+          description: 50% off list pricing for 24 months after credits expire or the credit balance is exhausted.
+          duration:
+            kind: exact
+            value: P2Y
+          kind: discount
+          percentage:
+            basis_points: 5000
+            kind: exact
+        - benefit_id: ben_03
+          description: Direct technical support through a dedicated Slack channel, architecture reviews, office hours, and priority responses for launch blockers.
+          kind: other
+      consideration:
+        description: The public program page does not establish separate consideration.
+        kind: unknown
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Applicant must be an early-stage AI or API startup, typically pre-seed through Series A with under $10 million in total funding, and be in production or planning to launch within six months; Kong makes final decisions based on capacity and fit.
+    roles:
+      terms_authority_entity_id: ent_01kz6r9fwdfngaqc0fcaq3yhcq
+      access_operator_entity_id: ent_01kz6r9fwdfngaqc0fcaq3yhcq
+    access:
+      availability: public
+      method: form
+      url: https://konghq.com/solutions/startup-program
+    source_ids:
+      - src_cd60c4aeb7849e84157656a2700b645439a803ba90d38f7ae7e4fe46e2c7853f
