@@ -1,0 +1,74 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kz79vwhvv0epbb90eksygqfk
+slug: launchpad
+slug_aliases: []
+name: Launchpad
+domains:
+  - value: launchpad.io
+    role: primary
+    valid_from: 2026-08-04T21:11:25.499Z
+category: no-code
+description: Launchpad is a Pegasystems low-code platform for building, hosting, and operating workflow-centric B2B SaaS applications.
+links:
+  site: https://launchpad.io/
+sources:
+  - source_id: src_6ac4602bb415295cff1977cfe08127b2cb91bc0c8078d29d6d36b3a5a45384d8
+    url: https://launchpad.io/startups
+programs:
+  - program_id: prg_01kz79vwhv8mhfb6gwwhegdy9r
+    program_slug: launchpad-for-startups
+    program_slug_aliases: []
+    title: Launchpad for Startups
+    summary: Launchpad's rolling program helps eligible early-stage companies build and launch workflow-centric B2B SaaS products.
+    source_ids:
+      - src_6ac4602bb415295cff1977cfe08127b2cb91bc0c8078d29d6d36b3a5a45384d8
+offers:
+  - offer_id: off_01kz79vwhvpwqwm42qqz8bcj83
+    program_id: prg_01kz79vwhv8mhfb6gwwhegdy9r
+    offer_slug: startup-program-platform-and-support
+    offer_slug_aliases: []
+    title: Startup program platform and support
+    summary: Selected startups pay for a 90-day build, then receive one complimentary year on Starter plus $30,000 of premium development support.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-04T21:11:25.499Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: One complimentary year of the Starter Launchpad subscription after completing the program
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 10000
+          duration:
+            kind: exact
+            value: P1Y
+          applies_to: Starter Launchpad subscription
+        - benefit_id: ben_02
+          description: $30,000 of premium development support after completing the program
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 3000000
+            kind: exact
+      consideration:
+        kind: fixed
+        amount:
+          currency: USD
+          minor_units: 150000
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: external-verification
+        statement: Must be an early-stage company with a validated business model, a clear 90-day MVP use case, founders ready to build, less than $2 million ARR, and under $5 million total capital raised.
+    roles:
+      terms_authority_entity_id: ent_01kz79vwhvv0epbb90eksygqfk
+      access_operator_entity_id: ent_01kz79vwhvv0epbb90eksygqfk
+    access:
+      availability: public
+      method: form
+      url: https://launchpad.io/startups
+    source_ids:
+      - src_6ac4602bb415295cff1977cfe08127b2cb91bc0c8078d29d6d36b3a5a45384d8
