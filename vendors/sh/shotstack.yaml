@@ -1,0 +1,73 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kz6xb7sr0y13ea0rggmhanrt
+slug: shotstack
+slug_aliases: []
+name: Shotstack
+domains:
+  - value: shotstack.io
+    role: primary
+    valid_from: 2026-08-04T17:32:37.048Z
+category: apis-integration
+description: Shotstack provides cloud-based video editing APIs for developers to build, automate, and scale video products and workflows.
+links:
+  site: https://shotstack.io
+sources:
+  - source_id: src_e706c2c1a9baa2af1e50f5135092c62773e6a56ef5a1a256930ae24e606fd818
+    url: https://shotstack.io
+  - source_id: src_e3adc21cfdadc536f8001250be6a4c0ee57e78f2bdc2d59ff7d132ebd8b5c032
+    url: https://shotstack.io/solutions/startups/
+programs:
+  - program_id: prg_01kz6xb7srd4mhq5y63w7t1gx0
+    program_slug: shotstack-startup-program
+    program_slug_aliases: []
+    title: Shotstack Startup Program
+    summary: Shotstack gives qualifying early-stage startups an 80% discount on Professional plans for one year, along with access to its startup community and technical support resources.
+    source_ids:
+      - src_e3adc21cfdadc536f8001250be6a4c0ee57e78f2bdc2d59ff7d132ebd8b5c032
+offers:
+  - offer_id: off_01kz6xb7srr62h858w4qzhhbz2
+    program_id: prg_01kz6xb7srd4mhq5y63w7t1gx0
+    offer_slug: shotstack-startup-program
+    offer_slug_aliases: []
+    title: Shotstack Startup Program
+    summary: Qualifying startups receive 80% off Shotstack Professional plans for one year.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-04T17:32:37.048Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 80% discount on Shotstack Professional plans for one year
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 8000
+      consideration:
+        kind: unknown
+        description: Applying is free; using the discount requires enrollment in a Shotstack Professional plan.
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.age_months
+            kind: predicate
+            operator: lte
+            statement: Company was incorporated within the last three years.
+            value:
+              type: number
+              value: 36
+          - criterion_id: cri_02
+            kind: manual
+            reason: external-verification
+            statement: Company has raised funding up to and including a Series A round.
+    roles:
+      terms_authority_entity_id: ent_01kz6xb7sr0y13ea0rggmhanrt
+      access_operator_entity_id: ent_01kz6xb7sr0y13ea0rggmhanrt
+    access:
+      availability: public
+      method: form
+      url: https://app.rapidforms.co/p/426fa0
+      instructions: Complete the Shotstack Startup Discount application with company, website, incorporation, and funding-stage details.
+    source_ids:
+      - src_e3adc21cfdadc536f8001250be6a4c0ee57e78f2bdc2d59ff7d132ebd8b5c032
