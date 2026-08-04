@@ -1,0 +1,68 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kz5s5at0qsk9c9f1nh1cbgz5
+slug: intel
+slug_aliases: []
+name: Intel
+domains:
+  - value: intel.com
+    role: primary
+    valid_from: 2026-08-04T06:59:24.975Z
+category: ai-ml
+description: Intel develops computing platforms, processors, accelerators, software, and cloud services for businesses and developers.
+links:
+  site: https://www.intel.com
+sources:
+  - source_id: src_010a068f51ba77898a4787953e7339907db2e1417db4ee203b3fa31396b3182b
+    url: https://software.seek.intel.com/intel-liftoff
+  - source_id: src_e7cd2af2c5f532c0492068bd7077891bc1761ea53c02fc50c04b5295a1a58898
+    url: https://community.intel.com/t5/Blogs/Tech-Innovation/Artificial-Intelligence-AI/How-Intel-Liftoff-Accelerates-AI-Startups/post/1690460
+programs:
+  - program_id: prg_01kz5s5at51a17g9th6t36wkq4
+    program_slug: liftoff
+    program_slug_aliases: []
+    title: Intel Liftoff
+    summary: A free virtual program helping early-stage accelerated-computing startups with technical expertise, technology access, and go-to-market support.
+    source_ids:
+      - src_010a068f51ba77898a4787953e7339907db2e1417db4ee203b3fa31396b3182b
+      - src_e7cd2af2c5f532c0492068bd7077891bc1761ea53c02fc50c04b5295a1a58898
+offers:
+  - offer_id: off_01kz5s5at5ah2k26abbs9rp99x
+    program_id: prg_01kz5s5at51a17g9th6t36wkq4
+    offer_slug: liftoff-startup-program
+    offer_slug_aliases: []
+    title: Intel Liftoff Startup Program
+    summary: Free, equity-free program access with technical mentorship, Intel Tiber AI Cloud credits and early access, and go-to-market support.
+    access:
+      availability: public
+      method: form
+      url: https://software.seek.intel.com/intel-liftoff
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Intel Tiber AI Cloud credits and early access to AI-optimized cloud infrastructure
+          kind: other
+        - benefit_id: ben_02
+          description: Technical expertise and one-on-one mentorship from Intel engineers
+          kind: free-service
+          service: Technical expertise and one-on-one mentorship from Intel engineers
+        - benefit_id: ben_03
+          description: Go-to-market support including co-marketing, event showcases, and social amplification
+          kind: free-service
+          service: Go-to-market support including co-marketing, event showcases, and social amplification
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Applicant must be an early-stage startup building accelerated-computing innovation such as AI, analytics, HPC, or graphics; the program is offered worldwide.
+        reason: not-machine-evaluable
+    lifecycle:
+      effective_from: 2026-08-04T06:59:24.975Z
+      status: active
+    roles:
+      terms_authority_entity_id: ent_01kz5s5at0qsk9c9f1nh1cbgz5
+      access_operator_entity_id: ent_01kz5s5at0qsk9c9f1nh1cbgz5
+    source_ids:
+      - src_010a068f51ba77898a4787953e7339907db2e1417db4ee203b3fa31396b3182b
+      - src_e7cd2af2c5f532c0492068bd7077891bc1761ea53c02fc50c04b5295a1a58898
