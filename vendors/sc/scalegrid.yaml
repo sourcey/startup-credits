@@ -1,0 +1,68 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kz78fjcggsj8z1zf98d1607a
+slug: scalegrid
+slug_aliases: []
+name: ScaleGrid
+domains:
+  - value: scalegrid.io
+    role: primary
+    valid_from: 2026-08-04T20:47:24.690Z
+category: hosting-infra
+description: ScaleGrid provides managed database hosting for PostgreSQL, MySQL, Redis, and MongoDB across public cloud infrastructure.
+links:
+  site: https://scalegrid.io/
+sources:
+  - source_id: src_76bcdb4f943371ca2ad0301214c696c020d1687f64079f61b1643817372aeb6d
+    url: https://scalegrid.io/pricing/offers/startup-program/
+  - source_id: src_9f9664c3d93e7b4ea3827a1bda8d52b259747740aafe3be7734e6e104a23c1ea
+    url: https://help.scalegrid.io/docs/deals-startup-program
+programs:
+  - program_id: prg_01kz78fjck73za5w9nbz0pv301
+    program_slug: scalegrid-startup-saver
+    program_slug_aliases: []
+    title: ScaleGrid Startup Saver
+    summary: ScaleGrid's startup program discounts managed database hosting for eligible early-stage companies that are new to the platform.
+    source_ids:
+      - src_76bcdb4f943371ca2ad0301214c696c020d1687f64079f61b1643817372aeb6d
+      - src_9f9664c3d93e7b4ea3827a1bda8d52b259747740aafe3be7734e6e104a23c1ea
+offers:
+  - offer_id: off_01kz78fjckrsxr2cytzr25ncay
+    program_id: prg_01kz78fjck73za5w9nbz0pv301
+    offer_slug: startup-saver-byoc-discount
+    offer_slug_aliases: []
+    title: Startup Saver BYOC discount
+    summary: Eligible startups receive 50% off ScaleGrid Bring Your Own Cloud database hosting plans at Medium or larger sizes for 12 months.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-04T20:47:24.690Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 50% off ScaleGrid BYOC database hosting plans at Medium or larger sizes for 12 months
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 5000
+          duration:
+            kind: exact
+            value: P1Y
+          applies_to: ScaleGrid Bring Your Own Cloud database hosting plans at Medium or larger sizes
+      consideration:
+        kind: variable
+        description: The startup pays the remaining discounted ScaleGrid plan price and the infrastructure charges billed by its cloud provider.
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: external-verification
+        statement: Must be new to ScaleGrid, have generated less than $1.5 million in revenue, and have raised less than $1.5 million in funding.
+    roles:
+      terms_authority_entity_id: ent_01kz78fjcggsj8z1zf98d1607a
+      access_operator_entity_id: ent_01kz78fjcggsj8z1zf98d1607a
+    access:
+      availability: public
+      method: form
+      url: https://scalegrid.io/pricing/offers/startup-program/
+    source_ids:
+      - src_76bcdb4f943371ca2ad0301214c696c020d1687f64079f61b1643817372aeb6d
+      - src_9f9664c3d93e7b4ea3827a1bda8d52b259747740aafe3be7734e6e104a23c1ea
