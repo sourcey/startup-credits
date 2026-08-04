@@ -35,21 +35,18 @@ offers:
     economics:
       benefits:
         - benefit_id: ben_01
-          description: Free edge delivery, FastEdge, WAAP security, managed DNS, and storage infrastructure valued above €18,000 per year.
+          description: Get free edge delivery and security infrastructure worth €18,000+ per year
           duration:
             kind: up-to
             value: P12M
           kind: free-service
-          service: Gcore startup edge delivery, security, DNS, and storage bundle
+          service: edge delivery and security infrastructure
         - benefit_id: ben_02
-          description: Up to 30% off AI, GPU, and cloud workloads.
+          description: Up to 30% discount on compute-heavy workloads for AI training, inference, and production deployments.
           kind: discount
           percentage:
             basis_points: 3000
             kind: up-to
-        - benefit_id: ben_03
-          description: Direct engineering support for onboarding, migration, scaling, and ongoing technical support.
-          kind: other
       consideration:
         kind: none
     eligibility:
