@@ -8,13 +8,15 @@ domains:
     role: primary
     valid_from: 2026-08-03T13:20:00Z
 category: ai-ml
-description: LlamaIndex builds document parsing and agent frameworks for LLM applications, including the LlamaParse document processing platform and its open-source Python and TypeScript libraries.
+description: LlamaIndex builds AI-powered document processing tools, including LlamaParse and open-source document parsing software.
 links:
   site: https://www.llamaindex.ai
   pricing: https://www.llamaindex.ai/pricing
 sources:
   - source_id: src_d08a4f9ddbba27931d3832f9763ce6b94aba9226e79962fc04e38d0a7972d069
     url: https://www.llamaindex.ai/startups
+  - source_id: src_10de3c7af1fb313b4c6fb1ddf1ecd0d72dba733082fcc90a935ed093e76e2636
+    url: https://www.llamaindex.ai/
 programs:
   - program_id: prg_01kz3vagvhb5307n3p6qx565n3
     program_slug: llamaindex-startup-program
