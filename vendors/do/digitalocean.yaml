@@ -7,7 +7,7 @@ domains:
   - value: digitalocean.com
     role: primary
     valid_from: 2026-08-04T13:15:00.000Z
-category: hosting-infrastructure
+category: hosting-infra
 description: DigitalOcean is a cloud infrastructure provider offering simple, scalable cloud computing for developers and startups.
 links:
   site: https://digitalocean.com
