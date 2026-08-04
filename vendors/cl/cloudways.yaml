@@ -8,7 +8,7 @@ domains:
     role: primary
     valid_from: 2026-08-04T00:00:00Z
 category: hosting-infra
-description: Cloudways provides managed cloud hosting with application deployment, infrastructure management, support, monitoring, and scaling tools.
+description: Cloudways is a managed cloud hosting platform for deploying, managing, monitoring, and scaling web applications.
 links:
   site: https://www.cloudways.com
 sources:
@@ -19,59 +19,206 @@ programs:
     program_slug: cloudways-startup-program
     program_slug_aliases: []
     title: Cloudways Startup Program
-    summary: A tiered program for startups at launch and growth stages, combining Cloudways platform credits and discounts with support, mentorship, training, and co-marketing.
+    summary: A three-tier startup program with Cloudways credits, invoice discounts, support, mentorship, growth resources, and tier-specific promotional benefits.
     source_ids:
       - src_729cc0bdc3330ff674a347af66848f998f77e85b2699743290a5a287da4bf9d1
 offers:
-  - offer_id: off_01kz4xsd0n9zcv3s30hprewb2t
+  - offer_id: off_01kz5yxt15ccd888pvem4r5mvf
     program_id: prg_01kz4xsd0n5fkqb3trc9g9qq1w
-    offer_slug: startup-program-benefits
+    offer_slug: build
     offer_slug_aliases: []
-    title: Cloudways Startup Program Benefits
-    summary: Approved startups receive tier-dependent Cloudways credits of up to $50,000, invoice discounts, priority support, mentorship, technical training, and co-marketing opportunities.
+    title: Build
+    summary: The Build tier provides $15,000 in Cloudways credits, a 15% monthly invoice discount, Advance Support, technical support, founder resources, mentorship, and the Build toolkit.
     lifecycle:
-      status: active
+      status: withdrawn
       effective_from: 2026-08-04T00:00:00Z
     economics:
       benefits:
         - benefit_id: ben_01
-          description: Tier-dependent Cloudways platform credits of up to $50,000.
+          description: $15,000 in Cloudways platform credits.
           kind: credit
           value:
             amount:
               currency: USD
-              minor_units: 5000000
-            kind: up-to
+              minor_units: 1500000
+            kind: exact
         - benefit_id: ben_02
-          description: A tier-dependent discount is deducted from each Cloudways invoice and applied against the allocated platform credits.
-          kind: other
+          description: 15% off each monthly Cloudways invoice; the discounted amount is deducted from the allocated credits.
+          kind: discount
+          percentage:
+            basis_points: 1500
+            kind: exact
+          applies_to: Monthly Cloudways invoice
         - benefit_id: ben_03
-          description: Priority technical support, startup mentorship, technical training, and co-marketing opportunities.
+          description: Free access to the Advance Support add-on, stated by Cloudways as worth $1,200 per year.
+          kind: free-service
+          service: Cloudways Advance Support add-on
+        - benefit_id: ben_04
+          description: 24×7 priority technical support, a founder and expert community, startup resources, personalized mentorship, and Startup Toolkit Build.
           kind: other
       consideration:
-        kind: none
+        kind: variable
+        description: Requires paid Cloudways platform usage; the 15% discount applies to monthly invoices, and the discounted amount is deducted from allocated credits.
     eligibility:
       rule:
         kind: all
         rules:
           - criterion_id: cri_01
             kind: manual
-            reason: vendor-discretion
-            statement: Cloudways reviews each application and assigns benefits according to the applicant's startup stage and selected program tier.
+            reason: external-verification
+            statement: Must have a business website and an email address associated with its domain.
           - criterion_id: cri_02
             kind: manual
             reason: external-verification
-            statement: Applicants must be Cloudways platform users, but do not need to be paying customers; bootstrapped startups may apply.
+            statement: Must have a Cloudways trial account.
           - criterion_id: cri_03
             kind: manual
             reason: external-verification
-            statement: Applicants cannot use the Startup Program together with another Cloudways promotion or offer unless Cloudways agrees otherwise.
+            statement: Must have less than $1 million in funding or be bootstrapped.
+          - criterion_id: cri_04
+            kind: manual
+            reason: external-verification
+            statement: Agencies are not eligible and may apply to the separate Cloudways partner program instead.
     roles:
       terms_authority_entity_id: ent_01kz4xsd0me2nx4f45qyvkz9sg
       access_operator_entity_id: ent_01kz4xsd0me2nx4f45qyvkz9sg
     access:
-      availability: public
+      availability: other
       method: form
       url: https://www.cloudways.com/en/startup-program.php
+      instructions: New Startup Program applications are temporarily closed; use the Join the Waitlist form on the program page to request notification when applications resume.
+    source_ids:
+      - src_729cc0bdc3330ff674a347af66848f998f77e85b2699743290a5a287da4bf9d1
+  - offer_id: off_01kz5yxt1582vwcn7ygnb9gf1m
+    program_id: prg_01kz4xsd0n5fkqb3trc9g9qq1w
+    offer_slug: grow
+    offer_slug_aliases: []
+    title: Grow
+    summary: The Grow tier provides $25,000 in Cloudways credits, a 20% monthly invoice discount, Premium Support, technical support, mentorship, the Grow toolkit, and promotional opportunities.
+    lifecycle:
+      status: withdrawn
+      effective_from: 2026-08-04T00:00:00Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: $25,000 in Cloudways platform credits.
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 2500000
+            kind: exact
+        - benefit_id: ben_02
+          description: 20% off each monthly Cloudways invoice; the discounted amount is deducted from the allocated credits.
+          kind: discount
+          percentage:
+            basis_points: 2000
+            kind: exact
+          applies_to: Monthly Cloudways invoice
+        - benefit_id: ben_03
+          description: Free access to the Premium Support add-on, stated by Cloudways as worth $6,000 per year.
+          kind: free-service
+          service: Cloudways Premium Support add-on
+        - benefit_id: ben_04
+          description: 24×7 priority technical support, a founder and expert community, startup resources, personalized mentorship, Startup Toolkit Grow, a founder interview, a case study, and a product spotlight.
+          kind: other
+      consideration:
+        kind: variable
+        description: Requires paid Cloudways platform usage; the 20% discount applies to monthly invoices, and the discounted amount is deducted from allocated credits.
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: external-verification
+            statement: Must have a business website and an email address associated with its domain.
+          - criterion_id: cri_02
+            kind: manual
+            reason: external-verification
+            statement: Must have a Cloudways trial account.
+          - criterion_id: cri_03
+            kind: manual
+            reason: external-verification
+            statement: Must have reached Series A or, if bootstrapped, achieved product-market fit.
+          - criterion_id: cri_04
+            kind: manual
+            reason: external-verification
+            statement: Agencies are not eligible and may apply to the separate Cloudways partner program instead.
+    roles:
+      terms_authority_entity_id: ent_01kz4xsd0me2nx4f45qyvkz9sg
+      access_operator_entity_id: ent_01kz4xsd0me2nx4f45qyvkz9sg
+    access:
+      availability: other
+      method: form
+      url: https://www.cloudways.com/en/startup-program.php
+      instructions: New Startup Program applications are temporarily closed; use the Join the Waitlist form on the program page to request notification when applications resume.
+    source_ids:
+      - src_729cc0bdc3330ff674a347af66848f998f77e85b2699743290a5a287da4bf9d1
+  - offer_id: off_01kz4xsd0n9zcv3s30hprewb2t
+    program_id: prg_01kz4xsd0n5fkqb3trc9g9qq1w
+    offer_slug: expand
+    offer_slug_aliases:
+      - startup-program-benefits
+    title: Expand
+    summary: The Expand tier provides $50,000 in Cloudways credits, a 20% monthly invoice discount, Premium Support, technical support, mentorship, the Expand toolkit, and promotional opportunities.
+    lifecycle:
+      status: withdrawn
+      effective_from: 2026-08-04T00:00:00Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: $50,000 in Cloudways platform credits.
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 5000000
+            kind: exact
+        - benefit_id: ben_02
+          description: 20% off each monthly Cloudways invoice; the discounted amount is deducted from the allocated credits.
+          kind: discount
+          percentage:
+            basis_points: 2000
+            kind: exact
+          applies_to: Monthly Cloudways invoice
+        - benefit_id: ben_03
+          description: Free access to the Premium Support add-on, stated by Cloudways as worth $6,000 per year.
+          kind: free-service
+          service: Cloudways Premium Support add-on
+        - benefit_id: ben_04
+          description: 24×7 priority technical support, a founder and expert community, startup resources, personalized mentorship, Startup Toolkit Expand, a founder interview, a case study, and a product spotlight.
+          kind: other
+      consideration:
+        kind: variable
+        description: Requires paid Cloudways platform usage; the 20% discount applies to monthly invoices, and the discounted amount is deducted from allocated credits.
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: external-verification
+            statement: Must have a business website and an email address associated with its domain.
+          - criterion_id: cri_02
+            kind: manual
+            reason: external-verification
+            statement: Must have a Cloudways trial account.
+          - criterion_id: cri_03
+            kind: manual
+            reason: external-verification
+            statement: Must have reached Series B or, if bootstrapped, be seeking market expansion.
+          - criterion_id: cri_04
+            kind: manual
+            reason: external-verification
+            statement: Agencies are not eligible and may apply to the separate Cloudways partner program instead.
+    roles:
+      terms_authority_entity_id: ent_01kz4xsd0me2nx4f45qyvkz9sg
+      access_operator_entity_id: ent_01kz4xsd0me2nx4f45qyvkz9sg
+    access:
+      availability: other
+      method: form
+      url: https://www.cloudways.com/en/startup-program.php
+      instructions: New Startup Program applications are temporarily closed; use the Join the Waitlist form on the program page to request notification when applications resume.
     source_ids:
       - src_729cc0bdc3330ff674a347af66848f998f77e85b2699743290a5a287da4bf9d1
