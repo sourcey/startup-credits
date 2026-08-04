@@ -1,0 +1,68 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kz6yyvjdwz3e7w2vdttghne8
+slug: stepfun
+slug_aliases: []
+name: StepFun
+domains:
+  - value: stepfun.ai
+    role: primary
+    valid_from: 2026-08-04T00:00:00.000Z
+category: ai-ml
+description: StepFun provides multimodal artificial intelligence models and APIs for developers and businesses.
+links:
+  site: https://platform.stepfun.ai
+sources:
+  - source_id: src_335ea11e4661a35105ae8b387243dad7954d703e99c56897e14545b55154f323
+    url: https://platform.stepfun.ai/startup-program
+programs:
+  - program_id: prg_01kz6yyvjdahz6txa3awqvx6qm
+    program_slug: startup-program
+    program_slug_aliases: []
+    title: Startup Program
+    summary: StepFun's program supports early-stage AI teams building products with StepFun models through staged API credits, ecosystem support, promotion, and partner introductions.
+    source_ids:
+      - src_335ea11e4661a35105ae8b387243dad7954d703e99c56897e14545b55154f323
+offers:
+  - offer_id: off_01kz6yyvjevmadqqqknc6d5att
+    program_id: prg_01kz6yyvjdahz6txa3awqvx6qm
+    offer_slug: startup-program
+    offer_slug_aliases: []
+    title: StepFun Startup Program
+    summary: Selected startups may receive larger staged API credits, early model access, ecosystem support, co-marketing, showcase placement, and partner introductions.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-04T00:00:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Larger staged API credits for StepFun models
+          kind: other
+        - benefit_id: ben_02
+          description: Early access to new StepFun models and dedicated ecosystem support
+          kind: other
+        - benefit_id: ben_03
+          description: Co-marketing, showcase placement, community visibility, and possible partner introductions
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: vendor-discretion
+            statement: The applicant is an early AI product team, agent software startup, developer tool startup, or multimodal AI application team.
+          - criterion_id: cri_02
+            kind: manual
+            reason: vendor-discretion
+            statement: The team has a working product or prototype and plans to build with StepFun models; venture funding is not required.
+    roles:
+      terms_authority_entity_id: ent_01kz6yyvjdwz3e7w2vdttghne8
+      access_operator_entity_id: ent_01kz6yyvjdwz3e7w2vdttghne8
+    access:
+      availability: public
+      method: form
+      url: https://platform.stepfun.ai/startup-program
+    source_ids:
+      - src_335ea11e4661a35105ae8b387243dad7954d703e99c56897e14545b55154f323
