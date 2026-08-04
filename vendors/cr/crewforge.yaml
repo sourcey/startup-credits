@@ -1,0 +1,84 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kz7b99h1had98det41bjvz9v
+slug: crewforge
+slug_aliases: []
+name: CrewForge
+domains:
+  - value: crewforge.org
+    role: primary
+    valid_from: 2026-08-04T21:36:13.345Z
+category: productivity
+description: CrewForge is an all-in-one operations platform for software companies, combining people management, projects, sprints, worklogs, tickets, CRM, and client portals.
+links:
+  site: https://crewforge.org/
+sources:
+  - source_id: src_f80eabe2b785b94ddeb68cf696c6c41a4a04834eb0789570e2c556a8b4863b9c
+    url: https://crewforge.org/startups
+programs:
+  - program_id: prg_01kz7b99h1yz9wkgxnctmwegtq
+    program_slug: crewforge-for-startups
+    program_slug_aliases: []
+    title: CrewForge for Startups
+    summary: Running startups get an expanded free tier, staged discounts on paid seats, migration help, and priority support.
+    source_ids:
+      - src_f80eabe2b785b94ddeb68cf696c6c41a4a04834eb0789570e2c556a8b4863b9c
+offers:
+  - offer_id: off_01kz7b99h1sw1z5d9s9g5ygc2k
+    program_id: prg_01kz7b99h1yz9wkgxnctmwegtq
+    offer_slug: free-10-seats-and-staged-startup-discount
+    offer_slug_aliases: []
+    title: Free for 10 people, then staged startup discounts
+    summary: Running startups use every CrewForge module free for up to 10 people, receive 50% off paid seats for 12 months, and then receive 25% off for six more months.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-04T21:36:13.345Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Free access to every CrewForge module for up to 10 people with no usage limits
+          kind: free-service
+          service: CrewForge for up to 10 people
+        - benefit_id: ben_02
+          applies_to: Paid seats beyond the 10-person free tier
+          description: 50% off every paid seat for the first 12 months
+          duration:
+            kind: exact
+            value: P1Y
+          kind: discount
+          percentage:
+            basis_points: 5000
+            kind: exact
+        - benefit_id: ben_03
+          applies_to: Paid seats beyond the 10-person free tier
+          description: 25% off every paid seat for the next six months after the initial discount period
+          duration:
+            kind: exact
+            value: P6M
+          kind: discount
+          percentage:
+            basis_points: 2500
+            kind: exact
+        - benefit_id: ben_04
+          description: Free onboarding and migration help from existing HRMS, project, helpdesk, and CRM tools
+          kind: other
+        - benefit_id: ben_05
+          description: Priority email support from the CrewForge team
+          kind: other
+      consideration:
+        kind: variable
+        description: The first 10 people are free; the startup pays the discounted monthly per-seat price for additional people and can cancel at any time.
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Must be a running startup and cannot be an existing or recent paying CrewForge customer being reset onto the program.
+    roles:
+      terms_authority_entity_id: ent_01kz7b99h1had98det41bjvz9v
+      access_operator_entity_id: ent_01kz7b99h1had98det41bjvz9v
+    access:
+      availability: public
+      method: form
+      url: https://crewforge.org/startups
+    source_ids:
+      - src_f80eabe2b785b94ddeb68cf696c6c41a4a04834eb0789570e2c556a8b4863b9c
