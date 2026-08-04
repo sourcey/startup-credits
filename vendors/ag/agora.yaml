@@ -1,0 +1,75 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kz6q1h7954d76bc9q1wg9p8e
+slug: agora
+slug_aliases: []
+name: Agora
+domains:
+  - value: agora.io
+    role: primary
+    valid_from: 2026-08-04T15:42:30.603Z
+category: communication
+description: Agora provides real-time voice, video, chat, and conversational AI infrastructure through APIs and SDKs.
+links:
+  site: https://www.agora.io
+sources:
+  - source_id: src_c9929de642c53f89ea0df1a6c8991fd8cade6b829eb8c972e00bb7504084cea4
+    url: https://explore.agora.io/vc-ai-jumpstart-program
+programs:
+  - program_id: prg_01kz6q1h7b1hrfff74gbeaj9b3
+    program_slug: vc-conversational-ai-jumpstart
+    program_slug_aliases: []
+    title: VC Conversational AI Jumpstart
+    summary: Agora's program lets venture capital firms apply for product credits for their portfolio companies building voice AI or real-time communication products.
+    source_ids:
+      - src_c9929de642c53f89ea0df1a6c8991fd8cade6b829eb8c972e00bb7504084cea4
+offers:
+  - offer_id: off_01kz6q1h7b8xgxx056x972j3zx
+    program_id: prg_01kz6q1h7b1hrfff74gbeaj9b3
+    offer_slug: up-to-50000-agora-product-credits
+    offer_slug_aliases: []
+    title: Up to $50,000 in Agora Product Credits
+    summary: Accepted venture capital firms can receive up to $50,000 in Agora product credits for use by their portfolio companies.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-04T15:42:30.603Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to $50,000 in credits toward any Agora product
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 5000000
+            kind: up-to
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: organization.type
+            kind: predicate
+            operator: eq
+            statement: The applicant must be a venture capital firm.
+            value:
+              type: string
+              value: venture-capital-firm
+          - criterion_id: cri_02
+            kind: manual
+            reason: vendor-discretion
+            statement: Agora determines acceptance and the credit amount at its sole discretion.
+          - criterion_id: cri_03
+            kind: manual
+            reason: not-machine-evaluable
+            statement: Credits must be used by portfolio companies of the applying venture capital firm.
+    roles:
+      terms_authority_entity_id: ent_01kz6q1h7954d76bc9q1wg9p8e
+      access_operator_entity_id: ent_01kz6q1h7954d76bc9q1wg9p8e
+    access:
+      availability: public
+      method: form
+      url: https://explore.agora.io/vc-ai-jumpstart-program
+    source_ids:
+      - src_c9929de642c53f89ea0df1a6c8991fd8cade6b829eb8c972e00bb7504084cea4
