@@ -1,0 +1,49 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kz6wjzdg0a7dcqc5hkwv5f52
+slug: weaviate
+slug_aliases: []
+name: Weaviate
+domains:
+  - value: weaviate.io
+    role: primary
+    valid_from: 2026-08-04T17:19:21.000Z
+category: databases
+description: Weaviate provides an open-source vector database and managed cloud service for building AI-native search and retrieval applications.
+links:
+  site: https://weaviate.io
+sources:
+  - source_id: src_4c3a7797ae15deca1676a1173e54c0c579f8cff07a71b81d42c29e6afc34e1e3
+    url: https://weaviate.io/startup-deal
+programs: []
+offers:
+  - offer_id: off_01kz6wjzdjccjcr422zme0459b
+    offer_slug: weaviate-startup-deal
+    offer_slug_aliases: []
+    title: Weaviate Startup Deal
+    summary: Startups can redeem a special Weaviate Cloud deal at a discounted rate through a validation form; the offer is activated after Weaviate reviews the submission.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-04T17:19:21.000Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source does not state a separate consideration or discount amount.
+      benefits:
+        - benefit_id: ben_primary
+          description: Discounted-rate access to Weaviate Cloud
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a startup. Redemption requires a Weaviate Console email, company name, and startup program or VC; optional proof or reference may be requested.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01kz6wjzdg0a7dcqc5hkwv5f52
+      access_operator_entity_id: ent_01kz6wjzdg0a7dcqc5hkwv5f52
+    access:
+      availability: public
+      method: form
+      url: https://weaviate.io/startup-deal
+    source_ids:
+      - src_4c3a7797ae15deca1676a1173e54c0c579f8cff07a71b81d42c29e6afc34e1e3
