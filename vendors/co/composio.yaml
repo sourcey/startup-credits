@@ -50,7 +50,7 @@ offers:
       rule:
         kind: manual
         criterion_id: cri_01
-        statement: Applicants must be accepted into Composio's startup program.
+        statement: Only accepted startups receive this offer.
         reason: vendor-discretion
     roles:
       terms_authority_entity_id: ent_01kz30yqnfe6gkpjqqjb3fj1e9
