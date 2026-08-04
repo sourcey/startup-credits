@@ -1,0 +1,58 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kz1mc89687bg7rm79pjm8v5x
+slug: cartesia
+slug_aliases: []
+name: Cartesia
+domains:
+  - value: cartesia.ai
+    role: primary
+    valid_from: 2026-08-02T16:00:00.000Z
+category: ai-ml
+description: Cartesia provides a real-time voice AI platform including Sonic text-to-speech, Ink speech-to-text, and Line voice agents.
+links:
+  site: https://cartesia.ai
+sources:
+  - source_id: src_bd16d2e9422b77a06d43298f0fe534e00ec8df0141f31bdb3b912a86cb2ebca1
+    url: https://cartesia.ai/startups
+programs:
+  - program_id: prg_01kz1mc896bvvhc06ftj9hwh0d
+    program_slug: cartesia-startups-grant
+    program_slug_aliases: []
+    title: Cartesia Startups Grant
+    summary: A startup grant program that provides 12 months of free access to the full Cartesia voice AI stack with monthly credits and scale-tier benefits.
+    source_ids:
+      - src_bd16d2e9422b77a06d43298f0fe534e00ec8df0141f31bdb3b912a86cb2ebca1
+offers:
+  - offer_id: off_01kz1mc896ght5a16087hbbkv8
+    program_id: prg_01kz1mc896bvvhc06ftj9hwh0d
+    offer_slug: twelve-months-free-full-voice-ai-stack
+    offer_slug_aliases:
+      - cartesia-startups-grant
+    title: 12 months free on the full Cartesia voice AI stack
+    summary: "12 months free on the full Cartesia voice AI stack: 8M Sonic & Ink credits/month, $300/month agent credits, 2x rollover, higher concurrency; over $8,000 total value. Recipients grant Cartesia logo/marketing use and post on request."
+    lifecycle:
+      status: active
+      effective_from: 2026-08-02T16:00:00.000Z
+    economics:
+      consideration:
+        kind: variable
+        description: Recipients share their logo and grant Cartesia the right to use their name and logo across marketing materials. Participants also agree to post about the grant on social media if Cartesia requests it.
+      benefits:
+        - benefit_id: ben_primary
+          description: 12 months free on the full Cartesia stack, including 8M Sonic & Ink credits per month plus $300/month in agent credits, with 2x credit rollover and high concurrency limits; advertised as over $8,000 in total value
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Startups at any stage are eligible; students and one-off projects are considered on a case-by-case basis. Applications are reviewed and acceptance decisions are communicated within a week.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01kz1mc89687bg7rm79pjm8v5x
+      access_operator_entity_id: ent_01kz1mc89687bg7rm79pjm8v5x
+    access:
+      availability: public
+      method: form
+      url: https://cartesia.ai/startups
+    source_ids:
+      - src_bd16d2e9422b77a06d43298f0fe534e00ec8df0141f31bdb3b912a86cb2ebca1
