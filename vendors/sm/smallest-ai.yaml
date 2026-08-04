@@ -1,0 +1,80 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kz6yyvjd6waykdgnz6t2zvs5
+slug: smallest-ai
+slug_aliases: []
+name: smallest.ai
+domains:
+  - value: smallest.ai
+    role: primary
+    valid_from: 2026-08-04T00:00:00.000Z
+category: ai-ml
+description: smallest.ai provides voice AI infrastructure for building real-time conversational products and voice agents.
+links:
+  site: https://smallest.ai
+sources:
+  - source_id: src_b59d74fd4eb170359f774175fc1aff56e0a084d3678f3a8339aa4f7bc6077909
+    url: https://smallest.ai/grants
+programs:
+  - program_id: prg_01kz6yyvjd0bmjj25nnsdrzq23
+    program_slug: startup-grants-program-for-voice-ai
+    program_slug_aliases: []
+    title: Startup Grants Program for Voice AI
+    summary: smallest.ai's global grant program supports startups building voice as a core product capability with platform credits, onboarding, and ecosystem access.
+    source_ids:
+      - src_b59d74fd4eb170359f774175fc1aff56e0a084d3678f3a8339aa4f7bc6077909
+offers:
+  - offer_id: off_01kz6yyvjdrp9ve3fqwx4btkng
+    program_id: prg_01kz6yyvjd0bmjj25nnsdrzq23
+    offer_slug: startup-grants-program-for-voice-ai
+    offer_slug_aliases: []
+    title: Startup Grants Program for Voice AI
+    summary: Selected startups receive $10,000 in smallest.ai Voice Agent Platform credits for up to six months, plus developer onboarding and community access.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-04T00:00:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: $10,000 in Voice Agent Platform credits
+          duration:
+            kind: up-to
+            value: P6M
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 1000000
+            kind: exact
+        - benefit_id: ben_02
+          description: Developer onboarding, scale-tier API access, high concurrency limits, and early model access
+          kind: other
+        - benefit_id: ben_03
+          description: Showcase, co-marketing, partner introductions, and founder community access
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.employee_count
+            kind: predicate
+            operator: lte
+            statement: The startup has 20 or fewer employees.
+            value:
+              type: number
+              value: 20
+          - criterion_id: cri_02
+            kind: manual
+            reason: vendor-discretion
+            statement: Voice is a core product capability; the program considers accelerator-backed, venture-backed, and exceptional bootstrapped teams worldwide.
+    roles:
+      terms_authority_entity_id: ent_01kz6yyvjd6waykdgnz6t2zvs5
+      access_operator_entity_id: ent_01kz6yyvjd6waykdgnz6t2zvs5
+    access:
+      availability: public
+      method: form
+      url: https://smallest.ai/grants
+    source_ids:
+      - src_b59d74fd4eb170359f774175fc1aff56e0a084d3678f3a8339aa4f7bc6077909
