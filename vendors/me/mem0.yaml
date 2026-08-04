@@ -1,0 +1,73 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kz7gy9g922ttw6d26x7fks99
+slug: mem0
+slug_aliases: []
+name: Mem0
+domains:
+  - value: mem0.ai
+    role: primary
+    valid_from: 2026-08-04T23:15:11.201Z
+category: ai-ml
+description: Mem0 provides a persistent memory layer for AI agents and applications.
+links:
+  site: https://mem0.ai
+sources:
+  - source_id: src_7dc9288d45e485007ede9cf6dac8376d70f6b5e4d7cbaa8edf592cedfb45fcc3
+    url: https://mem0.ai/startup-program
+programs:
+  - program_id: prg_01kz7gy9gbb0xwvyk4ftc1368h
+    program_slug: mem0-startup-program
+    program_slug_aliases: []
+    title: Mem0 Startup Program
+    summary: Mem0's startup program gives approved new users temporary Pro plan access, priority support, and direct collaboration with the Mem0 team.
+    source_ids:
+      - src_7dc9288d45e485007ede9cf6dac8376d70f6b5e4d7cbaa8edf592cedfb45fcc3
+offers:
+  - offer_id: off_01kz7gy9gb2333kwp7beeq7h9r
+    program_id: prg_01kz7gy9gbb0xwvyk4ftc1368h
+    offer_slug: three-months-free-mem0-pro
+    offer_slug_aliases: []
+    title: Three months free on Mem0 Pro
+    summary: Approved new users receive three months of Mem0 Pro, advertised as USD 1,000 of value, plus priority support, a private Slack channel, and personalized onboarding.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-04T23:15:11.201Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Three months of Mem0 Pro, advertised as USD 1,000 of value
+          kind: free-service
+          service: Mem0 Pro plan
+          duration:
+            kind: exact
+            value: P3M
+        - benefit_id: ben_02
+          description: Priority support, a private Slack channel, and personalized onboarding
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.is_current_customer
+            kind: predicate
+            operator: eq
+            statement: Available only to new Mem0 users.
+            value:
+              type: boolean
+              value: false
+          - criterion_id: cri_02
+            kind: manual
+            reason: vendor-discretion
+            statement: Startup applicants submit their role, company website, and a 120-200 character use case for Mem0 review.
+    roles:
+      terms_authority_entity_id: ent_01kz7gy9g922ttw6d26x7fks99
+      access_operator_entity_id: ent_01kz7gy9g922ttw6d26x7fks99
+    access:
+      availability: public
+      method: form
+      url: https://mem0.ai/startup-program
+    source_ids:
+      - src_7dc9288d45e485007ede9cf6dac8376d70f6b5e4d7cbaa8edf592cedfb45fcc3
