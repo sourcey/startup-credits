@@ -16,6 +16,8 @@ sources:
     url: https://vapi.ai
   - source_id: src_384776e70c9dcca0fb164257201e6e9687cc36b676762ab1fd9c1b4969ff12d3
     url: https://vapi.ai/blog/vapi-ai-startups
+  - source_id: src_034fcacdb9719748ad393ce44ebd8f608029e73d0f086421b878f4a150e5fe5a
+    url: https://form.typeform.com/to/jmgDdUyW
 programs:
   - program_id: prg_01kz6rznkk7fn0p1ygg2726x17
     program_slug: vapi-startups-program
@@ -24,6 +26,7 @@ programs:
     summary: Vapi's program gives eligible early-stage voice AI startups free usage minutes, early product access, community membership, and technical support.
     source_ids:
       - src_384776e70c9dcca0fb164257201e6e9687cc36b676762ab1fd9c1b4969ff12d3
+      - src_034fcacdb9719748ad393ce44ebd8f608029e73d0f086421b878f4a150e5fe5a
 offers:
   - offer_id: off_01kz6rznkkkp90asjwyw0x3pxw
     program_id: prg_01kz6rznkk7fn0p1ygg2726x17
@@ -79,6 +82,10 @@ offers:
             kind: manual
             reason: not-machine-evaluable
             statement: Builders must be actively integrating voice LLM as a core part of their product.
+          - criterion_id: cri_05
+            kind: manual
+            reason: external-verification
+            statement: The current application form says Vapi is only accepting applications from Y Combinator-backed startups and requires a Y Combinator profile URL.
     roles:
       terms_authority_entity_id: ent_01kz6rznkgz97hh1yrds32gayt
       access_operator_entity_id: ent_01kz6rznkgz97hh1yrds32gayt
@@ -86,6 +93,7 @@ offers:
       availability: public
       method: form
       url: https://form.typeform.com/to/jmgDdUyW
-      instructions: Fill out the application with company details; qualifying startups receive an invite email and Slack community invitation.
+      instructions: Fill out the application with company details and a Y Combinator profile URL; qualifying startups receive an invite email and Slack community invitation.
     source_ids:
       - src_384776e70c9dcca0fb164257201e6e9687cc36b676762ab1fd9c1b4969ff12d3
+      - src_034fcacdb9719748ad393ce44ebd8f608029e73d0f086421b878f4a150e5fe5a
