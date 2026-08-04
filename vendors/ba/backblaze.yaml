@@ -1,0 +1,82 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kz6yyvj47am5v4m8c3mhmht9
+slug: backblaze
+slug_aliases: []
+name: Backblaze
+domains:
+  - value: backblaze.com
+    role: primary
+    valid_from: 2026-08-04T00:00:00.000Z
+category: hosting-infra
+description: Backblaze provides cloud object storage and computer backup services for businesses, developers, and individuals.
+links:
+  site: https://www.backblaze.com
+sources:
+  - source_id: src_8c7086883e0f5ff71946863b13736d4d5d64b5790c0b6d2b302ea55653c08138
+    url: https://www.backblaze.com/flamethrower
+programs:
+  - program_id: prg_01kz6yyvj4aaj0ghkrxehpcsqc
+    program_slug: flamethrower-startup-program
+    program_slug_aliases: []
+    title: Flamethrower Startup Program
+    summary: Backblaze's startup program for AI, media, and other data-heavy teams provides B2 Cloud Storage credits, technical support, and predictable post-credit pricing.
+    source_ids:
+      - src_8c7086883e0f5ff71946863b13736d4d5d64b5790c0b6d2b302ea55653c08138
+offers:
+  - offer_id: off_01kz6yyvj4jca1geq4qc6atarw
+    program_id: prg_01kz6yyvj4aaj0ghkrxehpcsqc
+    offer_slug: flamethrower-startup-program
+    offer_slug_aliases: []
+    title: Flamethrower Startup Program
+    summary: Accepted data-heavy startups can receive up to $100,000 in Backblaze B2 Cloud Storage credits plus direct technical support.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-04T00:00:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to $100,000 in Backblaze B2 Cloud Storage credits
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 10000000
+            kind: up-to
+        - benefit_id: ben_02
+          description: Direct support from support, solutions engineering, and developer advocacy teams
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.age_months
+            kind: predicate
+            operator: lt
+            statement: The startup is typically under seven years old.
+            value:
+              type: number
+              value: 84
+          - criterion_id: cri_02
+            fact: company.employee_count
+            kind: predicate
+            operator: lt
+            statement: The startup usually has fewer than 100 employees.
+            value:
+              type: number
+              value: 100
+          - criterion_id: cri_03
+            kind: manual
+            reason: vendor-discretion
+            statement: The startup is Seed through Series B and builds a data-intensive product where object storage is core.
+    roles:
+      terms_authority_entity_id: ent_01kz6yyvj47am5v4m8c3mhmht9
+      access_operator_entity_id: ent_01kz6yyvj47am5v4m8c3mhmht9
+    access:
+      availability: public
+      method: form
+      url: https://www.backblaze.com/flamethrower
+    source_ids:
+      - src_8c7086883e0f5ff71946863b13736d4d5d64b5790c0b6d2b302ea55653c08138
