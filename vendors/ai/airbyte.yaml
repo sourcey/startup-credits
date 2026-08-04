@@ -52,10 +52,28 @@ offers:
           kind: other
     eligibility:
       rule:
-        criterion_id: cri_requirement_01
-        kind: manual
-        reason: not-machine-evaluable
-        statement: Applicant must be a company in a current or previous Y Combinator batch, have raised less than $5 million total, accept the Airbyte Cloud standard Terms of Service, and not be an existing Airbyte customer.
+        kind: all
+        rules:
+          - criterion_id: cri_requirement_01
+            kind: manual
+            reason: external-verification
+            statement: Applicant must be a company in a current or previous Y Combinator batch.
+          - criterion_id: cri_requirement_02
+            fact: company.funding_raised_usd
+            kind: predicate
+            operator: lt
+            statement: Applicant must have raised less than $5 million total.
+            value:
+              type: number
+              value: 5000000
+          - criterion_id: cri_requirement_03
+            kind: manual
+            reason: not-machine-evaluable
+            statement: Applicant must accept the Airbyte Cloud standard Terms of Service.
+          - criterion_id: cri_requirement_04
+            kind: manual
+            reason: not-machine-evaluable
+            statement: Applicant must not be an existing Airbyte customer.
     roles:
       terms_authority_entity_id: ent_01kz1ve26g2rkj6w37js1yrz0z
       access_operator_entity_id: ent_01kz1ve26g2rkj6w37js1yrz0z
@@ -65,4 +83,3 @@ offers:
       url: https://airbyte.com/company/ycombinator-startup-promotion
     source_ids:
       - src_31737e075786a03e0cb80bc62bc1066eb88c817e5792e1bee596287af314ce3a
-
