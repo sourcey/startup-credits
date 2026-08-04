@@ -8,7 +8,7 @@ domains:
     role: primary
     valid_from: 2026-08-04T00:00:00Z
 category: hosting-infra
-description: Netlify is a platform for building, deploying, operating, and scaling web applications with managed infrastructure, functions, AI tooling, and delivery services.
+description: Netlify is an AI-native, full-stack cloud platform for building, deploying, and scaling modern web applications with serverless functions, edge logic, and AI-driven workflows.
 links:
   site: https://www.netlify.com
 sources:
@@ -27,7 +27,7 @@ offers:
     program_id: prg_01kz4xsd0nmarcjg5n62g20k6v
     offer_slug: discounted-startup-access
     offer_slug_aliases: []
-    title: Netlify Discounted Startup Access
+    title: Discounted Netlify access
     summary: Eligible portfolio companies of approved venture, accelerator, incubator, or startup-studio partners receive discounted Netlify access plus structured support and platform tooling.
     lifecycle:
       status: active
@@ -64,7 +64,8 @@ offers:
       access_operator_entity_id: ent_01kz4xsd0ns3k4apb2f6mb5mzt
     access:
       availability: membership
-      method: contact
+      method: other
       url: https://www.netlify.com/partners/startups/
+      instructions: Request startup access through an approved VC, incubator, accelerator, or startup-studio partner and confirm that affiliation; Netlify approval is required.
     source_ids:
       - src_6324cb2d791d084cc52da615b38ddd5f57b9827bd3ce63938578fbb596865ed5
