@@ -1,0 +1,73 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kz6stb76c009e3vnn70tq1sk
+slug: mirava
+slug_aliases: []
+name: Mirava
+domains:
+  - value: mirava.io
+    role: primary
+    valid_from: 2026-08-04T16:30:57.768Z
+category: marketing
+description: Mirava provides pricing localization, analytics, and bulk price management for App Store, Google Play, and Stripe products.
+links:
+  site: https://www.mirava.io
+sources:
+  - source_id: src_2c10505ca4118aefb7ce120fb258556a5380e02cf5de4c208bd45a26000dec06
+    url: https://www.mirava.io/startup-program
+programs:
+  - program_id: prg_01kz6stb783v4mr9hs6pnyzmfc
+    program_slug: startup-program
+    program_slug_aliases: []
+    title: Mirava Startup Program
+    summary: Mirava's startup program gives eligible early-stage apps discounted access to all premium features for one year.
+    source_ids:
+      - src_2c10505ca4118aefb7ce120fb258556a5380e02cf5de4c208bd45a26000dec06
+offers:
+  - offer_id: off_01kz6stb78fkq0gt6a8qtxhr1m
+    program_id: prg_01kz6stb783v4mr9hs6pnyzmfc
+    offer_slug: first-year-plan-discount
+    offer_slug_aliases: []
+    title: Mirava First-Year Plan Discount
+    summary: Eligible apps receive 50% off Mirava's yearly plan for their first year, reducing the published price from $499 to $249.50 per app with full premium-feature access.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-04T16:30:57.768Z
+    economics:
+      benefits:
+        - applies_to: Yearly plan per app
+          benefit_id: ben_01
+          description: 50% off the yearly plan for the first year
+          duration:
+            kind: exact
+            value: P1Y
+          kind: discount
+          percentage:
+            basis_points: 5000
+            kind: exact
+      consideration:
+        amount:
+          currency: USD
+          minor_units: 24950
+        kind: fixed
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: not-machine-evaluable
+            statement: Available to startups, indie developers, and small teams
+          - criterion_id: cri_02
+            kind: manual
+            reason: external-verification
+            statement: The app must make less than $5,000 per month in revenue
+    roles:
+      terms_authority_entity_id: ent_01kz6stb76c009e3vnn70tq1sk
+      access_operator_entity_id: ent_01kz6stb76c009e3vnn70tq1sk
+    access:
+      availability: public
+      method: code
+      public_code: STARTER50
+      url: https://www.mirava.io/startup-program
+    source_ids:
+      - src_2c10505ca4118aefb7ce120fb258556a5380e02cf5de4c208bd45a26000dec06
