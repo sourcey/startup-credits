@@ -1,52 +1,68 @@
 schema_version: sourcey.vendor-authoring/v1alpha1
-entity_id: ent_01kyh8fpe2gxe7da2fsv4mrmmr
+entity_id: ent_convex_0000000000000000000000000001
 slug: convex
 slug_aliases: []
 name: Convex
 domains:
   - value: convex.dev
     role: primary
-    valid_from: 2026-07-27T07:39:53.717Z
-category: databases
-description: Convex is a backend platform and reactive database that helps developers build and scale applications.
+    valid_from: 2026-08-04T00:00:00.000Z
+category: app-backend
+description: Convex is a backend platform for building full-stack TypeScript applications with a reactive database, auth, and server functions. Eligible startups can apply for free access through the Convex for Startups program.
 links:
-  site: https://www.convex.dev
+  site: https://convex.dev
 sources:
-  - source_id: src_cae896334cb5766446f7cbc852637c42aa12fa58cc4ce41dc8027d6aef1d42cb
+  - source_id: src_a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5063492c7f0d3e9e7
     url: https://www.convex.dev/startups
-programs: []
-offers:
-  - offer_id: off_01kyh8fpe2vy3d3se8va01yenw
-    offer_slug: convex-for-startups
-    offer_slug_aliases: []
+programs:
+  - program_id: prg_convex_startups_000000000000000000000000001
+    program_slug: convex-for-startups
+    program_slug_aliases: []
     title: Convex for Startups
-    summary: Eligible early-stage startups can get up to 1 year free of Convex Professional, including no seat fees and 30% off usage-based fees up to $30,000.
+    summary: Convex for Startups gives eligible early-stage startups up to one year free of Convex Professional so they can launch and scale their apps without backend infrastructure or scaling work.
+    source_ids:
+      - src_a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5063492c7f0d3e9e7
+offers:
+  - offer_id: off_convex_startups_free_000000000000000000000000001
+    program_id: prg_convex_startups_000000000000000000000000001
+    offer_slug: convex-for-startups-free
+    offer_slug_aliases: []
+    title: Convex for Startups — free year of Convex Professional
+    summary: Eligible early-stage startups can apply for up to 1 year free of Convex Professional ($25 per developer/month), with reactive database, auth, and server functions so teams can focus on shipping.
     lifecycle:
       status: active
-      effective_from: 2026-07-27T07:39:53.717Z
+      effective_from: 2026-08-04T00:00:00.000Z
     economics:
-      consideration:
-        kind: unknown
-        description: The source record did not establish separate consideration.
       benefits:
-        - benefit_id: ben_primary
-          description: Up to 1 year free of Convex Professional, no seat fees, and 30% off usage-based fees up to $30,000
-          kind: discount
-          percentage:
-            kind: up-to
-            basis_points: 3000
+        - benefit_id: ben_01
+          description: Up to 1 year free of Convex Professional.
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 0
+            kind: exact
+        - benefit_id: ben_02
+          description: Reactive database, authentication, and server functions with no backend or scaling work.
+          kind: other
+        - benefit_id: ben_03
+          description: Built-in support for AI to generate and enforce TypeScript schemas for the backend.
+          kind: other
+      consideration:
+        kind: none
     eligibility:
       rule:
-        kind: manual
-        criterion_id: cri_requirement_01
-        statement: Must be an early-stage startup (pre-seed to Series A) raised less than $3M, under 3 years old, with fewer than 20 employees, a live website or MVP, a valid company profile on a deal flow platform, and on at least the Convex Starter plan with a card on file.
-        reason: not-machine-evaluable
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            statement: Early-stage startup accepted to a recognized accelerator or with verifiable external funding
     roles:
-      terms_authority_entity_id: ent_01kyh8fpe2gxe7da2fsv4mrmmr
-      access_operator_entity_id: ent_01kyh8fpe2gxe7da2fsv4mrmmr
+      terms_authority_entity_id: ent_convex_0000000000000000000000000001
+      access_operator_entity_id: ent_convex_0000000000000000000000000001
     access:
       availability: public
       method: form
       url: https://www.convex.dev/startups
     source_ids:
-      - src_cae896334cb5766446f7cbc852637c42aa12fa58cc4ce41dc8027d6aef1d42cb
+      - src_a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5063492c7f0d3e9e7
