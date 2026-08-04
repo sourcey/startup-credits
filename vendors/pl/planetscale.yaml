@@ -1,0 +1,63 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_planetscale_000000000000000000000000001
+slug: planetscale
+slug_aliases: []
+name: PlanetScale
+domains:
+  - value: planetscale.com
+    role: primary
+    valid_from: 2026-08-04T00:00:00.000Z
+category: databases
+description: PlanetScale is a serverless MySQL-compatible database platform that delivers fast, reliable database clusters with automatic failover across three availability zones, built by the teams behind GitHub, Slack, and Twitter.
+links:
+  site: https://planetscale.com
+sources:
+  - source_id: src_a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5063492c7f0d3e9e7
+    url: https://planetscale.com/startups
+programs:
+  - program_id: prg_planetscale_startups_000000000000000000000000001
+    program_slug: planetscale-for-startups
+    program_slug_aliases: []
+    title: PlanetScale for Startups
+    summary: PlanetScale for Startups gives eligible early-stage startups access to fast, reliable, serverless MySQL database clusters with automatic failover across three availability zones, built by the teams behind GitHub, Slack, and Twitter.
+    source_ids:
+      - src_a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5063492c7f0d3e9e7
+offers:
+  - offer_id: off_planetscale_startups_000000000000000000000000001
+    program_id: prg_planetscale_startups_000000000000000000000000001
+    offer_slug: planetscale-for-startups
+    offer_slug_aliases: []
+    title: PlanetScale for Startups
+    summary: Eligible early-stage startups can launch on PlanetScale with serverless MySQL database clusters starting at $5 per month, with automatic failover across three availability zones and migration assistance from the teams behind GitHub, Slack, and Twitter.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-04T00:00:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Access to serverless MySQL-compatible database clusters built by the teams behind GitHub, Slack, and Twitter.
+          kind: other
+        - benefit_id: ben_02
+          description: Automatic failover across three availability zones with clusters starting at $5 per month.
+          kind: other
+        - benefit_id: ben_03
+          description: Migration assistance for startups launching or scaling on PlanetScale.
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            statement: Early-stage startup eligible for startup pricing
+    roles:
+      terms_authority_entity_id: ent_planetscale_000000000000000000000000001
+      access_operator_entity_id: ent_planetscale_000000000000000000000000001
+    access:
+      availability: public
+      method: form
+      url: https://planetscale.com/startups
+    source_ids:
+      - src_a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5063492c7f0d3e9e7
