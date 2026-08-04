@@ -1,0 +1,82 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kz6shy8yy358daq2qgp4krf8
+slug: rize
+slug_aliases: []
+name: Rize
+domains:
+  - value: rize.io
+    role: primary
+    valid_from: 2026-08-04T16:26:22.368Z
+category: productivity
+description: Rize provides automatic time tracking, productivity analytics, workforce benchmarks, and team reporting.
+links:
+  site: https://rize.io
+sources:
+  - source_id: src_0da789692b6bf40556c2eb8e827b64f230b17e989c371e9f1cf8ea10565b4b89
+    url: https://rize.io/partners/startups
+programs:
+  - program_id: prg_01kz6shy90cg46dgar3ye531qw
+    program_slug: rize-for-startups
+    program_slug_aliases: []
+    title: Rize for Startups
+    summary: Rize for Startups gives eligible seed-stage and accelerator-backed teams discounted access to the Rize Team plan for one year.
+    source_ids:
+      - src_0da789692b6bf40556c2eb8e827b64f230b17e989c371e9f1cf8ea10565b4b89
+offers:
+  - offer_id: off_01kz6shy904bpcx5bwppeb6c1a
+    program_id: prg_01kz6shy90cg46dgar3ye531qw
+    offer_slug: team-plan-discount
+    offer_slug_aliases: []
+    title: Rize for Startups Team Plan Discount
+    summary: Eligible startups receive 50% off the Rize Team plan for 12 months for up to 20 seats, reducing the published price from $24 to $12 per seat per month.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-04T16:26:22.368Z
+    economics:
+      benefits:
+        - applies_to: Team plan for up to 20 seats
+          benefit_id: ben_01
+          description: 50% off the Team plan for 12 months for up to 20 seats
+          duration:
+            kind: exact
+            value: P1Y
+          kind: discount
+          percentage:
+            basis_points: 5000
+            kind: exact
+      consideration:
+        description: The discounted Team plan costs $12 per seat per month for up to 20 seats during the 12-month term.
+        kind: variable
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: not-machine-evaluable
+            statement: Must be a seed-stage or accelerator-backed startup
+          - criterion_id: cri_02
+            fact: company.employee_count
+            kind: predicate
+            operator: lt
+            statement: Must have fewer than 20 people
+            value:
+              type: number
+              value: 20
+          - criterion_id: cri_03
+            kind: manual
+            reason: external-verification
+            statement: Must apply with a business-domain email
+          - criterion_id: cri_04
+            kind: manual
+            reason: external-verification
+            statement: Must provide verifiable funding or accelerator affiliation
+    roles:
+      terms_authority_entity_id: ent_01kz6shy8yy358daq2qgp4krf8
+      access_operator_entity_id: ent_01kz6shy8yy358daq2qgp4krf8
+    access:
+      availability: public
+      method: form
+      url: https://rize.io/partners/startups
+    source_ids:
+      - src_0da789692b6bf40556c2eb8e827b64f230b17e989c371e9f1cf8ea10565b4b89
