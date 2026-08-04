@@ -8,7 +8,7 @@ domains:
     role: primary
     valid_from: 2026-08-04T00:00:00Z
 category: hosting-infra
-description: Gcore provides global cloud, edge, AI and GPU infrastructure, content delivery, managed hosting, and application security services.
+description: Gcore provides enterprise-grade cloud, edge, GPU, content-delivery, and application-security infrastructure.
 links:
   site: https://gcore.com
 sources:
@@ -27,7 +27,7 @@ offers:
     program_id: prg_01kz4xsd0nyb1e1shehdnwj9we
     offer_slug: startup-infrastructure-bundle
     offer_slug_aliases: []
-    title: Gcore Startup Infrastructure Bundle
+    title: Gcore for Startups – Free Infrastructure Bundle + Discounted AI/GPU Pricing
     summary: Approved startups get up to 12 months of free edge and security infrastructure valued above €18,000 per year, plus up to 30% off AI, GPU, and cloud workloads and direct engineering support.
     lifecycle:
       status: active
@@ -48,7 +48,7 @@ offers:
             basis_points: 3000
             kind: up-to
         - benefit_id: ben_03
-          description: Direct engineering support for onboarding, architecture, migration, and scaling.
+          description: Direct engineering support for onboarding, migration, scaling, and ongoing technical support.
           kind: other
       consideration:
         kind: none
@@ -70,6 +70,6 @@ offers:
     access:
       availability: public
       method: form
-      url: https://gcore.com/go/startups-apply-program
+      url: https://www.f6s.com/gcore-infrastructure-cybersecurity/apply
     source_ids:
       - src_80753beb53cbd5d8b598ca23efb81848be8832ea984cf1bf004de21bcb0eff27
