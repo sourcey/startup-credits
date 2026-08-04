@@ -14,6 +14,8 @@ links:
 sources:
   - source_id: src_bab6a7e708d2b15de904c45e481d6ee14b930c03eba157ddd8827c69f43e33e0
     url: https://community.box.com/p/aistartups
+  - source_id: src_2f123399107c57baa833e659c76247dcafcd943c164fbf08da87d5200af41e5c
+    url: https://www.box.com
 programs:
   - program_id: prg_01kz4xsd0ne0dzpqa253c7v3vv
     program_slug: ai-startup-partner-program
@@ -27,7 +29,7 @@ offers:
     program_id: prg_01kz4xsd0ne0dzpqa253c7v3vv
     offer_slug: ai-startup-partner-benefits
     offer_slug_aliases: []
-    title: Box AI Startup Partner Benefits
+    title: AI Startup Partner Program
     summary: Accepted B2B AI startups integrating with Box receive personalized technical help, integration resources, and exclusive marketing and sales support to reach enterprise audiences.
     lifecycle:
       status: active
@@ -45,7 +47,7 @@ offers:
           kind: other
       consideration:
         kind: variable
-        description: Build or operate a B2B AI application that integrates with Box and works with unstructured content or metadata.
+        description: Integrate a B2B AI application whose workflows interact with unstructured content or metadata with Box.
     eligibility:
       rule:
         kind: all
