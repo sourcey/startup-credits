@@ -1,0 +1,99 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kz5ksfzd30nw5x664ghn8n8w
+slug: happyfox
+slug_aliases: []
+name: HappyFox
+domains:
+  - value: happyfox.com
+    role: primary
+    valid_from: 2026-08-04T05:26:40.869Z
+category: crm-sales
+description: HappyFox CRM is an AI-native customer relationship management platform for B2B SaaS teams, covering sales, expansion, renewals, and retention.
+links:
+  site: https://www.happyfox.com/crm/
+sources:
+  - source_id: src_008deec0da4631ca20df95f76de6c54323a1b13f117a5bd3e0a5b7df98b0bd23
+    url: https://www.happyfox.com/crm/startup/
+programs:
+  - program_id: prg_01kz5ksfzg2mqsxqhrff23evr8
+    program_slug: happyfox-crm-startup-pass
+    program_slug_aliases: []
+    title: HappyFox CRM Startup Pass
+    summary: HappyFox CRM Startup Pass gives eligible SaaS and AI-native startups one year of HappyFox CRM at no cost, with unlimited users and 50,000 AI credits.
+    source_ids:
+      - src_008deec0da4631ca20df95f76de6c54323a1b13f117a5bd3e0a5b7df98b0bd23
+offers:
+  - offer_id: off_01kz5ksfzgyxremr1zy9mwh4wf
+    program_id: prg_01kz5ksfzg2mqsxqhrff23evr8
+    offer_slug: one-year-free-happyfox-crm-startup-pass
+    offer_slug_aliases: []
+    title: One year free HappyFox CRM Startup Pass
+    summary: Eligible SaaS and AI-native startups receive HappyFox CRM free for 12 months with unlimited users, 50,000 AI credits, founder Slack, and monthly office hours.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-04T05:26:40.869Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: HappyFox CRM at no cost for 12 months with unlimited users
+          duration:
+            kind: exact
+            value: P1Y
+          kind: free-service
+          service: HappyFox CRM with unlimited users
+        - benefit_id: ben_02
+          description: 50,000 AI credits total for the first year
+          kind: other
+        - benefit_id: ben_03
+          description: Access to founder Slack and monthly office hours
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - kind: any
+            rules:
+              - criterion_id: cri_01
+                kind: manual
+                reason: external-verification
+                statement: Company is Series A or earlier
+              - criterion_id: cri_02
+                fact: company.funding_raised_usd
+                kind: predicate
+                operator: lt
+                statement: Company has raised less than $2,000,000
+                value:
+                  type: number
+                  value: 2000000
+          - criterion_id: cri_03
+            fact: company.employee_count
+            kind: predicate
+            operator: lte
+            statement: Company has no more than 50 people at the time of application
+            value:
+              type: number
+              value: 50
+          - criterion_id: cri_04
+            fact: company.age_months
+            kind: predicate
+            operator: lt
+            statement: Company was incorporated less than three years ago
+            value:
+              type: number
+              value: 36
+          - criterion_id: cri_05
+            kind: manual
+            reason: not-machine-evaluable
+            statement: Company is building a SaaS or AI-native product
+    roles:
+      terms_authority_entity_id: ent_01kz5ksfzd30nw5x664ghn8n8w
+      access_operator_entity_id: ent_01kz5ksfzd30nw5x664ghn8n8w
+    access:
+      availability: public
+      method: form
+      url: https://www.happyfox.com/crm/startup/
+    terms_url: https://www.happyfox.com/crm/startup/
+    source_ids:
+      - src_008deec0da4631ca20df95f76de6c54323a1b13f117a5bd3e0a5b7df98b0bd23
