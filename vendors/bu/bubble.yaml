@@ -1,0 +1,58 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kz7awy3cv8zhkktvp2qkj82g
+slug: bubble
+slug_aliases: []
+name: Bubble
+domains:
+  - value: bubble.io
+    role: primary
+    valid_from: 2026-08-04T21:29:28.428Z
+category: no-code
+description: Bubble provides a visual no-code platform for building, integrating, hosting, and deploying full-stack web applications.
+links:
+  site: https://bubble.io/
+sources:
+  - source_id: src_f011a0299ab39a4442cbbb318be8005cfb42e3ee466efa57ab37a1c1525eb0b5
+    url: https://bubble.io/partnership/microsoft-for-startups-urm
+programs: []
+offers:
+  - offer_id: off_01kz7awy3cggh28qwf2eqzm5rs
+    offer_slug: microsoft-for-startups-urm-credits
+    offer_slug_aliases: []
+    title: $3,500 in Bubble credits for Microsoft for Startups members
+    summary: Eligible Microsoft for Startups members whose founders are from underrepresented minority backgrounds receive $3,500 in Bubble credits for six months.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-04T21:29:28.428Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: $3,500 in Bubble credits for monthly subscription plans during the first six months
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 350000
+            kind: exact
+          duration:
+            kind: exact
+            value: P6M
+      consideration:
+        kind: variable
+        description: The applicant must link a credit card and pays charges beyond the available credits on an eligible monthly subscription plan.
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: external-verification
+        statement: Must be a new paying Bubble user, be a Microsoft for Startups member whose founders are from underrepresented minority backgrounds, use the same email for both programs, redeem only once per organization, and use a monthly non-Dedicated plan.
+    roles:
+      terms_authority_entity_id: ent_01kz7awy3cv8zhkktvp2qkj82g
+      access_operator_entity_id: ent_01kz7awy3cv8zhkktvp2qkj82g
+    access:
+      availability: membership
+      method: form
+      url: https://bubble.io/partnership/microsoft-for-startups-urm
+    terms_url: https://bubble.io/partnership/microsoft-for-startups-urm
+    source_ids:
+      - src_f011a0299ab39a4442cbbb318be8005cfb42e3ee466efa57ab37a1c1525eb0b5
