@@ -1,0 +1,91 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kz6rznkgz97hh1yrds32gayt
+slug: vapi
+slug_aliases: []
+name: Vapi
+domains:
+  - value: vapi.ai
+    role: primary
+    valid_from: 2026-08-04T16:16:23.000Z
+category: ai-ml
+description: Vapi provides a platform for developers to build, test, and deploy configurable voice AI agents.
+links:
+  site: https://vapi.ai
+sources:
+  - source_id: src_cada26e57ce6aa080915fb6bcae88941dd9c2b8102f1134bd48e31c12e38dd5f
+    url: https://vapi.ai
+  - source_id: src_384776e70c9dcca0fb164257201e6e9687cc36b676762ab1fd9c1b4969ff12d3
+    url: https://vapi.ai/blog/vapi-ai-startups
+programs:
+  - program_id: prg_01kz6rznkk7fn0p1ygg2726x17
+    program_slug: vapi-startups-program
+    program_slug_aliases: []
+    title: Vapi Startups Program
+    summary: Vapi's program gives eligible early-stage voice AI startups free usage minutes, early product access, community membership, and technical support.
+    source_ids:
+      - src_384776e70c9dcca0fb164257201e6e9687cc36b676762ab1fd9c1b4969ff12d3
+offers:
+  - offer_id: off_01kz6rznkkkp90asjwyw0x3pxw
+    program_id: prg_01kz6rznkk7fn0p1ygg2726x17
+    offer_slug: vapi-startups-program
+    offer_slug_aliases: []
+    title: Vapi Startups Program
+    summary: Eligible startups receive 90,000 free usage minutes, early access to Vapi tools and updates, startup community membership, and ongoing technical support.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-04T16:16:23.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 90,000 free usage minutes
+          kind: other
+        - benefit_id: ben_02
+          description: Early access to Vapi tools and updates
+          kind: other
+        - benefit_id: ben_03
+          description: Startup community membership, technical sessions, feedback calls, and direct support
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.age_months
+            kind: predicate
+            operator: lte
+            statement: Company was founded within the last 5 years.
+            value:
+              type: number
+              value: 60
+          - criterion_id: cri_02
+            fact: company.funding_raised_usd
+            kind: predicate
+            operator: gte
+            statement: Startup has raised at least $100,000 in funding.
+            value:
+              type: number
+              value: 100000
+          - criterion_id: cri_03
+            fact: company.funding_raised_usd
+            kind: predicate
+            operator: lte
+            statement: Startup has raised no more than $5 million in funding.
+            value:
+              type: number
+              value: 5000000
+          - criterion_id: cri_04
+            kind: manual
+            reason: not-machine-evaluable
+            statement: Builders must be actively integrating voice LLM as a core part of their product.
+    roles:
+      terms_authority_entity_id: ent_01kz6rznkgz97hh1yrds32gayt
+      access_operator_entity_id: ent_01kz6rznkgz97hh1yrds32gayt
+    access:
+      availability: public
+      method: form
+      url: https://form.typeform.com/to/jmgDdUyW
+      instructions: Fill out the application with company details; qualifying startups receive an invite email and Slack community invitation.
+    source_ids:
+      - src_384776e70c9dcca0fb164257201e6e9687cc36b676762ab1fd9c1b4969ff12d3
