@@ -1,0 +1,65 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kz30yqnfe6gkpjqqjb3fj1e9
+slug: composio
+slug_aliases: []
+name: Composio
+domains:
+  - value: composio.dev
+    role: primary
+    valid_from: 2026-08-03T05:18:43.821Z
+category: apis-integration
+description: Composio provides tool integrations, authentication infrastructure, triggers, and a code sandbox for developers building AI agents.
+links:
+  site: https://composio.dev
+  pricing: https://composio.dev/pricing
+sources:
+  - source_id: src_f3c1ef0b683b68c47f5aa92e4b5bcdbcd27607e036bf0da5f6afe8693d8fe806
+    url: https://composio.dev/startups
+  - source_id: src_b75a6f2ccd302aa285925f104ab7a01e45c63a2e496cc1b26560ac358b3bccfb
+    url: https://composio.dev/pricing.md
+programs:
+  - program_id: prg_01kz30yqng83gdzz5g6t5zeakr
+    program_slug: composio-startups-program
+    program_slug_aliases: []
+    title: Composio Startups Program
+    summary: Composio's startup program gives qualifying software companies its Business plan free for six months, with applications typically reviewed within a week.
+    source_ids:
+      - src_f3c1ef0b683b68c47f5aa92e4b5bcdbcd27607e036bf0da5f6afe8693d8fe806
+offers:
+  - offer_id: off_01kz30yqngdmgsasz3zckp44k8
+    program_id: prg_01kz30yqng83gdzz5g6t5zeakr
+    offer_slug: six-months-free-business-plan
+    offer_slug_aliases: []
+    title: Six months free on Composio Business
+    summary: Accepted startups receive the Composio Business plan free for six months.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-03T05:18:43.821Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_01
+          description: Six months of the Composio Business plan at no charge.
+          kind: free-service
+          service: Composio Business plan
+          duration:
+            kind: exact
+            value: P6M
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_01
+        statement: Only accepted startups receive this offer.
+        reason: vendor-discretion
+    roles:
+      terms_authority_entity_id: ent_01kz30yqnfe6gkpjqqjb3fj1e9
+      access_operator_entity_id: ent_01kz30yqnfe6gkpjqqjb3fj1e9
+    access:
+      availability: public
+      method: form
+      url: https://composio.dev/startups
+    terms_url: https://composio.dev/terms
+    source_ids:
+      - src_f3c1ef0b683b68c47f5aa92e4b5bcdbcd27607e036bf0da5f6afe8693d8fe806
+      - src_b75a6f2ccd302aa285925f104ab7a01e45c63a2e496cc1b26560ac358b3bccfb

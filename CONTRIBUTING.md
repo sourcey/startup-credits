@@ -45,6 +45,24 @@ node -e 'console.log("src_"+require("node:crypto").randomBytes(32).toString("hex
 - Sign off commits using `Signed-off-by: Name <email>` to certify the
   [Developer Certificate of Origin](https://developercertificate.org/).
 
+## What evidence review checks
+
+The public `validate` check proves the YAML shape and changed identity closure. Sourcey's separate
+admission review then checks the submitted facts against the record's public source URLs:
+
+- published economics, eligibility, lifecycle, domains, links, and access facts must be supported
+  by cited source material;
+- Sourcey-written titles, summaries, descriptions, and taxonomy labels may faithfully paraphrase
+  those cited facts and do not need to appear verbatim on the vendor page;
+- opaque Sourcey IDs and canonical encodings such as money units are not expected to appear in
+  vendor copy, but the real actor or value they encode must be supported; and
+- Sourcey-owned metadata such as capture time and internal criterion IDs is not treated as a claim
+  the vendor published.
+
+If admission cannot cover a submitted fact, its result names the uncovered field and explains what
+evidence is accepted. Correct the YAML or cite a better public source on the same pull request; do
+not rewrite a supported fact merely to make it match a source sentence word for word.
+
 Before starting a new vendor, search the
 [open pull requests](https://github.com/sourcey/startup-credits/pulls) and
 [missing-record issues](https://github.com/sourcey/startup-credits/issues?q=is%3Aissue+is%3Aopen).

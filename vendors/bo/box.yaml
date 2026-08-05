@@ -1,0 +1,71 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kz4xsd0ntbvvth11abdkmpty
+slug: box
+slug_aliases: []
+name: Box
+domains:
+  - value: box.com
+    role: primary
+    valid_from: 2026-08-04T00:00:00Z
+category: productivity
+description: Box provides cloud content management, collaboration, workflow, security, governance, and developer APIs for business content.
+links:
+  site: https://www.box.com
+sources:
+  - source_id: src_bab6a7e708d2b15de904c45e481d6ee14b930c03eba157ddd8827c69f43e33e0
+    url: https://community.box.com/p/aistartups
+  - source_id: src_2f123399107c57baa833e659c76247dcafcd943c164fbf08da87d5200af41e5c
+    url: https://www.box.com
+programs:
+  - program_id: prg_01kz4xsd0ne0dzpqa253c7v3vv
+    program_slug: ai-startup-partner-program
+    program_slug_aliases: []
+    title: AI Startup Partner Program
+    summary: A partner program helping B2B AI startups integrate content-focused applications with Box through technical resources, dedicated support, and go-to-market opportunities.
+    source_ids:
+      - src_bab6a7e708d2b15de904c45e481d6ee14b930c03eba157ddd8827c69f43e33e0
+offers:
+  - offer_id: off_01kz4xsd0ncpd9gj1kd7t00dks
+    program_id: prg_01kz4xsd0ne0dzpqa253c7v3vv
+    offer_slug: ai-startup-partner-benefits
+    offer_slug_aliases: []
+    title: AI Startup Partner Program
+    summary: Accepted B2B AI startups integrating with Box receive personalized technical help, integration resources, and exclusive marketing and sales support to reach enterprise audiences.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-04T00:00:00Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Personalized support from the Box team for a smooth and successful product integration.
+          kind: other
+        - benefit_id: ben_02
+          description: Technical resources and access to Box content-management capabilities, open APIs, AI, workflow, security, and compliance tooling.
+          kind: other
+        - benefit_id: ben_03
+          description: Exclusive co-marketing, sales, and brand-amplification resources for reaching enterprise audiences.
+          kind: other
+      consideration:
+        kind: variable
+        description: Integrate a B2B AI application whose workflows interact with unstructured content or metadata with Box.
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: not-machine-evaluable
+            statement: Must be a B2B AI startup building workflows that consume, generate, or derive insights from unstructured content or metadata.
+          - criterion_id: cri_02
+            kind: manual
+            reason: vendor-discretion
+            statement: Must apply to integrate with Box and be accepted into the AI Startup Partner Program.
+    roles:
+      terms_authority_entity_id: ent_01kz4xsd0ntbvvth11abdkmpty
+      access_operator_entity_id: ent_01kz4xsd0ntbvvth11abdkmpty
+    access:
+      availability: public
+      method: form
+      url: https://community.box.com/p/aistartups
+    source_ids:
+      - src_bab6a7e708d2b15de904c45e481d6ee14b930c03eba157ddd8827c69f43e33e0

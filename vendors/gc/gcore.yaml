@@ -1,0 +1,72 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kz4xsd0nqsn233tyt1bpx7c7
+slug: gcore
+slug_aliases: []
+name: Gcore
+domains:
+  - value: gcore.com
+    role: primary
+    valid_from: 2026-08-04T00:00:00Z
+category: hosting-infra
+description: Gcore provides enterprise-grade cloud, edge, GPU, content-delivery, and application-security infrastructure.
+links:
+  site: https://gcore.com
+sources:
+  - source_id: src_80753beb53cbd5d8b598ca23efb81848be8832ea984cf1bf004de21bcb0eff27
+    url: https://gcore.com/go/startups-apply-program
+programs:
+  - program_id: prg_01kz4xsd0nyb1e1shehdnwj9we
+    program_slug: gcore-for-startups
+    program_slug_aliases: []
+    title: Gcore for Startups
+    summary: An infrastructure program for technology startups offering a free edge and security bundle, discounted AI and GPU pricing, engineering support, and ongoing startup rates.
+    source_ids:
+      - src_80753beb53cbd5d8b598ca23efb81848be8832ea984cf1bf004de21bcb0eff27
+offers:
+  - offer_id: off_01kz4xsd0nymw9rgp6wdkwqk89
+    program_id: prg_01kz4xsd0nyb1e1shehdnwj9we
+    offer_slug: startup-infrastructure-bundle
+    offer_slug_aliases: []
+    title: Gcore for Startups – Free Infrastructure Bundle + Discounted AI/GPU Pricing
+    summary: Approved startups get up to 12 months of free edge and security infrastructure valued above €18,000 per year, plus up to 30% off AI, GPU, and cloud workloads and direct engineering support.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-04T00:00:00Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Get free edge delivery and security infrastructure worth €18,000+ per year
+          duration:
+            kind: up-to
+            value: P12M
+          kind: free-service
+          service: edge delivery and security infrastructure
+        - benefit_id: ben_02
+          description: Up to 30% discount on compute-heavy workloads for AI training, inference, and production deployments.
+          kind: discount
+          percentage:
+            basis_points: 3000
+            kind: up-to
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: external-verification
+            statement: Must be a legitimate technology-enabled startup up to Series A with clear infrastructure needs and growth intent.
+          - criterion_id: cri_02
+            kind: manual
+            reason: vendor-discretion
+            statement: Priority is given to startups with active products, upcoming launches, or migration plans; Gcore reviews applications.
+    roles:
+      terms_authority_entity_id: ent_01kz4xsd0nqsn233tyt1bpx7c7
+      access_operator_entity_id: ent_01kz4xsd0nqsn233tyt1bpx7c7
+    access:
+      availability: public
+      method: form
+      url: https://www.f6s.com/gcore-infrastructure-cybersecurity/apply
+    source_ids:
+      - src_80753beb53cbd5d8b598ca23efb81848be8832ea984cf1bf004de21bcb0eff27

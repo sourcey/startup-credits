@@ -54,8 +54,10 @@ offers:
         more than $10 million in external funding.
 ```
 
-Eligibility is quoted in the vendor's own words rather than paraphrased, and
-every fact traces back to the URL in `sources`.
+Eligibility conditions are represented explicitly rather than hidden in a
+marketing summary, and every factual value traces back to material at the URL
+in `sources`. Neutral Sourcey prose may faithfully summarize those cited facts;
+it is not presented as a vendor quotation.
 
 ## Getting it
 
@@ -92,10 +94,12 @@ Copy a nearby file under `vendors/`, keep the shape, open a pull request. CI
 checks only what you changed and hands back real field errors, so you can push
 corrections without waiting on a maintainer.
 
-Two rules carry most of the weight. Every fact needs the vendor's own URL in
-`sources`, and if the source does not say it, it does not go in. Guessed amounts
-and invented eligibility read exactly like checked ones, which is why they get
-closed. [CONTRIBUTING.md](CONTRIBUTING.md) has the rest, including a preflight
+Two rules carry most of the weight. Every fact needs public supporting material
+at a URL in `sources`, and if the source does not substantiate it, it does not go
+in. Guessed amounts and invented eligibility read exactly like checked ones,
+which is why they get closed. Sourcey-written titles, summaries, descriptions,
+and taxonomy labels may use neutral wording, but they still need cited factual
+support. [CONTRIBUTING.md](CONTRIBUTING.md) has the rest, including a preflight
 that runs the same verifier CI uses. Correcting a stale offer is worth as much as
 adding a new one.
 

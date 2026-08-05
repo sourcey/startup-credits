@@ -1,0 +1,87 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kz4jp4p6tttnxkj3qwcsyc2d
+slug: aptible
+slug_aliases: []
+name: Aptible
+domains:
+  - value: aptible.com
+    role: primary
+    valid_from: 2026-08-03T19:47:51.112Z
+category: hosting-infra
+description: Aptible provides secure cloud infrastructure for deploying compliant applications, databases, and LLM workloads.
+links:
+  site: https://www.aptible.com
+sources:
+  - source_id: src_b67ce751028d10e655ad3cb5cbb1a34a0fd987f381d341f821c3568f83fda294
+    url: https://www.aptible.com/legal/terms-of-service
+programs:
+  - program_id: prg_01kz4jp4p83tvf7z2xnejv2k4p
+    program_slug: aptible-startup-program
+    program_slug_aliases: []
+    title: Aptible Startup Program
+    summary: Accepted applicants receive six months of Aptible Starter tier access at no charge, approximately $249.50 per month in usage credits.
+    source_ids:
+      - src_b67ce751028d10e655ad3cb5cbb1a34a0fd987f381d341f821c3568f83fda294
+offers:
+  - offer_id: off_01kz4jp4p8jz5p436z81s1wd68
+    program_id: prg_01kz4jp4p83tvf7z2xnejv2k4p
+    offer_slug: aptible-startup-program-starter-tier
+    offer_slug_aliases: []
+    title: Aptible Startup Program
+    summary: Accepted applicants receive six months of Aptible Starter tier access at no charge, approximately $249.50 per month in usage credits, plus sandbox accounts.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-03T19:47:51.112Z
+    economics:
+      consideration:
+        description: Recipients use the program for internal evaluation, agree to co-marketing activities, pay for resources beyond the provided credits, and transition to a paid Aptible plan after six months.
+        kind: variable
+      benefits:
+        - benefit_id: ben_01
+          description: Six months of Starter tier access at no charge, equating to approximately $249.50 per month in usage credits
+          kind: free-service
+          service: Aptible Starter tier access
+          duration:
+            kind: exact
+            value: P6M
+        - benefit_id: ben_02
+          description: Sandbox accounts for authorized users to learn how to use Aptible
+          kind: other
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: external-verification
+            statement: Must be a new Aptible customer applying as a company
+          - criterion_id: cri_02
+            kind: manual
+            reason: external-verification
+            statement: Company is incorporated under the laws of the United States
+          - criterion_id: cri_03
+            fact: company.funding_raised_usd
+            kind: predicate
+            operator: lt
+            statement: Company has raised less than $20 million
+            value:
+              type: number
+              value: 20000000
+          - criterion_id: cri_04
+            kind: manual
+            reason: external-verification
+            statement: Latest funding round was Seed or Series A within the prior 24 months and led by a venture capital investor Aptible deems qualified and reputable
+          - criterion_id: cri_05
+            kind: manual
+            reason: external-verification
+            statement: Company has fewer than 20 engineers
+    roles:
+      terms_authority_entity_id: ent_01kz4jp4p6tttnxkj3qwcsyc2d
+      access_operator_entity_id: ent_01kz4jp4p6tttnxkj3qwcsyc2d
+    access:
+      availability: public
+      method: form
+      url: https://www.aptible.com/startup
+    terms_url: https://www.aptible.com/legal/terms-of-service
+    source_ids:
+      - src_b67ce751028d10e655ad3cb5cbb1a34a0fd987f381d341f821c3568f83fda294

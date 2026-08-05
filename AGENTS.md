@@ -32,6 +32,14 @@ data pull request, use the exact digest-pinned workspace-owned verifier, and
 return actionable field errors before private review. `sourcey/admission` is a
 separate Sourcey-owned evidence gate and never contributor-authored work.
 
+Evidence review is semantic, not a verbatim-copy test. Published factual values
+need located source support; neutral Sourcey titles, summaries, descriptions,
+and taxonomy classifications may faithfully express cited facts in different
+words. Sourcey-owned IDs, encodings, and capture metadata are not claims that a
+vendor page must literally contain. The private Catalog policy and evaluator
+are the sole authority for that distinction; this repository does not restate
+or implement it.
+
 `vendors/` is the only public data collection. Offers, programs, links, and
 sources are nested in their owning vendor document. Do not add a generic
 `data/` wrapper or another top-level collection unless Kam explicitly approves

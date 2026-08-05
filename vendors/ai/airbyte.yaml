@@ -1,0 +1,85 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kz1ve26g2rkj6w37js1yrz0z
+slug: airbyte
+slug_aliases: []
+name: Airbyte
+domains:
+  - value: airbyte.com
+    role: primary
+    valid_from: 2026-08-02T18:22:53.000Z
+category: data-analytics
+description: Airbyte provides a data movement platform for connecting and replicating data across systems.
+links:
+  site: https://airbyte.com
+sources:
+  - source_id: src_31737e075786a03e0cb80bc62bc1066eb88c817e5792e1bee596287af314ce3a
+    url: https://airbyte.com/company/ycombinator-startup-promotion
+programs:
+  - program_id: prg_01kz1ve26gzmk7d7rwp5maf0df
+    program_slug: y-combinator-startup-promotion
+    program_slug_aliases: []
+    title: Y Combinator Startup Promotion
+    summary: Airbyte provides eligible Y Combinator companies with Airbyte credits and startup enablement resources.
+    source_ids:
+      - src_31737e075786a03e0cb80bc62bc1066eb88c817e5792e1bee596287af314ce3a
+offers:
+  - offer_id: off_01kz1ve26gdj4gc72mq582qtgy
+    program_id: prg_01kz1ve26gzmk7d7rwp5maf0df
+    offer_slug: 75000-in-airbyte-credits
+    offer_slug_aliases: []
+    title: $75,000 in Airbyte credits
+    summary: Eligible companies receive $75,000 in Airbyte credits, access to Airbyte learning resources, a place in the next Airbyte workshop, and Airbyte swag.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-02T18:22:53.000Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_01
+          description: $75,000 in Airbyte credits
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 7500000
+            kind: exact
+        - benefit_id: ben_02
+          description: Access to the free Airbyte learning platform and a place in the next Airbyte workshop.
+          kind: other
+        - benefit_id: ben_03
+          description: Airbyte swag.
+          kind: other
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_requirement_01
+            kind: manual
+            reason: external-verification
+            statement: Applicant must be a company in a current or previous Y Combinator batch.
+          - criterion_id: cri_requirement_02
+            fact: company.funding_raised_usd
+            kind: predicate
+            operator: lt
+            statement: Applicant must have raised less than $5 million total.
+            value:
+              type: number
+              value: 5000000
+          - criterion_id: cri_requirement_03
+            kind: manual
+            reason: not-machine-evaluable
+            statement: Applicant must accept the Airbyte Cloud standard Terms of Service.
+          - criterion_id: cri_requirement_04
+            kind: manual
+            reason: not-machine-evaluable
+            statement: Applicant must not be an existing Airbyte customer.
+    roles:
+      terms_authority_entity_id: ent_01kz1ve26g2rkj6w37js1yrz0z
+      access_operator_entity_id: ent_01kz1ve26g2rkj6w37js1yrz0z
+    access:
+      availability: public
+      method: form
+      url: https://airbyte.com/company/ycombinator-startup-promotion
+    source_ids:
+      - src_31737e075786a03e0cb80bc62bc1066eb88c817e5792e1bee596287af314ce3a
