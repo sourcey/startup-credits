@@ -1,0 +1,73 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kz8xy8qesv7d3eg5dcwd68v7
+slug: alchemy
+slug_aliases: []
+name: Alchemy
+domains:
+  - value: alchemy.com
+    role: primary
+    valid_from: 2026-08-05T12:21:29.000Z
+category: hosting-infra
+description: Alchemy provides blockchain infrastructure and developer tools for teams building onchain applications across more than 100 supported blockchains.
+links:
+  site: https://www.alchemy.com
+sources:
+  - source_id: src_256b5c4541a473d346a67f5bc5bccf9610746e690b5745ff26558ae3c5d2e764
+    url: https://www.alchemy.com/startup-program
+programs:
+  - program_id: prg_01kz8xy8qhtvzevx3zjrsvxckr
+    program_slug: alchemy-startup-program
+    program_slug_aliases: []
+    title: Alchemy Startup Program
+    summary: Alchemy's startup program provides qualified onchain teams with Alchemy and AWS credits, 24/7 engineering support, onboarding, and partner-network access.
+    source_ids:
+      - src_256b5c4541a473d346a67f5bc5bccf9610746e690b5745ff26558ae3c5d2e764
+offers:
+  - offer_id: off_01kz8xy8qhgpcfxztyfxx7g3qx
+    program_id: prg_01kz8xy8qhtvzevx3zjrsvxckr
+    offer_slug: startup-credits-support-and-partner-access
+    offer_slug_aliases: []
+    title: Alchemy Startup Program credits and support
+    summary: Qualified onchain teams receive Alchemy account credits, $5,000 in AWS credits, 24/7 engineering support, dedicated onboarding, and access to Alchemy's VC, accelerator, and chain-partner ecosystem.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-05T12:21:29.000Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_01
+          description: Alchemy credits applied directly to the recipient's account to offset pay-as-you-go or enterprise plan costs and automatically reduce future invoices.
+          kind: other
+        - benefit_id: ben_02
+          description: USD 5,000 in AWS credits for compute, storage, and database services.
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 500000
+            kind: exact
+        - benefit_id: ben_03
+          description: 24/7 access to Alchemy's engineering team for debugging, architecture advice, and hands-on help.
+          kind: other
+        - benefit_id: ben_04
+          description: A dedicated onboarding experience.
+          kind: other
+        - benefit_id: ben_05
+          description: Access to Alchemy's partner ecosystem of venture-capital firms, accelerators, and chain partners for introductions, co-marketing, and launch support.
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_01
+        statement: Teams building real onchain products may apply whether venture-backed, in an accelerator, or bootstrapped; Alchemy reviews submissions and schedules a call to qualify applicants.
+        reason: vendor-discretion
+    roles:
+      terms_authority_entity_id: ent_01kz8xy8qesv7d3eg5dcwd68v7
+      access_operator_entity_id: ent_01kz8xy8qesv7d3eg5dcwd68v7
+    access:
+      availability: public
+      method: form
+      url: https://www.alchemy.com/startup-program
+    source_ids:
+      - src_256b5c4541a473d346a67f5bc5bccf9610746e690b5745ff26558ae3c5d2e764
