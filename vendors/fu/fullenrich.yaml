@@ -1,0 +1,62 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kz8wsgxa6s0v91ck6cztkb8f
+slug: fullenrich
+slug_aliases: []
+name: FullEnrich
+domains:
+  - value: fullenrich.com
+    role: primary
+    valid_from: 2026-08-05T12:01:28.000Z
+category: crm-sales
+description: FullEnrich is a B2B contact-data platform that enriches work emails and mobile numbers by querying more than 20 data providers.
+links:
+  site: https://fullenrich.com
+sources:
+  - source_id: src_7ded7abd55cf78f554b4b552d1480a5ed380affc108b96caa05e292867dac9b5
+    url: https://fullenrich.com/partners/vc
+programs:
+  - program_id: prg_01kz8wsgxdczrshaz4ckkc4gka
+    program_slug: vc-accelerator-program
+    program_slug_aliases: []
+    title: FullEnrich VC Accelerator Program
+    summary: FullEnrich's partner program gives participating VC firms and accelerators contact-data credits and a startup perk to share across their portfolios.
+    source_ids:
+      - src_7ded7abd55cf78f554b4b552d1480a5ed380affc108b96caa05e292867dac9b5
+offers:
+  - offer_id: off_01kz8wsgxdhyhh897wbhxr5ncs
+    program_id: prg_01kz8wsgxdczrshaz4ckkc4gka
+    offer_slug: 2000-free-credits-for-portfolio-startups
+    offer_slug_aliases: []
+    title: 2,000 free credits for portfolio startups
+    summary: Portfolio startups of participating VC and accelerator partners receive 2,000 FullEnrich credits, access to startup events, and a shared Slack support channel.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-05T12:01:28.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 2,000 FullEnrich credits, equivalent to 2,000 enriched emails or 200 enriched mobile numbers
+          kind: other
+        - benefit_id: ben_02
+          description: Access to FullEnrich founder meetups and global startup events
+          kind: other
+        - benefit_id: ben_03
+          description: Shared Slack channel for support, best practices, and onboarding guidance
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: external-verification
+        statement: Startup must be in the portfolio of a VC firm or accelerator participating in the FullEnrich partner program.
+    roles:
+      terms_authority_entity_id: ent_01kz8wsgxa6s0v91ck6cztkb8f
+      access_operator_entity_id: ent_01kz8wsgxa6s0v91ck6cztkb8f
+    access:
+      availability: membership
+      instructions: Use the custom FullEnrich program link shared by the startup's participating VC firm or accelerator.
+      method: other
+    source_ids:
+      - src_7ded7abd55cf78f554b4b552d1480a5ed380affc108b96caa05e292867dac9b5
