@@ -1,0 +1,94 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kz9pjmbykag96hzt5ff289yk
+slug: openobserve
+slug_aliases: []
+name: OpenObserve
+domains:
+  - value: openobserve.ai
+    role: primary
+    valid_from: 2026-08-05T19:32:02.000Z
+category: observability
+description: OpenObserve is an OpenTelemetry-compatible observability platform for logs, metrics, traces, frontend monitoring, pipelines, alerts, and dashboards.
+links:
+  site: https://openobserve.ai
+sources:
+  - source_id: src_057ba3ab120430cfb62287a6772a5f1881fe642174ca35677edf39d22d29e9e3
+    url: https://openobserve.ai/startup/
+programs:
+  - program_id: prg_01kz9pjmbzxv8d0kxfzqgqf6s0
+    program_slug: openobserve-startup-program
+    program_slug_aliases: []
+    title: OpenObserve Startup Program
+    summary: A one-year OpenObserve Cloud discount program for eligible venture-backed or accelerator startups with substantial observability data ingest.
+    source_ids:
+      - src_057ba3ab120430cfb62287a6772a5f1881fe642174ca35677edf39d22d29e9e3
+offers:
+  - offer_id: off_01kz9pjmc0xz800ntwk3gektsp
+    program_id: prg_01kz9pjmbzxv8d0kxfzqgqf6s0
+    offer_slug: openobserve-startup-program-cloud-discount
+    offer_slug_aliases: []
+    title: OpenObserve Startup Program Cloud Discount
+    summary: Venture-backed or accelerator startups under $10M funding and $1M ARR, expecting over 100GB daily ingest, get 50% off six months and 25% off the next six with a one-year contract.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-05T19:32:02.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 50% off OpenObserve Cloud for the first six months
+          duration:
+            kind: exact
+            value: P6M
+          kind: discount
+          percentage:
+            basis_points: 5000
+            kind: exact
+        - benefit_id: ben_02
+          description: 25% off OpenObserve Cloud for the following six months
+          duration:
+            kind: exact
+            value: P6M
+          kind: discount
+          percentage:
+            basis_points: 2500
+            kind: exact
+      consideration:
+        description: Participant signs a one-year OpenObserve Cloud contract and pays the discounted platform charges.
+        kind: variable
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.funding_raised_usd
+            kind: predicate
+            operator: lt
+            statement: Startup has raised less than $10 million in total funding.
+            value:
+              type: number
+              value: 10000000
+          - criterion_id: cri_02
+            fact: company.annual_revenue_usd
+            kind: predicate
+            operator: lte
+            statement: Startup has annual recurring revenue at or below $1 million.
+            value:
+              type: number
+              value: 1000000
+          - criterion_id: cri_03
+            kind: manual
+            reason: not-machine-evaluable
+            statement: Startup expects to ingest more than 100 GB of data per day.
+          - criterion_id: cri_04
+            kind: manual
+            reason: not-machine-evaluable
+            statement: Startup is actively backed by a venture capital firm or participates in a recognized startup accelerator.
+    roles:
+      terms_authority_entity_id: ent_01kz9pjmbykag96hzt5ff289yk
+      access_operator_entity_id: ent_01kz9pjmbykag96hzt5ff289yk
+    access:
+      availability: public
+      method: form
+      url: https://openobserve.ai/startup/
+    source_ids:
+      - src_057ba3ab120430cfb62287a6772a5f1881fe642174ca35677edf39d22d29e9e3
