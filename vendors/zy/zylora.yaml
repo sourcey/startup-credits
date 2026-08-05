@@ -1,0 +1,53 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kz9aqnbvy0gvyp15y3gxg83t
+slug: zylora
+slug_aliases: []
+name: Zylora
+domains:
+  - value: zylora.dev
+    role: primary
+    valid_from: 2026-08-05T16:05:16.000Z
+category: hosting-infra
+description: Serverless GPU platform for running functions and AI workloads across multiple accelerator types.
+links:
+  site: https://zylora.dev
+sources:
+  - source_id: src_833b9808fb6d35d90efe644d08405a5b80ceb7a538e26a7627de764141a1de2c
+    url: https://zylora.dev/free-gpu-credits/
+programs: []
+offers:
+  - offer_id: off_01kz9aqnbybtt2mxn4cq14cn2g
+    offer_slug: 500-in-free-gpu-credits
+    offer_slug_aliases: []
+    title: $500 in free GPU credits
+    summary: Qualifying pre-Series A startups, academic researchers, open-source projects, and bootcamps or programs can apply for $500 in Zylora GPU credits.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-05T16:05:16.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: $500 in credits for Zylora GPU compute
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 50000
+            kind: exact
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_requirement_01
+        kind: manual
+        reason: not-machine-evaluable
+        statement: Applicant must be a pre-Series A startup building AI products, an academic researcher using an academic email, an open-source ML project with at least 200 GitHub stars, or a bootcamp or program serving underserved or non-traditional learners.
+    roles:
+      terms_authority_entity_id: ent_01kz9aqnbvy0gvyp15y3gxg83t
+      access_operator_entity_id: ent_01kz9aqnbvy0gvyp15y3gxg83t
+    access:
+      availability: public
+      method: form
+      url: https://zylora.dev/free-gpu-credits/
+    source_ids:
+      - src_833b9808fb6d35d90efe644d08405a5b80ceb7a538e26a7627de764141a1de2c
