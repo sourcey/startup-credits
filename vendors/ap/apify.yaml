@@ -1,0 +1,78 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kz8wgap1gg564pn7zkpbrqrw
+slug: apify
+slug_aliases: []
+name: Apify
+domains:
+  - value: apify.com
+    role: primary
+    valid_from: 2026-08-05T11:56:24.000Z
+category: data-analytics
+description: Apify provides a web scraping and browser automation platform for collecting and processing web data with Actors, APIs, proxies, and managed services.
+links:
+  site: https://apify.com
+sources:
+  - source_id: src_0f8f3e4f3ee9fbbc9259d9f84623cd431f88fcfe1446608271067275dadad263
+    url: https://apify.com/resources/startups
+programs:
+  - program_id: prg_01kz8wgap4762y71sch3y0t7dx
+    program_slug: apify-for-startups
+    program_slug_aliases: []
+    title: Apify for startups
+    summary: A startup program offering eligible live SaaS and data-dependent products a 30% discount on the Apify Scale plan for six months, with a possible six-month extension.
+    source_ids:
+      - src_0f8f3e4f3ee9fbbc9259d9f84623cd431f88fcfe1446608271067275dadad263
+offers:
+  - offer_id: off_01kz8wgap4932zm0a1mevx4zqr
+    program_id: prg_01kz8wgap4762y71sch3y0t7dx
+    offer_slug: thirty-percent-off-scale-plan
+    offer_slug_aliases: []
+    title: 30% off the Apify Scale plan for six months
+    summary: Eligible startups receive 30% off the Apify Scale plan for six months and may request an extension to twelve months up to one month before the initial discount expires.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-05T11:56:24.000Z
+    economics:
+      benefits:
+        - applies_to: Apify Scale plan
+          benefit_id: ben_primary
+          description: 30% discount on the Apify Scale plan for six months, with an option to request an extension to twelve months
+          duration:
+            kind: exact
+            value: P6M
+          kind: discount
+          percentage:
+            basis_points: 3000
+            kind: exact
+      consideration:
+        kind: variable
+        description: Participants must subscribe to and maintain an active Scale plan while the discount is active, use Apify as part of their product rather than for sales lead generation, and follow the program's Actor-usage restrictions.
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: external-verification
+            statement: The applicant is a SaaS company or another startup whose product critically depends on data from Apify.
+          - criterion_id: cri_02
+            kind: manual
+            reason: external-verification
+            statement: The startup has raised less than USD 5 million in total funding, up to and including a Series A round.
+          - criterion_id: cri_03
+            kind: manual
+            reason: external-verification
+            statement: The product where Apify will be used is live and operational.
+          - criterion_id: cri_04
+            kind: manual
+            reason: external-verification
+            statement: The applicant already uses Apify through an account registered with an official company-domain email address; free email providers are not accepted.
+    roles:
+      terms_authority_entity_id: ent_01kz8wgap1gg564pn7zkpbrqrw
+      access_operator_entity_id: ent_01kz8wgap1gg564pn7zkpbrqrw
+    access:
+      availability: public
+      method: form
+      url: https://apify.com/resources/startups
+    source_ids:
+      - src_0f8f3e4f3ee9fbbc9259d9f84623cd431f88fcfe1446608271067275dadad263
