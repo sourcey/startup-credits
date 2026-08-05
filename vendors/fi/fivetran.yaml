@@ -8,7 +8,7 @@ domains:
     role: primary
     valid_from: 2026-08-03T00:25:44.000Z
 category: data-analytics
-description: Fivetran is an automated data movement platform that centralizes data from various sources into a destination for analytics.
+description: Automated data movement platform that centralizes data so teams can deliver better insights, faster.
 links:
   site: https://www.fivetran.com
   pricing: https://www.fivetran.com/pricing
@@ -17,20 +17,12 @@ sources:
     url: https://www.fivetran.com
   - source_id: src_415db05dd4fa8014e7bd5e09be585b7c83b3f5661709e79750c690f98483b1ea
     url: https://www.fivetran.com/pricing/startups
-programs:
-  - program_id: prg_01kz3vnbpbeeyghkvmmwetxj05
-    program_slug: fivetran-startup-program
-    program_slug_aliases: []
-    title: Fivetran Startup Program
-    summary: Fivetran's startup program gives eligible Y Combinator companies free Standard plan usage plus technical support and onboarding resources.
-    source_ids:
-      - src_415db05dd4fa8014e7bd5e09be585b7c83b3f5661709e79750c690f98483b1ea
+programs: []
 offers:
   - offer_id: off_krpp4xxf85s9p1akxn6ncarkbr
-    program_id: prg_01kz3vnbpbeeyghkvmmwetxj05
-    offer_slug: fivetran-startup-program
+    offer_slug: 50000-usd-free-usage-for-12-months
     offer_slug_aliases: []
-    title: $50,000 in free Fivetran Standard plan usage for YC startups
+    title: $50,000 in free Fivetran usage for 12 months
     summary: Y Combinator companies with 50 or fewer employees that are not a current or former Fivetran customer can receive $50,000 in free Standard plan usage over 12 months, plus technical support and onboarding resources.
     lifecycle:
       status: active
