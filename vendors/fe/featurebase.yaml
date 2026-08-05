@@ -1,0 +1,60 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kz9yzjyzyr7svr6gsb0d7mcd
+slug: featurebase
+slug_aliases: []
+name: Featurebase
+domains:
+  - value: featurebase.app
+    role: primary
+    valid_from: 2026-08-05T21:58:03.000Z
+category: support
+description: Featurebase is a customer feedback and support platform combining help desk, help center, feedback boards, product roadmaps, changelogs, and an AI support agent for software companies.
+links:
+  site: https://featurebase.app
+sources:
+  - source_id: src_bc317777f7a90daf5a01eda0180a2469653382b4f01f97e9de57ad21a9c1d295
+    url: https://featurebase.app
+  - source_id: src_737ee143ded7217de57b9c64cbfd8d9470b219e82f23353b946507c50ef1f3dd
+    url: https://help.featurebase.app/en/articles/8810300-early-stage-startup-program
+programs:
+  - program_id: prg_01kz9yzjz2q7m6dvwcjtj7db3d
+    program_slug: featurebase-early-stage-program
+    program_slug_aliases: []
+    title: Featurebase Early-Stage Program
+    source_ids:
+      - src_737ee143ded7217de57b9c64cbfd8d9470b219e82f23353b946507c50ef1f3dd
+offers:
+  - offer_id: off_01kz9yzjz25pgqdbmssswzzpp4
+    program_id: prg_01kz9yzjz2q7m6dvwcjtj7db3d
+    offer_slug: featurebase-early-stage-startup-program
+    offer_slug_aliases: []
+    title: Featurebase Early-Stage Startup Program
+    summary: Eligible early-stage startups get the Professional plan (6 full seats, 20 lite seats, 50 free AI resolutions per month in year one) for 86% off in year one, 40% off in year two, and 10% off in year three.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-05T21:58:03.000Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_primary
+          description: 86% off Year 1 ($63/mo), 40% off Year 2 ($270/mo), 10% off Year 3 ($405/mo) of the Professional plan (list price $450/mo for 6 seats), plus 50 free AI resolutions/month in Year 1
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 8600
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Company must be founded less than 2 years ago, have fewer than 6 employees, have raised less than $3M in external funding, must not have previously been on a paid Featurebase plan, and must apply within 90 days of sign-up. Limited to 6 seats.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01kz9yzjyzyr7svr6gsb0d7mcd
+      access_operator_entity_id: ent_01kz9yzjyzyr7svr6gsb0d7mcd
+    access:
+      availability: public
+      method: form
+      url: https://help.featurebase.app/en/articles/8810300-early-stage-startup-program
+    source_ids:
+      - src_737ee143ded7217de57b9c64cbfd8d9470b219e82f23353b946507c50ef1f3dd
