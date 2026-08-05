@@ -12,6 +12,8 @@ description: Open-source LLM engineering and observability platform.
 links:
   site: https://langfuse.com
 sources:
+  - source_id: src_487a19443972682f804aca7e39930583ce6fe658e768d0b8a76d683a9afc1afd
+    url: https://langfuse.com/
   - source_id: src_b9ebbb8b41a25b59bf14a801d938fe2828d0281f5b8a7a3915de9df4a1fd2d5c
     url: https://langfuse.com/startups
 programs:
