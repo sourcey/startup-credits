@@ -1,0 +1,63 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kz8wfq9qf88wb0cb2ewmvp4q
+slug: bolddesk
+slug_aliases: []
+name: BoldDesk
+domains:
+  - value: bolddesk.com
+    role: primary
+    valid_from: 2026-08-05T11:56:04.000Z
+category: support
+description: BoldDesk provides AI-powered customer support software with ticketing, live chat, omnichannel service, workflow automation, knowledge bases, and analytics.
+links:
+  site: https://www.bolddesk.com
+sources:
+  - source_id: src_3e94ec77382b4258cb05c79604e761411b8db8256456705c760c81b53a842e9d
+    url: https://www.bolddesk.com/help-desk-software-for-startups
+  - source_id: src_d38b47ee80de07c348b276cfb1db5034570af05f82023f1cc3bdd8c0ff3251c1
+    url: https://www.bolddesk.com/startups/request
+programs:
+  - program_id: prg_01kz8wfq9vq153jah5f66jfa34
+    program_slug: bolddesk-startup-program
+    program_slug_aliases: []
+    title: BoldDesk Startup Program
+    summary: BoldDesk's startup program gives qualifying companies its complete Enterprise team-based help desk plan free for 12 months for up to 10 agent seats, with free data migration.
+    source_ids:
+      - src_3e94ec77382b4258cb05c79604e761411b8db8256456705c760c81b53a842e9d
+offers:
+  - offer_id: off_01kz8wfq9vmbk9gbng59dnegre
+    program_id: prg_01kz8wfq9vq153jah5f66jfa34
+    offer_slug: twelve-months-free-enterprise-plan
+    offer_slug_aliases: []
+    title: 12 months free on BoldDesk Enterprise for up to 10 agents
+    summary: Accepted startups receive BoldDesk's complete Enterprise team-based plan free for 12 months for up to 10 agent seats, with free data migration included.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-05T11:56:04.000Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_01
+          description: The complete BoldDesk Enterprise team-based plan at no cost for 12 months for up to 10 agent seats, with free data migration included.
+          kind: free-service
+          service: BoldDesk Enterprise team-based plan
+          duration:
+            kind: exact
+            value: P1Y
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_01
+        statement: Applicants must have annual recurring revenue under USD 1 million, total funding under USD 10 million, and must not be current or former paying BoldDesk customers; BoldDesk reviews applications and emails the approval status.
+        reason: vendor-discretion
+    roles:
+      terms_authority_entity_id: ent_01kz8wfq9qf88wb0cb2ewmvp4q
+      access_operator_entity_id: ent_01kz8wfq9qf88wb0cb2ewmvp4q
+    access:
+      availability: public
+      method: form
+      url: https://www.bolddesk.com/startups/request
+    source_ids:
+      - src_3e94ec77382b4258cb05c79604e761411b8db8256456705c760c81b53a842e9d
+      - src_d38b47ee80de07c348b276cfb1db5034570af05f82023f1cc3bdd8c0ff3251c1
