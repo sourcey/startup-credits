@@ -8,11 +8,13 @@ domains:
     role: primary
     valid_from: 2026-08-03T12:00:00.000Z
 category: devtools-other
-description: Mintlify is a documentation platform that helps teams build and keep self-updating docs, with AI features for search, support, and content automation.
+description: Self-updating documentation for startups, enterprises, and agents.
 links:
   site: https://www.mintlify.com
   pricing: https://www.mintlify.com/pricing
 sources:
+  - source_id: src_24b383a691aa3bd5c37eca7f3e0fe5a4a5f7bd35cc256cd0486d503cd0467d1b
+    url: https://www.mintlify.com/
   - source_id: src_cd21c43db6dc413558a07cc97493745198996681a5d77d9066e13fba3c3adfd4
     url: https://www.mintlify.com/startups
   - source_id: src_28da635c3b66ed5f2522f3b92062589fd1dd505ce98e7be0ca17614e4d637d0d
@@ -28,7 +30,7 @@ programs:
 offers:
   - offer_id: off_01kz3qpk7gsz158s4nskrpc0kv
     program_id: prg_01kz3qpk7gzq0jset4027014q1
-    offer_slug: six-months-of-ai-free
+    offer_slug: 26000-ai-credits-per-month-for-six-months
     offer_slug_aliases: []
     title: 26,000 free Mintlify AI credits per month for six months
     summary: Venture-backed startups get 26,000 AI credits per month, free for six months, plus priority support and partnership resources.
