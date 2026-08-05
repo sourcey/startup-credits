@@ -1,0 +1,63 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kz8ssf0pd4t9krrqzj045nqn
+slug: unkey
+slug_aliases: []
+name: Unkey
+domains:
+  - value: unkey.com
+    role: primary
+    valid_from: 2026-08-05T11:00:00.000Z
+category: auth-security
+description: Unkey provides API key management, rate limiting, and authorization infrastructure for developers with open-source SDKs and a managed cloud platform.
+links:
+  site: https://unkey.com
+sources:
+  - source_id: src_ca0c348944fe8d80fc1b941abf441b28f8240787c8083da01926accd9522b5f1
+    url: https://unkey.com/startups
+programs:
+  - program_id: prg_01kz8ssf0tzt9y4xqpyvxjsbqr
+    program_slug: unkey-startups
+    program_slug_aliases: []
+    title: Unkey Startups Program
+    summary: A startup program providing $1,000 in monthly credits for 12 months, priority support, concierge onboarding, and hands-on migration help. Startups that have raised over $5 million are no longer eligible.
+    source_ids:
+      - src_ca0c348944fe8d80fc1b941abf441b28f8240787c8083da01926accd9522b5f1
+offers:
+  - offer_id: off_01kz8ssf0twak96yptxqvg2p29
+    program_id: prg_01kz8ssf0tzt9y4xqpyvxjsbqr
+    offer_slug: twelve-months-1000-monthly-credits
+    offer_slug_aliases:
+      - unkey-startups
+    title: $1,000/month in credits for 12 months with priority support and migration help
+    summary: "$1,000 in credits every month for 12 months, plus priority support via dedicated Slack channel, concierge onboarding, and migration help. Startups that have raised over $5 million receive 50% off instead."
+    lifecycle:
+      status: active
+      effective_from: 2026-08-05T11:00:00.000Z
+    economics:
+      consideration:
+        kind: variable
+        description: No equity or payment required. Credits are provided to support startups building with Unkey's platform.
+      benefits:
+        - benefit_id: ben_primary
+          description: $1,000 in platform credits every month for 12 months, totaling $12,000 in credits, plus priority support, concierge onboarding, and migration help
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 12000000
+            kind: up-to
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Startups that have raised less than $5 million in total funding are eligible. Startups that have raised $5 million or more receive 50% off their bill instead. Applications are reviewed by Unkey.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01kz8ssf0pd4t9krrqzj045nqn
+      access_operator_entity_id: ent_01kz8ssf0pd4t9krrqzj045nqn
+    access:
+      availability: public
+      method: form
+      url: https://unkey.com/startups
+    source_ids:
+      - src_ca0c348944fe8d80fc1b941abf441b28f8240787c8083da01926accd9522b5f1
