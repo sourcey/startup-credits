@@ -1,0 +1,60 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kz8x4s4hzw97ajp8pszrvrg2
+slug: deskwoot
+slug_aliases: []
+name: Deskwoot
+domains:
+  - value: deskwoot.com
+    role: primary
+    valid_from: 2026-08-05T12:07:34.000Z
+category: support
+description: Deskwoot is an AI-powered customer support platform with a multichannel inbox, help center, automation, and AI-assisted replies.
+links:
+  site: https://deskwoot.com
+sources:
+  - source_id: src_92ceadbaf86eb1bbc874c852ae2f0ae0c97650561108cad844d956f8daceda03
+    url: https://deskwoot.com/startups
+programs:
+  - program_id: prg_01kz8x4s4k9ptyqrfwk5xd0c8r
+    program_slug: startup-program
+    program_slug_aliases: []
+    title: Deskwoot Startup Program
+    summary: Deskwoot's startup program provides qualifying newly founded companies with six months of Enterprise access for 10 agent seats at no charge.
+    source_ids:
+      - src_92ceadbaf86eb1bbc874c852ae2f0ae0c97650561108cad844d956f8daceda03
+offers:
+  - offer_id: off_01kz8x4s4k1d4hp4t23pady9s6
+    program_id: prg_01kz8x4s4k9ptyqrfwk5xd0c8r
+    offer_slug: six-months-enterprise-for-10-agent-seats
+    offer_slug_aliases: []
+    title: Six months of Enterprise for 10 agent seats
+    summary: Startups founded within the last six months receive six months of Deskwoot Enterprise for 10 agent seats at no charge, a stated $720 list value.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-05T12:07:34.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Deskwoot Enterprise for 10 agent seats at no charge, with a stated total list value of $720
+          duration:
+            kind: exact
+            value: P6M
+          kind: free-service
+          service: Deskwoot Enterprise for 10 agent seats
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: external-verification
+        statement: Company must have been founded within the last six months, provide an official document showing the founding date, and apply for its own team rather than a reseller or service provider.
+    roles:
+      terms_authority_entity_id: ent_01kz8x4s4hzw97ajp8pszrvrg2
+      access_operator_entity_id: ent_01kz8x4s4hzw97ajp8pszrvrg2
+    access:
+      availability: public
+      method: form
+      url: https://deskwoot.com/startups
+    source_ids:
+      - src_92ceadbaf86eb1bbc874c852ae2f0ae0c97650561108cad844d956f8daceda03
