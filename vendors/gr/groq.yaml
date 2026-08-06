@@ -1,0 +1,54 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kzamwmfj9a44m1dzyhdafp70
+slug: groq
+slug_aliases: []
+name: Groq
+domains:
+  - value: groq.com
+    role: primary
+    valid_from: 2026-08-05T00:00:00Z
+category: ai-ml
+description: Groq provides fast inference APIs and developer infrastructure for building AI applications.
+links:
+  site: https://groq.com
+sources:
+  - source_id: src_b4d2f18f12e67217dbec0e7ba07bc6a6f95a8b98aef37cdece371a7a7c56539c
+    url: https://console.groq.com/docs/billing-faqs
+programs: []
+offers:
+  - offer_id: off_01kzamwmfxb2sbz98m8c1s7yk6
+    offer_slug: groq-for-startups
+    offer_slug_aliases: []
+    title: Groq for Startups
+    summary: Startups may be eligible for $10,000 in Groq credits to help scale their products.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-05T00:00:00Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: $10,000 in Groq credits.
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 1000000
+            kind: exact
+      consideration:
+        kind: unknown
+        description: The public FAQ does not state separate consideration for the startup credit program.
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_01
+        reason: not-machine-evaluable
+        statement: Applicant is building a startup and may be eligible for the Groq for Startups program.
+    roles:
+      terms_authority_entity_id: ent_01kzamwmfj9a44m1dzyhdafp70
+      access_operator_entity_id: ent_01kzamwmfj9a44m1dzyhdafp70
+    access:
+      availability: public
+      method: other
+      url: https://console.groq.com/docs/billing-faqs
+    source_ids:
+      - src_b4d2f18f12e67217dbec0e7ba07bc6a6f95a8b98aef37cdece371a7a7c56539c
