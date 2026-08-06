@@ -7,7 +7,7 @@ domains:
   - value: algora.io
     role: primary
     valid_from: 2026-08-04T22:30:00.000Z
-category: marketplace
+category: commerce
 description: Algora is a public bounty marketplace for open source projects, backed by Y Combinator, connecting startup engineering teams with developer talent.
 links:
   site: https://algora.io
