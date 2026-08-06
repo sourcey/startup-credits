@@ -1,0 +1,89 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kzc0pc43p0pmth3w9nzxbbn7
+slug: corti
+slug_aliases: []
+name: Corti
+domains:
+  - value: corti.ai
+    role: primary
+    valid_from: 2026-08-06T17:00:00.000Z
+category: ai-ml
+description: Corti provides healthcare-native AI models and APIs for clinical conversations, medical coding, and structured clinical documentation.
+links:
+  site: https://www.corti.ai
+sources:
+  - source_id: src_6aa1946fed974ccf46129bdb6fabb3e5c538a4b924eb8935598eb7c27ba829a8
+    url: https://www.corti.ai/corti-for-startups
+programs:
+  - program_id: prg_01kzc0pc46rvs9t79f9rpfh3xd
+    program_slug: corti-for-startups
+    program_slug_aliases: []
+    title: Corti for Startups
+    summary: Corti for Startups gives qualifying healthcare, clinical workflow, and life sciences startups API credits and healthcare AI roadmap support.
+    source_ids:
+      - src_6aa1946fed974ccf46129bdb6fabb3e5c538a4b924eb8935598eb7c27ba829a8
+offers:
+  - offer_id: off_01kzc0pc46e3dc36wg1gwt8pje
+    program_id: prg_01kzc0pc46rvs9t79f9rpfh3xd
+    offer_slug: corti-startup-api-credits
+    offer_slug_aliases: []
+    title: Corti Startup API Credits
+    summary: Accepted startups receive up to $5,000 in Corti API credits valid for 12 months, usable across Corti APIs for development, testing, and production usage.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-06T17:00:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to $5,000 in API credits valid for 12 months
+          duration:
+            kind: exact
+            value: P12M
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 500000
+            kind: up-to
+        - benefit_id: ben_02
+          description: Dedicated roadmap scoping with Corti AI experts
+          kind: free-service
+          service: roadmap scoping with Corti AI experts
+        - benefit_id: ben_03
+          description: Case-by-case introductions to enterprise buyers and co-marketing opportunities
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.stage
+            kind: predicate
+            operator: in
+            statement: Early-stage companies from pre-seed through Series B may apply.
+            value:
+              type: string-set
+              values:
+                - pre-seed
+                - seed
+                - Series A
+                - Series B
+          - criterion_id: cri_02
+            kind: manual
+            reason: vendor-discretion
+            statement: Applicant should be building in healthcare, clinical workflows, or adjacent life sciences.
+          - criterion_id: cri_03
+            kind: manual
+            reason: vendor-discretion
+            statement: Applicant should have a clear product thesis, a working prototype or MVP, and a use case heading toward a commercial product.
+    roles:
+      terms_authority_entity_id: ent_01kzc0pc43p0pmth3w9nzxbbn7
+      access_operator_entity_id: ent_01kzc0pc43p0pmth3w9nzxbbn7
+    access:
+      availability: public
+      method: form
+      url: https://www.corti.ai/corti-for-startups
+    source_ids:
+      - src_6aa1946fed974ccf46129bdb6fabb3e5c538a4b924eb8935598eb7c27ba829a8
