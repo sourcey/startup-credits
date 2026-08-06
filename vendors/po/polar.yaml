@@ -1,0 +1,78 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kzc2rqsw8fpc33xb0n7tdqv5
+slug: polar
+slug_aliases: []
+name: Polar
+domains:
+  - value: polar.sh
+    role: primary
+    valid_from: 2026-08-06T17:45:40.000Z
+category: payments-fintech
+description: Polar is a billing and monetization platform and merchant of record for software and AI products, handling payments, subscriptions and sales tax.
+links:
+  site: https://polar.sh
+sources:
+  - source_id: src_d1a8fe30cf1d27de0d3bc51f84a063154b9fbb56d33b116f10c87c0e085099dc
+    url: https://polar.sh/startup-program
+programs:
+  - program_id: prg_01kzc2rqswbanb2pxswwzyzd7m
+    program_slug: polar-startup-program
+    program_slug_aliases: []
+    title: Polar Startup Program
+    summary: A year of free Scale tier billing for AI and SaaS startups, with the lowest transaction fees, prioritized support and a dedicated Slack channel.
+    source_ids:
+      - src_d1a8fe30cf1d27de0d3bc51f84a063154b9fbb56d33b116f10c87c0e085099dc
+offers:
+  - offer_id: off_01kzc2rqswks96qmw0m881v4d5
+    program_id: prg_01kzc2rqswbanb2pxswwzyzd7m
+    offer_slug: scale-tier-free-for-12-months
+    offer_slug_aliases: []
+    title: Scale plan free for 12 months
+    summary: Accepted startups receive the Polar Scale plan free for 12 months, normally $400 per month, with 3.40% plus $0.30 transaction fees, prioritized ticket support and a dedicated Slack channel.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-06T17:45:40.000Z
+    economics:
+      consideration:
+        description: Transaction fees of 3.40% plus $0.30 continue to apply during the free period. After 12 months the account can keep Scale at the standard $400 per month, switch to Pro or Growth, or move to the Starter tier with no commitment; Polar sends a 30 day notice before the program ends.
+        kind: variable
+      benefits:
+        - benefit_id: ben_01
+          description: The Scale plan at no monthly cost for 12 months, normally $400 per month, carrying the vendor's lowest transaction fees of 3.40% plus $0.30.
+          kind: free-service
+          service: Polar Scale plan billing tier
+          duration:
+            kind: exact
+            value: P12M
+        - benefit_id: ben_02
+          description: Prioritized ticket support and a dedicated Slack channel with the Polar team.
+          kind: other
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: not-machine-evaluable
+            statement: Applicant must be an early stage startup building digital products such as SaaS, AI or developer tools.
+          - criterion_id: cri_02
+            kind: manual
+            reason: not-machine-evaluable
+            statement: Polar typically looks for teams under 50 people.
+          - criterion_id: cri_03
+            kind: manual
+            reason: not-machine-evaluable
+            statement: Polar typically looks for startups that have raised less than $5 million.
+          - criterion_id: cri_04
+            kind: manual
+            reason: vendor-discretion
+            statement: Applications are reviewed case by case.
+    roles:
+      terms_authority_entity_id: ent_01kzc2rqsw8fpc33xb0n7tdqv5
+      access_operator_entity_id: ent_01kzc2rqsw8fpc33xb0n7tdqv5
+    access:
+      availability: public
+      method: form
+      url: https://polar.sh/startup-program
+    source_ids:
+      - src_d1a8fe30cf1d27de0d3bc51f84a063154b9fbb56d33b116f10c87c0e085099dc
