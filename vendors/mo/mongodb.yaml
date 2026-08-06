@@ -14,6 +14,8 @@ links:
 sources:
   - source_id: src_87fa40e252a9c0c03f4ac9ffad48bd99a2d2b8e7777d03753698a2b1458074fe
     url: https://www.mongodb.com/solutions/startups
+  - source_id: src_e0bda57ca6e319ab92324c417a2a85c8ebc6df9632a7fa410a23ae14b296fa6e
+    url: https://www.mongodb.com/startups
 programs:
   - program_id: prg_01kyyts97vc8jaej2hsbpjwt81
     program_slug: mongodb-for-startups
@@ -21,7 +23,7 @@ programs:
     title: MongoDB for Startups
     summary: MongoDB for Startups supports early-stage startups with MongoDB Atlas credits, Voyage AI tokens, expert technical advice, and access to partner resources.
     source_ids:
-      - src_87fa40e252a9c0c03f4ac9ffad48bd99a2d2b8e7777d03753698a2b1458074fe
+      - src_e0bda57ca6e319ab92324c417a2a85c8ebc6df9632a7fa410a23ae14b296fa6e
 offers:
   - offer_id: off_01kyyts97vfba6xyhnp22d9ayx
     program_id: prg_01kyyts97vc8jaej2hsbpjwt81
@@ -92,6 +94,6 @@ offers:
     access:
       availability: public
       method: form
-      url: https://www.mongodb.com/solutions/startups
+      url: https://www.mongodb.com/startups
     source_ids:
-      - src_87fa40e252a9c0c03f4ac9ffad48bd99a2d2b8e7777d03753698a2b1458074fe
+      - src_e0bda57ca6e319ab92324c417a2a85c8ebc6df9632a7fa410a23ae14b296fa6e
