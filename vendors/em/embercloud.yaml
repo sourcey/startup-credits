@@ -1,0 +1,64 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kz98vy52ef818r6mb2w73xhg
+slug: embercloud
+slug_aliases: []
+name: EmberCloud
+domains:
+  - value: embercloud.ai
+    role: primary
+    valid_from: 2026-08-05T15:32:48.000Z
+category: ai-ml
+description: EmberCloud provides OpenAI-compatible API access to hosted language models for AI applications.
+links:
+  site: https://www.embercloud.ai
+sources:
+  - source_id: src_aafdea411ccc55f1d4cd0206f736db78b0bd145a42aa37bafdeaa1ba470fd3d2
+    url: https://www.embercloud.ai/startups
+programs:
+  - program_id: prg_01kz98vy54vd1we303zr1rv5bw
+    program_slug: embercloud-for-startups-and-indie-hackers
+    program_slug_aliases: []
+    title: EmberCloud for Startups & Indie Hackers
+    summary: EmberCloud offers approved startups and indie projects API credits for building AI products with its OpenAI-compatible inference service.
+    source_ids:
+      - src_aafdea411ccc55f1d4cd0206f736db78b0bd145a42aa37bafdeaa1ba470fd3d2
+offers:
+  - offer_id: off_01kz98vy54gn06vssndmjzmbkp
+    program_id: prg_01kz98vy54vd1we303zr1rv5bw
+    offer_slug: one-hundred-dollars-api-credits
+    offer_slug_aliases: []
+    title: $100 in EmberCloud API credits
+    summary: Approved startups and indie projects receive $100 in API credits after adding $5 to verify the company and activate the offer.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-05T15:32:48.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: $100 in EmberCloud API credits upon approval
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 10000
+            kind: exact
+      consideration:
+        kind: fixed
+        amount:
+          currency: USD
+          minor_units: 500
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Applicants submit a startup or project for EmberCloud's manual review; the program is presented for startups and indie hackers.
+    roles:
+      terms_authority_entity_id: ent_01kz98vy52ef818r6mb2w73xhg
+      access_operator_entity_id: ent_01kz98vy52ef818r6mb2w73xhg
+    access:
+      availability: public
+      method: form
+      url: https://www.embercloud.ai/startups
+    source_ids:
+      - src_aafdea411ccc55f1d4cd0206f736db78b0bd145a42aa37bafdeaa1ba470fd3d2
