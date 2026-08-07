@@ -1,0 +1,107 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kzdz9eq230cq6khv7nm2n0qd
+slug: complycube
+slug_aliases: []
+name: ComplyCube
+domains:
+  - value: complycube.com
+    role: primary
+    valid_from: 2026-05-13T15:15:51.000Z
+category: auth-security
+description: ComplyCube provides identity verification, biometric authentication, AML screening, and business onboarding through a unified API.
+links:
+  site: https://www.complycube.com/en/
+sources:
+  - source_id: src_f32d8a8911e5eb4fd594eb62f87af8fabe2db5567e15a8b77ce988dcf91bf269
+    url: https://www.complycube.com/en/company/startup-program/
+  - source_id: src_16c37985d218da2e2486f87a4e6412bfd9bcbad80ed45f082b460f60565f965e
+    url: https://www.complycube.com/en/company/startup-program/application-form/
+  - source_id: src_1a3bd04cf0293413828ea637f513de520d7a76097392125b25e0f0ccd2d785e5
+    url: https://www.complycube.com/en/wp-json/wp/v2/pages/75
+programs:
+  - program_id: prg_01kzdz9eq4f7dyqb0n3eeep4yy
+    program_slug: complycube-startup-program
+    program_slug_aliases: []
+    title: ComplyCube Startup Program
+    summary: Accepted startups receive track-based platform credits, discounted pricing, private API access, guided onboarding, technical support, and compliance guidance.
+    source_ids:
+      - src_f32d8a8911e5eb4fd594eb62f87af8fabe2db5567e15a8b77ce988dcf91bf269
+      - src_16c37985d218da2e2486f87a4e6412bfd9bcbad80ed45f082b460f60565f965e
+      - src_1a3bd04cf0293413828ea637f513de520d7a76097392125b25e0f0ccd2d785e5
+offers:
+  - offer_id: off_01kzdz9eq4j0sx9wb84myte1n8
+    program_id: prg_01kzdz9eq4f7dyqb0n3eeep4yy
+    offer_slug: startup-program-platform-credits
+    offer_slug_aliases: []
+    title: Up to $50,000 in platform credits
+    summary: Accepted startups receive monthly ComplyCube platform credits worth up to $50,000 total, based on their assigned Builder, Launch, or Scale track.
+    lifecycle:
+      status: active
+      effective_from: 2026-05-13T15:15:51.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Monthly ComplyCube platform credits worth up to $50,000 total, with the amount determined by the assigned Builder, Launch, or Scale track.
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 5000000
+            kind: up-to
+        - benefit_id: ben_02
+          description: Discounted plan pricing on document and identity checks, watchlist screening, and risk profiling.
+          kind: other
+        - benefit_id: ben_03
+          description: Access to private APIs, multi-environment setups, advanced features, guided onboarding, technical support, and strategic compliance guidance.
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.age_months
+            kind: predicate
+            operator: lt
+            statement: Company must be less than five years old.
+            value:
+              type: number
+              value: 60
+          - criterion_id: cri_02
+            fact: company.funding_raised_usd
+            kind: predicate
+            operator: lt
+            statement: Company must have raised under $5 million in total funding.
+            value:
+              type: number
+              value: 5000000
+          - criterion_id: cri_03
+            fact: company.website_url
+            kind: predicate
+            operator: present
+            statement: Company must operate a public-facing product or company website.
+          - criterion_id: cri_04
+            kind: manual
+            reason: not-machine-evaluable
+            statement: Applicant must not be an educational institution, development shop, consultancy, or crypto-mining firm.
+          - criterion_id: cri_05
+            kind: manual
+            reason: external-verification
+            statement: Company must be building or scaling AML/KYC or identity-verification capabilities in line with FATF guidelines.
+          - criterion_id: cri_06
+            kind: manual
+            reason: vendor-discretion
+            statement: ComplyCube reviews each applicant's eligibility, stage, and platform alignment before acceptance and track assignment.
+    roles:
+      terms_authority_entity_id: ent_01kzdz9eq230cq6khv7nm2n0qd
+      access_operator_entity_id: ent_01kzdz9eq230cq6khv7nm2n0qd
+    access:
+      availability: public
+      method: form
+      url: https://www.complycube.com/en/company/startup-program/application-form/
+    terms_url: https://www.complycube.com/en/company/startup-program/
+    source_ids:
+      - src_f32d8a8911e5eb4fd594eb62f87af8fabe2db5567e15a8b77ce988dcf91bf269
+      - src_16c37985d218da2e2486f87a4e6412bfd9bcbad80ed45f082b460f60565f965e
+      - src_1a3bd04cf0293413828ea637f513de520d7a76097392125b25e0f0ccd2d785e5
