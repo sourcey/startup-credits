@@ -1,0 +1,64 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kzbhtyyh9w5rteewpn0p61vs
+slug: clay
+slug_aliases: []
+name: Clay
+domains:
+  - value: clay.com
+    role: primary
+    valid_from: 2026-08-06T12:47:41.000Z
+category: crm-sales
+description: Clay is a go-to-market platform that helps teams discover customers, test messaging, learn what converts, and scale what works.
+links:
+  site: https://www.clay.com
+sources:
+  - source_id: src_41394a11d7fc85ba3a4468bdc430cab72432e63de75fb79ff464fbd5163f6be5
+    url: https://www.clay.com/clay-for-startups
+  - source_id: src_81b4b36e175272eb3d74c87cb77c5f09c90764567bd969ab625622ab2254241f
+    url: https://clayhq.typeform.com/applytowedge
+programs:
+  - program_id: prg_01kzbhtyymd6dnv1f0nx90s7ge
+    program_slug: wedge
+    program_slug_aliases: []
+    title: Wedge
+    summary: Wedge is Clay's virtual GTM accelerator for venture-backed startups and runs as a two-week asynchronous program.
+    source_ids:
+      - src_41394a11d7fc85ba3a4468bdc430cab72432e63de75fb79ff464fbd5163f6be5
+offers:
+  - offer_id: off_01kzbhtyymg12jt5pakxk1y2r8
+    program_id: prg_01kzbhtyymd6dnv1f0nx90s7ge
+    offer_slug: wedge-startup-gtm-accelerator
+    offer_slug_aliases: []
+    title: Wedge Startup GTM Accelerator
+    summary: Selected startups can earn thousands of Clay credits and receive hands-on support from Clay GTM Engineering experts during a two-week asynchronous Wedge cohort.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-06T12:47:41.000Z
+    economics:
+      consideration:
+        kind: variable
+        description: Participants commit to five asynchronous modules totaling 5-7 hours over two weeks; two live calls are optional.
+      benefits:
+        - benefit_id: ben_01
+          description: Thousands of Clay credits earned throughout the two-week asynchronous program
+          kind: other
+        - benefit_id: ben_02
+          description: Hands-on support from Clay GTM Engineering experts
+          kind: other
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Clay describes Wedge as a global program for venture-backed startups and says it is best suited to startups that need to build and automate their outbound engine.
+    roles:
+      terms_authority_entity_id: ent_01kzbhtyyh9w5rteewpn0p61vs
+      access_operator_entity_id: ent_01kzbhtyyh9w5rteewpn0p61vs
+    access:
+      availability: public
+      method: form
+      url: https://clayhq.typeform.com/applytowedge
+    terms_url: https://www.clay.com/clay-for-startups
+    source_ids:
+      - src_41394a11d7fc85ba3a4468bdc430cab72432e63de75fb79ff464fbd5163f6be5
+      - src_81b4b36e175272eb3d74c87cb77c5f09c90764567bd969ab625622ab2254241f
