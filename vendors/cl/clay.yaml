@@ -47,10 +47,16 @@ offers:
           kind: other
     eligibility:
       rule:
-        criterion_id: cri_01
-        kind: manual
-        reason: vendor-discretion
-        statement: Clay describes Wedge as a global program for venture-backed startups and says it is best suited to startups that need to build and automate their outbound engine.
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: vendor-discretion
+            statement: Clay describes Wedge as a global program for venture-backed startups and says it is best suited to startups that need to build and automate their outbound engine.
+          - criterion_id: cri_02
+            kind: manual
+            reason: external-verification
+            statement: Applicant must provide a Clay Workspace ID for a workspace created within the last 30 days.
     roles:
       terms_authority_entity_id: ent_01kzbhtyyh9w5rteewpn0p61vs
       access_operator_entity_id: ent_01kzbhtyyh9w5rteewpn0p61vs
