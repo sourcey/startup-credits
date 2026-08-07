@@ -1,0 +1,59 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kz2b3440b0k55vp9qd74sxw2
+slug: cloudinary
+slug_aliases: []
+name: Cloudinary
+domains:
+  - value: cloudinary.com
+    role: primary
+    valid_from: 2026-08-02T22:58:28.000Z
+category: devtools-other
+description: Cloudinary provides image and video media-management services and offers a startup program for early-stage companies.
+links:
+  site: https://cloudinary.com
+sources:
+  - source_id: src_83217cc4c22c024d185689e80449766971eccc796ecd5ca24d3bfbe716f13aac
+    url: https://cloudinary.com/solutions/cloudinary-for-startups
+programs:
+  - program_id: prg_01kz2b3440erd1v6w0rqerk0tb
+    program_slug: cloudinary-for-startups
+    program_slug_aliases: []
+    title: Cloudinary for Startups
+    summary: Cloudinary offers startup-friendly plans and exclusive credits to help early-stage companies scale their image and video workflows.
+    source_ids:
+      - src_83217cc4c22c024d185689e80449766971eccc796ecd5ca24d3bfbe716f13aac
+offers:
+  - offer_id: off_01kz2b3440dj5cexe5qf4jrf87
+    program_id: prg_01kz2b3440erd1v6w0rqerk0tb
+    offer_slug: startup-plans-and-credits
+    offer_slug_aliases: []
+    title: Cloudinary startup plans and credits
+    summary: Approved early-stage companies receive startup-friendly Cloudinary plan pricing and exclusive credits.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-02T22:58:28.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Startup-friendly plan pricing for Cloudinary media management.
+          kind: other
+        - benefit_id: ben_02
+          description: Exclusive Cloudinary credits for early-stage companies.
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Cloudinary reviews startup-program inquiries from early-stage companies through its sales team.
+    roles:
+      terms_authority_entity_id: ent_01kz2b3440b0k55vp9qd74sxw2
+      access_operator_entity_id: ent_01kz2b3440b0k55vp9qd74sxw2
+    access:
+      availability: public
+      method: form
+      url: https://cloudinary.com/solutions/cloudinary-for-startups
+    source_ids:
+      - src_83217cc4c22c024d185689e80449766971eccc796ecd5ca24d3bfbe716f13aac
