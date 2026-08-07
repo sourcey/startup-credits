@@ -1,0 +1,96 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kz20cfp3kcpzba17jex86shc
+slug: laioutr
+slug_aliases: []
+name: Laioutr
+domains:
+  - value: laioutr.com
+    role: primary
+    valid_from: 2026-08-02T19:53:00Z
+category: no-code
+description: Laioutr is a frontend management platform for designing, integrating, hosting, and operating websites and digital storefronts.
+links:
+  site: https://www.laioutr.com
+sources:
+  - source_id: src_992b3cc8b6c8be096b91cb540a29e57977d110362e1724ef7ec6e0d48b583cf7
+    url: https://www.laioutr.com/en/startups
+  - source_id: src_1f1d61f175df1ab798907f0b6487f906a0260909c61c3cafd983a63226449b1d
+    url: https://www.laioutr.com/en/terms-of-service
+programs:
+  - program_id: prg_01kz20cfp6284n884ncctd78mk
+    program_slug: laioutr-startup-program
+    program_slug_aliases: []
+    title: Laioutr Startup Program
+    summary: Laioutr's partner-distributed program gives eligible early-stage startups 12 months of free access to its complete Frontend Management Platform.
+    source_ids:
+      - src_992b3cc8b6c8be096b91cb540a29e57977d110362e1724ef7ec6e0d48b583cf7
+offers:
+  - offer_id: off_01kz20cfp77czw2aeypa6g3zhf
+    program_id: prg_01kz20cfp6284n884ncctd78mk
+    offer_slug: twelve-months-free-frontend-management-platform
+    offer_slug_aliases: []
+    title: Twelve months free for eligible Laioutr startups
+    summary: Eligible partner-backed startups with fewer than 20 employees, under $5 million USD raised, and no current paid Laioutr plan receive 12 months free access to the complete Frontend Management Platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-02T19:53:00Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Twelve months of free access to Laioutr's complete Frontend Management Platform, including Studio, the UI Library, Larry AI and Frontend Agents, EU hosting, and more than 300 integrations
+          duration:
+            kind: exact
+            value: P1Y
+          kind: free-service
+          service: Laioutr Frontend Management Platform
+      consideration:
+        kind: variable
+        description: No subscription fee applies for 12 months, but Laioutr's terms allow reimbursement of documented pass-through infrastructure costs above included usage; after the year, Laioutr says it will remind the startup before it chooses whether to move to a regular plan.
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.employee_count
+            kind: predicate
+            operator: lt
+            statement: Startup must have fewer than 20 employees.
+            value:
+              type: number
+              value: 20
+          - criterion_id: cri_02
+            fact: company.funding_raised_usd
+            kind: predicate
+            operator: lt
+            statement: Startup must have raised less than $5 million USD in total funding.
+            value:
+              type: number
+              value: 5000000
+          - criterion_id: cri_03
+            fact: company.is_current_customer
+            kind: predicate
+            operator: eq
+            statement: Applicant must not currently be a paying Laioutr customer.
+            value:
+              type: boolean
+              value: false
+          - criterion_id: cri_04
+            kind: manual
+            reason: external-verification
+            statement: Applicant must belong to the portfolio of a participating Laioutr VC or accelerator partner.
+          - criterion_id: cri_05
+            kind: manual
+            reason: external-verification
+            statement: Account registrant must be at least 18 years old or otherwise legally competent to enter a binding contract.
+    roles:
+      terms_authority_entity_id: ent_01kz20cfp3kcpzba17jex86shc
+      access_operator_entity_id: ent_01kz20cfp3kcpzba17jex86shc
+    access:
+      availability: membership
+      instructions: Confirm that the startup's investor is a participating Laioutr partner, then open the access link supplied through the investor's portfolio; if the investor is not yet a partner, refer the investor to join first.
+      method: other
+      url: https://www.laioutr.com/en/startups
+    terms_url: https://www.laioutr.com/en/terms-of-service
+    source_ids:
+      - src_992b3cc8b6c8be096b91cb540a29e57977d110362e1724ef7ec6e0d48b583cf7
+      - src_1f1d61f175df1ab798907f0b6487f906a0260909c61c3cafd983a63226449b1d
