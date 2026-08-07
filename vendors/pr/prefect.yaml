@@ -1,0 +1,61 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kzej0vw01scng55n0fksv1rr
+slug: prefect
+slug_aliases: []
+name: Prefect
+domains:
+  - value: prefect.io
+    role: primary
+    valid_from: 2026-08-07T16:48:51.572Z
+category: devtools-other
+description: Prefect offers a startup program with credits for eligible startups on its Team plan.
+links:
+  site: https://www.prefect.io
+sources:
+  - source_id: src_1b7d317eb80e9e74dc16c1290f0525a6c7235ac50b482db546c7f7ae10b779b8
+    url: https://www.prefect.io/contact/startup-program
+  - source_id: src_2990f51755e08b757da94d24d9d8309cbf94c6150452c1b623e62896044aa936
+    url: https://www.prefect.io/pricing
+programs:
+  - program_id: prg_01kzej0vw1sc8pv8sa183eqfst
+    program_slug: prefect-startup-program
+    program_slug_aliases: []
+    title: Prefect Startup Program
+    summary: Eligible startups with up to $20 million in funding can apply for credits and savings on Prefect Cloud's Team plan.
+    source_ids:
+      - src_1b7d317eb80e9e74dc16c1290f0525a6c7235ac50b482db546c7f7ae10b779b8
+      - src_2990f51755e08b757da94d24d9d8309cbf94c6150452c1b623e62896044aa936
+offers:
+  - offer_id: off_01kzej0vw159adt65s103tw8yv
+    program_id: prg_01kzej0vw1sc8pv8sa183eqfst
+    offer_slug: team-plan-startup-credits
+    offer_slug_aliases: []
+    title: Startup credits and savings on Prefect Cloud Team
+    summary: Approved startups receive credits and savings on Prefect Cloud's Team plan; Prefect does not publish a fixed credit amount or discount percentage.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-07T16:48:51.572Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The public program and pricing pages do not state the discounted Team plan price or any separate consideration.
+      benefits:
+        - benefit_id: ben_01
+          description: Credits and savings on Prefect Cloud's Team plan, with the value determined during application review.
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_01
+        statement: Applicant must be a startup with no more than $20 million in funding and is subject to Prefect's application review.
+        reason: vendor-discretion
+    roles:
+      terms_authority_entity_id: ent_01kzej0vw01scng55n0fksv1rr
+      access_operator_entity_id: ent_01kzej0vw01scng55n0fksv1rr
+    access:
+      availability: public
+      method: form
+      url: https://www.prefect.io/contact/startup-program
+    source_ids:
+      - src_1b7d317eb80e9e74dc16c1290f0525a6c7235ac50b482db546c7f7ae10b779b8
+      - src_2990f51755e08b757da94d24d9d8309cbf94c6150452c1b623e62896044aa936
