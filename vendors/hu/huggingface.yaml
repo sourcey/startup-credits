@@ -59,26 +59,12 @@ offers:
               currency: USD
               minor_units: 1000
             kind: up-to
-            unit: month
     eligibility:
       rule:
-        kind: all
-        rules:
-          - criterion_id: cri_01
-            kind: predicate
-            operator: in
-            fact: company.stage
-            statement: Company stage is Pre-seed, Seed, or Series A
-          - criterion_id: cri_02
-            kind: predicate
-            operator: in
-            fact: company.focus
-            statement: Company focus is AI/ML building on open-source models
-          - criterion_id: cri_03
-            kind: predicate
-            operator: eq
-            fact: company.region
-            statement: Global eligibility
+        kind: manual
+        criterion_id: cri_01
+        statement: Must be an early-stage AI startup (Pre-seed, Seed, or Series A) building on open-source models with global eligibility.
+        reason: not-machine-evaluable
     roles:
       terms_authority_entity_id: ent_01kzea0k20nprp8jw6v1xfzcpz
       access_operator_entity_id: ent_01kzea0k20nprp8jw6v1xfzcpz
