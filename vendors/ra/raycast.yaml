@@ -1,0 +1,68 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kze708ddryfn74eep3k6b1w0
+slug: raycast
+slug_aliases: []
+name: Raycast
+domains:
+  - value: raycast.com
+    role: primary
+    valid_from: 2026-08-07T13:36:04.013Z
+category: productivity
+description: Raycast is a productivity platform that combines search, commands, extensions, AI, and shared team workflows.
+links:
+  site: https://www.raycast.com/
+sources:
+  - source_id: src_7409b5cb9dc00edbc946799246351a4530a50bcb66f3685bedce4c9626a62415
+    url: https://www.raycast.com/blog/affiliate-program
+  - source_id: src_4187c56ce62904720cc07db3df8cdeb7854fa1e9b310d3de82d84b7260d041ce
+    url: https://affiliates.raycast.com/signup
+programs: []
+offers:
+  - offer_id: off_01kze708ddrfn52b12cfzk892w
+    offer_slug: raycast-affiliate-program
+    offer_slug_aliases: []
+    title: Raycast Affiliate Program
+    summary: Approved affiliates earn 30% commission on payments from referred Raycast Pro users, while referred users receive a 10% discount.
+    lifecycle:
+      status: active
+      effective_from: 2024-07-03T00:00:00.000Z
+    economics:
+      consideration:
+        kind: unknown
+        description: Applicants need a Raycast account, must apply to the program, and earn commission by referring new Raycast Pro customers.
+      benefits:
+        - benefit_id: ben_affiliate_commission
+          description: 30% commission on all payments from referred Raycast Pro users
+          kind: other
+        - benefit_id: ben_referral_discount
+          description: 10% discount for referred Raycast Pro users
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 1000
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - kind: manual
+            criterion_id: cri_account_and_application
+            statement: Anyone with a Raycast account can apply to become an affiliate.
+            reason: not-machine-evaluable
+          - kind: manual
+            criterion_id: cri_payout_terms
+            statement: Commissions remain pending for 30 days and are paid through Wise once the payable balance exceeds £50.
+            reason: not-machine-evaluable
+          - kind: manual
+            criterion_id: cri_no_self_referrals
+            statement: Self-referrals are prohibited and may result in deactivation from the program.
+            reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01kze708ddryfn74eep3k6b1w0
+      access_operator_entity_id: ent_01kze708ddryfn74eep3k6b1w0
+    access:
+      availability: public
+      method: form
+      url: https://affiliates.raycast.com/signup
+    source_ids:
+      - src_7409b5cb9dc00edbc946799246351a4530a50bcb66f3685bedce4c9626a62415
+      - src_4187c56ce62904720cc07db3df8cdeb7854fa1e9b310d3de82d84b7260d041ce
