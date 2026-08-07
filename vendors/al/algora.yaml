@@ -1,0 +1,49 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kz7n4xp8wfemnxa2vwhzed04
+slug: algora
+slug_aliases: []
+name: Algora
+domains:
+  - value: algora.io
+    role: primary
+    valid_from: 2026-08-04T22:30:00.000Z
+category: commerce
+description: Algora is a public bounty marketplace for open source projects, backed by Y Combinator, connecting startup engineering teams with developer talent.
+links:
+  site: https://algora.io
+sources:
+  - source_id: src_2f007ae37f72c92b3e20b80b7309d5ac130a87ca1b559f26df0e209cdf2338b2
+    url: https://algora.io
+programs: []
+offers:
+  - offer_id: off_01kz7n4xp865crhv0hy0hbce20
+    offer_slug: algora-oss-bounty-program
+    offer_slug_aliases: []
+    title: Algora OSS Bounty Program
+    summary: Open source projects listed on Algora receive free marketplace listing, zero platform fees on first $10,000 in bounties, and direct access to YC portfolio introductions for participating maintainers.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-04T22:30:00.000Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free marketplace listing and zero fees on first $10,000 in bounties
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Open source projects with active maintenance and a public repository may apply to list bounties on the Algora marketplace.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01kz7n4xp8wfemnxa2vwhzed04
+      access_operator_entity_id: ent_01kz7n4xp8wfemnxa2vwhzed04
+    access:
+      availability: public
+      method: form
+      url: https://algora.io
+    source_ids:
+      - src_2f007ae37f72c92b3e20b80b7309d5ac130a87ca1b559f26df0e209cdf2338b2
