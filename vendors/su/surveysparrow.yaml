@@ -1,0 +1,86 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kz6hd04by8qkzrk2me23csrb
+slug: surveysparrow
+slug_aliases: []
+name: SurveySparrow
+domains:
+  - value: surveysparrow.com
+    role: primary
+    valid_from: 2026-08-04T14:03:51Z
+category: no-code
+description: SurveySparrow is a survey and experience management platform for collecting feedback, measuring customer and employee experience, and analyzing responses.
+links:
+  site: https://surveysparrow.com/
+sources:
+  - source_id: src_04dddc21da66c5ab2ebc1061b495b330750fe0e31fd63b63fbc3af731bafb3b2
+    url: https://surveysparrow.com/saas-startup-program/
+programs:
+  - program_id: prg_01kz6hd04dy47rd2wpykcc9anx
+    program_slug: saas-startup-program
+    program_slug_aliases: []
+    title: SurveySparrow SaaS Startup Program
+    summary: SurveySparrow's program for legally registered startups that are no more than two years old and have no more than 50 employees.
+    source_ids:
+      - src_04dddc21da66c5ab2ebc1061b495b330750fe0e31fd63b63fbc3af731bafb3b2
+offers:
+  - offer_id: off_01kz6hd04dvq7csehx6wpqwdkx
+    program_id: prg_01kz6hd04dy47rd2wpykcc9anx
+    offer_slug: startup-credits
+    offer_slug_aliases: []
+    title: SurveySparrow Startup Credits
+    summary: Eligible startups can purchase $2,000 in non-refundable SurveySparrow credits for $500 and use them within 18 months of activation.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-04T14:03:51Z
+    economics:
+      benefits:
+        - benefit_id: ben_01kz6hd04dwyypbm50gerc2sqe
+          description: $2,000 in non-refundable SurveySparrow credits, excluding Enterprise and higher plans
+          duration:
+            kind: exact
+            value: P18M
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 200000
+            kind: exact
+      consideration:
+        kind: fixed
+        amount:
+          currency: USD
+          minor_units: 50000
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.age_months
+            kind: predicate
+            operator: lt
+            statement: The startup must be no more than two years old.
+            value:
+              type: number
+              value: 25
+          - criterion_id: cri_02
+            fact: company.employee_count
+            kind: predicate
+            operator: lt
+            statement: The startup must have no more than 50 employees.
+            value:
+              type: number
+              value: 51
+          - criterion_id: cri_03
+            kind: manual
+            reason: external-verification
+            statement: The startup must be legally registered.
+    roles:
+      terms_authority_entity_id: ent_01kz6hd04by8qkzrk2me23csrb
+      access_operator_entity_id: ent_01kz6hd04by8qkzrk2me23csrb
+    access:
+      availability: public
+      method: form
+      url: https://surveysparrow.com/saas-startup-program/
+      instructions: Select APPLY NOW and submit the startup-program application.
+    source_ids:
+      - src_04dddc21da66c5ab2ebc1061b495b330750fe0e31fd63b63fbc3af731bafb3b2
