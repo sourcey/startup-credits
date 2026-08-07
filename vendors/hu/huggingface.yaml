@@ -11,6 +11,7 @@ category: ai-ml
 description: Open-source AI hub where 4M+ researchers and developers share models, datasets, and Spaces; offers Inference Providers and Pro subscription for deploying models.
 links:
   site: https://huggingface.co
+  pricing: https://huggingface.co/pricing
 sources:
   - source_id: src_63a4aa4646d7d92bcd18ae6e6c7082b22b09162f6a72ddfc8fa28ac273d826be
     url: https://huggingface.co/startups
@@ -40,15 +41,16 @@ offers:
       method: form
       url: https://huggingface.co/startups
     economics:
+      consideration:
+        kind: none
       benefits:
         - benefit_id: ben_01
           description: Free Pro subscription for approximately 6 months (includes private repos, compute quotas, and ZeroGPU access)
-          kind: credit
-          value:
-            amount:
-              currency: USD
-              minor_units: 10800
-            kind: up-to
+          kind: free-service
+          service: Hugging Face Pro, covering private repos, compute quotas, and ZeroGPU access
+          duration:
+            kind: exact
+            value: P6M
         - benefit_id: ben_02
           description: Free monthly inference credits to experiment with Inference Providers
           kind: credit
@@ -56,10 +58,8 @@ offers:
             amount:
               currency: USD
               minor_units: 1000
-            kind: monthly
+            kind: up-to
             unit: month
-      consideration:
-        kind: none
     eligibility:
       rule:
         kind: all
@@ -79,3 +79,9 @@ offers:
             operator: eq
             fact: company.region
             statement: Global eligibility
+    roles:
+      terms_authority_entity_id: ent_01kzea0k20nprp8jw6v1xfzcpz
+      access_operator_entity_id: ent_01kzea0k20nprp8jw6v1xfzcpz
+    source_ids:
+      - src_63a4aa4646d7d92bcd18ae6e6c7082b22b09162f6a72ddfc8fa28ac273d826be
+      - src_18f3a9b2c4d5e6f7a8b9c0d1e2f3a4b5c6d7e8f9a0b1c2d3e4f5a6b7c8d9e0f1
