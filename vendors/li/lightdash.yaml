@@ -1,0 +1,88 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kzd9x6n8dy3rhrsvngz72b03
+slug: lightdash
+slug_aliases: []
+name: Lightdash
+domains:
+  - value: lightdash.com
+    role: primary
+    valid_from: 2026-08-07T05:07:35.279Z
+category: data-analytics
+description: Lightdash is an open-source business intelligence platform that turns dbt projects into self-service analytics and a governed semantic layer.
+links:
+  site: https://www.lightdash.com
+sources:
+  - source_id: src_4c984d31f3bdddcd215f9cfbbd92cfe191675714b86d00db1bf56e4c3ba90292
+    url: https://www.lightdash.com/startups
+  - source_id: src_0f10fd28dd8baae321d281164deec173e0189bd1d8b150fb46499a9b7ceb290a
+    url: https://www.lightdash.com/start
+programs:
+  - program_id: prg_01kzd9x6ndf7qvb7x2ghgx48gp
+    program_slug: lightdash-for-startups
+    program_slug_aliases: []
+    title: Lightdash for Startups
+    summary: Lightdash's startup program provides discounted Cloud plans, onboarding, and direct product support to eligible early-stage companies.
+    source_ids:
+      - src_4c984d31f3bdddcd215f9cfbbd92cfe191675714b86d00db1bf56e4c3ba90292
+offers:
+  - offer_id: off_01kzd9x6nd161447b9k0zd4wyk
+    program_id: prg_01kzd9x6ndf7qvb7x2ghgx48gp
+    offer_slug: lightdash-for-startups-50-percent-discount
+    offer_slug_aliases: []
+    title: Lightdash for Startups 50% Discount
+    summary: Eligible startups receive 50% off Lightdash Cloud or Pro for 12 months, worth up to $18,000 in credits, plus onboarding and dedicated support.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-07T05:07:35.279Z
+    economics:
+      benefits:
+        - applies_to: Lightdash Cloud or Pro
+          benefit_id: ben_01
+          description: 50% off Lightdash Cloud or Pro for 12 months, worth up to $18,000 in credits
+          duration:
+            kind: exact
+            value: P1Y
+          kind: discount
+          percentage:
+            basis_points: 5000
+            kind: exact
+        - benefit_id: ben_02
+          description: Personalized onboarding with kickoff and training calls
+          kind: other
+        - benefit_id: ben_03
+          description: Dedicated support channel with direct access to the product team
+          kind: other
+      consideration:
+        kind: variable
+        description: Purchase a Lightdash Cloud or Pro subscription at 50% of its standard price.
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.age_months
+            kind: predicate
+            operator: lt
+            statement: Company must be less than five years old.
+            value:
+              type: number
+              value: 60
+          - criterion_id: cri_02
+            fact: company.funding_raised_usd
+            kind: predicate
+            operator: lt
+            statement: Company must have less than $7.5 million in funding.
+            value:
+              type: number
+              value: 7500000
+    roles:
+      terms_authority_entity_id: ent_01kzd9x6n8dy3rhrsvngz72b03
+      access_operator_entity_id: ent_01kzd9x6n8dy3rhrsvngz72b03
+    access:
+      availability: public
+      instructions: Apply through Lightdash's contact form to discuss the startup program.
+      method: form
+      url: https://www.lightdash.com/start
+    source_ids:
+      - src_4c984d31f3bdddcd215f9cfbbd92cfe191675714b86d00db1bf56e4c3ba90292
+      - src_0f10fd28dd8baae321d281164deec173e0189bd1d8b150fb46499a9b7ceb290a
