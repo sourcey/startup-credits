@@ -1,0 +1,64 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kz4xawkkh7rvsmxed39e7esq
+slug: gradium
+slug_aliases: []
+name: Gradium
+domains:
+  - value: gradium.ai
+    role: primary
+    valid_from: 2026-08-03T22:53:56.880Z
+category: ai-ml
+description: Gradium provides real-time voice AI models and APIs for text-to-speech, speech-to-text, live translation, voice cloning, and semantic turn-taking.
+links:
+  site: https://gradium.ai
+sources:
+  - source_id: src_63d31774f527f111ea998b78e24a4480749d063166b4d877a8da56390f6f189f
+    url: https://gradium.ai/startups
+programs:
+  - program_id: prg_01kz4xawkrqz4e4ageddvcz4k7
+    program_slug: gradium-startup-program
+    program_slug_aliases: []
+    title: Gradium Startup Program
+    summary: Gradium's startup program supports accepted voice AI companies with API credits, engineering support, and early access to new models and research previews.
+    source_ids:
+      - src_63d31774f527f111ea998b78e24a4480749d063166b4d877a8da56390f6f189f
+offers:
+  - offer_id: off_01kz4xawkrj47zf5qg2cj0vaeb
+    program_id: prg_01kz4xawkrqz4e4ageddvcz4k7
+    offer_slug: free-gradium-m-plan-for-six-months
+    offer_slug_aliases: []
+    title: Free Gradium M Plan for Six Months
+    summary: Accepted startups receive 54 million Gradium credits worth over $2,000 and full M-plan API access for six months, plus engineering support and early model access.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-03T22:53:56.880Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 54 million Gradium credits worth over $2,000 with full M-plan API access for six months
+          duration:
+            kind: exact
+            value: P6M
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 200000
+            kind: at-least
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Applicant must be a startup building voice AI experiences and submit the public application for Gradium review.
+    roles:
+      terms_authority_entity_id: ent_01kz4xawkkh7rvsmxed39e7esq
+      access_operator_entity_id: ent_01kz4xawkkh7rvsmxed39e7esq
+    access:
+      availability: public
+      method: form
+      url: https://gradium.ai/startups
+    source_ids:
+      - src_63d31774f527f111ea998b78e24a4480749d063166b4d877a8da56390f6f189f
