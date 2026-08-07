@@ -17,7 +17,7 @@ sources:
   - source_id: src_16c37985d218da2e2486f87a4e6412bfd9bcbad80ed45f082b460f60565f965e
     url: https://www.complycube.com/en/company/startup-program/application-form/
   - source_id: src_1a3bd04cf0293413828ea637f513de520d7a76097392125b25e0f0ccd2d785e5
-    url: https://www.complycube.com/en/company/startup-program/#e-n-accordion-item-1211
+    url: https://www.complycube.com/en/wp-json/wp/v2/pages/75
 programs:
   - program_id: prg_01kzdz9eq4f7dyqb0n3eeep4yy
     program_slug: complycube-startup-program
