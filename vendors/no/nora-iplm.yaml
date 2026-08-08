@@ -1,0 +1,99 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kzfwwthjxdde28therpkgvj9
+slug: nora-iplm
+slug_aliases: []
+name: Nora IPLM
+domains:
+  - value: noraplm.com
+    role: primary
+    valid_from: 2026-08-08T05:17:59.235Z
+category: design
+description: Nora IPLM is a cloud product-lifecycle platform for managing product data, BOMs, revisions, documents, changes, and engineering workflows.
+links:
+  site: https://www.noraplm.com
+sources:
+  - source_id: src_d50dad095ad0ebd84ef97ac5cd21f1ba62f9256714e867ebc33f057e47ab6780
+    url: https://www.noraplm.com/nora-iplm-for-startups/
+programs:
+  - program_id: prg_01kzfwwthjc97yg08na2gjqwzx
+    program_slug: nora-iplm-startup-plan
+    program_slug_aliases: []
+    title: Nora IPLM Startup Plan
+    summary: Nora IPLM gives qualifying product startups six months free for up to 10 users, followed by six months at half price.
+    source_ids:
+      - src_d50dad095ad0ebd84ef97ac5cd21f1ba62f9256714e867ebc33f057e47ab6780
+offers:
+  - offer_id: off_01kzfwwthjvsmaratwd6wgprtd
+    program_id: prg_01kzfwwthjc97yg08na2gjqwzx
+    offer_slug: six-months-free-then-six-months-half-price
+    offer_slug_aliases: []
+    title: Six months free, then six months half-price
+    summary: Eligible startups receive Nora IPLM core modules for up to 10 users free for six months, then at 50% off for the following six months.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-08T05:17:59.235Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Full access to Nora IPLM core modules for up to 10 users at no cost for the first six months
+          kind: free-service
+          service: Nora IPLM core modules for up to 10 users
+          duration:
+            kind: exact
+            value: P6M
+        - applies_to: Nora IPLM core modules for up to 10 users
+          benefit_id: ben_02
+          description: 50% off Nora IPLM for the same 10 users during months seven through twelve
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 5000
+          duration:
+            kind: exact
+            value: P6M
+      consideration:
+        kind: variable
+        description: During months seven through twelve, the startup pays half the standard plan price for up to 10 users; additional users are billed at standard pricing.
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.age_months
+            kind: predicate
+            operator: lte
+            statement: The company is no more than five years old.
+            value:
+              type: number
+              value: 60
+          - criterion_id: cri_02
+            kind: manual
+            reason: external-verification
+            statement: The company has annual revenue below $5 million or total funding below $5 million.
+          - criterion_id: cri_03
+            fact: company.employee_count
+            kind: predicate
+            operator: lte
+            statement: The company has no more than 50 team members.
+            value:
+              type: number
+              value: 50
+          - criterion_id: cri_04
+            kind: manual
+            reason: external-verification
+            statement: The applicant is a product company that designs or builds hardware or combined systems.
+          - criterion_id: cri_05
+            kind: manual
+            reason: external-verification
+            statement: The applicant is a new Nora IPLM customer and is accepted within the campaign's limited first-come allocation.
+    roles:
+      terms_authority_entity_id: ent_01kzfwwthjxdde28therpkgvj9
+      access_operator_entity_id: ent_01kzfwwthjxdde28therpkgvj9
+    access:
+      availability: public
+      method: form
+      url: https://www.noraplm.com/nora-iplm-for-startups/
+      instructions: Complete the startup application form on the vendor page.
+    terms_url: https://www.noraplm.com/nora-iplm-for-startups/
+    source_ids:
+      - src_d50dad095ad0ebd84ef97ac5cd21f1ba62f9256714e867ebc33f057e47ab6780
