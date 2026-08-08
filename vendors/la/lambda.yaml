@@ -1,0 +1,64 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kzfvkrxdj6mb992py124v8t6
+slug: lambda
+slug_aliases: []
+name: Lambda
+domains:
+  - value: lambda.ai
+    role: primary
+    valid_from: 2026-08-08T04:55:29.000Z
+category: hosting-infra
+description: Lambda provides AI computing infrastructure, including cloud Instances and GPU systems for AI developers, startups, researchers, and enterprises.
+links:
+  site: https://lambda.ai
+sources:
+  - source_id: src_743eb8b1c5b120b48a56d4ed2d0d943196e48574cb134382beed91b205d3c62f
+    url: https://lambda.ai/
+  - source_id: src_ba22a1e908c407bf8ca8af68836c70dda23b703369b13c2a696af210b9571411
+    url: https://lambda.ai/research
+programs:
+  - program_id: prg_01kzfvkrxj7t8ryzx9zb7e64eh
+    program_slug: research-grant
+    program_slug_aliases: []
+    title: Lambda Research Grant
+    summary: Lambda's research grant supports qualifying researchers developing and showcasing AI research with Lambda cloud compute.
+    source_ids:
+      - src_ba22a1e908c407bf8ca8af68836c70dda23b703369b13c2a696af210b9571411
+offers:
+  - offer_id: off_01kzfvkrxjr3w0wxskywxgb4j8
+    program_id: prg_01kzfvkrxj7t8ryzx9zb7e64eh
+    offer_slug: research-grant-cloud-credits
+    offer_slug_aliases: []
+    title: Lambda Research Grant cloud credits
+    summary: Qualifying researchers can receive up to $5,000 in cloud credits to develop and showcase research using Lambda Instances, with select research potentially featured by Lambda.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-08T04:55:29.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to $5,000 USD in Lambda cloud credits for Lambda Instances
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 500000
+            kind: up-to
+      consideration:
+        kind: unknown
+        description: The public source does not establish separate consideration for the grant.
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: not-machine-evaluable
+        statement: Offer is available to qualifying researchers.
+    roles:
+      terms_authority_entity_id: ent_01kzfvkrxdj6mb992py124v8t6
+      access_operator_entity_id: ent_01kzfvkrxdj6mb992py124v8t6
+    access:
+      availability: public
+      method: form
+      url: https://form.typeform.com/to/Wn8YWMIj
+    source_ids:
+      - src_ba22a1e908c407bf8ca8af68836c70dda23b703369b13c2a696af210b9571411
