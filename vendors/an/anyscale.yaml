@@ -1,0 +1,65 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kzfb0bp46cwh0yd2b19vnpgw
+slug: anyscale
+slug_aliases: []
+name: Anyscale
+domains:
+  - value: anyscale.com
+    role: primary
+    valid_from: 2026-08-08T00:05:16.000Z
+category: ai-ml
+description: Anyscale provides a managed AI compute platform built on Ray for developing, scaling, and running AI and machine learning workloads across cloud environments.
+links:
+  site: https://www.anyscale.com/startup
+sources:
+  - source_id: src_7e305cb2c8d786fbeaf358d2438a228fa6ae1a197ec525f75f80429dbdfe3b1b
+    url: https://www.anyscale.com/startup
+programs:
+  - program_id: prg_01kzfb0bp6hp34nra2c6j5fy1q
+    program_slug: anyscale-ai-startup-program
+    program_slug_aliases: []
+    title: Anyscale AI Startup Program
+    summary: Early-stage AI teams can apply for Anyscale credits, technical guidance, and hands-on support to prototype, train, and deploy AI models with Ray and the Anyscale Platform.
+    source_ids:
+      - src_7e305cb2c8d786fbeaf358d2438a228fa6ae1a197ec525f75f80429dbdfe3b1b
+offers:
+  - offer_id: off_01kzfb0bp6qevngjw6e4a2scza
+    program_id: prg_01kzfb0bp6hp34nra2c6j5fy1q
+    offer_slug: up-to-20k-credits-and-technical-support
+    offer_slug_aliases: []
+    title: Up to $20,000 in Anyscale credits and technical support
+    summary: Approved startups receive up to $20,000 in Anyscale credits plus dedicated field-engineer guidance for application architecture and hands-on technical support.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-08T00:05:16.000Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_01
+          description: Up to $20,000 in Anyscale usage credits
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 2000000
+            kind: up-to
+        - benefit_id: ben_02
+          description: Dedicated field engineers provide application architecture guidance and hands-on technical support
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_01
+        statement: Anyscale reviews each startup and may consider funding, technical maturity, current cloud infrastructure, cloud spend, and existing cloud-provider credits.
+        reason: vendor-discretion
+    roles:
+      terms_authority_entity_id: ent_01kzfb0bp46cwh0yd2b19vnpgw
+      access_operator_entity_id: ent_01kzfb0bp46cwh0yd2b19vnpgw
+    access:
+      availability: public
+      method: form
+      url: https://www.anyscale.com/startup
+    terms_url: https://www.anyscale.com/startup
+    source_ids:
+      - src_7e305cb2c8d786fbeaf358d2438a228fa6ae1a197ec525f75f80429dbdfe3b1b
