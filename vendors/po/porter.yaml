@@ -1,0 +1,52 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kzfgy4a25xzzx1va6rx8bmjk
+slug: porter
+slug_aliases: []
+name: Porter
+domains:
+  - value: porter.run
+    role: primary
+    valid_from: 2026-08-08T01:48:54.467Z
+category: hosting-infra
+description: Porter is a cloud deployment platform for deploying and scaling applications on a startup's own infrastructure, including Microsoft Azure.
+links:
+  site: https://www.porter.run
+sources:
+  - source_id: src_9c8ff8b5f16d3265d4e52e9cef1da564a5f253add430b86b321ba2f4f47b2a46
+    url: https://www.porter.run/startups/microsoft
+programs: []
+offers:
+  - offer_id: off_01kzfgy4a2j939xedd1s2vzt61
+    offer_slug: porter-for-microsoft-startups
+    offer_slug_aliases: []
+    title: Porter for Microsoft Startups
+    summary: Microsoft for Startups Founders Hub members can receive Porter's startup deal at no cost for six months and use it with their Azure credits.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-08T01:48:54.467Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_primary
+          description: Porter startup deal free for six months
+          kind: free-service
+          service: Porter cloud deployment platform
+          duration:
+            kind: exact
+            value: P6M
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: The startup must be a member of the Microsoft for Startups Founders Hub.
+        reason: external-verification
+    roles:
+      terms_authority_entity_id: ent_01kzfgy4a25xzzx1va6rx8bmjk
+      access_operator_entity_id: ent_01kzfgy4a25xzzx1va6rx8bmjk
+    access:
+      availability: membership
+      method: form
+      url: https://www.porter.run/startups/microsoft
+    source_ids:
+      - src_9c8ff8b5f16d3265d4e52e9cef1da564a5f253add430b86b321ba2f4f47b2a46
