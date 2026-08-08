@@ -1,0 +1,81 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kz6yyvje6nrksgdvzen102eg
+slug: workroomly
+slug_aliases: []
+name: Workroomly
+domains:
+  - value: workroomly.com
+    role: primary
+    valid_from: 2026-08-04T00:00:00.000Z
+category: productivity
+description: Workroomly is a connected business workspace for email, documents, CRM, meetings, support, boards, storage, and AI workflows.
+links:
+  site: https://www.workroomly.com
+sources:
+  - source_id: src_fe5d014f9578b07360dd095348e3321dd9848327cd49dbd6284984d7fe313d97
+    url: https://www.workroomly.com/founders_program/
+programs:
+  - program_id: prg_01kz6yyvjeap51vck72mtttcrd
+    program_slug: founders-program
+    program_slug_aliases: []
+    title: Founders Program
+    summary: Workroomly's program gives selected startups and SMEs tiered workspace credits, guided onboarding, workflow playbooks, office hours, and ecosystem introductions.
+    source_ids:
+      - src_fe5d014f9578b07360dd095348e3321dd9848327cd49dbd6284984d7fe313d97
+offers:
+  - offer_id: off_01kz6yyvjew7pttvh61nd71tzq
+    program_id: prg_01kz6yyvjeap51vck72mtttcrd
+    offer_slug: founders-program
+    offer_slug_aliases: []
+    title: Workroomly Founders Program
+    summary: Selected startups receive tiered credits from ₦1 million to ₦5 million for six months toward business email, workspace seats, and AI workflows.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-04T00:00:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to ₦5 million in Workroomly credits
+          duration:
+            kind: exact
+            value: P6M
+          kind: credit
+          value:
+            amount:
+              currency: NGN
+              minor_units: 500000000
+            kind: up-to
+        - benefit_id: ben_02
+          description: Founder-led onboarding, workflow playbooks, office hours, and relevant ecosystem introductions
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.age_months
+            kind: predicate
+            operator: lt
+            statement: The applicant is a registered startup or SME under seven years old.
+            value:
+              type: number
+              value: 84
+          - criterion_id: cri_02
+            kind: manual
+            reason: vendor-discretion
+            statement: The applicant shows traction or a compelling data-backed thesis and fits Workroomly's unified collaboration model.
+          - criterion_id: cri_03
+            kind: manual
+            reason: vendor-discretion
+            statement: The ₦5 million Scale tier is reserved for accelerator-backed or venture-funded teams running multiple departments.
+    roles:
+      terms_authority_entity_id: ent_01kz6yyvje6nrksgdvzen102eg
+      access_operator_entity_id: ent_01kz6yyvje6nrksgdvzen102eg
+    access:
+      availability: public
+      method: form
+      url: https://www.workroomly.com/founders_program/
+    source_ids:
+      - src_fe5d014f9578b07360dd095348e3321dd9848327cd49dbd6284984d7fe313d97
