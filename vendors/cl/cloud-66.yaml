@@ -1,0 +1,58 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kzfgy4a367236rpvy97c6t1n
+slug: cloud-66
+slug_aliases:
+  - cloud66
+name: Cloud 66
+domains:
+  - value: cloud66.com
+    role: primary
+    valid_from: 2026-08-08T01:48:54.467Z
+category: hosting-infra
+description: Cloud 66 is a deployment and operations platform that runs applications on infrastructure controlled by the customer across major cloud providers.
+links:
+  site: https://www.cloud66.com
+sources:
+  - source_id: src_fe3e8cb844bf8338d00ed5a483a6d72de62e5d17d63c8d815e8d46466668f99b
+    url: https://www.cloud66.com/use-cases/startups/
+programs: []
+offers:
+  - offer_id: off_01kzfgy4a3nk65h1z8mdfntgpk
+    offer_slug: cloudmatch-startup-credit-match
+    offer_slug_aliases: []
+    title: CloudMatch Startup Credit Match
+    summary: New startup customers can receive a Cloud 66 match equal to 10% of valid major-provider cloud credits, capped at $500 and valid for 12 months.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-08T01:48:54.467Z
+    economics:
+      consideration:
+        kind: variable
+        description: Hold valid credits from a supported major cloud provider and use them with Cloud 66.
+      benefits:
+        - benefit_id: ben_primary
+          description: Cloud 66 credit equal to 10% of valid cloud credits, up to $500 and valid for 12 months
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 50000
+            kind: up-to
+          duration:
+            kind: exact
+            value: P12M
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: A startup must be a new Cloud 66 customer and hold valid cloud credits from a major provider supported by Cloud 66.
+        reason: external-verification
+    roles:
+      terms_authority_entity_id: ent_01kzfgy4a367236rpvy97c6t1n
+      access_operator_entity_id: ent_01kzfgy4a367236rpvy97c6t1n
+    access:
+      availability: public
+      method: form
+      url: https://www.cloud66.com/use-cases/startups/
+    source_ids:
+      - src_fe3e8cb844bf8338d00ed5a483a6d72de62e5d17d63c8d815e8d46466668f99b
