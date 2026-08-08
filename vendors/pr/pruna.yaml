@@ -1,0 +1,76 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kzg8kbrq8a7byy51s31s53sf
+slug: pruna
+slug_aliases: []
+name: Pruna
+domains:
+  - value: pruna.ai
+    role: primary
+    valid_from: 2026-04-24T00:00:00Z
+category: ai-ml
+description: Pruna provides AI performance models and inference APIs designed to reduce model latency, cost, size, and infrastructure overhead.
+links:
+  site: https://www.pruna.ai
+sources:
+  - source_id: src_05d8f75325960b2fd487ff0ed6537501aec45e140e55219f63e15198c7929d91
+    url: https://www.pruna.ai/blog/pruna-build-program
+  - source_id: src_a51447f0e3232dd03b70fe5dce69fcb4a338034aee8adc44ea6549b92f0ad425
+    url: https://www.pruna.ai/contact
+programs:
+  - program_id: prg_01kzg8kbrsnp0gvzfh4r0nj23d
+    program_slug: pruna-build-program
+    program_slug_aliases: []
+    title: Pruna Build Program
+    summary: Pruna's staged program supports teams building and scaling real AI workloads with usage-based credits, technical help, and visibility opportunities.
+    source_ids:
+      - src_05d8f75325960b2fd487ff0ed6537501aec45e140e55219f63e15198c7929d91
+      - src_a51447f0e3232dd03b70fe5dce69fcb4a338034aee8adc44ea6549b92f0ad425
+offers:
+  - offer_id: off_01kzg8kbrs8mat7x1vaqn27ssr
+    program_id: prg_01kzg8kbrsnp0gvzfh4r0nj23d
+    offer_slug: staged-build-credits
+    offer_slug_aliases: []
+    title: Up to $3,900 in Pruna credits
+    summary: Teams building real AI products can unlock up to $3,900 in Pruna credits through staged usage, plus private chat, optimization support, and visibility opportunities.
+    lifecycle:
+      status: active
+      effective_from: 2026-04-24T00:00:00Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to $3,900 in Pruna credits unlocked across the Get Started, Build, and Scale stages.
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 390000
+            kind: up-to
+        - benefit_id: ben_02
+          description: Private chat access at the Build stage and priority support plus potential featuring opportunities at the Scale stage.
+          kind: other
+      consideration:
+        kind: variable
+        description: Join with billing information; use the initial $20 evaluation credits to unlock $300, then record $900 in usage within 60 days and $2,700 in usage within 90 days to unlock later credit stages.
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: not-machine-evaluable
+            statement: Team is researching or building a real AI product and is running or planning real workloads; incorporation is not required.
+          - criterion_id: cri_02
+            kind: manual
+            reason: vendor-discretion
+            statement: Pruna reviews and approves the application and may review usage for alignment with the program and its terms of service.
+    roles:
+      terms_authority_entity_id: ent_01kzg8kbrq8a7byy51s31s53sf
+      access_operator_entity_id: ent_01kzg8kbrq8a7byy51s31s53sf
+    access:
+      availability: public
+      method: form
+      url: https://www.pruna.ai/contact
+    terms_url: https://docs.api.pruna.ai/terms
+    source_ids:
+      - src_05d8f75325960b2fd487ff0ed6537501aec45e140e55219f63e15198c7929d91
+      - src_a51447f0e3232dd03b70fe5dce69fcb4a338034aee8adc44ea6549b92f0ad425
