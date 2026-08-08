@@ -1,0 +1,56 @@
+# Railway — infrastructure platform with startup credits
+# https://railway.com
+# Retrieved: 2026-08-08
+
+entity:
+  id: ent_01kzgt9pfrshqjsxyd33rw926g
+  slug: railway
+  name: Railway
+  website: https://railway.com
+  description: >-
+    Railway is an infrastructure platform that deploys applications instantly
+    from GitHub repositories with automatic scaling, managed databases, and
+    built-in CI/CD.
+  categories:
+    - cloud
+    - hosting
+    - devtools
+
+programs:
+  - id: prg_01kzgt9pfr4dk24aakabcmjvt5
+    name: Railway Startup Program
+    description: >-
+      Startup credits for early-stage companies building on Railway.
+      Includes platform credits and priority support.
+    source_id: src_01kzgt9pfrz8rse04t6t1erztg
+    eligibility:
+      - early_stage_startup
+      - less_than_2_years_old
+      - less_than_1m_funding
+
+offers:
+  - id: off_01kzgt9pfrkr4cae9px6a32a4t
+    program_id: prg_01kzgt9pfr4dk24aakabcmjvt5
+    name: $5,000 in Railway Credits
+    summary: >-
+      Up to $5,000 in platform credits for eligible startups
+      on Railway's Pro plan, valid for 12 months.
+    economics:
+      type: credit
+      value: 5000
+      currency: USD
+    duration: 12_months
+    source_id: src_01kzgt9pfrnfefw0h1thp4t05m
+    category: cloud
+
+sources:
+  - id: src_01kzgt9pfrz8rse04t6t1erztg
+    url: https://railway.com/startups
+    retrieved: "2026-08-08"
+    type: webpage
+    language: en
+  - id: src_01kzgt9pfrnfefw0h1thp4t05m
+    url: https://docs.railway.com/reference/pricing
+    retrieved: "2026-08-08"
+    type: documentation
+    language: en
