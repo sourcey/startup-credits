@@ -1,0 +1,52 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kzfgy4a0qq1wg1s9v46zhwsa
+slug: appsignal
+slug_aliases: []
+name: AppSignal
+domains:
+  - value: appsignal.com
+    role: primary
+    valid_from: 2026-08-08T01:48:54.467Z
+category: observability
+description: AppSignal is an application monitoring platform for errors, performance, logs, uptime, dashboards, anomaly detection, and infrastructure metrics.
+links:
+  site: https://www.appsignal.com
+sources:
+  - source_id: src_0f43ddd0b4c3ea02b53730f54a9753ab0bd664b96ebeadb3b93cc55ab091f2b1
+    url: https://www.appsignal.com/startups
+programs: []
+offers:
+  - offer_id: off_01kzfgy4a2a8svn0t77rdye5zb
+    offer_slug: appsignal-startup-tier
+    offer_slug_aliases: []
+    title: AppSignal Startup Tier
+    summary: Eligible early-stage and bootstrapped startups can receive up to 25% off the complete AppSignal platform on an ongoing basis while they qualify.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-08T01:48:54.467Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Up to 25% off the complete AppSignal platform while the startup qualifies
+          kind: discount
+          percentage:
+            kind: up-to
+            basis_points: 2500
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Early-stage and bootstrapped startups may apply by creating an account and providing startup information for AppSignal review.
+        reason: vendor-discretion
+    roles:
+      terms_authority_entity_id: ent_01kzfgy4a0qq1wg1s9v46zhwsa
+      access_operator_entity_id: ent_01kzfgy4a0qq1wg1s9v46zhwsa
+    access:
+      availability: public
+      method: contact
+      url: https://www.appsignal.com/startups
+    source_ids:
+      - src_0f43ddd0b4c3ea02b53730f54a9753ab0bd664b96ebeadb3b93cc55ab091f2b1
