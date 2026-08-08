@@ -1,0 +1,82 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kzfx63q2qtnm5v45ekpwj6a0
+slug: phala
+slug_aliases: []
+name: Phala
+domains:
+  - value: phala.com
+    role: primary
+    valid_from: 2026-08-08T02:47:00.000Z
+category: hosting-infra
+description: Phala provides confidential cloud infrastructure, GPU TEE capacity, and private AI runtimes for verifiable AI workloads.
+links:
+  site: https://phala.com
+sources:
+  - source_id: src_bdbbbbaddb13ad528b7ccb52db0acc1367fed0d1a28070d8ff9bf4950b7a0c97
+    url: https://phala.com/startup-program
+programs:
+  - program_id: prg_01kzfx63q3pttqvk9q2q0fc200
+    program_slug: phala-startup-program
+    program_slug_aliases: []
+    title: Phala Startup Program
+    summary: Phala's Startup Program gives pre-seed to Series A teams credits and engineering review for private or verifiable AI products.
+    source_ids:
+      - src_bdbbbbaddb13ad528b7ccb52db0acc1367fed0d1a28070d8ff9bf4950b7a0c97
+offers:
+  - offer_id: off_01kzfx63q3wwvt17katvav3yt8
+    program_id: prg_01kzfx63q3pttqvk9q2q0fc200
+    offer_slug: phala-private-ai-startup-credits
+    offer_slug_aliases: []
+    title: Phala Private AI Startup Credits
+    summary: Qualified startups receive a $1,000 credit pool for Phala cloud credits, GPU TEE capacity, private model API usage, and engineering support.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-08T02:47:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: $1,000 credit pool for Phala cloud credits, GPU TEE capacity, and private model API usage
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 100000
+            kind: exact
+        - benefit_id: ben_02
+          description: Engineering access and technical review for the startup's runtime, proof path, and launch support
+          kind: free-service
+          service: engineering access and technical review
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.stage
+            kind: predicate
+            operator: in
+            statement: Pre-seed to Series A teams should apply.
+            value:
+              type: string-set
+              values:
+                - pre-seed
+                - seed
+                - Series A
+          - criterion_id: cri_02
+            kind: manual
+            reason: vendor-discretion
+            statement: Applicant should be building private or verifiable AI products.
+          - criterion_id: cri_03
+            kind: manual
+            reason: vendor-discretion
+            statement: Application should describe the product, workload, team stage, and what needs to stay private.
+    roles:
+      terms_authority_entity_id: ent_01kzfx63q2qtnm5v45ekpwj6a0
+      access_operator_entity_id: ent_01kzfx63q2qtnm5v45ekpwj6a0
+    access:
+      availability: public
+      method: form
+      url: https://phala.com/startup-program
+    source_ids:
+      - src_bdbbbbaddb13ad528b7ccb52db0acc1367fed0d1a28070d8ff9bf4950b7a0c97
