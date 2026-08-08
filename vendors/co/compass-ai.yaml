@@ -1,0 +1,61 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kzfwwthjqcn4938nmraznahq
+slug: compass-ai
+slug_aliases: []
+name: Compass AI
+domains:
+  - value: compassapp.ai
+    role: primary
+    valid_from: 2026-08-08T05:17:59.235Z
+category: finance-accounting
+description: Compass AI provides financial modeling, cash-flow forecasting, scenario planning, and board-ready reporting for founders and finance teams.
+links:
+  site: https://compassapp.ai
+sources:
+  - source_id: src_0fa28d6edf17859542a9f27e955f1439752925020f04ffc706dcc7a1057a9a79
+    url: https://compassapp.ai/startups
+programs:
+  - program_id: prg_01kzfwwthjb0djkn82sp8ptbrd
+    program_slug: compass-ai-startup-program
+    program_slug_aliases: []
+    title: Compass AI Startup Program
+    summary: Compass AI offers startup pricing for pre-revenue and early-stage companies using its finance and forecasting platform.
+    source_ids:
+      - src_0fa28d6edf17859542a9f27e955f1439752925020f04ffc706dcc7a1057a9a79
+offers:
+  - offer_id: off_01kzfwwthje700wnj2rnmcnah8
+    program_id: prg_01kzfwwthjb0djkn82sp8ptbrd
+    offer_slug: six-months-free-for-pre-revenue-startups
+    offer_slug_aliases: []
+    title: Six months free for pre-revenue startups
+    summary: Pre-revenue startups or companies below $100,000 ARR can receive a Compass AI subscription free for six months.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-08T05:17:59.235Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Compass AI subscription at no cost for six months
+          kind: free-service
+          service: Compass AI subscription
+          duration:
+            kind: exact
+            value: P6M
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: external-verification
+        statement: The applicant is pre-revenue or has less than $100,000 in annual recurring revenue.
+    roles:
+      terms_authority_entity_id: ent_01kzfwwthjqcn4938nmraznahq
+      access_operator_entity_id: ent_01kzfwwthjqcn4938nmraznahq
+    access:
+      availability: public
+      method: form
+      url: https://form.typeform.com/to/B6mhzCcJ
+    terms_url: https://compassapp.ai/startups
+    source_ids:
+      - src_0fa28d6edf17859542a9f27e955f1439752925020f04ffc706dcc7a1057a9a79
