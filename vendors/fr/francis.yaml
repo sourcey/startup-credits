@@ -1,0 +1,87 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kzfwwthj74zfffpe49t90ahb
+slug: francis
+slug_aliases: []
+name: Francis
+domains:
+  - value: francis.app
+    role: primary
+    valid_from: 2026-08-08T05:17:59.235Z
+category: finance-accounting
+description: Francis is a financial-planning platform for budgeting, forecasting, revenue modeling, reporting, consolidation, and collaborative finance workflows.
+links:
+  site: https://www.francis.app
+sources:
+  - source_id: src_7842a4021b35fe0667b2dd6a4d5b0c12ab9d3c9c824680ea7ec565d0bf4fea3e
+    url: https://www.francis.app/startups
+programs:
+  - program_id: prg_01kzfwwthj7ynw74353jjwf547
+    program_slug: francis-startup-program
+    program_slug_aliases: []
+    title: Francis Startup Program
+    summary: Francis offers qualifying early-stage startups a discount on its Core financial-planning plan.
+    source_ids:
+      - src_7842a4021b35fe0667b2dd6a4d5b0c12ab9d3c9c824680ea7ec565d0bf4fea3e
+offers:
+  - offer_id: off_01kzfwwthj4hkg08m4hqkc0g4b
+    program_id: prg_01kzfwwthj7ynw74353jjwf547
+    offer_slug: fifty-percent-off-core-for-up-to-one-year
+    offer_slug_aliases: []
+    title: 50% off Francis Core for up to one year
+    summary: Eligible startups receive 50% off the Francis Core plan for up to 12 months.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-08T05:17:59.235Z
+    economics:
+      benefits:
+        - applies_to: Francis Core plan
+          benefit_id: ben_01
+          description: 50% discount on the Francis Core plan for up to 12 months
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 5000
+          duration:
+            kind: up-to
+            value: P1Y
+      consideration:
+        kind: variable
+        description: The startup pays the remaining 50% of the Francis Core plan price during the discount period.
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: external-verification
+            statement: The applicant is a new Francis customer.
+          - criterion_id: cri_02
+            fact: company.employee_count
+            kind: predicate
+            operator: lt
+            statement: The company has fewer than 50 employees.
+            value:
+              type: number
+              value: 50
+          - criterion_id: cri_03
+            kind: manual
+            reason: external-verification
+            statement: The company has raised no more than $1 million in funding.
+          - criterion_id: cri_04
+            fact: company.age_months
+            kind: predicate
+            operator: lt
+            statement: The company is less than three years old.
+            value:
+              type: number
+              value: 36
+    roles:
+      terms_authority_entity_id: ent_01kzfwwthj74zfffpe49t90ahb
+      access_operator_entity_id: ent_01kzfwwthj74zfffpe49t90ahb
+    access:
+      availability: public
+      method: form
+      url: https://www.francis.app/startups
+    terms_url: https://www.francis.app/startups
+    source_ids:
+      - src_7842a4021b35fe0667b2dd6a4d5b0c12ab9d3c9c824680ea7ec565d0bf4fea3e
