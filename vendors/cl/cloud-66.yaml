@@ -21,7 +21,7 @@ offers:
     offer_slug: cloudmatch-startup-credit-match
     offer_slug_aliases: []
     title: CloudMatch Startup Credit Match
-    summary: Startups can bring valid credits from a major cloud provider and receive a Cloud 66 match equal to 10% of those credits, capped at $500.
+    summary: New startup customers can receive a Cloud 66 match equal to 10% of valid major-provider cloud credits, capped at $500 and valid for 12 months.
     lifecycle:
       status: active
       effective_from: 2026-08-08T01:48:54.467Z
@@ -31,18 +31,21 @@ offers:
         description: Hold valid credits from a supported major cloud provider and use them with Cloud 66.
       benefits:
         - benefit_id: ben_primary
-          description: Cloud 66 credit equal to 10% of valid cloud credits, up to $500
+          description: Cloud 66 credit equal to 10% of valid cloud credits, up to $500 and valid for 12 months
           kind: credit
           value:
             amount:
               currency: USD
               minor_units: 50000
             kind: up-to
+          duration:
+            kind: exact
+            value: P12M
     eligibility:
       rule:
         kind: manual
         criterion_id: cri_requirement_01
-        statement: A startup must hold valid cloud credits from a major provider supported by Cloud 66.
+        statement: A startup must be a new Cloud 66 customer and hold valid cloud credits from a major provider supported by Cloud 66.
         reason: external-verification
     roles:
       terms_authority_entity_id: ent_01kzfgy4a367236rpvy97c6t1n
