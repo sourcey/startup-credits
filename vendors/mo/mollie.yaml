@@ -1,0 +1,57 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kzgfnre0jabbm5zd4b4sbe35
+slug: mollie
+slug_aliases: []
+name: Mollie
+domains:
+  - value: mollie.com
+    role: primary
+    valid_from: 2026-08-08T10:46:06.000Z
+category: payments-fintech
+description: Mollie provides payment and money management products for more than 250,000 businesses across Europe.
+links:
+  site: https://www.mollie.com/
+sources:
+  - source_id: src_6414c4e97b86be909ae229d715b0e598410758cf83dc18b36985910961702e59
+    url: https://www.mollie.com/solutions/payments-for-startups
+programs:
+  - program_id: prg_01kzgfnre3gfzkc8defpa03vxq
+    program_slug: mollie-startup-program
+    program_slug_aliases: []
+    title: Mollie Startup Program
+    summary: The Mollie Startup Program gives eligible European and UK startups processing-fee waivers, priority support, no lock-in contracts, and access to a founder community.
+    source_ids:
+      - src_6414c4e97b86be909ae229d715b0e598410758cf83dc18b36985910961702e59
+offers:
+  - offer_id: off_01kzgfnre3jsgr3pd7ygsv59xz
+    program_id: prg_01kzgfnre3gfzkc8defpa03vxq
+    offer_slug: waived-fees-on-75000-eur-in-payment-processing
+    offer_slug_aliases: []
+    title: Waived fees on EUR 75,000 in payment processing
+    summary: Eligible startups with up to EUR 200,000 in funding receive waived fees on their next EUR 75,000 in payment processing.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-08T10:46:06.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Payment processing fees waived on the next EUR 75,000 in payment volume.
+          kind: waiver
+          waived_item: Fees on the next EUR 75,000 in payment processing
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: external-verification
+        statement: Applicant must be a VC-backed startup from pre-seed through Series B, headquartered in Europe or the UK, new to Mollie, and have raised no more than EUR 200,000.
+    roles:
+      terms_authority_entity_id: ent_01kzgfnre0jabbm5zd4b4sbe35
+      access_operator_entity_id: ent_01kzgfnre0jabbm5zd4b4sbe35
+    access:
+      availability: public
+      method: form
+      url: https://www.mollie.com/solutions/payments-for-startups
+    source_ids:
+      - src_6414c4e97b86be909ae229d715b0e598410758cf83dc18b36985910961702e59
