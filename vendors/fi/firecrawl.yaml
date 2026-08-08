@@ -1,0 +1,60 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kzhwdec849sdhska32eafyfp
+slug: firecrawl
+slug_aliases: []
+name: Firecrawl
+domains:
+  - value: firecrawl.dev
+    role: primary
+    valid_from: 2026-08-08T23:47:59.498Z
+category: data-analytics
+description: Firecrawl provides APIs for searching, scraping, crawling, and extracting web data for AI and automation applications.
+links:
+  site: https://www.firecrawl.dev
+sources:
+  - source_id: src_b3ce524230a6c1e544c4c52b2e053ec8e242e87b4d5cb4a0d841d06cfabc24a7
+    url: https://www.firecrawl.dev/partner-program
+programs:
+  - program_id: prg_01kzhwdecaf3e304cxd6mhtvdh
+    program_slug: partner-program
+    program_slug_aliases: []
+    title: Firecrawl Partner Program
+    summary: Approved platform partners receive a Partner Integration API key so their users can connect to Firecrawl and receive free credits.
+    source_ids:
+      - src_b3ce524230a6c1e544c4c52b2e053ec8e242e87b4d5cb4a0d841d06cfabc24a7
+offers:
+  - offer_id: off_01kzhwdecaacktxgndrasz14es
+    program_id: prg_01kzhwdecaf3e304cxd6mhtvdh
+    offer_slug: partner-integration-user-credits
+    offer_slug_aliases: []
+    title: Partner Integration API and free user credits
+    summary: Approved partners receive a partner key for Firecrawl's Partner Integration API, and users connected through the partner platform receive free Firecrawl credits.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-08T23:47:59.498Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: A partner key for the Partner Integration API.
+          kind: other
+        - benefit_id: ben_02
+          description: Free Firecrawl credits for users who connect through the partner platform.
+          kind: other
+      consideration:
+        kind: variable
+        description: Approved partners integrate Firecrawl into their platform using the Partner Integration API.
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_01
+        statement: Intended for developer-tool, AI, automation, no-code, low-code, or other platforms whose users would benefit from Firecrawl's API.
+        reason: vendor-discretion
+    roles:
+      terms_authority_entity_id: ent_01kzhwdec849sdhska32eafyfp
+      access_operator_entity_id: ent_01kzhwdec849sdhska32eafyfp
+    access:
+      availability: public
+      method: other
+      url: https://www.firecrawl.dev/partner-program
+    source_ids:
+      - src_b3ce524230a6c1e544c4c52b2e053ec8e242e87b4d5cb4a0d841d06cfabc24a7
