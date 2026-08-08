@@ -20,7 +20,7 @@ offers:
     offer_slug: ari-startup-program
     offer_slug_aliases: []
     title: Ari Startup Program
-    summary: Eligible early-stage startups receive Ari at no cost for their first five users for six months, followed by a reduced startup rate.
+    summary: Eligible early-stage startups receive Ari at no cost for their first five users for six months.
     lifecycle:
       status: active
       effective_from: 2026-08-08T01:48:54.467Z
@@ -39,7 +39,7 @@ offers:
       rule:
         kind: manual
         criterion_id: cri_requirement_01
-        statement: Early-stage startups need an access code from a partner, another participating startup, or Ariso's startup team.
+        statement: Early-stage startups must have 25 employees or fewer, less than $1 million in funding or revenue, and a valid access code from Ariso's partner or referral network.
         reason: external-verification
     roles:
       terms_authority_entity_id: ent_01kzfgy4a3fhptfzksf3trrsrr
