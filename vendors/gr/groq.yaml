@@ -14,6 +14,8 @@ links:
 sources:
   - source_id: src_b4d2f18f12e67217dbec0e7ba07bc6a6f95a8b98aef37cdece371a7a7c56539c
     url: https://console.groq.com/docs/billing-faqs
+  - source_id: src_c688e46a5ca0250f25b6cf707c032a81ceab5eb6c4d4164a37ebe28063434c98
+    url: https://groq.com
 programs: []
 offers:
   - offer_id: off_01kzamwmfxb2sbz98m8c1s7yk6
