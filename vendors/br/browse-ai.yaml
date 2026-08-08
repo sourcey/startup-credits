@@ -1,0 +1,52 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kzfgy4a2grhbehtmgqrk0pew
+slug: browse-ai
+slug_aliases: []
+name: Browse AI
+domains:
+  - value: browse.ai
+    role: primary
+    valid_from: 2026-08-08T01:48:54.467Z
+category: no-code
+description: Browse AI is a no-code web data platform for turning websites into APIs, extracting structured data, monitoring changes, and operating data pipelines.
+links:
+  site: https://www.browse.ai
+sources:
+  - source_id: src_604250f8c2b8af4be13be72531e9a6b76f540fcefad0076c69ccef05fa3a0a5e
+    url: https://www.browse.ai/startups
+programs: []
+offers:
+  - offer_id: off_01kzfgy4a2hky84w9d2mvstqwv
+    offer_slug: browse-ai-startup-program
+    offer_slug_aliases: []
+    title: Browse AI Startup Program
+    summary: Approved startups receive an additional 20% discount on Browse AI annual plans for no-code web data extraction, monitoring, APIs, and integrations.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-08T01:48:54.467Z
+    economics:
+      consideration:
+        kind: variable
+        description: Purchase an annual Browse AI plan after approval to apply the startup discount.
+      benefits:
+        - benefit_id: ben_primary
+          description: Additional 20% off an annual Browse AI plan
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 2000
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: A startup submits the public program form and Browse AI approves or denies the application.
+        reason: vendor-discretion
+    roles:
+      terms_authority_entity_id: ent_01kzfgy4a2grhbehtmgqrk0pew
+      access_operator_entity_id: ent_01kzfgy4a2grhbehtmgqrk0pew
+    access:
+      availability: public
+      method: form
+      url: https://www.browse.ai/startups
+    source_ids:
+      - src_604250f8c2b8af4be13be72531e9a6b76f540fcefad0076c69ccef05fa3a0a5e
