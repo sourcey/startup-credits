@@ -1,0 +1,78 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kzgrb64rz1rchx1q79wxepcr
+slug: hostman
+slug_aliases: []
+name: Hostman
+domains:
+  - value: hostman.com
+    role: primary
+    valid_from: 2026-08-08T13:17:36.816Z
+category: hosting-infra
+description: Hostman is a cloud platform for deploying and scaling applications with virtual servers, managed databases, Kubernetes, networking, and app hosting.
+links:
+  site: https://hostman.com/
+sources:
+  - source_id: src_ddfa6d508bd629825136aae5fe08888660474c518b5e1aa8ebdd4b0624c708df
+    url: https://hostman.com/for-startups/
+  - source_id: src_10b9b08a584161d5b04f37fcccc3e9c12544464d48987028ae6c0333d0d7ef46
+    url: https://hostman.com/legal/
+programs:
+  - program_id: prg_01kzgrb64s57srzna2j2w1p83j
+    program_slug: hostman-for-startups
+    program_slug_aliases: []
+    title: Hostman for Startups
+    summary: Hostman's startup program provides eligible registered businesses worldwide with project-sized cloud credits, infrastructure guidance, and migration support.
+    source_ids:
+      - src_ddfa6d508bd629825136aae5fe08888660474c518b5e1aa8ebdd4b0624c708df
+offers:
+  - offer_id: off_01kzgrb64s3skpez8f9427ty6z
+    program_id: prg_01kzgrb64s57srzna2j2w1p83j
+    offer_slug: up-to-10-000-eur-in-hostman-cloud-credits
+    offer_slug_aliases: []
+    title: Up to €10,000 in Hostman cloud credits
+    summary: Eligible businesses receive a project-sized Hostman cloud credit allocation of up to €10,000, valid for up to six months across eligible cloud services.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-08T13:17:36.816Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_01
+          description: Up to €10,000 in Hostman cloud credits across eligible Hostman services
+          duration:
+            kind: up-to
+            value: P6M
+          kind: credit
+          value:
+            amount:
+              currency: EUR
+              minor_units: 1000000
+            kind: up-to
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: external-verification
+            statement: Applicant is a registered business; businesses worldwide may apply
+          - criterion_id: cri_02
+            kind: manual
+            reason: external-verification
+            statement: Applicant has not previously used Hostman
+          - criterion_id: cri_03
+            kind: manual
+            reason: external-verification
+            statement: Applicant's project is not related to game hosting
+    roles:
+      terms_authority_entity_id: ent_01kzgrb64rz1rchx1q79wxepcr
+      access_operator_entity_id: ent_01kzgrb64rz1rchx1q79wxepcr
+    access:
+      availability: public
+      method: form
+      url: https://hostman.com/for-startups/
+    terms_url: https://hostman.com/legal/
+    source_ids:
+      - src_ddfa6d508bd629825136aae5fe08888660474c518b5e1aa8ebdd4b0624c708df
+      - src_10b9b08a584161d5b04f37fcccc3e9c12544464d48987028ae6c0333d0d7ef46
