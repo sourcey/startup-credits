@@ -8,7 +8,7 @@ domains:
     role: primary
     valid_from: 2026-08-07T13:45:00.000Z
 category: ai-ml
-description: Open-source AI hub where 4M+ researchers and developers share models, datasets, and Spaces; offers Inference Providers and Pro subscription for deploying models.
+description: The AI community building the future. The platform where the machine learning community collaborates on models, datasets, and applications.
 links:
   site: https://huggingface.co
   pricing: https://huggingface.co/pricing
@@ -17,6 +17,8 @@ sources:
     url: https://huggingface.co/startups
   - source_id: src_18f3a9b2c4d5e6f7a8b9c0d1e2f3a4b5c6d7e8f9a0b1c2d3e4f5a6b7c8d9e0f1
     url: https://creditforstartups.com/companies/hugging-face
+  - source_id: src_2a7e5c9f0d4b6e8a1c3d5f7b9a0c2e4d6f8a0b1c3d5e7f9a1b2c4d6e8f0a1b3c5d
+    url: https://huggingface.co
 programs:
   - program_id: prg_01kzea0k24myx5q7b1efhvv429
     program_slug: huggingface-for-startups
