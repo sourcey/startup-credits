@@ -1,0 +1,80 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kzfwwthj974dv27m6bp5yd8d
+slug: puq-ai
+slug_aliases: []
+name: puq.ai
+domains:
+  - value: puq.ai
+    role: primary
+    valid_from: 2026-08-08T05:17:59.235Z
+category: no-code
+description: puq.ai is a workflow-automation platform with visual workflows, app integrations, AI agents, code execution, monitoring, and collaboration tools.
+links:
+  site: https://puq.ai
+sources:
+  - source_id: src_4f58b0cf6aad615d99bcbe816b7cd6eb0bc254420710f89bafd7b4e0d1723e31
+    url: https://puq.ai/startups
+programs:
+  - program_id: prg_01kzfwwthjsnzhhfm95n924fkt
+    program_slug: puq-startup-benefit
+    program_slug_aliases: []
+    title: puq Startup Benefit
+    summary: puq.ai gives qualifying early-stage startups six months of its Enterprise automation plan at no cost.
+    source_ids:
+      - src_4f58b0cf6aad615d99bcbe816b7cd6eb0bc254420710f89bafd7b4e0d1723e31
+offers:
+  - offer_id: off_01kzfwwthjkp683dkj9fcrx6d1
+    program_id: prg_01kzfwwthjsnzhhfm95n924fkt
+    offer_slug: six-months-free-enterprise
+    offer_slug_aliases: []
+    title: Six months free on puq Enterprise
+    summary: Eligible startups receive the puq Enterprise plan free for six months, including 30,000 monthly executions, 300+ integrations, AI tools, and dedicated support.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-08T05:17:59.235Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: puq Enterprise plan at no cost for six months
+          kind: free-service
+          service: puq Enterprise plan
+          duration:
+            kind: exact
+            value: P6M
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.age_months
+            kind: predicate
+            operator: lt
+            statement: The startup is less than five years old.
+            value:
+              type: number
+              value: 60
+          - criterion_id: cri_02
+            kind: manual
+            reason: external-verification
+            statement: The startup is at Series A stage or earlier.
+          - criterion_id: cri_03
+            fact: company.employee_count
+            kind: predicate
+            operator: lt
+            statement: The startup has fewer than 100 employees.
+            value:
+              type: number
+              value: 100
+    roles:
+      terms_authority_entity_id: ent_01kzfwwthj974dv27m6bp5yd8d
+      access_operator_entity_id: ent_01kzfwwthj974dv27m6bp5yd8d
+    access:
+      availability: public
+      method: form
+      url: https://puq.ai/startups
+      instructions: Use the Apply Now button to open the startup application flow.
+    terms_url: https://puq.ai/startups
+    source_ids:
+      - src_4f58b0cf6aad615d99bcbe816b7cd6eb0bc254420710f89bafd7b4e0d1723e31
