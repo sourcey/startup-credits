@@ -7,7 +7,6 @@ domains:
   - value: free.ai
     role: primary
     valid_from: 2026-08-08T00:00:00Z
-valid_from: 2026-08-08T00:00:00Z
 category: ai-ml
 description: Free.ai provides AI tools and API access for startups, including chat, image generation, text-to-speech, and translation.
 links:
@@ -76,6 +75,4 @@ offers:
     access:
       availability: public
       method: form
-      url: https://free.ai/startup/?lang=en
-      source_ids:
-        - src_111cc56c07a4e71af5559ea1e60e7127ef7619a1c534daa966f248b1826bf87d
+      url: https://free.ai/startup/
