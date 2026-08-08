@@ -1,0 +1,78 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_98avsfdgdkp9qmhfeysg46e1ev
+slug: free-ai
+slug_aliases: []
+name: Free.ai
+domains:
+  - value: free.ai
+    role: primary
+    valid_from: 2026-08-08T00:00:00Z
+category: ai-ml
+description: Free.ai provides AI tools and API access for startups, including chat, image generation, text-to-speech, and translation.
+links:
+  site: https://free.ai
+sources:
+  - source_id: src_111cc56c07a4e71af5559ea1e60e7127ef7619a1c534daa966f248b1826bf87d
+    url: https://free.ai/startup/?lang=en
+programs:
+  - program_id: prg_3xpdzt32xc6813ataarzg1dzg2
+    program_slug: free-ai-startup-program
+    program_slug_aliases: []
+    title: Free.ai Startup Program
+    summary: Eligible early-stage startups can apply for free credits usable across Free.ai's AI tools and API.
+    source_ids:
+      - src_111cc56c07a4e71af5559ea1e60e7127ef7619a1c534daa966f248b1826bf87d
+offers:
+  - offer_id: off_bfkva6zyz8b2vzy7qtjvhqd0t0
+    program_id: prg_3xpdzt32xc6813ataarzg1dzg2
+    offer_slug: free-ai-startup-credits
+    offer_slug_aliases: []
+    source_ids:
+      - src_111cc56c07a4e71af5559ea1e60e7127ef7619a1c534daa966f248b1826bf87d
+    title: Free.ai Startup Credits
+    summary: Accepted startups receive free credits for more than 200 AI tools and the Free.ai API; the amount varies by stage and planned usage.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-08T00:00:00Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_primary
+          description: Free credits usable across more than 200 AI tools and the Free.ai API; the credit amount varies by startup stage and planned usage.
+          kind: other
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.age_months
+            kind: predicate
+            operator: lt
+            statement: The company is less than three years old.
+            value:
+              type: number
+              value: 36
+          - criterion_id: cri_02
+            fact: company.funding_usd
+            kind: predicate
+            operator: lt
+            statement: The company has less than 5 million USD in total funding.
+            value:
+              type: number
+              value: 5000000
+          - criterion_id: cri_03
+            kind: manual
+            statement: The company has a working product or prototype.
+            reason: external-verification
+          - criterion_id: cri_04
+            kind: manual
+            statement: The applicant is not currently on a paid Free.ai plan.
+            reason: external-verification
+    roles:
+      terms_authority_entity_id: ent_98avsfdgdkp9qmhfeysg46e1ev
+      access_operator_entity_id: ent_98avsfdgdkp9qmhfeysg46e1ev
+    access:
+      availability: public
+      method: form
+      url: https://free.ai/startup/
