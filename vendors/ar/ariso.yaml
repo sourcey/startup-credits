@@ -1,0 +1,52 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kzfgy4a3fhptfzksf3trrsrr
+slug: ariso
+slug_aliases: []
+name: Ariso
+domains:
+  - value: ariso.ai
+    role: primary
+    valid_from: 2026-08-08T01:48:54.467Z
+category: hr-people
+description: Ariso provides Ari, an AI employee growth platform for meetings, reflections, peer recognition, rewards, and workplace engagement.
+links:
+  site: https://ariso.ai
+sources:
+  - source_id: src_f732384fe47d6adb0efdd937f83738c290a846a091b4c333f1cc11fac59631ed
+    url: https://ariso.ai/programs/early-stage
+programs: []
+offers:
+  - offer_id: off_01kzfgy4a3q7rbc0qan9jyferh
+    offer_slug: ari-startup-program
+    offer_slug_aliases: []
+    title: Ari Startup Program
+    summary: Eligible early-stage startups receive Ari at no cost for their first five users for six months.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-08T01:48:54.467Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_primary
+          description: Ari free for the first five users for six months
+          kind: free-service
+          service: Ari employee growth platform for up to five users
+          duration:
+            kind: exact
+            value: P6M
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Early-stage startups must have 25 employees or fewer, less than $1 million in funding or revenue, and a valid access code from Ariso's partner or referral network.
+        reason: external-verification
+    roles:
+      terms_authority_entity_id: ent_01kzfgy4a3fhptfzksf3trrsrr
+      access_operator_entity_id: ent_01kzfgy4a3fhptfzksf3trrsrr
+    access:
+      availability: membership
+      method: form
+      url: https://ariso.ai/programs/early-stage
+    source_ids:
+      - src_f732384fe47d6adb0efdd937f83738c290a846a091b4c333f1cc11fac59631ed
