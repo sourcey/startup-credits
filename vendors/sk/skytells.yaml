@@ -1,0 +1,109 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kzgg8s89n91yseed7se5s0eq
+slug: skytells
+slug_aliases: []
+name: Skytells
+domains:
+  - value: skytells.ai
+    role: primary
+    valid_from: 2026-03-08T00:00:00Z
+category: hosting-infra
+description: Skytells provides cloud infrastructure and AI services for compute, storage, networking, inference, and application hosting.
+links:
+  site: https://skytells.ai
+sources:
+  - source_id: src_7a98075b74c3b42d3d1021e4ccb2b0c3ec54b0a77ee5d4d640eaf2503bfd9609
+    url: https://skytells.ai/startup-program
+  - source_id: src_82e8caae7ca6d03fbddf2f6a072c9818831c573e3f016ad277fb51e731892ce4
+    url: https://skytells.ai/blog/skytells-startup-program
+  - source_id: src_56adbd936e19391544c372abcbe2792da5abb390b55f1e54dc728122a231133f
+    url: https://skytells.ai/contact
+programs:
+  - program_id: prg_01kzgg8s8bk7sngk6j6wb5tape
+    program_slug: digital-start-up-program
+    program_slug_aliases: []
+    title: Digital Start-up Program
+    summary: Skytells' program supports venture-backed startups with cloud credits, sustained service discounts, priority support, and access to AI infrastructure and models.
+    source_ids:
+      - src_7a98075b74c3b42d3d1021e4ccb2b0c3ec54b0a77ee5d4d640eaf2503bfd9609
+      - src_82e8caae7ca6d03fbddf2f6a072c9818831c573e3f016ad277fb51e731892ce4
+offers:
+  - offer_id: off_01kzgg8s8bq0rrdyzehqaczqf7
+    program_id: prg_01kzgg8s8bk7sngk6j6wb5tape
+    offer_slug: cloud-credits-and-discount
+    offer_slug_aliases: []
+    title: Up to $100,000 in Skytells credits and 35% off
+    summary: Eligible Series A–E startups can receive up to $100,000 in Skytells cloud credits and 35% off cloud services for up to two years, plus priority support and AI-model access.
+    lifecycle:
+      status: active
+      effective_from: 2026-03-08T00:00:00Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to $100,000 in Skytells cloud credits for infrastructure, AI workloads, and application hosting.
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 10000000
+            kind: up-to
+        - benefit_id: ben_02
+          description: 35% off Skytells cloud services for up to two years.
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 3500
+        - benefit_id: ben_03
+          description: Priority technical support, executive sponsorship, architecture guidance, and higher-priority access to production and preview AI models.
+          kind: other
+      consideration:
+        kind: variable
+        description: Applicants must be willing to provide a case study or co-marketing opportunity upon graduation; approval and final benefits are determined by Skytells.
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.stage
+            kind: predicate
+            operator: in
+            statement: Startup is at Series A, B, C, D, or E stage.
+            value:
+              type: string-set
+              values:
+                - Series A
+                - Series B
+                - Series C
+                - Series D
+                - Series E
+          - criterion_id: cri_02
+            kind: manual
+            reason: not-machine-evaluable
+            statement: Startup received Series A through Series E funding within the last 24 months.
+          - criterion_id: cri_03
+            kind: manual
+            reason: not-machine-evaluable
+            statement: Startup is building a product or service with meaningful cloud or AI workloads.
+          - criterion_id: cri_04
+            kind: manual
+            reason: external-verification
+            statement: Startup is headquartered in North America, Europe, or Asia-Pacific.
+          - criterion_id: cri_05
+            kind: manual
+            reason: external-verification
+            statement: Startup is not currently covered by an existing Skytells enterprise agreement.
+          - criterion_id: cri_06
+            kind: manual
+            reason: vendor-discretion
+            statement: Startup is willing to provide a case study or co-marketing opportunity upon graduation.
+    roles:
+      terms_authority_entity_id: ent_01kzgg8s89n91yseed7se5s0eq
+      access_operator_entity_id: ent_01kzgg8s89n91yseed7se5s0eq
+    access:
+      availability: public
+      method: form
+      url: https://skytells.ai/contact
+    source_ids:
+      - src_7a98075b74c3b42d3d1021e4ccb2b0c3ec54b0a77ee5d4d640eaf2503bfd9609
+      - src_82e8caae7ca6d03fbddf2f6a072c9818831c573e3f016ad277fb51e731892ce4
+      - src_56adbd936e19391544c372abcbe2792da5abb390b55f1e54dc728122a231133f
