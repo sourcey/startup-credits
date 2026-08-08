@@ -1,0 +1,73 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kzea0k20nprp8jw6v1xfzcpz
+slug: huggingface
+slug_aliases: []
+name: Hugging Face
+domains:
+  - value: huggingface.co
+    role: primary
+    valid_from: 2026-08-07T13:45:00.000Z
+category: ai-ml
+description: Open-source AI hub where 4M+ researchers and developers share models, datasets, and Spaces; offers Inference Providers and Pro subscription for deploying models.
+links:
+  site: https://huggingface.co
+  pricing: https://huggingface.co/pricing
+sources:
+  - source_id: src_63a4aa4646d7d92bcd18ae6e6c7082b22b09162f6a72ddfc8fa28ac273d826be
+    url: https://huggingface.co/startups
+  - source_id: src_18f3a9b2c4d5e6f7a8b9c0d1e2f3a4b5c6d7e8f9a0b1c2d3e4f5a6b7c8d9e0f1
+    url: https://creditforstartups.com/companies/hugging-face
+programs:
+  - program_id: prg_01kzea0k24myx5q7b1efhvv429
+    program_slug: huggingface-for-startups
+    program_slug_aliases: []
+    title: Hugging Face for Startups
+    summary: Free inference credits and Pro subscription features for early-stage AI startups building on Hugging Face infrastructure.
+    source_ids:
+      - src_63a4aa4646d7d92bcd18ae6e6c7082b22b09162f6a72ddfc8fa28ac273d826be
+      - src_18f3a9b2c4d5e6f7a8b9c0d1e2f3a4b5c6d7e8f9a0b1c2d3e4f5a6b7c8d9e0f1
+offers:
+  - offer_id: off_01kzea0k24p89nczagh1g0mnv2
+    program_id: prg_01kzea0k24myx5q7b1efhvv429
+    offer_slug: huggingface-pro-startups
+    offer_slug_aliases: []
+    title: Hugging Face Pro for Startups
+    summary: Up to $108 in free inference credits and Pro features for 6 months for early-stage AI startups.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-07T13:45:00.000Z
+    access:
+      availability: public
+      method: form
+      url: https://huggingface.co/startups
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_01
+          description: Free Pro subscription for approximately 6 months (includes private repos, compute quotas, and ZeroGPU access)
+          kind: free-service
+          service: Hugging Face Pro, covering private repos, compute quotas, and ZeroGPU access
+          duration:
+            kind: exact
+            value: P6M
+        - benefit_id: ben_02
+          description: Free monthly inference credits to experiment with Inference Providers
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 1000
+            kind: up-to
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_01
+        statement: Must be an early-stage AI startup (Pre-seed, Seed, or Series A) building on open-source models with global eligibility.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01kzea0k20nprp8jw6v1xfzcpz
+      access_operator_entity_id: ent_01kzea0k20nprp8jw6v1xfzcpz
+    source_ids:
+      - src_63a4aa4646d7d92bcd18ae6e6c7082b22b09162f6a72ddfc8fa28ac273d826be
+      - src_18f3a9b2c4d5e6f7a8b9c0d1e2f3a4b5c6d7e8f9a0b1c2d3e4f5a6b7c8d9e0f1
