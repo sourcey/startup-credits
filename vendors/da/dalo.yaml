@@ -1,0 +1,83 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kzfwwthcyc44xfn95hsmatnx
+slug: dalo
+slug_aliases: []
+name: Dalo
+domains:
+  - value: dalohq.com
+    role: primary
+    valid_from: 2026-08-08T05:17:59.235Z
+category: support
+description: Dalo provides an autonomous AI customer-support platform with knowledge-base, chat, voice, and commerce integrations.
+links:
+  site: https://dalohq.com
+sources:
+  - source_id: src_a7f72e7b07cba1c0ddc043f0c60f0c5af5e224159e47d53c1e043579a1f8a541
+    url: https://dalohq.com/startups
+programs:
+  - program_id: prg_01kzfwwthd4wt4rfajq6ae1v5t
+    program_slug: dalo-for-startups
+    program_slug_aliases: []
+    title: Dalo for Startups
+    summary: Dalo gives qualifying early-stage startups its Starter plan free for 12 months, plus developer onboarding and direct support.
+    source_ids:
+      - src_a7f72e7b07cba1c0ddc043f0c60f0c5af5e224159e47d53c1e043579a1f8a541
+offers:
+  - offer_id: off_01kzfwwthd1y7q3hr3ynk5d0qf
+    program_id: prg_01kzfwwthd4wt4rfajq6ae1v5t
+    offer_slug: starter-plan-free-for-one-year
+    offer_slug_aliases: []
+    title: Dalo Starter plan free for one year
+    summary: Eligible startups receive Dalo's Starter plan, including its AI agent, knowledge base, and core integrations, free for 12 months.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-08T05:17:59.235Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Dalo Starter plan at no cost for 12 months
+          kind: free-service
+          service: Dalo Starter plan
+          duration:
+            kind: exact
+            value: P1Y
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: external-verification
+            statement: The startup is at pre-seed, seed, or Series A stage.
+          - criterion_id: cri_02
+            fact: company.funding_raised_usd
+            kind: predicate
+            operator: lt
+            statement: The startup has raised less than $5 million in total funding.
+            value:
+              type: number
+              value: 5000000
+          - criterion_id: cri_03
+            fact: company.age_months
+            kind: predicate
+            operator: lte
+            statement: The startup was founded within the last three years.
+            value:
+              type: number
+              value: 36
+          - criterion_id: cri_04
+            kind: manual
+            reason: external-verification
+            statement: The applicant is not currently a paying Dalo customer.
+    roles:
+      terms_authority_entity_id: ent_01kzfwwthcyc44xfn95hsmatnx
+      access_operator_entity_id: ent_01kzfwwthcyc44xfn95hsmatnx
+    access:
+      availability: public
+      method: form
+      url: https://dalohq.com/startups
+    terms_url: https://dalohq.com/startups
+    source_ids:
+      - src_a7f72e7b07cba1c0ddc043f0c60f0c5af5e224159e47d53c1e043579a1f8a541
