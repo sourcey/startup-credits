@@ -1,0 +1,57 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kzjxenvtx6evb2abjq5nr9rn
+slug: aigateway
+slug_aliases: []
+name: AIgateway
+domains:
+  - value: aigateway.sh
+    role: primary
+    valid_from: 2026-08-09T09:26:42.675Z
+category: ai-ml
+description: AIgateway provides a unified API for text, image, video, voice, embedding, and reranking models across multiple AI providers.
+links:
+  site: https://aigateway.sh
+sources:
+  - source_id: src_081b8aedfda90c989bea8f2993fa9d26a4fead212291ed84ae4206d0ea970fe6
+    url: https://aigateway.sh/startups
+programs: []
+offers:
+  - offer_id: off_01kzjxenvtvpbsd9pzsnjmpw4k
+    offer_slug: aigateway-for-startups
+    offer_slug_aliases: []
+    title: AIgateway for Startups
+    summary: Selected pre-Series B teams building AI-native products receive up to $5,000 in AIgateway credits and direct engineering support for their integration or launch.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-09T09:26:42.675Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to $5,000 in AIgateway model API credits
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 500000
+            kind: up-to
+        - benefit_id: ben_02
+          description: Direct integration and launch support from an AIgateway founder or engineer
+          kind: free-service
+          service: AIgateway startup engineering support
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_requirement_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Must be a pre-Series B team building its own AI-native product, not reselling raw inference, have a public company website, apply with a company email, and be approved by AIgateway.
+    roles:
+      terms_authority_entity_id: ent_01kzjxenvtx6evb2abjq5nr9rn
+      access_operator_entity_id: ent_01kzjxenvtx6evb2abjq5nr9rn
+    access:
+      availability: public
+      method: form
+      url: https://aigateway.sh/startups
+    source_ids:
+      - src_081b8aedfda90c989bea8f2993fa9d26a4fead212291ed84ae4206d0ea970fe6
