@@ -4,64 +4,71 @@ slug: ionos
 slug_aliases: []
 name: IONOS
 domains:
-  - value: ionos.com
-    role: primary
-    valid_from: 2026-08-10T00:00:00.000Z
+- value: ionos.com
+  role: primary
+  valid_from: 2026-08-10 00:00:00+00:00
 category: hosting-infra
-description: IONOS is a European cloud and hosting provider offering IaaS, managed Kubernetes, VPS, web hosting, and data services across global data centers.
+description: IONOS is a European cloud and hosting provider offering IaaS, managed
+  Kubernetes, VPS, web hosting, and data services across global data centers.
 links:
   site: https://www.ionos.com
-  program: https://cloud.ionos.com/startup-program
 sources:
-  - source_id: src_4a18816b4a8031f5cd0c033fcccef38872ad4cd8b0008ca799b43af847c606ad
-    url: https://cloud.ionos.com/startup-program
+- source_id: src_4a18816b4a8031f5cd0c033fcccef38872ad4cd8b0008ca799b43af847c606ad
+  url: https://cloud.ionos.com/startup-program
 programs:
-  - program_id: prg_01kzmacxyrgjch2nebnvntb9ve
-    program_slug: ionos-cloud-startup-program
-    program_slug_aliases: []
-    title: IONOS CLOUD Startup Program
-    summary: IONOS CLOUD credits and support for startups, with SPARK and ACCELERATE tiers and an alumni pricing phase.
-    source_ids:
-      - src_4a18816b4a8031f5cd0c033fcccef38872ad4cd8b0008ca799b43af847c606ad
+- program_id: prg_01kzmacxyrgjch2nebnvntb9ve
+  program_slug: ionos-cloud-startup-program
+  program_slug_aliases: []
+  title: IONOS CLOUD Startup Program
+  summary: IONOS CLOUD credits and support for startups, with SPARK and ACCELERATE
+    tiers and an alumni pricing phase.
+  source_ids:
+  - src_4a18816b4a8031f5cd0c033fcccef38872ad4cd8b0008ca799b43af847c606ad
 offers:
-  - offer_id: off_01kzmacxyrk4t0bq04q187pj1m
-    program_id: prg_01kzmacxyrgjch2nebnvntb9ve
-    offer_slug: ionos-cloud-startup-program-credits
-    offer_slug_aliases: []
-    title: Up to $100,000 in IONOS CLOUD credits for startups
-    summary: Eligible startups receive IONOS CLOUD credits for all products — $5,000 via the SPARK tier or up to $100,000 via ACCELERATE — plus 24/7 technical support, all-product access, and a second alumni year of discounted pricing.
-    lifecycle:
-      status: active
-      effective_from: 2026-08-10T00:00:00.000Z
-    economics:
-      consideration:
-        kind: none
-        description: Program credits are granted without separate monetary consideration; payment information is required to activate credits.
-      benefits:
-        - benefit_id: ben_01
-          description: SPARK tier — $5,000 in credits usable across all IONOS CLOUD products.
-          kind: other
-        - benefit_id: ben_02
-          description: ACCELERATE tier — up to $100,000 in credits usable across all IONOS CLOUD products.
-          kind: other
-        - benefit_id: ben_03
-          description: 24/7 free technical support and access to all IONOS CLOUD products and resources while enrolled.
-          kind: other
-        - benefit_id: ben_04
-          description: Alumni phase — an additional year of discounted pricing on IONOS CLOUD infrastructure after the starter credit year.
-          kind: other
-    eligibility:
-      rule:
-        kind: manual
-        criterion_id: cri_01
-        statement: Startups founded less than 5 years ago that have a company website can participate once. Sign up for a free IONOS CLOUD account, submit the program application, and enter payment information to activate credits.
-        reason: not-machine-evaluable
-    roles:
-      terms_authority_entity_id: ent_01kzmacxypq3xq92cfwkg4cr9y
-      access_operator_entity_id: ent_01kzmacxypq3xq92cfwkg4cr9y
-    access:
-      availability: public
-      method: form
-      url: https://cloud.ionos.com/startup-program
-    source_ids:
-      - src_4a18816b4a8031f5cd0c033fcccef38872ad4cd8b0008ca799b43af847c606ad
+- offer_id: off_01kzmacxyrk4t0bq04q187pj1m
+  program_id: prg_01kzmacxyrgjch2nebnvntb9ve
+  offer_slug: ionos-cloud-startup-program-credits
+  offer_slug_aliases: []
+  title: Up to $100,000 in IONOS CLOUD credits for startups
+  summary: Eligible startups receive IONOS CLOUD credits for all products — $5,000
+    via the SPARK tier or up to $100,000 via ACCELERATE — plus 24/7 technical support,
+    all-product access, and a second alumni year of discounted pricing.
+  lifecycle:
+    status: active
+    effective_from: 2026-08-10 00:00:00+00:00
+  economics:
+    consideration:
+      kind: none
+    benefits:
+    - benefit_id: ben_01
+      description: SPARK tier — $5,000 in credits usable across all IONOS CLOUD products.
+      kind: other
+    - benefit_id: ben_02
+      description: ACCELERATE tier — up to $100,000 in credits usable across all IONOS
+        CLOUD products.
+      kind: other
+    - benefit_id: ben_03
+      description: 24/7 free technical support and access to all IONOS CLOUD products
+        and resources while enrolled.
+      kind: other
+    - benefit_id: ben_04
+      description: Alumni phase — an additional year of discounted pricing on IONOS
+        CLOUD infrastructure after the starter credit year.
+      kind: other
+  eligibility:
+    rule:
+      kind: manual
+      criterion_id: cri_01
+      statement: Startups founded less than 5 years ago that have a company website
+        can participate once. Sign up for a free IONOS CLOUD account, submit the program
+        application, and enter payment information to activate credits.
+      reason: not-machine-evaluable
+  roles:
+    terms_authority_entity_id: ent_01kzmacxypq3xq92cfwkg4cr9y
+    access_operator_entity_id: ent_01kzmacxypq3xq92cfwkg4cr9y
+  access:
+    availability: public
+    method: form
+    url: https://cloud.ionos.com/startup-program
+  source_ids:
+  - src_4a18816b4a8031f5cd0c033fcccef38872ad4cd8b0008ca799b43af847c606ad
