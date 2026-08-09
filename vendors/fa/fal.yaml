@@ -1,0 +1,58 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kzj0jgzssf2bs8gb1dy06jgb
+slug: fal
+slug_aliases: []
+name: fal
+domains:
+  - value: fal.ai
+    role: primary
+    valid_from: 2026-08-09T01:00:40.000Z
+category: ai-ml
+description: fal is a generative media platform for developers with model APIs, serverless GPUs, and on-demand compute for image, video, audio, 3D, and AI workloads.
+links:
+  site: https://fal.ai
+sources:
+  - source_id: src_3c41b550a80047805422403529f5e6d8228d31090fd401306ec1972df95cf0ab
+    url: https://fal.ai/
+  - source_id: src_0c284dba1c40c8007fdd8ac42fcdee919067a755bbde8c29605774590275afee
+    url: https://fal.ai/grants
+programs:
+  - program_id: prg_01kzj0jgztmzq50vsmzdbetyqh
+    program_slug: fal-research-grants
+    program_slug_aliases: []
+    title: fal Research Grants
+    summary: fal Research Grants provides free compute resources to researchers and developers advancing AI through open-source projects.
+    source_ids:
+      - src_0c284dba1c40c8007fdd8ac42fcdee919067a755bbde8c29605774590275afee
+offers:
+  - offer_id: off_01kzj0jgztgj8nqqz57rvknb2s
+    program_id: prg_01kzj0jgztmzq50vsmzdbetyqh
+    offer_slug: free-compute-for-open-source-ai-projects
+    offer_slug_aliases: []
+    title: Free compute for open-source AI projects
+    summary: Researchers and developers can apply for free fal compute resources for open-source AI initiatives; no formal degree is required.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-09T01:00:40.000Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_01
+          description: Free fal compute resources for an approved open-source AI initiative
+          kind: other
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Applicant must propose an open-source initiative that advances AI and submit the project's description, goals, mission alignment, and relevant work or GitHub repositories.
+    roles:
+      terms_authority_entity_id: ent_01kzj0jgzssf2bs8gb1dy06jgb
+      access_operator_entity_id: ent_01kzj0jgzssf2bs8gb1dy06jgb
+    access:
+      availability: public
+      method: contact
+      url: https://fal.ai/grants
+    source_ids:
+      - src_0c284dba1c40c8007fdd8ac42fcdee919067a755bbde8c29605774590275afee
