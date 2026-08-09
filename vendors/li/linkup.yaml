@@ -1,0 +1,53 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kzjxenvt7ahg60q12q3e1vkk
+slug: linkup
+slug_aliases: []
+name: Linkup
+domains:
+  - value: linkup.so
+    role: primary
+    valid_from: 2026-08-09T09:26:42.675Z
+category: ai-ml
+description: Linkup provides production-grade web search, content extraction, and deep research APIs for AI applications and agents.
+links:
+  site: https://www.linkup.so
+sources:
+  - source_id: src_99124f308acbdef0011ece7a9a927fb74bec2133fa5b606c00c24c2fd5e4b185
+    url: https://www.linkup.so/startups
+programs: []
+offers:
+  - offer_id: off_01kzjxenvtgf40dxbxg3pw8qvh
+    offer_slug: linkup-startup-program
+    offer_slug_aliases: []
+    title: Linkup Startup Program
+    summary: Selected projects receive a one-time credit of up to $5,000 for Linkup's real-time web search API, representing more than one million search API calls.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-09T09:26:42.675Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: One-time Linkup API credit of up to $5,000
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 500000
+            kind: up-to
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_requirement_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Applicants must have a Linkup account, describe what they are building, and be selected by Linkup as a good fit.
+    roles:
+      terms_authority_entity_id: ent_01kzjxenvt7ahg60q12q3e1vkk
+      access_operator_entity_id: ent_01kzjxenvt7ahg60q12q3e1vkk
+    access:
+      availability: public
+      method: form
+      url: https://www.linkup.so/startups
+    source_ids:
+      - src_99124f308acbdef0011ece7a9a927fb74bec2133fa5b606c00c24c2fd5e4b185
