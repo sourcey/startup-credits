@@ -8,7 +8,7 @@ domains:
     role: primary
     valid_from: 2026-08-08T13:37:07.362Z
 category: devtools-other
-description: Uniblock provides a unified interface, routing, and one credit balance for blockchain data services across multiple providers.
+description: Uniblock provides unified routing, a shared interface, and one credit balance for blockchain data services across multiple providers.
 links:
   site: https://uniblock.website
 sources:
