@@ -1,0 +1,57 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kzkz3gkd0ccpvc9szvamy5vp
+slug: veridion
+slug_aliases: []
+name: Veridion
+domains:
+  - value: veridion.com
+    role: primary
+    valid_from: 2026-08-09T19:12:16.000Z
+category: data-analytics
+description: Veridion provides company intelligence APIs for matching, enriching, searching, scoring, and monitoring business data across global markets.
+links:
+  site: https://veridion.com
+sources:
+  - source_id: src_5cdc7f8f408cff3ad26ddb45068ed749ef30e263c8c98fb0953a00554e332b07
+    url: https://veridion.com/company/initiatives/startup-program
+programs:
+  - program_id: prg_01kzkz3gkf6nmkkn88yhgfwgg8
+    program_slug: veridion-startup-program
+    program_slug_aliases: []
+    title: Veridion Startup Program
+    summary: Veridion's one-year startup program provides free API credits, full production access, technical onboarding, and tier-based pricing after the credits.
+    source_ids:
+      - src_5cdc7f8f408cff3ad26ddb45068ed749ef30e263c8c98fb0953a00554e332b07
+offers:
+  - offer_id: off_01kzkz3gkfxr9rmsy2d8qjp5zf
+    program_id: prg_01kzkz3gkf6nmkkn88yhgfwgg8
+    offer_slug: 30000-api-credits
+    offer_slug_aliases: []
+    title: 30,000 Veridion API Credits
+    summary: Accepted startups receive 30,000 API credits valid for up to three months, with unrestricted test and production use of Match and Enrich and Search APIs.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-09T19:12:16.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 30,000 API credits, valid for up to three months, for unrestricted test and production use of the Match and Enrich and Search APIs
+          kind: other
+      consideration:
+        kind: unknown
+        description: Accepted startups join a one-year program, set a monthly tier per API during onboarding, and move to that tier after the free credits for the remaining program term.
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Applicant must be incorporated no more than five years ago, have revenue under $1 million and a team under 20, not directly compete with Veridion, and build a data-powered product in fintech, SaaS, insurtech, procuretech, or an adjacent vertical.
+    roles:
+      terms_authority_entity_id: ent_01kzkz3gkd0ccpvc9szvamy5vp
+      access_operator_entity_id: ent_01kzkz3gkd0ccpvc9szvamy5vp
+    access:
+      availability: public
+      method: form
+      url: https://veridion.com/company/initiatives/startup-program
+    source_ids:
+      - src_5cdc7f8f408cff3ad26ddb45068ed749ef30e263c8c98fb0953a00554e332b07
