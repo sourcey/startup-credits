@@ -8,7 +8,7 @@ domains:
     role: primary
     valid_from: 2026-08-04T03:52:54.000Z
 category: devtools-other
-description: Directus is a self-hostable, open source headless CMS and backend that turns a SQL database into REST and GraphQL APIs with a no-code admin interface.
+description: Directus can be run self-hosted or on Directus Cloud, a separate managed hosting offering.
 links:
   site: https://directus.com
 sources:
