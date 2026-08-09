@@ -1,0 +1,72 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kzm6bnmr6a646p0swtjy255w
+slug: exotel
+slug_aliases: []
+name: Exotel
+domains:
+  - value: exotel.com
+    role: primary
+    valid_from: 2026-08-09T21:20:16.000Z
+category: communication
+description: Exotel provides cloud communications, contact-center, voice, SMS, and conversational AI infrastructure for businesses.
+links:
+  site: https://exotel.com
+sources:
+  - source_id: src_cac9ffcdaf7834a3f849f29f6f8f1dc4b150ec8bb2227dbaf76eac3a1f43b6b1
+    url: https://exotel.com/exotel-for-startups/
+programs:
+  - program_id: prg_01kzm6bnmw79nn83wqcwa2dbr5
+    program_slug: exotel-for-startups
+    program_slug_aliases: []
+    title: Exotel for Startups
+    summary: Exotel's startup program gives qualifying Indian startups a free communications plan for voice and SMS.
+    source_ids:
+      - src_cac9ffcdaf7834a3f849f29f6f8f1dc4b150ec8bb2227dbaf76eac3a1f43b6b1
+offers:
+  - offer_id: off_01kzm6bnmwx9fxbdy82397fagk
+    program_id: prg_01kzm6bnmw79nn83wqcwa2dbr5
+    offer_slug: inr-6000-exotel-startup-plan
+    offer_slug_aliases: []
+    title: INR 6,000 Exotel Startup Plan
+    summary: Eligible Indian startups receive INR 6,000 of SMS and calls free for six months, with one virtual landline number and two user licenses at zero cost.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-09T21:20:16.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: INR 6,000 worth of SMS and calls free for six months
+          kind: credit
+          value:
+            amount:
+              currency: INR
+              minor_units: 600000
+            kind: exact
+          duration:
+            kind: exact
+            value: P6M
+        - benefit_id: ben_02
+          description: One virtual landline number and two user licenses at zero cost for six months
+          kind: free-service
+          service: One virtual landline number and two user licenses
+          duration:
+            kind: exact
+            value: P6M
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: not-machine-evaluable
+        statement: Applicant must be an Indian startup launched in 2020 or later, be Series A or below or DPIIT-recognized, and have no prior billing history with Exotel.
+    roles:
+      terms_authority_entity_id: ent_01kzm6bnmr6a646p0swtjy255w
+      access_operator_entity_id: ent_01kzm6bnmr6a646p0swtjy255w
+    access:
+      availability: public
+      method: form
+      url: https://exotel.com/exotel-for-startups/
+    terms_url: https://exotel.com/exotel-for-startups/
+    source_ids:
+      - src_cac9ffcdaf7834a3f849f29f6f8f1dc4b150ec8bb2227dbaf76eac3a1f43b6b1
