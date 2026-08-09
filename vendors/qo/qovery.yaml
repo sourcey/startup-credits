@@ -1,0 +1,103 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kzknnvy1b3hct1xs5e9zqzf3
+slug: qovery
+slug_aliases: []
+name: Qovery
+domains:
+  - value: qovery.com
+    role: primary
+    valid_from: 2026-08-09T16:28:44.000Z
+category: hosting-infra
+description: Qovery provides a Kubernetes platform for provisioning infrastructure, deploying applications, and managing environments across cloud providers.
+links:
+  site: https://www.qovery.com
+sources:
+  - source_id: src_5428f0d5777da971d84d64a317cd660a20a8a3d101ca32257b4292e2d202cac1
+    url: https://www.qovery.com/blog/introducing-qovery-for-startups
+programs:
+  - program_id: prg_01kzknnvy5c5wmbt0jn5m2w2av
+    program_slug: qovery-perks-program-for-startups
+    program_slug_aliases: []
+    title: Qovery Perks Program for Startups
+    summary: Qovery's startup program gives eligible teams six months of the Team plan at no charge, then 30% off the first annual subscription, plus one-to-one onboarding.
+    source_ids:
+      - src_5428f0d5777da971d84d64a317cd660a20a8a3d101ca32257b4292e2d202cac1
+offers:
+  - offer_id: off_01kzknnvy5em1ctgj5rg954b2e
+    program_id: prg_01kzknnvy5c5wmbt0jn5m2w2av
+    offer_slug: six-months-free-then-thirty-percent-off
+    offer_slug_aliases: []
+    title: Six months free, then 30% off the first annual subscription
+    summary: Eligible startups receive the Qovery Team plan at no charge for six months, followed by 30% off the first annual subscription, with one-to-one onboarding.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-09T16:28:44.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Qovery Team plan at no charge for six months
+          duration:
+            kind: exact
+            value: P6M
+          kind: free-service
+          service: Qovery Team plan
+        - applies_to: first annual Qovery subscription after the free period
+          benefit_id: ben_02
+          description: 30% off the first annual subscription after the six-month free period
+          duration:
+            kind: exact
+            value: P1Y
+          kind: discount
+          percentage:
+            basis_points: 3000
+            kind: exact
+        - benefit_id: ben_03
+          description: One-to-one onboarding with Qovery community engineers
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: any
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: external-verification
+            statement: The startup belongs to the portfolio of Crane, Speedinvest, or another organization with a Qovery perks partnership.
+          - kind: all
+            rules:
+              - criterion_id: cri_02
+                fact: company.age_months
+                kind: predicate
+                operator: lt
+                statement: The startup was founded less than three years ago.
+                value:
+                  type: number
+                  value: 36
+              - criterion_id: cri_03
+                fact: company.funding_raised_usd
+                kind: predicate
+                operator: lte
+                statement: The startup has raised no more than $10 million in capital.
+                value:
+                  type: number
+                  value: 10000000
+              - criterion_id: cri_04
+                fact: company.is_current_customer
+                kind: predicate
+                operator: eq
+                statement: The startup has not previously used a paid Qovery plan.
+                value:
+                  type: boolean
+                  value: false
+    roles:
+      terms_authority_entity_id: ent_01kzknnvy1b3hct1xs5e9zqzf3
+      access_operator_entity_id: ent_01kzknnvy1b3hct1xs5e9zqzf3
+    access:
+      availability: public
+      instructions: Submit the Qovery demo form and mention which published eligibility condition applies.
+      method: form
+      url: https://www.qovery.com/book-a-demo
+    terms_url: https://www.qovery.com/blog/introducing-qovery-for-startups
+    source_ids:
+      - src_5428f0d5777da971d84d64a317cd660a20a8a3d101ca32257b4292e2d202cac1
