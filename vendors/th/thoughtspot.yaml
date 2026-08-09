@@ -1,0 +1,75 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kzm83y42zasjgzt875b0wx48
+slug: thoughtspot
+slug_aliases: []
+name: ThoughtSpot
+domains:
+  - value: thoughtspot.com
+    role: primary
+    valid_from: 2026-08-09T21:51:03.000Z
+category: data-analytics
+description: ThoughtSpot is the Agentic Analytics platform that turns insights into action with AI agents, automated insights, and embedded intelligence.
+links:
+  site: https://www.thoughtspot.com
+  pricing: https://www.thoughtspot.com/pricing
+sources:
+  - source_id: src_2dbae2670a345c939ab71064a6fc3be2377f9584d1ce75e07a0f49f7d7df6d7b
+    url: https://www.thoughtspot.com/startup
+programs:
+  - program_id: prg_01kzm83y456qdyzb8e0cx9ymxd
+    program_slug: thoughtspot-startupspot
+    program_slug_aliases: []
+    title: StartupSpot
+    source_ids:
+      - src_2dbae2670a345c939ab71064a6fc3be2377f9584d1ce75e07a0f49f7d7df6d7b
+offers:
+  - offer_id: off_01kzm83y455ww19b7zhk3g9yr9
+    program_id: prg_01kzm83y456qdyzb8e0cx9ymxd
+    offer_slug: startupspot-flat-annual-bundle
+    offer_slug_aliases: []
+    title: ThoughtSpot StartupSpot bundle at 12,999 USD a year
+    summary: Startup-gated bundle of ThoughtSpot Embedded and ThoughtSpot Analytics for a flat 12,999 USD a year, with unlimited data, 50 external plus 50 internal users, 100K Spotter queries a year, and 30 hours of Virtual Office consulting.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-09T21:51:03.000Z
+    economics:
+      consideration:
+        kind: fixed
+        amount:
+          currency: USD
+          minor_units: 1299900
+      benefits:
+        - benefit_id: ben_01
+          description: ThoughtSpot Embedded plus ThoughtSpot Analytics, flat pricing at 12,999 USD per year, no hidden fees, no surprise bills.
+          kind: other
+        - benefit_id: ben_02
+          description: Unlimited data, up to 50 external customers plus 50 internal users, Spotter AI Agent up to 100K queries per year, and Analyst Studio data prep up to 10GB query size and 25GB total workspace.
+          kind: other
+        - benefit_id: ben_03
+          description: Enterprise-grade security (SSO, row-level security, audit logging) and thirty hours of Virtual Office consulting to help launch faster.
+          kind: other
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - kind: manual
+            criterion_id: cri_01
+            statement: Annual revenue less than 3,000,000 USD.
+            reason: external-verification
+          - kind: manual
+            criterion_id: cri_02
+            statement: 50 or fewer employees.
+            reason: external-verification
+          - kind: manual
+            criterion_id: cri_03
+            statement: Early-stage startup (Series A, self financed, or earlier).
+            reason: external-verification
+    roles:
+      terms_authority_entity_id: ent_01kzm83y42zasjgzt875b0wx48
+      access_operator_entity_id: ent_01kzm83y42zasjgzt875b0wx48
+    access:
+      availability: public
+      method: form
+      url: https://www.thoughtspot.com/startup
+    source_ids:
+      - src_2dbae2670a345c939ab71064a6fc3be2377f9584d1ce75e07a0f49f7d7df6d7b
