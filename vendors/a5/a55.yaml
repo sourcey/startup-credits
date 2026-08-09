@@ -1,0 +1,67 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kzgsex92jy29myfev6c0cs5t
+slug: a55
+slug_aliases: []
+name: a55
+domains:
+  - value: a55.tech
+    role: primary
+    valid_from: 2026-08-08T13:37:07.362Z
+category: payments-fintech
+description: a55 provides cross-border payment and checkout infrastructure for commerce businesses operating across Latin America.
+links:
+  site: https://a55.tech
+sources:
+  - source_id: src_a44f00a952149cbce1a337d1fda556d44de9cb953b210ccc8a25bbf35d26bafc
+    url: https://a55.tech/activate
+programs:
+  - program_id: prg_01kzgsex92vyfqsfzb5afyxn0x
+    program_slug: a55-activate
+    program_slug_aliases: []
+    title: a55 Activate
+    summary: a55 Activate gives commerce founders credits, cross-border payment infrastructure, and access to a private founder network.
+    source_ids:
+      - src_a44f00a952149cbce1a337d1fda556d44de9cb953b210ccc8a25bbf35d26bafc
+offers:
+  - offer_id: off_01kzgsex92a1eke24wp9cfrgp4
+    program_id: prg_01kzgsex92vyfqsfzb5afyxn0x
+    offer_slug: a55-activate-credits
+    offer_slug_aliases: []
+    title: $10,000 in a55 credits
+    summary: Eligible commerce startups receive $10,000 in a55 credits for checkout and growth, plus access to cross-border infrastructure and a private founder network.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-08T13:37:07.362Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_01
+          description: $10,000 in a55 credits.
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 1000000
+            kind: exact
+        - benefit_id: ben_02
+          description: Access to cross-border payment infrastructure across seven countries.
+          kind: other
+        - benefit_id: ben_03
+          description: Access to a private founder network.
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_01
+        statement: Commerce startups from stealth through Series B+ whose founders are building for conversion, speed, and consumer experience may apply.
+        reason: vendor-discretion
+    roles:
+      terms_authority_entity_id: ent_01kzgsex92jy29myfev6c0cs5t
+      access_operator_entity_id: ent_01kzgsex92jy29myfev6c0cs5t
+    access:
+      availability: public
+      method: form
+      url: https://a55.tech/activate
+    source_ids:
+      - src_a44f00a952149cbce1a337d1fda556d44de9cb953b210ccc8a25bbf35d26bafc
