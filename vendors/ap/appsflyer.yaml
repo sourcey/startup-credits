@@ -1,0 +1,64 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kzjwhn222fh0gy9h21rgr0xa
+slug: appsflyer
+slug_aliases: []
+name: AppsFlyer
+domains:
+  - value: appsflyer.com
+    role: primary
+    valid_from: 2026-08-09T09:09:37.801Z
+category: marketing
+description: AppsFlyer provides mobile marketing measurement, attribution, analytics, deep linking, and campaign optimization tools.
+links:
+  site: https://www.appsflyer.com
+sources:
+  - source_id: src_b44318b708b941f5d224345a80ea0d603ecd61c4623064a5a2c00c042dcb2287
+    url: https://www.appsflyer.com/start/aws/
+programs: []
+offers:
+  - offer_id: off_01kzjwhn2dk4exr6yvyf83d1z4
+    offer_slug: appsflyer-for-aws-activate-startups
+    offer_slug_aliases: []
+    title: AppsFlyer for AWS Activate Startups
+    summary: Eligible AWS Activate startups receive $1,500 of mobile campaign measurement for their first 24,000 conversions, free deep-linking tools for life, and selected add-ons free for 30 days.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-09T09:09:37.801Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: $1,500 of mobile marketing campaign measurement for the first 24,000 conversions
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 150000
+            kind: exact
+        - benefit_id: ben_02
+          description: Deep-linking engagement tools free for life
+          kind: free-service
+          service: AppsFlyer deep-linking engagement tools
+        - benefit_id: ben_03
+          description: Master API, Pivot, Custom Dashboards, and API Access add-ons free for 30 days
+          duration:
+            kind: exact
+            value: P30D
+          kind: free-service
+          service: AppsFlyer selected add-ons
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_requirement_01
+        kind: manual
+        reason: external-verification
+        statement: Must be an AWS Activate Program for Startups member, a new AppsFlyer business opportunity, have received no AppsFlyer quote in the previous six months, and have never been an AppsFlyer customer or received AppsFlyer services.
+    roles:
+      terms_authority_entity_id: ent_01kzjwhn222fh0gy9h21rgr0xa
+      access_operator_entity_id: ent_01kzjwhn222fh0gy9h21rgr0xa
+    access:
+      availability: membership
+      method: form
+      url: https://www.appsflyer.com/start/aws/
+    source_ids:
+      - src_b44318b708b941f5d224345a80ea0d603ecd61c4623064a5a2c00c042dcb2287
