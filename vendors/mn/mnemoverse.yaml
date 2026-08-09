@@ -1,0 +1,79 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kzkp9ezbmggkwbq946q9654w
+slug: mnemoverse
+slug_aliases: []
+name: Mnemoverse
+domains:
+  - value: mnemoverse.com
+    role: primary
+    valid_from: 2026-08-09T16:39:26.000Z
+category: ai-ml
+description: Mnemoverse provides persistent memory infrastructure for AI agents, with an API and MCP server that share memory across tools.
+links:
+  site: https://mnemoverse.com
+sources:
+  - source_id: src_53288b93e158654822e1ad9e39d5ae14d62713dc593defd624799695c4dc4457
+    url: https://mnemoverse.com/startups
+programs:
+  - program_id: prg_01kzkp9ezc2hrb7z40r3jk965k
+    program_slug: mnemoverse-startup-program
+    program_slug_aliases: []
+    title: Mnemoverse Startup Program
+    summary: Mnemoverse's program gives applying early-stage AI-agent startups one month of Team immediately and extends approved teams to six months total.
+    source_ids:
+      - src_53288b93e158654822e1ad9e39d5ae14d62713dc593defd624799695c4dc4457
+offers:
+  - offer_id: off_01kzkp9ezc3ewgcqgqw5b9996j
+    program_id: prg_01kzkp9ezc2hrb7z40r3jk965k
+    offer_slug: one-month-team-up-to-six-months
+    offer_slug_aliases: []
+    title: One month of Team free, extended to six months on approval
+    summary: Applying startups get one month of Mnemoverse Team immediately. Approved teams receive up to six months total, advertised as $894 in value, with hands-on memory design and integration support.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-09T16:39:26.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: One month of Team immediately, extended to six months total for approved startups and advertised as $894 in value
+          duration:
+            kind: up-to
+            value: P6M
+          kind: free-service
+          service: Mnemoverse Team plan
+        - benefit_id: ben_02
+          description: Direct access to the Mnemoverse team plus help designing and integrating persistent memory
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: vendor-discretion
+            statement: The applicant is a pre-seed or seed-stage team, described by Mnemoverse as roughly under $2 million raised or bootstrapped.
+          - criterion_id: cri_02
+            kind: manual
+            reason: external-verification
+            statement: The team is building a real product with AI agents that needs persistent memory across sessions.
+          - criterion_id: cri_03
+            fact: company.is_current_customer
+            kind: predicate
+            operator: eq
+            statement: The team is not currently using a paid Mnemoverse plan.
+            value:
+              type: boolean
+              value: false
+    roles:
+      terms_authority_entity_id: ent_01kzkp9ezbmggkwbq946q9654w
+      access_operator_entity_id: ent_01kzkp9ezbmggkwbq946q9654w
+    access:
+      availability: public
+      instructions: Submit what the team is building, its stage and funding, team size, relevant links, and intended Mnemoverse integrations.
+      method: form
+      url: https://mnemoverse.com/startups
+    terms_url: https://mnemoverse.com/startups
+    source_ids:
+      - src_53288b93e158654822e1ad9e39d5ae14d62713dc593defd624799695c4dc4457
