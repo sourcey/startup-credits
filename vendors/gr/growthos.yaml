@@ -1,0 +1,90 @@
+Exit code: 0
+Wall time: 0.4 seconds
+Output:
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kzm1qxaff4ccbgw29zhxctqa
+slug: growthos
+slug_aliases: []
+name: GrowthOS
+domains:
+  - value: usegrowthos.com
+    role: primary
+    valid_from: 2026-08-09T19:59:46.035Z
+category: marketing
+description: GrowthOS is an organic-growth platform for B2B SaaS teams, combining growth audits, SEO and AI-search work, content delivery, KPI reporting, and Slack approvals.
+links:
+  site: https://www.usegrowthos.com
+sources:
+  - source_id: src_4c0ee6814b9a9079dc96423886b83869b7af0f82efe2a42b10f89cf5386ca18e
+    url: https://www.usegrowthos.com/for-startups
+programs:
+  - program_id: prg_01kzm1qxahkthpvtd67ja8k2p2
+    program_slug: growthos-for-startups
+    program_slug_aliases: []
+    title: GrowthOS for Startups
+    summary: GrowthOS gives qualifying early-stage B2B SaaS startups full platform access at no cost for six months, with no credit card required.
+    source_ids:
+      - src_4c0ee6814b9a9079dc96423886b83869b7af0f82efe2a42b10f89cf5386ca18e
+offers:
+  - offer_id: off_01kzm1qxah7aw3fhh85zz1fwk7
+    program_id: prg_01kzm1qxahkthpvtd67ja8k2p2
+    offer_slug: six-months-free-full-platform-access
+    offer_slug_aliases: []
+    title: Six months free GrowthOS platform access
+    summary: Qualifying early-stage B2B SaaS startups receive full GrowthOS platform access free for six months, without a credit card or lock-in.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-09T19:59:46.035Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_01
+          description: Full GrowthOS platform access at no cost for six months
+          kind: free-service
+          service: GrowthOS platform
+          duration:
+            kind: exact
+            value: P6M
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.business_model
+            kind: predicate
+            operator: eq
+            statement: Applicant is an early-stage B2B SaaS startup.
+            value:
+              type: string
+              value: B2B SaaS
+          - criterion_id: cri_02
+            fact: company.funding_stage
+            kind: predicate
+            operator: in
+            statement: Applicant is at pre-seed, seed, or Series A stage.
+            value:
+              type: string-set
+              values:
+                - pre-seed
+                - seed
+                - Series A
+          - criterion_id: cri_03
+            kind: manual
+            statement: Applicant has a live product and either paying customers or strong early traction.
+            reason: external-verification
+          - criterion_id: cri_04
+            kind: manual
+            statement: Applicant has a founding team that can approve content in Slack.
+            reason: external-verification
+    roles:
+      terms_authority_entity_id: ent_01kzm1qxaff4ccbgw29zhxctqa
+      access_operator_entity_id: ent_01kzm1qxaff4ccbgw29zhxctqa
+    access:
+      availability: public
+      method: form
+      url: https://www.usegrowthos.com/for-startups
+    terms_url: https://www.usegrowthos.com/for-startups
+    source_ids:
+      - src_4c0ee6814b9a9079dc96423886b83869b7af0f82efe2a42b10f89cf5386ca18e
+
