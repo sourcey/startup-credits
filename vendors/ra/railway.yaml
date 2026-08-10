@@ -15,7 +15,7 @@ sources:
   - source_id: src_71f3e6c8b2d948a5a0cf2d1a7b9e4f6c3d5b8a2f1e0c9d4b7a6e5f8c2d1b3a4
     url: https://railway.com/changelog/2024-04-26-startup-program
 programs:
-  - program_id: prg_01k2e2tt0jbnk4p6q7r8s9t0u1
+  - program_id: prg_01k2e2tt0jbnk4p6q7r8s9t0vw
     program_slug: railway-startup-program
     program_slug_aliases: []
     title: Railway Startup Program
@@ -23,7 +23,7 @@ programs:
       - src_71f3e6c8b2d948a5a0cf2d1a7b9e4f6c3d5b8a2f1e0c9d4b7a6e5f8c2d1b3a4
 offers:
   - offer_id: off_01k2e2tt0j1a2b3c4d5e6f7g8h
-    program_id: prg_01k2e2tt0jbnk4p6q7r8s9t0u1
+    program_id: prg_01k2e2tt0jbnk4p6q7r8s9t0vw
     offer_slug: railway-startup-program-credits
     offer_slug_aliases: []
     title: Railway Startup Program Credits
