@@ -1,0 +1,80 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kz5ecprnkxergwvpj19bcn8r
+slug: directus
+slug_aliases: []
+name: Directus
+domains:
+  - value: directus.com
+    role: primary
+    valid_from: 2026-08-04T03:52:54.000Z
+category: devtools-other
+description: Directus can be run self-hosted or on Directus Cloud, a separate managed hosting offering.
+links:
+  site: https://directus.com
+sources:
+  - source_id: src_7c4e5082f8723da8f1b83ef5d597faa4c9373c5caaac66ef4457d506546acdca
+    url: https://directus.com/oig
+  - source_id: src_34c398eebe130630bd895752b0d4590ffdaccc8621bbc0dffd9595f47bf78c66
+    url: https://directus.com/docs/licensing/open-innovation-grant
+programs:
+  - program_id: prg_01kz5ecprqrskdzwp5y9swdbb4
+    program_slug: directus-open-innovation-grant
+    program_slug_aliases: []
+    title: Directus Open Innovation Grant
+    summary: The Open Innovation Grant is Directus's named program giving qualifying organizations free commercial use of self-hosted Directus under a published grant usage agreement.
+    source_ids:
+      - src_7c4e5082f8723da8f1b83ef5d597faa4c9373c5caaac66ef4457d506546acdca
+      - src_34c398eebe130630bd895752b0d4590ffdaccc8621bbc0dffd9595f47bf78c66
+offers:
+  - offer_id: off_01kz5ecprqex26evhyfsc29d0a
+    program_id: prg_01kz5ecprqrskdzwp5y9swdbb4
+    offer_slug: open-innovation-grant-free-directus
+    offer_slug_aliases: []
+    title: Free Directus access for startups under $5M in revenue
+    summary: Directus's Open Innovation Grant gives qualifying startups, non-profits, and small teams under $5M in annual revenue and 50 employees free commercial use of self-hosted Directus for one year, renewable annually.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-04T03:52:54.000Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_01
+          description: Full commercial use of self-hosted Directus, including SSO, custom access policies, and unlimited seats, at no software cost for one year
+          kind: free-service
+          service: Directus self-hosted Open Innovation Grant license
+          duration:
+            kind: exact
+            value: P1Y
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.annual_revenue_usd
+            kind: predicate
+            operator: lt
+            statement: Entity has less than $5 million in annual revenue
+            value:
+              type: number
+              value: 5000000
+          - criterion_id: cri_02
+            fact: company.employee_count
+            kind: predicate
+            operator: lt
+            statement: Entity has fewer than 50 employees
+            value:
+              type: number
+              value: 50
+    roles:
+      terms_authority_entity_id: ent_01kz5ecprnkxergwvpj19bcn8r
+      access_operator_entity_id: ent_01kz5ecprnkxergwvpj19bcn8r
+    access:
+      availability: public
+      method: form
+      url: https://directus.com/oig
+      instructions: Submit the multi-step application form on the Open Innovation Grant page; an approved applicant receives a license key by email.
+    terms_url: https://directus.com/terms/open-innovation-grant
+    source_ids:
+      - src_7c4e5082f8723da8f1b83ef5d597faa4c9373c5caaac66ef4457d506546acdca
+      - src_34c398eebe130630bd895752b0d4590ffdaccc8621bbc0dffd9595f47bf78c66
