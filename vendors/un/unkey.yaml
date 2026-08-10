@@ -1,0 +1,64 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kzpdz5xc2fq4g2wdnxkke1g5
+slug: unkey
+slug_aliases: []
+name: Unkey
+domains:
+  - value: unkey.com
+    role: primary
+    valid_from: 2026-08-10T18:10:00.000Z
+category: auth-security
+description: Unkey provides API key management and authorization infrastructure for software applications.
+links:
+  site: https://www.unkey.com
+sources:
+  - source_id: src_d430d0515fbdcbe4b4d192b77507b6ea597740055adf6523e46983fced6d1121
+    url: https://www.unkey.com/startups
+programs:
+  - program_id: prg_01kzpdz5xc662fqjh39g8mp21v
+    program_slug: unkey-startups-program
+    program_slug_aliases: []
+    title: Unkey Startups Program
+    summary: Monthly credits and hands-on support for eligible startups building with Unkey.
+    source_ids:
+      - src_d430d0515fbdcbe4b4d192b77507b6ea597740055adf6523e46983fced6d1121
+offers:
+  - offer_id: off_01kzpdz5xcs9a3j49vh7tf2nd9
+    program_id: prg_01kzpdz5xc662fqjh39g8mp21v
+    offer_slug: unkey-startups-monthly-credits
+    offer_slug_aliases: []
+    title: $1,000 in monthly Unkey credits
+    summary: Eligible startups receive $1,000 in Unkey credits every month, priority support, concierge onboarding, and hands-on migration assistance.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-10T18:10:00.000Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_primary
+          description: $1,000 in Unkey credits every month
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 100000
+            kind: exact
+        - benefit_id: ben_support
+          description: Priority support, concierge onboarding, and hands-on migration assistance
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Startup eligibility for the monthly-credit program ends after the company has raised $5 million.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01kzpdz5xc2fq4g2wdnxkke1g5
+      access_operator_entity_id: ent_01kzpdz5xc2fq4g2wdnxkke1g5
+    access:
+      availability: public
+      method: form
+      url: https://www.unkey.com/startups
+    source_ids:
+      - src_d430d0515fbdcbe4b4d192b77507b6ea597740055adf6523e46983fced6d1121
