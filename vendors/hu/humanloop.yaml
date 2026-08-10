@@ -1,0 +1,57 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kzpw728t09cgdjp7scv7s0rz
+slug: humanloop
+slug_aliases: []
+name: Humanloop
+domains:
+  - value: humanloop.com
+    role: primary
+    valid_from: 2026-08-10T22:21:51.000Z
+category: observability
+description: Humanloop is an LLM evals platform for enterprises, with prompt management, automated evaluation, and observability to help teams ship AI products with confidence.
+links:
+  site: https://humanloop.com
+  pricing: https://humanloop.com/pricing
+sources:
+  - source_id: src_768d99b08eeee3004c74f4998088aecc76647f8797b50c318c52e66e791753ea
+    url: https://humanloop.com
+  - source_id: src_d196cffa5d65da19223de9fc519eb21ba2e06b310106778f4580c5dc6ee23948
+    url: https://humanloop.com/microsoft-for-startups
+programs: []
+offers:
+  - offer_id: off_01kzpw728wfh5b29px45m38s2d
+    offer_slug: microsoft-for-startups-50-percent-off-humanloop
+    offer_slug_aliases: []
+    title: 50 percent off Humanloop for Microsoft for Startups members
+    summary: Microsoft for Startups Founders Hub members get 50 percent off Humanloop paid subscriptions for 12 months.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-10T22:21:51.000Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_01
+          description: 50 percent discount on Humanloop paid subscriptions for 12 months.
+          duration:
+            kind: exact
+            value: P1Y
+          kind: discount
+          percentage:
+            basis_points: 5000
+            kind: exact
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_01
+        statement: Must be a Microsoft for Startups Founders Hub member.
+        reason: external-verification
+    roles:
+      terms_authority_entity_id: ent_01kzpw728t09cgdjp7scv7s0rz
+      access_operator_entity_id: ent_01kzpw728t09cgdjp7scv7s0rz
+    access:
+      availability: public
+      method: form
+      url: https://humanloop.com/microsoft-for-startups
+    source_ids:
+      - src_d196cffa5d65da19223de9fc519eb21ba2e06b310106778f4580c5dc6ee23948
