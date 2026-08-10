@@ -1,0 +1,56 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01k2e2tt0jv9s0z9g8p3h9w2m4
+slug: railway
+slug_aliases: []
+name: Railway
+domains:
+  - value: railway.com
+    role: primary
+    valid_from: 2026-08-10T22:55:00Z
+category: hosting-infra
+description: Railway is a cloud platform for deploying and operating applications with usage-based infrastructure.
+links:
+  site: https://railway.com
+sources:
+  - source_id: src_71f3e6c8b2d948a5a0cf2d1a7b9e4f6c3d5b8a2f1e0c9d4b7a6e5f8c2d1b3a4
+    url: https://railway.com/changelog/2024-04-26-startup-program
+programs:
+  - program_id: prg_01k2e2tt0jbnk4p6q7r8s9t0u1
+    program_slug: railway-startup-program
+    program_slug_aliases: []
+    title: Railway Startup Program
+    source_ids:
+      - src_71f3e6c8b2d948a5a0cf2d1a7b9e4f6c3d5b8a2f1e0c9d4b7a6e5f8c2d1b3a4
+offers:
+  - offer_id: off_01k2e2tt0j1a2b3c4d5e6f7g8h
+    program_id: prg_01k2e2tt0jbnk4p6q7r8s9t0u1
+    offer_slug: railway-startup-program-credits
+    offer_slug_aliases: []
+    title: Railway Startup Program Credits
+    summary: Railway's startup program offers $5,000 in Railway credits to eligible startups during its announced rollout.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-10T22:55:00Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: $5,000 in Railway credits
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Startup must have $2M to $25M in outside funding, be founded in 2020 or later, and be new to Railway or have spent less than $100.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01k2e2tt0jv9s0z9g8p3h9w2m4
+      access_operator_entity_id: ent_01k2e2tt0jv9s0z9g8p3h9w2m4
+    access:
+      availability: public
+      method: form
+      url: https://railway.com/changelog/2024-04-26-startup-program
+    source_ids:
+      - src_71f3e6c8b2d948a5a0cf2d1a7b9e4f6c3d5b8a2f1e0c9d4b7a6e5f8c2d1b3a4
