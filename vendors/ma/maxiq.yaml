@@ -1,0 +1,60 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kzp6cypg84jjgv52960pnfhs
+slug: maxiq
+slug_aliases: []
+name: MaxIQ
+domains:
+  - value: getmaxiq.com
+    role: primary
+    valid_from: 2026-08-10T15:58:41.000Z
+category: crm-sales
+description: MaxIQ provides an AI revenue platform combining conversation intelligence, forecasting, sales workflow automation, and customer success.
+links:
+  site: https://www.getmaxiq.com
+sources:
+  - source_id: src_044dc925781db2a2d5ae33429394493643b968935383544cb0376811219dd730
+    url: https://www.getmaxiq.com/maxiq-for-startups
+programs:
+  - program_id: prg_01kzp6cypk8c8ay3g1m1bsp8e8
+    program_slug: maxiq-for-startups
+    program_slug_aliases: []
+    title: MaxIQ for Startups
+    summary: MaxIQ's startup program gives eligible early-stage companies free access to its Revenue AI platform for 12 months.
+    source_ids:
+      - src_044dc925781db2a2d5ae33429394493643b968935383544cb0376811219dd730
+offers:
+  - offer_id: off_01kzp6cypksq2we5vpv4es7bg7
+    program_id: prg_01kzp6cypk8c8ay3g1m1bsp8e8
+    offer_slug: 12-months-free-maxiq-revenue-ai
+    offer_slug_aliases: []
+    title: 12 months free of MaxIQ Revenue AI
+    summary: Eligible early-stage startups get 12 months of free access to MaxIQ's Revenue AI platform with no seat limits during the program.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-10T15:58:41.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 12 months of free access to MaxIQ Revenue AI, including InspectIQ, ForecastIQ, EchoIQ, and SuccessIQ, with no seat limits during the program.
+          duration:
+            kind: exact
+            value: P1Y
+          kind: free-service
+          service: MaxIQ Revenue AI platform
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: MaxIQ reviews early-stage startups that are building or scaling their go-to-market motion, typically pre-seed through Series A with lean sales and success teams and an active CRM environment.
+    roles:
+      terms_authority_entity_id: ent_01kzp6cypg84jjgv52960pnfhs
+      access_operator_entity_id: ent_01kzp6cypg84jjgv52960pnfhs
+    access:
+      availability: public
+      method: form
+      url: https://www.getmaxiq.com/maxiq-for-startups
+    source_ids:
+      - src_044dc925781db2a2d5ae33429394493643b968935383544cb0376811219dd730
