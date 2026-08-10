@@ -1,0 +1,65 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kzn77epmx2f0vgz4qn1sxd1m
+slug: dub
+slug_aliases: []
+name: Dub
+domains:
+  - value: dub.co
+    role: primary
+    valid_from: 2026-08-10T00:00:00.000Z
+category: marketing
+description: Dub is a link attribution and partner program platform for creating referral and affiliate programs with reward structures, global payouts, and real-time analytics.
+links:
+  site: https://dub.co
+sources:
+  - source_id: src_a5895211b30eba2e607bdbbd14e4b0395b0e39fe98343294f722063cb25cb109
+    url: https://dub.co/startups
+programs:
+  - program_id: prg_01kzn77eps5bxa66h7c0pdhngp
+    program_slug: dub-startups
+    title: Dub Startups
+    summary: Program for early-stage teams launching partner-led growth, offering discounted access to Dub's Advanced plan for the first two years.
+    source_ids:
+      - src_a5895211b30eba2e607bdbbd14e4b0395b0e39fe98343294f722063cb25cb109
+offers:
+  - offer_id: off_01kzn77eps0vee564xxgawzsh0
+    offer_slug: dub-startups-first-year-discount
+    offer_slug_aliases: []
+    title: Dub Startups 50% Off First Year of Advanced Plan
+    summary: Eligible startups get 50% off their first year of Dub's Advanced plan (partner program tooling with $15K monthly partner payouts, reward structures, analytics, API), followed by 25% off the second year.
+    program_id: prg_01kzn77eps5bxa66h7c0pdhngp
+    lifecycle:
+      status: active
+      effective_from: 2026-08-10T00:00:00.000Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: 50% discount on the first year of the Advanced plan
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 5000
+        - benefit_id: ben_secondary
+          description: 25% discount on the second year of the Advanced plan
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 2500
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be founded less than 5 years ago, have fewer than 15 employees, have a team member to own the partner program, and not currently be a Dub customer (current customers reviewed case by case).
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01kzn77epmx2f0vgz4qn1sxd1m
+      access_operator_entity_id: ent_01kzn77epmx2f0vgz4qn1sxd1m
+    access:
+      availability: public
+      method: form
+      url: https://dub.co/startups
+    source_ids:
+      - src_a5895211b30eba2e607bdbbd14e4b0395b0e39fe98343294f722063cb25cb109
