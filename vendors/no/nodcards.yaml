@@ -1,0 +1,61 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kzps2eq3v3hnkjf5h4mn0636
+slug: nodcards
+slug_aliases: []
+name: NodCards
+domains:
+  - value: nodcards.com
+    role: primary
+    valid_from: 2026-08-10T21:25:53.624Z
+category: design
+description: NodCards provides a digital branding platform for team digital business cards, email signatures, branded sharing links, and printable branded assets.
+links:
+  site: https://www.nodcards.com
+sources:
+  - source_id: src_08c586f82933409a24a3dcba2aca9dc79d5026a68f837dba731f6345df17806d
+    url: https://www.nodcards.com/startup
+programs:
+  - program_id: prg_01kzps2eq6ftfdcrb9zvt1qg7b
+    program_slug: nodcards-startup-program
+    program_slug_aliases: []
+    title: NodCards Startup Program
+    summary: NodCards gives approved qualifying startups a three-month free subscription to its digital branding platform.
+    source_ids:
+      - src_08c586f82933409a24a3dcba2aca9dc79d5026a68f837dba731f6345df17806d
+offers:
+  - offer_id: off_01kzps2eq6503stk0twdqpjjqr
+    program_id: prg_01kzps2eq6ftfdcrb9zvt1qg7b
+    offer_slug: three-months-free-digital-branding
+    offer_slug_aliases: []
+    title: Three Months Free on NodCards
+    summary: Approved qualifying startups receive a NodCards digital branding subscription for their team at no cost for three months.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-10T21:25:53.624Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_01
+          description: Three months of a NodCards digital branding subscription at no cost
+          kind: free-service
+          service: NodCards digital branding subscription
+          duration:
+            kind: exact
+            value: P3M
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Applicant must be a qualifying startup and receive approval through the public NodCards startup program form.
+    roles:
+      terms_authority_entity_id: ent_01kzps2eq3v3hnkjf5h4mn0636
+      access_operator_entity_id: ent_01kzps2eq3v3hnkjf5h4mn0636
+    access:
+      availability: public
+      method: form
+      url: https://www.nodcards.com/startup
+    terms_url: https://www.nodcards.com/startup
+    source_ids:
+      - src_08c586f82933409a24a3dcba2aca9dc79d5026a68f837dba731f6345df17806d
