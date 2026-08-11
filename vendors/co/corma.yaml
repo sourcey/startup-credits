@@ -1,0 +1,64 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kzqt48eg327133wmcqhtjkme
+slug: corma
+slug_aliases: []
+name: Corma
+domains:
+  - value: corma.io
+    role: primary
+    valid_from: 2026-08-11T07:03:36.000Z
+category: auth-security
+description: Corma automates SaaS license, access, seat, spend, and governance management for technology, finance, HR, and security teams.
+links:
+  site: https://www.corma.io
+sources:
+  - source_id: src_82f8cef5e1c70e98c4b396ecf02c607e2fa83195507e085c07571d1332f3b68e
+    url: https://www.corma.io/saas-management-for-startups
+programs: []
+offers:
+  - offer_id: off_01kzqt48ejxsjrgne3k84arpkh
+    offer_slug: corma-startup-plan
+    offer_slug_aliases: []
+    title: Corma Startup Plan
+    summary: Startups with fewer than 50 users can receive up to 50% off all Corma plans.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-11T07:03:36.000Z
+    economics:
+      benefits:
+        - applies_to: All Corma plans
+          benefit_id: ben_01
+          description: Up to 50% off all Corma plans
+          kind: discount
+          percentage:
+            basis_points: 5000
+            kind: up-to
+      consideration:
+        kind: variable
+        description: Purchase an eligible Corma subscription under the startup plan.
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: external-verification
+            statement: Applicant is a startup.
+          - criterion_id: cri_02
+            fact: company.user_count
+            kind: predicate
+            operator: lt
+            statement: Startup has fewer than 50 users.
+            value:
+              type: number
+              value: 50
+    roles:
+      terms_authority_entity_id: ent_01kzqt48eg327133wmcqhtjkme
+      access_operator_entity_id: ent_01kzqt48eg327133wmcqhtjkme
+    access:
+      availability: public
+      method: form
+      url: https://tally.so/r/mOY8aY
+    terms_url: https://www.corma.io/saas-management-for-startups
+    source_ids:
+      - src_82f8cef5e1c70e98c4b396ecf02c607e2fa83195507e085c07571d1332f3b68e
