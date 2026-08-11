@@ -1,0 +1,66 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kzq5wjeg0f5x00b5xwyjv516
+slug: massdriver
+slug_aliases: []
+name: Massdriver
+domains:
+  - value: massdriver.cloud
+    role: primary
+    valid_from: 2026-08-11T01:10:09.000Z
+category: hosting-infra
+description: Massdriver is a cloud infrastructure orchestration platform that lets teams bundle infrastructure as code, policy, and workflow into a self-service internal developer platform.
+links:
+  site: https://www.massdriver.cloud
+  pricing: https://www.massdriver.cloud/pricing
+sources:
+  - source_id: src_336ba78a034bbe518824780cebf05a6378944e101ec737089f5f183db8f1bbeb
+    url: https://www.massdriver.cloud
+  - source_id: src_1e6b7f4fb9c6cf20186d79f479efed0a59a63365bef06a2cd166b7033c3c30bb
+    url: https://www.massdriver.cloud/partners/microsoft-for-startups
+programs: []
+offers:
+  - offer_id: off_01kzq5wjejp49hsnhephpx2xx8
+    offer_slug: microsoft-for-startups-massdriver-discount
+    offer_slug_aliases: []
+    title: Discounted Massdriver plans for Microsoft for Startups members
+    summary: Microsoft for Startups Founders Hub members get 30 percent off Massdriver seats on plans under 60 seats and 50 percent off self-hosted Massdriver, both for one year.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-11T01:10:09.000Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_01
+          description: 30 percent discount on Massdriver seats for plans with fewer than 60 seats, for one year.
+          duration:
+            kind: exact
+            value: P1Y
+          kind: discount
+          percentage:
+            basis_points: 3000
+            kind: exact
+        - benefit_id: ben_02
+          description: 50 percent discount on the self-hosted version of Massdriver, for the first year.
+          duration:
+            kind: exact
+            value: P1Y
+          kind: discount
+          percentage:
+            basis_points: 5000
+            kind: exact
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_01
+        statement: Must be a Microsoft for Startups Founders Hub member and a new paying Massdriver customer, redeeming with the same email used to create the Massdriver account.
+        reason: external-verification
+    roles:
+      terms_authority_entity_id: ent_01kzq5wjeg0f5x00b5xwyjv516
+      access_operator_entity_id: ent_01kzq5wjeg0f5x00b5xwyjv516
+    access:
+      availability: public
+      method: form
+      url: https://www.massdriver.cloud/partners/microsoft-for-startups
+    source_ids:
+      - src_1e6b7f4fb9c6cf20186d79f479efed0a59a63365bef06a2cd166b7033c3c30bb
