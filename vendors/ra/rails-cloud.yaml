@@ -1,0 +1,57 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kzrrn3jwd8jn3h2f948t8cpt
+slug: rails-cloud
+slug_aliases: []
+name: Rails Cloud
+domains:
+  - value: railscloud.co
+    role: primary
+    valid_from: 2026-08-11T15:57:18.780Z
+category: hosting-infra
+description: Rails Cloud is Rails Net's infrastructure platform for VPS, managed databases, object storage, APIs, container workloads, and AI services in Africa.
+links:
+  site: https://railscloud.co/
+sources:
+  - source_id: src_88f9c0d455abfd28e75a355f78bf65eac18a7abe17b9187788ffeb69d0b9cb09
+    url: https://railscloud.co/
+  - source_id: src_a2d524b63a1920f03b967d2a03e618d9f5ba9f2350f9d94541e1a7da6b8564ea
+    url: https://pages.railscloud.co/startup
+programs:
+  - program_id: prg_01kzrrn3k1tkbsdv7dbkwrt571
+    program_slug: rails-cloud-startup-program
+    program_slug_aliases: []
+    title: Rails Cloud Startup Program
+    source_ids:
+      - src_a2d524b63a1920f03b967d2a03e618d9f5ba9f2350f9d94541e1a7da6b8564ea
+offers:
+  - offer_id: off_01kzrrn3k10sapgs84kp4zghee
+    program_id: prg_01kzrrn3k1tkbsdv7dbkwrt571
+    offer_slug: rails-cloud-startup-seed
+    offer_slug_aliases: []
+    title: Rails Cloud Startup Program - Seed
+    summary: Provides $1,000 in Rails Cloud credits, valid for 12 months, for pre-product technology startups serving African markets, with access across cloud infrastructure services.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-11T15:57:18.780Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_primary
+          description: $1,000 in cloud credits valid for 12 months
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Applicant must be new to Rails Cloud, be less than five years old, build a technology product serving African markets, have no other active cloud credits, and be a pre-product startup with a clear idea and founding team.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01kzrrn3jwd8jn3h2f948t8cpt
+      access_operator_entity_id: ent_01kzrrn3jwd8jn3h2f948t8cpt
+    access:
+      availability: public
+      method: form
+      url: https://pages.railscloud.co/register
+    source_ids:
+      - src_a2d524b63a1920f03b967d2a03e618d9f5ba9f2350f9d94541e1a7da6b8564ea
