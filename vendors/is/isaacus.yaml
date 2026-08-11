@@ -32,9 +32,17 @@ offers:
         - benefit_id: ben_api_credits
           description: US$5,000 in API credits for the first four months
           kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 500000
+            kind: exact
         - benefit_id: ben_usage_discount
           description: 50% discount on model usage for the first twelve months
           kind: discount
+          percentage:
+            basis_points: 5000
+            kind: exact
         - benefit_id: ben_priority_support
           description: One year of priority technical support
           kind: other
