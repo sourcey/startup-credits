@@ -1,0 +1,55 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kzrnway7v95epsk07w39s1ac
+slug: isaacus
+slug_aliases: []
+name: Isaacus
+domains:
+  - value: isaacus.com
+    role: primary
+    valid_from: 2026-08-11T15:00:00.000Z
+category: ai-ml
+description: Isaacus develops legal AI models and APIs for embedding, reranking, enrichment, extraction, classification, and legal research applications.
+links:
+  site: https://isaacus.com
+sources:
+  - source_id: src_d66e02fb596781957591e510d282266c0a3f463a7d9b0896cf08c987c658243b
+    url: https://isaacus.com/startups
+programs: []
+offers:
+  - offer_id: off_01kzrnway7bayhfenbwaha0dt8
+    offer_slug: isaacus-startup-program
+    offer_slug_aliases: []
+    title: Isaacus Startup Program
+    summary: Eligible legal-tech startups receive $5,000 in API credits for four months, 50% off model usage for 12 months, and one year of priority technical support.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-11T15:00:00.000Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_api_credits
+          description: US$5,000 in API credits for the first four months
+          kind: credit
+        - benefit_id: ben_usage_discount
+          description: 50% discount on model usage for the first twelve months
+          kind: discount
+        - benefit_id: ben_priority_support
+          description: One year of priority technical support
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Legal-tech startups must operate from a supported country, be under 2 years old, have under $10M funding, under $2M ARR, fewer than 100 employees, meet ownership and industry restrictions, and satisfy prior-credit and account-age limits.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01kzrnway7v95epsk07w39s1ac
+      access_operator_entity_id: ent_01kzrnway7v95epsk07w39s1ac
+    access:
+      availability: public
+      method: form
+      url: https://isaacus.com/startups
+    source_ids:
+      - src_d66e02fb596781957591e510d282266c0a3f463a7d9b0896cf08c987c658243b
