@@ -1,0 +1,81 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kzqymchke7ffbq8r6w4gw6j2
+slug: useloyalty
+slug_aliases: []
+name: UseLoyalty
+domains:
+  - value: useloyalty.app
+    role: primary
+    valid_from: 2026-08-11T08:22:48.460Z
+category: marketing
+description: UseLoyalty is a loyalty platform for rewards, referrals, tiers, badges, quests, and status-driven customer engagement.
+links:
+  site: https://www.useloyalty.app
+sources:
+  - source_id: src_15f30e8744062cd5805b4ba4374e0dc437c284ddcc0b97034b04b6cf57c5b012
+    url: https://www.useloyalty.app/startup-program
+programs:
+  - program_id: prg_01kzqymchp5x09vschjx0bweg2
+    program_slug: useloyalty-startup-program
+    program_slug_aliases: []
+    title: UseLoyalty Startup Program
+    summary: UseLoyalty gives eligible startups 30% off a selected paid plan for the first 12 months after approval.
+    source_ids:
+      - src_15f30e8744062cd5805b4ba4374e0dc437c284ddcc0b97034b04b6cf57c5b012
+offers:
+  - offer_id: off_01kzqymchpkejeg4ngzemnk6q9
+    program_id: prg_01kzqymchp5x09vschjx0bweg2
+    offer_slug: useloyalty-startup-program-30-percent-off
+    offer_slug_aliases: []
+    title: 30% Off UseLoyalty for 12 Months
+    summary: Approved startups receive 30% off their selected UseLoyalty paid plan for the first year.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-11T08:22:48.460Z
+    economics:
+      benefits:
+        - applies_to: selected UseLoyalty paid plan
+          benefit_id: ben_01
+          description: 30% off a selected UseLoyalty paid plan for the first 12 months after approval
+          duration:
+            kind: exact
+            value: P1Y
+          kind: discount
+          percentage:
+            basis_points: 3000
+            kind: exact
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: external-verification
+            statement: The applicant is an early-stage startup, bootstrapped team, or founder-led business
+          - criterion_id: cri_02
+            kind: manual
+            reason: external-verification
+            statement: The team is launching or improving a customer loyalty, referral, or retention program
+          - criterion_id: cri_03
+            fact: company.is_current_customer
+            kind: predicate
+            operator: eq
+            statement: The applicant is a new UseLoyalty customer or is moving from a manual loyalty workflow
+            value:
+              type: boolean
+              value: false
+          - criterion_id: cri_04
+            kind: manual
+            reason: external-verification
+            statement: The business can share basic startup context during signup or review
+    roles:
+      terms_authority_entity_id: ent_01kzqymchke7ffbq8r6w4gw6j2
+      access_operator_entity_id: ent_01kzqymchke7ffbq8r6w4gw6j2
+    access:
+      availability: public
+      method: form
+      url: https://www.useloyalty.app/contact
+    source_ids:
+      - src_15f30e8744062cd5805b4ba4374e0dc437c284ddcc0b97034b04b6cf57c5b012
