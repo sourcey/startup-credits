@@ -1,0 +1,51 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_0101kzqqwg71qj3v5vrd7gkf5260
+slug: humanloop
+slug_aliases: []
+name: Humanloop
+domains:
+  - value: humanloop.com
+    role: primary
+    valid_from: 2026-08-11T06:24:16.000Z
+category: ai-ml
+description: Humanloop is an AI platform for prompt evaluation, monitoring, and improvement that helps teams build better LLM-powered applications.
+links:
+  site: https://humanloop.com
+sources:
+  - source_id: src_237ecea8b319d9dd4c7176fc7c9ed37ae4ac18678f0138a0030e6867ef13807d
+    url: https://humanloop.com/microsoft-for-startups
+programs: []
+offers:
+  - offer_id: off_0101kzqqwg710t0xez2b4nacxx7p
+    offer_slug: humanloop-microsoft-for-startups
+    offer_slug_aliases: []
+    title: 50% off Humanloop paid subscriptions for 12 months
+    summary: Microsoft for Startups Founders Hub members receive 50% off Humanloop paid subscriptions for 12 months.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-11T06:24:16.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_primary
+          description: 50% off Humanloop paid subscriptions for 12 months.
+          kind: discount
+          percentage:
+            basis_points: 5000
+            kind: exact
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Applicant must be a member of Microsoft for Startups Founders Hub.
+        reason: external-verification
+    roles:
+      terms_authority_entity_id: ent_0101kzqqwg71qj3v5vrd7gkf5260
+      access_operator_entity_id: ent_0101kzqqwg71qj3v5vrd7gkf5260
+    access:
+      availability: public
+      method: link
+      url: https://humanloop.com/microsoft-for-startups
+    source_ids:
+      - src_237ecea8b319d9dd4c7176fc7c9ed37ae4ac18678f0138a0030e6867ef13807d
