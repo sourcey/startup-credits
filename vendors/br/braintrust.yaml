@@ -42,7 +42,7 @@ offers:
     economics:
       benefits:
         - benefit_id: ben_01
-          description: Six months of Pro, extended to 12 months total only for partner-VC startups at Series A or earlier; Pro is $249 USD/month and includes $249 monthly model credits, 5 GB data, 50,000 scores, and 30-day retention
+          description: Six months of Pro, extended to 12 months total only for partner-VC startups at Series A or earlier; Pro includes $249 monthly model credits, 5 GB data, 50,000 scores, and 30-day retention.
           duration:
             kind: up-to
             value: P1Y
@@ -56,7 +56,7 @@ offers:
           kind: other
       consideration:
         kind: variable
-        description: No Pro platform fee applies during the awarded six or twelve months; usage above Pro's included model credits, processed data, scores, or retention allowances can incur Braintrust's published overage charges.
+        description: Additional usage beyond Pro's included limits is billed at Braintrust's published usage rates.
     eligibility:
       rule:
         kind: all
@@ -92,10 +92,6 @@ offers:
             kind: manual
             reason: vendor-discretion
             statement: Applications are reviewed and approved by Braintrust on a rolling basis.
-          - criterion_id: cri_05
-            kind: manual
-            reason: external-verification
-            statement: The applicant must be at least 18 years old or the age of legal majority and able to enter a binding agreement.
     roles:
       terms_authority_entity_id: ent_01kz21fhdyy01wfsztv2xp8avc
       access_operator_entity_id: ent_01kz21fhdyy01wfsztv2xp8avc
