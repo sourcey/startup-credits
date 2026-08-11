@@ -1,0 +1,58 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kzq1n62dcc9wd622h1cr38zt
+slug: weights-biases
+slug_aliases:
+  - wandb
+name: Weights and Biases
+domains:
+  - value: wandb.ai
+    role: primary
+    valid_from: 2026-08-10T23:56:00.000Z
+category: observability
+description: Weights and Biases is an AI developer platform for experiment tracking, evaluations, and observability, helping teams build, fine-tune, and monitor machine learning and AI applications.
+links:
+  site: https://wandb.ai
+  pricing: https://wandb.ai/site/pricing/
+sources:
+  - source_id: src_66449b3706b845b3758412ed8ba08a4bbe3cb025f02b4dab0ee82e2cb91230d3
+    url: https://wandb.ai/site
+  - source_id: src_dc64b75feec4975fa37e4bf942a452dd652567bb45385a78dd08169086421500
+    url: https://wandb.ai/site/partners/azure/microsoft-for-startups/
+programs: []
+offers:
+  - offer_id: off_01kzq1n62fr0m95y7cqsrrvbye
+    offer_slug: microsoft-for-startups-50-percent-off-weights-biases-pro
+    offer_slug_aliases: []
+    title: 50 percent off Weights and Biases Pro plan for Microsoft for Startups members
+    summary: Microsoft for Startups Founders Hub members can get 50 percent off the Weights and Biases Pro plan for one year, an offer valued at 3000 USD, for new customers only.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-10T23:56:00.000Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_01
+          description: 50 percent discount on the Weights and Biases Pro plan for one year, an offer valued at 3000 USD.
+          duration:
+            kind: exact
+            value: P1Y
+          kind: discount
+          percentage:
+            basis_points: 5000
+            kind: exact
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_01
+        statement: Must be a Microsoft for Startups Founders Hub member and a new Weights and Biases customer.
+        reason: external-verification
+    roles:
+      terms_authority_entity_id: ent_01kzq1n62dcc9wd622h1cr38zt
+      access_operator_entity_id: ent_01kzq1n62dcc9wd622h1cr38zt
+    access:
+      availability: public
+      method: form
+      url: https://wandb.ai/site/partners/azure/microsoft-for-startups/
+    source_ids:
+      - src_dc64b75feec4975fa37e4bf942a452dd652567bb45385a78dd08169086421500
