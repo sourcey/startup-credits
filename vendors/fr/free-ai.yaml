@@ -21,7 +21,7 @@ programs:
     program_slug: free-ai-startup-credits
     program_slug_aliases: []
     title: Free.ai Startup Credits
-    summary: Early-stage startups can apply for credits across Free.ai's AI tools and API, with access to hundreds of models and priority support.
+    summary: Early-stage startups can apply for credits across Free.ai's AI tools and API, with access to 346+ models and priority support.
     source_ids:
       - src_f5c8306a53669fcbab9c6c3ddf42a63293bade6d5c9a76e611ee2cf79ca25702
       - src_42bdf71ff3137ef3e415951e694280daaafcb364925a09634ce442ce11068568
