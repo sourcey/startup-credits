@@ -1,0 +1,57 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_87m5bpp01h2jt401ge1magh0xf
+slug: cloudinary
+slug_aliases: []
+name: Cloudinary
+domains:
+  - value: cloudinary.com
+    role: primary
+    valid_from: 2026-08-11T13:48:00.000Z
+category: hosting-infra
+description: Cloudinary is a cloud platform for managing, transforming, optimizing, and delivering images and video.
+links:
+  site: https://cloudinary.com/
+sources:
+  - source_id: src_450b31149fa44ac9aaa8f3d4
+    url: https://cloudinary.com/solutions/cloudinary-for-startups
+programs:
+  - program_id: prg_aj1eqvv46962f4dxxzy8861aep
+    program_slug: cloudinary-for-startups
+    program_slug_aliases: []
+    title: Cloudinary for Startups
+    summary: Cloudinary offers startup-specific plans and credits intended to help early-stage companies manage and deliver visual media.
+    source_ids:
+      - src_450b31149fa44ac9aaa8f3d4
+offers:
+  - offer_id: off_eez4d27hq65bj2fbne6nt3v7ve
+    program_id: prg_aj1eqvv46962f4dxxzy8861aep
+    offer_slug: cloudinary-for-startups
+    offer_slug_aliases: []
+    title: Cloudinary for Startups
+    summary: Startup-specific Cloudinary plans with exclusive credits for eligible early-stage companies; public terms do not state a fixed credit amount.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-11T13:48:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Exclusive Cloudinary credits; the public program page does not state a fixed amount.
+          kind: other
+      consideration:
+        kind: unknown
+        description: The public program page does not establish separate consideration for receiving the startup offer.
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: not-machine-evaluable
+        statement: Intended for eligible early-stage companies; Cloudinary evaluates access through its startup contact process.
+    roles:
+      terms_authority_entity_id: ent_87m5bpp01h2jt401ge1magh0xf
+      access_operator_entity_id: ent_87m5bpp01h2jt401ge1magh0xf
+    access:
+      availability: public
+      method: form
+      url: https://cloudinary.com/solutions/cloudinary-for-startups
+    source_ids:
+      - src_450b31149fa44ac9aaa8f3d4
