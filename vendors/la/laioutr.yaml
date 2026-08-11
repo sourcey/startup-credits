@@ -7,7 +7,7 @@ domains:
   - value: laioutr.com
     role: primary
     valid_from: 2026-08-02T19:53:00Z
-category: no-code
+category: devtools-other
 description: Laioutr is a frontend management platform for designing, integrating, hosting, and operating websites and digital storefronts.
 links:
   site: https://www.laioutr.com
@@ -31,6 +31,7 @@ offers:
     offer_slug_aliases: []
     title: Twelve months free for eligible Laioutr startups
     summary: Eligible partner-backed startups with fewer than 20 employees, under $5 million USD raised, and no current paid Laioutr plan receive 12 months free access to the complete Frontend Management Platform.
+    description: After the free year, Laioutr says it will send a reminder before the startup decides how to proceed with a regular plan.
     lifecycle:
       status: active
       effective_from: 2026-08-02T19:53:00Z
@@ -45,7 +46,7 @@ offers:
           service: Laioutr Frontend Management Platform
       consideration:
         kind: variable
-        description: No subscription fee applies for 12 months, but Laioutr's terms allow reimbursement of documented pass-through infrastructure costs above included usage; after the year, Laioutr says it will remind the startup before it chooses whether to move to a regular plan.
+        description: Documented pass-through infrastructure costs above included plan usage may be reimbursable under Laioutr's terms.
     eligibility:
       rule:
         kind: all
@@ -78,10 +79,6 @@ offers:
             kind: manual
             reason: external-verification
             statement: Applicant must belong to the portfolio of a participating Laioutr VC or accelerator partner.
-          - criterion_id: cri_05
-            kind: manual
-            reason: external-verification
-            statement: Account registrant must be at least 18 years old or otherwise legally competent to enter a binding contract.
     roles:
       terms_authority_entity_id: ent_01kz20cfp3kcpzba17jex86shc
       access_operator_entity_id: ent_01kz20cfp3kcpzba17jex86shc
