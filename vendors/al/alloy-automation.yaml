@@ -7,7 +7,7 @@ domains:
   - value: runalloy.com
     role: primary
     valid_from: 2026-08-11T08:02:52.000Z
-category: no-code
+category: apis-integration
 description: Alloy Automation provides an enterprise-grade integration platform for AI agents, embedded integrations, and connectivity APIs.
 links:
   site: https://runalloy.com
