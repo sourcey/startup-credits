@@ -1,0 +1,79 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kzqy1626jfyj7xhsh3jb9hyq
+slug: deutsche-telekom
+slug_aliases: []
+name: Deutsche Telekom
+domains:
+  - value: telekom.com
+    role: primary
+    valid_from: 2026-08-11T08:11:40.000Z
+category: communication
+description: Deutsche Telekom provides telecommunications and information technology products and services for connected life and work.
+links:
+  site: https://www.telekom.com/en
+sources:
+  - source_id: src_41de4efa0e3c1f536f8fc29f8852baa4cbf7309acb4fe489e7001c088738c7da
+    url: https://techboost.telekom.com/public/startups?lang=en
+  - source_id: src_b828d585aac6b2ed5fff01deace602e515d8f33c42e8ce1e741b539fc21f634b
+    url: https://techboost.telekom.com/public/apply?lang=en
+programs:
+  - program_id: prg_01kzqy1627wrdhkwe6ytpp5pyt
+    program_slug: techboost
+    program_slug_aliases: []
+    title: TechBoost
+    summary: Deutsche Telekom's 12-month startup program combines cloud and API credits with infrastructure guidance, customer challenges, sales access, and communications support.
+    source_ids:
+      - src_41de4efa0e3c1f536f8fc29f8852baa4cbf7309acb4fe489e7001c088738c7da
+offers:
+  - offer_id: off_01kzqy1627esy8gamd28azwz6e
+    program_id: prg_01kzqy1627wrdhkwe6ytpp5pyt
+    offer_slug: techboost-startup-benefits
+    offer_slug_aliases: []
+    title: TechBoost startup benefits
+    summary: Market-ready, cloud-connected B2B startups can receive up to €100,000 in T Cloud Public credits and €10,000 in Magenta Business API starting credits, plus customer access and support.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-11T08:11:40.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to €100,000 in T Cloud Public credits with a dedicated cloud architect
+          kind: credit
+          value:
+            amount:
+              currency: EUR
+              minor_units: 10000000
+            kind: up-to
+        - benefit_id: ben_02
+          description: €10,000 in Magenta Business API starting credits with a dedicated technical contact and sales support
+          kind: credit
+          value:
+            amount:
+              currency: EUR
+              minor_units: 1000000
+            kind: exact
+        - benefit_id: ben_03
+          description: Access to customer digitalization challenges, innovation workshops, and TechBoost matchmaking
+          kind: other
+        - benefit_id: ben_04
+          description: Promotion through the TechBoost LinkedIn channel and internal Deutsche Telekom platforms
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_01
+        statement: Applicant is a founded and commercially registered startup with a cloud-connected business model, a marketable solution, and initial B2B customers and sales.
+        reason: external-verification
+    roles:
+      terms_authority_entity_id: ent_01kzqy1626jfyj7xhsh3jb9hyq
+      access_operator_entity_id: ent_01kzqy1626jfyj7xhsh3jb9hyq
+    access:
+      availability: public
+      method: form
+      url: https://techboost.telekom.com/public/apply
+    terms_url: https://techboost.telekom.com/public/startups?lang=en
+    source_ids:
+      - src_41de4efa0e3c1f536f8fc29f8852baa4cbf7309acb4fe489e7001c088738c7da
+      - src_b828d585aac6b2ed5fff01deace602e515d8f33c42e8ce1e741b539fc21f634b
