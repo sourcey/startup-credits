@@ -1,0 +1,67 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kzqh8vxernbpsyxw6j78fjsy
+slug: free-ai
+slug_aliases: []
+name: Free.ai
+domains:
+  - value: free.ai
+    role: primary
+    valid_from: 2026-03-25T00:00:00Z
+category: ai-ml
+description: Free.ai provides AI tools, model access, and APIs for chat, images, speech, translation, coding, and other workflows.
+links:
+  site: https://free.ai
+sources:
+  - source_id: src_f5c8306a53669fcbab9c6c3ddf42a63293bade6d5c9a76e611ee2cf79ca25702
+    url: https://free.ai/startup/
+  - source_id: src_42bdf71ff3137ef3e415951e694280daaafcb364925a09634ce442ce11068568
+    url: https://free.ai/terms/
+programs:
+  - program_id: prg_01kzqh8vxewwg4ykbnnh4sjjj6
+    program_slug: free-ai-startup-credits
+    program_slug_aliases: []
+    title: Free.ai Startup Credits
+    summary: Early-stage startups can apply for credits across Free.ai's AI tools and API, with access to hundreds of models and priority support.
+    source_ids:
+      - src_f5c8306a53669fcbab9c6c3ddf42a63293bade6d5c9a76e611ee2cf79ca25702
+      - src_42bdf71ff3137ef3e415951e694280daaafcb364925a09634ce442ce11068568
+offers:
+  - offer_id: off_01kzqh8vxe30m96n0wsw3ky8z2
+    program_id: prg_01kzqh8vxewwg4ykbnnh4sjjj6
+    offer_slug: free-ai-startup-credits
+    offer_slug_aliases: []
+    title: Free.ai Startup Credits and API Access
+    summary: Accepted early-stage startups receive credits for Free.ai tools and API usage, access to 346+ models, and priority support; the credit amount varies by stage and planned usage.
+    lifecycle:
+      status: active
+      effective_from: 2026-03-25T00:00:00Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Startup credits for 200+ AI tools and the Free.ai API; the amount varies by startup stage and planned usage.
+          kind: other
+        - benefit_id: ben_02
+          description: Access to 346+ models, including self-hosted and external models.
+          kind: other
+        - benefit_id: ben_03
+          description: Priority email support and integration guidance for accepted startups.
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        reason: not-machine-evaluable
+        statement: Company is less than three years old, has less than $5 million in total funding, has a working product or prototype, and is not currently on a paid Free.ai plan.
+    roles:
+      terms_authority_entity_id: ent_01kzqh8vxernbpsyxw6j78fjsy
+      access_operator_entity_id: ent_01kzqh8vxernbpsyxw6j78fjsy
+    access:
+      availability: public
+      method: form
+      url: https://free.ai/startup/
+    terms_url: https://free.ai/terms/
+    source_ids:
+      - src_f5c8306a53669fcbab9c6c3ddf42a63293bade6d5c9a76e611ee2cf79ca25702
+      - src_42bdf71ff3137ef3e415951e694280daaafcb364925a09634ce442ce11068568
