@@ -2,13 +2,13 @@ schema_version: sourcey.vendor-authoring/v1alpha1
 entity_id: ent_01kzqy1626jfyj7xhsh3jb9hyq
 slug: deutsche-telekom
 slug_aliases: []
-name: Deutsche Telekom
+name: Telekom Deutschland GmbH
 domains:
   - value: telekom.com
     role: primary
     valid_from: 2026-08-11T08:11:40.000Z
 category: communication
-description: Deutsche Telekom provides telecommunications and information technology products and services for connected life and work.
+description: Telekom Deutschland GmbH is the telecommunications operator behind the TechBoost startup program.
 links:
   site: https://www.telekom.com/en
 sources:
@@ -21,7 +21,7 @@ programs:
     program_slug: techboost
     program_slug_aliases: []
     title: TechBoost
-    summary: Deutsche Telekom's 12-month startup program combines cloud and API credits with infrastructure guidance, customer challenges, sales access, and communications support.
+    summary: The 12-month TechBoost startup program combines cloud and API credits with infrastructure guidance, customer challenges, sales access, and communications support.
     source_ids:
       - src_41de4efa0e3c1f536f8fc29f8852baa4cbf7309acb4fe489e7001c088738c7da
 offers:
