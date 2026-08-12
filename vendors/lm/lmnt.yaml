@@ -1,0 +1,67 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kztzm1bza0as8nmffzwrmef6
+slug: lmnt
+slug_aliases: []
+name: LMNT
+domains:
+  - value: lmnt.com
+    role: primary
+    valid_from: 2026-08-12T12:37:11.000Z
+category: ai-ml
+description: LMNT provides a developer API for generating speech and offers voice credits to eligible startups.
+links:
+  site: https://www.lmnt.com
+sources:
+  - source_id: src_a383ca7b8e8bf5561da1d604b624c0ac0ddbffd39c7d4cabf5231a116a339515
+    url: https://www.lmnt.com/startups
+programs:
+  - program_id: prg_01kztzm1c11qdmhkp4yvek59s1
+    program_slug: lmnt-startup-grant
+    program_slug_aliases: []
+    title: LMNT Startup Grant
+    summary: A three-month voice AI grant for small startups building sustainable voice AI products.
+    source_ids:
+      - src_a383ca7b8e8bf5561da1d604b624c0ac0ddbffd39c7d4cabf5231a116a339515
+offers:
+  - offer_id: off_01kztzm1c1mrnmj5hgqhngrqty
+    program_id: prg_01kztzm1c11qdmhkp4yvek59s1
+    offer_slug: forty-five-million-voice-credits
+    offer_slug_aliases: []
+    title: 45 million voice credits over three months
+    summary: Eligible startups receive 15 million characters per month for three months, approximately 330 hours of speech monthly. Afterward, LMNT automatically upgrades recipients to an enterprise plan with the same limits unless they adjust it.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-12T12:37:11.000Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source promotes community participation, experience sharing, customer-story collaboration, and logo featuring but does not establish these as required consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: 45 million voice credits over three months, delivered as 15 million characters per month, approximately 330 hours of speech monthly
+          kind: other
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - kind: manual
+            criterion_id: cri_team_size
+            statement: The startup has fewer than 20 employees.
+            reason: not-machine-evaluable
+          - kind: manual
+            criterion_id: cri_product
+            statement: The startup is building a sustainable voice AI product and using voice AI in creative ways.
+            reason: not-machine-evaluable
+          - kind: manual
+            criterion_id: cri_exclusions
+            statement: Existing enterprise customers, previous grant recipients, and one-off projects are not eligible.
+            reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01kztzm1bza0as8nmffzwrmef6
+      access_operator_entity_id: ent_01kztzm1bza0as8nmffzwrmef6
+    access:
+      availability: public
+      method: form
+      url: https://x4uu2c49fac.typeform.com/to/r3govabA
+    source_ids:
+      - src_a383ca7b8e8bf5561da1d604b624c0ac0ddbffd39c7d4cabf5231a116a339515
