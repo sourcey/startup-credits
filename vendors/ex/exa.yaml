@@ -1,0 +1,61 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kzt8s1afhhybavv25f68vywx
+slug: exa
+slug_aliases: []
+name: Exa
+domains:
+  - value: exa.ai
+    role: primary
+    valid_from: 2026-08-12T05:32:00.000Z
+category: ai-ml
+description: Exa provides AI search infrastructure, including Search, Contents, Agent, Deep Search, and Monitors APIs for web data applications.
+links:
+  site: https://exa.ai
+sources:
+  - source_id: src_43f22aaeb7a035c1cff7a858e977214b348b57cdc83b522be91bbb4a317cf7bf
+    url: https://exa.ai/pricing
+programs:
+  - program_id: prg_01kzt8s1ahkyh1wn8pm4hr78xx
+    program_slug: startup-and-education-grants
+    program_slug_aliases: []
+    title: Startup and Education Grants
+    summary: Exa's grant program provides free credits for startup and education projects building comprehensive web search.
+    source_ids:
+      - src_43f22aaeb7a035c1cff7a858e977214b348b57cdc83b522be91bbb4a317cf7bf
+offers:
+  - offer_id: off_01kzt8s1ahzdkvmw1c5syeg4wt
+    program_id: prg_01kzt8s1ahkyh1wn8pm4hr78xx
+    offer_slug: 1000-startup-and-education-grant-credits
+    offer_slug_aliases: []
+    title: $1,000 Startup and Education Grant Credits
+    summary: Startup and education projects can receive $1,000 in free Exa credits to build, launch, and test comprehensive web search.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-12T05:32:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: $1,000 worth of free Exa credits
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 100000
+            kind: exact
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: not-machine-evaluable
+        statement: Must be a startup or education project building comprehensive web search.
+    roles:
+      terms_authority_entity_id: ent_01kzt8s1afhhybavv25f68vywx
+      access_operator_entity_id: ent_01kzt8s1afhhybavv25f68vywx
+    access:
+      availability: public
+      method: contact
+      url: https://exa.ai/pricing
+    source_ids:
+      - src_43f22aaeb7a035c1cff7a858e977214b348b57cdc83b522be91bbb4a317cf7bf
