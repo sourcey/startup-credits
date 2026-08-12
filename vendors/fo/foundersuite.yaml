@@ -2,7 +2,7 @@ schema_version: sourcey.vendor-authoring/v1alpha1
 entity_id: ent_01kyyts97tv71kntfsyxy6e3pp
 slug: foundersuite
 slug_aliases: []
-name: foundersuite
+name: Foundersuite
 domains:
   - value: foundersuite.com
     role: primary
