@@ -14,58 +14,53 @@ links:
   pricing: https://huggingface.co/pricing
 sources:
   - source_id: src_63a4aa4646d7d92bcd18ae6e6c7082b22b09162f6a72ddfc8fa28ac273d826be
-    url: https://huggingface.co/startups
-  - source_id: src_18f3a9b2c4d5e6f7a8b9c0d1e2f3a4b5c6d7e8f9a0b1c2d3e4f5a6b7c8d9e0f1
     url: https://creditforstartups.com/companies/hugging-face
-  - source_id: src_2a7e5c9f0d4b6e8a1c3d5f7b9a0c2e4d6f8a0b1c3d5e7f9a1b2c4d6e8f0a1b3c5d
-    url: https://huggingface.co
+  - source_id: src_18f3a9b2c4d5e6f7a8b9c0d1e2f3a4b5c6d7e8f9a0b1c2d3e4f5a6b7c8d9e0f1
+    url: https://huggingface.co/pricing
 programs:
   - program_id: prg_01kzea0k24myx5q7b1efhvv429
     program_slug: huggingface-for-startups
     program_slug_aliases: []
     title: Hugging Face for Startups
-    summary: Free inference credits and Pro subscription features for early-stage AI startups building on Hugging Face infrastructure.
+    summary: Free Pro subscription for a limited time for early-stage AI startups, distributed via partner perk marketplaces and promo codes.
     source_ids:
       - src_63a4aa4646d7d92bcd18ae6e6c7082b22b09162f6a72ddfc8fa28ac273d826be
-      - src_18f3a9b2c4d5e6f7a8b9c0d1e2f3a4b5c6d7e8f9a0b1c2d3e4f5a6b7c8d9e0f1
 offers:
   - offer_id: off_01kzea0k24p89nczagh1g0mnv2
     program_id: prg_01kzea0k24myx5q7b1efhvv429
     offer_slug: huggingface-pro-startups
     offer_slug_aliases: []
     title: Hugging Face Pro for Startups
-    summary: Up to $108 in free inference credits and Pro features for 6 months for early-stage AI startups.
+    summary: Eligible startups receive free Pro access for a limited time, including inference credits, higher storage, and expanded ZeroGPU quotas.
     lifecycle:
       status: active
       effective_from: 2026-08-07T13:45:00.000Z
     access:
       availability: public
       method: form
-      url: https://huggingface.co/startups
+      url: https://creditforstartups.com/companies/hugging-face
+      instructions: Apply via the listed partner perk marketplace or promo code, then upgrade to Pro at huggingface.co/subscribe/pro.
     economics:
       consideration:
         kind: none
       benefits:
         - benefit_id: ben_01
-          description: Free Pro subscription for approximately 6 months (includes private repos, compute quotas, and ZeroGPU access)
+          description: Free Pro subscription for a limited time (includes 20x included inference credits, expanded ZeroGPU quota, and higher storage)
           kind: free-service
-          service: Hugging Face Pro, covering private repos, compute quotas, and ZeroGPU access
-          duration:
-            kind: exact
-            value: P6M
+          service: Hugging Face Pro
         - benefit_id: ben_02
-          description: Free monthly inference credits to experiment with Inference Providers
+          description: Up to $108 in credits and resources for eligible startups
           kind: credit
           value:
             amount:
               currency: USD
-              minor_units: 1000
+              minor_units: 10800
             kind: up-to
     eligibility:
       rule:
         kind: manual
         criterion_id: cri_01
-        statement: Must be an early-stage AI startup (Pre-seed, Seed, or Series A) building on open-source models with global eligibility.
+        statement: Early-stage AI startup (pre-seed to Series A), worldwide eligibility, no equity required.
         reason: not-machine-evaluable
     roles:
       terms_authority_entity_id: ent_01kzea0k20nprp8jw6v1xfzcpz
