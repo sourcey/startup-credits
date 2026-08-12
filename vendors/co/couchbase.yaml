@@ -69,6 +69,6 @@ offers:
     access:
       availability: membership
       method: form
-      url: https://info.couchbase.com/aws-activate.html
+      url: https://info.couchbase.com/aws-activate.html#mktoForm_9630
     source_ids:
       - src_252bd83a706a5f2bc428ffba12bd515a968bd9c93d7140e45d99eede9baf6ab2
