@@ -1,0 +1,59 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kzvdx1y3rwcf7ez5n88y73av
+slug: cloudthinker
+slug_aliases: []
+name: CloudThinker
+domains:
+  - value: cloudthinker.io
+    role: primary
+    valid_from: 2026-08-12T16:47:11.292Z
+category: hosting-infra
+description: AgenticOps platform for cloud operations, cost optimization, incident response, code review, and application security.
+links:
+  site: https://www.cloudthinker.io
+sources:
+  - source_id: src_c0a0dfe2d06bdf19ddf32d0c25bd6e6498596dd85294a33038ae86d030d3c15d
+    url: https://www.cloudthinker.io/startups
+programs:
+  - program_id: prg_01kzvdx1y9qfsg349dbky8b3x3
+    program_slug: cloudthinker-startup-program
+    program_slug_aliases: []
+    title: CloudThinker Startup Program
+    summary: CloudThinker program offering qualifying early-stage cloud startups credits, priority onboarding, and expert consulting.
+    source_ids:
+      - src_c0a0dfe2d06bdf19ddf32d0c25bd6e6498596dd85294a33038ae86d030d3c15d
+offers:
+  - offer_id: off_01kzvdx1yazz8tcd021tzjck2t
+    program_id: prg_01kzvdx1y9qfsg349dbky8b3x3
+    offer_slug: startup-credits-and-onboarding
+    offer_slug_aliases: []
+    title: Startup Credits and Priority Onboarding
+    summary: Qualifying early-stage startups receive thousands of dollars in CloudThinker credits, priority onboarding, and expert cloud consulting.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-12T16:47:11.292Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Thousands of dollars in CloudThinker credits
+          kind: other
+      consideration:
+        kind: unknown
+        description: The public program page does not establish separate consideration.
+    eligibility:
+      rule:
+        kind: any
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: vendor-discretion
+            statement: Early-stage startup building on AWS, Azure, or GCP; credit eligibility favors companies founded within the last five years that are investor- or accelerator-backed, or bootstrapping toward it, and have not received CloudThinker startup credits before.
+    roles:
+      terms_authority_entity_id: ent_01kzvdx1y3rwcf7ez5n88y73av
+      access_operator_entity_id: ent_01kzvdx1y3rwcf7ez5n88y73av
+    access:
+      availability: public
+      method: form
+      url: https://www.cloudthinker.io/startups
+    source_ids:
+      - src_c0a0dfe2d06bdf19ddf32d0c25bd6e6498596dd85294a33038ae86d030d3c15d
