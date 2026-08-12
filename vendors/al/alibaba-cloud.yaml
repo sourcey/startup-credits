@@ -8,68 +8,11 @@ domains:
     role: primary
     valid_from: 2026-08-01T13:50:00.000Z
 category: hosting-infra
-description: How we handle your personal data and your rights - Alibaba Cloud International Website Privacy Policy - Alibaba Cloud,Legal:This Privacy Policy applies to the access and use of the Alibaba Cloud
+description: Alibaba Cloud provides cloud computing services and solutions, including elastic computing, storage, networking, databases, security, and AI products for businesses worldwide.
 links:
   site: https://alibabacloud.com
 sources:
-  - source_id: src_6dfc3454e3e1e7f8e76cd7aa7717a19369892f21bab576b4c3f9eb08adef5f29
-    url: https://www.alibabacloud.com/help/en/legal/latest/alibaba-cloud-international-website-privacy-policy
-  - source_id: src_6ea68ff4421d90263af103c2b04e93e4d76dc469550f4a4068e2f28a1018d4a8
-    url: https://perkbook.co/vendor-directory/alibabacloud
-programs:
-  - program_id: prg_01kyyts97vwa3818s00v9apxng
-    program_slug: alibaba-cloud-startup-program
-    program_slug_aliases: []
-    title: Alibaba Cloud Startup Program
-    summary: Alibaba Cloud gives qualifying early-stage startups cloud credits, technical support, co-marketing opportunities, and access to Alibaba global investor and partner networks.
-    source_ids:
-      - src_6ea68ff4421d90263af103c2b04e93e4d76dc469550f4a4068e2f28a1018d4a8
-offers:
-  - offer_id: off_01kyyts97vpzkvqbvpxyp0w6dm
-    program_id: prg_01kyyts97vwa3818s00v9apxng
-    offer_slug: alibaba-cloud-startup-program
-    offer_slug_aliases: []
-    title: Alibaba Cloud Startup Program
-    summary: Get up to $50,000 USD in cloud credits, technical support, co-marketing opportunities, and network access for qualifying early-stage startups.
-    lifecycle:
-      status: active
-      effective_from: 2026-08-01T08:12:36.099Z
-    economics:
-      benefits:
-        - benefit_id: ben_01
-          description: Up to $50,000 USD in cloud credits
-          kind: credit
-          value:
-            amount:
-              currency: USD
-              minor_units: 5000000
-            kind: up-to
-        - benefit_id: ben_02
-          description: Technical support
-          kind: other
-        - benefit_id: ben_03
-          description: Co-marketing opportunities
-          kind: other
-        - benefit_id: ben_04
-          description: Access to Alibaba global investor and partner networks
-          kind: other
-      consideration:
-        kind: none
-    eligibility:
-      rule:
-        kind: all
-        rules:
-          - criterion_id: cri_01
-            kind: manual
-            reason: vendor-discretion
-            statement: Early-stage startups globally; assessed by stage and use case
-    roles:
-      terms_authority_entity_id: ent_01kyyts97sh2v27g7w2234k40n
-      access_operator_entity_id: ent_01kyyr9svgcxd42r9s8g3knssn
-    access:
-      availability: membership
-      instructions: Sign Up to Unlock
-      method: other
-      url: https://perkbook.co/vendor-directory/alibabacloud
-    source_ids:
-      - src_6ea68ff4421d90263af103c2b04e93e4d76dc469550f4a4068e2f28a1018d4a8
+  - source_id: src_69309b819e80f182ea81c33481746fa4d46cce19b0ae039b212d0b17a2690d02
+    url: https://www.alibabacloud.com/
+programs: []
+offers: []

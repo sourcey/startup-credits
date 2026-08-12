@@ -14,16 +14,7 @@ links:
 sources:
   - source_id: src_8789e905c49e7d05c098a0f21794a9f9de31de90992065d262508e304c3724c3
     url: https://workos.com/startups
-  - source_id: src_f63ef498edf3919e150a78446108e6dcd05ec3188b6e00af4eee6a863cecaa85
-    url: https://perkbook.co/vendor-directory/workos
-programs:
-  - program_id: prg_01kyyr9svhkdh4hjkb04cxee7z
-    program_slug: workos-startup-program
-    program_slug_aliases: []
-    title: Workos Startup Program
-    summary: Workos Startup Program / Workos for Startups provides startup offers and perks for qualifying early-stage startups.
-    source_ids:
-      - src_f63ef498edf3919e150a78446108e6dcd05ec3188b6e00af4eee6a863cecaa85
+programs: []
 offers:
   - offer_id: off_01kyygma82eet0aqhpceg6n1ba
     offer_slug: workos-user-management-free-tier
@@ -60,39 +51,3 @@ offers:
       url: https://workos.com/startups
     source_ids:
       - src_8789e905c49e7d05c098a0f21794a9f9de31de90992065d262508e304c3724c3
-  - offer_id: off_01kyyr9svhd38hwdr5k9xsxp9h
-    program_id: prg_01kyyr9svhkdh4hjkb04cxee7z
-    offer_slug: 12-months-free-with-workos-for-startups
-    offer_slug_aliases: []
-    title: 12 months free with WorkOS for Startups
-    summary: Qualifying early-stage startups receive up to 12 months of free access to WorkOS's enterprise-ready auth platform.
-    lifecycle:
-      status: active
-      effective_from: 2026-08-01T08:17:55.659Z
-    economics:
-      benefits:
-        - benefit_id: ben_01
-          description: Up to 12 months free access to WorkOS's enterprise-ready auth platform including SSO, SCIM directory sync, and fine-grained authorization.
-          duration:
-            kind: up-to
-            value: P1Y
-          kind: free-service
-          service: WorkOS enterprise-ready auth platform
-      consideration:
-        kind: none
-    eligibility:
-      rule:
-        criterion_id: cri_01
-        kind: manual
-        reason: vendor-discretion
-        statement: Available to qualifying early-stage startups
-    roles:
-      terms_authority_entity_id: ent_01kyygma822smsegab8rym0sqk
-      access_operator_entity_id: ent_01kyyr9svgcxd42r9s8g3knssn
-    access:
-      availability: membership
-      instructions: Sign Up to Unlock
-      method: form
-      url: https://perkbook.co/vendor-directory/workos
-    source_ids:
-      - src_f63ef498edf3919e150a78446108e6dcd05ec3188b6e00af4eee6a863cecaa85
