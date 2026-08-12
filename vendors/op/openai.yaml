@@ -83,6 +83,7 @@ offers:
     access:
       availability: membership
       method: other
+      instructions: Sign in to Ramp from the OpenAI reward page to access the credits.
       url: https://ramp.com/rewards/openai
     source_ids:
       - src_f0897f1deaf5cdccfab9fda163fcfb40fcd734a1c9adb5e35c96ada602cc65f1
