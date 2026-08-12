@@ -10,7 +10,7 @@ domains:
 category: productivity
 description: The Zoho for Startups program aims to empower startups with access to Zoho's suite of apps through Zoho Wallet credits.
 links:
-  site: https://www.zoho.com/startups/
+  site: https://www.zoho.com
 sources:
   - source_id: src_7eed286a8512fe0123f70f0b88d01a0a88efa496fa5f6a89703157515c5e3a8f
     url: https://www.zoho.com/startups/
