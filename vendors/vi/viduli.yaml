@@ -1,0 +1,100 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kzvhmmakgg6st6kpe8knykca
+slug: viduli
+slug_aliases: []
+name: Viduli
+domains:
+  - value: viduli.io
+    role: primary
+    valid_from: 2026-08-12T17:53:00.000Z
+category: hosting-infra
+description: Cloud platform for deploying applications, managed databases, and caches from connected source repositories.
+links:
+  site: https://viduli.io
+sources:
+  - source_id: src_0bd8b9a2b78783e9ff9363162508d96d3c055b564baf82676e6f9f57d1e10324
+    url: https://viduli.io/offers/startup-300-credit
+programs:
+  - program_id: prg_01kzvhmmaqmqayeb19kq4qfqpn
+    program_slug: startup-credit-program
+    program_slug_aliases: []
+    title: Viduli Startup Credit Program
+    summary: Viduli gives qualifying early-stage startups $300 in perpetual service credits for application, database, and cache infrastructure.
+    source_ids:
+      - src_0bd8b9a2b78783e9ff9363162508d96d3c055b564baf82676e6f9f57d1e10324
+offers:
+  - offer_id: off_01kzvhmmaqx881afdqzhzhjp0p
+    program_id: prg_01kzvhmmaqmqayeb19kq4qfqpn
+    offer_slug: 300-usd-startup-credit
+    offer_slug_aliases: []
+    title: $300 Startup Credit
+    summary: Eligible early-stage startups receive $300 in perpetual credits usable across Viduli services, with no charges until the credits are exhausted.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-12T17:53:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: $300 in perpetual credits usable across Viduli services
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 30000
+            kind: exact
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.age_months
+            kind: predicate
+            operator: lt
+            statement: Company must have been founded less than two years ago.
+            value:
+              type: number
+              value: 24
+          - criterion_id: cri_02
+            fact: company.annual_revenue_usd
+            kind: predicate
+            operator: lt
+            statement: Company must have less than $1 million in annual revenue.
+            value:
+              type: number
+              value: 1000000
+          - criterion_id: cri_03
+            fact: company.business_email_present
+            kind: predicate
+            operator: eq
+            statement: Applicant must use a business email from the startup's domain.
+            value:
+              type: boolean
+              value: true
+          - criterion_id: cri_04
+            fact: company.website_url
+            kind: predicate
+            operator: present
+            statement: Company must have a public website describing its product or service.
+          - criterion_id: cri_05
+            fact: company.is_current_customer
+            kind: predicate
+            operator: eq
+            statement: Applicant must be a first-time Viduli user.
+            value:
+              type: boolean
+              value: false
+          - criterion_id: cri_06
+            kind: manual
+            reason: external-verification
+            statement: A credit card is required to claim the credits, but Viduli states that no charge is made until the credits are exhausted.
+    roles:
+      terms_authority_entity_id: ent_01kzvhmmakgg6st6kpe8knykca
+      access_operator_entity_id: ent_01kzvhmmakgg6st6kpe8knykca
+    access:
+      availability: public
+      method: form
+      url: https://viduli.io/offers/startup-300-credit
+    source_ids:
+      - src_0bd8b9a2b78783e9ff9363162508d96d3c055b564baf82676e6f9f57d1e10324
