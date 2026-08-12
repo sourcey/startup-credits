@@ -1,0 +1,56 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kztzbk1yh7j63av1vb9rvdam
+slug: canny
+slug_aliases: []
+name: Canny
+domains:
+  - value: canny.io
+    role: primary
+    valid_from: 2026-06-05T00:00:00.000Z
+category: productivity
+description: Canny is an AI-native customer intelligence and feedback-management platform for product teams.
+links:
+  site: https://canny.io
+sources:
+  - source_id: src_6fa3f0be717758659eb5210f9c2f756d5570f0c2ed7d3478a7122daf3ec91a19
+    url: https://canny.io/case-studies/pallyy
+  - source_id: src_65a330b7788974fef8310567a40191d219013542faa6c79c97437d3ddc7ae0ab
+    url: https://help.canny.io/en/articles/10706905-autopilot-credits-legacy-plans
+  - source_id: src_e371810453ffef63d63844b058483ea559f599279508b0d3c7652b7c4a32e77f
+    url: https://canny.io/request-demo
+programs: []
+offers:
+  - offer_id: off_01kztzbk1z8jf76w8xb6er0qd8
+    offer_slug: early-stage-startup-discount
+    offer_slug_aliases: []
+    title: Canny early-stage startup discount
+    summary: Qualified early-stage startups can request a Canny discount; the public sources do not state its percentage or duration, and it does not apply to Autopilot credits.
+    description: Canny's current help material acknowledges the early-stage startup discount and states that it does not apply to Autopilot credits.
+    lifecycle:
+      status: active
+      effective_from: 2026-06-05T00:00:00.000Z
+    economics:
+      consideration:
+        kind: unknown
+        description: Canny does not publish the discounted price, percentage, duration, or separate consideration in the cited sources.
+      benefits:
+        - benefit_id: ben_01
+          description: Manually approved discount on eligible Canny service charges, excluding Autopilot credits
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_01
+        statement: Canny must determine that the applicant is a qualified early-stage startup.
+        reason: external-verification
+    roles:
+      terms_authority_entity_id: ent_01kztzbk1yh7j63av1vb9rvdam
+      access_operator_entity_id: ent_01kztzbk1yh7j63av1vb9rvdam
+    access:
+      availability: public
+      method: form
+      url: https://canny.io/request-demo
+    source_ids:
+      - src_6fa3f0be717758659eb5210f9c2f756d5570f0c2ed7d3478a7122daf3ec91a19
+      - src_65a330b7788974fef8310567a40191d219013542faa6c79c97437d3ddc7ae0ab
+      - src_e371810453ffef63d63844b058483ea559f599279508b0d3c7652b7c4a32e77f
