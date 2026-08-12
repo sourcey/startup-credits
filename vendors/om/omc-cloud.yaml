@@ -1,0 +1,65 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kzvsepa8pn0a3vqt9vpt9yan
+slug: omc-cloud
+slug_aliases: []
+name: OMC Cloud
+domains:
+  - value: omc.cloud
+    role: primary
+    valid_from: 2026-08-12T20:08:56Z
+category: hosting-infra
+description: OMC Cloud provides VPS, GPU cloud, storage, backup, CDN, load balancing, container, and managed infrastructure services.
+links:
+  site: https://omc.cloud
+sources:
+  - source_id: src_f01fc947976299e5c8e62355d99e1346d39f41a1a78ef701f43b91739de1eee8
+    url: https://omc.cloud/products/startups
+programs:
+  - program_id: prg_01kzvsepacg62qhxhs9d9nem9p
+    program_slug: omc-cloud-startup-program
+    program_slug_aliases: []
+    title: OMC Cloud Startup Program
+    summary: OMC Cloud's program supports early-stage technology companies through Series A with cloud credits, technical guidance, architecture consulting, and flexible post-credit pricing.
+    source_ids:
+      - src_f01fc947976299e5c8e62355d99e1346d39f41a1a78ef701f43b91739de1eee8
+offers:
+  - offer_id: off_01kzvsepacx6s3jjhd76r9rpnn
+    program_id: prg_01kzvsepacg62qhxhs9d9nem9p
+    offer_slug: up-to-10000-cloud-credits
+    offer_slug_aliases: []
+    title: Up to $10,000 in OMC Cloud credits
+    summary: Approved early-stage technology startups through Series A receive up to $10,000 in credits usable across all OMC Cloud services, plus technical guidance and architecture consulting.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-12T20:08:56Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to $10,000 in OMC Cloud credits usable across all platform services
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 1000000
+            kind: up-to
+        - benefit_id: ben_02
+          description: Hands-on technical guidance and architecture consulting
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Applicant must be an early-stage startup through Series A that is developing a technology product and must pass OMC Cloud's evaluation.
+    roles:
+      terms_authority_entity_id: ent_01kzvsepa8pn0a3vqt9vpt9yan
+      access_operator_entity_id: ent_01kzvsepa8pn0a3vqt9vpt9yan
+    access:
+      availability: public
+      method: form
+      url: https://omc.cloud/products/startups
+      instructions: Submit the startup-program form for OMC Cloud evaluation.
+    source_ids:
+      - src_f01fc947976299e5c8e62355d99e1346d39f41a1a78ef701f43b91739de1eee8
