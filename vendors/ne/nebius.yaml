@@ -2,7 +2,7 @@ schema_version: sourcey.vendor-authoring/v1alpha1
 entity_id: ent_01kyyts97t7e1mjd9afe1c2b6k
 slug: nebius
 slug_aliases: []
-name: nebius
+name: Nebius
 domains:
   - value: nebius.com
     role: primary

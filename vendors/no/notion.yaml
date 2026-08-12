@@ -2,7 +2,7 @@ schema_version: sourcey.vendor-authoring/v1alpha1
 entity_id: ent_01kyyts97tbppvx69rh3v86sk2
 slug: notion
 slug_aliases: []
-name: notion
+name: Notion
 domains:
   - value: notion.so
     role: primary
