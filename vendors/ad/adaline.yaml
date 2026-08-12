@@ -1,0 +1,66 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kzvhjj1cvsztcdt4gzt31a7t
+slug: adaline
+slug_aliases: []
+name: Adaline
+domains:
+  - value: adaline.ai
+    role: primary
+    valid_from: 2026-08-12T17:50:57.000Z
+category: ai-ml
+description: Adaline provides a platform for developing, evaluating, deploying, and monitoring generative AI applications.
+links:
+  site: https://www.adaline.ai
+sources:
+  - source_id: src_3c8b250702efb26091dfaa5b9a232a9fa4e56d9a833db3e470210ba75f87edfa
+    url: https://www.adaline.ai/pricing
+  - source_id: src_4af9d0812bd92984455f55b7ba3f81439bf0a705f8e6570d2c1fc4919613737e
+    url: https://www.adaline.ai/get-started
+programs:
+  - program_id: prg_01kzvhjj1csnv1wdk1hvkghb91
+    program_slug: adaline-startup-program
+    program_slug_aliases: []
+    title: Adaline Startup Program
+    summary: Adaline offers startups 50% off its Grow and Custom plans and works with applicants to create a suitable package.
+    source_ids:
+      - src_3c8b250702efb26091dfaa5b9a232a9fa4e56d9a833db3e470210ba75f87edfa
+offers:
+  - offer_id: off_01kzvhjj1c0gj9pya1rhhbpmz6
+    program_id: prg_01kzvhjj1csnv1wdk1hvkghb91
+    offer_slug: fifty-percent-off-grow-and-custom
+    offer_slug_aliases: []
+    title: 50% off Adaline Grow and Custom plans
+    summary: Startups receive 50% off Adaline's Grow and Custom plans; Adaline works with applicants to define the package, and the public page does not state a fixed program duration.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-12T17:50:57.000Z
+    economics:
+      benefits:
+        - applies_to: Grow and Custom plans
+          benefit_id: ben_01
+          description: 50% off Adaline Grow and Custom plans
+          kind: discount
+          percentage:
+            basis_points: 5000
+            kind: exact
+      consideration:
+        kind: variable
+        description: The startup pays the remaining discounted plan price; the public Grow list price is USD 750 per month and Custom pricing varies by package.
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Adaline works with startup applicants to create a suitable package; the public page does not publish additional eligibility criteria.
+    roles:
+      terms_authority_entity_id: ent_01kzvhjj1cvsztcdt4gzt31a7t
+      access_operator_entity_id: ent_01kzvhjj1cvsztcdt4gzt31a7t
+    access:
+      availability: public
+      instructions: Submit Adaline's Get Started form and work with the vendor to define the startup package.
+      method: form
+      url: https://www.adaline.ai/get-started
+    terms_url: https://www.adaline.ai/pricing
+    source_ids:
+      - src_3c8b250702efb26091dfaa5b9a232a9fa4e56d9a833db3e470210ba75f87edfa
+      - src_4af9d0812bd92984455f55b7ba3f81439bf0a705f8e6570d2c1fc4919613737e
