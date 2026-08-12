@@ -18,7 +18,8 @@ programs: []
 offers:
   - offer_id: off_01kyypqp9xt0zcgfjvpyncvejs
     offer_slug: xero-plans-80-off-first-3-months
-    offer_slug_aliases: []
+    offer_slug_aliases:
+      - 90-off-for-6-months-with-xero-for-startups
     title: Xero Plans 80% Off First 3 Months
     summary: Get 80% off Xero plans for the first 3 months.
     lifecycle:

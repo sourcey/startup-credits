@@ -18,7 +18,8 @@ programs: []
 offers:
   - offer_id: off_01kyh8fpe19tbgz9qesnr0wd3x
     offer_slug: assemblyai-startup-program
-    offer_slug_aliases: []
+    offer_slug_aliases:
+      - up-to-150-000-in-speech-ai-api-credits-with-assemblyai-for-startups
     title: AssemblyAI Startup Program
     summary: Eligible early-stage startups receive 12 months of recurring free credits and discounted pricing on AssemblyAI models, along with co-marketing opportunities and feature access.
     lifecycle:

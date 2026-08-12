@@ -18,7 +18,8 @@ programs: []
 offers:
   - offer_id: off_01kyygma82eet0aqhpceg6n1ba
     offer_slug: workos-user-management-free-tier
-    offer_slug_aliases: []
+    offer_slug_aliases:
+      - 12-months-free-with-workos-for-startups
     title: WorkOS User Management Free Tier
     summary: WorkOS provides free user management and auth backend services for up to 1 million monthly active users (MAUs).
     lifecycle:

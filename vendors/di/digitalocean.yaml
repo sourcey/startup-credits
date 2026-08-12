@@ -18,7 +18,10 @@ programs: []
 offers:
   - offer_id: off_01kyh8fpe2dwqnfrbb6nejb5zz
     offer_slug: digitalocean-startups-program
-    offer_slug_aliases: []
+    offer_slug_aliases:
+      - up-to-100-000-in-compute-credits-via-digitalocean-hatch-ai-ml-tier
+      - up-to-1-000-in-credits-via-digitalocean-hatch-direct-tier
+      - 20-000-in-cloud-credits-and-partner-perks-via-digitalocean-hatch-partner-tier
     title: DigitalOcean Startups Program
     summary: Eligible early-stage startups receive DigitalOcean cloud infrastructure credits for 12 months, 15 months of free Standard-tier paid support, expert one-on-one guidance, and startup community perks.
     lifecycle:

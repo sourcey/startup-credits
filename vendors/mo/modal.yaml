@@ -18,7 +18,8 @@ programs: []
 offers:
   - offer_id: off_01kyh8fpe4fyz5pxzv154ah0y4
     offer_slug: modal-for-startups
-    offer_slug_aliases: []
+    offer_slug_aliases:
+      - 25-000-in-modal-compute-credits
     title: Modal for Startups
     summary: Eligible VC-funded startups can unlock thousands of free GPU credits on Modal's serverless compute platform; the tier depends on funding stage.
     lifecycle:

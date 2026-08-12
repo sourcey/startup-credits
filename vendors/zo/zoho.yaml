@@ -18,7 +18,8 @@ programs: []
 offers:
   - offer_id: off_01kyh8fpe6qasefesj77p6h5ww
     offer_slug: zoho-for-startups
-    offer_slug_aliases: []
+    offer_slug_aliases:
+      - free-wallet-credits-with-zoho-startup-program-standard-tier
     title: Zoho for Startups
     summary: Eligible startups can receive Zoho Wallet Credits valid for 360 days to access over 55 integrated Zoho applications, available in two stages including an option for domain hosting credits.
     lifecycle:

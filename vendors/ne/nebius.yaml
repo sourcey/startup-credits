@@ -28,7 +28,8 @@ offers:
   - offer_id: off_01kyyts97wajf01q9g41ztvarp
     program_id: prg_01kyyts97wfw7w8brz2xw4psa6
     offer_slug: free-compute-credits-with-nebius-for-startups-base-tier
-    offer_slug_aliases: []
+    offer_slug_aliases:
+      - free-compute-credits-with-nebius-for-startups-high-growth-tier
     title: Nebius credits and discounts via VC partners
     summary: Credit offerings are currently available exclusively through Nebius venture capital partners; portfolio startups access credits through their fund's platform team.
     lifecycle:

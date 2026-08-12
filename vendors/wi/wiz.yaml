@@ -18,7 +18,8 @@ programs: []
 offers:
   - offer_id: off_01kyygma830fgn90asc8pctkj3
     offer_slug: wiz-go-for-startups
-    offer_slug_aliases: []
+    offer_slug_aliases:
+      - 50-off-cloud-security-bundle-with-wiz-go
     title: Wiz Go for Startups
     summary: Wiz Go is a tailored cloud security bundle for startups, combining Wiz Code, Wiz Cloud, and Wiz Defend & Runtime Sensor with startup-friendly pricing.
     lifecycle:

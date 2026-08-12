@@ -26,7 +26,8 @@ offers:
   - offer_id: off_01kyxthgpyakq6wbdhypr9wn51
     program_id: prg_01kyxthgpy4wnbhzr8b5hv4nz8
     offer_slug: make-partner-startup-tier
-    offer_slug_aliases: []
+    offer_slug_aliases:
+      - 1-year-free-teams-plan-with-make-for-startups-partner-tier
     title: Make Startup Program - Partner Startup Tier
     summary: Qualifying startups associated with a Make Startup Partner receive 6 months free plus a 50% discount on Pro or Teams plans with 480k credits (valued at over $1,500).
     lifecycle:

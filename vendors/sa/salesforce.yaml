@@ -25,7 +25,11 @@ programs:
 offers:
   - offer_id: off_01kyh8fpe5a27280hssp9jdt7q
     offer_slug: salesforce-launchpad-free-and-discounted-solutions
-    offer_slug_aliases: []
+    offer_slug_aliases:
+      - 50-off-sales-cloud-enterprise-with-salesforce-launchpad
+      - 50-off-pro-suite-with-salesforce-launchpad
+      - 25-off-slack-pro-or-business-with-salesforce-launchpad
+      - 12-months-free-starter-suite-with-salesforce-launchpad
     title: Free and discounted Salesforce solutions
     summary: Salesforce Launchpad offers venture-backed startups free and discounted Salesforce solutions, including special offers on Starter Suite, Pro Suite, Sales Cloud Enterprise Edition, Agentforce, Tableau, and Slack.
     lifecycle:

@@ -18,7 +18,8 @@ programs: []
 offers:
   - offer_id: off_01kyh8fpe47c34p80tmwstfc3a
     offer_slug: startup-program
-    offer_slug_aliases: []
+    offer_slug_aliases:
+      - 1-year-free-startup-plan-with-mixpanel-for-startups
     title: Startup Program
     summary: Startups get their first year of Mixpanel free, including 1 billion events, 1 million Session Replays, and access to the full analytics suite.
     lifecycle:

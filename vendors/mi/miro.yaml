@@ -31,7 +31,8 @@ offers:
   - offer_id: off_01kyyts97xm14v7h68xprfng2a
     program_id: prg_01kyh8fpe335dxj6tsyk7tb78w
     offer_slug: free-credits-with-miro-startup-program-individual-tier
-    offer_slug_aliases: []
+    offer_slug_aliases:
+      - miro-early-startups-free-credits
     title: $500 in Miro credits
     summary: Early startups that are not linked with a Miro global partner organization can apply directly and receive $500 in Miro credits.
     lifecycle:

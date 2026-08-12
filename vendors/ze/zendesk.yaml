@@ -18,7 +18,8 @@ programs: []
 offers:
   - offer_id: off_01kyh8fpe6brkee6gvymyykky4
     offer_slug: zendesk-for-startups-programme
-    offer_slug_aliases: []
+    offer_slug_aliases:
+      - 30-off-first-year-with-zendesk-for-startups-50-to-250-employees
     title: Zendesk for Startups Programme
     summary: Eligible early-stage startups can get up to 2 years of free access to the Zendesk Resolution Platform, including Professional Suite and Copilot for up to 50 agents.
     lifecycle:

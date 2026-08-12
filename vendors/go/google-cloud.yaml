@@ -33,6 +33,7 @@ offers:
     program_id: prg_01kyh8fpe243m25ep0wtvz068s
     offer_slug: google-for-startups-cloud-program-scale
     offer_slug_aliases:
+      - google-cloud-for-startups-credits-and-usage-coverage
       - google-for-startups-cloud-program-early-stage
     title: Google Cloud Scale tier
     summary: VC-funded startups ready to grow and scale can receive up to $100,000 in Google Cloud credits in year one, then 20% up to another $100,000 in year two.

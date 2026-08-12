@@ -31,7 +31,8 @@ programs:
 offers:
   - offer_id: off_01kyh8fpe2r151y0shvrzcmkwt
     offer_slug: first-5-seats-free-for-life-for-venture-backed-startups
-    offer_slug_aliases: []
+    offer_slug_aliases:
+      - 50-off-year-1-with-deel-for-startups-via-brex
     title: First 5 seats free for life for venture-backed startups
     summary: Venture-backed startups that have raised at least $500k in funding can get their first 5 seats free for life on Deel.
     lifecycle:
