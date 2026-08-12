@@ -8,12 +8,16 @@ domains:
     role: primary
     valid_from: 2026-08-11T08:22:48.460Z
 category: marketing
-description: UseLoyalty is a loyalty platform for rewards, referrals, tiers, badges, quests, and status-driven customer engagement.
+description: UseLoyalty is a loyalty platform for rewards, referrals, tiers, badges, and status-driven engagement.
 links:
   site: https://www.useloyalty.app
 sources:
   - source_id: src_15f30e8744062cd5805b4ba4374e0dc437c284ddcc0b97034b04b6cf57c5b012
     url: https://www.useloyalty.app/startup-program
+  - source_id: src_0c430deec07537d8a63a93a5390d2b89b8c43ec1133dac719b92bc088cc574d0
+    url: https://www.useloyalty.app
+  - source_id: src_f4221be5e2a15629ea9fbd91ffbe336c93a0f7396191e29f4ff2f9d6f2898108
+    url: https://www.useloyalty.app/blog/white-label-loyalty-app
 programs:
   - program_id: prg_01kzqymchp5x09vschjx0bweg2
     program_slug: useloyalty-startup-program
