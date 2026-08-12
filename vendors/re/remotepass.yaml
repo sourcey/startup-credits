@@ -64,8 +64,7 @@ offers:
             basis_points: 1500
             kind: exact
       consideration:
-        kind: variable
-        description: Purchase contractor management or Employer of Record service at the applicable discounted price; public pricing starts at $39 per contractor per month and $349 per employee per month.
+        kind: none
     eligibility:
       rule:
         criterion_id: cri_01
