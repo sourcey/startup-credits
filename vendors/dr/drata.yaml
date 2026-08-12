@@ -7,9 +7,6 @@ domains:
   - value: drata.com
     role: primary
     valid_from: 2026-08-01T13:50:00.000Z
-  - value: help.drata.com
-    role: alias
-    valid_from: 2026-08-01T13:50:00.000Z
 category: legal-compliance
 description: Drata is a trust management platform that automates compliance across frameworks like SOC 2, ISO 27001, HIPAA, and GDPR with continuous control monitoring.
 links:
