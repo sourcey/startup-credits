@@ -1,0 +1,83 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kzt70r6k9y8pm5keaddex15e
+slug: financica
+slug_aliases: []
+name: Financica
+domains:
+  - value: financica.app
+    role: primary
+    valid_from: 2026-08-12T05:27:13.386Z
+category: finance-accounting
+description: Financica provides EU-native bookkeeping, Peppol e-invoicing, multi-currency accounting, and an AI assistant on a shared ledger.
+links:
+  site: https://financica.app
+sources:
+  - source_id: src_f69cc61ac8977e6048780aa07e2a51cab2f06e6ca874093f7b3e4c7fcf004c1b
+    url: https://financica.app/for/startups
+programs:
+  - program_id: prg_01kzt70r6nbcj5x9pfemccexq9
+    program_slug: financica-startup-program
+    program_slug_aliases: []
+    title: Financica Startup Program
+    summary: Financica offers qualifying early-stage startups an 80% discount on its Scale plan for 12 months.
+    source_ids:
+      - src_f69cc61ac8977e6048780aa07e2a51cab2f06e6ca874093f7b3e4c7fcf004c1b
+offers:
+  - offer_id: off_01kzt70r6ngde2g7pdyvw0w5kp
+    program_id: prg_01kzt70r6nbcj5x9pfemccexq9
+    offer_slug: 80-off-scale-for-first-year
+    offer_slug_aliases: []
+    title: 80% off Scale for the first year
+    summary: Qualifying early-stage startups receive 80% off the Financica Scale plan for 12 months.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-12T05:27:13.386Z
+    economics:
+      benefits:
+        - applies_to: Financica Scale plan
+          benefit_id: ben_01
+          description: 80% discount on the Financica Scale plan for 12 months
+          duration:
+            kind: exact
+            value: P1Y
+          kind: discount
+          percentage:
+            basis_points: 8000
+            kind: exact
+      consideration:
+        kind: variable
+        description: The startup pays EUR 39.80 per month for the Scale plan during the 12-month discount period.
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.age_months
+            kind: predicate
+            operator: lt
+            statement: The company was founded less than three years ago.
+            value:
+              type: number
+              value: 36
+          - criterion_id: cri_02
+            kind: manual
+            reason: external-verification
+            statement: The company has raised less than EUR 5 million in total funding.
+          - criterion_id: cri_03
+            kind: manual
+            reason: external-verification
+            statement: The company is building a product or service and is not an agency or consultancy.
+          - criterion_id: cri_04
+            kind: manual
+            reason: external-verification
+            statement: The applicant is new to Financica and is not an existing or past customer.
+    roles:
+      terms_authority_entity_id: ent_01kzt70r6k9y8pm5keaddex15e
+      access_operator_entity_id: ent_01kzt70r6k9y8pm5keaddex15e
+    access:
+      availability: public
+      method: form
+      url: https://financica.app/for/startups
+    terms_url: https://financica.app/for/startups
+    source_ids:
+      - src_f69cc61ac8977e6048780aa07e2a51cab2f06e6ca874093f7b3e4c7fcf004c1b
