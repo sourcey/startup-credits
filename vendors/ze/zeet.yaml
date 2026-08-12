@@ -1,0 +1,70 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kzve6dv9yw2dqryqr900k2gz
+slug: zeet
+slug_aliases: []
+name: Zeet
+domains:
+  - value: zeet.co
+    role: primary
+    valid_from: 2026-08-12T17:30:00.000Z
+category: hosting-infra
+description: Zeet is a cloud deployment platform that automates application deployment and operations across Kubernetes clusters and major clouds, giving teams self-service DevOps with SRE automation.
+links:
+  site: https://zeet.co
+sources:
+  - source_id: src_dbf43ffb7fead1b70b9cf620150f298cee8b0744f368e57ab6f5e0ee6467b842
+    url: https://zeet.co/resources/startups-program
+programs:
+  - program_id: prg_01kzve6dva62jd6zdt67w9g9zt
+    program_slug: zeet-for-startups
+    program_slug_aliases: []
+    title: Zeet for Startups
+    summary: Startups that have raised less than $1M and belong to Zeet's VC or cloud partner networks pay $1 per month for seven months of unlimited Zeet access with Level 1 support.
+    source_ids:
+      - src_dbf43ffb7fead1b70b9cf620150f298cee8b0744f368e57ab6f5e0ee6467b842
+offers:
+  - offer_id: off_01kzve6dvf4f7v75myebxe5gg5
+    program_id: prg_01kzve6dva62jd6zdt67w9g9zt
+    offer_slug: unlimited-access-1-usd-month-7-months
+    offer_slug_aliases: []
+    title: Seven months of unlimited Zeet for $1 per month
+    summary: Accepted startups deploy unlimited projects across as many clouds and clusters as they need for $1 per month for seven months, including Level 1 support with cloud guidance from the Zeet team.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-12T17:30:00.000Z
+    economics:
+      consideration:
+        kind: variable
+        description: The startup pays $1 per month for the seven-month program term.
+      benefits:
+        - benefit_id: ben_01
+          description: Unlimited Zeet access for $1 per month for seven months, covering unlimited projects across as many clouds and clusters as the startup needs.
+          kind: other
+        - benefit_id: ben_02
+          description: Level 1 support, including expert advice from the Zeet team on getting the most from the startup's cloud.
+          kind: other
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.funding_raised_usd
+            kind: predicate
+            operator: lt
+            statement: Startup must have raised less than $1M.
+            value:
+              type: number
+              value: 1000000
+          - criterion_id: cri_02
+            kind: manual
+            reason: external-verification
+            statement: Startup must be in Zeet's VC or cloud partner networks.
+    roles:
+      terms_authority_entity_id: ent_01kzve6dv9yw2dqryqr900k2gz
+      access_operator_entity_id: ent_01kzve6dv9yw2dqryqr900k2gz
+    access:
+      availability: public
+      method: form
+      url: https://zeet.co/resources/startups-program
+    source_ids:
+      - src_dbf43ffb7fead1b70b9cf620150f298cee8b0744f368e57ab6f5e0ee6467b842
