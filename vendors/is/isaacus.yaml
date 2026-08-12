@@ -1,0 +1,79 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kztstkfafqva995crec8a5zk
+slug: isaacus
+slug_aliases: []
+name: Isaacus
+domains:
+  - value: isaacus.com
+    role: primary
+    valid_from: 2026-08-12T03:45:00.000Z
+category: ai-ml
+description: Isaacus provides legal AI models and APIs for building legal technology solutions, powered by its Blackstone Graph.
+links:
+  site: https://isaacus.com
+  startups: https://isaacus.com/startups
+sources:
+  - source_id: src_01kztsts14whk3y0z4zyx2rmf5
+    url: https://isaacus.com/startups
+programs:
+  - program_id: prg_01kztstkfeamvg28wqq6j3hax2
+    program_slug: isaacus-startup-program
+    program_slug_aliases: []
+    title: Isaacus Startup Program
+    summary: Isaacus supports legal tech startups with free API credits, a model-usage discount, and priority technical support for building solutions on its legal AI models.
+    source_ids:
+      - src_01kztsts14whk3y0z4zyx2rmf5
+offers:
+  - offer_id: off_01kztstkfejafpm91ynhp9mbk9
+    program_id: prg_01kztstkfeamvg28wqq6j3hax2
+    offer_slug: isaacus-startup-program-credits
+    offer_slug_aliases: []
+    title: Isaacus Startup Program Credits
+    summary: Eligible legal tech startups receive US$5,000 in free API credits for the first four months, a 50% model-usage discount for the first twelve months, and one year of free priority technical support.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-12T03:45:00.000Z
+    access:
+      availability: public
+      method: form
+      url: https://isaacus.com/startups
+      instructions: Submit the application form on the Isaacus Startup Program page; admission is at Isaacus's sole discretion.
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_01
+          description: US$5,000 in free API credits for the first four months of usage of Isaacus legal AI models
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 500000
+            kind: exact
+        - benefit_id: ben_02
+          description: 50% discount on model usage for the first twelve months, equivalent to US$10,000 for the first four months
+          kind: discount
+          value:
+            kind: percentage
+            value: 0.5
+          duration:
+            kind: exact
+            value: P12M
+        - benefit_id: ben_03
+          description: One year of free Isaacus priority technical support
+          kind: free-service
+          service: Isaacus priority technical support
+          duration:
+            kind: exact
+            value: P1Y
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_01
+        statement: Incorporated in and operating from the US, UK, Canada, Australia, New Zealand, Ireland, Singapore, Saudi Arabia, Denmark, the Netherlands, Belgium, Austria, Malta, Sweden, Germany, France, Finland, Italy, Spain, Portugal, Estonia, Switzerland, or Luxembourg; less than 2 years old; less than US$10 million in funding; less than US$2 million in annual recurring revenue; fewer than 100 employees; not majority owned by another company (unless that company meets all inclusion criteria); not involved in adult content, gambling, arms, controlled substances, alcohol, or tobacco industries; no prior Isaacus startup credits or discounts; Isaacus account no older than 3 months upon application.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01kztstkfafqva995crec8a5zk
+      access_operator_entity_id: ent_01kztstkfafqva995crec8a5zk
+    source_ids:
+      - src_01kztsts14whk3y0z4zyx2rmf5
