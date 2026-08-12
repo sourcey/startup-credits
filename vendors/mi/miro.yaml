@@ -110,7 +110,8 @@ offers:
       access_operator_entity_id: ent_01kyh8fpe3h966sfgy1aghhjce
     access:
       availability: membership
-      method: form
+      method: other
+      instructions: Startups working with a Miro global partner use the credit link received from their organization; those without a link reach out to the organization directly.
       url: https://miro.com/startups/apply/
     source_ids:
       - src_f7a04582fc000269446e5f71740255d7c2b9455293552b08d43e81f9364dc962
