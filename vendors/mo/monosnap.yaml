@@ -1,0 +1,119 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kzv66pm450h96a8mp5krmqk9
+slug: monosnap
+slug_aliases: []
+name: Monosnap
+domains:
+  - value: monosnap.ai
+    role: primary
+    valid_from: 2026-08-12T14:32:27.995Z
+category: productivity
+description: Monosnap provides screenshot capture, screen recording, annotation, sharing, cloud storage, and team-management tools.
+links:
+  site: https://monosnap.ai
+sources:
+  - source_id: src_59f4d99f757e1df0cf1dc1dfec9ade690566243944f9a6f761d7ff54ce708c2a
+    url: https://monosnap.zendesk.com/hc/en-us/articles/5536773521682-Monosnap-for-Strartups
+  - source_id: src_3729b8fefeafa890feef4a67d329be280a7db7d9f6396bbcd6ed98577761baa0
+    url: https://monosnap.zendesk.com/hc/en-us/articles/5551061095698-Compare-Monosnap-Plans
+programs:
+  - program_id: prg_01kzv66pm6krs81cf1fgng0ghw
+    program_slug: monosnap-for-startups
+    program_slug_aliases: []
+    title: Monosnap for Startups
+    summary: Monosnap offers qualifying startups a three-year schedule of free or discounted access to its Commercial or Enterprise plans.
+    source_ids:
+      - src_59f4d99f757e1df0cf1dc1dfec9ade690566243944f9a6f761d7ff54ce708c2a
+      - src_3729b8fefeafa890feef4a67d329be280a7db7d9f6396bbcd6ed98577761baa0
+offers:
+  - offer_id: off_01kzv66pm6htab067d82100n10
+    program_id: prg_01kzv66pm6krs81cf1fgng0ghw
+    offer_slug: monosnap-for-startups-under-5m-funding
+    offer_slug_aliases: []
+    title: Monosnap for Startups under $5M funding
+    summary: Eligible startups with less than $5M in funding receive free full access and up to 20 GB per account in Year 1, then 50% off in Year 2 and 25% off in Year 3.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-12T14:32:27.995Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Free full access to Monosnap software and integrations, with up to 20 GB of Monosnap cloud storage for each account, in the first year
+          duration:
+            kind: exact
+            value: P1Y
+          kind: free-service
+          service: Monosnap software, integrations, and up to 20 GB of cloud storage per account
+        - applies_to: Monosnap Commercial or Enterprise plans with annual payments
+          benefit_id: ben_02
+          description: 50% off full access to Monosnap in the second year
+          duration:
+            kind: exact
+            value: P1Y
+          kind: discount
+          percentage:
+            basis_points: 5000
+            kind: exact
+        - applies_to: Monosnap Commercial or Enterprise plans with annual payments
+          benefit_id: ben_03
+          description: 25% off full access to Monosnap in the third year
+          duration:
+            kind: exact
+            value: P1Y
+          kind: discount
+          percentage:
+            basis_points: 2500
+            kind: exact
+      consideration:
+        kind: variable
+        description: The program applies to Commercial or Enterprise plans with annual payments; the Non-Commercial plan is excluded.
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.funding_raised_usd
+            kind: predicate
+            operator: lt
+            statement: The startup has raised less than $5,000,000 in funding.
+            value:
+              type: number
+              value: 5000000
+          - kind: any
+            rules:
+              - criterion_id: cri_02
+                kind: manual
+                reason: external-verification
+                statement: The startup is associated with a Monosnap partner.
+              - kind: all
+                rules:
+                  - criterion_id: cri_03
+                    fact: company.is_current_customer
+                    kind: predicate
+                    operator: eq
+                    statement: The applicant is a new Monosnap customer.
+                    value:
+                      type: boolean
+                      value: false
+                  - criterion_id: cri_04
+                    kind: manual
+                    reason: external-verification
+                    statement: The startup has raised outside funding at the Pre-Seed, Seed, or Series A stage.
+                  - criterion_id: cri_05
+                    fact: company.employee_count
+                    kind: predicate
+                    operator: lt
+                    statement: The startup has fewer than 250 employees.
+                    value:
+                      type: number
+                      value: 250
+    roles:
+      terms_authority_entity_id: ent_01kzv66pm450h96a8mp5krmqk9
+      access_operator_entity_id: ent_01kzv66pm450h96a8mp5krmqk9
+    access:
+      availability: public
+      method: form
+      url: https://monosnap.com/enterprise
+    source_ids:
+      - src_59f4d99f757e1df0cf1dc1dfec9ade690566243944f9a6f761d7ff54ce708c2a
+      - src_3729b8fefeafa890feef4a67d329be280a7db7d9f6396bbcd6ed98577761baa0
