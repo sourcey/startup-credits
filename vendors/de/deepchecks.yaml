@@ -1,0 +1,59 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kzvfkq1jgzd6jsst13zrvn61
+slug: deepchecks
+slug_aliases: []
+name: Deepchecks
+domains:
+  - value: deepchecks.com
+    role: primary
+    valid_from: 2026-08-12T17:16:37.000Z
+category: ai-ml
+description: Deepchecks provides evaluation, monitoring, and quality-assurance tooling for machine-learning models and LLM applications.
+links:
+  site: https://deepchecks.com
+sources:
+  - source_id: src_53f84b91c5a87733fb0262eb43c1fa4a9c6cfac5960fdb4f5967ae0be3903578
+    url: https://deepchecks.com/nvidia-deepchecks/
+programs: []
+offers:
+  - offer_id: off_01kzvfkq1nxfx7b7jdkterj8r8
+    offer_slug: nvidia-inception-5000-credits
+    offer_slug_aliases: []
+    title: $5,000 in Deepchecks credits for NVIDIA Inception members
+    summary: NVIDIA Inception startup members can receive $5,000 in credits for Deepchecks' LLM Evaluation platform.
+    lifecycle:
+      status: active
+      effective_from: 2025-03-20T00:00:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: $5,000 in credits for the Deepchecks LLM Evaluation platform.
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 500000
+            kind: exact
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        fact: company.partner_memberships
+        kind: predicate
+        operator: contains
+        statement: Applicant must be a member of NVIDIA Inception for startups.
+        value:
+          type: string
+          value: NVIDIA Inception
+    roles:
+      terms_authority_entity_id: ent_01kzvfkq1jgzd6jsst13zrvn61
+      access_operator_entity_id: ent_01kyy3083w3k33krxmrqx1kr4c
+    access:
+      availability: membership
+      method: other
+      url: https://deepchecks.com/nvidia-deepchecks/
+      instructions: Access the benefit through the NVIDIA program portal or contact Deepchecks at the address listed on the offer page.
+    terms_url: https://deepchecks.com/nvidia-deepchecks/
+    source_ids:
+      - src_53f84b91c5a87733fb0262eb43c1fa4a9c6cfac5960fdb4f5967ae0be3903578
