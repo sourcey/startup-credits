@@ -1,0 +1,66 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kzvmeyqks68dcnt5x97hrp0k
+slug: clodura
+slug_aliases: []
+name: Clodura.AI
+domains:
+  - value: clodura.ai
+    role: primary
+    valid_from: 2026-08-12T18:41:07.007Z
+category: crm-sales
+description: Clodura.AI is a GenAI go-to-market platform with sales intelligence, verified B2B data, outreach automation, and calling tools.
+links:
+  site: https://www.clodura.ai/startup-program/
+sources:
+  - source_id: src_6e31a4e995424a4884360012385eeb20c6af10e222ae0140c0425b8dde0f8a8d
+    url: https://www.clodura.ai/startup-program/
+  - source_id: src_18d2e5d21f4361acd2d9b66286edccc3628f853e87baf1286c61995c7303ce9c
+    url: https://www.clodura.ai/pricing/
+programs:
+  - program_id: prg_01kzvmeyqkhn8srqcfjvtpv9z0
+    program_slug: clodura-ai-startup-program
+    program_slug_aliases: []
+    title: Clodura.AI Startup Program
+    summary: Gives eligible startups discounted access to Clodura.AI's GenAI GTM platform plus GTM learning resources, workshops, playbooks, and mentorship.
+    source_ids:
+      - src_6e31a4e995424a4884360012385eeb20c6af10e222ae0140c0425b8dde0f8a8d
+offers:
+  - offer_id: off_01kzvmeyqks23egj678e2dyxy3
+    program_id: prg_01kzvmeyqkhn8srqcfjvtpv9z0
+    offer_slug: clodura-ai-startup-program-50-percent-off
+    offer_slug_aliases: []
+    title: Up to 50% off Clodura.AI Self-Service Max Plan
+    summary: Eligible seed to Series A startups can apply for up to 50% off Clodura.AI's Self-Service Max Plan with 10,000 credits per month or above.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-12T18:41:07.007Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to 50% off Clodura.AI's Self-Service Max Plan with 10,000 credits per month or above
+          kind: discount
+          percentage:
+            kind: up-to
+            basis_points: 5000
+        - benefit_id: ben_02
+          description: Free access to Clodura's GTM learning library, monthly founder workshops, growth playbooks, templates, and 1:1 mentorship
+          kind: other
+      consideration:
+        kind: unknown
+        description: The source states a discount on a paid self-service Max plan but does not state separate program fees.
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_01
+        statement: Must be less than 10 years old, a registered company, seed to Series A stage, have a scalable business model and total addressable market, fewer than 50 employees, and a corporate domain email.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01kzvmeyqks68dcnt5x97hrp0k
+      access_operator_entity_id: ent_01kzvmeyqks68dcnt5x97hrp0k
+    access:
+      availability: public
+      method: form
+      url: https://www.clodura.ai/startup-program/
+    source_ids:
+      - src_6e31a4e995424a4884360012385eeb20c6af10e222ae0140c0425b8dde0f8a8d
+      - src_18d2e5d21f4361acd2d9b66286edccc3628f853e87baf1286c61995c7303ce9c
