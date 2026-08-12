@@ -16,6 +16,8 @@ sources:
     url: https://openai.com/business/why-openai/startups/
   - source_id: src_f0897f1deaf5cdccfab9fda163fcfb40fcd734a1c9adb5e35c96ada602cc65f1
     url: https://ramp.com/rewards/openai
+  - source_id: src_03a7334d6b7b66a8c1d251764583f4e716c29a0e99be36a630ea2cf208baac6e
+    url: https://ramp.com/rewards
 programs: []
 offers:
   - offer_id: off_01kyh8fpe4jecj8crezg4618sc
@@ -83,7 +85,8 @@ offers:
     access:
       availability: membership
       method: other
-      instructions: Sign in to Ramp from the OpenAI reward page to access the credits.
+      instructions: Get Ramp and redeem the reward within the product dashboard.
       url: https://ramp.com/rewards/openai
     source_ids:
       - src_f0897f1deaf5cdccfab9fda163fcfb40fcd734a1c9adb5e35c96ada602cc65f1
+      - src_03a7334d6b7b66a8c1d251764583f4e716c29a0e99be36a630ea2cf208baac6e
