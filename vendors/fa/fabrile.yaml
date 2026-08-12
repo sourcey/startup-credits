@@ -1,0 +1,83 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kzvh1gbqj9aa2dk8yh4y98h3
+slug: fabrile
+slug_aliases: []
+name: Fabrile
+domains:
+  - value: fabrile.app
+    role: primary
+    valid_from: 2026-08-12T17:41:42.000Z
+category: support
+description: Fabrile provides AI customer-support agents trained on a company's website, documentation, and help content.
+links:
+  site: https://fabrile.app
+sources:
+  - source_id: src_a4fa2e24ea25284ed8b55a2b5198cd164932c38ccab6d51290db4a70836793aa
+    url: https://fabrile.app/use-cases/startups
+programs:
+  - program_id: prg_01kzvh1gbqp95t90aafx0cac88
+    program_slug: fabrile-for-startups
+    program_slug_aliases: []
+    title: Fabrile for Startups
+    summary: Fabrile gives eligible early-stage startups its Growth plan free for their first three months.
+    source_ids:
+      - src_a4fa2e24ea25284ed8b55a2b5198cd164932c38ccab6d51290db4a70836793aa
+offers:
+  - offer_id: off_01kzvh1gbqets1t8rzavymm5mz
+    program_id: prg_01kzvh1gbqp95t90aafx0cac88
+    offer_slug: three-months-free-growth-plan
+    offer_slug_aliases: []
+    title: Three months free on Fabrile Growth
+    summary: Eligible startups receive Fabrile's Growth plan free for three months, including five AI agents, 5,000 messages and unique visitors per month, 10 GB of documents, and Slack integration.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-12T17:41:42.000Z
+    economics:
+      benefits:
+        - applies_to: Growth plan
+          benefit_id: ben_01
+          description: The full Fabrile Growth plan, which the vendor values at EUR 950, free for the first three months
+          duration:
+            kind: exact
+            value: P3M
+          kind: discount
+          percentage:
+            basis_points: 10000
+            kind: exact
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: external-verification
+            statement: The startup was founded less than two years ago.
+          - criterion_id: cri_02
+            kind: manual
+            reason: external-verification
+            statement: The startup has raised less than EUR 2 million in total.
+          - criterion_id: cri_03
+            kind: manual
+            reason: external-verification
+            statement: The startup builds a product or service and is not an agency.
+          - criterion_id: cri_04
+            kind: manual
+            reason: external-verification
+            statement: The startup is new to Fabrile.
+          - criterion_id: cri_05
+            kind: manual
+            reason: external-verification
+            statement: The startup has a live website or product.
+    roles:
+      terms_authority_entity_id: ent_01kzvh1gbqj9aa2dk8yh4y98h3
+      access_operator_entity_id: ent_01kzvh1gbqj9aa2dk8yh4y98h3
+    access:
+      availability: public
+      instructions: Submit the startup application form. Fabrile says it reviews each application and replies within one day.
+      method: form
+      url: https://fabrile.app/use-cases/startups
+    terms_url: https://fabrile.app/use-cases/startups
+    source_ids:
+      - src_a4fa2e24ea25284ed8b55a2b5198cd164932c38ccab6d51290db4a70836793aa
