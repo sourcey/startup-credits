@@ -11,51 +11,13 @@ domains:
     role: alias
     valid_from: 2026-08-01T13:50:00.000Z
 category: productivity
-description: Dropbox DocSend lets startup founders securely share their pitch deck and fundraise with real-time document analytics.
+description: Learn how DocSend lets you take control of your business with real-time shared document analytics that unlock data-driven decision making.
 links:
-  site: https://www.dropbox.com/docsend
+  site: https://dropbox.com
 sources:
   - source_id: src_041ab6b6d66f29e0291b59c4b8ada19f54e6a4bb9867fb5ecb8f00b396099d25
     url: https://www.dropbox.com/docsend
-  - source_id: src_07aa0c5fd2c05a2e32f2bf2c155ef0eff35bbde841ee9616db39f32beabc6036
-    url: https://experience.dropbox.com/docsend/startups
+  - source_id: src_bd9ba13a47d267f4788593e8dc00306da6bdec3415b5ecec62ed9c32acc5c52b
+    url: https://perkbook.co/vendor-directory/docsend
 programs: []
-offers:
-  - offer_id: off_01kyyts97wf5yq8nvzs4wadhjj
-    offer_slug: 90-off-with-docsend-startup-program-seed
-    offer_slug_aliases: []
-    title: Up to 90% off an annual DocSend plan for startups
-    summary: Startup founders can sign up to receive up to 90% off their annual DocSend plan.
-    lifecycle:
-      status: active
-      effective_from: 2026-08-01T08:14:06.108Z
-    economics:
-      benefits:
-        - benefit_id: ben_01
-          applies_to: annual DocSend plan
-          description: Up to 90% off an annual DocSend plan
-          duration:
-            kind: exact
-            value: P1Y
-          kind: discount
-          percentage:
-            basis_points: 9000
-            kind: up-to
-      consideration:
-        kind: unknown
-        description: The campaign page does not establish separate consideration beyond the discounted subscription.
-    eligibility:
-      rule:
-        criterion_id: cri_01
-        kind: manual
-        reason: vendor-discretion
-        statement: Offered to startup founders who sign up through the Dropbox DocSend startups page.
-    roles:
-      terms_authority_entity_id: ent_01kyyts97s803mp8w4cmgxa1en
-      access_operator_entity_id: ent_01kyyts97s803mp8w4cmgxa1en
-    access:
-      availability: public
-      method: form
-      url: https://experience.dropbox.com/docsend/startups
-    source_ids:
-      - src_07aa0c5fd2c05a2e32f2bf2c155ef0eff35bbde841ee9616db39f32beabc6036
+offers: []
