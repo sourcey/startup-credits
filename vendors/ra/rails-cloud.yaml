@@ -16,6 +16,8 @@ sources:
     url: https://railscloud.co/
   - source_id: src_a2d524b63a1920f03b967d2a03e618d9f5ba9f2350f9d94541e1a7da6b8564ea
     url: https://pages.railscloud.co/startup
+  - source_id: src_2331aff282082bb60bb15a51e392e2435ac21a9ed388f5842b6fba979ab159ea
+    url: https://pages.railscloud.co/register
 programs:
   - program_id: prg_01kzrrn3k1tkbsdv7dbkwrt571
     program_slug: rails-cloud-startup-program
@@ -55,3 +57,4 @@ offers:
       url: https://pages.railscloud.co/register
     source_ids:
       - src_a2d524b63a1920f03b967d2a03e618d9f5ba9f2350f9d94541e1a7da6b8564ea
+      - src_2331aff282082bb60bb15a51e392e2435ac21a9ed388f5842b6fba979ab159ea
