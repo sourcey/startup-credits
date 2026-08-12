@@ -1,0 +1,57 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kzsn065sf2esxcrk4sfy1dee
+slug: ptc
+slug_aliases: []
+name: PTC
+domains:
+  - value: ptc.com
+    role: primary
+    valid_from: 2026-08-11T23:00:00.000Z
+category: devtools-other
+description: PTC provides engineering, product lifecycle, and application lifecycle software for teams developing physical and digital products.
+links:
+  site: https://www.ptc.com
+sources:
+  - source_id: src_ea6414ab2aecc2ff9b3da7c832286e9dd409f96e705e2ba566f36b848f40d73e
+    url: https://www.ptc.com/en/try-and-buy/software-for-startups
+programs:
+  - program_id: prg_01kzsn065vkex9ey807h481805
+    program_slug: ptc-for-startups
+    program_slug_aliases: []
+    title: PTC for Startups
+    summary: PTC provides qualifying startups free or discounted access to product development, application lifecycle, and product lifecycle tools.
+    source_ids:
+      - src_ea6414ab2aecc2ff9b3da7c832286e9dd409f96e705e2ba566f36b848f40d73e
+offers:
+  - offer_id: off_01kzsn065vn9jjcmy9xb64pmyw
+    program_id: prg_01kzsn065vkex9ey807h481805
+    offer_slug: one-year-access-to-ptc-startup-tools
+    offer_slug_aliases: []
+    title: One year of PTC startup tools
+    summary: Qualifying startups can apply for one year of free access to Onshape, Creo+, and Codebeamer+, with Arena available through the startup program.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-11T23:00:00.000Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_primary
+          description: One year of free access to Onshape, Creo+, and Codebeamer+ for qualifying startups; Arena access is handled through the program.
+          kind: free-service
+          service: PTC startup product access
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Applicant must be a startup developing its own product line, have a functioning website, not already be a customer of the requested product, and satisfy PTC's funding, revenue, or incubator/investor review.
+        reason: external-verification
+    roles:
+      terms_authority_entity_id: ent_01kzsn065sf2esxcrk4sfy1dee
+      access_operator_entity_id: ent_01kzsn065sf2esxcrk4sfy1dee
+    access:
+      availability: public
+      method: form
+      url: https://www.ptc.com/en/try-and-buy/software-for-startups
+    source_ids:
+      - src_ea6414ab2aecc2ff9b3da7c832286e9dd409f96e705e2ba566f36b848f40d73e
