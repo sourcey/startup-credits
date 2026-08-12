@@ -1,0 +1,69 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kzv55g1eg574zbpj3xc0y8pv
+slug: brr-softwares
+slug_aliases: []
+name: BRR Softwares
+domains:
+  - value: brrsoftwares.com
+    role: primary
+    valid_from: 2026-08-12T14:15:00.000Z
+category: devtools-other
+description: BRR Softwares provides custom software development, cloud, mobile, data, integration, and AI engineering services.
+links:
+  site: https://brrsoftwares.com
+sources:
+  - source_id: src_55aa064ef98de749ffb9b290127465054fad3dca6a5ec78de8ee67a9680573fa
+    url: https://brrsoftwares.com/startup_program
+  - source_id: src_135db36ecbab5322bf30d4c5c2b66dbeaedbebbc2f5cf58be73b85f5f92ed4fa
+    url: https://brrsoftwares.com/legal/terms-of-service
+programs:
+  - program_id: prg_01kzv55g1g8qtx0dhqgpebdwq8
+    program_slug: brr-startup-program
+    program_slug_aliases: []
+    title: BRR Startup Program
+    summary: BRR Softwares offers eligible startups discounted software-development services and BRR-AI platform access for their first year.
+    source_ids:
+      - src_55aa064ef98de749ffb9b290127465054fad3dca6a5ec78de8ee67a9680573fa
+      - src_135db36ecbab5322bf30d4c5c2b66dbeaedbebbc2f5cf58be73b85f5f92ed4fa
+offers:
+  - offer_id: off_01kzv55g1gvb59amrshbe0asav
+    program_id: prg_01kzv55g1g8qtx0dhqgpebdwq8
+    offer_slug: brr-startup-program-75-percent-off-first-year
+    offer_slug_aliases: []
+    title: BRR Startup Program 75% Off First Year
+    summary: Eligible startups receive 75% off BRR software-development services for their first year, subject to verification and a specific statement of work.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-12T14:15:00.000Z
+    economics:
+      benefits:
+        - applies_to: BRR software-development services and BRR-AI platform access defined in the statement of work
+          benefit_id: ben_01
+          description: 75% discount for the first year
+          duration:
+            kind: exact
+            value: P1Y
+          kind: discount
+          percentage:
+            basis_points: 7500
+            kind: exact
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: external-verification
+            statement: Startup applicants are subject to BRR Softwares eligibility verification.
+    roles:
+      terms_authority_entity_id: ent_01kzv55g1eg574zbpj3xc0y8pv
+      access_operator_entity_id: ent_01kzv55g1eg574zbpj3xc0y8pv
+    access:
+      availability: public
+      method: form
+      url: https://brrsoftwares.com/startup_program
+    source_ids:
+      - src_55aa064ef98de749ffb9b290127465054fad3dca6a5ec78de8ee67a9680573fa
+      - src_135db36ecbab5322bf30d4c5c2b66dbeaedbebbc2f5cf58be73b85f5f92ed4fa
