@@ -76,6 +76,7 @@ offers:
       access_operator_entity_id: ent_01kzfx63q2qtnm5v45ekpwj6a0
     access:
       availability: public
+      instructions: Use the on-page Startup Program application; Phala asks for product, stage, private data, and proof context and labels the application button "Apply now."
       method: form
       url: https://phala.com/startup-program
     source_ids:
