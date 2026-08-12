@@ -14,16 +14,7 @@ links:
 sources:
   - source_id: src_ea790be568ceac58032d8f5cfbe5fe7cc82aad0993b883bb8c4fc00d0a39e2ca
     url: https://mixpanel.com/startups
-  - source_id: src_eae408957a688c39055eba95a3015809cfd7c08e400619ecd2a4c76246aab2fb
-    url: https://perkbook.co/vendor-directory/mixpanel
-programs:
-  - program_id: prg_01kyyts97x3wvehfewd8amgdjp
-    program_slug: mixpanel-for-startups
-    program_slug_aliases: []
-    title: Mixpanel for Startups
-    summary: Mixpanel for Startups provides free credits and product analytics tools to help early-stage startups reach product-market fit.
-    source_ids:
-      - src_eae408957a688c39055eba95a3015809cfd7c08e400619ecd2a4c76246aab2fb
+programs: []
 offers:
   - offer_id: off_01kyh8fpe47c34p80tmwstfc3a
     offer_slug: startup-program
@@ -57,64 +48,3 @@ offers:
       url: https://mixpanel.com/startups
     source_ids:
       - src_ea790be568ceac58032d8f5cfbe5fe7cc82aad0993b883bb8c4fc00d0a39e2ca
-  - offer_id: off_01kyyts97xe9g83q0py06y9z7a
-    program_id: prg_01kyyts97x3wvehfewd8amgdjp
-    offer_slug: 1-year-free-startup-plan-with-mixpanel-for-startups
-    offer_slug_aliases: []
-    title: 1 year free Startup Plan with Mixpanel for Startups
-    summary: Eligible early-stage startups receive $50,000 in free credits for Mixpanel's Startup Plan over 1 year.
-    lifecycle:
-      status: active
-      effective_from: 2026-08-01T08:15:22.415Z
-    economics:
-      benefits:
-        - benefit_id: ben_01
-          description: $50,000 in free credits for the Startup Plan
-          duration:
-            kind: exact
-            value: P1Y
-          kind: credit
-          value:
-            amount:
-              currency: USD
-              minor_units: 5000000
-            kind: exact
-      consideration:
-        kind: none
-    eligibility:
-      rule:
-        kind: all
-        rules:
-          - criterion_id: cri_01
-            fact: company.age_months
-            kind: predicate
-            operator: lt
-            statement: Company is under 2 years old
-            value:
-              type: number
-              value: 24
-          - criterion_id: cri_02
-            fact: company.funding_raised_usd
-            kind: predicate
-            operator: lt
-            statement: Company has raised less than $5M in total funding
-            value:
-              type: number
-              value: 5000000
-          - criterion_id: cri_03
-            fact: company.is_current_customer
-            kind: predicate
-            operator: eq
-            statement: Must be a new Mixpanel customer
-            value:
-              type: boolean
-              value: false
-    roles:
-      terms_authority_entity_id: ent_01kyh8fpe40rzz1tgnr4prd3tr
-      access_operator_entity_id: ent_01kyyr9svgcxd42r9s8g3knssn
-    access:
-      availability: membership
-      method: form
-      url: https://perkbook.co/vendor-directory/mixpanel
-    source_ids:
-      - src_eae408957a688c39055eba95a3015809cfd7c08e400619ecd2a4c76246aab2fb

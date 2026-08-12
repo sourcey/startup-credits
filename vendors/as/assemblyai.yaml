@@ -14,16 +14,7 @@ links:
 sources:
   - source_id: src_8bca567ba3c14b94f29b44fde3a4786a056238ef6a5feb26cc37d5ae05805a1b
     url: https://www.assemblyai.com/contact/startup-program
-  - source_id: src_6e1f10a8bd9fe0cb207ad9f9671270c4f3b142a71766603fcc20af400bdceafa
-    url: https://perkbook.co/vendor-directory/assemblyai
-programs:
-  - program_id: prg_01kyyr9svgvrbh4bzefjw2yedv
-    program_slug: assemblyai-for-startups
-    program_slug_aliases: []
-    title: AssemblyAI for Startups
-    summary: AssemblyAI for Startups gives qualifying early-stage companies up to $150,000 in Speech AI API credits.
-    source_ids:
-      - src_6e1f10a8bd9fe0cb207ad9f9671270c4f3b142a71766603fcc20af400bdceafa
+programs: []
 offers:
   - offer_id: off_01kyh8fpe19tbgz9qesnr0wd3x
     offer_slug: assemblyai-startup-program
@@ -56,43 +47,3 @@ offers:
       url: https://www.assemblyai.com/contact/startup-program
     source_ids:
       - src_8bca567ba3c14b94f29b44fde3a4786a056238ef6a5feb26cc37d5ae05805a1b
-  - offer_id: off_01kyyr9svghkr1k8pg6k0yed14
-    program_id: prg_01kyyr9svgvrbh4bzefjw2yedv
-    offer_slug: up-to-150-000-in-speech-ai-api-credits-with-assemblyai-for-startups
-    offer_slug_aliases: []
-    title: Up to $150,000 in Speech AI API Credits with AssemblyAI for Startups
-    summary: Qualifying early-stage startups building voice, audio, or speech AI products can receive up to $150,000 in Speech AI API credits.
-    lifecycle:
-      status: active
-      effective_from: 2026-08-01T08:12:55.874Z
-    economics:
-      benefits:
-        - benefit_id: ben_01
-          description: Up to $150,000 USD in Speech AI API credits for transcription, speaker diarisation, sentiment analysis, and audio intelligence.
-          kind: credit
-          value:
-            amount:
-              currency: USD
-              minor_units: 15000000
-            kind: up-to
-      consideration:
-        kind: none
-    eligibility:
-      rule:
-        criterion_id: cri_01
-        fact: company.stage
-        kind: predicate
-        operator: eq
-        statement: Must be an early-stage startup building voice, audio, or speech AI products.
-        value:
-          type: string
-          value: early-stage
-    roles:
-      terms_authority_entity_id: ent_01kyh8fpe12ppbv2jhh02yn5bx
-      access_operator_entity_id: ent_01kyyr9svgcxd42r9s8g3knssn
-    access:
-      availability: membership
-      method: form
-      url: https://perkbook.co/vendor-directory/assemblyai
-    source_ids:
-      - src_6e1f10a8bd9fe0cb207ad9f9671270c4f3b142a71766603fcc20af400bdceafa

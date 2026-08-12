@@ -14,49 +14,69 @@ links:
 sources:
   - source_id: src_542c2b80b81a62939836f767735b1c430b78501e58f3c5e15f598ee2f8415574
     url: https://www.theswarm.com/
-  - source_id: src_eaddcd07533be82597727c39ed4bf892af10e6ccea2fa80d98148d92705976f9
-    url: https://perkbook.co/vendor-directory/the
+  - source_id: src_ce82341aa168c99c167b63ee266d3dd22928f37b7d64e7481179baa5843f713d
+    url: https://www.theswarm.com/company/early-stage-program
 programs:
   - program_id: prg_01kyyts97xhd7eqb8jn4ath6rm
     program_slug: the-swarm-startup-program
     program_slug_aliases: []
-    title: The Swarm Startup Program
-    summary: The Swarm Startup Program provides offers and perks for startups using The Swarm network intelligence platform.
+    title: The Swarm Early Stage Program
+    summary: The Swarm's early stage program gives eligible startups a 70% first-year discount on its SaaS platform and special pricing for its data solutions.
     source_ids:
-      - src_eaddcd07533be82597727c39ed4bf892af10e6ccea2fa80d98148d92705976f9
+      - src_ce82341aa168c99c167b63ee266d3dd22928f37b7d64e7481179baa5843f713d
 offers:
   - offer_id: off_01kyyts97x2gnknxdt3n2jsxgr
     program_id: prg_01kyyts97xhd7eqb8jn4ath6rm
     offer_slug: 1-year-free-with-the-swarm-for-startups
     offer_slug_aliases: []
-    title: 1 year free with The Swarm for Startups
-    summary: Startups get 1 year of free access to The Swarm network intelligence platform.
+    title: 70% first-year discount for early-stage startups
+    summary: Eligible startups get a 70% first-year discount on The Swarm's SaaS platform, and special pricing for its data solutions.
     lifecycle:
       status: active
       effective_from: 2026-08-01T08:17:26.928Z
     economics:
       benefits:
         - benefit_id: ben_01
-          description: 1 year of free service with The Swarm for Startups
+          description: 70% first-year discount on The Swarm's SaaS platform
           duration:
             kind: exact
             value: P1Y
-          kind: free-service
-          service: The Swarm for Startups
+          kind: discount
+          percentage:
+            basis_points: 7000
+            kind: exact
+        - benefit_id: ben_02
+          description: Special pricing for The Swarm's data solutions
+          kind: other
       consideration:
-        kind: none
+        kind: unknown
+        description: The program page does not establish separate consideration beyond the discounted subscription.
     eligibility:
       rule:
-        criterion_id: cri_01
-        kind: constant
-        statement: Available to all startups
-        value: true
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: external-verification
+            statement: Raised up to $10M.
+          - criterion_id: cri_02
+            fact: company.age_months
+            kind: predicate
+            operator: lt
+            statement: Founded less than 2 years ago.
+            value:
+              type: number
+              value: 24
+          - criterion_id: cri_03
+            kind: manual
+            reason: external-verification
+            statement: Backed by a Swarm partner, which the program lists as optional; applicants select the organization they are affiliated to.
     roles:
       terms_authority_entity_id: ent_01kyyts97tpxmfh63db6h6jmxx
-      access_operator_entity_id: ent_01kyyr9svgcxd42r9s8g3knssn
+      access_operator_entity_id: ent_01kyyts97tpxmfh63db6h6jmxx
     access:
-      availability: membership
-      method: other
-      url: https://perkbook.co/vendor-directory/the
+      availability: public
+      method: form
+      url: https://www.theswarm.com/company/early-stage-program
     source_ids:
-      - src_eaddcd07533be82597727c39ed4bf892af10e6ccea2fa80d98148d92705976f9
+      - src_ce82341aa168c99c167b63ee266d3dd22928f37b7d64e7481179baa5843f713d

@@ -14,16 +14,7 @@ links:
 sources:
   - source_id: src_25b42ddd48289d24850b1e411340687bbfcd4a3cb063113c80d9e6911decd797
     url: https://www.zendesk.com/au/business/startups/
-  - source_id: src_75b5dc555370733d4846f2bb1b618e8cff662b28039d2e1096456ccc5356451e
-    url: https://perkbook.co/vendor-directory/zendesk
-programs:
-  - program_id: prg_01kyyr9svh3m46vmwgnbrpwagr
-    program_slug: zendesk-startup-program
-    program_slug_aliases: []
-    title: Zendesk Startup Program
-    summary: Zendesk for Startups offers and perks
-    source_ids:
-      - src_75b5dc555370733d4846f2bb1b618e8cff662b28039d2e1096456ccc5356451e
+programs: []
 offers:
   - offer_id: off_01kyh8fpe6brkee6gvymyykky4
     offer_slug: zendesk-for-startups-programme
@@ -57,64 +48,3 @@ offers:
       url: https://www.zendesk.com/au/business/startups/
     source_ids:
       - src_25b42ddd48289d24850b1e411340687bbfcd4a3cb063113c80d9e6911decd797
-  - offer_id: off_01kyyr9svh9qj0hc652gxtp53a
-    program_id: prg_01kyyr9svh3m46vmwgnbrpwagr
-    offer_slug: 30-off-first-year-with-zendesk-for-startups-50-to-250-employees
-    offer_slug_aliases: []
-    title: 30% off first year with Zendesk for Startups — 50 to 250 employees
-    summary: Get 30% off the first year of Zendesk for new customers with 50 to 250 employees.
-    lifecycle:
-      status: active
-      effective_from: 2026-08-01T08:18:11.942Z
-    economics:
-      benefits:
-        - applies_to: Zendesk
-          benefit_id: ben_01
-          description: 30% off first year
-          duration:
-            kind: exact
-            value: P1Y
-          kind: discount
-          percentage:
-            basis_points: 3000
-            kind: exact
-      consideration:
-        kind: none
-    eligibility:
-      rule:
-        kind: all
-        rules:
-          - criterion_id: cri_01
-            fact: company.is_current_customer
-            kind: predicate
-            operator: eq
-            statement: New Zendesk customer
-            value:
-              type: boolean
-              value: false
-          - criterion_id: cri_02
-            fact: company.employee_count
-            kind: predicate
-            operator: gte
-            statement: Between 50 and 250 employees
-            value:
-              type: number
-              value: 50
-          - criterion_id: cri_03
-            fact: company.employee_count
-            kind: predicate
-            operator: lte
-            statement: Between 50 and 250 employees
-            value:
-              type: number
-              value: 250
-    roles:
-      terms_authority_entity_id: ent_01kyh8fpe6eqd854n10kf92e5b
-      access_operator_entity_id: ent_01kyyr9svgcxd42r9s8g3knssn
-    access:
-      availability: membership
-      instructions: Sign Up to Unlock
-      method: other
-      url: https://perkbook.co/vendor-directory/zendesk
-    source_ids:
-      - src_75b5dc555370733d4846f2bb1b618e8cff662b28039d2e1096456ccc5356451e

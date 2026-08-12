@@ -14,16 +14,7 @@ links:
 sources:
   - source_id: src_7eed286a8512fe0123f70f0b88d01a0a88efa496fa5f6a89703157515c5e3a8f
     url: https://www.zoho.com/startups/
-  - source_id: src_d181b341f71716f956f85b611c4672f4e815220a59b4187735d63c9fa6db74c9
-    url: https://perkbook.co/vendor-directory/zoho
-programs:
-  - program_id: prg_01kyyr9svhbyevgq9sjgvgyngg
-    program_slug: zoho-startup-program
-    program_slug_aliases: []
-    title: Zoho Startup Program
-    summary: Zoho for Startups offers and perks
-    source_ids:
-      - src_d181b341f71716f956f85b611c4672f4e815220a59b4187735d63c9fa6db74c9
+programs: []
 offers:
   - offer_id: off_01kyh8fpe6qasefesj77p6h5ww
     offer_slug: zoho-for-startups
@@ -56,69 +47,3 @@ offers:
       url: https://www.zoho.com/startups/
     source_ids:
       - src_7eed286a8512fe0123f70f0b88d01a0a88efa496fa5f6a89703157515c5e3a8f
-  - offer_id: off_01kyyr9svhgqm3k63p9p99dbrf
-    program_id: prg_01kyyr9svhbyevgq9sjgvgyngg
-    offer_slug: free-wallet-credits-with-zoho-startup-program-standard-tier
-    offer_slug_aliases: []
-    title: Free wallet credits with Zoho Startup Program — standard tier
-    summary: Qualifying early-stage startups receive up to A$6,000 in Zoho Wallet Credits usable across Zoho's suite of 55+ business apps.
-    lifecycle:
-      status: active
-      effective_from: 2026-08-01T08:18:11.945Z
-    economics:
-      benefits:
-        - benefit_id: ben_01
-          description: Up to A$6,000 in Zoho Wallet Credits usable across Zoho's suite of 55+ integrated business apps.
-          kind: credit
-          value:
-            amount:
-              currency: AUD
-              minor_units: 600000
-            kind: up-to
-      consideration:
-        kind: none
-    eligibility:
-      rule:
-        kind: all
-        rules:
-          - criterion_id: cri_01
-            fact: company.stage
-            kind: predicate
-            operator: eq
-            statement: Early-stage startups
-            value:
-              type: string
-              value: early-stage
-          - criterion_id: cri_02
-            fact: company.funding_raised_usd
-            kind: predicate
-            operator: lt
-            statement: Under $5M raised
-            value:
-              type: number
-              value: 5000000
-          - criterion_id: cri_03
-            fact: company.age_months
-            kind: predicate
-            operator: lt
-            statement: Under 3 years old
-            value:
-              type: number
-              value: 36
-          - criterion_id: cri_04
-            fact: company.is_current_customer
-            kind: predicate
-            operator: eq
-            statement: New Zoho customers
-            value:
-              type: boolean
-              value: false
-    roles:
-      terms_authority_entity_id: ent_01kyh8fpe6n1xs5jjkcz991h2x
-      access_operator_entity_id: ent_01kyyr9svgcxd42r9s8g3knssn
-    access:
-      availability: membership
-      method: form
-      url: https://perkbook.co/vendor-directory/zoho
-    source_ids:
-      - src_d181b341f71716f956f85b611c4672f4e815220a59b4187735d63c9fa6db74c9
