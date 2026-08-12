@@ -21,7 +21,8 @@ sources:
 programs:
   - program_id: prg_01kyh8fpe335dxj6tsyk7tb78w
     program_slug: miro-for-startups
-    program_slug_aliases: []
+    program_slug_aliases:
+      - miro-startup-program
     title: Miro Startup Program
     summary: Miro's startup program gives early startups free Miro credits, directly or through a partner organization, and offers scale-ups a discount.
     source_ids:

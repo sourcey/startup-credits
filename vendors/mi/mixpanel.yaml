@@ -14,7 +14,13 @@ links:
 sources:
   - source_id: src_ea790be568ceac58032d8f5cfbe5fe7cc82aad0993b883bb8c4fc00d0a39e2ca
     url: https://mixpanel.com/startups
-programs: []
+programs:
+  - program_id: prg_01kyyts97x3wvehfewd8amgdjp
+    program_slug: mixpanel-for-startups
+    program_slug_aliases: []
+    title: Mixpanel for Startups
+    source_ids:
+      - src_ea790be568ceac58032d8f5cfbe5fe7cc82aad0993b883bb8c4fc00d0a39e2ca
 offers:
   - offer_id: off_01kyh8fpe47c34p80tmwstfc3a
     offer_slug: startup-program

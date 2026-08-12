@@ -14,7 +14,13 @@ links:
 sources:
   - source_id: src_e10dc2ef42ff4c06dd0e194be3a951c491eb07ca7e75f7102a215bdcd876d430
     url: https://www.wiz.io/lp/startups
-programs: []
+programs:
+  - program_id: prg_01kyyr9svh6aeder74q5j4rcn2
+    program_slug: wiz-startup-program
+    program_slug_aliases: []
+    title: Wiz for Startups
+    source_ids:
+      - src_e10dc2ef42ff4c06dd0e194be3a951c491eb07ca7e75f7102a215bdcd876d430
 offers:
   - offer_id: off_01kyygma830fgn90asc8pctkj3
     offer_slug: wiz-go-for-startups

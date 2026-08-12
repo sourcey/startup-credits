@@ -14,7 +14,13 @@ links:
 sources:
   - source_id: src_25b42ddd48289d24850b1e411340687bbfcd4a3cb063113c80d9e6911decd797
     url: https://www.zendesk.com/au/business/startups/
-programs: []
+programs:
+  - program_id: prg_01kyyr9svh3m46vmwgnbrpwagr
+    program_slug: zendesk-startup-program
+    program_slug_aliases: []
+    title: Zendesk for Startups
+    source_ids:
+      - src_25b42ddd48289d24850b1e411340687bbfcd4a3cb063113c80d9e6911decd797
 offers:
   - offer_id: off_01kyh8fpe6brkee6gvymyykky4
     offer_slug: zendesk-for-startups-programme

@@ -23,7 +23,8 @@ sources:
 programs:
   - program_id: prg_01kyyts97vhv6dbsc02y0sf1z9
     program_slug: the-pitch-by-deel
-    program_slug_aliases: []
+    program_slug_aliases:
+      - deel-startup-program
     title: The Pitch by Deel
     summary: Global tournament rewarding startup founders with SAFE funding, travel coverage, networking, and access to a perks marketplace.
     source_ids:

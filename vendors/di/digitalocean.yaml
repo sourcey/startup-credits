@@ -14,7 +14,13 @@ links:
 sources:
   - source_id: src_79a5ba0b58a5334728f4b66261d11e87dd01f1b9c98e8c82c9ad5805be0c2327
     url: https://www.digitalocean.com/startups
-programs: []
+programs:
+  - program_id: prg_01kyyr9svgytm49k59kkp561mf
+    program_slug: digitalocean-hatch
+    program_slug_aliases: []
+    title: DigitalOcean Startups
+    source_ids:
+      - src_79a5ba0b58a5334728f4b66261d11e87dd01f1b9c98e8c82c9ad5805be0c2327
 offers:
   - offer_id: off_01kyh8fpe2dwqnfrbb6nejb5zz
     offer_slug: digitalocean-startups-program

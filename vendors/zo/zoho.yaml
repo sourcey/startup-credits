@@ -14,7 +14,13 @@ links:
 sources:
   - source_id: src_7eed286a8512fe0123f70f0b88d01a0a88efa496fa5f6a89703157515c5e3a8f
     url: https://www.zoho.com/startups/
-programs: []
+programs:
+  - program_id: prg_01kyyr9svhbyevgq9sjgvgyngg
+    program_slug: zoho-startup-program
+    program_slug_aliases: []
+    title: Zoho for Startups
+    source_ids:
+      - src_7eed286a8512fe0123f70f0b88d01a0a88efa496fa5f6a89703157515c5e3a8f
 offers:
   - offer_id: off_01kyh8fpe6qasefesj77p6h5ww
     offer_slug: zoho-for-startups

@@ -14,7 +14,13 @@ links:
 sources:
   - source_id: src_16fcc1a7174c8dc0546e3675de9ef1c1a5939b667c4823a242ab6aa0370e06f8
     url: https://github.com/enterprise/startups
-programs: []
+programs:
+  - program_id: prg_01kyyr9svgyw0svdrb717nexp9
+    program_slug: github-for-startups
+    program_slug_aliases: []
+    title: GitHub for Startups
+    source_ids:
+      - src_16fcc1a7174c8dc0546e3675de9ef1c1a5939b667c4823a242ab6aa0370e06f8
 offers:
   - offer_id: off_01kyh8fpe3fe0s7ef65e5fj1p5
     offer_slug: github-for-startups-offer

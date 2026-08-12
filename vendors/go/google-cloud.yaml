@@ -21,7 +21,8 @@ sources:
 programs:
   - program_id: prg_01kyh8fpe243m25ep0wtvz068s
     program_slug: google-for-startups-cloud-program
-    program_slug_aliases: []
+    program_slug_aliases:
+      - google-cloud-for-startups
     title: Google for Startups Cloud Program
     summary: Google for Startups Cloud Program provides separate Start, Scale, and AI credit tiers with different economics and eligibility.
     source_ids:

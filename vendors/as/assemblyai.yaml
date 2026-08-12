@@ -14,7 +14,13 @@ links:
 sources:
   - source_id: src_8bca567ba3c14b94f29b44fde3a4786a056238ef6a5feb26cc37d5ae05805a1b
     url: https://www.assemblyai.com/contact/startup-program
-programs: []
+programs:
+  - program_id: prg_01kyyr9svgvrbh4bzefjw2yedv
+    program_slug: assemblyai-for-startups
+    program_slug_aliases: []
+    title: AssemblyAI Startup Program
+    source_ids:
+      - src_8bca567ba3c14b94f29b44fde3a4786a056238ef6a5feb26cc37d5ae05805a1b
 offers:
   - offer_id: off_01kyh8fpe19tbgz9qesnr0wd3x
     offer_slug: assemblyai-startup-program

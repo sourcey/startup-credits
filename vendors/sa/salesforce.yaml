@@ -19,6 +19,12 @@ programs:
     program_slug: salesforce-launchpad
     program_slug_aliases: []
     title: Salesforce Launchpad
+    source_ids:
+      - src_de248238da7faac44fa1bff72d2bcf4525bc36ccdb8b20a93ad9bbedd00f3748
+  - program_id: prg_01kyyr9svhvjac4av1162f05j1
+    program_slug: salesforce-launchpad
+    program_slug_aliases: []
+    title: Salesforce Launchpad
     summary: Salesforce Launchpad gives venture-backed startups of all stages free and discounted access to Salesforce products - CRM; Agentforce; Slack; Tableau - plus expert GTM coaching; community; and ecosystem partnerships.
     source_ids:
       - src_de248238da7faac44fa1bff72d2bcf4525bc36ccdb8b20a93ad9bbedd00f3748
