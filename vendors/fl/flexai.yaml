@@ -1,0 +1,118 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kzv8zammx9jrvxmd8yn18bmv
+slug: flexai
+slug_aliases: []
+name: FlexAI
+domains:
+  - value: flex.ai
+    role: primary
+    valid_from: 2026-08-12T15:20:38.000Z
+category: ai-ml
+description: FlexAI provides infrastructure for AI inference, fine-tuning, training, dedicated endpoints, agent workloads, and private AI clouds.
+links:
+  site: https://flex.ai
+sources:
+  - source_id: src_0182ecd01a5f3699a1be67b9c51b678955baffb058d82262f8c22a3949b7488d
+    url: https://www.flex.ai/startups
+programs:
+  - program_id: prg_01kzv8zampryswkyzsrxcc4sgg
+    program_slug: flexai-startup-program
+    program_slug_aliases: []
+    title: FlexAI Startup Program
+    summary: FlexAI's apply-only startup program combines Token Factory credits and staged discounts for AI-native teams running continuous production inference or agent workloads.
+    source_ids:
+      - src_0182ecd01a5f3699a1be67b9c51b678955baffb058d82262f8c22a3949b7488d
+offers:
+  - offer_id: off_01kzv8zampj922nj4ne564graj
+    program_id: prg_01kzv8zampryswkyzsrxcc4sgg
+    offer_slug: startup-credits-and-staged-discounts
+    offer_slug_aliases: []
+    title: FlexAI startup credits and staged discounts
+    summary: Approved startups receive $1,000 in Token Factory credit, six months of staged Token Factory discounts, and up to $20,000 in dedicated-compute savings.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-12T15:20:38.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: $1,000 in Token Factory credit
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 100000
+            kind: exact
+        - applies_to: First three months of Token Factory usage after the program credit
+          benefit_id: ben_02
+          description: 50% off the first three months of Token Factory usage after the program credit
+          duration:
+            kind: exact
+            value: P3M
+          kind: discount
+          percentage:
+            basis_points: 5000
+            kind: exact
+        - applies_to: Next three months of Token Factory usage
+          benefit_id: ben_03
+          description: 30% off the next three months of Token Factory usage
+          duration:
+            kind: exact
+            value: P3M
+          kind: discount
+          percentage:
+            basis_points: 3000
+            kind: exact
+        - applies_to: Published dedicated-compute and managed fine-tuning prices
+          benefit_id: ben_04
+          description: 50% off published dedicated-compute and managed fine-tuning prices for six months, up to $20,000 in savings
+          duration:
+            kind: exact
+            value: P6M
+          kind: discount
+          percentage:
+            basis_points: 5000
+            kind: exact
+      consideration:
+        description: The public program page does not establish a separate program fee.
+        kind: unknown
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - kind: any
+            rules:
+              - criterion_id: cri_01
+                kind: manual
+                reason: external-verification
+                statement: The applicant has at least $1 million in venture or accelerator backing.
+              - criterion_id: cri_02
+                kind: manual
+                reason: external-verification
+                statement: The applicant has a validated production workload.
+          - criterion_id: cri_03
+            kind: manual
+            reason: external-verification
+            statement: The applicant is building an AI-native product where inference is central rather than a side feature.
+          - criterion_id: cri_04
+            kind: manual
+            reason: external-verification
+            statement: The applicant has at least one ML or AI engineer on staff.
+          - criterion_id: cri_05
+            kind: manual
+            reason: external-verification
+            statement: The applicant has a continuous inference or agent workload in production rather than a project-based workload.
+          - criterion_id: cri_06
+            kind: manual
+            reason: vendor-discretion
+            statement: FlexAI reviews and approves the application.
+    roles:
+      terms_authority_entity_id: ent_01kzv8zammx9jrvxmd8yn18bmv
+      access_operator_entity_id: ent_01kzv8zammx9jrvxmd8yn18bmv
+    access:
+      availability: public
+      instructions: Book an intro call from the Startup Program page; FlexAI says applications are reviewed within 10 business days.
+      method: form
+      url: https://www.flex.ai/startups
+    terms_url: https://www.flex.ai/startups
+    source_ids:
+      - src_0182ecd01a5f3699a1be67b9c51b678955baffb058d82262f8c22a3949b7488d
