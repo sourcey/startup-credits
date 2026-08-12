@@ -16,6 +16,8 @@ sources:
     url: https://miro.com/startups/
   - source_id: src_f7a04582fc000269446e5f71740255d7c2b9455293552b08d43e81f9364dc962
     url: https://miro.com/startups/apply/
+  - source_id: src_a8df08357102021fa4d1075ea11032c8eb6bb9b47fcf3c222cca607053b247d7
+    url: https://miro.com/startups/scale-offer-vc/
 programs:
   - program_id: prg_01kyh8fpe335dxj6tsyk7tb78w
     program_slug: miro-for-startups
@@ -143,7 +145,8 @@ offers:
       access_operator_entity_id: ent_01kyh8fpe3h966sfgy1aghhjce
     access:
       availability: public
-      method: other
-      url: https://miro.com/startups/
+      method: form
+      url: https://miro.com/startups/scale-offer-vc/
     source_ids:
       - src_cd12d5b849bd137660d1748c1f441203536c41948b97eef4e1122804a2620037
+      - src_a8df08357102021fa4d1075ea11032c8eb6bb9b47fcf3c222cca607053b247d7
