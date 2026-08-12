@@ -33,32 +33,45 @@ offers:
     offer_slug_aliases: []
     title: Signals+ Annual three-year startup discount
     summary: Eligible new startup customers receive 60% off Signals+ Annual in year one, 40% in year two, and 30% in year three.
+    description: The discount starts at activation and automatically converts from 60% in year one to 40% in year two and 30% in year three. Qualifying thresholds are reviewed only at contract signing. Access is limited to employees of the qualifying startup, with seats allocated by team size and fair usage. Use is limited to competitor monitoring; sharing or reselling intelligence reports is prohibited. Misuse will result in immediate termination without refund.
     lifecycle:
       status: active
       effective_from: 2026-08-12T18:31:02.000Z
     economics:
       consideration:
         kind: variable
-        description: Subscribe to the Signals+ annual plan, publicly listed at EUR 500 per month billed annually before the startup discount.
+        description: Subscribe to Signals+ Annual, publicly listed at EUR 500 per month billed annually before the startup discount. Subscription fees are non-refundable, and early termination does not qualify for a partial refund. Pricing after the third year returns to the listed annual price.
       benefits:
         - benefit_id: ben_year_1
-          description: 60% off Signals+ Annual in the first year
+          description: 60% off Signals+ Annual for the first year after activation
           kind: discount
           percentage:
             kind: exact
             basis_points: 6000
+          applies_to: Signals+ Annual during the first year after activation
+          duration:
+            kind: exact
+            value: P1Y
         - benefit_id: ben_year_2
-          description: 40% off Signals+ Annual in the second year
+          description: 40% off Signals+ Annual for the second year after activation
           kind: discount
           percentage:
             kind: exact
             basis_points: 4000
+          applies_to: Signals+ Annual during the second year after activation
+          duration:
+            kind: exact
+            value: P1Y
         - benefit_id: ben_year_3
-          description: 30% off Signals+ Annual in the third year
+          description: 30% off Signals+ Annual for the third year after activation
           kind: discount
           percentage:
             kind: exact
             basis_points: 3000
+          applies_to: Signals+ Annual during the third year after activation
+          duration:
+            kind: exact
+            value: P1Y
     eligibility:
       rule:
         kind: all
@@ -95,6 +108,46 @@ offers:
             kind: manual
             reason: external-verification
             statement: Application must be submitted within 90 days of signing up
+          - criterion_id: cri_06
+            fact: company.email_domain_type
+            kind: predicate
+            operator: eq
+            statement: Applicant must use a corporate email domain rather than a personal email provider
+            value:
+              type: string
+              value: corporate
+          - criterion_id: cri_07
+            fact: company.is_registered
+            kind: predicate
+            operator: eq
+            statement: Applicant must be a registered business entity with verifiable registration details, which Zimt may verify
+            value:
+              type: boolean
+              value: true
+          - criterion_id: cri_08
+            kind: manual
+            reason: not-machine-evaluable
+            statement: Company must not operate in competitive intelligence, ABM services, market research, or business intelligence software markets
+          - criterion_id: cri_09
+            kind: manual
+            reason: external-verification
+            statement: Company must not be affiliated with, owned by, or acting on behalf of competitors in the excluded markets
+          - criterion_id: cri_10
+            kind: manual
+            reason: not-machine-evaluable
+            statement: Offer cannot be combined with other promotions
+          - criterion_id: cri_11
+            kind: manual
+            reason: external-verification
+            statement: Qualifying thresholds are reviewed at contract signing only
+          - criterion_id: cri_12
+            kind: manual
+            reason: external-verification
+            statement: Applicant must provide accurate and complete information
+          - criterion_id: cri_13
+            kind: manual
+            reason: vendor-discretion
+            statement: Zimt may deny applications from businesses in adjacent markets
     roles:
       terms_authority_entity_id: ent_01kzvkvyytvezvfs9ynt6ejgc0
       access_operator_entity_id: ent_01kzvkvyytvezvfs9ynt6ejgc0
