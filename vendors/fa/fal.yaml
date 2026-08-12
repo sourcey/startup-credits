@@ -16,6 +16,8 @@ sources:
     url: https://fal.ai/
   - source_id: src_0c284dba1c40c8007fdd8ac42fcdee919067a755bbde8c29605774590275afee
     url: https://fal.ai/grants
+  - source_id: src_3a8595036715815cec331fc1a2ff4ffc1d2f36ed03659a6630b8b7cbf5b50c9f
+    url: https://fal.ai/docs/documentation
 programs:
   - program_id: prg_01kzj0jgztmzq50vsmzdbetyqh
     program_slug: fal-research-grants
