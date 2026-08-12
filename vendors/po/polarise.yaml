@@ -1,0 +1,70 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kzvnewypt1fcz6d65jntr36w
+slug: polarise
+slug_aliases: []
+name: Polarise
+domains:
+  - value: polarise.eu
+    role: primary
+    valid_from: 2026-08-12T18:58:56.000Z
+category: ai-ml
+description: Polarise provides sovereign European AI infrastructure, GPU capacity, model APIs, and private cloud services for compliant AI workloads.
+links:
+  site: https://polarise.eu
+sources:
+  - source_id: src_7838eed544de99d1d0bd89c4de8b27e9a4cf72580e48ca5ef2c05e8626d95b53
+    url: https://polarise.eu/startup-program/
+programs:
+  - program_id: prg_01kzvnewyree6t598pk12rae88
+    program_slug: build-on-polarise-startup-program
+    program_slug_aliases: []
+    title: Build on Polarise Startup Program
+    summary: Polarise's program for European AI startups provides staged infrastructure credits, GPU access, engineering support, and startup resources.
+    source_ids:
+      - src_7838eed544de99d1d0bd89c4de8b27e9a4cf72580e48ca5ef2c05e8626d95b53
+offers:
+  - offer_id: off_01kzvnewyr5wsvr7e3dht5e5bz
+    program_id: prg_01kzvnewyree6t598pk12rae88
+    offer_slug: up-to-25000-eur-ai-cloud-credits
+    offer_slug_aliases: []
+    title: Up to EUR 25,000 in AI Cloud credits
+    summary: Eligible European B2B AI startups can receive staged free GPU hours and AI Cloud credits up to EUR 25,000, plus priority engineering support.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-12T18:58:56.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Free GPU hours and AI Cloud credits up to EUR 25,000
+          kind: credit
+          value:
+            amount:
+              currency: EUR
+              minor_units: 2500000
+            kind: up-to
+        - benefit_id: ben_02
+          description: Priority access to engineering workshops, clinics, and office hours
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            statement: Applicant should be a B2B or AI-native startup, including SaaS, vertical AI, or infrastructure and developer-tools companies registered in Europe.
+            reason: vendor-discretion
+          - criterion_id: cri_02
+            kind: manual
+            statement: Applicant should have successful market proof, be ready to scale, and be funded above EUR 2 million at Seed stage or later.
+            reason: vendor-discretion
+    roles:
+      terms_authority_entity_id: ent_01kzvnewypt1fcz6d65jntr36w
+      access_operator_entity_id: ent_01kzvnewypt1fcz6d65jntr36w
+    access:
+      availability: public
+      method: form
+      url: https://polarise.eu/startup-program/
+    source_ids:
+      - src_7838eed544de99d1d0bd89c4de8b27e9a4cf72580e48ca5ef2c05e8626d95b53
