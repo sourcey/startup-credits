@@ -28,7 +28,7 @@ offers:
     offer_slug: three-months-free-growth-plan
     offer_slug_aliases: []
     title: Three months free on Fabrile Growth
-    summary: Eligible startups receive Fabrile's Growth plan free for three months, including five AI agents, 5,000 messages and unique visitors per month, 10 GB of documents, and Slack integration.
+    summary: Eligible startups receive Fabrile's Growth plan free for three months, including five AI agents, 5,000 messages per month, 5,000 unique visitors, 10 GB of documents, and Slack integration.
     lifecycle:
       status: active
       effective_from: 2026-08-12T17:41:42.000Z
