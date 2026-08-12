@@ -1,0 +1,63 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kzvmr97y0hmgy38xf5gfx1hx
+slug: clodura-ai
+slug_aliases: []
+name: Clodura.AI
+domains:
+  - value: clodura.ai
+    role: primary
+    valid_from: 2026-08-12T18:46:10.000Z
+category: crm-sales
+description: Clodura.AI is a GenAI go-to-market platform with B2B data, sales intelligence, outreach, calling, and workflow tools.
+links:
+  site: https://www.clodura.ai/
+sources:
+  - source_id: src_7dc08847a38b7fd2aa65fa78ac5f14f8afacf088da6776b4ba1c0bfda114b186
+    url: https://www.clodura.ai/startup-program/
+  - source_id: src_a2da3bd8e9368142c6e25ed6cad8c55f9048e778c8b0cc5fb2b1a866fa47f956
+    url: https://www.clodura.ai/pricing/
+programs:
+  - program_id: prg_01kzvmr97y0qm7tmmnj3d99pbg
+    program_slug: startup-program
+    program_slug_aliases: []
+    title: Clodura.AI Startup Program
+    summary: Clodura.AI's Startup Program helps eligible startups access its GenAI GTM platform, GTM resources, mentorship, workshops, and co-marketing opportunities.
+    source_ids:
+      - src_7dc08847a38b7fd2aa65fa78ac5f14f8afacf088da6776b4ba1c0bfda114b186
+offers:
+  - offer_id: off_01kzvmr97ys1qj38rcwrejw8xp
+    program_id: prg_01kzvmr97y0qm7tmmnj3d99pbg
+    offer_slug: startup-program-50-off-max-plan
+    offer_slug_aliases: []
+    title: Up to 50% off Clodura.AI Self-Service Max Plan
+    summary: Eligible startups can receive up to 50% off Clodura.AI's Self-Service Max Plan at 10,000 credits per month or above.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-12T18:46:10.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to 50% discount on Clodura.AI's Self-Service Max Plan at 10,000 credits per month or above.
+          kind: discount
+          percentage:
+            kind: maximum
+            basis_points: 5000
+      consideration:
+        kind: unknown
+        description: The public pages do not establish separate consideration for receiving the startup-program discount.
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: not-machine-evaluable
+        statement: Intended for startups less than 10 years old with a registered company, Seed to Series A stage, scalable business model and TAM, fewer than 50 employees, and a corporate domain email.
+    roles:
+      terms_authority_entity_id: ent_01kzvmr97y0hmgy38xf5gfx1hx
+      access_operator_entity_id: ent_01kzvmr97y0hmgy38xf5gfx1hx
+    access:
+      availability: public
+      method: form
+      url: https://www.clodura.ai/startup-program/
+    source_ids:
+      - src_7dc08847a38b7fd2aa65fa78ac5f14f8afacf088da6776b4ba1c0bfda114b186
+      - src_a2da3bd8e9368142c6e25ed6cad8c55f9048e778c8b0cc5fb2b1a866fa47f956
