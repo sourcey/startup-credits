@@ -56,7 +56,7 @@ offers:
           value: false
     roles:
       terms_authority_entity_id: ent_01kyyts97thnsffv3e7r9m1270
-      access_operator_entity_id: ent_01kyyts97thnsffv3e7r9m1270
+      access_operator_entity_id: ent_01kyyr9svfavvhqt4vy0e0b25k
     access:
       availability: membership
       instructions: Email Dover using the contact details published for the offer and mention the Pulley deal to the sales representative.

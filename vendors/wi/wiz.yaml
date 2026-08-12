@@ -14,16 +14,7 @@ links:
 sources:
   - source_id: src_e10dc2ef42ff4c06dd0e194be3a951c491eb07ca7e75f7102a215bdcd876d430
     url: https://www.wiz.io/lp/startups
-  - source_id: src_07e5e123c86af5b6cb52741d997ba3110a476c45d724c585f666ab756f328b3d
-    url: https://perkbook.co/vendor-directory/wiz
-programs:
-  - program_id: prg_01kyyr9svh6aeder74q5j4rcn2
-    program_slug: wiz-startup-program
-    program_slug_aliases: []
-    title: Wiz Startup Program
-    summary: Wiz for Startups offers and perks
-    source_ids:
-      - src_07e5e123c86af5b6cb52741d997ba3110a476c45d724c585f666ab756f328b3d
+programs: []
 offers:
   - offer_id: off_01kyygma830fgn90asc8pctkj3
     offer_slug: wiz-go-for-startups
@@ -56,48 +47,3 @@ offers:
       url: https://www.wiz.io/lp/startups
     source_ids:
       - src_e10dc2ef42ff4c06dd0e194be3a951c491eb07ca7e75f7102a215bdcd876d430
-  - offer_id: off_01kyyr9svh48zzn71mrw9zpapf
-    program_id: prg_01kyyr9svh6aeder74q5j4rcn2
-    offer_slug: 50-off-cloud-security-bundle-with-wiz-go
-    offer_slug_aliases: []
-    title: 50% off cloud security bundle with Wiz Go
-    summary: Qualifying early-stage startups get 50% off the Wiz Go cloud security bundle covering cloud, code, runtime, and AI environments.
-    lifecycle:
-      status: active
-      effective_from: 2026-08-01T08:17:55.660Z
-    economics:
-      benefits:
-        - applies_to: Wiz Go cloud security bundle
-          benefit_id: ben_01
-          description: 50% off the Wiz cloud security bundle via Wiz Go
-          kind: discount
-          percentage:
-            basis_points: 5000
-            kind: exact
-      consideration:
-        kind: none
-    eligibility:
-      rule:
-        kind: all
-        rules:
-          - criterion_id: cri_01
-            kind: manual
-            reason: vendor-discretion
-            statement: Must be an early-stage startup
-          - criterion_id: cri_02
-            fact: company.is_current_customer
-            kind: predicate
-            operator: eq
-            statement: Must be a new Wiz customer
-            value:
-              type: boolean
-              value: false
-    roles:
-      terms_authority_entity_id: ent_01kyygma836y4jv9n2210zgyq4
-      access_operator_entity_id: ent_01kyyr9svgcxd42r9s8g3knssn
-    access:
-      availability: membership
-      method: form
-      url: https://perkbook.co/vendor-directory/wiz
-    source_ids:
-      - src_07e5e123c86af5b6cb52741d997ba3110a476c45d724c585f666ab756f328b3d

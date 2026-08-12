@@ -14,8 +14,6 @@ links:
 sources:
   - source_id: src_de248238da7faac44fa1bff72d2bcf4525bc36ccdb8b20a93ad9bbedd00f3748
     url: https://www.salesforce.com/launchpad/
-  - source_id: src_a6d9fdf624ddc31e96c7f991192cf02a9b45373c89aecfc03609393c55e35d69
-    url: https://perkbook.co/vendor-directory/salesforce
 programs:
   - program_id: prg_01kyyr9svhvjac4av1162f05j1
     program_slug: salesforce-launchpad
@@ -23,7 +21,7 @@ programs:
     title: Salesforce Launchpad
     summary: Salesforce Launchpad gives venture-backed startups of all stages free and discounted access to Salesforce products - CRM; Agentforce; Slack; Tableau - plus expert GTM coaching; community; and ecosystem partnerships.
     source_ids:
-      - src_a6d9fdf624ddc31e96c7f991192cf02a9b45373c89aecfc03609393c55e35d69
+      - src_de248238da7faac44fa1bff72d2bcf4525bc36ccdb8b20a93ad9bbedd00f3748
 offers:
   - offer_id: off_01kyh8fpe5a27280hssp9jdt7q
     offer_slug: salesforce-launchpad-free-and-discounted-solutions
@@ -98,13 +96,13 @@ offers:
               value: false
     roles:
       terms_authority_entity_id: ent_01kyh8fpe55a2m2njc8y4xs2df
-      access_operator_entity_id: ent_01kyyr9svgcxd42r9s8g3knssn
+      access_operator_entity_id: ent_01kyh8fpe55a2m2njc8y4xs2df
     access:
-      availability: membership
+      availability: public
       method: form
-      url: https://perkbook.co/vendor-directory/salesforce
+      url: https://www.salesforce.com/launchpad/
     source_ids:
-      - src_a6d9fdf624ddc31e96c7f991192cf02a9b45373c89aecfc03609393c55e35d69
+      - src_de248238da7faac44fa1bff72d2bcf4525bc36ccdb8b20a93ad9bbedd00f3748
   - offer_id: off_01kyyr9svhk9h0e6bapg0btkt4
     program_id: prg_01kyyr9svhvjac4av1162f05j1
     offer_slug: 25-off-slack-pro-or-business-with-salesforce-launchpad
@@ -155,13 +153,13 @@ offers:
               value: false
     roles:
       terms_authority_entity_id: ent_01kyh8fpe55a2m2njc8y4xs2df
-      access_operator_entity_id: ent_01kyyr9svgcxd42r9s8g3knssn
+      access_operator_entity_id: ent_01kyh8fpe55a2m2njc8y4xs2df
     access:
-      availability: membership
+      availability: public
       method: form
-      url: https://perkbook.co/vendor-directory/salesforce
+      url: https://www.salesforce.com/launchpad/
     source_ids:
-      - src_a6d9fdf624ddc31e96c7f991192cf02a9b45373c89aecfc03609393c55e35d69
+      - src_de248238da7faac44fa1bff72d2bcf4525bc36ccdb8b20a93ad9bbedd00f3748
   - offer_id: off_01kyyr9svh8pman77qjzfxrjzd
     program_id: prg_01kyyr9svhvjac4av1162f05j1
     offer_slug: 50-off-pro-suite-with-salesforce-launchpad
@@ -204,13 +202,13 @@ offers:
               value: false
     roles:
       terms_authority_entity_id: ent_01kyh8fpe55a2m2njc8y4xs2df
-      access_operator_entity_id: ent_01kyyr9svgcxd42r9s8g3knssn
+      access_operator_entity_id: ent_01kyh8fpe55a2m2njc8y4xs2df
     access:
-      availability: membership
+      availability: public
       method: form
-      url: https://perkbook.co/vendor-directory/salesforce
+      url: https://www.salesforce.com/launchpad/
     source_ids:
-      - src_a6d9fdf624ddc31e96c7f991192cf02a9b45373c89aecfc03609393c55e35d69
+      - src_de248238da7faac44fa1bff72d2bcf4525bc36ccdb8b20a93ad9bbedd00f3748
   - offer_id: off_01kyyr9svhdgk1rr8v16whzzk7
     program_id: prg_01kyyr9svhvjac4av1162f05j1
     offer_slug: 50-off-sales-cloud-enterprise-with-salesforce-launchpad
@@ -245,10 +243,10 @@ offers:
             statement: Salesforce Launchpad member
     roles:
       terms_authority_entity_id: ent_01kyh8fpe55a2m2njc8y4xs2df
-      access_operator_entity_id: ent_01kyyr9svgcxd42r9s8g3knssn
+      access_operator_entity_id: ent_01kyh8fpe55a2m2njc8y4xs2df
     access:
-      availability: membership
+      availability: public
       method: form
-      url: https://perkbook.co/vendor-directory/salesforce
+      url: https://www.salesforce.com/launchpad/
     source_ids:
-      - src_a6d9fdf624ddc31e96c7f991192cf02a9b45373c89aecfc03609393c55e35d69
+      - src_de248238da7faac44fa1bff72d2bcf4525bc36ccdb8b20a93ad9bbedd00f3748

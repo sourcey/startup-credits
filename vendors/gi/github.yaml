@@ -14,16 +14,7 @@ links:
 sources:
   - source_id: src_16fcc1a7174c8dc0546e3675de9ef1c1a5939b667c4823a242ab6aa0370e06f8
     url: https://github.com/enterprise/startups
-  - source_id: src_66c378883140254b04de6425feae465103e4892f02f421223e5fd8b65f3d9efe
-    url: https://perkbook.co/vendor-directory/github
-programs:
-  - program_id: prg_01kyyr9svgyw0svdrb717nexp9
-    program_slug: github-for-startups
-    program_slug_aliases: []
-    title: GitHub for Startups
-    summary: GitHub for Startups provides eligible early-stage companies with flexible platform credits covering GitHub Enterprise, Copilot, Advanced Security, Actions, and more.
-    source_ids:
-      - src_66c378883140254b04de6425feae465103e4892f02f421223e5fd8b65f3d9efe
+programs: []
 offers:
   - offer_id: off_01kyh8fpe3fe0s7ef65e5fj1p5
     offer_slug: github-for-startups-offer
@@ -56,56 +47,3 @@ offers:
       url: https://github.com/enterprise/startups
     source_ids:
       - src_16fcc1a7174c8dc0546e3675de9ef1c1a5939b667c4823a242ab6aa0370e06f8
-  - offer_id: off_01kyyr9svgd67qdmw6cwerth4p
-    program_id: prg_01kyyr9svgyw0svdrb717nexp9
-    offer_slug: 50-off-with-github-for-startups-year-2
-    offer_slug_aliases: []
-    title: 50% off with GitHub for Startups — Year 2
-    summary: Eligible early-stage startups receive 50% off GitHub for Startups in Year 2.
-    lifecycle:
-      status: active
-      effective_from: 2026-08-01T08:14:29.306Z
-    economics:
-      benefits:
-        - applies_to: GitHub for Startups — Year 2
-          benefit_id: ben_01
-          description: 50% off with GitHub for Startups — Year 2
-          duration:
-            kind: exact
-            value: P1Y
-          kind: discount
-          percentage:
-            basis_points: 5000
-            kind: exact
-      consideration:
-        kind: none
-    eligibility:
-      rule:
-        kind: all
-        rules:
-          - criterion_id: cri_01
-            kind: manual
-            reason: external-verification
-            statement: Affiliated with a GitHub for Startups partner (VC/accelerator)
-          - criterion_id: cri_02
-            fact: company.is_current_customer
-            kind: predicate
-            operator: eq
-            statement: New GitHub Enterprise customer
-            value:
-              type: boolean
-              value: false
-          - criterion_id: cri_03
-            kind: manual
-            reason: external-verification
-            statement: Company domain email
-    roles:
-      terms_authority_entity_id: ent_01kyh8fpe3xgjjktffez1t34rn
-      access_operator_entity_id: ent_01kyyr9svgcxd42r9s8g3knssn
-    access:
-      availability: referral
-      instructions: Sign Up to Unlock and apply through github.com/enterprise/startups
-      method: other
-      url: https://perkbook.co/vendor-directory/github
-    source_ids:
-      - src_66c378883140254b04de6425feae465103e4892f02f421223e5fd8b65f3d9efe
