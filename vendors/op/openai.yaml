@@ -53,7 +53,7 @@ offers:
     offer_slug: free-api-credits-with-openai-for-startups
     offer_slug_aliases: []
     title: Up to $2,500 in OpenAI API credits via Ramp
-    summary: Ramp customers can access up to $2,500 in OpenAI API credits through Ramp's rewards marketplace.
+    summary: Startups can receive up to $2,500 in OpenAI API credits through Ramp to explore building on top of the OpenAI platform.
     lifecycle:
       status: active
       effective_from: 2026-08-01T08:15:42.602Z
@@ -76,7 +76,7 @@ offers:
           - criterion_id: cri_01
             kind: manual
             reason: external-verification
-            statement: Available to Ramp customers through the Ramp rewards marketplace.
+            statement: A startup on Ramp building on top of the OpenAI platform.
     roles:
       terms_authority_entity_id: ent_01kyh8fpe4qj5yt6msnarsc8kz
       access_operator_entity_id: ent_01kyh8fpe4g7kgfr7x2skc0vt3
