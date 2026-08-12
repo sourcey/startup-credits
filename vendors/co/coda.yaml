@@ -8,84 +8,11 @@ domains:
     role: primary
     valid_from: 2026-08-01T10:21:18.818Z
 category: productivity
-description: Coda is an all-in-one flexible doc tool with building blocks, tables, customized views, and integrations to power team, product, and knowledge management.
+description: Coda is an all-in-one platform that blends the flexibility of docs, structure of spreadsheets, power of applications, and intelligence of AI.
 links:
   site: https://coda.io
 sources:
   - source_id: src_42fd549f4612566ffa3d4c9743125cf6a830b27be13fb98f61b501f026ff36dd
     url: https://coda.io/
-  - source_id: src_310803740ee40af934c03988e9a63ad83229e9a31fa0fcf95e2b379fae57ff7a
-    url: https://help.coda.io/hc/en-us/articles/39555735684877-Discounts-for-students-teachers-nonprofits-and-startups
-programs:
-  - program_id: prg_01kyyr9svgzba5w8b8hnr2wxry
-    program_slug: coda-startup-program
-    program_slug_aliases: []
-    title: Coda startup discount
-    summary: Coda's startup discount gives qualifying startups six months of free access to a Team plan.
-    source_ids:
-      - src_310803740ee40af934c03988e9a63ad83229e9a31fa0fcf95e2b379fae57ff7a
-offers:
-  - offer_id: off_01kyyr9svgpmay2axw8cj4cawa
-    program_id: prg_01kyyr9svgzba5w8b8hnr2wxry
-    offer_slug: 6-months-free-team-plan-with-coda-for-startups
-    offer_slug_aliases: []
-    title: 6 months free on a Coda Team plan
-    summary: Qualifying startups get 6 months of free access to a Coda Team plan, with free unlimited Coda AI when applying through a Coda partner.
-    lifecycle:
-      status: active
-      effective_from: 2026-08-01T08:13:34.666Z
-    economics:
-      benefits:
-        - benefit_id: ben_01
-          description: 6 months of free access to a Coda Team plan
-          duration:
-            kind: exact
-            value: P6M
-          kind: free-service
-          service: Coda Team plan
-        - benefit_id: ben_02
-          description: Free unlimited Coda AI when applying through a Coda partner
-          kind: other
-      consideration:
-        kind: none
-    eligibility:
-      rule:
-        kind: all
-        rules:
-          - criterion_id: cri_01
-            kind: manual
-            reason: external-verification
-            statement: A team is using Coda, not a single person on their own.
-          - criterion_id: cri_02
-            fact: company.age_months
-            kind: predicate
-            operator: lt
-            statement: The business is less than 5 years old.
-            value:
-              type: number
-              value: 60
-          - criterion_id: cri_03
-            fact: company.funding_raised_usd
-            kind: predicate
-            operator: lt
-            statement: The business has raised less than $10M USD.
-            value:
-              type: number
-              value: 10000000
-          - criterion_id: cri_04
-            kind: manual
-            reason: not-machine-evaluable
-            statement: A business domain email address is required, not a personal email, along with a company website.
-          - criterion_id: cri_05
-            kind: manual
-            reason: external-verification
-            statement: The business does not currently have a paid subscription and has not paid for Coda in the last 30 days.
-    roles:
-      terms_authority_entity_id: ent_01kyygma82v52ygt9gw9f3prhb
-      access_operator_entity_id: ent_01kyygma82v52ygt9gw9f3prhb
-    access:
-      availability: public
-      method: form
-      url: https://help.coda.io/hc/en-us/articles/39555735684877-Discounts-for-students-teachers-nonprofits-and-startups
-    source_ids:
-      - src_310803740ee40af934c03988e9a63ad83229e9a31fa0fcf95e2b379fae57ff7a
+programs: []
+offers: []
