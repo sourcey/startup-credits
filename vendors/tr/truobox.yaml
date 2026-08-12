@@ -1,0 +1,91 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kzt1sjqcrw28cqwen9bnrrz4
+slug: truobox
+slug_aliases: []
+name: Truobox
+domains:
+  - value: truobox.com
+    role: primary
+    valid_from: 2026-08-12T03:56:01.531Z
+category: hosting-infra
+description: Truobox provides virtual servers, web hosting, domains, storage, security, and related cloud infrastructure services.
+links:
+  site: https://www.truobox.com/en/
+sources:
+  - source_id: src_b3c283879268fc1745ef6534d7c2c6ba05b4bcdba63f0f6170a1d9a0ca504675
+    url: https://www.truobox.com/en/startup-program/
+  - source_id: src_6bf9e721ab86c664d67d40cba0043db47dedb19dc72e7ce05f93842923dae428
+    url: https://www.truobox.com/en/terms-conditions/
+programs:
+  - program_id: prg_01kzt1sjqpd2s3ba81yqg0qykr
+    program_slug: startup-program
+    program_slug_aliases: []
+    title: Startup Program
+    summary: Truobox supports eligible early-stage technology companies with cloud credits, technical assistance, infrastructure mentoring, and a post-program discount.
+    source_ids:
+      - src_b3c283879268fc1745ef6534d7c2c6ba05b4bcdba63f0f6170a1d9a0ca504675
+offers:
+  - offer_id: off_01kzt1sjqq1sbmvgsdhks7n3h5
+    program_id: prg_01kzt1sjqpd2s3ba81yqg0qykr
+    offer_slug: startup-cloud-credits
+    offer_slug_aliases: []
+    title: Up to $5,000 in Truobox cloud credits
+    summary: Eligible early-stage startups can receive up to $5,000 in Truobox credits for 12 months, priority support, technical mentoring, and a permanent 20% post-program discount.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-12T03:56:01.531Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_01
+          description: Up to $5,000 in credits usable on Truobox services during the first 12 months
+          duration:
+            kind: exact
+            value: P1Y
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 500000
+            kind: up-to
+        - benefit_id: ben_02
+          description: Permanent 20% discount on Truobox services after graduating while the account remains active
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 2000
+        - benefit_id: ben_03
+          description: Priority technical support and consulting sessions with senior engineers
+          kind: other
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: external-verification
+            statement: Startup is less than three years old and has less than $1 million in annual revenue
+          - criterion_id: cri_02
+            kind: manual
+            reason: external-verification
+            statement: Company is building a technology product or service that requires cloud infrastructure
+          - criterion_id: cri_03
+            kind: manual
+            reason: external-verification
+            statement: Applicant is a new Truobox customer who has not previously used its services
+          - criterion_id: cri_04
+            kind: manual
+            reason: vendor-discretion
+            statement: Credits will be used for product development and not for service resale or cryptocurrency mining
+    roles:
+      terms_authority_entity_id: ent_01kzt1sjqcrw28cqwen9bnrrz4
+      access_operator_entity_id: ent_01kzt1sjqcrw28cqwen9bnrrz4
+    access:
+      availability: public
+      method: form
+      url: https://www.truobox.com/en/contact/
+    terms_url: https://www.truobox.com/en/terms-conditions/
+    source_ids:
+      - src_b3c283879268fc1745ef6534d7c2c6ba05b4bcdba63f0f6170a1d9a0ca504675
+      - src_6bf9e721ab86c664d67d40cba0043db47dedb19dc72e7ce05f93842923dae428
