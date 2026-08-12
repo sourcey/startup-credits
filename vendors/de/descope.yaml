@@ -53,14 +53,14 @@ offers:
             fact: company.age_months
             kind: predicate
             operator: lte
-            statement: Startups that are up to 3 years from their inception.
+            statement: Startups that are up to 3 years from inception.
             value:
               type: number
               value: 36
           - criterion_id: cri_02
             kind: manual
             reason: external-verification
-            statement: Startups that have less than $1M in total bookings or annual recurring revenue.
+            statement: Startups that have less than $1M in total bookings / annual recurring revenue.
     roles:
       terms_authority_entity_id: ent_01kyyts97sdsn61rze854rtsjc
       access_operator_entity_id: ent_01kyyts97sdsn61rze854rtsjc
