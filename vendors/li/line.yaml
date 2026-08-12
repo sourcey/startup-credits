@@ -8,10 +8,12 @@ domains:
     role: primary
     valid_from: 2026-08-11T19:05:00.000Z
 category: communication
-description: LINE provides messaging, official business accounts, advertising, APIs, digital services, and an ecosystem connecting consumers and businesses.
+description: LINE is a communication app that provides free voice calls and messages, alongside additional services.
 links:
   site: https://www.line.me
 sources:
+  - source_id: src_3e9fb71f5dc2cf6b943434af6f7726a5d84f78f7279b30404f574aea5f2c444b
+    url: https://www.line.me/en/
   - source_id: src_08a214e652980d1ac6ad8f41ad3932b9abadd2096ac03636441b8775a4ba736f
     url: https://linescaleup.landpress.line.me/home/
 programs:
