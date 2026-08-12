@@ -1,0 +1,108 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kzvkvyytvezvfs9ynt6ejgc0
+slug: zimt
+slug_aliases: []
+name: Zimt
+domains:
+  - value: zimt.ai
+    role: primary
+    valid_from: 2026-08-12T18:31:02.000Z
+category: crm-sales
+description: Zimt is a company-signal intelligence platform that monitors competitors and target accounts across pricing, product, messaging, and market activity.
+links:
+  site: https://www.zimt.ai
+sources:
+  - source_id: src_3c8416a69203cb7042ef7562b8d0431a29a5465bdf70c4aab51db97db0af80cd
+    url: https://www.zimt.ai/
+  - source_id: src_e799601d441b2b9a5418b1c33bb63d2abd6ab3f1bd58a3d263be84c57233dfe8
+    url: https://www.zimt.ai/pricing
+  - source_id: src_3791387554d7d0c68cbbe9848ddfb7ec648a335568d52b4091cddd60f57f5262
+    url: https://www.zimt.ai/startup-program
+programs:
+  - program_id: prg_01kzvkvyyw2ynakpez8yt5mfph
+    program_slug: zimt-startup-program
+    program_slug_aliases: []
+    title: Zimt Startup Program
+    summary: Zimt's Startup Program gives eligible new customers stepped discounts on Signals+ Annual for three years.
+    source_ids:
+      - src_3791387554d7d0c68cbbe9848ddfb7ec648a335568d52b4091cddd60f57f5262
+offers:
+  - offer_id: off_01kzvkvyywrqp11x2hz7k06hm5
+    program_id: prg_01kzvkvyyw2ynakpez8yt5mfph
+    offer_slug: signals-plus-annual-three-year-startup-discount
+    offer_slug_aliases: []
+    title: Signals+ Annual three-year startup discount
+    summary: Eligible new startup customers receive 60% off Signals+ Annual in year one, 40% in year two, and 30% in year three.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-12T18:31:02.000Z
+    economics:
+      consideration:
+        kind: variable
+        description: Subscribe to the Signals+ annual plan, publicly listed at EUR 500 per month billed annually before the startup discount.
+      benefits:
+        - benefit_id: ben_year_1
+          description: 60% off Signals+ Annual in the first year
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 6000
+        - benefit_id: ben_year_2
+          description: 40% off Signals+ Annual in the second year
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 4000
+        - benefit_id: ben_year_3
+          description: 30% off Signals+ Annual in the third year
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 3000
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.funding_raised_usd
+            kind: predicate
+            operator: lte
+            statement: Company has raised no more than USD 2 million
+            value:
+              type: number
+              value: 2000000
+          - criterion_id: cri_02
+            fact: company.age_months
+            kind: predicate
+            operator: lt
+            statement: Company was founded fewer than five years ago
+            value:
+              type: number
+              value: 60
+          - criterion_id: cri_03
+            fact: company.employee_count
+            kind: predicate
+            operator: lt
+            statement: Company has fewer than 50 employees
+            value:
+              type: number
+              value: 50
+          - criterion_id: cri_04
+            kind: manual
+            reason: external-verification
+            statement: Applicant must be a new customer and must not currently be a Zimt customer
+          - criterion_id: cri_05
+            kind: manual
+            reason: external-verification
+            statement: Application must be submitted within 90 days of signing up
+    roles:
+      terms_authority_entity_id: ent_01kzvkvyytvezvfs9ynt6ejgc0
+      access_operator_entity_id: ent_01kzvkvyytvezvfs9ynt6ejgc0
+    access:
+      availability: public
+      method: form
+      url: https://www.zimt.ai/startup-program
+    terms_url: https://www.zimt.ai/startup-program
+    source_ids:
+      - src_e799601d441b2b9a5418b1c33bb63d2abd6ab3f1bd58a3d263be84c57233dfe8
+      - src_3791387554d7d0c68cbbe9848ddfb7ec648a335568d52b4091cddd60f57f5262
