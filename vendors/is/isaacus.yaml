@@ -53,9 +53,9 @@ offers:
         - benefit_id: ben_02
           description: 50% discount on model usage for the first twelve months, equivalent to US$10,000 for the first four months
           kind: discount
-          value:
-            kind: percentage
-            value: 0.5
+          percentage:
+            kind: exact
+            basis_points: 5000
           duration:
             kind: exact
             value: P12M
