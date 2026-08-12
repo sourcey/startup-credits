@@ -9,72 +9,57 @@ domains:
     role: primary
     valid_from: 2026-08-08T05:32:49.000Z
 category: ai-ml
-description: Morph builds coding-focused AI models and APIs for fast code editing, codebase search, and coding-agent workflows.
+description: Morph builds OpenAI-compatible model APIs and specialized subagents for coding agents, including Fast Apply, WarpGrep, Compact, and Glance.
 links:
   site: https://www.morphllm.com
 sources:
   - source_id: src_c5d38c689c6c9b82674a013995d095a08cf18671266e15089489897168370eb2
-    url: https://www.morphllm.com/startups
+    url: https://www.morphllm.com/llms.txt
+  - source_id: src_2e1b40b15d536638364485d1d339ffce6495733232391279bc445c78f22428b7
+    url: https://www.morphllm.com/llms-full.txt
 programs:
   - program_id: prg_01kzfxr4bgb4vwt10tkdj03zvv
-    program_slug: morph-startup-credits-program
+    program_slug: morph-api-platform
     program_slug_aliases: []
-    title: Morph Startup Credits Program
-    summary: Morph's startup credits program gives accelerator-affiliated and early-stage startups API credits, priority technical support, and a direct Slack channel.
+    title: Morph API Platform
+    summary: Morph's API platform provides OpenAI-compatible access to coding-agent models and subagents for applying edits, searching code, compacting context, and verifying changes.
     source_ids:
       - src_c5d38c689c6c9b82674a013995d095a08cf18671266e15089489897168370eb2
+      - src_2e1b40b15d536638364485d1d339ffce6495733232391279bc445c78f22428b7
 offers:
   - offer_id: off_01kzfxr4bgn53tmkkhvxwv780t
     program_id: prg_01kzfxr4bgb4vwt10tkdj03zvv
-    offer_slug: morph-startup-api-credits
+    offer_slug: morph-free-api-credits
     offer_slug_aliases: []
-    title: Morph Startup API Credits
-    summary: Qualified startups can apply for up to $1,000 in Morph API credits, priority technical support, and a direct Slack channel with the Morph team.
+    title: Morph Free API Credits
+    summary: Morph's free plan is $0 per month and includes 250K credits that cover all Morph APIs.
     lifecycle:
       status: active
       effective_from: 2026-08-08T05:32:49.000Z
     economics:
       benefits:
         - benefit_id: ben_01
-          description: Up to $1,000 in Morph API credits
-          kind: credit
-          value:
-            amount:
-              currency: USD
-              minor_units: 100000
-            kind: up-to
+          description: Free plan with 250K credits covering Morph APIs
+          kind: other
         - benefit_id: ben_02
-          description: Priority technical support
+          description: Free tier includes 200 requests per month
           kind: free-service
-          service: priority technical support
-        - benefit_id: ben_03
-          description: Direct Slack channel with the Morph team
-          kind: free-service
-          service: direct Slack channel with the Morph team
+          service: 200 requests per month on the free tier
       consideration:
         kind: none
     eligibility:
       rule:
-        kind: all
-        rules:
-          - criterion_id: cri_01
-            kind: manual
-            reason: vendor-discretion
-            statement: Applicant should be part of an accelerator or be an early-stage startup.
-          - criterion_id: cri_02
-            kind: manual
-            reason: vendor-discretion
-            statement: Applicant should explain how they plan to use Morph.
-          - criterion_id: cri_03
-            kind: manual
-            reason: vendor-discretion
-            statement: For fastest approval, applicant should create an account and organization, then add a billing method with usage-based billing first.
+        criterion_id: cri_01
+        kind: constant
+        statement: The free plan is publicly listed at $0 per month.
+        value: true
     roles:
       terms_authority_entity_id: ent_01kzfxr4bf8jmafengwajh5vd2
       access_operator_entity_id: ent_01kzfxr4bf8jmafengwajh5vd2
     access:
       availability: public
-      method: form
-      url: https://www.morphllm.com/startups
+      instructions: Use Morph's dashboard or API key flow to access the OpenAI-compatible API.
+      method: other
     source_ids:
       - src_c5d38c689c6c9b82674a013995d095a08cf18671266e15089489897168370eb2
+      - src_2e1b40b15d536638364485d1d339ffce6495733232391279bc445c78f22428b7
