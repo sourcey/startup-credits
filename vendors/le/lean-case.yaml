@@ -1,0 +1,89 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kzv1829n8gfjtav35kayb2v7
+slug: lean-case
+slug_aliases: []
+name: Lean-Case
+domains:
+  - value: lean-case.com
+    role: primary
+    valid_from: 2026-08-12T13:01:00.000Z
+category: finance-accounting
+description: Lean-Case provides business planning, financial modeling, pitch, and performance-tracking software for startups and investors.
+links:
+  site: https://www.lean-case.com
+sources:
+  - source_id: src_6af45f1f1e61268c668c712891618dc26619a308bff66ee59cf6b4de39fc62c9
+    url: https://www.lean-case.com/startup-program/
+programs:
+  - program_id: prg_01kzv1829p2w755ws9wbeae0mk
+    program_slug: lean-case-startup-program
+    program_slug_aliases: []
+    title: Lean-Case Startup Program
+    summary: Lean-Case offers qualifying startups a discounted first year on its paid plans.
+    source_ids:
+      - src_6af45f1f1e61268c668c712891618dc26619a308bff66ee59cf6b4de39fc62c9
+offers:
+  - offer_id: off_01kzv1829pbk6cpbfqjg2svn9e
+    program_id: prg_01kzv1829p2w755ws9wbeae0mk
+    offer_slug: lean-case-startup-program-50-off-first-year
+    offer_slug_aliases: []
+    title: Lean-Case Startup Program 50% Off First Year
+    summary: Eligible new customers receive 50% off any Lean-Case paid plan for the first year.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-12T13:01:00.000Z
+    economics:
+      benefits:
+        - applies_to: Lean-Case paid plans
+          benefit_id: ben_01
+          description: 50% off any paid plan for the first year
+          duration:
+            kind: exact
+            value: P1Y
+          kind: discount
+          percentage:
+            basis_points: 5000
+            kind: exact
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.is_current_customer
+            kind: predicate
+            operator: eq
+            statement: Only new Lean-Case customers can join the program.
+            value:
+              type: boolean
+              value: false
+          - criterion_id: cri_02
+            fact: company.funding_raised_usd
+            kind: predicate
+            operator: lt
+            statement: The startup has received less than $2,000,000 in funding.
+            value:
+              type: number
+              value: 2000000
+          - criterion_id: cri_03
+            fact: company.annual_revenue_usd
+            kind: predicate
+            operator: lt
+            statement: The startup has less than $1,000,000 in annual revenue.
+            value:
+              type: number
+              value: 1000000
+          - criterion_id: cri_04
+            kind: manual
+            reason: external-verification
+            statement: The startup is part of an accelerator or incubator program, subject to Lean-Case verification and its published waiver conditions.
+    roles:
+      terms_authority_entity_id: ent_01kzv1829n8gfjtav35kayb2v7
+      access_operator_entity_id: ent_01kzv1829n8gfjtav35kayb2v7
+    access:
+      availability: public
+      method: form
+      url: https://www.lean-case.com/startup-program/
+    source_ids:
+      - src_6af45f1f1e61268c668c712891618dc26619a308bff66ee59cf6b4de39fc62c9
