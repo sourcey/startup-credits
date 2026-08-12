@@ -12,7 +12,9 @@ description: Truobox provides virtual servers, web hosting, domains, storage, se
 links:
   site: https://www.truobox.com/en/
 sources:
-  - source_id: src_b3c283879268fc1745ef6534d7c2c6ba05b4bcdba63f0f6170a1d9a0ca504675
+  - source_id: src_c69b51135973a5ff4de879cff747402d8780dee41f1395f9430cbe2dc682d9ad
+    url: https://www.truobox.com/en/
+  - source_id: src_e7657d8d6af580b20b837dd4b482205b9dd4eab8f22804f84e9f432d6c45b731
     url: https://www.truobox.com/en/startup-program/
   - source_id: src_6bf9e721ab86c664d67d40cba0043db47dedb19dc72e7ce05f93842923dae428
     url: https://www.truobox.com/en/terms-conditions/
@@ -23,7 +25,8 @@ programs:
     title: Startup Program
     summary: Truobox supports eligible early-stage technology companies with cloud credits, technical assistance, infrastructure mentoring, and a post-program discount.
     source_ids:
-      - src_b3c283879268fc1745ef6534d7c2c6ba05b4bcdba63f0f6170a1d9a0ca504675
+      - src_c69b51135973a5ff4de879cff747402d8780dee41f1395f9430cbe2dc682d9ad
+      - src_e7657d8d6af580b20b837dd4b482205b9dd4eab8f22804f84e9f432d6c45b731
 offers:
   - offer_id: off_01kzt1sjqq1sbmvgsdhks7n3h5
     program_id: prg_01kzt1sjqpd2s3ba81yqg0qykr
@@ -87,5 +90,6 @@ offers:
       url: https://www.truobox.com/en/contact/
     terms_url: https://www.truobox.com/en/terms-conditions/
     source_ids:
-      - src_b3c283879268fc1745ef6534d7c2c6ba05b4bcdba63f0f6170a1d9a0ca504675
+      - src_c69b51135973a5ff4de879cff747402d8780dee41f1395f9430cbe2dc682d9ad
+      - src_e7657d8d6af580b20b837dd4b482205b9dd4eab8f22804f84e9f432d6c45b731
       - src_6bf9e721ab86c664d67d40cba0043db47dedb19dc72e7ce05f93842923dae428
