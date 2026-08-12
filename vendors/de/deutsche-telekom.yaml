@@ -16,6 +16,8 @@ sources:
     url: https://www.telekom.com/en
   - source_id: src_41de4efa0e3c1f536f8fc29f8852baa4cbf7309acb4fe489e7001c088738c7da
     url: https://techboost.telekom.com/public/startups?lang=en
+  - source_id: src_485a8eaea81021c0d9225f66807548104000921709317276d15d13f050e43141
+    url: https://techboost.telekom.com/public/startups?lang=en&section=benefits
   - source_id: src_b828d585aac6b2ed5fff01deace602e515d8f33c42e8ce1e741b539fc21f634b
     url: https://techboost.telekom.com/public/apply?lang=en
 programs:
@@ -77,5 +79,6 @@ offers:
       url: https://techboost.telekom.com/public/apply
     terms_url: https://techboost.telekom.com/public/startups?lang=en
     source_ids:
+      - src_485a8eaea81021c0d9225f66807548104000921709317276d15d13f050e43141
       - src_41de4efa0e3c1f536f8fc29f8852baa4cbf7309acb4fe489e7001c088738c7da
       - src_b828d585aac6b2ed5fff01deace602e515d8f33c42e8ce1e741b539fc21f634b
