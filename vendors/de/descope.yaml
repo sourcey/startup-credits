@@ -29,20 +29,20 @@ offers:
     program_id: prg_01kyyts97wa9d7s999d5d5bas6
     offer_slug: 12-months-free-authentication-platform-with-descope-for-startups
     offer_slug_aliases: []
-    title: Hello World Startup Plan, free for one year
-    summary: Qualifying startups get the Descope Hello World Startup Plan free of charge for one year.
+    title: Hello World Startup Plan, Pro Tier free for up to 1 year
+    summary: Eligible startups get the Descope Pro Tier free of charge for up to 1 year through the Hello World Startup Plan.
     lifecycle:
       status: active
       effective_from: 2026-08-01T08:14:06.100Z
     economics:
       benefits:
         - benefit_id: ben_01
-          description: The Descope authentication platform free of charge for one year
+          description: The Descope Pro Tier free of charge for up to 1 year
           duration:
-            kind: exact
+            kind: up-to
             value: P1Y
           kind: free-service
-          service: Descope authentication platform
+          service: Descope Pro Tier
       consideration:
         kind: none
     eligibility:
@@ -60,7 +60,7 @@ offers:
           - criterion_id: cri_02
             kind: manual
             reason: external-verification
-            statement: Startups that have up to $1M in total bookings or ARR.
+            statement: Startups that have less than $1M in total bookings or annual recurring revenue.
     roles:
       terms_authority_entity_id: ent_01kyyts97sdsn61rze854rtsjc
       access_operator_entity_id: ent_01kyyts97sdsn61rze854rtsjc
