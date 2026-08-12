@@ -16,8 +16,6 @@ sources:
     url: https://runalloy.com/
   - source_id: src_112163ec6d615e38343a0a2ea85fc6c5d9091715fb20711fe2c8e5578900438a
     url: https://runalloy.com/startups/
-  - source_id: src_6e72f01e915fcec1d963122215765f57a6cc9c6fd219dfae6de9cc9ab020dd94
-    url: https://runalloy.com/page-data/startups/page-data.json
 programs:
   - program_id: prg_01kzqxh24rpp58d0n26q7jbtwq
     program_slug: alloy-automation-for-startups
@@ -26,30 +24,23 @@ programs:
     summary: Alloy Automation invites startups to apply for discounted access to its integration solutions.
     source_ids:
       - src_112163ec6d615e38343a0a2ea85fc6c5d9091715fb20711fe2c8e5578900438a
-      - src_6e72f01e915fcec1d963122215765f57a6cc9c6fd219dfae6de9cc9ab020dd94
 offers:
   - offer_id: off_01kzqxh24rk3pvngyq6kkjv9r7
     program_id: prg_01kzqxh24rpp58d0n26q7jbtwq
-    offer_slug: up-to-50-percent-off-first-year
+    offer_slug: alloy-startup-program-benefit
     offer_slug_aliases: []
-    title: Up to 50% off Alloy integration solutions in year one
-    summary: Applicants can submit the startup form to see if they qualify for up to 50% off Alloy's integration solutions in year one.
+    title: Alloy Automation Startup Program Benefit
+    summary: Startups can apply for a vendor-determined benefit on Alloy's integration solutions.
     lifecycle:
       status: active
       effective_from: 2026-08-11T08:02:52.000Z
     economics:
       benefits:
         - benefit_id: ben_01
-          description: Up to 50% off Alloy integration solutions in year one
-          duration:
-            kind: exact
-            value: P1Y
-          kind: discount
-          percentage:
-            basis_points: 5000
-            kind: up-to
+          description: Vendor-determined startup benefit on Alloy integration solutions
+          kind: other
       consideration:
-        description: The public startup page does not state the resulting discounted price.
+        description: The public startup page does not state the benefit value or resulting price.
         kind: unknown
     eligibility:
       rule:
@@ -66,4 +57,3 @@ offers:
       url: https://runalloy.com/startups/
     source_ids:
       - src_112163ec6d615e38343a0a2ea85fc6c5d9091715fb20711fe2c8e5578900438a
-      - src_6e72f01e915fcec1d963122215765f57a6cc9c6fd219dfae6de9cc9ab020dd94
