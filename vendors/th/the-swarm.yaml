@@ -76,7 +76,8 @@ offers:
       access_operator_entity_id: ent_01kyyts97tpxmfh63db6h6jmxx
     access:
       availability: public
-      method: form
+      method: other
+      instructions: On the early stage program page, select the organization you are affiliated to from the partner list to get started.
       url: https://www.theswarm.com/company/early-stage-program
     source_ids:
       - src_ce82341aa168c99c167b63ee266d3dd22928f37b7d64e7481179baa5843f713d
