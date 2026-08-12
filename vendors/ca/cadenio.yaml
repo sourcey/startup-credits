@@ -1,0 +1,72 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kztgz86c4gg9f1gezznn19e1
+slug: cadenio
+slug_aliases: []
+name: Cadenio
+domains:
+  - value: cadenio.com
+    role: primary
+    valid_from: 2026-08-12T08:21:22.000Z
+category: productivity
+description: Cadenio is a process-execution platform for building and running structured workflows with task ownership, deadlines, approvals, and audit trails.
+links:
+  site: https://www.cadenio.com
+sources:
+  - source_id: src_92f7fc21aab2482878714919403fd14e9710fc91a4942f7b737eac14da269fa1
+    url: https://www.cadenio.com/en
+  - source_id: src_d2e7688e1e2cdf7349544db03993f968f0f8bdc56d4191779bfcd57e0446dfe3
+    url: https://www.cadenio.com/en/startup-program
+programs:
+  - program_id: prg_01kztgz86cx3gzyh0n0jh6ywx2
+    program_slug: cadenio-startup-program
+    program_slug_aliases: []
+    title: Cadenio Startup Program
+    summary: Cadenio's program gives approved early-stage startups discounted access to its workflow platform for one year.
+    source_ids:
+      - src_d2e7688e1e2cdf7349544db03993f968f0f8bdc56d4191779bfcd57e0446dfe3
+offers:
+  - offer_id: off_01kztgz86c899sh2e9ezjnpey1
+    program_id: prg_01kztgz86cx3gzyh0n0jh6ywx2
+    offer_slug: fifty-percent-off-for-one-year
+    offer_slug_aliases: []
+    title: 50% off Cadenio for 12 months
+    summary: Approved early-stage startups receive 50% off Cadenio for 12 months.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-12T08:21:22.000Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The startup pays the remaining discounted subscription price; the source does not specify a fixed amount or plan.
+      benefits:
+        - benefit_id: ben_01
+          description: 50% off Cadenio for 12 months
+          duration:
+            kind: exact
+            value: P1Y
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 5000
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: not-machine-evaluable
+            statement: Applicant is building an early-stage startup
+          - criterion_id: cri_02
+            kind: manual
+            reason: vendor-discretion
+            statement: Cadenio reviews and approves the application individually
+    roles:
+      terms_authority_entity_id: ent_01kztgz86c4gg9f1gezznn19e1
+      access_operator_entity_id: ent_01kztgz86c4gg9f1gezznn19e1
+    access:
+      availability: public
+      method: form
+      url: https://www.cadenio.com/en/startup-program
+    terms_url: https://www.cadenio.com/en/startup-program
+    source_ids:
+      - src_d2e7688e1e2cdf7349544db03993f968f0f8bdc56d4191779bfcd57e0446dfe3
