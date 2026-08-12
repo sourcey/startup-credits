@@ -8,10 +8,12 @@ domains:
     role: primary
     valid_from: 2026-08-09T21:20:16.000Z
 category: communication
-description: Exotel provides cloud communications, contact-center, voice, SMS, and conversational AI infrastructure for businesses.
+description: Exotel provides voice, messaging, and contact center capabilities for customer experience and engagement.
 links:
   site: https://exotel.com
 sources:
+  - source_id: src_11eb1a4ad2aae4c40c43ebccc86b739366b71c88cf3f802d868994ed33fcae15
+    url: https://exotel.com/
   - source_id: src_cac9ffcdaf7834a3f849f29f6f8f1dc4b150ec8bb2227dbaf76eac3a1f43b6b1
     url: https://exotel.com/exotel-for-startups/
 programs:
