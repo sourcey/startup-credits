@@ -15,9 +15,7 @@ sources:
   - source_id: src_9223b16ab8e30ece5c495a1ed47b811ce538fbf172483fa3e1bbb3013c5433c8
     url: https://openai.com/business/why-openai/startups/
   - source_id: src_f0897f1deaf5cdccfab9fda163fcfb40fcd734a1c9adb5e35c96ada602cc65f1
-    url: https://ramp.com/rewards/openai
-  - source_id: src_03a7334d6b7b66a8c1d251764583f4e716c29a0e99be36a630ea2cf208baac6e
-    url: https://ramp.com/rewards
+    url: https://perkbook.co/vendor-directory/openai
 programs: []
 offers:
   - offer_id: off_01kyh8fpe4jecj8crezg4618sc
@@ -51,42 +49,3 @@ offers:
       url: https://openai.com/business/why-openai/startups/
     source_ids:
       - src_9223b16ab8e30ece5c495a1ed47b811ce538fbf172483fa3e1bbb3013c5433c8
-  - offer_id: off_01kyyr9svh5zk20r29dskcmpgt
-    offer_slug: free-api-credits-with-openai-for-startups
-    offer_slug_aliases: []
-    title: Up to $2,500 in OpenAI API credits via Ramp
-    summary: Startups can receive up to $2,500 in OpenAI API credits through Ramp to explore building on top of the OpenAI platform.
-    lifecycle:
-      status: active
-      effective_from: 2026-08-01T08:15:42.602Z
-    economics:
-      benefits:
-        - benefit_id: ben_01
-          description: Up to $2,500 in OpenAI API credits
-          kind: credit
-          value:
-            amount:
-              currency: USD
-              minor_units: 250000
-            kind: up-to
-      consideration:
-        kind: none
-    eligibility:
-      rule:
-        kind: all
-        rules:
-          - criterion_id: cri_01
-            kind: manual
-            reason: external-verification
-            statement: A startup on Ramp building on top of the OpenAI platform.
-    roles:
-      terms_authority_entity_id: ent_01kyh8fpe4qj5yt6msnarsc8kz
-      access_operator_entity_id: ent_01kyh8fpe4g7kgfr7x2skc0vt3
-    access:
-      availability: membership
-      method: other
-      instructions: Get Ramp and redeem the reward within the product dashboard.
-      url: https://ramp.com/rewards/openai
-    source_ids:
-      - src_f0897f1deaf5cdccfab9fda163fcfb40fcd734a1c9adb5e35c96ada602cc65f1
-      - src_03a7334d6b7b66a8c1d251764583f4e716c29a0e99be36a630ea2cf208baac6e
