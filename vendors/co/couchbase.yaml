@@ -71,7 +71,7 @@ offers:
     access:
       availability: membership
       method: form
-      url: https://info.couchbase.com/aws-activate.html?A3POPC=%24%7Bpromocode%7D
+      url: https://info.couchbase.com/aws-activate.html
     source_ids:
       - src_252bd83a706a5f2bc428ffba12bd515a968bd9c93d7140e45d99eede9baf6ab2
       - src_1b6379b5aceb61ee563ea92965c0c3f806bfc92561cf96b3ef434395b55a4be2
