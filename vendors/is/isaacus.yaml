@@ -11,7 +11,7 @@ category: ai-ml
 description: Isaacus provides legal AI models and APIs for building legal technology solutions, powered by its Blackstone Graph.
 links:
   site: https://isaacus.com
-  startups: https://isaacus.com/startups
+  pricing: https://isaacus.com/pricing
 sources:
   - source_id: src_01kztsts14whk3y0z4zyx2rmf5
     url: https://isaacus.com/startups
@@ -70,7 +70,7 @@ offers:
       rule:
         kind: manual
         criterion_id: cri_01
-        statement: Incorporated in and operating from the US, UK, Canada, Australia, New Zealand, Ireland, Singapore, Saudi Arabia, Denmark, the Netherlands, Belgium, Austria, Malta, Sweden, Germany, France, Finland, Italy, Spain, Portugal, Estonia, Switzerland, or Luxembourg; less than 2 years old; less than US$10 million in funding; less than US$2 million in annual recurring revenue; fewer than 100 employees; not majority owned by another company (unless that company meets all inclusion criteria); not involved in adult content, gambling, arms, controlled substances, alcohol, or tobacco industries; no prior Isaacus startup credits or discounts; Isaacus account no older than 3 months upon application.
+        statement: Incorporated/operating from 21 listed countries (incl. US, UK, Canada, Australia, NZ, Ireland, Singapore, EU/EEA states, Switzerland, Luxembourg); less than 2 years old; under US$10M funding; under US$2M ARR; under 100 employees; not majority-owned (unless owner meets all criteria); not in excluded industries (adult, gambling, arms, controlled substances, alcohol, tobacco); no prior Isaacus credits; Isaacus account under 3 months old.
         reason: not-machine-evaluable
     roles:
       terms_authority_entity_id: ent_01kztstkfafqva995crec8a5zk
