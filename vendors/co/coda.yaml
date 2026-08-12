@@ -10,74 +10,43 @@ domains:
 category: productivity
 description: Coda is an all-in-one flexible doc tool with building blocks, tables, customized views, and integrations to power team, product, and knowledge management.
 links:
-  site: https://coda.io/for/startups
+  site: https://coda.io
 sources:
-  - source_id: src_5701585bdefc1cf5026883ef2214ba9f3f2d6c4155378e8cfbaaa4a194973432
-    url: https://coda.io/for/startups
-  - source_id: src_a871822fe0eb911cba69805f8814e91191c235ad3ead82e0c72851983a4e9a2e
-    url: https://perkbook.co/vendor-directory/coda
+  - source_id: src_42fd549f4612566ffa3d4c9743125cf6a830b27be13fb98f61b501f026ff36dd
+    url: https://coda.io/
+  - source_id: src_310803740ee40af934c03988e9a63ad83229e9a31fa0fcf95e2b379fae57ff7a
+    url: https://help.coda.io/hc/en-us/articles/39555735684877-Discounts-for-students-teachers-nonprofits-and-startups
 programs:
   - program_id: prg_01kyyr9svgzba5w8b8hnr2wxry
     program_slug: coda-startup-program
     program_slug_aliases: []
-    title: Coda Startup Program
-    summary: Coda for Startups provides special perks and free team plan access to eligible early-stage companies.
+    title: Coda startup discount
+    summary: Coda's startup discount gives qualifying startups six months of free access to a Team plan.
     source_ids:
-      - src_a871822fe0eb911cba69805f8814e91191c235ad3ead82e0c72851983a4e9a2e
+      - src_310803740ee40af934c03988e9a63ad83229e9a31fa0fcf95e2b379fae57ff7a
 offers:
-  - offer_id: off_01kyygma8278f4c4xbhahf8a2j
-    offer_slug: 1-000-startup-credit
-    offer_slug_aliases: []
-    title: $1,000 startup credit
-    summary: Startups can apply to receive a $1,000 credit to run their business on Coda.
-    lifecycle:
-      status: active
-      effective_from: 2026-08-01T10:21:18.818Z
-    economics:
-      benefits:
-        - benefit_id: ben_01
-          description: $1,000 credit for Coda
-          kind: credit
-          value:
-            amount:
-              currency: USD
-              minor_units: 100000
-            kind: exact
-      consideration:
-        kind: none
-    eligibility:
-      rule:
-        criterion_id: cri_01
-        kind: manual
-        reason: vendor-discretion
-        statement: Apply for the startup credit and meet Coda startup eligibility criteria.
-    roles:
-      terms_authority_entity_id: ent_01kyygma82v52ygt9gw9f3prhb
-      access_operator_entity_id: ent_01kyygma82v52ygt9gw9f3prhb
-    access:
-      availability: public
-      method: form
-      url: https://coda.io/for/startups
-    source_ids:
-      - src_5701585bdefc1cf5026883ef2214ba9f3f2d6c4155378e8cfbaaa4a194973432
   - offer_id: off_01kyyr9svgpmay2axw8cj4cawa
     program_id: prg_01kyyr9svgzba5w8b8hnr2wxry
     offer_slug: 6-months-free-team-plan-with-coda-for-startups
     offer_slug_aliases: []
-    title: 6 months free Team Plan with Coda for Startups
-    summary: Qualifying early-stage startups get 6 months free on the Coda Team plan with unlimited AI.
+    title: 6 months free on a Coda Team plan
+    summary: Qualifying startups get 6 months of free access to a Coda Team plan, with free unlimited Coda AI when applying through a Coda partner.
     lifecycle:
       status: active
       effective_from: 2026-08-01T08:13:34.666Z
     economics:
       benefits:
         - benefit_id: ben_01
-          description: 6 months free on the Coda Team plan with unlimited AI
+          description: 6 months of free access to a Coda Team plan
           duration:
             kind: exact
             value: P6M
           kind: free-service
-          service: Coda Team plan with unlimited AI
+          service: Coda Team plan
+        - benefit_id: ben_02
+          applies_to: applications made through a Coda partner
+          description: Free unlimited Coda AI when applying through a partner
+          kind: other
       consideration:
         kind: none
     eligibility:
@@ -85,47 +54,39 @@ offers:
         kind: all
         rules:
           - criterion_id: cri_01
+            kind: manual
+            reason: external-verification
+            statement: A team is using Coda, not a single person on their own.
+          - criterion_id: cri_02
             fact: company.age_months
             kind: predicate
             operator: lt
-            statement: Company must be under 5 years old
+            statement: The business is less than 5 years old.
             value:
               type: number
               value: 60
-          - criterion_id: cri_02
+          - criterion_id: cri_03
             fact: company.funding_raised_usd
             kind: predicate
             operator: lt
-            statement: Company raised less than $10M
+            statement: The business has raised less than $10M USD.
             value:
               type: number
               value: 10000000
-          - criterion_id: cri_03
-            fact: company.employee_count
-            kind: predicate
-            operator: gte
-            statement: Team size must be 2 or more
-            value:
-              type: number
-              value: 2
           - criterion_id: cri_04
             kind: manual
             reason: not-machine-evaluable
-            statement: Must use a business domain email
+            statement: A business domain email address is required, not a personal email, along with a company website.
           - criterion_id: cri_05
-            fact: company.is_current_customer
-            kind: predicate
-            operator: eq
-            statement: Must be new Coda customers
-            value:
-              type: boolean
-              value: false
+            kind: manual
+            reason: external-verification
+            statement: The business does not currently have a paid subscription and has not paid for Coda in the last 30 days.
     roles:
       terms_authority_entity_id: ent_01kyygma82v52ygt9gw9f3prhb
-      access_operator_entity_id: ent_01kyyr9svgcxd42r9s8g3knssn
+      access_operator_entity_id: ent_01kyygma82v52ygt9gw9f3prhb
     access:
-      availability: membership
+      availability: public
       method: form
-      url: https://perkbook.co/vendor-directory/coda
+      url: https://help.coda.io/hc/en-us/articles/39555735684877-Discounts-for-students-teachers-nonprofits-and-startups
     source_ids:
-      - src_a871822fe0eb911cba69805f8814e91191c235ad3ead82e0c72851983a4e9a2e
+      - src_310803740ee40af934c03988e9a63ad83229e9a31fa0fcf95e2b379fae57ff7a

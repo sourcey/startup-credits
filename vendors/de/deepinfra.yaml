@@ -14,30 +14,30 @@ links:
 sources:
   - source_id: src_4372169c5433326be66d10fc58f66eaf7c58c84bd90379afee5e9f29e1438bd8
     url: https://deepinfra.com/
-  - source_id: src_8b0cde8a6977f3aaa2bd936f824af4066338da00472d6e50c6526ae811c4c40c
-    url: https://perkbook.co/vendor-directory/deepinfra
+  - source_id: src_a7c7bf4c549ba204b628e64f3bbea4108093945a3cd9c3b1190d438433eb226f
+    url: https://deepinfra.com/deepstart
 programs:
   - program_id: prg_01kyyts97w2qshjx2e2yqz6as2
     program_slug: deepinfra-deepstart
     program_slug_aliases: []
-    title: DeepInfra DeepStart
-    summary: DeepInfra DeepStart gives qualifying early-stage AI companies up to 1 billion free inference tokens for running open-source models in production.
+    title: DeepStart
+    summary: DeepInfra's DeepStart program gives qualifying early-stage startups one billion free inference tokens.
     source_ids:
-      - src_8b0cde8a6977f3aaa2bd936f824af4066338da00472d6e50c6526ae811c4c40c
+      - src_a7c7bf4c549ba204b628e64f3bbea4108093945a3cd9c3b1190d438433eb226f
 offers:
   - offer_id: off_01kyyts97wx07k6ckfa6np5rd6
     program_id: prg_01kyyts97w2qshjx2e2yqz6as2
     offer_slug: free-ai-inference-tokens-with-deepinfra-deepstart
     offer_slug_aliases: []
-    title: Free AI inference tokens with DeepInfra DeepStart
-    summary: Qualifying early-stage AI startups can receive up to 1 billion free inference tokens to run open-source models on DeepInfra.
+    title: 1 billion free inference tokens with DeepStart
+    summary: Qualifying startups receive 1,000,000,000 free tokens, valued at DeepSeek V3.1 prices, to run models on DeepInfra.
     lifecycle:
       status: active
       effective_from: 2026-08-01T08:13:34.662Z
     economics:
       benefits:
         - benefit_id: ben_01
-          description: Up to 1 billion free inference tokens
+          description: 1,000,000,000 free tokens at DeepSeek V3.1 prices
           kind: other
       consideration:
         kind: none
@@ -47,22 +47,22 @@ offers:
         rules:
           - criterion_id: cri_01
             kind: manual
-            reason: vendor-discretion
-            statement: Early-stage AI startups building with open-source models
+            reason: external-verification
+            statement: Have raised between 250K and 10M USD.
           - criterion_id: cri_02
-            fact: company.is_current_customer
+            fact: company.age_months
             kind: predicate
-            operator: eq
-            statement: new DeepInfra customers
+            operator: lte
+            statement: Founded in the last 2 years.
             value:
-              type: boolean
-              value: false
+              type: number
+              value: 24
     roles:
       terms_authority_entity_id: ent_01kyyts97sfrxp00s21jt9b95y
-      access_operator_entity_id: ent_01kyyr9svgcxd42r9s8g3knssn
+      access_operator_entity_id: ent_01kyyts97sfrxp00s21jt9b95y
     access:
-      availability: membership
+      availability: public
       method: form
-      url: https://perkbook.co/vendor-directory/deepinfra
+      url: https://deepinfra.com/deepstart
     source_ids:
-      - src_8b0cde8a6977f3aaa2bd936f824af4066338da00472d6e50c6526ae811c4c40c
+      - src_a7c7bf4c549ba204b628e64f3bbea4108093945a3cd9c3b1190d438433eb226f

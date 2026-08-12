@@ -10,100 +10,28 @@ domains:
 category: productivity
 description: Miro is a visual workspace for innovation that helps teams brainstorm, plan, build, and collaborate in one place.
 links:
-  site: https://miro.com/startups/
+  site: https://miro.com
 sources:
   - source_id: src_cd12d5b849bd137660d1748c1f441203536c41948b97eef4e1122804a2620037
     url: https://miro.com/startups/
-  - source_id: src_eec011578cba1a7a91df90a049196d57b38721f4119f616e91939105a9d5bac4
-    url: https://perkbook.co/vendor-directory/miro
+  - source_id: src_f7a04582fc000269446e5f71740255d7c2b9455293552b08d43e81f9364dc962
+    url: https://miro.com/startups/apply/
 programs:
   - program_id: prg_01kyh8fpe335dxj6tsyk7tb78w
     program_slug: miro-for-startups
     program_slug_aliases: []
-    title: Miro for Startups
-    source_ids:
-      - src_cd12d5b849bd137660d1748c1f441203536c41948b97eef4e1122804a2620037
-  - program_id: prg_01kyyts97xgd034zqh77z1n3r9
-    program_slug: miro-startup-program
-    program_slug_aliases: []
     title: Miro Startup Program
-    summary: Miro Startup Program offers credits for eligible startups.
+    summary: Miro's startup program gives early startups free Miro credits, directly or through a partner organization, and offers scale-ups a discount.
     source_ids:
-      - src_eec011578cba1a7a91df90a049196d57b38721f4119f616e91939105a9d5bac4
+      - src_cd12d5b849bd137660d1748c1f441203536c41948b97eef4e1122804a2620037
+      - src_f7a04582fc000269446e5f71740255d7c2b9455293552b08d43e81f9364dc962
 offers:
-  - offer_id: off_01kyh8fpe335dxj6tsyk7tb78w
-    program_id: prg_01kyh8fpe335dxj6tsyk7tb78w
-    offer_slug: miro-early-startups-free-credits
-    offer_slug_aliases: []
-    title: Miro Early Startups Free Credits
-    summary: Early-stage startups can get free Miro credits to access Miro's visual workspace tools, templates, and platform.
-    lifecycle:
-      status: active
-      effective_from: 2026-07-27T07:36:53.728Z
-    economics:
-      consideration:
-        kind: unknown
-        description: The source record did not establish separate consideration.
-      benefits:
-        - benefit_id: ben_primary
-          description: Free Miro credits
-          kind: other
-    eligibility:
-      rule:
-        kind: manual
-        criterion_id: cri_requirement_01
-        statement: Available for early startups.
-        reason: not-machine-evaluable
-    roles:
-      terms_authority_entity_id: ent_01kyh8fpe3h966sfgy1aghhjce
-      access_operator_entity_id: ent_01kyh8fpe3h966sfgy1aghhjce
-    access:
-      availability: public
-      method: other
-      url: https://miro.com/startups/
-    source_ids:
-      - src_cd12d5b849bd137660d1748c1f441203536c41948b97eef4e1122804a2620037
-  - offer_id: off_01kyh8fpe4r2g9bf55p9rcwqvw
-    program_id: prg_01kyh8fpe335dxj6tsyk7tb78w
-    offer_slug: miro-scale-ups-discount
-    offer_slug_aliases: []
-    title: Miro Scale Ups Discount
-    summary: Scaling startups can receive up to a 25% discount on Miro's workspace platform.
-    lifecycle:
-      status: active
-      effective_from: 2026-07-27T07:36:53.728Z
-    economics:
-      consideration:
-        kind: unknown
-        description: The source record did not establish separate consideration.
-      benefits:
-        - benefit_id: ben_primary
-          description: Up to 25% discount
-          kind: discount
-          percentage:
-            kind: up-to
-            basis_points: 2500
-    eligibility:
-      rule:
-        kind: manual
-        criterion_id: cri_requirement_01
-        statement: Available for scale ups.
-        reason: not-machine-evaluable
-    roles:
-      terms_authority_entity_id: ent_01kyh8fpe3h966sfgy1aghhjce
-      access_operator_entity_id: ent_01kyh8fpe3h966sfgy1aghhjce
-    access:
-      availability: public
-      method: other
-      url: https://miro.com/startups/
-    source_ids:
-      - src_cd12d5b849bd137660d1748c1f441203536c41948b97eef4e1122804a2620037
   - offer_id: off_01kyyts97xm14v7h68xprfng2a
-    program_id: prg_01kyyts97xgd034zqh77z1n3r9
+    program_id: prg_01kyh8fpe335dxj6tsyk7tb78w
     offer_slug: free-credits-with-miro-startup-program-individual-tier
     offer_slug_aliases: []
-    title: Free credits with Miro Startup Program — individual tier
-    summary: $500 in Miro credits for individual startups without a Miro partner, accepted on a case-by-case basis.
+    title: $500 in Miro credits
+    summary: Early startups that are not linked with a Miro global partner organization can apply directly and receive $500 in Miro credits.
     lifecycle:
       status: active
       effective_from: 2026-08-01T08:15:22.413Z
@@ -127,54 +55,26 @@ offers:
             fact: company.partner_memberships
             kind: predicate
             operator: absent
-            statement: Not affiliated with a Miro partner
+            statement: The startup is not linked with a Miro global partner organization.
           - criterion_id: cri_02
-            fact: company.is_current_customer
-            kind: predicate
-            operator: eq
-            statement: Not a paying Miro subscriber
-            value:
-              type: boolean
-              value: false
-          - criterion_id: cri_03
-            fact: company.age_months
-            kind: predicate
-            operator: lt
-            statement: Under 2 years old
-            value:
-              type: number
-              value: 24
-          - criterion_id: cri_04
-            fact: company.funding_raised_usd
-            kind: predicate
-            operator: lt
-            statement: Under $5M raised
-            value:
-              type: number
-              value: 5000000
-          - criterion_id: cri_05
             kind: manual
             reason: external-verification
-            statement: Work/startup domain email
-          - criterion_id: cri_06
-            kind: manual
-            reason: vendor-discretion
-            statement: Accepted on a case-by-case basis
+            statement: A free Miro account is required to qualify.
     roles:
       terms_authority_entity_id: ent_01kyh8fpe3h966sfgy1aghhjce
-      access_operator_entity_id: ent_01kyyr9svgcxd42r9s8g3knssn
+      access_operator_entity_id: ent_01kyh8fpe3h966sfgy1aghhjce
     access:
       availability: public
       method: form
-      url: https://perkbook.co/vendor-directory/miro
+      url: https://miro.com/startups/apply/
     source_ids:
-      - src_eec011578cba1a7a91df90a049196d57b38721f4119f616e91939105a9d5bac4
+      - src_f7a04582fc000269446e5f71740255d7c2b9455293552b08d43e81f9364dc962
   - offer_id: off_01kyyts97xnz2014phy8xa4m45
-    program_id: prg_01kyyts97xgd034zqh77z1n3r9
+    program_id: prg_01kyh8fpe335dxj6tsyk7tb78w
     offer_slug: free-credits-with-miro-startup-program-partner-tier
     offer_slug_aliases: []
-    title: Free credits with Miro Startup Program — partner tier
-    summary: $1,000 in Miro credits for startups affiliated with an approved Miro Startup Program partner (VC, accelerator, or incubator).
+    title: $1,000 in Miro credits via a partner organization
+    summary: Startups linked with a Miro global partner organization receive $1,000 in Miro credits.
     lifecycle:
       status: active
       effective_from: 2026-08-01T08:15:22.413Z
@@ -195,43 +95,55 @@ offers:
         kind: all
         rules:
           - criterion_id: cri_01
-            kind: manual
-            reason: external-verification
-            statement: Affiliated with an approved Miro Startup Program partner (VC, accelerator, or incubator)
+            fact: company.partner_memberships
+            kind: predicate
+            operator: present
+            statement: The startup is linked with a Miro global partner organization.
           - criterion_id: cri_02
-            fact: company.is_current_customer
-            kind: predicate
-            operator: eq
-            statement: Not a paying Miro subscriber
-            value:
-              type: boolean
-              value: false
-          - criterion_id: cri_03
-            fact: company.age_months
-            kind: predicate
-            operator: lt
-            statement: Under 2 years old
-            value:
-              type: number
-              value: 24
-          - criterion_id: cri_04
-            fact: company.funding_raised_usd
-            kind: predicate
-            operator: lt
-            statement: Under $5M raised
-            value:
-              type: number
-              value: 5000000
-          - criterion_id: cri_05
             kind: manual
             reason: external-verification
-            statement: Work/startup domain email
+            statement: A free Miro account is required to qualify.
     roles:
       terms_authority_entity_id: ent_01kyh8fpe3h966sfgy1aghhjce
-      access_operator_entity_id: ent_01kyyr9svgcxd42r9s8g3knssn
+      access_operator_entity_id: ent_01kyh8fpe3h966sfgy1aghhjce
     access:
       availability: membership
       method: form
-      url: https://perkbook.co/vendor-directory/miro
+      url: https://miro.com/startups/apply/
     source_ids:
-      - src_eec011578cba1a7a91df90a049196d57b38721f4119f616e91939105a9d5bac4
+      - src_f7a04582fc000269446e5f71740255d7c2b9455293552b08d43e81f9364dc962
+  - offer_id: off_01kyh8fpe4r2g9bf55p9rcwqvw
+    program_id: prg_01kyh8fpe335dxj6tsyk7tb78w
+    offer_slug: miro-scale-ups-discount
+    offer_slug_aliases: []
+    title: Up to 25% discount for scale-ups
+    summary: Scaling startups can receive up to a 25% discount on Miro.
+    lifecycle:
+      status: active
+      effective_from: 2026-07-27T07:36:53.728Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The public program page does not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Up to 25% discount
+          kind: discount
+          percentage:
+            kind: up-to
+            basis_points: 2500
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Available for scale-ups.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01kyh8fpe3h966sfgy1aghhjce
+      access_operator_entity_id: ent_01kyh8fpe3h966sfgy1aghhjce
+    access:
+      availability: public
+      method: other
+      url: https://miro.com/startups/
+    source_ids:
+      - src_cd12d5b849bd137660d1748c1f441203536c41948b97eef4e1122804a2620037
