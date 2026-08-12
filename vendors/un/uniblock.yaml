@@ -4,16 +4,18 @@ slug: uniblock
 slug_aliases: []
 name: Uniblock
 domains:
-  - value: uniblock.website
+  - value: uniblock.dev
     role: primary
     valid_from: 2026-08-08T13:37:07.362Z
 category: devtools-other
 description: Uniblock provides unified routing, a shared interface, and one credit balance for blockchain data services across multiple providers.
 links:
-  site: https://uniblock.website
+  site: https://uniblock.dev
 sources:
   - source_id: src_1e3e1af7692636d3b3d9fe564ceb8d6dfea798230b34a858f5bf3e9986d70f37
     url: https://uniblock.website/startup-program
+  - source_id: src_9c2165c16f15354a363b73401f9d4824fd07c032e2f8004240b8bd822efe85d8
+    url: https://uniblock.website/legal/terms-of-service
 programs:
   - program_id: prg_01kzgsex92gxjwvjjvnjwzt9j2
     program_slug: uniblock-startup-program
@@ -22,6 +24,7 @@ programs:
     summary: Uniblock's startup program provides early-stage Web3 teams with credits for an annual plan spanning its routed blockchain-data provider stack.
     source_ids:
       - src_1e3e1af7692636d3b3d9fe564ceb8d6dfea798230b34a858f5bf3e9986d70f37
+      - src_9c2165c16f15354a363b73401f9d4824fd07c032e2f8004240b8bd822efe85d8
 offers:
   - offer_id: off_01kzgsex92217e13he5fwjty6a
     program_id: prg_01kzgsex92gxjwvjjvnjwzt9j2
@@ -63,3 +66,4 @@ offers:
       url: https://uniblock.website/startup-program
     source_ids:
       - src_1e3e1af7692636d3b3d9fe564ceb8d6dfea798230b34a858f5bf3e9986d70f37
+      - src_9c2165c16f15354a363b73401f9d4824fd07c032e2f8004240b8bd822efe85d8
