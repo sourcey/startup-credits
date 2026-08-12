@@ -8,30 +8,28 @@ domains:
     role: primary
     valid_from: 2026-08-08T01:58:53.894Z
 category: databases
-description: Couchbase offers a Capella startup promotion for qualified AWS Activate Startup and Google Cloud Startup participants.
+description: Couchbase provides Capella, a managed cloud database platform with data, search, mobile, and AI development capabilities.
 links:
   site: https://www.couchbase.com
 sources:
   - source_id: src_252bd83a706a5f2bc428ffba12bd515a968bd9c93d7140e45d99eede9baf6ab2
     url: https://info.couchbase.com/aws-activate.html
-  - source_id: src_965e8550ba2964e2600f07ba451a4e72b39f82de537cfcb6386bd8f1cae7c731
-    url: https://info.couchbase.com/rs/302-GJY-034/images/Couchbase%20Capella%20AWS%20Activate%20%26%20Google%20Cloud%20Startup%20Promotion%20Terms%20and%20Conditions.pdf?version=0
 programs:
   - program_id: prg_01kzfhgdp58vzktprrn81fdtnk
-    program_slug: capella-aws-activate-google-cloud-startup-promotion
-    program_slug_aliases: []
-    title: Couchbase Capella AWS Activate and Google Cloud Startup Promotion
-    summary: Qualified AWS Activate Startup and Google Cloud Startup participants can apply for a Couchbase Capella Develop Starter Kit.
+    program_slug: capella-develop-starter-kit-promotion
+    program_slug_aliases:
+      - capella-aws-activate-google-cloud-startup-promotion
+    title: Couchbase Capella Develop Starter Kit Promotion
+    summary: New Couchbase Capella customers can apply for a free Capella Develop Starter Kit advertised at a $12,750 value.
     source_ids:
       - src_252bd83a706a5f2bc428ffba12bd515a968bd9c93d7140e45d99eede9baf6ab2
-      - src_965e8550ba2964e2600f07ba451a4e72b39f82de537cfcb6386bd8f1cae7c731
 offers:
   - offer_id: off_01kzfhgdp527b5w7xhkfj7bk0s
     program_id: prg_01kzfhgdp58vzktprrn81fdtnk
     offer_slug: capella-develop-starter-kit
     offer_slug_aliases: []
     title: $12,750 Couchbase Capella Develop Starter Kit
-    summary: Qualified participants can receive 5,000 Capella Enterprise Credits, virtual onboarding and three consulting days, plus one Associate Developer Certification.
+    summary: New customers can receive 5,000 Capella Enterprise Credits, virtual onboarding and three consulting days, plus one Associate Developer Certification.
     lifecycle:
       status: active
       effective_from: 2026-08-08T01:58:53.894Z
@@ -47,9 +45,6 @@ offers:
               currency: USD
               minor_units: 1000000
             kind: exact
-          duration:
-            kind: up-to
-            value: P1Y
         - benefit_id: ben_02
           description: White-glove virtual onboarding and three consulting days, with a stated value of $2,700
           kind: free-service
@@ -60,28 +55,14 @@ offers:
           service: Couchbase Associate Developer Certification
     eligibility:
       rule:
-        kind: all
-        rules:
-          - criterion_id: cri_01
-            kind: manual
-            reason: external-verification
-            statement: Applicant must be a qualified participant in either the AWS Activate Startup Program or Google Cloud Startup Program.
-          - criterion_id: cri_02
-            fact: company.is_current_customer
-            kind: predicate
-            operator: eq
-            statement: Applicant must be a new Couchbase Capella customer.
-            value:
-              type: boolean
-              value: false
-          - criterion_id: cri_03
-            kind: manual
-            reason: external-verification
-            statement: Eligible Couchbase products must be for business use and deployed on the applicable AWS or Google Cloud infrastructure.
-          - criterion_id: cri_04
-            kind: manual
-            reason: vendor-discretion
-            statement: Eligibility is subject to Couchbase approval, the published exclusions, limited availability, and one redemption per participant.
+        criterion_id: cri_02
+        fact: company.is_current_customer
+        kind: predicate
+        operator: eq
+        statement: Applicant must be a new Couchbase Capella customer.
+        value:
+          type: boolean
+          value: false
     roles:
       terms_authority_entity_id: ent_01kzfhgdp25xppdtqpn61qjmgg
       access_operator_entity_id: ent_01kzfhgdp25xppdtqpn61qjmgg
@@ -89,7 +70,5 @@ offers:
       availability: membership
       method: form
       url: https://info.couchbase.com/aws-activate.html
-    terms_url: https://info.couchbase.com/rs/302-GJY-034/images/Couchbase%20Capella%20AWS%20Activate%20%26%20Google%20Cloud%20Startup%20Promotion%20Terms%20and%20Conditions.pdf?version=0
     source_ids:
       - src_252bd83a706a5f2bc428ffba12bd515a968bd9c93d7140e45d99eede9baf6ab2
-      - src_965e8550ba2964e2600f07ba451a4e72b39f82de537cfcb6386bd8f1cae7c731
