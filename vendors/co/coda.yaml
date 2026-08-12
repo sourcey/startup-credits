@@ -44,8 +44,7 @@ offers:
           kind: free-service
           service: Coda Team plan
         - benefit_id: ben_02
-          applies_to: applications made through a Coda partner
-          description: Free unlimited Coda AI when applying through a partner
+          description: Free unlimited Coda AI when applying through a Coda partner
           kind: other
       consideration:
         kind: none
