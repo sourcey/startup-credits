@@ -1,0 +1,70 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kzxb9h4tj5dvrt3qf6dmkhvy
+slug: unkey
+slug_aliases: []
+name: Unkey
+domains:
+  - value: unkey.com
+    role: primary
+    valid_from: 2026-08-13T00:00:00.000Z
+category: auth-security
+description: Unkey is an API key management and authentication platform for developers, providing key issuance, verification, rate limiting and usage analytics.
+links:
+  site: https://www.unkey.com
+sources:
+  - source_id: src_ce3743505ca97df372e97719586186042db92ee75126d3cb050335b39cc09942
+    url: https://www.unkey.com/startups
+programs:
+  - program_id: prg_01kzxb9h4xc7ra1sxgkd5vvjsb
+    program_slug: unkey-startups-program
+    program_slug_aliases: []
+    title: Startups Program
+    summary: Unkey's Startups Program gives early-stage startups monthly Unkey credits, priority support through a dedicated Slack channel, concierge onboarding and hands-on migration help.
+    source_ids:
+      - src_ce3743505ca97df372e97719586186042db92ee75126d3cb050335b39cc09942
+offers:
+  - offer_id: off_01kzxb9h4x28q86y71n4hhnxhj
+    offer_slug: unkey-startups-program-monthly-credits
+    offer_slug_aliases: []
+    title: 1,000 USD in Unkey credits every month
+    summary: Startups accepted into the Unkey Startups Program receive 1,000 USD in credits each month, priority support in a dedicated Slack channel, concierge onboarding and migration assistance.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-13T00:00:00.000Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: 1,000 USD in Unkey credits every month
+          duration:
+            kind: exact
+            value: P1M
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 100000
+            kind: exact
+        - benefit_id: ben_support
+          description: Priority support through a dedicated Slack channel
+          kind: other
+        - benefit_id: ben_onboarding
+          description: Concierge onboarding session and hands-on migration support
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Open to startups by application. Eligibility expires once the startup has raised more than 5 million USD; companies past that threshold receive 50% off their bill instead.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01kzxb9h4tj5dvrt3qf6dmkhvy
+      access_operator_entity_id: ent_01kzxb9h4tj5dvrt3qf6dmkhvy
+    access:
+      availability: public
+      method: form
+      url: https://www.unkey.com/startups
+    source_ids:
+      - src_ce3743505ca97df372e97719586186042db92ee75126d3cb050335b39cc09942
