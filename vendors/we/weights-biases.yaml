@@ -52,7 +52,8 @@ offers:
       access_operator_entity_id: ent_01kzq1n62dcc9wd622h1cr38zt
     access:
       availability: public
-      method: form
+      method: other
       url: https://wandb.ai/site/partners/azure/microsoft-for-startups/
+      instructions: Follow the Redeem offer link on the page to the Weights and Biases startup program signup page with the discount coupon applied.
     source_ids:
       - src_dc64b75feec4975fa37e4bf942a452dd652567bb45385a78dd08169086421500
