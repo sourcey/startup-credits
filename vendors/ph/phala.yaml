@@ -41,7 +41,7 @@ offers:
             amount:
               currency: USD
               minor_units: 100000
-            kind: exact
+            kind: up-to
         - benefit_id: ben_02
           description: Engineering access and technical review for the startup's runtime, proof path, and launch support
           kind: free-service
