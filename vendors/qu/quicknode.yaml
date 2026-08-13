@@ -1,0 +1,70 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kzwtgargtfavcyvy4546s0nf
+slug: quicknode
+slug_aliases: []
+name: Quicknode
+domains:
+  - value: quicknode.com
+    role: primary
+    valid_from: 2026-08-13T05:46:48Z
+category: hosting-infra
+description: Quicknode deploys blockchain infrastructure for developers and enterprises, with support for more than 80 chains.
+links:
+  site: https://www.quicknode.com
+sources:
+  - source_id: src_6c1157f89d6b7b865bdd468f8b18a7b7a4def3e6c1484fb15233cebf2e6a9a32
+    url: https://www.quicknode.com/startup
+  - source_id: src_07aebdf065f9dc5cde9e93357f5d7a7c1f3e207b19accf5a450d74298a0415b9
+    url: https://www.quicknode.com/blog/introducing-the-quicknode-startup-program
+programs:
+  - program_id: prg_01kzwtgarkdvw21d24z9zh0sav
+    program_slug: quicknode-startup-program
+    program_slug_aliases: []
+    title: Quicknode Startup Program
+    summary: A startup program offering Quicknode credits, technical guidance, partner resources, networking, workshops, and visibility opportunities.
+    source_ids:
+      - src_6c1157f89d6b7b865bdd468f8b18a7b7a4def3e6c1484fb15233cebf2e6a9a32
+      - src_07aebdf065f9dc5cde9e93357f5d7a7c1f3e207b19accf5a450d74298a0415b9
+offers:
+  - offer_id: off_01kzwtgarksb6y0wnaz4ayksk0
+    program_id: prg_01kzwtgarkdvw21d24z9zh0sav
+    offer_slug: startup-credits-and-support
+    offer_slug_aliases: []
+    title: Quicknode Startup Program credits and support
+    summary: Accepted applicants may receive Quicknode credits, personalized technical support, partner offers, investor introductions, workshops, and visibility opportunities.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-13T05:46:48Z
+    economics:
+      consideration:
+        kind: variable
+        description: Apply to the Quicknode Startup Program; access to each benefit depends on the applicant's qualification status.
+      benefits:
+        - benefit_id: ben_01
+          description: Quicknode credits to get started on the platform without opening a wallet.
+          kind: other
+        - benefit_id: ben_02
+          description: Dedicated office hours with Quicknode technical experts for engineering guidance.
+          kind: other
+        - benefit_id: ben_03
+          description: Access to investor introductions, collaboration opportunities, community events, workshops, and partner offers.
+          kind: other
+        - benefit_id: ben_04
+          description: Opportunities to present at events, receive feedback, and increase the startup's visibility.
+          kind: other
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Quicknode determines access to each possible program benefit from the applicant's qualification status.
+    roles:
+      terms_authority_entity_id: ent_01kzwtgargtfavcyvy4546s0nf
+      access_operator_entity_id: ent_01kzwtgargtfavcyvy4546s0nf
+    access:
+      availability: public
+      method: form
+      url: https://quiknode.typeform.com/to/duehmrLX
+    source_ids:
+      - src_6c1157f89d6b7b865bdd468f8b18a7b7a4def3e6c1484fb15233cebf2e6a9a32
+      - src_07aebdf065f9dc5cde9e93357f5d7a7c1f3e207b19accf5a450d74298a0415b9
