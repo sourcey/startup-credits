@@ -15,6 +15,8 @@ links:
 sources:
   - source_id: src_2dbae2670a345c939ab71064a6fc3be2377f9584d1ce75e07a0f49f7d7df6d7b
     url: https://www.thoughtspot.com/startup
+  - source_id: src_1eac73468dd870ba87f9b43fa25d9af71f22aa0dd952d7098d502d66485ee9d9
+    url: https://www.thoughtspot.com
 programs:
   - program_id: prg_01kzm83y456qdyzb8e0cx9ymxd
     program_slug: thoughtspot-startupspot
