@@ -1,0 +1,72 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kzwgbge0xewbdx6advct77gr
+slug: creatorsuite
+slug_aliases: []
+name: CreatorSuite
+domains:
+  - value: creatorssuite.ai
+    role: primary
+    valid_from: 2026-08-13T02:50:00.000Z
+category: marketing
+description: CreatorSuite provides analytics, AI-assisted scripting, competitor intelligence, content workflow, and team tools for creators and media teams.
+links:
+  site: https://creatorssuite.ai
+sources:
+  - source_id: src_715c5ecab17bc73275786f39cd8c281deee875f36b5730eed09f80d0d50d0373
+    url: https://creatorssuite.ai/startup-program
+  - source_id: src_94fd493db9375814e869d10021788d8833fbecf8ca748297e508ea20b3537535
+    url: https://creatorssuite.ai/contact
+programs:
+  - program_id: prg_01kzwgbge1rj9gc1xx97wkfahj
+    program_slug: startup-program
+    program_slug_aliases: []
+    title: CreatorSuite Startup Program
+    summary: CreatorSuite's startup program gives approved early teams discounted annual plans, AI usage credits, onboarding, and priority support.
+    source_ids:
+      - src_715c5ecab17bc73275786f39cd8c281deee875f36b5730eed09f80d0d50d0373
+offers:
+  - offer_id: off_01kzwgbge1fn62pmv6v326e4wc
+    program_id: prg_01kzwgbge1rj9gc1xx97wkfahj
+    offer_slug: annual-plan-discount-and-support
+    offer_slug_aliases: []
+    title: CreatorSuite Startup Discount and Support
+    summary: Approved early teams receive up to 30% off CreatorSuite annual plans plus unspecified AI usage credits, onboarding, priority support, office hours, and possible co-marketing slots.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-13T02:50:00.000Z
+    economics:
+      consideration:
+        kind: variable
+        description: Purchase a CreatorSuite annual plan after approval to use the startup discount; the public source does not publish the resulting price.
+      benefits:
+        - benefit_id: ben_01
+          description: Up to 30% off CreatorSuite annual plans
+          kind: discount
+          percentage:
+            basis_points: 3000
+            kind: up-to
+        - benefit_id: ben_02
+          description: AI usage credits in an amount not published on the program page
+          kind: other
+        - benefit_id: ben_03
+          description: White-glove onboarding for analytics, scripting, and team roles, plus priority support
+          kind: other
+        - benefit_id: ben_04
+          description: Strategy office hours and possible co-marketing slots
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_01
+        statement: Applicant must be an early team with proof of funding or revenue and receive CreatorSuite approval.
+        reason: external-verification
+    roles:
+      terms_authority_entity_id: ent_01kzwgbge0xewbdx6advct77gr
+      access_operator_entity_id: ent_01kzwgbge0xewbdx6advct77gr
+    access:
+      availability: public
+      method: form
+      url: https://creatorssuite.ai/contact
+    source_ids:
+      - src_715c5ecab17bc73275786f39cd8c281deee875f36b5730eed09f80d0d50d0373
+      - src_94fd493db9375814e869d10021788d8833fbecf8ca748297e508ea20b3537535
