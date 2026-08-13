@@ -8,13 +8,17 @@ domains:
     role: primary
     valid_from: 2026-08-09T22:14:39.000Z
 category: ai-ml
-description: Runway is an AI company building foundational Real-World Intelligence models that understand, simulate, and act in the world, with creative, developer, and robotics products built on them.
+description: Runway is building foundational Real-World Intelligence models that understand, simulate, and act in the world, with Creative, Developer, and Robotics platforms built on top of them.
 links:
   site: https://runway.com
   pricing: https://runway.com/pricing
 sources:
   - source_id: src_c10207e006a25de9c85019ff4f375cf2f24db00918a5b99239aa59766d75d9de
     url: https://runway.com/product/builders
+  - source_id: src_cd2631bd200059052c0bb8852812f7019f9fe0c45043f5dfbf92dc723e835ceb
+    url: https://runway.com
+  - source_id: src_da710c4a1ccfebfeee967df903fde39b4506df763d7c7ca724e64a8bf273bd90
+    url: https://runway.com/pricing
 programs:
   - program_id: prg_01kzm9f8p2ew76m9g6g7t66q3y
     program_slug: runway-builders
