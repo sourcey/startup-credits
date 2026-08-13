@@ -1,0 +1,56 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kzykmek4c3m9ck4w1khhdmpf
+slug: fillout
+slug_aliases: []
+name: Fillout
+domains:
+  - value: fillout.com
+    role: primary
+    valid_from: 2026-08-13T22:24:39.000Z
+category: no-code
+description: Fillout is a form, survey, and quiz builder that lets teams create forms and store responses directly where they need them.
+links:
+  site: https://www.fillout.com
+sources:
+  - source_id: src_c9e462021020aae0616ce66ce2c1a4b1b75f5ce89b3f8f8278f765130a804fab
+    url: https://www.fillout.com/help/startup-discount
+  - source_id: src_315bae440c85ec5b04d9f899c1ae559d5e7471bfaed22b3c92a391f5078a4d7c
+    url: https://www.fillout.com/
+programs: []
+offers:
+  - offer_id: off_01kzykmek6xc5t2n7qam22xamb
+    offer_slug: fillout-startup-discount
+    offer_slug_aliases: []
+    title: Fillout startup discount
+    summary: Eligible startups get 50% off any paid Fillout plan for one year after applying through Fillout's startup discount program.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-13T22:24:39.000Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_01
+          description: 50% off any paid Fillout plan for one year.
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 5000
+          duration:
+            kind: exact
+            value: P1Y
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Startup must have been in business for less than five years and be privately held, have fewer than 10 employees, be a new Fillout customer, and must not be a previous recipient of the Fillout startup discount.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01kzykmek4c3m9ck4w1khhdmpf
+      access_operator_entity_id: ent_01kzykmek4c3m9ck4w1khhdmpf
+    access:
+      availability: public
+      method: form
+      url: https://www.fillout.com/help/startup-discount
+    source_ids:
+      - src_c9e462021020aae0616ce66ce2c1a4b1b75f5ce89b3f8f8278f765130a804fab
