@@ -1,0 +1,90 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kzwz1tfrv4t8tyddd8754nfq
+slug: mergify
+slug_aliases: []
+name: Mergify
+domains:
+  - value: mergify.com
+    role: primary
+    valid_from: 2026-08-13T07:05:43.192Z
+category: ci-cd
+description: Mergify provides merge queues, CI observability, and test insights for software engineering teams.
+links:
+  site: https://mergify.com
+sources:
+  - source_id: src_c8f83f6757c55eba3f138e8606ba54ea3e582162c4fe521f3c75970178c43fc2
+    url: https://mergify.com/startups
+  - source_id: src_2cf96bc4b8d8d1becec645d906694c0d9380c096929dfbf3aaaa9b466d728d2c
+    url: https://forms.mergify.com/startup
+programs:
+  - program_id: prg_01kzwz1tg0crkr8t6kk3ygtbrn
+    program_slug: mergify-startup-program
+    program_slug_aliases: []
+    title: Mergify Startup Program
+    summary: Mergify offers eligible early-stage companies its plan free for up to 12 months and 50 developer seats.
+    source_ids:
+      - src_c8f83f6757c55eba3f138e8606ba54ea3e582162c4fe521f3c75970178c43fc2
+offers:
+  - offer_id: off_01kzwz1tg0s8rt4n4x0n0mkfmy
+    program_id: prg_01kzwz1tg0crkr8t6kk3ygtbrn
+    offer_slug: startup-program-credit
+    offer_slug_aliases: []
+    title: $12,000 Mergify Startup Program credit
+    summary: Eligible startups can receive a $12,000 credit for the Mergify plan, free for up to 12 months and up to 50 developer seats.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-13T07:05:43.192Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: $12,000 credit for the Mergify plan, free for up to 12 months and up to 50 developer seats.
+          duration:
+            kind: up-to
+            value: P12M
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 1200000
+            kind: exact
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.age_months
+            kind: predicate
+            operator: lt
+            statement: The company must be less than two years old.
+            value:
+              type: number
+              value: 24
+          - criterion_id: cri_02
+            fact: company.employee_count
+            kind: predicate
+            operator: lte
+            statement: The company must have 50 or fewer employees.
+            value:
+              type: number
+              value: 50
+          - criterion_id: cri_03
+            fact: company.is_current_customer
+            kind: predicate
+            operator: eq
+            statement: The company must not already be a Mergify customer.
+            value:
+              type: boolean
+              value: false
+    roles:
+      terms_authority_entity_id: ent_01kzwz1tfrv4t8tyddd8754nfq
+      access_operator_entity_id: ent_01kzwz1tfrv4t8tyddd8754nfq
+    access:
+      availability: public
+      method: form
+      url: https://forms.mergify.com/startup
+    terms_url: https://mergify.com/startups
+    source_ids:
+      - src_c8f83f6757c55eba3f138e8606ba54ea3e582162c4fe521f3c75970178c43fc2
+      - src_2cf96bc4b8d8d1becec645d906694c0d9380c096929dfbf3aaaa9b466d728d2c
