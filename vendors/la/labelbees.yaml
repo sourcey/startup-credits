@@ -1,0 +1,177 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kzwgnqykpw9njh5x88279vbn
+slug: labelbees
+slug_aliases: []
+name: Labelbees
+domains:
+  - value: labelbees.com
+    role: primary
+    valid_from: 2026-08-13T02:55:00.000Z
+category: ai-ml
+description: Labelbees provides multimodal data curation, model inference, evaluation, benchmarking, and expert review for teams building Physical AI systems.
+links:
+  site: https://www.labelbees.com
+sources:
+  - source_id: src_89623f0e2b7ea9640ce382cb1db557b3029b35f22d1e4f10df781df600b01d01
+    url: https://www.labelbees.com/startups
+programs:
+  - program_id: prg_01kzwgnqymp3sedtbrvmbzqg7c
+    program_slug: startups
+    program_slug_aliases: []
+    title: Labelbees for Startups
+    summary: A reviewed, tiered program giving Physical AI teams platform credits and support for data curation, inference, model evaluation, and expert review.
+    source_ids:
+      - src_89623f0e2b7ea9640ce382cb1db557b3029b35f22d1e4f10df781df600b01d01
+offers:
+  - offer_id: off_01kzwgnqym67jd1c4xdt02cb0b
+    program_id: prg_01kzwgnqymp3sedtbrvmbzqg7c
+    offer_slug: build-tier
+    offer_slug_aliases: []
+    title: Labelbees Build Tier
+    summary: Approved early Physical AI teams can receive up to $5,000 in platform credits for multimodal data curation, model inference and evaluation, and expert review.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-13T02:55:00.000Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_01
+          description: Up to $5,000 in Labelbees platform credits
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 500000
+            kind: up-to
+        - benefit_id: ben_02
+          description: Platform access for multimodal data curation, model inference and evaluation, and on-demand expert review
+          kind: other
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: not-machine-evaluable
+            statement: Applicant must be an early-stage startup, research lab, or independent team building an AI-first product or conducting research.
+          - criterion_id: cri_02
+            kind: manual
+            reason: not-machine-evaluable
+            statement: Applicant must be working with real-world data or early model development and receive Labelbees approval.
+    roles:
+      terms_authority_entity_id: ent_01kzwgnqykpw9njh5x88279vbn
+      access_operator_entity_id: ent_01kzwgnqykpw9njh5x88279vbn
+    access:
+      availability: public
+      method: form
+      url: https://www.labelbees.com/startups
+    source_ids:
+      - src_89623f0e2b7ea9640ce382cb1db557b3029b35f22d1e4f10df781df600b01d01
+  - offer_id: off_01kzwgnqymbp55phf58er053vf
+    program_id: prg_01kzwgnqymp3sedtbrvmbzqg7c
+    offer_slug: scale-tier
+    offer_slug_aliases: []
+    title: Labelbees Scale Tier
+    summary: Approved incorporated Physical AI teams with demonstrated traction can receive up to $10,000 in platform credits, larger-scale evaluation, custom benchmarks, and priority support.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-13T02:55:00.000Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_01
+          description: Up to $10,000 in Labelbees platform credits based on usage and volume
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 1000000
+            kind: up-to
+        - benefit_id: ben_02
+          description: Larger-scale inference and benchmarking, custom evaluation criteria, and priority support with defined service levels
+          kind: other
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.is_incorporated
+            kind: predicate
+            operator: eq
+            statement: Applicant must be legally incorporated.
+            value:
+              type: boolean
+              value: true
+          - criterion_id: cri_02
+            kind: manual
+            reason: not-machine-evaluable
+            statement: Team must be actively improving real-world AI models toward production and demonstrate product, model, or dataset traction.
+          - criterion_id: cri_03
+            kind: manual
+            reason: vendor-discretion
+            statement: Labelbees reviews the application for program alignment.
+    roles:
+      terms_authority_entity_id: ent_01kzwgnqykpw9njh5x88279vbn
+      access_operator_entity_id: ent_01kzwgnqykpw9njh5x88279vbn
+    access:
+      availability: public
+      method: form
+      url: https://www.labelbees.com/startups
+    source_ids:
+      - src_89623f0e2b7ea9640ce382cb1db557b3029b35f22d1e4f10df781df600b01d01
+  - offer_id: off_01kzwgnqymb9vx18z2cdqx519f
+    program_id: prg_01kzwgnqymp3sedtbrvmbzqg7c
+    offer_slug: operate-tier
+    offer_slug_aliases: []
+    title: Labelbees Operate Tier
+    summary: Approved incorporated teams running production Physical AI systems can receive up to $50,000 in platform credits with volume pricing, continuous evaluation, and strategic guidance.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-13T02:55:00.000Z
+    economics:
+      consideration:
+        kind: variable
+        description: The Operate tier uses custom volume-based pricing; the public source does not publish the resulting price.
+      benefits:
+        - benefit_id: ben_01
+          description: Up to $50,000 in Labelbees platform credits
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 5000000
+            kind: up-to
+        - benefit_id: ben_02
+          description: Continuous data curation and evaluation, large-scale inference, system-level benchmarking, monitoring, and strategic guidance
+          kind: other
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.is_incorporated
+            kind: predicate
+            operator: eq
+            statement: Applicant must be legally incorporated.
+            value:
+              type: boolean
+              value: true
+          - criterion_id: cri_02
+            kind: manual
+            reason: not-machine-evaluable
+            statement: Team must run production AI systems with ongoing data and evaluation needs and significant scale in data, models, or system complexity.
+          - criterion_id: cri_03
+            kind: manual
+            reason: not-machine-evaluable
+            statement: Team must be building an AI-native product or infrastructure and receive Labelbees approval.
+    roles:
+      terms_authority_entity_id: ent_01kzwgnqykpw9njh5x88279vbn
+      access_operator_entity_id: ent_01kzwgnqykpw9njh5x88279vbn
+    access:
+      availability: public
+      method: form
+      url: https://www.labelbees.com/startups
+    source_ids:
+      - src_89623f0e2b7ea9640ce382cb1db557b3029b35f22d1e4f10df781df600b01d01
