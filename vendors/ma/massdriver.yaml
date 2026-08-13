@@ -23,7 +23,7 @@ offers:
     offer_slug: microsoft-for-startups-massdriver-discount
     offer_slug_aliases: []
     title: Discounted Massdriver plans for Microsoft for Startups members
-    summary: Microsoft for Startups Founders Hub members get 30 percent off Massdriver seats on plans under 60 seats and 50 percent off self-hosted Massdriver, both for one year.
+    summary: Microsoft for Startups members get 30 percent off Massdriver seats on plans under 60 seats, 15 percent of contract value in Fractional DevOps hours, and 50 percent off self-hosted Massdriver, for the first year.
     lifecycle:
       status: active
       effective_from: 2026-08-11T01:10:09.000Z
@@ -49,11 +49,14 @@ offers:
           percentage:
             basis_points: 5000
             kind: exact
+        - benefit_id: ben_03
+          description: 15 percent of the contract value in Fractional DevOps hours.
+          kind: other
     eligibility:
       rule:
         kind: manual
         criterion_id: cri_01
-        statement: Must be a Microsoft for Startups Founders Hub member and a new paying Massdriver customer, redeeming with the same email used to create the Massdriver account.
+        statement: Must be a Microsoft for Startups member and a new paying Massdriver customer, redeeming with the same email used to create the Massdriver account. Cannot be combined with another Massdriver coupon or deal, and is valid only once for any organization.
         reason: external-verification
     roles:
       terms_authority_entity_id: ent_01kzq5wjeg0f5x00b5xwyjv516
