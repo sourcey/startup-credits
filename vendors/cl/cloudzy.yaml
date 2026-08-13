@@ -1,0 +1,60 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kzwnaf4denta87zyebmdqht8
+slug: cloudzy
+slug_aliases: []
+name: Cloudzy
+domains:
+  - value: cloudzy.com
+    role: primary
+    valid_from: 2026-08-13T04:15:40.000Z
+category: hosting-infra
+description: Cloudzy provides cloud VPS, GPU, remote desktop, infrastructure, and managed DevOps services from a global network of locations.
+links:
+  site: https://cloudzy.com/
+sources:
+  - source_id: src_992b3a63987684939787b518064f7257672f35feb13184b08c93fc3e60a15403
+    url: https://cloudzy.com/business-program
+programs:
+  - program_id: prg_01kzwnaf4f3vx6g3j6pm1nzkjk
+    program_slug: cloudzy-business-program
+    program_slug_aliases: []
+    title: Cloudzy Business Program
+    summary: Cloudzy's Business Program provides tailored cloud and AI infrastructure deals, credits, DevOps consulting, account management, and priority support.
+    source_ids:
+      - src_992b3a63987684939787b518064f7257672f35feb13184b08c93fc3e60a15403
+offers:
+  - offer_id: off_01kzwnaf4fesapj7s66g8g9gsc
+    program_id: prg_01kzwnaf4f3vx6g3j6pm1nzkjk
+    offer_slug: cloudzy-b2b-special-deals
+    offer_slug_aliases: []
+    title: Cloudzy B2B Special Deals
+    summary: Businesses can apply for a tailored proposal that includes infrastructure credits, expert DevOps consulting, a dedicated account manager, and priority support.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-13T04:15:40.000Z
+    economics:
+      consideration:
+        kind: variable
+        description: Approved applicants receive a tailored commercial proposal and pay the agreed charges for the selected Cloudzy services.
+      benefits:
+        - benefit_id: ben_01
+          description: Infrastructure credits with the amount determined in Cloudzy's tailored business proposal
+          kind: other
+        - benefit_id: ben_02
+          description: Expert DevOps consulting, a dedicated account manager, and priority support
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_01
+        statement: Applicant must submit business details and requirements for Cloudzy's B2B team to review and prepare a tailored proposal.
+        reason: external-verification
+    roles:
+      terms_authority_entity_id: ent_01kzwnaf4denta87zyebmdqht8
+      access_operator_entity_id: ent_01kzwnaf4denta87zyebmdqht8
+    access:
+      availability: public
+      method: form
+      url: https://cloudzy.com/business-program
+    source_ids:
+      - src_992b3a63987684939787b518064f7257672f35feb13184b08c93fc3e60a15403
