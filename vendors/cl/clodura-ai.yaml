@@ -10,7 +10,7 @@ domains:
 category: crm-sales
 description: Clodura.AI is a GenAI go-to-market platform with B2B data, sales intelligence, outreach, calling, and workflow tools.
 links:
-  site: https://www.clodura.ai/
+  site: https://www.clodura.ai/startup-program/
 sources:
   - source_id: src_7dc08847a38b7fd2aa65fa78ac5f14f8afacf088da6776b4ba1c0bfda114b186
     url: https://www.clodura.ai/startup-program/
@@ -18,7 +18,7 @@ sources:
     url: https://www.clodura.ai/pricing/
 programs:
   - program_id: prg_01kzvmr97y0qm7tmmnj3d99pbg
-    program_slug: startup-program
+    program_slug: clodura-ai-startup-program
     program_slug_aliases: []
     title: Clodura.AI Startup Program
     summary: Clodura.AI's Startup Program helps eligible startups access its GenAI GTM platform, GTM resources, mentorship, workshops, and co-marketing opportunities.
@@ -27,7 +27,7 @@ programs:
 offers:
   - offer_id: off_01kzvmr97ys1qj38rcwrejw8xp
     program_id: prg_01kzvmr97y0qm7tmmnj3d99pbg
-    offer_slug: startup-program-50-off-max-plan
+    offer_slug: clodura-ai-startup-program-50-percent-off
     offer_slug_aliases: []
     title: Up to 50% off Clodura.AI Self-Service Max Plan
     summary: Eligible startups can receive up to 50% off Clodura.AI's Self-Service Max Plan at 10,000 credits per month or above.
@@ -40,7 +40,7 @@ offers:
           description: Up to 50% discount on Clodura.AI's Self-Service Max Plan at 10,000 credits per month or above.
           kind: discount
           percentage:
-            kind: maximum
+            kind: up-to
             basis_points: 5000
       consideration:
         kind: unknown
