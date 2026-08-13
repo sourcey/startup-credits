@@ -1,0 +1,102 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kzxbrp82a499xsfp3dfa95mv
+slug: resemble-ai
+slug_aliases: []
+name: Resemble AI
+domains:
+  - value: resemble.ai
+    role: primary
+    valid_from: 2026-08-13T10:47:01.172Z
+category: ai-ml
+description: Resemble AI provides voice generation, voice cloning, authenticated synthetic voice, and deepfake detection APIs for generative AI products.
+links:
+  site: https://www.resemble.ai/
+sources:
+  - source_id: src_f3e0cbd09227209e4b5f6944171a28e53ae92e76ccd2b74f9cb35b519efe6b5f
+    url: https://www.resemble.ai/start/builders-grant-startup-program
+programs:
+  - program_id: prg_01kzxbrp82b6swjzxz18ph3vmb
+    program_slug: builders-grant
+    program_slug_aliases: []
+    title: Resemble AI Builder's Grant
+    summary: Resemble AI's Builder's Grant gives selected teams credits, early access, onboarding, and community support for voice generation and deepfake detection products.
+    source_ids:
+      - src_f3e0cbd09227209e4b5f6944171a28e53ae92e76ccd2b74f9cb35b519efe6b5f
+offers:
+  - offer_id: off_01kzxbrp82zq3cxat9g2r4m61c
+    program_id: prg_01kzxbrp82b6swjzxz18ph3vmb
+    offer_slug: builders-grant-credits
+    offer_slug_aliases: []
+    title: Resemble AI Builder's Grant credits
+    summary: Selected builders receive up to $30,000 in Resemble AI credits for up to 12 months, plus early access, dedicated onboarding, and direct access to the builder community.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-13T10:47:01.172Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to $30,000 in credits for Resemble voice generation and deepfake detection APIs for up to 12 months.
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 3000000
+            kind: up-to
+        - benefit_id: ben_02
+          description: Early access to beta features, dedicated onboarding, and direct access to Resemble AI's builder community on Discord.
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.employee_count
+            kind: predicate
+            operator: lt
+            statement: Applicant has under 50 employees.
+            value:
+              type: number
+              value: 50
+          - criterion_id: cri_02
+            fact: company.is_building_voice_enabled_product
+            kind: predicate
+            operator: eq
+            statement: Applicant is actively building a voice-enabled product.
+            value:
+              type: boolean
+              value: true
+          - criterion_id: cri_03
+            kind: manual
+            reason: external-verification
+            statement: Applicant must be committed to building a real product rather than a one-off project, prototype, or temporary campaign.
+          - criterion_id: cri_04
+            fact: company.is_current_paid_customer
+            kind: predicate
+            operator: eq
+            statement: Existing paid Resemble customers are not eligible; free tier users may apply.
+            value:
+              type: boolean
+              value: false
+          - criterion_id: cri_05
+            kind: manual
+            reason: not-machine-evaluable
+            statement: One application is permitted per company.
+          - criterion_id: cri_06
+            kind: manual
+            reason: external-verification
+            statement: Grant recipients agree to marketing collaboration rights for 12 months from approval.
+          - criterion_id: cri_07
+            kind: manual
+            reason: vendor-discretion
+            statement: Resemble reviews applications and prioritizes teams with a clear use case, a real product roadmap, and intent to ship.
+    roles:
+      terms_authority_entity_id: ent_01kzxbrp82a499xsfp3dfa95mv
+      access_operator_entity_id: ent_01kzxbrp82a499xsfp3dfa95mv
+    access:
+      availability: public
+      method: form
+      url: https://www.resemble.ai/start/builders-grant-startup-program
+    source_ids:
+      - src_f3e0cbd09227209e4b5f6944171a28e53ae92e76ccd2b74f9cb35b519efe6b5f
