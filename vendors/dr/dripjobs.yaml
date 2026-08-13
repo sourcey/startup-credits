@@ -1,0 +1,61 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kzx3h9kkagtd8ysxax3qzxcv
+slug: dripjobs
+slug_aliases: []
+name: DripJobs
+domains:
+  - value: dripjobs.com
+    role: primary
+    valid_from: 2026-08-13T08:29:45.000Z
+category: crm-sales
+description: DripJobs automates follow-ups, proposals, invoicing, and scheduling for painting and home service contractors.
+links:
+  site: https://www.dripjobs.com
+sources:
+  - source_id: src_692056979f928b24e01e6b4aaed5382b412b101a99d9b07294309b73e72eea60
+    url: https://www.dripjobs.com/startup
+programs:
+  - program_id: prg_01kzx3vpg24dg6ypjnxnzehx41
+    program_slug: dripjobs-startup-program
+    program_slug_aliases: []
+    title: DripJobs Startup Program
+    summary: DripJobs offers eligible new businesses four months of its software free of charge.
+    source_ids:
+      - src_692056979f928b24e01e6b4aaed5382b412b101a99d9b07294309b73e72eea60
+offers:
+  - offer_id: off_01kzx3h9ks05c4p1g6e07eqtj0
+    program_id: prg_01kzx3vpg24dg6ypjnxnzehx41
+    offer_slug: four-months-free
+    offer_slug_aliases: []
+    title: Four months of DripJobs free
+    summary: Eligible new businesses receive four months of DripJobs free of charge, with no credit card required.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-13T08:29:45.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Four months of DripJobs free of charge
+          duration:
+            kind: exact
+            value: P4M
+          kind: free-service
+          service: DripJobs
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: external-verification
+        statement: The business started within 60 days of applying, is a sole operator or single location rather than a franchise or branch, and provides incorporation or state licensing documentation for verification.
+    roles:
+      terms_authority_entity_id: ent_01kzx3h9kkagtd8ysxax3qzxcv
+      access_operator_entity_id: ent_01kzx3h9kkagtd8ysxax3qzxcv
+    access:
+      availability: public
+      method: form
+      url: https://www.dripjobs.com/startup
+    terms_url: https://www.dripjobs.com/startup
+    source_ids:
+      - src_692056979f928b24e01e6b4aaed5382b412b101a99d9b07294309b73e72eea60
