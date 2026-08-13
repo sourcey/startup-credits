@@ -1,0 +1,84 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kzw745zmnjsf79vhmjx5acy1
+slug: cometchat
+slug_aliases: []
+name: CometChat
+domains:
+  - value: cometchat.com
+    role: primary
+    valid_from: 2026-08-12T00:00:00Z
+category: communication
+description: CometChat provides chat, voice, and video calling APIs and SDKs for building real-time communication into web and mobile apps.
+links:
+  site: https://www.cometchat.com
+sources:
+  - source_id: src_126bb563b4589773bcb485fbc38b60554823dc67f96c491c344c35772068b6a4
+    url: https://www.cometchat.com/startup-program
+  - source_id: src_d01cd0cff81acce4584d6b3a8efc54a4658800533cf64a1cff448b537e94c6fe
+    url: https://www.cometchat.com/pricing
+programs:
+  - program_id: prg_01kzw745zr1hm79t30t8x0f5ww
+    program_slug: cometchat-startup-program
+    program_slug_aliases: []
+    title: CometChat Startup Program
+    summary: Early-stage startups at Series A or earlier get up to 50% off CometChat for up to two years, plus integration support and community access.
+    source_ids:
+      - src_126bb563b4589773bcb485fbc38b60554823dc67f96c491c344c35772068b6a4
+offers:
+  - offer_id: off_01kzw745zrmfjntm52n47kc1fq
+    program_id: prg_01kzw745zr1hm79t30t8x0f5ww
+    offer_slug: cometchat-startup-program-50-percent-off
+    offer_slug_aliases: []
+    title: Up to 50% Off CometChat for 2 Years
+    summary: Approved early-stage startups receive up to 50% off CometChat for up to two years, with personalized integration support and access to a developer community.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-12T00:00:00Z
+    economics:
+      benefits:
+        - applies_to: CometChat subscription
+          benefit_id: ben_01
+          description: Up to 50% off CometChat for up to 2 years
+          duration:
+            kind: up-to
+            value: P2Y
+          kind: discount
+          percentage:
+            basis_points: 5000
+            kind: up-to
+        - benefit_id: ben_02
+          description: Personalized integration assistance tailored to early-stage company needs
+          kind: other
+        - benefit_id: ben_03
+          description: Access to a developer community to collaborate, learn, and scale
+          kind: other
+      consideration:
+        kind: variable
+        description: Purchase an eligible CometChat subscription at the program's discounted rate.
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: external-verification
+            statement: Startup is at Series A funding stage or earlier.
+          - criterion_id: cri_02
+            kind: manual
+            reason: external-verification
+            statement: Startup is associated with an approved organization such as an accelerator, incubator, or venture capital firm.
+          - criterion_id: cri_03
+            kind: manual
+            reason: vendor-discretion
+            statement: Must be a new customer to CometChat and approved through the application review.
+    roles:
+      terms_authority_entity_id: ent_01kzw745zmnjsf79vhmjx5acy1
+      access_operator_entity_id: ent_01kzw745zmnjsf79vhmjx5acy1
+    access:
+      availability: public
+      method: form
+      url: https://www.cometchat.com/startup-program
+      instructions: Provide company name, email, funding raised to date, and associated organization; CometChat reviews applications within 10 business days.
+    source_ids:
+      - src_126bb563b4589773bcb485fbc38b60554823dc67f96c491c344c35772068b6a4
+      - src_d01cd0cff81acce4584d6b3a8efc54a4658800533cf64a1cff448b537e94c6fe
