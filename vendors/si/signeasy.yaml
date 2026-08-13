@@ -1,0 +1,91 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kzwhp90tfn82fhk1bhfv95va
+slug: signeasy
+slug_aliases: []
+name: Signeasy
+domains:
+  - value: signeasy.com
+    role: primary
+    valid_from: 2026-08-13T03:10:00.000Z
+category: legal-compliance
+description: Signeasy provides electronic signatures, contract preparation, collaboration, workflow automation, and contract management tools.
+links:
+  site: https://signeasy.com
+sources:
+  - source_id: src_46d2326495bc7483004497b200f67c734e0636cea5488abcff0b40286f0c8746
+    url: https://signeasy.com/startups
+programs:
+  - program_id: prg_01kzwhp90v99emhhnbpz54ssfj
+    program_slug: signeasy-for-startups
+    program_slug_aliases: []
+    title: Signeasy for Startups
+    summary: Eligible first-time startup customers receive 30% off any Signeasy annual plan for one year.
+    source_ids:
+      - src_46d2326495bc7483004497b200f67c734e0636cea5488abcff0b40286f0c8746
+offers:
+  - offer_id: off_01kzwhp90vahweqx7av02mphmk
+    program_id: prg_01kzwhp90v99emhhnbpz54ssfj
+    offer_slug: thirty-percent-off-annual-plans
+    offer_slug_aliases: []
+    title: 30% off Signeasy annual plans for one year
+    summary: Approved startups receive a 30% discount on any Signeasy annual plan for one year.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-13T03:10:00.000Z
+    economics:
+      consideration:
+        kind: variable
+        description: The startup pays the discounted price of its selected annual plan after approval; the public source does not publish the resulting price.
+      benefits:
+        - benefit_id: ben_01
+          applies_to: Any Signeasy annual plan
+          description: 30% off any Signeasy annual plan for one year
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 3000
+          duration:
+            kind: exact
+            value: P1Y
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.funding_raised_usd
+            kind: predicate
+            operator: lt
+            statement: Startup has raised less than $5 million in funding
+            value:
+              type: number
+              value: 5000000
+          - criterion_id: cri_02
+            fact: company.age_months
+            kind: predicate
+            operator: lt
+            statement: Registered business has operated for fewer than five years
+            value:
+              type: number
+              value: 60
+          - criterion_id: cri_03
+            fact: company.is_incorporated
+            kind: predicate
+            operator: eq
+            statement: Applicant is a registered business
+            value:
+              type: boolean
+              value: true
+          - criterion_id: cri_04
+            kind: manual
+            statement: Applicant is a first-time Signeasy customer that has not previously subscribed to a paid plan
+            reason: external-verification
+    roles:
+      terms_authority_entity_id: ent_01kzwhp90tfn82fhk1bhfv95va
+      access_operator_entity_id: ent_01kzwhp90tfn82fhk1bhfv95va
+    access:
+      availability: public
+      method: form
+      url: https://signeasy.com/startups
+    terms_url: https://signeasy.com/startups
+    source_ids:
+      - src_46d2326495bc7483004497b200f67c734e0636cea5488abcff0b40286f0c8746
