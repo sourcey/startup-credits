@@ -1,0 +1,96 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kzxgkyfkept044t5vg93e5vk
+slug: sparrowdesk
+slug_aliases: []
+name: SparrowDesk
+domains:
+  - value: sparrowdesk.com
+    role: primary
+    valid_from: 2026-08-13T12:15:00.000Z
+category: support
+description: SparrowDesk provides customer-support software with email, chat, messaging, automation, reporting, and integrations.
+links:
+  site: https://www.sparrowdesk.com
+sources:
+  - source_id: src_ae8d8a605479ff7f98ef9f325c03f8774ea19b863fc8c7e27fa3f4d23e54ac80
+    url: https://www.sparrowdesk.com/
+  - source_id: src_7c028220f33b82e8a371a86adaa7d1be6fae8ae917e1bfb5d66ea5100f4c00ac
+    url: https://support.sparrowdesk.com/hc/en/articles/6261244118-sparrowdesk-startup-program/
+programs:
+  - program_id: prg_01kzxgkyfqea7jw3zv4rzmyc4n
+    program_slug: startup-program
+    program_slug_aliases: []
+    title: SparrowDesk Startup Program
+    summary: SparrowDesk's three-year startup program provides eligible software and technology startups with phased Professional-plan discounts and included AI resolutions.
+    source_ids:
+      - src_7c028220f33b82e8a371a86adaa7d1be6fae8ae917e1bfb5d66ea5100f4c00ac
+offers:
+  - offer_id: off_01kzxgkyfq5jmt4eweykm7k21w
+    program_id: prg_01kzxgkyfqea7jw3zv4rzmyc4n
+    offer_slug: startup-program-professional-plan-discount
+    offer_slug_aliases: []
+    title: SparrowDesk Startup Program Professional Plan Discount
+    summary: Eligible early-stage software and technology startups receive 90% off Professional in year one, 50% in year two, and 25% in year three, plus 300 AI resolutions monthly.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-13T12:15:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          applies_to: SparrowDesk Professional plan
+          description: 90% off the SparrowDesk Professional plan in the first year.
+          duration:
+            kind: exact
+            value: P1Y
+          kind: discount
+          percentage:
+            basis_points: 9000
+            kind: exact
+        - benefit_id: ben_02
+          applies_to: SparrowDesk Professional plan
+          description: 50% off the SparrowDesk Professional plan in the second year.
+          duration:
+            kind: exact
+            value: P1Y
+          kind: discount
+          percentage:
+            basis_points: 5000
+            kind: exact
+        - benefit_id: ben_03
+          applies_to: SparrowDesk Professional plan
+          description: 25% off the SparrowDesk Professional plan in the third year.
+          duration:
+            kind: exact
+            value: P1Y
+          kind: discount
+          percentage:
+            basis_points: 2500
+            kind: exact
+        - benefit_id: ben_04
+          description: 300 AI resolutions per month are included throughout the three-year program.
+          kind: free-service
+          service: 300 AI resolutions per month
+      consideration:
+        kind: variable
+        description: Participant pays the Professional plan charges remaining after the applicable annual discount.
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: vendor-discretion
+            statement: Applicant is an early-stage software or technology startup.
+          - criterion_id: cri_02
+            kind: manual
+            reason: not-machine-evaluable
+            statement: Applicant is not located in a trade-restricted region.
+    roles:
+      terms_authority_entity_id: ent_01kzxgkyfkept044t5vg93e5vk
+      access_operator_entity_id: ent_01kzxgkyfkept044t5vg93e5vk
+    access:
+      availability: public
+      method: form
+      url: https://www.sparrowdesk.com/startup
+    source_ids:
+      - src_7c028220f33b82e8a371a86adaa7d1be6fae8ae917e1bfb5d66ea5100f4c00ac
