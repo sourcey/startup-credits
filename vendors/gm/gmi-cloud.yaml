@@ -1,0 +1,64 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kzwdd8pzn9tdjfnnzhgevfdx
+slug: gmi-cloud
+slug_aliases: []
+name: GMI Cloud
+domains:
+  - value: gmicloud.ai
+    role: primary
+    valid_from: 2026-08-13T01:57:24.000Z
+category: ai-ml
+description: GMI Cloud provides AI-native inference and GPU infrastructure for production AI workloads.
+links:
+  site: https://www.gmicloud.ai/en
+sources:
+  - source_id: src_628bb051fa043ac35057b493e18a4f88b3cddee80ff625d72da534463dc31d2a
+    url: https://www.gmicloud.ai/en
+  - source_id: src_2691aaa035e154b84713f8ea91967e7f2474dc89e46797319dbbe6ca5f3b76d4
+    url: https://www.gmicloud.ai/en/company/scale
+programs:
+  - program_id: prg_01kzwdd8q3pqmm0svh2v1by0kp
+    program_slug: scale
+    program_slug_aliases: []
+    title: SCALE
+    summary: Six-week equity-free program for AI-native teams focused on infrastructure, inference, and production scale.
+    source_ids:
+      - src_2691aaa035e154b84713f8ea91967e7f2474dc89e46797319dbbe6ca5f3b76d4
+offers:
+  - offer_id: off_01kzwdd8q3pets9966fxmhq8se
+    program_id: prg_01kzwdd8q3pqmm0svh2v1by0kp
+    offer_slug: scale-onboarding-maas-credits
+    offer_slug_aliases: []
+    title: SCALE Onboarding MaaS Credits
+    summary: Accepted SCALE startups receive $500 in GMI Cloud MaaS credits on acceptance for API usage, inference testing, and multimodal workflows.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-13T01:57:24.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: $500 in GMI Cloud MaaS credits issued on acceptance.
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 50000
+            kind: exact
+      consideration:
+        kind: unknown
+        description: The public program page states that SCALE is equity-free but does not establish all other consideration.
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Applicant must be accepted into the SCALE startup program to receive the onboarding credits.
+        reason: vendor-discretion
+    roles:
+      terms_authority_entity_id: ent_01kzwdd8pzn9tdjfnnzhgevfdx
+      access_operator_entity_id: ent_01kzwdd8pzn9tdjfnnzhgevfdx
+    access:
+      availability: public
+      method: form
+      url: https://www.gmicloud.ai/en/company/scale
+    source_ids:
+      - src_2691aaa035e154b84713f8ea91967e7f2474dc89e46797319dbbe6ca5f3b76d4
