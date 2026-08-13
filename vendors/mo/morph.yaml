@@ -17,6 +17,8 @@ sources:
     url: https://www.morphllm.com/llms.txt
   - source_id: src_2e1b40b15d536638364485d1d339ffce6495733232391279bc445c78f22428b7
     url: https://www.morphllm.com/llms-full.txt
+  - source_id: src_9e457c8c6d21f5c8463717ab3da2ab3870c59f51e3ab6d9869ba5580244445e9
+    url: https://www.morphllm.com/fast-apply-model
 programs:
   - program_id: prg_01kzfxr4bgb4vwt10tkdj03zvv
     program_slug: morph-api-platform
@@ -32,34 +34,34 @@ offers:
     offer_slug: morph-free-api-credits
     offer_slug_aliases: []
     title: Morph Free API Credits
-    summary: Morph's free plan is $0 per month and includes 250K credits that cover all Morph APIs.
+    summary: Morph's free tier includes 250K credits worth $2.50 for its OpenAI-compatible API.
     lifecycle:
       status: active
       effective_from: 2026-08-08T05:32:49.000Z
     economics:
       benefits:
         - benefit_id: ben_01
-          description: Free plan with 250K credits covering Morph APIs
-          kind: other
-        - benefit_id: ben_02
-          description: Free tier includes 200 requests per month
-          kind: free-service
-          service: 200 requests per month on the free tier
+          description: Free tier includes 250K credits worth $2.50 for Morph APIs
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 250
+            kind: exact
       consideration:
         kind: none
     eligibility:
       rule:
         criterion_id: cri_01
         kind: constant
-        statement: The free plan is publicly listed at $0 per month.
+        statement: Morph publicly offers a free tier for its OpenAI-compatible API.
         value: true
     roles:
       terms_authority_entity_id: ent_01kzfxr4bf8jmafengwajh5vd2
       access_operator_entity_id: ent_01kzfxr4bf8jmafengwajh5vd2
     access:
       availability: public
-      instructions: Use Morph's dashboard or API key flow to access the OpenAI-compatible API.
+      instructions: Sign up at Morph's API key page, generate an API key, and use it with the OpenAI-compatible API.
       method: other
     source_ids:
-      - src_c5d38c689c6c9b82674a013995d095a08cf18671266e15089489897168370eb2
-      - src_2e1b40b15d536638364485d1d339ffce6495733232391279bc445c78f22428b7
+      - src_9e457c8c6d21f5c8463717ab3da2ab3870c59f51e3ab6d9869ba5580244445e9
