@@ -19,7 +19,7 @@ programs:
     program_slug: builders-grant
     program_slug_aliases: []
     title: Resemble AI Builder's Grant
-    summary: Resemble AI's Builder's Grant gives selected teams credits, early access, onboarding, and community support for voice generation and deepfake detection products.
+    summary: The Resemble AI Builder's Grant gives selected teams credits, early access, onboarding, and community support for voice generation and deepfake detection products.
     source_ids:
       - src_f3e0cbd09227209e4b5f6944171a28e53ae92e76ccd2b74f9cb35b519efe6b5f
 offers:
@@ -36,9 +36,6 @@ offers:
       benefits:
         - benefit_id: ben_01
           description: Up to $30,000 in credits for Resemble voice generation and deepfake detection APIs for up to 12 months.
-          duration:
-            kind: at-most
-            value: P12M
           kind: credit
           value:
             amount:
@@ -55,29 +52,26 @@ offers:
         kind: all
         rules:
           - criterion_id: cri_01
-            kind: any
-            rules:
-              - criterion_id: cri_01a
-                fact: company.employee_count
-                kind: predicate
-                operator: lt
-                statement: Applicant has under 50 employees.
-                value:
-                  type: number
-                  value: 50
-              - criterion_id: cri_01b
-                fact: company.is_building_voice_enabled_product
-                kind: predicate
-                operator: eq
-                statement: Applicant is actively building a voice-enabled product.
-                value:
-                  type: boolean
-                  value: true
+            fact: company.employee_count
+            kind: predicate
+            operator: lt
+            statement: Applicant has under 50 employees.
+            value:
+              type: number
+              value: 50
           - criterion_id: cri_02
+            fact: company.is_building_voice_enabled_product
+            kind: predicate
+            operator: eq
+            statement: Applicant is actively building a voice-enabled product.
+            value:
+              type: boolean
+              value: true
+          - criterion_id: cri_03
             kind: manual
             reason: external-verification
             statement: Applicant must be committed to building a real product rather than a one-off project, prototype, or temporary campaign.
-          - criterion_id: cri_03
+          - criterion_id: cri_04
             fact: company.is_current_paid_customer
             kind: predicate
             operator: eq
@@ -85,15 +79,15 @@ offers:
             value:
               type: boolean
               value: false
-          - criterion_id: cri_04
+          - criterion_id: cri_05
             kind: manual
             reason: not-machine-evaluable
             statement: One application is permitted per company.
-          - criterion_id: cri_05
+          - criterion_id: cri_06
             kind: manual
             reason: external-verification
             statement: Grant recipients agree to marketing collaboration rights for 12 months from approval.
-          - criterion_id: cri_06
+          - criterion_id: cri_07
             kind: manual
             reason: vendor-discretion
             statement: Resemble reviews applications and prioritizes teams with a clear use case, a real product roadmap, and intent to ship.
