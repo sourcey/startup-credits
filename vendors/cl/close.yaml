@@ -1,0 +1,65 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kz7ap29gjzc8gjr11tswx6q8
+slug: close
+slug_aliases: []
+name: Close
+domains:
+  - value: close.com
+    role: primary
+    valid_from: 2026-08-04T21:25:43.345Z
+category: crm-sales
+description: Close provides sales CRM software with built-in email, calling, SMS, automation, pipeline management, and reporting for sales teams.
+links:
+  site: https://close.com/
+sources:
+  - source_id: src_66aa473925bf365ae8d2543de81a3d7a9d6170e844ae3eddc684858eae576614
+    url: https://close.com/startups
+programs:
+  - program_id: prg_01kz7ap29hzx28h35r3s35yjn3
+    program_slug: close-for-startups
+    program_slug_aliases: []
+    title: Close for Startups
+    summary: Close discounts its CRM for eligible early-stage companies affiliated with participating accelerators, VC funds, or partner networks.
+    source_ids:
+      - src_66aa473925bf365ae8d2543de81a3d7a9d6170e844ae3eddc684858eae576614
+offers:
+  - offer_id: off_01kz7ap29hbq7520b1szyqfjgv
+    program_id: prg_01kz7ap29hzx28h35r3s35yjn3
+    offer_slug: up-to-60-percent-off-first-year
+    offer_slug_aliases: []
+    title: Up to 60% off the first year of Close
+    summary: Eligible new startup customers receive 30% to 60% off Close subscription and SMS/calling charges for their first 12 months.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-04T21:25:43.345Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Between 30% and 60% off Close subscription and SMS/calling charges for 12 months, depending on partner affiliation
+          kind: discount
+          percentage:
+            kind: up-to
+            basis_points: 6000
+          duration:
+            kind: exact
+            value: P1Y
+          applies_to: Close subscription and SMS/calling charges
+      consideration:
+        kind: variable
+        description: The startup pays the remaining discounted subscription and usage charges.
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: external-verification
+        statement: Must be a new Close customer, belong to a participating accelerator, VC fund, or partner network, have received less than $2 million in funding, and have less than $1 million in annual revenue.
+    roles:
+      terms_authority_entity_id: ent_01kz7ap29gjzc8gjr11tswx6q8
+      access_operator_entity_id: ent_01kz7ap29gjzc8gjr11tswx6q8
+    access:
+      availability: public
+      method: form
+      url: https://close.com/startups
+    terms_url: https://close.com/startups
+    source_ids:
+      - src_66aa473925bf365ae8d2543de81a3d7a9d6170e844ae3eddc684858eae576614
