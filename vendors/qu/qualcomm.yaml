@@ -1,0 +1,49 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kzvrqg5b103qpgd5cv3xttwh
+slug: qualcomm
+slug_aliases: []
+name: Qualcomm
+domains:
+  - value: qualcomm.com
+    role: primary
+    valid_from: 2026-08-12T19:55:59.000Z
+category: ai-ml
+description: Qualcomm designs semiconductors and provides AI platforms and developer programs for edge, mobile, XR, and IoT.
+links:
+  site: https://qualcomm.com
+sources:
+  - source_id: src_2cc5db3a8fd5b2512aa1d667f33b5632837c477761c0804df0df9f13d495d292
+    url: https://www.qualcomm.com/developer/qualcomm-scaler-startup-program
+programs: []
+offers:
+  - offer_id: off_01kzvrqg5bcrmkqnbpfvyg5n6m
+    offer_slug: qualcomm-scaler-startup-program
+    offer_slug_aliases: []
+    title: Qualcomm Scaler Startup Program
+    summary: Selected early-stage startups from pre-seed to Series A building hybrid AI solutions across IoT, Cloud, XR, Mobile, and AI PCs receive support and resources.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-12T19:55:59.000Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Access to Qualcomm platforms, engineering support, and go-to-market resources
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Early-stage startups from pre-seed to Series A building hybrid AI solutions; selection is made by Qualcomm.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01kzvrqg5b103qpgd5cv3xttwh
+      access_operator_entity_id: ent_01kzvrqg5b103qpgd5cv3xttwh
+    access:
+      availability: public
+      method: form
+      url: https://www.qualcomm.com/developer/qualcomm-scaler-startup-program
+    source_ids:
+      - src_2cc5db3a8fd5b2512aa1d667f33b5632837c477761c0804df0df9f13d495d292
