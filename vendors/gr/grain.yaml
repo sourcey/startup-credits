@@ -36,7 +36,7 @@ offers:
       effective_from: 2026-08-14T22:30:00.000Z
     economics:
       consideration:
-        kind: discount
+        kind: variable
         description: 50% off a Starter or Business plan for 6 months
       benefits:
         - benefit_id: ben_primary
