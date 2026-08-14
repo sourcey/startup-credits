@@ -1,0 +1,57 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kzzggm7hhja0q8y7emaw9dzw
+slug: swoop
+slug_aliases: []
+name: Swoop
+domains:
+  - value: swoopfunding.com
+    role: primary
+    valid_from: 2026-08-14T06:49:23.000Z
+category: finance-accounting
+description: Swoop is a business funding platform helping UK small and medium businesses access loans, equity finance and grants, as well as save on expenses.
+links:
+  site: https://swoopfunding.com/
+sources:
+  - source_id: src_afbe90ece372e53794f37c44d17ba5cfa1985f7dc5e67ae57c94ae457fe233e8
+    url: https://swoopfunding.com/
+  - source_id: src_cd20dcc14100871a3d8022e7d8aaad96d06737bafde0683511f23efc0b152ff0
+    url: https://swoopfunding.com/microsoft-for-startups-founders-hub/
+programs: []
+offers:
+  - offer_id: off_01kzzggm7mh0y2hbtfhm8kw6j7
+    offer_slug: fifty-percent-off-equity-fundraising-package
+    offer_slug_aliases: []
+    title: 50% off Swoop Equity Fundraising Package for Microsoft for Startups Founders Hub members
+    summary: Microsoft for Startups Founders Hub members get 50% off the usual $2,500 upfront fee for Swoops Equity Fundraising Package, which includes access to 250+ investors and investor readiness support throughout the fundraising process.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-14T06:49:23.000Z
+    economics:
+      consideration:
+        kind: variable
+        description: The applicant pays the discounted upfront fee for Swoop's Equity Fundraising Package; the cited page states the usual fee is $2,500 with 50 percent off but does not state the resulting discounted amount.
+      benefits:
+        - benefit_id: ben_01
+          applies_to: Equity Fundraising Package upfront fee
+          description: 50 percent off the usual $2,500 upfront fee for Swoop's Equity Fundraising Package.
+          kind: discount
+          percentage:
+            basis_points: 5000
+            kind: exact
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_01
+        statement: Applicant must be a Microsoft for Startups Founders Hub member.
+        reason: external-verification
+    roles:
+      terms_authority_entity_id: ent_01kzzggm7hhja0q8y7emaw9dzw
+      access_operator_entity_id: ent_01kzzggm7hhja0q8y7emaw9dzw
+    access:
+      availability: public
+      method: form
+      instructions: Click Claim offer on the page to open a registration form asking for company details, with an optional pitch deck upload; Swoop follows up directly.
+      url: https://swoopfunding.com/microsoft-for-startups-founders-hub/
+    source_ids:
+      - src_afbe90ece372e53794f37c44d17ba5cfa1985f7dc5e67ae57c94ae457fe233e8
+      - src_cd20dcc14100871a3d8022e7d8aaad96d06737bafde0683511f23efc0b152ff0
