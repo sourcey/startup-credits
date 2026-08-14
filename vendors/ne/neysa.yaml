@@ -1,0 +1,106 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01m001xv61x4r1ge2pk9rq9d2z
+slug: neysa
+slug_aliases: []
+name: Neysa
+domains:
+  - value: neysa.ai
+    role: primary
+    valid_from: 2026-08-14T11:53:41.000Z
+category: ai-ml
+description: Neysa runs Velocis, a full-stack AI acceleration cloud that combines GPU compute, an AI platform-as-a-service layer, MLOps orchestration, and inference endpoints for production AI workloads.
+links:
+  site: https://neysa.ai
+sources:
+  - source_id: src_a6f474fb956d743302fe9e1a0ddf0a78165207d66fce1fe51b95b9f826d82f13
+    url: https://neysa.ai/startup-program/
+  - source_id: src_851fd58222ca8d57536ddbb665cc908be2218591d3656f62c8515449e6abbb14
+    url: https://neysa.ai/
+programs:
+  - program_id: prg_01m001xv61sqwgnya9yhetx37y
+    program_slug: neysa-ai-velocity-program
+    program_slug_aliases: []
+    title: Neysa AI Velocity Program
+    summary: Neysa's invitation-only AI Velocity Program is a 21-month pathway for funded AI startups that pairs milestone-triggered discounts on Velocis consumption with a later revenue-linked credit reimbursement model.
+    source_ids:
+      - src_a6f474fb956d743302fe9e1a0ddf0a78165207d66fce1fe51b95b9f826d82f13
+offers:
+  - offer_id: off_01m001xv61957ksgznscp7e7n2
+    program_id: prg_01m001xv61sqwgnya9yhetx37y
+    offer_slug: velocity-program-milestone-discounts
+    offer_slug_aliases: []
+    title: Milestone-triggered Velocis discounts under the Neysa AI Velocity Program
+    summary: Admitted startups receive 80%, 50%, and 30% discount credits on Velocis consumption as they clear the onboarding, UAT, and production-launch milestones, then move to a credit reimbursement model once they acquire their first ten clients.
+    description: Neysa publishes the program as a two-phase, 21-month partnership. Phase one grants discount credits at each of the first three monthly milestones; phase two, from month four through month twenty-one, activates infrastructure cost rebates tied to revenue growth after the startup acquires 10 or more clients. The program page describes the initiative as invitation-only and directs interested teams to a private consultation.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-14T11:53:41.000Z
+    economics:
+      benefits:
+        - applies_to: Velocis consumption in month one, once workloads are onboarded with Neysa Solutions Architects
+          benefit_id: ben_01
+          description: 80% discount credits at the month-one onboarding milestone
+          duration:
+            kind: exact
+            value: P1M
+          kind: discount
+          percentage:
+            basis_points: 8000
+            kind: exact
+        - applies_to: Velocis consumption in month two, once user acceptance testing is complete
+          benefit_id: ben_02
+          description: 50% discount credits at the month-two UAT completion milestone
+          duration:
+            kind: exact
+            value: P1M
+          kind: discount
+          percentage:
+            basis_points: 5000
+            kind: exact
+        - applies_to: Velocis consumption in month three, once the AI workload goes live on Velocis
+          benefit_id: ben_03
+          description: 30% discount credits at the month-three production launch milestone
+          duration:
+            kind: exact
+            value: P1M
+          kind: discount
+          percentage:
+            basis_points: 3000
+            kind: exact
+        - benefit_id: ben_04
+          description: From month four through month twenty-one, a credit reimbursement model of infrastructure cost rebates tied to revenue growth, activated once the startup acquires its first 10 or more clients; Neysa does not publish the rebate rate
+          kind: other
+      consideration:
+        description: The public program page does not establish a separate program fee; the discounts apply to Velocis consumption the startup pays for.
+        kind: unknown
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: external-verification
+            statement: The applicant has secured over $5 million in funding and is focused on deploying that capital efficiently.
+          - criterion_id: cri_02
+            kind: manual
+            reason: external-verification
+            statement: The applicant has an active B2B or B2C revenue-generating model.
+          - criterion_id: cri_03
+            kind: manual
+            reason: external-verification
+            statement: The applicant's core product requires GPU-accelerated infrastructure and can leverage Neysa's AI Marketplace.
+          - criterion_id: cri_04
+            kind: manual
+            reason: vendor-discretion
+            statement: Neysa admits startups to the program by invitation.
+    roles:
+      terms_authority_entity_id: ent_01m001xv61x4r1ge2pk9rq9d2z
+      access_operator_entity_id: ent_01m001xv61x4r1ge2pk9rq9d2z
+    access:
+      availability: invite
+      instructions: The program page describes an invitation-only initiative and directs interested founders to Neysa's contact page for a private consultation.
+      method: contact
+      url: https://neysa.ai/contact-us/
+    terms_url: https://neysa.ai/startup-program/
+    source_ids:
+      - src_a6f474fb956d743302fe9e1a0ddf0a78165207d66fce1fe51b95b9f826d82f13
