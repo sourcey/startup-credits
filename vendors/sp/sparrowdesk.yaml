@@ -14,6 +14,8 @@ links:
 sources:
   - source_id: src_ae8d8a605479ff7f98ef9f325c03f8774ea19b863fc8c7e27fa3f4d23e54ac80
     url: https://www.sparrowdesk.com/
+  - source_id: src_73bc0f7740c4f300451ba012bc241adb7efd1d0390705f9e9aad9c11717ee131
+    url: https://www.sparrowdesk.com/startup
   - source_id: src_7c028220f33b82e8a371a86adaa7d1be6fae8ae917e1bfb5d66ea5100f4c00ac
     url: https://support.sparrowdesk.com/hc/en/articles/6261244118-sparrowdesk-startup-program/
 programs:
@@ -23,6 +25,7 @@ programs:
     title: SparrowDesk Startup Program
     summary: SparrowDesk's three-year startup program provides eligible software and technology startups with phased Professional-plan discounts and included AI resolutions.
     source_ids:
+      - src_73bc0f7740c4f300451ba012bc241adb7efd1d0390705f9e9aad9c11717ee131
       - src_7c028220f33b82e8a371a86adaa7d1be6fae8ae917e1bfb5d66ea5100f4c00ac
 offers:
   - offer_id: off_01kzxgkyfq5jmt4eweykm7k21w
@@ -93,4 +96,5 @@ offers:
       method: form
       url: https://www.sparrowdesk.com/startup
     source_ids:
+      - src_73bc0f7740c4f300451ba012bc241adb7efd1d0390705f9e9aad9c11717ee131
       - src_7c028220f33b82e8a371a86adaa7d1be6fae8ae917e1bfb5d66ea5100f4c00ac
