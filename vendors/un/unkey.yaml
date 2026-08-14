@@ -8,12 +8,14 @@ domains:
     role: primary
     valid_from: 2026-08-13T00:00:00.000Z
 category: auth-security
-description: Unkey is an API key management and authentication platform for developers, providing key issuance, verification, rate limiting and usage analytics.
+description: Unkey is a developer platform for modern APIs that unifies infrastructure, letting teams deploy APIs, route traffic through global gateways, and understand usage in one place.
 links:
   site: https://www.unkey.com
 sources:
   - source_id: src_ce3743505ca97df372e97719586186042db92ee75126d3cb050335b39cc09942
     url: https://www.unkey.com/startups
+  - source_id: src_c40e42577320d249d12c34827601da466b4666797f5558080584d9e48f5e6ebb
+    url: https://www.unkey.com
 programs:
   - program_id: prg_01kzxb9h4xc7ra1sxgkd5vvjsb
     program_slug: unkey-startups-program
