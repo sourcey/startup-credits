@@ -1,0 +1,127 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kz4xsd0m76d5ensjb8150avj
+slug: airwallex
+slug_aliases: []
+name: Airwallex
+domains:
+  - value: airwallex.com
+    role: primary
+    valid_from: 2026-08-04T00:00:00Z
+category: payments-fintech
+description: Airwallex is a global financial platform for managing business accounts, payments, treasury, spend, and embedded finance across currencies and markets.
+links:
+  site: https://www.airwallex.com
+sources:
+  - source_id: src_cb2be51ba472b23a2aafd3e4eeb23ab61713dc5150e7d67d4ea9b6f4303237eb
+    url: https://www.airwallex.com/en-au/startups
+programs:
+  - program_id: prg_01kz4xsd0mbk63mas9eb1z6szw
+    program_slug: airwallex-for-startups
+    program_slug_aliases: []
+    title: Airwallex for Startups
+    summary: A no-cost program for venture-backed Australian and New Zealand startups, with published Airwallex benefits that vary by startup stage.
+    source_ids:
+      - src_cb2be51ba472b23a2aafd3e4eeb23ab61713dc5150e7d67d4ea9b6f4303237eb
+offers:
+  - offer_id: off_01kz5yxt13mz6n78pkay2mbvpq
+    program_id: prg_01kz4xsd0mbk63mas9eb1z6szw
+    offer_slug: pre-seed-explore-access
+    offer_slug_aliases: []
+    title: 3 months of Airwallex Explore
+    summary: Eligible venture-backed pre-seed startups in Australia or New Zealand receive three months of free access to the Airwallex Explore tier.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-04T00:00:00Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Free access to the Airwallex Explore tier for three months.
+          duration:
+            kind: exact
+            value: P3M
+          kind: free-service
+          service: Airwallex Explore tier
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: external-verification
+            statement: Must be a venture-backed pre-seed startup with an active Airwallex account.
+          - criterion_id: cri_02
+            kind: manual
+            reason: external-verification
+            statement: Must have a business entity registered in Australia or New Zealand with a valid ABN or NZBN.
+          - criterion_id: cri_03
+            kind: manual
+            reason: external-verification
+            statement: The offer is for new customers and is subject to program approval and terms.
+    roles:
+      terms_authority_entity_id: ent_01kz4xsd0m76d5ensjb8150avj
+      access_operator_entity_id: ent_01kz4xsd0m76d5ensjb8150avj
+    access:
+      availability: public
+      method: form
+      url: https://www.airwallex.com/en-au/signup
+    source_ids:
+      - src_cb2be51ba472b23a2aafd3e4eeb23ab61713dc5150e7d67d4ea9b6f4303237eb
+  - offer_id: off_01kz4xsd0mf5p7jsxw22kp5n7k
+    program_id: prg_01kz4xsd0mbk63mas9eb1z6szw
+    offer_slug: seed-stage-offers
+    offer_slug_aliases:
+      - australia-startup-offer
+    title: Airwallex offers for seed-stage startups
+    summary: Eligible venture-backed seed-stage startups in Australia or New Zealand receive three months of Grow, payment and FX fee waivers, and Yield access.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-04T00:00:00Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Free access to the Airwallex Grow tier for three months.
+          duration:
+            kind: exact
+            value: P3M
+          kind: free-service
+          service: Airwallex Grow tier
+        - benefit_id: ben_02
+          description: Fees waived on the first AUD $100,000 of payments collected.
+          kind: waiver
+          waived_item: Payment collection fees on the first AUD $100,000 collected
+        - benefit_id: ben_03
+          description: Foreign-exchange fees waived on the first AUD $100,000 converted.
+          kind: waiver
+          waived_item: Foreign-exchange fees on the first AUD $100,000 converted
+        - benefit_id: ben_04
+          description: Access to Airwallex Yield for earning returns on AUD and USD funds.
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: external-verification
+            statement: Must be a venture-backed seed-stage startup with an active Airwallex account.
+          - criterion_id: cri_02
+            kind: manual
+            reason: external-verification
+            statement: Must have a business entity registered in Australia or New Zealand with a valid ABN or NZBN.
+          - criterion_id: cri_03
+            kind: manual
+            reason: external-verification
+            statement: The offer is for new customers and is subject to program approval and terms.
+    roles:
+      terms_authority_entity_id: ent_01kz4xsd0m76d5ensjb8150avj
+      access_operator_entity_id: ent_01kz4xsd0m76d5ensjb8150avj
+    access:
+      availability: public
+      method: form
+      url: https://www.airwallex.com/en-au/signup
+    source_ids:
+      - src_cb2be51ba472b23a2aafd3e4eeb23ab61713dc5150e7d67d4ea9b6f4303237eb
