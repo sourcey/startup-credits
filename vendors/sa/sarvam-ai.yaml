@@ -1,0 +1,68 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kzz3tjr50a8vgnfp18dwb3d2
+slug: sarvam-ai
+slug_aliases: []
+name: Sarvam AI
+domains:
+  - value: sarvam.ai
+    role: primary
+    valid_from: 2026-08-14T03:06:00.000Z
+category: ai-ml
+description: Sarvam AI provides speech, text, translation, document-intelligence, and language-model APIs focused on Indian languages and English.
+links:
+  site: https://www.sarvam.ai
+sources:
+  - source_id: src_2490b0b9061b3458dbe2f1ba27e05f5c9219df0378002c0cc2eee6e37bde711d
+    url: https://www.sarvam.ai/
+  - source_id: src_2a88ff975ac5f88d36ce42b6f0912ad1ef3e13687cb5ce5044409eaa3e3c6c61
+    url: https://www.sarvam.ai/startup-program
+programs:
+  - program_id: prg_01kzz3tjr7qyadn8x5962hzv7p
+    program_slug: sarvam-ai-startup-program
+    program_slug_aliases: []
+    title: Sarvam AI Startup Program
+    summary: Sarvam AI's startup program provides API credits, production APIs, priority engineering support, and launch visibility.
+    source_ids:
+      - src_2a88ff975ac5f88d36ce42b6f0912ad1ef3e13687cb5ce5044409eaa3e3c6c61
+offers:
+  - offer_id: off_01kzz3tjr7kq1aamdp1cxd0n03
+    program_id: prg_01kzz3tjr7qyadn8x5962hzv7p
+    offer_slug: six-to-twelve-months-api-credits
+    offer_slug_aliases: []
+    title: 6–12 months of API credits
+    summary: Startup applicants can receive 6–12 months of Sarvam API credits matched to their scale, plus priority engineering support and launch visibility.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-14T03:06:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Six to twelve months of API credits matched to the startup's scale.
+          kind: other
+        - benefit_id: ben_02
+          description: Access to production APIs for speech-to-text, text-to-speech, voice agents, and multilingual models.
+          kind: other
+        - benefit_id: ben_03
+          description: Priority support with direct access to Sarvam's engineering team.
+          kind: other
+        - benefit_id: ben_04
+          description: Launch visibility through co-branded case studies and launch amplification.
+          kind: other
+      consideration:
+        kind: unknown
+        description: The public program page does not state separate participant consideration.
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Applicant submits company, product-stage, funding, team, planned-API, and expected-usage details for Sarvam's review.
+    roles:
+      terms_authority_entity_id: ent_01kzz3tjr50a8vgnfp18dwb3d2
+      access_operator_entity_id: ent_01kzz3tjr50a8vgnfp18dwb3d2
+    access:
+      availability: public
+      method: form
+      url: https://www.sarvam.ai/startup-program
+    source_ids:
+      - src_2a88ff975ac5f88d36ce42b6f0912ad1ef3e13687cb5ce5044409eaa3e3c6c61
