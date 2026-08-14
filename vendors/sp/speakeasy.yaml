@@ -1,0 +1,56 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01m006bns9pwvkxgj398w7xpb9
+slug: speakeasy
+slug_aliases: []
+name: Speakeasy
+domains:
+  - value: speakeasy.com
+    role: primary
+    valid_from: 2026-08-14T13:11:29.370Z
+category: apis-integration
+description: Speakeasy provides governance, security, identity, policy, and visibility for enterprise AI agents, MCP servers, and skills.
+links:
+  site: https://www.speakeasy.com/
+sources:
+  - source_id: src_d803d172d50836dbd1a5b9d96a48e64c468600391aae52f75b9444278b81fe44
+    url: https://www.speakeasy.com/
+  - source_id: src_000e4b4a814cd00edfb025676e3e3077b79a89194828e032f4d3591995a1d1f5
+    url: https://posthog.com/startups
+programs: []
+offers:
+  - offer_id: off_01m006bnsby5b3n6s9zhw33bq6
+    offer_slug: posthog-startup-speakeasy-discount
+    offer_slug_aliases: []
+    title: 50% off Speakeasy for PostHog startup members
+    summary: Accepted PostHog for Startups participants can receive 50% off Speakeasy for six months as a partner perk.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-14T13:11:29.370Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 50% discount for six months
+          duration:
+            kind: exact
+            value: P6M
+          kind: discount
+          percentage:
+            basis_points: 5000
+            kind: exact
+      consideration:
+        kind: variable
+        description: Participants pay the remaining discounted Speakeasy price; the public source does not specify a plan or list price.
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: constant
+        statement: Available to accepted PostHog for Startups participants.
+        value: true
+    roles:
+      terms_authority_entity_id: ent_01m006bns9pwvkxgj398w7xpb9
+      access_operator_entity_id: ent_01kyh8fpe4h2ykh2786fd0krzp
+    access:
+      availability: membership
+      method: other
+    source_ids:
+      - src_000e4b4a814cd00edfb025676e3e3077b79a89194828e032f4d3591995a1d1f5
