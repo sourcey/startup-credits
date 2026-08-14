@@ -1,0 +1,65 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_fdb6d35449da2a85bb8e46735f
+slug: nuvio
+slug_aliases: []
+name: Nuvio
+domains:
+  - value: nuvio.io
+    role: primary
+    valid_from: 2026-08-14T14:36:27.638Z
+category: finance-accounting
+description: Nuvio is a finance operations platform for invoices, expenses, cash flow, financial analytics, and AI-assisted financial administration.
+links:
+  site: https://www.nuvio.io
+sources:
+  - source_id: src_aff4d5f315f7d30de4e72248c89970321395f8e422bb0ab78b96976971b07401
+    url: https://www.nuvio.io/startup-program-application
+programs:
+  - program_id: prg_b43f6ee5780f3e35e67e827b9d
+    program_slug: nuvio-startup-program
+    program_slug_aliases: []
+    title: Nuvio Startup Program
+    summary: Nuvio gives qualifying startups a discount on their subscription for the first year after an application review.
+    source_ids:
+      - src_aff4d5f315f7d30de4e72248c89970321395f8e422bb0ab78b96976971b07401
+offers:
+  - offer_id: off_6590adaa4c2140aaa1c561a6a9
+    program_id: prg_b43f6ee5780f3e35e67e827b9d
+    offer_slug: first-year-subscription-discount
+    offer_slug_aliases: []
+    title: 70% off a Nuvio subscription for one year
+    summary: Qualifying startups receive a discount code for 70% off their Nuvio subscription during the first year.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-14T14:36:27.638Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 70% off a Nuvio subscription for the first year
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 7000
+          duration:
+            kind: exact
+            value: P1Y
+          applies_to: Nuvio subscription
+      consideration:
+        kind: variable
+        description: Approved applicants pay the remaining subscription price after the 70% discount.
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Nuvio reviews applications and determines whether a startup qualifies for the program.
+    roles:
+      terms_authority_entity_id: ent_fdb6d35449da2a85bb8e46735f
+      access_operator_entity_id: ent_fdb6d35449da2a85bb8e46735f
+    access:
+      availability: public
+      method: form
+      url: https://www.nuvio.io/startup-program-application
+    terms_url: https://www.nuvio.io/startup-program-application
+    source_ids:
+      - src_aff4d5f315f7d30de4e72248c89970321395f8e422bb0ab78b96976971b07401
