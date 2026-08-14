@@ -1,0 +1,67 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kz6yyvjew2rkx3vnwatwdc4d
+slug: dedalus-labs
+slug_aliases: []
+name: Dedalus Labs
+domains:
+  - value: dedaluslabs.one
+    role: primary
+    valid_from: 2026-08-04T00:00:00.000Z
+category: ai-ml
+description: Dedalus Labs provides infrastructure for deploying hosted tools, running agent workloads, and connecting agents to an MCP tool marketplace.
+links:
+  site: https://www.dedaluslabs.one
+sources:
+  - source_id: src_f229afd0e977a8f29fdc756ddd99ed23a46d3d50e37e258b79962b83897c8cbc
+    url: https://www.dedaluslabs.one/startup
+programs:
+  - program_id: prg_01kz6yyvjefpszm3bjrsdaxana
+    program_slug: dedalus-for-startups
+    program_slug_aliases: []
+    title: Dedalus for Startups
+    summary: Dedalus Labs' startup program combines platform credits with round-the-clock email support, a personalized Slack channel, and a stack review.
+    source_ids:
+      - src_f229afd0e977a8f29fdc756ddd99ed23a46d3d50e37e258b79962b83897c8cbc
+offers:
+  - offer_id: off_01kz6yyvjemjyk05dnskt4x2zz
+    program_id: prg_01kz6yyvjefpszm3bjrsdaxana
+    offer_slug: dedalus-for-startups
+    offer_slug_aliases: []
+    title: Dedalus for Startups
+    summary: The program includes $3,000 in Dedalus credits, 24/7 email support, a personalized Slack support channel, and a white-glove stack review.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-04T00:00:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: $3,000 in Dedalus credits
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 300000
+            kind: exact
+        - benefit_id: ben_02
+          description: 24/7 email support and a personalized Slack support channel
+          kind: other
+        - benefit_id: ben_03
+          description: White-glove review of rollout, authentication, and observability architecture
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_01
+        reason: vendor-discretion
+        statement: Startups may enter the startup flow after describing what they are building; YC founders have a dedicated $3,000 credit redemption path.
+    roles:
+      terms_authority_entity_id: ent_01kz6yyvjew2rkx3vnwatwdc4d
+      access_operator_entity_id: ent_01kz6yyvjew2rkx3vnwatwdc4d
+    access:
+      availability: public
+      method: form
+      url: https://www.dedaluslabs.one/startup
+    source_ids:
+      - src_f229afd0e977a8f29fdc756ddd99ed23a46d3d50e37e258b79962b83897c8cbc
