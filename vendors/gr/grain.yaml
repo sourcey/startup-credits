@@ -1,0 +1,59 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01m016ptd4k89vap8mdvk26k7w
+slug: grain
+slug_aliases: []
+name: Grain
+domains:
+  - value: grain.com
+    role: primary
+    valid_from: 2026-08-14T22:30:00.000Z
+category: communication
+description: Grain provides AI-powered meeting recording, transcription, and summarization for customer-centric teams.
+links:
+  site: https://grain.com
+sources:
+  - source_id: src_7b5d348582bcc918772f91ebaed9622a2427510d22040a5c1d71e218f5166531
+    url: https://grain.com/startups
+programs:
+  - program_id: prg_01m016ptd7z44cdwn0bzva76db
+    program_slug: grain-for-startups
+    program_slug_aliases: []
+    title: Grain for Startups
+    summary: Eligible startups get a Starter or Business plan for 6 months at a 50% discount, covering up to 50 paid seats.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-14T22:30:00.000Z
+    source_ids:
+      - src_7b5d348582bcc918772f91ebaed9622a2427510d22040a5c1d71e218f5166531
+offers:
+  - offer_id: off_01m016ptd78pkd1hq8q9wh6xpe
+    offer_slug: grain-for-startups-50-percent
+    offer_slug_aliases: []
+    title: Grain for Startups 50% discount
+    summary: New startup customers get a Grain Starter or Business plan for 6 months at a 50% discount, worth over $5,000 with up to 50 paid seats.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-14T22:30:00.000Z
+    economics:
+      consideration:
+        kind: discount
+        description: 50% off a Starter or Business plan for 6 months
+      benefits:
+        - benefit_id: ben_primary
+          description: Up to 50 paid seats at 50% discount for 6 months (worth over $5,000)
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Startup must have raised under $10M in venture funding, have under 50 employees, be affiliated with Grain's Partnership Network, and be a new Grain customer.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01m016ptd4k89vap8mdvk26k7w
+      access_operator_entity_id: ent_01m016ptd4k89vap8mdvk26k7w
+    access:
+      availability: public
+      method: form
+      url: https://grain.com/startups
+    source_ids:
+      - src_7b5d348582bcc918772f91ebaed9622a2427510d22040a5c1d71e218f5166531
