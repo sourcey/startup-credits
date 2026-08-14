@@ -1,0 +1,92 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01m0042j9w2sra3zybcvd5qcc5
+slug: murf
+slug_aliases: []
+name: Murf
+domains:
+  - value: murf.ai
+    role: primary
+    valid_from: 2026-08-14T12:30:00.000Z
+category: ai-ml
+description: Murf AI provides voice generation tools and APIs for production-grade voice agents and studio-quality content using proprietary speech models and infrastructure.
+links:
+  site: https://murf.ai
+sources:
+  - source_id: src_c19e21ecd2580cf07b38a08feaf65b3f2b8141cc2edff11e4d76814178d1d7a9
+    url: https://murf.ai/startup-program
+programs:
+  - program_id: prg_01m0042j9wtvjweg0c6dwr8nve
+    program_slug: startup-incubator-program
+    program_slug_aliases: []
+    title: Murf Startup Incubator Program
+    summary: Murf's Startup Incubator Program gives eligible early-stage startups free API credits for a three-month period to build with Murf's AI voice and text-to-speech API.
+    source_ids:
+      - src_c19e21ecd2580cf07b38a08feaf65b3f2b8141cc2edff11e4d76814178d1d7a9
+offers:
+  - offer_id: off_01m0042j9wctft778pvztzygcy
+    program_id: prg_01m0042j9wtvjweg0c6dwr8nve
+    offer_slug: startup-incubator-api-credits
+    offer_slug_aliases: []
+    title: $1,500 in Murf API credits for 3 months
+    summary: Eligible startups receive $1,500 in free Murf API credits for a three-month period after application review and approval.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-14T12:30:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: $1,500 in free Murf API credits for a three-month period.
+          duration:
+            kind: exact
+            value: P3M
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 150000
+            kind: exact
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: external-verification
+            statement: The company is under 10 years old since incorporation.
+          - criterion_id: cri_02
+            fact: company.employee_count
+            kind: predicate
+            operator: lt
+            statement: The company has fewer than 100 employees.
+            value:
+              type: number
+              value: 100
+          - criterion_id: cri_03
+            kind: manual
+            reason: external-verification
+            statement: The company has a fully functioning website.
+          - criterion_id: cri_04
+            kind: manual
+            reason: external-verification
+            statement: The startup demonstrates a valid use case for the Murf API.
+          - criterion_id: cri_05
+            kind: manual
+            reason: vendor-discretion
+            statement: Startups intending to resell the Murf API or use it for non-compliant purposes do not qualify.
+          - criterion_id: cri_06
+            kind: manual
+            reason: external-verification
+            statement: The applicant has not previously received this one-time Startup Incubator Program offer; reapplication is not available.
+    roles:
+      terms_authority_entity_id: ent_01m0042j9w2sra3zybcvd5qcc5
+      access_operator_entity_id: ent_01m0042j9w2sra3zybcvd5qcc5
+    access:
+      availability: public
+      method: form
+      url: https://murf.ai/startup-program
+      instructions: Submit Murf's application form; Murf reviews applications and notifies applicants of the approval decision.
+    terms_url: https://murf.ai/startup-program
+    source_ids:
+      - src_c19e21ecd2580cf07b38a08feaf65b3f2b8141cc2edff11e4d76814178d1d7a9
