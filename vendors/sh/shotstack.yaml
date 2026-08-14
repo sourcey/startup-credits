@@ -1,0 +1,74 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kzznctgh1bshcmzx0p3s1x0s
+slug: shotstack
+slug_aliases: []
+name: Shotstack
+domains:
+  - value: shotstack.io
+    role: primary
+    valid_from: 2026-08-14T08:14:41.000Z
+category: hosting-infra
+description: Shotstack provides cloud APIs and SDKs for programmatic video editing, media generation, hosting, and workflow automation.
+links:
+  site: https://shotstack.io/
+sources:
+  - source_id: src_5509789ad225542a84a90c6c2d81e163bc2787b224a85b2a0fa3eb4017fbf05c
+    url: https://shotstack.io/solutions/startups/
+programs:
+  - program_id: prg_01kzznctgj9z8t6ekagfarj1gk
+    program_slug: shotstack-startup-program
+    program_slug_aliases: []
+    title: Shotstack Startup Program
+    summary: Shotstack's startup program discounts Professional plans for qualifying early-stage companies building video products and automation workflows.
+    source_ids:
+      - src_5509789ad225542a84a90c6c2d81e163bc2787b224a85b2a0fa3eb4017fbf05c
+offers:
+  - offer_id: off_01kzznctgjssqs6d0w9zn44dw6
+    program_id: prg_01kzznctgj9z8t6ekagfarj1gk
+    offer_slug: professional-plan-startup-discount
+    offer_slug_aliases: []
+    title: 80% startup discount for one year
+    summary: Eligible new Shotstack customers receive 80% off Professional plans for one year after applying through the startup program form.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-14T08:14:41.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 80% off Shotstack Professional plans for one year
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 8000
+          duration:
+            kind: exact
+            value: P1Y
+          applies_to: Shotstack Professional plans
+      consideration:
+        kind: variable
+        description: The startup purchases a Shotstack Professional plan and pays the remaining discounted subscription price.
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.age_months
+            kind: predicate
+            operator: lt
+            statement: The startup must have been incorporated less than three years ago.
+            value:
+              type: number
+              value: 36
+          - criterion_id: cri_02
+            kind: manual
+            reason: external-verification
+            statement: The startup must be at or before Series A in funding and must be a new Shotstack customer.
+    roles:
+      terms_authority_entity_id: ent_01kzznctgh1bshcmzx0p3s1x0s
+      access_operator_entity_id: ent_01kzznctgh1bshcmzx0p3s1x0s
+    access:
+      availability: public
+      method: form
+      url: https://shotstack.io/solutions/startups/
+    source_ids:
+      - src_5509789ad225542a84a90c6c2d81e163bc2787b224a85b2a0fa3eb4017fbf05c
