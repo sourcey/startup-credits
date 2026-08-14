@@ -1,0 +1,66 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01m00avnka60cqv8jtjzecyjhk
+slug: tequity
+slug_aliases: []
+name: Tequity
+domains:
+  - value: tequity.tech
+    role: primary
+    valid_from: 2026-08-14T14:29:47.757Z
+category: other
+description: Tequity designs and builds AI products through product and UX design, web and mobile engineering, applied machine learning, QA, and release support.
+links:
+  site: https://tequity.tech
+sources:
+  - source_id: src_abc2b3738623abbee4fe7e747475b51591bed3ad011c53acd76adef5b62b74af
+    url: https://tequity.tech/the-grant-program
+  - source_id: src_feed46fb9e49976977500f93886cf4b80b6c85b2d60a54cf84afa29b685c218f
+    url: https://tequity.tech/grant-application-form
+programs:
+  - program_id: prg_01m00avnkd2vtceb3srfcqgbr3
+    program_slug: tequity-grant-program
+    program_slug_aliases: []
+    title: Tequity Grant Program
+    summary: Tequity's grant program gives selected early founders service credits toward product design, engineering, applied AI, quality assurance, and release support.
+    source_ids:
+      - src_abc2b3738623abbee4fe7e747475b51591bed3ad011c53acd76adef5b62b74af
+offers:
+  - offer_id: off_01m00avnkd1aapar4nxd7my5s7
+    program_id: prg_01m00avnkd2vtceb3srfcqgbr3
+    offer_slug: 10000-in-tequity-service-credits
+    offer_slug_aliases: []
+    title: $10,000 in Tequity service credits
+    summary: Selected student or pre-funding founders receive $10,000 in service credits usable across Tequity's product design, engineering, AI development, QA, and release-support services.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-14T14:29:47.757Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: $10,000 in credits usable across Tequity service lines
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 1000000
+            kind: exact
+      consideration:
+        kind: unknown
+        description: The public grant page does not establish separate consideration.
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: external-verification
+        statement: Applicant must either be enrolled in an undergraduate or postgraduate program and building toward launch, or be a pre-funding founder who bootstrapped or raised up to $100,000 from personal savings or friends and family.
+    roles:
+      terms_authority_entity_id: ent_01m00avnka60cqv8jtjzecyjhk
+      access_operator_entity_id: ent_01m00avnka60cqv8jtjzecyjhk
+    access:
+      availability: public
+      method: form
+      url: https://tequity.tech/grant-application-form
+    terms_url: https://tequity.tech/the-grant-program
+    source_ids:
+      - src_abc2b3738623abbee4fe7e747475b51591bed3ad011c53acd76adef5b62b74af
+      - src_feed46fb9e49976977500f93886cf4b80b6c85b2d60a54cf84afa29b685c218f
