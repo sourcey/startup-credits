@@ -1,0 +1,49 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kzvrqw840qf4htn549fe53ga
+slug: formaloo
+slug_aliases: []
+name: Formaloo
+domains:
+  - value: formaloo.com
+    role: primary
+    valid_from: 2026-08-12T19:56:11.000Z
+category: no-code
+description: Formaloo provides a no-code platform for building forms, apps, databases, and portals.
+links:
+  site: https://formaloo.com
+sources:
+  - source_id: src_d37dd61fb369fb2ed7e0d74a5cb54815e1bb36cb1f8f86f8f26cc621a9a59da6
+    url: https://www.formaloo.com/startups
+programs: []
+offers:
+  - offer_id: off_01kzvrqw843dhvjkwvp1z0rmhq
+    offer_slug: formaloo-startup-program
+    offer_slug_aliases: []
+    title: Formaloo Startup Program
+    summary: Eligible startups receive USD 1,000 in product credit; applicants must meet funding, company age, ownership, employee-count, and new-Free-plan-user requirements.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-12T19:56:11.000Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: USD 1,000 in product credit
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Early-stage startups meeting funding, age, ownership, and employee-count requirements; must be a new Free plan user.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01kzvrqw840qf4htn549fe53ga
+      access_operator_entity_id: ent_01kzvrqw840qf4htn549fe53ga
+    access:
+      availability: public
+      method: form
+      url: https://www.formaloo.com/startups
+    source_ids:
+      - src_d37dd61fb369fb2ed7e0d74a5cb54815e1bb36cb1f8f86f8f26cc621a9a59da6
