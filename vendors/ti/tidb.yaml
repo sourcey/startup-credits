@@ -1,0 +1,69 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01m00abv95w3m39r2mbgxe21mg
+slug: tidb
+slug_aliases: []
+name: TiDB
+domains:
+  - value: pingcap.com
+    role: primary
+    valid_from: 2026-08-14T14:21:09.289Z
+category: databases
+description: TiDB is an open-source distributed SQL database for transactional, AI, and other modern applications.
+links:
+  site: https://www.pingcap.com/tidb-ai-startup-program/
+sources:
+  - source_id: src_48e5e9a8606d218056f2948abec9889774a8012249f846947c1c13b6f4ca9546
+    url: https://www.pingcap.com/tidb-ai-startup-program/
+programs:
+  - program_id: prg_01m00abv981ctwmy856kaybjh3
+    program_slug: tidb-ai-startup-program
+    program_slug_aliases: []
+    title: TiDB AI Startup Program
+    summary: TiDB supports qualified AI startups from product validation through scale with cloud credits, architecture guidance, technical support, and go-to-market support.
+    source_ids:
+      - src_48e5e9a8606d218056f2948abec9889774a8012249f846947c1c13b6f4ca9546
+offers:
+  - offer_id: off_01m00abv988yawy08tfcnzy84b
+    program_id: prg_01m00abv981ctwmy856kaybjh3
+    offer_slug: up-to-100000-in-tidb-cloud-credits
+    offer_slug_aliases: []
+    title: Up to $100,000 in TiDB Cloud credits
+    summary: Qualified AI startups may receive up to $100,000 in TiDB Cloud credits, a dedicated architecture assessment, direct technical guidance, and go-to-market support.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-14T14:21:09.289Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to $100,000 in TiDB Cloud credits
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 10000000
+            kind: up-to
+        - benefit_id: ben_02
+          description: Dedicated AI architecture assessment and direct technical guidance from TiDB engineers
+          kind: other
+        - benefit_id: ben_03
+          description: Technical content, customer-story, webinar, and ecosystem visibility opportunities
+          kind: other
+      consideration:
+        kind: unknown
+        description: The public program page does not establish separate consideration.
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: TiDB describes strong-fit applicants as AI teams with a live product or launch expected within three months, building specified AI workloads for global markets on AWS or Alibaba Cloud; benefits are for qualified startups.
+    roles:
+      terms_authority_entity_id: ent_01m00abv95w3m39r2mbgxe21mg
+      access_operator_entity_id: ent_01m00abv95w3m39r2mbgxe21mg
+    access:
+      availability: public
+      method: form
+      url: https://www.pingcap.com/tidb-ai-startup-program/
+    terms_url: https://www.pingcap.com/tidb-ai-startup-program/
+    source_ids:
+      - src_48e5e9a8606d218056f2948abec9889774a8012249f846947c1c13b6f4ca9546
