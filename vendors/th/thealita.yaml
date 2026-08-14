@@ -1,0 +1,68 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01m00az5zdhx5k281pn5zss7rv
+slug: thealita
+slug_aliases: []
+name: theAlita
+domains:
+  - value: thealita.com
+    role: primary
+    valid_from: 2026-08-14T14:31:42.832Z
+category: crm-sales
+description: theAlita provides AI-powered social audience segmentation, lead generation, persona insights, and data enrichment.
+links:
+  site: https://thealita.com
+sources:
+  - source_id: src_290a5f030b72420ee27c77c5a4cd32b4ecfdc1f2bfccd2453505db4710ce9a70
+    url: https://thealita.com/startup-program/
+programs:
+  - program_id: prg_01m00az5zgqyg491xeg0t9svk2
+    program_slug: thealita-startup-credit-program
+    program_slug_aliases: []
+    title: theAlita Startup Credit Program
+    summary: theAlita supports startups with platform credits, AI-powered audience targeting tools, lead and data exports, and data-driven growth resources.
+    source_ids:
+      - src_290a5f030b72420ee27c77c5a4cd32b4ecfdc1f2bfccd2453505db4710ce9a70
+offers:
+  - offer_id: off_01m00az5zg5307r4ytzj86vhsm
+    program_id: prg_01m00az5zgqyg491xeg0t9svk2
+    offer_slug: up-to-20000-in-thealita-credits
+    offer_slug_aliases: []
+    title: Up to $20,000 in theAlita credits
+    summary: Selected startups receive up to $20,000 in free credits for exporting leads and data, plus access to theAlita's AI-powered audience-identification and targeting tools.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-14T14:31:42.832Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to $20,000 in credits for exporting leads and data
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 2000000
+            kind: up-to
+        - benefit_id: ben_02
+          description: Access to AI-powered tools for identifying and targeting customer segments
+          kind: other
+        - benefit_id: ben_03
+          description: Data-driven marketing resources for accelerating user growth
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: The application form requests startup details, size, funding, website, location, and incubator, VC, or startup-partner affiliation; the public page does not state approval criteria.
+    roles:
+      terms_authority_entity_id: ent_01m00az5zdhx5k281pn5zss7rv
+      access_operator_entity_id: ent_01m00az5zdhx5k281pn5zss7rv
+    access:
+      availability: public
+      method: form
+      url: https://thealita.com/startup-program/
+    terms_url: https://thealita.com/startup-program/
+    source_ids:
+      - src_290a5f030b72420ee27c77c5a4cd32b4ecfdc1f2bfccd2453505db4710ce9a70
