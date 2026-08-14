@@ -8,7 +8,7 @@ domains:
     role: primary
     valid_from: 2026-08-13T08:29:45.000Z
 category: crm-sales
-description: DripJobs automates follow-ups, proposals, invoicing, and scheduling for painting and home service contractors.
+description: DripJobs provides business software for contractors.
 links:
   site: https://www.dripjobs.com
 sources:
