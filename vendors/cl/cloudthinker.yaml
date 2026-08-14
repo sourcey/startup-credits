@@ -8,52 +8,58 @@ domains:
     role: primary
     valid_from: 2026-08-12T16:47:11.292Z
 category: hosting-infra
-description: AgenticOps platform for cloud operations, cost optimization, incident response, code review, and application security.
+description: AI agents for cloud operations that resolve incidents, reduce waste, fix risk, and automate daily operations with human control.
 links:
   site: https://www.cloudthinker.io
 sources:
   - source_id: src_c0a0dfe2d06bdf19ddf32d0c25bd6e6498596dd85294a33038ae86d030d3c15d
     url: https://www.cloudthinker.io/startups
+  - source_id: src_8f7508d7f9ee13ebb8ec3b550a0499e06549bcad27c4d1aebaae029820e6696e
+    url: https://www.cloudthinker.io/
+  - source_id: src_fafe9c5e36a41c4be484683ca03182597e370efa65c84fdf1a328fa3bc8c946b
+    url: https://www.cloudthinker.io/contact
 programs:
   - program_id: prg_01kzvdx1y9qfsg349dbky8b3x3
     program_slug: cloudthinker-startup-program
     program_slug_aliases: []
     title: CloudThinker Startup Program
-    summary: CloudThinker program offering qualifying early-stage cloud startups credits, priority onboarding, and expert consulting.
+    summary: CloudThinker's startup program provides startups with thousands in credits and expert consulting.
     source_ids:
       - src_c0a0dfe2d06bdf19ddf32d0c25bd6e6498596dd85294a33038ae86d030d3c15d
 offers:
   - offer_id: off_01kzvdx1yazz8tcd021tzjck2t
     program_id: prg_01kzvdx1y9qfsg349dbky8b3x3
-    offer_slug: startup-credits-and-onboarding
+    offer_slug: startup-credits-and-consulting
     offer_slug_aliases: []
-    title: Startup Credits and Priority Onboarding
-    summary: Qualifying early-stage startups receive thousands of dollars in CloudThinker credits, priority onboarding, and expert cloud consulting.
+    title: Startup Credits and Expert Consulting
+    summary: Startups joining the CloudThinker Startup Program receive thousands in credits and expert consulting.
     lifecycle:
       status: active
       effective_from: 2026-08-12T16:47:11.292Z
     economics:
       benefits:
         - benefit_id: ben_01
-          description: Thousands of dollars in CloudThinker credits
+          description: Thousands in CloudThinker credits
+          kind: other
+        - benefit_id: ben_02
+          description: Expert consulting
           kind: other
       consideration:
         kind: unknown
         description: The public program page does not establish separate consideration.
     eligibility:
       rule:
-        kind: any
-        rules:
-          - criterion_id: cri_01
-            kind: manual
-            reason: vendor-discretion
-            statement: Early-stage startup building on AWS, Azure, or GCP; credit eligibility favors companies founded within the last five years that are investor- or accelerator-backed, or bootstrapping toward it, and have not received CloudThinker startup credits before.
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups join the CloudThinker Startup Program through CloudThinker's public contact form.
     roles:
       terms_authority_entity_id: ent_01kzvdx1y3rwcf7ez5n88y73av
       access_operator_entity_id: ent_01kzvdx1y3rwcf7ez5n88y73av
     access:
       availability: public
       method: form
-      url: https://www.cloudthinker.io/startups
+      url: https://www.cloudthinker.io/contact
     source_ids:
       - src_c0a0dfe2d06bdf19ddf32d0c25bd6e6498596dd85294a33038ae86d030d3c15d
+      - src_fafe9c5e36a41c4be484683ca03182597e370efa65c84fdf1a328fa3bc8c946b
