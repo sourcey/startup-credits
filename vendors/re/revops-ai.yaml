@@ -1,0 +1,106 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kzzhc9f67tzjeqt8kfeefxgq
+slug: revops-ai
+slug_aliases: []
+name: RevOps.ai
+domains:
+  - value: revops.ai
+    role: primary
+    valid_from: 2026-08-14T00:00:00.000Z
+category: crm-sales
+description: RevOps.ai is an AI-native revenue operations platform with a built-in CRM, power dialer, and AI revenue agents for inbound conversion, pipeline reactivation, and customer expansion.
+links:
+  site: https://revops.ai
+sources:
+  - source_id: src_2e490b0d2b7521af57540adf96f507850690d22056f1a4bb3da7b937c6fb10fd
+    url: https://revops.ai/startups
+programs:
+  - program_id: prg_01kzzhc9f8s96kcpkfzy0yggte
+    program_slug: revops-ai-for-startups
+    program_slug_aliases: []
+    title: RevOps.ai for Startups
+    summary: RevOps.ai's Startups program gives eligible pre-seed through Series A companies platform credits, full access to all AI agents, priority onboarding, and priority support.
+    source_ids:
+      - src_2e490b0d2b7521af57540adf96f507850690d22056f1a4bb3da7b937c6fb10fd
+offers:
+  - offer_id: off_01kzzhc9f8zvxpthf886pw2zms
+    program_id: prg_01kzzhc9f8s96kcpkfzy0yggte
+    offer_slug: 25000-in-platform-credits-for-six-months
+    offer_slug_aliases: []
+    title: $25,000 in RevOps.ai credits for six months
+    summary: Eligible pre-seed through Series A startups with under $10M raised, under 5 years old, and fewer than 50 employees receive $25,000 in RevOps.ai platform credits valid for six months.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-14T00:00:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: $25,000 in RevOps.ai platform credits, usable across all AI agents and plans
+          duration:
+            kind: exact
+            value: P6M
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 2500000
+            kind: exact
+        - benefit_id: ben_02
+          description: Full platform access to all AI agents, priority onboarding, and priority support
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.stage
+            kind: predicate
+            operator: in
+            statement: Company is at pre-seed, seed, or Series A stage.
+            value:
+              type: string-set
+              values:
+                - pre-seed
+                - seed
+                - series-a
+          - criterion_id: cri_02
+            fact: company.funding_raised_usd
+            kind: predicate
+            operator: lt
+            statement: Company has raised less than $10 million in total funding.
+            value:
+              type: number
+              value: 10000000
+          - criterion_id: cri_03
+            fact: company.age_years
+            kind: predicate
+            operator: lt
+            statement: Company is less than five years old.
+            value:
+              type: number
+              value: 5
+          - criterion_id: cri_04
+            fact: company.employee_count
+            kind: predicate
+            operator: lt
+            statement: Company has fewer than 50 employees.
+            value:
+              type: number
+              value: 50
+          - criterion_id: cri_05
+            fact: company.partner_memberships
+            kind: predicate
+            operator: present
+            statement: Company is affiliated with an approved VC, accelerator, or incubator partner.
+    roles:
+      terms_authority_entity_id: ent_01kzzhc9f67tzjeqt8kfeefxgq
+      access_operator_entity_id: ent_01kzzhc9f67tzjeqt8kfeefxgq
+    access:
+      availability: public
+      method: form
+      url: https://revops.ai/startups
+    terms_url: https://revops.ai/startups
+    source_ids:
+      - src_2e490b0d2b7521af57540adf96f507850690d22056f1a4bb3da7b937c6fb10fd
