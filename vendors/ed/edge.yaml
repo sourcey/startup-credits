@@ -1,0 +1,63 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kzjxenvq4p27n15e964amp1m
+slug: edge
+slug_aliases: []
+name: Edge
+domains:
+  - value: edge.network
+    role: primary
+    valid_from: 2026-08-09T09:26:42.675Z
+category: hosting-infra
+description: Edge provides virtual machines, CDN, DNS, storage, managed databases, GPU infrastructure, and application hosting across a distributed edge network.
+links:
+  site: https://edge.network
+sources:
+  - source_id: src_aa629d9745e824ccef918cd48318288ffae9f3a522de81ef3d7bbea57c266bc6
+    url: https://edge.network/solutions/startups
+programs: []
+offers:
+  - offer_id: off_01kzjxenvt5mqmbzaen3h1ny4n
+    offer_slug: edge-startup-program
+    offer_slug_aliases: []
+    title: Edge Startup Program
+    summary: Qualifying early-stage startups receive $5,000 in Edge credits for their first year, priority technical support, engineering access, co-marketing opportunities, and startup community access.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-09T09:26:42.675Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: $5,000 in Edge infrastructure credits for the first year
+          duration:
+            kind: exact
+            value: P1Y
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 500000
+            kind: exact
+        - benefit_id: ben_02
+          description: Priority technical support and direct access to the Edge engineering team
+          kind: free-service
+          service: Edge startup technical support
+        - benefit_id: ben_03
+          description: Co-marketing opportunities and access to the startup community
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_requirement_01
+        kind: manual
+        reason: external-verification
+        statement: Must be an early-stage company founded within the last five years, have less than $5 million in total funding, not currently be an Edge customer, and be affiliated with an approved accelerator, incubator, or VC partner.
+    roles:
+      terms_authority_entity_id: ent_01kzjxenvq4p27n15e964amp1m
+      access_operator_entity_id: ent_01kzjxenvq4p27n15e964amp1m
+    access:
+      availability: public
+      method: form
+      url: https://edge.network/solutions/startups
+    source_ids:
+      - src_aa629d9745e824ccef918cd48318288ffae9f3a522de81ef3d7bbea57c266bc6
