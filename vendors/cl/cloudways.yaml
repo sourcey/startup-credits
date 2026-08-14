@@ -1,0 +1,252 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kzznn9agmbpywfvvpkvjrggr
+slug: cloudways
+slug_aliases: []
+name: Cloudways
+domains:
+  - value: cloudways.com
+    role: primary
+    valid_from: 2026-08-14T08:19:22.000Z
+category: hosting-infra
+description: Cloudways is a managed cloud hosting platform for agencies, ecommerce stores, and online businesses, offering scalable hosting across multiple cloud providers with 24x7 support.
+links:
+  site: https://www.cloudways.com
+sources:
+  - source_id: src_aaf9ff135194b6f0883f7bb6b7c6576fc499e46e4777ad85d33d690cc5bce2e7
+    url: https://www.cloudways.com/en/
+  - source_id: src_37daf29f25973b94803506671523377b8587e989964250be9e7ae50018f67e9d
+    url: https://www.cloudways.com/en/startup-program.php
+programs:
+  - program_id: prg_01kzznn9ajhr14rbv7k2t0xz46
+    program_slug: cloudways-startup-program
+    program_slug_aliases: []
+    title: Cloudways Startup Program
+    summary: Cloudways tiered program for eligible startups, giving platform credits, invoice discounts, priority support, and mentorship based on the applicant's funding stage.
+    source_ids:
+      - src_37daf29f25973b94803506671523377b8587e989964250be9e7ae50018f67e9d
+offers:
+  - offer_id: off_01kzznn9ajdxbbxy2hf6y796g4
+    program_id: prg_01kzznn9ajhr14rbv7k2t0xz46
+    offer_slug: cloudways-startup-program-build
+    offer_slug_aliases: []
+    title: Cloudways Startup Program, Build tier
+    summary: Startups with less than $1 million in funding or bootstrapped can get up to $15,000 in Cloudways platform credits, 15% off their monthly invoice, and a free Advance Support add-on worth $1,200 a year.
+    description: As of the source capture date, Cloudways states it has temporarily closed new applications for the Startup Program while it grows its existing cohort of startups; interested applicants can join a waitlist on the program page.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-14T08:19:22.000Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The program page does not state a separate application fee or other consideration beyond meeting eligibility and holding a Cloudways trial account.
+      benefits:
+        - benefit_id: ben_01
+          kind: credit
+          value:
+            kind: up-to
+            amount:
+              currency: USD
+              minor_units: 1500000
+          description: Up to $15,000 in Cloudways platform credits.
+        - benefit_id: ben_02
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 1500
+          applies_to: Monthly Cloudways invoice
+          description: 15% off the monthly Cloudways invoice.
+        - benefit_id: ben_03
+          kind: other
+          description: 24x7 priority technical support.
+        - benefit_id: ben_04
+          kind: free-service
+          service: Advance Support add-on
+          description: Free access to the Advance Support add-on, worth $1,200 a year.
+        - benefit_id: ben_05
+          kind: other
+          description: Community access, mentorship, and a startup toolkit.
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: not-machine-evaluable
+            statement: Must have a business website and a domain-associated email address.
+          - criterion_id: cri_02
+            kind: manual
+            reason: not-machine-evaluable
+            statement: Must have a Cloudways trial account.
+          - criterion_id: cri_03
+            kind: manual
+            reason: external-verification
+            statement: Has less than $1 million in funding, or is bootstrapped.
+          - criterion_id: cri_04
+            kind: manual
+            reason: not-machine-evaluable
+            statement: Must not be an agency.
+          - criterion_id: cri_05
+            kind: manual
+            reason: vendor-discretion
+            statement: Must not already be availing any other Cloudways offer.
+    roles:
+      terms_authority_entity_id: ent_01kzznn9agmbpywfvvpkvjrggr
+      access_operator_entity_id: ent_01kzznn9agmbpywfvvpkvjrggr
+    access:
+      availability: public
+      method: form
+      url: https://www.cloudways.com/en/startup-program.php
+      instructions: Applications are temporarily closed; the program page offers a waitlist signup instead of a live application form.
+    terms_url: https://www.cloudways.com/en/startup-program.php
+    source_ids:
+      - src_37daf29f25973b94803506671523377b8587e989964250be9e7ae50018f67e9d
+  - offer_id: off_01kzznn9cre7mnszmd0yvrv3sm
+    program_id: prg_01kzznn9ajhr14rbv7k2t0xz46
+    offer_slug: cloudways-startup-program-grow
+    offer_slug_aliases: []
+    title: Cloudways Startup Program, Grow tier
+    summary: Series-A startups, or bootstrapped startups with product market fit, can get up to $25,000 in Cloudways platform credits, 20% off their monthly invoice, and a free Premium Support add-on worth $6,000 a year.
+    description: As of the source capture date, Cloudways states it has temporarily closed new applications for the Startup Program while it grows its existing cohort of startups; interested applicants can join a waitlist on the program page.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-14T08:19:22.000Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The program page does not state a separate application fee or other consideration beyond meeting eligibility and holding a Cloudways trial account.
+      benefits:
+        - benefit_id: ben_01
+          kind: credit
+          value:
+            kind: up-to
+            amount:
+              currency: USD
+              minor_units: 2500000
+          description: Up to $25,000 in Cloudways platform credits.
+        - benefit_id: ben_02
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 2000
+          applies_to: Monthly Cloudways invoice
+          description: 20% off the monthly Cloudways invoice.
+        - benefit_id: ben_03
+          kind: other
+          description: 24x7 priority technical support.
+        - benefit_id: ben_04
+          kind: free-service
+          service: Premium Support add-on
+          description: Free access to the Premium Support add-on, worth $6,000 a year.
+        - benefit_id: ben_05
+          kind: other
+          description: Community access, mentorship, founder interviews, and case study features.
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: not-machine-evaluable
+            statement: Must have a business website and a domain-associated email address.
+          - criterion_id: cri_02
+            kind: manual
+            reason: not-machine-evaluable
+            statement: Must have a Cloudways trial account.
+          - criterion_id: cri_03
+            kind: manual
+            reason: external-verification
+            statement: Has reached Series-A funding stage, or is a bootstrapped startup that has achieved product market fit.
+          - criterion_id: cri_04
+            kind: manual
+            reason: not-machine-evaluable
+            statement: Must not be an agency.
+          - criterion_id: cri_05
+            kind: manual
+            reason: vendor-discretion
+            statement: Must not already be availing any other Cloudways offer.
+    roles:
+      terms_authority_entity_id: ent_01kzznn9agmbpywfvvpkvjrggr
+      access_operator_entity_id: ent_01kzznn9agmbpywfvvpkvjrggr
+    access:
+      availability: public
+      method: form
+      url: https://www.cloudways.com/en/startup-program.php
+      instructions: Applications are temporarily closed; the program page offers a waitlist signup instead of a live application form.
+    terms_url: https://www.cloudways.com/en/startup-program.php
+    source_ids:
+      - src_37daf29f25973b94803506671523377b8587e989964250be9e7ae50018f67e9d
+  - offer_id: off_01kzznn9esyj6va0m6h01mq4cv
+    program_id: prg_01kzznn9ajhr14rbv7k2t0xz46
+    offer_slug: cloudways-startup-program-expand
+    offer_slug_aliases: []
+    title: Cloudways Startup Program, Expand tier
+    summary: Series-B startups, or bootstrapped startups seeking market expansion, can get up to $50,000 in Cloudways platform credits, 20% off their monthly invoice, and a free Premium Support add-on worth $6,000 a year.
+    description: As of the source capture date, Cloudways states it has temporarily closed new applications for the Startup Program while it grows its existing cohort of startups; interested applicants can join a waitlist on the program page.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-14T08:19:22.000Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The program page does not state a separate application fee or other consideration beyond meeting eligibility and holding a Cloudways trial account.
+      benefits:
+        - benefit_id: ben_01
+          kind: credit
+          value:
+            kind: up-to
+            amount:
+              currency: USD
+              minor_units: 5000000
+          description: Up to $50,000 in Cloudways platform credits.
+        - benefit_id: ben_02
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 2000
+          applies_to: Monthly Cloudways invoice
+          description: 20% off the monthly Cloudways invoice.
+        - benefit_id: ben_03
+          kind: other
+          description: 24x7 priority technical support.
+        - benefit_id: ben_04
+          kind: free-service
+          service: Premium Support add-on
+          description: Free access to the Premium Support add-on, worth $6,000 a year.
+        - benefit_id: ben_05
+          kind: other
+          description: Community access, mentorship, founder interviews, and case study features.
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: not-machine-evaluable
+            statement: Must have a business website and a domain-associated email address.
+          - criterion_id: cri_02
+            kind: manual
+            reason: not-machine-evaluable
+            statement: Must have a Cloudways trial account.
+          - criterion_id: cri_03
+            kind: manual
+            reason: external-verification
+            statement: Has reached Series-B funding stage, or is a bootstrapped startup seeking market expansion.
+          - criterion_id: cri_04
+            kind: manual
+            reason: not-machine-evaluable
+            statement: Must not be an agency.
+          - criterion_id: cri_05
+            kind: manual
+            reason: vendor-discretion
+            statement: Must not already be availing any other Cloudways offer.
+    roles:
+      terms_authority_entity_id: ent_01kzznn9agmbpywfvvpkvjrggr
+      access_operator_entity_id: ent_01kzznn9agmbpywfvvpkvjrggr
+    access:
+      availability: public
+      method: form
+      url: https://www.cloudways.com/en/startup-program.php
+      instructions: Applications are temporarily closed; the program page offers a waitlist signup instead of a live application form.
+    terms_url: https://www.cloudways.com/en/startup-program.php
+    source_ids:
+      - src_37daf29f25973b94803506671523377b8587e989964250be9e7ae50018f67e9d
