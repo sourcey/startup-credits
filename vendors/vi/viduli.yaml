@@ -8,27 +8,21 @@ domains:
     role: primary
     valid_from: 2026-08-12T17:53:00.000Z
 category: hosting-infra
-description: Cloud platform for deploying applications, managed databases, and caches from connected source repositories.
+description: Managed cloud platform for deploying applications, databases, and caches with built-in scaling and monitoring.
 links:
   site: https://viduli.io
 sources:
   - source_id: src_0bd8b9a2b78783e9ff9363162508d96d3c055b564baf82676e6f9f57d1e10324
     url: https://viduli.io/offers/startup-300-credit
-programs:
-  - program_id: prg_01kzvhmmaqmqayeb19kq4qfqpn
-    program_slug: startup-credit-program
-    program_slug_aliases: []
-    title: Viduli Startup Credit Program
-    summary: Viduli gives qualifying early-stage startups $300 in perpetual service credits for application, database, and cache infrastructure.
-    source_ids:
-      - src_0bd8b9a2b78783e9ff9363162508d96d3c055b564baf82676e6f9f57d1e10324
+  - source_id: src_82b274cce0210177efb82bec5719c7cee2d87f91b74c707a04f6c9735063716a
+    url: https://viduli.io/
+programs: []
 offers:
   - offer_id: off_01kzvhmmaqx881afdqzhzhjp0p
-    program_id: prg_01kzvhmmaqmqayeb19kq4qfqpn
     offer_slug: 300-usd-startup-credit
     offer_slug_aliases: []
-    title: $300 Startup Credit
-    summary: Eligible early-stage startups receive $300 in perpetual credits usable across Viduli services, with no charges until the credits are exhausted.
+    title: $300 Free Credits for Startups
+    summary: Eligible startups receive $300 in perpetual credits valid for all Viduli services, with no charges until the credits are exhausted.
     lifecycle:
       status: active
       effective_from: 2026-08-12T17:53:00.000Z
