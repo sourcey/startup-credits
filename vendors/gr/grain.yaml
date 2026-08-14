@@ -1,0 +1,89 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01m00r1g5qx1fqaxgej3mqfh3r
+slug: grain
+slug_aliases: []
+name: Grain
+domains:
+  - value: grain.com
+    role: primary
+    valid_from: 2026-08-14T18:20:00.000Z
+category: productivity
+description: Grain provides AI-powered meeting recording, transcription, and summarization for customer-centric teams.
+links:
+  site: https://grain.com
+sources:
+  - source_id: src_88694639531c1560c2e7483c5178311a2d965639e84284e3029280cf59c2cbfb
+    url: https://grain.com/startups
+programs:
+  - program_id: prg_01m00r1g5wysbb70kajkh5a26q
+    program_slug: grain-for-startups
+    program_slug_aliases: []
+    title: Grain for Startups
+    summary: Grain offers eligible startups 50% off Starter or Business plans for six months for the whole team.
+    source_ids:
+      - src_88694639531c1560c2e7483c5178311a2d965639e84284e3029280cf59c2cbfb
+offers:
+  - offer_id: off_01m00r1g5w20wpmj7wr6v6x8qd
+    program_id: prg_01m00r1g5wysbb70kajkh5a26q
+    offer_slug: grain-for-startups-50-off-six-months
+    offer_slug_aliases: []
+    title: Grain for Startups 50% Off for 6 Months
+    summary: Eligible startups receive 50% off a Starter or Business plan for six months for the whole team.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-14T18:20:00.000Z
+    economics:
+      benefits:
+        - applies_to: Grain Starter or Business plan
+          benefit_id: ben_01
+          description: 50% off Starter or Business for six months for the whole team
+          duration:
+            kind: exact
+            value: P6M
+          kind: discount
+          percentage:
+            basis_points: 5000
+            kind: exact
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.funding_raised_usd
+            kind: predicate
+            operator: lt
+            statement: The company has raised under $10M in venture funding.
+            value:
+              type: number
+              value: 10000000
+          - criterion_id: cri_02
+            fact: company.employee_count
+            kind: predicate
+            operator: lt
+            statement: The company has under 50 employees.
+            value:
+              type: number
+              value: 50
+          - criterion_id: cri_03
+            kind: manual
+            reason: external-verification
+            statement: The company is affiliated with Grain's partnership network.
+          - criterion_id: cri_04
+            fact: company.is_current_customer
+            kind: predicate
+            operator: eq
+            statement: The applicant must be a new Grain customer.
+            value:
+              type: boolean
+              value: false
+    roles:
+      terms_authority_entity_id: ent_01m00r1g5qx1fqaxgej3mqfh3r
+      access_operator_entity_id: ent_01m00r1g5qx1fqaxgej3mqfh3r
+    access:
+      availability: public
+      method: form
+      url: https://grain.com/startups
+    source_ids:
+      - src_88694639531c1560c2e7483c5178311a2d965639e84284e3029280cf59c2cbfb
