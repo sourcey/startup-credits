@@ -1,0 +1,105 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01m01b5wrxzbf1kab0cj5309f7
+slug: 0x
+slug_aliases: []
+name: 0x
+domains:
+  - value: 0x.org
+    role: primary
+    valid_from: 2026-08-14T23:54:37.214Z
+category: hosting-infra
+description: 0x provides APIs for embedding onchain swaps, cross-chain routing, gasless trading, and trade analytics into applications.
+links:
+  site: https://0x.org
+sources:
+  - source_id: src_9c342cd4d7c505ad08649477758fd2cd8edbbed29140d322a183020cf66a9003
+    url: https://0x.org/
+  - source_id: src_b6a3d6520f73563e3b4d82b4e45f47e6a33130930aeca83982a2a11a4cbeee91
+    url: https://0x.org/0x-free-credits
+programs:
+  - program_id: prg_01m01b5wry3bsf85derd7nqq9g
+    program_slug: jumpstart-program
+    program_slug_aliases: []
+    title: 0x JumpStart Program
+    summary: 0x supports global Web3 and crypto startups with API-call credits, technical capacity, mentorship or tailored support, and community access.
+    source_ids:
+      - src_b6a3d6520f73563e3b4d82b4e45f47e6a33130930aeca83982a2a11a4cbeee91
+offers:
+  - offer_id: off_01m01b5wryraemvz25c9rc5797
+    program_id: prg_01m01b5wry3bsf85derd7nqq9g
+    offer_slug: jumpstart-api-credits
+    offer_slug_aliases: []
+    title: 0x JumpStart API Credits
+    summary: Eligible Web3 startups can receive 2 million API calls valued at $1,000 through Start, or 10 million calls valued at $5,000 through Scale, plus support.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-14T23:54:37.214Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: The Start tier provides 2 million API calls in credits with a published $1,000 value; the Scale tier provides 10 million calls with a published $5,000 value.
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 500000
+            kind: up-to
+        - benefit_id: ben_02
+          description: The Start tier includes 20 requests per second and monthly mentorship sessions; Scale includes 40 requests per second and support tailored to the applicant's needs.
+          kind: other
+        - benefit_id: ben_03
+          description: Both tiers include access to the 0x community.
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: any
+        rules:
+          - kind: all
+            rules:
+              - criterion_id: cri_01
+                kind: manual
+                reason: external-verification
+                statement: The Start tier is for a self-funded startup or one at a stage before Series B.
+              - criterion_id: cri_02
+                fact: company.website_url
+                kind: predicate
+                operator: present
+                statement: The Start tier requires a live, fully functional company website.
+              - criterion_id: cri_03
+                fact: company.age_months
+                kind: predicate
+                operator: lte
+                statement: The Start tier requires the company to have been founded within the past three years.
+                value:
+                  type: number
+                  value: 36
+          - kind: all
+            rules:
+              - criterion_id: cri_04
+                kind: manual
+                reason: external-verification
+                statement: The Scale tier is for a self-funded startup or one at a stage before Series B.
+              - criterion_id: cri_05
+                fact: company.age_months
+                kind: predicate
+                operator: lte
+                statement: The Scale tier requires the company to have been founded within the past three years.
+                value:
+                  type: number
+                  value: 36
+              - criterion_id: cri_06
+                kind: manual
+                reason: external-verification
+                statement: The Scale tier requires participation in the 0x partner ecosystem.
+    roles:
+      terms_authority_entity_id: ent_01m01b5wrxzbf1kab0cj5309f7
+      access_operator_entity_id: ent_01m01b5wrxzbf1kab0cj5309f7
+    access:
+      availability: public
+      method: form
+      url: https://0x.org/0x-free-credits
+    terms_url: https://0x.org/0x-free-credits
+    source_ids:
+      - src_b6a3d6520f73563e3b4d82b4e45f47e6a33130930aeca83982a2a11a4cbeee91
