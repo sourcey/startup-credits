@@ -13,7 +13,7 @@ links:
   site: https://www.dripjobs.com
 sources:
   - source_id: src_692056979f928b24e01e6b4aaed5382b412b101a99d9b07294309b73e72eea60
-    url: https://www.dripjobs.com/startup
+    url: https://dripjobs.com/startup-program
 programs:
   - program_id: prg_01kzx3vpg24dg6ypjnxnzehx41
     program_slug: dripjobs-startup-program
@@ -55,7 +55,7 @@ offers:
     access:
       availability: public
       method: form
-      url: https://www.dripjobs.com/startup
-    terms_url: https://www.dripjobs.com/startup
+      url: https://dripjobs.com/startup-program
+    terms_url: https://dripjobs.com/startup-program
     source_ids:
       - src_692056979f928b24e01e6b4aaed5382b412b101a99d9b07294309b73e72eea60
