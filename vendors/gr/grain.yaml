@@ -20,13 +20,11 @@ programs:
     program_slug_aliases: []
     title: Grain for Startups
     summary: Eligible startups get a Starter or Business plan for 6 months at a 50% discount, covering up to 50 paid seats.
-    lifecycle:
-      status: active
-      effective_from: 2026-08-14T22:30:00.000Z
     source_ids:
       - src_7b5d348582bcc918772f91ebaed9622a2427510d22040a5c1d71e218f5166531
 offers:
   - offer_id: off_01m016ptd78pkd1hq8q9wh6xpe
+    program_id: prg_01m016ptd7z44cdwn0bzva76db
     offer_slug: grain-for-startups-50-percent
     offer_slug_aliases: []
     title: Grain for Startups 50% discount
