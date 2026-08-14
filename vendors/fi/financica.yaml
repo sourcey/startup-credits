@@ -1,0 +1,65 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_98ab263f96743c8b4c6f4cff54
+slug: financica
+slug_aliases: []
+name: Financica
+domains:
+  - value: financica.app
+    role: primary
+    valid_from: 2026-08-14T14:38:31.633Z
+category: finance-accounting
+description: Financica is a bookkeeping and financial operations platform with AI-assisted accounting, cash-flow tracking, e-invoicing, and multi-currency support.
+links:
+  site: https://financica.app
+sources:
+  - source_id: src_1dc3065a5e0f9fb4b13cedbb4f9ef62ac9da122a5eaa08d22530c205b534670f
+    url: https://financica.app/for/startups
+programs:
+  - program_id: prg_53bc848caff01136c4af2877cc
+    program_slug: financica-startup-program
+    program_slug_aliases: []
+    title: Financica Startup Program
+    summary: Financica gives eligible early-stage product and service startups discounted access to its Scale plan for one year.
+    source_ids:
+      - src_1dc3065a5e0f9fb4b13cedbb4f9ef62ac9da122a5eaa08d22530c205b534670f
+offers:
+  - offer_id: off_c9aa144e5039bdd113e2ff1b82
+    program_id: prg_53bc848caff01136c4af2877cc
+    offer_slug: scale-plan-first-year-discount
+    offer_slug_aliases: []
+    title: 80% off the Scale plan for 12 months
+    summary: Eligible startups get the full Financica Scale plan for €39.80 per month instead of €199 per month during the first 12 months.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-14T14:38:31.633Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 80% off the Financica Scale plan for 12 months
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 8000
+          duration:
+            kind: exact
+            value: P1Y
+          applies_to: Financica Scale plan
+      consideration:
+        kind: variable
+        description: Approved startups pay €39.80 per month instead of the regular €199 monthly Scale plan price during the discount period.
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: external-verification
+        statement: Applicant must be less than 3 years old, have raised less than €5 million, be building a product or service rather than an agency or consultancy, and be a new Financica customer.
+    roles:
+      terms_authority_entity_id: ent_98ab263f96743c8b4c6f4cff54
+      access_operator_entity_id: ent_98ab263f96743c8b4c6f4cff54
+    access:
+      availability: public
+      method: form
+      url: https://financica.app/for/startups
+    terms_url: https://financica.app/for/startups
+    source_ids:
+      - src_1dc3065a5e0f9fb4b13cedbb4f9ef62ac9da122a5eaa08d22530c205b534670f
