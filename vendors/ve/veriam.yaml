@@ -1,0 +1,70 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01m00ahk7hwtdznmreqe7d2gvg
+slug: veriam
+slug_aliases: []
+name: Veriam
+domains:
+  - value: getveriam.com
+    role: primary
+    valid_from: 2026-08-14T14:24:17.651Z
+category: auth-security
+description: Veriam combines customer identity, access, subscriptions, contracting, invoicing, and payment management for SaaS providers.
+links:
+  site: https://getveriam.com
+sources:
+  - source_id: src_dc8f46371c4519847af8b07371282cc0372253029bc5481bb77c6394fdb32743
+    url: https://getveriam.com/startup-program
+  - source_id: src_4a77e7c4f1c8d9bb68d8081b9bd08ffb591780ab63369cceb9976f518733ea34
+    url: https://getveriam.com/pricing
+programs:
+  - program_id: prg_01m00ahk7kr3n9zmmw5kq5cd01
+    program_slug: veriam-startup-program
+    program_slug_aliases: []
+    title: Veriam Startup Program
+    summary: Veriam supports qualifying early-stage SaaS companies with full platform access, waived platform fees, growth rewards, priority support, and leadership access.
+    source_ids:
+      - src_dc8f46371c4519847af8b07371282cc0372253029bc5481bb77c6394fdb32743
+      - src_4a77e7c4f1c8d9bb68d8081b9bd08ffb591780ab63369cceb9976f518733ea34
+offers:
+  - offer_id: off_01m00ahk7k82fp49jv9sfhbyzp
+    program_id: prg_01m00ahk7kr3n9zmmw5kq5cd01
+    offer_slug: zero-percent-veriam-fees-for-three-years
+    offer_slug_aliases: []
+    title: 0% Veriam fees for three years
+    summary: Qualifying startups get full Veriam platform access with Veriam's fees waived for three years, up to €1 million in revenue; standard payment-processing fees still apply.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-14T14:24:17.651Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Veriam platform fees are waived for three years, up to €1 million in revenue
+          kind: waiver
+          waived_item: Veriam platform fees
+        - benefit_id: ben_02
+          description: Full access to Veriam Access and Subscription Management
+          kind: free-service
+          service: Veriam Access and Subscription Management platform access
+        - benefit_id: ben_03
+          description: Priority support, product feedback access, and strategic leadership calls
+          kind: other
+      consideration:
+        kind: variable
+        description: Standard payment-processing transaction fees remain payable.
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: The program is for qualifying early-stage SaaS companies and admission is determined through Veriam's application process.
+    roles:
+      terms_authority_entity_id: ent_01m00ahk7hwtdznmreqe7d2gvg
+      access_operator_entity_id: ent_01m00ahk7hwtdznmreqe7d2gvg
+    access:
+      availability: public
+      method: form
+      url: https://getveriam.com/startup-program
+    terms_url: https://getveriam.com/startup-program
+    source_ids:
+      - src_dc8f46371c4519847af8b07371282cc0372253029bc5481bb77c6394fdb32743
+      - src_4a77e7c4f1c8d9bb68d8081b9bd08ffb591780ab63369cceb9976f518733ea34
