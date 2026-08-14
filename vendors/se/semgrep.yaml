@@ -1,0 +1,49 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01m00bj7he002p6e4drdvye5ch
+slug: semgrep
+slug_aliases: []
+name: Semgrep
+domains:
+  - value: semgrep.dev
+    role: primary
+    valid_from: 2026-08-14T14:42:15Z
+category: auth-security
+description: Semgrep provides application security tools for finding and remediating vulnerabilities in code, open source dependencies, and secrets.
+links:
+  site: https://semgrep.dev/
+sources:
+  - source_id: src_2064f53d2d7318632fd15259c9cdd55693cc8882ec6d1857ed29cdfc87a56928
+    url: https://semgrep.dev/contact/contact-us-startups/
+programs: []
+offers:
+  - offer_id: off_01m00bj7hf8jb4rknvpnks0z06
+    offer_slug: semgrep-startup-pricing
+    offer_slug_aliases: []
+    title: Semgrep Startup Pricing
+    summary: Qualifying startups receive special pricing on Semgrep's full product suite, with unlimited scans and repositories, AI-assisted security, and premium 8x5 support.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-14T14:42:15Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Special startup pricing on Semgrep's full product suite.
+          kind: other
+      consideration:
+        description: Specific startup pricing is determined after contacting Semgrep and qualifying for the plan.
+        kind: unknown
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Applicant must be a startup that Semgrep determines qualifies for its special startup pricing.
+    roles:
+      terms_authority_entity_id: ent_01m00bj7he002p6e4drdvye5ch
+      access_operator_entity_id: ent_01m00bj7he002p6e4drdvye5ch
+    access:
+      availability: public
+      method: form
+      url: https://semgrep.dev/contact/contact-us-startups/
+    source_ids:
+      - src_2064f53d2d7318632fd15259c9cdd55693cc8882ec6d1857ed29cdfc87a56928
