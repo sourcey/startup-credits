@@ -1,0 +1,68 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01m02zt9v805qyd7bmq2tp6xgz
+slug: qodo
+slug_aliases:
+  - codium
+name: Qodo
+domains:
+  - value: qodo.ai
+    role: primary
+    valid_from: 2026-08-15T15:15:06.193Z
+category: ai-ml
+description: Qodo provides AI-powered code review tools for software teams.
+links:
+  site: https://www.qodo.ai
+sources:
+  - source_id: src_5d5e00000735a8bc4f14f01b0dacddd1181312d08796711ef299f1de220400a1
+    url: https://www.qodo.ai/google-cloud-startups/public/
+programs: []
+offers:
+  - offer_id: off_01m02zt9v8efg67yw6kmb6m4b9
+    offer_slug: google-cloud-startups-pro-team-discount
+    offer_slug_aliases: []
+    title: 15% off Qodo Pro Team for Google Cloud Startups
+    summary: Eligible Google for Startups companies receive 15% off Qodo's Pro Team plan for up to 30 developers; the offer is listed as limited availability.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-15T15:15:06.193Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          applies_to: Qodo Pro Team plan
+          description: 15% off the Qodo Pro Team plan for up to 30 developers
+          kind: discount
+          percentage:
+            basis_points: 1500
+            kind: exact
+      consideration:
+        kind: variable
+        description: The startup pays the discounted Pro Team plan price.
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: external-verification
+            statement: Received startup equity funding from Seed to Series B by an institutional investor.
+          - criterion_id: cri_02
+            fact: company.age_months
+            kind: predicate
+            operator: lte
+            statement: Founded within the last 10 years.
+            value:
+              type: number
+              value: 120
+          - criterion_id: cri_03
+            kind: manual
+            reason: external-verification
+            statement: Must be part of the Google Startups Program.
+    roles:
+      terms_authority_entity_id: ent_01m02zt9v805qyd7bmq2tp6xgz
+      access_operator_entity_id: ent_01m02zt9v805qyd7bmq2tp6xgz
+    access:
+      availability: public
+      method: form
+      url: https://www.qodo.ai/google-cloud-startups/public/
+    source_ids:
+      - src_5d5e00000735a8bc4f14f01b0dacddd1181312d08796711ef299f1de220400a1
