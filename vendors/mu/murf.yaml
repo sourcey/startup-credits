@@ -21,6 +21,8 @@ offers:
     offer_slug_aliases: []
     title: Murf Startup Incubator Program
     summary: Early-stage startups can receive $1,500 in Murf API credits for a three-month period after approval.
+    source_ids:
+      - src_5e322d004f7b5abf2450aa45edf9f4027ef26c25b96cc343cfbea12f4a6986f7
     lifecycle:
       status: active
       effective_from: 2026-08-16T20:07:53.796Z
