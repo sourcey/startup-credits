@@ -1,0 +1,51 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kzzmrac37brqxhmgs72hh479
+slug: monday
+slug_aliases: []
+name: monday.com
+domains:
+  - value: monday.com
+    role: primary
+    valid_from: 2026-08-14T08:03:56.000Z
+category: productivity
+description: monday.com is a Work OS platform for project management, CRM, and software development, including monday dev, its tool for agile product and engineering teams.
+links:
+  site: https://monday.com
+sources:
+  - source_id: src_7283993ec581bca5cc38a4a954e318699693e76746385ab21274cc0fc5562399
+    url: https://monday.com/l/miscellaneous/startup/
+programs: []
+offers:
+  - offer_id: off_01kzzmrac5bh3gddvr6280pxbw
+    offer_slug: monday-dev-startup-program
+    offer_slug_aliases: []
+    title: monday dev Startup Program
+    summary: Eligible early-stage startups can buy a one-year, 10-seat monday dev Pro plan for a one-off payment of $240 USD.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-14T08:03:56.000Z
+    economics:
+      consideration:
+        kind: fixed
+        amount:
+          currency: USD
+          minor_units: 24000
+      benefits:
+        - benefit_id: ben_primary
+          kind: other
+          description: One-year, 10-seat monday dev Pro plan for a one-off payment of $240 USD
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Organization has up to 50 employees, was formed within the last two years, is supported by a venture capital firm, startup accelerator, or incubator, and is not already a paying monday.com customer.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01kzzmrac37brqxhmgs72hh479
+      access_operator_entity_id: ent_01kzzmrac37brqxhmgs72hh479
+    access:
+      availability: public
+      method: other
+    terms_url: https://monday.com/l/miscellaneous/startup/
+    source_ids:
+      - src_7283993ec581bca5cc38a4a954e318699693e76746385ab21274cc0fc5562399
