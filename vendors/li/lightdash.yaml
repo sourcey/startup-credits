@@ -1,0 +1,40 @@
+entity:
+  id: ent_01kzhv996msrae6t7xektspsvy
+  slug: lightdash
+  name: Lightdash
+  website: https://www.lightdash.com
+  description: >-
+    Open-source BI platform that turns dbt projects into full-stack analytics.
+  categories:
+    - data
+    - analytics
+
+programs:
+  - id: prg_01kzhv996mmdatgsq54kk8m541
+    name: Lightdash for Startups
+    description: >-
+      Free Lightdash Cloud plan for startups to build BI dashboards on top of dbt projects.
+    source_id: src_01kzhv996maszd6jrt5dbzwa67
+    eligibility:
+      - Startups with less than $5M in funding
+
+offers:
+  - id: off_01kzhv996mb5wk6aqjvyda3qy3
+    program_id: prg_01kzhv996mmdatgsq54kk8m541
+    name: Startup Cloud Plan
+    summary: >-
+      Free Lightdash Cloud for 12 months including unlimited users and dashboards
+    economics:
+      type: credit
+      value: 6000
+      currency: USD
+    duration: 12 months
+    source_id: src_01kzhv996maszd6jrt5dbzwa67
+    category: analytics
+
+sources:
+  - id: src_01kzhv996maszd6jrt5dbzwa67
+    url: https://www.lightdash.com/pricing
+    retrieved: "2025-08-09"
+    type: webpage
+    language: en
