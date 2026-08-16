@@ -1,0 +1,84 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kzm1qm9bjx1p8edc9544g0px
+slug: razorpay
+slug_aliases: []
+name: Razorpay
+domains:
+  - value: razorpay.com
+    role: primary
+    valid_from: 2026-08-09T10:00:00.000Z
+category: fintech
+description: Indian full-stack payments platform for businesses — payment gateway, neobanking, payroll, and corporate credit cards.
+links:
+  site: https://razorpay.com
+sources:
+  - source_id: src_ade79e99d8f862badd7fe627c9881bbefeeeb1715eaca580accd79f618bd0b36
+    url: https://razorpay.com/m/startup-perks/
+programs:
+  - program_id: prg_01kzm1qm9cdc3frbxgcvbrxb54
+    program_slug: razorpay-startup-perks
+    program_slug_aliases: []
+    title: Razorpay Startup Perks
+    summary: Up to ₹1Cr in payment credits, waived fees, payroll software, and corporate credit card for funded Indian startups on Razorpay.
+    source_ids:
+      - src_ade79e99d8f862badd7fe627c9881bbefeeeb1715eaca580accd79f618bd0b36
+offers:
+  - offer_id: off_01kzm1qm9ckae97h6yd6awbp50
+    program_id: prg_01kzm1qm9cdc3frbxgcvbrxb54
+    offer_slug: startup-perks
+    offer_slug_aliases: []
+    title: Up to ₹1Cr in Payment Credits
+    summary: ₹3 lakh domestic and ₹3 lakh international payment credits, 90 days free Magic Checkout, payroll fee waiver, and corporate credit card for angel and VC-funded startups.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-09T10:00:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: ₹3 lakh free domestic payment processing credits
+          kind: credit
+          value:
+            amount:
+              currency: INR
+              minor_units: 30000000
+            kind: exact
+        - benefit_id: ben_02
+          description: ₹3 lakh free international payment processing credits
+          kind: credit
+          value:
+            amount:
+              currency: INR
+              minor_units: 30000000
+            kind: exact
+        - benefit_id: ben_03
+          description: Magic Checkout free for 90 days
+          kind: credit
+          value:
+            kind: variable
+        - benefit_id: ben_04
+          description: Payroll software fee waiver
+          kind: credit
+          value:
+            kind: variable
+        - benefit_id: ben_05
+          description: Collateral-free corporate credit card
+          kind: credit
+          value:
+            kind: variable
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_requirement_01
+        kind: manual
+        reason: not-machine-evaluable
+        statement: Applicant must be a funded Indian startup (angel-backed or VC-funded) that is a new Razorpay merchant or has not actively used the Razorpay ecosystem in the previous three months.
+    roles:
+      terms_authority_entity_id: ent_01kzm1qm9bjx1p8edc9544g0px
+      access_operator_entity_id: ent_01kzm1qm9bjx1p8edc9544g0px
+    access:
+      availability: public
+      method: form
+      url: https://razorpay.com/m/startup-perks/
+    source_ids:
+      - src_ade79e99d8f862badd7fe627c9881bbefeeeb1715eaca580accd79f618bd0b36
