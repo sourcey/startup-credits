@@ -1,0 +1,68 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01m04qsmtzryqy93d5yj6des5h
+slug: requesty
+slug_aliases: []
+name: Requesty
+domains:
+  - value: requesty.ai
+    role: primary
+    valid_from: 2026-08-16T08:00:00.000Z
+category: ai-ml
+description: Requesty is an AI gateway for routing hundreds of models through one API with caching, observability, and guardrails.
+links:
+  site: https://www.requesty.ai
+sources:
+  - source_id: src_9125a0fe11d04c6a6389e2f88882ea2b3f8c08e808d644315765530101534331
+    url: https://www.requesty.ai/startup
+programs:
+  - program_id: prg_01m04qsmtzbb6znr4kn1m2nkrh
+    program_slug: requesty-startup-program
+    program_slug_aliases: []
+    title: Requesty Startup Program
+    summary: Requesty gives eligible partner-affiliated startups AI credits, six months of full platform access, and priority support.
+    source_ids:
+      - src_9125a0fe11d04c6a6389e2f88882ea2b3f8c08e808d644315765530101534331
+offers:
+  - offer_id: off_01m04qsmtz8hc4ag1gavknwdds
+    program_id: prg_01m04qsmtzbb6znr4kn1m2nkrh
+    offer_slug: one-thousand-dollars-ai-credits-and-six-months-free
+    offer_slug_aliases: []
+    title: $1,000 in AI credits and six months free
+    summary: Affiliated startups get $1,000 in credits across more than 600 AI models, six months of full Requesty platform access, and priority support.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-16T08:00:00.000Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_01
+          description: $1,000 in AI credits across more than 600 models
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 100000
+            kind: exact
+        - benefit_id: ben_02
+          description: Full Requesty platform access with priority support for six months
+          kind: free-service
+          service: Requesty platform access and priority support
+          duration:
+            kind: exact
+            value: P6M
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: external-verification
+        statement: Applicant must be a startup affiliated with Y Combinator, 20VC, Tapestry, or TinyVC and pass Requesty's application review.
+    roles:
+      terms_authority_entity_id: ent_01m04qsmtzryqy93d5yj6des5h
+      access_operator_entity_id: ent_01m04qsmtzryqy93d5yj6des5h
+    access:
+      availability: public
+      method: form
+      url: https://www.requesty.ai/startup
+    source_ids:
+      - src_9125a0fe11d04c6a6389e2f88882ea2b3f8c08e808d644315765530101534331
