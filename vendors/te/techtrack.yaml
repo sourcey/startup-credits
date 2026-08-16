@@ -1,0 +1,63 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01m04qsmtzz5kfb866s3h2xjrj
+slug: techtrack
+slug_aliases: []
+name: TechTrack
+domains:
+  - value: techtrackdata.com
+    role: primary
+    valid_from: 2026-08-16T08:00:00.000Z
+category: crm-sales
+description: TechTrack provides company data, lead generation, pipeline management, and fundraising tools for technology and healthcare organizations.
+links:
+  site: https://www.techtrackdata.com
+sources:
+  - source_id: src_51b207696ecf20d756fd491b01d606d961ebfc0e7ce9bcc7dccb2d85ba83789f
+    url: https://www.techtrackdata.com/techtrack-for-early-stage/
+programs:
+  - program_id: prg_01m04qsmtz6e5jgwxtjfctbnsg
+    program_slug: techtrack-for-startups
+    program_slug_aliases: []
+    title: TechTrack for Startups
+    summary: TechTrack offers qualifying early-stage companies its startup package, Growth Academy, and digital partnering platform at a 95% discount.
+    source_ids:
+      - src_51b207696ecf20d756fd491b01d606d961ebfc0e7ce9bcc7dccb2d85ba83789f
+offers:
+  - offer_id: off_01m04qsmtz4edje99fz3tz2rqr
+    program_id: prg_01m04qsmtz6e5jgwxtjfctbnsg
+    offer_slug: ninety-five-percent-off-techtrack-startup-plan
+    offer_slug_aliases: []
+    title: 95% off the TechTrack startup plan
+    summary: Eligible startups get 95% off an annual TechTrack plan, priced at the equivalent of $150 per month, with unlimited data, seats, pipelines, and integrations.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-16T08:00:00.000Z
+    economics:
+      benefits:
+        - applies_to: TechTrack annual startup plan
+          benefit_id: ben_01
+          description: 95% discount on the annual TechTrack startup plan
+          kind: discount
+          percentage:
+            basis_points: 9500
+            kind: exact
+      consideration:
+        amount:
+          currency: USD
+          minor_units: 180000
+        kind: fixed
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: external-verification
+        statement: Applicant must be a new TechTrack customer with less than USD 2 million in funding, fewer than 20 employees, and a company less than five years old.
+    roles:
+      terms_authority_entity_id: ent_01m04qsmtzz5kfb866s3h2xjrj
+      access_operator_entity_id: ent_01m04qsmtzz5kfb866s3h2xjrj
+    access:
+      availability: public
+      method: form
+      url: https://www.techtrackdata.com/techtrack-for-early-stage/
+    source_ids:
+      - src_51b207696ecf20d756fd491b01d606d961ebfc0e7ce9bcc7dccb2d85ba83789f
