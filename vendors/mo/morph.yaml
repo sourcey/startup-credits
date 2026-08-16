@@ -1,0 +1,40 @@
+entity:
+  id: ent_01kzhvccknhbe79smwcrnj64xa
+  slug: morph
+  name: Morph
+  website: https://morphl2.io
+  description: >-
+    Layer 2 scaling solution combining optimistic rollups with zkEVM technology.
+  categories:
+    - blockchain
+    - infrastructure
+
+programs:
+  - id: prg_01kzhvccknae46dx2w1nfp7nnv
+    name: Morph Startup Credits Program
+    description: >-
+      Credits for startups building dApps on the Morph L2 ecosystem.
+    source_id: src_01kzhvccknfmc95nz4zfs5ht42
+    eligibility:
+      - Web3 startups with a working prototype
+
+offers:
+  - id: off_01kzhvccknqvw67g2a6a5tqhbm
+    program_id: prg_01kzhvccknae46dx2w1nfp7nnv
+    name: Ecosystem Credits
+    summary: >-
+      $10,000 in Morph ecosystem credits for infrastructure and development
+    economics:
+      type: credit
+      value: 10000
+      currency: USD
+    duration: 6 months
+    source_id: src_01kzhvccknfmc95nz4zfs5ht42
+    category: blockchain
+
+sources:
+  - id: src_01kzhvccknfmc95nz4zfs5ht42
+    url: https://morphl2.io
+    retrieved: "2025-08-09"
+    type: webpage
+    language: en
