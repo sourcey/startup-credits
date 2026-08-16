@@ -1,0 +1,40 @@
+entity:
+  id: ent_01kzhv8n09xzrj1s94rf2hxnke
+  slug: couchbase-capella
+  name: Couchbase Capella
+  website: https://www.couchbase.com/products/capella
+  description: >-
+    Fully managed Database-as-a-Service combining NoSQL flexibility with SQL-like querying.
+  categories:
+    - database
+    - cloud
+
+programs:
+  - id: prg_01kzhv8n093ws1t38k5eq71nh4
+    name: Couchbase for Startups
+    description: >-
+      Get $12,750 in Capella credits for your startup to build on Couchbase's managed DBaaS.
+    source_id: src_01kzhv8n09rnz7xc61f7t2yjjg
+    eligibility:
+      - Startups less than 5 years old with under $5M in funding
+
+offers:
+  - id: off_01kzhv8n09jsp27b779wrnynx2
+    program_id: prg_01kzhv8n093ws1t38k5eq71nh4
+    name: Capella Develop Starter Kit
+    summary: >-
+      $12,750 in Capella credits including Developer Pro service plan and certification
+    economics:
+      type: credit
+      value: 12750
+      currency: USD
+    duration: 12 months
+    source_id: src_01kzhv8n09rnz7xc61f7t2yjjg
+    category: database
+
+sources:
+  - id: src_01kzhv8n09rnz7xc61f7t2yjjg
+    url: https://www.couchbase.com/products/capella
+    retrieved: "2025-08-09"
+    type: webpage
+    language: en
