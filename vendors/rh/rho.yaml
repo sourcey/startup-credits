@@ -1,0 +1,87 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kzzsk3z19fytpgs1kvwmm09j
+slug: rho
+slug_aliases: []
+name: Rho
+domains:
+  - value: rho.co
+    role: primary
+    valid_from: 2026-08-14T09:34:09.000Z
+category: banking
+description: Business banking that moves at startup speed and scales as you grow. Open accounts quickly, earn yield on idle cash, and manage spend in one place.
+links:
+  site: https://www.rho.co
+sources:
+  - source_id: src_571c115cec0c9faa92efddbf80411c926dcf0ee4c84585bf078d88e96b38b00b
+    url: https://www.rho.co/partner/stripe-atlas
+  - source_id: src_1d4ec36c7279e06c84c99b0ff45484f4aec96550df67f428761abf68eb9381ea
+    url: https://www.rho.co/
+  - source_id: src_331d0b57386fa48ad6dc5cd27978681725340bad9e572e55a6dc5798b73ff595
+    url: https://support.stripe.com/questions/stripe-atlas-perks-partners
+programs: []
+offers:
+  - offer_id: off_01kzzsk3z40r9991zsv95yac92
+    offer_slug: rho-banking-credits-for-stripe-atlas-founders
+    offer_slug_aliases: []
+    title: Rho Banking Credits for Stripe Atlas Founders
+    summary: Stripe Atlas founders who open a Rho business banking account can earn a $1,600 statement credit for a $20,000 minimum daily balance held 60 days, plus $500 for $10,000 in Rho Card spend within 90 days.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-14T09:34:09.000Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_01
+          description: >-
+            $1,600 USD statement credit for maintaining a minimum daily
+            balance of $20,000 USD in a Rho checking account for the first
+            60 days after account opening. Rho's own terms are the
+            authority for this figure; Stripe's Atlas partner listing
+            independently summarises this same benefit as $1,100 USD back
+            for $20K USD deposited within 90 days, a different amount and
+            window than Rho's own published terms.
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 160000
+            kind: exact
+          duration:
+            kind: exact
+            value: P60D
+        - benefit_id: ben_02
+          description: $500 USD statement credit for spending $10,000 USD on the Rho Card within 90 days of account opening. Credits may be earned independently of the balance credit.
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 50000
+            kind: exact
+          duration:
+            kind: exact
+            value: P90D
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_01
+        reason: external-verification
+        statement: >-
+          Company must have an approved Stripe Atlas account; Stripe
+          surfaces this offer in the Perks tab of the Atlas Dashboard only
+          after Atlas application approval. Rho separately reviews and
+          approves each business banking application at its own
+          discretion, and Atlas does not guarantee that Rho will work with
+          every Atlas company.
+    roles:
+      terms_authority_entity_id: ent_01kzzsk3z19fytpgs1kvwmm09j
+      access_operator_entity_id: ent_01kyygma830fqh16kvj744sk1c
+    access:
+      availability: membership
+      instructions: Approved Stripe Atlas founders find this offer in the Perks tab of their Atlas Dashboard, then apply for a Rho business banking account through Rho's own partner page.
+      method: other
+      url: https://www.rho.co/partner/stripe-atlas
+    source_ids:
+      - src_571c115cec0c9faa92efddbf80411c926dcf0ee4c84585bf078d88e96b38b00b
+      - src_1d4ec36c7279e06c84c99b0ff45484f4aec96550df67f428761abf68eb9381ea
+      - src_331d0b57386fa48ad6dc5cd27978681725340bad9e572e55a6dc5798b73ff595
