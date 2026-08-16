@@ -1,0 +1,49 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01k2e2tt0jv9s0z9g8p3h9w2m4
+slug: murf
+slug_aliases: []
+name: Murf AI
+domains:
+  - value: murf.ai
+    role: primary
+    valid_from: 2026-08-16T20:07:53.796Z
+category: ai-ml
+description: Murf AI provides voice AI and text-to-speech tools and APIs for developers, creators, and businesses.
+links:
+  site: https://murf.ai
+sources:
+  - source_id: src_5e322d004f7b5abf2450aa45edf9f4027ef26c25b96cc343cfbea12f4a6986f7
+    url: https://murf.ai/startup-program
+programs: []
+offers:
+  - offer_id: off_01k2e2tt0j1a2b3c4d5e6f7g8h
+    offer_slug: murf-startup-incubator-program
+    offer_slug_aliases: []
+    title: Murf Startup Incubator Program
+    summary: Early-stage startups can receive $1,500 in Murf API credits for a three-month period after approval.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-16T20:07:53.796Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: $1,500 in Murf API credits for three months
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Startup must be under 10 years old, have fewer than 100 employees, maintain a functioning company website, and demonstrate a valid Murf API use case; resellers and non-compliant uses are excluded.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01k2e2tt0jv9s0z9g8p3h9w2m4
+      access_operator_entity_id: ent_01k2e2tt0jv9s0z9g8p3h9w2m4
+    access:
+      availability: public
+      method: form
+      url: https://murf.ai/startup-program
+      source_ids:
+        - src_5e322d004f7b5abf2450aa45edf9f4027ef26c25b96cc343cfbea12f4a6986f7
