@@ -1,0 +1,60 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01m04qsmtvqhzgnrxh2vejyjkk
+slug: ironcore-labs
+slug_aliases: []
+name: IronCore Labs
+domains:
+  - value: ironcorelabs.com
+    role: primary
+    valid_from: 2026-08-16T08:00:00.000Z
+category: auth-security
+description: IronCore Labs provides application-layer encryption, searchable encryption, and data-control tools for SaaS and AI applications.
+links:
+  site: https://ironcorelabs.com
+sources:
+  - source_id: src_acfb8228a2deb49478db95ff110c9923579552c7391cd3a43a789ce03cf79c9d
+    url: https://ironcorelabs.com/startup-program/
+programs:
+  - program_id: prg_01m04qsmtwf3dqd4r023rg68fe
+    program_slug: ironcore-labs-startup-program
+    program_slug_aliases: []
+    title: IronCore Labs Startup Program
+    summary: IronCore Labs gives eligible VC-funded startups two years of free access to a Pro tier of SaaS Shield or Cloaked Search.
+    source_ids:
+      - src_acfb8228a2deb49478db95ff110c9923579552c7391cd3a43a789ce03cf79c9d
+offers:
+  - offer_id: off_01m04qsmtwmjteq534nra353wh
+    program_id: prg_01m04qsmtwf3dqd4r023rg68fe
+    offer_slug: two-years-free-saas-shield-or-cloaked-search-pro
+    offer_slug_aliases: []
+    title: Two years free SaaS Shield or Cloaked Search Pro
+    summary: Eligible startups receive a free two-year subscription to any Pro level of SaaS Shield or Cloaked Search; SaaS Shield is limited to 100 tenants.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-16T08:00:00.000Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_01
+          description: Free access to any Pro level of SaaS Shield or Cloaked Search for two years
+          kind: free-service
+          service: SaaS Shield Pro or Cloaked Search Pro
+          duration:
+            kind: exact
+            value: P2Y
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Applicant must be a VC-funded startup less than five years old with less than USD 5 million raised; SaaS Shield usage is limited to 100 tenants.
+    roles:
+      terms_authority_entity_id: ent_01m04qsmtvqhzgnrxh2vejyjkk
+      access_operator_entity_id: ent_01m04qsmtvqhzgnrxh2vejyjkk
+    access:
+      availability: public
+      method: form
+      url: https://ironcorelabs.com/startup-program/
+    source_ids:
+      - src_acfb8228a2deb49478db95ff110c9923579552c7391cd3a43a789ce03cf79c9d
