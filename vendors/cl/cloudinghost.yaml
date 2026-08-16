@@ -1,0 +1,99 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01m01xe0ecrzykz016qy84neg5
+slug: cloudinghost
+slug_aliases: []
+name: CloudingHost
+domains:
+  - value: cloudinghost.com
+    role: primary
+    valid_from: 2026-08-15T05:13:45.000Z
+category: hosting-infra
+description: CloudingHost provides VPS, web hosting, domains, SSL certificates, and business email services across a global infrastructure network.
+links:
+  site: https://www.cloudinghost.com/en/
+sources:
+  - source_id: src_a67bc76fdd7c15bc26a5c6b57a07155a836cc8edd911cbff55f0ac492d3c4989
+    url: https://www.cloudinghost.com/en/startup-program/
+programs:
+  - program_id: prg_01m01xe0eg6cp9xqx868qqv6jj
+    program_slug: cloudinghost-startup-program
+    program_slug_aliases: []
+    title: CloudingHost Startup Program
+    summary: CloudingHost's startup program provides cloud credits, technical support and mentorship, and a permanent post-program discount to approved early-stage companies.
+    source_ids:
+      - src_a67bc76fdd7c15bc26a5c6b57a07155a836cc8edd911cbff55f0ac492d3c4989
+offers:
+  - offer_id: off_01m01xe0eggtp96bd052vqc6qb
+    program_id: prg_01m01xe0eg6cp9xqx868qqv6jj
+    offer_slug: cloudinghost-startup-credits
+    offer_slug_aliases: []
+    title: Up to $5,000 in CloudingHost credits
+    summary: Approved early-stage startups receive up to $5,000 in credits for CloudingHost services during their first 12 months, plus support, mentorship, and a 20% post-program discount.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-15T05:13:45.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to $5,000 in credits usable on CloudingHost services during the first 12 months
+          duration:
+            kind: exact
+            value: P1Y
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 500000
+            kind: up-to
+        - benefit_id: ben_02
+          description: 20% permanent discount on CloudingHost services after program graduation while the account remains active
+          kind: discount
+          percentage:
+            basis_points: 2000
+            kind: exact
+        - benefit_id: ben_03
+          description: Priority technical support and technical mentorship
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: not-machine-evaluable
+            statement: Startup is less than three years old, has less than $1 million in annual revenue, and is actively developing a product.
+          - criterion_id: cri_02
+            kind: manual
+            reason: not-machine-evaluable
+            statement: Company is building a digital product or service that requires cloud infrastructure to operate and scale.
+          - criterion_id: cri_03
+            kind: manual
+            reason: not-machine-evaluable
+            statement: Applicant is a new CloudingHost customer that has not previously used its services.
+          - criterion_id: cri_04
+            kind: manual
+            reason: not-machine-evaluable
+            statement: Credits will be used for product development and not for reselling services or cryptocurrency mining.
+          - criterion_id: cri_05
+            kind: manual
+            reason: not-machine-evaluable
+            statement: Startup has at least one technical co-founder or an active development team continuously working on the product.
+          - criterion_id: cri_06
+            kind: manual
+            reason: not-machine-evaluable
+            statement: Applicant provides a clear business model, target market, and explanation of how cloud infrastructure will support growth.
+          - criterion_id: cri_07
+            kind: manual
+            reason: vendor-discretion
+            statement: CloudingHost reviews the product potential, team strength, and infrastructure fit before approving the application.
+    roles:
+      terms_authority_entity_id: ent_01m01xe0ecrzykz016qy84neg5
+      access_operator_entity_id: ent_01m01xe0ecrzykz016qy84neg5
+    access:
+      availability: public
+      method: form
+      url: https://www.cloudinghost.com/en/startup-program/
+    source_ids:
+      - src_a67bc76fdd7c15bc26a5c6b57a07155a836cc8edd911cbff55f0ac492d3c4989
