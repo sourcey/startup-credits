@@ -1,0 +1,86 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kzj3s1r7tcmdekw2c698xkmy
+slug: fastpix
+slug_aliases: []
+name: FastPix
+domains:
+  - value: fastpix.com
+    role: primary
+    valid_from: 2026-08-09T01:56:55.850Z
+category: hosting-infra
+description: FastPix provides APIs for video encoding, streaming, transformation, analytics, and AI-powered media workflows.
+links:
+  site: https://fastpix.com
+sources:
+  - source_id: src_9fbdd64193ae37a1d8674af0129e3e5e5b0415ccb32b487fb2f730e7fed86820
+    url: https://fastpix.com/startup-program
+programs:
+  - program_id: prg_01kzj3s1r9vvh9rnc7wn3h1wzj
+    program_slug: fastpix-startup-program
+    program_slug_aliases: []
+    title: FastPix Startups Program
+    summary: FastPix helps eligible early-stage startups build and scale video products with credits and usage benefits.
+    source_ids:
+      - src_9fbdd64193ae37a1d8674af0129e3e5e5b0415ccb32b487fb2f730e7fed86820
+offers:
+  - offer_id: off_01kzj3s1r9by1m708h9bbqszf7
+    program_id: prg_01kzj3s1r9vvh9rnc7wn3h1wzj
+    offer_slug: fastpix-startup-credits
+    offer_slug_aliases: []
+    title: FastPix startup credits and Video Data access
+    summary: Eligible startups receive $600 in FastPix credits for one year plus 100,000 Video Data views each month.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-09T01:56:55.850Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: $600 in free FastPix credits.
+          duration:
+            kind: exact
+            value: P1Y
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 60000
+            kind: exact
+        - benefit_id: ben_02
+          description: 100,000 Video Data views per month at no cost.
+          kind: free-service
+          service: FastPix Video Data with 100,000 streaming views per month
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.age_months
+            kind: predicate
+            operator: lt
+            statement: Company is less than 4 years old.
+            value:
+              type: number
+              value: 48
+          - criterion_id: cri_02
+            fact: company.funding_raised_usd
+            kind: predicate
+            operator: lt
+            statement: Company has raised less than $10 million in funding.
+            value:
+              type: number
+              value: 10000000
+          - criterion_id: cri_03
+            kind: manual
+            reason: vendor-discretion
+            statement: FastPix must approve the startup's application.
+    roles:
+      terms_authority_entity_id: ent_01kzj3s1r7tcmdekw2c698xkmy
+      access_operator_entity_id: ent_01kzj3s1r7tcmdekw2c698xkmy
+    access:
+      availability: public
+      method: form
+      url: https://fastpix.com/startup-program
+    source_ids:
+      - src_9fbdd64193ae37a1d8674af0129e3e5e5b0415ccb32b487fb2f730e7fed86820
