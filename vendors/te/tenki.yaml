@@ -1,0 +1,45 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kzpxkh3jzmz3pp370baryrfs
+slug: tenki
+slug_aliases: []
+name: Tenki
+domains:
+  - value: tenki.cloud
+    role: primary
+    valid_from: 2026-08-10T22:44:59.000Z
+category: infrastructure
+description: Cloud cost intelligence platform that helps startups monitor and optimize cloud spending with real-time visibility
+links:
+  site: https://tenki.cloud
+sources:
+  - source_id: src_56072bfd98a01a3dcbb4080e083b23067836d5c844bd564633030fe97a51d4c7
+    url: https://tenki.cloud/startups
+  - source_id: src_bc3b73957731682e4b0e8887dab5d5b8e339b72d8672d93f96d850f41d2ce558
+    url: https://tenki.cloud/pricing
+programs:
+  - program_id: prg_01kzpxkh3jkbq02kchv3vx6mqr
+    program_slug: tenki-for-startups
+    program_slug_aliases: []
+    title: Tenki for Startups
+    summary: Up to $50,000 in credits for approved startups including $10,000 base credits and 1:1 matching credits up to $40,000
+    source_ids:
+      - src_56072bfd98a01a3dcbb4080e083b23067836d5c844bd564633030fe97a51d4c7
+      - src_bc3b73957731682e4b0e8887dab5d5b8e339b72d8672d93f96d850f41d2ce558
+offers:
+  - offer_id: off_01kzpxkh3j2spe16ct3qqvwqkr
+    program_id: prg_01kzpxkh3jkbq02kchv3vx6mqr
+    offer_slug: startup-credits-10k
+    offer_slug_aliases: []
+    title: $10,000 Startup Credits
+    summary: $10,000 in Tenki platform credits for approved startups. Team plan ($200/month) required
+    source_ids:
+      - src_56072bfd98a01a3dcbb4080e083b23067836d5c844bd564633030fe97a51d4c7
+  - offer_id: off_01kzpxkh3jkmcwsgww3bmn7009
+    program_id: prg_01kzpxkh3jkbq02kchv3vx6mqr
+    offer_slug: matching-credits-40k
+    offer_slug_aliases: []
+    title: 1:1 Matching Credits up to $40,000
+    summary: Tenki matches cloud spending 1:1 with platform credits up to $40,000. Team plan ($200/month) required
+    source_ids:
+      - src_56072bfd98a01a3dcbb4080e083b23067836d5c844bd564633030fe97a51d4c7
+      - src_bc3b73957731682e4b0e8887dab5d5b8e339b72d8672d93f96d850f41d2ce558
