@@ -1,0 +1,69 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01m04qsmtzqz1xtg1v99hqqcvs
+slug: uxify
+slug_aliases: []
+name: Uxify
+domains:
+  - value: uxify.com
+    role: primary
+    valid_from: 2026-08-16T08:00:00.000Z
+category: observability
+description: Uxify combines real-user monitoring with AI agents that identify and improve website performance, engagement, and conversion issues.
+links:
+  site: https://uxify.com
+sources:
+  - source_id: src_d452d2d9239f9e7456e0b38968d946e602bdb6c9bb8b19626dc5113856936ec0
+    url: https://uxify.com/startup-program/
+programs:
+  - program_id: prg_01m04qsmtzt696sdq4wedrt163
+    program_slug: uxify-for-startups
+    program_slug_aliases: []
+    title: Uxify for Startups
+    summary: Uxify gives eligible funded early-stage teams agent credits and an ongoing discount on the full Uxify subscription.
+    source_ids:
+      - src_d452d2d9239f9e7456e0b38968d946e602bdb6c9bb8b19626dc5113856936ec0
+offers:
+  - offer_id: off_01m04qsmtz9ysvd79gm3wdpm59
+    program_id: prg_01m04qsmtzt696sdq4wedrt163
+    offer_slug: five-thousand-dollars-agent-credits-and-twenty-percent-off
+    offer_slug_aliases: []
+    title: $5,000 in agent credits and 20% off
+    summary: Approved startups get $5,000 in Uxify agent credits and 20% off their subscription for as long as they remain with Uxify.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-16T08:00:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: $5,000 in credits for running Uxify agents
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 500000
+            kind: exact
+        - applies_to: Uxify subscription
+          benefit_id: ben_02
+          description: 20% discount for as long as the startup stays with Uxify
+          kind: discount
+          percentage:
+            basis_points: 2000
+            kind: exact
+      consideration:
+        kind: variable
+        description: An active paid Uxify subscription is required after approval; the subscription is billed month to month at the discounted price.
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Applicant must be a startup under five years old, backed by VC or investor funding, with a live website or one launching soon.
+    roles:
+      terms_authority_entity_id: ent_01m04qsmtzqz1xtg1v99hqqcvs
+      access_operator_entity_id: ent_01m04qsmtzqz1xtg1v99hqqcvs
+    access:
+      availability: public
+      method: form
+      url: https://uxify.com/startup-program/
+    source_ids:
+      - src_d452d2d9239f9e7456e0b38968d946e602bdb6c9bb8b19626dc5113856936ec0
