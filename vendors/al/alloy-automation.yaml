@@ -1,0 +1,59 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kzqxh24qdbtqsbeabq9t38p5
+slug: alloy-automation
+slug_aliases: []
+name: Alloy Automation
+domains:
+  - value: runalloy.com
+    role: primary
+    valid_from: 2026-08-11T08:02:52.000Z
+category: apis-integration
+description: Alloy Automation provides an enterprise-grade integration platform for AI agents, embedded integrations, and connectivity APIs.
+links:
+  site: https://runalloy.com
+sources:
+  - source_id: src_d3652e50463be60a6623a6eccd13ac8774f19a14825b03ecbc1f39b299532221
+    url: https://runalloy.com/
+  - source_id: src_112163ec6d615e38343a0a2ea85fc6c5d9091715fb20711fe2c8e5578900438a
+    url: https://runalloy.com/startups/
+programs:
+  - program_id: prg_01kzqxh24rpp58d0n26q7jbtwq
+    program_slug: alloy-automation-for-startups
+    program_slug_aliases: []
+    title: Alloy Automation for Startups
+    summary: Alloy Automation invites startups to apply for discounted access to its integration solutions.
+    source_ids:
+      - src_112163ec6d615e38343a0a2ea85fc6c5d9091715fb20711fe2c8e5578900438a
+offers:
+  - offer_id: off_01kzqxh24rk3pvngyq6kkjv9r7
+    program_id: prg_01kzqxh24rpp58d0n26q7jbtwq
+    offer_slug: alloy-startup-program-benefit
+    offer_slug_aliases: []
+    title: Alloy Automation Startup Program Benefit
+    summary: Startups can apply for a vendor-determined benefit on Alloy's integration solutions.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-11T08:02:52.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Vendor-determined startup benefit on Alloy integration solutions
+          kind: other
+      consideration:
+        description: The public startup page does not state the benefit value or resulting price.
+        kind: unknown
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_01
+        statement: Alloy determines qualification from the submitted startup application.
+        reason: vendor-discretion
+    roles:
+      terms_authority_entity_id: ent_01kzqxh24qdbtqsbeabq9t38p5
+      access_operator_entity_id: ent_01kzqxh24qdbtqsbeabq9t38p5
+    access:
+      availability: public
+      method: form
+      url: https://runalloy.com/startups/
+    source_ids:
+      - src_112163ec6d615e38343a0a2ea85fc6c5d9091715fb20711fe2c8e5578900438a
