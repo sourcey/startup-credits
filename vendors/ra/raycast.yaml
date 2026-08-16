@@ -1,0 +1,40 @@
+entity:
+  id: ent_01kzhv92bd5czfm3fc2q47dwpm
+  slug: raycast
+  name: Raycast
+  website: https://www.raycast.com
+  description: >-
+    Blazingly fast, extendable macOS launcher with built-in AI, extensions, and productivity tools.
+  categories:
+    - productivity
+    - developer-tools
+
+programs:
+  - id: prg_01kzhv92bemsem7ymm49g47xn4
+    name: Raycast Affiliate Program
+    description: >-
+      Affiliate program for referring Raycast Pro subscriptions to your startup community.
+    source_id: src_01kzhv92bez0rvh05x4mtykh8d
+    eligibility:
+      - Open to all companies with a developer audience
+
+offers:
+  - id: off_01kzhv92be4yg26pfpf4mcx8r1
+    program_id: prg_01kzhv92bemsem7ymm49g47xn4
+    name: Affiliate Commission
+    summary: >-
+      Earn commissions on Raycast Pro referrals with custom tracking and payouts
+    economics:
+      type: other
+      value: 2000
+      currency: USD
+    duration: ongoing
+    source_id: src_01kzhv92bez0rvh05x4mtykh8d
+    category: saas
+
+sources:
+  - id: src_01kzhv92bez0rvh05x4mtykh8d
+    url: https://www.raycast.com
+    retrieved: "2025-08-09"
+    type: webpage
+    language: en
