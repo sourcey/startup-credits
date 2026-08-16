@@ -1,0 +1,72 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kzm9f8p0mymdshyxcb8ftwbw
+slug: runway
+slug_aliases: []
+name: Runway
+domains:
+  - value: runway.com
+    role: primary
+    valid_from: 2026-08-09T22:14:39.000Z
+category: ai-ml
+description: Runway is building foundational Real-World Intelligence models that understand, simulate, and act in the world, with Creative, Developer, and Robotics platforms built on top of them.
+links:
+  site: https://runway.com
+  pricing: https://runway.com/pricing
+sources:
+  - source_id: src_c10207e006a25de9c85019ff4f375cf2f24db00918a5b99239aa59766d75d9de
+    url: https://runway.com/product/builders
+  - source_id: src_cd2631bd200059052c0bb8852812f7019f9fe0c45043f5dfbf92dc723e835ceb
+    url: https://runway.com
+  - source_id: src_da710c4a1ccfebfeee967df903fde39b4506df763d7c7ca724e64a8bf273bd90
+    url: https://runway.com/pricing
+programs:
+  - program_id: prg_01kzm9f8p2ew76m9g6g7t66q3y
+    program_slug: runway-builders
+    program_slug_aliases: []
+    title: Runway Builders
+    summary: Runway Builders gives Seed to Series C startups free API credits, higher usage tiers, early access to Runway Characters, and direct support from the Runway team to build with Runway's models.
+    source_ids:
+      - src_c10207e006a25de9c85019ff4f375cf2f24db00918a5b99239aa59766d75d9de
+offers:
+  - offer_id: off_01kzm9f8p3mm01hhp6dg8szjtt
+    program_id: prg_01kzm9f8p2ew76m9g6g7t66q3y
+    offer_slug: runway-builders-500k-api-credits
+    offer_slug_aliases: []
+    title: Runway Builders - up to 500,000 free API credits
+    summary: Seed to Series C startups accepted into Runway Builders get up to 500,000 free API credits, Tier 5 API usage limits, early access to the Runway Characters API, and a private Builders community with Slack, training, and direct support.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-09T22:14:39.000Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_01
+          description: Up to 500,000 free Runway API credits to start building immediately.
+          kind: other
+        - benefit_id: ben_02
+          description: Tier 5 API access, Runway's highest API usage tier.
+          kind: other
+        - benefit_id: ben_03
+          description: Early access to Runway Characters, Runway's conversational avatar API.
+          kind: other
+        - benefit_id: ben_04
+          description: Private Runway Builders community with Slack access, training sessions, and direct support from the Runway team.
+          kind: other
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - kind: manual
+            criterion_id: cri_01
+            statement: Seed to Series C startup.
+            reason: external-verification
+    roles:
+      terms_authority_entity_id: ent_01kzm9f8p0mymdshyxcb8ftwbw
+      access_operator_entity_id: ent_01kzm9f8p0mymdshyxcb8ftwbw
+    access:
+      availability: public
+      method: form
+      url: https://runway.com/product/builders
+    source_ids:
+      - src_c10207e006a25de9c85019ff4f375cf2f24db00918a5b99239aa59766d75d9de
