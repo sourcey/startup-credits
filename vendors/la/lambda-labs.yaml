@@ -1,0 +1,46 @@
+entity:
+  id: ent_01kzhefjk9xeeav0pgqk5gg83h
+  slug: lambda-labs
+  name: Lambda Labs
+  website: https://lambda.ai
+  description: >-
+    Lambda provides GPU cloud infrastructure for AI/ML workloads, offering
+    on-demand access to H100, A100, and GH200 instances for training,
+    fine-tuning, and inference.
+  categories:
+    - cloud
+    - ai-ml
+
+programs:
+  - id: prg_01kzhefjk9zzf9aptze68t01be
+    name: Lambda Research Grant
+    description: >-
+      Competitive, application-based grant offering qualifying AI researchers
+      up to $5,000 in Lambda cloud credits on high-end GPU instances, plus
+      featured-project exposure for accepted work.
+    source_id: src_01kzhefjk9ky59hv39yd3x20zw
+    eligibility:
+      - research
+      - ai-ml
+
+offers:
+  - id: off_01kzhefjk9tpde4p1varfe4rzd
+    program_id: prg_01kzhefjk9zzf9aptze68t01be
+    name: Lambda Research Grant — Up to $5,000 Cloud GPU Credits
+    summary: >-
+      Up to $5,000 in GPU cloud credits on Lambda Instances for qualifying
+      AI researchers. Application-based with featured-project exposure.
+    economics:
+      type: credit
+      value: 5000
+      currency: USD
+    duration: one-time
+    source_id: src_01kzhefjk9ky59hv39yd3x20zw
+    category: cloud
+
+sources:
+  - id: src_01kzhefjk9ky59hv39yd3x20zw
+    url: https://lambda.ai/research
+    retrieved: "2026-08-08"
+    type: webpage
+    language: en
