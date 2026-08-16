@@ -1,0 +1,77 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kzfhgdp25xppdtqpn61qjmgg
+slug: couchbase
+slug_aliases: []
+name: Couchbase
+domains:
+  - value: couchbase.com
+    role: primary
+    valid_from: 2026-08-08T01:58:53.894Z
+category: databases
+description: Couchbase provides Capella, a managed cloud database platform with data, search, mobile, and AI development capabilities.
+links:
+  site: https://www.couchbase.com
+sources:
+  - source_id: src_252bd83a706a5f2bc428ffba12bd515a968bd9c93d7140e45d99eede9baf6ab2
+    url: https://info.couchbase.com/aws-activate.html
+  - source_id: src_1b6379b5aceb61ee563ea92965c0c3f806bfc92561cf96b3ef434395b55a4be2
+    url: https://info.couchbase.com/aws-activate.html?A3POPC=%24%7Bpromocode%7D
+programs:
+  - program_id: prg_01kzfhgdp58vzktprrn81fdtnk
+    program_slug: capella-develop-starter-kit-promotion
+    program_slug_aliases:
+      - capella-aws-activate-google-cloud-startup-promotion
+    title: Couchbase Capella Develop Starter Kit Promotion
+    summary: New Couchbase Capella customers can apply for a free Capella Develop Starter Kit advertised at a $12,750 value.
+    source_ids:
+      - src_252bd83a706a5f2bc428ffba12bd515a968bd9c93d7140e45d99eede9baf6ab2
+offers:
+  - offer_id: off_01kzfhgdp527b5w7xhkfj7bk0s
+    program_id: prg_01kzfhgdp58vzktprrn81fdtnk
+    offer_slug: capella-develop-starter-kit
+    offer_slug_aliases: []
+    title: $12,750 Couchbase Capella Develop Starter Kit
+    summary: New customers can receive 5,000 Capella Enterprise Credits, virtual onboarding and three consulting days, plus one Associate Developer Certification.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-08T01:58:53.894Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_01
+          description: 5,000 Capella Enterprise Credits with a stated value of $10,000
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 1000000
+            kind: exact
+        - benefit_id: ben_02
+          description: White-glove virtual onboarding and three consulting days, with a stated value of $2,700
+          kind: free-service
+          service: Couchbase virtual onboarding and consulting
+        - benefit_id: ben_03
+          description: One Associate Developer Certification, with a stated value of $50
+          kind: free-service
+          service: Couchbase Associate Developer Certification
+    eligibility:
+      rule:
+        criterion_id: cri_02
+        fact: company.is_current_customer
+        kind: predicate
+        operator: eq
+        statement: Applicant must be a new Couchbase Capella customer.
+        value:
+          type: boolean
+          value: false
+    roles:
+      terms_authority_entity_id: ent_01kzfhgdp25xppdtqpn61qjmgg
+      access_operator_entity_id: ent_01kzfhgdp25xppdtqpn61qjmgg
+    access:
+      availability: membership
+      method: form
+      url: https://info.couchbase.com/aws-activate.html
+    source_ids:
+      - src_252bd83a706a5f2bc428ffba12bd515a968bd9c93d7140e45d99eede9baf6ab2
+      - src_1b6379b5aceb61ee563ea92965c0c3f806bfc92561cf96b3ef434395b55a4be2
