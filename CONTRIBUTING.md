@@ -137,3 +137,39 @@ rm -rf "${work}"
 ```
 
 This is the same pinned executable used by CI, not a second validator.
+
+---
+
+## 🚀 Quick Reference: Adding a Vendor
+
+### Minimal YAML template
+```yaml
+# vendors/{vendor-slug}.yaml
+name: "Vendor Name"
+program: "Startup Program Name"
+url: "https://vendor.com/startups"
+category: cloud  # cloud | saas | finance | legal | other
+discount: "Description of the startup discount"
+requirements:
+  - "Requirement 1"
+  - "Requirement 2"
+region: global
+verified: YYYY-MM-DD
+```
+
+### Validation checklist
+- [ ] File placed in correct `vendors/` directory
+- [ ] YAML syntax valid
+- [ ] All required fields present (name, program, url, category, discount)
+- [ ] URL is accessible and points to the startup program page
+- [ ] Region field is specified
+- [ ] Verified date is current
+
+### Common categories
+| Category | Description |
+|----------|-------------|
+| `cloud` | Cloud infrastructure credits |
+| `saas` | Software-as-a-Service discounts |
+| `finance` | Banking, accounting, payments |
+| `legal` | Legal services, incorporation |
+| `other` | Miscellaneous startup perks |
