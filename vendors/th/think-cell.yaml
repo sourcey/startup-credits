@@ -1,0 +1,74 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01m04qsmtz281fsav9b0hpp0f2
+slug: think-cell
+slug_aliases: []
+name: think-cell
+domains:
+  - value: think-cell.com
+    role: primary
+    valid_from: 2026-08-16T08:00:00.000Z
+category: productivity
+description: think-cell is a PowerPoint productivity tool for creating and updating charts, data-heavy presentations, and business reports.
+links:
+  site: https://www.think-cell.com
+sources:
+  - source_id: src_613d512fc7aa2e4f2a88141e41343fc055ef1902440f7c7d06600a78ef3fb00e
+    url: https://www.think-cell.com/en/order/startup-program
+programs:
+  - program_id: prg_01m04qsmtzphaq6vgb106yyyb0
+    program_slug: think-cell-startup-program
+    program_slug_aliases: []
+    title: think-cell Startup Program
+    summary: think-cell offers qualifying young companies discounted licenses for its PowerPoint charting and productivity software during their first two years.
+    source_ids:
+      - src_613d512fc7aa2e4f2a88141e41343fc055ef1902440f7c7d06600a78ef3fb00e
+offers:
+  - offer_id: off_01m04qsmtzr1n8mrwcp544e0h5
+    program_id: prg_01m04qsmtzphaq6vgb106yyyb0
+    offer_slug: ninety-percent-first-year-fifty-percent-second-year
+    offer_slug_aliases: []
+    title: 90% off year one and 50% off year two
+    summary: Eligible startups receive 90% off think-cell licenses in the first year and 50% off in the second year.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-16T08:00:00.000Z
+    economics:
+      benefits:
+        - applies_to: think-cell licenses
+          benefit_id: ben_01
+          description: 90% discount in the first year
+          duration:
+            kind: exact
+            value: P1Y
+          kind: discount
+          percentage:
+            basis_points: 9000
+            kind: exact
+        - applies_to: think-cell licenses
+          benefit_id: ben_02
+          description: 50% discount in the second year
+          duration:
+            kind: exact
+            value: P1Y
+          kind: discount
+          percentage:
+            basis_points: 5000
+            kind: exact
+      consideration:
+        kind: variable
+        description: A paid think-cell license order is required after approval, with the applicable first- or second-year discount applied.
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Applicant must be a company less than eight years old with fewer than 500 full-time employees and an English website, and must not be a current or recent think-cell customer or a consultancy.
+    roles:
+      terms_authority_entity_id: ent_01m04qsmtz281fsav9b0hpp0f2
+      access_operator_entity_id: ent_01m04qsmtz281fsav9b0hpp0f2
+    access:
+      availability: public
+      method: form
+      url: https://www.think-cell.com/en/order/startup-program
+    source_ids:
+      - src_613d512fc7aa2e4f2a88141e41343fc055ef1902440f7c7d06600a78ef3fb00e
