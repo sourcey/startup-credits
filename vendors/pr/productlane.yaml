@@ -1,0 +1,86 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01m009tnr051hc1b503f146gdd
+slug: productlane
+slug_aliases: []
+name: Productlane
+domains:
+  - value: productlane.com
+    role: primary
+    valid_from: 2026-08-14T14:11:46.563Z
+category: support
+description: Productlane is a Linear-native customer support and feedback platform with an inbox, AI Agent, help center, feedback portal, roadmaps, and changelog.
+links:
+  site: https://productlane.com
+sources:
+  - source_id: src_f817a6932752d1a644db296f5c070fffbbd3ff487534aaecde7bde3dd6ac701a
+    url: https://hello.productlane.com/docs/administration/startup-program
+  - source_id: src_bb886308b11653023abdef003fd921bfd0adca673e577088235553d624a75ce4
+    url: https://productlane.com/startup
+programs:
+  - program_id: prg_01m009tnr31ee04h1fabmjq94a
+    program_slug: productlane-early-stage
+    program_slug_aliases: []
+    title: Productlane Early Stage
+    summary: Productlane's Early Stage program gives eligible startups discounted access to its Scale plan for a fixed 6 full seats and 20 viewer seats over their first 3 years.
+    source_ids:
+      - src_f817a6932752d1a644db296f5c070fffbbd3ff487534aaecde7bde3dd6ac701a
+      - src_bb886308b11653023abdef003fd921bfd0adca673e577088235553d624a75ce4
+offers:
+  - offer_id: off_01m009tnr31h1hgf48k8dftft3
+    program_id: prg_01m009tnr31ee04h1fabmjq94a
+    offer_slug: early-stage-scale-plan-discount
+    offer_slug_aliases: []
+    title: Early Stage Scale plan discount
+    summary: Eligible startups get the Scale plan for 6 full seats at $65/month in year 1 (89% off) and $451/month in year 2 (24% off), plus 20 viewer seats and 200 free AI Agent resolutions monthly in year 1.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-14T14:11:46.563Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 89% off the Scale plan for the first year
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 8900
+          duration:
+            kind: exact
+            value: P1Y
+          applies_to: Productlane Scale plan with 6 full seats and 20 viewer seats
+        - benefit_id: ben_02
+          description: 24% off the Scale plan for the second year
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 2400
+          duration:
+            kind: exact
+            value: P1Y
+          applies_to: Productlane Scale plan with 6 full seats and 20 viewer seats
+        - benefit_id: ben_03
+          description: 200 free AI Agent resolutions per month during the first year
+          kind: free-service
+          service: 200 Productlane AI Agent resolutions per month
+          duration:
+            kind: exact
+            value: P1Y
+      consideration:
+        kind: variable
+        description: The annual contract is billed monthly at $65 per month in year 1 and $451 per month in year 2 for the fixed seat bundle.
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: external-verification
+        statement: Applicant must have raised less than $10 million, have fewer than 15 employees, have no prior paid Productlane plan, and request no more than 6 full seats.
+    roles:
+      terms_authority_entity_id: ent_01m009tnr051hc1b503f146gdd
+      access_operator_entity_id: ent_01m009tnr051hc1b503f146gdd
+    access:
+      availability: public
+      method: form
+      url: https://productlane.com/startup
+    terms_url: https://hello.productlane.com/docs/administration/startup-program
+    source_ids:
+      - src_f817a6932752d1a644db296f5c070fffbbd3ff487534aaecde7bde3dd6ac701a
+      - src_bb886308b11653023abdef003fd921bfd0adca673e577088235553d624a75ce4
