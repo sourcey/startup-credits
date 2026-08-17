@@ -14,6 +14,8 @@ links:
 sources:
   - source_id: src_d485368b4bc50346432585240d38eb2979a6a9ff51889715358912f958b358c9
     url: https://www.signzy.com/fintech-apis/startups
+  - source_id: src_f9b0f096aeef1953750bf59d06d5885db96a1938a7580976db704e7c817110a4
+    url: https://www.signzy.com/contact-us
 programs:
   - program_id: prg_01m044w20qv56701grmdrm97m7
     program_slug: signzy-for-startups
@@ -66,6 +68,7 @@ offers:
     access:
       availability: public
       method: form
-      url: https://www.signzy.com/fintech-apis/startups
+      url: https://www.signzy.com/contact-us
     source_ids:
       - src_d485368b4bc50346432585240d38eb2979a6a9ff51889715358912f958b358c9
+      - src_f9b0f096aeef1953750bf59d06d5885db96a1938a7580976db704e7c817110a4
