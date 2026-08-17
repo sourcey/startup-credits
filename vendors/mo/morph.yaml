@@ -19,6 +19,10 @@ sources:
     url: https://www.morphllm.com/llms-full.txt
   - source_id: src_9e457c8c6d21f5c8463717ab3da2ab3870c59f51e3ab6d9869ba5580244445e9
     url: https://www.morphllm.com/fast-apply-model
+  - source_id: src_d503a097a9a4f91583e11b0a8f58b9b1e4a38e1cbc30bf9252d913dfa96ecf08
+    url: https://www.morphllm.com/pricing
+  - source_id: src_4f43339d67097579cfaf71c6d094dafa775e3c23aa80f08a08d10dfc12e03cde
+    url: https://docs.morphllm.com/auth
 programs:
   - program_id: prg_01kzfxr4bgb4vwt10tkdj03zvv
     program_slug: morph-api-platform
@@ -54,14 +58,17 @@ offers:
       rule:
         criterion_id: cri_01
         kind: constant
-        statement: Morph publicly offers a free tier for its OpenAI-compatible API.
+        statement: Morph lists a Free plan at $0 per month.
         value: true
     roles:
       terms_authority_entity_id: ent_01kzfxr4bf8jmafengwajh5vd2
       access_operator_entity_id: ent_01kzfxr4bf8jmafengwajh5vd2
     access:
       availability: public
-      instructions: Sign up at Morph's API key page, generate an API key, and use it with the OpenAI-compatible API.
+      instructions: Create a Morph account or sign in, then generate a new API key from the API keys section.
       method: other
+      url: https://morphllm.com/dashboard/api-keys
     source_ids:
       - src_9e457c8c6d21f5c8463717ab3da2ab3870c59f51e3ab6d9869ba5580244445e9
+      - src_d503a097a9a4f91583e11b0a8f58b9b1e4a38e1cbc30bf9252d913dfa96ecf08
+      - src_4f43339d67097579cfaf71c6d094dafa775e3c23aa80f08a08d10dfc12e03cde
