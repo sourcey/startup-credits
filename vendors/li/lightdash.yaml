@@ -1,0 +1,89 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01m072vm4nws1463n7kdyt0dd6
+slug: lightdash
+slug_aliases: []
+name: Lightdash
+domains:
+  - value: lightdash.com
+    role: primary
+    valid_from: 2026-08-17T05:24:39.038Z
+category: data-analytics
+description: Lightdash is an open-source business intelligence platform that turns a dbt project into a self-serve BI stack with a semantic layer for defining shared metrics.
+links:
+  site: https://lightdash.com
+sources:
+  - source_id: src_cf62c2ede5b77e77a0cd9e0a0158cbd26a4529132e3044c18e637868295558cb
+    url: https://lightdash.com/startups
+programs: []
+offers:
+  - offer_id: off_01m072vm4psfa3w3xrgp12rrhd
+    offer_slug: lightdash-for-startups
+    offer_slug_aliases: []
+    title: Lightdash for Startups
+    summary: Startups under five years old with less than $7.5M raised get 50% off Lightdash Cloud or Pro for 12 months, worth up to $18,000 in credits, plus onboarding calls and a dedicated support channel.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-17T05:24:39.038Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 50% off Lightdash Cloud or Pro for 12 months.
+          kind: discount
+          duration:
+            kind: exact
+            value: P12M
+          percentage:
+            kind: exact
+            basis_points: 5000
+        - benefit_id: ben_02
+          description: Up to $18,000 in Lightdash credits.
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 1800000
+            kind: up-to
+        - benefit_id: ben_03
+          description: Personalized onboarding, with kickoff and training calls run by the Lightdash data team.
+          kind: other
+        - benefit_id: ben_04
+          description: The 50% discount can be extended by a further 6 months by referring other startups to the program.
+          kind: other
+        - benefit_id: ben_05
+          description: A dedicated support channel giving direct access to the product team, including feedback and beta features.
+          kind: other
+        - benefit_id: ben_06
+          description: Lightdash merchandise for the team.
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.age_months
+            kind: predicate
+            operator: lt
+            statement: The company is less than 5 years old.
+            value:
+              type: number
+              value: 60
+          - criterion_id: cri_02
+            fact: company.funding_raised_usd
+            kind: predicate
+            operator: lt
+            statement: The company has less than $7.5M in funding.
+            value:
+              type: number
+              value: 7500000
+    roles:
+      terms_authority_entity_id: ent_01m072vm4nws1463n7kdyt0dd6
+      access_operator_entity_id: ent_01m072vm4nws1463n7kdyt0dd6
+    access:
+      availability: public
+      method: form
+      url: https://lightdash.com/startups
+      instructions: Apply to the program from the Lightdash for Startups page, or contact the Lightdash team from the same page.
+    source_ids:
+      - src_cf62c2ede5b77e77a0cd9e0a0158cbd26a4529132e3044c18e637868295558cb
