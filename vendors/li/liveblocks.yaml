@@ -8,7 +8,7 @@ domains:
     role: primary
     valid_from: 2026-08-13T21:15:00.000Z
 category: devtools-other
-description: Liveblocks is a realtime collaboration infrastructure platform that lets teams build multiplayer presence, storage, and commenting features into their products.
+description: Liveblocks provides realtime infrastructure for handling concurrent edits on shared data, letting teams build multiplayer presence, storage, and commenting into their products.
 links:
   site: https://liveblocks.io
 sources:
@@ -16,6 +16,8 @@ sources:
     url: https://liveblocks.io/startups
   - source_id: src_3584a0636b99ca380ad6bfc2c84ac0acd94e470107a488fe47d21d07e04bb497
     url: https://liveblocks.io
+  - source_id: src_e09bdb3f0b9722fe562c94d8b3e95f4b3976b131c0fa96405d27b920bf95adcd
+    url: https://liveblocks.io/docs
 programs: []
 offers:
   - offer_id: off_01kzybxx41a9tkr0zpcxe79p73
