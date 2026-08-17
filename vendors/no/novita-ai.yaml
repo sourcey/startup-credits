@@ -1,0 +1,99 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kzhvpw2tkscw7v9tyeayjvqm
+slug: novita-ai
+slug_aliases: []
+name: Novita AI
+domains:
+  - value: novita.ai
+    role: primary
+    valid_from: 2026-08-08T23:34:00Z
+category: ai-ml
+description: Novita AI provides model APIs and isolated agent sandboxes for building and operating AI products and agent workflows.
+links:
+  site: https://novita.ai
+sources:
+  - source_id: src_29ca78ec28f0bafe1d80ca79f71ff1e05ecb79edbdd8269179d9b3733dd41b48
+    url: https://startups.novita.ai/
+  - source_id: src_a496a9d1b238a4d60819342eca257956c8e3900c31388dcdae595398e5422298
+    url: https://docs.google.com/forms/d/e/1FAIpQLSfU4-JTNobsrS24ZuTu6aGqN7nZxFgVFJc8JCQH7tAy624P4Q/viewform
+programs:
+  - program_id: prg_01kzhvpw41qm02wvbsh8r7kbk1
+    program_slug: novita-ai-for-startups
+    program_slug_aliases: []
+    title: Novita AI for Startups
+    summary: Novita AI supports eligible venture-backed AI startups with staged usage credits, engineering support, and co-marketing opportunities.
+    source_ids:
+      - src_29ca78ec28f0bafe1d80ca79f71ff1e05ecb79edbdd8269179d9b3733dd41b48
+      - src_a496a9d1b238a4d60819342eca257956c8e3900c31388dcdae595398e5422298
+offers:
+  - offer_id: off_01kzhvpw42c2xn3a1qfjqp32fz
+    program_id: prg_01kzhvpw41qm02wvbsh8r7kbk1
+    offer_slug: up-to-10000-usage-credits
+    offer_slug_aliases: []
+    title: Up to $10,000 in Novita AI usage credits
+    summary: Eligible startups can receive up to $10,000 in credits across Model APIs and Agent Sandbox, plus dedicated engineering support and co-marketing opportunities.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-08T23:34:00Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to $10,000 in usage credits, split up to $5,000 for Model APIs and up to $5,000 for Agent Sandbox.
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 1000000
+            kind: up-to
+        - benefit_id: ben_02
+          description: Dedicated support from Novita engineers through Slack or another agreed platform.
+          kind: other
+        - benefit_id: ben_03
+          description: Potential co-marketing spotlight across Novita AI's X, LinkedIn, Discord, and newsletter channels.
+          kind: other
+      consideration:
+        kind: variable
+        description: Up to $1,000 is provided upfront; the next $5,000 is matched one-for-one against spend, and the final $4,000 is matched at one credit dollar for every two dollars spent.
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.stage
+            kind: predicate
+            operator: in
+            statement: Company is venture-backed at pre-seed through early Series B, with its latest round no more than 12 months ago.
+            value:
+              type: string-set
+              values:
+                - pre-seed
+                - seed
+                - series-a
+                - series-b
+          - criterion_id: cri_02
+            kind: manual
+            reason: external-verification
+            statement: Company was founded within the last three years.
+          - criterion_id: cri_03
+            kind: manual
+            reason: external-verification
+            statement: AI is central to the product, with active agent-sandbox usage in production.
+          - criterion_id: cri_04
+            kind: manual
+            reason: external-verification
+            statement: Applicant is a new Novita AI user.
+          - criterion_id: cri_05
+            kind: manual
+            reason: vendor-discretion
+            statement: Novita AI reviews the company's stage, team, spend, backing, traction, and expected usage and determines final eligibility and credit amount.
+    roles:
+      terms_authority_entity_id: ent_01kzhvpw2tkscw7v9tyeayjvqm
+      access_operator_entity_id: ent_01kzhvpw2tkscw7v9tyeayjvqm
+    access:
+      availability: public
+      method: form
+      url: https://docs.google.com/forms/d/e/1FAIpQLSfU4-JTNobsrS24ZuTu6aGqN7nZxFgVFJc8JCQH7tAy624P4Q/viewform
+    terms_url: https://startups.novita.ai/
+    source_ids:
+      - src_29ca78ec28f0bafe1d80ca79f71ff1e05ecb79edbdd8269179d9b3733dd41b48
+      - src_a496a9d1b238a4d60819342eca257956c8e3900c31388dcdae595398e5422298
