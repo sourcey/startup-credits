@@ -1,0 +1,118 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01m06p1sm9jhcf9tby1mwma9px
+slug: legionedge
+slug_aliases: []
+name: LegionEdge
+domains:
+  - value: legionedge.ai
+    role: primary
+    valid_from: 2026-08-17T01:43:29.909Z
+category: ai-ml
+description: LegionEdge is an AI research lab building protocols, datasets, and efficient methods for intelligent applications.
+links:
+  site: https://legionedge.ai
+  pricing: https://legionedge.ai/pricing
+sources:
+  - source_id: src_923ce7e912a3edfb751eff2ed5f8c967f451b7807ff86e9da8f5d9bc313db4af
+    url: https://legionedge.ai/programs/startup
+  - source_id: src_c387129d47f7e0fbb2dd344c6d1a5a3ed899b4a421b5d9215eeb3d41baeb7025
+    url: https://legionedge.ai/pricing
+programs:
+  - program_id: prg_01m06p1sm9sbnqnen02n0dsn3n
+    program_slug: legionedge-startup-program
+    program_slug_aliases: []
+    title: LegionEdge Startup Program
+    summary: LegionEdge supports early-stage AI-native product teams with product credits, technical guidance, early access, community, and launch support.
+    source_ids:
+      - src_923ce7e912a3edfb751eff2ed5f8c967f451b7807ff86e9da8f5d9bc313db4af
+offers:
+  - offer_id: off_01m06p1sm9ekzn4ny9sp09kbqq
+    program_id: prg_01m06p1sm9sbnqnen02n0dsn3n
+    offer_slug: legionedge-startup-program
+    offer_slug_aliases: []
+    title: LegionEdge Startup Program
+    summary: Eligible AI-native startups can get up to $25,000 in Nokuva, Tavoc, and Foltrac product credits for 12 months, plus expert guidance, early access, community, and launch support.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-17T01:43:29.909Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to $25,000 in product credits across Nokuva, Tavoc, and Foltrac for 12 months
+          duration:
+            kind: exact
+            value: P1Y
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 2500000
+            kind: up-to
+        - benefit_id: ben_02
+          description: Monthly efficiency office hours with LegionEdge researchers
+          kind: other
+        - benefit_id: ben_03
+          description: One-to-one architecture reviews with LegionEdge engineers
+          kind: other
+        - benefit_id: ben_04
+          description: Early access to protocol drafts, product betas, and dataset releases
+          kind: other
+        - benefit_id: ben_05
+          description: Private founder community and quarterly cohort calls
+          kind: other
+        - benefit_id: ben_06
+          description: Launch support with potential newsletter and customer-story promotion
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.stage
+            kind: predicate
+            operator: in
+            statement: Company is at pre-seed, seed, or Series A stage
+            value:
+              type: string-set
+              values:
+                - pre-seed
+                - seed
+                - series-a
+          - criterion_id: cri_02
+            fact: company.funding_raised_usd
+            kind: predicate
+            operator: lt
+            statement: Company has raised less than $5,000,000
+            value:
+              type: number
+              value: 5000000
+          - criterion_id: cri_03
+            fact: company.employee_count
+            kind: predicate
+            operator: lt
+            statement: Team has fewer than 20 people
+            value:
+              type: number
+              value: 20
+          - criterion_id: cri_04
+            kind: manual
+            statement: The company is building a product where AI is core rather than an add-on feature
+            reason: not-machine-evaluable
+          - criterion_id: cri_05
+            kind: manual
+            statement: The company has not previously participated in the LegionEdge Startup Program
+            reason: external-verification
+    roles:
+      terms_authority_entity_id: ent_01m06p1sm9jhcf9tby1mwma9px
+      access_operator_entity_id: ent_01m06p1sm9jhcf9tby1mwma9px
+    access:
+      availability: public
+      method: form
+      url: https://legionedge.ai/programs/startup
+    terms_url: https://legionedge.ai/programs/startup
+    source_ids:
+      - src_923ce7e912a3edfb751eff2ed5f8c967f451b7807ff86e9da8f5d9bc313db4af
+      - src_c387129d47f7e0fbb2dd344c6d1a5a3ed899b4a421b5d9215eeb3d41baeb7025
+
