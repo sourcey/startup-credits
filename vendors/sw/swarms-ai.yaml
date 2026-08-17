@@ -82,7 +82,8 @@ offers:
       access_operator_entity_id: ent_01m02n118b55prh38w5pcw3cjk
     access:
       availability: public
-      method: form
-      url: https://www.swarms.ai/programs/startups
+      instructions: Use the Apply for Launch Tier link on the Swarms Startup Program page.
+      method: other
+      url: https://cal.com/swarms/startup-launch
     source_ids:
       - src_4c57bd0909378badc9006ac7f07152388649305ce752d30f52ff6d9380bf1e1e
