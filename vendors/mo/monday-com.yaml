@@ -1,0 +1,82 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01m06tq6nw0vsyng4fffj95rmm
+slug: monday-com
+slug_aliases: []
+name: monday.com
+domains:
+  - value: monday.com
+    role: primary
+    valid_from: 2026-08-17T03:02:25.372Z
+category: productivity
+description: monday.com is a work platform whose monday dev product gives engineering and product teams sprint planning, roadmaps, bug tracking, and release workflows in one workspace.
+links:
+  site: https://monday.com
+sources:
+  - source_id: src_692eb27c95d41d2905988758074247bb05c0031e3095aebbc8c678b846acbbc3
+    url: https://monday.com/ap/devforstartups
+  - source_id: src_0b1a5d49c66eda02eaefef641c2199fb529f816b118dc5847b7ad8a37b761ab8
+    url: https://monday.com/l/miscellaneous/startup/
+programs: []
+offers:
+  - offer_id: off_01m06tq6nx7s97gwamm1qxm5ft
+    offer_slug: monday-dev-startup-program
+    offer_slug_aliases: []
+    title: monday dev Startup Program
+    summary: Eligible early-stage startups can buy a one-year 10-seat monday dev Pro subscription for a one-off payment of $240, which monday.com states saves over $2,000 in the first year.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-17T03:02:25.372Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: A one-year subscription to a 10-seat monday dev Pro plan at $2 per seat per month, covering sprint management, roadmap and bug boards, burndown and velocity charts, sprint automations, and GitHub, GitLab, and CircleCI integrations.
+          kind: other
+      consideration:
+        amount:
+          currency: USD
+          minor_units: 24000
+        kind: fixed
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.employee_count
+            kind: predicate
+            operator: lte
+            statement: The organization is comprised of up to fifty employees.
+            value:
+              type: number
+              value: 50
+          - criterion_id: cri_02
+            fact: company.age_months
+            kind: predicate
+            operator: lte
+            statement: The organization was formed or established within the last two years from applying to the program.
+            value:
+              type: number
+              value: 24
+          - criterion_id: cri_03
+            fact: company.is_current_customer
+            kind: predicate
+            operator: eq
+            statement: The organization is not a monday.com paying customer at the time of applying to the program.
+            value:
+              type: boolean
+              value: false
+          - criterion_id: cri_04
+            kind: manual
+            reason: external-verification
+            statement: The organization is supported by a venture capital firm, startup accelerator, or incubator.
+    roles:
+      terms_authority_entity_id: ent_01m06tq6nw0vsyng4fffj95rmm
+      access_operator_entity_id: ent_01m06tq6nw0vsyng4fffj95rmm
+    access:
+      availability: public
+      method: form
+      url: https://monday.com/ap/devforstartups
+      instructions: Start a monday dev trial from the startup program page, complete the application form, and receive an access code by email once the application is approved.
+    terms_url: https://monday.com/l/miscellaneous/startup/
+    source_ids:
+      - src_692eb27c95d41d2905988758074247bb05c0031e3095aebbc8c678b846acbbc3
+      - src_0b1a5d49c66eda02eaefef641c2199fb529f816b118dc5847b7ad8a37b761ab8
