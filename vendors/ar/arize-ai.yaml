@@ -1,5 +1,5 @@
 schema_version: sourcey.vendor-authoring/v1alpha1
-entity_id: ent_01M06KTPSYX5YFNW871ZS2T86E
+entity_id: ent_cahpkek5wkew7sjvhjnk4h0epj
 slug: arize-ai
 slug_aliases: []
 name: Arize AI
@@ -15,7 +15,7 @@ sources:
   - source_id: src_0bd683a0cac1b118a328bbcf799c43b0cfee8888b2f673bbf7fc5d835f3f9103
     url: https://arize.com/sign-up-startups/
 programs:
-  - program_id: prg_01M06KTPT0SM1S3EY1HGH7Y9GJ
+  - program_id: prg_g0hfxv881q0052qsx70gek0hx9
     program_slug: arize-for-startups
     program_slug_aliases: []
     title: Arize for Startups
@@ -23,12 +23,12 @@ programs:
     source_ids:
       - src_0bd683a0cac1b118a328bbcf799c43b0cfee8888b2f673bbf7fc5d835f3f9103
 offers:
-  - offer_id: off_01M06KTPT08YS0VXFDB2TH9259
-    program_id: prg_01M06KTPT0SM1S3EY1HGH7Y9GJ
+  - offer_id: off_yr6jmb1hzgv3dj0ckbc26dk5em
+    program_id: prg_g0hfxv881q0052qsx70gek0hx9
     offer_slug: startup-pricing-on-arize-ax
     offer_slug_aliases: []
     title: Startup pricing on Arize AX
-    summary: Eligible startups receive special startup pricing on Arize AX, the managed AI engineering platform for tracing, evaluation, and guardrails.
+    summary: Eligible startups receive startup pricing on Arize AX.
     lifecycle:
       status: active
       effective_from: 2026-08-17T01:00:00.000Z
@@ -36,8 +36,7 @@ offers:
       benefits:
         - benefit_id: ben_01
           description: Startup pricing on Arize AX plans
-          kind: discount
-          service: Arize AX platform
+          kind: other
       consideration:
         kind: unknown
         description: Arize publishes startup pricing but does not state a fixed startup price or discount amount in the cited source.
@@ -48,8 +47,8 @@ offers:
         reason: external-verification
         statement: The applicant must be a startup that applies through the Arize for Startups form and is approved by Arize.
     roles:
-      terms_authority_entity_id: ent_01M06KTPSYX5YFNW871ZS2T86E
-      access_operator_entity_id: ent_01M06KTPSYX5YFNW871ZS2T86E
+      terms_authority_entity_id: ent_cahpkek5wkew7sjvhjnk4h0epj
+      access_operator_entity_id: ent_cahpkek5wkew7sjvhjnk4h0epj
     access:
       availability: public
       method: form
