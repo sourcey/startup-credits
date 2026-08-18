@@ -8,12 +8,16 @@ domains:
     role: primary
     valid_from: 2026-08-12T03:56:01.531Z
 category: hosting-infra
-description: Truobox provides virtual servers, web hosting, domains, storage, security, and related cloud infrastructure services.
+description: Truobox offers hosting services, virtual private servers (VPS), dedicated servers, domain registration, and cloud computing services.
 links:
   site: https://www.truobox.com/en/
 sources:
   - source_id: src_c69b51135973a5ff4de879cff747402d8780dee41f1395f9430cbe2dc682d9ad
     url: https://www.truobox.com/en/
+  - source_id: src_b7b0a4caafe272dd73327202fe5d0eb23eb1f6d33a049331899f48bd612e83b4
+    url: https://www.truobox.com/en/about/
+  - source_id: src_967fc15ef017c460b6cf644668ac58d8728b7bac5b555c9cecc5c8071ec89cbf
+    url: https://www.truobox.com/en/hosting/
   - source_id: src_e7657d8d6af580b20b837dd4b482205b9dd4eab8f22804f84e9f432d6c45b731
     url: https://www.truobox.com/en/startup-program/
   - source_id: src_6bf9e721ab86c664d67d40cba0043db47dedb19dc72e7ce05f93842923dae428
