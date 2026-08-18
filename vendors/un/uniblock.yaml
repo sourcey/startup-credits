@@ -13,35 +13,32 @@ links:
   site: https://uniblock.dev
 sources:
   - source_id: src_1e3e1af7692636d3b3d9fe564ceb8d6dfea798230b34a858f5bf3e9986d70f37
-    url: https://uniblock.website/startup-program
-  - source_id: src_9c2165c16f15354a363b73401f9d4824fd07c032e2f8004240b8bd822efe85d8
-    url: https://uniblock.website/legal/terms-of-service
+    url: https://uniblock.dev/startup-program
 programs:
   - program_id: prg_01kzgsex92gxjwvjjvnjwzt9j2
     program_slug: uniblock-startup-program
     program_slug_aliases: []
     title: Uniblock Startup Program
-    summary: Uniblock's startup program provides early-stage Web3 teams with credits for an annual plan spanning its routed blockchain-data provider stack.
+    summary: Uniblock's startup program provides early-stage blockchain-data teams with credits for its routed provider stack.
     source_ids:
       - src_1e3e1af7692636d3b3d9fe564ceb8d6dfea798230b34a858f5bf3e9986d70f37
-      - src_9c2165c16f15354a363b73401f9d4824fd07c032e2f8004240b8bd822efe85d8
 offers:
   - offer_id: off_01kzgsex92217e13he5fwjty6a
     program_id: prg_01kzgsex92gxjwvjjvnjwzt9j2
     offer_slug: up-to-10000-in-uniblock-credits
     offer_slug_aliases: []
     title: Up to $10,000 in Uniblock credits
-    summary: Eligible early-stage teams building on blockchain data receive up to $10,000 in credits for Uniblock's annual plan, with engineering support.
+    summary: Eligible early-stage blockchain-data teams can receive up to $10,000 in Uniblock credits, sized to their stage on a short call, with engineering support.
     lifecycle:
       status: active
       effective_from: 2026-08-08T13:37:07.362Z
     economics:
       consideration:
         kind: unknown
-        description: The public page says credits are included with the annual plan, while final terms and the credit amount are set on a call.
+        description: The public page does not state whether payment is required; the credit amount is scoped on a short call.
       benefits:
         - benefit_id: ben_01
-          description: Up to $10,000 in credits for the annual Uniblock plan.
+          description: Up to $10,000 in credits applied to the team's Uniblock plan.
           kind: credit
           value:
             amount:
@@ -55,7 +52,7 @@ offers:
       rule:
         kind: manual
         criterion_id: cri_01
-        statement: Must be an early-stage team building on blockchain data with a product live or in active development; a call confirms fit and sets the credit amount and terms.
+        statement: Must be an early-stage team building on blockchain data with a product live or in active development; a short call confirms fit and scopes the credits.
         reason: vendor-discretion
     roles:
       terms_authority_entity_id: ent_01kzgsex92c83d4ymd2gp1s9x8
@@ -63,7 +60,6 @@ offers:
     access:
       availability: public
       method: form
-      url: https://uniblock.website/startup-program
+      url: https://uniblock.dev/startup-program
     source_ids:
       - src_1e3e1af7692636d3b3d9fe564ceb8d6dfea798230b34a858f5bf3e9986d70f37
-      - src_9c2165c16f15354a363b73401f9d4824fd07c032e2f8004240b8bd822efe85d8
