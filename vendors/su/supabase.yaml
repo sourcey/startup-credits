@@ -1,0 +1,57 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kz6f50mpw4yzhv9f47pbttwk
+slug: supabase
+slug_aliases: []
+name: Supabase
+domains:
+  - value: supabase.com
+    role: primary
+    valid_from: 2026-08-04T14:50:00.000Z
+category: databases
+description: Supabase is an open-source Firebase alternative providing PostgreSQL database, authentication, and real-time subscriptions.
+links:
+  site: https://supabase.com
+sources:
+  - source_id: src_01kz6f50mpw4yzhv9f47pbttwk03
+    url: https://supabase.com/startup-program
+programs:
+  - program_id: prg_01kz6f50msrqvfz69z8a46e8kt
+    program_slug: supabase-startup-program
+    program_slug_aliases: []
+    title: Supabase Startup Program
+    summary: Supabase offers eligible early-stage startups database and infrastructure credits to build and ship products faster.
+    source_ids:
+      - src_01kz6f50mpw4yzhv9f47pbttwk03
+offers:
+  - offer_id: off_01kz6f50msc5qdzsg588nm2yb7
+    program_id: prg_01kz6f50msrqvfz69z8a46e8kt
+    offer_slug: supabase-startup-credits
+    offer_slug_aliases: []
+    title: Supabase Startup Credits
+    summary: Eligible early-stage startups receive Supabase platform credits for database, auth, and real-time infrastructure.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-04T14:50:00.000Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_primary
+          description: Supabase platform credits for eligible early-stage startups
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be an early-stage startup with a working prototype or live product, not previously used Supabase credits, and building a technology product.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01kz6f50mpw4yzhv9f47pbttwk
+      access_operator_entity_id: ent_01kz6f50mpw4yzhv9f47pbttwk
+    access:
+      availability: public
+      method: form
+      url: https://supabase.com/startup-program
+    terms_url: https://supabase.com/startup-program
+    source_ids:
+      - src_01kz6f50mpw4yzhv9f47pbttwk03
