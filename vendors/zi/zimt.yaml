@@ -1,0 +1,49 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kzvrqz3dme3tgwv0wrafyvk9
+slug: zimt
+slug_aliases: []
+name: Zimt
+domains:
+  - value: zimt.ai
+    role: primary
+    valid_from: 2026-08-12T19:56:14.000Z
+category: ai-ml
+description: Zimt provides AI market intelligence and Signals+ analytics for business and research.
+links:
+  site: https://zimt.ai
+sources:
+  - source_id: src_dea5680271af36483cc2c2a88b64139c2c8e31f9f79ba96b900ab91a85be6f36
+    url: https://www.zimt.ai/startup-program
+programs: []
+offers:
+  - offer_id: off_01kzvrqz3dxbcdz7skscjvk6vh
+    offer_slug: zimt-startup-program
+    offer_slug_aliases: []
+    title: Zimt Startup Program
+    summary: Eligible new customers receive 60% off Signals+ Annual in year one, 40% in year two, and 30% in year three.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-12T19:56:14.000Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: 60% off Signals+ Annual in year one, 40% in year two, and 30% in year three
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Eligible new Zimt customers accepted into the Startup Program.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01kzvrqz3dme3tgwv0wrafyvk9
+      access_operator_entity_id: ent_01kzvrqz3dme3tgwv0wrafyvk9
+    access:
+      availability: public
+      method: form
+      url: https://www.zimt.ai/startup-program
+    source_ids:
+      - src_dea5680271af36483cc2c2a88b64139c2c8e31f9f79ba96b900ab91a85be6f36
