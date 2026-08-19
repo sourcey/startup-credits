@@ -1,0 +1,71 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01m0d2bq9nk9b9vg9tf0968153
+slug: huntapi
+slug_aliases: []
+name: HuntAPI
+domains:
+  - value: huntapi.com
+    role: primary
+    valid_from: 2026-08-19T13:11:50Z
+category: devtools-other
+description: HuntAPI provides APIs for downloading video and audio and retrieving media metadata from online platforms.
+links:
+  site: https://www.huntapi.com
+sources:
+  - source_id: src_7b86deca54bfe9aec92119fa7c6a5f1f8cae987e26b71137ac72a66e6f8e7031
+    url: https://www.huntapi.com/startup-program
+  - source_id: src_4a9574c0c8684a65c03e9bd33bbbf63419569623dbd295873a2c2e8d8501df8d
+    url: https://www.huntapi.com/pricing
+programs:
+  - program_id: prg_01m0d2bq9pzza2m2etnqxcqpwq
+    program_slug: hunt-for-startups
+    program_slug_aliases: []
+    title: Hunt for Startups
+    summary: HuntAPI's startup program gives qualifying early-stage product companies discounted access to its media APIs for one year, plus priority support and developer resources.
+    source_ids:
+      - src_7b86deca54bfe9aec92119fa7c6a5f1f8cae987e26b71137ac72a66e6f8e7031
+      - src_4a9574c0c8684a65c03e9bd33bbbf63419569623dbd295873a2c2e8d8501df8d
+offers:
+  - offer_id: off_01m0d2bq9p2149xapqzyxef03w
+    program_id: prg_01m0d2bq9pzza2m2etnqxcqpwq
+    offer_slug: huntapi-startup-plan-discount
+    offer_slug_aliases: []
+    title: HuntAPI startup plan discount
+    summary: Eligible early-stage companies receive up to 50% off a HuntAPI Premium or Startup plan for 12 months, with priority support and access to the selected plan's features.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-19T13:11:50Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to 50% off a HuntAPI Premium or Startup plan for 12 months.
+          kind: discount
+          percentage:
+            kind: up-to
+            basis_points: 5000
+          duration:
+            kind: exact
+            value: P1Y
+          applies_to: HuntAPI Premium or Startup plan
+        - benefit_id: ben_02
+          description: Priority support and developer resources during the startup program.
+          kind: other
+      consideration:
+        kind: variable
+        description: The startup pays the remaining discounted price of its selected HuntAPI plan.
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: not-machine-evaluable
+        statement: Applicant must be an early-stage company less than three years old, have raised under €2 million, maintain an active technical or product team, and build a digital product.
+    roles:
+      terms_authority_entity_id: ent_01m0d2bq9nk9b9vg9tf0968153
+      access_operator_entity_id: ent_01m0d2bq9nk9b9vg9tf0968153
+    access:
+      availability: public
+      method: form
+      url: https://www.huntapi.com/startup-program
+    source_ids:
+      - src_7b86deca54bfe9aec92119fa7c6a5f1f8cae987e26b71137ac72a66e6f8e7031
+      - src_4a9574c0c8684a65c03e9bd33bbbf63419569623dbd295873a2c2e8d8501df8d
