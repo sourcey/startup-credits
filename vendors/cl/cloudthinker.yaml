@@ -1,0 +1,49 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kzvrydgbk06697gehk4zyvg9
+slug: cloudthinker
+slug_aliases: []
+name: CloudThinker
+domains:
+  - value: cloudthinker.io
+    role: primary
+    valid_from: 2026-08-12T19:59:45.000Z
+category: hosting-infra
+description: CloudThinker provides cloud consulting and infrastructure services for startups.
+links:
+  site: https://cloudthinker.io
+sources:
+  - source_id: src_c4debbfcfba66c039f03b690efb7f6dd9ec75681d9a5cd6a3a4dcb2d0a4e01fa
+    url: https://www.cloudthinker.io/startups
+programs: []
+offers:
+  - offer_id: off_01kzvrydgbe9qdmzf5jhm6pp98
+    offer_slug: cloudthinker-startup-program
+    offer_slug_aliases: []
+    title: CloudThinker Startup Program
+    summary: Qualifying early-stage startups receive thousands of dollars in CloudThinker credits, priority onboarding, and expert cloud consulting.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-12T19:59:45.000Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Thousands of dollars in cloud credits plus priority onboarding and consulting
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Qualifying early-stage startups accepted into the program.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01kzvrydgbk06697gehk4zyvg9
+      access_operator_entity_id: ent_01kzvrydgbk06697gehk4zyvg9
+    access:
+      availability: public
+      method: form
+      url: https://www.cloudthinker.io/startups
+    source_ids:
+      - src_c4debbfcfba66c039f03b690efb7f6dd9ec75681d9a5cd6a3a4dcb2d0a4e01fa
