@@ -1,0 +1,66 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01m0cp0rahwkw9vy60zpt12b2b
+slug: declaw
+slug_aliases: []
+name: Declaw
+domains:
+  - value: declaw.ai
+    role: primary
+    valid_from: 2026-08-19T09:36:12.000Z
+category: hosting-infra
+description: Declaw provides a secure runtime for AI agents with isolated sandboxes, security controls, and audit trails.
+links:
+  site: https://www.declaw.ai
+sources:
+  - source_id: src_125a22d0bf9f2878e7a6c76b1d2d7623be75ad2f032048e1aaf4a7d0ebfd1658
+    url: https://www.declaw.ai/startups
+programs:
+  - program_id: prg_01m0cp0ram1g91thbx0sgg1qcg
+    program_slug: declaw-for-startups
+    program_slug_aliases: []
+    title: Declaw for Startups
+    summary: Startup program for early-stage AI companies that need a secure runtime for agents handling sensitive data or regulated workloads.
+    source_ids:
+      - src_125a22d0bf9f2878e7a6c76b1d2d7623be75ad2f032048e1aaf4a7d0ebfd1658
+offers:
+  - offer_id: off_01m0cp0ramjbdfv6v1c04c94wr
+    program_id: prg_01m0cp0ram1g91thbx0sgg1qcg
+    offer_slug: ten-thousand-dollar-startup-credits
+    offer_slug_aliases: []
+    title: $10,000 in Declaw credits for six months
+    summary: Accepted early-stage AI startups receive $10,000 in Declaw credits for compute and guardrails inference, valid for six months from activation.
+    description: Credits cover compute and guardrails inference. Standard pricing applies after the credits are exhausted.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-19T09:36:12.000Z
+    economics:
+      consideration:
+        kind: variable
+        description: Applicants agree to allow Declaw to use their company logo and publish anonymized aggregate account metrics, and may be contacted about a case study or testimonial after 60 days of active use.
+      benefits:
+        - benefit_id: ben_01
+          description: $10,000 in Declaw credits for compute and guardrails inference, valid for six months from activation.
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 1000000
+            kind: exact
+          duration:
+            kind: exact
+            value: P6M
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_01
+        statement: Applicant must be an early-stage AI startup and be accepted by Declaw through its application review.
+        reason: vendor-discretion
+    roles:
+      terms_authority_entity_id: ent_01m0cp0rahwkw9vy60zpt12b2b
+      access_operator_entity_id: ent_01m0cp0rahwkw9vy60zpt12b2b
+    access:
+      availability: public
+      method: form
+      url: https://www.declaw.ai/startups
+    source_ids:
+      - src_125a22d0bf9f2878e7a6c76b1d2d7623be75ad2f032048e1aaf4a7d0ebfd1658
