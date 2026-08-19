@@ -1,0 +1,87 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01m0cxr7jvawcghkztexm33vr5
+slug: the-saasy-people
+slug_aliases: []
+name: The SaaSy People
+domains:
+  - value: thesaasypeople.com
+    role: primary
+    valid_from: 2026-08-19T11:50:51.000Z
+category: support
+description: The SaaSy People provides outsourced customer support, expert services for SaaS platforms, retention services, and custom applications and integrations.
+links:
+  site: https://www.thesaasypeople.com
+sources:
+  - source_id: src_7fcc146f3d5a50d4a458c69ab1ecd2b7900dee0c408a8d13c9e14d79c419c666
+    url: https://www.thesaasypeople.com/startups
+programs:
+  - program_id: prg_01m0cxr7jwnbq4xeg2g55t0cw4
+    program_slug: saasy-for-startups
+    program_slug_aliases: []
+    title: SaaSy for Startups
+    summary: SaaSy for Startups gives eligible startups a discount on The SaaSy People's outsourced customer support plans.
+    source_ids:
+      - src_7fcc146f3d5a50d4a458c69ab1ecd2b7900dee0c408a8d13c9e14d79c419c666
+offers:
+  - offer_id: off_01m0cxr7jw2d66q7b2awc10446
+    program_id: prg_01m0cxr7jwnbq4xeg2g55t0cw4
+    offer_slug: fifty-percent-off-startup-shared-agent-for-up-to-twelve-months
+    offer_slug_aliases: []
+    title: 50% off Startup Shared Agent for up to 12 months
+    summary: Eligible startups receive 50% off Startup Shared Agent outsourced customer support plans for up to 12 months.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-19T11:50:51.000Z
+    economics:
+      benefits:
+        - applies_to: Startup Shared Agent outsourced customer support plans
+          benefit_id: ben_01
+          description: 50% discount on Startup Shared Agent outsourced customer support plans for up to 12 months
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 5000
+          duration:
+            kind: up-to
+            value: P1Y
+      consideration:
+        kind: variable
+        description: The startup pays the remaining 50% of the applicable Startup Shared Agent plan price during the discount period.
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: external-verification
+            statement: The company has raised no more than £500,000 in funding.
+          - criterion_id: cri_02
+            fact: company.age_months
+            kind: predicate
+            operator: lt
+            statement: The company is less than two years old.
+            value:
+              type: number
+              value: 24
+          - criterion_id: cri_03
+            fact: company.employee_count
+            kind: predicate
+            operator: lte
+            statement: The company has 10 or fewer employees.
+            value:
+              type: number
+              value: 10
+          - criterion_id: cri_04
+            kind: manual
+            reason: external-verification
+            statement: The applicant is not a current SaaSy customer.
+    roles:
+      terms_authority_entity_id: ent_01m0cxr7jvawcghkztexm33vr5
+      access_operator_entity_id: ent_01m0cxr7jvawcghkztexm33vr5
+    access:
+      availability: public
+      method: form
+      url: https://www.thesaasypeople.com/startups
+    terms_url: https://www.thesaasypeople.com/startups
+    source_ids:
+      - src_7fcc146f3d5a50d4a458c69ab1ecd2b7900dee0c408a8d13c9e14d79c419c666
