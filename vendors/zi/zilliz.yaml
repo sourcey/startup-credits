@@ -1,0 +1,73 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kz5z42qqta7tbadr2yrgqyr2
+slug: zilliz
+slug_aliases: []
+name: Zilliz
+domains:
+  - value: zilliz.com
+    role: primary
+    valid_from: 2026-08-04T08:44:25.238Z
+category: databases
+description: Zilliz provides a fully managed vector database platform for retrieval, search, and AI applications.
+links:
+  site: https://zilliz.com
+sources:
+  - source_id: src_98c2dbc3b0e1fcc4b3a4c69ddf892c3b124768d089cfcecac8d682ccfaf432ff
+    url: https://zilliz.com/zilliz-for-startups
+  - source_id: src_03dea297656583d3175c02b483b1bfbdff76a2d859a3d833505b4241d780c00b
+    url: https://docs.zilliz.com/docs/cost-optimization
+programs:
+  - program_id: prg_01kz5z42qsp71k7t344z2yvnfg
+    program_slug: zilliz-ai-startup-program
+    program_slug_aliases: []
+    title: Zilliz AI Startup Program
+    summary: The Zilliz AI Startup Program supports early-stage AI startups building retrieval-powered applications with additional credits, discounts, technical guidance, go-to-market exposure, and partner enablement.
+    source_ids:
+      - src_98c2dbc3b0e1fcc4b3a4c69ddf892c3b124768d089cfcecac8d682ccfaf432ff
+      - src_03dea297656583d3175c02b483b1bfbdff76a2d859a3d833505b4241d780c00b
+offers:
+  - offer_id: off_01kz5z42qsjg9fe4j5tqjawqxd
+    program_id: prg_01kz5z42qsp71k7t344z2yvnfg
+    offer_slug: zilliz-ai-startup-program-benefits
+    offer_slug_aliases: []
+    title: Zilliz AI Startup Program discounts and support
+    summary: Accepted early-stage AI startups can receive additional Zilliz Cloud credits, apply for discounts, and get technical guidance, go-to-market exposure, and partner enablement.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-04T08:44:25.238Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Program discounts for development, testing, and early production workloads.
+          kind: other
+        - benefit_id: ben_02
+          description: Technical guidance on architecture reviews, performance optimization, and vector search best practices.
+          kind: other
+        - benefit_id: ben_03
+          description: Go-to-market exposure through joint case studies, blogs, webinars, and ecosystem showcases.
+          kind: other
+        - benefit_id: ben_04
+          description: Partner enablement through the Zilliz ecosystem and potential co-selling or collaboration opportunities.
+          kind: other
+        - benefit_id: ben_05
+          description: Additional Zilliz Cloud credits through the startup program.
+          kind: other
+      consideration:
+        description: The public sources do not publish credit or discount amounts or duration.
+        kind: unknown
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_01
+        statement: Must be an early-stage AI startup building retrieval-powered applications such as RAG, semantic search, multimodal, or agent-based workflows; acceptance is determined through application review.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01kz5z42qqta7tbadr2yrgqyr2
+      access_operator_entity_id: ent_01kz5z42qqta7tbadr2yrgqyr2
+    access:
+      availability: public
+      method: form
+      url: https://zilliz.com/zilliz-for-startups
+    source_ids:
+      - src_98c2dbc3b0e1fcc4b3a4c69ddf892c3b124768d089cfcecac8d682ccfaf432ff
+      - src_03dea297656583d3175c02b483b1bfbdff76a2d859a3d833505b4241d780c00b
