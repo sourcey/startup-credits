@@ -1,0 +1,60 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01m0f3wvzq3ks8a0bv413txhpy
+slug: akamai
+slug_aliases: []
+name: Akamai
+domains:
+  - value: akamai.com
+    role: primary
+    valid_from: 2026-08-20T08:16:49.000Z
+category: hosting-infra
+description: Akamai provides cloud computing, content delivery, cybersecurity, and edge services for businesses.
+links:
+  site: https://www.akamai.com/
+sources:
+  - source_id: src_dfee6ffb2d4163dec889dbc9a1832943248347d44e6bdcbbb6d134e81af3e193
+    url: https://www.akamai.com/cloud/start-ups/rise
+programs: []
+offers:
+  - offer_id: off_01m0f3ww00yvryny2tza0mzhv2
+    offer_slug: akamai-cloud-rise-start-up-program
+    offer_slug_aliases: []
+    title: Akamai Cloud Rise Start-Up Program
+    summary: Eligible early-stage for-profit startups can receive US$500–US$120,000 in Akamai Cloud credits during year one, plus discounted cloud services in years two and three.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-20T08:16:49.000Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source does not state a separate program fee; usage above the monthly credit limit is billed.
+      benefits:
+        - benefit_id: ben_primary
+          description: >-
+            US$500–US$120,000 in Akamai Cloud credits during the first year,
+            discounted cloud services in years two and three, a dedicated account
+            manager, and complimentary Customer Success, Solutions Engineering,
+            and support access.
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: >-
+          Must be a for-profit startup under seven years old, new to Rise, using or
+          planning to scale on Akamai Cloud, with traction such as non-founder
+          employees, external users, revenue, or VC funding. Applicants need a
+          working website, matching corporate email, and valid credit card.
+          Resellers, MSPs, managed hosting providers, and system integrators are
+          excluded. Existing customers must have received no more than US$3,000 in
+          prior infrastructure credits and meet the other qualifications.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01m0f3wvzq3ks8a0bv413txhpy
+      access_operator_entity_id: ent_01m0f3wvzq3ks8a0bv413txhpy
+    access:
+      availability: public
+      method: form
+      url: https://www.akamai.com/cloud/start-ups/rise
+    source_ids:
+      - src_dfee6ffb2d4163dec889dbc9a1832943248347d44e6bdcbbb6d134e81af3e193
