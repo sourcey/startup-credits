@@ -1,0 +1,96 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kzqfbbtw1jvtt9f54dx64ybz
+slug: netcore
+slug_aliases: []
+name: Netcore
+domains:
+  - value: netcore.ai
+    role: primary
+    valid_from: 2026-08-11T03:54:55.799Z
+category: marketing
+description: Netcore provides AI-powered customer engagement, marketing automation, personalization, and omnichannel communication software.
+links:
+  site: https://netcore.ai
+sources:
+  - source_id: src_0ff9534bdf781633d261df3b0f4b2bb6528a5225285ce78eb4f522004341853a
+    url: https://netcore.ai/startup-program/
+  - source_id: src_1fca0d3c7bdb5e3309ad9556275864c3e1bf4df078e3e82e87e763ce86ae3046
+    url: https://netcore.ai/ai-instructions/
+programs:
+  - program_id: prg_01kzqfbbtx27gn65xgv2nk6qe6
+    program_slug: netcore-b2c-startup-program
+    program_slug_aliases: []
+    title: Netcore B2C Startup Program
+    summary: Netcore's startup program combines platform credits with mentorship, investor access, and a network of startup enablers for eligible B2C companies.
+    source_ids:
+      - src_0ff9534bdf781633d261df3b0f4b2bb6528a5225285ce78eb4f522004341853a
+offers:
+  - offer_id: off_01kzqfbbtxvxv0bkhvwjbmzqny
+    program_id: prg_01kzqfbbtx27gn65xgv2nk6qe6
+    offer_slug: netcore-startup-credits
+    offer_slug_aliases: []
+    title: Up to $30,000 in Netcore platform credits
+    summary: Eligible B2C startups can receive up to $30,000 in credits for Netcore's omnichannel marketing platform, plus mentorship and ecosystem support at no cost.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-11T03:54:55.799Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to $30,000 in credits for Netcore's omnichannel marketing platform.
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 3000000
+            kind: up-to
+        - benefit_id: ben_02
+          description: Mentorship from industry leaders, including one-to-one sessions, expert office hours, and masterclasses.
+          kind: other
+        - benefit_id: ben_03
+          description: Access to top investors and a curated network of startup enablers.
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.age_months
+            kind: predicate
+            operator: lt
+            statement: Startup must have been in operation for less than three years.
+            value:
+              type: number
+              value: 36
+          - criterion_id: cri_02
+            fact: company.funding_raised_usd
+            kind: predicate
+            operator: lt
+            statement: Startup must have secured less than $15 million in funding.
+            value:
+              type: number
+              value: 15000000
+          - criterion_id: cri_03
+            kind: manual
+            reason: external-verification
+            statement: Startup must be new to Netcore and not an existing customer.
+          - criterion_id: cri_04
+            kind: manual
+            reason: not-machine-evaluable
+            statement: Startup should have healthy business traction and be ready to scale.
+          - criterion_id: cri_05
+            kind: manual
+            reason: not-machine-evaluable
+            statement: Startup should focus on B2C customer retention beyond acquisition.
+    roles:
+      terms_authority_entity_id: ent_01kzqfbbtw1jvtt9f54dx64ybz
+      access_operator_entity_id: ent_01kzqfbbtw1jvtt9f54dx64ybz
+    access:
+      availability: public
+      method: form
+      url: https://netcore.ai/startup-program/
+      instructions: Submit the online application form; Netcore reviews applications on a rolling basis.
+    source_ids:
+      - src_0ff9534bdf781633d261df3b0f4b2bb6528a5225285ce78eb4f522004341853a
