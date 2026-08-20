@@ -1,0 +1,88 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01m0g8avq3x7jwm3wa2xrsa2cs
+slug: neuroapi
+slug_aliases: []
+name: NeuroAPI
+domains:
+  - value: neuroapi.me
+    role: primary
+    valid_from: 2026-08-20T17:35:00Z
+category: data-analytics
+description: NeuroAPI provides web scraping, search, crawling, extraction, screenshot, and document-processing APIs with an MCP interface.
+links:
+  site: https://neuroapi.me
+sources:
+  - source_id: src_af5392e3acf8cf2828947b697267004153fc325b25f5c2c74c6088c56da80ca8
+    url: https://neuroapi.me/startup-credits
+programs:
+  - program_id: prg_01m0g8avq4yepey477yppy2bda
+    program_slug: neuroapi-for-startups
+    program_slug_aliases: []
+    title: NeuroAPI for Startups
+    summary: NeuroAPI offers qualifying early-stage product, agent, and research-tool teams free usage credits across its web data APIs and MCP server.
+    source_ids:
+      - src_af5392e3acf8cf2828947b697267004153fc325b25f5c2c74c6088c56da80ca8
+offers:
+  - offer_id: off_01m0g8avq4b7ttqn3r8kqh3h3t
+    program_id: prg_01m0g8avq4yepey477yppy2bda
+    offer_slug: startup-credit-grant
+    offer_slug_aliases: []
+    title: 5,000 to 100,000 NeuroAPI credits
+    summary: Approved startups receive a vendor-determined grant of 5,000 to 100,000 credits usable across NeuroAPI endpoints, with no card or contract required.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-20T17:35:00Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_01
+          description: A grant of 5,000 to 100,000 NeuroAPI usage credits, sized by stage, scale, use case, and projected volume
+          kind: other
+        - benefit_id: ben_02
+          description: Access to all NeuroAPI endpoints, including scrape, search, crawl, map, extract, screenshots, and MCP
+          kind: free-service
+          service: NeuroAPI endpoints and MCP access
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.age_months
+            kind: predicate
+            operator: lte
+            statement: Company was founded within the last two years.
+            value:
+              type: number
+              value: 24
+          - criterion_id: cri_02
+            fact: company.website_url
+            kind: predicate
+            operator: present
+            statement: Company has a live, public-facing website.
+          - criterion_id: cri_03
+            kind: manual
+            reason: not-machine-evaluable
+            statement: Applicant is building a product, agent, or research tool rather than an agency.
+          - criterion_id: cri_04
+            fact: company.funding_raised_usd
+            kind: predicate
+            operator: lte
+            statement: Company has not previously raised more than $5 million, subject to NeuroAPI's soft cap.
+            value:
+              type: number
+              value: 5000000
+          - criterion_id: cri_05
+            kind: manual
+            reason: vendor-discretion
+            statement: NeuroAPI determines the credit grant after reviewing the applicant's stage, traction, use case, and projected volume.
+    roles:
+      terms_authority_entity_id: ent_01m0g8avq3x7jwm3wa2xrsa2cs
+      access_operator_entity_id: ent_01m0g8avq3x7jwm3wa2xrsa2cs
+    access:
+      availability: public
+      instructions: Create a free NeuroAPI account, sign in, and complete the startup credit application for review.
+      method: form
+      url: https://neuroapi.me/startup-credits
+    source_ids:
+      - src_af5392e3acf8cf2828947b697267004153fc325b25f5c2c74c6088c56da80ca8
