@@ -1,0 +1,74 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01m044w20psn5vc45vhsrqnwnz
+slug: signzy
+slug_aliases: []
+name: Signzy
+domains:
+  - value: signzy.com
+    role: primary
+    valid_from: 2026-08-16T02:02:06.000Z
+category: auth-security
+description: Signzy provides identity and business verification, background checks, fraud detection, credit assessment, and no-code compliance workflows.
+links:
+  site: https://www.signzy.com
+sources:
+  - source_id: src_d485368b4bc50346432585240d38eb2979a6a9ff51889715358912f958b358c9
+    url: https://www.signzy.com/fintech-apis/startups
+  - source_id: src_f9b0f096aeef1953750bf59d06d5885db96a1938a7580976db704e7c817110a4
+    url: https://www.signzy.com/signup
+programs:
+  - program_id: prg_01m044w20qv56701grmdrm97m7
+    program_slug: signzy-for-startups
+    program_slug_aliases: []
+    title: Signzy for Startups
+    summary: Signzy's startup initiative provides API sandbox credits, startup-friendly rates, expert mentoring, and access to financial institutions and venture capitalists.
+    source_ids:
+      - src_d485368b4bc50346432585240d38eb2979a6a9ff51889715358912f958b358c9
+offers:
+  - offer_id: off_01m044w20qzspkrxbd5vz1pf35
+    program_id: prg_01m044w20qv56701grmdrm97m7
+    offer_slug: signzy-for-startups-api-sandbox-credits
+    offer_slug_aliases: []
+    title: INR 5,000 in Signzy API sandbox credits
+    summary: Startups receive INR 5,000 in credits for Signzy's API sandbox, plus startup-friendly rates, mentoring, and access to financial-institution and venture-capital networks.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-16T02:02:06.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: INR 5,000 in credits for Signzy's API sandbox
+          kind: credit
+          value:
+            amount:
+              currency: INR
+              minor_units: 500000
+            kind: exact
+        - benefit_id: ben_02
+          description: Startup-friendly rates for Signzy services
+          kind: other
+        - benefit_id: ben_03
+          description: Access to financial institutions and venture capitalists through Signzy's network
+          kind: other
+        - benefit_id: ben_04
+          description: Mentoring from industry experts
+          kind: other
+      consideration:
+        kind: unknown
+        description: The public startup page does not publish a program price or other consideration.
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: not-machine-evaluable
+        statement: The program is intended for startups seeking to improve customer onboarding and KYC processes.
+    roles:
+      terms_authority_entity_id: ent_01m044w20psn5vc45vhsrqnwnz
+      access_operator_entity_id: ent_01m044w20psn5vc45vhsrqnwnz
+    access:
+      availability: public
+      method: form
+      url: https://www.signzy.com/signup
+    source_ids:
+      - src_d485368b4bc50346432585240d38eb2979a6a9ff51889715358912f958b358c9
+      - src_f9b0f096aeef1953750bf59d06d5885db96a1938a7580976db704e7c817110a4
