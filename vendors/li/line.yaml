@@ -1,0 +1,65 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kzs0r8sw096nns8690g0m1qa
+slug: line
+slug_aliases: []
+name: LINE
+domains:
+  - value: line.me
+    role: primary
+    valid_from: 2026-08-11T19:05:00.000Z
+category: communication
+description: LINE is a communication app that provides free voice calls and messages, alongside additional services.
+links:
+  site: https://www.line.me/en/
+sources:
+  - source_id: src_3e9fb71f5dc2cf6b943434af6f7726a5d84f78f7279b30404f574aea5f2c444b
+    url: https://www.line.me/en/
+  - source_id: src_08a214e652980d1ac6ad8f41ad3932b9abadd2096ac03636441b8775a4ba736f
+    url: https://linescaleup.landpress.line.me/home/
+programs:
+  - program_id: prg_01kzs0r8swztr1qzvxv811s3ks
+    program_slug: line-scale-up
+    program_slug_aliases: []
+    title: LINE SCALE UP
+    summary: A one-year program connecting high-potential startups with LINE platform resources, expert support, and opportunities for strategic collaboration.
+    source_ids:
+      - src_08a214e652980d1ac6ad8f41ad3932b9abadd2096ac03636441b8775a4ba736f
+offers:
+  - offer_id: off_01kzs0r8swa9rg9sqqx0vmxkrz
+    program_id: prg_01kzs0r8swztr1qzvxv811s3ks
+    offer_slug: line-scale-up-one-year-startup-package
+    offer_slug_aliases: []
+    title: LINE SCALE UP one-year startup package
+    summary: Selected startups receive a one-year package valued at up to THB 4 million (USD 120,000), including Official Account and LINE ads credits, expert support, and partnership opportunities.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-11T19:05:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: One-year package valued at up to THB 4 million (USD 120,000), including Official Account and LINE ads credits
+          kind: other
+        - benefit_id: ben_02
+          description: API, technical, and business consultation from LINE experts
+          kind: other
+        - benefit_id: ben_03
+          description: Opportunities for strategic partnership and potential investment by LINE and its affiliates
+          kind: other
+      consideration:
+        kind: unknown
+        description: The public program page does not establish separate consideration.
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_01
+        statement: Seed to Series A startup with a validated product idea, proven business model, solid traction and revenue base, aligned with LINE's focus areas and ecosystem.
+        reason: external-verification
+    roles:
+      terms_authority_entity_id: ent_01kzs0r8sw096nns8690g0m1qa
+      access_operator_entity_id: ent_01kzs0r8sw096nns8690g0m1qa
+    access:
+      availability: public
+      method: form
+      url: https://linescaleup.landpress.line.me/home/
+    source_ids:
+      - src_08a214e652980d1ac6ad8f41ad3932b9abadd2096ac03636441b8775a4ba736f
