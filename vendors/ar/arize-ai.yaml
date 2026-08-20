@@ -1,0 +1,58 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_cahpkek5wkew7sjvhjnk4h0epj
+slug: arize-ai
+slug_aliases: []
+name: Arize AI
+domains:
+  - value: arize.com
+    role: primary
+    valid_from: 2026-08-17T01:00:00.000Z
+category: observability
+description: Arize AI is an AI observability and evaluation platform for tracing agents, running experiments, and catching regressions before production users do.
+links:
+  site: https://arize.com
+sources:
+  - source_id: src_0bd683a0cac1b118a328bbcf799c43b0cfee8888b2f673bbf7fc5d835f3f9103
+    url: https://arize.com/sign-up-startups/
+programs:
+  - program_id: prg_g0hfxv881q0052qsx70gek0hx9
+    program_slug: arize-for-startups
+    program_slug_aliases: []
+    title: Arize for Startups
+    summary: Arize offers eligible startups access to its AI observability and evaluation platform at startup pricing, including tracing, evals, and guardrails.
+    source_ids:
+      - src_0bd683a0cac1b118a328bbcf799c43b0cfee8888b2f673bbf7fc5d835f3f9103
+offers:
+  - offer_id: off_yr6jmb1hzgv3dj0ckbc26dk5em
+    program_id: prg_g0hfxv881q0052qsx70gek0hx9
+    offer_slug: startup-pricing-on-arize-ax
+    offer_slug_aliases: []
+    title: Startup pricing on Arize AX
+    summary: Eligible startups receive startup pricing on Arize AX.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-17T01:00:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Startup pricing on Arize AX plans
+          kind: other
+      consideration:
+        kind: unknown
+        description: Arize publishes startup pricing but does not state a fixed startup price or discount amount in the cited source.
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: external-verification
+        statement: The applicant must be a startup that applies through the Arize for Startups form and is approved by Arize.
+    roles:
+      terms_authority_entity_id: ent_cahpkek5wkew7sjvhjnk4h0epj
+      access_operator_entity_id: ent_cahpkek5wkew7sjvhjnk4h0epj
+    access:
+      availability: public
+      method: form
+      url: https://arize.com/sign-up-startups/
+    terms_url: https://arize.com/sign-up-startups/
+    source_ids:
+      - src_0bd683a0cac1b118a328bbcf799c43b0cfee8888b2f673bbf7fc5d835f3f9103
