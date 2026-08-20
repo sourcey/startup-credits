@@ -1,0 +1,65 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_drvxr8jkv4wfy28razjzyygzx4
+slug: tencent-rtc
+slug_aliases: []
+name: Tencent RTC
+domains:
+  - value: trtc.tencentcloud.com
+    role: primary
+    valid_from: 2026-08-13T19:31:30.000Z
+category: communication
+description: Tencent RTC runs a Startups Program for products integrating interactive audio and video features.
+links:
+  site: https://trtc.tencentcloud.com
+sources:
+  - source_id: src_ca4a9cd9271e96f755c712db5b133ecb1f5637101da29bbeaf229a52bb0bba8b
+    url: https://trtc.tencentcloud.com/start-up
+  - source_id: src_d188b24e1aa56c3a91b4dbf3dc3ecb845143e77ec126e8b3d187be602e57570a
+    url: https://trtc.tencentcloud.com/product-features-comparison
+programs:
+  - program_id: prg_sayvzws77h4p9824sbqa0mzr0r
+    program_slug: tencent-rtc-startups-program
+    program_slug_aliases: []
+    title: Tencent RTC Startups Program
+    summary: Eligible startups have the chance to get free Tencent RTC credits.
+    source_ids:
+      - src_ca4a9cd9271e96f755c712db5b133ecb1f5637101da29bbeaf229a52bb0bba8b
+offers:
+  - offer_id: off_wjvj0dwdqxnwen885xdv4g7ef0
+    program_id: prg_sayvzws77h4p9824sbqa0mzr0r
+    offer_slug: up-to-3000-in-tencent-rtc-credits
+    offer_slug_aliases: []
+    title: "Tencent RTC Startups Program: Up to $3,000 in Credits"
+    summary: Eligible startups have the chance to get free Tencent RTC credits worth up to $3,000.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-13T19:31:30.000Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_01
+          description: Up to $3,000 in Tencent RTC product usage credits
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 300000
+            kind: up-to
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_01
+        statement: Available to eligible startups.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_drvxr8jkv4wfy28razjzyygzx4
+      access_operator_entity_id: ent_drvxr8jkv4wfy28razjzyygzx4
+    access:
+      availability: public
+      method: other
+      instructions: Complete the questionnaire on the Startups Program page to share your use case, scale, and current status.
+      url: https://trtc.tencentcloud.com/start-up
+    source_ids:
+      - src_ca4a9cd9271e96f755c712db5b133ecb1f5637101da29bbeaf229a52bb0bba8b
