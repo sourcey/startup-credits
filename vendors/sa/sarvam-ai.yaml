@@ -50,7 +50,7 @@ offers:
           kind: other
       consideration:
         kind: unknown
-        description: The public program page does not state separate participant consideration.
+        description: The source record did not establish separate consideration.
     eligibility:
       rule:
         criterion_id: cri_01
