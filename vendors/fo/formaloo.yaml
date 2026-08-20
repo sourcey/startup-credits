@@ -1,0 +1,114 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kzvj124r3bd9h2xv6d04a3kj
+slug: formaloo
+slug_aliases: []
+name: Formaloo
+domains:
+  - value: formaloo.com
+    role: primary
+    valid_from: 2026-08-12T17:58:52.000Z
+  - value: formaloo.me
+    role: alias
+    valid_from: 2026-08-12T17:58:52.000Z
+category: no-code
+description: Formaloo provides a no-code platform for forms, surveys, portals, dashboards, workflows, and custom business applications.
+links:
+  site: https://www.formaloo.com
+sources:
+  - source_id: src_5714d34133a2d784c82fbed4ae990a9dc575e5dcfa6a17425815074743b7cf08
+    url: https://www.formaloo.com/startups
+  - source_id: src_6e45ffb087c105379557d148c2b8d7d34efb57530ea71c195ef2b1ba4ced4287
+    url: https://formaloo.formaloo.me/startups-apply
+  - source_id: src_a06b2a856968b99e592a0f28e6e4beb05a6ccae0378cad65c2e615fa6ac62bc9
+    url: https://www.formaloo.com/pricing
+programs:
+  - program_id: prg_01kzvj124rt1kqj5stb6na2ac4
+    program_slug: formaloo-startup-program
+    program_slug_aliases: []
+    title: Formaloo Startup Program
+    summary: Formaloo gives eligible startups up to USD 1,000 in product credits through its startup program.
+    source_ids:
+      - src_5714d34133a2d784c82fbed4ae990a9dc575e5dcfa6a17425815074743b7cf08
+      - src_6e45ffb087c105379557d148c2b8d7d34efb57530ea71c195ef2b1ba4ced4287
+      - src_a06b2a856968b99e592a0f28e6e4beb05a6ccae0378cad65c2e615fa6ac62bc9
+offers:
+  - offer_id: off_01kzvj124r1f57hyg0wamgxv2j
+    program_id: prg_01kzvj124rt1kqj5stb6na2ac4
+    offer_slug: up-to-1000-usd-formaloo-credits
+    offer_slug_aliases: []
+    title: Up to $1,000 in Formaloo credits
+    summary: Eligible startups affiliated with a Formaloo global partner or approved by Formaloo receive up to USD 1,000 in product credits.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-12T17:58:52.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to USD 1,000 in credits to use in Formaloo
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 100000
+            kind: up-to
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - kind: any
+            rules:
+              - criterion_id: cri_01
+                kind: manual
+                reason: external-verification
+                statement: The startup works with one of Formaloo's global partners.
+              - criterion_id: cri_02
+                kind: manual
+                reason: vendor-discretion
+                statement: The startup is approved by the Formaloo team.
+          - criterion_id: cri_03
+            fact: company.funding_raised_usd
+            kind: predicate
+            operator: lte
+            statement: The startup has raised no more than USD 5 million in total funding.
+            value:
+              type: number
+              value: 5000000
+          - criterion_id: cri_04
+            fact: company.age_months
+            kind: predicate
+            operator: lt
+            statement: The startup launched less than five years ago.
+            value:
+              type: number
+              value: 60
+          - criterion_id: cri_05
+            kind: manual
+            reason: external-verification
+            statement: The startup is independently owned and operated and is not owned by a parent corporation.
+          - criterion_id: cri_06
+            fact: company.employee_count
+            kind: predicate
+            operator: lt
+            statement: The startup has fewer than 50 employees.
+            value:
+              type: number
+              value: 50
+          - criterion_id: cri_07
+            kind: manual
+            reason: external-verification
+            statement: The applicant is a new Formaloo user using Formaloo's Free plan.
+    roles:
+      terms_authority_entity_id: ent_01kzvj124r3bd9h2xv6d04a3kj
+      access_operator_entity_id: ent_01kzvj124r3bd9h2xv6d04a3kj
+    access:
+      availability: public
+      instructions: Sign up for Formaloo's Free plan, then submit the startup program application with the requested startup and verification details.
+      method: form
+      url: https://formaloo.formaloo.me/startups-apply
+    terms_url: https://formaloo.formaloo.me/startups-apply
+    source_ids:
+      - src_5714d34133a2d784c82fbed4ae990a9dc575e5dcfa6a17425815074743b7cf08
+      - src_6e45ffb087c105379557d148c2b8d7d34efb57530ea71c195ef2b1ba4ced4287
+      - src_a06b2a856968b99e592a0f28e6e4beb05a6ccae0378cad65c2e615fa6ac62bc9
