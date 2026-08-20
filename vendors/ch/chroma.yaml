@@ -1,0 +1,54 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kzzqhc5j2zpgg4s27d2cqqb9
+slug: chroma
+slug_aliases: []
+name: Chroma
+domains:
+  - value: trychroma.com
+    role: primary
+    valid_from: 2026-08-14T08:55:00.000Z
+category: databases
+description: Chroma provides open-source search infrastructure for AI with vector, full-text, regex, and metadata search across local and serverless deployments.
+links:
+  site: https://www.trychroma.com/
+sources:
+  - source_id: src_b6b4b3184b524049da472e9599acd8a64671143e7df698352cef557e65e3db33
+    url: https://www.trychroma.com/
+  - source_id: src_3e57307b77bf670831f3656124d273a22d437bbb3524b1b0ac2423a36183ea37
+    url: https://posthog.com/startups
+programs: []
+offers:
+  - offer_id: off_01kzzqhc5k9zpncfsmxk8mea1x
+    offer_slug: posthog-startup-chroma-credit
+    offer_slug_aliases: []
+    title: $5,000 Chroma credit for PostHog startup members
+    summary: Accepted PostHog for Startups participants can receive $5,000 in Chroma credit as a partner perk.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-14T08:55:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: $5,000 in Chroma credit
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 500000
+            kind: exact
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: constant
+        statement: Available to accepted PostHog for Startups participants.
+        value: true
+    roles:
+      terms_authority_entity_id: ent_01kzzqhc5j2zpgg4s27d2cqqb9
+      access_operator_entity_id: ent_01kyh8fpe4h2ykh2786fd0krzp
+    access:
+      availability: membership
+      method: other
+    source_ids:
+      - src_3e57307b77bf670831f3656124d273a22d437bbb3524b1b0ac2423a36183ea37
