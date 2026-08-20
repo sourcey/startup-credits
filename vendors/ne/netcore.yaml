@@ -4,16 +4,18 @@ slug: netcore
 slug_aliases: []
 name: Netcore
 domains:
-  - value: netcorecloud.com
+  - value: netcore.ai
     role: primary
     valid_from: 2026-08-11T03:54:55.799Z
 category: marketing
 description: Netcore provides AI-powered customer engagement, marketing automation, personalization, and omnichannel communication software.
 links:
-  site: https://netcorecloud.com
+  site: https://netcore.ai
 sources:
   - source_id: src_0ff9534bdf781633d261df3b0f4b2bb6528a5225285ce78eb4f522004341853a
-    url: https://netcorecloud.com/startup-program/
+    url: https://netcore.ai/startup-program/
+  - source_id: src_1fca0d3c7bdb5e3309ad9556275864c3e1bf4df078e3e82e87e763ce86ae3046
+    url: https://netcore.ai/ai-instructions/
 programs:
   - program_id: prg_01kzqfbbtx27gn65xgv2nk6qe6
     program_slug: netcore-b2c-startup-program
@@ -88,7 +90,7 @@ offers:
     access:
       availability: public
       method: form
-      url: https://netcorecloud.com/startup-program/
+      url: https://netcore.ai/startup-program/
       instructions: Submit the online application form; Netcore reviews applications on a rolling basis.
     source_ids:
       - src_0ff9534bdf781633d261df3b0f4b2bb6528a5225285ce78eb4f522004341853a
