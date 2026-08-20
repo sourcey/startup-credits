@@ -10,7 +10,7 @@ domains:
 category: communication
 description: LINE is a communication app that provides free voice calls and messages, alongside additional services.
 links:
-  site: https://www.line.me
+  site: https://www.line.me/en/
 sources:
   - source_id: src_3e9fb71f5dc2cf6b943434af6f7726a5d84f78f7279b30404f574aea5f2c444b
     url: https://www.line.me/en/
