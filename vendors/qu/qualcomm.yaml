@@ -1,0 +1,60 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kzvavys7ntqykthrgpgx98bk
+slug: qualcomm
+slug_aliases: []
+name: Qualcomm
+domains:
+  - value: qualcomm.com
+    role: primary
+    valid_from: 2026-08-12T15:53:44.000Z
+category: ai-ml
+description: Qualcomm develops technologies for AI, high-performance and low-power computing, and wireless connectivity.
+links:
+  site: https://www.qualcomm.com/
+sources:
+  - source_id: src_0c4fbed7c9d3c6a2f2d25f971dc7e8794782096536ee9208a7bec5f7ad219cc7
+    url: https://www.qualcomm.com/developer/qualcomm-scaler-startup-program
+programs:
+  - program_id: prg_01kzvavys81t0pc6f2ttt4gx8t
+    program_slug: qualcomm-scaler-startup-program
+    program_slug_aliases: []
+    title: Qualcomm Scaler Startup Program
+    summary: Qualcomm supports selected early-stage startups with developer solutions, Cloud AI credits, technical enablement, training, and expert support.
+    source_ids:
+      - src_0c4fbed7c9d3c6a2f2d25f971dc7e8794782096536ee9208a7bec5f7ad219cc7
+offers:
+  - offer_id: off_01kzvavys8m9jx7g939ne6mc4w
+    program_id: prg_01kzvavys81t0pc6f2ttt4gx8t
+    offer_slug: qualcomm-scaler-startup-program
+    offer_slug_aliases: []
+    title: Qualcomm Scaler Startup Program
+    summary: Selected pre-seed to Series A startups receive Qualcomm developer solutions, Cloud AI credits, technical enablement, training, and expert support.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-12T15:53:44.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Access to Qualcomm developer solutions, including Dragonwing IoT platforms, Qualcomm Cloud AI credits, and AI deployment and DevOps support.
+          kind: other
+        - benefit_id: ben_02
+          description: Access to developer toolkits, training, technical enablement, community resources, and expert support.
+          kind: free-service
+          service: Qualcomm Scaler developer enablement and support
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Qualcomm selects early-stage startups from pre-seed to Series A that are building hybrid AI solutions across IoT, Cloud, XR, Mobile, or AI PCs.
+    roles:
+      terms_authority_entity_id: ent_01kzvavys7ntqykthrgpgx98bk
+      access_operator_entity_id: ent_01kzvavys7ntqykthrgpgx98bk
+    access:
+      availability: public
+      method: form
+      url: https://www.qualcomm.com/developer/qualcomm-scaler-startup-program
+    source_ids:
+      - src_0c4fbed7c9d3c6a2f2d25f971dc7e8794782096536ee9208a7bec5f7ad219cc7
