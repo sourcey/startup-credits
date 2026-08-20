@@ -1,0 +1,66 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kz4g3d6y0z1gbpvr8vr9rdv1
+slug: z-ai
+slug_aliases: []
+name: Z.ai
+domains:
+  - value: z.ai
+    role: primary
+    valid_from: 2026-08-03T19:02:40.000Z
+category: ai-ml
+description: Z.ai develops GLM foundation models and provides APIs for building AI applications.
+links:
+  site: https://z.ai
+sources:
+  - source_id: src_40c557f7591138f1be85bc9b48b13eef148d50339c38cd097f135e1f728abb67
+    url: https://startup.z.ai/
+programs:
+  - program_id: prg_01kz4g3d71yxr61e73capnkmb4
+    program_slug: z-ai-startups-program
+    program_slug_aliases: []
+    title: Z.ai Startups Program
+    summary: Z.ai provides approved startups with API credits, technical support, community access, and early access to models and features.
+    source_ids:
+      - src_40c557f7591138f1be85bc9b48b13eef148d50339c38cd097f135e1f728abb67
+offers:
+  - offer_id: off_01kz4g3d71xnq9ev40jnd0617t
+    program_id: prg_01kz4g3d71yxr61e73capnkmb4
+    offer_slug: startup-api-credits-and-resources
+    offer_slug_aliases: []
+    title: Z.ai Startup API Credits and Resources
+    summary: Approved startups receive free API credits up to 1 billion tokens, volume pricing on GLM, priority support and rate limits, community access, and early API access.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-03T19:02:40.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Free Z.ai API credits up to 1 billion tokens and volume pricing on GLM
+          kind: other
+        - benefit_id: ben_02
+          description: Dedicated technical support and priority rate limits
+          kind: other
+        - benefit_id: ben_03
+          description: Access to a community of more than 300 AI founders, venture capital investors, and accelerators
+          kind: other
+        - benefit_id: ben_04
+          description: Early access to new models and features
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Z.ai reviews startup applications before approval and onboarding
+    roles:
+      terms_authority_entity_id: ent_01kz4g3d6y0z1gbpvr8vr9rdv1
+      access_operator_entity_id: ent_01kz4g3d6y0z1gbpvr8vr9rdv1
+    access:
+      availability: membership
+      method: form
+      instructions: Log in with a Z.ai account and complete the startup program application form
+      url: https://startup.z.ai/
+    source_ids:
+      - src_40c557f7591138f1be85bc9b48b13eef148d50339c38cd097f135e1f728abb67
