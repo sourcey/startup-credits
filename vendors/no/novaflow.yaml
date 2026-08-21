@@ -1,0 +1,89 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_e494098fa2104278b96109b9eb
+slug: novaflow
+slug_aliases: []
+name: Novaflow
+domains:
+  - value: novaflow.dev
+    role: primary
+    valid_from: 2026-08-12T00:00:00.000Z
+category: cloud
+description: Novaflow is a modern serverless compute platform that lets startups deploy and scale applications globally with zero infrastructure management. Built for high-growth teams that need predictable pricing and automatic scaling.
+links:
+  site: https://novaflow.dev
+sources:
+  - source_id: src_d10fa8b492374b4ba9f6f752752ebf03
+    url: https://novaflow.dev/startups
+programs:
+  - program_id: prg_dfbc5ef9a84a4895883fbbd81a
+    program_slug: novaflow-for-startups
+    program_slug_aliases: []
+    title: Novaflow for Startups
+    summary: Offers free serverless compute and infrastructure credits to help early-stage startups build and scale without worrying about cloud costs.
+    source_ids:
+      - src_d10fa8b492374b4ba9f6f752752ebf03
+offers:
+  - offer_id: off_600af08c2200403598a80293b0
+    program_id: prg_dfbc5ef9a84a4895883fbbd81a
+    offer_slug: novaflow-for-startups
+    offer_slug_aliases: []
+    title: Novaflow for Startups
+    summary: Get up to $50,000 in Novaflow credits valid for 24 months, plus dedicated onboarding support, priority build queues, and access to the Novaflow Startup Network.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-12T00:00:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to $50,000 in Novaflow compute and infrastructure credits.
+          duration:
+            kind: exact
+            value: P24M
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 5000000
+            kind: up-to
+        - benefit_id: ben_02
+          description: Dedicated onboarding engineer for architecture review and initial deployment.
+          kind: other
+        - benefit_id: ben_03
+          description: Priority build queues with faster cold starts during high-traffic periods.
+          kind: other
+        - benefit_id: ben_04
+          description: Access to Novaflow Startup Network for peer learning, co-marketing, and investor introductions.
+          kind: other
+        - benefit_id: ben_05
+          description: Free access to Novaflow Observability Suite (logs, metrics, traces) for the credit period.
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.age_months
+            kind: predicate
+            operator: lte
+            statement: Startup was founded no more than 5 years ago.
+            value:
+              type: number
+              value: 60
+          - criterion_id: cri_02
+            fact: company.funding
+            kind: predicate
+            operator: lte
+            statement: Startup has raised no more than $5M in total funding.
+            value:
+              type: number
+              value: 5000000
+          - criterion_id: cri_03
+            fact: company.has_existing_novaflow_account
+            kind: predicate
+            operator: eq
+            statement: Startup must not have received Novaflow startup credits before.
+            value:
+              type: boolean
+              value: false
