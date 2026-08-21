@@ -1,0 +1,81 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01m0k9bbt16bx81r2bj4fz6w9j
+slug: scrapegraphai
+slug_aliases: []
+name: ScrapeGraphAI
+domains:
+  - value: scrapegraphai.com
+    role: primary
+    valid_from: 2026-08-21T23:08:59.000Z
+category: data-analytics
+description: ScrapeGraphAI provides AI-powered APIs for web scraping, structured data extraction, search, crawling, and website change monitoring.
+links:
+  site: https://scrapegraphai.com
+sources:
+  - source_id: src_038a4268b1bb57f423b42e7e1d1b54a7951a4ffff5b3596924e50fd96896eccd
+    url: https://scrapegraphai.com/for-startups
+programs:
+  - program_id: prg_01m0k9bbt34acrtgzg5m8xb4fa
+    program_slug: scrapegraphai-startup-program
+    program_slug_aliases: []
+    title: ScrapeGraphAI Startup Program
+    summary: ScrapeGraphAI gives approved startups three free months of its Growth plan for building and scaling web-data products.
+    source_ids:
+      - src_038a4268b1bb57f423b42e7e1d1b54a7951a4ffff5b3596924e50fd96896eccd
+offers:
+  - offer_id: off_01m0k9bbt3qfnhas11m9s8emqf
+    program_id: prg_01m0k9bbt34acrtgzg5m8xb4fa
+    offer_slug: growth-plan-free-for-three-months
+    offer_slug_aliases: []
+    title: Growth plan free for three months
+    summary: Approved startups receive the ScrapeGraphAI Growth plan free for three months, with 100,000 credits per month, 500 requests per minute, basic proxy rotation, and priority support.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-21T23:08:59.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_primary
+          description: Growth plan free for three months with 100,000 credits per month, a 500 requests-per-minute limit, basic proxy rotation, and priority support
+          duration:
+            kind: exact
+            value: P3M
+          kind: free-service
+          service: ScrapeGraphAI Growth plan
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: any
+        rules:
+          - criterion_id: cri_01
+            fact: company.accelerator
+            kind: predicate
+            operator: in
+            statement: The startup is part of Y Combinator, Techstars, or 500 Global.
+            value:
+              type: string-set
+              values:
+                - y-combinator
+                - techstars
+                - 500-global
+          - criterion_id: cri_02
+            fact: company.monthly_recurring_revenue_usd
+            kind: predicate
+            operator: gte
+            statement: A bootstrapped startup has at least USD 5,000 in monthly recurring revenue.
+            value:
+              type: number
+              value: 5000
+          - criterion_id: cri_03
+            kind: manual
+            reason: vendor-discretion
+            statement: Other startups may apply and are evaluated by ScrapeGraphAI on a case-by-case basis.
+    roles:
+      terms_authority_entity_id: ent_01m0k9bbt16bx81r2bj4fz6w9j
+      access_operator_entity_id: ent_01m0k9bbt16bx81r2bj4fz6w9j
+    access:
+      availability: public
+      method: form
+      url: https://scrapegraphai.com/for-startups
+    source_ids:
+      - src_038a4268b1bb57f423b42e7e1d1b54a7951a4ffff5b3596924e50fd96896eccd
