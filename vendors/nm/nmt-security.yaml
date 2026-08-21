@@ -1,0 +1,70 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01m0jv4021g97rf4wrbsx896dz
+slug: nmt-security
+slug_aliases: []
+name: NMT Security
+domains:
+  - value: nmtsecurity.com
+    role: primary
+    valid_from: 2026-08-21T18:56:00.000Z
+category: legal-compliance
+description: NMT Security provides cyber-risk, attack-surface, risk-management, and compliance tools for startups and regulated enterprises.
+links:
+  site: https://nmtsecurity.com
+sources:
+  - source_id: src_2b3fb92d0031b1117bcf41b30a15da85ee148ca2e553be9e361b57e2a9b7ec51
+    url: https://nmtsecurity.com/startups
+programs:
+  - program_id: prg_01m0jv4024ygj34e957pt3fsc8
+    program_slug: nmt-security-free-for-startups
+    program_slug_aliases: []
+    title: NMT Security Free for Startups
+    summary: NMT Security gives qualifying early-stage startups a free security essentials package for building enterprise security and compliance readiness.
+    source_ids:
+      - src_2b3fb92d0031b1117bcf41b30a15da85ee148ca2e553be9e361b57e2a9b7ec51
+offers:
+  - offer_id: off_01m0jv4024b7najrw60q2zh09j
+    program_id: prg_01m0jv4024ygj34e957pt3fsc8
+    offer_slug: free-startup-security-essentials
+    offer_slug_aliases: []
+    title: Free Startup Security Essentials
+    summary: Qualifying startups receive NMT Security's policy pack, continuous attack-surface management, risk registry, and compliance starter free, with no credit card required.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-21T18:56:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Free startup essentials comprising a security policy pack, continuous attack-surface management, a risk registry, and a compliance starter.
+          kind: free-service
+          service: NMT Security startup essentials
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: external-verification
+            statement: The applicant is an early-stage startup, typically from pre-seed through Series A.
+          - criterion_id: cri_02
+            kind: manual
+            reason: external-verification
+            statement: The startup builds for or sells to enterprise customers.
+          - criterion_id: cri_03
+            kind: manual
+            reason: vendor-discretion
+            statement: NMT Security confirms that the applicant qualifies before setting up the free workspace.
+    roles:
+      terms_authority_entity_id: ent_01m0jv4021g97rf4wrbsx896dz
+      access_operator_entity_id: ent_01m0jv4021g97rf4wrbsx896dz
+    access:
+      availability: public
+      method: form
+      url: https://nmtsecurity.com/startups
+      instructions: Submit the startup application on the vendor page; NMT Security confirms eligibility and provisions the workspace.
+    terms_url: https://nmtsecurity.com/startups
+    source_ids:
+      - src_2b3fb92d0031b1117bcf41b30a15da85ee148ca2e553be9e361b57e2a9b7ec51
+
