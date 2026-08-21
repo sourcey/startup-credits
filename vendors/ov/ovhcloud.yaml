@@ -1,0 +1,98 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01m0jhrv5cmqs2050y9x2bfnfz
+slug: ovhcloud
+slug_aliases: []
+name: OVHcloud
+domains:
+  - value: ovhcloud.com
+    role: primary
+    valid_from: 2026-08-21T16:17:09.000Z
+category: hosting-infra
+description: OVHcloud provides public and private cloud infrastructure, hosting, storage, networking, and related services for organizations and developers.
+links:
+  site: https://www.ovhcloud.com/
+sources:
+  - source_id: src_b1c9e5ce87977b4eabe1ba941b1de03f9876aba1dc9a1fb1809926f76e59e1e7
+    url: https://us.ovhcloud.com/startup-program/program-benefits/
+  - source_id: src_c78bb4ed96d068a91e5b4661979020d015f1c0abe80c69762132398d31456028
+    url: https://startup.ovhcloud.com/en/faq-support/
+programs:
+  - program_id: prg_01m0jhrv5e5n2ac17kxtdmwt2w
+    program_slug: ovhcloud-startup-program
+    program_slug_aliases: []
+    title: OVHcloud Startup Program
+    summary: A 12-month program providing selected startups and scaleups with OVHcloud credits, engineering consultations, mentoring, and market and funding access.
+    source_ids:
+      - src_b1c9e5ce87977b4eabe1ba941b1de03f9876aba1dc9a1fb1809926f76e59e1e7
+      - src_c78bb4ed96d068a91e5b4661979020d015f1c0abe80c69762132398d31456028
+offers:
+  - offer_id: off_01m0jhrv5entj5btjw92zjhj3y
+    program_id: prg_01m0jhrv5e5n2ac17kxtdmwt2w
+    offer_slug: start-level
+    offer_slug_aliases: []
+    title: OVHcloud Startup Program START level
+    summary: Selected pre-seed and seed startups receive up to $12,000 in OVHcloud public cloud credits and six hours of one-to-one engineering consultations over 12 months.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-21T16:17:09.000Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_cloud_credits
+          description: Up to $12,000 in OVHcloud public cloud credits over 12 months
+          kind: other
+        - benefit_id: ben_engineering
+          description: Six hours of one-to-one consultations with an OVHcloud engineer
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_start_stage
+        statement: Applicant must be a selected pre-seed or seed startup with an innovative technical project, growth potential, and at least a proof of concept or minimum viable product deployable on OVHcloud.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01m0jhrv5cmqs2050y9x2bfnfz
+      access_operator_entity_id: ent_01m0jhrv5cmqs2050y9x2bfnfz
+    access:
+      availability: public
+      method: form
+      url: https://us.ovhcloud.com/startup-program/program-benefits/
+    source_ids:
+      - src_b1c9e5ce87977b4eabe1ba941b1de03f9876aba1dc9a1fb1809926f76e59e1e7
+      - src_c78bb4ed96d068a91e5b4661979020d015f1c0abe80c69762132398d31456028
+  - offer_id: off_01m0jhrv5ezg5cn1123dfcj584
+    program_id: prg_01m0jhrv5e5n2ac17kxtdmwt2w
+    offer_slug: scale-level
+    offer_slug_aliases: []
+    title: OVHcloud Startup Program SCALE level
+    summary: Selected Series A and later startups and scaleups receive up to $120,000 in OVHcloud public cloud credits and 20 hours of one-to-one engineering consultations over 12 months.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-21T16:17:09.000Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_cloud_credits
+          description: Up to $120,000 in OVHcloud public cloud credits over 12 months
+          kind: other
+        - benefit_id: ben_engineering
+          description: Twenty hours of one-to-one consultations with an OVHcloud engineer
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_scale_stage
+        statement: Applicant must be a selected Series A or later startup or scaleup with an innovative technical project, growth potential, and infrastructure suitable for OVHcloud.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01m0jhrv5cmqs2050y9x2bfnfz
+      access_operator_entity_id: ent_01m0jhrv5cmqs2050y9x2bfnfz
+    access:
+      availability: public
+      method: form
+      url: https://us.ovhcloud.com/startup-program/program-benefits/
+    source_ids:
+      - src_b1c9e5ce87977b4eabe1ba941b1de03f9876aba1dc9a1fb1809926f76e59e1e7
+      - src_c78bb4ed96d068a91e5b4661979020d015f1c0abe80c69762132398d31456028
