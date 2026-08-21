@@ -1,0 +1,81 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kz9abfkk8t6sm7e923p4qbmr
+slug: wso2
+slug_aliases: []
+name: WSO2
+domains:
+  - value: wso2.com
+    role: primary
+    valid_from: 2026-08-05T15:58:25.000Z
+category: hosting-infra
+description: Developer platform and identity services for building, deploying, and managing digital applications and APIs.
+links:
+  site: https://wso2.com
+sources:
+  - source_id: src_a1494f8c9b0be0094b2a41a9a25ce53168c2f0df5942d2a61f43948a4a93efc0
+    url: https://wso2.com/landing/startups/
+programs:
+  - program_id: prg_01kz9abfkqhydxb1qrf4qkaewy
+    program_slug: wso2-for-startups
+    program_slug_aliases: []
+    title: WSO2 for Startups
+    summary: WSO2 provides eligible startups with platform and support credits plus access to a technical expert.
+    source_ids:
+      - src_a1494f8c9b0be0094b2a41a9a25ce53168c2f0df5942d2a61f43948a4a93efc0
+offers:
+  - offer_id: off_01kz9abfkqjzrtym60mc04nn96
+    program_id: prg_01kz9abfkqhydxb1qrf4qkaewy
+    offer_slug: up-to-10000-platform-credits-plus-2100-support-credits
+    offer_slug_aliases: []
+    title: Up to $10,000 in platform credits plus $2,100 in support credits
+    summary: Eligible startups can receive up to $10,000 in Developer Platform and Asgardeo credits for 12 months, $2,100 in WSO2 Support credits for 3 months, and a one-to-one technical session.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-05T15:58:25.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to $10,000 in WSO2 Developer Platform and Asgardeo credits
+          duration:
+            kind: exact
+            value: P1Y
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 1000000
+            kind: up-to
+        - benefit_id: ben_02
+          description: $2,100 in WSO2 Support credits
+          duration:
+            kind: exact
+            value: P3M
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 210000
+            kind: exact
+        - benefit_id: ben_03
+          description: One-to-one session with a WSO2 technical expert
+          kind: free-service
+          service: Technical expert session
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_requirement_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Applicant must be an eligible startup accepted by WSO2.
+    roles:
+      terms_authority_entity_id: ent_01kz9abfkk8t6sm7e923p4qbmr
+      access_operator_entity_id: ent_01kz9abfkk8t6sm7e923p4qbmr
+    access:
+      availability: public
+      instructions: Contact WSO2 through the published startup-program email address to apply.
+      method: contact
+      url: https://wso2.com/landing/startups/
+    terms_url: https://wso2.com/landing/startups/
+    source_ids:
+      - src_a1494f8c9b0be0094b2a41a9a25ce53168c2f0df5942d2a61f43948a4a93efc0
