@@ -1,0 +1,49 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01m00ypybr0s80mdtzwvkjp5yf
+slug: appsmith
+slug_aliases: []
+name: Appsmith
+domains:
+  - value: appsmith.com
+    role: primary
+    valid_from: 2026-08-14T20:16:44.000Z
+category: no-code
+description: Appsmith is an open-source low-code platform for building custom internal tools and business applications.
+links:
+  site: https://appsmith.com
+sources:
+  - source_id: src_f3fda308e78bb2c261b404a89acab0254aa8affeb5a1c8c030750a6e7697ae80
+    url: https://www.appsmith.com/startup-program
+programs: []
+offers:
+  - offer_id: off_01m00ypybr56q3stpz73zxb12p
+    offer_slug: appsmith-startup-program
+    offer_slug_aliases: []
+    title: Appsmith Startup Program
+    summary: Eligible startups receive $30,000 in Appsmith credits with all Business plan features and access to dev advocates.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-14T20:16:44.000Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: $30,000 in Appsmith credits with all Business plan features, valid for 12 months, plus access to dev advocates
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Startups that plan to use Appsmith for their own startup, have raised less than $10M in funding, were incorporated less than 2 years ago, and host Appsmith on their own infrastructure.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01m00ypybr0s80mdtzwvkjp5yf
+      access_operator_entity_id: ent_01m00ypybr0s80mdtzwvkjp5yf
+    access:
+      availability: public
+      method: form
+      url: https://www.appsmith.com/startup-program
+    source_ids:
+      - src_f3fda308e78bb2c261b404a89acab0254aa8affeb5a1c8c030750a6e7697ae80
