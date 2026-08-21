@@ -1,0 +1,49 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01m0jbmtz4hdp8nkfqk33qz9gv
+slug: elastic
+slug_aliases: []
+name: Elastic
+domains:
+  - value: elastic.co
+    role: primary
+    valid_from: 2026-08-21T14:30:00.000Z
+category: devtools-other
+description: Elastic provides search, observability, and security products through the Elastic Search AI Platform and Elastic Cloud.
+links:
+  site: https://www.elastic.co/
+sources:
+  - source_id: src_d57480011c0c92ce6685ecb2137c6c70e215352a0e927dfb50ac90e866787126
+    url: https://www.elastic.co/partners/aws-marketplace-offer-application-faq
+programs: []
+offers:
+  - offer_id: off_01m0jbmtz78em27dna0wypgj3m
+    offer_slug: elastic-cloud-aws-marketplace-credit
+    offer_slug_aliases: []
+    title: Elastic Cloud AWS Marketplace Credit Offer
+    summary: Eligible new Elastic Cloud customers can receive up to $1,000 in billing credits for monthly AWS Marketplace usage during their first three months.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-21T14:30:00.000Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The offer requires an Elastic Cloud monthly subscription through AWS Marketplace, but the source states there is no upfront cost requirement.
+      benefits:
+        - benefit_id: ben_primary
+          description: Up to $1,000 in Elastic Cloud billing credits valid for three months
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a new Elastic Cloud customer, subscribe monthly through AWS Marketplace, start a deployment during the promotional period, and complete the registration form.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01m0jbmtz4hdp8nkfqk33qz9gv
+      access_operator_entity_id: ent_01m0jbmtz4hdp8nkfqk33qz9gv
+    access:
+      availability: public
+      method: form
+      url: https://www.elastic.co/partners/aws-marketplace-offer-application-faq
+    source_ids:
+      - src_d57480011c0c92ce6685ecb2137c6c70e215352a0e927dfb50ac90e866787126
