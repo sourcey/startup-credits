@@ -27,15 +27,24 @@ offers:
       effective_from: 2026-08-21T12:30:00.000Z
     economics:
       consideration:
-        kind: unknown
-        description: The source record did not establish separate consideration.
+        kind: none
       benefits:
         - benefit_id: ben_primary
           description: $200,000 in cloud credits for Seed to Series A startups (up to $350,000 for AI-first startups)
           kind: credit
+          value:
+            kind: up-to
+            amount:
+              currency: USD
+              minor_units: 20000000
         - benefit_id: ben_mvp
           description: $2,000 in credits for pre-funded startups to build an MVP
           kind: credit
+          value:
+            kind: exact
+            amount:
+              currency: USD
+              minor_units: 200000
     eligibility:
       rule:
         kind: manual
