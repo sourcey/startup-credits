@@ -1,0 +1,78 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_rbzrgfkgnzc01bxtr2qmvhq3w2
+slug: liveblocks
+slug_aliases: []
+name: Liveblocks
+domains:
+  - value: liveblocks.com
+    role: primary
+    valid_from: 2026-08-04T00:00:00Z
+category: devtools-other
+description: Liveblocks is a realtime collaboration infrastructure platform providing presence, broadcast, multiplayer editing, comments, notifications, and AI Copilots for collaborative applications.
+links:
+  site: https://liveblocks.com
+sources:
+  - source_id: src_5svbgw9v117p5k51qb3t4pyrmby3y0h192hxdzjj5fkevjw7b9sac23xbgqq9f9x
+    url: https://liveblocks.com/startups
+  - source_id: src_mzrt1wpdvq2n12jj3rj5d04t0ak7r3vh34cqg9sxndw0xtxbc8exk8dn0yq0axfc
+    url: https://liveblocks.com/pricing
+programs:
+  - program_id: prg_ncvqqp6r608cr6e14hpqxg3557
+    program_slug: liveblocks-for-startups
+    program_slug_aliases: []
+    title: Liveblocks for Startups
+    summary: Liveblocks publishes a Startups program offering a discounted Team plan to qualifying early-stage startups and nonprofits to ship collaboration features at scale.
+    source_ids:
+      - src_5svbgw9v117p5k51qb3t4pyrmby3y0h192hxdzjj5fkevjw7b9sac23xbgqq9f9x
+      - src_mzrt1wpdvq2n12jj3rj5d04t0ak7r3vh34cqg9sxndw0xtxbc8exk8dn0yq0axfc
+offers:
+  - offer_id: off_j3qrbfwjza24tngj6q1d1kf6fj
+    program_id: prg_ncvqqp6r608cr6e14hpqxg3557
+    offer_slug: liveblocks-startups-discounted-team-plan
+    offer_slug_aliases: []
+    title: Liveblocks for Startups discounted Team plan
+    summary: Eligible new Liveblocks startups with fewer than 5 employees, up to $2M raised, and up to $500K ARR receive a discounted Team plan for realtime collaboration including presence, multiplayer, comments, notifications, and AI Copilots.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-04T00:00:00Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_01
+          description: Discounted Team plan access to Liveblocks realtime collaboration features (Presence, Broadcast, Storage, Multiplayer, Comments, Notifications, AI Copilots).
+          kind: discount
+          percentage:
+            basis_points: 10000
+            kind: up-to
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            statement: Must be a new Liveblocks customer.
+            reason: external-verification
+          - criterion_id: cri_02
+            kind: manual
+            statement: Must have fewer than 5 employees.
+            reason: external-verification
+          - criterion_id: cri_03
+            kind: manual
+            statement: Must have raised up to $2,000,000 in total funding.
+            reason: external-verification
+          - criterion_id: cri_04
+            kind: manual
+            statement: Must have up to $500,000 in annual recurring revenue.
+            reason: external-verification
+    roles:
+      terms_authority_entity_id: ent_rbzrgfkgnzc01bxtr2qmvhq3w2
+      access_operator_entity_id: ent_rbzrgfkgnzc01bxtr2qmvhq3w2
+    access:
+      availability: public
+      method: form
+      url: https://liveblocks.com/startups
+    terms_url: https://liveblocks.com/startups
+    source_ids:
+      - src_5svbgw9v117p5k51qb3t4pyrmby3y0h192hxdzjj5fkevjw7b9sac23xbgqq9f9x
+      - src_mzrt1wpdvq2n12jj3rj5d04t0ak7r3vh34cqg9sxndw0xtxbc8exk8dn0yq0axfc
