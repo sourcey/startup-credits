@@ -1,0 +1,49 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_02kzr9gqf6el0mkgy298y5h14gn
+slug: railway
+slug_aliases: []
+name: Railway
+domains:
+  - value: railway.app
+    role: primary
+    valid_from: 2026-08-12T00:00:00.000Z
+category: hosting-infra
+description: Railway is an infrastructure platform that lets you deploy services instantly with zero-config builds, built-in CI/CD, and usage-based pricing.
+links:
+  site: https://railway.app
+sources:
+  - source_id: src_608e0a6579f55b739839826b0be30c5113c67d15faf74d44f904c08745e2103h
+    url: https://railway.app/startups
+programs: []
+offers:
+  - offer_id: off_02kzr9gqf7sb7kcnz44z0cye0pa
+    offer_slug: railway-for-startups
+    offer_slug_aliases: []
+    title: Railway for Startups
+    summary: Eligible early-stage startups can receive up to $5,000 in Railway credits valid for 12 months, plus priority support and a dedicated onboarding session.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-12T00:00:00.000Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Up to $5,000 in platform credits
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be an early-stage startup with less than $1M in funding, have not previously received Railway startup credits, and apply with a valid company domain and email.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_02kzr9gqf6el0mkgy298y5h14gn
+      access_operator_entity_id: ent_02kzr9gqf6el0mkgy298y5h14gn
+    access:
+      availability: public
+      method: form
+      url: https://railway.app/startups
+    source_ids:
+      - src_608e0a6579f55b739839826b0be30c5113c67d15faf74d44f904c08745e2103h
