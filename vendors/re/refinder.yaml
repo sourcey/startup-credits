@@ -1,0 +1,85 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01m0jf9sx1n80za0031wa4wr41
+slug: refinder
+slug_aliases: []
+name: Refinder
+domains:
+  - value: refinder.ai
+    role: primary
+    valid_from: 2026-08-21T15:33:49.000Z
+category: productivity
+description: Refinder provides AI-powered search and assistant capabilities across connected company data and work applications.
+links:
+  site: https://refinder.ai/
+sources:
+  - source_id: src_4386c5dc42bac3e7e3e72ae2cf655695a92de3d46c3dc3a622ddb4ae4b722204
+    url: https://refinder.ai/startup-program/
+programs:
+  - program_id: prg_01m0jf9sx3etst58bwkaqxz9t1
+    program_slug: refinder-startup-program
+    program_slug_aliases: []
+    title: Refinder Startup Program
+    summary: Refinder's program gives qualifying early-stage companies free access for one year, a second-year discount, expert sessions, and early feature access.
+    source_ids:
+      - src_4386c5dc42bac3e7e3e72ae2cf655695a92de3d46c3dc3a622ddb4ae4b722204
+offers:
+  - offer_id: off_01m0jf9sx3s3se1dvj0z8w9k5c
+    program_id: prg_01m0jf9sx3etst58bwkaqxz9t1
+    offer_slug: twelve-months-free-plus-second-year-discount
+    offer_slug_aliases: []
+    title: 12 months free plus 50% off the second year
+    summary: Eligible startups receive 12 months of free Refinder access followed by a 50% discount for an additional year.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-21T15:33:49.000Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_year_01
+          description: Free access to Refinder features for 12 months
+          duration:
+            kind: exact
+            value: P1Y
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 10000
+        - benefit_id: ben_year_02
+          description: 50% discount for the second year
+          duration:
+            kind: exact
+            value: P1Y
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 5000
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_employee_count
+            fact: company.employee_count
+            kind: predicate
+            operator: lt
+            statement: Company has fewer than 20 employees.
+            value:
+              type: number
+              value: 20
+          - criterion_id: cri_company_age
+            fact: company.age_months
+            kind: predicate
+            operator: lt
+            statement: Company was established within the past five years.
+            value:
+              type: number
+              value: 60
+    roles:
+      terms_authority_entity_id: ent_01m0jf9sx1n80za0031wa4wr41
+      access_operator_entity_id: ent_01m0jf9sx1n80za0031wa4wr41
+    access:
+      availability: public
+      method: form
+      url: https://refinder.ai/startup-program/
+    source_ids:
+      - src_4386c5dc42bac3e7e3e72ae2cf655695a92de3d46c3dc3a622ddb4ae4b722204
