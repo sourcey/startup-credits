@@ -1,0 +1,56 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01m0jchqss1r23fq2xav2yx468
+slug: out-plane
+slug_aliases: []
+name: Out Plane
+domains:
+  - value: outplane.com
+    role: primary
+    valid_from: 2026-08-21T14:48:00.000Z
+category: hosting-infra
+description: Out Plane is a cloud platform for deploying applications with managed compute, databases, storage, networking, and developer workflows.
+links:
+  site: https://outplane.com/
+sources:
+  - source_id: src_60802799077990eb059e516b000cbd771eaf2b2d3adb1ee0baea886dadd7e902
+    url: https://outplane.com/runway
+programs:
+  - program_id: prg_01m0jchqt6xf5wqq1s9aphr18e
+    program_slug: out-plane-runway-program
+    program_slug_aliases: []
+    title: Out Plane Runway Program
+    source_ids:
+      - src_60802799077990eb059e516b000cbd771eaf2b2d3adb1ee0baea886dadd7e902
+offers:
+  - offer_id: off_01m0jchqt65nn1w1rzpjjr9ram
+    program_id: prg_01m0jchqt6xf5wqq1s9aphr18e
+    offer_slug: out-plane-runway-startups
+    offer_slug_aliases: []
+    title: Out Plane Runway Program - Startups
+    summary: Eligible startups receive up to $5,000 in platform credits, priority technical support, a dedicated onboarding call, and migration assistance.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-21T14:48:00.000Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Up to $5,000 in platform credits
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a company incorporated less than 3 years ago with under $5 million raised.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01m0jchqss1r23fq2xav2yx468
+      access_operator_entity_id: ent_01m0jchqss1r23fq2xav2yx468
+    access:
+      availability: public
+      method: form
+      url: https://outplane.com/runway
+    source_ids:
+      - src_60802799077990eb059e516b000cbd771eaf2b2d3adb1ee0baea886dadd7e902
