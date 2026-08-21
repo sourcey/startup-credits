@@ -32,10 +32,10 @@ offers:
       benefits:
         - benefit_id: ben_primary
           description: $200,000 in cloud credits for Seed to Series A startups (up to $350,000 for AI-first startups)
-          kind: credits
+          kind: credit
         - benefit_id: ben_mvp
           description: $2,000 in credits for pre-funded startups to build an MVP
-          kind: credits
+          kind: credit
     eligibility:
       rule:
         kind: manual
