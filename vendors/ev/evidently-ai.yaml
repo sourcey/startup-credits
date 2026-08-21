@@ -1,0 +1,98 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01m0jxf4jkxzwp1nzdwbqzjdat
+slug: evidently-ai
+slug_aliases: []
+name: Evidently AI
+domains:
+  - value: evidentlyai.com
+    role: primary
+    valid_from: 2026-08-21T19:41:20.120Z
+category: observability
+description: Evidently AI provides tools to evaluate, test, and monitor AI-powered products, including LLM and machine-learning systems.
+links:
+  site: https://www.evidentlyai.com
+sources:
+  - source_id: src_e7d597aa8241aa1566a39d3724a131967abb8e1a719bcf03666eacfbe2ef0a12
+    url: https://www.evidentlyai.com/sign-up-startups
+programs:
+  - program_id: prg_01m0jxf4k24d9q8953x767sfh2
+    program_slug: evidently-cloud-for-ai-startups
+    program_slug_aliases: []
+    title: Evidently Cloud for AI startups
+    summary: Evidently AI's startup program offers qualifying technology startups core AI evaluation features, Expert tier credits, testing tools, and priority support.
+    source_ids:
+      - src_e7d597aa8241aa1566a39d3724a131967abb8e1a719bcf03666eacfbe2ef0a12
+offers:
+  - offer_id: off_01m0jxf4k2sj7mkvr3jqzfdaz5
+    program_id: prg_01m0jxf4k24d9q8953x767sfh2
+    offer_slug: evidently-cloud-startup-offer
+    offer_slug_aliases: []
+    title: Evidently Cloud startup offer
+    summary: Qualifying AI startups get core evaluation features, up to 90% off the Expert tier for 6 months via free credits, synthetic-data and agent-testing access, and priority support.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-21T19:41:20.120Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Access to all core AI evaluation features.
+          kind: other
+        - benefit_id: ben_02
+          applies_to: Evidently Expert tier
+          description: Free credits worth up to a 90% discount on the Expert tier for 6 months.
+          kind: discount
+          percentage:
+            basis_points: 9000
+            kind: up-to
+          duration:
+            kind: exact
+            value: P6M
+        - benefit_id: ben_03
+          description: Full access to synthetic data and agent testing.
+          kind: other
+        - benefit_id: ben_04
+          description: Priority support with direct access to Evidently engineers.
+          kind: other
+      consideration:
+        kind: unknown
+        description: The startup page does not publish the Expert tier price or the free-credit amount.
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: external-verification
+            statement: Applicant is a technology startup.
+          - kind: any
+            rules:
+              - criterion_id: cri_02
+                fact: company.age_months
+                kind: predicate
+                operator: lt
+                statement: Company is less than 2 years old.
+                value:
+                  type: number
+                  value: 24
+              - criterion_id: cri_03
+                fact: company.funding_raised_usd
+                kind: predicate
+                operator: lt
+                statement: Company has raised less than $5 million in funding.
+                value:
+                  type: number
+                  value: 5000000
+          - criterion_id: cri_04
+            kind: manual
+            reason: external-verification
+            statement: Applicant has signed up for a free Evidently account before applying.
+    roles:
+      terms_authority_entity_id: ent_01m0jxf4jkxzwp1nzdwbqzjdat
+      access_operator_entity_id: ent_01m0jxf4jkxzwp1nzdwbqzjdat
+    access:
+      availability: public
+      method: form
+      url: https://www.evidentlyai.com/sign-up-startups
+    terms_url: https://www.evidentlyai.com/sign-up-startups
+    source_ids:
+      - src_e7d597aa8241aa1566a39d3724a131967abb8e1a719bcf03666eacfbe2ef0a12
