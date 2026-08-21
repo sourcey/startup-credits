@@ -1,0 +1,118 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01m0kbdwk5ek0wg5tndsgkha93
+slug: hakim
+slug_aliases: []
+name: Hakim
+domains:
+  - value: tryhakim.ai
+    role: primary
+    valid_from: 2026-08-21T23:45:18.000Z
+category: ai-ml
+description: Hakim provides Arabic-first voice AI APIs and models for text-to-speech, speech-to-text, and voice cloning, with GCC and EU data residency options.
+links:
+  site: https://tryhakim.ai
+sources:
+  - source_id: src_5fbb14981544b319c24cb4810ff93021688cf765a3e84fef1003142f40d1950e
+    url: https://tryhakim.ai/en/startups
+programs:
+  - program_id: prg_01m0kbdwk7a81prx52yesw5nys
+    program_slug: hakim-startup-program
+    program_slug_aliases: []
+    title: Hakim Startup Program
+    summary: Hakim's MENA startup program provides voice AI credits, early model access, weekly technical office hours, direct engineering support, and launch resources.
+    source_ids:
+      - src_5fbb14981544b319c24cb4810ff93021688cf765a3e84fef1003142f40d1950e
+offers:
+  - offer_id: off_01m0kbdwk78jzq31hm7706b2yh
+    program_id: prg_01m0kbdwk7a81prx52yesw5nys
+    offer_slug: 6000-usd-voice-ai-credit-grant
+    offer_slug_aliases: []
+    title: $6,000 Hakim voice AI credit grant
+    summary: Approved MENA-based startups at or before Series A receive $6,000 in Hakim workspace credits plus model access, weekly office hours, direct Slack support, and launch resources.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-21T23:45:18.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: $6,000 in Hakim workspace credits, described as equivalent to six months on the Business plan
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 600000
+            kind: exact
+        - benefit_id: ben_02
+          description: Early access to unreleased text-to-speech, speech-to-text, and voice-cloning models
+          kind: other
+        - benefit_id: ben_03
+          description: Weekly technical office hours and a direct Slack support channel with Hakim solutions and engineering staff
+          kind: other
+        - benefit_id: ben_04
+          description: Co-marketing campaigns and introductions to Hakim's regional partner ecosystem
+          kind: other
+      consideration:
+        description: The public startup-program page does not establish a separate program fee.
+        kind: unknown
+    eligibility:
+      rule:
+        kind: any
+        rules:
+          - kind: all
+            rules:
+              - criterion_id: cri_01
+                kind: manual
+                reason: external-verification
+                statement: The founding team is headquartered or primarily operates in the MENA region.
+              - criterion_id: cri_02
+                fact: company.age_years
+                kind: predicate
+                operator: lt
+                statement: The company was founded less than five years ago.
+                value:
+                  type: number
+                  value: 5
+              - kind: any
+                rules:
+                  - criterion_id: cri_03
+                    fact: company.stage
+                    kind: predicate
+                    operator: in
+                    statement: The company is at pre-seed, seed, or Series A stage.
+                    value:
+                      type: string-set
+                      values:
+                        - pre-seed
+                        - seed
+                        - series-a
+                  - criterion_id: cri_04
+                    fact: company.arr_usd
+                    kind: predicate
+                    operator: lt
+                    statement: A bootstrapped company has less than $2 million in annual recurring revenue.
+                    value:
+                      type: number
+                      value: 2000000
+              - criterion_id: cri_05
+                fact: company.funding_raised_usd
+                kind: predicate
+                operator: lt
+                statement: The company has raised less than $10 million in total capital.
+                value:
+                  type: number
+                  value: 10000000
+          - criterion_id: cri_06
+            kind: manual
+            reason: vendor-discretion
+            statement: Hakim may approve close-fit teams that fall just outside a published gate.
+    roles:
+      terms_authority_entity_id: ent_01m0kbdwk5ek0wg5tndsgkha93
+      access_operator_entity_id: ent_01m0kbdwk5ek0wg5tndsgkha93
+    access:
+      availability: public
+      instructions: Submit the startup-program form; Hakim says it replies with a decision within five working days.
+      method: form
+      url: https://tryhakim.ai/en/startups
+    terms_url: https://tryhakim.ai/en/startups
+    source_ids:
+      - src_5fbb14981544b319c24cb4810ff93021688cf765a3e84fef1003142f40d1950e
