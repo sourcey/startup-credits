@@ -1,0 +1,64 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01m0nvtajqpz2s8t6t4gg81bhe
+slug: libertai
+slug_aliases: []
+name: LibertAI
+domains:
+  - value: libertai.io
+    role: primary
+    valid_from: 2026-08-22T23:10:23.000Z
+category: ai-ml
+description: LibertAI provides private, OpenAI-compatible inference for open models on distributed infrastructure, including APIs, chat, agents, image generation, embeddings, speech, and search.
+links:
+  site: https://libertai.io
+sources:
+  - source_id: src_36491fb4bec563857398345e45092356e7d8fda5b9cc54e30ad420a457945dfc
+    url: https://libertai.io/
+programs:
+  - program_id: prg_01m0nvtajwwqpgnzs62semtet2
+    program_slug: sovereign-program
+    program_slug_aliases: []
+    title: LibertAI Sovereign Program
+    summary: LibertAI's Sovereign Program provides selected startups building on private inference with credits and migration support.
+    source_ids:
+      - src_36491fb4bec563857398345e45092356e7d8fda5b9cc54e30ad420a457945dfc
+offers:
+  - offer_id: off_01m0nvtajwcms0n71y8at8tdvr
+    program_id: prg_01m0nvtajwwqpgnzs62semtet2
+    offer_slug: private-inference-startup-credits
+    offer_slug_aliases: []
+    title: Up to $10,000 in private inference credits
+    summary: Selected startups building on private inference can receive up to $10,000 in LibertAI credits for GLM-5.2 and the full model catalog, plus migration support.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-22T23:10:23.000Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_01
+          description: Up to $10,000 in LibertAI credits for GLM-5.2 and the full model catalog
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 1000000
+            kind: up-to
+        - benefit_id: ben_02
+          description: Migration support from the LibertAI team
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_01
+        statement: Applicant must be a company building on private inference and be selected by LibertAI.
+        reason: vendor-discretion
+    roles:
+      terms_authority_entity_id: ent_01m0nvtajqpz2s8t6t4gg81bhe
+      access_operator_entity_id: ent_01m0nvtajqpz2s8t6t4gg81bhe
+    access:
+      availability: public
+      method: form
+      url: https://t.me/libertai
+    source_ids:
+      - src_36491fb4bec563857398345e45092356e7d8fda5b9cc54e30ad420a457945dfc
