@@ -1,0 +1,76 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01m071ndxnqxja7yb889fwz9ft
+slug: fal
+slug_aliases: []
+name: fal
+domains:
+  - value: fal.ai
+    role: primary
+    valid_from: 2026-08-17T05:03:47.260Z
+category: ai-ml
+description: fal is a generative media platform that runs image, video, and audio models on an inference engine built for production workloads.
+links:
+  site: https://fal.ai
+sources:
+  - source_id: src_e680a9e4f25e131008e814d9879a28420f42c271de5a555bd3d49517a90520bd
+    url: https://fal.ai/startup-program
+programs: []
+offers:
+  - offer_id: off_01m071ndxpa865byrwz45t6mrj
+    offer_slug: fal-startup-program
+    offer_slug_aliases: []
+    title: fal Startup Program
+    summary: Approved startups with real traction or institutional venture backing start with $1,000 in fal credits and can grow to $5,000 as monthly fal spend scales, plus perks from fal's partners.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-17T05:03:47.260Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Every approved team starts with $1,000 in credits. A further $1,500 is added on request once monthly spend on fal reaches $1,000, and another $2,500 once monthly spend reaches $2,500, for up to $5,000 in total.
+          kind: credit
+          value:
+            kind: range
+            minimum:
+              currency: USD
+              minor_units: 100000
+            maximum:
+              currency: USD
+              minor_units: 500000
+        - benefit_id: ben_02
+          description: Perks from fal's partner companies, bundled with acceptance into the program.
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - kind: any
+            rules:
+              - criterion_id: cri_01
+                kind: manual
+                reason: not-machine-evaluable
+                statement: The company has a proven track record of real users, meaningful traction, or revenue.
+              - criterion_id: cri_02
+                kind: manual
+                reason: external-verification
+                statement: The company is venture-backed, having raised from an institutional investor.
+          - criterion_id: cri_03
+            kind: manual
+            reason: external-verification
+            statement: The team is based in Europe or Asia.
+          - criterion_id: cri_04
+            kind: manual
+            reason: vendor-discretion
+            statement: A company may submit one application every three months, and credits may not be resold or transferred.
+    roles:
+      terms_authority_entity_id: ent_01m071ndxnqxja7yb889fwz9ft
+      access_operator_entity_id: ent_01m071ndxnqxja7yb889fwz9ft
+    access:
+      availability: public
+      method: form
+      url: https://fal.ai/startup-program
+      instructions: Apply through the form on the Startup Program page, sharing traction or funding and intended use of fal. A short intro call is usually part of approval.
+    source_ids:
+      - src_e680a9e4f25e131008e814d9879a28420f42c271de5a555bd3d49517a90520bd
