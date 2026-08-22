@@ -1,0 +1,58 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01m0kzjkqxhs210w5h7aj0e0ew
+slug: solvimon
+slug_aliases: []
+name: Solvimon
+domains:
+  - value: solvimon.com
+    role: primary
+    valid_from: 2026-08-22T00:00:00.000Z
+category: finance-accounting
+description: Solvimon provides usage-based and hybrid billing infrastructure for software companies.
+links:
+  site: https://www.solvimon.com/
+sources:
+  - source_id: src_127435e09751ad985a70f98b77b6108849ec93c835fa599c6312c1b5e339a403
+    url: https://www.solvimon.com/pricing/vc/yc
+programs:
+  - program_id: prg_01m0kzjkqxzw9ec7z2j149ea4n
+    program_slug: solvimon-y-combinator-offer
+    program_slug_aliases: []
+    title: Solvimon x Y Combinator
+    summary: A billing-platform offer for Y Combinator portfolio companies that includes migration and pricing support.
+    source_ids:
+      - src_127435e09751ad985a70f98b77b6108849ec93c835fa599c6312c1b5e339a403
+offers:
+  - offer_id: off_01m0kzjkqxeq2gp2ajavzmg23p
+    program_id: prg_01m0kzjkqxzw9ec7z2j149ea4n
+    offer_slug: free-billing-until-three-million-revenue
+    offer_slug_aliases: []
+    title: Free billing until USD 3 million in revenue
+    summary: Y Combinator founders pay no platform fee on their first USD 3 million in billed revenue, then 0.4% of billed revenue, and receive migration, pricing, and account support.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-22T00:00:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_primary
+          description: Platform fees waived on the first USD 3 million in billed revenue
+          kind: waiver
+          waived_item: Platform fees on the first USD 3 million in billed revenue
+      consideration:
+        kind: variable
+        description: After the first USD 3 million in billed revenue, Solvimon charges 0.4% of billed revenue.
+    eligibility:
+      rule:
+        criterion_id: cri_yc_founder
+        kind: manual
+        reason: external-verification
+        statement: Applicant must be a Y Combinator batch participant or portfolio company.
+    roles:
+      terms_authority_entity_id: ent_01m0kzjkqxhs210w5h7aj0e0ew
+      access_operator_entity_id: ent_01m0kzjkqxhs210w5h7aj0e0ew
+    access:
+      availability: membership
+      method: form
+      url: https://www.solvimon.com/pricing/vc/yc
+    source_ids:
+      - src_127435e09751ad985a70f98b77b6108849ec93c835fa599c6312c1b5e339a403
