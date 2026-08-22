@@ -1,0 +1,56 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01m0kzjkqx029e8ngc0n2xbj8y
+slug: payu
+slug_aliases: []
+name: PayU
+domains:
+  - value: payu.in
+    role: primary
+    valid_from: 2026-08-22T00:00:00.000Z
+category: payments-fintech
+description: PayU India provides online payment acceptance and financial services for merchants and startups.
+links:
+  site: https://payu.in/
+sources:
+  - source_id: src_efad89b410270629294814fe635f52e7fa90022060c061413b42b8a9ebf11892
+    url: https://www.startups.payu.in/
+programs:
+  - program_id: prg_01m0kzjkqxy8kwrcbr34rdsft6
+    program_slug: payu-for-startups
+    program_slug_aliases: []
+    title: PayU for Startups
+    summary: An India-focused startup program combining payment products, onboarding, consulting, community access, and partner benefits.
+    source_ids:
+      - src_efad89b410270629294814fe635f52e7fa90022060c061413b42b8a9ebf11892
+offers:
+  - offer_id: off_01m0kzjkqxed6f6sryrnyqj3k7
+    program_id: prg_01m0kzjkqxy8kwrcbr34rdsft6
+    offer_slug: startup-perks-worth-up-to-one-crore-inr
+    offer_slug_aliases: []
+    title: Startup perks worth up to INR 1 crore
+    summary: Eligible Indian startups receive access to partner benefits advertised at up to INR 1 crore, along with quick onboarding and dedicated startup support.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-22T00:00:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_primary
+          description: Partner startup benefits worth up to INR 1 crore
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_early_stage_startup
+        kind: manual
+        reason: external-verification
+        statement: Applicant must be an early-stage startup; PayU states that bootstrapped, incubated, angel-funded, and VC-funded companies across sectors may apply.
+    roles:
+      terms_authority_entity_id: ent_01m0kzjkqx029e8ngc0n2xbj8y
+      access_operator_entity_id: ent_01m0kzjkqx029e8ngc0n2xbj8y
+    access:
+      availability: public
+      method: form
+      url: https://www.startups.payu.in/
+    source_ids:
+      - src_efad89b410270629294814fe635f52e7fa90022060c061413b42b8a9ebf11892
