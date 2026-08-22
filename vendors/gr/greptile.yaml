@@ -1,0 +1,55 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01m0m0npskxmpfw8m4p83qw237
+slug: greptile
+slug_aliases: []
+name: Greptile
+domains:
+  - value: greptile.com
+    role: primary
+    valid_from: 2026-08-22T05:56:52.506Z
+category: devtools-other
+description: Greptile provides AI agents that review and test pull requests using full codebase context.
+links:
+  site: https://www.greptile.com
+sources:
+  - source_id: src_e2452311a09de4d9360932dcb8fa87b9a44535cc43448fbd9ce193333e01a2b4
+    url: https://www.greptile.com/startup-discount
+  - source_id: src_78e7ac2653633aeadbf4ead6860fdb26185cf11d19eb9c27470d96e8fc7184bb
+    url: https://www.greptile.com/
+programs: []
+offers:
+  - offer_id: off_01m0m0npsn3kcckdxc8fjc60hm
+    offer_slug: startup-discount
+    offer_slug_aliases: []
+    title: 50% off Greptile for early-stage startups
+    summary: Pre-Series A startups with less than USD 2 million in revenue over the past 12 months can receive 50% off Greptile.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-22T05:56:52.506Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 50% discount on Greptile for eligible early-stage startups
+          kind: discount
+          percentage:
+            basis_points: 5000
+            kind: exact
+      consideration:
+        kind: variable
+        description: Approved startups pay the remaining discounted price for the Greptile plan they purchase.
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: external-verification
+        statement: The company must be pre-Series A and have less than USD 2 million in revenue over the past 12 months.
+    roles:
+      terms_authority_entity_id: ent_01m0m0npskxmpfw8m4p83qw237
+      access_operator_entity_id: ent_01m0m0npskxmpfw8m4p83qw237
+    access:
+      availability: public
+      method: form
+      url: https://www.greptile.com/startup-discount
+    source_ids:
+      - src_e2452311a09de4d9360932dcb8fa87b9a44535cc43448fbd9ce193333e01a2b4
+      - src_78e7ac2653633aeadbf4ead6860fdb26185cf11d19eb9c27470d96e8fc7184bb
