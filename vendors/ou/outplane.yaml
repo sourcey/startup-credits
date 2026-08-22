@@ -1,0 +1,70 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01m0n9jmd3f8y4mrkwr9cjs3rf
+slug: outplane
+slug_aliases: []
+name: Out Plane
+domains:
+  - value: outplane.com
+    role: primary
+    valid_from: 2026-08-22T05:40:00.000Z
+category: hosting-infra
+description: Next-generation cloud platform for deploying applications from a connected GitHub repository, with managed compute, databases, and bandwidth.
+links:
+  site: https://outplane.com/runway
+sources:
+  - source_id: src_049a676d5a3c494b88cfe1c2a915b44946ea0c428c5bd735969614b2ebd710db
+    url: https://outplane.com/runway
+programs:
+  - program_id: prg_01m0n9jmd6a3bf24v4xbssc00q
+    program_slug: outplane-runway-program
+    program_slug_aliases: []
+    title: Out Plane Runway Program
+    summary: Free platform credits, priority support, and engineering assistance for startups, students, and open-source projects.
+    source_ids:
+      - src_049a676d5a3c494b88cfe1c2a915b44946ea0c428c5bd735969614b2ebd710db
+offers:
+  - offer_id: off_01m0n9jmd6hs63p0wjkg7gyfmh
+    offer_slug: outplane-runway-startups
+    offer_slug_aliases: []
+    title: Out Plane Runway Program — Startups Track
+    summary: Startups incorporated less than 3 years ago and raised under $5M can receive up to $5,000 in platform credits, priority technical support, a dedicated onboarding call, and migration assistance.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-22T05:40:00.000Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration beyond a startup eligibility requirement.
+      benefits:
+        - benefit_id: ben_platform_credits
+          description: Up to $5,000 in platform credits.
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 500000
+            kind: exact
+        - benefit_id: ben_priority_support
+          description: Priority technical support with direct access to the engineering team for technical guidance and architecture reviews.
+          kind: other
+        - benefit_id: ben_onboarding
+          description: Dedicated onboarding call.
+          kind: other
+        - benefit_id: ben_migration
+          description: Migration assistance, including zero-downtime moves from Heroku, Railway, or Render.
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a company incorporated less than 3 years ago and raised under $5 million USD.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01m0n9jmd3f8y4mrkwr9cjs3rf
+      access_operator_entity_id: ent_01m0n9jmd3f8y4mrkwr9cjs3rf
+    access:
+      availability: public
+      method: form
+      url: https://outplane.com/runway
+    source_ids:
+      - src_049a676d5a3c494b88cfe1c2a915b44946ea0c428c5bd735969614b2ebd710db
