@@ -1,0 +1,64 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01m0kzjkqxap1tkw74zxv25mbs
+slug: paytm
+slug_aliases: []
+name: Paytm
+domains:
+  - value: paytm.com
+    role: primary
+    valid_from: 2026-08-22T00:00:00.000Z
+category: payments-fintech
+description: Paytm provides payment acceptance, merchant tools, banking products, advertising, and commerce services.
+links:
+  site: https://business.paytm.com/
+sources:
+  - source_id: src_b1a6043e67ed98a16d9998bad32e8acd65374edf888dd5c3b9993318dc7f217b
+    url: https://business.paytm.com/paytm-startups
+programs:
+  - program_id: prg_01m0kzjkqx8sb0ery5yctb3zpc
+    program_slug: paytm-for-startups
+    program_slug_aliases: []
+    title: Paytm for Startups
+    summary: An early-stage startup program offering payment acceptance, merchant products, distribution, and startup support in India.
+    source_ids:
+      - src_b1a6043e67ed98a16d9998bad32e8acd65374edf888dd5c3b9993318dc7f217b
+offers:
+  - offer_id: off_01m0kzjkqx9qxmcfgx0vxv7xsg
+    program_id: prg_01m0kzjkqx8sb0ery5yctb3zpc
+    offer_slug: six-lakh-inr-commission-free-processing
+    offer_slug_aliases: []
+    title: INR 6 lakh in commission-free payment acceptance
+    summary: First-time Paytm Payment Gateway customers can process INR 1 lakh per month commission-free for six months, with setup and maintenance charges waived.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-22T00:00:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_primary
+          description: Commission-free payment acceptance on INR 1 lakh per month for six months
+          kind: waiver
+          waived_item: Payment processing commission on INR 6 lakh in total payment volume
+      consideration:
+        kind: variable
+        description: The waiver is limited to INR 1 lakh in payment volume per month for six months; payment volume outside that allowance is not covered by the offer.
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_registered_startup_program
+            kind: manual
+            reason: external-verification
+            statement: The startup must be registered with a national or state-level startup program, such as an incubator, Startup India, or DPIIT.
+          - criterion_id: cri_new_gateway_customer
+            kind: manual
+            reason: external-verification
+            statement: Applicant must be a first-time Paytm Payment Gateway customer.
+    roles:
+      terms_authority_entity_id: ent_01m0kzjkqxap1tkw74zxv25mbs
+      access_operator_entity_id: ent_01m0kzjkqxap1tkw74zxv25mbs
+    access:
+      availability: public
+      method: form
+      url: https://business.paytm.com/paytm-startups
+    source_ids:
+      - src_b1a6043e67ed98a16d9998bad32e8acd65374edf888dd5c3b9993318dc7f217b
