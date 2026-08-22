@@ -1,0 +1,60 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01m0kjfn59wcbhccqh1rmy87eh
+slug: growthbook
+slug_aliases: []
+name: GrowthBook
+domains:
+  - value: growthbook.io
+    role: primary
+    valid_from: 2026-08-22T01:48:36.000Z
+category: data-analytics
+description: GrowthBook provides warehouse-native experimentation, feature flags, and product analytics, with open-source and managed deployment options.
+links:
+  site: https://www.growthbook.io
+sources:
+  - source_id: src_49180f11263b33894d2ccd1435aeb821e9d1941b06cbdfaf096fd995474acb0e
+    url: https://www.growthbook.io/builders
+programs:
+  - program_id: prg_01m0kjfn5b4sca8vrd7mw050cj
+    program_slug: growthbook-builders-program
+    program_slug_aliases: []
+    title: GrowthBook Builders Program
+    summary: GrowthBook gives qualified venture-backed startups its Enterprise platform free for six months, with capacity for up to one billion events during that period.
+    source_ids:
+      - src_49180f11263b33894d2ccd1435aeb821e9d1941b06cbdfaf096fd995474acb0e
+offers:
+  - offer_id: off_01m0kjfn5bwrkxkd4bewf35ne5
+    program_id: prg_01m0kjfn5b4sca8vrd7mw050cj
+    offer_slug: enterprise-free-for-six-months
+    offer_slug_aliases: []
+    title: Six months free GrowthBook Enterprise
+    summary: Qualified startups receive GrowthBook Enterprise free for six months, including experimentation, feature flags, product analytics, and up to one billion events.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-22T01:48:36.000Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_primary
+          description: GrowthBook Enterprise at no cost for six months, with up to one billion events over the benefit period
+          kind: free-service
+          service: GrowthBook Enterprise
+          duration:
+            kind: exact
+            value: P6M
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_01
+        statement: GrowthBook reviews venture-backed startups that are scaling quickly, typically with less than USD 50 million in funding and more than 50,000 monthly website visits.
+        reason: vendor-discretion
+    roles:
+      terms_authority_entity_id: ent_01m0kjfn59wcbhccqh1rmy87eh
+      access_operator_entity_id: ent_01m0kjfn59wcbhccqh1rmy87eh
+    access:
+      availability: public
+      method: form
+      url: https://www.growthbook.io/builders
+    source_ids:
+      - src_49180f11263b33894d2ccd1435aeb821e9d1941b06cbdfaf096fd995474acb0e
