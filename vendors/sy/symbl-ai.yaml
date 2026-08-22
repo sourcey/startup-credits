@@ -1,0 +1,67 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01m0n1gs74fze9qjmz8dy9p4ze
+slug: symbl-ai
+slug_aliases: []
+name: Symbl.ai
+domains:
+  - value: symbl.ai
+    role: primary
+    valid_from: 2026-08-22T04:50:00.000Z
+category: ai-ml
+description: Conversation-intelligence and agentic AI platform whose APIs transform voice, video, and chat communication into real-time assistance and automation.
+links:
+  site: https://symbl.ai
+sources:
+  - source_id: src_2388635d7f398f5588ae42a05cbb2aaa9b0dbbf3b12096cda1793a62f4a55e9e
+    url: https://symbl.ai/startups/apply/
+programs:
+  - program_id: prg_01m0n1gs77tkccwn8t62p7mcdj
+    program_slug: symbl-ai-for-startups
+    program_slug_aliases: []
+    title: Symbl.ai for Startups
+    summary: Startup program granting API platform credits plus integration, technical, and community support for products integrating voice, video, or chat.
+    source_ids:
+      - src_2388635d7f398f5588ae42a05cbb2aaa9b0dbbf3b12096cda1793a62f4a55e9e
+offers:
+  - offer_id: off_01m0n1gs78ny9xmt782afdchvh
+    offer_slug: symbl-ai-for-startups-credits
+    offer_slug_aliases: []
+    title: Symbl.ai for Startups — API Platform Credits
+    summary: Startups founded less than two years ago that have raised no more than $2 million USD can receive API platform credits of 200,000 minutes ($10,000) plus integration support, technical help, and startup community access.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-22T04:50:00.000Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration beyond a startup eligibility requirement.
+      benefits:
+        - benefit_id: ben_primary_credits
+          description: Symbl.ai API platform credits amounting to 200,000 minutes—or $10,000.
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 1000000
+            kind: exact
+        - benefit_id: ben_integration_support
+          description: Integration and solution support together with technical help.
+          kind: other
+        - benefit_id: ben_community
+          description: Exclusive access to the Symbl.ai startup community for founders working on voice and conversation intelligence.
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: The startup must have been founded less than two years ago and raised no more than $2 million USD in total funding; credits are reserved for new startups, and fully owned subsidiaries or remote offices may not apply.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01m0n1gs74fze9qjmz8dy9p4ze
+      access_operator_entity_id: ent_01m0n1gs74fze9qjmz8dy9p4ze
+    access:
+      availability: public
+      method: form
+      url: https://symbl.ai/startups/apply/
+    source_ids:
+      - src_2388635d7f398f5588ae42a05cbb2aaa9b0dbbf3b12096cda1793a62f4a55e9e
