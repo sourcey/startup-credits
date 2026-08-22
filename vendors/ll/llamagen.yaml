@@ -1,0 +1,75 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01m03w3vmvh5hp9e80td8xew83
+slug: llamagen
+slug_aliases: []
+name: LlamaGen
+domains:
+  - value: llamagen.ai
+    role: primary
+    valid_from: 2026-08-15T23:29:05.000Z
+category: ai-ml
+description: LlamaGen provides AI tools and APIs for generating characters, storyboards, comics, and other creative assets.
+links:
+  site: https://llamagen.ai
+  pricing: https://llamagen.ai/pricing
+sources:
+  - source_id: src_a2d852e38f44784632e8f7116951bbed40470c591202fb07df002e7d463a6554
+    url: https://llamagen.ai/startups
+programs:
+  - program_id: prg_01m03w3vn1vbqvg9bxas7q28hj
+    program_slug: startup-program
+    program_slug_aliases: []
+    title: LlamaGen Startup Program
+    summary: LlamaGen's startup program offers tiered Comic API credits, technical support, early feature access, and a founder community for approved startups.
+    source_ids:
+      - src_a2d852e38f44784632e8f7116951bbed40470c591202fb07df002e7d463a6554
+offers:
+  - offer_id: off_01m03w3vn1zryra0tg6tf9p658
+    program_id: prg_01m03w3vn1vbqvg9bxas7q28hj
+    offer_slug: bootstrapped-startup-comic-api-credits
+    offer_slug_aliases: []
+    title: Up to $2K in LlamaGen Comic API Credits for Bootstrapped Startups
+    summary: Approved bootstrapped startups receive up to $2,000 in free LlamaGen Comic API credits, valid for 12 months, plus technical support and community access.
+    description: The Bootstrapped tier is for full-time startup teams that have raised less than $500,000 and have an active company website or demo. Credits apply to LlamaGen enterprise Comic API endpoints.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-15T23:29:05.000Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_01
+          description: Up to $2,000 in free LlamaGen Comic API credits, valid for 12 months from issuance
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 200000
+            kind: up-to
+          duration:
+            kind: exact
+            value: P1Y
+        - benefit_id: ben_02
+          description: Technical guidance, integration help, and priority issue resolution from LlamaGen's engineering team
+          kind: free-service
+          service: Technical support from the LlamaGen engineering team
+        - benefit_id: ben_03
+          description: Access to the LlamaGen founder community, events, and private Slack group
+          kind: free-service
+          service: Founder community and private Slack access
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_01
+        statement: Applicant must be a full-time startup team, have raised less than $500,000, maintain an active company website or demo, and receive LlamaGen approval for the Bootstrapped tier.
+        reason: external-verification
+    roles:
+      terms_authority_entity_id: ent_01m03w3vmvh5hp9e80td8xew83
+      access_operator_entity_id: ent_01m03w3vmvh5hp9e80td8xew83
+    access:
+      availability: public
+      instructions: Submit the startup program form with founder, company, stage, team-size, funding, and intended Comic API usage details.
+      method: form
+      url: https://llamagen.ai/startups
+    source_ids:
+      - src_a2d852e38f44784632e8f7116951bbed40470c591202fb07df002e7d463a6554
