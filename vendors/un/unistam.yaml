@@ -1,0 +1,68 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_57536b42607627125395f4b01c
+slug: unistam
+slug_aliases: []
+name: Unistam Technology Services
+domains:
+  - value: unistamts.com
+    role: primary
+    valid_from: 2026-08-14T14:41:42.248Z
+category: hosting-infra
+description: Unistam Technology Services provides managed infrastructure, cloud services, business technology products, and technical consulting.
+links:
+  site: https://unistamts.com
+sources:
+  - source_id: src_a39e1cf7cc4463ca733b5203006194c7091f7e6b4cd21c15e2f0a7a415a41e72
+    url: https://unistamts.com/startups.php
+programs:
+  - program_id: prg_4bdcdd902c9e03d4867faba12b
+    program_slug: unistam-startup-program
+    program_slug_aliases: []
+    title: Unistam Startup Program
+    summary: Unistam supports eligible early-stage technology startups with Simba Space cloud credits, managed infrastructure, technical support, and founder consultation.
+    source_ids:
+      - src_a39e1cf7cc4463ca733b5203006194c7091f7e6b4cd21c15e2f0a7a415a41e72
+offers:
+  - offer_id: off_c6d434051fec0b38606f94f8f7
+    program_id: prg_4bdcdd902c9e03d4867faba12b
+    offer_slug: up-to-50000-in-simba-space-cloud-credits
+    offer_slug_aliases: []
+    title: Up to $50,000 in Simba Space cloud credits
+    summary: Selected startups receive up to $50,000 in Simba Space cloud infrastructure credits, plus managed infrastructure, priority support, and founder consultation.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-14T14:41:42.248Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to $50,000 in Simba Space cloud infrastructure credits
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 5000000
+            kind: up-to
+        - benefit_id: ben_02
+          description: Managed setup for hosting, email, and collaboration infrastructure with 24/7 priority support
+          kind: other
+        - benefit_id: ben_03
+          description: Regular one-on-one founder consultations for product, technology, and go-to-market strategy
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: external-verification
+        statement: Applicant must be a pre-seed through Series A startup building a technology product, have a registered or in-process entity, and have a committed team with a clear vision.
+    roles:
+      terms_authority_entity_id: ent_57536b42607627125395f4b01c
+      access_operator_entity_id: ent_57536b42607627125395f4b01c
+    access:
+      availability: public
+      method: form
+      url: https://unistamts.com/startups.php
+    terms_url: https://unistamts.com/startups.php
+    source_ids:
+      - src_a39e1cf7cc4463ca733b5203006194c7091f7e6b4cd21c15e2f0a7a415a41e72
