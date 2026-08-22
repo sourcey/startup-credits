@@ -1,0 +1,55 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01m0m0vq7shftweefbch9dv62n
+slug: frienton
+slug_aliases: []
+name: Frienton
+domains:
+  - value: frienton.com
+    role: primary
+    valid_from: 2026-08-22T06:00:40.935Z
+category: finance-accounting
+description: Frienton provides a financial operating system for banking, bookkeeping, controlling, reporting, payments, and tax workflows.
+links:
+  site: https://www.frienton.com
+sources:
+  - source_id: src_70790c3654133d86b474369aa6949f424f73933f6882d7eeab17392ac2bf02c2
+    url: https://www.frienton.com/startup-offer
+programs: []
+offers:
+  - offer_id: off_01m0m0vq7t9jdytr097s93jz91
+    offer_slug: bootstrapping-first-year-discount
+    offer_slug_aliases: []
+    title: Up to 75% off Frienton in the first year
+    summary: Bootstrapping startups founded within the last three years and spending under EUR 10,000 monthly can receive up to 75% off Frienton plans in year one.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-22T06:00:40.935Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to 75% discount on Frienton plans during the first year
+          duration:
+            kind: exact
+            value: P1Y
+          kind: discount
+          percentage:
+            basis_points: 7500
+            kind: up-to
+      consideration:
+        kind: variable
+        description: Approved startups pay the remaining discounted price of the selected Frienton plan; partner services are excluded from the startup discount.
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: external-verification
+        statement: The bootstrapping option applies to startups founded within the last three years with monthly expenditures below EUR 10,000.
+    roles:
+      terms_authority_entity_id: ent_01m0m0vq7shftweefbch9dv62n
+      access_operator_entity_id: ent_01m0m0vq7shftweefbch9dv62n
+    access:
+      availability: public
+      method: other
+      url: https://www.frienton.com/startup-offer
+    source_ids:
+      - src_70790c3654133d86b474369aa6949f424f73933f6882d7eeab17392ac2bf02c2
