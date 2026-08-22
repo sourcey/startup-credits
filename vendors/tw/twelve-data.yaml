@@ -1,0 +1,89 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01m0kz5vhrwkq6f8rvcnsh8qbt
+slug: twelve-data
+slug_aliases: []
+name: Twelve Data
+domains:
+  - value: twelvedata.com
+    role: primary
+    valid_from: 2026-08-22T05:30:27.331Z
+category: data-analytics
+description: Twelve Data provides financial market data APIs for stocks, forex, crypto, funds, fundamentals, and other international market data.
+links:
+  site: https://twelvedata.com
+sources:
+  - source_id: src_27038678aba3959d798d3a54ff84bc0e82cb6c9be18147744f9b4982813074ca
+    url: https://twelvedata.com/startups
+programs:
+  - program_id: prg_01m0kz5vhtwm17c8kdec5hhy0d
+    program_slug: early-stage-program
+    program_slug_aliases: []
+    title: Early Stage Program
+    summary: Twelve Data's Early Stage Program gives qualifying startups 20% off Twelve Data plans for 12 months.
+    source_ids:
+      - src_27038678aba3959d798d3a54ff84bc0e82cb6c9be18147744f9b4982813074ca
+offers:
+  - offer_id: off_01m0kz5vht5xm4cb3cf8temvy9
+    program_id: prg_01m0kz5vhtwm17c8kdec5hhy0d
+    offer_slug: twenty-percent-off-for-twelve-months
+    offer_slug_aliases: []
+    title: 20% off Twelve Data plans for 12 months
+    summary: Eligible early-stage startups receive 20% off Twelve Data plans for 12 months.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-22T05:30:27.331Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 20% discount on Twelve Data plans for 12 months
+          duration:
+            kind: exact
+            value: P1Y
+          kind: discount
+          percentage:
+            basis_points: 2000
+            kind: exact
+      consideration:
+        kind: variable
+        description: The startup pays the remaining discounted price of its selected Twelve Data plan.
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.funding_raised_usd
+            kind: predicate
+            operator: lte
+            statement: Startup has raised up to USD 1 million in funding.
+            value:
+              type: number
+              value: 1000000
+          - criterion_id: cri_02
+            fact: company.age_months
+            kind: predicate
+            operator: lt
+            statement: Startup is less than two years old.
+            value:
+              type: number
+              value: 24
+          - criterion_id: cri_03
+            fact: company.full_time_employee_count
+            kind: predicate
+            operator: lte
+            statement: Startup has 10 employees or fewer.
+            value:
+              type: number
+              value: 10
+          - criterion_id: cri_04
+            kind: manual
+            reason: external-verification
+            statement: The applicant must meet Twelve Data's published legal-entity and company-domain requirement.
+    roles:
+      terms_authority_entity_id: ent_01m0kz5vhrwkq6f8rvcnsh8qbt
+      access_operator_entity_id: ent_01m0kz5vhrwkq6f8rvcnsh8qbt
+    access:
+      availability: public
+      method: form
+      url: https://twelvedata.com/startups
+    source_ids:
+      - src_27038678aba3959d798d3a54ff84bc0e82cb6c9be18147744f9b4982813074ca
