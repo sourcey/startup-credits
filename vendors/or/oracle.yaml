@@ -1,0 +1,75 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kz3h34g86nkwcb3eh1e32t8n
+slug: oracle
+slug_aliases: []
+name: Oracle
+domains:
+  - value: oracle.com
+    role: primary
+    valid_from: 2026-08-03T09:40:00.000Z
+category: hosting-infra
+description: Enterprise technology company providing cloud infrastructure, database, and application services.
+links:
+  site: https://www.oracle.com
+sources:
+  - source_id: src_d1ac46b7fa26a337192d6d9e8a93d0ea6a4a3aa3da3724302244efea59a514a9
+    url: https://www.oracle.com/startup/
+programs:
+  - program_id: prg_01kz3h34g86nkwcb3eh1e32t8n
+    program_slug: oracle-for-startups
+    program_slug_aliases: []
+    title: Oracle for Startups
+    summary: Oracle for Startups provides qualifying startups with discounted Oracle Cloud Infrastructure pricing and free cloud credits.
+    source_ids:
+      - src_d1ac46b7fa26a337192d6d9e8a93d0ea6a4a3aa3da3724302244efea59a514a9
+offers:
+  - offer_id: off_01kz3h34g86nkwcb3eh1e32t8n
+    program_id: prg_01kz3h34g86nkwcb3eh1e32t8n
+    offer_slug: 70-percent-discount-and-free-cloud-credits-for-startups
+    offer_slug_aliases: []
+    title: 70% discount on Oracle Cloud Infrastructure plus free cloud credits for startups
+    summary: Qualifying startups receive a 70% discount on Oracle Cloud Infrastructure for their first two years, free cloud credits starting at $500 with the option to apply for more, and migration and technical support.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-03T09:40:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_primary
+          description: 70% discount on Oracle Cloud Infrastructure for the first two years
+          duration:
+            kind: exact
+            value: P2Y
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 7000
+        - benefit_id: ben_credits
+          description: Free Oracle Cloud credits starting at $500, with the option to apply for more
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 50000
+            kind: at-least
+        - benefit_id: ben_support
+          description: Migration and technical support with live monthly webinars
+          kind: other
+      consideration:
+        kind: unknown
+        description: The public program page does not establish separate consideration.
+    eligibility:
+      rule:
+        criterion_id: cri_requirement_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Oracle reviews startup applications individually and determines eligibility as part of the program application.
+    roles:
+      terms_authority_entity_id: ent_01kz3h34g86nkwcb3eh1e32t8n
+      access_operator_entity_id: ent_01kz3h34g86nkwcb3eh1e32t8n
+    access:
+      availability: public
+      method: form
+      url: https://www.oracle.com/startup/
+    terms_url: https://www.oracle.com/startup/
+    source_ids:
+      - src_d1ac46b7fa26a337192d6d9e8a93d0ea6a4a3aa3da3724302244efea59a514a9
