@@ -1,0 +1,56 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01m0kzjkqtbrhtp9kat6dr461m
+slug: fish-audio
+slug_aliases: []
+name: Fish Audio
+domains:
+  - value: fish.audio
+    role: primary
+    valid_from: 2026-08-22T00:00:00.000Z
+category: ai-ml
+description: Fish Audio provides real-time speech generation, voice cloning, and speech APIs for developers.
+links:
+  site: https://fish.audio/
+sources:
+  - source_id: src_6b3898e3c8ec012460c8e9e3f96bfcc9ba6c97f38266dc86ce2727f9e9a5ea25
+    url: https://fish.audio/startup/
+programs:
+  - program_id: prg_01m0kzjkqvazq55g1dwzfz41sw
+    program_slug: fish-audio-startup-program
+    program_slug_aliases: []
+    title: Fish Audio Startup Program
+    summary: A three-month voice AI program for early-stage teams building products with real-time speech generation.
+    source_ids:
+      - src_6b3898e3c8ec012460c8e9e3f96bfcc9ba6c97f38266dc86ce2727f9e9a5ea25
+offers:
+  - offer_id: off_01m0kzjkqvcq654fbwjxk7hsz9
+    program_id: prg_01m0kzjkqvazq55g1dwzfz41sw
+    offer_slug: thirty-six-million-voice-characters
+    offer_slug_aliases: []
+    title: 36 million voice characters over three months
+    summary: Accepted startups receive 12 million real-time voice generation characters per month for three months, plus premium support and increased concurrency.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-22T00:00:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_primary
+          description: 12 million voice generation characters per month for three months
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_startup_product
+        kind: manual
+        reason: external-verification
+        statement: Applicant must be an early-stage team building a product that uses Fish Audio real-time voice generation.
+    roles:
+      terms_authority_entity_id: ent_01m0kzjkqtbrhtp9kat6dr461m
+      access_operator_entity_id: ent_01m0kzjkqtbrhtp9kat6dr461m
+    access:
+      availability: public
+      method: form
+      url: https://fish.audio/startup/
+    source_ids:
+      - src_6b3898e3c8ec012460c8e9e3f96bfcc9ba6c97f38266dc86ce2727f9e9a5ea25
