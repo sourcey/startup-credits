@@ -1,0 +1,60 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01m071sv8qttmp2d59fy6t1xmr
+slug: anyscale
+slug_aliases: []
+name: Anyscale
+domains:
+  - value: anyscale.com
+    role: primary
+    valid_from: 2026-08-17T05:06:12.226Z
+category: ai-ml
+description: Anyscale is an AI compute platform from the creators of Ray for developing, training, and deploying AI and machine learning applications at scale.
+links:
+  site: https://anyscale.com
+sources:
+  - source_id: src_f2be911a5fb2304b25c6cef8e306224ffa0690267ac365bc8f0ecc4b83545179
+    url: https://anyscale.com/startup
+programs: []
+offers:
+  - offer_id: off_01m071sv8qr7ktnqptsgfrvyf7
+    offer_slug: anyscale-ai-startup-program
+    offer_slug_aliases: []
+    title: Anyscale AI Startup Program
+    summary: Early-stage AI teams can access up to $20K in Anyscale credits that run on their own cloud and stack with existing cloud provider credits, plus dedicated field engineers and the Anyscale Runtime.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-17T05:06:12.226Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Access up to $20K in Anyscale credits, which run on the company's own cloud and stack with its existing cloud provider credits.
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 2000000
+            kind: up-to
+        - benefit_id: ben_02
+          description: Dedicated field engineers supporting application architecture design, with hands-on technical support.
+          kind: other
+        - benefit_id: ben_03
+          description: Access to the Anyscale Runtime, a Ray-compatible runtime for running workloads on the Anyscale Platform.
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Eligibility is generally open to companies at various stages, though level of funding, technical maturity, and current cloud infrastructure may be considered during review.
+    roles:
+      terms_authority_entity_id: ent_01m071sv8qttmp2d59fy6t1xmr
+      access_operator_entity_id: ent_01m071sv8qttmp2d59fy6t1xmr
+    access:
+      availability: public
+      method: form
+      url: https://anyscale.com/startup
+      instructions: Submit the application form on the program page. The Anyscale team follows up within 24-48 hours with a qualification form, and qualified companies move into onboarding to access the benefits.
+    source_ids:
+      - src_f2be911a5fb2304b25c6cef8e306224ffa0690267ac365bc8f0ecc4b83545179
