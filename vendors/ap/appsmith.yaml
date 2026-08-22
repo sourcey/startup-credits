@@ -1,0 +1,82 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01m0719yh5mxzhpm3vc3pgvkn7
+slug: appsmith
+slug_aliases: []
+name: Appsmith
+domains:
+  - value: appsmith.com
+    role: primary
+    valid_from: 2026-08-17T04:57:31.060Z
+category: no-code
+description: Appsmith is an open-source low-code platform for building internal tools such as admin panels, dashboards, CRUD frontends, portals, trackers, and support and operations apps.
+links:
+  site: https://www.appsmith.com
+sources:
+  - source_id: src_ca297040bb327bf13c623e05669f866e15dc5c0fb820af99415bd1a12d074e88
+    url: https://www.appsmith.com/startup-program
+programs: []
+offers:
+  - offer_id: off_01m0719yh63pjr3rsa68h7mjgb
+    offer_slug: appsmith-startup-program
+    offer_slug_aliases: []
+    title: Appsmith Startup Program
+    summary: Startups incorporated less than two years ago that have raised under $10M can receive $30,000 worth of Appsmith credits, all Business plan features, and access to Appsmith developer advocates.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-17T04:57:31.060Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: $30,000 worth of Appsmith credits
+          kind: credit
+          value:
+            kind: exact
+            amount:
+              currency: USD
+              minor_units: 3000000
+        - benefit_id: ben_02
+          description: All Business plan features
+          kind: other
+        - benefit_id: ben_03
+          description: Access to Appsmith developer advocates
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.funding_raised_usd
+            kind: predicate
+            operator: lt
+            statement: The startup has raised less than $10M in funding.
+            value:
+              type: number
+              value: 10000000
+          - criterion_id: cri_02
+            fact: company.age_months
+            kind: predicate
+            operator: lt
+            statement: The startup was incorporated less than two years ago.
+            value:
+              type: number
+              value: 24
+          - criterion_id: cri_03
+            kind: manual
+            reason: not-machine-evaluable
+            statement: The applicant plans to use Appsmith for their own startup.
+          - criterion_id: cri_04
+            kind: manual
+            reason: not-machine-evaluable
+            statement: The applicant is looking to host Appsmith on their own infrastructure.
+    roles:
+      terms_authority_entity_id: ent_01m0719yh5mxzhpm3vc3pgvkn7
+      access_operator_entity_id: ent_01m0719yh5mxzhpm3vc3pgvkn7
+    access:
+      availability: public
+      method: form
+      url: https://www.appsmith.com/startup-program
+      instructions: Apply through the enrolment form linked from the Appsmith Startup Program page.
+    source_ids:
+      - src_ca297040bb327bf13c623e05669f866e15dc5c0fb820af99415bd1a12d074e88
