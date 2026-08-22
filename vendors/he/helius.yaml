@@ -1,0 +1,87 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01m0bcsqanykhqcme2wh1j9fmq
+slug: helius
+slug_aliases: []
+name: Helius
+domains:
+  - value: helius.dev
+    role: primary
+    valid_from: 2026-08-19T05:15:00.000Z
+category: hosting-infra
+description: Helius provides high-performance Solana RPC nodes, developer APIs, and Web3 infrastructure tools for building decentralized applications.
+links:
+  site: https://www.helius.dev
+sources:
+  - source_id: src_be8435d25411b9578848003f2a252c5fece60e582826425ec65971228a5ff316
+    url: https://www.helius.dev/startup-launchpad
+  - source_id: src_7fa06c5e62a01d59c96ad8de23e6f4dd346f4ae9b92f412cee509d4a72fd3c50
+    url: https://www.helius.dev/blog/helius-startup-launchpad
+  - source_id: src_87efa4591c4986bebdf7fa023740d05cef02811a4cdb73a836012a12bd9cdd99
+    url: https://www.helius.dev/pricing
+programs:
+  - program_id: prg_01m0bcsqaqfvw6jay8xr20sd5h
+    program_slug: startup-launchpad
+    program_slug_aliases: []
+    title: Helius Startup Launchpad
+    summary: Helius Startup Launchpad provides early-stage Solana startups with 8 months of free Business tier access, warm investor introductions, mentorship, and partner discounts.
+    source_ids:
+      - src_be8435d25411b9578848003f2a252c5fece60e582826425ec65971228a5ff316
+      - src_7fa06c5e62a01d59c96ad8de23e6f4dd346f4ae9b92f412cee509d4a72fd3c50
+offers:
+  - offer_id: off_01m0bcsqaqb7rnsb4xf482b74s
+    program_id: prg_01m0bcsqaqfvw6jay8xr20sd5h
+    offer_slug: startup-launchpad-business-tier
+    offer_slug_aliases: []
+    title: Helius Startup Launchpad Business Tier
+    summary: Pre-seed and seed-stage Solana startups receive 8 months of free Business tier access with 100 million credits per month, valued at approximately $3,992, plus investor intros and mentorship.
+    lifecycle:
+      status: active
+      effective_from: 2025-01-02T00:00:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 8 months of free Business tier access providing 100 million API credits per month, normally priced at $499 per month.
+          kind: credit
+          value:
+            kind: up-to
+            amount:
+              currency: USD
+              minor_units: 399200
+            duration:
+              kind: exact
+              value: P8M
+        - benefit_id: ben_02
+          description: Warm introductions to leading crypto investors including Chapter One, Founders Fund, Haun Ventures, and Solana Ventures.
+          kind: other
+        - benefit_id: ben_03
+          description: Mentorship from veteran Solana operators and access to private working groups and education.
+          kind: other
+        - benefit_id: ben_04
+          description: Exclusive partner discounts from companies like Squads, Sphere, Ottersec, Moonpay, Artemis, and Dynamic.
+          kind: discount
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: external-verification
+            statement: Must be a pre-seed or seed stage (or earlier) crypto or Solana startup.
+          - criterion_id: cri_02
+            fact: company.stage
+            kind: predicate
+            operator: present
+            statement: Preference for teams with a working product, accelerator alumni, hackathon winners, or VC-referred founders.
+    roles:
+      terms_authority_entity_id: ent_01m0bcsqanykhqcme2wh1j9fmq
+      access_operator_entity_id: ent_01m0bcsqanykhqcme2wh1j9fmq
+    access:
+      availability: public
+      method: form
+      url: https://www.helius.dev/startup-launchpad
+    source_ids:
+      - src_be8435d25411b9578848003f2a252c5fece60e582826425ec65971228a5ff316
+      - src_7fa06c5e62a01d59c96ad8de23e6f4dd346f4ae9b92f412cee509d4a72fd3c50
+      - src_87efa4591c4986bebdf7fa023740d05cef02811a4cdb73a836012a12bd9cdd99
