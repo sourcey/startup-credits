@@ -1,0 +1,67 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01m06s1wdbywxs3phykzzr79g9
+slug: unkey
+slug_aliases: []
+name: Unkey
+domains:
+  - value: unkey.com
+    role: primary
+    valid_from: 2026-08-17T02:33:18.000Z
+category: auth-security
+description: Unkey provides API key management, authentication, and rate limiting for developers building and shipping APIs.
+links:
+  site: https://unkey.com
+sources:
+  - source_id: src_585295e07ef666218b3cd388636d7c3fb5b9c6e556b0f026fee7aa8c219fc8ee
+    url: https://unkey.com/startups
+programs: []
+offers:
+  - offer_id: off_01m06s1wdcn9wjbn060ce9xk91
+    offer_slug: startups-program
+    offer_slug_aliases: []
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: $1,000 in credits every month while eligible
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 100000
+            kind: exact
+        - benefit_id: ben_02
+          description: Priority support through a dedicated Slack channel
+          kind: other
+        - benefit_id: ben_03
+          description: Optional 1:1 concierge onboarding session
+          kind: other
+        - benefit_id: ben_04
+          description: Hands-on support to migrate to Unkey from an existing platform
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        fact: company.funding_raised_usd
+        kind: predicate
+        operator: lt
+        statement: Eligibility expires after raising $5 million
+        value:
+          type: number
+          value: 5000000
+    lifecycle:
+      effective_from: 2026-08-17T02:33:18.000Z
+      status: active
+    roles:
+      terms_authority_entity_id: ent_01m06s1wdbywxs3phykzzr79g9
+      access_operator_entity_id: ent_01m06s1wdbywxs3phykzzr79g9
+    access:
+      availability: public
+      method: form
+      url: https://unkey.com/startups
+      instructions: Complete the application form on the Startups Program page, providing your name, email, VC or accelerator, workspace ID, and the platform you are migrating from.
+    summary: Startups that have raised under $5 million receive $1,000 in Unkey credits every month, plus priority support in a dedicated Slack channel, optional concierge onboarding, and hands-on migration help.
+    title: $1,000 in monthly credits for startups under $5M raised
+    source_ids:
+      - src_585295e07ef666218b3cd388636d7c3fb5b9c6e556b0f026fee7aa8c219fc8ee
