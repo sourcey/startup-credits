@@ -1,0 +1,74 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01m0kzze7a8sj0b5v8a4z5kgbq
+slug: visualeaf
+slug_aliases: []
+name: VisuaLeaf
+domains:
+  - value: visualeaf.com
+    role: primary
+    valid_from: 2026-08-22T00:00:00.000Z
+category: databases
+description: VisuaLeaf is a desktop database client for querying, exploring, and managing SQL and NoSQL databases.
+links:
+  site: https://visualeaf.com/
+sources:
+  - source_id: src_14733a5bb72661140118529103117aca5ccea72c84f716416a689015cd20279a
+    url: https://visualeaf.com/startups/
+programs:
+  - program_id: prg_01m0kzze7a6jzew689g400cfd4
+    program_slug: visualeaf-for-startups
+    program_slug_aliases: []
+    title: VisuaLeaf for Startups
+    summary: A first-year licensing discount for small, early-stage startups using the full VisuaLeaf product.
+    source_ids:
+      - src_14733a5bb72661140118529103117aca5ccea72c84f716416a689015cd20279a
+offers:
+  - offer_id: off_01m0kzze7a2s93f9cpd78w3x96
+    program_id: prg_01m0kzze7a6jzew689g400cfd4
+    offer_slug: fifty-percent-off-first-year
+    offer_slug_aliases: []
+    title: 50% off up to 10 licenses for the first year
+    summary: Approved startups receive 50% off their selected full VisuaLeaf plan for up to 10 licenses during the first year, including updates and support.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-22T00:00:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_primary
+          description: 50% discount on up to 10 licenses for the first year
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 5000
+      consideration:
+        kind: variable
+        description: The startup pays the remaining 50% of the selected plan price.
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_company_age
+            kind: manual
+            reason: external-verification
+            statement: The startup must be less than three years old.
+          - criterion_id: cri_team_size
+            kind: manual
+            reason: external-verification
+            statement: The startup must have fewer than 15 employees.
+          - criterion_id: cri_license_limit
+            kind: manual
+            reason: external-verification
+            statement: The startup must need no more than 10 licenses.
+          - criterion_id: cri_new_customer
+            kind: manual
+            reason: external-verification
+            statement: The startup must be new to paid VisuaLeaf plans.
+    roles:
+      terms_authority_entity_id: ent_01m0kzze7a8sj0b5v8a4z5kgbq
+      access_operator_entity_id: ent_01m0kzze7a8sj0b5v8a4z5kgbq
+    access:
+      availability: public
+      method: form
+      url: https://visualeaf.com/startups/
+    source_ids:
+      - src_14733a5bb72661140118529103117aca5ccea72c84f716416a689015cd20279a
