@@ -1,0 +1,61 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01m0m04cm6nace0vz0anvgwbtr
+slug: liner
+slug_aliases: []
+name: Liner
+domains:
+  - value: liner.com
+    role: primary
+    valid_from: 2026-08-22T05:47:07.806Z
+category: ai-ml
+description: Liner provides web and academic search, cited research agents, and developer APIs for search and research applications.
+links:
+  site: https://liner.com
+sources:
+  - source_id: src_5aa5b383821c62da085a6ebab171c121a2bfc417a5abcc3122e3e1ddc0f57630
+    url: https://build.liner.com/blog/liner-startup-grant-program
+programs:
+  - program_id: prg_01m0m04cm8gvg6r55683xjw213
+    program_slug: startup-grant-program
+    program_slug_aliases: []
+    title: Liner Startup Grant Program
+    summary: Liner's non-dilutive grant program gives eligible early-stage startups API credits for its search and research developer platform.
+    source_ids:
+      - src_5aa5b383821c62da085a6ebab171c121a2bfc417a5abcc3122e3e1ddc0f57630
+offers:
+  - offer_id: off_01m0m04cm8j00pjt9yc4kpam4w
+    program_id: prg_01m0m04cm8gvg6r55683xjw213
+    offer_slug: liner-startup-api-credits
+    offer_slug_aliases: []
+    title: Liner Startup API Credits
+    summary: Eligible early-stage startups can receive up to $1,000 in credits across Liner's Search and Research APIs, with no equity surrendered and nothing to repay.
+    lifecycle:
+      status: active
+      effective_from: 2026-07-28T00:00:00Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to $1,000 in Liner API credits
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 100000
+            kind: up-to
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_requirement_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Applicants must be an eligible early-stage startup and provide a company email, company name, company website, and intended Liner product through the application form.
+    roles:
+      terms_authority_entity_id: ent_01m0m04cm6nace0vz0anvgwbtr
+      access_operator_entity_id: ent_01m0m04cm6nace0vz0anvgwbtr
+    access:
+      availability: public
+      method: form
+      url: https://forms.gle/L6GEKR8z13RmmARF8
+    source_ids:
+      - src_5aa5b383821c62da085a6ebab171c121a2bfc417a5abcc3122e3e1ddc0f57630
