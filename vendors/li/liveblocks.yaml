@@ -1,0 +1,53 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kzybxx3nhg9e72nwjj5fg2wm
+slug: liveblocks
+slug_aliases: []
+name: Liveblocks
+domains:
+  - value: liveblocks.io
+    role: primary
+    valid_from: 2026-08-13T21:15:00.000Z
+category: devtools-other
+description: Liveblocks provides realtime infrastructure for handling concurrent edits on shared data, letting teams build multiplayer presence, storage, and commenting into their products.
+links:
+  site: https://liveblocks.io
+sources:
+  - source_id: src_58b051cd546cbd5ed1e3dc946735572c6800f87df5c46366520385100da54856
+    url: https://liveblocks.io/startups
+  - source_id: src_3584a0636b99ca380ad6bfc2c84ac0acd94e470107a488fe47d21d07e04bb497
+    url: https://liveblocks.io
+  - source_id: src_e09bdb3f0b9722fe562c94d8b3e95f4b3976b131c0fa96405d27b920bf95adcd
+    url: https://liveblocks.io/docs
+programs: []
+offers:
+  - offer_id: off_01kzybxx41a9tkr0zpcxe79p73
+    offer_slug: liveblocks-for-startups
+    offer_slug_aliases: []
+    title: Liveblocks for Startups
+    summary: Eligible early-stage startups and nonprofits get a discounted Liveblocks Team plan to ship realtime collaboration features, for new customers with fewer than 5 employees and up to $2M raised / $500K ARR.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-13T21:15:00.000Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish a separate consideration amount for the discounted plan.
+      benefits:
+        - benefit_id: ben_primary
+          description: Discounted Liveblocks Team plan pricing to ship realtime collaboration features at scale
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a new Liveblocks customer with fewer than 5 employees, and (for startups) up to $2M raised and $500K ARR; early-stage startups and nonprofits are eligible.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01kzybxx3nhg9e72nwjj5fg2wm
+      access_operator_entity_id: ent_01kzybxx3nhg9e72nwjj5fg2wm
+    access:
+      availability: public
+      method: form
+      url: https://liveblocks.io/startups
+    source_ids:
+      - src_58b051cd546cbd5ed1e3dc946735572c6800f87df5c46366520385100da54856
