@@ -47,12 +47,9 @@ offers:
           currency: USD
           minor_units: 100000
         kind: exact
-        recurrence: monthly
     - benefit_id: ben_02
       description: Priority support, concierge onboarding, and hands-on migration help.
       kind: other
-      value:
-        kind: non-monetary
     - benefit_id: ben_03
       description: Startups that have raised over $5 million receive 50% off their Unkey bill instead of credits.
       kind: discount
