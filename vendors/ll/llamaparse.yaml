@@ -1,0 +1,77 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01m0r05m1wssyaryrhmffq53b4
+slug: llamaparse
+slug_aliases: []
+name: LlamaParse
+domains:
+  - value: llamaparse.ai
+    role: primary
+    valid_from: "2026-08-23T19:05:00.000Z"
+category: ai-ml
+description: LlamaParse provides industry-leading document processing with agentic OCR for parsing, extraction, and indexing of complex documents.
+links:
+  site: https://www.llamaparse.ai
+sources:
+  - source_id: src_702b353d8d9f1ac3567a85cd9b47c82bd3424b9e416b244baccdc643db8c6acf
+    url: https://www.llamaparse.ai/startups
+programs:
+  - program_id: prg_01m0r05m1wdns72ypj87p4a9xe
+    program_slug: llamaparse-startup-offer
+    program_slug_aliases: []
+    title: LlamaParse Startup Offer
+    summary: Provides $2,000 in free platform credits valid for one year, bulk purchase discounts in production, priority support via a dedicated Slack channel with an AI engineer, and social media promotion to eligible startups.
+    source_ids:
+      - src_702b353d8d9f1ac3567a85cd9b47c82bd3424b9e416b244baccdc643db8c6acf
+offers:
+  - offer_id: off_01m0r05m1wa041tzagn2dq95a4
+    program_id: prg_01m0r05m1wdns72ypj87p4a9xe
+    offer_slug: two-thousand-dollar-free-credits-startup
+    offer_slug_aliases: []
+    title: "$2K Free Credits with Premium Support and Bulk Discounts"
+    summary: >-
+      Startups receive $2,000 in free platform credits available for one year,
+      discounts on bulk credit purchases in production, priority support through
+      a dedicated Slack channel staffed by an AI engineer, and a dedicated post
+      on LlamaParse's socials and newsletter.
+    lifecycle:
+      status: active
+      effective_from: "2026-08-23T19:05:00.000Z"
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: $2,000 in free platform credits available for one year from acceptance.
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 200000
+            kind: exact
+          duration:
+            kind: up-to
+            value: P1Y
+        - benefit_id: ben_02
+          description: Discounts on bulk credit purchases when scaling to production workloads.
+          kind: discount
+        - benefit_id: ben_03
+          description: Priority support Slack channel with a dedicated AI engineer.
+          kind: other
+        - benefit_id: ben_04
+          description: Dedicated post on LlamaParse's social media and newsletter reaching millions of developers.
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Must be an early-stage startup building with document processing or agentic workflows.
+    roles:
+      terms_authority_entity_id: ent_01m0r05m1wssyaryrhmffq53b4
+      access_operator_entity_id: ent_01m0r05m1wssyaryrhmffq53b4
+    access:
+      availability: public
+      method: form
+      url: https://www.llamaparse.ai/startups#apply
+    source_ids:
+      - src_702b353d8d9f1ac3567a85cd9b47c82bd3424b9e416b244baccdc643db8c6acf
