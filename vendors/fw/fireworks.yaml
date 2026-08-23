@@ -1,0 +1,54 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01m0qmysxvtekajsvtem6q7d0e
+slug: fireworks
+slug_aliases: []
+name: Fireworks AI
+domains:
+  - value: fireworks.ai
+    role: primary
+    valid_from: 2026-08-23T15:50:00.000Z
+category: ai-ml
+description: Fireworks AI provides an inference platform for open-source and custom generative models, including serverless text, vision, image, audio, and embedding APIs plus on-demand GPU deployments.
+links:
+  site: https://fireworks.ai
+sources:
+  - source_id: src_01m0qmz1w8x5q4j7s2n9p3r6t8u
+    url: https://fireworks.ai/startups
+programs: []
+offers:
+  - offer_id: off_01m0qmysxvkkat8mcst5bdr71q
+    offer_slug: startups-build-credits
+    offer_slug_aliases: []
+    title: Fireworks for Startups
+    summary: Eligible venture-backed startups receive platform build credits, higher rate limits, community access, and product feedback sessions; credits expire after one year.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-23T15:50:00.000Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_01
+          description: Build credits for supported on-demand AI services, including text and vision inference, image generation, audio, embeddings, fine-tuning, and GPU deployments; credits expire after one year
+          kind: other
+        - benefit_id: ben_02
+          description: Higher rate limits to help startups prototype and scale
+          kind: other
+        - benefit_id: ben_03
+          description: Access to curated startup meetups, workshops, hackathons, roadmap sessions, and product feedback opportunities
+          kind: other
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: not-machine-evaluable
+        statement: For-profit privately held companies founded within the last five years with more than $500,000 in venture funding that have not received Series D or later funding. Applications are reviewed by Fireworks.
+    roles:
+      terms_authority_entity_id: ent_01m0qmysxvtekajsvtem6q7d0e
+      access_operator_entity_id: ent_01m0qmysxvtekajsvtem6q7d0e
+    access:
+      availability: public
+      method: form
+      url: https://fireworks.ai/startups
+    source_ids:
+      - src_01m0qmz1w8x5q4j7s2n9p3r6t8u
