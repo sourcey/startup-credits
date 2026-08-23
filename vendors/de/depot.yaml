@@ -1,0 +1,58 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01m0qdhjj1k2jdv3qxb9g2sgfn
+slug: depot
+slug_aliases: []
+name: Depot
+domains:
+  - value: depot.dev
+    role: primary
+    valid_from: 2026-08-23T13:40:00.000Z
+category: ci-cd
+description: Depot provides faster container builds, GitHub Actions runners, and CI infrastructure for software teams.
+links:
+  site: https://depot.dev
+sources:
+  - source_id: src_01fc79af4848160f08e215598cd946e39484750cecb6bdea6d91da3e21da720c
+    url: https://depot.dev/docs/posthog-for-startups
+programs: []
+offers:
+  - offer_id: off_01m0qdhjj4w31kv7mf43knq2pm
+    offer_slug: posthog-for-startups-5000-depot-credits
+    offer_slug_aliases: []
+    title: PostHog for Startups Depot credits
+    summary: Approved PostHog for Startups participants who are new Depot customers receive a partner code worth $5,000 in Depot credits, valid for one year from checkout activation.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-23T13:40:00.000Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration beyond being an approved PostHog for Startups participant and a new Depot customer.
+      benefits:
+        - benefit_id: ben_01
+          description: $5,000 in Depot credits covering Developer or Startup plan fees and Depot usage
+          duration:
+            kind: exact
+            value: P1Y
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 500000
+            kind: exact
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be an approved PostHog for Startups participant and a new Depot customer. Redeem the partner code at Stripe checkout after selecting a plan.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01m0qdhjj1k2jdv3qxb9g2sgfn
+      access_operator_entity_id: ent_01m0qdhjj1k2jdv3qxb9g2sgfn
+    access:
+      availability: membership
+      method: code
+      instructions: Sign up for Depot, open organization Settings or Configure billing, select a plan, and enter the PostHog for Startups partner code in the Stripe checkout window. Stripe may show 100% off the first month and omit the $5,000 figure; Depot grants the credits after checkout.
+      url: https://depot.dev/docs/posthog-for-startups
+    source_ids:
+      - src_01fc79af4848160f08e215598cd946e39484750cecb6bdea6d91da3e21da720c
