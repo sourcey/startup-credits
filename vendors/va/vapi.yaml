@@ -1,0 +1,55 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01m0qkgn5n63g0v1945yw60n4a
+slug: vapi
+slug_aliases: []
+name: Vapi
+domains:
+  - value: vapi.ai
+    role: primary
+    valid_from: 2026-08-23T13:05:00.000Z
+category: ai-ml
+description: Vapi provides a voice AI platform for developers to build, test, and deploy voice agents over phone and web calls.
+links:
+  site: https://vapi.ai
+sources:
+  - source_id: src_693b8409420ff580326aa4b603ed9ce8a58dbf097a6b081c203ecdb871761adb
+    url: https://vapi.ai/startups
+programs: []
+offers:
+  - offer_id: off_01m0qkgn5seh2segcak9xehtzs
+    offer_slug: startup-grant-90000-free-minutes
+    offer_slug_aliases: []
+    title: Vapi Startup Grant
+    summary: Eligible voice AI startups receive 7,500 free minutes per month for 12 months (90,000 total), plus dedicated Slack support, priority feature access, and community access.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-23T13:05:00.000Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_01
+          description: 7,500 free minutes per month for 12 months (90,000 minutes total)
+          kind: free-service
+          service: 7,500 free voice minutes monthly for 12 months
+          duration:
+            kind: exact
+            value: P12M
+        - benefit_id: ben_02
+          description: Dedicated Slack channel support and priority feature access
+          kind: other
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Pre-seed to Series A startups that have raised at least $250K in funding and are building voice AI products or features with a clear launch timeline. Agencies and consulting firms do not qualify. Applications are reviewed at Vapi's discretion; the page notes applications were on hold at review time.
+    roles:
+      terms_authority_entity_id: ent_01m0qkgn5n63g0v1945yw60n4a
+      access_operator_entity_id: ent_01m0qkgn5n63g0v1945yw60n4a
+    access:
+      availability: public
+      method: form
+      url: https://vapi.ai/startups
+    source_ids:
+      - src_693b8409420ff580326aa4b603ed9ce8a58dbf097a6b081c203ecdb871761adb
