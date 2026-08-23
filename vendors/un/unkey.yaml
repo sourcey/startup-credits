@@ -1,0 +1,72 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01m0pf4za6h5yt9d2g129jrzbv
+slug: unkey
+slug_aliases: []
+name: Unkey
+domains:
+  - value: unkey.com
+    role: primary
+    valid_from: "2026-08-23T04:40:00.000Z"
+category: devtools-other
+description: Open-source API management platform for authentication, rate limiting, and analytics at the edge.
+links:
+  site: https://unkey.com
+sources:
+  - source_id: src_868fb02f90dcb72a58320df7c827f38976590ed1f0fedd1f840322fc05377162
+    url: https://unkey.com/startups
+programs:
+  - program_id: prg_01m0pf4zaawkmhb01p7npvgn15
+    program_slug: startups-program
+    program_slug_aliases: []
+    title: Unkey Startups Program
+    summary: Provides $1,000 in monthly credits, priority support, concierge onboarding, and migration support to eligible early-stage startups.
+    source_ids:
+      - src_868fb02f90dcb72a58320df7c827f38976590ed1f0fedd1f840322fc05377162
+offers:
+  - offer_id: off_01m0pf4zaahjj1jvn2p05k6ch2
+    program_id: prg_01m0pf4zaawkmhb01p7npvgn15
+    offer_slug: startups-monthly-credits
+    offer_slug_aliases: []
+    title: "$1,000 Monthly Startup Credits"
+    summary: >-
+      Eligible startups receive $1,000 in credits every month, priority support with a dedicated Slack channel, concierge onboarding, and hands-on migration help. Eligibility expires after raising $5 million; after that, startups receive 50% off their bill.
+    lifecycle:
+      status: active
+      effective_from: "2026-08-23T04:40:00.000Z"
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: $1,000 in platform credits every month while the startup remains eligible.
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 100000
+            kind: recurring-monthly
+        - benefit_id: ben_02
+          description: Priority support via a dedicated Slack channel for fast issue resolution.
+          kind: other
+        - benefit_id: ben_03
+          description: Concierge onboarding including a one-on-one session to help get started and determine best fit.
+          kind: other
+        - benefit_id: ben_04
+          description: Hands-on migration support from an existing platform to Unkey.
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Must be an early-stage startup affiliated with a VC or accelerator. Eligibility expires after raising $5 million total funding; companies above that threshold receive 50% off instead.
+    roles:
+      terms_authority_entity_id: ent_01m0pf4za6h5yt9d2g129jrzbv
+      access_operator_entity_id: ent_01m0pf4za6h5yt9d2g129jrzbv
+    access:
+      availability: public
+      method: form
+      url: https://unkey.com/startups
+    source_ids:
+      - src_868fb02f90dcb72a58320df7c827f38976590ed1f0fedd1f840322fc05377162
+
