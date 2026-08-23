@@ -29,7 +29,7 @@ offers:
     offer_slug_aliases: []
     title: "$1,000 Monthly Startup Credits"
     summary: >-
-      Eligible startups receive $1,000 in credits every month, priority support with a dedicated Slack channel, concierge onboarding, and hands-on migration help. Eligibility expires after raising $5 million; after that, startups receive 50% off their bill.
+      $1,000 in monthly credits with priority support, concierge onboarding, and migration help for early-stage startups.
     lifecycle:
       status: active
       effective_from: "2026-08-23T04:40:00.000Z"
@@ -42,7 +42,7 @@ offers:
             amount:
               currency: USD
               minor_units: 100000
-            kind: recurring-monthly
+            kind: exact
         - benefit_id: ben_02
           description: Priority support via a dedicated Slack channel for fast issue resolution.
           kind: other
@@ -69,4 +69,3 @@ offers:
       url: https://unkey.com/startups
     source_ids:
       - src_868fb02f90dcb72a58320df7c827f38976590ed1f0fedd1f840322fc05377162
-
