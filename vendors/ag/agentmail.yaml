@@ -1,0 +1,87 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01m0qqxwq96m0nvarszgqxykwq
+slug: agentmail
+slug_aliases: []
+name: AgentMail
+domains:
+  - value: agentmail.to
+    role: primary
+    valid_from: 2026-08-23T00:00:00.000Z
+category: communication
+description: AgentMail provides programmable email inboxes and domains for AI agents, with APIs for sending, receiving, and managing agent email.
+links:
+  site: https://www.agentmail.to
+sources:
+  - source_id: src_0b8e51ee1f143fef29b5449c371f8df710afa19e698f9a266dbae81463110244
+    url: https://www.agentmail.to/startups
+programs:
+  - program_id: prg_01m0qqxwqbvz3rahnf0w3pmwww
+    program_slug: agentmail-for-startups
+    program_slug_aliases: []
+    title: AgentMail for Startups
+    summary: AgentMail gives eligible funded, early-stage teams building AI agents its full Startup tier free for three months.
+    source_ids:
+      - src_0b8e51ee1f143fef29b5449c371f8df710afa19e698f9a266dbae81463110244
+offers:
+  - offer_id: off_01m0qqxwqbnypyjwzgvjtk18c7
+    program_id: prg_01m0qqxwqbvz3rahnf0w3pmwww
+    offer_slug: startup-tier-free-for-three-months
+    offer_slug_aliases: []
+    title: AgentMail Startup tier free for three months
+    summary: Eligible startups receive AgentMail's $200-per-month Startup tier at no charge for three months, with no credit card required.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-23T00:00:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: AgentMail Startup tier at no charge
+          duration:
+            kind: exact
+            value: P3M
+          kind: free-service
+          service: AgentMail Startup tier
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: vendor-discretion
+            statement: The applicant is an early-stage startup building with AI agents.
+          - criterion_id: cri_02
+            fact: company.funding_raised_usd
+            kind: predicate
+            operator: gte
+            statement: The startup has raised at least $500,000.
+            value:
+              type: number
+              value: 500000
+          - criterion_id: cri_03
+            fact: company.funding_raised_usd
+            kind: predicate
+            operator: lte
+            statement: The startup has raised no more than $10 million.
+            value:
+              type: number
+              value: 10000000
+          - criterion_id: cri_04
+            fact: company.is_current_customer
+            kind: predicate
+            operator: eq
+            statement: The startup is not and has never previously been an AgentMail customer.
+            value:
+              type: boolean
+              value: false
+    roles:
+      terms_authority_entity_id: ent_01m0qqxwq96m0nvarszgqxykwq
+      access_operator_entity_id: ent_01m0qqxwq96m0nvarszgqxykwq
+    access:
+      availability: public
+      method: form
+      url: https://www.agentmail.to/startups
+    terms_url: https://www.agentmail.to/startups
+    source_ids:
+      - src_0b8e51ee1f143fef29b5449c371f8df710afa19e698f9a266dbae81463110244
