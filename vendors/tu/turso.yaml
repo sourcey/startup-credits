@@ -1,90 +1,67 @@
 schema_version: sourcey.vendor-authoring/v1alpha1
-entity_id: ent_01kyygma83ghr6dea0nzbdvpa1
+entity_id: ent_01m0qyqqa0yw3dzzngf5fcsbpm
 slug: turso
 slug_aliases: []
 name: Turso
 domains:
   - value: turso.tech
     role: primary
-    valid_from: 2026-07-31T23:19:17.294Z
-category: databases
-description: Turso offers generous credits, priority technical support, early feature access, and co-marketing opportunities for early-stage venture-backed startups.
+    valid_from: "2026-08-23T18:40:00.000Z"
+category: devtools-other
+description: Turso is an open-source SQLite-compatible database engine with concurrent writes, built-in sync, and vector search. Turso Cloud is the hosted platform.
 links:
   site: https://turso.tech
 sources:
-  - source_id: src_0037ff97a23a44d0e1a4dee4b6f47e198d11ea11a8e59da76fa2d1bcd5cdec03
+  - source_id: src_cec638fca70a0acad4a2f6d2bd8cbda42a7d894e8b7a34e55ea97c028cee2ab7
     url: https://turso.tech/startups
 programs:
-  - program_id: prg_01kyygma83xz5b5aajd3d7h6kg
-    program_slug: turso-for-startups
+  - program_id: prg_01m0qyqqa0ymp7yp73bqdswash
+    program_slug: turso-startups-program
     program_slug_aliases: []
     title: Turso for Startups
-    summary: Turso for Startups provides credits, hands-on technical support, early feature access, and co-marketing opportunities to venture-backed founders.
+    summary: Provides generous database credits, priority technical support, early access to new features, and co-marketing opportunities to eligible venture-backed startups.
     source_ids:
-      - src_0037ff97a23a44d0e1a4dee4b6f47e198d11ea11a8e59da76fa2d1bcd5cdec03
+      - src_cec638fca70a0acad4a2f6d2bd8cbda42a7d894e8b7a34e55ea97c028cee2ab7
 offers:
-  - offer_id: off_01kyygma83ahsg4w90th99cvs9
-    program_id: prg_01kyygma83xz5b5aajd3d7h6kg
-    offer_slug: turso-for-startups
+  - offer_id: off_01m0qyqqa0h4hz6vfhqndvpnmf
+    program_id: prg_01m0qyqqa0ymp7yp73bqdswash
+    offer_slug: startup-credits-support-early-access
     offer_slug_aliases: []
-    title: Turso for Startups
-    summary: Eligible early-stage venture-backed startups receive Turso credits, priority technical support, early access to new features, and co-marketing opportunities.
+    title: "Turso Startup Credits with Technical Support and Early Access"
+    summary: >-
+      Venture-backed startups receive generous platform credits, priority engineering support for onboarding and architecture reviews, early access to new features before public release, and co-marketing opportunities.
     lifecycle:
       status: active
-      effective_from: 2026-07-31T23:19:17.294Z
+      effective_from: "2026-08-23T18:40:00.000Z"
     economics:
       benefits:
         - benefit_id: ben_01
-          description: Generous Turso credits to run databases.
-          kind: credit
-          value:
-            amount:
-              currency: USD
-              minor_units: 1
-            kind: at-least
+          description: Generous credits to run databases on Turso so startups can focus on building without infrastructure bills blocking progress.
+          kind: other
         - benefit_id: ben_02
-          description: Priority access to engineering team for onboarding, architecture reviews, and ongoing support.
+          description: Priority access to the Turso engineering team for onboarding, architecture reviews, and ongoing technical support.
           kind: other
         - benefit_id: ben_03
-          description: Early access to try new features and capabilities before public release.
+          description: Early access to try new features and capabilities before they ship to the general public.
           kind: other
         - benefit_id: ben_04
-          description: Co-marketing opportunities to be featured in blog, case studies, and social channels.
+          description: Opportunities to be featured in Turso blog posts, case studies, and social media channels as the startup grows.
           kind: other
       consideration:
-        kind: none
+        kind: unknown
+        description: The specific credit amount is not published on the program page; accepted startups receive credits applied to their account.
     eligibility:
       rule:
-        kind: all
-        rules:
-          - criterion_id: cri_01
-            fact: company.funding_rounds_count
-            kind: predicate
-            operator: gte
-            statement: Venture-backed startup with at least one round of funding
-            value:
-              type: number
-              value: 1
-          - criterion_id: cri_02
-            fact: company.stage
-            kind: predicate
-            operator: in
-            statement: Building an early-stage product or actively scaling
-            value:
-              type: string-set
-              values:
-                - early-stage
-                - scaling
-          - criterion_id: cri_03
-            kind: manual
-            reason: external-verification
-            statement: Verifiable funding from recognized investors or accelerators
+        criterion_id: cri_01
+        kind: manual
+        reason: not-machine-evaluable
+        statement: Must be an early-stage, venture-backed startup with at least one round of funding from recognized investors or accelerators.
     roles:
-      terms_authority_entity_id: ent_01kyygma83ghr6dea0nzbdvpa1
-      access_operator_entity_id: ent_01kyygma83ghr6dea0nzbdvpa1
+      terms_authority_entity_id: ent_01m0qyqqa0yw3dzzngf5fcsbpm
+      access_operator_entity_id: ent_01m0qyqqa0yw3dzzngf5fcsbpm
     access:
       availability: public
       method: form
       url: https://turso.tech/startups
     source_ids:
-      - src_0037ff97a23a44d0e1a4dee4b6f47e198d11ea11a8e59da76fa2d1bcd5cdec03
+      - src_cec638fca70a0acad4a2f6d2bd8cbda42a7d894e8b7a34e55ea97c028cee2ab7
