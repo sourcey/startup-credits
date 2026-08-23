@@ -1,0 +1,57 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01m0p8s2b430n0jwjxk50bjt6c
+slug: singlestore
+slug_aliases: []
+name: SingleStore
+domains:
+  - value: singlestore.com
+    role: primary
+    valid_from: 2026-08-22T06:20:00.000Z
+category: databases
+description: Real-time distributed SQL database combining transactions and analytics in one engine, offered as managed Helios Cloud and self-managed editions.
+links:
+  site: https://www.singlestore.com/pricing/
+sources:
+  - source_id: src_7b061767cc021f47cf3487951ce7edcef353b081c2a8686793d684a554794639
+    url: https://www.singlestore.com/pricing/
+programs: []
+offers:
+  - offer_id: off_01m0p8s2b7hcs2zr9yfzjgmgyb
+    offer_slug: singlestore-helios-free-credits
+    offer_slug_aliases: []
+    title: SingleStore Helios — Free Startup Credits
+    summary: A new Managed Standard Helios customer can get started with USD 500 worth of free Credits, in addition to a free Shared workspace for evaluation, development, and non-production testing.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-22T06:20:00.000Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration beyond a new-customer requirement.
+      benefits:
+        - benefit_id: ben_free_credits
+          description: USD 500 worth of free Credits for a new Managed Standard Helios customer.
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 50000
+            kind: exact
+        - benefit_id: ben_shared_workspace
+          description: One free Shared workspace for evaluation, development, and non-production testing.
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Available to new Managed Standard Helios customers; the free Shared workspace is for evaluation, development, and non-production testing.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01m0p8s2b430n0jwjxk50bjt6c
+      access_operator_entity_id: ent_01m0p8s2b430n0jwjxk50bjt6c
+    access:
+      availability: public
+      method: form
+      url: https://www.singlestore.com/pricing/
+    source_ids:
+      - src_7b061767cc021f47cf3487951ce7edcef353b081c2a8686793d684a554794639
