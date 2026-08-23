@@ -39,7 +39,7 @@ offers:
     - benefit_id: ben_01
       description: $1,000 in monthly Unkey credits for one year ($12,000 total).
       duration:
-        kind: fixed
+        kind: exact
         value: P1Y
       kind: credit
       value:
