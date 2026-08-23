@@ -1,0 +1,90 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01m0q5pngqfaesjj79eqpzpwsg
+slug: massive
+slug_aliases: []
+name: Massive
+domains:
+  - value: joinmassive.com
+    role: primary
+    valid_from: 2026-08-23T11:20:00.000Z
+category: apis-integration
+description: Massive provides ethically sourced residential proxy infrastructure through Web Access, Render, and Search APIs for AI agents, data pipelines, and web-scale research workloads.
+links:
+  site: https://www.joinmassive.com
+sources:
+  - source_id: src_1520fa0bb552e9a41c4b5348e038f4f2e24869bd48dc4fe43b7f371b0032e881
+    url: https://www.joinmassive.com/massive-for-startups
+  - source_id: src_071160e91c2d1ade07b25d1324c1e443dd8512ddc754eee316d7ee5f46ff3752
+    url: https://www.joinmassive.com/terms
+programs: []
+offers:
+  - offer_id: off_01m0q5rqatpeq1dc1de6gtfb87
+    offer_slug: massive-for-startups
+    offer_slug_aliases: []
+    title: Massive for Startups
+    summary: Qualifying early-stage companies receive 1TB of free Web Access API bandwidth per month for 3 months. No equity, no contract, no credit card, and no automatic conversion to paid.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-23T11:20:00.000Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_01
+          description: 1TB per month of free Web Access API residential bandwidth for three months.
+          kind: other
+        - benefit_id: ben_02
+          description: Full platform access including APIs, dashboard, analytics, sticky sessions, geo-targeting, and request-level logs with no feature gating during the program.
+          kind: other
+        - benefit_id: ben_03
+          description: Direct shared Slack channel with the engineering team for technical and scaling questions.
+          kind: other
+    eligibility:
+      rule:
+        kind: any
+        rules:
+          - criterion_id: cri_01
+            fact: company.partner_memberships
+            kind: predicate
+            operator: contains
+            statement: Y Combinator company (any batch, current or alumni).
+            value:
+              type: string
+              value: yc_company
+          - criterion_id: cri_02
+            fact: company.partner_memberships
+            kind: predicate
+            operator: contains
+            statement: Backed by a recognized accelerator (Techstars, 500 Global, Antler, Entrepreneur First, MassChallenge, and others).
+            value:
+              type: string
+              value: accelerator_backed
+          - criterion_id: cri_03
+            fact: company.stage
+            kind: predicate
+            operator: in
+            statement: Pre-seed to Series B startup backed by a recognized VC.
+            value:
+              type: string-set
+              values:
+                - pre-seed
+                - seed
+                - series-a
+                - series-b
+          - criterion_id: cri_04
+            fact: company.stage
+            kind: predicate
+            operator: eq
+            statement: Bootstrapped founder, indie hacker, or self-funded team with a live product or prototype.
+            value:
+              type: string
+              value: bootstrapped_with_live_product
+    roles:
+      terms_authority_entity_id: ent_01m0q5pngqfaesjj79eqpzpwsg
+      access_operator_entity_id: ent_01m0q5pngqfaesjj79eqpzpwsg
+    access:
+      availability: public
+      method: form
+      url: https://www.joinmassive.com/massive-for-startups
+    source_ids:
+      - src_1520fa0bb552e9a41c4b5348e038f4f2e24869bd48dc4fe43b7f371b0032e881
