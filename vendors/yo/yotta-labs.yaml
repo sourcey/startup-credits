@@ -1,0 +1,82 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01m0qqxwwak0zqqbypf9njmv81
+slug: yotta-labs
+slug_aliases: []
+name: Yotta Labs
+domains:
+  - value: yottalabs.ai
+    role: primary
+    valid_from: 2026-08-23T00:00:00.000Z
+category: hosting-infra
+description: Yotta Labs provides distributed GPU infrastructure for AI training, inference, quantization, serverless workloads, and managed compute orchestration.
+links:
+  site: https://www.yottalabs.ai
+sources:
+  - source_id: src_cd9db123e92dc76193f1b5cbd8dd7cd0a96ae5c66813618853210303b666f99e
+    url: https://www.yottalabs.ai/post/academic-research-credit-support-program-launch
+programs:
+  - program_id: prg_01m0qqxwwc1gcw0a141xctmwdt
+    program_slug: academic-research-support-program
+    program_slug_aliases: []
+    title: Yotta Labs Academic Research Support Program
+    summary: Yotta Labs supports qualifying academic and independent non-commercial AI research with GPU credits, discounted follow-on compute, and engineering assistance.
+    source_ids:
+      - src_cd9db123e92dc76193f1b5cbd8dd7cd0a96ae5c66813618853210303b666f99e
+offers:
+  - offer_id: off_01m0qqxwwc369g95vd56cm9hrf
+    program_id: prg_01m0qqxwwc1gcw0a141xctmwdt
+    offer_slug: up-to-1000-in-gpu-compute-credits
+    offer_slug_aliases: []
+    title: Up to $1,000 in GPU compute credits
+    summary: Approved researchers receive up to $1,000 in GPU compute credits, discounted compute for six months after the grant, and direct engineering support.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-23T00:00:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to $1,000 in GPU compute credits
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 100000
+            kind: up-to
+        - benefit_id: ben_02
+          description: Discounted compute pricing for six months after the promotional credits are consumed
+          kind: other
+        - benefit_id: ben_03
+          description: Direct access to Yotta Labs engineers for performance, scaling, cost, and debugging support
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: any
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: external-verification
+            statement: The applicant is a faculty member or academic researcher.
+          - criterion_id: cri_02
+            kind: manual
+            reason: external-verification
+            statement: The applicant is a graduate student or postdoctoral researcher.
+          - criterion_id: cri_03
+            kind: manual
+            reason: vendor-discretion
+            statement: The applicant is an independent researcher pursuing non-commercial work.
+          - criterion_id: cri_04
+            kind: manual
+            reason: external-verification
+            statement: The applicant represents a research group working on GPU-intensive AI or data-driven projects.
+    roles:
+      terms_authority_entity_id: ent_01m0qqxwwak0zqqbypf9njmv81
+      access_operator_entity_id: ent_01m0qqxwwak0zqqbypf9njmv81
+    access:
+      availability: public
+      method: form
+      url: https://www.yottalabs.ai/research-credit
+    terms_url: https://www.yottalabs.ai/post/academic-research-credit-support-program-launch
+    source_ids:
+      - src_cd9db123e92dc76193f1b5cbd8dd7cd0a96ae5c66813618853210303b666f99e
