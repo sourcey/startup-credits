@@ -19,7 +19,7 @@ programs:
     program_slug: llamaparse-startup-offer
     program_slug_aliases: []
     title: LlamaParse Startup Offer
-    summary: Provides $2,000 in free platform credits valid for one year, bulk purchase discounts in production, priority support via a dedicated Slack channel with an AI engineer, and social media promotion to eligible startups.
+    summary: Provides $2,000 in free platform credits, bulk discounts, premium support, and social promotion to eligible startups.
     source_ids:
       - src_702b353d8d9f1ac3567a85cd9b47c82bd3424b9e416b244baccdc643db8c6acf
 offers:
@@ -28,11 +28,7 @@ offers:
     offer_slug: two-thousand-dollar-free-credits-startup
     offer_slug_aliases: []
     title: "$2K Free Credits with Premium Support and Bulk Discounts"
-    summary: >-
-      Startups receive $2,000 in free platform credits available for one year,
-      discounts on bulk credit purchases in production, priority support through
-      a dedicated Slack channel staffed by an AI engineer, and a dedicated post
-      on LlamaParse's socials and newsletter.
+    summary: $2,000 free credits for one year with bulk purchase discounts and priority Slack support for startups.
     lifecycle:
       status: active
       effective_from: "2026-08-23T19:05:00.000Z"
@@ -50,13 +46,10 @@ offers:
             kind: up-to
             value: P1Y
         - benefit_id: ben_02
-          description: Discounts on bulk credit purchases when scaling to production workloads.
-          kind: discount
-        - benefit_id: ben_03
-          description: Priority support Slack channel with a dedicated AI engineer.
+          description: Priority support via a dedicated Slack channel staffed by an AI engineer.
           kind: other
-        - benefit_id: ben_04
-          description: Dedicated post on LlamaParse's social media and newsletter reaching millions of developers.
+        - benefit_id: ben_03
+          description: Dedicated post on LlamaParse social media and newsletter reaching millions of developers.
           kind: other
       consideration:
         kind: none
@@ -72,6 +65,6 @@ offers:
     access:
       availability: public
       method: form
-      url: https://www.llamaparse.ai/startups#apply
+      url: https://www.llamaparse.ai/startups
     source_ids:
       - src_702b353d8d9f1ac3567a85cd9b47c82bd3424b9e416b244baccdc643db8c6acf
