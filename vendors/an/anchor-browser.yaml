@@ -1,0 +1,73 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01m0qqxwnkjgagv2aaxbet0zpn
+slug: anchor-browser
+slug_aliases: []
+name: Anchor Browser
+domains:
+  - value: anchorbrowser.io
+    role: primary
+    valid_from: 2026-08-23T00:00:00.000Z
+category: hosting-infra
+description: Anchor Browser provides managed browser infrastructure for automation and AI agents, including sessions, proxies, CAPTCHA solving, and identity management.
+links:
+  site: https://anchorbrowser.io
+sources:
+  - source_id: src_50efa303db2c99b09f5583a88c4cfe40c0ae39fd63fde9ffa805a75b36512783
+    url: https://anchorbrowser.io/startup-program
+programs:
+  - program_id: prg_01m0qqxwnnf95qcyj2kxr33yek
+    program_slug: anchor-startup-program
+    program_slug_aliases: []
+    title: Anchor Startup Program
+    summary: Anchor's startup program provides selected production-stage browser-automation teams with credits, Growth-tier access, and direct support for six months.
+    source_ids:
+      - src_50efa303db2c99b09f5583a88c4cfe40c0ae39fd63fde9ffa805a75b36512783
+offers:
+  - offer_id: off_01m0qqxwnnrz5bc8v9y3gf64ep
+    program_id: prg_01m0qqxwnnf95qcyj2kxr33yek
+    offer_slug: 24000-credits-and-growth-tier-for-six-months
+    offer_slug_aliases: []
+    title: 24,000 credits and Growth-tier access for six months
+    summary: Eligible startups receive 24,000 Anchor credits, full Growth-tier access, and a dedicated Slack channel at no charge for six months.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-23T00:00:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 24,000 Anchor Browser credits
+          kind: other
+        - benefit_id: ben_02
+          description: Full Growth-tier access
+          duration:
+            kind: exact
+            value: P6M
+          kind: free-service
+          service: Anchor Browser Growth tier
+        - benefit_id: ben_03
+          description: Dedicated Slack access to Anchor's founders and engineering team
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: vendor-discretion
+            statement: The startup has a product in production and active customers.
+          - criterion_id: cri_02
+            kind: manual
+            reason: vendor-discretion
+            statement: The product has a clear browser-automation use case and expects significant monthly browser-task volume.
+    roles:
+      terms_authority_entity_id: ent_01m0qqxwnkjgagv2aaxbet0zpn
+      access_operator_entity_id: ent_01m0qqxwnkjgagv2aaxbet0zpn
+    access:
+      availability: public
+      method: form
+      url: https://anchorbrowser.io/startup-program
+    terms_url: https://anchorbrowser.io/startup-program
+    source_ids:
+      - src_50efa303db2c99b09f5583a88c4cfe40c0ae39fd63fde9ffa805a75b36512783
