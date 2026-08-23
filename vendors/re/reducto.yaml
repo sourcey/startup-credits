@@ -1,0 +1,62 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01m0qk5v7wp5514mrpenjz1e4x
+slug: reducto
+slug_aliases: []
+name: Reducto
+domains:
+  - value: reducto.ai
+    role: primary
+    valid_from: 2026-08-23T12:30:00.000Z
+category: ai-ml
+description: Reducto provides an API for document parsing and extraction, turning PDFs and complex documents into structured data for AI applications.
+links:
+  site: https://reducto.ai
+sources:
+  - source_id: src_659bfe951bd50b861a042028ed3456fc58b03649b4492549e6a9c3d21e1b4d77
+    url: https://reducto.ai/startups
+programs: []
+offers:
+  - offer_id: off_01m0qk5v80jm6v6pg8fkehe82q
+    offer_slug: startup-program-credits-and-growth-discount
+    offer_slug_aliases: []
+    title: Reducto Startup Program
+    summary: Eligible early-stage startups receive $1,500 in free credits and up to 100% off the Growth-tier platform fee for one year under an annual contract.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-23T12:30:00.000Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_01
+          description: $1,500 in free credits for testing and early production usage
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 150000
+            kind: exact
+        - benefit_id: ben_02
+          description: Up to 100% off the platform fee on the Growth tier for one year under an annual contract
+          kind: discount
+          percentage:
+            kind: up-to
+            basis_points: 10000
+          duration:
+            kind: exact
+            value: P1Y
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: not-machine-evaluable
+        statement: Seed, pre-seed, and early-stage startups building on Reducto; generally under $15M in funding, under $3M annual revenue, and under 50 employees. Applications are reviewed case by case. The discount applies for one year under an annual contract.
+    roles:
+      terms_authority_entity_id: ent_01m0qk5v7wp5514mrpenjz1e4x
+      access_operator_entity_id: ent_01m0qk5v7wp5514mrpenjz1e4x
+    access:
+      availability: public
+      method: form
+      url: https://reducto.ai/startups
+    source_ids:
+      - src_659bfe951bd50b861a042028ed3456fc58b03649b4492549e6a9c3d21e1b4d77
