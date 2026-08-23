@@ -1,0 +1,78 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01m0qryz2mz9ft53f5kmkhh48n
+slug: enum
+slug_aliases: []
+name: enum
+domains:
+  - value: enum.co
+    role: primary
+    valid_from: 2026-08-23T00:00:00Z
+category: hosting-infra
+description: enum is a European public cloud platform offering managed Kubernetes, object storage, block storage, and networking from infrastructure in Frankfurt.
+links:
+  site: https://enum.co
+sources:
+  - source_id: src_a20c0f9fc59e02b1740680f9b4648dd760035ee1ae11b890ae332357845b3fdd
+    url: https://enum.co/startups
+programs:
+  - program_id: prg_01m0qryz2pjkzbdr71h281xcwn
+    program_slug: enum-for-startups
+    program_slug_aliases: []
+    title: enum for Startups
+    summary: Selected EU startups and scaleups can receive cloud credits and production-ready access to enum's European cloud infrastructure.
+    source_ids:
+      - src_a20c0f9fc59e02b1740680f9b4648dd760035ee1ae11b890ae332357845b3fdd
+offers:
+  - offer_id: off_01m0qryz2pzhwhtzehjmsb5pxw
+    program_id: prg_01m0qryz2pjkzbdr71h281xcwn
+    offer_slug: enum-cloud-credits
+    offer_slug_aliases: []
+    title: Up to €100,000 in enum cloud credits
+    summary: Selected EU-headquartered startups and scaleups receive up to €100,000 in enum cloud credits over 12 months, with a possible extension.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-23T00:00:00Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_01
+          description: Up to €100,000 in enum cloud credits over 12 months
+          duration:
+            kind: exact
+            value: P1Y
+          kind: credit
+          value:
+            amount:
+              currency: EUR
+              minor_units: 10000000
+            kind: up-to
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            statement: Applicant is a startup or scaleup headquartered in the European Union.
+            reason: external-verification
+          - criterion_id: cri_02
+            kind: manual
+            statement: Applicant is building a product suited to European cloud infrastructure.
+            reason: vendor-discretion
+          - criterion_id: cri_03
+            kind: manual
+            statement: Applicant is ready to deploy production workloads rather than testing only.
+            reason: vendor-discretion
+          - criterion_id: cri_04
+            kind: manual
+            statement: enum reviews and selects each applicant for the curated program.
+            reason: vendor-discretion
+    roles:
+      terms_authority_entity_id: ent_01m0qryz2mz9ft53f5kmkhh48n
+      access_operator_entity_id: ent_01m0qryz2mz9ft53f5kmkhh48n
+    access:
+      availability: public
+      method: form
+      url: https://enum.co/startups
+    source_ids:
+      - src_a20c0f9fc59e02b1740680f9b4648dd760035ee1ae11b890ae332357845b3fdd
