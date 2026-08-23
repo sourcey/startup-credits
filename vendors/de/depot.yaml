@@ -51,8 +51,8 @@ offers:
       access_operator_entity_id: ent_01m0qdhjj1k2jdv3qxb9g2sgfn
     access:
       availability: membership
-      method: code
-      instructions: Sign up for Depot, open organization Settings or Configure billing, select a plan, and enter the PostHog for Startups partner code in the Stripe checkout window. Stripe may show 100% off the first month and omit the $5,000 figure; Depot grants the credits after checkout.
+      method: form
+      instructions: After PostHog for Startups approval, sign up for Depot, open organization Settings or Configure billing, select a plan, and enter the partner code in the Stripe checkout window. Stripe may show 100% off the first month and omit the $5,000 figure; Depot grants the credits after checkout.
       url: https://depot.dev/docs/posthog-for-startups
     source_ids:
       - src_01fc79af4848160f08e215598cd946e39484750cecb6bdea6d91da3e21da720c
