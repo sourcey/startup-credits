@@ -1,0 +1,82 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01m0rnkvjn7vw28w374qf437yd
+slug: twelve-data
+slug_aliases: []
+name: Twelve Data
+domains:
+  - value: twelvedata.com
+    role: primary
+    valid_from: 2026-08-24T01:22:00.000Z
+category: data-analytics
+description: Financial market data API delivering real-time and historical stock, forex, ETF, and cryptocurrency data through REST, WebSocket, and spreadsheet integrations.
+links:
+  site: https://twelvedata.com
+sources:
+  - source_id: src_b69d1b7920b1b07f4c6744436545b94422ab6634fdcbaca0886b8f005babce01
+    url: https://twelvedata.com/startups
+programs:
+  - program_id: prg_01m0rnkvjs7m7a1z78tj4pmbra
+    program_slug: twelve-data-for-startups
+    program_slug_aliases: []
+    title: Twelve Data for Startups
+    summary: Startup program from Twelve Data offering API plans designed and priced for early-stage company budgets across its financial market data platform.
+    source_ids:
+      - src_b69d1b7920b1b07f4c6744436545b94422ab6634fdcbaca0886b8f005babce01
+offers:
+  - offer_id: off_01m0rnkvjsbm5cafrgz8cc97dz
+    offer_slug: twelve-data-for-startups-plan
+    offer_slug_aliases: []
+    title: Twelve Data for Startups — Startup-Suited Plan Pricing
+    summary: Early-stage companies with up to $1 million raised, under two years old, and ten or fewer employees get robust API access on a plan priced for startup budgets.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-24T01:22:00.000Z
+    economics:
+      consideration:
+        kind: unknown
+        description: Specific plan pricing is determined upon application; the program page publishes no percentage or dollar figure.
+      benefits:
+        - benefit_id: ben_primary_plan
+          description: Access robust APIs with a plan of your choice, at a price that fits a startup budget.
+          kind: other
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.funding_raised_usd
+            kind: predicate
+            operator: lte
+            statement: Up to $1 million USD in funding.
+            value:
+              type: number
+              value: 1000000
+          - criterion_id: cri_02
+            fact: company.age_years
+            kind: predicate
+            operator: lt
+            statement: Less than two years old.
+            value:
+              type: number
+              value: 2
+          - criterion_id: cri_03
+            kind: manual
+            reason: not-machine-evaluable
+            statement: Single legal entity using the data for the same use as the domain.
+          - criterion_id: cri_04
+            fact: company.employee_count
+            kind: predicate
+            operator: lte
+            statement: Small team of ten employees or less.
+            value:
+              type: number
+              value: 10
+    roles:
+      terms_authority_entity_id: ent_01m0rnkvjn7vw28w374qf437yd
+      access_operator_entity_id: ent_01m0rnkvjn7vw28w374qf437yd
+    access:
+      availability: public
+      method: form
+      url: https://twelvedata.com/account/perks/2
+    source_ids:
+      - src_b69d1b7920b1b07f4c6744436545b94422ab6634fdcbaca0886b8f005babce01
