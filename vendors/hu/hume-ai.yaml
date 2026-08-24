@@ -1,0 +1,62 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01m0rnkwmsz6thjdqccwy2q7ym
+slug: hume-ai
+slug_aliases: []
+name: Hume AI
+domains:
+  - value: hume.ai
+    role: primary
+    valid_from: 2026-08-24T01:22:00.000Z
+category: ai-ml
+description: Research-driven AI company building empathic voice and expression models, offering APIs for conversational and emotional understanding in applications.
+links:
+  site: https://www.hume.ai
+sources:
+  - source_id: src_990f39301995ddcd61150dd48b647cb0e49a618bf50eda5a111f293c66192422
+    url: https://www.hume.ai/startup-program
+programs:
+  - program_id: prg_01m0rnkwmx0xcphhefqbgbq4pr
+    program_slug: hume-ai-startup-program
+    program_slug_aliases: []
+    title: Hume AI Startup Program
+    summary: Vendor-run program giving early-stage startups discounted API access, dedicated support and technical guidance, and resources for building with empathic AI.
+    source_ids:
+      - src_990f39301995ddcd61150dd48b647cb0e49a618bf50eda5a111f293c66192422
+offers:
+  - offer_id: off_01m0rnkwmx84hhdysj5nxn0q7h
+    offer_slug: hume-ai-startup-program-access
+    offer_slug_aliases: []
+    title: Hume AI Startup Program — Discounted API Access and Support
+    summary: Early-stage startups receive discounted API access to empathic AI models plus dedicated support, technical guidance, and build resources.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-24T01:22:00.000Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The program page does not publish separate consideration terms; specific discounting is determined through contact with the vendor.
+      benefits:
+        - benefit_id: ben_discounted_api_access
+          description: Discounted API access for early-stage startups.
+          kind: other
+        - benefit_id: ben_support_guidance
+          description: Dedicated support and technical guidance.
+          kind: other
+        - benefit_id: ben_build_resources
+          description: Resources to help build with empathic AI.
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_01
+        reason: vendor-discretion
+        statement: Must be an early-stage startup, subject to vendor evaluation.
+    roles:
+      terms_authority_entity_id: ent_01m0rnkwmsz6thjdqccwy2q7ym
+      access_operator_entity_id: ent_01m0rnkwmsz6thjdqccwy2q7ym
+    access:
+      availability: public
+      method: contact
+      url: https://www.hume.ai/startup-program
+    source_ids:
+      - src_990f39301995ddcd61150dd48b647cb0e49a618bf50eda5a111f293c66192422
