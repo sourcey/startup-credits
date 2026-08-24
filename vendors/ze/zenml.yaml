@@ -1,0 +1,65 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01m0s0sn64mg97awdrdw166m73
+slug: zenml
+slug_aliases: []
+name: ZenML
+domains:
+  - value: zenml.io
+    role: primary
+    valid_from: 2026-08-24T04:34:56Z
+category: ai-ml
+description: ZenML provides an MLOps platform for building reproducible ML pipelines and AI workflows with managed and self-hosted deployment options.
+links:
+  site: https://www.zenml.io
+sources:
+  - source_id: src_7524aa52195fbd02aa0e0106582a343b8d47a5863dd9a037251f065d39aab080
+    url: https://www.zenml.io/startups-and-academics
+  - source_id: src_39dd130dc70f1672acb7eb82766ff5396a72cd4173bc476aa586106a8aefb359
+    url: https://www.zenml.io/pricing
+programs:
+  - program_id: prg_01m0s0sn6651q13h3j98xnw5qt
+    program_slug: startups-and-academics
+    program_slug_aliases: []
+    title: ZenML for Startups and Academics
+    summary: ZenML offers eligible startups and academic organizations special ZenML Pro pricing, expert guidance, and access to a network of startups and researchers.
+    source_ids:
+      - src_7524aa52195fbd02aa0e0106582a343b8d47a5863dd9a037251f065d39aab080
+      - src_39dd130dc70f1672acb7eb82766ff5396a72cd4173bc476aa586106a8aefb359
+offers:
+  - offer_id: off_01m0s0sn66s6443h4hvs0x2cn9
+    program_id: prg_01m0s0sn6651q13h3j98xnw5qt
+    offer_slug: zenml-pro-special-pricing
+    offer_slug_aliases: []
+    title: Special pricing on ZenML Pro
+    summary: Eligible early-stage companies and academic organizations can apply for special ZenML Pro pricing, expert guidance, and a peer network.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-24T04:34:56Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The public pages do not state a separate consideration or a fixed discount amount.
+      benefits:
+        - benefit_id: ben_01
+          description: Special pricing for access to ZenML Pro features; the public pages do not state a fixed discount amount.
+          kind: other
+        - benefit_id: ben_02
+          description: Expert guidance and access to a network of innovative startups and researchers.
+          kind: other
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Applicants must be early-stage companies building ML-powered products, universities, research institutions, or educational use cases.
+    roles:
+      terms_authority_entity_id: ent_01m0s0sn64mg97awdrdw166m73
+      access_operator_entity_id: ent_01m0s0sn64mg97awdrdw166m73
+    access:
+      availability: public
+      method: form
+      url: https://www.zenml.io/startups-and-academics
+      instructions: Submit the public application form with contact, company or organization, role, and LinkedIn details.
+    source_ids:
+      - src_7524aa52195fbd02aa0e0106582a343b8d47a5863dd9a037251f065d39aab080
+      - src_39dd130dc70f1672acb7eb82766ff5396a72cd4173bc476aa586106a8aefb359
