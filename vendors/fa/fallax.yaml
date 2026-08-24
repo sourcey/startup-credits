@@ -1,0 +1,88 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01m0t4f8c6x2v9k7q3n5bwa0pz
+slug: fallax
+slug_aliases: []
+name: Fallax
+domains:
+  - value: fallax.io
+    role: primary
+    valid_from: 2026-08-24T05:05:00Z
+category: auth-security
+description: Fallax provides internal phishing simulations and security-awareness training with per-recipient evidence exports for compliance audits.
+links:
+  site: https://fallax.io/
+sources:
+  - source_id: src_2c548b3018512f607ac9ad2a456d4bfef2502c746d1ec6c0b86c4b98f454fb92
+    url: https://fallax.io/startups
+  - source_id: src_a0772bb46f025410a4cfd4b042ff704d1cb65f2ceafaa9608aa2c5c5f2674414
+    url: https://fallax.io/pricing
+  - source_id: src_0782d4db889390e666cd5cb50c4436c369acdc3cee2f06ae65d1fe1c75a8f09c
+    url: https://fallax.io/about
+programs:
+  - program_id: prg_01m0t4f8c6x2v9k7q3n5bwa0px
+    program_slug: fallax-for-startups
+    program_slug_aliases: []
+    title: Fallax for Startups
+    summary: Fallax expands its standard free allocation for qualifying early-stage companies to 50 seats for 12 months, with the complete product and compliance-evidence export included.
+    source_ids:
+      - src_2c548b3018512f607ac9ad2a456d4bfef2502c746d1ec6c0b86c4b98f454fb92
+      - src_a0772bb46f025410a4cfd4b042ff704d1cb65f2ceafaa9608aa2c5c5f2674414
+      - src_0782d4db889390e666cd5cb50c4436c369acdc3cee2f06ae65d1fe1c75a8f09c
+offers:
+  - offer_id: off_01m0t4f8c6x2v9k7q3n5bwa0py
+    program_id: prg_01m0t4f8c6x2v9k7q3n5bwa0px
+    offer_slug: fifty-seats-free-for-one-year
+    offer_slug_aliases: []
+    title: 50 Fallax seats free for 12 months
+    summary: Approved startups receive 50 free Fallax seats for 12 months instead of the standard 10-seat allocation, with every product feature and the full compliance-evidence export included.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-24T05:05:00Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_01
+          description: 50 Fallax seats free for 12 months instead of the standard 10 free seats
+          kind: free-service
+          service: Fallax phishing simulation and security-awareness platform
+          duration:
+            kind: exact
+            value: P1Y
+        - benefit_id: ben_02
+          description: Every Fallax product feature, including the full compliance-evidence export
+          kind: other
+        - benefit_id: ben_03
+          description: Unlimited campaigns and administrators during the program
+          kind: other
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: external-verification
+            statement: The company has fewer than 100 people, including contractors, when it applies.
+          - criterion_id: cri_02
+            kind: manual
+            reason: external-verification
+            statement: The company has raised no more than EUR 10,000,000 in total equity or venture-debt funding; bootstrapped and grant-funded companies qualify.
+          - criterion_id: cri_03
+            kind: manual
+            reason: external-verification
+            statement: The company was incorporated within the last three years.
+          - criterion_id: cri_04
+            kind: manual
+            reason: vendor-discretion
+            statement: Fallax reviews the application and confirms program eligibility.
+    roles:
+      terms_authority_entity_id: ent_01m0t4f8c6x2v9k7q3n5bwa0pz
+      access_operator_entity_id: ent_01m0t4f8c6x2v9k7q3n5bwa0pz
+    access:
+      availability: public
+      method: form
+      url: https://fallax.io/startups
+      instructions: Apply from the company's domain and include one link showing that the published eligibility requirements are met.
+    source_ids:
+      - src_2c548b3018512f607ac9ad2a456d4bfef2502c746d1ec6c0b86c4b98f454fb92
+      - src_a0772bb46f025410a4cfd4b042ff704d1cb65f2ceafaa9608aa2c5c5f2674414
