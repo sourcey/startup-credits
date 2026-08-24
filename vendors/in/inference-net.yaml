@@ -1,0 +1,62 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01m0rzkqjgk9ymz2sdrbhyas45
+slug: inference-net
+slug_aliases: []
+name: Inference.net
+domains:
+  - value: inference.net
+    role: primary
+    valid_from: 2026-08-24T04:14:19Z
+category: ai-ml
+description: Inference.net provides distributed GPU infrastructure and services for deploying, observing, training, and evaluating AI models.
+links:
+  site: https://inference.net
+sources:
+  - source_id: src_fcca4545ef6f141b2bb61579abcc4d641880b86f66001945beabb979537ecf86
+    url: https://inference.net/grants/
+programs:
+  - program_id: prg_01m0rzkqjj3j6kv4mkgm1ampmm
+    program_slug: ai-compute-grants
+    program_slug_aliases: []
+    title: Inference.net AI Compute Grants
+    summary: Inference.net awards free compute resources to developers and researchers working on open-source AI projects, with applications reviewed on a rolling basis.
+    source_ids:
+      - src_fcca4545ef6f141b2bb61579abcc4d641880b86f66001945beabb979537ecf86
+offers:
+  - offer_id: off_01m0rzkqjj4sn2cvsrse4ch61h
+    program_id: prg_01m0rzkqjj3j6kv4mkgm1ampmm
+    offer_slug: open-source-ai-compute-grant
+    offer_slug_aliases: []
+    title: Up to $10,000 in AI compute resources
+    summary: Developers and researchers can apply for up to $10,000 in free compute resources for qualifying open-source AI projects.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-24T04:14:19Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_01
+          description: Up to $10,000 in free compute resources from Inference.net.
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 1000000
+            kind: up-to
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Applicants must be developers or researchers working on an open-source AI project, with eligible areas including novel LLM applications, inference performance optimization, and AI developer tools.
+    roles:
+      terms_authority_entity_id: ent_01m0rzkqjgk9ymz2sdrbhyas45
+      access_operator_entity_id: ent_01m0rzkqjgk9ymz2sdrbhyas45
+    access:
+      availability: public
+      method: form
+      url: https://inference.net/grants/
+      instructions: Complete the application form on the grant page; applications are reviewed and awarded on a rolling basis with no fixed deadline.
+    source_ids:
+      - src_fcca4545ef6f141b2bb61579abcc4d641880b86f66001945beabb979537ecf86
