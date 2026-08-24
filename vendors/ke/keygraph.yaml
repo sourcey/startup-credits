@@ -1,0 +1,70 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01m0rp67aqjebkergqewr7nzye
+slug: keygraph
+slug_aliases: []
+name: Keygraph
+domains:
+  - value: keygraph.io
+    role: primary
+    valid_from: 2026-08-24T01:29:34.000Z
+category: auth-security
+description: Keygraph provides a cloud application-security platform for agentic penetration testing, SAST, secrets detection, dependency analysis, remediation, and unified findings.
+links:
+  site: https://keygraph.io
+sources:
+  - source_id: src_b00f2e52eca0b65749eedb1d3c58bb9bd597a6d26e4375ec74efdc4881dfc0f5
+    url: https://keygraph.io/community-program
+  - source_id: src_41d93669ace32cf2663db5d740392c71aa3307026054ebd9d93caf823bfcb12c
+    url: https://keygraph.io/terms
+programs:
+  - program_id: prg_01m0rp67at7zvvz83v44gva8z4
+    program_slug: community-program
+    program_slug_aliases: []
+    title: Keygraph Community Program
+    summary: Keygraph Community Program provides the full managed Pro application-security platform with no Keygraph cloud-service fees to qualifying early-stage startups.
+    source_ids:
+      - src_b00f2e52eca0b65749eedb1d3c58bb9bd597a6d26e4375ec74efdc4881dfc0f5
+offers:
+  - offer_id: off_01m0rp67atcy21nja8zj1nztn3
+    program_id: prg_01m0rp67at7zvvz83v44gva8z4
+    offer_slug: free-keygraph-pro-until-graduation
+    offer_slug_aliases: []
+    title: Free Keygraph Pro until graduation
+    summary: Eligible seed and pre-Series-A startups with up to 20 Active Developers receive full Keygraph Pro at $0 in cloud-service fees until graduation, followed by a 90-day free conversion window.
+    description: Free access renews monthly with annual recertification and continues until a Graduation Event under Keygraph's published program terms; a 90-day free conversion window follows. Cloud-hosted access is for internal application-security use and cannot be resold.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-24T01:29:34.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_primary
+          description: Full Keygraph Pro with all generally available Pro modules at no Keygraph cloud-service cost until graduation, followed by 90 days of continued free access
+          kind: free-service
+          service: Keygraph Pro cloud platform
+      consideration:
+        kind: variable
+        description: Participants connect their own AI-provider key and pay that provider directly for inference usage.
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_stage
+            kind: manual
+            reason: external-verification
+            statement: Applicant is a seed or pre-Series-A startup.
+          - criterion_id: cri_active_developers
+            kind: manual
+            reason: external-verification
+            statement: Applicant has 20 or fewer Active Developers, with the count confirmed by Keygraph during onboarding under the Terms definition.
+    roles:
+      terms_authority_entity_id: ent_01m0rp67aqjebkergqewr7nzye
+      access_operator_entity_id: ent_01m0rp67aqjebkergqewr7nzye
+    access:
+      availability: public
+      method: form
+      url: https://keygraph.io/community-program
+      instructions: Use the application link on Keygraph's Community Program page and submit eligibility information; Keygraph confirms the Active Developer count during onboarding.
+    terms_url: https://keygraph.io/terms
+    source_ids:
+      - src_b00f2e52eca0b65749eedb1d3c58bb9bd597a6d26e4375ec74efdc4881dfc0f5
+      - src_41d93669ace32cf2663db5d740392c71aa3307026054ebd9d93caf823bfcb12c
