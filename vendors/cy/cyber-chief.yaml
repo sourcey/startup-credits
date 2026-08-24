@@ -61,43 +61,10 @@ offers:
             kind: exact
     eligibility:
       rule:
-        kind: all
-        rules:
-          - criterion_id: cri_01
-            fact: company.is_current_customer
-            kind: predicate
-            operator: eq
-            statement: Applicant must not currently be a paid Cyber Chief client.
-            value:
-              type: boolean
-              value: false
-          - criterion_id: cri_02
-            kind: manual
-            reason: external-verification
-            statement: Applicant must not previously have been a paid Cyber Chief client.
-          - criterion_id: cri_03
-            fact: company.funding_raised_usd
-            kind: predicate
-            operator: lt
-            statement: Applicant has raised less than US$5 million.
-            value:
-              type: number
-              value: 5000000
-          - criterion_id: cri_04
-            fact: company.stage
-            kind: predicate
-            operator: in
-            statement: Applicant has raised Pre-Seed, Seed, or Series A funding.
-            value:
-              type: string-set
-              values:
-                - pre-seed
-                - seed
-                - series-a
-          - criterion_id: cri_05
-            kind: manual
-            reason: external-verification
-            statement: The qualifying funding round must have been raised from a recognised fund or investor.
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Applicant must be a new Cyber Chief client that is not currently and has not previously been a paid client, have raised less than US$5 million, and have raised Pre-Seed, Seed, or Series A funding from a recognised fund or investor.
+        reason: external-verification
     roles:
       terms_authority_entity_id: ent_01m0sbt7jgkkmzek71ccydbkat
       access_operator_entity_id: ent_01m0sbt7jgkkmzek71ccydbkat
