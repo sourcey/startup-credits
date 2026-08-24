@@ -1,0 +1,112 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01m0sbt7jgkkmzek71ccydbkat
+slug: cyber-chief
+slug_aliases: []
+name: Cyber Chief
+domains:
+  - value: cyberchief.ai
+    role: primary
+    valid_from: 2026-08-24T07:47:30.000Z
+category: auth-security
+description: Cyber Chief provides cloud-based application security testing for web apps, APIs, and cloud security posture management.
+links:
+  site: https://www.cyberchief.ai
+sources:
+  - source_id: src_6064d849184506d4ce579ad8dbae6300bff95ec5ded8632c1ec41f3df79b1dfd
+    url: https://www.cyberchief.ai/p/application-security-tool-for-startups.html
+  - source_id: src_b07000f767050151b569ec8d50c80d6214adcc05f525760d43a596a434c7b817
+    url: https://start.cyberchief.ai/apply
+programs:
+  - program_id: prg_01m0sbt7jgtc7645886ed9yct4
+    program_slug: cyber-chief-startup-program
+    program_slug_aliases: []
+    title: Cyber Chief Startup Program
+    summary: Cyber Chief's startup program gives qualifying funded startups staged subscription discounts for two years.
+    source_ids:
+      - src_6064d849184506d4ce579ad8dbae6300bff95ec5ded8632c1ec41f3df79b1dfd
+offers:
+  - offer_id: off_01m0sbt7jgja5e4pydga7mfv54
+    program_id: prg_01m0sbt7jgtc7645886ed9yct4
+    offer_slug: cyber-chief-startup-program-discount
+    offer_slug_aliases: []
+    title: Cyber Chief Startup Program Discount
+    summary: Eligible funded startups receive 75% off a Cyber Chief subscription in year one and 35% off in year two.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-24T07:47:30.000Z
+    economics:
+      consideration:
+        kind: variable
+        description: Approved startups pay the discounted Cyber Chief subscription amount during the two-year discount period.
+      benefits:
+        - benefit_id: ben_01
+          applies_to: Cyber Chief Startup or Growth package subscription
+          description: 75% off the Cyber Chief subscription during the first year.
+          duration:
+            kind: exact
+            value: P1Y
+          kind: discount
+          percentage:
+            basis_points: 7500
+            kind: exact
+        - benefit_id: ben_02
+          applies_to: Cyber Chief subscription during the second program year
+          description: 35% off the Cyber Chief subscription during the second year.
+          duration:
+            kind: exact
+            value: P1Y
+          kind: discount
+          percentage:
+            basis_points: 3500
+            kind: exact
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.is_current_customer
+            kind: predicate
+            operator: eq
+            statement: Applicant must not currently be a paid Cyber Chief client.
+            value:
+              type: boolean
+              value: false
+          - criterion_id: cri_02
+            kind: manual
+            reason: external-verification
+            statement: Applicant must not previously have been a paid Cyber Chief client.
+          - criterion_id: cri_03
+            fact: company.funding_raised_usd
+            kind: predicate
+            operator: lt
+            statement: Applicant has raised less than US$5 million.
+            value:
+              type: number
+              value: 5000000
+          - criterion_id: cri_04
+            fact: company.stage
+            kind: predicate
+            operator: in
+            statement: Applicant has raised Pre-Seed, Seed, or Series A funding.
+            value:
+              type: string-set
+              values:
+                - pre-seed
+                - seed
+                - series-a
+          - criterion_id: cri_05
+            kind: manual
+            reason: external-verification
+            statement: The qualifying funding round must have been raised from a recognised fund or investor.
+    roles:
+      terms_authority_entity_id: ent_01m0sbt7jgkkmzek71ccydbkat
+      access_operator_entity_id: ent_01m0sbt7jgkkmzek71ccydbkat
+    access:
+      availability: public
+      instructions: Submit the Startup Program application form linked from Cyber Chief's program page.
+      method: form
+      url: https://start.cyberchief.ai/apply
+    terms_url: https://www.cyberchief.ai/p/application-security-tool-for-startups.html
+    source_ids:
+      - src_6064d849184506d4ce579ad8dbae6300bff95ec5ded8632c1ec41f3df79b1dfd
+      - src_b07000f767050151b569ec8d50c80d6214adcc05f525760d43a596a434c7b817
