@@ -1,0 +1,84 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01m0rqkzsgg3w1vqfh7qdf09hv
+slug: dailystory
+slug_aliases: []
+name: DailyStory
+domains:
+  - value: dailystory.com
+    role: primary
+    valid_from: 2026-08-24T01:54:33.899Z
+category: marketing
+description: DailyStory provides marketing automation software for email and text messaging, customer journeys, contact management, integrations, and campaign analytics.
+links:
+  site: https://www.dailystory.com
+sources:
+  - source_id: src_3e4bfa714851ad62377d6110870f9047693bf47b4fca47a13ad5163244cd67de
+    url: https://www.dailystory.com/dailystory-for-my-startup/
+  - source_id: src_f34bcf796cbb911185b2d6f80f09bf648963867f76f5db30e6f2441cfa52641f
+    url: https://www.dailystory.com/legal/terms-of-service/
+programs:
+  - program_id: prg_01m0rqkzsgjv1npem4aaa5r8wt
+    program_slug: startup-program
+    program_slug_aliases: []
+    title: DailyStory Startup Program
+    summary: DailyStory gives qualifying young startups 12 months of free marketing automation for up to 10,000 active contacts per month, plus integrations, support, consulting, guides, users, and API access.
+    source_ids:
+      - src_3e4bfa714851ad62377d6110870f9047693bf47b4fca47a13ad5163244cd67de
+offers:
+  - offer_id: off_01m0rqkzsg4k7w2t921nek8z7h
+    program_id: prg_01m0rqkzsgjv1npem4aaa5r8wt
+    offer_slug: free-marketing-automation-for-12-months
+    offer_slug_aliases: []
+    title: Free DailyStory for 12 months
+    summary: Startups in business for less than 12 months receive free DailyStory access for 10,000 active contacts per month for one year, a benefit DailyStory values at $150 per month.
+    description: The program includes native integrations, chat, email, and phone support, up to one hour of digital consulting per month, marketing guides, unlimited users, and API access. SMS marketing is excluded and remains subject to 10DLC registration and per-message fees.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-24T01:54:33.899Z
+    economics:
+      benefits:
+        - benefit_id: ben_primary
+          description: Free DailyStory marketing automation for up to 10,000 active contacts per month, stated by DailyStory as a $150 monthly value
+          duration:
+            kind: exact
+            value: P1Y
+          kind: free-service
+          service: DailyStory marketing automation platform
+        - benefit_id: ben_consulting
+          description: Up to one hour of digital marketing consulting per month
+          duration:
+            kind: exact
+            value: P1Y
+          kind: free-service
+          service: Digital marketing consulting
+        - benefit_id: ben_support
+          description: Chat, email, and phone support throughout the program
+          kind: other
+        - benefit_id: ben_platform_access
+          description: Native integrations, marketing guides, unlimited users, and API access throughout the program
+          kind: other
+      consideration:
+        kind: unknown
+        description: The startup-program page states that the listed program benefits are free but does not say whether a credit card is required; DailyStory's general Terms require Members to provide valid credit-card information.
+    eligibility:
+      rule:
+        criterion_id: cri_company_age
+        fact: company.age_months
+        kind: predicate
+        operator: lt
+        statement: Applicant must have been in business for less than 12 months.
+        value:
+          type: number
+          value: 12
+    roles:
+      terms_authority_entity_id: ent_01m0rqkzsgg3w1vqfh7qdf09hv
+      access_operator_entity_id: ent_01m0rqkzsgg3w1vqfh7qdf09hv
+    access:
+      availability: public
+      method: form
+      url: https://www.dailystory.com/dailystory-for-my-startup/
+      instructions: Submit the form on DailyStory's Startup Program page with contact, startup, and website details to receive the remaining program information.
+    terms_url: https://www.dailystory.com/legal/terms-of-service/
+    source_ids:
+      - src_3e4bfa714851ad62377d6110870f9047693bf47b4fca47a13ad5163244cd67de
+      - src_f34bcf796cbb911185b2d6f80f09bf648963867f76f5db30e6f2441cfa52641f
