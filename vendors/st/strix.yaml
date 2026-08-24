@@ -1,0 +1,54 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01m0t1szzc12kzxa0jgwg7mbqm
+slug: strix
+slug_aliases: []
+name: Strix
+domains:
+  - value: strix.ai
+    role: primary
+    valid_from: 2026-08-24T13:45:00.000Z
+category: auth-security
+description: Autonomous AI penetration testing platform for continuous security reviews, vulnerability discovery, and auto-fix across applications and infrastructure.
+links:
+  site: https://www.strix.ai
+sources:
+  - source_id: src_d65c96b7bcdc5f40c3522776df7bcd0d76461e74bebc73e4d4b01cc7384267b2
+    url: https://www.strix.ai/startups
+programs: []
+offers:
+  - offer_id: off_01m0t1szzgb2jemhjc1phe6jeh
+    offer_slug: 50-off-pro-for-6-months
+    offer_slug_aliases: []
+    title: 50% off Pro for 6 months
+    summary: Eligible early-stage startups get 50% off the Strix Pro plan for 6 months. Applications (pre-seed to Series A, work email required) are reviewed manually.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-24T13:45:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 50% discount on the Strix Pro plan for 6 months
+          duration:
+            kind: exact
+            value: P6M
+          kind: discount
+          percentage:
+            basis_points: 5000
+            kind: exact
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Eligible startups are pre-seed to Series A; a work email is required and each application is manually reviewed by OmniSecure, Inc.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01m0t1szzc12kzxa0jgwg7mbqm
+      access_operator_entity_id: ent_01m0t1szzc12kzxa0jgwg7mbqm
+    access:
+      availability: public
+      method: form
+      url: https://www.strix.ai/startups
+    source_ids:
+      - src_d65c96b7bcdc5f40c3522776df7bcd0d76461e74bebc73e4d4b01cc7384267b2
