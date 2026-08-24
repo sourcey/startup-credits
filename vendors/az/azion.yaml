@@ -1,0 +1,65 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01m0rtdy8q8zfqaxh957bt77t1
+slug: azion
+slug_aliases: []
+name: Azion
+domains:
+  - value: azion.com
+    role: primary
+    valid_from: 2026-08-24T02:44:00.055Z
+category: hosting-infra
+description: Azion provides an edge computing platform for building, securing, delivering, and observing applications across edge, multi-cloud, on-premise, and mobile environments.
+links:
+  site: https://www.azion.com/en/
+sources:
+  - source_id: src_e22bd024f2e626236f4513925c6731fa49c4a95ebd2f79b1d1fbdf44545a5f94
+    url: https://www.azion.com/en/lp/azion-scale-up/
+  - source_id: src_9ac439defec349d072f723eddde6efe7a4e1eeb66d06cb096fb920ea55e2c50d
+    url: https://www.azion.com/en/documentation/agreements/azion-incentive-credits-terms-and-conditions/
+programs:
+  - program_id: prg_01m0rtdy8smnsmmaz6qdkxdsan
+    program_slug: azion-scale-up-credit-program
+    program_slug_aliases: []
+    title: Azion Scale Up Credit Program
+    summary: Azion's Scale Up program provides approved companies with up to $120,000 in service credits for its edge computing platform.
+    source_ids:
+      - src_e22bd024f2e626236f4513925c6731fa49c4a95ebd2f79b1d1fbdf44545a5f94
+offers:
+  - offer_id: off_01m0rtdy8s4nd3e3a99x32y76m
+    program_id: prg_01m0rtdy8smnsmmaz6qdkxdsan
+    offer_slug: up-to-120000-usd-in-azion-service-credits
+    offer_slug_aliases: []
+    title: Up to $120,000 in Azion service credits
+    summary: Approved companies can receive up to $120,000 in promotional service credits for eligible use of the Azion edge computing platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-24T02:44:00.055Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to $120,000 in promotional credits for Azion products and services
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 12000000
+            kind: up-to
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Azion reviews the company and determines whether to approve participation and the service-credit amount.
+    roles:
+      terms_authority_entity_id: ent_01m0rtdy8q8zfqaxh957bt77t1
+      access_operator_entity_id: ent_01m0rtdy8q8zfqaxh957bt77t1
+    access:
+      availability: public
+      method: contact
+      url: https://www.azion.com/en/lp/azion-scale-up/
+    terms_url: https://www.azion.com/en/documentation/agreements/azion-incentive-credits-terms-and-conditions/
+    source_ids:
+      - src_e22bd024f2e626236f4513925c6731fa49c4a95ebd2f79b1d1fbdf44545a5f94
+      - src_9ac439defec349d072f723eddde6efe7a4e1eeb66d06cb096fb920ea55e2c50d
