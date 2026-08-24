@@ -1,0 +1,81 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01m0s1awx2dsgtgn955p1zfq5q
+slug: marketcheck
+slug_aliases: []
+name: MarketCheck
+domains:
+  - value: marketcheck.uk
+    role: primary
+    valid_from: 2026-08-24T04:50:00Z
+category: data-analytics
+description: MarketCheck provides vehicle data APIs, historical pricing trends, VIN decoding, market valuations, and automotive market analysis tools.
+links:
+  site: https://marketcheck.uk
+sources:
+  - source_id: src_6b90416564d419e4edd8983784f0bd214f2ff1d8bdb81960f0b9b757aa9aecf4
+    url: https://marketcheck.uk/automotive-sectors/marketcheck-for-startups
+programs:
+  - program_id: prg_01m0s1awx2dsgtgn955p1zfq5r
+    program_slug: marketcheck-startup-program
+    program_slug_aliases: []
+    title: MarketCheck Startup Program
+    summary: MarketCheck gives qualifying AI-first automotive startups three months of vehicle data API access without an access fee, a monthly free-call allowance, discounted additional calls, and technical support.
+    source_ids:
+      - src_6b90416564d419e4edd8983784f0bd214f2ff1d8bdb81960f0b9b757aa9aecf4
+offers:
+  - offer_id: off_01m0s1awx2dsgtgn955p1zfq5s
+    program_id: prg_01m0s1awx2dsgtgn955p1zfq5r
+    offer_slug: three-month-vehicle-data-api-access
+    offer_slug_aliases: []
+    title: Three months of MarketCheck vehicle data API access
+    summary: Approved startups receive no access fee for three months, 25,000 free API calls each month, additional calls at GBP 0.002 each, priority technical support, and a dedicated startup account manager.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-24T04:50:00Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_01
+          description: No access fee and 25,000 free vehicle data API calls per month for three months
+          kind: free-service
+          service: MarketCheck vehicle data API
+          duration:
+            kind: exact
+            value: P3M
+        - benefit_id: ben_02
+          description: Additional API calls cost GBP 0.002 each during the program
+          kind: other
+        - benefit_id: ben_03
+          description: Priority technical support and a dedicated startup account manager
+          kind: other
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: external-verification
+            statement: Applicant is building an AI-powered solution for the automotive industry.
+          - criterion_id: cri_02
+            kind: manual
+            reason: external-verification
+            statement: Applicant was incorporated within the last 12 months, or is unincorporated and meets MarketCheck's qualifying criteria.
+          - criterion_id: cri_03
+            kind: manual
+            reason: external-verification
+            statement: Applicant operates in the United Kingdom, United States, or Canadian automotive market.
+          - criterion_id: cri_04
+            kind: manual
+            reason: vendor-discretion
+            statement: MarketCheck reviews and approves the startup's submitted request.
+    roles:
+      terms_authority_entity_id: ent_01m0s1awx2dsgtgn955p1zfq5q
+      access_operator_entity_id: ent_01m0s1awx2dsgtgn955p1zfq5q
+    access:
+      availability: public
+      method: form
+      url: https://marketcheck.uk/automotive-sectors/marketcheck-for-startups
+      instructions: Submit contact details and describe the requested vehicle data through the startup program form.
+    source_ids:
+      - src_6b90416564d419e4edd8983784f0bd214f2ff1d8bdb81960f0b9b757aa9aecf4
