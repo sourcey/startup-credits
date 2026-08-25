@@ -1,0 +1,70 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m0rf6y4ya673nzvqdtc97w9e
+  slug: rhetorik
+  slug_aliases: []
+  name: Rhetorik
+  domains:
+    - value: rhetorik.com
+      role: primary
+      valid_from: 2026-08-23T23:27:37.630Z
+  category: crm-sales
+profile:
+  description: Rhetorik provides B2B company and people data, technographics, contact information,
+    datasets, and APIs for data-driven applications.
+  links:
+    site: https://rhetorik.com
+sources:
+  - source_id: src_65dac65247ca0b63f8d72f4cade2be5f56085f039740e183270d8282d966c6b8
+    url: https://rhetorik.com/lp-startups/
+programs:
+  - program_id: prg_01m0rf6y4yksyefkqjys9nbpqx
+    program_slug: data-for-startups
+    program_slug_aliases: []
+    title: Rhetorik Data for Startups
+    summary: Rhetorik supports early-stage companies building data-driven applications with API data
+      credits and discounted access as they launch and scale.
+    source_ids:
+      - src_65dac65247ca0b63f8d72f4cade2be5f56085f039740e183270d8282d966c6b8
+offers:
+  - offer_id: off_01m0rf6y4yw204prxj2edfyv7d
+    program_id: prg_01m0rf6y4yksyefkqjys9nbpqx
+    offer_slug: data-for-startups
+    offer_slug_aliases: []
+    title: Rhetorik Data for Startups
+    summary: Early-stage companies can receive $10,000 in free API data credits for proof-of-concept or
+      MVP development, followed by discounted access at later stages.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-23T23:27:37.630Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: $10,000 in free API data credits for proof-of-concept or MVP development
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 1000000
+            kind: exact
+        - benefit_id: ben_02
+          description: Heavily discounted access at launch and extended discounted access while scaling
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_01
+        statement: The program is intended for early-stage companies building data-driven applications.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01m0rf6y4ya673nzvqdtc97w9e
+      access_operator_entity_id: ent_01m0rf6y4ya673nzvqdtc97w9e
+    access:
+      availability: public
+      method: form
+      url: https://rhetorik.com/lp-startups/
+    terms_url: https://rhetorik.com/lp-startups/
+    source_ids:
+      - src_65dac65247ca0b63f8d72f4cade2be5f56085f039740e183270d8282d966c6b8
