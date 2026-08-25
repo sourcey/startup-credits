@@ -1,0 +1,80 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m0xa40tmaj6xwrx91vd64pfy
+  slug: refinder
+  slug_aliases: []
+  name: Refinder
+  domains:
+    - value: refinder.ai
+      role: primary
+      valid_from: 2026-08-25T20:34:51.348Z
+  category: productivity
+profile:
+  description: Refinder is an AI-powered enterprise search and work assistant that connects company data across applications.
+  links:
+    site: https://refinder.ai
+sources:
+  - source_id: src_c6af23498ff1e78472436b761eb84836deabfed37ba9e3ff3f44d319556756d1
+    url: https://refinder.ai/startup-program/
+programs:
+  - program_id: prg_01m0xa40tmpxnk1br0c9nrk8jz
+    program_slug: refinder-startup-program
+    program_slug_aliases: []
+    title: Refinder Startup Program
+    summary: Refinder gives qualifying early-stage companies free access for one year and a 50% discount for a second year.
+    source_ids:
+      - src_c6af23498ff1e78472436b761eb84836deabfed37ba9e3ff3f44d319556756d1
+offers:
+  - offer_id: off_01m0xa40tm0581cqd9qn940gcs
+    program_id: prg_01m0xa40tmpxnk1br0c9nrk8jz
+    offer_slug: one-year-free-and-fifty-percent-off-second-year
+    offer_slug_aliases: []
+    title: One year free and 50% off the second year
+    summary: Approved startups receive all Refinder features free for 12 months, then may continue for another year at a 50% discount, with expert guidance and early feature access.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-25T20:34:51.348Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Free access to all Refinder features for the first 12 months
+          duration:
+            kind: exact
+            value: P1Y
+          kind: free-service
+          service: Refinder platform
+        - applies_to: Refinder subscription after the free period
+          benefit_id: ben_02
+          description: 50% discount for the second year
+          duration:
+            kind: exact
+            value: P1Y
+          kind: discount
+          percentage:
+            basis_points: 5000
+            kind: exact
+        - benefit_id: ben_03
+          description: One-on-one guidance from Refinder product managers and engineers
+          kind: other
+        - benefit_id: ben_04
+          description: Early access to upcoming features and prioritized product feedback
+          kind: other
+      consideration:
+        kind: variable
+        description: The first 12 months require no payment; continuing for the second year requires payment of the remaining 50% of the subscription price.
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: external-verification
+        statement: Applicant must have fewer than 20 employees, have been established within the past five years, and pass Refinder's application review.
+    roles:
+      terms_authority_entity_id: ent_01m0xa40tmaj6xwrx91vd64pfy
+      access_operator_entity_id: ent_01m0xa40tmaj6xwrx91vd64pfy
+    access:
+      availability: public
+      method: form
+      url: https://docs.google.com/forms/d/e/1FAIpQLScjKK1TQRbHU6OhCDAP15zkA5DwdU-c5C27UkZEUGr_ggRvEA/viewform
+      instructions: Submit the application form linked from Refinder's official startup-program page.
+    source_ids:
+      - src_c6af23498ff1e78472436b761eb84836deabfed37ba9e3ff3f44d319556756d1
