@@ -1,0 +1,11 @@
+name: ZenML
+sources:
+  - source_id: src_zenml_startups_2024
+    url: https://www.zenml.io/startups-and-academics
+  - source_id: src_zenml_pricing_2024
+    url: https://www.zenml.io/pricing
+offers:
+  - title: ZenML for Startups and Academics
+    summary: Early-stage companies building ML-powered products receive special pricing on ZenML Pro, expert guidance, and access to a network of startups and researchers via a public application form.
+    eligibility:
+      statement: Must be an early-stage company building ML-powered products.
