@@ -1,0 +1,9 @@
+name: Arize AI
+sources:
+  - source_id: src_arize_startups
+    url: https://arize.com/sign-up-startups/
+offers:
+  - title: Arize for Startups
+    summary: Arize publishes an "Arize for Startups" program with startup pricing for eligible startups applying through its startup form.
+    eligibility:
+      statement: Eligible startups applying through its startup form.
