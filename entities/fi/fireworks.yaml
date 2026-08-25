@@ -1,0 +1,76 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m0x8xmn8a789t99vt99yhk3h
+  slug: fireworks
+  slug_aliases:
+    - fireworks-ai
+  name: Fireworks AI
+  domains:
+    - value: fireworks.ai
+      role: primary
+      valid_from: 2026-08-25T00:00:00.000Z
+  category: ai-ml
+profile:
+  description: Fireworks AI provides a generative AI platform for serverless inference, fine-tuning, custom models, and on-demand GPU deployments.
+  links:
+    site: https://fireworks.ai
+sources:
+  - source_id: src_11bfa896db1030f860d28a9f3d5aec1074bc956fdb74e25d6c7e32968043443d
+    url: https://fireworks.ai/startups
+programs:
+  - program_id: prg_01m0x8xmn9eyz5ky1wkdstsd3v
+    program_slug: fireworks-for-startups
+    program_slug_aliases: []
+    title: Fireworks for Startups
+    summary: Fireworks supports qualifying venture-backed startups with build credits, higher rate limits, applied AI expertise, community access, product feedback, and marketing opportunities.
+    source_ids:
+      - src_11bfa896db1030f860d28a9f3d5aec1074bc956fdb74e25d6c7e32968043443d
+offers:
+  - offer_id: off_01m0x8xmn9g4pn25xkdq0gfk0w
+    program_id: prg_01m0x8xmn9eyz5ky1wkdstsd3v
+    offer_slug: startup-build-credits
+    offer_slug_aliases: []
+    title: Fireworks startup build credits
+    summary: Approved startups receive build credits valid for one year, options for higher rate limits, expert guidance, startup community access, roadmap feedback, and joint marketing opportunities.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-25T00:00:00.000Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_01
+          description: Build credits valid for one year across supported Fireworks services, including inference, image generation, speech-to-text, embeddings, fine-tuning, and on-demand GPU deployments
+          kind: other
+        - benefit_id: ben_02
+          description: Options for higher rate limits, access to applied AI experts, startup meetups and workshops, product feedback sessions, and joint marketing opportunities
+          kind: other
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: external-verification
+            statement: Applicant is a registered company with a functional website.
+          - criterion_id: cri_02
+            kind: manual
+            reason: external-verification
+            statement: Applicant is a privately held, for-profit company founded within the last five years.
+          - criterion_id: cri_03
+            kind: manual
+            reason: external-verification
+            statement: Applicant is venture backed with more than $500,000 in funding and has not received Series D or later funding.
+          - criterion_id: cri_04
+            kind: manual
+            reason: vendor-discretion
+            statement: Application is reviewed and approved by Fireworks.
+    roles:
+      terms_authority_entity_id: ent_01m0x8xmn8a789t99vt99yhk3h
+      access_operator_entity_id: ent_01m0x8xmn8a789t99vt99yhk3h
+    access:
+      availability: public
+      method: form
+      url: https://fireworks.ai/startups
+    source_ids:
+      - src_11bfa896db1030f860d28a9f3d5aec1074bc956fdb74e25d6c7e32968043443d
