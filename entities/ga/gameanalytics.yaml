@@ -1,16 +1,18 @@
-schema_version: sourcey.vendor-authoring/v1alpha1
-entity_id: ent_01m0qq36a8m8hb043cmd5s8a60
-slug: gameanalytics
-slug_aliases: []
-name: GameAnalytics
-domains:
-  - value: gameanalytics.com
-    role: primary
-    valid_from: 2026-08-23T16:26:09.096Z
-category: data-analytics
-description: GameAnalytics provides analytics, data management, and market intelligence tools for game developers, studios, and publishers.
-links:
-  site: https://www.gameanalytics.com
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m0qq36a8m8hb043cmd5s8a60
+  slug: gameanalytics
+  slug_aliases: []
+  name: GameAnalytics
+  domains:
+    - value: gameanalytics.com
+      role: primary
+      valid_from: 2026-08-23T16:26:09.096Z
+  category: data-analytics
+profile:
+  description: GameAnalytics provides analytics, data management, and market intelligence tools for game developers, studios, and publishers.
+  links:
+    site: https://www.gameanalytics.com
 sources:
   - source_id: src_adb002ea8df618c73ece6833d5750f4a090afc8ad37ad6b1e8d876b0bb799a27
     url: https://www.gameanalytics.com/pricing/startup
@@ -67,5 +69,6 @@ offers:
       availability: public
       method: form
       url: https://www.gameanalytics.com/pricing/startup
+    terms_url: https://www.gameanalytics.com/pricing/startup
     source_ids:
       - src_adb002ea8df618c73ece6833d5750f4a090afc8ad37ad6b1e8d876b0bb799a27
