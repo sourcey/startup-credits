@@ -58,7 +58,7 @@ offers:
     access:
       availability: public
       method: contact
-      instructions: Create a free CallMissed account, then email karan@callmissed.com with subject "Startup Credits Application" and the company, founder, product, stage, intended use, expected usage, and any available demo or affiliation details.
+      instructions: Create a free CallMissed account, then use the contact channel and subject published on the program page and provide the requested company, founder, product, stage, use, expected usage, and any available demo or affiliation details.
       url: https://www.callmissed.com/solutions/startups
     source_ids:
       - src_a4630791e3ace0347b104db469b076c132d701a10584c4dc3afcc007cb2a3911
