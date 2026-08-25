@@ -1,0 +1,11 @@
+name: Azion
+sources:
+  - source_id: src_azion_scale_up_2024
+    url: https://www.azion.com/en/lp/azion-scale-up/
+  - source_id: src_azion_incentive_terms_2024
+    url: https://www.azion.com/en/documentation/agreements/azion-incentive-credits-terms-and-conditions/
+offers:
+  - title: Azion Scale Up Credit Program
+    summary: Eligible startups can receive up to USD 120,000 in service credits for Azion's edge computing platform.
+    eligibility:
+      statement: Startups must apply through the Scale Up program page and meet Azion's eligibility criteria as defined in the Incentive Credits Terms and Conditions.
