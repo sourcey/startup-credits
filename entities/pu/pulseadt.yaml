@@ -1,0 +1,73 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m0xampvw3k46hhttwq5w1z4t
+  slug: pulseadt
+  slug_aliases: []
+  name: PulseADT
+  domains:
+    - value: getpulseadt.com
+      role: primary
+      valid_from: 2026-08-25T20:43:58.204Z
+  category: auth-security
+profile:
+  description: PulseADT provides autonomous threat detection, containment, response, recovery, and security APIs for cloud and application infrastructure.
+  links:
+    site: https://getpulseadt.com
+sources:
+  - source_id: src_c5835bb822b764873d3f22a88e7ea676cf48c9f5e134d7ae80600bff530bf3c3
+    url: https://getpulseadt.com/for-startups
+  - source_id: src_93424dfe015f264c9cfe42ac441735ccd530400580b8b86b2df40d8ef66dd7f2
+    url: https://form.typeform.com/to/utHJPV6R
+programs:
+  - program_id: prg_01m0xampvw4wesmgjdehstn4f3
+    program_slug: pulseadt-startup-credit-program
+    program_slug_aliases: []
+    title: PulseADT Startup Credit Program
+    summary: PulseADT offers qualifying early-stage technology companies credits through spend-based API and platform tracks.
+    source_ids:
+      - src_c5835bb822b764873d3f22a88e7ea676cf48c9f5e134d7ae80600bff530bf3c3
+      - src_93424dfe015f264c9cfe42ac441735ccd530400580b8b86b2df40d8ef66dd7f2
+offers:
+  - offer_id: off_01m0xampvwn1dyxy66d3nxajpq
+    program_id: prg_01m0xampvw4wesmgjdehstn4f3
+    offer_slug: api-starter-spend-fifty-earn-one-hundred-fifty
+    offer_slug_aliases: []
+    title: API Starter — spend $50 and earn a $150 credit
+    summary: Eligible startups that spend at least USD 50 on PulseADT API credits within their first 90 days receive a USD 150 platform credit valid for 12 months.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-25T20:43:58.204Z
+    economics:
+      benefits:
+        - applies_to: PulseADT API calls, subscriptions, or add-ons
+          benefit_id: ben_01
+          description: USD 150 PulseADT platform credit valid for 12 months
+          duration:
+            kind: exact
+            value: P1Y
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 15000
+            kind: exact
+      consideration:
+        kind: variable
+        description: Spend at least USD 50 on PulseADT API credits within the first 90 days before applying for the API Starter track.
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: external-verification
+        statement: Applicant must have been founded within the last three years, have fewer than 50 employees, be pre-revenue or have less than USD 500,000 ARR, build a technology product, not be a subsidiary or division of a larger company, satisfy the API Starter spend requirement, and pass PulseADT review.
+    roles:
+      terms_authority_entity_id: ent_01m0xampvw3k46hhttwq5w1z4t
+      access_operator_entity_id: ent_01m0xampvw3k46hhttwq5w1z4t
+    access:
+      availability: public
+      method: form
+      url: https://form.typeform.com/to/utHJPV6R
+      instructions: Create a PulseADT account, meet the API Starter spend requirement within 90 days, then submit the startup-program application form.
+    source_ids:
+      - src_c5835bb822b764873d3f22a88e7ea676cf48c9f5e134d7ae80600bff530bf3c3
+      - src_93424dfe015f264c9cfe42ac441735ccd530400580b8b86b2df40d8ef66dd7f2
