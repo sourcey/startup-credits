@@ -39,8 +39,7 @@ offers:
       effective_from: 2026-08-25T20:43:58.204Z
     economics:
       benefits:
-        - applies_to: PulseADT API calls, subscriptions, or add-ons
-          benefit_id: ben_01
+        - benefit_id: ben_01
           description: USD 150 PulseADT platform credit valid for 12 months
           duration:
             kind: exact
