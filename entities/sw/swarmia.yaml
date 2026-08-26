@@ -1,0 +1,84 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m0zpgrct7817aadmvebkmeph
+  slug: swarmia
+  slug_aliases: []
+  name: Swarmia
+  domains:
+    - value: swarmia.com
+      role: primary
+      valid_from: 2026-08-26T18:50:00.475Z
+  category: productivity
+profile:
+  description: Swarmia is an engineering intelligence platform for software delivery metrics, developer experience, workflow visibility, and team improvement.
+  links:
+    site: https://www.swarmia.com
+sources:
+  - source_id: src_017a0e95be194089dedbdec784b34c0bfffc52a3d686034e8b35805675545be7
+    url: https://www.swarmia.com/startups/
+programs:
+  - program_id: prg_01m0zpgrct808p2k4247h9p1q7
+    program_slug: swarmia-for-startups
+    program_slug_aliases: []
+    title: Swarmia for Startups
+    summary: Swarmia gives eligible new startup customers with up to 50 engineers 50% off Standard or Enterprise annual plans for their first year.
+    source_ids:
+      - src_017a0e95be194089dedbdec784b34c0bfffc52a3d686034e8b35805675545be7
+offers:
+  - offer_id: off_01m0zpgrctgp9z1mgndkt0s9d6
+    program_id: prg_01m0zpgrct808p2k4247h9p1q7
+    offer_slug: swarmia-startup-50-percent-off
+    offer_slug_aliases: []
+    title: 50% Off Swarmia for One Year
+    summary: Eligible startup customers with up to 50 engineers receive 50% off a Standard or Enterprise annual plan for the first year.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-26T18:50:00.475Z
+    economics:
+      benefits:
+        - applies_to: Swarmia Standard or Enterprise annual plan
+          benefit_id: ben_01
+          description: 50% off a Standard or Enterprise annual plan for the first full year
+          duration:
+            kind: exact
+            value: P1Y
+          kind: discount
+          percentage:
+            basis_points: 5000
+            kind: exact
+      consideration:
+        kind: variable
+        description: The startup purchases an eligible annual plan at the discounted price.
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.employee_count
+            kind: predicate
+            operator: lte
+            statement: The applicant has no more than 50 engineers
+            value:
+              type: number
+              value: 50
+          - criterion_id: cri_02
+            fact: company.is_current_customer
+            kind: predicate
+            operator: eq
+            statement: The applicant is new to Swarmia
+            value:
+              type: boolean
+              value: false
+          - criterion_id: cri_03
+            kind: manual
+            reason: external-verification
+            statement: The applicant is associated with a member of Swarmia's partner program
+    roles:
+      terms_authority_entity_id: ent_01m0zpgrct7817aadmvebkmeph
+      access_operator_entity_id: ent_01m0zpgrct7817aadmvebkmeph
+    access:
+      availability: public
+      method: form
+      url: https://www.swarmia.com/startup-signup/
+    source_ids:
+      - src_017a0e95be194089dedbdec784b34c0bfffc52a3d686034e8b35805675545be7
