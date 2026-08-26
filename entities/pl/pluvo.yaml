@@ -1,0 +1,82 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m0zpgrcveaqvf277edh51k8w
+  slug: pluvo
+  slug_aliases: []
+  name: Pluvo
+  domains:
+    - value: pluvo.io
+      role: primary
+      valid_from: 2026-08-26T18:50:00.475Z
+  category: finance-accounting
+profile:
+  description: Pluvo is an AI finance platform for financial planning, reporting, forecasting, and connected analysis across accounting and revenue systems.
+  links:
+    site: https://pluvo.io
+sources:
+  - source_id: src_03c69fb95aa07d00fa069fe9186ce2a81266c30af4f42b80cfac25d7e6802262
+    url: https://pluvo.io/startups
+programs:
+  - program_id: prg_01m0zpgrcvzabtqamje6z3phzx
+    program_slug: pluvo-for-startups
+    program_slug_aliases: []
+    title: Pluvo for Startups
+    summary: Pluvo gives eligible new customers with under $5 million in annual revenue 20% off the Plus plan for their first 12 months.
+    source_ids:
+      - src_03c69fb95aa07d00fa069fe9186ce2a81266c30af4f42b80cfac25d7e6802262
+offers:
+  - offer_id: off_01m0zpgrcvs7th6c53bwa19yxg
+    program_id: prg_01m0zpgrcvzabtqamje6z3phzx
+    offer_slug: pluvo-startup-plus-plan-discount
+    offer_slug_aliases: []
+    title: 20% Off Pluvo Plus for One Year
+    summary: Eligible new customers with under $5 million in annual revenue receive the Plus plan for $1,200 per month instead of $1,500 for 12 months.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-26T18:50:00.475Z
+    economics:
+      benefits:
+        - applies_to: Pluvo Plus plan
+          benefit_id: ben_01
+          description: 20% off the Plus plan, reducing its monthly price from $1,500 to $1,200 for the first year
+          duration:
+            kind: exact
+            value: P1Y
+          kind: discount
+          percentage:
+            basis_points: 2000
+            kind: exact
+      consideration:
+        amount:
+          currency: USD
+          minor_units: 120000
+        kind: fixed
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.annual_revenue_usd
+            kind: predicate
+            operator: lt
+            statement: The applicant has less than $5 million in annual revenue
+            value:
+              type: number
+              value: 5000000
+          - criterion_id: cri_02
+            fact: company.is_current_customer
+            kind: predicate
+            operator: eq
+            statement: The applicant is new to Pluvo
+            value:
+              type: boolean
+              value: false
+    roles:
+      terms_authority_entity_id: ent_01m0zpgrcveaqvf277edh51k8w
+      access_operator_entity_id: ent_01m0zpgrcveaqvf277edh51k8w
+    access:
+      availability: public
+      method: form
+      url: https://pluvo.io/startups
+    source_ids:
+      - src_03c69fb95aa07d00fa069fe9186ce2a81266c30af4f42b80cfac25d7e6802262
