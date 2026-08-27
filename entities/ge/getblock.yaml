@@ -1,0 +1,88 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m12ra10env2m6qag2s8d2cnv
+  slug: getblock
+  slug_aliases: []
+  name: GetBlock
+  domains:
+    - value: getblock.io
+      role: primary
+      valid_from: 2026-08-27T23:00:00.000Z
+  category: web3-infra
+profile:
+  description: GetBlock provides blockchain RPC node APIs, shared and dedicated nodes, and
+    blockchain data tools for building Web3 applications.
+  links:
+    site: https://getblock.io
+sources:
+  - source_id: src_43421594d593fda5511f4783021b3fa72e70a821cb1c19fc5cdd1112907ff343
+    url: https://getblock.io/grant-program-solana/
+programs:
+  - program_id: prg_01m12ra10fa470xy2z06nwtkv3
+    program_slug: solana-grant-program
+    program_slug_aliases: []
+    title: GetBlock Solana Grant Program
+    summary: GetBlock grants approved Solana teams compute credits for its premium RPC
+      infrastructure, with up to 90 days of free access.
+    source_ids:
+      - src_43421594d593fda5511f4783021b3fa72e70a821cb1c19fc5cdd1112907ff343
+offers:
+  - offer_id: off_01m12ra10gnfb8k19harhrb1pk
+    program_id: prg_01m12ra10fa470xy2z06nwtkv3
+    offer_slug: solana-startup-program-credits
+    offer_slug_aliases: []
+    title: Solana Startup Program compute credits
+    summary: Approved Solana teams can receive up to $10,000 in non-cash compute credits
+      applied to their GetBlock account, with access lasting up to 90 days.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-27T23:00:00.000Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_01
+          description: Up to $10,000 in non-cash compute credits per team, applied directly to
+            the GetBlock account and usable for Solana RPC API calls.
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 1000000
+            kind: upper_bound
+          duration:
+            kind: exact
+            value: P90D
+        - benefit_id: ben_02
+          description: Access to GetBlock managed Solana RPC endpoints for devnet and mainnet,
+            plus technical onboarding and resources.
+          kind: free-service
+          service: GetBlock managed Solana RPC endpoints
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: external-verification
+            statement: The team is building or intends to build a project on the Solana network.
+          - criterion_id: cri_02
+            kind: manual
+            reason: external-verification
+            statement: The applicant registers or is willing to register a GetBlock account.
+          - criterion_id: cri_03
+            kind: manual
+            reason: vendor-discretion
+            statement: Application is reviewed and approved by GetBlock; approval is not guaranteed.
+    roles:
+      terms_authority_entity_id: ent_01m12ra10env2m6qag2s8d2cnv
+      access_operator_entity_id: ent_01m12ra10env2m6qag2s8d2cnv
+    access:
+      availability: public
+      method: form
+      url: https://getblock.io/grant-program-solana/
+      instructions: Submit the application form on the Solana Grant Program page and provide
+        project details; approved teams receive credits in their GetBlock account.
+    terms_url: https://getblock.io/terms-of-service/grant-program-solana/
+    source_ids:
+      - src_43421594d593fda5511f4783021b3fa72e70a821cb1c19fc5cdd1112907ff343
