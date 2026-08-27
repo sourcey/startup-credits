@@ -1,0 +1,93 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m11hnzy6tmah0tv0s4p5w26z
+  slug: scyverge
+  slug_aliases: []
+  name: Scyverge
+  domains:
+    - value: scyverge.com
+      role: primary
+      valid_from: 2026-08-27T12:03:58.000Z
+  category: auth-security
+profile:
+  description: Scyverge provides penetration testing, compliance readiness, AI and cloud security, incident response, and managed security services.
+  links:
+    site: https://scyverge.com
+sources:
+  - source_id: src_5d89a2bfc9582f0040464b68a973f3a8d0404b4901c5fd32c85e5b5e50d2b0d5
+    url: https://scyverge.com/startup
+programs:
+  - program_id: prg_01m11hnzy8b5skrydsf4vnede4
+    program_slug: scyverge-startup-program
+    program_slug_aliases: []
+    title: Scyverge Startup Program
+    summary: Scyverge's program gives approved startups $1,000 in security-service credits, a security roadmap, and team awareness training.
+    source_ids:
+      - src_5d89a2bfc9582f0040464b68a973f3a8d0404b4901c5fd32c85e5b5e50d2b0d5
+offers:
+  - offer_id: off_01m11hnzy8y4rjkdd2hnk42y9c
+    program_id: prg_01m11hnzy8b5skrydsf4vnede4
+    offer_slug: startup-security-credits-and-services
+    offer_slug_aliases: []
+    title: $1,000 in security-service credits and free startup security support
+    summary: Approved startups receive $1,000 in Scyverge service credits valid for 12 months, a personalized security roadmap, and live awareness training for up to 50 people.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-27T12:03:58.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: $1,000 in Scyverge service credits valid for 12 months
+          duration:
+            kind: exact
+            value: P1Y
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 100000
+            kind: exact
+        - benefit_id: ben_02
+          description: A personalized security roadmap with a gap assessment, prioritized action plan, and expert advisory session
+          kind: free-service
+          service: Startup security roadmap
+        - benefit_id: ben_03
+          description: Live security awareness training for up to 50 team members, including a certificate of completion
+          kind: free-service
+          service: Security awareness training
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: external-verification
+            statement: Must be a registered company or LLP in India or an internationally incorporated company.
+          - criterion_id: cri_02
+            fact: company.age_months
+            kind: predicate
+            operator: lte
+            statement: Must have been incorporated within the last seven years.
+            value:
+              type: number
+              value: 84
+          - criterion_id: cri_03
+            kind: manual
+            reason: external-verification
+            statement: Annual revenue must be under INR 25 crore or the equivalent amount.
+          - criterion_id: cri_04
+            kind: manual
+            reason: external-verification
+            statement: Must not be an existing Scyverge partner or affiliate.
+    roles:
+      terms_authority_entity_id: ent_01m11hnzy6tmah0tv0s4p5w26z
+      access_operator_entity_id: ent_01m11hnzy6tmah0tv0s4p5w26z
+    access:
+      availability: public
+      method: form
+      url: https://scyverge.com/startup
+    terms_url: https://scyverge.com/startup
+    source_ids:
+      - src_5d89a2bfc9582f0040464b68a973f3a8d0404b4901c5fd32c85e5b5e50d2b0d5
