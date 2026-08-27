@@ -1,0 +1,102 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01rfavqkbtb1xyq23qk8gv8fs3
+  slug: anakin
+  slug_aliases:
+    - anakin-io
+  name: Anakin
+  domains:
+    - value: anakin.io
+      role: primary
+      valid_from: 2026-08-27T00:00:00.000Z
+  category: data-analytics
+profile:
+  description: Anakin provides web data APIs for scraping, crawling, search, authenticated browser sessions, monitoring, and web actions.
+  links:
+    site: https://anakin.io
+sources:
+  - source_id: src_26f125ef9831f564a590935d5aabbd46fdc4f8a79cf92e07fd28bd9e90962990
+    url: https://anakin.io/startups
+programs:
+  - program_id: prg_0128w9qbggsc4m1ht0ftaqkx7t
+    program_slug: anakin-jumpstart
+    program_slug_aliases:
+      - anakin-startup-program
+    title: Anakin Jumpstart
+    summary: Anakin Jumpstart gives qualifying startups page credits for its web data API, six months of discounted Pro or Scale pricing, and optional audience promotion.
+    source_ids:
+      - src_26f125ef9831f564a590935d5aabbd46fdc4f8a79cf92e07fd28bd9e90962990
+offers:
+  - offer_id: off_01xk5q3w6ekey5j39wdw6at4zm
+    program_id: prg_0128w9qbggsc4m1ht0ftaqkx7t
+    offer_slug: anakin-jumpstart-pages-and-discount
+    offer_slug_aliases: []
+    title: Up to 400,000 Anakin pages plus 50% off for six months
+    summary: Eligible startups receive up to 400,000 Anakin page credits, advertised as $500 worth, plus 50% off Pro or Scale monthly billing for six months.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-27T00:00:00.000Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_01
+          description: Up to 400,000 Anakin page credits, advertised as $500 worth
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 50000
+            kind: up-to
+        - benefit_id: ben_02
+          description: 50% off Pro and Scale monthly billing for six months
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 5000
+          duration:
+            kind: exact
+            value: P6M
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: external-verification
+            statement: Applicant must be backed by a school, accelerator, incubator, or venture capital firm.
+          - criterion_id: cri_02
+            fact: company.funding.total
+            kind: predicate
+            operator: lt
+            statement: Applicant must have raised under $50 million in total funding.
+            value:
+              amount:
+                currency: USD
+                minor_units: 5000000000
+              type: money
+          - criterion_id: cri_03
+            fact: company.employee_count
+            kind: predicate
+            operator: lt
+            statement: Applicant must have fewer than 100 people.
+            value:
+              type: number
+              value: 100
+          - criterion_id: cri_04
+            kind: manual
+            reason: external-verification
+            statement: Applicant must not already be a paying Anakin customer and must apply with a work email on the company domain.
+          - criterion_id: cri_05
+            kind: manual
+            reason: vendor-discretion
+            statement: One offer is available per company.
+    roles:
+      terms_authority_entity_id: ent_01rfavqkbtb1xyq23qk8gv8fs3
+      access_operator_entity_id: ent_01rfavqkbtb1xyq23qk8gv8fs3
+    access:
+      availability: public
+      method: form
+      url: https://anakin.io/startups
+    source_ids:
+      - src_26f125ef9831f564a590935d5aabbd46fdc4f8a79cf92e07fd28bd9e90962990
