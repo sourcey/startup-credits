@@ -1,0 +1,72 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m11htwbh0rz221eh1n7ez85e
+  slug: authkey
+  slug_aliases: []
+  name: Authkey
+  domains:
+    - value: authkey.io
+      role: primary
+      valid_from: 2026-08-27T12:06:38.000Z
+  category: communication
+profile:
+  description: Authkey provides communication APIs for WhatsApp, SMS, voice, email, Google RCS, one-time passwords, and multichannel fallback routing.
+  links:
+    site: https://authkey.io
+sources:
+  - source_id: src_dce18b61707af25928cfb8d45913be85d5cf9f2d455d289473c64b09a90d9c17
+    url: https://authkey.io/startup-india
+programs:
+  - program_id: prg_01m11htwbjypshm4y5szb17mb5
+    program_slug: startup-india-program
+    program_slug_aliases: []
+    title: Authkey Startup India Program
+    summary: Authkey's Startup India Program provides messaging credits, onboarding, developer tools, and support for startups building communication workflows.
+    source_ids:
+      - src_dce18b61707af25928cfb8d45913be85d5cf9f2d455d289473c64b09a90d9c17
+offers:
+  - offer_id: off_01m11htwbjqdfd55m19p65a3p1
+    program_id: prg_01m11htwbjypshm4y5szb17mb5
+    offer_slug: startup-messaging-credits
+    offer_slug_aliases: []
+    title: INR 2,500 in Authkey messaging credits for startups
+    summary: Startups receive INR 2,500 in credits for Authkey messaging services, with no setup cost, free onboarding, developer tools, and dedicated support.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-27T12:06:38.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: INR 2,500 in credits for Authkey messaging services including SMS, voice, email OTPs, and WhatsApp onboarding
+          kind: credit
+          value:
+            amount:
+              currency: INR
+              minor_units: 250000
+            kind: exact
+        - benefit_id: ben_02
+          description: Free startup onboarding with no setup cost
+          kind: free-service
+          service: Authkey onboarding and setup
+        - benefit_id: ben_03
+          description: Dedicated support and developer tools for startup communication workflows
+          kind: free-service
+          service: Startup developer support
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startup applicants provide a business name, website, business-domain email, mobile number, and contact details through Authkey's application form.
+    roles:
+      terms_authority_entity_id: ent_01m11htwbh0rz221eh1n7ez85e
+      access_operator_entity_id: ent_01m11htwbh0rz221eh1n7ez85e
+    access:
+      availability: public
+      method: form
+      url: https://authkey.io/startup-india
+    terms_url: https://authkey.io/startup-india
+    source_ids:
+      - src_dce18b61707af25928cfb8d45913be85d5cf9f2d455d289473c64b09a90d9c17
