@@ -1,0 +1,85 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m11h38dcfqmps84my4ssak5r
+  slug: supportbench
+  slug_aliases: []
+  name: Supportbench
+  domains:
+    - value: supportbench.com
+      role: primary
+      valid_from: 2026-08-27T11:53:44.000Z
+  category: support
+profile:
+  description: Supportbench provides account-aware B2B customer support software with ticket management, workflow automation, knowledge bases, AI, and analytics.
+  links:
+    site: https://www.supportbench.com
+sources:
+  - source_id: src_2b025ca973a51e76e1d41883ac23a82a31f2bf0ecf0c36a31843e0d1acc0f1a4
+    url: https://www.supportbench.com/startups/
+programs:
+  - program_id: prg_01m11h38ddvhppw2fpf7srczs9
+    program_slug: supportbench-for-startups
+    program_slug_aliases: []
+    title: Supportbench for Startups
+    summary: Supportbench for Startups gives eligible new subscribers a 50% discount on license costs for 12 months.
+    source_ids:
+      - src_2b025ca973a51e76e1d41883ac23a82a31f2bf0ecf0c36a31843e0d1acc0f1a4
+offers:
+  - offer_id: off_01m11h38dedx3vq2q0m80v4xzm
+    program_id: prg_01m11h38ddvhppw2fpf7srczs9
+    offer_slug: fifty-percent-off-for-12-months
+    offer_slug_aliases: []
+    title: 50% off Supportbench license costs for 12 months
+    summary: Eligible new Supportbench subscribers with fewer than 100 employees and outside funding through Series B receive 50% off license costs for 12 months.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-27T11:53:44.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          applies_to: Supportbench license costs
+          description: 50% off Supportbench license costs for 12 months
+          duration:
+            kind: exact
+            value: P1Y
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 5000
+      consideration:
+        kind: variable
+        description: The startup pays the remaining 50% of applicable Supportbench license costs during the discount period.
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.is_current_customer
+            kind: predicate
+            operator: eq
+            statement: Must be a brand-new Supportbench subscriber; previous or active paid customers may not participate.
+            value:
+              type: boolean
+              value: false
+          - criterion_id: cri_02
+            fact: company.employee_count
+            kind: predicate
+            operator: lt
+            statement: Must have fewer than 100 employees.
+            value:
+              type: number
+              value: 100
+          - criterion_id: cri_03
+            kind: manual
+            reason: external-verification
+            statement: Must have raised outside funding at the Angel, Pre-seed, Seed, Series A, or Series B stage.
+    roles:
+      terms_authority_entity_id: ent_01m11h38dcfqmps84my4ssak5r
+      access_operator_entity_id: ent_01m11h38dcfqmps84my4ssak5r
+    access:
+      availability: public
+      method: form
+      url: https://www.supportbench.com/startups/
+    terms_url: https://www.supportbench.com/startups/
+    source_ids:
+      - src_2b025ca973a51e76e1d41883ac23a82a31f2bf0ecf0c36a31843e0d1acc0f1a4
