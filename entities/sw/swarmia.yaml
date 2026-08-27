@@ -16,6 +16,8 @@ profile:
 sources:
   - source_id: src_017a0e95be194089dedbdec784b34c0bfffc52a3d686034e8b35805675545be7
     url: https://www.swarmia.com/startups/
+  - source_id: src_97ea6e8aa7989ef99583de37cddedc6a1c014eb98fb9f80c79c37279dcfd7b9e
+    url: https://www.swarmia.com/partner-program/
 programs:
   - program_id: prg_01m0zpgrct808p2k4247h9p1q7
     program_slug: swarmia-for-startups
@@ -24,6 +26,7 @@ programs:
     summary: Swarmia gives eligible new startup customers with up to 50 engineers 50% off Standard or Enterprise annual plans for their first year.
     source_ids:
       - src_017a0e95be194089dedbdec784b34c0bfffc52a3d686034e8b35805675545be7
+      - src_97ea6e8aa7989ef99583de37cddedc6a1c014eb98fb9f80c79c37279dcfd7b9e
 offers:
   - offer_id: off_01m0zpgrctgp9z1mgndkt0s9d6
     program_id: prg_01m0zpgrct808p2k4247h9p1q7
@@ -82,3 +85,4 @@ offers:
       url: https://www.swarmia.com/startup-signup/
     source_ids:
       - src_017a0e95be194089dedbdec784b34c0bfffc52a3d686034e8b35805675545be7
+      - src_97ea6e8aa7989ef99583de37cddedc6a1c014eb98fb9f80c79c37279dcfd7b9e
