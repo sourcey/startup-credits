@@ -8,7 +8,7 @@ entity:
     - value: getblock.io
       role: primary
       valid_from: 2026-08-27T23:00:00.000Z
-  category: web3-infra
+  category: hosting-infra
 profile:
   description: GetBlock provides blockchain RPC node APIs, shared and dedicated nodes, and
     blockchain data tools for building Web3 applications.
