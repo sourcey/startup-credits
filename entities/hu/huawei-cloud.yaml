@@ -1,0 +1,76 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m10a6k997xv38yccj4v17gbj
+  slug: huawei-cloud
+  slug_aliases: []
+  name: Huawei Cloud
+  domains:
+    - value: huaweicloud.com
+      role: primary
+      valid_from: 2026-08-27T00:00:00.000Z
+  category: hosting-infra
+profile:
+  description: Huawei Cloud provides cloud services and a global startup enablement program for eligible early-stage companies.
+  links:
+    site: https://www.huaweicloud.com/intl/en-us/
+sources:
+  - source_id: src_f650b65c19486563c54a559c22507c3fc1804b05fe0105ce95283490237d2479
+    url: https://www.huaweicloud.com/intl/en-us/
+  - source_id: src_6e5ce7a395d0e9bf1eee9d720dd7a16dca7ae6dd77745279899bd7ebc1809aa2
+    url: https://startup.huaweicloud.com/intl/en-us/
+programs:
+  - program_id: prg_01m10a6k990y57s3s713pkv3k3
+    program_slug: startup-program
+    program_slug_aliases: []
+    title: Huawei Cloud Startup Program
+    summary: Huawei Cloud's global startup program provides cloud credits, migration support, entrepreneurial enablement, and business resources for eligible startups.
+    source_ids:
+      - src_6e5ce7a395d0e9bf1eee9d720dd7a16dca7ae6dd77745279899bd7ebc1809aa2
+offers:
+  - offer_id: off_01m10a6k99d6cttrb487mbmw33
+    program_id: prg_01m10a6k990y57s3s713pkv3k3
+    offer_slug: up-to-150000-in-huawei-cloud-cash-credits
+    offer_slug_aliases: []
+    title: Up to $150,000 in Huawei Cloud cash credits
+    summary: Approved startups can receive Huawei Cloud cash-credit vouchers, with up to USD 150,000 available, plus dedicated cloud-migration support.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-27T00:00:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to USD 150,000 in Huawei Cloud cash-credit vouchers
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 15000000
+            kind: up-to
+      consideration:
+        kind: unknown
+        description: The public program page does not publish a participant fee or resulting paid-service price.
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: not-machine-evaluable
+            statement: The enterprise must have been established less than 5 years ago.
+          - criterion_id: cri_02
+            kind: manual
+            reason: not-machine-evaluable
+            statement: The enterprise must not be publicly listed.
+          - criterion_id: cri_03
+            kind: manual
+            reason: not-machine-evaluable
+            statement: No more than 50% of the enterprise's shares may be held by a listed company.
+    roles:
+      terms_authority_entity_id: ent_01m10a6k997xv38yccj4v17gbj
+      access_operator_entity_id: ent_01m10a6k997xv38yccj4v17gbj
+    access:
+      availability: public
+      method: form
+      url: https://startup.huaweicloud.com/intl/en-us/
+    source_ids:
+      - src_6e5ce7a395d0e9bf1eee9d720dd7a16dca7ae6dd77745279899bd7ebc1809aa2
