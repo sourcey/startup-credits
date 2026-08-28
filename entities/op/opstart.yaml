@@ -1,0 +1,57 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1251hwbgv413evqe7vbyewn
+  slug: opstart
+  slug_aliases: []
+  name: OpStart
+  domains:
+    - value: opstart.co
+      role: primary
+      valid_from: 2026-08-27T17:42:19.000Z
+  category: finance-accounting
+profile:
+  description: OpStart provides bookkeeping, tax, billing, payroll, and fractional CFO services for startups.
+  links:
+    site: https://www.opstart.co
+sources:
+  - source_id: src_4c622b40cbe86a8bf9b12d01368a1b9c6448cb621f9344deca06b0d5e5730e41
+    url: https://www.opstart.co/startup-stack/
+programs: []
+offers:
+  - offer_id: off_01m1251hwdc7z9nzsjm8mcwa13
+    offer_slug: startup-stack-discount
+    offer_slug_aliases: []
+    title: OpStart Startup Stack discount
+    summary: Startup Stack members get 10% off OpStart bookkeeping, bill pay, payroll support, and related services for the first 12 months, capped at $1,000.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-27T17:42:19.000Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The page does not publish a separate application fee or service price.
+      benefits:
+        - benefit_id: ben_01
+          description: 10% discount on bookkeeping, bill pay, payroll support, and related services for the first twelve months, capped at $1,000.
+          duration:
+            kind: exact
+            value: P12M
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 1000
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_01
+        reason: external-verification
+        statement: Offer is for startups and is described on the page as a Startup Stack member discount.
+    roles:
+      terms_authority_entity_id: ent_01m1251hwbgv413evqe7vbyewn
+      access_operator_entity_id: ent_01m1251hwbgv413evqe7vbyewn
+    access:
+      availability: public
+      method: form
+      url: https://www.opstart.co/startup-stack/
+    source_ids:
+      - src_4c622b40cbe86a8bf9b12d01368a1b9c6448cb621f9344deca06b0d5e5730e41
