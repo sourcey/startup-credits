@@ -1,0 +1,89 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m14ky8dzr3z16fqvg2r17v4g
+  slug: akamai
+  slug_aliases: []
+  name: Akamai
+  domains:
+    - value: akamai.com
+      role: primary
+      valid_from: 2026-08-28T16:41:09.000Z
+  category: hosting-infra
+profile:
+  description: Akamai provides distributed cloud computing, edge delivery, security, compute, storage, networking, and managed infrastructure services.
+  links:
+    site: https://www.akamai.com
+sources:
+  - source_id: src_02da85a99996563951878fbcca8d1c448066df7b6a743eff0d74481e08f0d345
+    url: https://www.akamai.com/cloud/start-ups/rise
+programs:
+  - program_id: prg_01m14ky8dze5ynszz9z4v8fwbe
+    program_slug: akamai-cloud-rise
+    program_slug_aliases: []
+    title: Akamai Cloud Rise Start-Up Program
+    summary: Akamai Cloud Rise is a three-year program that provides eligible early-stage companies cloud credits, technical guidance, support, and later-year discounts.
+    source_ids:
+      - src_02da85a99996563951878fbcca8d1c448066df7b6a743eff0d74481e08f0d345
+offers:
+  - offer_id: off_01m14ky8dzg10zj1hatppbdpms
+    program_id: prg_01m14ky8dze5ynszz9z4v8fwbe
+    offer_slug: rise-first-year-cloud-credits
+    offer_slug_aliases: []
+    title: Up to $120,000 in First-Year Akamai Cloud Credits
+    summary: Eligible early-stage companies receive up to $120,000 in credits for Akamai Cloud compute, GPU, storage, and related infrastructure during the first year.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-28T16:41:09.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to USD 120,000 in Akamai Cloud credits during the first year.
+          duration:
+            kind: exact
+            value: P1Y
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 12000000
+            kind: up-to
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.age_months
+            kind: predicate
+            operator: lt
+            statement: Company must be fewer than seven years old
+            value:
+              type: number
+              value: 84
+          - criterion_id: cri_02
+            kind: manual
+            reason: external-verification
+            statement: Applicant must be an established, early-stage, for-profit company
+          - criterion_id: cri_03
+            kind: manual
+            reason: external-verification
+            statement: Company must show traction through a non-founder paid employee, active non-affiliated users, initial revenue, or venture funding
+          - criterion_id: cri_04
+            kind: manual
+            reason: not-machine-evaluable
+            statement: Company must have a defined infrastructure scaling plan that includes Akamai Cloud as a primary provider
+          - criterion_id: cri_05
+            kind: manual
+            reason: external-verification
+            statement: Applicant must be new to Rise; existing Akamai Cloud customers may not have received more than USD 3,000 in prior infrastructure credits
+    roles:
+      terms_authority_entity_id: ent_01m14ky8dzr3z16fqvg2r17v4g
+      access_operator_entity_id: ent_01m14ky8dzr3z16fqvg2r17v4g
+    access:
+      availability: public
+      method: form
+      url: https://www.akamai.com/cloud/start-ups/rise
+    terms_url: https://www.akamai.com/cloud/start-ups/rise
+    source_ids:
+      - src_02da85a99996563951878fbcca8d1c448066df7b6a743eff0d74481e08f0d345
