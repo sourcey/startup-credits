@@ -1,0 +1,85 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m14ky8dz5bzfbxf5dznhtsf4
+  slug: branddrive
+  slug_aliases: []
+  name: BrandDrive
+  domains:
+    - value: branddrive.co
+      role: primary
+      valid_from: 2026-08-28T16:41:09.000Z
+  category: finance-accounting
+profile:
+  description: BrandDrive provides business software for invoicing, inventory, expenses, analytics, customer messaging, payments, and financial operations.
+  links:
+    site: https://branddrive.co
+sources:
+  - source_id: src_485b03dbc34afd57ed3c090fd37588b2f80b62e0c893f2f0bf817436e1b57b17
+    url: https://branddrive.co/startup-support
+programs:
+  - program_id: prg_01m14ky8dzrh3tbtn7e5xpfee2
+    program_slug: branddrive-startup-support
+    program_slug_aliases: []
+    title: BrandDrive Startup Support
+    summary: BrandDrive gives eligible early-stage businesses six months of free platform access before an optional graduation offer.
+    source_ids:
+      - src_485b03dbc34afd57ed3c090fd37588b2f80b62e0c893f2f0bf817436e1b57b17
+offers:
+  - offer_id: off_01m14ky8dzwrgptsnpstg07nhc
+    program_id: prg_01m14ky8dzrh3tbtn7e5xpfee2
+    offer_slug: six-months-free-branddrive-access
+    offer_slug_aliases: []
+    title: Six Months of Free BrandDrive Access
+    summary: Eligible new early-stage businesses receive six months of BrandDrive access free, with advance notice and an optional startup graduation offer afterward.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-28T16:41:09.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Six months of BrandDrive platform access at no cost.
+          duration:
+            kind: exact
+            value: P6M
+          kind: free-service
+          service: BrandDrive platform access
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.funding_raised_usd
+            kind: predicate
+            operator: lt
+            statement: Business must have raised less than USD 500,000 in total funding
+            value:
+              type: number
+              value: 500000
+          - criterion_id: cri_02
+            fact: company.is_current_customer
+            kind: predicate
+            operator: eq
+            statement: Business must not currently be and must never have been a BrandDrive customer
+            value:
+              type: boolean
+              value: false
+          - criterion_id: cri_03
+            fact: company.age_months
+            kind: predicate
+            operator: lte
+            statement: Business must have operated for no more than five years
+            value:
+              type: number
+              value: 60
+    roles:
+      terms_authority_entity_id: ent_01m14ky8dz5bzfbxf5dznhtsf4
+      access_operator_entity_id: ent_01m14ky8dz5bzfbxf5dznhtsf4
+    access:
+      availability: public
+      method: form
+      url: https://branddrive.co/startup-support
+    terms_url: https://branddrive.co/startup-support
+    source_ids:
+      - src_485b03dbc34afd57ed3c090fd37588b2f80b62e0c893f2f0bf817436e1b57b17
