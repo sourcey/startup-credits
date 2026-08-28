@@ -1,0 +1,56 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m14fhx1dp4sr5z0gcqswx552
+  slug: segment
+  slug_aliases: []
+  name: Segment
+  domains:
+    - value: segment.com
+      role: primary
+      valid_from: 2026-08-28T14:00:00.000Z
+  category: data-analytics
+profile:
+  description: Segment is a customer data platform that collects, cleans, and
+    activates customer data for product, marketing, and analytics teams.
+  links:
+    site: https://segment.com
+sources:
+  - source_id: src_2c0c68dc9c564b2163aa29069c65ed28fc24f9948492770b84520d6fb4913b5e
+    url: https://segment.com/industry/startups/
+programs: []
+offers:
+  - offer_id: off_01m14fhx1gktp0a7nyhvhm33kj
+    offer_slug: segment-for-startups
+    offer_slug_aliases: []
+    title: Segment for Startups
+    summary: Early-stage startups can receive Segment credits and discounted
+      access to the Segment customer data platform through the Segment for
+      Startups program.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-28T14:00:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Segment credits toward the customer data platform for
+            eligible early-stage startups.
+          kind: credit
+          value:
+            kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: constant
+        statement: Available to eligible early-stage startups through the Segment
+          for Startups program.
+        value: true
+    roles:
+      terms_authority_entity_id: ent_01m14fhx1dp4sr5z0gcqswx552
+      access_operator_entity_id: ent_01m14fhx1dp4sr5z0gcqswx552
+    access:
+      availability: public
+      method: application
+    source_ids:
+      - src_2c0c68dc9c564b2163aa29069c65ed28fc24f9948492770b84520d6fb4913b5e
