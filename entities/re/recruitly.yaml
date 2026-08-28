@@ -1,0 +1,87 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m14s1z717cyvv3kh8yzc36cd
+  slug: recruitly
+  slug_aliases: []
+  name: Recruitly
+  domains:
+    - value: recruitly.io
+      role: primary
+      valid_from: 2026-08-28T18:10:33.000Z
+  category: hr-people
+profile:
+  description: Recruitly provides recruiting agencies with CRM, applicant tracking, sourcing, marketing, automation, communication, and job-board tools.
+  links:
+    site: https://recruitly.io
+sources:
+  - source_id: src_6254c6cc3c29f6979a0244ab345f9afe4499a69325969cdd617fb5401ea4d553
+    url: https://recruitly.io/startups/
+programs:
+  - program_id: prg_01m14s1z79phsmgyb8ycdh5hj9
+    program_slug: recruitly-startup-program
+    program_slug_aliases: []
+    title: Recruitly Startup Program
+    summary: Recruitly offers eligible early-stage recruiting agencies discounted plans, dedicated onboarding, training, and ongoing support for three years.
+    source_ids:
+      - src_6254c6cc3c29f6979a0244ab345f9afe4499a69325969cdd617fb5401ea4d553
+offers:
+  - offer_id: off_01m14s1z794bqejbfw049eez6q
+    program_id: prg_01m14s1z79phsmgyb8ycdh5hj9
+    offer_slug: seventy-five-percent-off-for-three-years
+    offer_slug_aliases: []
+    title: 75% off Recruitly plans for three years
+    summary: Eligible recruiting agencies receive 75% off Recruitly plans for their first three years, with dedicated onboarding, training, and ongoing support.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-28T18:10:33.000Z
+    economics:
+      benefits:
+        - applies_to: Recruitly plans
+          benefit_id: ben_01
+          description: 75% off Recruitly plans for three years.
+          duration:
+            kind: exact
+            value: P3Y
+          kind: discount
+          percentage:
+            basis_points: 7500
+            kind: exact
+        - benefit_id: ben_02
+          description: Dedicated onboarding, training, and ongoing guidance from a Recruitly agency success manager.
+          kind: other
+      consideration:
+        kind: variable
+        description: The agency pays the remaining 25% of its selected Recruitly plan during the three-year discount term.
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.age_months
+            kind: predicate
+            operator: lte
+            statement: Recruiting agency must have been founded within the last three years.
+            value:
+              type: number
+              value: 36
+          - criterion_id: cri_02
+            kind: manual
+            reason: external-verification
+            statement: Recruiting agency must have fewer than 10 recruiters when it applies.
+          - criterion_id: cri_03
+            fact: company.annual_revenue_usd
+            kind: predicate
+            operator: lt
+            statement: Recruiting agency must have less than $500,000 in annual revenue.
+            value:
+              type: number
+              value: 500000
+    roles:
+      terms_authority_entity_id: ent_01m14s1z717cyvv3kh8yzc36cd
+      access_operator_entity_id: ent_01m14s1z717cyvv3kh8yzc36cd
+    access:
+      availability: public
+      method: form
+      url: https://recruitly.io/startups/
+    source_ids:
+      - src_6254c6cc3c29f6979a0244ab345f9afe4499a69325969cdd617fb5401ea4d553
