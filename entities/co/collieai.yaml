@@ -1,0 +1,77 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m14ky8dzywfvsqvnk4dhstw8
+  slug: collieai
+  slug_aliases: []
+  name: CollieAi
+  domains:
+    - value: collieai.io
+      role: primary
+      valid_from: 2026-08-28T16:41:09.000Z
+  category: auth-security
+profile:
+  description: CollieAi provides a provider-agnostic security proxy for filtering prompt injection, jailbreaks, secrets, PII, and unsafe output in LLM applications.
+  links:
+    site: https://collieai.io
+sources:
+  - source_id: src_7fdba3c9e14c79e22bb98c122779b40cd146ef46434c15a822568092ecd30441
+    url: https://collieai.io/startups/
+programs:
+  - program_id: prg_01m14ky8dzpsxkr572bzybevb8
+    program_slug: collieai-for-startups
+    program_slug_aliases: []
+    title: CollieAi for Startups
+    summary: CollieAi gives selected early-stage AI startups six months of its Growth plan at no cost.
+    source_ids:
+      - src_7fdba3c9e14c79e22bb98c122779b40cd146ef46434c15a822568092ecd30441
+offers:
+  - offer_id: off_01m14ky8dz1cf2n9p7f854fftr
+    program_id: prg_01m14ky8dzpsxkr572bzybevb8
+    offer_slug: six-months-free-growth
+    offer_slug_aliases: []
+    title: Six Months Free on CollieAi Growth
+    summary: Selected early-stage AI startups receive the $49-per-month CollieAi Growth plan free for six months, a published total value of $294.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-28T16:41:09.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Six months of CollieAi Growth, including 250,000 API calls per month, unlimited projects and API keys, and ticket support.
+          duration:
+            kind: exact
+            value: P6M
+          kind: free-service
+          service: CollieAi Growth plan
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.age_months
+            kind: predicate
+            operator: lt
+            statement: Startup must have been founded less than three years ago
+            value:
+              type: number
+              value: 36
+          - criterion_id: cri_02
+            kind: manual
+            reason: external-verification
+            statement: Applicant must be an early-stage startup building an LLM application or AI agent
+          - criterion_id: cri_03
+            kind: manual
+            reason: vendor-discretion
+            statement: Admission is selective because CollieAi accepts a limited number of startups each month
+    roles:
+      terms_authority_entity_id: ent_01m14ky8dzywfvsqvnk4dhstw8
+      access_operator_entity_id: ent_01m14ky8dzywfvsqvnk4dhstw8
+    access:
+      availability: public
+      method: form
+      url: https://collieai.io/startups/
+    terms_url: https://collieai.io/startups/
+    source_ids:
+      - src_7fdba3c9e14c79e22bb98c122779b40cd146ef46434c15a822568092ecd30441
