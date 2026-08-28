@@ -16,6 +16,8 @@ profile:
 sources:
   - source_id: src_50b935518e2a2de069d9fd7e734abdc331fdc5a3535cbd68137c258e7f785919
     url: https://www.optiverse.ai/startups
+  - source_id: src_a5740c2b06229b94b1f39c62b68c18ca9368ad50206d8a741894af1a33021e11
+    url: https://www.optiverse.ai/pricing
   - source_id: src_aa713355b5dfc29e96396bf507192425c9b88d2cc415ac666dc12ae306b08b2f
     url: https://www.optiverse.ai/
 programs:
@@ -26,6 +28,7 @@ programs:
     summary: Optiverse's startup program gives selected teams six Pro licenses for six months at no license cost.
     source_ids:
       - src_50b935518e2a2de069d9fd7e734abdc331fdc5a3535cbd68137c258e7f785919
+      - src_a5740c2b06229b94b1f39c62b68c18ca9368ad50206d8a741894af1a33021e11
 offers:
   - offer_id: off_01m129frw0z9takpns48btarg9
     program_id: prg_01m129frw0xa2sm632nvjmes3g
@@ -62,3 +65,4 @@ offers:
       url: https://www.optiverse.ai/startups
     source_ids:
       - src_50b935518e2a2de069d9fd7e734abdc331fdc5a3535cbd68137c258e7f785919
+      - src_a5740c2b06229b94b1f39c62b68c18ca9368ad50206d8a741894af1a33021e11
