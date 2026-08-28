@@ -34,9 +34,7 @@ offers:
         - benefit_id: ben_01
           description: Segment credits toward the customer data platform for
             eligible early-stage startups.
-          kind: credit
-          value:
-            kind: other
+          kind: other
       consideration:
         kind: none
     eligibility:
@@ -51,6 +49,6 @@ offers:
       access_operator_entity_id: ent_01m14fhx1dp4sr5z0gcqswx552
     access:
       availability: public
-      method: application
+      method: other
     source_ids:
       - src_2c0c68dc9c564b2163aa29069c65ed28fc24f9948492770b84520d6fb4913b5e
