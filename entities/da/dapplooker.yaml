@@ -1,0 +1,75 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m16xhcaqrxjk31sggc9a10bw
+  slug: dapplooker
+  slug_aliases: []
+  name: DappLooker
+  domains:
+    - value: dapplooker.com
+      role: primary
+      valid_from: 2026-08-29T14:07:21.947Z
+  category: data-analytics
+profile:
+  description: DappLooker provides blockchain analytics, dashboards, data APIs, and data infrastructure for Web3 teams and applications.
+  links:
+    site: https://dapplooker.com
+sources:
+  - source_id: src_598c79bad741c39f0248dfea3a040f5f4b29060dab6c5119694ba45d6d9945b6
+    url: https://dapplooker.com/startup-program
+programs:
+  - program_id: prg_01m16xj0m63gm57de8rjm4zk40
+    program_slug: dapplooker-startup-program
+    program_slug_aliases: []
+    title: DappLooker Startup Program
+    summary: DappLooker's program gives eligible startups building on partner networks free platform access, access to startup grants, partner resources, and analytics tools.
+    source_ids:
+      - src_598c79bad741c39f0248dfea3a040f5f4b29060dab6c5119694ba45d6d9945b6
+offers:
+  - offer_id: off_01m16xhcatf15j253fdmj9yb5t
+    program_id: prg_01m16xj0m63gm57de8rjm4zk40
+    offer_slug: free-platform-access-and-startup-grants
+    offer_slug_aliases: []
+    title: Up to six months of DappLooker and access to startup grants
+    summary: Eligible startups building on DappLooker partner networks receive up to six months of free platform access, access to grants worth up to $50,000, and partner resources.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-29T14:07:21.947Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to six months of free access to DappLooker's analytics platform
+          duration:
+            kind: up-to
+            value: P6M
+          kind: free-service
+          service: DappLooker platform subscription
+        - benefit_id: ben_02
+          description: Access to startup grants worth up to $50,000
+          kind: other
+        - benefit_id: ben_03
+          description: Partner credits and resources allocated according to the platforms the startup uses
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            statement: The applicant must be a startup building on one or more of DappLooker's partner networks.
+            reason: not-machine-evaluable
+          - criterion_id: cri_02
+            kind: manual
+            statement: The startup must not have previously redeemed similar credits or subscriptions through another program.
+            reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01m16xhcaqrxjk31sggc9a10bw
+      access_operator_entity_id: ent_01m16xhcaqrxjk31sggc9a10bw
+    access:
+      availability: public
+      instructions: Follow the application link on the official program page and submit details about the startup's team, project, and goals for review.
+      method: form
+      url: https://dapplooker.com/startup-program
+    source_ids:
+      - src_598c79bad741c39f0248dfea3a040f5f4b29060dab6c5119694ba45d6d9945b6
