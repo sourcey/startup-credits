@@ -10,11 +10,11 @@ entity:
       valid_from: 2026-08-29T00:00:00.000Z
   category: design
 profile:
-  description: SolarLayout provides browser-based utility-scale solar plant design, cable routing, energy-yield analysis, and project exports.
+  description: SolarLayout provides desktop utility-scale solar plant design, cable routing, energy-yield analysis, and project exports.
   links:
     site: https://solarlayout.app
 sources:
-  - source_id: src_4850d824ab78a1fac48fc2a95d35e43fbeb6bd4ef5719dd26c38bba8a2e347c8
+  - source_id: src_4850d824ab78a1fac48fc2a95d35e43fbeb6bd4ef5719dd26c38bba8a2e347c
     url: https://solarlayout.app/startups
 programs:
   - program_id: prg_01m16d3xppzrxgytgc9dg44v42
@@ -23,14 +23,14 @@ programs:
     title: SolarLayout Startup Program
     summary: SolarLayout's startup program gives qualifying early-stage solar companies credits for full access to its utility-scale plant design product.
     source_ids:
-      - src_4850d824ab78a1fac48fc2a95d35e43fbeb6bd4ef5719dd26c38bba8a2e347c8
+      - src_4850d824ab78a1fac48fc2a95d35e43fbeb6bd4ef5719dd26c38bba8a2e347c
 offers:
   - offer_id: off_01m16d3xppqff3ksjzmg9cqjx8
     program_id: prg_01m16d3xppzrxgytgc9dg44v42
     offer_slug: up-to-5000-usd-startup-credits
     offer_slug_aliases: []
     title: Up to $5,000 in SolarLayout Credits
-    summary: Qualifying early-stage solar companies can receive up to $5,000 in credits for full access to SolarLayout's Pro Plus features.
+    summary: Qualifying early-stage solar companies can receive up to $5,000 in credits usable across SolarLayout and BESS Desktop.
     lifecycle:
       status: active
       effective_from: 2026-08-29T00:00:00.000Z
@@ -39,7 +39,7 @@ offers:
         kind: none
       benefits:
         - benefit_id: ben_01
-          description: Up to $5,000 in SolarLayout credits for full product access, including every Pro Plus feature
+          description: Up to $5,000 in credits usable across SolarLayout and BESS Desktop
           kind: credit
           value:
             amount:
@@ -60,4 +60,4 @@ offers:
       method: form
       url: https://solarlayout.app/startups
     source_ids:
-      - src_4850d824ab78a1fac48fc2a95d35e43fbeb6bd4ef5719dd26c38bba8a2e347c8
+      - src_4850d824ab78a1fac48fc2a95d35e43fbeb6bd4ef5719dd26c38bba8a2e347c
