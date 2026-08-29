@@ -1,0 +1,67 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m16bck8br7wckhtexncjjs23
+  slug: pipeops
+  slug_aliases: []
+  name: PipeOps
+  domains:
+    - value: pipeops.io
+      role: primary
+      valid_from: 2026-08-29T08:50:10.901Z
+  category: hosting-infra
+profile:
+  description: PipeOps automates cloud deployment and infrastructure management so engineering teams can deploy, manage, monitor, and scale applications.
+  links:
+    site: https://pipeops.io/
+sources:
+  - source_id: src_653485c257ec53e36c344f3be0d80b5cc6d9c589e75b8f07e105340613c1e47c
+    url: https://pipeops.io/
+  - source_id: src_77a6dca9f07c7e93cb6bd27451e8203ff593214db81c458ae04c1d526af97f85
+    url: https://pipeops.io/cchub
+programs: []
+offers:
+  - offer_id: off_01m16bck8e1909mkxct56jpc3k
+    offer_slug: pipeops-cchub-startup-credits
+    offer_slug_aliases: []
+    title: Up to $600 in PipeOps Credits for CcHub Startups
+    summary: CcHub startups can receive up to $600 in PipeOps credits usable for 12 months, full access to the add-ons library, priority support, and guided onboarding.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-29T08:50:10.901Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to $600 in PipeOps credits usable across billable PipeOps services for 12 months
+          duration:
+            kind: exact
+            value: P1Y
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 60000
+            kind: up-to
+        - benefit_id: ben_02
+          description: Full access to the PipeOps add-ons library with up to 100 add-ons
+          kind: other
+        - benefit_id: ben_03
+          description: Priority support and onboarding assistance
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: external-verification
+        statement: Applicant must be a CcHub startup and pass PipeOps application review
+    roles:
+      terms_authority_entity_id: ent_01m16bck8br7wckhtexncjjs23
+      access_operator_entity_id: ent_01m16bck8br7wckhtexncjjs23
+    access:
+      availability: membership
+      method: form
+      url: https://pipeops.io/cchub
+    terms_url: https://pipeops.io/cchub
+    source_ids:
+      - src_77a6dca9f07c7e93cb6bd27451e8203ff593214db81c458ae04c1d526af97f85
