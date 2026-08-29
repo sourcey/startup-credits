@@ -1,0 +1,140 @@
+name: dispatch-sourcey-admission
+
+on:
+  workflow_run:
+    workflows: [validate-catalog-change]
+    types: [completed]
+
+permissions:
+  actions: read
+  checks: read
+  contents: read
+  pull-requests: read
+
+concurrency:
+  group: dispatch-admission-${{ github.event.workflow_run.id }}
+  cancel-in-progress: false
+
+jobs:
+  dispatch:
+    if: >-
+      vars.SOURCEY_MACHINE_ADMISSION_ENABLED == 'true' &&
+      github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    steps:
+      - name: Mint the bounded Sourcey workspace dispatch token
+        id: sourcey-workspace-token
+        uses: actions/create-github-app-token@bcd2ba49218906704ab6c1aa796996da409d3eb1 # v3.2.0
+        with:
+          app-id: ${{ vars.SOURCEY_ADMISSION_APP_ID }}
+          private-key: ${{ secrets.SOURCEY_CATALOG_GITHUB_APP_PRIVATE_KEY }}
+          owner: sourcey
+          repositories: sourcey-workspace
+      - name: Re-read the exact trusted validation and dispatch inert identity only
+        env:
+          GH_TOKEN: ${{ github.token }}
+          SOURCEY_WORKSPACE_TOKEN: ${{ steps.sourcey-workspace-token.outputs.token }}
+          RUN_ID: ${{ github.event.workflow_run.id }}
+        run: |
+          test -n "$SOURCEY_WORKSPACE_TOKEN"
+          gh api "repos/${GITHUB_REPOSITORY}/actions/runs/${RUN_ID}" \
+            > "$RUNNER_TEMP/sourcey-validation-run.json"
+          jq -e \
+            --argjson run_id "$RUN_ID" \
+            --arg repository "$GITHUB_REPOSITORY" \
+            '.id == $run_id
+             and .event == "pull_request_target"
+             and .status == "completed"
+             and .conclusion == "success"
+             and .path == ".github/workflows/validate.yml"
+             and .repository.full_name == $repository
+             and (.pull_requests | length) == 1' \
+            "$RUNNER_TEMP/sourcey-validation-run.json" >/dev/null
+          pull_request_number="$(
+            jq -er '.pull_requests[0].number' "$RUNNER_TEMP/sourcey-validation-run.json"
+          )"
+          gh api "repos/${GITHUB_REPOSITORY}/pulls/${pull_request_number}" \
+            > "$RUNNER_TEMP/sourcey-validation-pr.json"
+          head_sha="$(jq -er '.head.sha' "$RUNNER_TEMP/sourcey-validation-pr.json")"
+          base_sha="$(jq -er '.base.sha' "$RUNNER_TEMP/sourcey-validation-pr.json")"
+          [[ "$head_sha" =~ ^[a-f0-9]{40,64}$ ]]
+          [[ "$base_sha" =~ ^[a-f0-9]{40,64}$ ]]
+          jq -e \
+            --arg repository "$GITHUB_REPOSITORY" \
+            --argjson number "$pull_request_number" \
+            --arg head_sha "$head_sha" \
+            '.number == $number
+             and .state == "open"
+             and (.merged | not)
+             and .base.repo.full_name == $repository
+             and .head.sha == $head_sha' \
+            "$RUNNER_TEMP/sourcey-validation-pr.json" >/dev/null
+          gh api --method GET \
+            "repos/${GITHUB_REPOSITORY}/commits/${head_sha}/check-runs" \
+            -f filter=latest -F per_page=100 \
+            > "$RUNNER_TEMP/sourcey-validation-checks.json"
+          expected_url="${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/actions/runs/${RUN_ID}"
+          jq -e \
+            --arg head_sha "$head_sha" \
+            --arg details_url "$expected_url" \
+            '[.check_runs[]
+              | select(.name == "sourcey/validation"
+                  and .head_sha == $head_sha
+                  and .status == "completed"
+                  and .conclusion == "success"
+                  and .details_url == $details_url
+                  and .app.slug == "github-actions"
+                  and (.external_id
+                       | test("^sourcey-validation-v1:[a-f0-9]{40,64}:"
+                              + $head_sha
+                              + ":[a-f0-9]{64}:[a-f0-9]{64}$")))]
+             | length == 1' \
+            "$RUNNER_TEMP/sourcey-validation-checks.json" >/dev/null
+          validation_app_id="$(
+            jq -er \
+              --arg head_sha "$head_sha" \
+              --arg details_url "$expected_url" \
+              '.check_runs[]
+               | select(.name == "sourcey/validation"
+                   and .head_sha == $head_sha
+                   and .status == "completed"
+                   and .conclusion == "success"
+                   and .details_url == $details_url
+                   and .app.slug == "github-actions")
+               | .app.id' \
+              "$RUNNER_TEMP/sourcey-validation-checks.json"
+          )"
+          validation_external_id="$(
+            jq -er \
+              --arg head_sha "$head_sha" \
+              --arg details_url "$expected_url" \
+              '.check_runs[]
+               | select(.name == "sourcey/validation"
+                   and .head_sha == $head_sha
+                   and .status == "completed"
+                   and .conclusion == "success"
+                   and .details_url == $details_url
+                   and .app.slug == "github-actions")
+               | .external_id' \
+              "$RUNNER_TEMP/sourcey-validation-checks.json"
+          )"
+          IFS=: read -r validation_contract validated_base validated_head verifier_digest \
+            identity_context_digest \
+            <<<"$validation_external_id"
+          test "$validation_contract" = sourcey-validation-v1
+          test "$validated_base" = "$base_sha"
+          test "$validated_head" = "$head_sha"
+          [[ "$base_sha" =~ ^[a-f0-9]{40,64}$ ]]
+          [[ "$verifier_digest" =~ ^[a-f0-9]{64}$ ]]
+          [[ "$identity_context_digest" =~ ^[a-f0-9]{64}$ ]]
+          repository_id="$(jq -er '.base.repo.id | tostring' "$RUNNER_TEMP/sourcey-validation-pr.json")"
+          GH_TOKEN="$SOURCEY_WORKSPACE_TOKEN" gh api --method POST \
+            repos/sourcey/sourcey-workspace/dispatches \
+            -f event_type=startup-credits-admission \
+            -F client_payload[repository_id]="$repository_id" \
+            -F client_payload[pull_request_number]="$pull_request_number" \
+            -F client_payload[base_sha]="$base_sha" \
+            -F client_payload[head_sha]="$head_sha" \
+            -F client_payload[validation_run_id]="$RUN_ID" \
+            -F client_payload[validation_app_id]="$validation_app_id"
