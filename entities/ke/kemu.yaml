@@ -1,0 +1,75 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m16c6h2bxgvybbgydey9s4q0
+  slug: kemu
+  slug_aliases: []
+  name: Kemu
+  domains:
+    - value: kemu.io
+      role: primary
+      valid_from: 2026-08-29T00:00:00Z
+  category: apis-integration
+profile:
+  description: Kemu provides a platform for building, deploying, and managing integrations between software products and third-party applications.
+  links:
+    site: https://kemu.io
+sources:
+  - source_id: src_20bbf4ccf873913cd1eed90022a76c5ded2b0586bcc911d8ed221532fd33b6bc
+    url: https://kemu.io/startups
+programs:
+  - program_id: prg_01m16c6h2btf69gsbtd4fyekea
+    program_slug: kemu-for-startups
+    program_slug_aliases: []
+    title: Kemu for Startups
+    summary: Kemu offers qualifying startups with up to 15 team members free access for 12 months, followed by 25% off for another 12 months.
+    source_ids:
+      - src_20bbf4ccf873913cd1eed90022a76c5ded2b0586bcc911d8ed221532fd33b6bc
+offers:
+  - offer_id: off_01m16c6h2b9ftdhp96j5cqf8f2
+    program_id: prg_01m16c6h2btf69gsbtd4fyekea
+    offer_slug: free-first-year-and-25-percent-off-second-year
+    offer_slug_aliases: []
+    title: Free for 12 months, then 25% off for 12 months
+    summary: Eligible startups with up to 15 team members receive Kemu free for 12 months and a 25% discount during the following 12 months.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-29T00:00:00Z
+    economics:
+      consideration:
+        kind: variable
+        description: No payment is required during the first 12 months; the startup pays the remaining discounted plan price during the following 12 months.
+      benefits:
+        - benefit_id: ben_01
+          description: Free access to Kemu, including enterprise features and support, for the first 12 months.
+          kind: free-service
+          service: Kemu access for teams with up to 15 members
+          duration:
+            kind: exact
+            value: P1Y
+        - benefit_id: ben_02
+          applies_to: Kemu subscription after the first program year
+          description: 25% off the Kemu subscription for the 12 months following the free first year.
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 2500
+          duration:
+            kind: exact
+            value: P1Y
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: The company must be pre-seed through Series A, have raised no more than USD 10 million, be no more than five years old, have a product, MVP, or clear use case, and be a new Kemu paid customer; partner affiliation is preferred but not required.
+    roles:
+      terms_authority_entity_id: ent_01m16c6h2bxgvybbgydey9s4q0
+      access_operator_entity_id: ent_01m16c6h2bxgvybbgydey9s4q0
+    access:
+      availability: public
+      instructions: Apply using the Kemu for Startups form. Partner affiliation is preferred but is not required.
+      method: form
+      url: https://kemu.io/startups
+    terms_url: https://kemu.io/startups
+    source_ids:
+      - src_20bbf4ccf873913cd1eed90022a76c5ded2b0586bcc911d8ed221532fd33b6bc
