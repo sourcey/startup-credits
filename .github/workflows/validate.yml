@@ -106,7 +106,7 @@ jobs:
           jq -e \
             --arg release_id "$live_parent_release_id" \
             '.release_id == $release_id
-             and .data.query.live_parent_release_id == $release_id' \
+             and .data.query.liveParentReleaseId == $release_id' \
             "$RUNNER_TEMP/sourcey-identity-response.json" >/dev/null
           jq -e '.data' "$RUNNER_TEMP/sourcey-identity-response.json" \
             > "$RUNNER_TEMP/sourcey-identity-context.json"
