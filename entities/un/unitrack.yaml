@@ -1,0 +1,73 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m16y9dyrbmh65k0n6rk7qq8q
+  slug: unitrack
+  slug_aliases: []
+  name: UniTrack
+  domains:
+    - value: unitrack.ai
+      role: primary
+      valid_from: 2026-08-29T14:20:30.040Z
+  category: productivity
+profile:
+  description: UniTrack provides an integrated workspace for team chat, task management, HR, invoicing, CRM, documents, and business operations.
+  links:
+    site: https://unitrack.ai
+sources:
+  - source_id: src_5959d0137cf87ba85ef4e7db18cf50c864f305ec7be13380712892bdb3428f14
+    url: https://unitrack.ai/startup-launchpad/
+programs:
+  - program_id: prg_01m16y9dyrg5z275t1h1v27ek6
+    program_slug: unitrack-startup-launchpad
+    program_slug_aliases: []
+    title: UniTrack Startup Launchpad
+    summary: UniTrack gives qualifying early-stage teams a year of free access to its business operations platform without requiring a credit card.
+    source_ids:
+      - src_5959d0137cf87ba85ef4e7db18cf50c864f305ec7be13380712892bdb3428f14
+offers:
+  - offer_id: off_01m16y9dyr3n1h00h3m8myz8jt
+    program_id: prg_01m16y9dyrg5z275t1h1v27ek6
+    offer_slug: one-year-free-startup-launchpad
+    offer_slug_aliases: []
+    title: One year of free UniTrack for early-stage startups
+    summary: Eligible startups with up to 10 employees receive one year of free access to UniTrack's Startup Launchpad under the published feature and usage limits.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-29T14:20:30.040Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: One year of free access to the UniTrack Startup Launchpad for a team of up to 10 employees
+          duration:
+            kind: exact
+            value: P1Y
+          kind: free-service
+          service: UniTrack Startup Launchpad
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.employee_count
+            kind: predicate
+            operator: lte
+            statement: The startup must have no more than 10 employees.
+            value:
+              type: number
+              value: 10
+          - criterion_id: cri_02
+            kind: manual
+            statement: The applicant must be an early-stage startup, from idea or MVP through early revenue and up to Series A.
+            reason: external-verification
+    roles:
+      terms_authority_entity_id: ent_01m16y9dyrbmh65k0n6rk7qq8q
+      access_operator_entity_id: ent_01m16y9dyrbmh65k0n6rk7qq8q
+    access:
+      availability: public
+      instructions: Create a UniTrack account and apply for Startup Launchpad from the public program flow; no credit card is required.
+      method: form
+      url: https://unitrack.ai/startup-launchpad/
+    source_ids:
+      - src_5959d0137cf87ba85ef4e7db18cf50c864f305ec7be13380712892bdb3428f14
