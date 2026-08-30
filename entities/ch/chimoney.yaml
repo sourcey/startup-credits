@@ -8,7 +8,7 @@ entity:
     - value: chimoney.io
       role: primary
       valid_from: 2026-08-28T00:00:00.000Z
-  category: "payments-fintech"
+  category: payments-fintech
 profile:
   description: Chimoney provides payment infrastructure, wallets, APIs, and global payout orchestration for businesses, developers, AI agents, and humans.
   links:
