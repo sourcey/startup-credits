@@ -30,7 +30,7 @@ offers:
     offer_slug: five-thousand-agent-credits-and-twenty-percent-off
     offer_slug_aliases: []
     title: $5,000 in agent credits and 20% off
-    summary: Approved startups get USD 5,000 in Uxify agent credits and 20% off their subscription for as long as they remain with Uxify.
+    summary: Approved startups receive USD 5,000 in Uxify agent credits and 20% off their subscription for as long as they remain with Uxify.
     lifecycle:
       status: active
       effective_from: 2026-08-29T12:29:31.000Z
