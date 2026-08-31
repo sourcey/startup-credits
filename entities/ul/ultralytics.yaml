@@ -45,8 +45,8 @@ offers:
               minor_units: 1000000
             kind: up-to
         - benefit_id: ben_02
-          description: Qualified startups can save on the first year of an Ultralytics Enterprise License for private and commercial YOLO products.
-          kind: discount
+          description: Qualified startups can save on the first year of an Ultralytics Enterprise License for private and commercial YOLO products. The vendor page does not publish a fixed percentage.
+          kind: other
         - benefit_id: ben_03
           description: Guidance from Ultralytics computer vision experts on a practical path from use case and data to training, deployment, and scale.
           kind: other
@@ -82,6 +82,6 @@ offers:
     access:
       availability: public
       method: form
-      url: https://www.ultralytics.com/startups#startup-application
+      url: https://www.ultralytics.com/startups
     source_ids:
       - src_4e1449d53c3ffef9c2a445ca5d99c6bb99af103105d2237d6716a78717d0e598
