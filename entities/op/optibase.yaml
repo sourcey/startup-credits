@@ -1,0 +1,74 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1b60d3kms3kmgzpyfs0n3vr
+  slug: optibase
+  slug_aliases: []
+  name: Optibase
+  domains:
+    - value: optibase.io
+      role: primary
+      valid_from: 2026-08-31T00:00:00Z
+  category: marketing
+profile:
+  description: Optibase provides no-code A/B testing, split testing, heatmaps, personalization, and conversion analytics for websites.
+  links:
+    site: https://www.optibase.io
+sources:
+  - source_id: src_2f1baa97e7c0a952971fac118483757ea8bed87058a8e46105e4be887533dfb7
+    url: https://www.optibase.io/startup-program
+programs:
+  - program_id: prg_01m1b60d408d3sshe3e2j6ztzd
+    program_slug: startup-program
+    program_slug_aliases: []
+    title: Optibase for Startups
+    summary: Optibase offers eligible early-stage startups a custom discount on monthly or yearly subscriptions for one year.
+    source_ids:
+      - src_2f1baa97e7c0a952971fac118483757ea8bed87058a8e46105e4be887533dfb7
+offers:
+  - offer_id: off_01m1b60d40maeztp489fgppbm1
+    program_id: prg_01m1b60d408d3sshe3e2j6ztzd
+    offer_slug: startup-subscription-discount
+    offer_slug_aliases: []
+    title: Optibase Startup Subscription Discount
+    summary: Approved startups receive a custom discount code for an Optibase monthly or yearly subscription, valid for one year.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-31T00:00:00Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: A custom discount on an Optibase monthly or yearly subscription for one year, with the amount provided after approval.
+          kind: other
+      consideration:
+        kind: unknown
+        description: The discounted price is provided after Optibase approves the startup application.
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: external-verification
+            statement: The startup must be less than one year old.
+          - criterion_id: cri_02
+            kind: manual
+            reason: external-verification
+            statement: The startup must have fewer than five employees.
+          - criterion_id: cri_03
+            kind: manual
+            reason: external-verification
+            statement: The startup must generate less than $50,000 in annual revenue.
+          - criterion_id: cri_04
+            kind: manual
+            reason: vendor-discretion
+            statement: Optibase approval is required.
+    roles:
+      terms_authority_entity_id: ent_01m1b60d3kms3kmgzpyfs0n3vr
+      access_operator_entity_id: ent_01m1b60d3kms3kmgzpyfs0n3vr
+    access:
+      availability: public
+      method: other
+      url: https://www.optibase.io/startup-program
+      instructions: Contact Optibase through the startup-program page; approved startups receive a custom discount code.
+    source_ids:
+      - src_2f1baa97e7c0a952971fac118483757ea8bed87058a8e46105e4be887533dfb7
