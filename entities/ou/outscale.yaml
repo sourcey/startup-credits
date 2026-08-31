@@ -1,0 +1,75 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1aj29wat50a8vepv7pxmxvd
+  slug: outscale
+  slug_aliases: []
+  name: 3DS OUTSCALE
+  domains:
+    - value: outscale.com
+      role: primary
+      valid_from: 2026-08-31T00:03:51.376Z
+  category: hosting-infra
+profile:
+  description: European sovereign cloud provider offering certified infrastructure, cloud services, and AI capabilities including GPU access.
+  links:
+    site: https://en.outscale.com/
+sources:
+  - source_id: src_922534e4cf42465d7147b05a969b59692f42c9acc540109227ce0ca7817f3b4a
+    url: https://en.outscale.com/outscale-for-entrepreneurs/
+programs:
+  - program_id: prg_01m1aj29wg3b49j6kegrqy53je
+    program_slug: outscale-for-entrepreneurs
+    program_slug_aliases: []
+    title: OUTSCALE for Entrepreneurs
+    summary: OUTSCALE for Entrepreneurs gives startups six months of sovereign cloud and AI infrastructure support through credits, guidance, training, support, and mentoring.
+    source_ids:
+      - src_922534e4cf42465d7147b05a969b59692f42c9acc540109227ce0ca7817f3b4a
+offers:
+  - offer_id: off_01m1aj29wgy34sxe5mbjqfkg50
+    program_id: prg_01m1aj29wg3b49j6kegrqy53je
+    offer_slug: outscale-for-entrepreneurs
+    offer_slug_aliases: []
+    title: OUTSCALE for Entrepreneurs
+    summary: Provides startups in public sector, finance, or healthcare with €50,000 in credits for six months of sovereign cloud and GPU services, plus training, 24/7 support, and mentoring.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-31T00:03:51.376Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: €50,000 in credits usable across OUTSCALE services, including sovereign cloud resources and GPU access.
+          duration:
+            kind: exact
+            value: P6M
+          kind: credit
+          value:
+            amount:
+              currency: EUR
+              minor_units: 5000000
+            kind: exact
+        - benefit_id: ben_02
+          description: Personalized technical guidance and OUTSCALE Academy training for six months.
+          kind: other
+        - benefit_id: ben_03
+          description: 24/7 access to dedicated customer support.
+          kind: other
+        - benefit_id: ben_04
+          description: Strategic and commercial mentoring meetings with OUTSCALE executives.
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        statement: Open to startups seeking sovereign infrastructure for public-sector, finance, or healthcare use cases.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01m1aj29wat50a8vepv7pxmxvd
+      access_operator_entity_id: ent_01m1aj29wat50a8vepv7pxmxvd
+    access:
+      availability: public
+      method: form
+      url: https://en.outscale.com/outscale-for-entrepreneurs/
+    source_ids:
+      - src_922534e4cf42465d7147b05a969b59692f42c9acc540109227ce0ca7817f3b4a
