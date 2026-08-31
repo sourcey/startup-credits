@@ -1,0 +1,77 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1apt68vwe1dqkc7jb8yj9vn
+  slug: memori
+  slug_aliases: []
+  name: Memori
+  domains:
+    - value: memorilabs.ai
+      role: primary
+      valid_from: 2026-08-31T01:26:52.000Z
+  category: ai-ml
+profile:
+  description: Memori provides memory infrastructure for AI agents and applications.
+  links:
+    site: https://www.memorilabs.ai
+    pricing: https://www.memorilabs.ai/pricing/
+sources:
+  - source_id: src_5f8ddb2b4f3688724812cc86e55e4c0d0539243cdb602fc95e39943c1d4c437d
+    url: https://www.memorilabs.ai/startup-program/
+programs:
+  - program_id: prg_01m1apt68xspd0v93tkrpzyp51
+    program_slug: memori-startup-program
+    program_slug_aliases: []
+    title: Memori Startup Program
+    summary: Memori's startup program gives qualifying early-stage startups three months of Pro access with production-scale memory allowances and direct support.
+    source_ids:
+      - src_5f8ddb2b4f3688724812cc86e55e4c0d0539243cdb602fc95e39943c1d4c437d
+offers:
+  - offer_id: off_01m1apt68x60dmjjeqz052kvjh
+    program_id: prg_01m1apt68xspd0v93tkrpzyp51
+    offer_slug: three-months-free-memori-pro
+    offer_slug_aliases: []
+    title: Three months of Memori Pro free
+    summary: Eligible early-stage startups shipping production AI with under $5M raised receive three months of Memori Pro free, with monthly memory allowances, unlimited end users, and direct support.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-31T01:26:52.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Three months of Memori Pro access, including 150,000 memories created and 500,000 memories recalled per month with unlimited end users.
+          kind: free-service
+          service: Memori Pro access
+          duration:
+            kind: exact
+            value: P3M
+        - benefit_id: ben_02
+          description: Private Slack support, multi-agent support, and Advanced Augmentation are included.
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.funding_raised_usd
+            kind: predicate
+            operator: lt
+            statement: Startup has raised less than $5 million in total funding.
+            value:
+              type: number
+              value: 5000000
+          - criterion_id: cri_02
+            kind: manual
+            reason: vendor-discretion
+            statement: Applicant must be an early-stage startup shipping production AI; Memori reviews submitted applications.
+    roles:
+      terms_authority_entity_id: ent_01m1apt68vwe1dqkc7jb8yj9vn
+      access_operator_entity_id: ent_01m1apt68vwe1dqkc7jb8yj9vn
+    access:
+      availability: public
+      method: form
+      url: https://www.memorilabs.ai/startup-program/
+    terms_url: https://app.memorilabs.ai/terms
+    source_ids:
+      - src_5f8ddb2b4f3688724812cc86e55e4c0d0539243cdb602fc95e39943c1d4c437d
