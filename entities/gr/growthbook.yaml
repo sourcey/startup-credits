@@ -1,0 +1,80 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1d2nn20gntw8p2phx6tsdxc
+  slug: growthbook
+  slug_aliases: []
+  name: GrowthBook
+  domains:
+    - value: growthbook.io
+      role: primary
+      valid_from: 2026-08-31T00:00:00.000Z
+  category: data-analytics
+profile:
+  description: GrowthBook provides warehouse-native experimentation, feature flags, and product analytics for software teams.
+  links:
+    site: https://www.growthbook.io
+sources:
+  - source_id: src_8898c5fd51e5d818aac1dc396e5fc3f0db0afcd7ae5bf772d1d1de8f14eb29e7
+    url: https://www.growthbook.io/builders
+programs:
+  - program_id: prg_01m1d2nn27d7r1zqzrrxcgspq4
+    program_slug: growthbook-builders-program
+    program_slug_aliases: []
+    title: GrowthBook Builders Program
+    summary: GrowthBook's Builders Program gives qualifying venture-backed startups six months of its Enterprise experimentation platform.
+    source_ids:
+      - src_8898c5fd51e5d818aac1dc396e5fc3f0db0afcd7ae5bf772d1d1de8f14eb29e7
+offers:
+  - offer_id: off_01m1d2nn28gn9eq7zhb0jk3xfn
+    program_id: prg_01m1d2nn27d7r1zqzrrxcgspq4
+    offer_slug: six-month-enterprise-platform
+    offer_slug_aliases: []
+    title: GrowthBook Enterprise free for six months
+    summary: Eligible startups receive the full GrowthBook Enterprise platform free for six months, supporting up to one billion events during the program.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-31T00:00:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: GrowthBook Enterprise experimentation, feature flags, and warehouse-native product analytics for up to one billion events
+          duration:
+            kind: exact
+            value: P6M
+          kind: free-service
+          service: GrowthBook Enterprise platform for up to one billion events
+        - benefit_id: ben_02
+          description: A dedicated Slack channel with GrowthBook engineers and data scientists
+          duration:
+            kind: exact
+            value: P6M
+          kind: free-service
+          service: Dedicated technical support channel
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: external-verification
+            statement: The applicant is a venture-backed startup that is scaling quickly.
+          - criterion_id: cri_02
+            kind: manual
+            reason: external-verification
+            statement: The applicant typically has less than US$50 million in funding.
+          - criterion_id: cri_03
+            kind: manual
+            reason: external-verification
+            statement: The applicant typically has more than 50,000 website visits per month.
+    roles:
+      terms_authority_entity_id: ent_01m1d2nn20gntw8p2phx6tsdxc
+      access_operator_entity_id: ent_01m1d2nn20gntw8p2phx6tsdxc
+    access:
+      availability: public
+      method: form
+      url: https://www.growthbook.io/builders
+    terms_url: https://www.growthbook.io/builders
+    source_ids:
+      - src_8898c5fd51e5d818aac1dc396e5fc3f0db0afcd7ae5bf772d1d1de8f14eb29e7
