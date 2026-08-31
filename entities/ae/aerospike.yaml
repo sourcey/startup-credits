@@ -1,0 +1,78 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1aj37sywahwvvzjvxsbe2f5
+  slug: aerospike
+  slug_aliases: []
+  name: Aerospike
+  domains:
+    - value: aerospike.com
+      role: primary
+      valid_from: 2026-08-31T00:04:22.012Z
+  category: databases
+profile:
+  description: Aerospike provides a real-time NoSQL database and a fully managed database-as-a-service platform for applications that need predictable performance.
+  links:
+    site: https://aerospike.com/
+sources:
+  - source_id: src_1185a241a580c3e2e5b07e53592a2003e61759c18719db4fb1d6c21c9eb12421
+    url: https://aerospike.com/get/cloud-for-startups/
+programs:
+  - program_id: prg_01m1aj37t2e7fwzg2f6bjmjy8w
+    program_slug: aerospike-cloud-for-startups
+    program_slug_aliases: []
+    title: Aerospike Cloud for Startups
+    summary: Aerospike gives early-stage companies cloud credits, discounted pay-as-you-go pricing, and hands-on architecture support to help them get started.
+    source_ids:
+      - src_1185a241a580c3e2e5b07e53592a2003e61759c18719db4fb1d6c21c9eb12421
+offers:
+  - offer_id: off_01m1aj37t2dw70mntmcydsswjf
+    program_id: prg_01m1aj37t2e7fwzg2f6bjmjy8w
+    offer_slug: aerospike-cloud-startup-package
+    offer_slug_aliases: []
+    title: $300 in credits and 10% off Aerospike Cloud
+    summary: Early-stage companies receive $300 in credits, 10% off public pay-as-you-go pricing, and one day of Solution Architect support, with no commitment or migration costs to start.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-31T00:04:22.012Z
+    economics:
+      benefits:
+        - benefit_id: ben_credits
+          description: $300 in Aerospike Cloud credits
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 30000
+            kind: exact
+        - benefit_id: ben_discount
+          applies_to: Aerospike Cloud public pricing
+          description: 10% off public pricing with pay-as-you-go flexibility
+          kind: discount
+          percentage:
+            basis_points: 1000
+            kind: exact
+        - benefit_id: ben_architect_support
+          description: One day of dedicated Solution Architect support for the startup's data model and architecture
+          kind: free-service
+          service: Dedicated Solution Architect support
+          duration:
+            kind: exact
+            value: P1D
+      consideration:
+        kind: variable
+        description: Usage is billed at the discounted pay-as-you-go public price after credits; Aerospike states there is no commitment or migration cost to start.
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: not-machine-evaluable
+        statement: The program is for early-stage companies, which submit company details through the public form to schedule a call.
+    roles:
+      terms_authority_entity_id: ent_01m1aj37sywahwvvzjvxsbe2f5
+      access_operator_entity_id: ent_01m1aj37sywahwvvzjvxsbe2f5
+    access:
+      availability: public
+      method: form
+      url: https://aerospike.com/get/cloud-for-startups/
+    source_ids:
+      - src_1185a241a580c3e2e5b07e53592a2003e61759c18719db4fb1d6c21c9eb12421
