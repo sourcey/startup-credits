@@ -1,0 +1,91 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1d04ptk1wc1v0zk9pcvs58b
+  slug: swarms-ai
+  slug_aliases: []
+  name: Swarms AI
+  domains:
+    - value: swarms.ai
+      role: primary
+      valid_from: 2026-08-31T22:48:19.043Z
+  category: ai-ml
+profile:
+  description: Swarms AI provides multi-agent infrastructure and tooling for building autonomous agent applications.
+  links:
+    site: https://www.swarms.ai
+sources:
+  - source_id: src_efd6b63f45461e551daf648f0f281990f8e2259888670474be516726d106f9a9
+    url: https://www.swarms.ai/programs/startups
+programs:
+  - program_id: prg_01m1d04pv18v591vn1agr90scn
+    program_slug: startup-program
+    program_slug_aliases: []
+    title: Swarms Startup Program
+    summary: A global, equity-free program for eligible AI startups that provides platform credits, technical support, go-to-market resources, and community access.
+    source_ids:
+      - src_efd6b63f45461e551daf648f0f281990f8e2259888670474be516726d106f9a9
+offers:
+  - offer_id: off_01m1d04pv285shs9n2n081tw3c
+    program_id: prg_01m1d04pv18v591vn1agr90scn
+    offer_slug: launch-tier
+    offer_slug_aliases: []
+    title: Swarms Startup Program Launch Tier
+    summary: Pre-seed and seed startups founded within two years and with less than $500,000 raised can apply for $2,500 in Swarms AI platform credits valid for 12 months.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-31T22:48:19.043Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: $2,500 in Swarms AI platform credits valid for 12 months from enrollment
+          duration:
+            kind: exact
+            value: P12M
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 250000
+            kind: exact
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.funding_stage
+            kind: predicate
+            operator: in
+            statement: Applicant is a pre-seed or seed stage startup.
+            value:
+              type: string-set
+              values:
+                - pre-seed
+                - seed
+          - criterion_id: cri_02
+            fact: company.funding_raised_usd
+            kind: predicate
+            operator: lt
+            statement: Startup has raised less than $500,000.
+            value:
+              type: number
+              value: 500000
+          - criterion_id: cri_03
+            fact: company.age_months
+            kind: predicate
+            operator: lte
+            statement: Startup was founded within the last two years.
+            value:
+              type: number
+              value: 24
+    roles:
+      terms_authority_entity_id: ent_01m1d04ptk1wc1v0zk9pcvs58b
+      access_operator_entity_id: ent_01m1d04ptk1wc1v0zk9pcvs58b
+    access:
+      availability: public
+      instructions: Use the Apply for Launch Tier link on the Swarms Startup Program page.
+      method: other
+      url: https://www.swarms.ai/programs/startups
+    source_ids:
+      - src_efd6b63f45461e551daf648f0f281990f8e2259888670474be516726d106f9a9
