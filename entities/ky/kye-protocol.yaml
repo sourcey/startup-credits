@@ -1,0 +1,147 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1aj75x5cntvaqzvpcq61jy2
+  slug: kye-protocol
+  slug_aliases: []
+  name: KYE Protocol
+  domains:
+    - value: kyeprotocol.com
+      role: primary
+      valid_from: 2026-08-31T00:06:31.000Z
+  category: legal-compliance
+profile:
+  description: KYE Protocol provides AI governance infrastructure for admissibility checks, signed evidence packs, replay verification, and audit-chain records.
+  links:
+    site: https://kyeprotocol.com
+sources:
+  - source_id: src_acc12feb421d9fc16cf0d87565c92a6ea55898543b1a447d93a874a287bef32d
+    url: https://kyeprotocol.com/startups
+programs:
+  - program_id: prg_01m1aj75x7anr6bemq45rmyd24
+    program_slug: kye-for-startups
+    program_slug_aliases: []
+    title: KYE for Startups
+    summary: KYE for Startups gives qualifying early-stage AI companies 12 months of metered governance credits, with award amounts set by funding stage and application review.
+    source_ids:
+      - src_acc12feb421d9fc16cf0d87565c92a6ea55898543b1a447d93a874a287bef32d
+offers:
+  - offer_id: off_01m1aj75x74cb78784zdjvxfnq
+    program_id: prg_01m1aj75x7anr6bemq45rmyd24
+    offer_slug: startup-governance-credits
+    offer_slug_aliases: []
+    title: Up to $25,000 in KYE governance credits for 12 months
+    summary: Approved Seed or Pre-Seed startups receive $5,000 in KYE governance credits for 12 months; approved Series A startups receive $25,000 for 12 months.
+    description: Credits apply only to metered KYE governance usage and exclude third-party costs. They are company-bound, non-transferable, have no cash value, do not roll over, and lapse after 12 months. Published amounts are launch defaults that KYE may adjust. While enrolled, recipients must emit the required governance evidence for governed actions.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-31T00:06:31.000Z
+    economics:
+      benefits:
+        - benefit_id: governance_credits
+          description: $5,000 for Seed or Pre-Seed teams, or $25,000 for Series A teams, in metered KYE Protocol governance credits
+          duration:
+            kind: exact
+            value: P1Y
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 2500000
+            kind: up-to
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: ai_startup
+            kind: manual
+            reason: external-verification
+            statement: Applicant must be an AI startup.
+          - kind: any
+            rules:
+              - kind: all
+                rules:
+                  - criterion_id: seed_stage
+                    fact: company.stage
+                    kind: predicate
+                    operator: in
+                    statement: Applicant is at Seed or Pre-Seed stage.
+                    value:
+                      type: string-set
+                      values:
+                        - pre-seed
+                        - seed
+                  - criterion_id: seed_funding
+                    fact: company.funding_raised_usd
+                    kind: predicate
+                    operator: lt
+                    statement: Seed or Pre-Seed applicant has raised less than $3 million.
+                    value:
+                      type: number
+                      value: 3000000
+                  - criterion_id: seed_age
+                    fact: company.age_months
+                    kind: predicate
+                    operator: lt
+                    statement: Seed or Pre-Seed applicant is less than three years old.
+                    value:
+                      type: number
+                      value: 36
+                  - criterion_id: seed_headcount
+                    fact: company.employee_count
+                    kind: predicate
+                    operator: lte
+                    statement: Seed or Pre-Seed applicant has 25 or fewer employees.
+                    value:
+                      type: number
+                      value: 25
+              - kind: all
+                rules:
+                  - criterion_id: series_a_stage
+                    fact: company.stage
+                    kind: predicate
+                    operator: eq
+                    statement: Applicant is at Series A stage.
+                    value:
+                      type: string
+                      value: series-a
+                  - criterion_id: series_a_funding
+                    fact: company.funding_raised_usd
+                    kind: predicate
+                    operator: lt
+                    statement: Series A applicant has raised less than $15 million.
+                    value:
+                      type: number
+                      value: 15000000
+                  - criterion_id: series_a_age
+                    fact: company.age_months
+                    kind: predicate
+                    operator: lt
+                    statement: Series A applicant is less than five years old.
+                    value:
+                      type: number
+                      value: 60
+                  - criterion_id: series_a_headcount
+                    fact: company.employee_count
+                    kind: predicate
+                    operator: lte
+                    statement: Series A applicant has 100 or fewer employees.
+                    value:
+                      type: number
+                      value: 100
+          - criterion_id: application_review
+            kind: manual
+            reason: vendor-discretion
+            statement: Meeting a tier's ceilings qualifies the company to apply but does not automatically grant credits; KYE reviews each application and confirms fit.
+    roles:
+      terms_authority_entity_id: ent_01m1aj75x5cntvaqzvpcq61jy2
+      access_operator_entity_id: ent_01m1aj75x5cntvaqzvpcq61jy2
+    access:
+      availability: public
+      instructions: Use the Apply for credits link on the program page and provide the company's stage, capital raised, age, and headcount for KYE's review.
+      method: form
+      url: https://kyeprotocol.com/startups
+    terms_url: https://kyeprotocol.com/startups
+    source_ids:
+      - src_acc12feb421d9fc16cf0d87565c92a6ea55898543b1a447d93a874a287bef32d
