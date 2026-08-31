@@ -1,0 +1,75 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1cfeqdax53pkyd72tyb93sb
+  slug: myfundbox
+  slug_aliases: []
+  name: MYFUNDBOX
+  domains:
+    - value: myfundbox.com
+      role: primary
+      valid_from: 2026-08-31T17:56:41.515Z
+  category: payments-fintech
+profile:
+  description: MYFUNDBOX is a subscription billing and payments platform for automating recurring revenue, invoicing, and payment collection.
+  links:
+    site: https://myfundbox.com
+sources:
+  - source_id: src_b5c2612cadf101bc3eaa9a56206de91a33ce53d8224ad0c4a106712eb0bef079
+    url: https://myfundbox.com/startup-program
+programs:
+  - program_id: prg_01m1cfeqda5d6sm4wsy5v6v69b
+    program_slug: myfundbox-startup-program
+    program_slug_aliases: []
+    title: MYFUNDBOX Startup Program
+    summary: MYFUNDBOX gives early-stage SaaS companies one year of free subscription billing up to $100,000 processed, followed by 50% off in year two up to $250,000 processed.
+    source_ids:
+      - src_b5c2612cadf101bc3eaa9a56206de91a33ce53d8224ad0c4a106712eb0bef079
+offers:
+  - offer_id: off_01m1cfeqdaj27vd7ctwq38ebrg
+    program_id: prg_01m1cfeqda5d6sm4wsy5v6v69b
+    offer_slug: myfundbox-startup-program
+    offer_slug_aliases: []
+    title: MYFUNDBOX Startup Program
+    summary: Early-stage SaaS companies get MYFUNDBOX free for the first year up to $100,000 processed, then 50% off in the second year up to $250,000 processed.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-31T17:56:41.515Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: First year free with full subscription-management access for up to $100,000 in processed transactions
+          duration:
+            kind: exact
+            value: P1Y
+          kind: free-service
+          service: MYFUNDBOX subscription billing
+        - applies_to: MYFUNDBOX Startup Program
+          benefit_id: ben_02
+          description: 50% off the second year with the processing limit increased to $250,000
+          duration:
+            kind: exact
+            value: P1Y
+          kind: discount
+          percentage:
+            basis_points: 5000
+            kind: exact
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: external-verification
+            statement: The applicant is an early-stage SaaS company.
+    roles:
+      terms_authority_entity_id: ent_01m1cfeqdax53pkyd72tyb93sb
+      access_operator_entity_id: ent_01m1cfeqdax53pkyd72tyb93sb
+    access:
+      availability: public
+      method: form
+      url: https://app.myfundbox.com/Signup.jsf?prodType=subscription
+    terms_url: https://myfundbox.com/startup-program
+    source_ids:
+      - src_b5c2612cadf101bc3eaa9a56206de91a33ce53d8224ad0c4a106712eb0bef079
