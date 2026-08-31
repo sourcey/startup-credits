@@ -1,0 +1,80 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1d3w3e1831e7nm85mw6p7t0
+  slug: zeropipeline
+  slug_aliases: []
+  name: ZeroPipeline
+  domains:
+    - value: zeropipeline.ainative.studio
+      role: primary
+      valid_from: 2026-08-31T00:00:00.000Z
+  category: crm-sales
+profile:
+  description: ZeroPipeline is an AI-powered CRM for lead discovery, contact enrichment, sales outreach, and pipeline management.
+  links:
+    site: https://zeropipeline.ainative.studio
+sources:
+  - source_id: src_c5032b314227c59813f18c68268fff6b8619b07bf014221644c8e35c139e3e90
+    url: https://zeropipeline.ainative.studio/startup-program
+programs:
+  - program_id: prg_01m1d3w3e7snxw9t2jjth26cqz
+    program_slug: zeropipeline-for-startups
+    program_slug_aliases: []
+    title: ZeroPipeline for Startups
+    summary: ZeroPipeline's startup program gives eligible early-stage technology companies free access to its complete AI-powered CRM for one year.
+    source_ids:
+      - src_c5032b314227c59813f18c68268fff6b8619b07bf014221644c8e35c139e3e90
+offers:
+  - offer_id: off_01m1d3w3e7cv9zqe04qm6qke2d
+    program_id: prg_01m1d3w3e7snxw9t2jjth26cqz
+    offer_slug: free-zeropipeline-for-12-months
+    offer_slug_aliases: []
+    title: Free ZeroPipeline for 12 Months
+    summary: Eligible startups receive 12 months of free full-platform access, including unlimited contacts, AI outreach, pipeline management, REST API and MCP access, and priority support.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-31T00:00:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Full ZeroPipeline platform access free for 12 months.
+          duration:
+            kind: exact
+            value: P1Y
+          kind: free-service
+          service: Full ZeroPipeline platform access
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: external-verification
+            statement: Startup must not have closed a Series A funding round; bootstrapped, pre-seed, and seed companies qualify.
+          - criterion_id: cri_02
+            fact: company.employee_count
+            kind: predicate
+            operator: lt
+            statement: Startup must have fewer than 50 employees.
+            value:
+              type: number
+              value: 50
+          - criterion_id: cri_03
+            kind: manual
+            reason: external-verification
+            statement: Startup must be building in software, AI, developer tools, SaaS, fintech, or an adjacent technical domain.
+          - criterion_id: cri_04
+            kind: manual
+            reason: external-verification
+            statement: Startup must have a product or be close to one and be actively talking to customers and building a sales pipeline.
+    roles:
+      terms_authority_entity_id: ent_01m1d3w3e1831e7nm85mw6p7t0
+      access_operator_entity_id: ent_01m1d3w3e1831e7nm85mw6p7t0
+    access:
+      availability: public
+      method: form
+      url: https://zeropipeline.ainative.studio/startup-program
+    source_ids:
+      - src_c5032b314227c59813f18c68268fff6b8619b07bf014221644c8e35c139e3e90
