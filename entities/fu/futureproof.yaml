@@ -1,0 +1,81 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1d5b0vf79cpynzp33mrtckp
+  slug: futureproof
+  slug_aliases: []
+  name: Futureproof
+  domains:
+    - value: runfutureproof.com
+      role: primary
+      valid_from: 2026-09-01T00:00:00.000Z
+  category: finance-accounting
+profile:
+  description: Futureproof provides an AI-agent finance team for business bookkeeping, financial operations, reporting, and planning.
+  links:
+    site: https://www.runfutureproof.com
+sources:
+  - source_id: src_b406a9e1c427b667fc18b091f27a5089ae94ed29a28d2e17396df1b3b954c4ea
+    url: https://www.runfutureproof.com/startup-program
+programs:
+  - program_id: prg_01m1d5b0vqbaepvxpfkzzma68a
+    program_slug: futureproof-startup-program
+    program_slug_aliases: []
+    title: Futureproof Startup Program
+    summary: Futureproof's startup program gives eligible SaaS and ecommerce companies access to its six-agent finance team at startup pricing.
+    source_ids:
+      - src_b406a9e1c427b667fc18b091f27a5089ae94ed29a28d2e17396df1b3b954c4ea
+offers:
+  - offer_id: off_01m1d5b0vs0wr2hgpfz4a10rgr
+    program_id: prg_01m1d5b0vqbaepvxpfkzzma68a
+    offer_slug: futureproof-six-agent-finance-team-year-one
+    offer_slug_aliases: []
+    title: Futureproof Finance Team for $200 per Month in Year One
+    summary: Eligible SaaS and ecommerce startups receive Futureproof's six-agent finance team for $200 per month in year one, followed by $500 per month in year two.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-01T00:00:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Access to Futureproof's six-agent finance team at startup pricing for the first year.
+          kind: other
+      consideration:
+        amount:
+          currency: USD
+          minor_units: 20000
+        kind: fixed
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.industry
+            kind: predicate
+            operator: in
+            statement: Startup must be a SaaS or ecommerce company.
+            value:
+              type: string-set
+              values:
+                - SaaS
+                - ecommerce
+          - criterion_id: cri_02
+            kind: manual
+            reason: external-verification
+            statement: SaaS startups must have under USD 200,000 ARR, and ecommerce startups must have under USD 200,000 GMV.
+          - criterion_id: cri_03
+            fact: company.funding_raised_usd
+            kind: predicate
+            operator: lt
+            statement: Startup must have raised less than USD 1 million.
+            value:
+              type: number
+              value: 1000000
+    roles:
+      terms_authority_entity_id: ent_01m1d5b0vf79cpynzp33mrtckp
+      access_operator_entity_id: ent_01m1d5b0vf79cpynzp33mrtckp
+    access:
+      availability: public
+      method: form
+      url: https://www.runfutureproof.com/startup-program
+    source_ids:
+      - src_b406a9e1c427b667fc18b091f27a5089ae94ed29a28d2e17396df1b3b954c4ea
