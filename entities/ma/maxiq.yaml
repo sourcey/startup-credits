@@ -1,0 +1,94 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m14mcvtnstsfht5fmhnyk6zr
+  slug: maxiq
+  slug_aliases: []
+  name: MaxIQ
+  domains:
+    - value: getmaxiq.com
+      role: primary
+      valid_from: 2026-08-28T16:50:14.426Z
+  category: crm-sales
+profile:
+  description: MaxIQ provides an AI revenue platform for conversation intelligence, sales forecasting, workflow automation, and customer success.
+  links:
+    site: https://www.getmaxiq.com
+sources:
+  - source_id: src_071628fbc41f2dc75093b21b674ceea792f6311609e3c7b4cbdfe095d5c7e695
+    url: https://www.getmaxiq.com/maxiq-for-startups
+  - source_id: src_e8e968918f3ac57fcdb3e448b346e0478a8ac91eb348a37c40627a21b42ff3b8
+    url: https://www.getmaxiq.com/maxiq-for-startups/demo
+programs:
+  - program_id: prg_01m14mcvtqdp100wpm6e04jnsp
+    program_slug: maxiq-for-startups
+    program_slug_aliases: []
+    title: MaxIQ for Startups
+    summary: MaxIQ gives eligible startups 12 months of full Revenue AI platform access free, a benefit the vendor values at more than $15,000.
+    source_ids:
+      - src_071628fbc41f2dc75093b21b674ceea792f6311609e3c7b4cbdfe095d5c7e695
+      - src_e8e968918f3ac57fcdb3e448b346e0478a8ac91eb348a37c40627a21b42ff3b8
+offers:
+  - offer_id: off_01m14mcvtq555wdtfetr31m4vv
+    program_id: prg_01m14mcvtqdp100wpm6e04jnsp
+    offer_slug: twelve-months-free-full-platform-access
+    offer_slug_aliases: []
+    title: Twelve months free MaxIQ platform access
+    summary: Eligible startups receive 12 months of full MaxIQ platform access free, valued by MaxIQ at more than $15,000, with no credit card required to apply.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-28T16:50:14.426Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_01
+          description: Full MaxIQ Revenue AI platform access free for 12 months, valued by MaxIQ at more than $15,000
+          kind: free-service
+          service: MaxIQ Revenue AI platform
+          duration:
+            kind: exact
+            value: P1Y
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.funding_raised_usd
+            kind: predicate
+            operator: gte
+            statement: Company has raised at least $5,000,000 in funding.
+            value:
+              type: number
+              value: 5000000
+          - criterion_id: cri_02
+            fact: company.sales_representative_count
+            kind: predicate
+            operator: lt
+            statement: Company has fewer than 10 sales representatives.
+            value:
+              type: number
+              value: 10
+          - criterion_id: cri_03
+            kind: manual
+            reason: external-verification
+            statement: Company is an active portfolio company or accelerator participant associated with an approved MaxIQ partner.
+          - criterion_id: cri_04
+            fact: company.is_current_customer
+            kind: predicate
+            operator: eq
+            statement: Company is not an existing MaxIQ customer.
+            value:
+              type: boolean
+              value: false
+    roles:
+      terms_authority_entity_id: ent_01m14mcvtnstsfht5fmhnyk6zr
+      access_operator_entity_id: ent_01m14mcvtnstsfht5fmhnyk6zr
+    access:
+      availability: public
+      method: form
+      url: https://www.getmaxiq.com/maxiq-for-startups/demo
+    terms_url: https://www.getmaxiq.com/maxiq-for-startups/demo
+    source_ids:
+      - src_071628fbc41f2dc75093b21b674ceea792f6311609e3c7b4cbdfe095d5c7e695
+      - src_e8e968918f3ac57fcdb3e448b346e0478a8ac91eb348a37c40627a21b42ff3b8
+
