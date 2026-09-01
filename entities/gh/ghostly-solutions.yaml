@@ -1,0 +1,83 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1d4ngpk32g0y91ft7c99aaz
+  slug: ghostly-solutions
+  slug_aliases: []
+  name: Ghostly Solutions
+  domains:
+    - value: ghostlysolutions.com
+      role: primary
+      valid_from: 2026-09-01T00:00:00.000Z
+  category: auth-security
+profile:
+  description: Ghostly Solutions provides enterprise security products for identity verification, fraud prevention, and secure digital operations.
+  links:
+    site: https://ghostlysolutions.com
+sources:
+  - source_id: src_42a26d7ab785b67cc8dd250eb1b784aa5c21e021a30a2c9684a79aa2ffd003f3
+    url: https://ghostlysolutions.com/startup-program
+programs:
+  - program_id: prg_01m1d4ngpyad4nqfbgg8tjsaw1
+    program_slug: ghostly-solutions-startup-program
+    program_slug_aliases: []
+    title: Ghostly Solutions Startup Program
+    summary: Ghostly Solutions' startup program gives eligible early-stage companies free access to its enterprise security products for one year.
+    source_ids:
+      - src_42a26d7ab785b67cc8dd250eb1b784aa5c21e021a30a2c9684a79aa2ffd003f3
+offers:
+  - offer_id: off_01m1d4ngq14fxtcz4vmgamfw7z
+    program_id: prg_01m1d4ngpyad4nqfbgg8tjsaw1
+    offer_slug: free-ghostly-solutions-for-one-year
+    offer_slug_aliases: []
+    title: Free Ghostly Solutions for One Year
+    summary: Eligible startups receive full access to Ghostly Solutions' enterprise security products free for one year, with no obligation to renew or pay afterward.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-01T00:00:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Full access to Ghostly Solutions enterprise security products free for one year.
+          duration:
+            kind: exact
+            value: P1Y
+          kind: free-service
+          service: Ghostly Solutions enterprise security products
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.stage
+            kind: predicate
+            operator: in
+            statement: Startup must be bootstrapped, pre-seed, or seed stage.
+            value:
+              type: string-set
+              values:
+                - bootstrapped
+                - pre-seed
+                - seed
+          - criterion_id: cri_02
+            kind: manual
+            reason: external-verification
+            statement: Company must be an early-stage or fast-growing startup.
+          - criterion_id: cri_03
+            kind: manual
+            reason: external-verification
+            statement: Startup must have a working product or minimum viable product.
+          - criterion_id: cri_04
+            kind: manual
+            reason: external-verification
+            statement: Startup must proactively care about data security.
+    roles:
+      terms_authority_entity_id: ent_01m1d4ngpk32g0y91ft7c99aaz
+      access_operator_entity_id: ent_01m1d4ngpk32g0y91ft7c99aaz
+    access:
+      availability: public
+      method: form
+      url: https://ghostlysolutions.com/startup-program
+    source_ids:
+      - src_42a26d7ab785b67cc8dd250eb1b784aa5c21e021a30a2c9684a79aa2ffd003f3
