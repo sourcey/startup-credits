@@ -69,7 +69,7 @@ offers:
     access:
       availability: public
       method: form
-      url: https://app.myfundbox.com/Signup.jsf?prodType=subscription
+      url: https://myfundbox.com/startup-program
     terms_url: https://myfundbox.com/startup-program
     source_ids:
       - src_b5c2612cadf101bc3eaa9a56206de91a33ce53d8224ad0c4a106712eb0bef079
