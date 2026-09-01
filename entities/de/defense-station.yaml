@@ -1,0 +1,67 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1358xf2n90ectjy48qmkv62
+  slug: defense-station
+  slug_aliases: []
+  name: DefenseStation
+  domains:
+    - value: defencestation.com
+      role: primary
+      valid_from: 2026-08-28T00:00:00.000Z
+  category: auth-security
+profile:
+  description: DefenseStation provides cybersecurity asset management, policy management, and compliance automation software.
+  links:
+    site: https://defencestation.com/
+sources:
+  - source_id: src_3c1ec4ddbd3380f7faa80660e47a3ef9663f77750ca5f55446a9b4f4dacef13c
+    url: https://defencestation.com/early-stage
+programs:
+  - program_id: prg_01m1358xf20br2h4kpxng7keew
+    program_slug: early-stage-program
+    program_slug_aliases: []
+    title: DefenseStation Early Stage Program
+    summary: A three-year cybersecurity software discount program for qualifying early-stage companies.
+    source_ids:
+      - src_3c1ec4ddbd3380f7faa80660e47a3ef9663f77750ca5f55446a9b4f4dacef13c
+offers:
+  - offer_id: off_01m1358xf2dhh0rgva4jv18vqf
+    program_id: prg_01m1358xf20br2h4kpxng7keew
+    offer_slug: early-stage-three-year-discount
+    offer_slug_aliases: []
+    title: Up to 90% off DefenseStation for early-stage companies
+    summary: Eligible companies receive 90% off in year one, 50% off in year two, and 25% off in year three.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-28T00:00:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 90% off in year one, 50% off in year two, and 25% off in year three.
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 9000
+          duration:
+            kind: exact
+            value: P3Y
+      consideration:
+        kind: unknown
+        description: The public program page does not establish separate consideration.
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Applicant must be a new DefenseStation customer, less than two years old, with under $1 million in revenue or funding and fewer than 10 employees.
+    roles:
+      terms_authority_entity_id: ent_01m1358xf2n90ectjy48qmkv62
+      access_operator_entity_id: ent_01m1358xf2n90ectjy48qmkv62
+    access:
+      availability: public
+      method: form
+      url: https://defencestation.com/early-stage
+      instructions: Apply through the form on the DefenseStation Early Stage Program page.
+    terms_url: https://defencestation.com/early-stage
+    source_ids:
+      - src_3c1ec4ddbd3380f7faa80660e47a3ef9663f77750ca5f55446a9b4f4dacef13c
