@@ -1,0 +1,94 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_ah767qatdx75k92rdtxxtprn9e
+  slug: lyrid
+  slug_aliases: []
+  name: Lyrid
+  domains:
+    - value: lyrid.io
+      role: primary
+      valid_from: 2026-09-01T08:56:43.5181426Z
+  category: hosting-infra
+profile:
+  summary: Multi-cloud application deployment and Kubernetes infrastructure platform.
+  description: Lyrid provides multi-cloud deployment, Kubernetes management, infrastructure automation, databases, object storage, managed hosting, cloud migration, and engineering services.
+  links:
+    site: https://www.lyrid.io
+sources:
+  - source_id: src_b7429b329e6d8800e8000495311fbedaa92c335282dc1ea97da519ccb7fa24eb
+    url: https://www.lyrid.io/lyrid-for-startups
+programs:
+  - program_id: prg_y214d3p7pzzqej33rffk7fkqpw
+    program_slug: lyrid-for-startups
+    program_slug_aliases: []
+    title: Lyrid for Startups
+    summary: Eligible new accelerator-affiliated startups receive the Lyrid Enterprise plan free for six months, with migration and engineering consulting support.
+    source_ids:
+      - src_b7429b329e6d8800e8000495311fbedaa92c335282dc1ea97da519ccb7fa24eb
+offers:
+  - offer_id: off_a9kx7kj3m8eqk7qbqee02rxzgt
+    program_id: prg_y214d3p7pzzqej33rffk7fkqpw
+    offer_slug: enterprise-plan-free-for-six-months
+    offer_slug_aliases: []
+    title: Lyrid Enterprise free for six months
+    summary: Eligible new startups applying with an accelerator partner code receive the Lyrid Enterprise plan free for six months, including migration and engineering consulting support.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-01T08:56:43.5181426Z
+    economics:
+      benefits:
+        - applies_to: Lyrid Enterprise plan
+          benefit_id: ben_01
+          description: 100% off the Lyrid Enterprise plan for six months
+          duration:
+            kind: exact
+            value: P6M
+          kind: discount
+          percentage:
+            basis_points: 10000
+            kind: exact
+        - benefit_id: ben_02
+          description: Migration and engineering consulting services during the six-month program
+          duration:
+            kind: exact
+            value: P6M
+          kind: free-service
+          service: Migration and engineering consulting
+      consideration:
+        kind: variable
+        description: The approved startup pays no Enterprise-plan subscription charge during the six-month program and may continue at Lyrid's standard Enterprise pricing afterward.
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: customer.is_new
+            kind: predicate
+            operator: eq
+            statement: The applicant must be a new Lyrid customer.
+            value:
+              type: boolean
+              value: true
+          - criterion_id: cri_02
+            kind: manual
+            reason: external-verification
+            statement: The applicant must provide an accelerator partner code.
+          - criterion_id: cri_03
+            kind: manual
+            reason: external-verification
+            statement: The applicant must be a startup building cloud-native applications.
+          - criterion_id: cri_04
+            kind: manual
+            reason: external-verification
+            statement: The applicant must have raised venture-capital funding.
+    roles:
+      terms_authority_entity_id: ent_ah767qatdx75k92rdtxxtprn9e
+      access_operator_entity_id: ent_ah767qatdx75k92rdtxxtprn9e
+    access:
+      availability: membership
+      instructions: Complete the application on the Lyrid for Startups page with a company email, website, company details, and accelerator partner code for Lyrid's review.
+      method: form
+      url: https://www.lyrid.io/lyrid-for-startups
+    terms_url: https://www.lyrid.io/lyrid-for-startups
+    source_ids:
+      - src_b7429b329e6d8800e8000495311fbedaa92c335282dc1ea97da519ccb7fa24eb
