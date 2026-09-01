@@ -1,0 +1,68 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m0skfzrmczkgw3agyd32q4eq
+  slug: strix
+  slug_aliases: []
+  name: Strix
+  domains:
+    - value: strix.ai
+      role: primary
+      valid_from: 2026-08-24T10:00:00.000Z
+  category: auth-security
+profile:
+  description: Strix provides an autonomous AI penetration testing platform for continuous security reviews, vulnerability discovery, and auto-fix across applications and infrastructure.
+  links:
+    site: https://www.strix.ai
+sources:
+  - source_id: src_6ac9ab7e4ec4ac118eb06801aa85ee8a5b91880e0cdb9e1dfdf3531b0a302728
+    url: https://www.strix.ai/startups
+  - source_id: src_2d2161acc328e70fb21e0978690e3d3e87b74f04aa262286e13d83285549111b
+    url: https://www.strix.ai/pricing
+programs:
+  - program_id: prg_01m0skfzrm2t8xx4x3kph94kqc
+    program_slug: strix-for-startups
+    program_slug_aliases: []
+    title: Strix for Startups
+    summary: Strix for Startups gives eligible early-stage startups 50% off the Strix Pro plan for six months.
+    source_ids:
+      - src_6ac9ab7e4ec4ac118eb06801aa85ee8a5b91880e0cdb9e1dfdf3531b0a302728
+offers:
+  - offer_id: off_01m0skfzrm8rs1mhbdtb684kr5
+    program_id: prg_01m0skfzrm2t8xx4x3kph94kqc
+    offer_slug: fifty-percent-off-pro-for-six-months
+    offer_slug_aliases: []
+    title: 50% off Strix Pro for six months
+    summary: Eligible pre-seed through Series A startups receive 50% off the Strix Pro plan for six months after manual application review.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-24T10:00:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          applies_to: Strix Pro plan
+          description: 50% off the Strix Pro plan for six months
+          duration:
+            kind: exact
+            value: P6M
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 5000
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Eligible startups are pre-seed to Series A, must use a work email, and are manually reviewed by Strix.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01m0skfzrmczkgw3agyd32q4eq
+      access_operator_entity_id: ent_01m0skfzrmczkgw3agyd32q4eq
+    access:
+      availability: public
+      method: form
+      url: https://www.strix.ai/startups
+    source_ids:
+      - src_6ac9ab7e4ec4ac118eb06801aa85ee8a5b91880e0cdb9e1dfdf3531b0a302728
+      - src_2d2161acc328e70fb21e0978690e3d3e87b74f04aa262286e13d83285549111b
