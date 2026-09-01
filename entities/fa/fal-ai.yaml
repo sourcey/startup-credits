@@ -1,0 +1,71 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m11zb0s99006a1nf4q4bj49x
+  slug: fal-ai
+  slug_aliases:
+    - fal
+  name: fal.ai
+  domains:
+    - value: fal.ai
+      role: primary
+      valid_from: 2026-08-28T00:00:00.000Z
+  category: ai-ml
+profile:
+  description: fal.ai provides lightning-fast generative media APIs and serverless GPU compute infrastructure optimized for real-time AI model inference.
+  links:
+    site: https://fal.ai
+sources:
+  - source_id: src_78af28409a3a8927257037f2930a291cddfd7847e52decd312c34216277dc9f6
+    url: https://fal.ai/pricing
+programs:
+  - program_id: prg_01m11zb0sdw5wjkvmy5twm7whe
+    program_slug: fal-ai-startup-deals
+    program_slug_aliases: []
+    title: fal.ai Startup Program
+    summary: fal.ai partners with accelerators and venture funds to provide credit grants up to $50,000 for early-stage generative media and AI companies.
+    source_ids:
+      - src_78af28409a3a8927257037f2930a291cddfd7847e52decd312c34216277dc9f6
+offers:
+  - offer_id: off_01m11zb0sdq5tzeqf4avkxfv02
+    program_id: prg_01m11zb0sdw5wjkvmy5twm7whe
+    offer_slug: fal-ai-startup-credits
+    offer_slug_aliases: []
+    title: fal.ai Startup Compute Credits
+    summary: Eligible early-stage startups receive platform inference and GPU compute credits to accelerate generative AI model deployment.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-28T00:00:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to $50,000 in fal.ai model inference and compute credits
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 5000000
+            kind: up-to
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: any
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: external-verification
+            statement: Startup is backed by a recognized venture accelerator or fund.
+          - criterion_id: cri_02
+            kind: manual
+            reason: external-verification
+            statement: Building generative media or real-time AI applications.
+    roles:
+      terms_authority_entity_id: ent_01m11zb0s99006a1nf4q4bj49x
+      access_operator_entity_id: ent_01m11zb0s99006a1nf4q4bj49x
+    access:
+      availability: public
+      instructions: Contact fal.ai grants or apply via partner accelerator networks.
+      method: contact
+      url: https://fal.ai/pricing
+    source_ids:
+      - src_78af28409a3a8927257037f2930a291cddfd7847e52decd312c34216277dc9f6
