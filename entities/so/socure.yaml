@@ -1,0 +1,65 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m11mb3cd14ae4s3n1wm40st1
+  slug: socure
+  slug_aliases: []
+  name: Socure
+  domains:
+    - value: socure.com
+      role: primary
+      valid_from: 2026-08-27T12:50:26.000Z
+  category: auth-security
+profile:
+  description: Socure provides digital identity verification, fraud prevention, compliance screening, and risk decisioning through its RiskOS platform.
+  links:
+    site: https://www.socure.com/
+sources:
+  - source_id: src_ba3044827b087842ed2b0925e8e9d9eacf36fba9a43e41e26eb397ea2e79db8d
+    url: https://www.socure.com/launch
+  - source_id: src_2e7ff89245cc877f75e72dbda74014513e393732cf7234b2b93a3c9f28980341
+    url: https://help.socure.com/riskos/docs/solutions-for-startups-overview
+  - source_id: src_9fa5f44fb0cbef67fceecc9e439066f19dc7a5ceb9c4541445bb76aa129c3af4
+    url: https://help.socure.com/riskos/docs/solutions-for-startups-faqs
+programs: []
+offers:
+  - offer_id: off_01m11mb3cf9h661y6nj2tnh8n8
+    offer_slug: socure-launch-monthly-credits
+    offer_slug_aliases: []
+    title: Socure Launch Monthly Credits
+    summary: Startups receive $1,000 in monthly production credits for self-service RiskOS workflows, plus free unlimited sandbox evaluations and API or hosted UI access.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-27T12:50:26.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: $1,000 in monthly credits applied to Socure Launch production usage.
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 100000
+            kind: exact
+        - benefit_id: ben_02
+          description: Unlimited free sandbox evaluations, self-service account creation, and access through APIs or a hosted user interface.
+          kind: other
+      consideration:
+        description: Production evaluations beyond the monthly credits are billed at Socure Launch's published usage-based prices.
+        kind: variable
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: not-machine-evaluable
+        statement: Applicant must be a startup using the self-service Socure Launch offering.
+    roles:
+      terms_authority_entity_id: ent_01m11mb3cd14ae4s3n1wm40st1
+      access_operator_entity_id: ent_01m11mb3cd14ae4s3n1wm40st1
+    access:
+      availability: public
+      method: form
+      url: https://www.socure.com/launch
+    source_ids:
+      - src_ba3044827b087842ed2b0925e8e9d9eacf36fba9a43e41e26eb397ea2e79db8d
+      - src_2e7ff89245cc877f75e72dbda74014513e393732cf7234b2b93a3c9f28980341
+      - src_9fa5f44fb0cbef67fceecc9e439066f19dc7a5ceb9c4541445bb76aa129c3af4
