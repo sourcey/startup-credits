@@ -1,0 +1,97 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_taskkwqy3r5qfa437er71z6454
+  slug: cyscale
+  slug_aliases: []
+  name: Cyscale
+  domains:
+    - value: cyscale.com
+      role: primary
+      valid_from: 2026-09-01T07:17:12.960Z
+  category: auth-security
+profile:
+  description: Cyscale is a cloud-native application protection platform that analyzes cloud misconfigurations, vulnerabilities, identities, data, and compliance controls across major cloud providers.
+  links:
+    site: https://cyscale.com/
+sources:
+  - source_id: src_222ba6c63d8311810f68e03fad7f058654d0e413e00f570a1a3aa5f35060025e
+    url: https://cyscale.com/security-for-startups-program/
+  - source_id: src_6a74224dba2313002ae1aa2aca5218a2ab7d75361ed6849fcd5e556ec279f31a
+    url: https://cyscale.com/blog/startups-program-free-cspm/
+programs:
+  - program_id: prg_079mp28hb3d26hxn71t6jzz4rg
+    program_slug: cyscale-for-startups
+    program_slug_aliases: []
+    title: Cyscale for Startups
+    summary: Cyscale provides eligible startups a one-year discounted cloud-security program with access to its platform for up to 1,000 protected assets.
+    source_ids:
+      - src_222ba6c63d8311810f68e03fad7f058654d0e413e00f570a1a3aa5f35060025e
+      - src_6a74224dba2313002ae1aa2aca5218a2ab7d75361ed6849fcd5e556ec279f31a
+offers:
+  - offer_id: off_5sh65cpw14vx8qv7e9g30kj8tn
+    program_id: prg_079mp28hb3d26hxn71t6jzz4rg
+    offer_slug: six-months-free-then-seventy-five-percent-off
+    offer_slug_aliases: []
+    title: Six Months Free, Then 75% Off Cyscale for Six Months
+    summary: Startups founded less than five years ago with up to $2 million in funding receive six months of Cyscale free, followed by 75% off for the next six months.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-01T07:17:12.960Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Free access to the Cyscale Cloud Platform for the first six months, covering up to 1,000 protected assets.
+          kind: free-service
+          service: Cyscale Cloud Platform for up to 1,000 protected assets
+          duration:
+            kind: exact
+            value: P6M
+        - benefit_id: ben_02
+          description: 75% off the Cyscale startup-program price for the following six months.
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 7500
+          applies_to: Cyscale for Startups contract months seven through twelve
+          duration:
+            kind: exact
+            value: P6M
+      consideration:
+        kind: variable
+        description: The startup pays 25% of the applicable Cyscale startup-program price during months seven through twelve.
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.age_months
+            kind: predicate
+            operator: lt
+            statement: The startup was founded less than five years ago.
+            value:
+              type: number
+              value: 60
+          - criterion_id: cri_02
+            fact: company.funding_raised_usd
+            kind: predicate
+            operator: lte
+            statement: The startup has raised no more than $2 million.
+            value:
+              type: number
+              value: 2000000
+          - criterion_id: cri_03
+            kind: manual
+            reason: vendor-discretion
+            statement: Cyscale reviews and approves the startup-program application.
+    roles:
+      terms_authority_entity_id: ent_taskkwqy3r5qfa437er71z6454
+      access_operator_entity_id: ent_taskkwqy3r5qfa437er71z6454
+    access:
+      availability: public
+      method: form
+      url: https://cyscale.com/security-for-startups-program/
+      instructions: Submit the application on Cyscale's startup-program page; both new and existing Cyscale customers may apply.
+    terms_url: https://cyscale.com/security-for-startups-program/
+    source_ids:
+      - src_222ba6c63d8311810f68e03fad7f058654d0e413e00f570a1a3aa5f35060025e
+      - src_6a74224dba2313002ae1aa2aca5218a2ab7d75361ed6849fcd5e556ec279f31a
