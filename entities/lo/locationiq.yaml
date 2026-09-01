@@ -1,0 +1,79 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m165q36n3hv9bfvxnqzvw862
+  slug: locationiq
+  slug_aliases: []
+  name: LocationIQ
+  domains:
+    - value: locationiq.com
+      role: primary
+      valid_from: 2026-08-29T07:00:00.000Z
+  category: apis-integration
+profile:
+  description: LocationIQ provides geocoding, maps, routing, and location APIs for developers and businesses.
+  links:
+    site: https://locationiq.com
+    pricing: https://web.locationiq.com/pricing
+sources:
+  - source_id: src_b18338aac79a4515899d5d9df446dedb78a804a5bd9d43135c4e0f30d8d4ceb7
+    url: https://locationiq.com/
+  - source_id: src_67c1ec292a12bb2295e924a275574df529acebd3687277aea03d7733798ab1a4
+    url: https://web.locationiq.com/pricing
+programs:
+  - program_id: prg_01m165q36n7p3ffzabhn4g558m
+    program_slug: locationiq-for-startups
+    program_slug_aliases: []
+    title: LocationIQ for Startups Program
+    summary: LocationIQ gives eligible early-stage companies founded less than two years ago up to 50% off for their first 12 months.
+    source_ids:
+      - src_67c1ec292a12bb2295e924a275574df529acebd3687277aea03d7733798ab1a4
+offers:
+  - offer_id: off_01m165q36nma5cspycg2c2bwk8
+    program_id: prg_01m165q36n7p3ffzabhn4g558m
+    offer_slug: up-to-50-percent-off-first-year
+    offer_slug_aliases: []
+    title: Up to 50% Off for the First 12 Months
+    summary: Eligible early-stage companies founded less than two years ago can receive up to 50% off LocationIQ services for the first 12 months.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-29T07:00:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to 50% off LocationIQ services for the first 12 months.
+          kind: discount
+          percentage:
+            basis_points: 5000
+            kind: up-to
+          duration:
+            kind: exact
+            value: P1Y
+      consideration:
+        kind: variable
+        description: The startup pays the remaining discounted price for its selected LocationIQ service plan.
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: external-verification
+            statement: The applicant is an early-stage company.
+          - criterion_id: cri_02
+            fact: company.age_months
+            kind: predicate
+            operator: lt
+            statement: The company was founded less than two years ago.
+            value:
+              type: number
+              value: 24
+    roles:
+      terms_authority_entity_id: ent_01m165q36n3hv9bfvxnqzvw862
+      access_operator_entity_id: ent_01m165q36n3hv9bfvxnqzvw862
+    access:
+      availability: public
+      method: form
+      url: https://web.locationiq.com/pricing
+    terms_url: https://web.locationiq.com/pricing
+    source_ids:
+      - src_67c1ec292a12bb2295e924a275574df529acebd3687277aea03d7733798ab1a4
