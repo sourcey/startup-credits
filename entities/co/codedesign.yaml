@@ -1,0 +1,97 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_018wk69b96v8yffdwq25njtd5w
+  slug: codedesign
+  slug_aliases:
+    - codedesign-ai
+  name: CodeDesign.ai
+  domains:
+    - value: codedesign.ai
+      role: primary
+      valid_from: 2026-08-27T00:00:00.000Z
+  category: no-code
+profile:
+  description: CodeDesign.ai is an AI website builder for generating, customizing, publishing, and collaborating on websites, funnels, and landing pages.
+  links:
+    site: https://codedesign.ai
+sources:
+  - source_id: src_08b3ec417f276ef7978968df7d731de5b4104a46e45f46c8172f9eb7a74eeabf
+    url: https://codedesign.ai/startup
+programs:
+  - program_id: prg_0199fa3j5ahrhzje0b8h14dr6z
+    program_slug: codedesign-startup-programme
+    program_slug_aliases:
+      - codedesign-startup-credits-program
+    title: CodeDesign Startup Programme
+    summary: CodeDesign's startup programme gives eligible early-stage startups a free year of its Growth plan credits to build and launch websites, funnels, and landing pages.
+    source_ids:
+      - src_08b3ec417f276ef7978968df7d731de5b4104a46e45f46c8172f9eb7a74eeabf
+offers:
+  - offer_id: off_01787r18j4ejzgqhf2jt8a0q84
+    program_id: prg_0199fa3j5ahrhzje0b8h14dr6z
+    offer_slug: free-year-of-codedesign-growth-plan
+    offer_slug_aliases: []
+    title: Free year of CodeDesign Growth plan
+    summary: Eligible startups receive a free year of the CodeDesign Growth plan for their team, advertised as saving $500, with credits for AI website and funnel creation.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-27T00:00:00.000Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_01
+          description: Free year of the CodeDesign Growth plan for the startup's team, advertised as saving $500
+          kind: free-service
+          service: CodeDesign Growth plan
+          duration:
+            kind: exact
+            value: P12M
+        - benefit_id: ben_02
+          description: Credits usable for AI website generation, templates, funnels, landing pages, SEO optimization tools, and premium customization features
+          kind: other
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.funding_raised_usd
+            kind: predicate
+            operator: lt
+            statement: Applicant must have raised fewer than $2 million in funding.
+            value:
+              type: number
+              value: 2000000
+          - criterion_id: cri_02
+            kind: manual
+            reason: external-verification
+            statement: Applicant must be a new CodeDesign customer.
+          - criterion_id: cri_03
+            fact: company.employee_count
+            kind: predicate
+            operator: lt
+            statement: Applicant must have fewer than 50 employees.
+            value:
+              type: number
+              value: 50
+          - criterion_id: cri_04
+            fact: company.age_months
+            kind: predicate
+            operator: lt
+            statement: Applicant company must be less than 2 years old.
+            value:
+              type: number
+              value: 24
+          - criterion_id: cri_05
+            kind: manual
+            reason: vendor-discretion
+            statement: CodeDesign reviews the application and emails the decision.
+    roles:
+      terms_authority_entity_id: ent_018wk69b96v8yffdwq25njtd5w
+      access_operator_entity_id: ent_018wk69b96v8yffdwq25njtd5w
+    access:
+      availability: public
+      method: form
+      url: https://codedesign.ai/startup
+    source_ids:
+      - src_08b3ec417f276ef7978968df7d731de5b4104a46e45f46c8172f9eb7a74eeabf
