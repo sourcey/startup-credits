@@ -19,47 +19,41 @@ sources:
     url: https://www.morphllm.com/llms.txt
   - source_id: src_f008215d0cae7854d11f09ac6582550db5cd35a4f07a332f96fc326cd6df3f62
     url: https://www.morphllm.com/pricing
-  - source_id: src_85f6df4886acda3399ad6260ccf4d93d1c95b04404a0a53aee0cd120954cfead
-    url: https://www.morphllm.com/pricing.md
-  - source_id: src_986da185ad48c4ff404814bc684e4235f488fa2148ea3450341abd78600ca7e9
-    url: https://docs.morphllm.com/auth
 programs: []
 offers:
   - offer_id: off_01m13tkye9ttnf50rna45a44f7
-    offer_slug: morph-free-api-credits
+    offer_slug: morph-startup-api-credits
     offer_slug_aliases: []
-    title: Morph Free API Credits
-    summary: Morph's Free plan costs $0 per month and includes 250K credits that apply to every product.
+    title: Morph Startup Credits
+    summary: Startups can receive up to $5,000 in Morph API credits.
     lifecycle:
       status: active
       effective_from: 2026-08-08T05:32:49.000Z
     economics:
       benefits:
         - benefit_id: ben_01
-          description: Free plan includes 250K credits for Morph products.
+          description: Up to $5,000 in Morph API credits for startups
           kind: credit
           value:
             amount:
               currency: USD
-              minor_units: 250
-            kind: exact
+              minor_units: 500000
+            kind: up-to
       consideration:
-        kind: none
+        kind: unknown
+        description: The source does not state separate consideration.
     eligibility:
       rule:
         criterion_id: cri_01
-        kind: constant
-        statement: Morph lists a Free plan at $0 per month.
-        value: true
+        kind: manual
+        reason: vendor-discretion
+        statement: The Startup Credits offer is for startups.
     roles:
       terms_authority_entity_id: ent_01m13tkye5955vkzep7cpgybfj
       access_operator_entity_id: ent_01m13tkye5955vkzep7cpgybfj
     access:
       availability: public
-      instructions: Create a Morph account or sign in, then generate a new API key from the API keys section.
-      method: other
-      url: https://morphllm.com/dashboard/api-keys
+      method: contact
+      url: https://www.morphllm.com/pricing
     source_ids:
       - src_f008215d0cae7854d11f09ac6582550db5cd35a4f07a332f96fc326cd6df3f62
-      - src_85f6df4886acda3399ad6260ccf4d93d1c95b04404a0a53aee0cd120954cfead
-      - src_986da185ad48c4ff404814bc684e4235f488fa2148ea3450341abd78600ca7e9
