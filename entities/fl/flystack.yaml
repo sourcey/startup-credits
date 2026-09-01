@@ -1,0 +1,61 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1358xf983f6fe6crtnmw8fq
+  slug: flystack
+  slug_aliases: []
+  name: Flystack
+  domains:
+    - value: flystack.dev
+      role: primary
+      valid_from: 2026-08-28T00:00:00.000Z
+  category: apis-integration
+profile:
+  description: Flystack provides API infrastructure and developer tooling for building and operating software products.
+  links:
+    site: https://www.flystack.dev/
+sources:
+  - source_id: src_359d39692eab39861c18e9fc9da215a52fc68c3af3df4b7b9a3f6dc0f4d68b25
+    url: https://www.flystack.dev/startup-program
+programs:
+  - program_id: prg_01m1358xfarp2sj8qypxkkpn67
+    program_slug: startup-program
+    program_slug_aliases: []
+    title: Flystack Startup Program
+    summary: Twelve months of discounted Flystack access and priority support for eligible early-stage startups.
+    source_ids:
+      - src_359d39692eab39861c18e9fc9da215a52fc68c3af3df4b7b9a3f6dc0f4d68b25
+offers:
+  - offer_id: off_01m1358xfa12sk1bp4pv4xsdna
+    program_id: prg_01m1358xfarp2sj8qypxkkpn67
+    offer_slug: discounted-plans-for-one-year
+    offer_slug_aliases: []
+    title: Discounted Flystack plans for 12 months
+    summary: Eligible startups receive exclusive Premium or Startup plan pricing for 12 months, including all features, API access, and priority support.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-28T00:00:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Discounted Premium or Startup plan rates for 12 months, with all features, API access, and priority support.
+          kind: other
+      consideration:
+        kind: variable
+        description: The applicant pays the discounted plan price offered by Flystack.
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Applicant must be an active startup less than three years old, have raised under EUR 2 million, and have an active product and technical team.
+    roles:
+      terms_authority_entity_id: ent_01m1358xf983f6fe6crtnmw8fq
+      access_operator_entity_id: ent_01m1358xf983f6fe6crtnmw8fq
+    access:
+      availability: public
+      method: form
+      url: https://www.flystack.dev/startup-program
+      instructions: Apply through the form on the Flystack Startup Program page.
+    terms_url: https://www.flystack.dev/startup-program
+    source_ids:
+      - src_359d39692eab39861c18e9fc9da215a52fc68c3af3df4b7b9a3f6dc0f4d68b25
