@@ -1,0 +1,67 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_2qxtp90m3kkbpg3h8t61y9c5dx
+  slug: trustcloud
+  slug_aliases: []
+  name: TrustCloud
+  domains:
+    - value: trustcloud.ai
+      role: primary
+      valid_from: 2026-09-01T06:44:57.535Z
+  category: legal-compliance
+profile:
+  description: TrustCloud is a governance, risk, compliance, and trust-assurance platform for audit readiness, security questionnaires, control verification, and compliance sharing.
+  links:
+    site: https://www.trustcloud.ai/
+sources:
+  - source_id: src_3de9d06c0231d706a9e50bf9b3bdc0e340a44ad43546f3d5cf2e642dce10aca1
+    url: https://info.trustcloud.ai/soc2-for-startups-li
+programs:
+  - program_id: prg_70s9cd93xkt3m4ntma6j0x7fh0
+    program_slug: free-soc-2-for-startups
+    program_slug_aliases: []
+    title: Free SOC 2 for Startups
+    summary: TrustCloud gives qualifying small startups a free-forever Starter plan for SOC 2 Type I and Type II readiness, security questionnaires, and compliance sharing.
+    source_ids:
+      - src_3de9d06c0231d706a9e50bf9b3bdc0e340a44ad43546f3d5cf2e642dce10aca1
+offers:
+  - offer_id: off_a68bwdz01q1v36rak2j8f6c0ra
+    program_id: prg_70s9cd93xkt3m4ntma6j0x7fh0
+    offer_slug: trustcloud-starter-free-forever
+    offer_slug_aliases: []
+    title: TrustCloud Starter Free Forever
+    summary: Startups with up to 20 employees receive TrustCloud Starter free forever, including essential SOC 2 Type II security readiness, a TrustShare page, two security questionnaires, 20 employee attestations, and self-guided documentation.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-01T06:44:57.535Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: TrustCloud Starter at no cost, including SOC 2 Type I and Type II readiness, a TrustShare compliance portal, two AI-assisted security questionnaires, 20 employee attestations, self-guided documentation, and an onboarding consultation.
+          kind: free-service
+          service: TrustCloud Starter
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.employee_count
+            kind: predicate
+            operator: lte
+            statement: The startup has no more than 20 employees.
+            value:
+              type: number
+              value: 20
+    roles:
+      terms_authority_entity_id: ent_2qxtp90m3kkbpg3h8t61y9c5dx
+      access_operator_entity_id: ent_2qxtp90m3kkbpg3h8t61y9c5dx
+    access:
+      availability: public
+      method: form
+      url: https://info.trustcloud.ai/soc2-for-startups-li
+      instructions: Complete the startup sign-up form on TrustCloud's Free SOC 2 page.
+    terms_url: https://info.trustcloud.ai/soc2-for-startups-li
+    source_ids:
+      - src_3de9d06c0231d706a9e50bf9b3bdc0e340a44ad43546f3d5cf2e642dce10aca1
