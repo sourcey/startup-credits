@@ -1,0 +1,74 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m14fb8fnxw6x25n79yck9f2y
+  slug: recall
+  slug_aliases: []
+  name: Recall.ai
+  domains:
+    - value: recall.ai
+      role: primary
+      valid_from: 2026-08-28T15:05:00.000Z
+  category: apis-integration
+profile:
+  description: Recall.ai is an API platform for meeting transcripts, recordings, and metadata across Zoom, Google Meet, Microsoft Teams, Slack, and Webex.
+  links:
+    site: https://www.recall.ai
+sources:
+  - source_id: src_ad5b9b48fee9f25ff866897f302eaddc793ae5940e3d08ba52ea503dd1a6b49e
+    url: https://www.recall.ai/
+  - source_id: src_1a0cbd2cf608a5e501abb20917308564504acc39ac5c3416879ce9a39fc8bd1c
+    url: https://www.recall.ai/startups
+programs:
+  - program_id: prg_01m14fb8fnbxa968ar1jad07bn
+    program_slug: startup-program
+    program_slug_aliases: []
+    title: Startup Program
+    summary: Recall.ai's startup program gives early-stage startups a discounted introductory recording rate of $0.25 per hour for their first 10,000 recording hours.
+    source_ids:
+      - src_1a0cbd2cf608a5e501abb20917308564504acc39ac5c3416879ce9a39fc8bd1c
+offers:
+  - offer_id: off_01m14fb8fn9ehar5x781e7ktm7
+    program_id: prg_01m14fb8fnbxa968ar1jad07bn
+    offer_slug: discounted-introductory-recording-rate
+    offer_slug_aliases: []
+    title: $0.25 per hour for the first 10,000 recording hours
+    summary: Early-stage startups building products powered by meeting data can apply for a discounted introductory rate of $0.25 per recording hour on their first 10,000 hours.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-28T15:05:00.000Z
+    economics:
+      consideration:
+        kind: unknown
+        description: Startups pay the published introductory rate of $0.25 per recording hour during the included usage window.
+      benefits:
+        - benefit_id: ben_01
+          description: Discounted introductory rate of $0.25 per hour for the first 10,000 recording hours, covering Recall.ai recording and transcription APIs, calendar integration, and recording form factors.
+          kind: other
+        - benefit_id: ben_02
+          description: Direct support from Recall.ai engineers while you build and launch.
+          kind: other
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: not-machine-evaluable
+            statement: Intended for early-stage startups.
+          - criterion_id: cri_02
+            kind: manual
+            reason: not-machine-evaluable
+            statement: Meeting data must be core to the product.
+          - criterion_id: cri_03
+            kind: manual
+            reason: not-machine-evaluable
+            statement: Applicants must be building a product around recorded conversations.
+    roles:
+      terms_authority_entity_id: ent_01m14fb8fnxw6x25n79yck9f2y
+      access_operator_entity_id: ent_01m14fb8fnxw6x25n79yck9f2y
+    access:
+      availability: public
+      method: form
+      url: https://www.recall.ai/startups
+    source_ids:
+      - src_1a0cbd2cf608a5e501abb20917308564504acc39ac5c3416879ce9a39fc8bd1c
