@@ -1,0 +1,94 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1gj4fty7mj9tf8v06ypzja9
+  slug: taskgate
+  slug_aliases: []
+  name: TaskGate.io
+  domains:
+    - value: taskgate.io
+      role: primary
+      valid_from: 2026-09-02T08:00:29.727Z
+  category: productivity
+profile:
+  description: TaskGate.io is an all-in-one business operations platform combining CRM, HRM, ERP, and project management tools.
+  links:
+    site: https://www.taskgate.io
+sources:
+  - source_id: src_a8bd7ba4873251cf9a9bf79e480b88160cee7b243c1b0de3f7003768d6440a98
+    url: https://www.taskgate.io/general-9
+programs:
+  - program_id: prg_01m1gj4fv5hvn49w22zvyx60n2
+    program_slug: taskgate-startup-program
+    program_slug_aliases: []
+    title: TaskGate.io Startup Program
+    summary: Eligible young businesses can receive up to 50% off TaskGate.io's annual package for its CRM, HRM, ERP, and project management platform.
+    source_ids:
+      - src_a8bd7ba4873251cf9a9bf79e480b88160cee7b243c1b0de3f7003768d6440a98
+offers:
+  - offer_id: off_01m1gj4fv5w083wen0vgtrad0k
+    program_id: prg_01m1gj4fv5hvn49w22zvyx60n2
+    offer_slug: up-to-50-percent-off-annual-package
+    offer_slug_aliases: []
+    title: Up to 50% off TaskGate.io annual packages
+    summary: Approved startups receive up to 50% off TaskGate.io's regular annual-package rates.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-02T08:00:29.727Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          applies_to: TaskGate.io annual packages
+          description: Up to 50% off regular annual-package rates
+          kind: discount
+          percentage:
+            basis_points: 5000
+            kind: up-to
+      consideration:
+        kind: variable
+        description: The startup pays the remaining discounted annual-package price; the final discount is determined during application review.
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.age_months
+            kind: predicate
+            operator: lt
+            statement: Applicant must be a registered business operating for less than three years.
+            value:
+              type: number
+              value: 36
+          - criterion_id: cri_02
+            fact: company.annual_revenue_usd
+            kind: predicate
+            operator: lt
+            statement: Applicant must have annual revenue below $1 million.
+            value:
+              type: number
+              value: 1000000
+          - criterion_id: cri_03
+            fact: company.employee_count
+            kind: predicate
+            operator: lte
+            statement: Applicant must have 20 employees or fewer.
+            value:
+              type: number
+              value: 20
+          - criterion_id: cri_04
+            kind: manual
+            reason: external-verification
+            statement: Applicant must be willing to provide feedback about its TaskGate.io experience.
+          - criterion_id: cri_05
+            kind: manual
+            reason: vendor-discretion
+            statement: TaskGate.io reviews the application and determines the approved discount.
+    roles:
+      terms_authority_entity_id: ent_01m1gj4fty7mj9tf8v06ypzja9
+      access_operator_entity_id: ent_01m1gj4fty7mj9tf8v06ypzja9
+    access:
+      availability: public
+      method: form
+      url: https://www.taskgate.io/general-9
+      instructions: Submit the contact form, select Startup Program as the reason for inquiry, and wait for TaskGate.io's review.
+    source_ids:
+      - src_a8bd7ba4873251cf9a9bf79e480b88160cee7b243c1b0de3f7003768d6440a98
