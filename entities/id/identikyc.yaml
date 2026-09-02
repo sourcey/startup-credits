@@ -7,7 +7,7 @@ entity:
   domains:
     - value: identikyc.com
       role: primary
-      valid_from: 2026-09-02T08:09:52.846Z
+      valid_from: 2025-11-19T07:51:49.000Z
   category: auth-security
 profile:
   description: IdentiKyc provides digital identity onboarding and verification through APIs, SDKs, white-label apps, biometric checks, and a web dashboard.
