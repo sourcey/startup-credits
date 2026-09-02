@@ -1,0 +1,59 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1grrr5q0ma01dbhcynjqn1a
+  slug: duplocloud
+  slug_aliases: []
+  name: DuploCloud
+  domains:
+    - value: duplocloud.com
+      role: primary
+      valid_from: 2026-09-02T09:56:25.030Z
+  category: devtools-other
+profile:
+  description: DuploCloud provides a DevOps agent platform for building and operating platform-engineering workflows with automation, governance, and cloud infrastructure controls.
+  links:
+    site: https://duplocloud.com
+sources:
+  - source_id: src_f3df0ce22c2810b9a2a6fa5439f60940ce64e93584ac73cbe9677856c73f0a54
+    url: https://duplocloud.com/
+  - source_id: src_3b477bb5105e1899f70428a00799ec88fb0b2e2a95e997bb96463570c040dffc
+    url: https://cloud.google.com/startup/perks
+  - source_id: src_dd2a2b67181f37c2f076b822b1f4d8e763439b64a670ff0f2710513b415f97b7
+    url: https://docs.google.com/forms/d/1YYqh23ulfT_Rx2ftcGm4M6Xtxgau42D1yb4iUyEPtbc/viewform
+programs: []
+offers:
+  - offer_id: off_01m1grrr613q6nqa8nezwjj8bq
+    offer_slug: google-for-startups-scale-duplocloud-two-months-free
+    offer_slug_aliases: []
+    title: Two months free of DuploCloud for Google for Startups Scale members
+    summary: Google for Startups Cloud Program Scale members can request two months free of the DuploCloud DevOps AI Platform, an offer Google lists at a $10,000 value.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-02T09:56:25.030Z
+    economics:
+      benefits:
+        - benefit_id: ben_two_months_free
+          description: Two months free of the DuploCloud DevOps AI Platform, advertised by Google as a $10,000 value
+          duration:
+            kind: exact
+            value: P2M
+          kind: free-service
+          service: DuploCloud DevOps AI Platform
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_google_scale_membership
+        kind: constant
+        statement: Applicant must be a current Scale Tier member of the Google for Startups Cloud Program.
+        value: true
+    roles:
+      terms_authority_entity_id: ent_01m1grrr5q0ma01dbhcynjqn1a
+      access_operator_entity_id: ent_01kyh8fpe210m3jqn5xgzztgv8
+    access:
+      availability: membership
+      method: form
+      url: https://docs.google.com/forms/d/1YYqh23ulfT_Rx2ftcGm4M6Xtxgau42D1yb4iUyEPtbc/viewform
+    source_ids:
+      - src_3b477bb5105e1899f70428a00799ec88fb0b2e2a95e997bb96463570c040dffc
+      - src_dd2a2b67181f37c2f076b822b1f4d8e763439b64a670ff0f2710513b415f97b7
