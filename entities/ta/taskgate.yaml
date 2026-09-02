@@ -7,7 +7,7 @@ entity:
   domains:
     - value: taskgate.io
       role: primary
-      valid_from: 2026-09-02T08:00:29.727Z
+      valid_from: 2026-05-19T00:00:00.000Z
   category: productivity
 profile:
   description: TaskGate.io is an all-in-one business operations platform combining CRM, HRM, ERP, and project management tools.
@@ -16,6 +16,8 @@ profile:
 sources:
   - source_id: src_a8bd7ba4873251cf9a9bf79e480b88160cee7b243c1b0de3f7003768d6440a98
     url: https://www.taskgate.io/general-9
+  - source_id: src_f36d10509d7bfd8624316ccdd85471a913e2734f2a76257bd288cdee860fb097
+    url: https://www.taskgate.io/pages-sitemap.xml
 programs:
   - program_id: prg_01m1gj4fv5hvn49w22zvyx60n2
     program_slug: taskgate-startup-program
@@ -24,6 +26,7 @@ programs:
     summary: Eligible young businesses can receive up to 50% off TaskGate.io's annual package for its CRM, HRM, ERP, and project management platform.
     source_ids:
       - src_a8bd7ba4873251cf9a9bf79e480b88160cee7b243c1b0de3f7003768d6440a98
+      - src_f36d10509d7bfd8624316ccdd85471a913e2734f2a76257bd288cdee860fb097
 offers:
   - offer_id: off_01m1gj4fv5w083wen0vgtrad0k
     program_id: prg_01m1gj4fv5hvn49w22zvyx60n2
@@ -92,3 +95,4 @@ offers:
       instructions: Submit the contact form, select Startup Program as the reason for inquiry, and wait for TaskGate.io's review.
     source_ids:
       - src_a8bd7ba4873251cf9a9bf79e480b88160cee7b243c1b0de3f7003768d6440a98
+      - src_f36d10509d7bfd8624316ccdd85471a913e2734f2a76257bd288cdee860fb097
