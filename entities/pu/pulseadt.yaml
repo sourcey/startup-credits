@@ -7,7 +7,7 @@ entity:
   domains:
     - value: getpulseadt.com
       role: primary
-      valid_from: 2026-09-02T07:53:54.347Z
+      valid_from: 2026-04-11T15:01:43.355Z
   category: auth-security
 profile:
   description: PulseADT provides autonomous cybersecurity for endpoints, cloud infrastructure, identities, networks, exposure management, compliance, and incident response.
@@ -16,6 +16,8 @@ profile:
 sources:
   - source_id: src_97da5bc42295aa359a1edf8b811a2093f6e21ce35e0f4a70bb3228bbe5e2d11b
     url: https://getpulseadt.com/for-startups
+  - source_id: src_58a18c6f83ea6734e6bf2ea07acc32f64d860be0c452693a920a240c9c1c31f9
+    url: https://getpulseadt.com/sitemap.xml
 programs:
   - program_id: prg_01m1ghrdq6ck80108xhc50ghh3
     program_slug: pulseadt-startup-credit-program
@@ -24,6 +26,7 @@ programs:
     summary: PulseADT's program provides approved early-stage technology startups with platform credits, ongoing savings on one track, early feature access, community, and founder support.
     source_ids:
       - src_97da5bc42295aa359a1edf8b811a2093f6e21ce35e0f4a70bb3228bbe5e2d11b
+      - src_58a18c6f83ea6734e6bf2ea07acc32f64d860be0c452693a920a240c9c1c31f9
 offers:
   - offer_id: off_01m1ghrdq63x03zky9jxt230t7
     program_id: prg_01m1ghrdq6ck80108xhc50ghh3
@@ -113,3 +116,4 @@ offers:
       url: https://form.typeform.com/to/utHJPV6R
     source_ids:
       - src_97da5bc42295aa359a1edf8b811a2093f6e21ce35e0f4a70bb3228bbe5e2d11b
+      - src_58a18c6f83ea6734e6bf2ea07acc32f64d860be0c452693a920a240c9c1c31f9
