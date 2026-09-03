@@ -16,6 +16,8 @@ profile:
 sources:
   - source_id: src_b3ce524230a6c1e544c4c52b2e053ec8e242e87b4d5cb4a0d841d06cfabc24a7
     url: https://www.firecrawl.dev/partner-program
+  - source_id: src_4fd108ff3d394758311c8e59a7cac02bd8069c19566842ba29b1d2135db1a8f3
+    url: https://www.firecrawl.dev/startups
 programs:
   - program_id: prg_01kzhwdecaf3e304cxd6mhtvdh
     program_slug: partner-program
@@ -24,6 +26,13 @@ programs:
     summary: Approved platform partners receive a Partner Integration API key so their users can connect to Firecrawl and receive free credits.
     source_ids:
       - src_b3ce524230a6c1e544c4c52b2e053ec8e242e87b4d5cb4a0d841d06cfabc24a7
+  - program_id: prg_01m1mc45cdv2vf99j6w2ezs4ey
+    program_slug: firecrawl-for-startups
+    program_slug_aliases: []
+    title: Firecrawl for Startups
+    summary: Firecrawl's startup deal provides eligible companies with twice their annual plan's monthly credits for one year.
+    source_ids:
+      - src_4fd108ff3d394758311c8e59a7cac02bd8069c19566842ba29b1d2135db1a8f3
 offers:
   - offer_id: off_01kzhwdecaacktxgndrasz14es
     program_id: prg_01kzhwdecaf3e304cxd6mhtvdh
@@ -60,3 +69,57 @@ offers:
       url: https://www.firecrawl.dev/partner-program
     source_ids:
       - src_b3ce524230a6c1e544c4c52b2e053ec8e242e87b4d5cb4a0d841d06cfabc24a7
+  - offer_id: off_01m1mc45cg4wn7jhwnkp9eg03h
+    program_id: prg_01m1mc45cdv2vf99j6w2ezs4ey
+    offer_slug: double-monthly-credits-for-one-year
+    offer_slug_aliases: []
+    title: Twice the plan's monthly credits for one year
+    summary: Eligible startups on annual plans receive twice their plan's monthly credits for one year, capped at $2,500 in extra credits per month and $30,000 per year.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-03T19:32:39.457Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Twice the selected plan's monthly credits for one year, capped at $2,500 in extra credits per month and $30,000 per year
+          kind: other
+      consideration:
+        kind: unknown
+        description: Requires an annual Firecrawl plan, including annual plans held by existing customers.
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.funding_raised_usd
+            kind: predicate
+            operator: lt
+            statement: Company has raised less than $10,000,000 in total funding.
+            value:
+              type: number
+              value: 10000000
+          - criterion_id: cri_02
+            fact: company.employee_count
+            kind: predicate
+            operator: lt
+            statement: Company has fewer than 50 people.
+            value:
+              type: number
+              value: 50
+          - criterion_id: cri_03
+            fact: company.age_months
+            kind: predicate
+            operator: lt
+            statement: Company was founded less than five years ago.
+            value:
+              type: number
+              value: 60
+    roles:
+      terms_authority_entity_id: ent_01kzhwdec849sdhska32eafyfp
+      access_operator_entity_id: ent_01kzhwdec849sdhska32eafyfp
+    access:
+      availability: public
+      method: form
+      url: https://www.firecrawl.dev/startups
+    source_ids:
+      - src_4fd108ff3d394758311c8e59a7cac02bd8069c19566842ba29b1d2135db1a8f3
