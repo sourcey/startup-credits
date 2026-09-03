@@ -14,14 +14,21 @@ profile:
   links:
     site: https://tally.so
 sources:
-  - source_id: src_35106fb5265f59c6ba781e73c85bc329361896bf3c9bff857b0c60ea084a7f1d
-    url: https://tally.so
   - source_id: src_d74b4b36435c0d582af143437754ec5857e5c5194065930f06fc67151f17f045
     url: https://tally.so/help/startup-program
   - source_id: src_4087976f88354da2fc2cc1c1525cf8f3db8411895860f62b7835ad25ebfd7fab
     url: https://tally.so/r/kwoOVw
+programs:
+  - program_id: prg_01m1mb4syyq7wn3kt5v9xz2b7m
+    program_slug: tally-startup-program
+    program_slug_aliases: []
+    title: Tally Startup Program
+    summary: Tally's startup program offers partner-affiliated startups a discount on Tally Pro when they apply with a partner code.
+    source_ids:
+      - src_d74b4b36435c0d582af143437754ec5857e5c5194065930f06fc67151f17f045
 offers:
   - offer_id: off_01m1mb4syy7er4wec63cdqhas0
+    program_id: prg_01m1mb4syyq7wn3kt5v9xz2b7m
     offer_slug: tally-startup-discount
     offer_slug_aliases: []
     title: Tally Startup Discount
