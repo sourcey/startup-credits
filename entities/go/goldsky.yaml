@@ -1,0 +1,57 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1q13fr843k46ysw4gve5e5s
+  slug: goldsky
+  slug_aliases: []
+  name: Goldsky
+  domains:
+    - value: goldsky.com
+      role: primary
+      valid_from: 2026-09-04T20:17:38.234Z
+  category: data-analytics
+profile:
+  description: Goldsky provides real-time blockchain data infrastructure, including indexing, streaming pipelines, RPC services, and managed data products.
+  links:
+    site: https://goldsky.com
+sources:
+  - source_id: src_5ebf55a27f67e6c84c2afaa77d721a9bc87af04b4a87ae7a1ddb8915be1ff9c0
+    url: https://goldsky.com/pricing
+programs: []
+offers:
+  - offer_id: off_01m1q13fr8842gky9mtejv753r
+    offer_slug: goldsky-early-stage-company-discount
+    offer_slug_aliases: []
+    title: Goldsky Early-Stage Company Discount
+    summary: Eligible early-stage companies in Goldsky's partner network receive 50% off their first year of Goldsky service.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-04T20:17:38.234Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The benefit is a discount on paid Goldsky service.
+      benefits:
+        - benefit_id: ben_01
+          description: 50% off the first year of Goldsky service
+          duration:
+            kind: exact
+            value: P1Y
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 5000
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Applicant must be an early-stage company that is part of Goldsky's partner network.
+        reason: external-verification
+    roles:
+      terms_authority_entity_id: ent_01m1q13fr843k46ysw4gve5e5s
+      access_operator_entity_id: ent_01m1q13fr843k46ysw4gve5e5s
+    access:
+      availability: membership
+      method: contact
+      url: https://goldsky.com/pricing
+    source_ids:
+      - src_5ebf55a27f67e6c84c2afaa77d721a9bc87af04b4a87ae7a1ddb8915be1ff9c0
