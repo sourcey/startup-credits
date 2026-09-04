@@ -1,0 +1,81 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1mv8rw7eexqacytn1y6b54q
+  slug: fal
+  slug_aliases: []
+  name: fal
+  domains:
+    - value: fal.ai
+      role: primary
+      valid_from: 2026-09-04T03:10:00.000Z
+  category: ai-ml
+profile:
+  description: fal is a generative-media inference platform serving more than 1,000 image, video, audio, and 3D models through a single API.
+  links:
+    site: https://fal.ai
+sources:
+  - source_id: src_944be2c4bf34640e77fc14b9695ecc7aabd90e1654b50d445c54b1aad3839a31
+    url: https://fal.ai/startups
+programs: []
+offers:
+  - offer_id: off_01m1mv8rwnkd4zwk79g9v4s2pf
+    offer_slug: startup-program-credits
+    offer_slug_aliases: []
+    title: fal Startup Program credits
+    summary: Approved startups receive USD 1,000 in fal credits, growing to USD 5,000 as their monthly fal usage crosses thresholds, plus partner perks and priority intros through partner funds.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-04T03:10:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: The startup receives USD 1,000 in fal credits on approval and can grow the allocation to USD 5,000 as its monthly fal usage crosses each threshold, with no re-application needed.
+          kind: credit
+          value:
+            kind: range
+            minimum:
+              currency: USD
+              minor_units: 100000
+            maximum:
+              currency: USD
+              minor_units: 500000
+        - benefit_id: ben_02
+          description: Partner perks and priority introductions through the accelerators, universities, VCs, and ecosystem funds fal works with.
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: external-verification
+            statement: The company's team is based in Europe or Asia, where fal's credit programs are currently open.
+          - criterion_id: cri_02
+            kind: manual
+            reason: external-verification
+            statement: The startup has proven traction or venture backing and is scaling generative-media usage on fal.
+          - criterion_id: cri_03
+            kind: manual
+            reason: external-verification
+            statement: A company can be enrolled in only one of fal's credit programs.
+          - criterion_id: cri_04
+            kind: manual
+            reason: external-verification
+            statement: A company may apply only once every three months.
+          - criterion_id: cri_05
+            kind: manual
+            reason: external-verification
+            statement: Credits are for building the company's own product and cannot be resold or transferred.
+    roles:
+      terms_authority_entity_id: ent_01m1mv8rw7eexqacytn1y6b54q
+      access_operator_entity_id: ent_01m1mv8rw7eexqacytn1y6b54q
+    access:
+      availability: public
+      instructions: Apply through the Startup Program application on the fal credits page. Review usually includes a short intro call to size the credits, and approved credits are applied to the applicant's fal account. Partner referral codes prioritize applications.
+      method: form
+      url: https://fal.ai/startups
+    terms_url: https://fal.ai/startups
+    source_ids:
+      - src_944be2c4bf34640e77fc14b9695ecc7aabd90e1654b50d445c54b1aad3839a31
