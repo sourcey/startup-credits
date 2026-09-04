@@ -1,0 +1,82 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1nrxdqhtzhaz3fy3q74dr87
+  slug: alloy-automation
+  slug_aliases: []
+  name: Alloy Automation
+  domains:
+    - value: runalloy.com
+      role: primary
+      valid_from: 2026-09-04T08:35:10.221Z
+  category: apis-integration
+profile:
+  description: Alloy Automation is an embedded integration and automation platform offering AI agents, an iPaaS, and a connectivity API for 200+ systems.
+  links:
+    site: https://runalloy.com
+sources:
+  - source_id: src_0805a355501a0b4641f8eae7d04d5f206becbd905cec6e6355e01c05cc2c81e0
+    url: https://runalloy.com/startups
+programs: []
+offers:
+  - offer_id: off_01m1nrxdqk4jntdf5rq2y1tm6p
+    offer_slug: alloy-automation-for-startups
+    offer_slug_aliases: []
+    title: Alloy Automation for Startups
+    summary: Eligible early-stage startups can receive up to $2,000 in Alloy credits to build integrations and automations on the Alloy platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-04T08:35:10.221Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Up to $2,000 in Alloy credits
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 200000
+            kind: up-to
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.age_months
+            kind: predicate
+            operator: lt
+            statement: Founded less than 5 years ago.
+            value:
+              type: number
+              value: 60
+          - criterion_id: cri_02
+            fact: company.stage
+            kind: predicate
+            operator: in
+            statement: Pre-seed, seed, Series A, or Series B stage.
+            value:
+              type: string-set
+              values:
+                - Pre-seed
+                - Seed
+                - Series A
+                - Series B
+          - criterion_id: cri_03
+            fact: company.is_current_customer
+            kind: predicate
+            operator: eq
+            statement: Must not be an existing Alloy Automation customer.
+            value:
+              type: boolean
+              value: false
+    roles:
+      terms_authority_entity_id: ent_01m1nrxdqhtzhaz3fy3q74dr87
+      access_operator_entity_id: ent_01m1nrxdqhtzhaz3fy3q74dr87
+    access:
+      availability: public
+      method: form
+      url: https://runalloy.com/startups
+    source_ids:
+      - src_0805a355501a0b4641f8eae7d04d5f206becbd905cec6e6355e01c05cc2c81e0
