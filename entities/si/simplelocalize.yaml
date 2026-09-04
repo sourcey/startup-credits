@@ -1,0 +1,69 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1qb7dnxnxdfygk0ak64t4xz
+  slug: simplelocalize
+  slug_aliases: []
+  name: SimpleLocalize
+  domains:
+    - value: simplelocalize.io
+      role: primary
+      valid_from: 2026-09-04T23:24:19.000Z
+  category: devtools-other
+profile:
+  description: SimpleLocalize provides translation management with a web-based editor, translation hosting, APIs, and developer integrations.
+  links:
+    site: https://simplelocalize.io
+sources:
+  - source_id: src_9fe40e5b6a3d89e410625aea0710b6c5b6f9374a561b138b3f5227dfb4057e76
+    url: https://simplelocalize.io/for/startups/
+programs:
+  - program_id: prg_01m1qb7dnze7tj435pjc1ajv8s
+    program_slug: simplelocalize-startup-plan
+    program_slug_aliases: []
+    title: SimpleLocalize Startup Plan
+    summary: SimpleLocalize offers early-stage products free or discounted annual plans following application review.
+    source_ids:
+      - src_9fe40e5b6a3d89e410625aea0710b6c5b6f9374a561b138b3f5227dfb4057e76
+offers:
+  - offer_id: off_01m1qb7dnzf47pa2as46vtmreg
+    program_id: prg_01m1qb7dnze7tj435pjc1ajv8s
+    offer_slug: simplelocalize-startup-developer-plan-free-first-year
+    offer_slug_aliases: []
+    title: SimpleLocalize Developer Plan Free First Year for Startups
+    summary: Approved startups contributing to the community receive the Developer Plan free for their first year; auto-translation characters are excluded.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-04T23:24:19.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          kind: free-service
+          service: SimpleLocalize Developer Plan
+          description: Developer Plan free for the first year, excluding auto-translation characters.
+          duration:
+            kind: exact
+            value: P1Y
+      consideration:
+        kind: variable
+        description: A community contribution, such as sharing the product experience through a blog post or social-media mention, is required for the free plan.
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: vendor-discretion
+            statement: SimpleLocalize must approve the application for a genuine early-stage product; established companies seeking lower costs are excluded.
+          - criterion_id: cri_02
+            kind: manual
+            reason: external-verification
+            statement: The applicant contributes to the community to qualify for the free Developer Plan.
+    roles:
+      terms_authority_entity_id: ent_01m1qb7dnxnxdfygk0ak64t4xz
+      access_operator_entity_id: ent_01m1qb7dnxnxdfygk0ak64t4xz
+    access:
+      availability: public
+      method: form
+      url: https://simplelocalize.io/startup-form/
+    source_ids:
+      - src_9fe40e5b6a3d89e410625aea0710b6c5b6f9374a561b138b3f5227dfb4057e76
