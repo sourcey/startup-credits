@@ -1,0 +1,93 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1nq9x42yavs0jg9f7sgdgdk
+  slug: monoscope
+  slug_aliases: []
+  name: Monoscope
+  domains:
+    - value: monoscope.tech
+      role: primary
+      valid_from: 2026-09-04T08:01:00Z
+  category: observability
+profile:
+  description: Monoscope provides API monitoring and observability for engineering and customer support teams, including API analytics, testing, and incident investigation.
+  links:
+    site: https://monoscope.tech/
+sources:
+  - source_id: src_740f370ed41238a5b2774d5d86f2b6c64e97edfc414a7528903fa029b2ddfc00
+    url: https://monoscope.tech/pricing/
+programs:
+  - program_id: prg_01m1nq9x464v872z37hxfpra7q
+    program_slug: monoscope-startup-program
+    program_slug_aliases: []
+    title: Monoscope Startup Program
+    summary: Monoscope's application-based startup program helps qualifying small, recently founded software companies cover API monitoring and observability costs during their first year.
+    source_ids:
+      - src_740f370ed41238a5b2774d5d86f2b6c64e97edfc414a7528903fa029b2ddfc00
+offers:
+  - offer_id: off_01m1nq9x46e1gpn7q4kbf23gr1
+    program_id: prg_01m1nq9x464v872z37hxfpra7q
+    offer_slug: first-year-startup-credits
+    offer_slug_aliases: []
+    title: Up to $10,000 toward first-year Monoscope costs
+    summary: Eligible SaaS and software startups can receive up to $10,000 toward Monoscope costs during their first year, covering up to 100% of those costs.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-04T08:01:00Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to $10,000 toward first-year Monoscope costs, covering up to 100% of eligible costs.
+          duration:
+            kind: exact
+            value: P1Y
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 1000000
+            kind: up-to
+      consideration:
+        kind: variable
+        description: The startup pays any Monoscope costs not covered by the awarded program benefit.
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.age_months
+            kind: predicate
+            operator: lt
+            statement: The company must have been founded less than two years ago.
+            value:
+              type: number
+              value: 24
+          - criterion_id: cri_02
+            fact: company.employee_count
+            kind: predicate
+            operator: lt
+            statement: The company must have fewer than five team members.
+            value:
+              type: number
+              value: 5
+          - criterion_id: cri_03
+            fact: company.funding_raised_usd
+            kind: predicate
+            operator: lt
+            statement: The company must have raised less than $100,000.
+            value:
+              type: number
+              value: 100000
+          - criterion_id: cri_04
+            kind: manual
+            reason: not-machine-evaluable
+            statement: The company must be building a SaaS or software product.
+    roles:
+      terms_authority_entity_id: ent_01m1nq9x42yavs0jg9f7sgdgdk
+      access_operator_entity_id: ent_01m1nq9x42yavs0jg9f7sgdgdk
+    access:
+      availability: public
+      method: form
+      url: https://tally.so/r/n9vVkY
+    source_ids:
+      - src_740f370ed41238a5b2774d5d86f2b6c64e97edfc414a7528903fa029b2ddfc00
