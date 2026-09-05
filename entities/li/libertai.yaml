@@ -1,0 +1,68 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1d5vpvbvxx3jbdjdd942b21
+  slug: libertai
+  slug_aliases: []
+  name: LibertAI
+  domains:
+    - value: libertai.io
+      role: primary
+      valid_from: 2026-09-01T00:00:00.000Z
+  category: ai-ml
+profile:
+  description: LibertAI provides private, OpenAI-compatible inference for open-weight models on decentralized infrastructure.
+  links:
+    site: https://libertai.io
+sources:
+  - source_id: src_5d5d8394add0ef6dbe279c2a0d4ffbd8026a74f46f8d5b762d691a62190bd837
+    url: https://libertai.io/
+programs:
+  - program_id: prg_01m1d5vpvernbscde8adbvf6dq
+    program_slug: libertai-sovereign-program
+    program_slug_aliases: []
+    title: LibertAI Sovereign Program
+    summary: LibertAI's Sovereign Program gives selected early-stage companies credits and migration support to build on private model inference.
+    source_ids:
+      - src_5d5d8394add0ef6dbe279c2a0d4ffbd8026a74f46f8d5b762d691a62190bd837
+offers:
+  - offer_id: off_01m1d5vpve1pcqkwjgxm0z08m0
+    program_id: prg_01m1d5vpvernbscde8adbvf6dq
+    offer_slug: up-to-10000-libertai-inference-credits
+    offer_slug_aliases: []
+    title: Up to $10,000 in LibertAI Inference Credits
+    summary: Selected early-stage companies building on private inference receive up to $10,000 in credits for GLM-5.3 and LibertAI's full model catalog, plus migration support.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-01T00:00:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to $10,000 in inference credits.
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 1000000
+            kind: up-to
+        - benefit_id: ben_02
+          description: Migration support from the LibertAI team.
+          kind: other
+      consideration:
+        kind: unknown
+        description: The public Sovereign Program listing does not state whether any payment is required.
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_01
+        reason: vendor-discretion
+        statement: Selected early-stage companies building on private inference are eligible.
+    roles:
+      terms_authority_entity_id: ent_01m1d5vpvbvxx3jbdjdd942b21
+      access_operator_entity_id: ent_01m1d5vpvbvxx3jbdjdd942b21
+    access:
+      availability: public
+      method: contact
+      instructions: Contact LibertAI through the Telegram application link published in the Sovereign Program section.
+      url: https://t.me/libertai
+    source_ids:
+      - src_5d5d8394add0ef6dbe279c2a0d4ffbd8026a74f46f8d5b762d691a62190bd837
