@@ -1,0 +1,75 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1r1xd1pf8mty60jcbftsxwg
+  slug: simscale
+  slug_aliases: []
+  name: SimScale
+  domains:
+    - value: simscale.com
+      role: primary
+      valid_from: 2026-09-05T05:50:00.000Z
+  category: design
+profile:
+  description: SimScale provides cloud-native engineering simulation for fluid dynamics, structural mechanics, thermal analysis, and electromagnetics.
+  links:
+    site: https://www.simscale.com
+sources:
+  - source_id: src_5f7bf5451c37adf6ebcf4d53650224cd93a1cc81fc3f64d633cc3bdbeae8a450
+    url: https://www.simscale.com/technology/integrations-partners/onshape/
+  - source_id: src_4c5a49473ea4bd0e760677e66af25f69e9d0f3c6dc8b994403c80e5d7ab43201
+    url: https://www.simscale.com/press/simscale-and-ptc-collaborate-to-empower-start-ups-using-ptc-onshape-with-free-access-to-cloud-native-simulation/
+  - source_id: src_e7dbb99a4cf199a803f481596483cb8d6d677443e572d0682f898f599878d1ec
+    url: https://www.onshape.com/en/startups
+programs: []
+offers:
+  - offer_id: off_01m1r1xd1pb5795yd82bwhb2ee
+    offer_slug: onshape-startup-simulation-access
+    offer_slug_aliases: []
+    title: Three months of SimScale Professional for Onshape startups
+    summary: Eligible Onshape Startup Program members receive three months of free SimScale Professional access, up to 20,000 core hours, and live in-product support.
+    lifecycle:
+      status: active
+      effective_from: 2024-12-11T00:00:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Three months of free SimScale Professional access with up to 20,000 core hours for cloud-native simulation.
+          kind: free-service
+          service: SimScale Professional License, including up to 20,000 core hours
+          duration:
+            kind: exact
+            value: P3M
+        - benefit_id: ben_02
+          description: Live in-product chat support for expert assistance.
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.partner_memberships
+            kind: predicate
+            operator: contains
+            statement: Applicant must be accepted into the Onshape Startup Program.
+            value:
+              type: string
+              value: Onshape Startup Program
+          - criterion_id: cri_02
+            kind: manual
+            reason: vendor-discretion
+            statement: SimScale access is available to eligible participants in the Onshape Startup Program.
+    roles:
+      terms_authority_entity_id: ent_01m1r1xd1pf8mty60jcbftsxwg
+      access_operator_entity_id: ent_01kyxthgq0zvqdgfges3ksm4s0
+    access:
+      availability: membership
+      method: form
+      url: https://www.onshape.com/en/startups
+      instructions: Apply through the Onshape Startup Program. Once accepted, eligible participants can activate the three-month SimScale Professional License benefit; contact SimScale or Onshape for details.
+    terms_url: https://www.simscale.com/technology/integrations-partners/onshape/
+    source_ids:
+      - src_5f7bf5451c37adf6ebcf4d53650224cd93a1cc81fc3f64d633cc3bdbeae8a450
+      - src_4c5a49473ea4bd0e760677e66af25f69e9d0f3c6dc8b994403c80e5d7ab43201
+      - src_e7dbb99a4cf199a803f481596483cb8d6d677443e572d0682f898f599878d1ec
