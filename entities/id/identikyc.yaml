@@ -1,0 +1,66 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1gjnny7gj9n4718e948jg8v
+  slug: identikyc
+  slug_aliases: []
+  name: IdentiKyc
+  domains:
+    - value: identikyc.com
+      role: primary
+      valid_from: 2025-11-19T07:51:49.000Z
+  category: auth-security
+profile:
+  description: IdentiKyc provides digital identity onboarding and verification through APIs, SDKs, white-label apps, biometric checks, and a web dashboard.
+  links:
+    site: https://identikyc.com/en/home-en/
+sources:
+  - source_id: src_4ce9b0ca29046b16bab4483befc097dd23a976eb4d8a60b7a708c8c39bde31d0
+    url: https://identikyc.com/en/for-companies-en/
+  - source_id: src_5f0974165ecd4686fe3224d5b50b52fef09d39a373fca8c7449bf4711c65db77
+    url: https://identikyc.com/en/contacts-en/
+programs: []
+offers:
+  - offer_id: off_01m1gjnnyetchhk64xjyb11z74
+    offer_slug: startup-white-label-and-sdk-discount
+    offer_slug_aliases: []
+    title: 50% off activation and three free months
+    summary: Registered innovative startups receive 50% off IdentiKyc White Label or SDK activation costs and three free months after go-live.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-02T08:09:52.846Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          applies_to: IdentiKyc White Label and SDK activation costs
+          description: 50% off customized White Label or SDK setup and activation costs
+          kind: discount
+          percentage:
+            basis_points: 5000
+            kind: exact
+        - benefit_id: ben_02
+          description: Three free months of the approved IdentiKyc solution after go-live
+          duration:
+            kind: exact
+            value: P3M
+          kind: free-service
+          service: Approved IdentiKyc White Label or SDK solution
+      consideration:
+        kind: variable
+        description: The startup pays the remaining discounted activation cost; IdentiKyc customizes White Label and SDK setup fees to the customer's needs.
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: external-verification
+        statement: Applicant must be a registered innovative startup.
+    roles:
+      terms_authority_entity_id: ent_01m1gjnny7gj9n4718e948jg8v
+      access_operator_entity_id: ent_01m1gjnny7gj9n4718e948jg8v
+    access:
+      availability: public
+      method: form
+      url: https://identikyc.com/en/contacts-en/
+      instructions: Submit the contact form and ask IdentiKyc about its discount for registered innovative startups.
+    source_ids:
+      - src_4ce9b0ca29046b16bab4483befc097dd23a976eb4d8a60b7a708c8c39bde31d0
+      - src_5f0974165ecd4686fe3224d5b50b52fef09d39a373fca8c7449bf4711c65db77
