@@ -1,0 +1,62 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1sd57n0c4xsjh9kc298rj2x
+  slug: plane
+  slug_aliases: []
+  name: Plane
+  domains:
+    - value: plane.so
+      role: primary
+      valid_from: 2026-09-05T18:26:40.928Z
+  category: productivity
+profile:
+  description: Plane provides project management, product planning, collaborative knowledge, and AI tools for teams.
+  links:
+    site: https://plane.so/solutions/startups
+sources:
+  - source_id: src_083b52142112d5b6e075568c26049fe95f3ce97e5f54aeea422e57bfb2906d91
+    url: https://plane.so/solutions/startups
+programs: []
+offers:
+  - offer_id: off_01m1sd57n0q3dxys0tqvj5s06k
+    offer_slug: startup-pricing
+    offer_slug_aliases: []
+    title: Plane startup pricing
+    summary: Founders and startup teams can request individually reviewed Plane discounts. No partner code is required; the amount, duration, and renewal terms are provided with the offer.
+    description: Existing customers may include workspace and plan details for review. After the discount ends, customers may continue on standard pricing or choose another Plane plan.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T18:26:40.928Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          kind: other
+          description: Individually reviewed startup discount; the public page does not specify a percentage or amount.
+      consideration:
+        kind: unknown
+        description: Discounted subscription pricing and duration are determined individually; renewal terms are shared before an offer is accepted.
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: vendor-discretion
+            statement: Founders and startup teams can request pricing. Plane reviews company stage, team size, current setup, and the plan that fits their needs.
+          - criterion_id: cri_02
+            kind: manual
+            reason: vendor-discretion
+            statement: No partner code is required. Applicants affiliated with an accelerator or investor portfolio can mention it; every request is reviewed individually.
+          - criterion_id: cri_03
+            kind: manual
+            reason: vendor-discretion
+            statement: Existing customers should include workspace and plan details so Plane can review which offers apply.
+    roles:
+      terms_authority_entity_id: ent_01m1sd57n0c4xsjh9kc298rj2x
+      access_operator_entity_id: ent_01m1sd57n0c4xsjh9kc298rj2x
+    access:
+      availability: public
+      method: form
+      url: https://plane.so/solutions/startups
+    source_ids:
+      - src_083b52142112d5b6e075568c26049fe95f3ce97e5f54aeea422e57bfb2906d91
