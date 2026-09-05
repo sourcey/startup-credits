@@ -1,0 +1,97 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1dk86jmksfm0far14bg97fm
+  slug: fresh-ip
+  slug_aliases: []
+  name: Fresh IP
+  domains:
+    - value: freship.com
+      role: primary
+      valid_from: 2026-09-01T04:22:00.000Z
+  category: legal-compliance
+profile:
+  description: Fresh IP is an intellectual-property law firm supporting emerging technology companies with IP strategy, patents, trademarks, and related legal services.
+  links:
+    site: https://freship.com/
+sources:
+  - source_id: src_a963a1b50a8fea01389b597405c4795c5cb687fede2f31b42f2adbdba3489771
+    url: https://freship.com/start-up-program/
+programs:
+  - program_id: prg_01m1dk86mfph3bz9ee460yjhv5
+    program_slug: fresh-ip-startup-program
+    program_slug_aliases: []
+    title: Fresh IP Startup Program
+    summary: Fresh IP selects pre-seed and seed technology companies for discounted IP and legal services, pitch-deck feedback, and possible investor introductions.
+    source_ids:
+      - src_a963a1b50a8fea01389b597405c4795c5cb687fede2f31b42f2adbdba3489771
+offers:
+  - offer_id: off_01m1dk86mgb1px0msqfp4tg1a2
+    program_id: prg_01m1dk86mfph3bz9ee460yjhv5
+    offer_slug: discounted-ip-and-legal-services
+    offer_slug_aliases: []
+    title: Up to 50% Off IP and Early-Stage Legal Services
+    summary: Selected startups receive up to 50% off IP strategy and services for one year, up to 50% off early-stage US legal work, pitch-deck feedback, and possible investor introductions.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-01T04:22:00.000Z
+    economics:
+      benefits:
+        - applies_to: IP strategy and services, including patent drafting and trademark preparation
+          benefit_id: ben_01
+          description: Up to 50% off IP strategy and IP services for one year.
+          duration:
+            kind: exact
+            value: P1Y
+          kind: discount
+          percentage:
+            kind: up-to
+            basis_points: 5000
+        - applies_to: Early-stage US legal work, including incorporation and contracts
+          benefit_id: ben_02
+          description: Up to 50% off early-stage legal work in the United States.
+          kind: discount
+          percentage:
+            kind: up-to
+            basis_points: 5000
+        - benefit_id: ben_03
+          description: Honest feedback on the startup's investment pitch deck.
+          kind: other
+        - benefit_id: ben_04
+          description: Possible introductions to Fresh IP's investor network when Fresh IP considers the startup investment-ready.
+          kind: other
+      consideration:
+        kind: variable
+        description: The startup pays the remaining fees for discounted Fresh IP services it uses.
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.stage
+            kind: predicate
+            operator: in
+            statement: The company is at the pre-seed or seed stage.
+            value:
+              type: string-set
+              values:
+                - pre-seed
+                - seed
+          - criterion_id: cri_02
+            kind: manual
+            reason: not-machine-evaluable
+            statement: The applicant is building world-changing technology in Fresh IP's field of focus; Fresh IP currently prioritizes software, particularly AI.
+          - criterion_id: cri_03
+            kind: manual
+            reason: external-verification
+            statement: The applicant uploads an investment pitch deck for Fresh IP's selection review.
+    roles:
+      terms_authority_entity_id: ent_01m1dk86jmksfm0far14bg97fm
+      access_operator_entity_id: ent_01m1dk86jmksfm0far14bg97fm
+    access:
+      availability: public
+      method: form
+      url: https://freship.com/start-up-program/
+      instructions: Use the application link on Fresh IP's Startup Program page and upload the required investment pitch deck.
+    terms_url: https://freship.com/start-up-program/
+    source_ids:
+      - src_a963a1b50a8fea01389b597405c4795c5cb687fede2f31b42f2adbdba3489771
