@@ -1,0 +1,68 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1ewsn83krhm70120c2aryvr
+  slug: intel
+  slug_aliases: []
+  name: Intel
+  domains:
+    - value: intel.com
+      role: primary
+      valid_from: 2026-09-01T16:28:30.533Z
+  category: ai-ml
+profile:
+  summary: Accelerated-computing technology and support for AI developers and startups.
+  description: Intel provides accelerated-computing technology and support for AI, analytics, HPC, and graphics developers and startups.
+  links:
+    site: https://www.intel.com
+sources:
+  - source_id: src_7685cd6666e6ef8edafd2be2de11ed67e1a26d48833d801a60ffbf0451271e0e
+    url: https://www.intel.com
+  - source_id: src_5954b023c31a215b373c3a1412ea42454096f2559f0e7f3a73f6d47d4cec84e1
+    url: https://community.intel.com/t5/Blogs/Tech-Innovation/Artificial-Intelligence-AI/How-Intel-Liftoff-Accelerates-AI-Startups/post/1690460
+programs:
+  - program_id: prg_01m1ewsn8dq8jb03tzgbm2t8r5
+    program_slug: intel-liftoff
+    program_slug_aliases: []
+    title: Intel Liftoff
+    summary: Intel's free virtual program helps early-stage accelerated-computing startups with technical expertise, technology access, and go-to-market support.
+    source_ids:
+      - src_5954b023c31a215b373c3a1412ea42454096f2559f0e7f3a73f6d47d4cec84e1
+offers:
+  - offer_id: off_01m1ewsn8dhngyfqcjfrrszx1r
+    program_id: prg_01m1ewsn8dq8jb03tzgbm2t8r5
+    offer_slug: intel-liftoff-startup-support
+    offer_slug_aliases: []
+    title: Intel Liftoff startup support
+    summary: Early-stage tech startups building with accelerated computing can join a free, virtual, no-equity program with technical, technology-access, and go-to-market support.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-01T16:28:30.533Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: One-on-one guidance from Intel AI engineers to optimize and scale AI workloads.
+          kind: other
+        - benefit_id: ben_02
+          description: Intel Tiber AI Cloud credits and early access to AI-optimized cloud infrastructure.
+          kind: other
+        - benefit_id: ben_03
+          description: Co-marketing through technical blogs, event showcases, and social amplification.
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: external-verification
+        statement: The applicant must be an early-stage AI startup; Intel determines admission to the program.
+    roles:
+      terms_authority_entity_id: ent_01m1ewsn83krhm70120c2aryvr
+      access_operator_entity_id: ent_01m1ewsn83krhm70120c2aryvr
+    access:
+      availability: public
+      method: other
+      url: https://community.intel.com/t5/Blogs/Tech-Innovation/Artificial-Intelligence-AI/How-Intel-Liftoff-Accelerates-AI-Startups/post/1690460
+      instructions: Follow Intel's Apply today direction from the current Intel Liftoff program article.
+    source_ids:
+      - src_5954b023c31a215b373c3a1412ea42454096f2559f0e7f3a73f6d47d4cec84e1
