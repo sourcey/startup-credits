@@ -48,31 +48,10 @@ offers:
         kind: none
     eligibility:
       rule:
-        kind: all
-        rules:
-          - criterion_id: cri_01
-            fact: company.stage
-            kind: predicate
-            operator: in
-            statement: Startup must be bootstrapped, pre-seed, or seed stage.
-            value:
-              type: string-set
-              values:
-                - bootstrapped
-                - pre-seed
-                - seed
-          - criterion_id: cri_02
-            kind: manual
-            reason: external-verification
-            statement: Company must be an early-stage or fast-growing startup.
-          - criterion_id: cri_03
-            kind: manual
-            reason: external-verification
-            statement: Startup must have a working product or minimum viable product.
-          - criterion_id: cri_04
-            kind: manual
-            reason: external-verification
-            statement: Startup must proactively care about data security.
+        criterion_id: cri_01
+        kind: manual
+        reason: external-verification
+        statement: Applicants must be bootstrapped, pre-seed, or seed-stage companies; be early-stage or fast-growing; have a working product or minimum viable product; and proactively care about data security.
     roles:
       terms_authority_entity_id: ent_01m1d4ngpk32g0y91ft7c99aaz
       access_operator_entity_id: ent_01m1d4ngpk32g0y91ft7c99aaz
