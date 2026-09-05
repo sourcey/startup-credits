@@ -1,0 +1,76 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_qz0cyj53t5ng3yph5b5kfctrjv
+  slug: definite
+  slug_aliases: []
+  name: Definite
+  domains:
+    - value: definite.app
+      role: primary
+      valid_from: 2026-09-01T06:13:06.025Z
+  category: data-analytics
+profile:
+  description: Definite is an AI-native data platform that combines a warehouse, data integration, business intelligence, and analytics agents in a private deployment within a customer's cloud environment.
+  links:
+    site: https://www.definite.app/
+sources:
+  - source_id: src_418652a7f043ba5bbbcc8dc842b84624934f7c6e36293999ef23ad59bd0c1d9f
+    url: https://www.definite.app/startups
+programs:
+  - program_id: prg_nqve74hyhr9kr8hh59vdqdz14n
+    program_slug: definite-for-startups
+    program_slug_aliases: []
+    title: Definite for Startups
+    summary: Definite gives eligible early-stage companies $25,000 in compute and AI credits, 12 months of its Platform free, and white-glove onboarding.
+    source_ids:
+      - src_418652a7f043ba5bbbcc8dc842b84624934f7c6e36293999ef23ad59bd0c1d9f
+offers:
+  - offer_id: off_2r6egtqqjc0fht2750qtv2cxnw
+    program_id: prg_nqve74hyhr9kr8hh59vdqdz14n
+    offer_slug: twenty-five-thousand-dollars-credits-and-one-year-free-platform
+    offer_slug_aliases: []
+    title: $25,000 in Credits and One Year of Definite Platform Free
+    summary: Eligible startups receive $25,000 in Definite compute and AI credits, 12 months of Definite Platform free, white-glove onboarding, and direct support from the Definite team.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-01T06:13:06.025Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: $25,000 in Definite compute and AI credits.
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 2500000
+            kind: exact
+        - benefit_id: ben_02
+          description: Definite Platform free for 12 months, including unlimited users, more than 500 connectors, hourly sync, and full Fi access.
+          duration:
+            kind: exact
+            value: P1Y
+          kind: free-service
+          service: Definite Platform
+        - benefit_id: ben_03
+          description: White-glove onboarding with a senior data engineer to set up the warehouse, model core metrics, and build initial dashboards.
+          kind: free-service
+          service: White-glove onboarding
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_01
+        reason: external-verification
+        statement: Definite reviews every application manually and admits applicants when most of its published eligibility checks fit.
+    roles:
+      terms_authority_entity_id: ent_qz0cyj53t5ng3yph5b5kfctrjv
+      access_operator_entity_id: ent_qz0cyj53t5ng3yph5b5kfctrjv
+    access:
+      availability: public
+      method: form
+      url: https://www.definite.app/signup
+      instructions: Create a Definite account and complete the in-product startup-program application for manual review.
+    terms_url: https://www.definite.app/startups
+    source_ids:
+      - src_418652a7f043ba5bbbcc8dc842b84624934f7c6e36293999ef23ad59bd0c1d9f
