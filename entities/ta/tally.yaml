@@ -1,0 +1,82 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1mb4syqqknr9h413355mrw0
+  slug: tally
+  slug_aliases: []
+  name: Tally
+  domains:
+    - value: tally.so
+      role: primary
+      valid_from: 2026-09-03T19:15:17.920Z
+  category: no-code
+profile:
+  description: Tally is a free no-code form builder with unlimited forms and submissions.
+  links:
+    site: https://tally.so
+sources:
+  - source_id: src_d74b4b36435c0d582af143437754ec5857e5c5194065930f06fc67151f17f045
+    url: https://tally.so/help/startup-program
+  - source_id: src_4087976f88354da2fc2cc1c1525cf8f3db8411895860f62b7835ad25ebfd7fab
+    url: https://tally.so/r/kwoOVw
+programs:
+  - program_id: prg_01m1mb4syyq7wn3kt5v9xz2b7m
+    program_slug: tally-startup-program
+    program_slug_aliases: []
+    title: Tally Startup Program
+    summary: Tally's startup program offers partner-affiliated startups a discount on Tally Pro when they apply with a partner code.
+    source_ids:
+      - src_d74b4b36435c0d582af143437754ec5857e5c5194065930f06fc67151f17f045
+offers:
+  - offer_id: off_01m1mb4syy7er4wec63cdqhas0
+    program_id: prg_01m1mb4syyq7wn3kt5v9xz2b7m
+    offer_slug: tally-startup-discount
+    offer_slug_aliases: []
+    title: Tally Startup Discount
+    summary: Eligible partner-affiliated startups can get 50% off Tally Pro for one year by applying with a partner code through Tally's startup program form.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-03T19:15:17.920Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_01
+          applies_to: Tally Pro
+          description: 50% off Tally Pro for one year.
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 5000
+          duration:
+            kind: exact
+            value: P1Y
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: not-machine-evaluable
+            statement: Must be a startup that is a member of one of Tally's partners.
+          - criterion_id: cri_02
+            kind: manual
+            reason: not-machine-evaluable
+            statement: Must have received a partner code.
+          - criterion_id: cri_03
+            kind: manual
+            reason: not-machine-evaluable
+            statement: Must have created a free Tally account.
+          - criterion_id: cri_04
+            kind: manual
+            reason: not-machine-evaluable
+            statement: Must never have been a Tally paid customer.
+    roles:
+      terms_authority_entity_id: ent_01m1mb4syqqknr9h413355mrw0
+      access_operator_entity_id: ent_01m1mb4syqqknr9h413355mrw0
+    access:
+      availability: public
+      method: form
+      url: https://tally.so/r/kwoOVw
+    source_ids:
+      - src_d74b4b36435c0d582af143437754ec5857e5c5194065930f06fc67151f17f045
+      - src_4087976f88354da2fc2cc1c1525cf8f3db8411895860f62b7835ad25ebfd7fab
