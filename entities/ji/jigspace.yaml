@@ -37,9 +37,8 @@ offers:
       effective_from: 2026-09-01T08:22:22.7278543Z
     economics:
       benefits:
-        - applies_to: JigSpace plans
-          benefit_id: ben_01
-          description: 50% off JigSpace plans for 12 months
+        - benefit_id: ben_01
+          description: 50% off plans for 12 months
           duration:
             kind: exact
             value: P1Y
@@ -48,20 +47,19 @@ offers:
             basis_points: 5000
             kind: exact
       consideration:
-        kind: variable
-        description: The approved startup pays the remaining 50% of its selected JigSpace plan during the offer period.
+        kind: unknown
+        description: The published page specifies the discount but does not state the startup's resulting price.
     eligibility:
       rule:
         criterion_id: cri_01
         kind: manual
         reason: vendor-discretion
-        statement: The applicant must be an eligible startup and receive approval through the JigSpace Startup Program application.
+        statement: The applicant must be an eligible startup.
     roles:
       terms_authority_entity_id: ent_dtrhynzdc01tjj9fq7eg2m39n0
       access_operator_entity_id: ent_dtrhynzdc01tjj9fq7eg2m39n0
     access:
       availability: public
-      instructions: Complete the JigSpace Startup Program Application linked from the investor-pitch page.
       method: form
       url: https://jigspace.typeform.com/startup-offer
     terms_url: https://www.jig.com/use-cases/investor-pitches
