@@ -1,0 +1,87 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_1wyz9c1zjtj9tnc6en9fr1pmdt
+  slug: officernd
+  slug_aliases: []
+  name: OfficeRnD
+  domains:
+    - value: officernd.com
+      role: primary
+      valid_from: 2026-09-01T08:01:38.6039888Z
+  category: productivity
+profile:
+  summary: Management software for coworking and flexible-workspace operators.
+  description: OfficeRnD provides management software for coworking and flexible-workspace operators, including member apps, bookings, billing, integrations, access workflows, analytics, and multi-location operations.
+  links:
+    site: https://www.officernd.com
+sources:
+  - source_id: src_e91e9602125a3e9e1795c60522d4a5161131a49384be9d3a512691668ccdb31e
+    url: https://www.officernd.com/campaigns/flex-startup-program/
+programs:
+  - program_id: prg_m63f9xpvbnbq62r5c1w8gs04zc
+    program_slug: officernd-flex-startup-program
+    program_slug_aliases: []
+    title: OfficeRnD Flex Startup Program
+    summary: OfficeRnD gives eligible early-stage coworking spaces 20% off its Flex Start Plan during their first subscription year.
+    source_ids:
+      - src_e91e9602125a3e9e1795c60522d4a5161131a49384be9d3a512691668ccdb31e
+offers:
+  - offer_id: off_tnng75njjg0x9xb6cnem2bxdqj
+    program_id: prg_m63f9xpvbnbq62r5c1w8gs04zc
+    offer_slug: twenty-percent-off-flex-start-plan-for-one-year
+    offer_slug_aliases: []
+    title: 20% off the OfficeRnD Flex Start Plan for one year
+    summary: Eligible coworking spaces less than two years old, with fewer than 200 members, and new to OfficeRnD receive 20% off the Flex Start Plan for the first subscription year.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-01T08:01:38.6039888Z
+    economics:
+      benefits:
+        - applies_to: OfficeRnD Flex Start Plan
+          benefit_id: ben_01
+          description: 20% off the OfficeRnD Flex Start Plan for the first year
+          duration:
+            kind: exact
+            value: P1Y
+          kind: discount
+          percentage:
+            basis_points: 2000
+            kind: exact
+      consideration:
+        kind: variable
+        description: The approved workspace operator pays the remaining 80% of its OfficeRnD Flex Start Plan subscription price during the first year.
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.age_months
+            kind: predicate
+            operator: lt
+            statement: The coworking space must be less than two years old.
+            value:
+              type: number
+              value: 24
+          - criterion_id: cri_02
+            kind: manual
+            reason: external-verification
+            statement: The coworking space must have fewer than 200 members.
+          - criterion_id: cri_03
+            fact: customer.is_new
+            kind: predicate
+            operator: eq
+            statement: The applicant must not currently be an OfficeRnD customer.
+            value:
+              type: boolean
+              value: true
+    roles:
+      terms_authority_entity_id: ent_1wyz9c1zjtj9tnc6en9fr1pmdt
+      access_operator_entity_id: ent_1wyz9c1zjtj9tnc6en9fr1pmdt
+    access:
+      availability: public
+      instructions: Use the contact form on the OfficeRnD Flex Startup Program page to provide workspace details and request the startup discount.
+      method: form
+      url: https://www.officernd.com/campaigns/flex-startup-program/
+    terms_url: https://www.officernd.com/campaigns/flex-startup-program/
+    source_ids:
+      - src_e91e9602125a3e9e1795c60522d4a5161131a49384be9d3a512691668ccdb31e
