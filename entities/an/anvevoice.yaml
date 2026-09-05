@@ -1,0 +1,73 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m16y0htnnsq1kmzac26dgkzh
+  slug: anvevoice
+  slug_aliases: []
+  name: AnveVoice
+  domains:
+    - value: anvevoice.app
+      role: primary
+      valid_from: 2026-08-29T14:15:39.096Z
+  category: ai-ml
+profile:
+  description: AnveVoice provides embeddable voice AI agents and speech APIs for websites, including multilingual conversations and on-page actions.
+  links:
+    site: https://anvevoice.app
+sources:
+  - source_id: src_324ec1242dab6d5ba4cf29562b87373262255f1c2f09fc7cc47de3c5407e8a15
+    url: https://anvevoice.app/startups
+programs:
+  - program_id: prg_01m16y0htr5e7atav28vycxxpe
+    program_slug: anvevoice-for-startups
+    program_slug_aliases: []
+    title: AnveVoice for Startups
+    summary: AnveVoice offers qualifying startups three months free on the Growth plan followed by 50% off all plans for six months.
+    source_ids:
+      - src_324ec1242dab6d5ba4cf29562b87373262255f1c2f09fc7cc47de3c5407e8a15
+offers:
+  - offer_id: off_01m16y0htrqb8c0dbq60pj2s5t
+    program_id: prg_01m16y0htr5e7atav28vycxxpe
+    offer_slug: three-months-free-and-six-months-half-price
+    offer_slug_aliases: []
+    title: Three months free plus six months at 50% off
+    summary: Qualifying startups receive three free months on AnveVoice Growth and then 50% off any AnveVoice plan for six months.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-29T14:15:39.096Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Three months of free access to the AnveVoice Growth plan
+          duration:
+            kind: exact
+            value: P3M
+          kind: free-service
+          service: AnveVoice Growth plan
+        - benefit_id: ben_02
+          description: 50% off any AnveVoice plan for the following six months
+          duration:
+            kind: exact
+            value: P6M
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 5000
+      consideration:
+        kind: variable
+        description: During the six-month discount period, the startup pays half the regular price of its selected AnveVoice plan.
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        statement: The applicant must be a qualifying startup approved by AnveVoice; the public program page does not specify additional criteria.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01m16y0htnnsq1kmzac26dgkzh
+      access_operator_entity_id: ent_01m16y0htnnsq1kmzac26dgkzh
+    access:
+      availability: public
+      instructions: Follow the sign-up link on the official startup program page and submit the requested company details for review.
+      method: form
+      url: https://anvevoice.app/startups
+    source_ids:
+      - src_324ec1242dab6d5ba4cf29562b87373262255f1c2f09fc7cc47de3c5407e8a15
