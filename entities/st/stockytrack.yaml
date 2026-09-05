@@ -1,0 +1,72 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_ymf4p8yesv9tpeehh3d28qr141
+  slug: stockytrack
+  slug_aliases: []
+  name: StockyTrack
+  domains:
+    - value: stockytrack.com
+      role: primary
+      valid_from: 2026-09-01T05:36:00.000Z
+  category: commerce
+profile:
+  summary: Inventory management, forecasting, reporting, and warehouse operations platform.
+  description: StockyTrack is an inventory platform for stock control, warehouses, forecasting, reporting, and multi-entity operations.
+  links:
+    site: https://stockytrack.com/
+sources:
+  - source_id: src_312d4ac742452a9861d19c339e39640a26c45f9bfe16e1a4c9c76d3498723ad4
+    url: https://stockytrack.com/pricing
+programs:
+  - program_id: prg_kxvzh6nxctz6qycackqvh9zp1w
+    program_slug: stockytrack-startup-program
+    program_slug_aliases: []
+    title: StockyTrack Startup Program
+    summary: StockyTrack gives eligible companies under 18 months old 25% off any plan for 12 months.
+    source_ids:
+      - src_312d4ac742452a9861d19c339e39640a26c45f9bfe16e1a4c9c76d3498723ad4
+offers:
+  - offer_id: off_wgjjg5bhxwwh896wyh0pr09edb
+    program_id: prg_kxvzh6nxctz6qycackqvh9zp1w
+    offer_slug: twenty-five-percent-off-any-plan-for-twelve-months
+    offer_slug_aliases: []
+    title: 25% Off Any StockyTrack Plan for 12 Months
+    summary: Approved companies under 18 months old receive 25% off any StockyTrack plan for 12 months.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-01T05:36:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 25% off for 12 months
+          duration:
+            kind: exact
+            value: P1Y
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 2500
+      consideration:
+        kind: variable
+        description: StockyTrack prices the selected plan and publishes a 25% startup discount for 12 months.
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        fact: company.age_months
+        kind: predicate
+        operator: lt
+        statement: The company is less than 18 months old.
+        value:
+          type: number
+          value: 18
+    roles:
+      terms_authority_entity_id: ent_ymf4p8yesv9tpeehh3d28qr141
+      access_operator_entity_id: ent_ymf4p8yesv9tpeehh3d28qr141
+    access:
+      availability: public
+      method: contact
+      url: https://stockytrack.com/pricing
+      instructions: Use the contact route published on the pricing page to apply for the startup program.
+    terms_url: https://stockytrack.com/pricing
+    source_ids:
+      - src_312d4ac742452a9861d19c339e39640a26c45f9bfe16e1a4c9c76d3498723ad4
