@@ -1,0 +1,86 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_04vrv8cq2gm7qzv9ck62yyhe28
+  slug: cloud-native-computing-foundation
+  slug_aliases:
+    - cncf
+  name: Cloud Native Computing Foundation
+  domains:
+    - value: cncf.io
+      role: primary
+      valid_from: 2026-09-01T07:55:19.1659258Z
+  category: other
+profile:
+  description: CNCF offers a Silver Membership for Startups designed to connect and recognize small teams in the cloud-native ecosystem.
+  links:
+    site: https://www.cncf.io
+sources:
+  - source_id: src_465b2df23cc0822a2871b8fc552461d178be35cd52e4dea0bc9a3759c3d9f374
+    url: https://www.cncf.io/about/join/startups/
+programs:
+  - program_id: prg_2mya4df80mqpxd6nyc1ftpbps2
+    program_slug: cncf-startup-program
+    program_slug_aliases: []
+    title: CNCF Startup Program
+    summary: CNCF gives qualifying cloud-native startups discounted KubeCon + CloudNativeCon booth pricing and priority placement through its startup membership program.
+    source_ids:
+      - src_465b2df23cc0822a2871b8fc552461d178be35cd52e4dea0bc9a3759c3d9f374
+offers:
+  - offer_id: off_b7yd9p1ms23cy7jg6nkshv9h45
+    program_id: prg_2mya4df80mqpxd6nyc1ftpbps2
+    offer_slug: fifty-percent-off-kubecon-cloudnativecon-booth-pricing
+    offer_slug_aliases: []
+    title: 50% off KubeCon + CloudNativeCon booth pricing
+    summary: Qualifying startups with fewer than 50 employees receive 50% off KubeCon + CloudNativeCon booth pricing and priority placement through CNCF Startup Sponsorship.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-01T07:55:19.1659258Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 50% off the KubeCon + CloudNativeCon booth price.
+          kind: discount
+          percentage:
+            basis_points: 5000
+            kind: exact
+        - benefit_id: ben_02
+          description: Priority placement with a Startup Sponsorship.
+          kind: other
+      consideration:
+        kind: unknown
+        description: The public startup page does not publish the payable Startup Sponsorship booth price.
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.employee_count
+            kind: predicate
+            operator: lt
+            statement: The startup must have fewer than 50 employees.
+            value:
+              type: number
+              value: 50
+          - criterion_id: cri_02
+            kind: manual
+            reason: external-verification
+            statement: The company must be an early-stage startup focused on cloud-native technologies.
+          - criterion_id: cri_03
+            kind: manual
+            reason: external-verification
+            statement: The company must demonstrate a commitment to open source and community engagement.
+          - criterion_id: cri_04
+            kind: manual
+            reason: external-verification
+            statement: The company's product or service must align with CNCF's mission and ecosystem.
+    roles:
+      terms_authority_entity_id: ent_04vrv8cq2gm7qzv9ck62yyhe28
+      access_operator_entity_id: ent_04vrv8cq2gm7qzv9ck62yyhe28
+    access:
+      availability: membership
+      instructions: Apply for CNCF membership and select the Startup sponsorship tier. Contact CNCF through the startup-program page for help with eligibility or enrollment.
+      method: contact
+      url: https://www.cncf.io/about/join/startups/
+    terms_url: https://www.cncf.io/about/join/startups/
+    source_ids:
+      - src_465b2df23cc0822a2871b8fc552461d178be35cd52e4dea0bc9a3759c3d9f374
