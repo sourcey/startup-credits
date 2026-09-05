@@ -48,8 +48,8 @@ offers:
             basis_points: 7500
             kind: up-to
       consideration:
-        kind: variable
-        description: The startup pays the subscription price remaining after Frienton's graduated discount.
+        kind: unknown
+        description: Frienton's startup page publishes percentage discounts but not the resulting subscription price.
     eligibility:
       rule:
         criterion_id: cri_01
