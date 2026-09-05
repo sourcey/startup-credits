@@ -10,6 +10,7 @@ entity:
       valid_from: 2026-09-05T14:50:59.000Z
   category: finance-accounting
 profile:
+  summary: Software subscription management, virtual payment cards, and receipt collection for businesses.
   description: Cardboard manages software subscriptions, virtual payment cards, and receipt collection for businesses.
   links:
     site: https://cardboard.inc/
