@@ -1,0 +1,92 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1fx4m83cqqk28jfw1nbgcqz
+  slug: oprex
+  slug_aliases: []
+  name: Oprex
+  domains:
+    - value: oprex.id
+      role: primary
+      valid_from: 2026-09-02T01:52:56.000Z
+  category: devtools-other
+
+profile:
+  description: Oprex is a software lifecycle platform for requirements, tests, releases, bugs, Git, pipelines, and AI-assisted development workflows.
+  links:
+    site: https://oprex.id/
+
+sources:
+  - source_id: src_b51f28d7b928ef077608740ea0688249acab26f9a4678d911aefb1e7126e57b1
+    url: https://oprex.id/company/startup-program
+
+programs:
+  - program_id: prg_01m1fx4m831aysh996wxy73h36
+    program_slug: startup-program
+    program_slug_aliases: []
+    title: Oprex Startup Program
+    summary: Oprex gives eligible early-stage teams its full Pro plan free for 12 months, with migration help and a direct support channel.
+    source_ids:
+      - src_b51f28d7b928ef077608740ea0688249acab26f9a4678d911aefb1e7126e57b1
+
+offers:
+  - offer_id: off_01m1fx4m83s961em684gjhh2ne
+    program_id: prg_01m1fx4m831aysh996wxy73h36
+    offer_slug: pro-free-for-12-months
+    offer_slug_aliases: []
+    title: Oprex Pro free for 12 months
+    summary: Approved startups receive the full Oprex Pro tier at no cost for one year, plus migration assistance and direct access to the Oprex team.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-02T01:52:56.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Full Oprex Pro tier free for 12 months, including projects, members, pipeline minutes, and priority support
+          kind: free-service
+          service: Oprex Pro plan
+          duration:
+            kind: exact
+            value: P1Y
+        - benefit_id: ben_02
+          description: Migration help for existing issues, requirements, and test cases
+          kind: other
+        - benefit_id: ben_03
+          description: Shared direct channel with the Oprex team for bug reports and feature requests
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: external-verification
+            statement: Company was founded within the last three years.
+          - criterion_id: cri_02
+            fact: company.employee_count
+            kind: predicate
+            operator: lt
+            statement: Company has fewer than 20 people.
+            value:
+              type: number
+              value: 20
+          - criterion_id: cri_03
+            kind: manual
+            reason: external-verification
+            statement: Company has not previously been on a paid Oprex plan.
+          - criterion_id: cri_04
+            kind: manual
+            reason: vendor-discretion
+            statement: Company is building a real product; pre-revenue is acceptable, but pre-idea teams do not qualify.
+    roles:
+      terms_authority_entity_id: ent_01m1fx4m83cqqk28jfw1nbgcqz
+      access_operator_entity_id: ent_01m1fx4m83cqqk28jfw1nbgcqz
+    access:
+      availability: public
+      method: form
+      url: https://oprex.id/company/startup-program
+      instructions: Create an Oprex workspace, submit the startup application, and wait for Oprex's review; approved workspaces are upgraded in place.
+    terms_url: https://oprex.id/company/startup-program
+    source_ids:
+      - src_b51f28d7b928ef077608740ea0688249acab26f9a4678d911aefb1e7126e57b1
