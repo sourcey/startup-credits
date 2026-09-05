@@ -1,0 +1,93 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_zesganpkec1m5nbkw0hrf93s5g
+  slug: maestro-labs
+  slug_aliases: []
+  name: Maestro Labs
+  domains:
+    - value: maestrolabs.com
+      role: primary
+      valid_from: 2026-09-01T04:52:00.000Z
+  category: communication
+profile:
+  description: Maestro Labs develops AI tools for email and meeting communication, including MailMaestro and TeamsMaestro.
+  links:
+    site: https://www.maestrolabs.com/
+sources:
+  - source_id: src_ac50cab43ac730dfddf239b9acce40c0d65c84dacf5e063acd196f73b5572778
+    url: https://www.maestrolabs.com/startups
+programs:
+  - program_id: prg_yht980n05etpty92s6n6xzztet
+    program_slug: maestro-labs-startup-program
+    program_slug_aliases: []
+    title: Maestro Labs Startup Program
+    summary: Maestro Labs gives qualifying early-stage teams 75% off its AI email and meeting tools for 11 months.
+    source_ids:
+      - src_ac50cab43ac730dfddf239b9acce40c0d65c84dacf5e063acd196f73b5572778
+offers:
+  - offer_id: off_bnzm6avk07sy9jdsw3kvv3rht2
+    program_id: prg_yht980n05etpty92s6n6xzztet
+    offer_slug: seventy-five-percent-off-for-eleven-months
+    offer_slug_aliases: []
+    title: 75% Off Maestro Labs for 11 Months
+    summary: Approved seed-stage startups receive a 75% discount on Maestro Labs products for 11 months.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-01T04:52:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Get 75% off for 11 months if you qualify.
+          duration:
+            kind: exact
+            value: P11M
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 7500
+      consideration:
+        kind: unknown
+        description: The source does not state the price payable after applying the 75% discount.
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: external-verification
+            statement: The company is an early-stage startup at seed stage or an equivalent stage.
+          - criterion_id: cri_02
+            fact: company.age_months
+            kind: predicate
+            operator: gte
+            statement: The company has been incorporated for at least two years.
+            value:
+              type: number
+              value: 24
+          - criterion_id: cri_03
+            fact: company.age_months
+            kind: predicate
+            operator: lte
+            statement: The company has been incorporated for no more than three years.
+            value:
+              type: number
+              value: 36
+          - criterion_id: cri_04
+            fact: company.annual_recurring_revenue_usd
+            kind: predicate
+            operator: lt
+            statement: The company has under $2,000,000 in annual recurring revenue or annual revenue.
+            value:
+              type: number
+              value: 2000000
+    roles:
+      terms_authority_entity_id: ent_zesganpkec1m5nbkw0hrf93s5g
+      access_operator_entity_id: ent_zesganpkec1m5nbkw0hrf93s5g
+    access:
+      availability: public
+      method: form
+      url: https://www.maestrolabs.com/startups
+      instructions: Use the application form on the Maestro Labs Startup Program page and provide the requested company and stage details.
+    terms_url: https://www.maestrolabs.com/startups
+    source_ids:
+      - src_ac50cab43ac730dfddf239b9acce40c0d65c84dacf5e063acd196f73b5572778
