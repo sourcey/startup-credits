@@ -1,0 +1,53 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1ssk8fz23rmbvesjm682ptd
+  slug: deepinfo
+  slug_aliases: []
+  name: Deepinfo
+  domains:
+  - value: deepinfo.com
+    role: primary
+    valid_from: '2026-09-05T22:04:03.000Z'
+  category: databases
+profile:
+  description: Deepinfo startup program offering credits for early-stage companies.
+  links:
+    site: https://deepinfo.com
+sources:
+- source_id: src_4561f616298939e296c2f95904a87c1681c2d0c3cff1807197ad88f84c01fe72
+  url: https://www.deepinfo.com/programs/startup/
+programs: []
+offers:
+- offer_id: off_01m1ssk916a7nz45c3dbg7hj44
+  offer_slug: deepinfo-startup-discount
+  offer_slug_aliases: []
+  title: Deepinfo Startup Discount
+  summary: Deepinfo offers qualifying early-stage technology startups discounted access
+    to its external attack surface management platform, onboarding with a solutions
+    engineer, a roadmap feedback channel, and a defined graduation path.
+  lifecycle:
+    status: active
+    effective_from: '2026-09-05T22:04:04.000Z'
+  economics:
+    consideration:
+      kind: unknown
+      description: Contact sales for pricing details.
+    benefits:
+    - benefit_id: ben_primary
+      description: Discount for 12 months
+      kind: discount
+  eligibility:
+    rule:
+      kind: manual
+      criterion_id: cri_requirement
+      statement: Must qualify as a startup. Contact sales for eligibility details.
+      reason: not-machine-evaluable
+  roles:
+    terms_authority_entity_id: ent_01m1ssk8fz23rmbvesjm682ptd
+    access_operator_entity_id: ent_01m1ssk8fz23rmbvesjm682ptd
+  access:
+    availability: public
+    method: contact
+    url: https://www.deepinfo.com/programs/startup/
+  source_ids:
+  - src_4561f616298939e296c2f95904a87c1681c2d0c3cff1807197ad88f84c01fe72
