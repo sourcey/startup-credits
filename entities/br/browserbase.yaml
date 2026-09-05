@@ -1,0 +1,51 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1gnyp9s6vrv5r5ygyhtjtwx
+  slug: browserbase
+  slug_aliases: []
+  name: Browserbase
+  domains:
+    - value: browserbase.com
+      role: primary
+      valid_from: 2026-09-02T09:07:14.036Z
+  category: apis-integration
+profile:
+  summary: Cloud browser infrastructure, web data APIs, model routing, and agent tooling.
+  description: Browserbase provides cloud browsers, web data APIs, model routing, session observability, and the Stagehand SDK for browser agents and web automation.
+  links:
+    site: https://www.browserbase.com
+sources:
+  - source_id: src_35c7020601f380ba2d8cf4e1d75b5824a16b25c54c011cce7cc8cc185576494f
+    url: https://www.browserbase.com/11labs-founder-pack
+programs: []
+offers:
+  - offer_id: off_01m1gnyp9zwbjj1ghtnq32d4p3
+    offer_slug: elevenlabs-founder-pack-browserbase-credits
+    offer_slug_aliases: []
+    title: Browserbase credits for ElevenLabs Founder Pack members
+    summary: ElevenLabs Founder Pack members can redeem Browserbase credits for cloud browsers, model routing, session inspection, web data APIs, proxy and CAPTCHA orchestration, and Stagehand.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-02T09:07:14.036Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_primary
+          description: ElevenLabs Founder Pack credits for Browserbase
+          kind: other
+    eligibility:
+      rule:
+        criterion_id: cri_membership_01
+        kind: manual
+        reason: external-verification
+        statement: The applicant must be eligible to redeem benefits through the ElevenLabs Founder Pack.
+    roles:
+      terms_authority_entity_id: ent_01m1gnyp9s6vrv5r5ygyhtjtwx
+      access_operator_entity_id: ent_01m1gnyp9s6vrv5r5ygyhtjtwx
+    access:
+      availability: membership
+      method: form
+      url: https://www.browserbase.com/11labs-founder-pack
+    source_ids:
+      - src_35c7020601f380ba2d8cf4e1d75b5824a16b25c54c011cce7cc8cc185576494f
