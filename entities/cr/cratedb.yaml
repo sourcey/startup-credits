@@ -1,0 +1,79 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_a78bd21pnxya0djgn5t98c39zs
+  slug: cratedb
+  slug_aliases: []
+  name: CrateDB
+  domains:
+    - value: cratedb.com
+      role: primary
+      valid_from: 2026-09-01T09:30:47.439Z
+  category: databases
+profile:
+  summary: Distributed SQL database for real-time analytics.
+  description: CrateDB provides a distributed SQL database for real-time analytics across relational,
+    time-series, geospatial, full-text, and vector data.
+  links:
+    site: https://cratedb.com
+sources:
+  - source_id: src_d23ecce237ddccb20a3fa2b714f15afd287826009005ce020c23b808345b776b
+    url: https://cratedb.com/pricing/startups
+programs:
+  - program_id: prg_w0p9dx50e23t8egk8nzmak22gf
+    program_slug: startup-pack
+    program_slug_aliases: []
+    title: CrateDB Startup Pack
+    summary: CrateDB helps qualifying startups adopt CrateDB Cloud with usage credits, hands-on setup,
+      data-engineering guidance, support, and recurring technical reviews.
+    source_ids:
+      - src_d23ecce237ddccb20a3fa2b714f15afd287826009005ce020c23b808345b776b
+offers:
+  - offer_id: off_dyjrxc1zkkhenqa5etedccgysc
+    program_id: prg_w0p9dx50e23t8egk8nzmak22gf
+    offer_slug: cloud-credits-and-data-engineering-services
+    offer_slug_aliases: []
+    title: CrateDB Cloud Credits and Data-Engineering Services
+    summary: Qualifying startups receive a vendor-determined amount of CrateDB Cloud credits plus
+      consulting, cluster setup, dataset analysis, technical support, audits, and recurring reviews.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-01T09:30:47.439Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: A specific number of credits for the CrateDB cloud service.
+          kind: other
+        - benefit_id: ben_02
+          description: Three hours of consulting, hands-on cluster setup, and analysis of the initial dataset.
+          kind: free-service
+          service: CrateDB data engineering setup and consulting
+        - benefit_id: ben_03
+          description: Consultative inquiries and a technical audit.
+          kind: free-service
+          service: CrateDB consultative support and technical audit
+        - benefit_id: ben_04
+          description: Monthly meetings and a full review meeting after 10 months of operation.
+          kind: free-service
+          service: CrateDB ramp-up reviews
+      consideration:
+        kind: unknown
+        description: The public Startup Pack page does not state whether payment is required.
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: CrateDB reviews startup applicants through its contact process and may evaluate the proposed
+          deployment and use case before confirming qualification and the credit amount.
+    roles:
+      terms_authority_entity_id: ent_a78bd21pnxya0djgn5t98c39zs
+      access_operator_entity_id: ent_a78bd21pnxya0djgn5t98c39zs
+    access:
+      availability: public
+      method: contact
+      url: https://cratedb.com/pricing/startups
+      instructions: Contact CrateDB through the Startup Pack page to ask whether the startup qualifies;
+        applicants may also complete the linked Deployment Assessment to begin use-case evaluation.
+    terms_url: https://cratedb.com/pricing/startups
+    source_ids:
+      - src_d23ecce237ddccb20a3fa2b714f15afd287826009005ce020c23b808345b776b
