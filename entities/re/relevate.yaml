@@ -1,0 +1,70 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_1xfg0bpqbrsv4ymbrtk67njpgp
+  slug: relevate
+  slug_aliases: []
+  name: Relevate
+  domains:
+    - value: relevate.app
+      role: primary
+      valid_from: 2026-09-01T04:36:00.000Z
+  category: devtools-other
+profile:
+  description: Relevate is a documentation platform for publishing product documentation, API references, and AI-assisted reader support.
+  links:
+    site: https://relevate.app/
+sources:
+  - source_id: src_b23df5d4b758912c5f20a49f66a277540c058bd8d4d40bc83a8853a336762b11
+    url: https://relevate.app/startups
+programs:
+  - program_id: prg_hcyy4re36bmt0ga88wk0mfwdf6
+    program_slug: relevate-startup-program
+    program_slug_aliases: []
+    title: Relevate Startup Program
+    summary: Relevate gives eligible early-stage startups 50% off its Pro plan, priority onboarding, and early access to new features.
+    source_ids:
+      - src_b23df5d4b758912c5f20a49f66a277540c058bd8d4d40bc83a8853a336762b11
+offers:
+  - offer_id: off_tq8h3hs2vswpshx68dpwcxpsmy
+    program_id: prg_hcyy4re36bmt0ga88wk0mfwdf6
+    offer_slug: fifty-percent-off-pro-for-eligible-startups
+    offer_slug_aliases: []
+    title: 50% Off Relevate Pro While Eligible
+    summary: Eligible startups receive 50% off Relevate Pro for as long as they continue to qualify, plus priority onboarding and early feature access.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-01T04:36:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 50% off Pro as long as the startup is eligible.
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 5000
+        - benefit_id: ben_02
+          description: Direct access to the Relevate team for setup help, migration support, and technical questions.
+          kind: other
+        - benefit_id: ben_03
+          description: Early access to new features.
+          kind: other
+      consideration:
+        kind: unknown
+        description: The public program page states that access is discounted but does not publish the payable price.
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_01
+        reason: external-verification
+        statement: The program is for venture-backed or bootstrapped startups with less than $1M in funding, less than three years old, and fewer than 20 employees; the three-year limit may be reviewed case by case.
+    roles:
+      terms_authority_entity_id: ent_1xfg0bpqbrsv4ymbrtk67njpgp
+      access_operator_entity_id: ent_1xfg0bpqbrsv4ymbrtk67njpgp
+    access:
+      availability: public
+      method: contact
+      url: https://relevate.app/startups
+      instructions: Use the public application contact link on the startup-program page and include details about the company.
+    terms_url: https://relevate.app/startups
+    source_ids:
+      - src_b23df5d4b758912c5f20a49f66a277540c058bd8d4d40bc83a8853a336762b11
