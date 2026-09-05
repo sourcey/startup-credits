@@ -1,0 +1,68 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_k4ahf4qtxzn8mx4v6a6yk7pe62
+  slug: fellow
+  slug_aliases: []
+  name: Fellow
+  domains:
+    - value: fellow.ai
+      role: primary
+      valid_from: 2026-09-01T08:06:27.8617396Z
+  category: productivity
+profile:
+  summary: AI meeting assistant and collaborative meeting-workflow platform.
+  description: Fellow provides an AI meeting assistant for recording, transcription, collaborative notes, summaries, action items, meeting workflows, and integrations with calendar, conferencing, CRM, and productivity tools.
+  links:
+    site: https://fellow.ai
+sources:
+  - source_id: src_f6c7c4ebc92ee32b5f08eef8dd5121dfeb17c2cb080de0383cd7462effb60006
+    url: https://fellow.ai/pricing
+programs:
+  - program_id: prg_gnap8fetzhh2pcaddjva3dbe28
+    program_slug: fellow-startup-program
+    program_slug_aliases: []
+    title: Fellow Startup Program
+    summary: Fellow offers startups that apply to its startup program up to 25% off their first year.
+    source_ids:
+      - src_f6c7c4ebc92ee32b5f08eef8dd5121dfeb17c2cb080de0383cd7462effb60006
+offers:
+  - offer_id: off_wv6w6gks97h23khz1ag6my64zn
+    program_id: prg_gnap8fetzhh2pcaddjva3dbe28
+    offer_slug: up-to-twenty-five-percent-off-first-year
+    offer_slug_aliases: []
+    title: Up to 25% off Fellow for the first year
+    summary: Approved startup-program applicants receive up to 25% off Fellow during their first year.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-01T08:06:27.8617396Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to 25% off the first year
+          duration:
+            kind: exact
+            value: P1Y
+          kind: discount
+          percentage:
+            basis_points: 2500
+            kind: up-to
+      consideration:
+        kind: unknown
+        description: The published FAQ specifies the discount but does not state the startup's resulting price.
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: The applicant must be a startup and receive approval from Fellow through the startup-program application.
+    roles:
+      terms_authority_entity_id: ent_k4ahf4qtxzn8mx4v6a6yk7pe62
+      access_operator_entity_id: ent_k4ahf4qtxzn8mx4v6a6yk7pe62
+    access:
+      availability: public
+      instructions: Submit the startup-program form linked from the startup-program question in the FAQ on Fellow's pricing page.
+      method: form
+      url: https://share.hsforms.com/1ZQ2bxDkTSw6nlEKLnZJH9Q30192
+    terms_url: https://fellow.ai/pricing
+    source_ids:
+      - src_f6c7c4ebc92ee32b5f08eef8dd5121dfeb17c2cb080de0383cd7462effb60006
