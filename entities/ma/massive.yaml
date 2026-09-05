@@ -10,6 +10,7 @@ entity:
       valid_from: 2026-08-31T00:00:00.000Z
   category: apis-integration
 profile:
+  summary: Web-data APIs backed by a global residential proxy network.
   description: Massive provides Web Access, Web Render, and Web Search APIs for real-time web data collection through a global residential proxy network.
   links:
     site: https://www.joinmassive.com
