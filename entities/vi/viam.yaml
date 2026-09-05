@@ -1,0 +1,101 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_gs0gvyy7qj6fw7hvn21e2h511d
+  slug: viam
+  slug_aliases: []
+  name: Viam
+  domains:
+    - value: viam.com
+      role: primary
+      valid_from: 2026-09-01T06:58:12.352Z
+  category: devtools-other
+profile:
+  description: Viam is a software platform for building, deploying, managing, and scaling robotics and smart-machine applications across hardware fleets.
+  links:
+    site: https://www.viam.com/
+sources:
+  - source_id: src_674dc2b373c662784d35a189b4264bc5964c2d09a1547f66f2d3ff57550695db
+    url: https://www.viam.com/resources/startups
+programs:
+  - program_id: prg_edt67845zkz1zrjr16ptxtmzhb
+    program_slug: viam-for-startups
+    program_slug_aliases: []
+    title: Viam for Startups
+    summary: Viam supports eligible early-stage robotics and hardware companies with platform credits and direct engineering assistance.
+    source_ids:
+      - src_674dc2b373c662784d35a189b4264bc5964c2d09a1547f66f2d3ff57550695db
+offers:
+  - offer_id: off_p9y042jqxjfkj90082ves0chyp
+    program_id: prg_edt67845zkz1zrjr16ptxtmzhb
+    offer_slug: thirty-thousand-platform-credits-for-one-year
+    offer_slug_aliases: []
+    title: $30,000 in Viam Platform Credits for One Year
+    summary: Eligible startups receive $30,000 in Viam platform credits, distributed as $2,500 per month for 12 months, plus dedicated engineering time and direct Slack access to Viam's Forward Deployed Engineering team.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-01T06:58:12.352Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: $30,000 in Viam platform credits, distributed as $2,500 per month for 12 months; unused monthly credits expire and do not roll over.
+          duration:
+            kind: exact
+            value: P1Y
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 3000000
+            kind: exact
+        - benefit_id: ben_02
+          description: Scheduled time with Viam engineers for architecture, roadmap, and technical guidance.
+          kind: other
+        - benefit_id: ben_03
+          description: Direct access to Viam's Forward Deployed Engineering team through a shared Slack channel.
+          kind: other
+      consideration:
+        kind: variable
+        description: Credits cover up to $2,500 of Viam usage per month; the startup is responsible for usage above that monthly amount.
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: external-verification
+            statement: The company is building a robotics- or hardware-focused product or service.
+          - criterion_id: cri_02
+            kind: manual
+            reason: external-verification
+            statement: The company is at Series C or an earlier stage.
+          - criterion_id: cri_03
+            fact: company.age_months
+            kind: predicate
+            operator: lte
+            statement: The company was founded within the last five years.
+            value:
+              type: number
+              value: 60
+          - criterion_id: cri_04
+            kind: manual
+            reason: external-verification
+            statement: The applicant has a valid company website and business email address.
+          - criterion_id: cri_05
+            kind: manual
+            reason: external-verification
+            statement: The company is not currently a Viam enterprise customer under contract.
+          - criterion_id: cri_06
+            kind: manual
+            reason: external-verification
+            statement: The company has not previously participated in Viam for Startups.
+    roles:
+      terms_authority_entity_id: ent_gs0gvyy7qj6fw7hvn21e2h511d
+      access_operator_entity_id: ent_gs0gvyy7qj6fw7hvn21e2h511d
+    access:
+      availability: public
+      method: form
+      url: https://www.viam.com/platform/demo-request
+      instructions: Submit Viam's demo-request form and select "Applying to Viam for Startups."
+    terms_url: https://www.viam.com/resources/startups
+    source_ids:
+      - src_674dc2b373c662784d35a189b4264bc5964c2d09a1547f66f2d3ff57550695db
