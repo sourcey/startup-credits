@@ -10,6 +10,7 @@ entity:
       valid_from: 2026-09-05T18:07:37.512Z
   category: devtools-other
 profile:
+  summary: Sinatra turns assigned software issues into pull requests.
   description: Sinatra turns assigned software issues into pull requests.
   links:
     site: https://www.sinatra.dev/startups
@@ -53,7 +54,7 @@ offers:
           description: 50% off the USD 20 monthly seat price for 12 months, making it USD 10 per member per
             month.
       consideration:
-        kind: unknown
+        kind: variable
         description: Seats cost USD 10 per member per month for 12 months, then USD 20. A card is required.
           Model-provider usage is billed separately at the provider's rates.
     eligibility:
