@@ -1,0 +1,54 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1eghdw2yej94mz56n7he9pb
+  slug: secfix
+  slug_aliases: []
+  name: Secfix
+  domains:
+    - value: secfix.com
+      role: primary
+      valid_from: 2026-09-01T12:00:00.000Z
+  category: legal-compliance
+profile:
+  summary: Security and compliance automation software.
+  description: Secfix provides security and compliance automation software for ISO 27001, SOC 2, TISAX, GDPR, and related requirements.
+  links:
+    site: https://www.secfix.com/
+sources:
+  - source_id: src_2645ecb4310796379d16a3dcaa0082fee59d66d0282fa3cf2cf68f06fa7daef1
+    url: https://www.secfix.com/demo/google-for-startups
+programs: []
+offers:
+  - offer_id: off_01m1eghdx5wb87k720vtpsxzsa
+    offer_slug: google-for-startups-first-year-discount
+    offer_slug_aliases: []
+    title: 15% off the first year of Secfix
+    summary: Secfix's Google for Startups partnership gives eligible startups 15% off their first year of Secfix security and compliance automation software.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-01T12:00:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 15% off the first year of Secfix security and compliance automation software.
+          kind: other
+      consideration:
+        kind: unknown
+        description: The public offer page does not publish the payable Secfix price after the discount.
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Google for Startups recipients may book Secfix's free consultation for the first-year offer.
+    roles:
+      terms_authority_entity_id: ent_01m1eghdw2yej94mz56n7he9pb
+      access_operator_entity_id: ent_01m1eghdw2yej94mz56n7he9pb
+    access:
+      availability: public
+      instructions: Submit the consultation form on Secfix's Google for Startups offer page.
+      method: form
+      url: https://www.secfix.com/demo/google-for-startups
+    terms_url: https://www.secfix.com/demo/google-for-startups
+    source_ids:
+      - src_2645ecb4310796379d16a3dcaa0082fee59d66d0282fa3cf2cf68f06fa7daef1
