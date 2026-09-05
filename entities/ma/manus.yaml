@@ -1,0 +1,98 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_bmhtqhfcks7z3w7adz6q1eyjmy
+  slug: manus
+  slug_aliases: []
+  name: Manus
+  domains:
+    - value: manus.im
+      role: primary
+      valid_from: 2026-09-01T06:35:28.316Z
+  category: ai-ml
+profile:
+  summary: General-purpose AI agent platform for multi-step digital work.
+  description: Manus is a general-purpose artificial intelligence agent platform that carries out multi-step digital tasks for individuals and teams.
+  links:
+    site: https://manus.im/
+sources:
+  - source_id: src_f66878a7fb571dd10ae7b4d72a516402513338010350ac0562d8b70b9bbb4f4a
+    url: https://events.manus.im/startups
+programs:
+  - program_id: prg_hrv7k160pxx3qv90g44nh6qff5
+    program_slug: manus-for-startups
+    program_slug_aliases: []
+    title: Manus for Startups
+    summary: Manus gives eligible venture-backed startups six months of Manus Team for up to 20 seats through its VC and accelerator partner network.
+    source_ids:
+      - src_f66878a7fb571dd10ae7b4d72a516402513338010350ac0562d8b70b9bbb4f4a
+offers:
+  - offer_id: off_9yryrbmfgp9kz0zappcpggvw7y
+    program_id: prg_hrv7k160pxx3qv90g44nh6qff5
+    offer_slug: six-months-manus-team-up-to-twenty-seats
+    offer_slug_aliases: []
+    title: Six Months of Manus Team for Up to 20 Seats
+    summary: Eligible startups receive six months of the Manus Team subscription for up to 20 seats, a benefit Manus values at $4,800.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-01T06:35:28.316Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Six months of Manus Team for up to 20 seats, with a published value of $4,800.
+          duration:
+            kind: exact
+            value: P6M
+          kind: free-service
+          service: Manus Team subscription for up to 20 seats
+      consideration:
+        kind: unknown
+        description: The published startup page does not state a separate price for approved applicants.
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.age_months
+            kind: predicate
+            operator: lt
+            statement: The company is less than five years old.
+            value:
+              type: number
+              value: 60
+          - criterion_id: cri_02
+            fact: company.funding_raised_usd
+            kind: predicate
+            operator: gte
+            statement: The company has raised at least $500,000 in total equity.
+            value:
+              type: number
+              value: 500000
+          - criterion_id: cri_03
+            fact: company.funding_raised_usd
+            kind: predicate
+            operator: lte
+            statement: The company has raised no more than $50 million in total equity.
+            value:
+              type: number
+              value: 50000000
+          - criterion_id: cri_04
+            kind: manual
+            reason: external-verification
+            statement: The company applies through a referral from a participating VC firm or accelerator.
+          - criterion_id: cri_05
+            fact: applicant.is_new_customer
+            kind: predicate
+            operator: eq
+            statement: The applicant is new to Manus.
+            value:
+              type: boolean
+              value: true
+    roles:
+      terms_authority_entity_id: ent_bmhtqhfcks7z3w7adz6q1eyjmy
+      access_operator_entity_id: ent_bmhtqhfcks7z3w7adz6q1eyjmy
+    access:
+      availability: referral
+      method: other
+      instructions: Ask a participating lead investor or accelerator for its Manus for Startups referral link; open applications are currently paused.
+    source_ids:
+      - src_f66878a7fb571dd10ae7b4d72a516402513338010350ac0562d8b70b9bbb4f4a
