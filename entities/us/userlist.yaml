@@ -1,0 +1,87 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_1z5dgec888thmxj5hh29fcpq8p
+  slug: userlist
+  slug_aliases: []
+  name: Userlist
+  domains:
+    - value: userlist.com
+      role: primary
+      valid_from: 2026-09-01T08:15:00.7449442Z
+  category: marketing
+profile:
+  summary: Lifecycle email marketing automation for SaaS companies.
+  description: Userlist provides lifecycle email marketing automation for SaaS companies, including visual workflows, account-level automation, transactional and marketing email, in-app messages, segmentation, and integrations.
+  links:
+    site: https://userlist.com
+sources:
+  - source_id: src_5c40e4b1b3221163e0da6e701b69efc54e669f334bd8c7fda53dbdb43252ef85
+    url: https://userlist.com/docs/getting-started/billing/
+programs:
+  - program_id: prg_5vhtwr59h1g5vdaam4ya9hgyk0
+    program_slug: userlist-startup-discount
+    program_slug_aliases: []
+    title: Userlist Startup Discount
+    summary: Userlist gives eligible new early-stage SaaS companies 50% off for their first 12 months.
+    source_ids:
+      - src_5c40e4b1b3221163e0da6e701b69efc54e669f334bd8c7fda53dbdb43252ef85
+offers:
+  - offer_id: off_36hstr8zkq5s0ha4y349k7z9hv
+    program_id: prg_5vhtwr59h1g5vdaam4ya9hgyk0
+    offer_slug: fifty-percent-off-for-first-twelve-months
+    offer_slug_aliases: []
+    title: 50% off Userlist for the first 12 months
+    summary: New early-stage SaaS accounts with less than USD 500,000 in total funding receive 50% off Userlist for the first 12 months.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-01T08:15:00.7449442Z
+    economics:
+      benefits:
+        - applies_to: Userlist subscription
+          benefit_id: ben_01
+          description: 50% off Userlist for the first 12 months
+          duration:
+            kind: exact
+            value: P1Y
+          kind: discount
+          percentage:
+            basis_points: 5000
+            kind: exact
+      consideration:
+        kind: variable
+        description: The approved startup pays the remaining 50% of its Userlist subscription price during the offer period.
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: external-verification
+            statement: The applicant must be an early-stage SaaS company.
+          - criterion_id: cri_02
+            fact: company.funding_raised_usd
+            kind: predicate
+            operator: lt
+            statement: The company must have raised less than USD 500,000 in total funding.
+            value:
+              type: number
+              value: 500000
+          - criterion_id: cri_03
+            fact: customer.is_new
+            kind: predicate
+            operator: eq
+            statement: The discount is available only for new Userlist accounts.
+            value:
+              type: boolean
+              value: true
+    roles:
+      terms_authority_entity_id: ent_1z5dgec888thmxj5hh29fcpq8p
+      access_operator_entity_id: ent_1z5dgec888thmxj5hh29fcpq8p
+    access:
+      availability: public
+      instructions: Start a Userlist free trial, then contact Userlist support and request the startup discount.
+      method: contact
+      url: https://userlist.com/docs/getting-started/billing/
+    terms_url: https://userlist.com/docs/getting-started/billing/
+    source_ids:
+      - src_5c40e4b1b3221163e0da6e701b69efc54e669f334bd8c7fda53dbdb43252ef85
