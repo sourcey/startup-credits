@@ -1,0 +1,67 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_y2mw7aqj95h2b0xh6s17bs3rav
+  slug: innovation-match
+  slug_aliases: []
+  name: Innovation Match
+  domains:
+    - value: innovationmatch.io
+      role: primary
+      valid_from: 2026-09-01T06:45:00.000Z
+  category: marketing
+profile:
+  summary: Business matchmaking, commercial introductions, visibility, and sales outreach.
+  description: Innovation Match provides business matchmaking, commercial introductions, events, visibility, and sales-outreach services for innovative companies and solution providers.
+  links:
+    site: https://www.innovationmatch.io/
+sources:
+  - source_id: src_311929614e871403c9016e5d62372fd31e126aafc4c5c3a17d4c3bc1ca6d4d66
+    url: https://www.innovationmatch.io/business-match/
+programs:
+  - program_id: prg_mn9x6z64waa30rq92r8f0w5bxw
+    program_slug: prime-startup
+    program_slug_aliases: []
+    title: PRIME STARTUP
+    summary: Innovation Match gives eligible young companies a discounted PRIME subscription for business matchmaking and visibility.
+    source_ids:
+      - src_311929614e871403c9016e5d62372fd31e126aafc4c5c3a17d4c3bc1ca6d4d66
+offers:
+  - offer_id: off_51wse5f6s9twang6z5c6fy23fm
+    program_id: prg_mn9x6z64waa30rq92r8f0w5bxw
+    offer_slug: fifty-percent-off-prime-subscription
+    offer_slug_aliases: []
+    title: 50% Off Innovation Match PRIME
+    summary: Eligible startups pay €299 per month instead of €599 per month for PRIME, including community membership, advanced visibility, priority matchmaking, and access to Innovation Match's 2026 events.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-01T06:45:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 50% STARTUP DISCOUNT ON PRIME SUBSCRIPTION
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 5000
+      consideration:
+        kind: fixed
+        amount:
+          currency: EUR
+          minor_units: 29900
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: external-verification
+        statement: The company must be registered on Innovation Match, have been founded in 2023 or later, and use the startup discount only once for a new activation.
+    roles:
+      terms_authority_entity_id: ent_y2mw7aqj95h2b0xh6s17bs3rav
+      access_operator_entity_id: ent_y2mw7aqj95h2b0xh6s17bs3rav
+    access:
+      availability: public
+      method: form
+      url: https://www.innovationmatch.io/business-match/
+      instructions: Register the company on Innovation Match, then use the PRIME STARTUP subscription route on the business-match page.
+    terms_url: https://www.innovationmatch.io/business-match/
+    source_ids:
+      - src_311929614e871403c9016e5d62372fd31e126aafc4c5c3a17d4c3bc1ca6d4d66
