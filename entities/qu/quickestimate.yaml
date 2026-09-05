@@ -1,0 +1,81 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_6r086m75r6fn9knh0jxf7vxt0g
+  slug: quickestimate
+  slug_aliases: []
+  name: QuickEstimate
+  domains:
+    - value: quickestimate.io
+      role: primary
+      valid_from: 2026-09-01T05:32:00.000Z
+  category: productivity
+profile:
+  description: QuickEstimate is construction-estimating software for producing, managing, and tracking contractor estimates.
+  links:
+    site: https://quickestimate.io/
+sources:
+  - source_id: src_de3013b30946d461632ec76437bbf132db6d8865fee919e6bfca46564f90faaa
+    url: https://quickestimate.io/pricing
+programs:
+  - program_id: prg_avqcgpc6pvvwgh4kezhfndy0qa
+    program_slug: quickestimate-startup-program
+    program_slug_aliases: []
+    title: QuickEstimate Startup Program
+    summary: QuickEstimate gives eligible new contracting businesses 40% off its estimating software for their first 12 months.
+    source_ids:
+      - src_de3013b30946d461632ec76437bbf132db6d8865fee919e6bfca46564f90faaa
+offers:
+  - offer_id: off_mtrdyxmp8dmwejgr14eyny0vk3
+    program_id: prg_avqcgpc6pvvwgh4kezhfndy0qa
+    offer_slug: forty-percent-off-first-twelve-months
+    offer_slug_aliases: []
+    title: 40% Off QuickEstimate for 12 Months
+    summary: Approved contractors that have been in business for less than two years receive 40% off QuickEstimate for 12 months.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-01T05:32:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: The Startup Program offers 40% off for the first 12 months.
+          duration:
+            kind: exact
+            value: P1Y
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 4000
+      consideration:
+        kind: variable
+        description: QuickEstimate paid plans start at $29 per month before the Startup Program discount.
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: external-verification
+            statement: The applicant is a contracting business.
+          - criterion_id: cri_02
+            fact: company.age_months
+            kind: predicate
+            operator: lt
+            statement: The business has been operating for less than two years.
+            value:
+              type: number
+              value: 24
+          - criterion_id: cri_03
+            kind: manual
+            reason: external-verification
+            statement: The applicant provides proof of the business registration date.
+    roles:
+      terms_authority_entity_id: ent_6r086m75r6fn9knh0jxf7vxt0g
+      access_operator_entity_id: ent_6r086m75r6fn9knh0jxf7vxt0g
+    access:
+      availability: public
+      method: contact
+      url: https://quickestimate.io/pricing
+      instructions: Use the contact route published on the pricing page and provide proof of the business registration date.
+    terms_url: https://quickestimate.io/pricing
+    source_ids:
+      - src_de3013b30946d461632ec76437bbf132db6d8865fee919e6bfca46564f90faaa
