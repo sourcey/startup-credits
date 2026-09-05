@@ -1,0 +1,86 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_sn9rg45z45tc775syp04z35j2z
+  slug: complyadvantage
+  slug_aliases: []
+  name: ComplyAdvantage
+  domains:
+    - value: complyadvantage.com
+      role: primary
+      valid_from: 2026-09-01T08:47:02.7164839Z
+  category: legal-compliance
+profile:
+  summary: Financial-crime risk data and AML compliance software.
+  description: ComplyAdvantage provides sanctions, watchlist, politically exposed person, adverse-media, customer-screening, transaction-monitoring, and ongoing risk-monitoring capabilities through cloud interfaces and APIs.
+  links:
+    site: https://complyadvantage.com
+sources:
+  - source_id: src_c6abde8c237cbc2336111467f91575cc09ed79076f34b6220cf5cbe404de24a5
+    url: https://complyadvantage.com/complylaunch/
+programs:
+  - program_id: prg_46jta5pepy2a77hxen38fvamr5
+    program_slug: complylaunch
+    program_slug_aliases: []
+    title: ComplyLaunch
+    summary: Eligible early-stage startups receive 12 months of free access to ComplyAdvantage AML data, automatic risk monitoring, API integration, and ongoing support.
+    source_ids:
+      - src_c6abde8c237cbc2336111467f91575cc09ed79076f34b6220cf5cbe404de24a5
+offers:
+  - offer_id: off_y1gktmd1n740ecad4p8rmhm9we
+    program_id: prg_46jta5pepy2a77hxen38fvamr5
+    offer_slug: twelve-months-free-aml-tools
+    offer_slug_aliases: []
+    title: 12 months free ComplyAdvantage AML tools
+    summary: Approved early-stage startups new to ComplyAdvantage receive 12 months of free AML data access, continuous risk monitoring, API-based integration, and ongoing support.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-01T08:47:02.7164839Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Twelve months of free access to sanctions, politically exposed persons, and relatives and close associates data, with 24/7 automatic risk monitoring, API-based integration, and ongoing support
+          duration:
+            kind: exact
+            value: P1Y
+          kind: free-service
+          service: ComplyAdvantage AML data, automatic risk monitoring, API integration, and support
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: external-verification
+            statement: The applicant must be an early-stage startup.
+          - criterion_id: cri_02
+            fact: customer.is_new
+            kind: predicate
+            operator: eq
+            statement: The startup must not have partnered with ComplyAdvantage previously.
+            value:
+              type: boolean
+              value: true
+          - kind: any
+            rules:
+              - criterion_id: cri_03
+                fact: company.website_url
+                kind: predicate
+                operator: present
+                statement: The startup has a company website.
+              - criterion_id: cri_04
+                kind: manual
+                reason: external-verification
+                statement: The startup has a public web profile.
+    roles:
+      terms_authority_entity_id: ent_sn9rg45z45tc775syp04z35j2z
+      access_operator_entity_id: ent_sn9rg45z45tc775syp04z35j2z
+    access:
+      availability: public
+      instructions: Submit the ComplyLaunch application form with the startup's contact and company details for ComplyAdvantage review.
+      method: form
+      url: https://complyadvantage.com/complylaunch/
+    terms_url: https://complyadvantage.com/complylaunch/
+    source_ids:
+      - src_c6abde8c237cbc2336111467f91575cc09ed79076f34b6220cf5cbe404de24a5
