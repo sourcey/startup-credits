@@ -1,0 +1,69 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_ajthm4d56238pn916mpq44znpc
+  slug: catalyst-cloud
+  slug_aliases: []
+  name: Catalyst Cloud
+  domains:
+    - value: catalystcloud.nz
+      role: primary
+      valid_from: 2026-09-01T07:25:07.625Z
+  category: hosting-infra
+profile:
+  summary: New Zealand cloud infrastructure for compute, storage, networking, and managed platforms.
+  description: Catalyst Cloud provides New Zealand-based infrastructure and platform cloud services, including compute, storage, networking, Kubernetes, and managed databases.
+  links:
+    site: https://catalystcloud.nz
+sources:
+  - source_id: src_6cd4156ffa52e556e6536ec5e4f5e3e1e631d2cf45d25132680a4bee4f7975f9
+    url: https://catalystcloud.nz/pricing/development-grant/
+  - source_id: src_7dd632b9d815c6db2d1a74da650fce6a3e890423abad24df564aeff4569f30cf
+    url: https://catalystcloud.nz/pricing/price-list/
+programs:
+  - program_id: prg_dqbzax7b4spft56n124vzw6kfn
+    program_slug: catalyst-cloud-development-programme
+    program_slug_aliases: []
+    title: Catalyst Cloud Development Programme
+    summary: Catalyst Cloud waives up to NZD 1,000 of qualifying non-production cloud usage per month for developers building cloud-native PaaS and SaaS offerings for the New Zealand market.
+    source_ids:
+      - src_6cd4156ffa52e556e6536ec5e4f5e3e1e631d2cf45d25132680a4bee4f7975f9
+      - src_7dd632b9d815c6db2d1a74da650fce6a3e890423abad24df564aeff4569f30cf
+offers:
+  - offer_id: off_dcshcm8qmyjgekrqz1sc8h8b8x
+    program_id: prg_dqbzax7b4spft56n124vzw6kfn
+    offer_slug: development-grant
+    offer_slug_aliases: []
+    title: Up to NZD 1,000 per month for cloud-native development
+    summary: Developers of cloud-native PaaS or SaaS offerings targeting New Zealand can receive up to NZD 1,000 per month of qualifying Catalyst Cloud development and testing usage for an initial six months.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-01T07:25:07.625Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Free Catalyst Cloud usage up to the value of $1,000 per month
+          duration:
+            kind: exact
+            value: P6M
+          kind: free-service
+          service: Catalyst Cloud usage
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: external-verification
+        statement: Usage must support development or testing of a cloud-native PaaS or SaaS offering for the New Zealand market in a separate qualifying project, not production, revenue-earning, backup, or disaster-recovery workloads.
+    roles:
+      terms_authority_entity_id: ent_ajthm4d56238pn916mpq44znpc
+      access_operator_entity_id: ent_ajthm4d56238pn916mpq44znpc
+    access:
+      availability: public
+      instructions: Contact Catalyst Cloud through the Development Programme page to discuss the application and qualifying project.
+      method: contact
+      url: https://catalystcloud.nz/pricing/development-grant/
+    terms_url: https://catalystcloud.nz/pricing/development-grant/
+    source_ids:
+      - src_6cd4156ffa52e556e6536ec5e4f5e3e1e631d2cf45d25132680a4bee4f7975f9
+      - src_7dd632b9d815c6db2d1a74da650fce6a3e890423abad24df564aeff4569f30cf
