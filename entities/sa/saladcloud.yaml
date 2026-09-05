@@ -1,0 +1,74 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_gm712yds2hkz9gn89yqmz4m0ng
+  slug: saladcloud
+  slug_aliases: []
+  name: SaladCloud
+  domains:
+    - value: salad.com
+      role: primary
+      valid_from: 2026-09-01T10:38:36.329Z
+  category: hosting-infra
+profile:
+  description: SaladCloud provides distributed GPU cloud infrastructure for running containerized AI and machine-learning workloads.
+  links:
+    site: https://salad.com
+sources:
+  - source_id: src_99ebcc8c616cb49e32e30e16e53320a5a49f29240fb3e1c91051ca1bd9f27637
+    url: https://blog.salad.com/salad-gpu-cloud-ssap/
+programs:
+  - program_id: prg_5va5na68dk090mxgjsxnxm4xg6
+    program_slug: salad-solutions-architect-program
+    program_slug_aliases: []
+    title: Salad Solutions Architect Program
+    summary: SaladCloud helps qualifying AI companies benchmark and migrate production workloads to its distributed GPU cloud.
+    source_ids:
+      - src_99ebcc8c616cb49e32e30e16e53320a5a49f29240fb3e1c91051ca1bd9f27637
+offers:
+  - offer_id: off_sw3t76t6ev0tpghzcn2stdrqn1
+    program_id: prg_5va5na68dk090mxgjsxnxm4xg6
+    offer_slug: up-to-10000-credits-and-migration-support
+    offer_slug_aliases: []
+    title: Up to $10,000 in credits and migration support
+    summary: Qualifying AI companies receive up to $10,000 in SaladCloud credits for two months plus dedicated engineering, migration, benchmarking, and documentation support.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-01T10:38:36.329Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_01
+          description: Up to $10,000 in SaladCloud credits for two months
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 1000000
+            kind: up-to
+          duration:
+            kind: exact
+            value: P2M
+        - benefit_id: ben_02
+          description: A dedicated SaladCloud solutions engineer to help build, migrate, test, and benchmark the applicant's workload
+          kind: other
+        - benefit_id: ben_03
+          description: Custom documentation for the applicant's use case and containers
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_01
+        statement: Applicant has compute requirements of at least ten 24 GB VRAM-class GPUs running concurrently and consistently each month.
+        reason: external-verification
+    roles:
+      terms_authority_entity_id: ent_gm712yds2hkz9gn89yqmz4m0ng
+      access_operator_entity_id: ent_gm712yds2hkz9gn89yqmz4m0ng
+    access:
+      availability: public
+      instructions: Use the Talk to our team link on the public SSAP page to book a call. SaladCloud evaluates the use case before enrolling a company in the program.
+      method: contact
+      url: https://salad.com/contact
+    terms_url: https://blog.salad.com/salad-gpu-cloud-ssap/
+    source_ids:
+      - src_99ebcc8c616cb49e32e30e16e53320a5a49f29240fb3e1c91051ca1bd9f27637
