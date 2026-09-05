@@ -1,0 +1,79 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1sbzz8eq9zdm7zw1ay6szv1
+  slug: soax
+  slug_aliases: []
+  name: SOAX
+  domains:
+    - value: soax.com
+      role: primary
+      valid_from: 2026-09-05T18:06:19.913Z
+  category: data-analytics
+profile:
+  description: SOAX provides web data extraction tools, including proxies and scraper APIs.
+  links:
+    site: https://www.soax.com/pricing/startups
+sources:
+  - source_id: src_cf34d658514fba8ae6b67ebbe32ca29ae70d709eecbe8ac3d648589eef0c8aeb
+    url: https://www.soax.com/pricing/startups
+programs: []
+offers:
+  - offer_id: off_01m1sbzz8emk82dhybqmpt1etw
+    offer_slug: startup-discount
+    offer_slug_aliases: []
+    title: SOAX Enterprise startup discount
+    summary: Eligible new startup customers receive 50% off SOAX Enterprise plans.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T18:06:19.913Z
+    economics:
+      benefits:
+        - benefit_id: ben_discount
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 5000
+          applies_to: SOAX Enterprise plans
+          description: 50% off the full-price SOAX Enterprise subscription.
+      consideration:
+        kind: unknown
+        description: An Enterprise subscription remains payable. The public page does not state its base
+          price or a separate participation fee.
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_1
+            kind: predicate
+            fact: company.funding_raised_usd
+            operator: lte
+            value:
+              type: number
+              value: 10000000
+            statement: The startup has raised no more than USD 10 million.
+          - criterion_id: cri_2
+            kind: predicate
+            fact: company.age_months
+            operator: lt
+            value:
+              type: number
+              value: 60
+            statement: The startup was incorporated less than five years ago.
+          - criterion_id: cri_3
+            kind: predicate
+            fact: company.is_current_customer
+            operator: eq
+            value:
+              type: boolean
+              value: false
+            statement: Only new SOAX customers qualify.
+    roles:
+      terms_authority_entity_id: ent_01m1sbzz8eq9zdm7zw1ay6szv1
+      access_operator_entity_id: ent_01m1sbzz8eq9zdm7zw1ay6szv1
+    access:
+      availability: public
+      method: form
+      url: https://www.soax.com/pricing/startups
+    terms_url: https://www.soax.com/pricing/startups
+    source_ids:
+      - src_cf34d658514fba8ae6b67ebbe32ca29ae70d709eecbe8ac3d648589eef0c8aeb
