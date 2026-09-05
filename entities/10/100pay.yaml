@@ -1,0 +1,58 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1fbpqwq2chn798thcg4bt5w
+  slug: 100pay
+  slug_aliases: []
+  name: 100Pay
+  domains:
+    - value: 100pay.co
+      role: primary
+      valid_from: 2026-09-01T20:48:00.000Z
+  category: payments-fintech
+profile:
+  description: 100Pay provides payment infrastructure and financial technology products for businesses.
+  links:
+    site: https://100pay.co/
+sources:
+  - source_id: src_780c7669c87eb2e2d9943a9fd3db038e3feb21205cab006a2f981e069a6fcb64
+    url: https://100pay.co/startups
+programs:
+  - program_id: prg_01m1fbpqwq9mr1sewxdk6ykrg6
+    program_slug: 100pay-startup-program
+    program_slug_aliases: []
+    title: 100Pay Startup Program
+    source_ids:
+      - src_780c7669c87eb2e2d9943a9fd3db038e3feb21205cab006a2f981e069a6fcb64
+offers:
+  - offer_id: off_01m1fbpqwq3dse10vjypp5p308
+    program_id: prg_01m1fbpqwq9mr1sewxdk6ykrg6
+    offer_slug: startup-cloud-credits
+    offer_slug_aliases: []
+    title: Up to $100,000 in cloud infrastructure credits
+    summary: Startups accepted into the 100Pay Startup Program can receive up to $100,000 in cloud infrastructure credits from hosting partners.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-01T20:48:00.000Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_01
+          description: Up to $100,000 in cloud infrastructure credits from 100Pay's hosting partners.
+          kind: other
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Applicant must be a startup and submit startup details, website, and relevant links or social profiles for 100Pay's review.
+    roles:
+      terms_authority_entity_id: ent_01m1fbpqwq2chn798thcg4bt5w
+      access_operator_entity_id: ent_01m1fbpqwq2chn798thcg4bt5w
+    access:
+      availability: public
+      method: contact
+      url: https://100pay.co/startups
+      instructions: Apply by emailing the startup details, website, and relevant links or social profiles to the startup program contact published on the 100Pay page.
+    source_ids:
+      - src_780c7669c87eb2e2d9943a9fd3db038e3feb21205cab006a2f981e069a6fcb64
