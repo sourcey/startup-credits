@@ -10,6 +10,7 @@ entity:
       valid_from: 2026-08-31T00:00:00.000Z
   category: data-analytics
 profile:
+  summary: Warehouse-native experimentation, feature flagging, and product analytics.
   description: GrowthBook provides warehouse-native experimentation, feature flags, and product analytics for software teams.
   links:
     site: https://www.growthbook.io
