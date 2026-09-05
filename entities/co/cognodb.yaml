@@ -1,0 +1,71 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m18zk7ywr3ccgwefhz1tq790
+  slug: cognodb
+  slug_aliases: []
+  name: CognoDB
+  domains:
+    - value: cognodb.com
+      role: primary
+      valid_from: 2026-08-30T09:21:49.019Z
+  category: databases
+profile:
+  description: CognoDB is a managed graph database for connected-data applications including AI agents, fraud detection, recommendations, and context graphs.
+  links:
+    site: https://cognodb.com
+sources:
+  - source_id: src_877111db4142d0bc0664d4b865633c5edf5d3c702d7265ea99a061df938cd1f8
+    url: https://cognodb.com/startups
+programs: []
+offers:
+  - offer_id: off_01m18zk7ywz9phdav0554c4njw
+    offer_slug: cognodb-for-startups
+    offer_slug_aliases: []
+    title: CognoDB for Startups
+    summary: Approved early-stage startups receive $2,000 in CognoDB managed-service credits valid for 12 months, covering compute, storage, and backups, with full product access and priority support.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-30T09:21:49.019Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: $2,000 in CognoDB credits covering managed compute, storage, and backups
+          duration:
+            kind: exact
+            value: P1Y
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 200000
+            kind: exact
+        - benefit_id: ben_02
+          description: Priority support from the CognoDB team, including help modeling or migrating a graph
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: external-verification
+            statement: Applicant uses an organization email address that matches an existing CognoDB account.
+          - criterion_id: cri_02
+            kind: manual
+            reason: external-verification
+            statement: This is the startup's first application to the CognoDB credits program.
+          - criterion_id: cri_03
+            kind: manual
+            reason: vendor-discretion
+            statement: CognoDB manually reviews the application; the program is intended for early-stage startups building real products on connected data.
+    roles:
+      terms_authority_entity_id: ent_01m18zk7ywr3ccgwefhz1tq790
+      access_operator_entity_id: ent_01m18zk7ywr3ccgwefhz1tq790
+    access:
+      availability: public
+      method: form
+      url: https://cognodb.com/startups
+    source_ids:
+      - src_877111db4142d0bc0664d4b865633c5edf5d3c702d7265ea99a061df938cd1f8
