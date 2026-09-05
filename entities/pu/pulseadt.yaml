@@ -1,0 +1,119 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1ghrdpzcdfh7bppwky01zkp
+  slug: pulseadt
+  slug_aliases: []
+  name: PulseADT
+  domains:
+    - value: getpulseadt.com
+      role: primary
+      valid_from: 2026-04-11T15:01:43.355Z
+  category: auth-security
+profile:
+  description: PulseADT provides autonomous cybersecurity for endpoints, cloud infrastructure, identities, networks, exposure management, compliance, and incident response.
+  links:
+    site: https://getpulseadt.com
+sources:
+  - source_id: src_97da5bc42295aa359a1edf8b811a2093f6e21ce35e0f4a70bb3228bbe5e2d11b
+    url: https://getpulseadt.com/for-startups
+  - source_id: src_58a18c6f83ea6734e6bf2ea07acc32f64d860be0c452693a920a240c9c1c31f9
+    url: https://getpulseadt.com/sitemap.xml
+programs:
+  - program_id: prg_01m1ghrdq6ck80108xhc50ghh3
+    program_slug: pulseadt-startup-credit-program
+    program_slug_aliases: []
+    title: PulseADT Startup Credit Program
+    summary: PulseADT's program provides approved early-stage technology startups with platform credits, ongoing savings on one track, early feature access, community, and founder support.
+    source_ids:
+      - src_97da5bc42295aa359a1edf8b811a2093f6e21ce35e0f4a70bb3228bbe5e2d11b
+      - src_58a18c6f83ea6734e6bf2ea07acc32f64d860be0c452693a920a240c9c1c31f9
+offers:
+  - offer_id: off_01m1ghrdq63x03zky9jxt230t7
+    program_id: prg_01m1ghrdq6ck80108xhc50ghh3
+    offer_slug: api-builder-credit-and-discount
+    offer_slug_aliases: []
+    title: $250 credit plus 30% ongoing discount
+    summary: API Builder qualifiers who spend at least $100 on API credits within 90 days receive a $250 credit valid for 12 months, followed by an ongoing 30% discount.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-02T07:53:54.347Z
+    economics:
+      consideration:
+        kind: variable
+        description: Spend at least $100 on PulseADT API credits within the first 90 days.
+      benefits:
+        - benefit_id: ben_01
+          description: A $250 PulseADT credit usable for API calls, subscriptions, or add-ons; the credit is valid for 12 months from issue and expires if unused.
+          duration:
+            kind: exact
+            value: P1Y
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 25000
+            kind: exact
+        - applies_to: PulseADT platform charges after the credit balance reaches zero
+          benefit_id: ben_02
+          description: An ongoing 30% discount activates automatically after the API Builder credit balance reaches zero.
+          kind: discount
+          percentage:
+            basis_points: 3000
+            kind: exact
+        - benefit_id: ben_03
+          description: Early feature access, a private builder community channel, priority onboarding, and a dedicated support lane.
+          kind: other
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.age_months
+            kind: predicate
+            operator: lte
+            statement: The company was founded within the last three years.
+            value:
+              type: number
+              value: 36
+          - criterion_id: cri_02
+            fact: company.employee_count
+            kind: predicate
+            operator: lt
+            statement: The company has fewer than 50 employees.
+            value:
+              type: number
+              value: 50
+          - criterion_id: cri_03
+            fact: company.annual_recurring_revenue_usd
+            kind: predicate
+            operator: lt
+            statement: The company is pre-revenue or has less than $500,000 in annual recurring revenue.
+            value:
+              type: number
+              value: 500000
+          - criterion_id: cri_04
+            kind: manual
+            reason: external-verification
+            statement: The company must be building a technology product such as fintech, healthtech, developer tools, SaaS, AI, Web3, civic technology, or clean technology.
+          - criterion_id: cri_05
+            fact: company.is_subsidiary
+            kind: predicate
+            operator: eq
+            statement: The company is not a subsidiary or division of a larger company.
+            value:
+              type: boolean
+              value: false
+          - criterion_id: cri_06
+            kind: manual
+            reason: vendor-discretion
+            statement: PulseADT reviews the submitted application and verifies that the API Builder track requirements are met.
+    roles:
+      terms_authority_entity_id: ent_01m1ghrdpzcdfh7bppwky01zkp
+      access_operator_entity_id: ent_01m1ghrdpzcdfh7bppwky01zkp
+    access:
+      availability: public
+      method: form
+      url: https://form.typeform.com/to/utHJPV6R
+    source_ids:
+      - src_97da5bc42295aa359a1edf8b811a2093f6e21ce35e0f4a70bb3228bbe5e2d11b
+      - src_58a18c6f83ea6734e6bf2ea07acc32f64d860be0c452693a920a240c9c1c31f9
