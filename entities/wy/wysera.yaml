@@ -36,8 +36,7 @@ offers:
       effective_from: 2026-09-01T06:15:00.000Z
     economics:
       benefits:
-        - applies_to: Wysera founding-member pricing
-          benefit_id: ben_01
+        - benefit_id: ben_01
           description: Founding-member pricing provides 20% to 30% off for 12 months.
           duration:
             kind: exact
@@ -54,28 +53,14 @@ offers:
           kind: free-service
           service: Done-with-you Launch Sprint
       consideration:
-        kind: variable
-        description: Accepted teams that convert after the initial pilot pay the applicable discounted founding-member price.
+        kind: unknown
+        description: The source does not publish the converted founding-member price.
     eligibility:
       rule:
-        kind: all
-        rules:
-          - criterion_id: cri_01
-            kind: manual
-            reason: vendor-discretion
-            statement: Applicant must be an early-stage, B2B-qualified startup with a real product and a genuine need to run marketing, sales, and operations.
-          - criterion_id: cri_02
-            fact: applicant.is_agency
-            kind: predicate
-            operator: eq
-            statement: Agencies reselling the platform are not eligible.
-            value:
-              type: boolean
-              value: false
-          - criterion_id: cri_03
-            kind: manual
-            reason: external-verification
-            statement: One startup-program membership is available per company.
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Wysera manually reviews early-stage B2B startups with a real product; agencies reselling the platform and pre-product ideas are not eligible, and membership is limited to one per company.
     roles:
       terms_authority_entity_id: ent_5hhcjbzrafvn4m9akppramvadd
       access_operator_entity_id: ent_5hhcjbzrafvn4m9akppramvadd
