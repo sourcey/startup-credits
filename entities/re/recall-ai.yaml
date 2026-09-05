@@ -1,0 +1,58 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1ssccpq9srnqd0a3m2r53q2
+  slug: recall-ai
+  slug_aliases: []
+  name: Recall.ai
+  domains:
+    - value: recall.ai
+      role: primary
+      valid_from: 2026-09-05T22:00:15.000Z
+  category: communication
+profile:
+  description: Recall.ai provides meeting transcription and AI summary tools for remote teams.
+  links:
+    site: https://recall.ai
+sources:
+  - source_id: src_dcb8630c0fb03e40f3a214c5d2b0710387f1c831979311ad1f959d2fa4be4d59
+    url: https://recall.ai
+programs:
+  - program_id: prg_01m1ssccqbv49a6rxr1vd4php2
+    program_slug: recall-ai-startup-program
+    program_slug_aliases: []
+    title: Recall.ai Startup Program
+    summary: Recall.ai offers early-stage startups $0.25 per hour for the first 10,000 recording hours plus engineer support through its startup program.
+    source_ids:
+      - src_dcb8630c0fb03e40f3a214c5d2b0710387f1c831979311ad1f959d2fa4be4d59
+offers:
+  - offer_id: off_01m1ssccqbw07371cfyx7vmhra
+    program_id: prg_01m1ssccqbv49a6rxr1vd4php2
+    offer_slug: recall-ai-startup-program
+    offer_slug_aliases: []
+    title: Recall.ai Startup Program
+    summary: Early-stage startups receive $0.25 per hour for the first 10,000 recording hours plus engineer support through the Recall.ai startup program.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:00:15.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: $0.25 per hour for the first 10,000 recording hours plus engineer support for early-stage startups
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1ssccpq9srnqd0a3m2r53q2
+      access_operator_entity_id: ent_01m1ssccpq9srnqd0a3m2r53q2
+    access:
+      availability: public
+      method: form
+      url: https://recall.ai
+    source_ids:
+      - src_dcb8630c0fb03e40f3a214c5d2b0710387f1c831979311ad1f959d2fa4be4d59

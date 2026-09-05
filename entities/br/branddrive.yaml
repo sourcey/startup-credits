@@ -1,0 +1,58 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1stgx63a0t641x8p56bmwss
+  slug: branddrive
+  slug_aliases: []
+  name: BrandDrive
+  domains:
+    - value: branddrive.co
+      role: primary
+      valid_from: 2026-09-05T22:20:14.000Z
+  category: marketing
+profile:
+  description: BrandDrive provides brand management and design tools.
+  links:
+    site: https://branddrive.co
+sources:
+  - source_id: src_e0596963e59290ebef5fcc7986b9fe663c97f52cc24c1f7abb9479026f8ab0d9
+    url: https://branddrive.co/startup-support
+programs:
+  - program_id: prg_01m1stgx87xwdprwy87kfwr8ge
+    program_slug: branddrive-startup-program
+    program_slug_aliases: []
+    title: BrandDrive Startup Support
+    summary: BrandDrive publishes six months of startup support for qualifying early-stage companies.
+    source_ids:
+      - src_e0596963e59290ebef5fcc7986b9fe663c97f52cc24c1f7abb9479026f8ab0d9
+offers:
+  - offer_id: off_01m1stgx873azf6evy44sk747x
+    program_id: prg_01m1stgx87xwdprwy87kfwr8ge
+    offer_slug: branddrive-startup-program
+    offer_slug_aliases: []
+    title: BrandDrive Startup Support
+    summary: Qualifying early-stage companies receive BrandDrive six months of startup support.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:20:14.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Six months of BrandDrive startup support for qualifying early-stage companies
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1stgx63a0t641x8p56bmwss
+      access_operator_entity_id: ent_01m1stgx63a0t641x8p56bmwss
+    access:
+      availability: public
+      method: form
+      url: https://branddrive.co/startup-support
+    source_ids:
+      - src_e0596963e59290ebef5fcc7986b9fe663c97f52cc24c1f7abb9479026f8ab0d9

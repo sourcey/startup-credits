@@ -1,0 +1,63 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1st81xsjp7z2v0ec31r91kz
+  slug: novita-ai
+  slug_aliases: []
+  name: Novita AI
+  domains:
+    - value: novita.ai
+      role: primary
+      valid_from: 2026-09-05T22:15:23.000Z
+  category: ai-ml
+profile:
+  description: Novita AI provides GPU compute and AI model APIs for developers.
+  links:
+    site: https://novita.ai
+sources:
+  - source_id: src_f328b9c97b499749b0c8f8100a4dae2485a401802cdae212f26a29bb7c7588c0
+    url: https://novita.ai
+programs:
+  - program_id: prg_01m1st81xz6rywr1bkr3m2a3km
+    program_slug: novita-ai-startup-program
+    program_slug_aliases: []
+    title: Novita AI for Startups
+    summary: The Novita AI for Startups program offers eligible venture-backed, AI-native companies at Series B or earlier up to $10,000 in usage credits across Model APIs and Agent Sandbox.
+    source_ids:
+      - src_f328b9c97b499749b0c8f8100a4dae2485a401802cdae212f26a29bb7c7588c0
+offers:
+  - offer_id: off_01m1st81xzvyhj2ayehmmsgwjn
+    program_id: prg_01m1st81xz6rywr1bkr3m2a3km
+    offer_slug: novita-ai-startup-program
+    offer_slug_aliases: []
+    title: Novita AI for Startups
+    summary: Eligible venture-backed, AI-native companies at Series B or earlier receive up to $10,000 in Novita AI usage credits across Model APIs and Agent Sandbox.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:15:23.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to $10,000 in Novita AI usage credits across Model APIs and Agent Sandbox for eligible venture-backed AI-native companies at Series B or earlier
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 1000000
+            kind: up-to
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1st81xsjp7z2v0ec31r91kz
+      access_operator_entity_id: ent_01m1st81xsjp7z2v0ec31r91kz
+    access:
+      availability: public
+      method: form
+      url: https://novita.ai
+    source_ids:
+      - src_f328b9c97b499749b0c8f8100a4dae2485a401802cdae212f26a29bb7c7588c0

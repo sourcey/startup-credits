@@ -1,0 +1,61 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1srhddkd2z1q32kh4qwzjr1
+  slug: wevestr
+  slug_aliases: []
+  name: WE.VESTR
+  domains:
+    - value: wevestr.com
+      role: primary
+      valid_from: 2026-09-05T21:45:33.000Z
+  category: finance-accounting
+profile:
+  description: WE.VESTR provides equity management and cap table software for startup teams and investors.
+  links:
+    site: https://wevestr.com
+sources:
+  - source_id: src_a78f536bec7ee94cb0525dcb68e61086067b8c030125b6e20686adff6b9c38a4
+    url: https://www.microsoft.com/en-us/startups
+programs:
+  - program_id: prg_01m1srhdesacc1wcm0ya62rvqz
+    program_slug: wevestr-startup-program
+    program_slug_aliases: []
+    title: WE.VESTR Microsoft for Startups Benefit
+    summary: Microsoft for Startups members can receive a first-year discount on WE.VESTR equity-management plans for companies with 30 or more stakeholders.
+    source_ids:
+      - src_a78f536bec7ee94cb0525dcb68e61086067b8c030125b6e20686adff6b9c38a4
+offers:
+  - offer_id: off_01m1srhdexy8w0dr8mtvye6kfy
+    program_id: prg_01m1srhdesacc1wcm0ya62rvqz
+    offer_slug: wevestr-startup-program
+    offer_slug_aliases: []
+    title: WE.VESTR Microsoft for Startups Benefit
+    summary: Eligible Microsoft for Startups members receive 70% off WE.VESTR plans for the first year, for companies with 30+ stakeholders.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T21:45:33.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 70% off WE.VESTR equity-management plans for the first year for Microsoft for Startups members with 30+ stakeholders
+          kind: discount
+          percentage:
+            basis_points: 7000
+            kind: exact
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1srhddkd2z1q32kh4qwzjr1
+      access_operator_entity_id: ent_01m1srhddkd2z1q32kh4qwzjr1
+    access:
+      availability: public
+      method: form
+      url: https://www.microsoft.com/en-us/startups
+    source_ids:
+      - src_a78f536bec7ee94cb0525dcb68e61086067b8c030125b6e20686adff6b9c38a4

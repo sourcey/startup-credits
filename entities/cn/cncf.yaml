@@ -1,0 +1,58 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1svmzc7z7n67y8c1y7w8kak
+  slug: cncf
+  slug_aliases: []
+  name: CNCF
+  domains:
+    - value: cncf.io
+      role: primary
+      valid_from: 2026-09-05T22:39:56.000Z
+  category: devtools-other
+profile:
+  description: CNCF (Cloud Native Computing Foundation) supports cloud-native open-source projects.
+  links:
+    site: https://cncf.io
+sources:
+  - source_id: src_08ff09d566315aa2559349ec56f3ed40afd724092c9b2eeb2cb01b9b0aaf8015
+    url: https://cncf.io
+programs:
+  - program_id: prg_01m1svmzcw853rjs83k22688r2
+    program_slug: cncf-startup-program
+    program_slug_aliases: []
+    title: CNCF Startup Program
+    summary: Eligible cloud-native startups can join the CNCF Startup Program and receive 50% off KubeCon and other CNCF event discounts.
+    source_ids:
+      - src_08ff09d566315aa2559349ec56f3ed40afd724092c9b2eeb2cb01b9b0aaf8015
+offers:
+  - offer_id: off_01m1svmzcw4een415q6shcr2be
+    program_id: prg_01m1svmzcw853rjs83k22688r2
+    offer_slug: cncf-startup-program
+    offer_slug_aliases: []
+    title: CNCF Startup Program
+    summary: Eligible cloud-native startups receive 50% off KubeCon and CNCF event discounts through the startup program.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:39:56.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 50% off KubeCon and CNCF event discounts for eligible cloud-native startups through the startup program
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1svmzc7z7n67y8c1y7w8kak
+      access_operator_entity_id: ent_01m1svmzc7z7n67y8c1y7w8kak
+    access:
+      availability: public
+      method: form
+      url: https://cncf.io
+    source_ids:
+      - src_08ff09d566315aa2559349ec56f3ed40afd724092c9b2eeb2cb01b9b0aaf8015

@@ -1,0 +1,61 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1ssa86t4xebg9gazhcd3ttf
+  slug: recruitly
+  slug_aliases: []
+  name: Recruitly
+  domains:
+    - value: recruitly.io
+      role: primary
+      valid_from: 2026-09-05T21:59:06.000Z
+  category: hr-people
+profile:
+  description: Recruitly provides applicant tracking and recruiting software for staffing agencies.
+  links:
+    site: https://recruitly.io
+sources:
+  - source_id: src_5c9ba44af9951025197da9acad49eb380e8f527092b0fe429e09e37193e93f67
+    url: https://recruitly.io
+programs:
+  - program_id: prg_01m1ssa87garrp49v7mqvzem9p
+    program_slug: recruitly-startup-program
+    program_slug_aliases: []
+    title: Recruitly Startup Program
+    summary: Recruitly offers qualifying early-stage recruiting agencies 75% off its plans for their first three years.
+    source_ids:
+      - src_5c9ba44af9951025197da9acad49eb380e8f527092b0fe429e09e37193e93f67
+offers:
+  - offer_id: off_01m1ssa87g7zv0jh8e2n4ctsf7
+    program_id: prg_01m1ssa87garrp49v7mqvzem9p
+    offer_slug: recruitly-startup-program
+    offer_slug_aliases: []
+    title: Recruitly Startup Program
+    summary: Eligible early-stage recruiting agencies receive 75% off Recruitly plans for their first three years.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T21:59:06.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 75% off Recruitly plans for eligible early-stage recruiting agencies for their first three years
+          kind: discount
+          percentage:
+            basis_points: 7500
+            kind: exact
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1ssa86t4xebg9gazhcd3ttf
+      access_operator_entity_id: ent_01m1ssa86t4xebg9gazhcd3ttf
+    access:
+      availability: public
+      method: form
+      url: https://recruitly.io
+    source_ids:
+      - src_5c9ba44af9951025197da9acad49eb380e8f527092b0fe429e09e37193e93f67

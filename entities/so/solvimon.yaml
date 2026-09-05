@@ -1,0 +1,58 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1svdg01y7mrrf0h39n7bf65
+  slug: solvimon
+  slug_aliases: []
+  name: Solvimon
+  domains:
+    - value: solvimon.com
+      role: primary
+      valid_from: 2026-09-05T22:35:51.000Z
+  category: productivity
+profile:
+  description: Solvimon provides billing and revenue operations tools.
+  links:
+    site: https://www.solvimon.com
+sources:
+  - source_id: src_540ac3a2d019c7aed86a30aff39b37f71658848152910d2d5bbb791585dc0437
+    url: https://www.solvimon.com/pricing/vc/yc
+programs:
+  - program_id: prg_01m1svdg079ye5h8x3temt1s5k
+    program_slug: solvimon-startup-program
+    program_slug_aliases: []
+    title: Solvimon Startup Program
+    summary: Solvimon offers startup-specific pricing for its billing and revenue operations platform for qualifying YC and VC-backed companies.
+    source_ids:
+      - src_540ac3a2d019c7aed86a30aff39b37f71658848152910d2d5bbb791585dc0437
+offers:
+  - offer_id: off_01m1svdg07rg1zt2fkxvy78tsz
+    program_id: prg_01m1svdg079ye5h8x3temt1s5k
+    offer_slug: solvimon-startup-program
+    offer_slug_aliases: []
+    title: Solvimon Startup Program
+    summary: YC and VC-backed companies receive Solvimon startup-specific pricing for its billing and revenue operations platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:35:51.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Solvimon startup-specific pricing for YC and VC-backed companies
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1svdg01y7mrrf0h39n7bf65
+      access_operator_entity_id: ent_01m1svdg01y7mrrf0h39n7bf65
+    access:
+      availability: public
+      method: form
+      url: https://www.solvimon.com/pricing/vc/yc
+    source_ids:
+      - src_540ac3a2d019c7aed86a30aff39b37f71658848152910d2d5bbb791585dc0437

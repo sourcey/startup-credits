@@ -1,0 +1,61 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1sv4q2p57fdqbr7zbw2yepn
+  slug: safestack
+  slug_aliases: []
+  name: SafeStack
+  domains:
+    - value: safestack.io
+      role: primary
+      valid_from: 2026-09-05T22:31:03.000Z
+  category: auth-security
+profile:
+  description: SafeStack provides developer security training and secure development tools.
+  links:
+    site: https://safestack.io
+sources:
+  - source_id: src_f271c66ceaa4d411a8f3069e7ff4742c81aa7754ddb24de9eed5b4c378e5b86b
+    url: https://safestack.io/secure-your-startup-discount
+programs:
+  - program_id: prg_01m1sv4q33p2c30ncfxa5bdcna
+    program_slug: safestack-startup-program
+    program_slug_aliases: []
+    title: SafeStack Startup Discount
+    summary: SafeStack offers 50% off the SafeStack team plan for the first 12 months for eligible early-stage companies.
+    source_ids:
+      - src_f271c66ceaa4d411a8f3069e7ff4742c81aa7754ddb24de9eed5b4c378e5b86b
+offers:
+  - offer_id: off_01m1sv4q34d83t75tk5sfqbehx
+    program_id: prg_01m1sv4q33p2c30ncfxa5bdcna
+    offer_slug: safestack-startup-program
+    offer_slug_aliases: []
+    title: SafeStack Startup Discount
+    summary: Eligible early-stage companies receive 50% off the SafeStack team plan for the first 12 months.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:31:03.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 50% off SafeStack team plan for the first 12 months for eligible early-stage companies
+          kind: discount
+          percentage:
+            basis_points: 5000
+            kind: exact
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1sv4q2p57fdqbr7zbw2yepn
+      access_operator_entity_id: ent_01m1sv4q2p57fdqbr7zbw2yepn
+    access:
+      availability: public
+      method: form
+      url: https://safestack.io/secure-your-startup-discount
+    source_ids:
+      - src_f271c66ceaa4d411a8f3069e7ff4742c81aa7754ddb24de9eed5b4c378e5b86b

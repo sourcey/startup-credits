@@ -1,0 +1,58 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1ssxmgzprjyzwa7skk8q740
+  slug: sarvam-ai
+  slug_aliases: []
+  name: Sarvam AI
+  domains:
+    - value: sarvam.ai
+      role: primary
+      valid_from: 2026-09-05T22:09:43.000Z
+  category: ai-ml
+profile:
+  description: Sarvam AI provides AI model APIs and platform services for Indian enterprises and startups.
+  links:
+    site: https://sarvam.ai
+sources:
+  - source_id: src_72b198934172034238649759be56106ea389e030c0b0de9ad1c8d43423bb4dd7
+    url: https://sarvam.ai
+programs:
+  - program_id: prg_01m1ssxmhfkk7bsvwrxh7hcmfs
+    program_slug: sarvam-ai-startup-program
+    program_slug_aliases: []
+    title: Sarvam AI Startup Program
+    summary: Sarvam AI offers 6-12 months of API credits matched to a startup's scale plus priority engineering support for qualifying Indian startups.
+    source_ids:
+      - src_72b198934172034238649759be56106ea389e030c0b0de9ad1c8d43423bb4dd7
+offers:
+  - offer_id: off_01m1ssxmhhxbgr3gtcwn09pes9
+    program_id: prg_01m1ssxmhfkk7bsvwrxh7hcmfs
+    offer_slug: sarvam-ai-startup-program
+    offer_slug_aliases: []
+    title: Sarvam AI Startup Program
+    summary: Qualifying Indian startups receive 6-12 months of Sarvam AI API credits matched to their scale plus priority engineering support.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:09:43.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 6-12 months of Sarvam AI API credits matched to startup scale plus priority engineering support for qualifying Indian startups
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1ssxmgzprjyzwa7skk8q740
+      access_operator_entity_id: ent_01m1ssxmgzprjyzwa7skk8q740
+    access:
+      availability: public
+      method: form
+      url: https://sarvam.ai
+    source_ids:
+      - src_72b198934172034238649759be56106ea389e030c0b0de9ad1c8d43423bb4dd7

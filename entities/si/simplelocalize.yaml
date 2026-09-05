@@ -1,0 +1,58 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1srn2t7v77306b7hh9spg6p
+  slug: simplelocalize
+  slug_aliases: []
+  name: SimpleLocalize
+  domains:
+    - value: simplelocalize.io
+      role: primary
+      valid_from: 2026-09-05T21:47:33.000Z
+  category: apis-integration
+profile:
+  description: SimpleLocalize provides a developer-friendly localization and translation management platform.
+  links:
+    site: https://simplelocalize.io
+sources:
+  - source_id: src_c84aa0e6bfd93237e0a0067d08e15f593a885114d7b3a99a094db3a8fd2579ff
+    url: https://simplelocalize.io
+programs:
+  - program_id: prg_01m1srn2thy10nmybyzxv54jbs
+    program_slug: simplelocalize-startup-program
+    program_slug_aliases: []
+    title: SimpleLocalize Startup Developer Plan
+    summary: SimpleLocalize offers the Developer Plan free for the first year for approved startups that contribute to the community.
+    source_ids:
+      - src_c84aa0e6bfd93237e0a0067d08e15f593a885114d7b3a99a094db3a8fd2579ff
+offers:
+  - offer_id: off_01m1srn2tj11tz72y8xne5tqvk
+    program_id: prg_01m1srn2thy10nmybyzxv54jbs
+    offer_slug: simplelocalize-startup-program
+    offer_slug_aliases: []
+    title: SimpleLocalize Startup Developer Plan
+    summary: Approved startups that contribute to the community receive the SimpleLocalize Developer Plan free for one year.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T21:47:33.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Free Developer Plan for one year for approved startups contributing to the community
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1srn2t7v77306b7hh9spg6p
+      access_operator_entity_id: ent_01m1srn2t7v77306b7hh9spg6p
+    access:
+      availability: public
+      method: form
+      url: https://simplelocalize.io
+    source_ids:
+      - src_c84aa0e6bfd93237e0a0067d08e15f593a885114d7b3a99a094db3a8fd2579ff

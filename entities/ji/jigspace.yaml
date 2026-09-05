@@ -1,0 +1,61 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1swjs1r9y2sdbtw2p5k3qrw
+  slug: jigspace
+  slug_aliases: []
+  name: JigSpace
+  domains:
+    - value: jig.com
+      role: primary
+      valid_from: 2026-09-05T22:56:11.000Z
+  category: marketing
+profile:
+  description: JigSpace provides interactive 3D presentation and pitch tools.
+  links:
+    site: https://jig.com
+sources:
+  - source_id: src_7ea637d620358c92a3223fd457cabeed04d64a5366be6fe9fa82c8730c1a61bb
+    url: https://jig.com
+programs:
+  - program_id: prg_01m1swjs1xy0nryqa7xc01rawb
+    program_slug: jigspace-startup-program
+    program_slug_aliases: []
+    title: JigSpace Startup Program
+    summary: Eligible startups can receive 50% off JigSpace plans for 12 months through the startup program.
+    source_ids:
+      - src_7ea637d620358c92a3223fd457cabeed04d64a5366be6fe9fa82c8730c1a61bb
+offers:
+  - offer_id: off_01m1swjs1ypqww95sns1ghm37t
+    program_id: prg_01m1swjs1xy0nryqa7xc01rawb
+    offer_slug: jigspace-startup-program
+    offer_slug_aliases: []
+    title: JigSpace Startup Program
+    summary: Eligible startups receive 50% off JigSpace plans for 12 months through the startup program.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:56:11.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 50% off JigSpace plans for 12 months for eligible startups through the startup program
+          kind: discount
+          percentage:
+            basis_points: 5000
+            kind: exact
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1swjs1r9y2sdbtw2p5k3qrw
+      access_operator_entity_id: ent_01m1swjs1r9y2sdbtw2p5k3qrw
+    access:
+      availability: public
+      method: form
+      url: https://jig.com
+    source_ids:
+      - src_7ea637d620358c92a3223fd457cabeed04d64a5366be6fe9fa82c8730c1a61bb

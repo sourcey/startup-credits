@@ -1,0 +1,63 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1ssrddwskyeycam1cbdsfwe
+  slug: scyverge
+  slug_aliases: []
+  name: Scyverge
+  domains:
+    - value: scyverge.com
+      role: primary
+      valid_from: 2026-09-05T22:06:51.000Z
+  category: auth-security
+profile:
+  description: Scyverge provides cybersecurity services and tools for startup teams.
+  links:
+    site: https://scyverge.com
+sources:
+  - source_id: src_5af143d29a1441f2e70eaf4689c72f1ff15e2cc5b1d9e262b078b589cbc21845
+    url: https://scyverge.com
+programs:
+  - program_id: prg_01m1ssrde626b87vbvq21kn49q
+    program_slug: scyverge-startup-program
+    program_slug_aliases: []
+    title: Scyverge Startup Program
+    summary: The Scyverge Startup Program gives approved registered startups $1,000 in service credits valid for 12 months, plus a free security roadmap and security awareness training.
+    source_ids:
+      - src_5af143d29a1441f2e70eaf4689c72f1ff15e2cc5b1d9e262b078b589cbc21845
+offers:
+  - offer_id: off_01m1ssrde6gceff70th7nw6cer
+    program_id: prg_01m1ssrde626b87vbvq21kn49q
+    offer_slug: scyverge-startup-program
+    offer_slug_aliases: []
+    title: Scyverge Startup Program
+    summary: Approved registered startups receive $1,000 in Scyverge service credits for 12 months plus a free security roadmap and security awareness training.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:06:51.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: $1,000 in Scyverge service credits for 12 months plus a free security roadmap and security awareness training
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 100000
+            kind: up-to
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1ssrddwskyeycam1cbdsfwe
+      access_operator_entity_id: ent_01m1ssrddwskyeycam1cbdsfwe
+    access:
+      availability: public
+      method: form
+      url: https://scyverge.com
+    source_ids:
+      - src_5af143d29a1441f2e70eaf4689c72f1ff15e2cc5b1d9e262b078b589cbc21845

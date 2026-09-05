@@ -1,0 +1,58 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1svdgfn0n04datefcktbc07
+  slug: futureproof
+  slug_aliases: []
+  name: Futureproof
+  domains:
+    - value: runfutureproof.com
+      role: primary
+      valid_from: 2026-09-05T22:35:51.000Z
+  category: productivity
+profile:
+  description: Futureproof provides AI agent and workflow automation tools.
+  links:
+    site: https://runfutureproof.com
+sources:
+  - source_id: src_911b7ecde4b5d7d2ec637374a135135d6c221f12fd6e5727b81b6f3efbe05050
+    url: https://runfutureproof.com
+programs:
+  - program_id: prg_01m1svdgft5z5t6e09ca45v4mj
+    program_slug: futureproof-startup-program
+    program_slug_aliases: []
+    title: Futureproof Startup Program
+    summary: Futureproof offers eligible SaaS and ecommerce startups under $200K ARR/GMV and under $1M raised its six-agent platform at startup pricing.
+    source_ids:
+      - src_911b7ecde4b5d7d2ec637374a135135d6c221f12fd6e5727b81b6f3efbe05050
+offers:
+  - offer_id: off_01m1svdgftrfcw2g7b5rw14c3y
+    program_id: prg_01m1svdgft5z5t6e09ca45v4mj
+    offer_slug: futureproof-startup-program
+    offer_slug_aliases: []
+    title: Futureproof Startup Program
+    summary: SaaS and ecommerce startups under $200K ARR/GMV and $1M raised receive Futureproof six-agent platform at startup pricing.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:35:51.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Futureproof six-agent platform at startup pricing for eligible SaaS and ecommerce startups under $200K ARR and $1M raised
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1svdgfn0n04datefcktbc07
+      access_operator_entity_id: ent_01m1svdgfn0n04datefcktbc07
+    access:
+      availability: public
+      method: form
+      url: https://runfutureproof.com
+    source_ids:
+      - src_911b7ecde4b5d7d2ec637374a135135d6c221f12fd6e5727b81b6f3efbe05050

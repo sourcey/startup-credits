@@ -1,0 +1,58 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1stjwm4t24japtbddvbhw5z
+  slug: codedesign
+  slug_aliases: []
+  name: CodeDesign
+  domains:
+    - value: codedesign.ai
+      role: primary
+      valid_from: 2026-09-05T22:21:18.000Z
+  category: productivity
+profile:
+  description: CodeDesign provides AI-powered website building and design tools.
+  links:
+    site: https://codedesign.ai
+sources:
+  - source_id: src_548cef913999e4673450bcc92fd0ebacf2b53bde23a0ac7b7a433953718aafa7
+    url: https://codedesign.ai/startup
+programs:
+  - program_id: prg_01m1stjwmaaans2a9cz61d26j5
+    program_slug: codedesign-startup-program
+    program_slug_aliases: []
+    title: CodeDesign Startup Programme
+    summary: CodeDesign Startup Programme offers a free year of the Growth plan for eligible startups.
+    source_ids:
+      - src_548cef913999e4673450bcc92fd0ebacf2b53bde23a0ac7b7a433953718aafa7
+offers:
+  - offer_id: off_01m1stjwmbt0tknr36zbaf9y1a
+    program_id: prg_01m1stjwmaaans2a9cz61d26j5
+    offer_slug: codedesign-startup-program
+    offer_slug_aliases: []
+    title: CodeDesign Startup Programme
+    summary: Eligible startups receive CodeDesign Growth plan free for one year through the startup programme.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:21:18.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: CodeDesign Growth plan free for one year for eligible startups
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1stjwm4t24japtbddvbhw5z
+      access_operator_entity_id: ent_01m1stjwm4t24japtbddvbhw5z
+    access:
+      availability: public
+      method: form
+      url: https://codedesign.ai/startup
+    source_ids:
+      - src_548cef913999e4673450bcc92fd0ebacf2b53bde23a0ac7b7a433953718aafa7

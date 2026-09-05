@@ -1,0 +1,63 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1ss876pjmvdkn9p0ekapwza
+  slug: ultralytics
+  slug_aliases: []
+  name: Ultralytics
+  domains:
+    - value: ultralytics.com
+      role: primary
+      valid_from: 2026-09-05T21:58:00.000Z
+  category: ai-ml
+profile:
+  description: Ultralytics provides the YOLO open-source AI model framework and enterprise AI platform.
+  links:
+    site: https://www.ultralytics.com
+sources:
+  - source_id: src_5426417776ee4efa57e4aa5aa47bd8adb371ccfab5863aef8004139b85c49f0c
+    url: https://www.ultralytics.com/startups
+programs:
+  - program_id: prg_01m1ss877agdy1b5p77nz98sqm
+    program_slug: ultralytics-startup-program
+    program_slug_aliases: []
+    title: Ultralytics for Startups
+    summary: Ultralytics offers qualifying startups up to $10,000 in Ultralytics Platform credits for AI model training and deployment.
+    source_ids:
+      - src_5426417776ee4efa57e4aa5aa47bd8adb371ccfab5863aef8004139b85c49f0c
+offers:
+  - offer_id: off_01m1ss877ap2csrp9f5aq2qxcd
+    program_id: prg_01m1ss877agdy1b5p77nz98sqm
+    offer_slug: ultralytics-startup-program
+    offer_slug_aliases: []
+    title: Ultralytics for Startups
+    summary: Eligible startups receive up to $10,000 in Ultralytics Platform credits through the startup program.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T21:58:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to $10,000 in Ultralytics Platform credits for qualifying startups
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 1000000
+            kind: up-to
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1ss876pjmvdkn9p0ekapwza
+      access_operator_entity_id: ent_01m1ss876pjmvdkn9p0ekapwza
+    access:
+      availability: public
+      method: form
+      url: https://www.ultralytics.com/startups
+    source_ids:
+      - src_5426417776ee4efa57e4aa5aa47bd8adb371ccfab5863aef8004139b85c49f0c

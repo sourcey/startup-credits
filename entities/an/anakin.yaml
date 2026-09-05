@@ -1,0 +1,58 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1stm2xyd9m1bg81je2b8s56
+  slug: anakin
+  slug_aliases: []
+  name: Anakin
+  domains:
+    - value: anakin.io
+      role: primary
+      valid_from: 2026-09-05T22:21:58.000Z
+  category: ai-ml
+profile:
+  description: Anakin provides AI-powered automation and workflow tools.
+  links:
+    site: https://anakin.io
+sources:
+  - source_id: src_737bc7ed04aef0e775fec96b5a4a2881b0322ad9261f7d59925ad5f6cd904aa6
+    url: https://anakin.io/startups
+programs:
+  - program_id: prg_01m1stm2yk6ghr8pec84xdpvnz
+    program_slug: anakin-startup-program
+    program_slug_aliases: []
+    title: Anakin Jumpstart
+    summary: Anakin Jumpstart offers qualifying startups up to 400,000 page credits and 50% off Pro or Scale for six months.
+    source_ids:
+      - src_737bc7ed04aef0e775fec96b5a4a2881b0322ad9261f7d59925ad5f6cd904aa6
+offers:
+  - offer_id: off_01m1stm2yk21w5301097514n26
+    program_id: prg_01m1stm2yk6ghr8pec84xdpvnz
+    offer_slug: anakin-startup-program
+    offer_slug_aliases: []
+    title: Anakin Jumpstart
+    summary: Qualifying startups receive up to 400,000 Anakin page credits and 50% off Pro or Scale for six months.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:21:58.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to 400,000 Anakin page credits plus 50% off Pro or Scale for six months for qualifying startups
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1stm2xyd9m1bg81je2b8s56
+      access_operator_entity_id: ent_01m1stm2xyd9m1bg81je2b8s56
+    access:
+      availability: public
+      method: form
+      url: https://anakin.io/startups
+    source_ids:
+      - src_737bc7ed04aef0e775fec96b5a4a2881b0322ad9261f7d59925ad5f6cd904aa6

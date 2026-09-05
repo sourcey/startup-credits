@@ -1,0 +1,64 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_bxgqedyptdv3gpvzbtmf72znad
+  slug: northflank
+  slug_aliases: []
+  name: Northflank
+  domains:
+    - value: northflank.com
+      role: primary
+      valid_from: 2026-09-05T21:22:54.000Z
+  category: hosting-infra
+profile:
+  description: Northflank is a DevOps and deployment platform offering managed Kubernetes, databases, and CI/CD pipelines optimized for AI workloads and startups.
+  links:
+    site: https://www.northflank.com
+sources:
+  - source_id: src_ddf718790134e7207036f78356fabea99612f6a9071cd204f97f614a5e466cf5
+    url: https://www.northflank.com
+programs:
+  - program_id: prg_bxgqedyptdv3gpvzbtmf72znad
+    program_slug: northflank-startup
+    program_slug_aliases: []
+    title: Northflank Free Tier
+    summary: Northflank offers a free tier and discounted compute plans targeting bootstrapped companies, early-stage startups, and solo developers.
+    source_ids:
+      - src_ddf718790134e7207036f78356fabea99612f6a9071cd204f97f614a5e466cf5
+offers:
+  - offer_id: off_bxgqedyptdv3gpvzbtmf72znad
+    program_id: prg_bxgqedyptdv3gpvzbtmf72znad
+    offer_slug: northflank-startup-credits
+    offer_slug_aliases: []
+    title: Northflank free tier and startup compute
+    summary: Northflank provides free tier access and discounted compute plans for early-stage startups, with preview environments, managed databases, and pay-as-you-go pricing.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T21:22:54.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_bdfd3fa39c5300c08cbcd0dc
+          description: Free tier with preview and production environments, managed databases, and CI/CD pipelines for qualifying early-stage startups.
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 0
+            kind: up-to
+      consideration:
+        kind: unknown
+        description: The public program page does not establish separate consideration for the grant.
+    eligibility:
+      rule:
+        criterion_id: cri_bdfd3fa39c5300c08cbcd0dc
+        kind: manual
+        reason: vendor-discretion
+        statement: "Available to bootstrapped companies, early-stage startups, and solo developers. No formal startup credits program; free tier access."
+    roles:
+      terms_authority_entity_id: ent_bxgqedyptdv3gpvzbtmf72znad
+      access_operator_entity_id: ent_bxgqedyptdv3gpvzbtmf72znad
+    access:
+      availability: public
+      method: form
+      url: https://www.northflank.com
+    source_ids:
+      - src_ddf718790134e7207036f78356fabea99612f6a9071cd204f97f614a5e466cf5

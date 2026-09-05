@@ -1,0 +1,61 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1svv8qypyhjk29xpsbedfh2
+  slug: relevate
+  slug_aliases: []
+  name: Relevate
+  domains:
+    - value: relevate.app
+      role: primary
+      valid_from: 2026-09-05T22:43:22.000Z
+  category: marketing
+profile:
+  description: Relevate provides AI-powered marketing and content tools.
+  links:
+    site: https://relevate.app
+sources:
+  - source_id: src_9dccb6f90b62e4828d594aa9df649fe14c7b5aad986a091eab22a84edfe2616d
+    url: https://relevate.app
+programs:
+  - program_id: prg_01m1svv8s37cczrrg4fpaa6h6n
+    program_slug: relevate-startup-program
+    program_slug_aliases: []
+    title: Relevate Startup Program
+    summary: Relevate offers eligible early-stage startups 50% off its Pro plan while they remain eligible, with priority onboarding.
+    source_ids:
+      - src_9dccb6f90b62e4828d594aa9df649fe14c7b5aad986a091eab22a84edfe2616d
+offers:
+  - offer_id: off_01m1svv8s3mak820mffgsgjcd4
+    program_id: prg_01m1svv8s37cczrrg4fpaa6h6n
+    offer_slug: relevate-startup-program
+    offer_slug_aliases: []
+    title: Relevate Startup Program
+    summary: Eligible early-stage startups receive 50% off Relevate Pro plan while they remain eligible with priority onboarding.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:43:22.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 50% off Relevate Pro plan with priority onboarding for eligible early-stage startups
+          kind: discount
+          percentage:
+            basis_points: 5000
+            kind: exact
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1svv8qypyhjk29xpsbedfh2
+      access_operator_entity_id: ent_01m1svv8qypyhjk29xpsbedfh2
+    access:
+      availability: public
+      method: form
+      url: https://relevate.app
+    source_ids:
+      - src_9dccb6f90b62e4828d594aa9df649fe14c7b5aad986a091eab22a84edfe2616d

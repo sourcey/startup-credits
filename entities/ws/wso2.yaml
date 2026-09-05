@@ -1,0 +1,63 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1st1n6a3kwm5gkka9tz12cg
+  slug: wso2
+  slug_aliases: []
+  name: WSO2
+  domains:
+    - value: wso2.com
+      role: primary
+      valid_from: 2026-09-05T22:11:52.000Z
+  category: hosting-infra
+profile:
+  description: WSO2 provides open-source API management and integration platform tools.
+  links:
+    site: https://wso2.com
+sources:
+  - source_id: src_e8b209568d9a4906f17ab96a75a52170fa545e84861d2aa44607289b61e54562
+    url: https://wso2.com
+programs:
+  - program_id: prg_01m1st1n6jx9hzhzcpy2tzv4wq
+    program_slug: wso2-startup-program
+    program_slug_aliases: []
+    title: WSO2 for Startups
+    summary: WSO2 for Startups offers eligible startups up to $10,000 in Developer Platform and Asgardeo credits for 12 months, plus $2,100 in WUM support credits.
+    source_ids:
+      - src_e8b209568d9a4906f17ab96a75a52170fa545e84861d2aa44607289b61e54562
+offers:
+  - offer_id: off_01m1st1n6j5bt8kx15etcy2c6j
+    program_id: prg_01m1st1n6jx9hzhzcpy2tzv4wq
+    offer_slug: wso2-startup-program
+    offer_slug_aliases: []
+    title: WSO2 for Startups
+    summary: Eligible startups receive up to $10,000 in WSO2 Developer Platform and Asgardeo credits for 12 months plus $2,100 in WUM support credits.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:11:52.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to $10,000 in WSO2 Developer Platform and Asgardeo credits for 12 months plus $2,100 in WUM support credits
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 1000000
+            kind: up-to
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1st1n6a3kwm5gkka9tz12cg
+      access_operator_entity_id: ent_01m1st1n6a3kwm5gkka9tz12cg
+    access:
+      availability: public
+      method: form
+      url: https://wso2.com
+    source_ids:
+      - src_e8b209568d9a4906f17ab96a75a52170fa545e84861d2aa44607289b61e54562

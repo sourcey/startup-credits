@@ -1,0 +1,61 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1ssns37x44t0jk124q64qwb
+  slug: nervemind
+  slug_aliases: []
+  name: NerveMind AI
+  domains:
+    - value: nervemindos.com
+      role: primary
+      valid_from: 2026-09-05T22:05:24.000Z
+  category: ai-ml
+profile:
+  description: NerveMind AI provides operating system and development tools for AI-enabled products.
+  links:
+    site: https://nervemindos.com
+sources:
+  - source_id: src_47e1dd163b4f59022efd5d6c138acc36dd01aa54fcfba0c6b13637ead8d53564
+    url: https://nervemindos.com
+programs:
+  - program_id: prg_01m1ssns485jpe7esgts112qag
+    program_slug: nervemind-startup-program
+    program_slug_aliases: []
+    title: NerveMind AI Startup Program
+    summary: Approved early-stage startups and small businesses building AI-enabled products can receive 50% off one eligible self-serve CGOS plan for 12 months.
+    source_ids:
+      - src_47e1dd163b4f59022efd5d6c138acc36dd01aa54fcfba0c6b13637ead8d53564
+offers:
+  - offer_id: off_01m1ssns4hemwrnf6x0ykrz78s
+    program_id: prg_01m1ssns485jpe7esgts112qag
+    offer_slug: nervemind-startup-program
+    offer_slug_aliases: []
+    title: NerveMind AI Startup Program
+    summary: Eligible early-stage startups and small businesses building AI-enabled products receive 50% off one self-serve CGOS plan for 12 months.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:05:24.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 50% off one self-serve CGOS plan for 12 months for eligible early-stage startups and small businesses building AI-enabled products
+          kind: discount
+          percentage:
+            basis_points: 5000
+            kind: exact
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1ssns37x44t0jk124q64qwb
+      access_operator_entity_id: ent_01m1ssns37x44t0jk124q64qwb
+    access:
+      availability: public
+      method: form
+      url: https://nervemindos.com
+    source_ids:
+      - src_47e1dd163b4f59022efd5d6c138acc36dd01aa54fcfba0c6b13637ead8d53564

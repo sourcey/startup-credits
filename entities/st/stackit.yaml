@@ -1,0 +1,58 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1sshkny18zw7ar46d293ww1
+  slug: stackit
+  slug_aliases: []
+  name: STACKIT
+  domains:
+    - value: stackit.com
+      role: primary
+      valid_from: 2026-09-05T22:03:08.000Z
+  category: hosting-infra
+profile:
+  description: STACKIT provides cloud infrastructure services for European startups and businesses.
+  links:
+    site: https://stackit.com
+sources:
+  - source_id: src_391acb95491e22c4164b00a820439421218486f2768610abffbc8b0bcf228ea8
+    url: https://stackit.com
+programs:
+  - program_id: prg_01m1sshkpng97n6eqxg4b4yhw6
+    program_slug: stackit-startup-program
+    program_slug_aliases: []
+    title: STACKIT Startup Program
+    summary: STACKIT publishes a Startup Program for young software companies in the EU, less than five years old, with cloud credits tailored to their needs.
+    source_ids:
+      - src_391acb95491e22c4164b00a820439421218486f2768610abffbc8b0bcf228ea8
+offers:
+  - offer_id: off_01m1sshkpp3sz2d658wpa1rt8k
+    program_id: prg_01m1sshkpng97n6eqxg4b4yhw6
+    offer_slug: stackit-startup-program
+    offer_slug_aliases: []
+    title: STACKIT Startup Program
+    summary: EU-based software companies less than five years old with a digital business model receive tailored STACKIT cloud credits through the Startup Program.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:03:08.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Tailored STACKIT cloud credits for young EU-based software companies less than five years old with digital business models
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1sshkny18zw7ar46d293ww1
+      access_operator_entity_id: ent_01m1sshkny18zw7ar46d293ww1
+    access:
+      availability: public
+      method: form
+      url: https://stackit.com
+    source_ids:
+      - src_391acb95491e22c4164b00a820439421218486f2768610abffbc8b0bcf228ea8

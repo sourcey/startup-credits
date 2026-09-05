@@ -1,0 +1,58 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1srtqw8ns5f0degcyr32g2f
+  slug: helius
+  slug_aliases: []
+  name: Helius
+  domains:
+    - value: helius.xyz
+      role: primary
+      valid_from: 2026-09-05T21:50:37.000Z
+  category: devtools-other
+profile:
+  description: Helius provides developer tooling and infrastructure for the Solana blockchain ecosystem.
+  links:
+    site: https://helius.xyz
+sources:
+  - source_id: src_f0799e8a298612ed2ce8e067be13666eb0474079d80fa1ccca1b97bf9af8ea45
+    url: https://helius.xyz
+programs:
+  - program_id: prg_01m1srtqwhw1j0a6ndfq91r048
+    program_slug: helius-startup-program
+    program_slug_aliases: []
+    title: Helius Startup Launchpad
+    summary: Helius offers early-stage Solana startups eight free months of the Business plan (stated $4,000 value), partner discounts, mentoring, and investor introductions.
+    source_ids:
+      - src_f0799e8a298612ed2ce8e067be13666eb0474079d80fa1ccca1b97bf9af8ea45
+offers:
+  - offer_id: off_01m1srtqwhxgbr1myaqa15j0yx
+    program_id: prg_01m1srtqwhw1j0a6ndfq91r048
+    offer_slug: helius-startup-program
+    offer_slug_aliases: []
+    title: Helius Startup Launchpad
+    summary: Eligible early-stage Solana startups receive eight free months of the Helius Business plan (stated $4,000 value), partner discounts, mentoring, and investor introductions.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T21:50:37.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Eight free months of Helius Business plan (stated $4,000 value), partner discounts, mentoring, and investor/customer introductions for early-stage Solana startups
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1srtqw8ns5f0degcyr32g2f
+      access_operator_entity_id: ent_01m1srtqw8ns5f0degcyr32g2f
+    access:
+      availability: public
+      method: form
+      url: https://helius.xyz
+    source_ids:
+      - src_f0799e8a298612ed2ce8e067be13666eb0474079d80fa1ccca1b97bf9af8ea45

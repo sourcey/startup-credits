@@ -1,0 +1,58 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1sv66c265rz0qgxazv0qrbk
+  slug: arpio
+  slug_aliases: []
+  name: Arpio
+  domains:
+    - value: arpio.io
+      role: primary
+      valid_from: 2026-09-05T22:31:51.000Z
+  category: hosting-infra
+profile:
+  description: Arpio provides disaster recovery and business continuity tools for AWS.
+  links:
+    site: https://arpio.io
+sources:
+  - source_id: src_4b635a601cef707bbba91e6979a3820ddfea73b915b92ace0ee736007a17e086
+    url: https://arpio.io
+programs:
+  - program_id: prg_01m1sv66ce2dn08x0h3968fj4n
+    program_slug: arpio-startup-program
+    program_slug_aliases: []
+    title: Arpio for Startups
+    summary: Eligible startups entering a free Arpio Proof of Value receive disaster recovery and business continuity benefits through the startup program.
+    source_ids:
+      - src_4b635a601cef707bbba91e6979a3820ddfea73b915b92ace0ee736007a17e086
+offers:
+  - offer_id: off_01m1sv66cechm8pbvajnr3pc28
+    program_id: prg_01m1sv66ce2dn08x0h3968fj4n
+    offer_slug: arpio-startup-program
+    offer_slug_aliases: []
+    title: Arpio for Startups
+    summary: Eligible startups receive a free Arpio Proof of Value with disaster recovery and business continuity benefits.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:31:51.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Free Arpio Proof of Value with disaster recovery and business continuity benefits for eligible startups
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1sv66c265rz0qgxazv0qrbk
+      access_operator_entity_id: ent_01m1sv66c265rz0qgxazv0qrbk
+    access:
+      availability: public
+      method: form
+      url: https://arpio.io
+    source_ids:
+      - src_4b635a601cef707bbba91e6979a3820ddfea73b915b92ace0ee736007a17e086

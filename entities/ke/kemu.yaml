@@ -1,0 +1,58 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1ssnrkza1e9tvn8ew8yg6mq
+  slug: kemu
+  slug_aliases: []
+  name: Kemu
+  domains:
+    - value: kemu.io
+      role: primary
+      valid_from: 2026-09-05T22:05:24.000Z
+  category: productivity
+profile:
+  description: Kemu provides team collaboration and knowledge management tools for startup teams.
+  links:
+    site: https://kemu.io
+sources:
+  - source_id: src_531b32007f223342cdd395e0247e14c227ad1d45fe2155ba98cfd62c63c33efd
+    url: https://kemu.io
+programs:
+  - program_id: prg_01m1ssnrmhh5g8zx1ask256nbh
+    program_slug: kemu-startup-program
+    program_slug_aliases: []
+    title: Kemu for Startups
+    summary: Kemu offers pre-seed through Series A startups Kemu Teams for up to 15 members free for 12 months, followed by 25% off for another 12 months.
+    source_ids:
+      - src_531b32007f223342cdd395e0247e14c227ad1d45fe2155ba98cfd62c63c33efd
+offers:
+  - offer_id: off_01m1ssnrmmv3yfftg3bchqk0ef
+    program_id: prg_01m1ssnrmhh5g8zx1ask256nbh
+    offer_slug: kemu-startup-program
+    offer_slug_aliases: []
+    title: Kemu for Startups
+    summary: Pre-seed through Series A startups receive Kemu Teams for up to 15 members free for 12 months, then 25% off for 12 months.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:05:24.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Kemu Teams for up to 15 members free for 12 months, then 25% off for 12 months for pre-seed through Series A startups
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1ssnrkza1e9tvn8ew8yg6mq
+      access_operator_entity_id: ent_01m1ssnrkza1e9tvn8ew8yg6mq
+    access:
+      availability: public
+      method: form
+      url: https://kemu.io
+    source_ids:
+      - src_531b32007f223342cdd395e0247e14c227ad1d45fe2155ba98cfd62c63c33efd

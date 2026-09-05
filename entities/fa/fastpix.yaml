@@ -1,0 +1,58 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1sszjjwyd70zatenydnv0j6
+  slug: fastpix
+  slug_aliases: []
+  name: FastPix
+  domains:
+    - value: fastpix.com
+      role: primary
+      valid_from: 2026-09-05T22:10:45.000Z
+  category: marketing
+profile:
+  description: FastPix provides video and image optimization, manipulation, and delivery APIs.
+  links:
+    site: https://fastpix.com
+sources:
+  - source_id: src_0b778b7c4733799dbc739574e0c828cad3dabb34da4430dd7d3e231f717d9fef
+    url: https://fastpix.com
+programs:
+  - program_id: prg_01m1sszjk5cc92f0sjr2kab3d8
+    program_slug: fastpix-startup-program
+    program_slug_aliases: []
+    title: FastPix Startup Program
+    summary: FastPix publishes a startup program for companies less than four years old with less than $10 million in funding. Approved startups receive FastPix platform credits.
+    source_ids:
+      - src_0b778b7c4733799dbc739574e0c828cad3dabb34da4430dd7d3e231f717d9fef
+offers:
+  - offer_id: off_01m1sszjk5dc9rtnt42r8r1h94
+    program_id: prg_01m1sszjk5cc92f0sjr2kab3d8
+    offer_slug: fastpix-startup-program
+    offer_slug_aliases: []
+    title: FastPix Startup Program
+    summary: Companies less than four years old with less than $10 million in funding receive FastPix platform credits through the startup program.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:10:45.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: FastPix platform credits for companies less than four years old with less than $10 million in funding
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1sszjjwyd70zatenydnv0j6
+      access_operator_entity_id: ent_01m1sszjjwyd70zatenydnv0j6
+    access:
+      availability: public
+      method: form
+      url: https://fastpix.com
+    source_ids:
+      - src_0b778b7c4733799dbc739574e0c828cad3dabb34da4430dd7d3e231f717d9fef

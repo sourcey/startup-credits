@@ -1,0 +1,58 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1sv6773shzmjrftcaf813hc
+  slug: dailystory
+  slug_aliases: []
+  name: DailyStory
+  domains:
+    - value: dailystory.com
+      role: primary
+      valid_from: 2026-09-05T22:31:51.000Z
+  category: marketing
+profile:
+  description: DailyStory provides inbound marketing and content creation tools.
+  links:
+    site: https://dailystory.com
+sources:
+  - source_id: src_118a1818ce8004182157aa88ebcc90158f0cbfd64f7261e1d6587a6311931746
+    url: https://dailystory.com
+programs:
+  - program_id: prg_01m1sv677armraf4ggz1f9ekh0
+    program_slug: dailystory-startup-program
+    program_slug_aliases: []
+    title: DailyStory Startup Program
+    summary: DailyStory Startup Program gives businesses operating less than 12 months free DailyStory marketing platform access.
+    source_ids:
+      - src_118a1818ce8004182157aa88ebcc90158f0cbfd64f7261e1d6587a6311931746
+offers:
+  - offer_id: off_01m1sv677bjf28v63wwcbtsrjh
+    program_id: prg_01m1sv677armraf4ggz1f9ekh0
+    offer_slug: dailystory-startup-program
+    offer_slug_aliases: []
+    title: DailyStory Startup Program
+    summary: Businesses operating less than 12 months receive free DailyStory marketing platform access through the startup program.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:31:51.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Free DailyStory marketing platform access for businesses operating less than 12 months
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1sv6773shzmjrftcaf813hc
+      access_operator_entity_id: ent_01m1sv6773shzmjrftcaf813hc
+    access:
+      availability: public
+      method: form
+      url: https://dailystory.com
+    source_ids:
+      - src_118a1818ce8004182157aa88ebcc90158f0cbfd64f7261e1d6587a6311931746

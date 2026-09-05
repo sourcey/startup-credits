@@ -1,0 +1,61 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1sshm0s69r28wjv5cxekbxb
+  slug: jaxsuite
+  slug_aliases: []
+  name: JaxSuite
+  domains:
+    - value: jaxsuite.com
+      role: primary
+      valid_from: 2026-09-05T22:03:08.000Z
+  category: marketing
+profile:
+  description: JaxSuite provides AI-powered outreach and CRM tools for sales teams.
+  links:
+    site: https://www.jaxsuite.com
+sources:
+  - source_id: src_96ca93f86ca0e6eed798b9eb26cae739850e1865552dc189d3865f3e7d2ba0b5
+    url: https://www.jaxsuite.com/startups
+programs:
+  - program_id: prg_01m1sshm1f9fa4y048w8yc1gds
+    program_slug: jaxsuite-startup-program
+    program_slug_aliases: []
+    title: JaxSuite AI Startup Program
+    summary: JaxSuite offers 50% off JaxSuite Outreach and CRM subscriptions for 12 months for eligible pre-seed through Series B startups.
+    source_ids:
+      - src_96ca93f86ca0e6eed798b9eb26cae739850e1865552dc189d3865f3e7d2ba0b5
+offers:
+  - offer_id: off_01m1sshm1fz1g0mzcqwfph9d15
+    program_id: prg_01m1sshm1f9fa4y048w8yc1gds
+    offer_slug: jaxsuite-startup-program
+    offer_slug_aliases: []
+    title: JaxSuite AI Startup Program
+    summary: Eligible pre-seed through Series B startups receive 50% off JaxSuite Outreach and CRM subscriptions for 12 months.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:03:08.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 50% off JaxSuite Outreach and CRM subscriptions for 12 months for eligible pre-seed through Series B startups
+          kind: discount
+          percentage:
+            basis_points: 5000
+            kind: exact
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1sshm0s69r28wjv5cxekbxb
+      access_operator_entity_id: ent_01m1sshm0s69r28wjv5cxekbxb
+    access:
+      availability: public
+      method: form
+      url: https://www.jaxsuite.com/startups
+    source_ids:
+      - src_96ca93f86ca0e6eed798b9eb26cae739850e1865552dc189d3865f3e7d2ba0b5

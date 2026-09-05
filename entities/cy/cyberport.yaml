@@ -1,0 +1,58 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1sw12y5n0cmgakg952f34vt
+  slug: cyberport
+  slug_aliases: []
+  name: Cyberport
+  domains:
+    - value: cyberport.hk
+      role: primary
+      valid_from: 2026-09-05T22:46:31.000Z
+  category: productivity
+profile:
+  description: Cyberport supports Hong Kong startups with funding and infrastructure programs.
+  links:
+    site: https://www.cyberport.hk
+sources:
+  - source_id: src_d91e68c33b49c504d2c4209ee2ead38c79d609b35399a63fe1d5ae0bcd060202
+    url: https://www.cyberport.hk
+programs:
+  - program_id: prg_01m1sw12ycsjzfzkh8t0c2j6w4
+    program_slug: cyberport-startup-program
+    program_slug_aliases: []
+    title: Cyberport CCMF Hong Kong Programme
+    summary: Cyberport CCMF provides a startup-specific cash grant for digital technology projects at the idea or early development stage.
+    source_ids:
+      - src_d91e68c33b49c504d2c4209ee2ead38c79d609b35399a63fe1d5ae0bcd060202
+offers:
+  - offer_id: off_01m1sw12ygppx4574zjwzss6j5
+    program_id: prg_01m1sw12ycsjzfzkh8t0c2j6w4
+    offer_slug: cyberport-startup-program
+    offer_slug_aliases: []
+    title: Cyberport CCMF Hong Kong Programme
+    summary: Hong Kong startups at idea or early development stage receive cash grants for digital technology projects through Cyberport CCMF.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:46:31.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Cash grant for digital technology projects at idea or early development stage for Hong Kong startups through Cyberport CCMF
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1sw12y5n0cmgakg952f34vt
+      access_operator_entity_id: ent_01m1sw12y5n0cmgakg952f34vt
+    access:
+      availability: public
+      method: form
+      url: https://www.cyberport.hk
+    source_ids:
+      - src_d91e68c33b49c504d2c4209ee2ead38c79d609b35399a63fe1d5ae0bcd060202

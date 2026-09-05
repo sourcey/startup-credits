@@ -1,0 +1,58 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1ssxm996zx9xd9nzaypkrpx
+  slug: chroma
+  slug_aliases: []
+  name: Chroma
+  domains:
+    - value: trychroma.com
+      role: primary
+      valid_from: 2026-09-05T22:09:43.000Z
+  category: ai-ml
+profile:
+  description: Chroma provides AI embeddings and vector search infrastructure for developers.
+  links:
+    site: https://www.trychroma.com
+sources:
+  - source_id: src_db1b2e23b006d828148543de1f201d25b44037e300e9a2332a3969933586bffc
+    url: https://www.trychroma.com
+programs:
+  - program_id: prg_01m1ssxm9jh90g6bwq3ctr91vf
+    program_slug: chroma-startup-program
+    program_slug_aliases: []
+    title: Chroma for PostHog Startups
+    summary: Chroma offers AI vector search infrastructure credits for PostHog startup program participants.
+    source_ids:
+      - src_db1b2e23b006d828148543de1f201d25b44037e300e9a2332a3969933586bffc
+offers:
+  - offer_id: off_01m1ssxm9nvv0py8nnke2tcq1r
+    program_id: prg_01m1ssxm9jh90g6bwq3ctr91vf
+    offer_slug: chroma-startup-program
+    offer_slug_aliases: []
+    title: Chroma for PostHog Startups
+    summary: PostHog startup program participants receive Chroma AI vector search infrastructure credits.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:09:43.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Chroma AI vector search infrastructure credits for PostHog startup program participants
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1ssxm996zx9xd9nzaypkrpx
+      access_operator_entity_id: ent_01m1ssxm996zx9xd9nzaypkrpx
+    access:
+      availability: public
+      method: form
+      url: https://www.trychroma.com
+    source_ids:
+      - src_db1b2e23b006d828148543de1f201d25b44037e300e9a2332a3969933586bffc

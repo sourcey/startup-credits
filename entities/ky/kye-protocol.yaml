@@ -1,0 +1,63 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1ss87eqzw7cafszete9n8k3
+  slug: kye-protocol
+  slug_aliases: []
+  name: KYE Protocol
+  domains:
+    - value: kyeprotocol.com
+      role: primary
+      valid_from: 2026-09-05T21:58:00.000Z
+  category: ai-ml
+profile:
+  description: KYE Protocol provides AI governance and compliance tools for startups building AI applications.
+  links:
+    site: https://kyeprotocol.com
+sources:
+  - source_id: src_02dc01d42a9129fa7d5334f887ffd4251cbdfe9e3dc0a70203b3b6c0d8165841
+    url: https://kyeprotocol.com
+programs:
+  - program_id: prg_01m1ss87f3k1av79dfcsnwe21z
+    program_slug: kye-protocol-startup-program
+    program_slug_aliases: []
+    title: KYE Protocol for Startups
+    summary: KYE for Startups offers application-reviewed AI governance credits for 12 months: $5,000 for qualifying Seed/Pre-Seed companies.
+    source_ids:
+      - src_02dc01d42a9129fa7d5334f887ffd4251cbdfe9e3dc0a70203b3b6c0d8165841
+offers:
+  - offer_id: off_01m1ss87f8cx4c4dcf3fzdw6d6
+    program_id: prg_01m1ss87f3k1av79dfcsnwe21z
+    offer_slug: kye-protocol-startup-program
+    offer_slug_aliases: []
+    title: KYE Protocol for Startups
+    summary: Qualifying Seed/Pre-Seed companies receive $5,000 in KYE Protocol AI governance credits for 12 months upon application review.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T21:58:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: $5,000 in KYE Protocol AI governance credits for 12 months for qualifying Seed/Pre-Seed companies
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 500000
+            kind: up-to
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1ss87eqzw7cafszete9n8k3
+      access_operator_entity_id: ent_01m1ss87eqzw7cafszete9n8k3
+    access:
+      availability: public
+      method: form
+      url: https://kyeprotocol.com
+    source_ids:
+      - src_02dc01d42a9129fa7d5334f887ffd4251cbdfe9e3dc0a70203b3b6c0d8165841

@@ -1,0 +1,61 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1st95y52f0bsd7zmnp6jr8w
+  slug: close
+  slug_aliases: []
+  name: Close
+  domains:
+    - value: close.com
+      role: primary
+      valid_from: 2026-09-05T22:16:00.000Z
+  category: productivity
+profile:
+  description: Close provides CRM and sales engagement software for inside sales teams.
+  links:
+    site: https://close.com
+sources:
+  - source_id: src_e87fa74148f9418b9950e6f2ff20d4b7697f43eb518269d0a787a0775bd6be4d
+    url: https://close.com/startups
+programs:
+  - program_id: prg_01m1st95y991hpf17ajce59ef0
+    program_slug: close-startup-program
+    program_slug_aliases: []
+    title: Close for Startups
+    summary: Qualifying startups receive 30% to 60% off Close subscription and SMS/calling charges for their first 12 months with participation in a recognized program.
+    source_ids:
+      - src_e87fa74148f9418b9950e6f2ff20d4b7697f43eb518269d0a787a0775bd6be4d
+offers:
+  - offer_id: off_01m1st95yab26x8jgy16y9b9jj
+    program_id: prg_01m1st95y991hpf17ajce59ef0
+    offer_slug: close-startup-program
+    offer_slug_aliases: []
+    title: Close for Startups
+    summary: Startups in recognized programs receive 30% to 60% off Close subscription and SMS/calling charges for 12 months.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:16:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 30% to 60% off Close subscription and SMS/calling charges for 12 months for eligible startups
+          kind: discount
+          percentage:
+            basis_points: 6000
+            kind: exact
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1st95y52f0bsd7zmnp6jr8w
+      access_operator_entity_id: ent_01m1st95y52f0bsd7zmnp6jr8w
+    access:
+      availability: public
+      method: form
+      url: https://close.com/startups
+    source_ids:
+      - src_e87fa74148f9418b9950e6f2ff20d4b7697f43eb518269d0a787a0775bd6be4d

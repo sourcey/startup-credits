@@ -1,0 +1,58 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1sv33wzavz4f9rabpm1nzw3
+  slug: heygen
+  slug_aliases: []
+  name: HeyGen
+  domains:
+    - value: heygen.com
+      role: primary
+      valid_from: 2026-09-05T22:30:11.000Z
+  category: marketing
+profile:
+  description: HeyGen provides AI-powered video generation and avatar creation tools.
+  links:
+    site: https://www.heygen.com
+sources:
+  - source_id: src_66757bcf4a5691c8bc57406963439e70ebd49d664c30fc7f5fcbf6e747e14a0e
+    url: https://www.heygen.com/startups
+programs:
+  - program_id: prg_01m1sv33xswq7wn56phe0wxraq
+    program_slug: heygen-startup-program
+    program_slug_aliases: []
+    title: HeyGen for Startups
+    summary: HeyGen publishes an official startup program offering discounted platform pricing and access for early-stage companies, accelerator graduates, and venture-backed startups.
+    source_ids:
+      - src_66757bcf4a5691c8bc57406963439e70ebd49d664c30fc7f5fcbf6e747e14a0e
+offers:
+  - offer_id: off_01m1sv33xvsjbbtavvsenesw59
+    program_id: prg_01m1sv33xswq7wn56phe0wxraq
+    offer_slug: heygen-startup-program
+    offer_slug_aliases: []
+    title: HeyGen for Startups
+    summary: Early-stage companies, accelerator graduates, and venture-backed startups receive discounted HeyGen platform pricing and access.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:30:11.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Discounted HeyGen platform pricing and access for early-stage companies, accelerator graduates, and venture-backed startups
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1sv33wzavz4f9rabpm1nzw3
+      access_operator_entity_id: ent_01m1sv33wzavz4f9rabpm1nzw3
+    access:
+      availability: public
+      method: form
+      url: https://www.heygen.com/startups
+    source_ids:
+      - src_66757bcf4a5691c8bc57406963439e70ebd49d664c30fc7f5fcbf6e747e14a0e

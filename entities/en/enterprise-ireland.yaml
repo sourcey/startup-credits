@@ -1,0 +1,58 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1srhd1v5aa1qp2b5dd0qd94
+  slug: enterprise-ireland-new-frontiers
+  slug_aliases: []
+  name: Enterprise Ireland New Frontiers
+  domains:
+    - value: newfrontiers.ie
+      role: primary
+      valid_from: 2026-09-05T21:45:33.000Z
+  category: other
+profile:
+  description: Enterprise Ireland's New Frontiers Programme is a national entrepreneur development programme for early-stage startup founders in Ireland.
+  links:
+    site: https://www.newfrontiers.ie
+sources:
+  - source_id: src_2b03e713408526415f19766373c32f83e11b42e1d9f687a9e474b6db06601824
+    url: https://www.newfrontiers.ie/register
+programs:
+  - program_id: prg_01m1srhd277n8y6b2f5qgtvavj
+    program_slug: enterprise-ireland-new-frontiers-startup-program
+    program_slug_aliases: []
+    title: Enterprise Ireland New Frontiers Phase 2
+    summary: New Frontiers Phase 2 is a six-month intensive programme offering up to EUR 17,500 in funding support for pre-commercial startup founders in Ireland.
+    source_ids:
+      - src_2b03e713408526415f19766373c32f83e11b42e1d9f687a9e474b6db06601824
+offers:
+  - offer_id: off_01m1srhd2bq4n2dymqnmzr8ddr
+    program_id: prg_01m1srhd277n8y6b2f5qgtvavj
+    offer_slug: enterprise-ireland-new-frontiers-startup-program
+    offer_slug_aliases: []
+    title: Enterprise Ireland New Frontiers Phase 2
+    summary: Successful Phase 2 participants receive up to EUR 17,500 over six months as a performance-based allowance.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T21:45:33.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to EUR 17,500 allowance over six months for approved New Frontiers Phase 2 participants
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1srhd1v5aa1qp2b5dd0qd94
+      access_operator_entity_id: ent_01m1srhd1v5aa1qp2b5dd0qd94
+    access:
+      availability: public
+      method: form
+      url: https://www.newfrontiers.ie/register
+    source_ids:
+      - src_2b03e713408526415f19766373c32f83e11b42e1d9f687a9e474b6db06601824

@@ -1,0 +1,61 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1stcw4g5pdt1p94ne0h7wfs
+  slug: defensestation
+  slug_aliases: []
+  name: DefenseStation
+  domains:
+    - value: defencestation.com
+      role: primary
+      valid_from: 2026-09-05T22:18:01.000Z
+  category: auth-security
+profile:
+  description: DefenseStation provides security monitoring and threat detection tools.
+  links:
+    site: https://defencestation.com
+sources:
+  - source_id: src_bfb06f3626a80dc3593f1f40bbf8ec1816e7076e26a34877fef7ab8648a80230
+    url: https://defencestation.com
+programs:
+  - program_id: prg_01m1stcw4rw3weppaeakjhnfv1
+    program_slug: defensestation-startup-program
+    program_slug_aliases: []
+    title: DefenseStation Early Stage Program
+    summary: Early-stage companies can receive 90% off in year one, 50% off in year two, and 25% off in year three through the Early Stage Program.
+    source_ids:
+      - src_bfb06f3626a80dc3593f1f40bbf8ec1816e7076e26a34877fef7ab8648a80230
+offers:
+  - offer_id: off_01m1stcw4r7r43c6aanb6s24zj
+    program_id: prg_01m1stcw4rw3weppaeakjhnfv1
+    offer_slug: defensestation-startup-program
+    offer_slug_aliases: []
+    title: DefenseStation Early Stage Program
+    summary: Early-stage companies receive 90% off in year one, 50% off in year two, and 25% off in year three through DefenseStation.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:18:01.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 90% off in year one, 50% off in year two, and 25% off in year three for early-stage companies through DefenseStation
+          kind: discount
+          percentage:
+            basis_points: 9000
+            kind: exact
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1stcw4g5pdt1p94ne0h7wfs
+      access_operator_entity_id: ent_01m1stcw4g5pdt1p94ne0h7wfs
+    access:
+      availability: public
+      method: form
+      url: https://defencestation.com
+    source_ids:
+      - src_bfb06f3626a80dc3593f1f40bbf8ec1816e7076e26a34877fef7ab8648a80230

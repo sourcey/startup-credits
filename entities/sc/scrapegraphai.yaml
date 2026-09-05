@@ -1,0 +1,58 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1svgw5904qfktrcn5bdgde2
+  slug: scrapegraphai
+  slug_aliases: []
+  name: ScrapeGraphAI
+  domains:
+    - value: scrapegraphai.com
+      role: primary
+      valid_from: 2026-09-05T22:37:42.000Z
+  category: apis-integration
+profile:
+  description: ScrapeGraphAI provides AI-powered web scraping and data extraction tools.
+  links:
+    site: https://scrapegraphai.com
+sources:
+  - source_id: src_960024ea6b208cef45dc6863b74a0b3c637e5960cd5203ba184d925093f6d827
+    url: https://scrapegraphai.com
+programs:
+  - program_id: prg_01m1svgw5e9bmz89mb2hphh5qt
+    program_slug: scrapegraphai-startup-program
+    program_slug_aliases: []
+    title: ScrapeGraphAI Startup Program
+    summary: ScrapeGraphAI offers the Growth plan free for 3 months, including 100,000 credits per month, a 500 requests/minute limit, and basic proxy rotation.
+    source_ids:
+      - src_960024ea6b208cef45dc6863b74a0b3c637e5960cd5203ba184d925093f6d827
+offers:
+  - offer_id: off_01m1svgw5eganms5ddfzj9e3p2
+    program_id: prg_01m1svgw5e9bmz89mb2hphh5qt
+    offer_slug: scrapegraphai-startup-program
+    offer_slug_aliases: []
+    title: ScrapeGraphAI Startup Program
+    summary: Eligible startups receive ScrapeGraphAI Growth plan free for 3 months with 100,000 credits/month and 500 requests/minute limit.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:37:42.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: ScrapeGraphAI Growth plan free for 3 months with 100,000 credits/month and 500 requests/minute limit
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1svgw5904qfktrcn5bdgde2
+      access_operator_entity_id: ent_01m1svgw5904qfktrcn5bdgde2
+    access:
+      availability: public
+      method: form
+      url: https://scrapegraphai.com
+    source_ids:
+      - src_960024ea6b208cef45dc6863b74a0b3c637e5960cd5203ba184d925093f6d827

@@ -1,0 +1,63 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1srtqgvv5ygakeg5deypxhj
+  slug: 100pay
+  slug_aliases: []
+  name: 100Pay
+  domains:
+    - value: 100pay.co
+      role: primary
+      valid_from: 2026-09-05T21:50:37.000Z
+  category: payments-fintech
+profile:
+  description: 100Pay provides cloud infrastructure and payment processing services for startups in emerging markets.
+  links:
+    site: https://100pay.co
+sources:
+  - source_id: src_a1cea058692a7bf94d372315c39521ae97c05701baadc7bb0c7d347b1df3e55d
+    url: https://100pay.co
+programs:
+  - program_id: prg_01m1srtqh26tnd7rp3g1xb4h7n
+    program_slug: 100pay-startup-program
+    program_slug_aliases: []
+    title: 100Pay Startup Program
+    summary: 100Pay offers eligible startups up to $100,000 in cloud infrastructure credits along with startup perks and mentorship.
+    source_ids:
+      - src_a1cea058692a7bf94d372315c39521ae97c05701baadc7bb0c7d347b1df3e55d
+offers:
+  - offer_id: off_01m1srtqh2zc3yp3fhdxc1k32p
+    program_id: prg_01m1srtqh26tnd7rp3g1xb4h7n
+    offer_slug: 100pay-startup-program
+    offer_slug_aliases: []
+    title: 100Pay Startup Program
+    summary: Eligible startups receive up to $100,000 in 100Pay cloud infrastructure credits, along with startup perks and mentorship.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T21:50:37.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to $100,000 in 100Pay cloud infrastructure credits for eligible startups, plus startup perks and mentorship
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 10000000
+            kind: up-to
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1srtqgvv5ygakeg5deypxhj
+      access_operator_entity_id: ent_01m1srtqgvv5ygakeg5deypxhj
+    access:
+      availability: public
+      method: form
+      url: https://100pay.co
+    source_ids:
+      - src_a1cea058692a7bf94d372315c39521ae97c05701baadc7bb0c7d347b1df3e55d

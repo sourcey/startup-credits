@@ -1,0 +1,58 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1srn1w1xqvvbchf1fvs942a
+  slug: simscale
+  slug_aliases: []
+  name: SimScale
+  domains:
+    - value: simscale.com
+      role: primary
+      valid_from: 2026-09-05T21:47:33.000Z
+  category: design
+profile:
+  description: SimScale provides cloud-based computer-aided engineering (CAE) simulation tools for product designers and engineers.
+  links:
+    site: https://www.simscale.com
+sources:
+  - source_id: src_4e34a9066ebd5ea6be8564a653cbf31b0c72603c45ad64b274511c831454361b
+    url: https://www.simscale.com/technology/integrations-partners/onshape/
+programs:
+  - program_id: prg_01m1srn1w8a4qfym80rbzrvvde
+    program_slug: simscale-startup-program
+    program_slug_aliases: []
+    title: SimScale Onshape Partner Program
+    summary: SimScale offers Onshape program participants three months of free cloud simulation with up to 20,000 core hours and live in-product support.
+    source_ids:
+      - src_4e34a9066ebd5ea6be8564a653cbf31b0c72603c45ad64b274511c831454361b
+offers:
+  - offer_id: off_01m1srn1w8ew1md53k0h51q7tx
+    program_id: prg_01m1srn1w8a4qfym80rbzrvvde
+    offer_slug: simscale-startup-program
+    offer_slug_aliases: []
+    title: SimScale Onshape Partner Program
+    summary: Hardware startups and entrepreneurs in the Onshape program receive three months of free cloud simulation, up to 20,000 core hours, and live in-product support.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T21:47:33.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Three months of free cloud simulation, up to 20,000 core hours, and live in-product support for Onshape program participants
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1srn1w1xqvvbchf1fvs942a
+      access_operator_entity_id: ent_01m1srn1w1xqvvbchf1fvs942a
+    access:
+      availability: public
+      method: form
+      url: https://www.simscale.com/technology/integrations-partners/onshape/
+    source_ids:
+      - src_4e34a9066ebd5ea6be8564a653cbf31b0c72603c45ad64b274511c831454361b

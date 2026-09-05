@@ -1,0 +1,61 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1sstp5e69y4dws4g146mrnb
+  slug: hypercomply
+  slug_aliases: []
+  name: HyperComply
+  domains:
+    - value: hypercomply.com
+      role: primary
+      valid_from: 2026-09-05T22:08:06.000Z
+  category: auth-security
+profile:
+  description: HyperComply provides security questionnaire and compliance automation tools.
+  links:
+    site: https://hypercomply.com
+sources:
+  - source_id: src_6a44b7e2cdf7cdbc081f27cc617ab573f291db21e7e3775be6ec4f197006fd0d
+    url: https://hypercomply.com
+programs:
+  - program_id: prg_01m1sstp5t820qxwptd7n8ysre
+    program_slug: hypercomply-startup-program
+    program_slug_aliases: []
+    title: HyperComply Startup Package
+    summary: The HyperComply Startup Package gives eligible startups 60% off a package with unlimited security questionnaire responses and a three-day response SLA.
+    source_ids:
+      - src_6a44b7e2cdf7cdbc081f27cc617ab573f291db21e7e3775be6ec4f197006fd0d
+offers:
+  - offer_id: off_01m1sstp5vqez1k1m17kb23wq4
+    program_id: prg_01m1sstp5t820qxwptd7n8ysre
+    offer_slug: hypercomply-startup-program
+    offer_slug_aliases: []
+    title: HyperComply Startup Package
+    summary: Eligible startups receive 60% off the HyperComply Startup Package with unlimited security questionnaire responses and three-day response SLA.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:08:06.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 60% off HyperComply Startup Package for eligible startups with unlimited security questionnaire responses and three-day response SLA
+          kind: discount
+          percentage:
+            basis_points: 6000
+            kind: exact
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1sstp5e69y4dws4g146mrnb
+      access_operator_entity_id: ent_01m1sstp5e69y4dws4g146mrnb
+    access:
+      availability: public
+      method: form
+      url: https://hypercomply.com
+    source_ids:
+      - src_6a44b7e2cdf7cdbc081f27cc617ab573f291db21e7e3775be6ec4f197006fd0d

@@ -1,0 +1,63 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1svf9g6v98xqrndmg37kvjk
+  slug: liner
+  slug_aliases: []
+  name: Liner
+  domains:
+    - value: liner.com
+      role: primary
+      valid_from: 2026-09-05T22:36:50.000Z
+  category: productivity
+profile:
+  description: Liner provides AI research and knowledge management tools.
+  links:
+    site: https://liner.com
+sources:
+  - source_id: src_0bbac0359869dbf9ad398d91a44ecaa8cb67baaa2adaf91139a50fc1afbbf05d
+    url: https://liner.com
+programs:
+  - program_id: prg_01m1svf9gc742yctax1rwzgny5
+    program_slug: liner-startup-program
+    program_slug_aliases: []
+    title: Liner Startup Grant Program
+    summary: Liner currently publishes a Startup Grant Program for eligible early-stage startups, offering up to $1,000 in platform credits.
+    source_ids:
+      - src_0bbac0359869dbf9ad398d91a44ecaa8cb67baaa2adaf91139a50fc1afbbf05d
+offers:
+  - offer_id: off_01m1svf9gc4gdar4hzk9gwvqxk
+    program_id: prg_01m1svf9gc742yctax1rwzgny5
+    offer_slug: liner-startup-program
+    offer_slug_aliases: []
+    title: Liner Startup Grant Program
+    summary: Eligible early-stage startups receive up to $1,000 in Liner platform credits through the Startup Grant Program.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:36:50.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to $1,000 in Liner platform credits for eligible early-stage startups through the Startup Grant Program
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 100000
+            kind: up-to
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1svf9g6v98xqrndmg37kvjk
+      access_operator_entity_id: ent_01m1svf9g6v98xqrndmg37kvjk
+    access:
+      availability: public
+      method: form
+      url: https://liner.com
+    source_ids:
+      - src_0bbac0359869dbf9ad398d91a44ecaa8cb67baaa2adaf91139a50fc1afbbf05d

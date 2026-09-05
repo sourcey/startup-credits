@@ -1,0 +1,61 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1stgz0aykshwgdcr8ndyabd
+  slug: homeflow
+  slug_aliases: []
+  name: Homeflow
+  domains:
+    - value: homeflow.co.uk
+      role: primary
+      valid_from: 2026-09-05T22:20:14.000Z
+  category: productivity
+profile:
+  description: Homeflow provides property management and estate agency tools.
+  links:
+    site: https://homeflow.co.uk
+sources:
+  - source_id: src_b4cb0193f84dcc666614496ac318da346731faf4650e229112a46d90532eea1d
+    url: https://homeflow.co.uk
+programs:
+  - program_id: prg_01m1stgz1chv4feb5pbzmd4ptx
+    program_slug: homeflow-startup-program
+    program_slug_aliases: []
+    title: Homeflow Startup Program
+    summary: Homeflow publishes a 50% discount on monthly fees for 12 months for qualifying startup estate agencies.
+    source_ids:
+      - src_b4cb0193f84dcc666614496ac318da346731faf4650e229112a46d90532eea1d
+offers:
+  - offer_id: off_01m1stgz1dz0en4yf5mw751t9h
+    program_id: prg_01m1stgz1chv4feb5pbzmd4ptx
+    offer_slug: homeflow-startup-program
+    offer_slug_aliases: []
+    title: Homeflow Startup Program
+    summary: Qualifying startup estate agencies receive 50% off Homeflow monthly fees for 12 months.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:20:14.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 50% off Homeflow monthly fees for 12 months for qualifying startup estate agencies
+          kind: discount
+          percentage:
+            basis_points: 5000
+            kind: exact
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1stgz0aykshwgdcr8ndyabd
+      access_operator_entity_id: ent_01m1stgz0aykshwgdcr8ndyabd
+    access:
+      availability: public
+      method: form
+      url: https://homeflow.co.uk
+    source_ids:
+      - src_b4cb0193f84dcc666614496ac318da346731faf4650e229112a46d90532eea1d

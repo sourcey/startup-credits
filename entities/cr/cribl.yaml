@@ -1,0 +1,76 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1sw5qd2gw8n3mjx7d8fqdsm
+  slug: cribl
+  slug_aliases: []
+  name: Cribl
+  domains:
+    - value: cribl.io
+      role: primary
+      valid_from: 2026-09-05T22:49:03.000Z
+  category: observability
+profile:
+  description: Cribl provides log analytics and observability tools for engineering and platform teams.
+  links:
+    site: https://cribl.io
+sources:
+  - source_id: src_5f9ec1169665d39aef2fdf9ec39d9958b22367510baa75af4647de6ff3194fca
+    url: https://cribl.io/startup/
+programs:
+  - program_id: prg_01m1sw5qdd3q3vwdghwcaq8yda
+    program_slug: cribl-for-startups
+    program_slug_aliases: []
+    title: Cribl for Startups
+    summary: Cribl's startup program offers free Cribl.Cloud access, one-on-one technical advice, partner network access, and co-marketing opportunities for qualifying Seed through Series A companies.
+    source_ids:
+      - src_5f9ec1169665d39aef2fdf9ec39d9958b22367510baa75af4647de6ff3194fca
+offers:
+  - offer_id: off_01m1sw5qdeez3m3jh9h8w6mwv1
+    program_id: prg_01m1sw5qdd3q3vwdghwcaq8yda
+    offer_slug: cribl-for-startups
+    offer_slug_aliases: []
+    title: Cribl for Startups
+    summary: Free Cribl.Cloud access including Cribl Stream and Cribl Search, one-on-one technical advice, partner network access, and co-marketing opportunities for Seed through Series A startups.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:49:03.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Free access to all Cribl.Cloud products including Cribl Stream and Cribl Search for qualifying startups.
+          kind: other
+        - benefit_id: ben_02
+          description: One-on-one technical advice sessions with Cribl experts to help scale solutions and tackle technical challenges.
+          kind: other
+        - benefit_id: ben_03
+          description: Access to Cribl's partner network and community of startups, plus co-marketing opportunities through events and brand initiatives.
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.stage
+            kind: predicate
+            operator: in
+            statement: Seed through Series A stage
+            value:
+              type: string-set
+              values:
+                - Seed
+                - Series A
+          - criterion_id: cri_02
+            kind: manual
+            reason: vendor-discretion
+            statement: Building monitoring, observability, cybersecurity, or DevOps data solutions; selection is at Cribl's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1sw5qd2gw8n3mjx7d8fqdsm
+      access_operator_entity_id: ent_01m1sw5qd2gw8n3mjx7d8fqdsm
+    access:
+      availability: public
+      method: form
+      url: https://cribl.io/startup/
+    source_ids:
+      - src_5f9ec1169665d39aef2fdf9ec39d9958b22367510baa75af4647de6ff3194fca

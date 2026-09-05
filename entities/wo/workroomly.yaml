@@ -1,0 +1,58 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1sta4kekzssp2sw6gpqzmab
+  slug: workroomly
+  slug_aliases: []
+  name: Workroomly
+  domains:
+    - value: workroomly.com
+      role: primary
+      valid_from: 2026-09-05T22:16:32.000Z
+  category: productivity
+profile:
+  description: Workroomly provides workspace management and business communication tools.
+  links:
+    site: https://www.workroomly.com
+sources:
+  - source_id: src_526e5172c3827074dee3ac97a1d07c1f9b66e7971871e5a70ae9c1a99e85ab59
+    url: https://www.workroomly.com/founders_program/
+programs:
+  - program_id: prg_01m1sta4m3g9jj4cj51p9j05kv
+    program_slug: workroomly-startup-program
+    program_slug_aliases: []
+    title: Workroomly Founders Program
+    summary: Workroomly offers selected startups and SMEs tiered credits from ₦1 million to ₦5 million for six months toward business email, workspace seats, and AI workflows, plus guided onboarding and founder support.
+    source_ids:
+      - src_526e5172c3827074dee3ac97a1d07c1f9b66e7971871e5a70ae9c1a99e85ab59
+offers:
+  - offer_id: off_01m1sta4m356e2xs7mgggc0czz
+    program_id: prg_01m1sta4m3g9jj4cj51p9j05kv
+    offer_slug: workroomly-startup-program
+    offer_slug_aliases: []
+    title: Workroomly Founders Program
+    summary: Selected startups and SMEs receive tiered Workroomly credits from ₦1M to ₦5M for six months toward business email, workspace seats, and AI workflows.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:16:32.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Tiered Workroomly credits from ₦1M to ₦5M for six months toward business email, workspace seats, and AI workflows for selected startups and SMEs
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1sta4kekzssp2sw6gpqzmab
+      access_operator_entity_id: ent_01m1sta4kekzssp2sw6gpqzmab
+    access:
+      availability: public
+      method: form
+      url: https://www.workroomly.com/founders_program/
+    source_ids:
+      - src_526e5172c3827074dee3ac97a1d07c1f9b66e7971871e5a70ae9c1a99e85ab59

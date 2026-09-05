@@ -1,0 +1,63 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1sstpbe2n88n9b74ghzx6x5
+  slug: unistam
+  slug_aliases: []
+  name: Unistam
+  domains:
+    - value: unistamts.com
+      role: primary
+      valid_from: 2026-09-05T22:08:06.000Z
+  category: hosting-infra
+profile:
+  description: Unistam provides cloud infrastructure and Simba Space services for startups.
+  links:
+    site: https://unistamts.com
+sources:
+  - source_id: src_1261a32b8b949838bf42f51499d28d70716dc51e1a4bcbc7100db3ba472b04ec
+    url: https://unistamts.com
+programs:
+  - program_id: prg_01m1sstpbkej7q8mkcpfywh3rr
+    program_slug: unistam-startup-program
+    program_slug_aliases: []
+    title: Unistam Startup Program
+    summary: The Unistam Startup Program offers eligible early-stage technology startups up to $50,000 in Simba Space cloud infrastructure credits.
+    source_ids:
+      - src_1261a32b8b949838bf42f51499d28d70716dc51e1a4bcbc7100db3ba472b04ec
+offers:
+  - offer_id: off_01m1sstpbmn5p3zzeqbwnvxjcx
+    program_id: prg_01m1sstpbkej7q8mkcpfywh3rr
+    offer_slug: unistam-startup-program
+    offer_slug_aliases: []
+    title: Unistam Startup Program
+    summary: Eligible early-stage technology startups receive up to $50,000 in Simba Space cloud infrastructure credits through the Unistam Startup Program.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:08:06.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to $50,000 in Simba Space cloud infrastructure credits for eligible early-stage technology startups
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 5000000
+            kind: up-to
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1sstpbe2n88n9b74ghzx6x5
+      access_operator_entity_id: ent_01m1sstpbe2n88n9b74ghzx6x5
+    access:
+      availability: public
+      method: form
+      url: https://unistamts.com
+    source_ids:
+      - src_1261a32b8b949838bf42f51499d28d70716dc51e1a4bcbc7100db3ba472b04ec

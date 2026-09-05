@@ -1,0 +1,61 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1ss19c12gswgq06mexzxd33
+  slug: officernd
+  slug_aliases: []
+  name: OfficeRnD
+  domains:
+    - value: officernd.com
+      role: primary
+      valid_from: 2026-09-05T21:54:09.000Z
+  category: productivity
+profile:
+  description: OfficeRnD provides workspace management and booking software for coworking spaces and flexible offices.
+  links:
+    site: https://www.officernd.com
+sources:
+  - source_id: src_b830c38709e24d14671e602e6172632545d37556761b05bb71cc469067e16c10
+    url: https://www.officernd.com/campaigns/flex-startup-program/
+programs:
+  - program_id: prg_01m1ss19ck0g5j3syqkmnm7gy3
+    program_slug: officernd-startup-program
+    program_slug_aliases: []
+    title: OfficeRnD Flex Startup Program
+    summary: OfficeRnD offers eligible coworking-space operators 20% off the OfficeRnD Flex Start Plan for the first year of subscription.
+    source_ids:
+      - src_b830c38709e24d14671e602e6172632545d37556761b05bb71cc469067e16c10
+offers:
+  - offer_id: off_01m1ss19cmdrhzrc8fky32eezb
+    program_id: prg_01m1ss19ck0g5j3syqkmnm7gy3
+    offer_slug: officernd-startup-program
+    offer_slug_aliases: []
+    title: OfficeRnD Flex Startup Program
+    summary: Eligible coworking-space operators receive 20% off the OfficeRnD Flex Start Plan for the first year of subscription.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T21:54:09.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 20% off OfficeRnD Flex Start Plan for the first year for eligible coworking-space operators
+          kind: discount
+          percentage:
+            basis_points: 2000
+            kind: exact
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1ss19c12gswgq06mexzxd33
+      access_operator_entity_id: ent_01m1ss19c12gswgq06mexzxd33
+    access:
+      availability: public
+      method: form
+      url: https://www.officernd.com/campaigns/flex-startup-program/
+    source_ids:
+      - src_b830c38709e24d14671e602e6172632545d37556761b05bb71cc469067e16c10

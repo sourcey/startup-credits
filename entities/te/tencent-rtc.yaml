@@ -1,0 +1,63 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1ss145f81x660qsk5fmp4fb
+  slug: tencent-rtc
+  slug_aliases: []
+  name: Tencent RTC
+  domains:
+    - value: trtc.io
+      role: primary
+      valid_from: 2026-09-05T21:54:09.000Z
+  category: communication
+profile:
+  description: Tencent RTC provides real-time communication and video conferencing APIs for developers.
+  links:
+    site: https://trtc.io
+sources:
+  - source_id: src_a70d81f3d536700c5a8823d418345c02c0092ddd6e405e0591acaa0770e0f72c
+    url: https://trtc.io
+programs:
+  - program_id: prg_01m1ss1460dqr5ej95y92egpjq
+    program_slug: tencent-rtc-startup-program
+    program_slug_aliases: []
+    title: Tencent RTC Startups Program
+    summary: Tencent RTC offers eligible startups free credits worth up to $3,000 through its Startups Program via a public questionnaire.
+    source_ids:
+      - src_a70d81f3d536700c5a8823d418345c02c0092ddd6e405e0591acaa0770e0f72c
+offers:
+  - offer_id: off_01m1ss14615kcd645qt33aa7ns
+    program_id: prg_01m1ss1460dqr5ej95y92egpjq
+    offer_slug: tencent-rtc-startup-program
+    offer_slug_aliases: []
+    title: Tencent RTC Startups Program
+    summary: Eligible startups receive free Tencent RTC credits worth up to $3,000 through the Tencent RTC Startups Program.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T21:54:09.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Free Tencent RTC credits worth up to $3,000 for eligible startups through the Startups Program
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 300000
+            kind: up-to
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1ss145f81x660qsk5fmp4fb
+      access_operator_entity_id: ent_01m1ss145f81x660qsk5fmp4fb
+    access:
+      availability: public
+      method: form
+      url: https://trtc.io
+    source_ids:
+      - src_a70d81f3d536700c5a8823d418345c02c0092ddd6e405e0591acaa0770e0f72c

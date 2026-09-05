@@ -1,0 +1,61 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1ssnsdb1nmyyz449yykyp4b
+  slug: shakebug
+  slug_aliases: []
+  name: Shakebug
+  domains:
+    - value: shakebug.com
+      role: primary
+      valid_from: 2026-09-05T22:05:24.000Z
+  category: devtools-other
+profile:
+  description: Shakebug provides mobile app debugging and crash reporting tools for developers.
+  links:
+    site: https://shakebug.com
+sources:
+  - source_id: src_7f22a37125b60ce69d96652c200d47daf16c5c8780ccfc51d784d254ca3c91e4
+    url: https://shakebug.com
+programs:
+  - program_id: prg_01m1ssnsdkpbmgph7pvfvqm0k5
+    program_slug: shakebug-startup-program
+    program_slug_aliases: []
+    title: Shakebug Startup Program
+    summary: Shakebug offers eligible independent startups Shakebug Premium for USD 20/month for 12 months instead of the published USD 125 monthly price.
+    source_ids:
+      - src_7f22a37125b60ce69d96652c200d47daf16c5c8780ccfc51d784d254ca3c91e4
+offers:
+  - offer_id: off_01m1ssnsdkwyw6adh6c9w41qm4
+    program_id: prg_01m1ssnsdkpbmgph7pvfvqm0k5
+    offer_slug: shakebug-startup-program
+    offer_slug_aliases: []
+    title: Shakebug Startup Program
+    summary: Eligible independent startups receive Shakebug Premium for USD 20/month for 12 months (regular USD 125/month).
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:05:24.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Shakebug Premium for USD 20/month for 12 months for eligible independent startups (regular USD 125/month)
+          kind: discount
+          percentage:
+            basis_points: 8400
+            kind: exact
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1ssnsdb1nmyyz449yykyp4b
+      access_operator_entity_id: ent_01m1ssnsdb1nmyyz449yykyp4b
+    access:
+      availability: public
+      method: form
+      url: https://shakebug.com
+    source_ids:
+      - src_7f22a37125b60ce69d96652c200d47daf16c5c8780ccfc51d784d254ca3c91e4

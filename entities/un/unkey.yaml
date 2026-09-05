@@ -1,0 +1,63 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1sszhvknaj4b3khqat1b8pq
+  slug: unkey
+  slug_aliases: []
+  name: Unkey
+  domains:
+    - value: unkey.com
+      role: primary
+      valid_from: 2026-09-05T22:10:45.000Z
+  category: auth-security
+profile:
+  description: Unkey provides API key management and authentication infrastructure for developers.
+  links:
+    site: https://unkey.com
+sources:
+  - source_id: src_41f18f00e958c2907efa5237add389e139dc90323fadce638d0896f24368822d
+    url: https://unkey.com
+programs:
+  - program_id: prg_01m1sszhvx43ty6xxr54hy6gr6
+    program_slug: unkey-startup-program
+    program_slug_aliases: []
+    title: Unkey Startups Program
+    summary: Unkey offers eligible startups $1,000 in credits every month, priority support, concierge onboarding, and hands-on migration help.
+    source_ids:
+      - src_41f18f00e958c2907efa5237add389e139dc90323fadce638d0896f24368822d
+offers:
+  - offer_id: off_01m1sszhvyx39tmyq1wfvxp62w
+    program_id: prg_01m1sszhvx43ty6xxr54hy6gr6
+    offer_slug: unkey-startup-program
+    offer_slug_aliases: []
+    title: Unkey Startups Program
+    summary: Eligible startups receive $1,000 in Unkey credits every month, priority support, concierge onboarding, and hands-on migration help.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:10:45.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: $1,000 in Unkey credits every month plus priority support, concierge onboarding, and hands-on migration help for eligible startups
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 100000
+            kind: up-to
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1sszhvknaj4b3khqat1b8pq
+      access_operator_entity_id: ent_01m1sszhvknaj4b3khqat1b8pq
+    access:
+      availability: public
+      method: form
+      url: https://unkey.com
+    source_ids:
+      - src_41f18f00e958c2907efa5237add389e139dc90323fadce638d0896f24368822d

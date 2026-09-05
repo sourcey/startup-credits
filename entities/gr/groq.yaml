@@ -1,0 +1,64 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_rhw6sbynzy43mvrjr6a3qgtset
+  slug: groq
+  slug_aliases: []
+  name: Groq
+  domains:
+    - value: groq.com
+      role: primary
+      valid_from: 2026-09-05T21:22:54.000Z
+  category: ai-ml
+profile:
+  description: Groq provides AI inference infrastructure using its LPU (Language Processing Unit) accelerator, delivering fast and affordable inference at scale for AI applications.
+  links:
+    site: https://groq.com
+sources:
+  - source_id: src_91fe5fd52223c1b597ce7a7967f34eb08ae94ddee51f04fa00a7d0a1a5375335
+    url: https://groq.com
+programs:
+  - program_id: prg_rhw6sbynzy43mvrjr6a3qgtset
+    program_slug: groq-startup
+    program_slug_aliases: []
+    title: Groq Platform Access
+    summary: Groq offers cloud inference access via groq.com, targeting AI application developers and enterprises requiring low-latency inference. No formal public startup credits program identified.
+    source_ids:
+      - src_91fe5fd52223c1b597ce7a7967f34eb08ae94ddee51f04fa00a7d0a1a5375335
+offers:
+  - offer_id: off_rhw6sbynzy43mvrjr6a3qgtset
+    program_id: prg_rhw6sbynzy43mvrjr6a3qgtset
+    offer_slug: groq-startup-credits
+    offer_slug_aliases: []
+    title: Groq inference platform access
+    summary: Groq provides pay-per-use inference access via its cloud platform, optimized for AI applications requiring high throughput and low latency.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T21:22:54.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_cfc54489d63711a94664c47c
+          description: Groq cloud inference access for AI developers. No formal startup credits program identified; access via groq.com platform.
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 0
+            kind: up-to
+      consideration:
+        kind: unknown
+        description: The public program page does not establish separate consideration for the grant.
+    eligibility:
+      rule:
+        criterion_id: cri_cfc54489d63711a94664c47c
+        kind: manual
+        reason: vendor-discretion
+        statement: "Available to AI developers and companies via groq.com. No dedicated startup credits program identified."
+    roles:
+      terms_authority_entity_id: ent_rhw6sbynzy43mvrjr6a3qgtset
+      access_operator_entity_id: ent_rhw6sbynzy43mvrjr6a3qgtset
+    access:
+      availability: public
+      method: form
+      url: https://console.groq.com
+    source_ids:
+      - src_91fe5fd52223c1b597ce7a7967f34eb08ae94ddee51f04fa00a7d0a1a5375335

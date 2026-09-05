@@ -1,0 +1,58 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1ss6x297q66vaey0j4mbgr1
+  slug: textexpander
+  slug_aliases: []
+  name: TextExpander
+  domains:
+    - value: textexpander.com
+      role: primary
+      valid_from: 2026-09-05T21:57:18.000Z
+  category: productivity
+profile:
+  description: TextExpander provides text expansion and snippets management tools for individuals and teams.
+  links:
+    site: https://textexpander.com
+sources:
+  - source_id: src_37f376b1e8c978e70dd0e0f50e928e7f4eddc63e76ae97eb8211add3c77efcd7
+    url: https://textexpander.com/startups/apply
+programs:
+  - program_id: prg_01m1ss6x39vcdyyapqxfx8dvkr
+    program_slug: textexpander-startup-program
+    program_slug_aliases: []
+    title: TextExpander Startup Program
+    summary: TextExpander offers qualifying startups one year of its service free through its startup program.
+    source_ids:
+      - src_37f376b1e8c978e70dd0e0f50e928e7f4eddc63e76ae97eb8211add3c77efcd7
+offers:
+  - offer_id: off_01m1ss6x399wghcgthrtn32rcq
+    program_id: prg_01m1ss6x39vcdyyapqxfx8dvkr
+    offer_slug: textexpander-startup-program
+    offer_slug_aliases: []
+    title: TextExpander Startup Program
+    summary: Eligible startups receive one year of TextExpander free through the startup program.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T21:57:18.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: One year of TextExpander free for qualifying startups
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1ss6x297q66vaey0j4mbgr1
+      access_operator_entity_id: ent_01m1ss6x297q66vaey0j4mbgr1
+    access:
+      availability: public
+      method: form
+      url: https://textexpander.com/startups/apply
+    source_ids:
+      - src_37f376b1e8c978e70dd0e0f50e928e7f4eddc63e76ae97eb8211add3c77efcd7

@@ -1,0 +1,58 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1svvadeaxv7bxxrf9k012w8
+  slug: myfundbox
+  slug_aliases: []
+  name: MYFUNDBOX
+  domains:
+    - value: myfundbox.com
+      role: primary
+      valid_from: 2026-09-05T22:43:22.000Z
+  category: payments-fintech
+profile:
+  description: MYFUNDBOX provides subscription billing and财务管理 tools.
+  links:
+    site: https://myfundbox.com
+sources:
+  - source_id: src_c72bcda94dcba01ea91e39141c4c0c74fa2a37711f12f12a2d642c5ab94583a0
+    url: https://myfundbox.com
+programs:
+  - program_id: prg_01m1svvadxeqf1mtyabmw8hqdf
+    program_slug: myfundbox-startup-program
+    program_slug_aliases: []
+    title: MYFUNDBOX Startup Program
+    summary: MYFUNDBOX publishes a Startup Program for SaaS companies. The first year provides its subscription-billing platform free.
+    source_ids:
+      - src_c72bcda94dcba01ea91e39141c4c0c74fa2a37711f12f12a2d642c5ab94583a0
+offers:
+  - offer_id: off_01m1svvadyf1pkb3cqq4an6crk
+    program_id: prg_01m1svvadxeqf1mtyabmw8hqdf
+    offer_slug: myfundbox-startup-program
+    offer_slug_aliases: []
+    title: MYFUNDBOX Startup Program
+    summary: SaaS companies receive MYFUNDBOX subscription-billing platform free for the first year through the Startup Program.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:43:22.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: MYFUNDBOX subscription-billing platform free for the first year for SaaS companies through the Startup Program
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1svvadeaxv7bxxrf9k012w8
+      access_operator_entity_id: ent_01m1svvadeaxv7bxxrf9k012w8
+    access:
+      availability: public
+      method: form
+      url: https://myfundbox.com
+    source_ids:
+      - src_c72bcda94dcba01ea91e39141c4c0c74fa2a37711f12f12a2d642c5ab94583a0

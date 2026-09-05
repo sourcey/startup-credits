@@ -1,0 +1,63 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1ssxmqpfvk6p1m5t7c3d7a0
+  slug: cloudthinker
+  slug_aliases: []
+  name: CloudThinker
+  domains:
+    - value: cloudthinker.io
+      role: primary
+      valid_from: 2026-09-05T22:09:43.000Z
+  category: hosting-infra
+profile:
+  description: CloudThinker provides cloud infrastructure and compute services for startups.
+  links:
+    site: https://cloudthinker.io
+sources:
+  - source_id: src_c1caf4d1553f4a52c9bc819c0c866dc2fe299b49ffe501e1cedce6ed8aa02d89
+    url: https://cloudthinker.io
+programs:
+  - program_id: prg_01m1ssxmqxk6mwpqawwn5t7gpq
+    program_slug: cloudthinker-startup-program
+    program_slug_aliases: []
+    title: CloudThinker Startup Program
+    summary: The CloudThinker Startup Program offers qualifying early-stage startups thousands of dollars in CloudThinker cloud credits.
+    source_ids:
+      - src_c1caf4d1553f4a52c9bc819c0c866dc2fe299b49ffe501e1cedce6ed8aa02d89
+offers:
+  - offer_id: off_01m1ssxmqyhjzmyd6p5y111c46
+    program_id: prg_01m1ssxmqxk6mwpqawwn5t7gpq
+    offer_slug: cloudthinker-startup-program
+    offer_slug_aliases: []
+    title: CloudThinker Startup Program
+    summary: Eligible early-stage startups receive thousands of dollars in CloudThinker cloud credits through the Startup Program.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:09:43.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Thousands of dollars in CloudThinker cloud credits for qualifying early-stage startups
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 0
+            kind: up-to
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1ssxmqpfvk6p1m5t7c3d7a0
+      access_operator_entity_id: ent_01m1ssxmqpfvk6p1m5t7c3d7a0
+    access:
+      availability: public
+      method: form
+      url: https://cloudthinker.io
+    source_ids:
+      - src_c1caf4d1553f4a52c9bc819c0c866dc2fe299b49ffe501e1cedce6ed8aa02d89

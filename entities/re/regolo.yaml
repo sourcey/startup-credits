@@ -1,0 +1,58 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1stcvk7819wvavzsqz48c9m
+  slug: regolo
+  slug_aliases: []
+  name: Regolo.ai
+  domains:
+    - value: regolo.ai
+      role: primary
+      valid_from: 2026-09-05T22:18:01.000Z
+  category: ai-ml
+profile:
+  description: Regolo.ai provides open-source model infrastructure and builder tools.
+  links:
+    site: https://regolo.ai
+sources:
+  - source_id: src_2ed8d87b22a94aa6007c3abe9a3e5f92a7276b85b1f9f9344e0284be3b3c1d61
+    url: https://regolo.ai
+programs:
+  - program_id: prg_01m1stcvkdxc8b59sns41yqqhh
+    program_slug: regolo-startup-program
+    program_slug_aliases: []
+    title: Regolo.ai Builder Program
+    summary: Regolo.ai's Builder Program gives accepted early-stage startups 60 days of unlimited tokens across its open-source model infrastructure.
+    source_ids:
+      - src_2ed8d87b22a94aa6007c3abe9a3e5f92a7276b85b1f9f9344e0284be3b3c1d61
+offers:
+  - offer_id: off_01m1stcvkd7br2dhg78mc8xne3
+    program_id: prg_01m1stcvkdxc8b59sns41yqqhh
+    offer_slug: regolo-startup-program
+    offer_slug_aliases: []
+    title: Regolo.ai Builder Program
+    summary: Accepted early-stage startups receive 60 days of unlimited Regolo.ai tokens across its open-source model infrastructure.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:18:01.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 60 days of unlimited Regolo.ai tokens for accepted early-stage startups through the Builder Program
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1stcvk7819wvavzsqz48c9m
+      access_operator_entity_id: ent_01m1stcvk7819wvavzsqz48c9m
+    access:
+      availability: public
+      method: form
+      url: https://regolo.ai
+    source_ids:
+      - src_2ed8d87b22a94aa6007c3abe9a3e5f92a7276b85b1f9f9344e0284be3b3c1d61

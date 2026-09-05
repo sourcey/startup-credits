@@ -1,0 +1,61 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1svsjpsp40zz0cgkgj3x2a5
+  slug: maestro-labs
+  slug_aliases: []
+  name: Maestro Labs
+  domains:
+    - value: maestrolabs.com
+      role: primary
+      valid_from: 2026-09-05T22:42:24.000Z
+  category: communication
+profile:
+  description: Maestro Labs provides business communication and call management tools.
+  links:
+    site: https://maestrolabs.com
+sources:
+  - source_id: src_0ff99aa782f87b6c8a4ec1980f1b2fc697068f174c1460ae3cf3926dfa43e685
+    url: https://maestrolabs.com
+programs:
+  - program_id: prg_01m1svsjq7hgf9n6g922zqev14
+    program_slug: maestro-labs-startup-program
+    program_slug_aliases: []
+    title: Maestro Labs Startup Program
+    summary: Maestro Labs offers qualifying early-stage startups 75% off its communication products for 11 months.
+    source_ids:
+      - src_0ff99aa782f87b6c8a4ec1980f1b2fc697068f174c1460ae3cf3926dfa43e685
+offers:
+  - offer_id: off_01m1svsjq79txzmxywnw630cxq
+    program_id: prg_01m1svsjq7hgf9n6g922zqev14
+    offer_slug: maestro-labs-startup-program
+    offer_slug_aliases: []
+    title: Maestro Labs Startup Program
+    summary: Eligible early-stage startups receive 75% off Maestro Labs communication products for 11 months.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:42:24.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 75% off Maestro Labs communication products for 11 months for eligible early-stage startups
+          kind: discount
+          percentage:
+            basis_points: 7500
+            kind: exact
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1svsjpsp40zz0cgkgj3x2a5
+      access_operator_entity_id: ent_01m1svsjpsp40zz0cgkgj3x2a5
+    access:
+      availability: public
+      method: form
+      url: https://maestrolabs.com
+    source_ids:
+      - src_0ff99aa782f87b6c8a4ec1980f1b2fc697068f174c1460ae3cf3926dfa43e685

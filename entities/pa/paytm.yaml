@@ -1,0 +1,58 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1svdfst3ce2s0drmj9b56xh
+  slug: paytm
+  slug_aliases: []
+  name: Paytm
+  domains:
+    - value: paytm.com
+      role: primary
+      valid_from: 2026-09-05T22:35:51.000Z
+  category: payments-fintech
+profile:
+  description: Paytm provides digital payments and financial services for Indian businesses.
+  links:
+    site: https://business.paytm.com
+sources:
+  - source_id: src_a7642c04780cec8cb7d8fd81d6fee8401b193963ea3939db2707faca30506851
+    url: https://business.paytm.com/paytm-startups
+programs:
+  - program_id: prg_01m1svdft8x14a3q0yz2wtvpez
+    program_slug: paytm-startup-program
+    program_slug_aliases: []
+    title: Paytm Startup Program
+    summary: Paytm publishes a startup program for Indian startups offering payment processing and financial services benefits.
+    source_ids:
+      - src_a7642c04780cec8cb7d8fd81d6fee8401b193963ea3939db2707faca30506851
+offers:
+  - offer_id: off_01m1svdft8n0mj647v4zscjj59
+    program_id: prg_01m1svdft8x14a3q0yz2wtvpez
+    offer_slug: paytm-startup-program
+    offer_slug_aliases: []
+    title: Paytm Startup Program
+    summary: Indian startups receive Paytm payment processing and financial services benefits through the startup program.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:35:51.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Paytm payment processing and financial services benefits for Indian startups
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1svdfst3ce2s0drmj9b56xh
+      access_operator_entity_id: ent_01m1svdfst3ce2s0drmj9b56xh
+    access:
+      availability: public
+      method: form
+      url: https://business.paytm.com/paytm-startups
+    source_ids:
+      - src_a7642c04780cec8cb7d8fd81d6fee8401b193963ea3939db2707faca30506851

@@ -1,0 +1,58 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1sstqfccetcr4y7ra4gmqrs
+  slug: depot
+  slug_aliases: []
+  name: Depot
+  domains:
+    - value: depot.dev
+      role: primary
+      valid_from: 2026-09-05T22:08:06.000Z
+  category: ci-cd
+profile:
+  description: Depot provides container build and CI/CD infrastructure for development teams.
+  links:
+    site: https://depot.dev
+sources:
+  - source_id: src_648149bc6f20a83f5fe0812c3f2b2121dc85246d98d7b0b2844235eae015d40b
+    url: https://depot.dev
+programs:
+  - program_id: prg_01m1sstqfqe6atxgqckmzd4y6n
+    program_slug: depot-startup-program
+    program_slug_aliases: []
+    title: Depot for PostHog Startups
+    summary: Depot offers CI/CD build infrastructure credits for PostHog startup program participants.
+    source_ids:
+      - src_648149bc6f20a83f5fe0812c3f2b2121dc85246d98d7b0b2844235eae015d40b
+offers:
+  - offer_id: off_01m1sstqfq40r41zqn4jfxmavj
+    program_id: prg_01m1sstqfqe6atxgqckmzd4y6n
+    offer_slug: depot-startup-program
+    offer_slug_aliases: []
+    title: Depot for PostHog Startups
+    summary: PostHog startup program participants receive Depot CI/CD build infrastructure credits.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:08:06.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Depot CI/CD build infrastructure credits for PostHog startup program participants
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1sstqfccetcr4y7ra4gmqrs
+      access_operator_entity_id: ent_01m1sstqfccetcr4y7ra4gmqrs
+    access:
+      availability: public
+      method: form
+      url: https://depot.dev
+    source_ids:
+      - src_648149bc6f20a83f5fe0812c3f2b2121dc85246d98d7b0b2844235eae015d40b

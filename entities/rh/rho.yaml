@@ -1,0 +1,58 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1sstq6hzs34hf93yknshscx
+  slug: rho
+  slug_aliases: []
+  name: Rho
+  domains:
+    - value: rho.co
+      role: primary
+      valid_from: 2026-09-05T22:08:06.000Z
+  category: banking
+profile:
+  description: Rho provides business banking, corporate cards, and treasury management for startups.
+  links:
+    site: https://www.rho.co
+sources:
+  - source_id: src_cdb272b9caea562bd929ee13e3f5e81d83160b47f96675a5b0d6b6c1dded5f88
+    url: https://www.rho.co/partner/stripe-atlas
+programs:
+  - program_id: prg_01m1sstq7s5a2t3rtjdvqe6xg3
+    program_slug: rho-startup-program
+    program_slug_aliases: []
+    title: Rho for Stripe Atlas Founders
+    summary: Rho offers banking credits and benefits for Stripe Atlas founders through its partner program.
+    source_ids:
+      - src_cdb272b9caea562bd929ee13e3f5e81d83160b47f96675a5b0d6b6c1dded5f88
+offers:
+  - offer_id: off_01m1sstq7tw80er6bz4jnekc8a
+    program_id: prg_01m1sstq7s5a2t3rtjdvqe6xg3
+    offer_slug: rho-startup-program
+    offer_slug_aliases: []
+    title: Rho for Stripe Atlas Founders
+    summary: Stripe Atlas founders receive Rho banking credits and benefits through the Rho for Stripe Atlas Founders program.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:08:06.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Rho banking credits and benefits for Stripe Atlas founders
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1sstq6hzs34hf93yknshscx
+      access_operator_entity_id: ent_01m1sstq6hzs34hf93yknshscx
+    access:
+      availability: public
+      method: form
+      url: https://www.rho.co/partner/stripe-atlas
+    source_ids:
+      - src_cdb272b9caea562bd929ee13e3f5e81d83160b47f96675a5b0d6b6c1dded5f88

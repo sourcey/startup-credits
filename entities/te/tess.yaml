@@ -1,0 +1,61 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1ss4b7mx7d1bka5164tnh5n
+  slug: tess
+  slug_aliases: []
+  name: TESS
+  domains:
+    - value: tess.im
+      role: primary
+      valid_from: 2026-09-05T21:55:53.000Z
+  category: productivity
+profile:
+  description: TESS provides a project and task management platform designed for startup teams.
+  links:
+    site: https://tess.im
+sources:
+  - source_id: src_6c313bc7f78ca5c64e43181ba82db3b5a9ac5413366924c1a89c6cb227b8ecbb
+    url: https://tess.im
+programs:
+  - program_id: prg_01m1ss4b7te6j1tvk7e12jfyep
+    program_slug: tess-startup-program
+    program_slug_aliases: []
+    title: TESS for Startups
+    summary: TESS gives approved eligible startups 50% off the first year of a TESS subscription plus guided onboarding with TESS staff.
+    source_ids:
+      - src_6c313bc7f78ca5c64e43181ba82db3b5a9ac5413366924c1a89c6cb227b8ecbb
+offers:
+  - offer_id: off_01m1ss4b7t7hyfw6wtry2b0kgn
+    program_id: prg_01m1ss4b7te6j1tvk7e12jfyep
+    offer_slug: tess-startup-program
+    offer_slug_aliases: []
+    title: TESS for Startups
+    summary: Approved eligible startups receive 50% off the first year of TESS subscription plus guided onboarding.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T21:55:53.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 50% off first year of TESS subscription plus guided onboarding for approved eligible startups
+          kind: discount
+          percentage:
+            basis_points: 5000
+            kind: exact
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1ss4b7mx7d1bka5164tnh5n
+      access_operator_entity_id: ent_01m1ss4b7mx7d1bka5164tnh5n
+    access:
+      availability: public
+      method: form
+      url: https://tess.im
+    source_ids:
+      - src_6c313bc7f78ca5c64e43181ba82db3b5a9ac5413366924c1a89c6cb227b8ecbb

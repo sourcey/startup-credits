@@ -1,0 +1,63 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1ss4cajv33tf5edhh7cc9h7
+  slug: viam
+  slug_aliases: []
+  name: Viam
+  domains:
+    - value: viam.com
+      role: primary
+      valid_from: 2026-09-05T21:55:53.000Z
+  category: ai-ml
+profile:
+  description: Viam provides a robotics platform and smart infrastructure tooling for hardware and robotics startups.
+  links:
+    site: https://www.viam.com
+sources:
+  - source_id: src_5514dfeaafc8c449941bc36d14dea4e296259d68dc463a7ad083160d1635a5cc
+    url: https://www.viam.com
+programs:
+  - program_id: prg_01m1ss4cat3n1p31k8qnsyrag3
+    program_slug: viam-startup-program
+    program_slug_aliases: []
+    title: Viam for Startups
+    summary: Viam provides eligible robotics and hardware startups $30,000 in platform credits ($2,500/month for 12 months), plus dedicated engineering time and Slack access.
+    source_ids:
+      - src_5514dfeaafc8c449941bc36d14dea4e296259d68dc463a7ad083160d1635a5cc
+offers:
+  - offer_id: off_01m1ss4cat2sv4twscdcpeed97
+    program_id: prg_01m1ss4cat3n1p31k8qnsyrag3
+    offer_slug: viam-startup-program
+    offer_slug_aliases: []
+    title: Viam for Startups
+    summary: Eligible robotics and hardware startups receive $30,000 in Viam platform credits, dedicated engineering time, and Slack access.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T21:55:53.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: $30,000 in Viam platform credits ($2,500/month for 12 months) plus dedicated engineering time and Slack access
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 3000000
+            kind: up-to
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1ss4cajv33tf5edhh7cc9h7
+      access_operator_entity_id: ent_01m1ss4cajv33tf5edhh7cc9h7
+    access:
+      availability: public
+      method: form
+      url: https://www.viam.com
+    source_ids:
+      - src_5514dfeaafc8c449941bc36d14dea4e296259d68dc463a7ad083160d1635a5cc

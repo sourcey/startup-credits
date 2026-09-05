@@ -1,0 +1,58 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1svf9xdsy259rr21ystk4hj
+  slug: zeropipeline
+  slug_aliases: []
+  name: ZeroPipeline
+  domains:
+    - value: zeropipeline.ainative.studio
+      role: primary
+      valid_from: 2026-09-05T22:36:50.000Z
+  category: ai-ml
+profile:
+  description: ZeroPipeline provides AI pipeline and workflow automation tools.
+  links:
+    site: https://zeropipeline.ainative.studio
+sources:
+  - source_id: src_8d3b9790dbb4eb3fec23bf5b73581625ce9898274abed13e6e10385635f7c9e2
+    url: https://zeropipeline.ainative.studio
+programs:
+  - program_id: prg_01m1svf9xn39695z7px1r3dybv
+    program_slug: zeropipeline-startup-program
+    program_slug_aliases: []
+    title: ZeroPipeline for Startups
+    summary: Eligible pre-Series A technology startups with fewer than 50 employees can receive full ZeroPipeline platform access.
+    source_ids:
+      - src_8d3b9790dbb4eb3fec23bf5b73581625ce9898274abed13e6e10385635f7c9e2
+offers:
+  - offer_id: off_01m1svf9xnjd9q5ct3a7rmhqew
+    program_id: prg_01m1svf9xn39695z7px1r3dybv
+    offer_slug: zeropipeline-startup-program
+    offer_slug_aliases: []
+    title: ZeroPipeline for Startups
+    summary: Pre-Series A technology startups with fewer than 50 employees receive full ZeroPipeline platform access through the startup program.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:36:50.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Full ZeroPipeline platform access for eligible pre-Series A technology startups with fewer than 50 employees
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1svf9xdsy259rr21ystk4hj
+      access_operator_entity_id: ent_01m1svf9xdsy259rr21ystk4hj
+    access:
+      availability: public
+      method: form
+      url: https://zeropipeline.ainative.studio
+    source_ids:
+      - src_8d3b9790dbb4eb3fec23bf5b73581625ce9898274abed13e6e10385635f7c9e2

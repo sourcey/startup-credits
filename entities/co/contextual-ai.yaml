@@ -1,0 +1,63 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1swe2yrta0a39h17menmsqb
+  slug: contextual-ai
+  slug_aliases: []
+  name: Contextual AI
+  domains:
+    - value: contextual.ai
+      role: primary
+      valid_from: 2026-09-05T22:53:39.000Z
+  category: ai-ml
+profile:
+  description: Contextual AI provides enterprise search and knowledge retrieval tools.
+  links:
+    site: https://contextual.ai
+sources:
+  - source_id: src_65767d34e0c66aca125811715630e27244465d73df4882f972511e0f70acdd43
+    url: https://contextual.ai
+programs:
+  - program_id: prg_01m1swe2z18t7bx3s4jjr1x448
+    program_slug: contextual-ai-startup-program
+    program_slug_aliases: []
+    title: Contextual AI Google for Startups Scale perk
+    summary: Google Cloud lists a Scale Tier-exclusive perk of $1,500 in Contextual AI platform credits plus expert support for qualifying startups.
+    source_ids:
+      - src_65767d34e0c66aca125811715630e27244465d73df4882f972511e0f70acdd43
+offers:
+  - offer_id: off_01m1swe2z12ctfbtax9ex6q6v7
+    program_id: prg_01m1swe2z18t7bx3s4jjr1x448
+    offer_slug: contextual-ai-startup-program
+    offer_slug_aliases: []
+    title: Contextual AI Google for Startups Scale perk
+    summary: Qualifying startups with Google Cloud Scale Tier receive $1,500 in Contextual AI platform credits plus expert support.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:53:39.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: $1,500 in Contextual AI platform credits plus expert support for qualifying startups with Google Cloud Scale Tier
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 150000
+            kind: up-to
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1swe2yrta0a39h17menmsqb
+      access_operator_entity_id: ent_01m1swe2yrta0a39h17menmsqb
+    access:
+      availability: public
+      method: form
+      url: https://contextual.ai
+    source_ids:
+      - src_65767d34e0c66aca125811715630e27244465d73df4882f972511e0f70acdd43

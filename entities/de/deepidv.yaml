@@ -1,0 +1,58 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1ssa72k7qf4xk5774cdm5kj
+  slug: deepidv
+  slug_aliases: []
+  name: deepidv
+  domains:
+    - value: deepidv.com
+      role: primary
+      valid_from: 2026-09-05T21:59:06.000Z
+  category: auth-security
+profile:
+  description: deepidv provides identity verification and fraud prevention APIs for digital businesses.
+  links:
+    site: https://www.deepidv.com
+sources:
+  - source_id: src_890e72c4b8d8ce8f6c15daf6c84a0c3ad3dceb252f76f24ee530aa796d62d7ef
+    url: https://www.deepidv.com/startups
+programs:
+  - program_id: prg_01m1ssa72sng05h2ntte49t3gt
+    program_slug: deepidv-startup-program
+    program_slug_aliases: []
+    title: deepidv Startup Program
+    summary: deepidv offers qualified startups full identity verification, fraud prevention, and monitoring API access free for 6 to 12 months.
+    source_ids:
+      - src_890e72c4b8d8ce8f6c15daf6c84a0c3ad3dceb252f76f24ee530aa796d62d7ef
+offers:
+  - offer_id: off_01m1ssa72sbq4b8y08ysy9wmd7
+    program_id: prg_01m1ssa72sng05h2ntte49t3gt
+    offer_slug: deepidv-startup-program
+    offer_slug_aliases: []
+    title: deepidv Startup Program
+    summary: Qualified startups receive full identity verification, fraud prevention, and monitoring API access free for 6 to 12 months.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T21:59:06.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Full identity verification, fraud prevention, and monitoring API access free for 6 to 12 months for qualified startups
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1ssa72k7qf4xk5774cdm5kj
+      access_operator_entity_id: ent_01m1ssa72k7qf4xk5774cdm5kj
+    access:
+      availability: public
+      method: form
+      url: https://www.deepidv.com/startups
+    source_ids:
+      - src_890e72c4b8d8ce8f6c15daf6c84a0c3ad3dceb252f76f24ee530aa796d62d7ef

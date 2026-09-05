@@ -1,0 +1,58 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1svdfn2rnbb3sc2c8420p83
+  slug: visualeaf
+  slug_aliases: []
+  name: VisuaLeaf
+  domains:
+    - value: visualeaf.com
+      role: primary
+      valid_from: 2026-09-05T22:35:51.000Z
+  category: productivity
+profile:
+  description: VisuaLeaf provides visual design and brand management tools.
+  links:
+    site: https://visualeaf.com
+sources:
+  - source_id: src_6ffcb14ed2bbb4afcca0e74b45b01c2ccd84dbd336e6cc4abb7a26fb2d8bb588
+    url: https://visualeaf.com/startups/
+programs:
+  - program_id: prg_01m1svdfn85vzcb92gbgk3w0f0
+    program_slug: visualeaf-startup-program
+    program_slug_aliases: []
+    title: VisuaLeaf Startup Program
+    summary: VisuaLeaf publishes a startup program offering qualifying early-stage companies its platform at discounted rates.
+    source_ids:
+      - src_6ffcb14ed2bbb4afcca0e74b45b01c2ccd84dbd336e6cc4abb7a26fb2d8bb588
+offers:
+  - offer_id: off_01m1svdfn9hcqpw4yv4mwyygxb
+    program_id: prg_01m1svdfn85vzcb92gbgk3w0f0
+    offer_slug: visualeaf-startup-program
+    offer_slug_aliases: []
+    title: VisuaLeaf Startup Program
+    summary: Qualifying early-stage companies receive VisuaLeaf platform at discounted rates through the startup program.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:35:51.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: VisuaLeaf platform at discounted rates for qualifying early-stage companies
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1svdfn2rnbb3sc2c8420p83
+      access_operator_entity_id: ent_01m1svdfn2rnbb3sc2c8420p83
+    access:
+      availability: public
+      method: form
+      url: https://visualeaf.com/startups/
+    source_ids:
+      - src_6ffcb14ed2bbb4afcca0e74b45b01c2ccd84dbd336e6cc4abb7a26fb2d8bb588

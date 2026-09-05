@@ -1,0 +1,63 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1svsgg6kznc1j5rda9cwsw6
+  slug: pilot-io
+  slug_aliases: []
+  name: Pilot.io
+  domains:
+    - value: pilot.io
+      role: primary
+      valid_from: 2026-09-05T22:42:24.000Z
+  category: productivity
+profile:
+  description: Pilot.io provides software development and project management tools.
+  links:
+    site: https://pilot.io
+sources:
+  - source_id: src_992df825b7937bca02c4a3525c3c6acfc42458acdce7e496d5665cd236410cb7
+    url: https://pilot.io/startup-pricing
+programs:
+  - program_id: prg_01m1svsghy6py38egm251v4sjk
+    program_slug: pilot-io-startup-program
+    program_slug_aliases: []
+    title: Pilot.io Startup Program
+    summary: Pilot.io offers $30,000 in Pilot credits for the startup's first-year software subscription.
+    source_ids:
+      - src_992df825b7937bca02c4a3525c3c6acfc42458acdce7e496d5665cd236410cb7
+offers:
+  - offer_id: off_01m1svsghy6yp15x71hawyxsz0
+    program_id: prg_01m1svsghy6py38egm251v4sjk
+    offer_slug: pilot-io-startup-program
+    offer_slug_aliases: []
+    title: Pilot.io Startup Program
+    summary: Startups receive $30,000 in Pilot.io credits for their first-year software subscription through the startup program.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:42:24.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: $30,000 in Pilot.io credits for the first-year software subscription for startups
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 3000000
+            kind: up-to
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1svsgg6kznc1j5rda9cwsw6
+      access_operator_entity_id: ent_01m1svsgg6kznc1j5rda9cwsw6
+    access:
+      availability: public
+      method: form
+      url: https://pilot.io/startup-pricing
+    source_ids:
+      - src_992df825b7937bca02c4a3525c3c6acfc42458acdce7e496d5665cd236410cb7

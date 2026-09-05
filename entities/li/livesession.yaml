@@ -1,0 +1,61 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1stbjgmrv7mpg1bss8z4da0
+  slug: livesession
+  slug_aliases: []
+  name: LiveSession
+  domains:
+    - value: livesession.io
+      role: primary
+      valid_from: 2026-09-05T22:17:19.000Z
+  category: productivity
+profile:
+  description: LiveSession provides session replay and analytics for product teams.
+  links:
+    site: https://livesession.io
+sources:
+  - source_id: src_b88b26cec2264dfeca8fd2e300802ab6c899829331a397ae32bf0dc874fa479d
+    url: https://livesession.io/startup-program
+programs:
+  - program_id: prg_01m1stbjh24snbacgf5venfa8b
+    program_slug: livesession-startup-program
+    program_slug_aliases: []
+    title: LiveSession Startup Program
+    summary: LiveSession publishes a startup program offering a 50% first-year discount for qualifying startups.
+    source_ids:
+      - src_b88b26cec2264dfeca8fd2e300802ab6c899829331a397ae32bf0dc874fa479d
+offers:
+  - offer_id: off_01m1stbjh23sn73ex83kxk44qn
+    program_id: prg_01m1stbjh24snbacgf5venfa8b
+    offer_slug: livesession-startup-program
+    offer_slug_aliases: []
+    title: LiveSession Startup Program
+    summary: Qualifying startups receive a 50% first-year discount on LiveSession through the startup program.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:17:19.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 50% first-year discount on LiveSession for qualifying startups
+          kind: discount
+          percentage:
+            basis_points: 5000
+            kind: exact
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1stbjgmrv7mpg1bss8z4da0
+      access_operator_entity_id: ent_01m1stbjgmrv7mpg1bss8z4da0
+    access:
+      availability: public
+      method: form
+      url: https://livesession.io/startup-program
+    source_ids:
+      - src_b88b26cec2264dfeca8fd2e300802ab6c899829331a397ae32bf0dc874fa479d

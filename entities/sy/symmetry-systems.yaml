@@ -1,0 +1,58 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1stm3br5kzmkt939wvgp4tq
+  slug: symmetry-systems
+  slug_aliases: []
+  name: Symmetry Systems
+  domains:
+    - value: symmetry-systems.com
+      role: primary
+      valid_from: 2026-09-05T22:21:58.000Z
+  category: data-analytics
+profile:
+  description: Symmetry Systems provides data security and AI posture management tools.
+  links:
+    site: https://www.symmetry-systems.com
+sources:
+  - source_id: src_de9a4b2313b30be9145cd1d97d8e4d5d40d2f73304bfbb4e31510b6155a90eb3
+    url: https://www.symmetry-systems.com/symmetry-for-dataai-startups/
+programs:
+  - program_id: prg_01m1stm3c2zbgynce7wx9w4fkf
+    program_slug: symmetry-systems-startup-program
+    program_slug_aliases: []
+    title: Symmetry for Data+AI Startups
+    summary: Symmetry for Data+AI Startups offers qualifying AI startups discounts on data security and AI posture management services.
+    source_ids:
+      - src_de9a4b2313b30be9145cd1d97d8e4d5d40d2f73304bfbb4e31510b6155a90eb3
+offers:
+  - offer_id: off_01m1stm3c2xatxx10084p07fyc
+    program_id: prg_01m1stm3c2zbgynce7wx9w4fkf
+    offer_slug: symmetry-systems-startup-program
+    offer_slug_aliases: []
+    title: Symmetry for Data+AI Startups
+    summary: Qualifying AI startups receive Symmetry Systems discounts on data security and AI posture management services.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:21:58.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Symmetry Systems discounts on data security and AI posture management for qualifying AI startups
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1stm3br5kzmkt939wvgp4tq
+      access_operator_entity_id: ent_01m1stm3br5kzmkt939wvgp4tq
+    access:
+      availability: public
+      method: form
+      url: https://www.symmetry-systems.com/symmetry-for-dataai-startups/
+    source_ids:
+      - src_de9a4b2313b30be9145cd1d97d8e4d5d40d2f73304bfbb4e31510b6155a90eb3

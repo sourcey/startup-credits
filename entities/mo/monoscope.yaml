@@ -1,0 +1,63 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1srr1wp39swd1k7y9nk3zq3
+  slug: monoscope
+  slug_aliases: []
+  name: Monoscope
+  domains:
+    - value: monoscope.tech
+      role: primary
+      valid_from: 2026-09-05T21:49:11.000Z
+  category: design
+profile:
+  description: Monoscope provides video analytics and optimization tools for content creators and media companies.
+  links:
+    site: https://monoscope.tech
+sources:
+  - source_id: src_348ff88524ed77338e2a5c6be2f9b5fb631e698d8336f6e440c3f5d910ea5585
+    url: https://monoscope.tech
+programs:
+  - program_id: prg_01m1srr1wxxns6d9wyrsb99t7t
+    program_slug: monoscope-startup-program
+    program_slug_aliases: []
+    title: Monoscope Startup Program
+    summary: Monoscope covers up to 100% of eligible Monoscope costs during the first year, capped at USD 10,000.
+    source_ids:
+      - src_348ff88524ed77338e2a5c6be2f9b5fb631e698d8336f6e440c3f5d910ea5585
+offers:
+  - offer_id: off_01m1srr1wx9bacb77146saqjvq
+    program_id: prg_01m1srr1wxxns6d9wyrsb99t7t
+    offer_slug: monoscope-startup-program
+    offer_slug_aliases: []
+    title: Monoscope Startup Program
+    summary: Eligible startups receive up to 100% of Monoscope costs during the first year, capped at USD 10,000.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T21:49:11.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to 100% of Monoscope costs during the first year, capped at USD 10,000
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 1000000
+            kind: up-to
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1srr1wp39swd1k7y9nk3zq3
+      access_operator_entity_id: ent_01m1srr1wp39swd1k7y9nk3zq3
+    access:
+      availability: public
+      method: form
+      url: https://monoscope.tech
+    source_ids:
+      - src_348ff88524ed77338e2a5c6be2f9b5fb631e698d8336f6e440c3f5d910ea5585

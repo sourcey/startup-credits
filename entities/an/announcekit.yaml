@@ -1,0 +1,61 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1sscbkkhrbx4btqhas02wv2
+  slug: announcekit
+  slug_aliases: []
+  name: AnnounceKit
+  domains:
+    - value: announcekit.app
+      role: primary
+      valid_from: 2026-09-05T22:00:15.000Z
+  category: marketing
+profile:
+  description: AnnounceKit provides product announcement and changelog tools for SaaS companies.
+  links:
+    site: https://announcekit.app
+sources:
+  - source_id: src_4bbf9e9feb13349ce65450d135f4ffb82f3717e2fee878c70b88cd352aea7d85
+    url: https://announcekit.app/startup
+programs:
+  - program_id: prg_01m1sscbmf5fvkz3mvbgcgn774
+    program_slug: announcekit-startup-program
+    program_slug_aliases: []
+    title: AnnounceKit Startup Program
+    summary: AnnounceKit offers 50% off any AnnounceKit plan for 12 months for eligible early-stage SaaS companies.
+    source_ids:
+      - src_4bbf9e9feb13349ce65450d135f4ffb82f3717e2fee878c70b88cd352aea7d85
+offers:
+  - offer_id: off_01m1sscbmfcys8e0ef8f809nve
+    program_id: prg_01m1sscbmf5fvkz3mvbgcgn774
+    offer_slug: announcekit-startup-program
+    offer_slug_aliases: []
+    title: AnnounceKit Startup Program
+    summary: Eligible early-stage SaaS companies receive 50% off any AnnounceKit plan for 12 months.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:00:15.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 50% off any AnnounceKit plan for 12 months for eligible early-stage SaaS companies
+          kind: discount
+          percentage:
+            basis_points: 5000
+            kind: exact
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1sscbkkhrbx4btqhas02wv2
+      access_operator_entity_id: ent_01m1sscbkkhrbx4btqhas02wv2
+    access:
+      availability: public
+      method: form
+      url: https://announcekit.app/startup
+    source_ids:
+      - src_4bbf9e9feb13349ce65450d135f4ffb82f3717e2fee878c70b88cd352aea7d85

@@ -1,0 +1,58 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1sskkz8ys5dpx3gkdtmeey4
+  slug: paystack-catalyst
+  slug_aliases: []
+  name: Paystack Catalyst
+  domains:
+    - value: paystack.com
+      role: primary
+      valid_from: 2026-09-05T22:04:12.000Z
+  category: payments-fintech
+profile:
+  description: Paystack provides payment processing and financial infrastructure for African businesses and startups.
+  links:
+    site: https://paystack.com
+sources:
+  - source_id: src_279c6ae86f71f77a7de877ce909c12cd69873ff5bdd9c652d287253338f2ef02
+    url: https://paystack.com
+programs:
+  - program_id: prg_01m1sskm03scz3dpb2d4w17nw3
+    program_slug: paystack-catalyst-startup-program
+    program_slug_aliases: []
+    title: Paystack Catalyst
+    summary: Paystack Catalyst offers tech startups serving Africa $25,000 in fee-free payment processing, startup-tool discounts, fundraising support, and priority technical consulting.
+    source_ids:
+      - src_279c6ae86f71f77a7de877ce909c12cd69873ff5bdd9c652d287253338f2ef02
+offers:
+  - offer_id: off_01m1sskm03n84myw2aw5t9dw7m
+    program_id: prg_01m1sskm03scz3dpb2d4w17nw3
+    offer_slug: paystack-catalyst-startup-program
+    offer_slug_aliases: []
+    title: Paystack Catalyst
+    summary: Tech startups serving Africa receive $25,000 in fee-free payment processing, startup-tool discounts, fundraising support, and priority technical consulting through Paystack Catalyst.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:04:12.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: $25,000 in fee-free payment processing, startup-tool discounts, fundraising support, and priority technical consulting for tech startups serving Africa
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1sskkz8ys5dpx3gkdtmeey4
+      access_operator_entity_id: ent_01m1sskkz8ys5dpx3gkdtmeey4
+    access:
+      availability: public
+      method: form
+      url: https://paystack.com
+    source_ids:
+      - src_279c6ae86f71f77a7de877ce909c12cd69873ff5bdd9c652d287253338f2ef02

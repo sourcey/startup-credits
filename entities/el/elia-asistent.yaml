@@ -1,0 +1,61 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1sskk5sv7gcv7w66t67qjez
+  slug: elia-asistent
+  slug_aliases: []
+  name: ELIA Asistent
+  domains:
+    - value: elia-asistent.com
+      role: primary
+      valid_from: 2026-09-05T22:04:12.000Z
+  category: hr-people
+profile:
+  description: ELIA Asistent provides AI assistant and automation tools for business teams.
+  links:
+    site: https://elia-asistent.com
+sources:
+  - source_id: src_eb01963df6163c84ac3c95f695e9f393ac253e935805a4ce3cb865fac8f47336
+    url: https://elia-asistent.com/startups
+programs:
+  - program_id: prg_01m1sskk696v4jp33sm4dd656z
+    program_slug: elia-asistent-startup-program
+    program_slug_aliases: []
+    title: ELIA Asistent Startup Discount
+    summary: ELIA Asistent offers eligible early-stage teams 50% off standard plans for their first six months after approval.
+    source_ids:
+      - src_eb01963df6163c84ac3c95f695e9f393ac253e935805a4ce3cb865fac8f47336
+offers:
+  - offer_id: off_01m1sskk6n7hbx0grvz9spc2k9
+    program_id: prg_01m1sskk696v4jp33sm4dd656z
+    offer_slug: elia-asistent-startup-program
+    offer_slug_aliases: []
+    title: ELIA Asistent Startup Discount
+    summary: Eligible early-stage teams receive 50% off ELIA Asistent standard plans for their first six months after approval.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:04:12.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 50% off ELIA Asistent standard plans for eligible early-stage teams for their first six months after approval
+          kind: discount
+          percentage:
+            basis_points: 5000
+            kind: exact
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1sskk5sv7gcv7w66t67qjez
+      access_operator_entity_id: ent_01m1sskk5sv7gcv7w66t67qjez
+    access:
+      availability: public
+      method: form
+      url: https://elia-asistent.com/startups
+    source_ids:
+      - src_eb01963df6163c84ac3c95f695e9f393ac253e935805a4ce3cb865fac8f47336

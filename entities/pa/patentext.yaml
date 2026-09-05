@@ -1,0 +1,61 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1sse1ajh60h2fb7n6jd9013
+  slug: patentext
+  slug_aliases: []
+  name: Patentext
+  domains:
+    - value: patentext.com
+      role: primary
+      valid_from: 2026-09-05T22:01:11.000Z
+  category: legal-compliance
+profile:
+  description: Patentext provides patent search and analytics tools for technology companies and IP professionals.
+  links:
+    site: https://www.patentext.com
+sources:
+  - source_id: src_76672115e5b27e41a520c2b4b0321a80aa0f63cac9424209980ca828ea5aef10
+    url: https://www.patentext.com/startup-program/
+programs:
+  - program_id: prg_01m1sse1aq7y7eefcq2j4kpeyr
+    program_slug: patentext-startup-program
+    program_slug_aliases: []
+    title: Patentext Startup Program
+    summary: Patentext offers selected U.S.-based technology companies 50% off eligible platform fees during their first year, up to $3,000.
+    source_ids:
+      - src_76672115e5b27e41a520c2b4b0321a80aa0f63cac9424209980ca828ea5aef10
+offers:
+  - offer_id: off_01m1sse1aq9qkxmnccvpm6y1f4
+    program_id: prg_01m1sse1aq7y7eefcq2j4kpeyr
+    offer_slug: patentext-startup-program
+    offer_slug_aliases: []
+    title: Patentext Startup Program
+    summary: Selected U.S.-based technology companies receive 50% off Patentext platform fees during their first year, up to $3,000.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:01:11.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 50% off Patentext platform fees during first year for selected U.S.-based technology companies, up to $3,000
+          kind: discount
+          percentage:
+            basis_points: 5000
+            kind: exact
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1sse1ajh60h2fb7n6jd9013
+      access_operator_entity_id: ent_01m1sse1ajh60h2fb7n6jd9013
+    access:
+      availability: public
+      method: form
+      url: https://www.patentext.com/startup-program/
+    source_ids:
+      - src_76672115e5b27e41a520c2b4b0321a80aa0f63cac9424209980ca828ea5aef10

@@ -1,0 +1,58 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1st3t5cp64k30389ajfkdx3
+  slug: surveysparrow
+  slug_aliases: []
+  name: SurveySparrow
+  domains:
+    - value: surveysparrow.com
+      role: primary
+      valid_from: 2026-09-05T22:13:03.000Z
+  category: productivity
+profile:
+  description: SurveySparrow provides conversational survey and feedback tools for businesses.
+  links:
+    site: https://surveysparrow.com
+sources:
+  - source_id: src_c3ffc9035e455c342079fd6fa1d3b0cd014ee0cb47c2673f68822a2b4a5cc621
+    url: https://surveysparrow.com
+programs:
+  - program_id: prg_01m1st3t6qb977dtmq7m453pf0
+    program_slug: surveysparrow-startup-program
+    program_slug_aliases: []
+    title: SurveySparrow SaaS Startup Program
+    summary: SurveySparrow's SaaS Startup Program offers $2,000 in non-refundable credits for a $500 payment.
+    source_ids:
+      - src_c3ffc9035e455c342079fd6fa1d3b0cd014ee0cb47c2673f68822a2b4a5cc621
+offers:
+  - offer_id: off_01m1st3t6qypazhv6rajrpmp0m
+    program_id: prg_01m1st3t6qb977dtmq7m453pf0
+    offer_slug: surveysparrow-startup-program
+    offer_slug_aliases: []
+    title: SurveySparrow SaaS Startup Program
+    summary: Startups receive $2,000 in SurveySparrow credits for a $500 payment through the SaaS Startup Program.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:13:03.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: $2,000 in SurveySparrow credits for a $500 payment through the SaaS Startup Program
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1st3t5cp64k30389ajfkdx3
+      access_operator_entity_id: ent_01m1st3t5cp64k30389ajfkdx3
+    access:
+      availability: public
+      method: form
+      url: https://surveysparrow.com
+    source_ids:
+      - src_c3ffc9035e455c342079fd6fa1d3b0cd014ee0cb47c2673f68822a2b4a5cc621

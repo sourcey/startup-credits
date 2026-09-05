@@ -1,0 +1,58 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1st6px9bkjyta6d9ptk0j1a
+  slug: airwallex
+  slug_aliases: []
+  name: Airwallex
+  domains:
+    - value: airwallex.com
+      role: primary
+      valid_from: 2026-09-05T22:14:40.000Z
+  category: payments-fintech
+profile:
+  description: Airwallex provides global payments, treasury, and expense management for businesses.
+  links:
+    site: https://www.airwallex.com
+sources:
+  - source_id: src_40ac015769db2df4ddbba43e73879be493398604899e06317eb378a51f76c9ab
+    url: https://www.airwallex.com/en-au/startups
+programs:
+  - program_id: prg_01m1st6py1vv44rvt8ycgen3pn
+    program_slug: airwallex-startup-program
+    program_slug_aliases: []
+    title: Airwallex for Startups
+    summary: Airwallex publishes a startup program for venture-backed founders with regional fee waivers, cashback, product-tier access, and partner perks.
+    source_ids:
+      - src_40ac015769db2df4ddbba43e73879be493398604899e06317eb378a51f76c9ab
+offers:
+  - offer_id: off_01m1st6py1fexhtp3vsppjra57
+    program_id: prg_01m1st6py1vv44rvt8ycgen3pn
+    offer_slug: airwallex-startup-program
+    offer_slug_aliases: []
+    title: Airwallex for Startups
+    summary: Venture-backed founders receive Airwallex regional fee waivers, cashback, product-tier access, and partner perks.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:14:40.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Airwallex regional fee waivers, cashback, product-tier access, and partner perks for venture-backed founders
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1st6px9bkjyta6d9ptk0j1a
+      access_operator_entity_id: ent_01m1st6px9bkjyta6d9ptk0j1a
+    access:
+      availability: public
+      method: form
+      url: https://www.airwallex.com/en-au/startups
+    source_ids:
+      - src_40ac015769db2df4ddbba43e73879be493398604899e06317eb378a51f76c9ab

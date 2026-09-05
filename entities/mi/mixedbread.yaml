@@ -1,0 +1,58 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1sv7p7hqvqc7ka865wtcneg
+  slug: mixedbread
+  slug_aliases: []
+  name: Mixedbread
+  domains:
+    - value: mixedbread.com
+      role: primary
+      valid_from: 2026-09-05T22:32:39.000Z
+  category: ai-ml
+profile:
+  description: Mixedbread provides AI embedding and semantic search tools.
+  links:
+    site: https://mixedbread.com
+sources:
+  - source_id: src_11bf45fb7f9b53e3686ab5a3462fc90cb9f6179708e5171ad6e0e159e80eaa8a
+    url: https://mixedbread.com
+programs:
+  - program_id: prg_01m1sv7p7pbjkgw4s9gpqwr0nw
+    program_slug: mixedbread-startup-program
+    program_slug_aliases: []
+    title: Mixedbread for Startups
+    summary: Qualified startups that are existing paying Mixedbread users, have institutional venture backing, and have raised up to US Series A can receive enhanced startup benefits.
+    source_ids:
+      - src_11bf45fb7f9b53e3686ab5a3462fc90cb9f6179708e5171ad6e0e159e80eaa8a
+offers:
+  - offer_id: off_01m1sv7p7p9gj3fhpse4gc00jn
+    program_id: prg_01m1sv7p7pbjkgw4s9gpqwr0nw
+    offer_slug: mixedbread-startup-program
+    offer_slug_aliases: []
+    title: Mixedbread for Startups
+    summary: Existing paying users with institutional venture backing who have raised up to Series A receive Mixedbread enhanced startup benefits.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:32:39.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Mixedbread enhanced startup benefits for existing paying users with institutional venture backing up to Series A
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1sv7p7hqvqc7ka865wtcneg
+      access_operator_entity_id: ent_01m1sv7p7hqvqc7ka865wtcneg
+    access:
+      availability: public
+      method: form
+      url: https://mixedbread.com
+    source_ids:
+      - src_11bf45fb7f9b53e3686ab5a3462fc90cb9f6179708e5171ad6e0e159e80eaa8a

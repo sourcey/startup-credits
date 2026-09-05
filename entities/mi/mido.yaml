@@ -1,0 +1,63 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1srn1ja221weh4r504s3pp2
+  slug: mido
+  slug_aliases: []
+  name: Mido
+  domains:
+    - value: heymido.com
+      role: primary
+      valid_from: 2026-09-05T21:47:33.000Z
+  category: productivity
+profile:
+  description: Mido is a startup platform providing venture-backed teams with platform credits, priority support, and strategy guidance.
+  links:
+    site: https://heymido.com
+sources:
+  - source_id: src_30af450c85129245db70a24c0eef7589767fa29e283c77a0536f1a46a5aab5b9
+    url: https://heymido.com
+programs:
+  - program_id: prg_01m1srn1jgzqdhfvpfykk386v6
+    program_slug: mido-startup-program
+    program_slug_aliases: []
+    title: Mido for Startups
+    summary: Mido for Startups provides selected venture-backed teams with $5,000-$25,000 in platform credits, priority support, and strategy guidance.
+    source_ids:
+      - src_30af450c85129245db70a24c0eef7589767fa29e283c77a0536f1a46a5aab5b9
+offers:
+  - offer_id: off_01m1srn1jg428dcqdrqq3xs80z
+    program_id: prg_01m1srn1jgzqdhfvpfykk386v6
+    offer_slug: mido-startup-program
+    offer_slug_aliases: []
+    title: Mido for Startups
+    summary: Selected venture-backed teams receive $5,000-$25,000 in Mido platform credits, priority support, and strategy guidance.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T21:47:33.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: $5,000-$25,000 in platform credits, priority support, and strategy guidance for selected venture-backed teams
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 5000000
+            kind: up-to
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1srn1ja221weh4r504s3pp2
+      access_operator_entity_id: ent_01m1srn1ja221weh4r504s3pp2
+    access:
+      availability: public
+      method: form
+      url: https://heymido.com
+    source_ids:
+      - src_30af450c85129245db70a24c0eef7589767fa29e283c77a0536f1a46a5aab5b9

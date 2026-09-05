@@ -1,0 +1,58 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1sv66xjasvgvfrhje2fhayq
+  slug: inference-net
+  slug_aliases: []
+  name: Inference.net
+  domains:
+    - value: inference.net
+      role: primary
+      valid_from: 2026-09-05T22:31:51.000Z
+  category: ai-ml
+profile:
+  description: Inference.net provides free compute resources for AI researchers and developers.
+  links:
+    site: https://inference.net
+sources:
+  - source_id: src_9991475f851e9465fd0cc3ff458d91fd52d1e93dddd90cc204232131c46f862a
+    url: https://inference.net
+programs:
+  - program_id: prg_01m1sv66xsqzhg3seg772eh03f
+    program_slug: inference-net-startup-program
+    program_slug_aliases: []
+    title: Inference.net AI Compute Grants
+    summary: Inference.net offers up to $10,000 in free compute resources to developers and researchers working on open-source AI projects.
+    source_ids:
+      - src_9991475f851e9465fd0cc3ff458d91fd52d1e93dddd90cc204232131c46f862a
+offers:
+  - offer_id: off_01m1sv66xshf1pksg3k1t9kneb
+    program_id: prg_01m1sv66xsqzhg3seg772eh03f
+    offer_slug: inference-net-startup-program
+    offer_slug_aliases: []
+    title: Inference.net AI Compute Grants
+    summary: Developers and researchers working on open-source AI projects receive up to $10,000 in Inference.net free compute resources.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:31:51.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to $10,000 in Inference.net free compute resources for developers and researchers working on open-source AI
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1sv66xjasvgvfrhje2fhayq
+      access_operator_entity_id: ent_01m1sv66xjasvgvfrhje2fhayq
+    access:
+      availability: public
+      method: form
+      url: https://inference.net
+    source_ids:
+      - src_9991475f851e9465fd0cc3ff458d91fd52d1e93dddd90cc204232131c46f862a

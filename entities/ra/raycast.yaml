@@ -1,0 +1,58 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1st95c5s7wr05tyfe2hp7zf
+  slug: raycast
+  slug_aliases: []
+  name: Raycast
+  domains:
+    - value: raycast.com
+      role: primary
+      valid_from: 2026-09-05T22:16:00.000Z
+  category: productivity
+profile:
+  description: Raycast provides a productivity launcher and automation tools for macOS developers.
+  links:
+    site: https://raycast.com
+sources:
+  - source_id: src_f5c7b5ad325022d0a36acbcaf468b6a4563dde5ff29a8734735ab8d88ec3a565
+    url: https://raycast.com
+programs:
+  - program_id: prg_01m1st95cerash18y6bvgraatz
+    program_slug: raycast-startup-program
+    program_slug_aliases: []
+    title: Raycast Affiliate Program
+    summary: Anyone with a Raycast account can apply to the Raycast Affiliate Program. Approved affiliates earn a 30% commission on payments from referred Raycast Pro users.
+    source_ids:
+      - src_f5c7b5ad325022d0a36acbcaf468b6a4563dde5ff29a8734735ab8d88ec3a565
+offers:
+  - offer_id: off_01m1st95cf1wkyzxqjsmjtgj4x
+    program_id: prg_01m1st95cerash18y6bvgraatz
+    offer_slug: raycast-startup-program
+    offer_slug_aliases: []
+    title: Raycast Affiliate Program
+    summary: Approved Raycast affiliates earn a 30% commission on payments from referred Raycast Pro users.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:16:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 30% commission on payments from referred Raycast Pro users for approved affiliates
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1st95c5s7wr05tyfe2hp7zf
+      access_operator_entity_id: ent_01m1st95c5s7wr05tyfe2hp7zf
+    access:
+      availability: public
+      method: form
+      url: https://raycast.com
+    source_ids:
+      - src_f5c7b5ad325022d0a36acbcaf468b6a4563dde5ff29a8734735ab8d88ec3a565

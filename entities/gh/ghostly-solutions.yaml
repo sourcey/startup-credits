@@ -1,0 +1,58 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1svf998fx02hn3378mg2ttz
+  slug: ghostly-solutions
+  slug_aliases: []
+  name: Ghostly Solutions
+  domains:
+    - value: ghostlysolutions.com
+      role: primary
+      valid_from: 2026-09-05T22:36:50.000Z
+  category: productivity
+profile:
+  description: Ghostly Solutions provides business process and automation tools.
+  links:
+    site: https://ghostlysolutions.com
+sources:
+  - source_id: src_5400f0b02442ec8c7da34756bbb426c629373240c7d28ad23c8c6a5c66cd669e
+    url: https://ghostlysolutions.com
+programs:
+  - program_id: prg_01m1svf99kh97web1de3wge57j
+    program_slug: ghostly-solutions-startup-program
+    program_slug_aliases: []
+    title: Ghostly Solutions Startup Program
+    summary: Eligible early-stage or fast-growing startups (bootstrapped, pre-seed, or seed, with a working product/MVP) can receive Ghostly Solutions platform benefits.
+    source_ids:
+      - src_5400f0b02442ec8c7da34756bbb426c629373240c7d28ad23c8c6a5c66cd669e
+offers:
+  - offer_id: off_01m1svf99kygzbd4prrzv7fbmz
+    program_id: prg_01m1svf99kh97web1de3wge57j
+    offer_slug: ghostly-solutions-startup-program
+    offer_slug_aliases: []
+    title: Ghostly Solutions Startup Program
+    summary: Early-stage or fast-growing bootstrapped, pre-seed, or seed startups with a working product/MVP receive Ghostly Solutions benefits.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:36:50.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Ghostly Solutions platform benefits for eligible early-stage or fast-growing startups with a working product/MVP
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1svf998fx02hn3378mg2ttz
+      access_operator_entity_id: ent_01m1svf998fx02hn3378mg2ttz
+    access:
+      availability: public
+      method: form
+      url: https://ghostlysolutions.com
+    source_ids:
+      - src_5400f0b02442ec8c7da34756bbb426c629373240c7d28ad23c8c6a5c66cd669e

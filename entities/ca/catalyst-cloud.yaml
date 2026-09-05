@@ -1,0 +1,58 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1ss4bfryk29ck5ckf5pcbg3
+  slug: catalyst-cloud
+  slug_aliases: []
+  name: Catalyst Cloud
+  domains:
+    - value: catalystcloud.nz
+      role: primary
+      valid_from: 2026-09-05T21:55:53.000Z
+  category: hosting-infra
+profile:
+  description: Catalyst Cloud provides cloud computing services in New Zealand supporting PaaS and SaaS development.
+  links:
+    site: https://catalystcloud.nz
+sources:
+  - source_id: src_f291a5d3d2fc43d1772805b3518bd9f205d24d18eb4f240d7fa9ca29b6826168
+    url: https://catalystcloud.nz
+programs:
+  - program_id: prg_01m1ss4bfwgvv13avqsy2rns0k
+    program_slug: catalyst-cloud-startup-program
+    program_slug_aliases: []
+    title: Catalyst Cloud Development Programme
+    summary: Catalyst Cloud waives up to NZD 1,000 of qualifying non-production cloud usage per month for six months for developers building cloud-native PaaS or SaaS.
+    source_ids:
+      - src_f291a5d3d2fc43d1772805b3518bd9f205d24d18eb4f240d7fa9ca29b6826168
+offers:
+  - offer_id: off_01m1ss4bfxwg8awc93068c7qde
+    program_id: prg_01m1ss4bfwgvv13avqsy2rns0k
+    offer_slug: catalyst-cloud-startup-program
+    offer_slug_aliases: []
+    title: Catalyst Cloud Development Programme
+    summary: Developers building cloud-native PaaS or SaaS receive up to NZD 1,000 per month in cloud usage waivers for six months.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T21:55:53.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to NZD 1,000 per month in non-production cloud usage waivers for six months for developers building cloud-native PaaS or SaaS
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1ss4bfryk29ck5ckf5pcbg3
+      access_operator_entity_id: ent_01m1ss4bfryk29ck5ckf5pcbg3
+    access:
+      availability: public
+      method: form
+      url: https://catalystcloud.nz
+    source_ids:
+      - src_f291a5d3d2fc43d1772805b3518bd9f205d24d18eb4f240d7fa9ca29b6826168

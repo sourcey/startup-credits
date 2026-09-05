@@ -1,0 +1,58 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1sv7pg2qq2hp8eggsecww24
+  slug: agentmail
+  slug_aliases: []
+  name: AgentMail
+  domains:
+    - value: agentmail.to
+      role: primary
+      valid_from: 2026-09-05T22:32:39.000Z
+  category: ai-ml
+profile:
+  description: AgentMail provides AI agent infrastructure and email tools.
+  links:
+    site: https://agentmail.to
+sources:
+  - source_id: src_51a058c8c0c314bfa8ae82b155dbd54783f5cc5aede291c3a25d8a1068272c72
+    url: https://agentmail.to
+programs:
+  - program_id: prg_01m1sv7pggnbxg6dkmc4yzkwgc
+    program_slug: agentmail-startup-program
+    program_slug_aliases: []
+    title: AgentMail for Startups
+    summary: Eligible early-stage companies building AI agents and funded between $500,000 and $10 million can receive AgentMail's Ultra plan at startup pricing.
+    source_ids:
+      - src_51a058c8c0c314bfa8ae82b155dbd54783f5cc5aede291c3a25d8a1068272c72
+offers:
+  - offer_id: off_01m1sv7pgg627nskbf4v1dyph9
+    program_id: prg_01m1sv7pggnbxg6dkmc4yzkwgc
+    offer_slug: agentmail-startup-program
+    offer_slug_aliases: []
+    title: AgentMail for Startups
+    summary: AI agent companies funded $500K-$10M receive AgentMail Ultra plan at startup pricing through the program.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:32:39.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: AgentMail Ultra plan at startup pricing for AI agent companies funded $500K-$10M
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1sv7pg2qq2hp8eggsecww24
+      access_operator_entity_id: ent_01m1sv7pg2qq2hp8eggsecww24
+    access:
+      availability: public
+      method: form
+      url: https://agentmail.to
+    source_ids:
+      - src_51a058c8c0c314bfa8ae82b155dbd54783f5cc5aede291c3a25d8a1068272c72

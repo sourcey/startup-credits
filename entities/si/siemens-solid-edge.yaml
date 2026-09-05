@@ -1,0 +1,58 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1stjahtpbdpabevymxk6re1
+  slug: siemens-solid-edge
+  slug_aliases: []
+  name: Siemens Solid Edge
+  domains:
+    - value: siemens.com
+      role: primary
+      valid_from: 2026-09-05T22:21:01.000Z
+  category: devtools-other
+profile:
+  description: Siemens provides CAD and product lifecycle management software including Solid Edge.
+  links:
+    site: https://siemens.com
+sources:
+  - source_id: src_010171a23d8bb8159c8f9c17ae2e290e3ff22be7a23ad1d6902d11dc5d4e62be
+    url: https://siemens.com
+programs:
+  - program_id: prg_01m1stjajbvg8ngw21jev6c1t3
+    program_slug: siemens-solid-edge-startup-program
+    program_slug_aliases: []
+    title: Solid Edge for Startups
+    summary: Siemens Solid Edge for Startups offers qualifying startups one year of Solid Edge CAD software for product development.
+    source_ids:
+      - src_010171a23d8bb8159c8f9c17ae2e290e3ff22be7a23ad1d6902d11dc5d4e62be
+offers:
+  - offer_id: off_01m1stjajbn7hfna1g4vxf0tat
+    program_id: prg_01m1stjajbvg8ngw21jev6c1t3
+    offer_slug: siemens-solid-edge-startup-program
+    offer_slug_aliases: []
+    title: Solid Edge for Startups
+    summary: Qualifying startups receive one year of Siemens Solid Edge CAD software through the startup program.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:21:01.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: One year of Siemens Solid Edge CAD software for qualifying startups
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1stjahtpbdpabevymxk6re1
+      access_operator_entity_id: ent_01m1stjahtpbdpabevymxk6re1
+    access:
+      availability: public
+      method: form
+      url: https://siemens.com
+    source_ids:
+      - src_010171a23d8bb8159c8f9c17ae2e290e3ff22be7a23ad1d6902d11dc5d4e62be

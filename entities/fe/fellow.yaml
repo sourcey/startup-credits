@@ -1,0 +1,61 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1svjezyt6swqa0ab9n1sh5d
+  slug: fellow
+  slug_aliases: []
+  name: Fellow
+  domains:
+    - value: fellow.ai
+      role: primary
+      valid_from: 2026-09-05T22:38:33.000Z
+  category: productivity
+profile:
+  description: Fellow provides meeting management and team collaboration tools.
+  links:
+    site: https://fellow.ai
+sources:
+  - source_id: src_0ea03738a239de9f1188fe68c0e511870b8d4ed1c0f6885fc27bdce0f078c0d4
+    url: https://fellow.ai/pricing
+programs:
+  - program_id: prg_01m1svjf0nkwsgzbfk9q255cr9
+    program_slug: fellow-startup-program
+    program_slug_aliases: []
+    title: Fellow Startup Program
+    summary: Fellow offers startups that apply to its startup program up to 25% off their first year.
+    source_ids:
+      - src_0ea03738a239de9f1188fe68c0e511870b8d4ed1c0f6885fc27bdce0f078c0d4
+offers:
+  - offer_id: off_01m1svjf0pmazdcb3shjk2w3an
+    program_id: prg_01m1svjf0nkwsgzbfk9q255cr9
+    offer_slug: fellow-startup-program
+    offer_slug_aliases: []
+    title: Fellow Startup Program
+    summary: Startups that apply to the Fellow startup program receive up to 25% off their first year.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:38:33.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to 25% off Fellow for the first year for startups that apply to the startup program
+          kind: discount
+          percentage:
+            basis_points: 2500
+            kind: exact
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1svjezyt6swqa0ab9n1sh5d
+      access_operator_entity_id: ent_01m1svjezyt6swqa0ab9n1sh5d
+    access:
+      availability: public
+      method: form
+      url: https://fellow.ai/pricing
+    source_ids:
+      - src_0ea03738a239de9f1188fe68c0e511870b8d4ed1c0f6885fc27bdce0f078c0d4

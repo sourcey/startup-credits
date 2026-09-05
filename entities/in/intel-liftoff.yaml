@@ -1,0 +1,58 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1st3vsb0yjzagfkzcabpmcm
+  slug: intel-liftoff
+  slug_aliases: []
+  name: Intel Liftoff
+  domains:
+    - value: intel.com
+      role: primary
+      valid_from: 2026-09-05T22:13:03.000Z
+  category: ai-ml
+profile:
+  description: Intel Liftoff provides AI startup support, infrastructure, and mentorship programs.
+  links:
+    site: https://intel.com
+sources:
+  - source_id: src_6b2c0e7f5b5bdba9abfc11475ba2558c863a89009e721b6ceb38ee9e324e0e88
+    url: https://intel.com
+programs:
+  - program_id: prg_01m1st3vtfvx1xe293d1ta456p
+    program_slug: intel-liftoff-startup-program
+    program_slug_aliases: []
+    title: Intel Liftoff for AI Startups
+    summary: Intel Liftoff for AI Startups provides infrastructure credits, mentorship, and technical support for qualifying AI startups.
+    source_ids:
+      - src_6b2c0e7f5b5bdba9abfc11475ba2558c863a89009e721b6ceb38ee9e324e0e88
+offers:
+  - offer_id: off_01m1st3vtf4xfx9yc0ajrmt6nx
+    program_id: prg_01m1st3vtfvx1xe293d1ta456p
+    offer_slug: intel-liftoff-startup-program
+    offer_slug_aliases: []
+    title: Intel Liftoff for AI Startups
+    summary: Qualifying AI startups receive Intel Liftoff infrastructure credits, mentorship, and technical support.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:13:03.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Intel Liftoff infrastructure credits, mentorship, and technical support for qualifying AI startups
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1st3vsb0yjzagfkzcabpmcm
+      access_operator_entity_id: ent_01m1st3vsb0yjzagfkzcabpmcm
+    access:
+      availability: public
+      method: form
+      url: https://intel.com
+    source_ids:
+      - src_6b2c0e7f5b5bdba9abfc11475ba2558c863a89009e721b6ceb38ee9e324e0e88

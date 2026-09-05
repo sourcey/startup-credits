@@ -1,0 +1,61 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1srn42ktd557jg74mf4estz
+  slug: sendspark
+  slug_aliases: []
+  name: Sendspark
+  domains:
+    - value: sendspark.com
+      role: primary
+      valid_from: 2026-09-05T21:47:33.000Z
+  category: marketing
+profile:
+  description: Sendspark helps B2B companies create personalized video messages for sales outreach and customer engagement.
+  links:
+    site: https://www.sendspark.com
+sources:
+  - source_id: src_9efbbb07a7b3eefe73d9c52c199491d0f6acdb0ae1fee0633178bdf4c99aeab5
+    url: https://www.sendspark.com/video/startups
+programs:
+  - program_id: prg_01m1srn42stqvtt2mzxxqk6hcd
+    program_slug: sendspark-startup-program
+    program_slug_aliases: []
+    title: Sendspark for Startups
+    summary: Sendspark offers eligible startups 50% off Sendspark for up to one year through its startup program.
+    source_ids:
+      - src_9efbbb07a7b3eefe73d9c52c199491d0f6acdb0ae1fee0633178bdf4c99aeab5
+offers:
+  - offer_id: off_01m1srn42spav1qyrjte0wvw1p
+    program_id: prg_01m1srn42stqvtt2mzxxqk6hcd
+    offer_slug: sendspark-startup-program
+    offer_slug_aliases: []
+    title: Sendspark for Startups
+    summary: Eligible startups receive 50% off Sendspark video outreach platform for up to one year.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T21:47:33.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 50% off Sendspark for eligible startups for up to one year
+          kind: discount
+          percentage:
+            basis_points: 5000
+            kind: exact
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1srn42ktd557jg74mf4estz
+      access_operator_entity_id: ent_01m1srn42ktd557jg74mf4estz
+    access:
+      availability: public
+      method: form
+      url: https://www.sendspark.com/video/startups
+    source_ids:
+      - src_9efbbb07a7b3eefe73d9c52c199491d0f6acdb0ae1fee0633178bdf4c99aeab5

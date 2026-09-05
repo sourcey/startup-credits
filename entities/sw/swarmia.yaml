@@ -1,0 +1,61 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1sv36ep98dmdxbjah2hw2xz
+  slug: swarmia
+  slug_aliases: []
+  name: Swarmia
+  domains:
+    - value: swarmia.com
+      role: primary
+      valid_from: 2026-09-05T22:30:11.000Z
+  category: productivity
+profile:
+  description: Swarmia provides engineering analytics and team productivity tools.
+  links:
+    site: https://swarmia.com
+sources:
+  - source_id: src_76826e233cc744a1445758212ee1c9506d2adb2699e6618e52b422ba9046f191
+    url: https://swarmia.com
+programs:
+  - program_id: prg_01m1sv36ex3328pb6y3r9x55d8
+    program_slug: swarmia-startup-program
+    program_slug_aliases: []
+    title: Swarmia Startup Program
+    summary: Swarmia offers 50% off Standard or Enterprise annual plans for the first year for eligible new startup customers with up to 50 engineers.
+    source_ids:
+      - src_76826e233cc744a1445758212ee1c9506d2adb2699e6618e52b422ba9046f191
+offers:
+  - offer_id: off_01m1sv36ex624h0kvk72z58wxh
+    program_id: prg_01m1sv36ex3328pb6y3r9x55d8
+    offer_slug: swarmia-startup-program
+    offer_slug_aliases: []
+    title: Swarmia Startup Program
+    summary: New startup customers with up to 50 engineers receive 50% off Swarmia Standard or Enterprise annual plans for the first year.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:30:11.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 50% off Swarmia Standard or Enterprise annual plans for the first year for new startup customers with up to 50 engineers
+          kind: discount
+          percentage:
+            basis_points: 5000
+            kind: exact
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1sv36ep98dmdxbjah2hw2xz
+      access_operator_entity_id: ent_01m1sv36ep98dmdxbjah2hw2xz
+    access:
+      availability: public
+      method: form
+      url: https://swarmia.com
+    source_ids:
+      - src_76826e233cc744a1445758212ee1c9506d2adb2699e6618e52b422ba9046f191

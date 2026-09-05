@@ -1,0 +1,61 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1ss17fgp4emdtvq3d1es5ak
+  slug: suprsend
+  slug_aliases: []
+  name: SuprSend
+  domains:
+    - value: suprsend.com
+      role: primary
+      valid_from: 2026-09-05T21:54:09.000Z
+  category: communication
+profile:
+  description: SuprSend provides notification infrastructure and multi-channel messaging APIs for SaaS applications.
+  links:
+    site: https://suprsend.com
+sources:
+  - source_id: src_c3d5d316e0e34d16475846f9c06aac9782c8a395bce429efe70bc7a153cb3f37
+    url: https://suprsend.com
+programs:
+  - program_id: prg_01m1ss17fpf714ccdv5tng62x3
+    program_slug: suprsend-startup-program
+    program_slug_aliases: []
+    title: SuprSend for Startups
+    summary: SuprSend offers 3 months free on Developer and Growth plans, plus 50% off for another 3 months for new signups from companies founded less than 5 years ago.
+    source_ids:
+      - src_c3d5d316e0e34d16475846f9c06aac9782c8a395bce429efe70bc7a153cb3f37
+offers:
+  - offer_id: off_01m1ss17fp4fwcp0k1ywnvn682
+    program_id: prg_01m1ss17fpf714ccdv5tng62x3
+    offer_slug: suprsend-startup-program
+    offer_slug_aliases: []
+    title: SuprSend for Startups
+    summary: Eligible new signups from companies founded less than 5 years ago receive 3 months free plus 50% off for 3 months on SuprSend plans.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T21:54:09.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 3 months free plus 50% off for 3 months on SuprSend Developer and Growth plans for eligible startups founded less than 5 years ago
+          kind: discount
+          percentage:
+            basis_points: 5000
+            kind: exact
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1ss17fgp4emdtvq3d1es5ak
+      access_operator_entity_id: ent_01m1ss17fgp4emdtvq3d1es5ak
+    access:
+      availability: public
+      method: form
+      url: https://suprsend.com
+    source_ids:
+      - src_c3d5d316e0e34d16475846f9c06aac9782c8a395bce429efe70bc7a153cb3f37

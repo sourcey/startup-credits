@@ -1,0 +1,63 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1sv6737xzd0b112n7qe9t0e
+  slug: azion
+  slug_aliases: []
+  name: Azion
+  domains:
+    - value: azion.com
+      role: primary
+      valid_from: 2026-09-05T22:31:51.000Z
+  category: hosting-infra
+profile:
+  description: Azion provides edge computing, CDN, and security services.
+  links:
+    site: https://www.azion.com
+sources:
+  - source_id: src_944472d1948bbbc67c6674b34d4b1fb29d360fc7c7a2c340313d2085f1a41628
+    url: https://www.azion.com
+programs:
+  - program_id: prg_01m1sv673ftddj8w1gsyxhn8bz
+    program_slug: azion-startup-program
+    program_slug_aliases: []
+    title: Azion Scale Up Credit Program
+    summary: Azion's Scale Up Credit Program offers companies up to $120,000 in service credits for its edge computing platform.
+    source_ids:
+      - src_944472d1948bbbc67c6674b34d4b1fb29d360fc7c7a2c340313d2085f1a41628
+offers:
+  - offer_id: off_01m1sv673f3p5v6efp94jsmcjd
+    program_id: prg_01m1sv673ftddj8w1gsyxhn8bz
+    offer_slug: azion-startup-program
+    offer_slug_aliases: []
+    title: Azion Scale Up Credit Program
+    summary: Companies receive up to $120,000 in Azion edge computing service credits through the Scale Up Credit Program.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:31:51.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to $120,000 in Azion edge computing service credits for companies through the Scale Up Credit Program
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 12000000
+            kind: up-to
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1sv6737xzd0b112n7qe9t0e
+      access_operator_entity_id: ent_01m1sv6737xzd0b112n7qe9t0e
+    access:
+      availability: public
+      method: form
+      url: https://www.azion.com
+    source_ids:
+      - src_944472d1948bbbc67c6674b34d4b1fb29d360fc7c7a2c340313d2085f1a41628

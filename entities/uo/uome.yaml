@@ -1,0 +1,61 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1svsj7ast404hch1fvvq21b
+  slug: uome
+  slug_aliases: []
+  name: Uome
+  domains:
+    - value: myuome.com
+      role: primary
+      valid_from: 2026-09-05T22:42:24.000Z
+  category: productivity
+profile:
+  description: Uome provides team communication and workspace tools.
+  links:
+    site: https://myuome.com
+sources:
+  - source_id: src_b22776db0fba6c0e8254da67ae65b902afff827b0d35ab1eb9ac16abd3d75aab
+    url: https://myuome.com/us/platform/startups
+programs:
+  - program_id: prg_01m1svsj8tw755wj1c11nzp06t
+    program_slug: uome-startup-program
+    program_slug_aliases: []
+    title: Uome for Startups
+    summary: Uome gives eligible companies 50% off for their first year through the startup program.
+    source_ids:
+      - src_b22776db0fba6c0e8254da67ae65b902afff827b0d35ab1eb9ac16abd3d75aab
+offers:
+  - offer_id: off_01m1svsj8t32z694pdhfrhgs3q
+    program_id: prg_01m1svsj8tw755wj1c11nzp06t
+    offer_slug: uome-startup-program
+    offer_slug_aliases: []
+    title: Uome for Startups
+    summary: Eligible companies receive 50% off Uome for their first year through the startup program.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:42:24.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 50% off Uome for the first year for eligible companies through the startup program
+          kind: discount
+          percentage:
+            basis_points: 5000
+            kind: exact
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1svsj7ast404hch1fvvq21b
+      access_operator_entity_id: ent_01m1svsj7ast404hch1fvvq21b
+    access:
+      availability: public
+      method: form
+      url: https://myuome.com/us/platform/startups
+    source_ids:
+      - src_b22776db0fba6c0e8254da67ae65b902afff827b0d35ab1eb9ac16abd3d75aab

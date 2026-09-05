@@ -1,0 +1,61 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1srn4zvrqh9nfvxt1n72302
+  slug: hippo-video
+  slug_aliases: []
+  name: Hippo Video
+  domains:
+    - value: hippovideo.io
+      role: primary
+      valid_from: 2026-09-05T21:47:33.000Z
+  category: marketing
+profile:
+  description: Hippo Video provides a video marketing platform for creating, editing, and distributing video content at scale.
+  links:
+    site: https://www.hippovideo.io
+sources:
+  - source_id: src_8c43c5285b22ccb7361f906718ef2722705e1604e5f929baa257cf3147a65d37
+    url: https://www.hippovideo.io/startups
+programs:
+  - program_id: prg_01m1srn50deq30jje4t8ayj5d8
+    program_slug: hippo-video-startup-program
+    program_slug_aliases: []
+    title: Hippo Video for Startups
+    summary: Hippo Video offers eligible startups three months free followed by discounts of up to 70% for one year, with personalization and testimonial add-ons free during the offer period.
+    source_ids:
+      - src_8c43c5285b22ccb7361f906718ef2722705e1604e5f929baa257cf3147a65d37
+offers:
+  - offer_id: off_01m1srn50d84ng50ztgwsyz4ey
+    program_id: prg_01m1srn50deq30jje4t8ayj5d8
+    offer_slug: hippo-video-startup-program
+    offer_slug_aliases: []
+    title: Hippo Video for Startups
+    summary: Eligible startups receive three months free followed by up to 70% discount for one year, with free personalization and testimonial add-ons during the offer period.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T21:47:33.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Three months free followed by up to 70% discount for one year, with free personalization and testimonial add-ons during the offer period
+          kind: discount
+          percentage:
+            basis_points: 7000
+            kind: exact
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1srn4zvrqh9nfvxt1n72302
+      access_operator_entity_id: ent_01m1srn4zvrqh9nfvxt1n72302
+    access:
+      availability: public
+      method: form
+      url: https://www.hippovideo.io/startups
+    source_ids:
+      - src_8c43c5285b22ccb7361f906718ef2722705e1604e5f929baa257cf3147a65d37

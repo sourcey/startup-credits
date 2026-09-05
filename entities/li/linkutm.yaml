@@ -1,0 +1,58 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1ssa9dx0yws2waeaysg3gsw
+  slug: linkutm
+  slug_aliases: []
+  name: linkutm
+  domains:
+    - value: linkutm.com
+      role: primary
+      valid_from: 2026-09-05T21:59:06.000Z
+  category: marketing
+profile:
+  description: linkutm provides URL shortening, UTM tracking, and analytics tools for marketing teams.
+  links:
+    site: https://linkutm.com
+sources:
+  - source_id: src_ab961875248e73950cdc9b039b640616a522a02f03caa92ade1eaa41f7da0528
+    url: https://linkutm.com
+programs:
+  - program_id: prg_01m1ssa9e4a6qx2xn4tph1eydh
+    program_slug: linkutm-startup-program
+    program_slug_aliases: []
+    title: linkutm for Startups
+    summary: linkutm offers eligible early-stage startups the complete Growth plan free for 12 months, a $348 value with branded links, QR codes, analytics, and API access.
+    source_ids:
+      - src_ab961875248e73950cdc9b039b640616a522a02f03caa92ade1eaa41f7da0528
+offers:
+  - offer_id: off_01m1ssa9e5mpdw9jbscr3cn1wp
+    program_id: prg_01m1ssa9e4a6qx2xn4tph1eydh
+    offer_slug: linkutm-startup-program
+    offer_slug_aliases: []
+    title: linkutm for Startups
+    summary: Eligible early-stage startups receive the complete linkutm Growth plan free for 12 months ($348 value) with branded links, QR codes, analytics, and REST API.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T21:59:06.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Complete linkutm Growth plan free for 12 months ($348 value) for eligible early-stage startups
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1ssa9dx0yws2waeaysg3gsw
+      access_operator_entity_id: ent_01m1ssa9dx0yws2waeaysg3gsw
+    access:
+      availability: public
+      method: form
+      url: https://linkutm.com
+    source_ids:
+      - src_ab961875248e73950cdc9b039b640616a522a02f03caa92ade1eaa41f7da0528

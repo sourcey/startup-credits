@@ -1,0 +1,58 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1sv7nsgcx5b2k12647ej86g
+  slug: hume-ai
+  slug_aliases: []
+  name: Hume AI
+  domains:
+    - value: hume.ai
+      role: primary
+      valid_from: 2026-09-05T22:32:39.000Z
+  category: ai-ml
+profile:
+  description: Hume AI provides emotional AI and empathic AI model APIs.
+  links:
+    site: https://hume.ai
+sources:
+  - source_id: src_38ced6def1f1370f5b2b45e69979defcca5f7d2c0098b9322d9261691565ab1e
+    url: https://hume.ai
+programs:
+  - program_id: prg_01m1sv7nsy13s5j6nn9meav9d9
+    program_slug: hume-ai-startup-program
+    program_slug_aliases: []
+    title: Hume AI Startup Program
+    summary: Hume AI publishes a Startup Program offering early-stage startups discounted API access, dedicated support, and technical guidance.
+    source_ids:
+      - src_38ced6def1f1370f5b2b45e69979defcca5f7d2c0098b9322d9261691565ab1e
+offers:
+  - offer_id: off_01m1sv7nsz638etg7ppcsz47z5
+    program_id: prg_01m1sv7nsy13s5j6nn9meav9d9
+    offer_slug: hume-ai-startup-program
+    offer_slug_aliases: []
+    title: Hume AI Startup Program
+    summary: Early-stage startups receive discounted Hume AI API access, dedicated support, and technical guidance through the startup program.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:32:39.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Discounted Hume AI API access, dedicated support, and technical guidance for early-stage startups
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1sv7nsgcx5b2k12647ej86g
+      access_operator_entity_id: ent_01m1sv7nsgcx5b2k12647ej86g
+    access:
+      availability: public
+      method: form
+      url: https://hume.ai
+    source_ids:
+      - src_38ced6def1f1370f5b2b45e69979defcca5f7d2c0098b9322d9261691565ab1e

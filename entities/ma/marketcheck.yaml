@@ -1,0 +1,58 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1sv66kjxnscnjfars0xpqp4
+  slug: marketcheck
+  slug_aliases: []
+  name: MarketCheck
+  domains:
+    - value: marketcheck.uk
+      role: primary
+      valid_from: 2026-09-05T22:31:51.000Z
+  category: data-analytics
+profile:
+  description: MarketCheck provides automotive pricing and market intelligence data.
+  links:
+    site: https://marketcheck.uk
+sources:
+  - source_id: src_55495708d3acc141935372b6da5aae36aaf34c894586742d8a6c4174f64d0079
+    url: https://marketcheck.uk
+programs:
+  - program_id: prg_01m1sv66m1txebqzc9m65fc1zd
+    program_slug: marketcheck-startup-program
+    program_slug_aliases: []
+    title: MarketCheck Startup Program
+    summary: MarketCheck for Startups provides AI-first automotive startups with no access fee for three months and 25,000 free API calls.
+    source_ids:
+      - src_55495708d3acc141935372b6da5aae36aaf34c894586742d8a6c4174f64d0079
+offers:
+  - offer_id: off_01m1sv66m1s62p49yyez3wd9x9
+    program_id: prg_01m1sv66m1txebqzc9m65fc1zd
+    offer_slug: marketcheck-startup-program
+    offer_slug_aliases: []
+    title: MarketCheck Startup Program
+    summary: AI-first automotive startups receive no MarketCheck access fee for three months and 25,000 free API calls.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:31:51.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: No MarketCheck access fee for three months and 25,000 free API calls for AI-first automotive startups
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1sv66kjxnscnjfars0xpqp4
+      access_operator_entity_id: ent_01m1sv66kjxnscnjfars0xpqp4
+    access:
+      availability: public
+      method: form
+      url: https://marketcheck.uk
+    source_ids:
+      - src_55495708d3acc141935372b6da5aae36aaf34c894586742d8a6c4174f64d0079

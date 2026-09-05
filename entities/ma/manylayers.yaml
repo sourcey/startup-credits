@@ -1,0 +1,58 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1sskht89ybx6b17rtvd2my2
+  slug: manylayers
+  slug_aliases: []
+  name: ManyLayers
+  domains:
+    - value: manylayers.io
+      role: primary
+      valid_from: 2026-09-05T22:04:12.000Z
+  category: ai-ml
+profile:
+  description: ManyLayers provides AI model development and deployment tools for AI-first startup teams.
+  links:
+    site: https://manylayers.io
+sources:
+  - source_id: src_c50e69bc3f79aaed26632cf3244eba76d6808c39a6acc2854f3aa28eb977ee87
+    url: https://manylayers.io/startup-program/
+programs:
+  - program_id: prg_01m1sskhtfhb2qd67hs79m9psc
+    program_slug: manylayers-startup-program
+    program_slug_aliases: []
+    title: ManyLayers Startup Program
+    summary: ManyLayers offers eligible AI-first startups the Team tier free for 12 months with platform access and dedicated support.
+    source_ids:
+      - src_c50e69bc3f79aaed26632cf3244eba76d6808c39a6acc2854f3aa28eb977ee87
+offers:
+  - offer_id: off_01m1sskhtfktpptmh8ntg0btfg
+    program_id: prg_01m1sskhtfhb2qd67hs79m9psc
+    offer_slug: manylayers-startup-program
+    offer_slug_aliases: []
+    title: ManyLayers Startup Program
+    summary: Eligible AI-first startups receive the ManyLayers Team tier free for 12 months with platform access and dedicated support.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:04:12.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: ManyLayers Team tier free for 12 months with platform access and dedicated support for eligible AI-first startups
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1sskht89ybx6b17rtvd2my2
+      access_operator_entity_id: ent_01m1sskht89ybx6b17rtvd2my2
+    access:
+      availability: public
+      method: form
+      url: https://manylayers.io/startup-program/
+    source_ids:
+      - src_c50e69bc3f79aaed26632cf3244eba76d6808c39a6acc2854f3aa28eb977ee87

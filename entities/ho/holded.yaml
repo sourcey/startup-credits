@@ -1,0 +1,61 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1stbj6z5k8s3v1hag78pvby
+  slug: holded
+  slug_aliases: []
+  name: Holded
+  domains:
+    - value: holded.com
+      role: primary
+      valid_from: 2026-09-05T22:17:19.000Z
+  category: productivity
+profile:
+  description: Holded provides cloud-based business management and accounting software.
+  links:
+    site: https://holded.com
+sources:
+  - source_id: src_8fc7adbf789428b885f6d5d683784942dfe65fdc83df2fcb026652c34530ab4d
+    url: https://holded.com
+programs:
+  - program_id: prg_01m1stbj76yw9yv0pngfat9meq
+    program_slug: holded-startup-program
+    program_slug_aliases: []
+    title: Holded Startup Discount
+    summary: Holded publishes a startup-specific offer giving startups 50% off any Holded plan for the first 3 months.
+    source_ids:
+      - src_8fc7adbf789428b885f6d5d683784942dfe65fdc83df2fcb026652c34530ab4d
+offers:
+  - offer_id: off_01m1stbj76wa1937e3xem45wkk
+    program_id: prg_01m1stbj76yw9yv0pngfat9meq
+    offer_slug: holded-startup-program
+    offer_slug_aliases: []
+    title: Holded Startup Discount
+    summary: Startups receive 50% off any Holded plan for the first 3 months through the startup offer.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:17:19.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 50% off any Holded plan for the first 3 months for startups
+          kind: discount
+          percentage:
+            basis_points: 5000
+            kind: exact
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1stbj6z5k8s3v1hag78pvby
+      access_operator_entity_id: ent_01m1stbj6z5k8s3v1hag78pvby
+    access:
+      availability: public
+      method: form
+      url: https://holded.com
+    source_ids:
+      - src_8fc7adbf789428b885f6d5d683784942dfe65fdc83df2fcb026652c34530ab4d

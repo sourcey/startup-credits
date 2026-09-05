@@ -1,0 +1,61 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1sstppt8ypwyx9thzcg64h8
+  slug: formo
+  slug_aliases: []
+  name: Formo
+  domains:
+    - value: formo.so
+      role: primary
+      valid_from: 2026-09-05T22:08:06.000Z
+  category: payments-fintech
+profile:
+  description: Formo provides payment and financial tools for crypto and blockchain startups.
+  links:
+    site: https://formo.so
+sources:
+  - source_id: src_36bd46bf9a4287ebf705b9a07f3771451b59f04f646f33baa68fa9e1dc2066f7
+    url: https://formo.so
+programs:
+  - program_id: prg_01m1sstpq1qdb6qgxqc2j2f4ey
+    program_slug: formo-startup-program
+    program_slug_aliases: []
+    title: Formo Startup Program
+    summary: Formo offers qualifying early-stage crypto startups up to 50% off any plan for three months, dedicated support, and access to the Formo network.
+    source_ids:
+      - src_36bd46bf9a4287ebf705b9a07f3771451b59f04f646f33baa68fa9e1dc2066f7
+offers:
+  - offer_id: off_01m1sstpq12r3172a7za4vgf3f
+    program_id: prg_01m1sstpq1qdb6qgxqc2j2f4ey
+    offer_slug: formo-startup-program
+    offer_slug_aliases: []
+    title: Formo Startup Program
+    summary: Eligible early-stage crypto startups receive up to 50% off any Formo plan for three months with dedicated support.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:08:06.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to 50% off any Formo plan for three months for eligible early-stage crypto startups with dedicated support
+          kind: discount
+          percentage:
+            basis_points: 5000
+            kind: exact
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1sstppt8ypwyx9thzcg64h8
+      access_operator_entity_id: ent_01m1sstppt8ypwyx9thzcg64h8
+    access:
+      availability: public
+      method: form
+      url: https://formo.so
+    source_ids:
+      - src_36bd46bf9a4287ebf705b9a07f3771451b59f04f646f33baa68fa9e1dc2066f7

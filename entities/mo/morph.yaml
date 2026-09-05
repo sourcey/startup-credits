@@ -1,0 +1,63 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1st9588dmj3z7mjh09dfe1j
+  slug: morph
+  slug_aliases: []
+  name: Morph
+  domains:
+    - value: morphllm.com
+      role: primary
+      valid_from: 2026-09-05T22:16:00.000Z
+  category: ai-ml
+profile:
+  description: Morph provides LLM infrastructure and development tools for AI teams.
+  links:
+    site: https://www.morphllm.com
+sources:
+  - source_id: src_1e0534c1f9cd92fea8cfc62b6d54496178b3dbab0e65fe37040830275e1f336d
+    url: https://www.morphllm.com/startups
+programs:
+  - program_id: prg_01m1st958ephvsemy0sk0r13ys
+    program_slug: morph-startup-program
+    program_slug_aliases: []
+    title: Morph Startup Credits Program
+    summary: Morph publishes a startup credits page for accelerator-affiliated or early-stage startups offering up to $1,000 in API credits and priority support.
+    source_ids:
+      - src_1e0534c1f9cd92fea8cfc62b6d54496178b3dbab0e65fe37040830275e1f336d
+offers:
+  - offer_id: off_01m1st958e9q3rfnh3pa4z1nvy
+    program_id: prg_01m1st958ephvsemy0sk0r13ys
+    offer_slug: morph-startup-program
+    offer_slug_aliases: []
+    title: Morph Startup Credits Program
+    summary: Accelerator-affiliated or early-stage startups receive up to $1,000 in Morph API credits and priority support.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:16:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to $1,000 in Morph API credits and priority support for accelerator-affiliated or early-stage startups
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 100000
+            kind: up-to
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1st9588dmj3z7mjh09dfe1j
+      access_operator_entity_id: ent_01m1st9588dmj3z7mjh09dfe1j
+    access:
+      availability: public
+      method: form
+      url: https://www.morphllm.com/startups
+    source_ids:
+      - src_1e0534c1f9cd92fea8cfc62b6d54496178b3dbab0e65fe37040830275e1f336d

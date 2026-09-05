@@ -1,0 +1,58 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1ss14yxna247ar8n9fd7b0p
+  slug: cratedb
+  slug_aliases: []
+  name: CrateDB
+  domains:
+    - value: cratedb.com
+      role: primary
+      valid_from: 2026-09-05T21:54:09.000Z
+  category: databases
+profile:
+  description: CrateDB provides a distributed SQL database optimized for time-series and machine data workloads.
+  links:
+    site: https://cratedb.com
+sources:
+  - source_id: src_d73ab3a3c7335821502adec2126f833213c0d6109d1bc4e93c1d1bbe0e18762a
+    url: https://cratedb.com/pricing/startups
+programs:
+  - program_id: prg_01m1ss14zd1m5grz5swp6d34nf
+    program_slug: cratedb-startup-program
+    program_slug_aliases: []
+    title: CrateDB Startup Pack
+    summary: CrateDB offers qualifying startups cloud-service credits plus three hours of consulting, hands-on cluster setup, and dataset analysis.
+    source_ids:
+      - src_d73ab3a3c7335821502adec2126f833213c0d6109d1bc4e93c1d1bbe0e18762a
+offers:
+  - offer_id: off_01m1ss14zekm2fw82yet59fr70
+    program_id: prg_01m1ss14zd1m5grz5swp6d34nf
+    offer_slug: cratedb-startup-program
+    offer_slug_aliases: []
+    title: CrateDB Startup Pack
+    summary: Eligible startups receive CrateDB cloud-service credits plus three hours of consulting, hands-on cluster setup, and dataset analysis.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T21:54:09.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: CrateDB cloud-service credits plus three hours of consulting, hands-on cluster setup, and dataset analysis for qualifying startups
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1ss14yxna247ar8n9fd7b0p
+      access_operator_entity_id: ent_01m1ss14yxna247ar8n9fd7b0p
+    access:
+      availability: public
+      method: form
+      url: https://cratedb.com/pricing/startups
+    source_ids:
+      - src_d73ab3a3c7335821502adec2126f833213c0d6109d1bc4e93c1d1bbe0e18762a

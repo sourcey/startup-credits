@@ -1,0 +1,63 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1ssremhh2dxw0sv1tmrrpg4
+  slug: llamagen
+  slug_aliases: []
+  name: LlamaGen
+  domains:
+    - value: llamagen.ai
+      role: primary
+      valid_from: 2026-09-05T22:06:51.000Z
+  category: ai-ml
+profile:
+  description: LlamaGen provides comic and image generation APIs for developers and AI applications.
+  links:
+    site: https://llamagen.ai
+sources:
+  - source_id: src_47b110817084f037b472ad7c660959640211ef34d1cfa17c3c3e51e4ae476494
+    url: https://llamagen.ai
+programs:
+  - program_id: prg_01m1ssremvbzxxsgbhbaajvs4g
+    program_slug: llamagen-startup-program
+    program_slug_aliases: []
+    title: LlamaGen Startup Program
+    summary: LlamaGen's Bootstrapped tier gives approved full-time startup teams up to $2,000 in free Comic API credits valid for 12 months.
+    source_ids:
+      - src_47b110817084f037b472ad7c660959640211ef34d1cfa17c3c3e51e4ae476494
+offers:
+  - offer_id: off_01m1ssremv5kgeb5dp0w3vyxpy
+    program_id: prg_01m1ssremvbzxxsgbhbaajvs4g
+    offer_slug: llamagen-startup-program
+    offer_slug_aliases: []
+    title: LlamaGen Startup Program
+    summary: Approved full-time startup teams receive up to $2,000 in free LlamaGen Comic API credits valid for 12 months.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:06:51.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to $2,000 in free LlamaGen Comic API credits for 12 months for approved full-time startup teams
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 200000
+            kind: up-to
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1ssremhh2dxw0sv1tmrrpg4
+      access_operator_entity_id: ent_01m1ssremhh2dxw0sv1tmrrpg4
+    access:
+      availability: public
+      method: form
+      url: https://llamagen.ai
+    source_ids:
+      - src_47b110817084f037b472ad7c660959640211ef34d1cfa17c3c3e51e4ae476494

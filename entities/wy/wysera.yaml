@@ -1,0 +1,61 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1svsg47s2pknvdba1ep6s1z
+  slug: wysera
+  slug_aliases: []
+  name: Wysera
+  domains:
+    - value: wysera.ai
+      role: primary
+      valid_from: 2026-09-05T22:42:24.000Z
+  category: ai-ml
+profile:
+  description: Wysera provides AI-powered B2B tools for early-stage startups.
+  links:
+    site: https://wysera.ai
+sources:
+  - source_id: src_e83f27cc55c9a3da924ff342bca46313e7cf56ca670d2c8e91a94c7c7815e214
+    url: https://wysera.ai
+programs:
+  - program_id: prg_01m1svsg4scnvy11b8870zs44r
+    program_slug: wysera-startup-program
+    program_slug_aliases: []
+    title: Wysera Startup Program
+    summary: Wysera gives accepted early-stage B2B startups founding-member pricing at 20% to 30% off for 12 months, a free two-week done-with-you onboarding.
+    source_ids:
+      - src_e83f27cc55c9a3da924ff342bca46313e7cf56ca670d2c8e91a94c7c7815e214
+offers:
+  - offer_id: off_01m1svsg4tk1mdjx5m0ps3nb7x
+    program_id: prg_01m1svsg4scnvy11b8870zs44r
+    offer_slug: wysera-startup-program
+    offer_slug_aliases: []
+    title: Wysera Startup Program
+    summary: Accepted early-stage B2B startups receive 20% to 30% off for 12 months and free two-week done-with-you onboarding.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:42:24.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 20% to 30% off Wysera for 12 months plus free two-week done-with-you onboarding for accepted early-stage B2B startups
+          kind: discount
+          percentage:
+            basis_points: 3000
+            kind: exact
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1svsg47s2pknvdba1ep6s1z
+      access_operator_entity_id: ent_01m1svsg47s2pknvdba1ep6s1z
+    access:
+      availability: public
+      method: form
+      url: https://wysera.ai
+    source_ids:
+      - src_e83f27cc55c9a3da924ff342bca46313e7cf56ca670d2c8e91a94c7c7815e214

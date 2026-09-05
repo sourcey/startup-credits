@@ -1,0 +1,58 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1sshk9z1vb1b8khk8ttzf72
+  slug: bruin
+  slug_aliases: []
+  name: Bruin
+  domains:
+    - value: getbruin.com
+      role: primary
+      valid_from: 2026-09-05T22:03:08.000Z
+  category: data-analytics
+profile:
+  description: Bruin provides data pipeline and AI analytics tools for early-stage startups.
+  links:
+    site: https://getbruin.com
+sources:
+  - source_id: src_bb7576064f199989332299bd95cf8796a4b97359a8b8a62598c615b1ff027b25
+    url: https://getbruin.com/startups/
+programs:
+  - program_id: prg_01m1sshkafhzww7wwe7ymzadyg
+    program_slug: bruin-startup-program
+    program_slug_aliases: []
+    title: Bruin Startup Program
+    summary: Bruin offers early-stage startups a free planning call and hands-on workshop with a Bruin engineer to set up a self-hosted open-source data pipeline and local AI analyst.
+    source_ids:
+      - src_bb7576064f199989332299bd95cf8796a4b97359a8b8a62598c615b1ff027b25
+offers:
+  - offer_id: off_01m1sshkah12mkgr86c5d4wxtx
+    program_id: prg_01m1sshkafhzww7wwe7ymzadyg
+    offer_slug: bruin-startup-program
+    offer_slug_aliases: []
+    title: Bruin Startup Program
+    summary: Early-stage startups receive a free planning call and hands-on workshop with a Bruin engineer to set up a self-hosted data pipeline and local AI analyst.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:03:08.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Free planning call and hands-on workshop with a Bruin engineer to set up a self-hosted data pipeline and local AI analyst for early-stage startups
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1sshk9z1vb1b8khk8ttzf72
+      access_operator_entity_id: ent_01m1sshk9z1vb1b8khk8ttzf72
+    access:
+      availability: public
+      method: form
+      url: https://getbruin.com/startups/
+    source_ids:
+      - src_bb7576064f199989332299bd95cf8796a4b97359a8b8a62598c615b1ff027b25

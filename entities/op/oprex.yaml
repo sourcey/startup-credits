@@ -1,0 +1,58 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1srtprhp4pwqmde84ntgzrt
+  slug: oprex
+  slug_aliases: []
+  name: Oprex
+  domains:
+    - value: oprex.id
+      role: primary
+      valid_from: 2026-09-05T21:50:37.000Z
+  category: devtools-other
+profile:
+  description: Oprex provides development and project management tools for early-stage startup teams.
+  links:
+    site: https://oprex.id
+sources:
+  - source_id: src_7a495d606a4066f41cd4180c5b3d81b3aad0713e815b4b86a4820cbe3bcdc1d3
+    url: https://oprex.id
+programs:
+  - program_id: prg_01m1srtpsk1eynssfb7nvk7vad
+    program_slug: oprex-startup-program
+    program_slug_aliases: []
+    title: Oprex Startup Program
+    summary: Oprex gives eligible early-stage startups the full Pro plan free for 12 months, including projects, members, pipeline minutes, SSO, and beta channel access.
+    source_ids:
+      - src_7a495d606a4066f41cd4180c5b3d81b3aad0713e815b4b86a4820cbe3bcdc1d3
+offers:
+  - offer_id: off_01m1srtpskjfd1aabjtthth11k
+    program_id: prg_01m1srtpsk1eynssfb7nvk7vad
+    offer_slug: oprex-startup-program
+    offer_slug_aliases: []
+    title: Oprex Startup Program
+    summary: Eligible early-stage startups receive the full Oprex Pro plan free for 12 months, with projects, members, pipeline minutes, SSO, and beta channel access.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T21:50:37.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Full Oprex Pro plan free for 12 months for eligible early-stage startups, including projects, members, pipeline minutes, SSO, and beta channel
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1srtprhp4pwqmde84ntgzrt
+      access_operator_entity_id: ent_01m1srtprhp4pwqmde84ntgzrt
+    access:
+      availability: public
+      method: form
+      url: https://oprex.id
+    source_ids:
+      - src_7a495d606a4066f41cd4180c5b3d81b3aad0713e815b4b86a4820cbe3bcdc1d3

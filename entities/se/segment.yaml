@@ -1,0 +1,58 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1sscc55r2spmnxnfjj3sht6
+  slug: segment
+  slug_aliases: []
+  name: Segment
+  domains:
+    - value: segment.com
+      role: primary
+      valid_from: 2026-09-05T22:00:15.000Z
+  category: marketing
+profile:
+  description: Segment provides customer data infrastructure and analytics tools for B2B companies.
+  links:
+    site: https://segment.com
+sources:
+  - source_id: src_be5d58a63b4cf9eca237873421c0b29b04297dbbf5a237eee2cb64c9c257b86e
+    url: https://segment.com/industry/startups/
+programs:
+  - program_id: prg_01m1sscc5ndkbrszt6tnt8qr20
+    program_slug: segment-startup-program
+    program_slug_aliases: []
+    title: Segment for Startups
+    summary: Segment offers eligible early-stage startups credits through its Segment for Startups program for customer data infrastructure.
+    source_ids:
+      - src_be5d58a63b4cf9eca237873421c0b29b04297dbbf5a237eee2cb64c9c257b86e
+offers:
+  - offer_id: off_01m1sscc5nsahgjeq7b1hx90eh
+    program_id: prg_01m1sscc5ndkbrszt6tnt8qr20
+    offer_slug: segment-startup-program
+    offer_slug_aliases: []
+    title: Segment for Startups
+    summary: Eligible early-stage startups receive Segment credits through the Segment for Startups program.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:00:15.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Segment credits for eligible early-stage startups through the Segment for Startups program
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1sscc55r2spmnxnfjj3sht6
+      access_operator_entity_id: ent_01m1sscc55r2spmnxnfjj3sht6
+    access:
+      availability: public
+      method: form
+      url: https://segment.com/industry/startups/
+    source_ids:
+      - src_be5d58a63b4cf9eca237873421c0b29b04297dbbf5a237eee2cb64c9c257b86e

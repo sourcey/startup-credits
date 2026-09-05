@@ -1,0 +1,61 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1ssa7sxp8zjwf7z0c548czq
+  slug: licensespring
+  slug_aliases: []
+  name: LicenseSpring
+  domains:
+    - value: licensespring.com
+      role: primary
+      valid_from: 2026-09-05T21:59:06.000Z
+  category: devtools-other
+profile:
+  description: LicenseSpring provides software licensing and entitlement management solutions for software vendors.
+  links:
+    site: https://licensespring.com
+sources:
+  - source_id: src_cd1e33597a64c358eac6bde22d8af6c8e4eec222eef9ad85035f1aad32c8cc51
+    url: https://licensespring.com/startup-program
+programs:
+  - program_id: prg_01m1ssa7tqmj92d62m1k411wfv
+    program_slug: licensespring-startup-program
+    program_slug_aliases: []
+    title: LicenseSpring Startup Program
+    summary: LicenseSpring offers up to 75% off the Business Plus tier for up to two years for qualifying startups founded less than three years ago with fewer than 15 employees.
+    source_ids:
+      - src_cd1e33597a64c358eac6bde22d8af6c8e4eec222eef9ad85035f1aad32c8cc51
+offers:
+  - offer_id: off_01m1ssa7ts37a6n4g8w31swde9
+    program_id: prg_01m1ssa7tqmj92d62m1k411wfv
+    offer_slug: licensespring-startup-program
+    offer_slug_aliases: []
+    title: LicenseSpring Startup Program
+    summary: Startups founded less than three years ago with fewer than 15 employees receive up to 75% off LicenseSpring Business Plus tier for up to two years.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T21:59:06.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to 75% off LicenseSpring Business Plus tier for up to two years for startups founded less than 3 years with fewer than 15 employees
+          kind: discount
+          percentage:
+            basis_points: 7500
+            kind: exact
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1ssa7sxp8zjwf7z0c548czq
+      access_operator_entity_id: ent_01m1ssa7sxp8zjwf7z0c548czq
+    access:
+      availability: public
+      method: form
+      url: https://licensespring.com/startup-program
+    source_ids:
+      - src_cd1e33597a64c358eac6bde22d8af6c8e4eec222eef9ad85035f1aad32c8cc51

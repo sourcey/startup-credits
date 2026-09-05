@@ -1,0 +1,58 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1sscd51z7kkjyz4p6hv7rjr
+  slug: nepalhrm
+  slug_aliases: []
+  name: NepalHRM
+  domains:
+    - value: nepalhrm.com
+      role: primary
+      valid_from: 2026-09-05T22:00:15.000Z
+  category: hr-people
+profile:
+  description: NepalHRM provides HR and payroll management tools for Nepali businesses and startups.
+  links:
+    site: https://nepalhrm.com
+sources:
+  - source_id: src_c637f49bf33846a1e7a94d539bb6f834704cba79154e1c7708200fdca2deba41
+    url: https://nepalhrm.com
+programs:
+  - program_id: prg_01m1sscd5pjkqayze6n0w8s8km
+    program_slug: nepalhrm-startup-program
+    program_slug_aliases: []
+    title: NepalHRM Startup Program
+    summary: NepalHRM's Startup Program gives registered Nepali businesses, startups, and teams with 10 or fewer active employees full access to its HR and Nepal-compliant payroll platform.
+    source_ids:
+      - src_c637f49bf33846a1e7a94d539bb6f834704cba79154e1c7708200fdca2deba41
+offers:
+  - offer_id: off_01m1sscd5qhjjcqtryw4psqqnf
+    program_id: prg_01m1sscd5pjkqayze6n0w8s8km
+    offer_slug: nepalhrm-startup-program
+    offer_slug_aliases: []
+    title: NepalHRM Startup Program
+    summary: Registered Nepali businesses, startups, and teams with 10 or fewer active employees receive full NepalHRM platform access through the Startup Program.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:00:15.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Full NepalHRM platform access for registered Nepali businesses, startups, and teams with 10 or fewer active employees
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1sscd51z7kkjyz4p6hv7rjr
+      access_operator_entity_id: ent_01m1sscd51z7kkjyz4p6hv7rjr
+    access:
+      availability: public
+      method: form
+      url: https://nepalhrm.com
+    source_ids:
+      - src_c637f49bf33846a1e7a94d539bb6f834704cba79154e1c7708200fdca2deba41

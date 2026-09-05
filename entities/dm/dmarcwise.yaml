@@ -1,0 +1,61 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1ss183c1z9bvctcxq4v1y0e
+  slug: dmarcwise
+  slug_aliases: []
+  name: DMARCwise
+  domains:
+    - value: dmarcwise.io
+      role: primary
+      valid_from: 2026-09-05T21:54:09.000Z
+  category: auth-security
+profile:
+  description: DMARCwise provides email security and DMARC monitoring tools for organizations.
+  links:
+    site: https://dmarcwise.io
+sources:
+  - source_id: src_894c745f3be51035f940f29ecafe3462bea197d9fb5918bdd3834486e9bcd62a
+    url: https://dmarcwise.io/pricing
+programs:
+  - program_id: prg_01m1ss183xrs5y8psbx3vk96k3
+    program_slug: dmarcwise-startup-program
+    program_slug_aliases: []
+    title: DMARCwise Startup Pricing
+    summary: DMARCwise offers eligible startups 50% off any paid plan for their first 12 months for companies less than five years old with fewer than 25 employees.
+    source_ids:
+      - src_894c745f3be51035f940f29ecafe3462bea197d9fb5918bdd3834486e9bcd62a
+offers:
+  - offer_id: off_01m1ss183xsecx9ztdfj6wg6kq
+    program_id: prg_01m1ss183xrs5y8psbx3vk96k3
+    offer_slug: dmarcwise-startup-program
+    offer_slug_aliases: []
+    title: DMARCwise Startup Pricing
+    summary: Eligible startups (less than 5 years old, fewer than 25 employees) receive 50% off DMARCwise paid plans for 12 months.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T21:54:09.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 50% off DMARCwise paid plans for 12 months for eligible startups (less than 5 years old, fewer than 25 employees)
+          kind: discount
+          percentage:
+            basis_points: 5000
+            kind: exact
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1ss183c1z9bvctcxq4v1y0e
+      access_operator_entity_id: ent_01m1ss183c1z9bvctcxq4v1y0e
+    access:
+      availability: public
+      method: form
+      url: https://dmarcwise.io/pricing
+    source_ids:
+      - src_894c745f3be51035f940f29ecafe3462bea197d9fb5918bdd3834486e9bcd62a

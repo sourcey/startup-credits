@@ -1,0 +1,58 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1svdg4vmjgnr66kfe2aj177
+  slug: payu
+  slug_aliases: []
+  name: PayU
+  domains:
+    - value: startups.payu.in
+      role: primary
+      valid_from: 2026-09-05T22:35:51.000Z
+  category: payments-fintech
+profile:
+  description: PayU provides online payment processing for Indian businesses.
+  links:
+    site: https://www.startups.payu.in
+sources:
+  - source_id: src_bc43881d684f84bedd3ef516e92d009d0a0a795fc2090a06a4007b7c058d91a6
+    url: https://www.startups.payu.in/
+programs:
+  - program_id: prg_01m1svdg527mhb4gj8x4ggbsth
+    program_slug: payu-startup-program
+    program_slug_aliases: []
+    title: PayU Startup Program
+    summary: PayU publishes a startup program offering payment processing benefits for qualifying Indian startups.
+    source_ids:
+      - src_bc43881d684f84bedd3ef516e92d009d0a0a795fc2090a06a4007b7c058d91a6
+offers:
+  - offer_id: off_01m1svdg52bhdhnxya70n9sn2c
+    program_id: prg_01m1svdg527mhb4gj8x4ggbsth
+    offer_slug: payu-startup-program
+    offer_slug_aliases: []
+    title: PayU Startup Program
+    summary: Qualifying Indian startups receive PayU payment processing benefits through the startup program.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:35:51.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: PayU payment processing benefits for qualifying Indian startups
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1svdg4vmjgnr66kfe2aj177
+      access_operator_entity_id: ent_01m1svdg4vmjgnr66kfe2aj177
+    access:
+      availability: public
+      method: form
+      url: https://www.startups.payu.in/
+    source_ids:
+      - src_bc43881d684f84bedd3ef516e92d009d0a0a795fc2090a06a4007b7c058d91a6

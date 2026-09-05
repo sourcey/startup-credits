@@ -1,0 +1,61 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1svv9hys0kcg5td93pdgkf0
+  slug: abstra
+  slug_aliases: []
+  name: Abstra
+  domains:
+    - value: abstra.io
+      role: primary
+      valid_from: 2026-09-05T22:43:22.000Z
+  category: devtools-other
+profile:
+  description: Abstra provides data engineering and workflow automation tools.
+  links:
+    site: https://abstra.io
+sources:
+  - source_id: src_17d6c5ab778e540b7a19db39a071c311ddb0bfe2c69f7eed02fa0351cb143692
+    url: https://abstra.io
+programs:
+  - program_id: prg_01m1svv9kdjwdzeh2f08nn7zg6
+    program_slug: abstra-startup-program
+    program_slug_aliases: []
+    title: Abstra Startup Discount Program
+    summary: Abstra's Startup Discount Program offers 50% off the Professional plan for early-stage companies.
+    source_ids:
+      - src_17d6c5ab778e540b7a19db39a071c311ddb0bfe2c69f7eed02fa0351cb143692
+offers:
+  - offer_id: off_01m1svv9kd6kjxd05rehcy51a8
+    program_id: prg_01m1svv9kdjwdzeh2f08nn7zg6
+    offer_slug: abstra-startup-program
+    offer_slug_aliases: []
+    title: Abstra Startup Discount Program
+    summary: Early-stage companies receive 50% off Abstra Professional plan through the Startup Discount Program.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:43:22.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 50% off Abstra Professional plan for early-stage companies through the Startup Discount Program
+          kind: discount
+          percentage:
+            basis_points: 5000
+            kind: exact
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1svv9hys0kcg5td93pdgkf0
+      access_operator_entity_id: ent_01m1svv9hys0kcg5td93pdgkf0
+    access:
+      availability: public
+      method: form
+      url: https://abstra.io
+    source_ids:
+      - src_17d6c5ab778e540b7a19db39a071c311ddb0bfe2c69f7eed02fa0351cb143692

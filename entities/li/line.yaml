@@ -1,0 +1,58 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1ssxnhzy39z1trvkndehgf7
+  slug: line
+  slug_aliases: []
+  name: LINE SCALE UP
+  domains:
+    - value: line.me
+      role: primary
+      valid_from: 2026-09-05T22:09:43.000Z
+  category: marketing
+profile:
+  description: LINE SCALE UP provides growth marketing and analytics tools for Asian startups.
+  links:
+    site: https://linescaleup.landpress.line.me
+sources:
+  - source_id: src_bef3897d320062cdd81c923e433826f1b3e2add873fb1f8d757b88d73bb940fa
+    url: https://linescaleup.landpress.line.me/home/
+programs:
+  - program_id: prg_01m1ssxnjhc61jw9qfavw4pbyw
+    program_slug: line-startup-program
+    program_slug_aliases: []
+    title: LINE SCALE UP Program
+    summary: LINE SCALE UP offers startup growth marketing tools and analytics for qualifying Asian startups.
+    source_ids:
+      - src_bef3897d320062cdd81c923e433826f1b3e2add873fb1f8d757b88d73bb940fa
+offers:
+  - offer_id: off_01m1ssxnjherec2sk7ajptpdx6
+    program_id: prg_01m1ssxnjhc61jw9qfavw4pbyw
+    offer_slug: line-startup-program
+    offer_slug_aliases: []
+    title: LINE SCALE UP Program
+    summary: Qualifying Asian startups receive LINE SCALE UP growth marketing tools and analytics through the program.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:09:43.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: LINE SCALE UP growth marketing tools and analytics for qualifying Asian startups
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1ssxnhzy39z1trvkndehgf7
+      access_operator_entity_id: ent_01m1ssxnhzy39z1trvkndehgf7
+    access:
+      availability: public
+      method: form
+      url: https://linescaleup.landpress.line.me/home/
+    source_ids:
+      - src_bef3897d320062cdd81c923e433826f1b3e2add873fb1f8d757b88d73bb940fa

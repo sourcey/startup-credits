@@ -1,0 +1,67 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_hwtt68d6j288rqd4hjbd2kj5zh
+  slug: fly
+  slug_aliases: []
+  name: Fly.io
+  domains:
+    - value: fly.io
+      role: primary
+      valid_from: 2024-01-01T00:00:00.000Z
+  category: hosting-infra
+profile:
+  description: Fly.io is a cloud application platform for deploying and scaling web applications, APIs, databases, AI workloads, and agent infrastructure across multiple regions globally.
+  links:
+    site: https://fly.io
+sources:
+  - source_id: src_09c0919cd1a93d5a664b60f52ee5621c4d06d090d6450f957fa00b8adfed9806
+    url: https://fly.io/docs/scale-flight/startup-program/
+programs:
+  - program_id: prg_hwtt68d6j288rqd4hjbd2kj5zh
+    program_slug: fly-startup-program
+    program_slug_aliases: []
+    title: Fly.io Startup Program
+    summary: Fly.io supports early-stage AI and application startups with significant compute credits, priority GPU access, and co-marketing opportunities.
+    source_ids:
+      - src_09c0919cd1a93d5a664b60f52ee5621c4d06d090d6450f957fa00b8adfed9806
+offers:
+  - offer_id: off_hwtt68d6j288rqd4hjbd2kj5zh
+    program_id: prg_hwtt68d6j288rqd4hjbd2kj5zh
+    offer_slug: fly-startup-ai-credits
+    offer_slug_aliases: []
+    title: Fly.io AI Startup Credits
+    summary: Early-stage AI startups can receive $5,000 per month in Fly.io compute credits for 3 months, with priority access to GPU machines and 1:1 onboarding support.
+    lifecycle:
+      status: active
+      effective_from: 2024-01-01T00:00:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: $5,000/month in Fly.io compute credits for 3 months
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 1500000
+            kind: up-to
+        - benefit_id: ben_02
+          description: Priority access to GPU machines and dedicated support
+          kind: other
+      consideration:
+        kind: unknown
+        description: The public program page does not establish separate consideration.
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must be early-stage AI or application companies actively building on Fly.io; Fly.io reviews applications and makes decisions at its discretion.
+    roles:
+      terms_authority_entity_id: ent_hwtt68d6j288rqd4hjbd2kj5zh
+      access_operator_entity_id: ent_hwtt68d6j288rqd4hjbd2kj5zh
+    access:
+      availability: public
+      method: form
+      url: https://fly.io/contact/startup/
+    source_ids:
+      - src_09c0919cd1a93d5a664b60f52ee5621c4d06d090d6450f957fa00b8adfed9806

@@ -1,0 +1,63 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1ssrezgk5resds7ht1twtga
+  slug: singlestore
+  slug_aliases: []
+  name: SingleStore
+  domains:
+    - value: singlestore.com
+      role: primary
+      valid_from: 2026-09-05T22:06:51.000Z
+  category: databases
+profile:
+  description: SingleStore provides a distributed SQL database for analytics and operational workloads.
+  links:
+    site: https://www.singlestore.com
+sources:
+  - source_id: src_a69b770a27bf75d2f37e9c3caf73dca6db975a0dde3eb2266e0023f81efc2bd5
+    url: https://www.singlestore.com
+programs:
+  - program_id: prg_01m1ssrf06r0twckvvsgan86fy
+    program_slug: singlestore-startup-program
+    program_slug_aliases: []
+    title: SingleStore Helios Free Credits
+    summary: SingleStore offers new Managed Standard Helios customers USD 500 worth of free credits to get started.
+    source_ids:
+      - src_a69b770a27bf75d2f37e9c3caf73dca6db975a0dde3eb2266e0023f81efc2bd5
+offers:
+  - offer_id: off_01m1ssrf06tyywafhpr242xn72
+    program_id: prg_01m1ssrf06r0twckvvsgan86fy
+    offer_slug: singlestore-startup-program
+    offer_slug_aliases: []
+    title: SingleStore Helios Free Credits
+    summary: New SingleStore Managed Standard Helios customers receive USD 500 worth of free credits to get started.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:06:51.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: USD 500 worth of free SingleStore Helios credits for new Managed Standard Helios customers
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 50000
+            kind: up-to
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1ssrezgk5resds7ht1twtga
+      access_operator_entity_id: ent_01m1ssrezgk5resds7ht1twtga
+    access:
+      availability: public
+      method: form
+      url: https://www.singlestore.com
+    source_ids:
+      - src_a69b770a27bf75d2f37e9c3caf73dca6db975a0dde3eb2266e0023f81efc2bd5

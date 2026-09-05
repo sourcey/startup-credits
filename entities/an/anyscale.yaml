@@ -1,0 +1,64 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_7fp5dgvdwjrbnj7m4brpkzmcf3
+  slug: anyscale
+  slug_aliases: []
+  name: Anyscale
+  domains:
+    - value: anyscale.com
+      role: primary
+      valid_from: 2026-09-05T21:22:54.000Z
+  category: hosting-infra
+profile:
+  description: Anyscale provides a managed Ray platform for distributed AI training and inference, enabling foundation model builders to scale distributed training and multimodal workloads.
+  links:
+    site: https://www.anyscale.com
+sources:
+  - source_id: src_c5a840c90b0d0dfcd7af11b8901d6dad612ecf0e5501d0d8c1a39aac18d01398
+    url: https://www.anyscale.com/ray-ventures
+programs:
+  - program_id: prg_7fp5dgvdwjrbnj7m4brpkzmcf3
+    program_slug: anyscale-startup
+    program_slug_aliases: []
+    title: Anyscale Ray Ventures
+    summary: Ray Ventures is Anyscale's startup support program offering compute credits and technical support to early-stage AI companies building on Ray.
+    source_ids:
+      - src_c5a840c90b0d0dfcd7af11b8901d6dad612ecf0e5501d0d8c1a39aac18d01398
+offers:
+  - offer_id: off_7fp5dgvdwjrbnj7m4brpkzmcf3
+    program_id: prg_7fp5dgvdwjrbnj7m4brpkzmcf3
+    offer_slug: anyscale-startup-credits
+    offer_slug_aliases: []
+    title: Anyscale Ray Ventures credits and $100 new user credit
+    summary: Ray Ventures provides compute credits to qualifying AI startups building on Ray, plus a $100 credit for new Anyscale users to get started with distributed training and inference.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T21:22:54.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_76aa1ac768422a25a071548e
+          description: Up to $100 USD in Anyscale credits for new users, with additional compute credits for qualifying Ray Ventures startups.
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 10000
+            kind: up-to
+      consideration:
+        kind: unknown
+        description: The public program page does not establish separate consideration for the grant.
+    eligibility:
+      rule:
+        criterion_id: cri_76aa1ac768422a25a071548e
+        kind: manual
+        reason: vendor-discretion
+        statement: "Available to early-stage AI startups building on Ray. Anyscale makes final decisions. New user $100 credit available to all sign-ups."
+    roles:
+      terms_authority_entity_id: ent_7fp5dgvdwjrbnj7m4brpkzmcf3
+      access_operator_entity_id: ent_7fp5dgvdwjrbnj7m4brpkzmcf3
+    access:
+      availability: public
+      method: form
+      url: https://www.anyscale.com/ray-ventures
+    source_ids:
+      - src_c5a840c90b0d0dfcd7af11b8901d6dad612ecf0e5501d0d8c1a39aac18d01398

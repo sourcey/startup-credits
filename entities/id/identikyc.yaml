@@ -1,0 +1,61 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1swe35yamj1advyqe58r9yc
+  slug: identikyc
+  slug_aliases: []
+  name: IdentiKYC
+  domains:
+    - value: identikyc.com
+      role: primary
+      valid_from: 2026-09-05T22:53:39.000Z
+  category: auth-security
+profile:
+  description: IdentiKYC provides identity verification and KYC compliance tools.
+  links:
+    site: https://identikyc.com
+sources:
+  - source_id: src_1e7dc82112a95ca6ae47ba3a1362997f397aef4a3f9b2dc97cbd108005881b8a
+    url: https://identikyc.com
+programs:
+  - program_id: prg_01m1swe36rvsbeynzvnpe2xd95
+    program_slug: identikyc-startup-program
+    program_slug_aliases: []
+    title: IdentiKYC Startup Program
+    summary: IdentiKYC publicly offers registered innovative startups 50% off White Label/SDK activation costs plus three free months after go-live.
+    source_ids:
+      - src_1e7dc82112a95ca6ae47ba3a1362997f397aef4a3f9b2dc97cbd108005881b8a
+offers:
+  - offer_id: off_01m1swe36sg5yh2t931q4awhvc
+    program_id: prg_01m1swe36rvsbeynzvnpe2xd95
+    offer_slug: identikyc-startup-program
+    offer_slug_aliases: []
+    title: IdentiKYC Startup Program
+    summary: Registered innovative startups receive 50% off IdentiKYC White Label/SDK activation costs plus three free months after go-live.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:53:39.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 50% off IdentiKYC White Label/SDK activation costs plus three free months after go-live for registered innovative startups
+          kind: discount
+          percentage:
+            basis_points: 5000
+            kind: exact
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1swe35yamj1advyqe58r9yc
+      access_operator_entity_id: ent_01m1swe35yamj1advyqe58r9yc
+    access:
+      availability: public
+      method: form
+      url: https://identikyc.com
+    source_ids:
+      - src_1e7dc82112a95ca6ae47ba3a1362997f397aef4a3f9b2dc97cbd108005881b8a

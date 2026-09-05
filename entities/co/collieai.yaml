@@ -1,0 +1,58 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1sscb8fnhdjyf5f0swy3sv7
+  slug: collieai
+  slug_aliases: []
+  name: CollieAi
+  domains:
+    - value: collieai.io
+      role: primary
+      valid_from: 2026-09-05T22:00:15.000Z
+  category: ai-ml
+profile:
+  description: CollieAi provides AI agent infrastructure and tools for building and deploying AI applications.
+  links:
+    site: https://collieai.io
+sources:
+  - source_id: src_c4cfef2a44ed19c5967d29789999c8088287eab5fa139bb170d637b9e8f9d44c
+    url: https://collieai.io/startups/
+programs:
+  - program_id: prg_01m1sscb8qs3ekn19er7k09q1n
+    program_slug: collieai-startup-program
+    program_slug_aliases: []
+    title: CollieAi for Startups
+    summary: CollieAi offers eligible early-stage startups six months of its Growth plan free through the CollieAi for Startups program.
+    source_ids:
+      - src_c4cfef2a44ed19c5967d29789999c8088287eab5fa139bb170d637b9e8f9d44c
+offers:
+  - offer_id: off_01m1sscb8rbrtpw4s7n4p0wwnt
+    program_id: prg_01m1sscb8qs3ekn19er7k09q1n
+    offer_slug: collieai-startup-program
+    offer_slug_aliases: []
+    title: CollieAi for Startups
+    summary: Eligible early-stage startups receive six months of the CollieAi Growth plan free through the for Startups program.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:00:15.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Six months of CollieAi Growth plan free for eligible early-stage startups
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1sscb8fnhdjyf5f0swy3sv7
+      access_operator_entity_id: ent_01m1sscb8fnhdjyf5f0swy3sv7
+    access:
+      availability: public
+      method: form
+      url: https://collieai.io/startups/
+    source_ids:
+      - src_c4cfef2a44ed19c5967d29789999c8088287eab5fa139bb170d637b9e8f9d44c

@@ -1,0 +1,58 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1srhdztajcsy3bt2rnhbdrn
+  slug: hkust
+  slug_aliases: []
+  name: HKUST
+  domains:
+    - value: hkust.edu.hk
+      role: primary
+      valid_from: 2026-09-05T21:45:33.000Z
+  category: other
+profile:
+  description: The Hong Kong University of Science and Technology operates the HKUST x HKSTP Co-ideation Programme supporting early-stage tech startups in Hong Kong.
+  links:
+    site: https://ec.hkust.edu.hk
+sources:
+  - source_id: src_677218cef074fce37b9449875802f70c70bdf83b4b5940884e13a39a1077524b
+    url: https://ec.hkust.edu.hk/hkustxhkstp-co-ideation-program
+programs:
+  - program_id: prg_01m1srhe301k9f0ke2ek3e6t86
+    program_slug: hkust-startup-program
+    program_slug_aliases: []
+    title: HKUST x HKSTP Co-ideation Programme
+    summary: The HKUST x HKSTP Co-ideation Programme offers up to HKD 100,000 in grant support over six months for HKUST-affiliated early-stage tech startups.
+    source_ids:
+      - src_677218cef074fce37b9449875802f70c70bdf83b4b5940884e13a39a1077524b
+offers:
+  - offer_id: off_01m1srhe305qq0g1hjxf0awxdd
+    program_id: prg_01m1srhe301k9f0ke2ek3e6t86
+    offer_slug: hkust-startup-program
+    offer_slug_aliases: []
+    title: HKUST x HKSTP Co-ideation Programme
+    summary: Selected HKUST-affiliated startups receive up to HKD 100,000 in financial grant support over six months through the HKUST x HKSTP Co-ideation Programme.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T21:45:33.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to HKD 100,000 financial grant over six months for selected HKUST x HKSTP Co-ideation Programme participants
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1srhdztajcsy3bt2rnhbdrn
+      access_operator_entity_id: ent_01m1srhdztajcsy3bt2rnhbdrn
+    access:
+      availability: public
+      method: form
+      url: https://ec.hkust.edu.hk/hkustxhkstp-co-ideation-program
+    source_ids:
+      - src_677218cef074fce37b9449875802f70c70bdf83b4b5940884e13a39a1077524b

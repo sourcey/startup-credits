@@ -1,0 +1,58 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1srtq25ez7pxe30g4n7prgv
+  slug: browserbase
+  slug_aliases: []
+  name: Browserbase
+  domains:
+    - value: browserbase.com
+      role: primary
+      valid_from: 2026-09-05T21:50:37.000Z
+  category: devtools-other
+profile:
+  description: Browserbase provides cloud browser infrastructure for web scraping, testing, and automation applications.
+  links:
+    site: https://www.browserbase.com
+sources:
+  - source_id: src_7da96bf9ff1bc1d3f6b86dcb4c332bc8dd9c93131e2d0ed321737df312d1e04d
+    url: https://www.browserbase.com
+programs:
+  - program_id: prg_01m1srtq2es29az57ydh1c2hs4
+    program_slug: browserbase-startup-program
+    program_slug_aliases: []
+    title: Browserbase ElevenLabs Founder Pack
+    summary: Browserbase offers ElevenLabs Founder Pack participants cloud browser credits through a first-party redemption page, covering cloud browsers and model routing.
+    source_ids:
+      - src_7da96bf9ff1bc1d3f6b86dcb4c332bc8dd9c93131e2d0ed321737df312d1e04d
+offers:
+  - offer_id: off_01m1srtq2ewxc22vtvvsmgwe76
+    program_id: prg_01m1srtq2es29az57ydh1c2hs4
+    offer_slug: browserbase-startup-program
+    offer_slug_aliases: []
+    title: Browserbase ElevenLabs Founder Pack
+    summary: ElevenLabs Founder Pack participants receive Browserbase credits for cloud browsers and model routing through the first-party redemption page.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T21:50:37.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Browserbase credits for ElevenLabs Founder Pack participants covering cloud browsers and model routing
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1srtq25ez7pxe30g4n7prgv
+      access_operator_entity_id: ent_01m1srtq25ez7pxe30g4n7prgv
+    access:
+      availability: public
+      method: form
+      url: https://www.browserbase.com
+    source_ids:
+      - src_7da96bf9ff1bc1d3f6b86dcb4c332bc8dd9c93131e2d0ed321737df312d1e04d

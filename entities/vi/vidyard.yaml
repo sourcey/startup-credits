@@ -1,0 +1,61 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1srn4j4qqd2kcan57kaf2w2
+  slug: vidyard
+  slug_aliases: []
+  name: Vidyard
+  domains:
+    - value: vidyard.com
+      role: primary
+      valid_from: 2026-09-05T21:47:33.000Z
+  category: marketing
+profile:
+  description: Vidyard provides video marketing and sales engagement platforms for B2B companies.
+  links:
+    site: https://www.vidyard.com
+sources:
+  - source_id: src_465f1402edf85d3eff20229d6f06a132bd7c1f73f416e33798855363c9f27dcc
+    url: https://www.vidyard.com/startups/
+programs:
+  - program_id: prg_01m1srn4jpv92bvp50dqtbcnp6
+    program_slug: vidyard-startup-program
+    program_slug_aliases: []
+    title: Vidyard Startup Program
+    summary: Vidyard offers eligible startups 25% or more off selected enterprise-grade Vidyard features including CRM integration.
+    source_ids:
+      - src_465f1402edf85d3eff20229d6f06a132bd7c1f73f416e33798855363c9f27dcc
+offers:
+  - offer_id: off_01m1srn4jpdyz3fr2x10n38bqv
+    program_id: prg_01m1srn4jpv92bvp50dqtbcnp6
+    offer_slug: vidyard-startup-program
+    offer_slug_aliases: []
+    title: Vidyard Startup Program
+    summary: Eligible startups receive 25% or more off selected enterprise-grade Vidyard features, including CRM integration.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T21:47:33.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 25% or more off selected enterprise-grade Vidyard features including CRM integration for eligible startups
+          kind: discount
+          percentage:
+            basis_points: 2500
+            kind: exact
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1srn4j4qqd2kcan57kaf2w2
+      access_operator_entity_id: ent_01m1srn4j4qqd2kcan57kaf2w2
+    access:
+      availability: public
+      method: form
+      url: https://www.vidyard.com/startups/
+    source_ids:
+      - src_465f1402edf85d3eff20229d6f06a132bd7c1f73f416e33798855363c9f27dcc

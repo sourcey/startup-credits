@@ -1,0 +1,58 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1svgw0kgq698bgky5t9qtps
+  slug: influship
+  slug_aliases: []
+  name: Influship
+  domains:
+    - value: influship.com
+      role: primary
+      valid_from: 2026-09-05T22:37:42.000Z
+  category: productivity
+profile:
+  description: Influship provides marketing and project management tools.
+  links:
+    site: https://influship.com
+sources:
+  - source_id: src_bb110f98a49b6bf56124f382c6738322a2be27285a500e905b746758e4cb4030
+    url: https://influship.com
+programs:
+  - program_id: prg_01m1svgw0v7dzr55r4ffw7yh6t
+    program_slug: influship-startup-program
+    program_slug_aliases: []
+    title: Influship Startup Program
+    summary: Influship offers approved startups a project-sized grant of free API credits, dedicated 1:1 technical onboarding, and direct support.
+    source_ids:
+      - src_bb110f98a49b6bf56124f382c6738322a2be27285a500e905b746758e4cb4030
+offers:
+  - offer_id: off_01m1svgw0vde0dnck9a4b737zd
+    program_id: prg_01m1svgw0v7dzr55r4ffw7yh6t
+    offer_slug: influship-startup-program
+    offer_slug_aliases: []
+    title: Influship Startup Program
+    summary: Approved startups receive a project-sized grant of free Influship API credits with 1:1 technical onboarding.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:37:42.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Project-sized grant of free Influship API credits with 1:1 technical onboarding for approved startups
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1svgw0kgq698bgky5t9qtps
+      access_operator_entity_id: ent_01m1svgw0kgq698bgky5t9qtps
+    access:
+      availability: public
+      method: form
+      url: https://influship.com
+    source_ids:
+      - src_bb110f98a49b6bf56124f382c6738322a2be27285a500e905b746758e4cb4030

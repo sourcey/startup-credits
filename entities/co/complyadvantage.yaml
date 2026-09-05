@@ -1,0 +1,58 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1ss16w7akvn4xv7an99bwra
+  slug: complyadvantage
+  slug_aliases: []
+  name: ComplyAdvantage
+  domains:
+    - value: complyadvantage.com
+      role: primary
+      valid_from: 2026-09-05T21:54:09.000Z
+  category: legal-compliance
+profile:
+  description: ComplyAdvantage provides AI-powered AML and compliance tools for financial institutions and startups.
+  links:
+    site: https://complyadvantage.com
+sources:
+  - source_id: src_3157b875aaf0db9d4e5a0fd11d06217c54938e8804f74a79258e1d715257722d
+    url: https://complyadvantage.com
+programs:
+  - program_id: prg_01m1ss16xr9qc8m6mjpdjr8fw9
+    program_slug: complyadvantage-startup-program
+    program_slug_aliases: []
+    title: ComplyAdvantage ComplyLaunch
+    summary: ComplyAdvantage ComplyLaunch offers 12 months of free access to AML data covering sanctions, PEPs, and relatives, plus 24/7 automatic risk monitoring.
+    source_ids:
+      - src_3157b875aaf0db9d4e5a0fd11d06217c54938e8804f74a79258e1d715257722d
+offers:
+  - offer_id: off_01m1ss16xrx4m8n68cz5ntp11j
+    program_id: prg_01m1ss16xr9qc8m6mjpdjr8fw9
+    offer_slug: complyadvantage-startup-program
+    offer_slug_aliases: []
+    title: ComplyAdvantage ComplyLaunch
+    summary: Eligible startups receive 12 months of free ComplyAdvantage AML data access (sanctions, PEPs, relatives) plus 24/7 automatic risk monitoring.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T21:54:09.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 12 months of free ComplyAdvantage AML data access (sanctions, PEPs, relatives) plus 24/7 automatic risk monitoring
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1ss16w7akvn4xv7an99bwra
+      access_operator_entity_id: ent_01m1ss16w7akvn4xv7an99bwra
+    access:
+      availability: public
+      method: form
+      url: https://complyadvantage.com
+    source_ids:
+      - src_3157b875aaf0db9d4e5a0fd11d06217c54938e8804f74a79258e1d715257722d

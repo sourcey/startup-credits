@@ -1,0 +1,63 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1svf9qw80m6zqcqz3tkw6nh
+  slug: decodo
+  slug_aliases: []
+  name: Decodo
+  domains:
+    - value: decodo.com
+      role: primary
+      valid_from: 2026-09-05T22:36:50.000Z
+  category: data-analytics
+profile:
+  description: Decodo provides phone intelligence and communication APIs.
+  links:
+    site: https://decodo.com
+sources:
+  - source_id: src_d50bd0c90997cbce4610d2de20cce95e084e70c513be98c1e4d3d969118a73ec
+    url: https://decodo.com
+programs:
+  - program_id: prg_01m1svf9r42nar57a0a4b3k1cy
+    program_slug: decodo-startup-program
+    program_slug_aliases: []
+    title: Decodo Startup Program
+    summary: Eligible early-stage, VC-backed or accelerator-supported startups building data-driven products can receive $5,000 in Decodo credits.
+    source_ids:
+      - src_d50bd0c90997cbce4610d2de20cce95e084e70c513be98c1e4d3d969118a73ec
+offers:
+  - offer_id: off_01m1svf9r4g27g99esfhnj1743
+    program_id: prg_01m1svf9r42nar57a0a4b3k1cy
+    offer_slug: decodo-startup-program
+    offer_slug_aliases: []
+    title: Decodo Startup Program
+    summary: Early-stage VC-backed or accelerator-supported startups building data-driven products receive $5,000 in Decodo credits.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:36:50.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: $5,000 in Decodo credits for eligible early-stage, VC-backed or accelerator-supported startups building data-driven products
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 500000
+            kind: up-to
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1svf9qw80m6zqcqz3tkw6nh
+      access_operator_entity_id: ent_01m1svf9qw80m6zqcqz3tkw6nh
+    access:
+      availability: public
+      method: form
+      url: https://decodo.com
+    source_ids:
+      - src_d50bd0c90997cbce4610d2de20cce95e084e70c513be98c1e4d3d969118a73ec

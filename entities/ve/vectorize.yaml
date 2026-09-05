@@ -1,0 +1,63 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1sv65spm1k93ag4wjcp355k
+  slug: vectorize
+  slug_aliases: []
+  name: Vectorize
+  domains:
+    - value: vectorize.io
+      role: primary
+      valid_from: 2026-09-05T22:31:51.000Z
+  category: ai-ml
+profile:
+  description: Vectorize provides AI-powered data extraction and document processing tools.
+  links:
+    site: https://vectorize.io
+sources:
+  - source_id: src_c9bcf97fdd4f3264c3883fbd972699e59cba02ffc7cf1569d8c4ca4beda18d46
+    url: https://vectorize.io
+programs:
+  - program_id: prg_01m1sv65t0qzj7vgfp0zhpgtq6
+    program_slug: vectorize-startup-program
+    program_slug_aliases: []
+    title: Vectorize Hindsight Cloud for Startups
+    summary: Vectorize's Hindsight Cloud for Startups program offers qualifying product startups up to $15,000 in Hindsight Cloud credits.
+    source_ids:
+      - src_c9bcf97fdd4f3264c3883fbd972699e59cba02ffc7cf1569d8c4ca4beda18d46
+offers:
+  - offer_id: off_01m1sv65t309bxcqv9tp34hpb2
+    program_id: prg_01m1sv65t0qzj7vgfp0zhpgtq6
+    offer_slug: vectorize-startup-program
+    offer_slug_aliases: []
+    title: Vectorize Hindsight Cloud for Startups
+    summary: Qualifying product startups receive up to $15,000 in Vectorize Hindsight Cloud credits through the startup program.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:31:51.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to $15,000 in Vectorize Hindsight Cloud credits for qualifying product startups
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 1500000
+            kind: up-to
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1sv65spm1k93ag4wjcp355k
+      access_operator_entity_id: ent_01m1sv65spm1k93ag4wjcp355k
+    access:
+      availability: public
+      method: form
+      url: https://vectorize.io
+    source_ids:
+      - src_c9bcf97fdd4f3264c3883fbd972699e59cba02ffc7cf1569d8c4ca4beda18d46

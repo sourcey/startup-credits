@@ -1,0 +1,58 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1srtqd4rc09b0gvqnnvqtr1
+  slug: redhat
+  slug_aliases: []
+  name: Red Hat
+  domains:
+    - value: redhat.com
+      role: primary
+      valid_from: 2026-09-05T21:50:37.000Z
+  category: hosting-infra
+profile:
+  description: Red Hat provides enterprise open-source software solutions including Red Hat Enterprise Linux for cloud and data center environments.
+  links:
+    site: https://www.redhat.com
+sources:
+  - source_id: src_66e00d4d9efa256fdf1d723bfba1fb7eca1523144c742485f766a2093df28f7e
+    url: https://www.redhat.com
+programs:
+  - program_id: prg_01m1srtqd8xphg7csxk6mkvy01
+    program_slug: redhat-startup-program
+    program_slug_aliases: []
+    title: Red Hat RHEL Startup Offer
+    summary: Red Hat offers eligible participants in the Google for Startups Cloud Program software credits toward Red Hat Enterprise Linux through its startup program.
+    source_ids:
+      - src_66e00d4d9efa256fdf1d723bfba1fb7eca1523144c742485f766a2093df28f7e
+offers:
+  - offer_id: off_01m1srtqd920j2324zp9kwy5r8
+    program_id: prg_01m1srtqd8xphg7csxk6mkvy01
+    offer_slug: redhat-startup-program
+    offer_slug_aliases: []
+    title: Red Hat RHEL Startup Offer
+    summary: Eligible startups in the Google for Startups Cloud Program receive software credits toward Red Hat Enterprise Linux.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T21:50:37.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Software credits toward Red Hat Enterprise Linux for eligible participants in the Google for Startups Cloud Program
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1srtqd4rc09b0gvqnnvqtr1
+      access_operator_entity_id: ent_01m1srtqd4rc09b0gvqnnvqtr1
+    access:
+      availability: public
+      method: form
+      url: https://www.redhat.com
+    source_ids:
+      - src_66e00d4d9efa256fdf1d723bfba1fb7eca1523144c742485f766a2093df28f7e

@@ -1,0 +1,58 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1svgwedvxrdn20xgadzyrdc
+  slug: evidently-ai
+  slug_aliases: []
+  name: Evidently AI
+  domains:
+    - value: evidentlyai.com
+      role: primary
+      valid_from: 2026-09-05T22:37:42.000Z
+  category: ai-ml
+profile:
+  description: Evidently AI provides AI model evaluation and monitoring tools.
+  links:
+    site: https://www.evidentlyai.com
+sources:
+  - source_id: src_4c1889ef572b1578bcf6394a5870bbcfcbb8302f7200faf41637723b267a1ab4
+    url: https://www.evidentlyai.com/sign-up-startups
+programs:
+  - program_id: prg_01m1svgwen5kjxa5j22d8f04a8
+    program_slug: evidently-ai-startup-program
+    program_slug_aliases: []
+    title: Evidently AI for Startups
+    summary: Evidently AI publishes a current startup program for early-stage companies building with AI, offering core AI evaluation tools.
+    source_ids:
+      - src_4c1889ef572b1578bcf6394a5870bbcfcbb8302f7200faf41637723b267a1ab4
+offers:
+  - offer_id: off_01m1svgwena2q1txxg769rs3jv
+    program_id: prg_01m1svgwen5kjxa5j22d8f04a8
+    offer_slug: evidently-ai-startup-program
+    offer_slug_aliases: []
+    title: Evidently AI for Startups
+    summary: Early-stage companies building with AI receive Evidently AI core evaluation tools through the startup program.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:37:42.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Evidently AI core evaluation tools for early-stage companies building with AI through the startup program
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1svgwedvxrdn20xgadzyrdc
+      access_operator_entity_id: ent_01m1svgwedvxrdn20xgadzyrdc
+    access:
+      availability: public
+      method: form
+      url: https://www.evidentlyai.com/sign-up-startups
+    source_ids:
+      - src_4c1889ef572b1578bcf6394a5870bbcfcbb8302f7200faf41637723b267a1ab4

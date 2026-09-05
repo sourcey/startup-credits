@@ -1,0 +1,58 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1sscagpvd5nm6x5ca5ntscf
+  slug: maxiq
+  slug_aliases: []
+  name: MaxIQ
+  domains:
+    - value: getmaxiq.com
+      role: primary
+      valid_from: 2026-09-05T22:00:15.000Z
+  category: marketing
+profile:
+  description: MaxIQ provides revenue intelligence and sales analytics tools for B2B companies.
+  links:
+    site: https://www.getmaxiq.com
+sources:
+  - source_id: src_320e5f270a5c76d2e7b499dda7e37d05354479440131a85dc02f9bc46d8cfbee
+    url: https://www.getmaxiq.com
+programs:
+  - program_id: prg_01m1sscahgwb528zmnj768xdy4
+    program_slug: maxiq-startup-program
+    program_slug_aliases: []
+    title: MaxIQ for Startups
+    summary: MaxIQ for Startups gives eligible startups 12 months of full Revenue AI platform access free, valued by MaxIQ at more than $15,000.
+    source_ids:
+      - src_320e5f270a5c76d2e7b499dda7e37d05354479440131a85dc02f9bc46d8cfbee
+offers:
+  - offer_id: off_01m1sscahhpdvxgpakbycx0j18
+    program_id: prg_01m1sscahgwb528zmnj768xdy4
+    offer_slug: maxiq-startup-program
+    offer_slug_aliases: []
+    title: MaxIQ for Startups
+    summary: Eligible startups receive 12 months of full MaxIQ Revenue AI platform access free, valued at more than $15,000.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:00:15.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 12 months of full MaxIQ Revenue AI platform access free for eligible startups, valued at more than $15,000
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1sscagpvd5nm6x5ca5ntscf
+      access_operator_entity_id: ent_01m1sscagpvd5nm6x5ca5ntscf
+    access:
+      availability: public
+      method: form
+      url: https://www.getmaxiq.com
+    source_ids:
+      - src_320e5f270a5c76d2e7b499dda7e37d05354479440131a85dc02f9bc46d8cfbee

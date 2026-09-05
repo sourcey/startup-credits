@@ -1,0 +1,58 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1sw5qkhz7rp4t9kmv8c1sa9
+  slug: egoist-ai
+  slug_aliases: []
+  name: AI Passport
+  domains:
+    - value: ego.ist
+      role: primary
+      valid_from: 2026-09-05T22:49:03.000Z
+  category: ai-ml
+profile:
+  description: AI Passport by Egoist Machines provides AI agent tools.
+  links:
+    site: https://ego.ist
+sources:
+  - source_id: src_7aff4c909fed868c992b44b04c9b51be1cafef07d68a512299d156913eff96d2
+    url: https://ego.ist/startups
+programs:
+  - program_id: prg_01m1sw5qm8r04kc6xskkp1p4tr
+    program_slug: egoist-ai-startup-program
+    program_slug_aliases: []
+    title: AI Passport Startup Offer
+    summary: AI Passport offers 3 months free for approved startups, or 6 months for Y Combinator companies, with unlimited users.
+    source_ids:
+      - src_7aff4c909fed868c992b44b04c9b51be1cafef07d68a512299d156913eff96d2
+offers:
+  - offer_id: off_01m1sw5qm97p465wp61m6qamre
+    program_id: prg_01m1sw5qm8r04kc6xskkp1p4tr
+    offer_slug: egoist-ai-startup-program
+    offer_slug_aliases: []
+    title: AI Passport Startup Offer
+    summary: Approved startups receive 3 months free AI Passport (6 months for Y Combinator companies) with unlimited users.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:49:03.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 3 months free AI Passport for approved startups (6 months for Y Combinator companies) with unlimited users
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1sw5qkhz7rp4t9kmv8c1sa9
+      access_operator_entity_id: ent_01m1sw5qkhz7rp4t9kmv8c1sa9
+    access:
+      availability: public
+      method: form
+      url: https://ego.ist/startups
+    source_ids:
+      - src_7aff4c909fed868c992b44b04c9b51be1cafef07d68a512299d156913eff96d2

@@ -1,0 +1,61 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1sv4qgewae4v0jkgpx9a29z
+  slug: zencoder-ai
+  slug_aliases: []
+  name: Zencoder AI
+  domains:
+    - value: zencoder.ai
+      role: primary
+      valid_from: 2026-09-05T22:31:03.000Z
+  category: ai-ml
+profile:
+  description: Zencoder AI provides AI model training and inference services.
+  links:
+    site: https://zencoder.ai
+sources:
+  - source_id: src_c75845f934b72d24fc34cec99633695299ebe910bfcaa3287bd2668f15c9a32c
+    url: https://zencoder.ai
+programs:
+  - program_id: prg_01m1sv4qh9kgwkv9xaenbrejgg
+    program_slug: zencoder-ai-startup-program
+    program_slug_aliases: []
+    title: Zencoder for Startups
+    summary: Zencoder offers 40% off eligible plans in year 1, 30% in year 2, and 20% in year 3 for qualifying early-stage companies.
+    source_ids:
+      - src_c75845f934b72d24fc34cec99633695299ebe910bfcaa3287bd2668f15c9a32c
+offers:
+  - offer_id: off_01m1sv4qha65fz67djgxd9mr2b
+    program_id: prg_01m1sv4qh9kgwkv9xaenbrejgg
+    offer_slug: zencoder-ai-startup-program
+    offer_slug_aliases: []
+    title: Zencoder for Startups
+    summary: Qualifying early-stage companies receive 40% off year 1, 30% off year 2, and 20% off year 3 through Zencoder.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:31:03.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 40% off year 1, 30% off year 2, 20% off year 3 on Zencoder for qualifying early-stage companies
+          kind: discount
+          percentage:
+            basis_points: 4000
+            kind: exact
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1sv4qgewae4v0jkgpx9a29z
+      access_operator_entity_id: ent_01m1sv4qgewae4v0jkgpx9a29z
+    access:
+      availability: public
+      method: form
+      url: https://zencoder.ai
+    source_ids:
+      - src_c75845f934b72d24fc34cec99633695299ebe910bfcaa3287bd2668f15c9a32c

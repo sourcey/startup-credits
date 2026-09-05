@@ -1,0 +1,61 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1svvawp44wsw2z2qj0n92dt
+  slug: clientia
+  slug_aliases: []
+  name: Clientia
+  domains:
+    - value: clientia.app
+      role: primary
+      valid_from: 2026-09-05T22:43:22.000Z
+  category: productivity
+profile:
+  description: Clientia provides CRM and sales tools for agencies.
+  links:
+    site: https://clientia.app
+sources:
+  - source_id: src_8a970dcb074d3007b64f360e3b90cb3d7aa4e97baa14fa79fc57f8db3ddd55ab
+    url: https://clientia.app
+programs:
+  - program_id: prg_01m1svvaxjspg20w2d5zdd4bs4
+    program_slug: clientia-startup-program
+    program_slug_aliases: []
+    title: Clientia Founders Programme
+    summary: Clientia's Founders programme offers eligible companies 50% off its Studio or Atelier plans for 12 months.
+    source_ids:
+      - src_8a970dcb074d3007b64f360e3b90cb3d7aa4e97baa14fa79fc57f8db3ddd55ab
+offers:
+  - offer_id: off_01m1svvaxjtfejhsndjkv8gn1y
+    program_id: prg_01m1svvaxjspg20w2d5zdd4bs4
+    offer_slug: clientia-startup-program
+    offer_slug_aliases: []
+    title: Clientia Founders Programme
+    summary: Eligible companies receive 50% off Clientia Studio or Atelier plans for 12 months through the Founders Programme.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:43:22.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 50% off Clientia Studio or Atelier plans for 12 months for eligible companies through the Founders Programme
+          kind: discount
+          percentage:
+            basis_points: 5000
+            kind: exact
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1svvawp44wsw2z2qj0n92dt
+      access_operator_entity_id: ent_01m1svvawp44wsw2z2qj0n92dt
+    access:
+      availability: public
+      method: form
+      url: https://clientia.app
+    source_ids:
+      - src_8a970dcb074d3007b64f360e3b90cb3d7aa4e97baa14fa79fc57f8db3ddd55ab

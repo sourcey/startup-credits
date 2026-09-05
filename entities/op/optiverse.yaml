@@ -1,0 +1,58 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1stm3nhaxtewry3cznm1ht4
+  slug: optiverse
+  slug_aliases: []
+  name: Optiverse
+  domains:
+    - value: optiverse.ai
+      role: primary
+      valid_from: 2026-09-05T22:21:58.000Z
+  category: productivity
+profile:
+  description: Optiverse provides collaboration and productivity tools for teams.
+  links:
+    site: https://www.optiverse.ai
+sources:
+  - source_id: src_6e29ff5ebcd6715a8000ec5818f3b40ed8d0c02b88c046dffcc9f33691374af0
+    url: https://www.optiverse.ai/startups
+programs:
+  - program_id: prg_01m1stm3nxvjcfjsad8w5jhy0c
+    program_slug: optiverse-startup-program
+    program_slug_aliases: []
+    title: Optiverse Startup Program
+    summary: Optiverse publishes a startup program offering selected startups six Pro licenses for six months at no license cost.
+    source_ids:
+      - src_6e29ff5ebcd6715a8000ec5818f3b40ed8d0c02b88c046dffcc9f33691374af0
+offers:
+  - offer_id: off_01m1stm3nzv8q9zh638y9dy54c
+    program_id: prg_01m1stm3nxvjcfjsad8w5jhy0c
+    offer_slug: optiverse-startup-program
+    offer_slug_aliases: []
+    title: Optiverse Startup Program
+    summary: Selected startups receive six Optiverse Pro licenses for six months at no license cost through the startup program.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:21:58.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Six Optiverse Pro licenses for six months at no license cost for selected startups
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1stm3nhaxtewry3cznm1ht4
+      access_operator_entity_id: ent_01m1stm3nhaxtewry3cznm1ht4
+    access:
+      availability: public
+      method: form
+      url: https://www.optiverse.ai/startups
+    source_ids:
+      - src_6e29ff5ebcd6715a8000ec5818f3b40ed8d0c02b88c046dffcc9f33691374af0

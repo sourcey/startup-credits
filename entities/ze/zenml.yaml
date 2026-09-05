@@ -1,0 +1,58 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1sv66rss60dgtkd25h93ssx
+  slug: zenml
+  slug_aliases: []
+  name: ZenML
+  domains:
+    - value: zenml.io
+      role: primary
+      valid_from: 2026-09-05T22:31:51.000Z
+  category: ai-ml
+profile:
+  description: ZenML provides an open-source MLOps framework for machine learning pipelines.
+  links:
+    site: https://zenml.io
+sources:
+  - source_id: src_9814a8d17b2b3e7a4a603734a47b6956e3c783f3388634713dd0d0fb9430fa58
+    url: https://zenml.io
+programs:
+  - program_id: prg_01m1sv66ryhazm7geex664ccs1
+    program_slug: zenml-startup-program
+    program_slug_aliases: []
+    title: ZenML for Startups and Academics
+    summary: ZenML offers early-stage companies building ML-powered products a startup program with special pricing on ZenML Pro and expert guidance.
+    source_ids:
+      - src_9814a8d17b2b3e7a4a603734a47b6956e3c783f3388634713dd0d0fb9430fa58
+offers:
+  - offer_id: off_01m1sv66ryfmv3h7j4d53w1x9f
+    program_id: prg_01m1sv66ryhazm7geex664ccs1
+    offer_slug: zenml-startup-program
+    offer_slug_aliases: []
+    title: ZenML for Startups and Academics
+    summary: Early-stage companies building ML-powered products receive ZenML Pro at special pricing with expert guidance.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:31:51.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: ZenML Pro at special pricing with expert guidance for early-stage companies building ML-powered products
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1sv66rss60dgtkd25h93ssx
+      access_operator_entity_id: ent_01m1sv66rss60dgtkd25h93ssx
+    access:
+      availability: public
+      method: form
+      url: https://zenml.io
+    source_ids:
+      - src_9814a8d17b2b3e7a4a603734a47b6956e3c783f3388634713dd0d0fb9430fa58

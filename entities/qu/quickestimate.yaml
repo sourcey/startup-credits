@@ -1,0 +1,61 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1svshhy8tkk0rcnhnkxvas1
+  slug: quickestimate
+  slug_aliases: []
+  name: QuickEstimate
+  domains:
+    - value: quickestimate.io
+      role: primary
+      valid_from: 2026-09-05T22:42:24.000Z
+  category: productivity
+profile:
+  description: QuickEstimate provides cost estimation and project planning tools.
+  links:
+    site: https://quickestimate.io
+sources:
+  - source_id: src_ea6de06420f0a517bec4b1d3b9a28bca330a3ce0177ad63da72e0b99320392ca
+    url: https://quickestimate.io
+programs:
+  - program_id: prg_01m1svshk8bj7kqfwnvrd8rp19
+    program_slug: quickestimate-startup-program
+    program_slug_aliases: []
+    title: QuickEstimate Startup Program
+    summary: QuickEstimate offers eligible new contracting businesses 40% off for their first 12 months.
+    source_ids:
+      - src_ea6de06420f0a517bec4b1d3b9a28bca330a3ce0177ad63da72e0b99320392ca
+offers:
+  - offer_id: off_01m1svshk8j2kr7414jprvmf7h
+    program_id: prg_01m1svshk8bj7kqfwnvrd8rp19
+    offer_slug: quickestimate-startup-program
+    offer_slug_aliases: []
+    title: QuickEstimate Startup Program
+    summary: Eligible new contracting businesses receive 40% off QuickEstimate for their first 12 months.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:42:24.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 40% off QuickEstimate for the first 12 months for eligible new contracting businesses
+          kind: discount
+          percentage:
+            basis_points: 4000
+            kind: exact
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1svshhy8tkk0rcnhnkxvas1
+      access_operator_entity_id: ent_01m1svshhy8tkk0rcnhnkxvas1
+    access:
+      availability: public
+      method: form
+      url: https://quickestimate.io
+    source_ids:
+      - src_ea6de06420f0a517bec4b1d3b9a28bca330a3ce0177ad63da72e0b99320392ca

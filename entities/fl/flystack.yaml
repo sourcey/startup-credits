@@ -1,0 +1,58 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1ssa6b771y1abyfvv1kf3x6
+  slug: flystack
+  slug_aliases: []
+  name: Flystack
+  domains:
+    - value: flystack.dev
+      role: primary
+      valid_from: 2026-09-05T21:59:06.000Z
+  category: hosting-infra
+profile:
+  description: Flystack provides cloud infrastructure and DevOps automation for early-stage startups.
+  links:
+    site: https://flystack.dev
+sources:
+  - source_id: src_c4c5fb5fc95a8e7ad710ab4b011a85b7ab5196150b63c910890e818276f3914b
+    url: https://flystack.dev
+programs:
+  - program_id: prg_01m1ssa6brh7xefh95zeghdjfh
+    program_slug: flystack-startup-program
+    program_slug_aliases: []
+    title: Flystack Startup Program
+    summary: Flystack offers eligible early-stage startups discounted Premium or Startup plan pricing for 12 months with all features, API access, and priority support.
+    source_ids:
+      - src_c4c5fb5fc95a8e7ad710ab4b011a85b7ab5196150b63c910890e818276f3914b
+offers:
+  - offer_id: off_01m1ssa6brvdnxmcm7adjhjbkw
+    program_id: prg_01m1ssa6brh7xefh95zeghdjfh
+    offer_slug: flystack-startup-program
+    offer_slug_aliases: []
+    title: Flystack Startup Program
+    summary: Eligible early-stage startups receive discounted Flystack Premium or Startup plan pricing for 12 months with all features, API access, and priority support.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T21:59:06.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Discounted Premium or Startup plan pricing for 12 months with all features, API access, and priority support for eligible early-stage startups
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1ssa6b771y1abyfvv1kf3x6
+      access_operator_entity_id: ent_01m1ssa6b771y1abyfvv1kf3x6
+    access:
+      availability: public
+      method: form
+      url: https://flystack.dev
+    source_ids:
+      - src_c4c5fb5fc95a8e7ad710ab4b011a85b7ab5196150b63c910890e818276f3914b

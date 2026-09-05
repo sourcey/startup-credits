@@ -1,0 +1,61 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1sv36rcs6g37ffbe1t30zwm
+  slug: obseria
+  slug_aliases: []
+  name: Obseria
+  domains:
+    - value: obseria.io
+      role: primary
+      valid_from: 2026-09-05T22:30:11.000Z
+  category: productivity
+profile:
+  description: Obseria provides community and product analytics tools.
+  links:
+    site: https://obseria.io
+sources:
+  - source_id: src_c545743f7341d18edd243d9cd484f5a0e22392b52a23c196b360b210138b1cab
+    url: https://obseria.io
+programs:
+  - program_id: prg_01m1sv36rmssxwreht1hd4yjx1
+    program_slug: obseria-startup-program
+    program_slug_aliases: []
+    title: Obseria Startup Program
+    summary: Obseria offers 50% off an annual plan for the first year for eligible early-stage startups and newly launched product teams.
+    source_ids:
+      - src_c545743f7341d18edd243d9cd484f5a0e22392b52a23c196b360b210138b1cab
+offers:
+  - offer_id: off_01m1sv36rnx0n3g5mzvncc5rq7
+    program_id: prg_01m1sv36rmssxwreht1hd4yjx1
+    offer_slug: obseria-startup-program
+    offer_slug_aliases: []
+    title: Obseria Startup Program
+    summary: Eligible early-stage startups and newly launched product teams receive 50% off Obseria annual plan for the first year.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:30:11.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 50% off Obseria annual plan for the first year for eligible early-stage startups and newly launched product teams
+          kind: discount
+          percentage:
+            basis_points: 5000
+            kind: exact
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1sv36rcs6g37ffbe1t30zwm
+      access_operator_entity_id: ent_01m1sv36rcs6g37ffbe1t30zwm
+    access:
+      availability: public
+      method: form
+      url: https://obseria.io
+    source_ids:
+      - src_c545743f7341d18edd243d9cd484f5a0e22392b52a23c196b360b210138b1cab

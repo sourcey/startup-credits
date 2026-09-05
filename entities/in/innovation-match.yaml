@@ -1,0 +1,61 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1ss4d6x8xvbr6f9787jjq7a
+  slug: innovation-match
+  slug_aliases: []
+  name: Innovation Match
+  domains:
+    - value: innovationmatch.io
+      role: primary
+      valid_from: 2026-09-05T21:55:53.000Z
+  category: productivity
+profile:
+  description: Innovation Match provides a PRIME subscription service for startup teams and professionals.
+  links:
+    site: https://innovationmatch.io
+sources:
+  - source_id: src_72d56b5d055c7f922b19e504f2ce12934434a8423d564d8f353c0eb3321cd2ee
+    url: https://innovationmatch.io
+programs:
+  - program_id: prg_01m1ss4d77hhp2g50sekqazhsd
+    program_slug: innovation-match-startup-program
+    program_slug_aliases: []
+    title: Innovation Match PRIME STARTUP Discount
+    summary: Innovation Match gives eligible startups 50% off its PRIME subscription: EUR 299/month instead of EUR 599/month, monthly and cancellable.
+    source_ids:
+      - src_72d56b5d055c7f922b19e504f2ce12934434a8423d564d8f353c0eb3321cd2ee
+offers:
+  - offer_id: off_01m1ss4d77kt7dfq1cw81x91ef
+    program_id: prg_01m1ss4d77hhp2g50sekqazhsd
+    offer_slug: innovation-match-startup-program
+    offer_slug_aliases: []
+    title: Innovation Match PRIME STARTUP Discount
+    summary: Eligible startups receive 50% off Innovation Match PRIME at EUR 299/month (regular EUR 599/month), monthly and cancellable.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T21:55:53.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 50% off Innovation Match PRIME subscription for eligible startups (EUR 299/month instead of EUR 599/month)
+          kind: discount
+          percentage:
+            basis_points: 5000
+            kind: exact
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1ss4d6x8xvbr6f9787jjq7a
+      access_operator_entity_id: ent_01m1ss4d6x8xvbr6f9787jjq7a
+    access:
+      availability: public
+      method: form
+      url: https://innovationmatch.io
+    source_ids:
+      - src_72d56b5d055c7f922b19e504f2ce12934434a8423d564d8f353c0eb3321cd2ee

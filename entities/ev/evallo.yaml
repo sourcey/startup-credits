@@ -1,0 +1,58 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1svvbanv1h4ydmbmrj4y7z7
+  slug: evallo
+  slug_aliases: []
+  name: Evallo
+  domains:
+    - value: evallo.ai
+      role: primary
+      valid_from: 2026-09-05T22:43:22.000Z
+  category: productivity
+profile:
+  description: Evallo provides tutoring platform and learning management tools.
+  links:
+    site: https://evallo.ai
+sources:
+  - source_id: src_ca3b02053ce6199af2c601016d15d5050244ac5391e4a432805eb2c1923b3109
+    url: https://evallo.ai
+programs:
+  - program_id: prg_01m1svvbbet92rmbrj31xzje4a
+    program_slug: evallo-startup-program
+    program_slug_aliases: []
+    title: Evallo Startup Program
+    summary: Evallo offers eligible tutors and tutoring businesses full access to its platform at no cost for 12 months.
+    source_ids:
+      - src_ca3b02053ce6199af2c601016d15d5050244ac5391e4a432805eb2c1923b3109
+offers:
+  - offer_id: off_01m1svvbbeg361ghdbmfwqkb1n
+    program_id: prg_01m1svvbbet92rmbrj31xzje4a
+    offer_slug: evallo-startup-program
+    offer_slug_aliases: []
+    title: Evallo Startup Program
+    summary: Eligible tutors and tutoring businesses receive full Evallo platform access at no cost for 12 months.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:43:22.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Full Evallo platform access at no cost for 12 months for eligible tutors and tutoring businesses
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1svvbanv1h4ydmbmrj4y7z7
+      access_operator_entity_id: ent_01m1svvbanv1h4ydmbmrj4y7z7
+    access:
+      availability: public
+      method: form
+      url: https://evallo.ai
+    source_ids:
+      - src_ca3b02053ce6199af2c601016d15d5050244ac5391e4a432805eb2c1923b3109

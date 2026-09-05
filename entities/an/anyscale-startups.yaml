@@ -1,0 +1,63 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1st6qepwwhd27baqsnkmacj
+  slug: anyscale-startups
+  slug_aliases: []
+  name: Anyscale
+  domains:
+    - value: anyscale.com
+      role: primary
+      valid_from: 2026-09-05T22:14:40.000Z
+  category: ai-ml
+profile:
+  description: Anyscale provides Ray-based distributed computing and AI infrastructure.
+  links:
+    site: https://www.anyscale.com
+sources:
+  - source_id: src_787794d36e825fcca70546e7e94f9b102e7bd7cc38a055a44ade1d61c8ab154b
+    url: https://www.anyscale.com/startups
+programs:
+  - program_id: prg_01m1st6qg1c403h827y4xfd2jj
+    program_slug: anyscale-startups-startup-program
+    program_slug_aliases: []
+    title: Anyscale Startup Program
+    summary: Anyscale publishes a Startup Program offering $100 startup onboarding credits for qualifying early-stage companies.
+    source_ids:
+      - src_787794d36e825fcca70546e7e94f9b102e7bd7cc38a055a44ade1d61c8ab154b
+offers:
+  - offer_id: off_01m1st6qg6q5dwh9f8y32987k4
+    program_id: prg_01m1st6qg1c403h827y4xfd2jj
+    offer_slug: anyscale-startups-startup-program
+    offer_slug_aliases: []
+    title: Anyscale Startup Program
+    summary: Qualifying early-stage companies receive $100 in Anyscale startup onboarding credits through the program.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:14:40.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: $100 in Anyscale startup onboarding credits for qualifying early-stage companies
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 10000
+            kind: up-to
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1st6qepwwhd27baqsnkmacj
+      access_operator_entity_id: ent_01m1st6qepwwhd27baqsnkmacj
+    access:
+      availability: public
+      method: form
+      url: https://www.anyscale.com/startups
+    source_ids:
+      - src_787794d36e825fcca70546e7e94f9b102e7bd7cc38a055a44ade1d61c8ab154b

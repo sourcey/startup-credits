@@ -1,0 +1,58 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1svdgbk39ym7mrteprqkchf
+  slug: fish-audio
+  slug_aliases: []
+  name: Fish Audio
+  domains:
+    - value: fish.audio
+      role: primary
+      valid_from: 2026-09-05T22:35:51.000Z
+  category: ai-ml
+profile:
+  description: Fish Audio provides voice synthesis and audio generation APIs.
+  links:
+    site: https://fish.audio
+sources:
+  - source_id: src_e7068d0b4318e7ec683e8289760520bd88b9f6f0abafc5efc72602816d099685
+    url: https://fish.audio/startup/
+programs:
+  - program_id: prg_01m1svdgbt6gbrgnhhg6ds31vr
+    program_slug: fish-audio-startup-program
+    program_slug_aliases: []
+    title: Fish Audio Startup Program
+    summary: Fish Audio publishes a startup program offering qualifying early-stage companies its voice synthesis platform at discounted rates.
+    source_ids:
+      - src_e7068d0b4318e7ec683e8289760520bd88b9f6f0abafc5efc72602816d099685
+offers:
+  - offer_id: off_01m1svdgbtm8g5k95stkant1kj
+    program_id: prg_01m1svdgbt6gbrgnhhg6ds31vr
+    offer_slug: fish-audio-startup-program
+    offer_slug_aliases: []
+    title: Fish Audio Startup Program
+    summary: Qualifying early-stage companies receive Fish Audio voice synthesis platform at discounted rates through the startup program.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:35:51.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Fish Audio voice synthesis platform at discounted rates for qualifying early-stage companies
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1svdgbk39ym7mrteprqkchf
+      access_operator_entity_id: ent_01m1svdgbk39ym7mrteprqkchf
+    access:
+      availability: public
+      method: form
+      url: https://fish.audio/startup/
+    source_ids:
+      - src_e7068d0b4318e7ec683e8289760520bd88b9f6f0abafc5efc72602816d099685

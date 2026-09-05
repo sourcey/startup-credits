@@ -1,0 +1,63 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1sw96c2zc70xy25zmkwahd5
+  slug: fal-ai
+  slug_aliases: []
+  name: fal
+  domains:
+    - value: fal.ai
+      role: primary
+      valid_from: 2026-09-05T22:50:59.000Z
+  category: ai-ml
+profile:
+  description: fal provides GPU compute and AI inference APIs for generative media.
+  links:
+    site: https://fal.ai
+sources:
+  - source_id: src_dad448e33e2f148adeff8018a3386005e2fa3e6d8fd376dc70f53e9ec5f53eaa
+    url: https://fal.ai/startup-program
+programs:
+  - program_id: prg_01m1sw96vepa3f43gs8rczkqnj
+    program_slug: fal-ai-startup-program
+    program_slug_aliases: []
+    title: fal Startup Program
+    summary: fal publishes a startup program offering $1,000 in fal credits on the Startup tier with default benefits.
+    source_ids:
+      - src_dad448e33e2f148adeff8018a3386005e2fa3e6d8fd376dc70f53e9ec5f53eaa
+offers:
+  - offer_id: off_01m1sw96ve1879x6gvf31g8rpw
+    program_id: prg_01m1sw96vepa3f43gs8rczkqnj
+    offer_slug: fal-ai-startup-program
+    offer_slug_aliases: []
+    title: fal Startup Program
+    summary: Startups receive $1,000 in fal credits on the Startup tier through the startup program.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:50:59.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: $1,000 in fal credits on the Startup tier for startups through the startup program
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 100000
+            kind: up-to
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1sw96c2zc70xy25zmkwahd5
+      access_operator_entity_id: ent_01m1sw96c2zc70xy25zmkwahd5
+    access:
+      availability: public
+      method: form
+      url: https://fal.ai/startup-program
+    source_ids:
+      - src_dad448e33e2f148adeff8018a3386005e2fa3e6d8fd376dc70f53e9ec5f53eaa

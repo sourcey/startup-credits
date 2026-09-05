@@ -1,0 +1,58 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1sse14f75pbr662vv1mkmd1
+  slug: zunoy
+  slug_aliases: []
+  name: Zunoy
+  domains:
+    - value: zunoy.com
+      role: primary
+      valid_from: 2026-09-05T22:01:11.000Z
+  category: productivity
+profile:
+  description: Zunoy provides a business management and collaboration platform for startups and small businesses.
+  links:
+    site: https://zunoy.com
+sources:
+  - source_id: src_3ddac5776a6fd5b3b2138f9dad7ee9357401717a96d9b32b7272db6f0a5f8b6f
+    url: https://zunoy.com/start-up-program
+programs:
+  - program_id: prg_01m1sse14wyncn2wx2023g2pqm
+    program_slug: zunoy-startup-program
+    program_slug_aliases: []
+    title: Zunoy Startup Program
+    summary: Zunoy offers eligible early-stage startups and verified nonprofits free access to its Growth/Business Plan for 12 months for organizations with up to 25 users.
+    source_ids:
+      - src_3ddac5776a6fd5b3b2138f9dad7ee9357401717a96d9b32b7272db6f0a5f8b6f
+offers:
+  - offer_id: off_01m1sse14xbrfe5hvgv3j2dy10
+    program_id: prg_01m1sse14wyncn2wx2023g2pqm
+    offer_slug: zunoy-startup-program
+    offer_slug_aliases: []
+    title: Zunoy Startup Program
+    summary: Eligible early-stage startups and verified nonprofits receive free Zunoy Growth/Business Plan access for 12 months for organizations with up to 25 users.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:01:11.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Free Zunoy Growth/Business Plan for 12 months for eligible startups and nonprofits with up to 25 users
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1sse14f75pbr662vv1mkmd1
+      access_operator_entity_id: ent_01m1sse14f75pbr662vv1mkmd1
+    access:
+      availability: public
+      method: form
+      url: https://zunoy.com/start-up-program
+    source_ids:
+      - src_3ddac5776a6fd5b3b2138f9dad7ee9357401717a96d9b32b7272db6f0a5f8b6f

@@ -1,0 +1,63 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1st81bnr4wmgr855fg34jg6
+  slug: alloy-automation
+  slug_aliases: []
+  name: Alloy Automation
+  domains:
+    - value: runalloy.com
+      role: primary
+      valid_from: 2026-09-05T22:15:23.000Z
+  category: productivity
+profile:
+  description: Alloy Automation provides workflow automation and integration tools for operations teams.
+  links:
+    site: https://runalloy.com
+sources:
+  - source_id: src_e9bacdf90e0e29b334522e0a1a3ee1aa9700e1d8a3db2f57dcc301ac7bd07517
+    url: https://runalloy.com
+programs:
+  - program_id: prg_01m1st81bvsz33jbrb7t2xr3j8
+    program_slug: alloy-automation-startup-program
+    program_slug_aliases: []
+    title: Alloy Automation Startup Program
+    summary: Alloy Automation publishes a current startup program offering qualifying companies up to $2,000 in Alloy credits.
+    source_ids:
+      - src_e9bacdf90e0e29b334522e0a1a3ee1aa9700e1d8a3db2f57dcc301ac7bd07517
+offers:
+  - offer_id: off_01m1st81bxt4f6jd9q7n4vzfxb
+    program_id: prg_01m1st81bvsz33jbrb7t2xr3j8
+    offer_slug: alloy-automation-startup-program
+    offer_slug_aliases: []
+    title: Alloy Automation Startup Program
+    summary: Qualifying companies receive up to $2,000 in Alloy Automation credits through the startup program.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:15:23.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to $2,000 in Alloy Automation credits for qualifying companies
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 200000
+            kind: up-to
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1st81bnr4wmgr855fg34jg6
+      access_operator_entity_id: ent_01m1st81bnr4wmgr855fg34jg6
+    access:
+      availability: public
+      method: form
+      url: https://runalloy.com
+    source_ids:
+      - src_e9bacdf90e0e29b334522e0a1a3ee1aa9700e1d8a3db2f57dcc301ac7bd07517

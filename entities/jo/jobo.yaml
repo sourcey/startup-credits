@@ -1,0 +1,61 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1ss4bbny8n23v23mjt0qshm
+  slug: jobo
+  slug_aliases: []
+  name: Jobo
+  domains:
+    - value: jobo.world
+      role: primary
+      valid_from: 2026-09-05T21:55:53.000Z
+  category: hr-people
+profile:
+  description: Jobo provides a job search and career development platform for professionals and teams.
+  links:
+    site: https://jobo.world
+sources:
+  - source_id: src_18cb4d82dc0ce84d7be7718ac84702ad9772c6c892e671cb57dbf6202580fc94
+    url: https://jobo.world
+programs:
+  - program_id: prg_01m1ss4bbtwb86gwhsnytkgq73
+    program_slug: jobo-startup-program
+    program_slug_aliases: []
+    title: Jobo Startup Programme
+    summary: Jobo gives approved early-stage teams 50% off every Job Search subscription plan and its Unlimited plan for 12 months.
+    source_ids:
+      - src_18cb4d82dc0ce84d7be7718ac84702ad9772c6c892e671cb57dbf6202580fc94
+offers:
+  - offer_id: off_01m1ss4bbt8z5nebcnq787n61w
+    program_id: prg_01m1ss4bbtwb86gwhsnytkgq73
+    offer_slug: jobo-startup-program
+    offer_slug_aliases: []
+    title: Jobo Startup Programme
+    summary: Approved early-stage teams receive 50% off every Job Search subscription plan and the Unlimited plan for 12 months.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T21:55:53.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 50% off every Job Search subscription plan and Unlimited plan for 12 months for approved early-stage teams
+          kind: discount
+          percentage:
+            basis_points: 5000
+            kind: exact
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1ss4bbny8n23v23mjt0qshm
+      access_operator_entity_id: ent_01m1ss4bbny8n23v23mjt0qshm
+    access:
+      availability: public
+      method: form
+      url: https://jobo.world
+    source_ids:
+      - src_18cb4d82dc0ce84d7be7718ac84702ad9772c6c892e671cb57dbf6202580fc94

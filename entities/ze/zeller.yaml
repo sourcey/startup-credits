@@ -1,0 +1,58 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1ss4bvxyvnqevwwak3h1azx
+  slug: zeller
+  slug_aliases: []
+  name: Zeller
+  domains:
+    - value: myzeller.com
+      role: primary
+      valid_from: 2026-09-05T21:55:53.000Z
+  category: payments-fintech
+profile:
+  description: Zeller provides business banking and payment solutions for Australian businesses.
+  links:
+    site: https://myzeller.com
+sources:
+  - source_id: src_2feae07ab73888146d61a5102a2d9d5ca54306f1dc7bad378d2b6e9861b58ab7
+    url: https://myzeller.com
+programs:
+  - program_id: prg_01m1ss4bw4pzxm7fsws44j30ez
+    program_slug: zeller-startup-program
+    program_slug_aliases: []
+    title: Zeller for Startups
+    summary: New Zeller for Startups customers receive 5% cash back on qualifying business purchases with an active Zeller Debit Card, up to AUD $2,000.
+    source_ids:
+      - src_2feae07ab73888146d61a5102a2d9d5ca54306f1dc7bad378d2b6e9861b58ab7
+offers:
+  - offer_id: off_01m1ss4bw8jgwwfa3akkwdby4y
+    program_id: prg_01m1ss4bw4pzxm7fsws44j30ez
+    offer_slug: zeller-startup-program
+    offer_slug_aliases: []
+    title: Zeller for Startups
+    summary: New Zeller for Startups customers receive 5% cash back on qualifying business purchases up to AUD $2,000 with an active Zeller Debit Card.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T21:55:53.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 5% cash back on qualifying business purchases up to AUD $2,000 for new Zeller for Startups customers
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1ss4bvxyvnqevwwak3h1azx
+      access_operator_entity_id: ent_01m1ss4bvxyvnqevwwak3h1azx
+    access:
+      availability: public
+      method: form
+      url: https://myzeller.com
+    source_ids:
+      - src_2feae07ab73888146d61a5102a2d9d5ca54306f1dc7bad378d2b6e9861b58ab7

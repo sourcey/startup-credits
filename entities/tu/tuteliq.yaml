@@ -1,0 +1,58 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1ssca3k35ts3k4qwq4g5v9k
+  slug: tuteliq
+  slug_aliases: []
+  name: Tuteliq
+  domains:
+    - value: tuteliq.ai
+      role: primary
+      valid_from: 2026-09-05T22:00:15.000Z
+  category: ai-ml
+profile:
+  description: Tuteliq provides AI-powered communication tools for companies serving children and young people.
+  links:
+    site: https://tuteliq.ai
+sources:
+  - source_id: src_672d1fa8a276641c9e4823dd5ff5463e1b80f2c9ddcded2e300cf4ca3af1002a
+    url: https://tuteliq.ai
+programs:
+  - program_id: prg_01m1ssca50qr0enrk8ngrn25x4
+    program_slug: tuteliq-startup-program
+    program_slug_aliases: []
+    title: Tuteliq Build Program
+    summary: Tuteliq offers approved pre-Series-A companies serving children or young people the Build plan free for 12 months including 25,000 messages/month and full API access.
+    source_ids:
+      - src_672d1fa8a276641c9e4823dd5ff5463e1b80f2c9ddcded2e300cf4ca3af1002a
+offers:
+  - offer_id: off_01m1ssca50227a35dkfv6r5r2h
+    program_id: prg_01m1ssca50qr0enrk8ngrn25x4
+    offer_slug: tuteliq-startup-program
+    offer_slug_aliases: []
+    title: Tuteliq Build Program
+    summary: Approved pre-Series-A companies serving children or young people receive Tuteliq Build plan free for 12 months with 25,000 messages/month and full API access.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:00:15.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Tuteliq Build plan free for 12 months for approved pre-Series-A companies serving children or young people
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1ssca3k35ts3k4qwq4g5v9k
+      access_operator_entity_id: ent_01m1ssca3k35ts3k4qwq4g5v9k
+    access:
+      availability: public
+      method: form
+      url: https://tuteliq.ai
+    source_ids:
+      - src_672d1fa8a276641c9e4823dd5ff5463e1b80f2c9ddcded2e300cf4ca3af1002a

@@ -1,0 +1,61 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1srr307xh9f3g1avny4tmjr
+  slug: groundcover
+  slug_aliases: []
+  name: groundcover
+  domains:
+    - value: groundcover.com
+      role: primary
+      valid_from: 2026-09-05T21:49:11.000Z
+  category: observability
+profile:
+  description: groundcover provides eBPF-based Kubernetes monitoring and observability without instrumenting agents.
+  links:
+    site: https://www.groundcover.com
+sources:
+  - source_id: src_9fd45651ab15e0b9ab6323bf23622289b4f00fcadcee14895f9e391632fe4ca0
+    url: https://startups.aws.com/offers?lang=en-US
+programs:
+  - program_id: prg_01m1srr30c87zcwp1qrwb6r7vh
+    program_slug: groundcover-startup-program
+    program_slug_aliases: []
+    title: groundcover for Startups
+    summary: Eligible AWS startup customers receive 25% off their first-year groundcover subscription through AWS Marketplace.
+    source_ids:
+      - src_9fd45651ab15e0b9ab6323bf23622289b4f00fcadcee14895f9e391632fe4ca0
+offers:
+  - offer_id: off_01m1srr30cskpq8ten7z2e26gr
+    program_id: prg_01m1srr30c87zcwp1qrwb6r7vh
+    offer_slug: groundcover-startup-program
+    offer_slug_aliases: []
+    title: groundcover for Startups
+    summary: Eligible AWS startup customers receive 25% off their first-year groundcover subscription through AWS Marketplace.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T21:49:11.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 25% off first-year groundcover subscription for eligible AWS startup customers via AWS Marketplace
+          kind: discount
+          percentage:
+            basis_points: 2500
+            kind: exact
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1srr307xh9f3g1avny4tmjr
+      access_operator_entity_id: ent_01m1srr307xh9f3g1avny4tmjr
+    access:
+      availability: public
+      method: form
+      url: https://startups.aws.com/offers?lang=en-US
+    source_ids:
+      - src_9fd45651ab15e0b9ab6323bf23622289b4f00fcadcee14895f9e391632fe4ca0

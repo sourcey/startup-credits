@@ -1,0 +1,58 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1sv7neyknbya7jy5f3j1dwm
+  slug: yotta-labs
+  slug_aliases: []
+  name: Yotta Labs
+  domains:
+    - value: yottalabs.ai
+      role: primary
+      valid_from: 2026-09-05T22:32:39.000Z
+  category: ai-ml
+profile:
+  description: Yotta Labs provides AI research and academic computing resources.
+  links:
+    site: https://yottalabs.ai
+sources:
+  - source_id: src_4b638b55868d05b49e0982caa754fef168eba0bdcb50a92144f80114764dc528
+    url: https://yottalabs.ai
+programs:
+  - program_id: prg_01m1sv7ng0391rnysa2p99a4e2
+    program_slug: yotta-labs-startup-program
+    program_slug_aliases: []
+    title: Yotta Labs Academic Research Support Program
+    summary: Approved faculty, graduate students, postdoctoral researchers, independent non-commercial researchers, and research groups can receive Yotta Labs computing resources.
+    source_ids:
+      - src_4b638b55868d05b49e0982caa754fef168eba0bdcb50a92144f80114764dc528
+offers:
+  - offer_id: off_01m1sv7ng0hc1qjcqv255z9ev3
+    program_id: prg_01m1sv7ng0391rnysa2p99a4e2
+    offer_slug: yotta-labs-startup-program
+    offer_slug_aliases: []
+    title: Yotta Labs Academic Research Support Program
+    summary: Approved academic researchers and groups receive Yotta Labs computing resources through the Academic Research Support Program.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:32:39.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Yotta Labs computing resources for approved faculty, graduate students, postdoctoral researchers, and research groups
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1sv7neyknbya7jy5f3j1dwm
+      access_operator_entity_id: ent_01m1sv7neyknbya7jy5f3j1dwm
+    access:
+      availability: public
+      method: form
+      url: https://yottalabs.ai
+    source_ids:
+      - src_4b638b55868d05b49e0982caa754fef168eba0bdcb50a92144f80114764dc528

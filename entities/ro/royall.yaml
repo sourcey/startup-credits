@@ -1,0 +1,58 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1stffzxqvaw2z3kpwqj3zfe
+  slug: royall
+  slug_aliases: []
+  name: Royall
+  domains:
+    - value: royall.ai
+      role: primary
+      valid_from: 2026-09-05T22:18:48.000Z
+  category: auth-security
+profile:
+  description: Royall provides AI-powered consent and identity management tools.
+  links:
+    site: https://royall.ai
+sources:
+  - source_id: src_a557203adb37ae7d5d2369550a6188b02c3d110995ba702789f96605d17e7394
+    url: https://royall.ai
+programs:
+  - program_id: prg_01m1stfg126vzp8wjabdxpw6kc
+    program_slug: royall-startup-program
+    program_slug_aliases: []
+    title: Royall Startup Program
+    summary: Eligible early-stage AI startups receive full production Royall API access free for 12 months, including consent checks and identity management.
+    source_ids:
+      - src_a557203adb37ae7d5d2369550a6188b02c3d110995ba702789f96605d17e7394
+offers:
+  - offer_id: off_01m1stfg12ppf6k4z3jd68k40y
+    program_id: prg_01m1stfg126vzp8wjabdxpw6kc
+    offer_slug: royall-startup-program
+    offer_slug_aliases: []
+    title: Royall Startup Program
+    summary: Eligible early-stage AI startups receive full production Royall API access free for 12 months.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:18:48.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Full production Royall API access free for 12 months for eligible early-stage AI startups
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1stffzxqvaw2z3kpwqj3zfe
+      access_operator_entity_id: ent_01m1stffzxqvaw2z3kpwqj3zfe
+    access:
+      availability: public
+      method: form
+      url: https://royall.ai
+    source_ids:
+      - src_a557203adb37ae7d5d2369550a6188b02c3d110995ba702789f96605d17e7394

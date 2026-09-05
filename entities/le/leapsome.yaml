@@ -1,0 +1,61 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1swjryw124715w2v06kq8vr
+  slug: leapsome
+  slug_aliases: []
+  name: Leapsome
+  domains:
+    - value: leapsome.com
+      role: primary
+      valid_from: 2026-09-05T22:56:11.000Z
+  category: productivity
+profile:
+  description: Leapsome provides people management and HRIS tools.
+  links:
+    site: https://leapsome.com
+sources:
+  - source_id: src_d0e4185a38efb40f7327ceba2266341f6460a97823cde32bf6e57f4bed9a1501
+    url: https://leapsome.com
+programs:
+  - program_id: prg_01m1swjrz0g6t5x1hjp66tpp0w
+    program_slug: leapsome-startup-program
+    program_slug_aliases: []
+    title: Leapsome for Startups
+    summary: Leapsome offers 20% discount for startups new to Leapsome with fewer than 50 employees.
+    source_ids:
+      - src_d0e4185a38efb40f7327ceba2266341f6460a97823cde32bf6e57f4bed9a1501
+offers:
+  - offer_id: off_01m1swjrz0nhpbma01t9e62f0q
+    program_id: prg_01m1swjrz0g6t5x1hjp66tpp0w
+    offer_slug: leapsome-startup-program
+    offer_slug_aliases: []
+    title: Leapsome for Startups
+    summary: Startups new to Leapsome with fewer than 50 employees receive 20% off through the startup program.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:56:11.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 20% off Leapsome for startups new to Leapsome with fewer than 50 employees
+          kind: discount
+          percentage:
+            basis_points: 2000
+            kind: exact
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1swjryw124715w2v06kq8vr
+      access_operator_entity_id: ent_01m1swjryw124715w2v06kq8vr
+    access:
+      availability: public
+      method: form
+      url: https://leapsome.com
+    source_ids:
+      - src_d0e4185a38efb40f7327ceba2266341f6460a97823cde32bf6e57f4bed9a1501

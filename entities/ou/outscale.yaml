@@ -1,0 +1,58 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1ss87yn9vr68m21m9q00xzn
+  slug: outscale
+  slug_aliases: []
+  name: 3DS OUTSCALE
+  domains:
+    - value: outscale.com
+      role: primary
+      valid_from: 2026-09-05T21:58:00.000Z
+  category: hosting-infra
+profile:
+  description: 3DS OUTSCALE provides sovereign cloud infrastructure for startups in regulated industries.
+  links:
+    site: https://en.outscale.com
+sources:
+  - source_id: src_fe5d8894b3bd9be5807d3a6a27f3af7ddcdd0484e2f4b5192ed524fe6f470e6e
+    url: https://en.outscale.com/outscale-for-entrepreneurs/
+programs:
+  - program_id: prg_01m1ss87zncf2y0d07gerv5q95
+    program_slug: outscale-startup-program
+    program_slug_aliases: []
+    title: OUTSCALE for Entrepreneurs
+    summary: 3DS OUTSCALE publishes OUTSCALE for Entrepreneurs for startups seeking sovereign infrastructure in public sector, finance, or regulated industries.
+    source_ids:
+      - src_fe5d8894b3bd9be5807d3a6a27f3af7ddcdd0484e2f4b5192ed524fe6f470e6e
+offers:
+  - offer_id: off_01m1ss87zpj2tz43n08q2m62gc
+    program_id: prg_01m1ss87zncf2y0d07gerv5q95
+    offer_slug: outscale-startup-program
+    offer_slug_aliases: []
+    title: OUTSCALE for Entrepreneurs
+    summary: Startups seeking sovereign infrastructure receive OUTSCALE cloud services through the OUTSCALE for Entrepreneurs program.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T21:58:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: OUTSCALE cloud services for entrepreneurs for startups seeking sovereign infrastructure
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1ss87yn9vr68m21m9q00xzn
+      access_operator_entity_id: ent_01m1ss87yn9vr68m21m9q00xzn
+    access:
+      availability: public
+      method: form
+      url: https://en.outscale.com/outscale-for-entrepreneurs/
+    source_ids:
+      - src_fe5d8894b3bd9be5807d3a6a27f3af7ddcdd0484e2f4b5192ed524fe6f470e6e

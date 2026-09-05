@@ -1,0 +1,58 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1st6qx6xjb20p8xhvhv01a4
+  slug: zai
+  slug_aliases: []
+  name: Z.ai
+  domains:
+    - value: z.ai
+      role: primary
+      valid_from: 2026-09-05T22:14:40.000Z
+  category: ai-ml
+profile:
+  description: Z.ai provides AI-powered coding and development tools for software teams.
+  links:
+    site: https://startup.z.ai
+sources:
+  - source_id: src_a93b193d24583ca53d2620fcbf638054a2d97d4d3891d6163aed69e3ed8f2361
+    url: https://startup.z.ai/
+programs:
+  - program_id: prg_01m1st6qxfjy7wgp7hxk8ytcmp
+    program_slug: zai-startup-program
+    program_slug_aliases: []
+    title: Z.ai Startups Program
+    summary: Z.ai advertises a startup-specific program with free API credits up to 1B tokens, priority support and rate limits, and community access.
+    source_ids:
+      - src_a93b193d24583ca53d2620fcbf638054a2d97d4d3891d6163aed69e3ed8f2361
+offers:
+  - offer_id: off_01m1st6qxf4gp045rh1a4af9dp
+    program_id: prg_01m1st6qxfjy7wgp7hxk8ytcmp
+    offer_slug: zai-startup-program
+    offer_slug_aliases: []
+    title: Z.ai Startups Program
+    summary: Eligible startups receive free Z.ai API credits up to 1B tokens, priority support and rate limits, and community access.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:14:40.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Free Z.ai API credits up to 1B tokens, priority support and rate limits, and community access for eligible startups
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1st6qx6xjb20p8xhvhv01a4
+      access_operator_entity_id: ent_01m1st6qx6xjb20p8xhvhv01a4
+    access:
+      availability: public
+      method: form
+      url: https://startup.z.ai/
+    source_ids:
+      - src_a93b193d24583ca53d2620fcbf638054a2d97d4d3891d6163aed69e3ed8f2361

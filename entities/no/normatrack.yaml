@@ -1,0 +1,58 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1ssnqrgwvqcm754qjrf23gf
+  slug: normatrack
+  slug_aliases: []
+  name: NormaTrack
+  domains:
+    - value: normatrack.com
+      role: primary
+      valid_from: 2026-09-05T22:05:24.000Z
+  category: marketing
+profile:
+  description: NormaTrack provides brand compliance and product information management tools.
+  links:
+    site: https://normatrack.com
+sources:
+  - source_id: src_85b7ec4fd22776dfa422bcd0f98d0570b279479d3f0b8589d890209389f834a8
+    url: https://normatrack.com
+programs:
+  - program_id: prg_01m1ssnqsgjd5mxaxtwfx1cp5p
+    program_slug: normatrack-startup-program
+    program_slug_aliases: []
+    title: NormaTrack Startup Program
+    summary: Eligible brands with fewer than 20 employees and fewer than 500 active products can receive the NormaTrack Growth plan free for six months.
+    source_ids:
+      - src_85b7ec4fd22776dfa422bcd0f98d0570b279479d3f0b8589d890209389f834a8
+offers:
+  - offer_id: off_01m1ssnqsh902y9ygj2kqebft7
+    program_id: prg_01m1ssnqsgjd5mxaxtwfx1cp5p
+    offer_slug: normatrack-startup-program
+    offer_slug_aliases: []
+    title: NormaTrack Startup Program
+    summary: Eligible brands with fewer than 20 employees and fewer than 500 active products receive the NormaTrack Growth plan free for six months.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:05:24.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: NormaTrack Growth plan free for six months for eligible brands with fewer than 20 employees and 500 active products
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1ssnqrgwvqcm754qjrf23gf
+      access_operator_entity_id: ent_01m1ssnqrgwvqcm754qjrf23gf
+    access:
+      availability: public
+      method: form
+      url: https://normatrack.com
+    source_ids:
+      - src_85b7ec4fd22776dfa422bcd0f98d0570b279479d3f0b8589d890209389f834a8

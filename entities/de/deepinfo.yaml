@@ -1,0 +1,58 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1sw5qsdx3d1vt59gjy4et2s
+  slug: deepinfo
+  slug_aliases: []
+  name: Deepinfo
+  domains:
+    - value: deepinfo.com
+      role: primary
+      valid_from: 2026-09-05T22:49:03.000Z
+  category: auth-security
+profile:
+  description: Deepinfo provides external attack surface management and security tools.
+  links:
+    site: https://deepinfo.com
+sources:
+  - source_id: src_2007d1d5c7ec88059b538e8c6065963944d93b94bfdb7294eafe285dec6e090f
+    url: https://deepinfo.com
+programs:
+  - program_id: prg_01m1sw5qsj900fwwqshqh9g0pj
+    program_slug: deepinfo-startup-program
+    program_slug_aliases: []
+    title: Deepinfo Startup Program
+    summary: Deepinfo offers qualifying early-stage technology startups discounted access to its external attack surface management platform.
+    source_ids:
+      - src_2007d1d5c7ec88059b538e8c6065963944d93b94bfdb7294eafe285dec6e090f
+offers:
+  - offer_id: off_01m1sw5qsjrscfjctf9fj1d957
+    program_id: prg_01m1sw5qsj900fwwqshqh9g0pj
+    offer_slug: deepinfo-startup-program
+    offer_slug_aliases: []
+    title: Deepinfo Startup Program
+    summary: Early-stage technology startups receive discounted Deepinfo access to its external attack surface management platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:49:03.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Discounted Deepinfo access to external attack surface management for qualifying early-stage technology startups
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1sw5qsdx3d1vt59gjy4et2s
+      access_operator_entity_id: ent_01m1sw5qsdx3d1vt59gjy4et2s
+    access:
+      availability: public
+      method: form
+      url: https://deepinfo.com
+    source_ids:
+      - src_2007d1d5c7ec88059b538e8c6065963944d93b94bfdb7294eafe285dec6e090f

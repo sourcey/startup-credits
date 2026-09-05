@@ -1,0 +1,58 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1sw979zhrkv02d4v5ykwa67
+  slug: hanko
+  slug_aliases: []
+  name: Hanko
+  domains:
+    - value: hanko.io
+      role: primary
+      valid_from: 2026-09-05T22:50:59.000Z
+  category: auth-security
+profile:
+  description: Hanko provides passkey authentication and identity management.
+  links:
+    site: https://www.hanko.io
+sources:
+  - source_id: src_899bd319e1cb78d478d1dfda83600b1ef1c43e8ac158783fdc510c531dcbf3be
+    url: https://www.hanko.io/startup-plan
+programs:
+  - program_id: prg_01m1sw97bp4441m47e77mbbp6e
+    program_slug: hanko-startup-program
+    program_slug_aliases: []
+    title: Hanko Startup Plan
+    summary: Hanko publishes a startup plan offering one million free monthly active users for qualifying startups.
+    source_ids:
+      - src_899bd319e1cb78d478d1dfda83600b1ef1c43e8ac158783fdc510c531dcbf3be
+offers:
+  - offer_id: off_01m1sw97bpk3n02kyh21xgaypq
+    program_id: prg_01m1sw97bp4441m47e77mbbp6e
+    offer_slug: hanko-startup-program
+    offer_slug_aliases: []
+    title: Hanko Startup Plan
+    summary: Qualifying startups receive one million free monthly active users through the Hanko Startup Plan.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:50:59.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: One million free monthly active users for qualifying startups through the Hanko Startup Plan
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1sw979zhrkv02d4v5ykwa67
+      access_operator_entity_id: ent_01m1sw979zhrkv02d4v5ykwa67
+    access:
+      availability: public
+      method: form
+      url: https://www.hanko.io/startup-plan
+    source_ids:
+      - src_899bd319e1cb78d478d1dfda83600b1ef1c43e8ac158783fdc510c531dcbf3be

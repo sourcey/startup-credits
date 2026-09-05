@@ -1,0 +1,58 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1ss14kgshb6mafwgmbegwea
+  slug: blockpi
+  slug_aliases: []
+  name: BlockPI
+  domains:
+    - value: blockpi.io
+      role: primary
+      valid_from: 2026-09-05T21:54:09.000Z
+  category: hosting-infra
+profile:
+  description: BlockPI provides high-performance RPC infrastructure and node services for web3 developers.
+  links:
+    site: https://blockpi.io
+sources:
+  - source_id: src_f351024e04ebce9ac6201f60add70f892955ade413697824f6f8077b355aef2c
+    url: https://blockpi.io/sui-builder-program/
+programs:
+  - program_id: prg_01m1ss14ktwkq0ydc6dbsc4hw4
+    program_slug: blockpi-startup-program
+    program_slug_aliases: []
+    title: BlockPI Sui Builder Program
+    summary: BlockPI's Sui x BlockPI Builder Program offers vendor-determined free Full-Stack RPC service credits to Sui builders.
+    source_ids:
+      - src_f351024e04ebce9ac6201f60add70f892955ade413697824f6f8077b355aef2c
+offers:
+  - offer_id: off_01m1ss14ktb744h3etnzy343qr
+    program_id: prg_01m1ss14ktwkq0ydc6dbsc4hw4
+    offer_slug: blockpi-startup-program
+    offer_slug_aliases: []
+    title: BlockPI Sui Builder Program
+    summary: Sui builders receive vendor-determined free Full-Stack RPC service credits through the BlockPI Sui Builder Program.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T21:54:09.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Free Full-Stack RPC service credits for Sui builders through the BlockPI Sui Builder Program
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1ss14kgshb6mafwgmbegwea
+      access_operator_entity_id: ent_01m1ss14kgshb6mafwgmbegwea
+    access:
+      availability: public
+      method: form
+      url: https://blockpi.io/sui-builder-program/
+    source_ids:
+      - src_f351024e04ebce9ac6201f60add70f892955ade413697824f6f8077b355aef2c

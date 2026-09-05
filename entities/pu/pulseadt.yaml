@@ -1,0 +1,63 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1srtnk91jrjrcx9a2jvzdtf
+  slug: pulseadt
+  slug_aliases: []
+  name: PulseADT
+  domains:
+    - value: getpulseadt.com
+      role: primary
+      valid_from: 2026-09-05T21:50:37.000Z
+  category: devtools-other
+profile:
+  description: PulseADT provides API development and testing tools for developers and startup teams.
+  links:
+    site: https://getpulseadt.com
+sources:
+  - source_id: src_d87cc783e7c3b2e751797985359c5441925bafffaf5549fb2707aad37debf729
+    url: https://getpulseadt.com
+programs:
+  - program_id: prg_01m1srtnm29z6nzw5v9zdwr7rp
+    program_slug: pulseadt-startup-program
+    program_slug_aliases: []
+    title: PulseADT Startup Credit Program
+    summary: PulseADT grants eligible early-stage technology startups a $250 platform credit valid for 12 months after spending $100 on API credits within 90 days, followed by a 30% discount.
+    source_ids:
+      - src_d87cc783e7c3b2e751797985359c5441925bafffaf5549fb2707aad37debf729
+offers:
+  - offer_id: off_01m1srtnm2861j71ff76etqh94
+    program_id: prg_01m1srtnm29z6nzw5v9zdwr7rp
+    offer_slug: pulseadt-startup-program
+    offer_slug_aliases: []
+    title: PulseADT Startup Credit Program
+    summary: Eligible early-stage technology startups receive $250 in platform credits after initial spending, plus 30% ongoing discount.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T21:50:37.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: $250 platform credit for 12 months (after $100 spend), then 30% ongoing discount for eligible startups
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 25000
+            kind: up-to
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1srtnk91jrjrcx9a2jvzdtf
+      access_operator_entity_id: ent_01m1srtnk91jrjrcx9a2jvzdtf
+    access:
+      availability: public
+      method: form
+      url: https://getpulseadt.com
+    source_ids:
+      - src_d87cc783e7c3b2e751797985359c5441925bafffaf5549fb2707aad37debf729

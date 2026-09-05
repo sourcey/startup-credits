@@ -1,0 +1,58 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1sse21s8zwkzvmnqncnqk21
+  slug: netmind
+  slug_aliases: []
+  name: NetMind
+  domains:
+    - value: netmind.ai
+      role: primary
+      valid_from: 2026-09-05T22:01:11.000Z
+  category: ai-ml
+profile:
+  description: NetMind provides AI model training and inference infrastructure for machine learning teams.
+  links:
+    site: https://www.netmind.ai
+sources:
+  - source_id: src_74b428873b6fe14ecae38e98bbe8d55c68fdb5411e82949d032c0cc8d7c9c786
+    url: https://www.netmind.ai
+programs:
+  - program_id: prg_01m1sse22apqs0ngesv5550e83
+    program_slug: netmind-startup-program
+    program_slug_aliases: []
+    title: NetMind Elevate
+    summary: NetMind offers startup inference credits through its Elevate program for AI API access and model training.
+    source_ids:
+      - src_74b428873b6fe14ecae38e98bbe8d55c68fdb5411e82949d032c0cc8d7c9c786
+offers:
+  - offer_id: off_01m1sse22a8gkq0q556drj1hg4
+    program_id: prg_01m1sse22apqs0ngesv5550e83
+    offer_slug: netmind-startup-program
+    offer_slug_aliases: []
+    title: NetMind Elevate
+    summary: Startups receive NetMind Elevate inference credits for AI API access and model training through the startup program.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:01:11.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: NetMind Elevate inference credits for AI API access and model training for eligible startups
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1sse21s8zwkzvmnqncnqk21
+      access_operator_entity_id: ent_01m1sse21s8zwkzvmnqncnqk21
+    access:
+      availability: public
+      method: form
+      url: https://www.netmind.ai
+    source_ids:
+      - src_74b428873b6fe14ecae38e98bbe8d55c68fdb5411e82949d032c0cc8d7c9c786

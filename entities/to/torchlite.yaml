@@ -1,0 +1,61 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1ss1901wp8t2pw20hgppsv8
+  slug: torchlite
+  slug_aliases: []
+  name: Torchlite
+  domains:
+    - value: torchlite.com
+      role: primary
+      valid_from: 2026-09-05T21:54:09.000Z
+  category: marketing
+profile:
+  description: Torchlite provides a Partner Relationship Management (PRM) platform for brands and their channel partners.
+  links:
+    site: https://torchlite.com
+sources:
+  - source_id: src_bc00c4568848267d1cdb6f552bd11f176d1835474e48a3fb01d14b59ee12251d
+    url: https://torchlite.com/prm-for-startups/
+programs:
+  - program_id: prg_01m1ss190m8mvs6pft3e263qq6
+    program_slug: torchlite-startup-program
+    program_slug_aliases: []
+    title: Torchlite PRM for Startups
+    summary: Torchlite offers qualifying startups 75% off its PRM platform in year one, 50% off in year two, and no-cost CRM integration.
+    source_ids:
+      - src_bc00c4568848267d1cdb6f552bd11f176d1835474e48a3fb01d14b59ee12251d
+offers:
+  - offer_id: off_01m1ss190n2e3f1wze68yddjw6
+    program_id: prg_01m1ss190m8mvs6pft3e263qq6
+    offer_slug: torchlite-startup-program
+    offer_slug_aliases: []
+    title: Torchlite PRM for Startups
+    summary: Eligible startups receive 75% off Torchlite PRM platform in year one, 50% off in year two, and no-cost CRM integration.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T21:54:09.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 75% off Torchlite PRM in year one and 50% off in year two for qualifying startups, plus no-cost CRM integration
+          kind: discount
+          percentage:
+            basis_points: 7500
+            kind: exact
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1ss1901wp8t2pw20hgppsv8
+      access_operator_entity_id: ent_01m1ss1901wp8t2pw20hgppsv8
+    access:
+      availability: public
+      method: form
+      url: https://torchlite.com/prm-for-startups/
+    source_ids:
+      - src_bc00c4568848267d1cdb6f552bd11f176d1835474e48a3fb01d14b59ee12251d

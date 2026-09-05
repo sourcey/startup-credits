@@ -1,0 +1,61 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1srn3nkrchx56c5cx70fwwx
+  slug: goldsky
+  slug_aliases: []
+  name: Goldsky
+  domains:
+    - value: goldsky.com
+      role: primary
+      valid_from: 2026-09-05T21:47:33.000Z
+  category: data-analytics
+profile:
+  description: Goldsky provides data infrastructure and analytics platforms for technology companies.
+  links:
+    site: https://goldsky.com
+sources:
+  - source_id: src_af4c5e5c6c38c272b2b35971f3f3ac378e0c7ac2fdb0c366fc9c1d0a6be8c801
+    url: https://goldsky.com/pricing
+programs:
+  - program_id: prg_01m1srn3p39fgmj39j0g468am6
+    program_slug: goldsky-startup-program
+    program_slug_aliases: []
+    title: Goldsky Early-Stage Program
+    summary: Goldsky offers early-stage companies 50% off the first year of Goldsky service through its partner network.
+    source_ids:
+      - src_af4c5e5c6c38c272b2b35971f3f3ac378e0c7ac2fdb0c366fc9c1d0a6be8c801
+offers:
+  - offer_id: off_01m1srn3p4gxht0wgxc5edkg3t
+    program_id: prg_01m1srn3p39fgmj39j0g468am6
+    offer_slug: goldsky-startup-program
+    offer_slug_aliases: []
+    title: Goldsky Early-Stage Program
+    summary: Eligible early-stage companies receive 50% off the first year of Goldsky service via the Goldsky partner network.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T21:47:33.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 50% off the first year of Goldsky service for eligible early-stage companies in the partner network
+          kind: discount
+          percentage:
+            basis_points: 5000
+            kind: exact
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1srn3nkrchx56c5cx70fwwx
+      access_operator_entity_id: ent_01m1srn3nkrchx56c5cx70fwwx
+    access:
+      availability: public
+      method: form
+      url: https://goldsky.com/pricing
+    source_ids:
+      - src_af4c5e5c6c38c272b2b35971f3f3ac378e0c7ac2fdb0c366fc9c1d0a6be8c801

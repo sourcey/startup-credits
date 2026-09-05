@@ -1,0 +1,61 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1st6rgm47asm9yy29pe9nd3
+  slug: oracle
+  slug_aliases: []
+  name: Oracle for Startups
+  domains:
+    - value: oracle.com
+      role: primary
+      valid_from: 2026-09-05T22:14:40.000Z
+  category: hosting-infra
+profile:
+  description: Oracle provides cloud infrastructure, databases, and enterprise software services.
+  links:
+    site: https://www.oracle.com
+sources:
+  - source_id: src_2f70fcb0f4e93128206b6f5b4b697dff38704e73b15bec2c3702c10ce77a8519
+    url: https://www.oracle.com/startup/
+programs:
+  - program_id: prg_01m1st6rgwgd8q80qje2gp0jzc
+    program_slug: oracle-startup-program
+    program_slug_aliases: []
+    title: Oracle for Startups
+    summary: Oracle for Startups offers a 70% discount on Oracle Cloud Infrastructure for two years plus free cloud credits for qualifying startups.
+    source_ids:
+      - src_2f70fcb0f4e93128206b6f5b4b697dff38704e73b15bec2c3702c10ce77a8519
+offers:
+  - offer_id: off_01m1st6rgwj0dbsa10qhgnrve3
+    program_id: prg_01m1st6rgwgd8q80qje2gp0jzc
+    offer_slug: oracle-startup-program
+    offer_slug_aliases: []
+    title: Oracle for Startups
+    summary: Qualifying startups receive a 70% discount on Oracle Cloud Infrastructure for two years plus free cloud credits.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:14:40.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 70% discount on Oracle Cloud Infrastructure for two years plus free cloud credits for qualifying startups
+          kind: discount
+          percentage:
+            basis_points: 7000
+            kind: exact
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1st6rgm47asm9yy29pe9nd3
+      access_operator_entity_id: ent_01m1st6rgm47asm9yy29pe9nd3
+    access:
+      availability: public
+      method: form
+      url: https://www.oracle.com/startup/
+    source_ids:
+      - src_2f70fcb0f4e93128206b6f5b4b697dff38704e73b15bec2c3702c10ce77a8519

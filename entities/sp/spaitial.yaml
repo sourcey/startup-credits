@@ -1,0 +1,58 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1sse2aj5e73h46dr5zrkfr0
+  slug: spaitial
+  slug_aliases: []
+  name: SpAItial
+  domains:
+    - value: spaitial.com
+      role: primary
+      valid_from: 2026-09-05T22:01:11.000Z
+  category: ai-ml
+profile:
+  description: SpAItial provides AI-powered spatial computing and visualization tools.
+  links:
+    site: https://spaitial.com
+sources:
+  - source_id: src_d9ebdbbb41ee0282a6f163ab22630b777e9c37691f296fb8585a1570d0677ec5
+    url: https://spaitial.com
+programs:
+  - program_id: prg_01m1sse2b14rdqm2wxwttth37t
+    program_slug: spaitial-startup-program
+    program_slug_aliases: []
+    title: SpAItial Echo Startup Program
+    summary: SpAItial offers eligible startups access to its Echo startup program for AI-powered spatial computing tools.
+    source_ids:
+      - src_d9ebdbbb41ee0282a6f163ab22630b777e9c37691f296fb8585a1570d0677ec5
+offers:
+  - offer_id: off_01m1sse2b2p7c3r0bneb1btf6h
+    program_id: prg_01m1sse2b14rdqm2wxwttth37t
+    offer_slug: spaitial-startup-program
+    offer_slug_aliases: []
+    title: SpAItial Echo Startup Program
+    summary: Eligible startups receive access to SpAItial's Echo startup program for AI-powered spatial computing tools.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:01:11.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Access to SpAItial Echo startup program for AI-powered spatial computing tools for eligible startups
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1sse2aj5e73h46dr5zrkfr0
+      access_operator_entity_id: ent_01m1sse2aj5e73h46dr5zrkfr0
+    access:
+      availability: public
+      method: form
+      url: https://spaitial.com
+    source_ids:
+      - src_d9ebdbbb41ee0282a6f163ab22630b777e9c37691f296fb8585a1570d0677ec5

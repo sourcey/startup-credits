@@ -1,0 +1,63 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1ss86g30q2469h9yecccr4n
+  slug: tapflare
+  slug_aliases: []
+  name: Tapflare
+  domains:
+    - value: tapflare.com
+      role: primary
+      valid_from: 2026-09-05T21:58:00.000Z
+  category: marketing
+profile:
+  description: Tapflare provides mobile app marketing and user acquisition tools for app developers.
+  links:
+    site: https://tapflare.com
+sources:
+  - source_id: src_05dd19cf7e1211cd270a0f76c2ba96747d388d0ba054c37f2581bd01ac77b55b
+    url: https://tapflare.com
+programs:
+  - program_id: prg_01m1ss86gjckyd2pd07m52bqgd
+    program_slug: tapflare-startup-program
+    program_slug_aliases: []
+    title: Tapflare Startup Program
+    summary: Tapflare offers qualified startups up to $1,500 in Tapflare credit applicable to any Tapflare plan.
+    source_ids:
+      - src_05dd19cf7e1211cd270a0f76c2ba96747d388d0ba054c37f2581bd01ac77b55b
+offers:
+  - offer_id: off_01m1ss86gjv79ta86e5xzkxjbr
+    program_id: prg_01m1ss86gjckyd2pd07m52bqgd
+    offer_slug: tapflare-startup-program
+    offer_slug_aliases: []
+    title: Tapflare Startup Program
+    summary: Qualified startups receive up to $1,500 in Tapflare credit applicable to any Tapflare plan.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T21:58:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to $1,500 in Tapflare credit for qualified startups applicable to any Tapflare plan
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 150000
+            kind: up-to
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1ss86g30q2469h9yecccr4n
+      access_operator_entity_id: ent_01m1ss86g30q2469h9yecccr4n
+    access:
+      availability: public
+      method: form
+      url: https://tapflare.com
+    source_ids:
+      - src_05dd19cf7e1211cd270a0f76c2ba96747d388d0ba054c37f2581bd01ac77b55b

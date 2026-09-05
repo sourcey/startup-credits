@@ -1,0 +1,64 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_fbgdss1scxzsheqgnbbpnxkw95
+  slug: lambda-labs
+  slug_aliases: []
+  name: Lambda Labs
+  domains:
+    - value: lambdalabs.com
+      role: primary
+      valid_from: 2026-09-05T21:22:54.000Z
+  category: hosting-infra
+profile:
+  description: Lambda Labs provides AI computing infrastructure, including cloud GPU instances and on-premise supercomputers for AI developers, startups, researchers, and enterprises.
+  links:
+    site: https://lambdalabs.com
+sources:
+  - source_id: src_d458f71d558ad9add34b449f4cad1e3fadac37823de7e2cd7e51c2e7dd65921f
+    url: https://lambda.ai/research
+programs:
+  - program_id: prg_fbgdss1scxzsheqgnbbpnxkw95
+    program_slug: lambda-labs-startup
+    program_slug_aliases: []
+    title: Lambda Research Grant
+    summary: Lambda's research grant supports qualifying researchers and startups developing AI projects with Lambda cloud compute credits.
+    source_ids:
+      - src_d458f71d558ad9add34b449f4cad1e3fadac37823de7e2cd7e51c2e7dd65921f
+offers:
+  - offer_id: off_fbgdss1scxzsheqgnbbpnxkw95
+    program_id: prg_fbgdss1scxzsheqgnbbpnxkw95
+    offer_slug: lambda-labs-startup-credits
+    offer_slug_aliases: []
+    title: Lambda Research Grant cloud credits
+    summary: Qualifying researchers and AI startups can receive up to $5,000 in Lambda cloud credits to develop and showcase AI projects using Lambda Instances.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T21:22:54.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_095da8d87240e9c293b5239e
+          description: Up to $5,000 USD in Lambda cloud credits for Lambda GPU Instances.
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 500000
+            kind: up-to
+      consideration:
+        kind: unknown
+        description: The public program page does not establish separate consideration for the grant.
+    eligibility:
+      rule:
+        criterion_id: cri_095da8d87240e9c293b5239e
+        kind: manual
+        reason: vendor-discretion
+        statement: "Available to qualifying AI researchers and startups. Lambda makes final decisions based on capacity and fit."
+    roles:
+      terms_authority_entity_id: ent_fbgdss1scxzsheqgnbbpnxkw95
+      access_operator_entity_id: ent_fbgdss1scxzsheqgnbbpnxkw95
+    access:
+      availability: public
+      method: form
+      url: https://form.typeform.com/to/Wn8YWMIj
+    source_ids:
+      - src_d458f71d558ad9add34b449f4cad1e3fadac37823de7e2cd7e51c2e7dd65921f

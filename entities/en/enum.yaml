@@ -1,0 +1,63 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1srr3ggq37w3s67m063yez6
+  slug: enum
+  slug_aliases: []
+  name: enum
+  domains:
+    - value: enum.co
+      role: primary
+      valid_from: 2026-09-05T21:49:11.000Z
+  category: apis-integration
+profile:
+  description: enum provides phone number management and communication APIs for developers and businesses.
+  links:
+    site: https://enum.co
+sources:
+  - source_id: src_4d06c65de17ce5867d746fdda7a07136f071695c4c04e3019ce8ae3395a93f04
+    url: https://enum.co
+programs:
+  - program_id: prg_01m1srr3grfgnrqb657jg22jes
+    program_slug: enum-startup-program
+    program_slug_aliases: []
+    title: enum for Startups
+    summary: enum for Startups offers eligible EU-headquartered startups and scaleups up to EUR 100,000 in cloud credits over 12 months.
+    source_ids:
+      - src_4d06c65de17ce5867d746fdda7a07136f071695c4c04e3019ce8ae3395a93f04
+offers:
+  - offer_id: off_01m1srr3grh4vka0pt3qsrxm8w
+    program_id: prg_01m1srr3grfgnrqb657jg22jes
+    offer_slug: enum-startup-program
+    offer_slug_aliases: []
+    title: enum for Startups
+    summary: Eligible EU-headquartered startups and scaleups receive up to EUR 100,000 in enum cloud credits over 12 months.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T21:49:11.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to EUR 100,000 in enum cloud credits over 12 months for eligible EU-headquartered startups
+          kind: credit
+          value:
+            amount:
+              currency: EUR
+              minor_units: 10000000
+            kind: up-to
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1srr3ggq37w3s67m063yez6
+      access_operator_entity_id: ent_01m1srr3ggq37w3s67m063yez6
+    access:
+      availability: public
+      method: form
+      url: https://enum.co
+    source_ids:
+      - src_4d06c65de17ce5867d746fdda7a07136f071695c4c04e3019ce8ae3395a93f04

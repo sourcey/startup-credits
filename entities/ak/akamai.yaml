@@ -1,0 +1,63 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1sscbybcc1hcrd3hbzwn82w
+  slug: akamai
+  slug_aliases: []
+  name: Akamai
+  domains:
+    - value: akamai.com
+      role: primary
+      valid_from: 2026-09-05T22:00:15.000Z
+  category: hosting-infra
+profile:
+  description: Akamai provides cloud computing, security, and content delivery services for enterprises and startups.
+  links:
+    site: https://www.akamai.com
+sources:
+  - source_id: src_b97750ed490f8ffb2d5341cde81c0e444f7e357a9283ee03fb13f5a18596f7c9
+    url: https://www.akamai.com/cloud/start-ups/rise
+programs:
+  - program_id: prg_01m1sscbyg2cp7hakhz4r2t0js
+    program_slug: akamai-startup-program
+    program_slug_aliases: []
+    title: Akamai Cloud Rise Start-Up Program
+    summary: Akamai Cloud Rise Start-Up Program offers qualifying startups up to USD 120,000 in credits and services over three years.
+    source_ids:
+      - src_b97750ed490f8ffb2d5341cde81c0e444f7e357a9283ee03fb13f5a18596f7c9
+offers:
+  - offer_id: off_01m1sscbyg47f6wqnhte0ef7dq
+    program_id: prg_01m1sscbyg2cp7hakhz4r2t0js
+    offer_slug: akamai-startup-program
+    offer_slug_aliases: []
+    title: Akamai Cloud Rise Start-Up Program
+    summary: Eligible startups receive up to USD 120,000 in Akamai cloud credits and services over three years through the Cloud Rise Start-Up Program.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:00:15.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to USD 120,000 in Akamai cloud credits and services over three years for qualifying startups
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 12000000
+            kind: up-to
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1sscbybcc1hcrd3hbzwn82w
+      access_operator_entity_id: ent_01m1sscbybcc1hcrd3hbzwn82w
+    access:
+      availability: public
+      method: form
+      url: https://www.akamai.com/cloud/start-ups/rise
+    source_ids:
+      - src_b97750ed490f8ffb2d5341cde81c0e444f7e357a9283ee03fb13f5a18596f7c9

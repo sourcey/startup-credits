@@ -1,0 +1,58 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1ssxn9petwpjr42mabcz2v2
+  slug: truobox
+  slug_aliases: []
+  name: Truobox
+  domains:
+    - value: truobox.com
+      role: primary
+      valid_from: 2026-09-05T22:09:43.000Z
+  category: hosting-infra
+profile:
+  description: Truobox provides secure cloud desktop and virtual workspace solutions for enterprises.
+  links:
+    site: https://truobox.com
+sources:
+  - source_id: src_25f927835718f3d0e6c020136911266bfacda98722e94232cc2c01fd8a1ec067
+    url: https://truobox.com
+programs:
+  - program_id: prg_01m1ssxna43jv3sn68m37vp8et
+    program_slug: truobox-startup-program
+    program_slug_aliases: []
+    title: Truobox Startup Program
+    summary: Truobox publishes a Startup Program for early-stage technology companies with cloud desktop and virtual workspace benefits.
+    source_ids:
+      - src_25f927835718f3d0e6c020136911266bfacda98722e94232cc2c01fd8a1ec067
+offers:
+  - offer_id: off_01m1ssxna5003cvgty924jys4c
+    program_id: prg_01m1ssxna43jv3sn68m37vp8et
+    offer_slug: truobox-startup-program
+    offer_slug_aliases: []
+    title: Truobox Startup Program
+    summary: Eligible early-stage technology companies receive Truobox cloud desktop and virtual workspace benefits through the Startup Program.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:09:43.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Truobox cloud desktop and virtual workspace benefits for eligible early-stage technology companies
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1ssxn9petwpjr42mabcz2v2
+      access_operator_entity_id: ent_01m1ssxn9petwpjr42mabcz2v2
+    access:
+      availability: public
+      method: form
+      url: https://truobox.com
+    source_ids:
+      - src_25f927835718f3d0e6c020136911266bfacda98722e94232cc2c01fd8a1ec067

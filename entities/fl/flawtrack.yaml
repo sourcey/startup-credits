@@ -1,0 +1,61 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1sr2z2az1rccmbhwr0jnmq8
+  slug: flawtrack
+  slug_aliases: []
+  name: Flawtrack
+  domains:
+    - value: flawtrack.com
+      role: primary
+      valid_from: 2026-09-05T21:38:57.000Z
+  category: devtools-other
+profile:
+  description: Flawtrack provides software vulnerability management and security tracking tools.
+  links:
+    site: https://www.flawtrack.com
+sources:
+  - source_id: src_6b22afb2836890458a53f46355c28c48e0936b6afd289734e85c7aaba88a202f
+    url: https://www.flawtrack.com/contact
+programs:
+  - program_id: prg_01m1sr2z2ftfcpa7rd0hh6c3k7
+    program_slug: flawtrack-startup-program
+    program_slug_aliases: []
+    title: Flawtrack Funded Startup Program
+    summary: Flawtrack offers qualifying funded startups at Series A and beyond a 90% discount on their platform.
+    source_ids:
+      - src_6b22afb2836890458a53f46355c28c48e0936b6afd289734e85c7aaba88a202f
+offers:
+  - offer_id: off_01m1sr2z2fnftqtmdm029rbzhc
+    program_id: prg_01m1sr2z2ftfcpa7rd0hh6c3k7
+    offer_slug: flawtrack-startup-program
+    offer_slug_aliases: []
+    title: Flawtrack Funded Startup Program
+    summary: Eligible funded startups at Series A and beyond receive 90% off Flawtrack plans.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T21:38:57.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 90% discount for funded startups at Series A and beyond
+          kind: discount
+          percentage:
+            basis_points: 9000
+            kind: exact
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: funded-startup
+        statement: Startups must apply through the vendor's startup program page and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1sr2z2az1rccmbhwr0jnmq8
+      access_operator_entity_id: ent_01m1sr2z2az1rccmbhwr0jnmq8
+    access:
+      availability: public
+      method: form
+      url: https://www.flawtrack.com/contact
+    source_ids:
+      - src_6b22afb2836890458a53f46355c28c48e0936b6afd289734e85c7aaba88a202f

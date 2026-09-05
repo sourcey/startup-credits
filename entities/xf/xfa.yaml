@@ -1,0 +1,58 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1ss86a1y6fa7217spxvwbry
+  slug: xfa
+  slug_aliases: []
+  name: XFA
+  domains:
+    - value: xfa.tech
+      role: primary
+      valid_from: 2026-09-05T21:58:00.000Z
+  category: ai-ml
+profile:
+  description: XFA provides AI-powered design and creative tools for startup product teams.
+  links:
+    site: https://xfa.tech
+sources:
+  - source_id: src_8683c7428e786df5c3a065b5fe6e83c573b8567ff8778b1f806eb16a9c10c72c
+    url: https://xfa.tech/usecases/startups
+programs:
+  - program_id: prg_01m1ss86a6hmbbqt9wymjdeqqz
+    program_slug: xfa-startup-program
+    program_slug_aliases: []
+    title: XFA for Startups
+    summary: XFA offers startups its solution free for two years for up to five users.
+    source_ids:
+      - src_8683c7428e786df5c3a065b5fe6e83c573b8567ff8778b1f806eb16a9c10c72c
+offers:
+  - offer_id: off_01m1ss86a6ty9ecenfary3h9cb
+    program_id: prg_01m1ss86a6hmbbqt9wymjdeqqz
+    offer_slug: xfa-startup-program
+    offer_slug_aliases: []
+    title: XFA for Startups
+    summary: Startups receive XFA free for two years for up to five users.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T21:58:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: XFA solution free for two years for up to five users for eligible startups
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1ss86a1y6fa7217spxvwbry
+      access_operator_entity_id: ent_01m1ss86a1y6fa7217spxvwbry
+    access:
+      availability: public
+      method: form
+      url: https://xfa.tech/usecases/startups
+    source_ids:
+      - src_8683c7428e786df5c3a065b5fe6e83c573b8567ff8778b1f806eb16a9c10c72c

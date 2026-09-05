@@ -1,0 +1,58 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1sskj5e7p02jrxkz0194v1j
+  slug: olqan
+  slug_aliases: []
+  name: Olqan
+  domains:
+    - value: olqan.com
+      role: primary
+      valid_from: 2026-09-05T22:04:12.000Z
+  category: marketing
+profile:
+  description: Olqan provides growth marketing and analytics tools for startups.
+  links:
+    site: https://olqan.com
+sources:
+  - source_id: src_8c2ee6f7917ce07df6bf14362dfccddff173c5edab755d60b5d7bafd52a8e7cd
+    url: https://olqan.com/startup-program/
+programs:
+  - program_id: prg_01m1sskj6e3rdx6hte6a8nnh5a
+    program_slug: olqan-startup-program
+    program_slug_aliases: []
+    title: Olqan Startup Program
+    summary: Olqan offers eligible new users the Growth plan free for 12 months, including onboarding, migration, and priority support.
+    source_ids:
+      - src_8c2ee6f7917ce07df6bf14362dfccddff173c5edab755d60b5d7bafd52a8e7cd
+offers:
+  - offer_id: off_01m1sskj6gfjne52rtkzkdf55g
+    program_id: prg_01m1sskj6e3rdx6hte6a8nnh5a
+    offer_slug: olqan-startup-program
+    offer_slug_aliases: []
+    title: Olqan Startup Program
+    summary: Eligible new users receive the Olqan Growth plan free for 12 months with onboarding, migration, and priority support.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:04:12.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Olqan Growth plan free for 12 months with onboarding, migration, and priority support for eligible new users
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1sskj5e7p02jrxkz0194v1j
+      access_operator_entity_id: ent_01m1sskj5e7p02jrxkz0194v1j
+    access:
+      availability: public
+      method: form
+      url: https://olqan.com/startup-program/
+    source_ids:
+      - src_8c2ee6f7917ce07df6bf14362dfccddff173c5edab755d60b5d7bafd52a8e7cd

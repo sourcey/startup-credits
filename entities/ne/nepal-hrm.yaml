@@ -1,0 +1,58 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1stgzs397gqph6jfn1md2bq
+  slug: nepal-hrm
+  slug_aliases: []
+  name: NepalHRM
+  domains:
+    - value: nepalhrm.com
+      role: primary
+      valid_from: 2026-09-05T22:20:14.000Z
+  category: productivity
+profile:
+  description: NepalHRM provides HR management software for Nepali businesses.
+  links:
+    site: https://nepalhrm.com
+sources:
+  - source_id: src_e1979d485c940bba4bd2c2da65bf4abc7077bd85ab8f22fa0ed2173c1460f63b
+    url: https://nepalhrm.com
+programs:
+  - program_id: prg_01m1stgzsf8yy24fm7zx58a0w5
+    program_slug: nepal-hrm-startup-program
+    program_slug_aliases: []
+    title: NepalHRM Startup Program
+    summary: NepalHRM's Startup Program gives registered Nepali businesses, startups, and teams with 10 or fewer active employees access to discounted HR software.
+    source_ids:
+      - src_e1979d485c940bba4bd2c2da65bf4abc7077bd85ab8f22fa0ed2173c1460f63b
+offers:
+  - offer_id: off_01m1stgzsfpcm29vy3vhbn6d41
+    program_id: prg_01m1stgzsf8yy24fm7zx58a0w5
+    offer_slug: nepal-hrm-startup-program
+    offer_slug_aliases: []
+    title: NepalHRM Startup Program
+    summary: Nepali businesses, startups, and teams with 10 or fewer employees receive discounted NepalHRM software.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:20:14.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Discounted NepalHRM software for registered Nepali businesses, startups, and teams with 10 or fewer employees
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1stgzs397gqph6jfn1md2bq
+      access_operator_entity_id: ent_01m1stgzs397gqph6jfn1md2bq
+    access:
+      availability: public
+      method: form
+      url: https://nepalhrm.com
+    source_ids:
+      - src_e1979d485c940bba4bd2c2da65bf4abc7077bd85ab8f22fa0ed2173c1460f63b

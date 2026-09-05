@@ -1,0 +1,63 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1sstphcvj7gxsb9qe7adn4h
+  slug: thealita
+  slug_aliases: []
+  name: theAlita
+  domains:
+    - value: thealita.com
+      role: primary
+      valid_from: 2026-09-05T22:08:06.000Z
+  category: marketing
+profile:
+  description: theAlita provides AI-powered lead export and audience segmentation tools for B2B companies.
+  links:
+    site: https://thealita.com
+sources:
+  - source_id: src_25723ef18000d3e9d8be87abd9e95b229b0168ac4686db7b899b9a41e30f2053
+    url: https://thealita.com
+programs:
+  - program_id: prg_01m1sstphpskg8jms9xk8gbvr5
+    program_slug: thealita-startup-program
+    program_slug_aliases: []
+    title: theAlita Startup Credit Program
+    summary: theAlita offers startups up to $20,000 in free credits for exporting leads and data, plus access to AI-powered audience-segmentation tools and growth resources.
+    source_ids:
+      - src_25723ef18000d3e9d8be87abd9e95b229b0168ac4686db7b899b9a41e30f2053
+offers:
+  - offer_id: off_01m1sstphp81ybarwb3psb5012
+    program_id: prg_01m1sstphpskg8jms9xk8gbvr5
+    offer_slug: thealita-startup-program
+    offer_slug_aliases: []
+    title: theAlita Startup Credit Program
+    summary: Startups receive up to $20,000 in free theAlita credits for exporting leads and data plus AI-powered audience-segmentation tools.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:08:06.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to $20,000 in free theAlita credits for exporting leads and data plus AI-powered audience-segmentation tools
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 2000000
+            kind: up-to
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1sstphcvj7gxsb9qe7adn4h
+      access_operator_entity_id: ent_01m1sstphcvj7gxsb9qe7adn4h
+    access:
+      availability: public
+      method: form
+      url: https://thealita.com
+    source_ids:
+      - src_25723ef18000d3e9d8be87abd9e95b229b0168ac4686db7b899b9a41e30f2053

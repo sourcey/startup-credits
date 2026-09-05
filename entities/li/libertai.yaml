@@ -1,0 +1,63 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1sv7q5scjsk0q4cm80ppbhz
+  slug: libertai
+  slug_aliases: []
+  name: LibertAI
+  domains:
+    - value: libertai.io
+      role: primary
+      valid_from: 2026-09-05T22:32:39.000Z
+  category: ai-ml
+profile:
+  description: LibertAI provides private AI inference and open-source model services.
+  links:
+    site: https://libertai.io
+sources:
+  - source_id: src_05dc4cebe04687e5dedca44dc35756dd383f054c88f1575d44f872c13f18d9aa
+    url: https://libertai.io
+programs:
+  - program_id: prg_01m1sv7q6ayjcf7c8z621dwewq
+    program_slug: libertai-startup-program
+    program_slug_aliases: []
+    title: LibertAI Sovereign Program
+    summary: LibertAI's Sovereign Program offers selected startups building on private inference up to $10,000 in credits for GLM-5.2 and the full model catalog.
+    source_ids:
+      - src_05dc4cebe04687e5dedca44dc35756dd383f054c88f1575d44f872c13f18d9aa
+offers:
+  - offer_id: off_01m1sv7q6byhb47dan0j1wfstk
+    program_id: prg_01m1sv7q6ayjcf7c8z621dwewq
+    offer_slug: libertai-startup-program
+    offer_slug_aliases: []
+    title: LibertAI Sovereign Program
+    summary: Selected startups building on private inference receive up to $10,000 in LibertAI credits for GLM-5.2 and the full model catalog.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:32:39.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to $10,000 in LibertAI credits for GLM-5.2 and full model catalog for selected startups building on private inference
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 1000000
+            kind: up-to
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1sv7q5scjsk0q4cm80ppbhz
+      access_operator_entity_id: ent_01m1sv7q5scjsk0q4cm80ppbhz
+    access:
+      availability: public
+      method: form
+      url: https://libertai.io
+    source_ids:
+      - src_05dc4cebe04687e5dedca44dc35756dd383f054c88f1575d44f872c13f18d9aa

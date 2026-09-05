@@ -1,0 +1,79 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_e1mn98vte909j1747aecpkx63t
+  slug: railway
+  slug_aliases: []
+  name: Railway
+  domains:
+    - value: railway.com
+      role: primary
+      valid_from: 2021-01-01T00:00:00.000Z
+  category: hosting-infra
+profile:
+  description: Railway is a cloud hosting platform where you can deploy full-stack applications in seconds with usage-based pricing and zero configuration.
+  links:
+    site: https://railway.com
+sources:
+  - source_id: src_14308d74ef713c63cb7aea6748e62e3c8a67c8bc6921ba53d1dd809f0693db4d
+    url: https://railway.com/pricing
+programs:
+  - program_id: prg_e1mn98vte909j1747aecpkx63t
+    program_slug: railway-startup-program
+    program_slug_aliases: []
+    title: Railway Startup Program
+    summary: Railway supports early-stage startups with deployment infrastructure and free credits.
+    source_ids:
+      - src_14308d74ef713c63cb7aea6748e62e3c8a67c8bc6921ba53d1dd809f0693db4d
+offers:
+  - offer_id: off_e1mn98vte909j1747aecpkx63t
+    program_id: prg_e1mn98vte909j1747aecpkx63t
+    offer_slug: 5-usd-credit-trial
+    offer_slug_aliases: []
+    title: $5 one-time credit grant
+    summary: New Railway users receive a $5 one-time credit to try the platform before committing to paid usage.
+    lifecycle:
+      status: active
+      effective_from: 2021-01-01T00:00:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: $5 one-time credit to try Railway
+          duration:
+            kind: exact
+            value: P1M
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 500
+            kind: exact
+        - benefit_id: ben_02
+          description: 50% off first month of paid usage
+          duration:
+            kind: exact
+            value: P1M
+          kind: discount
+          percentage:
+            basis_points: 5000
+            kind: exact
+        - benefit_id: ben_03
+          description: Priority deployment support and infrastructure guidance
+          kind: other
+      consideration:
+        description: The public program page does not establish separate consideration.
+        kind: unknown
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: New Railway users may receive credits at Railway's discretion.
+    roles:
+      terms_authority_entity_id: ent_e1mn98vte909j1747aecpkx63t
+      access_operator_entity_id: ent_e1mn98vte909j1747aecpkx63t
+    access:
+      availability: public
+      method: form
+      url: https://railway.com
+    source_ids:
+      - src_14308d74ef713c63cb7aea6748e62e3c8a67c8bc6921ba53d1dd809f0693db4d

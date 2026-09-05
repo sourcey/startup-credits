@@ -1,0 +1,58 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1ss884315z0ggd5mbtmjphy
+  slug: fabricbloc
+  slug_aliases: []
+  name: FabricBloc
+  domains:
+    - value: fabricbloc.com
+      role: primary
+      valid_from: 2026-09-05T21:58:00.000Z
+  category: productivity
+profile:
+  description: FabricBloc provides a startup operations and workspace management platform.
+  links:
+    site: https://fabricbloc.com
+sources:
+  - source_id: src_4c829e87a468890ad125380e788e81ca00ebfa7402392614cbc2dd57248e84c6
+    url: https://fabricbloc.com/founders
+programs:
+  - program_id: prg_01m1ss8848wxmm829q116d50e7
+    program_slug: fabricbloc-startup-program
+    program_slug_aliases: []
+    title: FabricBloc Founders Program
+    summary: FabricBloc publishes a Founders Program for pre-seed and seed-stage teams building a primary product on FabricBloc with at least one technical co-founder.
+    source_ids:
+      - src_4c829e87a468890ad125380e788e81ca00ebfa7402392614cbc2dd57248e84c6
+offers:
+  - offer_id: off_01m1ss8848amqq5x0kmt9grr4t
+    program_id: prg_01m1ss8848wxmm829q116d50e7
+    offer_slug: fabricbloc-startup-program
+    offer_slug_aliases: []
+    title: FabricBloc Founders Program
+    summary: Pre-seed and seed-stage teams with at least one technical co-founder building on FabricBloc receive the Founders Program benefits.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T21:58:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Founders Program benefits for pre-seed and seed-stage teams building a primary product on FabricBloc with at least one technical co-founder
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1ss884315z0ggd5mbtmjphy
+      access_operator_entity_id: ent_01m1ss884315z0ggd5mbtmjphy
+    access:
+      availability: public
+      method: form
+      url: https://fabricbloc.com/founders
+    source_ids:
+      - src_4c829e87a468890ad125380e788e81ca00ebfa7402392614cbc2dd57248e84c6

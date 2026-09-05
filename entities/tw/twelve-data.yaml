@@ -1,0 +1,61 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1svf9kfncvc137py34fp8h0
+  slug: twelve-data
+  slug_aliases: []
+  name: Twelve Data
+  domains:
+    - value: twelvedata.com
+      role: primary
+      valid_from: 2026-09-05T22:36:50.000Z
+  category: data-analytics
+profile:
+  description: Twelve Data provides financial market data and APIs.
+  links:
+    site: https://twelvedata.com
+sources:
+  - source_id: src_42e1ffc6fe7d7e9e7b548a7446a84880060f17a4a6c19c68a0b274b59cd2a2eb
+    url: https://twelvedata.com
+programs:
+  - program_id: prg_01m1svf9kqv75ekf2wsya7ah8y
+    program_slug: twelve-data-startup-program
+    program_slug_aliases: []
+    title: Twelve Data Early Stage Program
+    summary: Early-stage startups can receive 20% off Twelve Data plans for 12 months through the Early Stage Program.
+    source_ids:
+      - src_42e1ffc6fe7d7e9e7b548a7446a84880060f17a4a6c19c68a0b274b59cd2a2eb
+offers:
+  - offer_id: off_01m1svf9kq7jxrema9e6vxk94j
+    program_id: prg_01m1svf9kqv75ekf2wsya7ah8y
+    offer_slug: twelve-data-startup-program
+    offer_slug_aliases: []
+    title: Twelve Data Early Stage Program
+    summary: Early-stage startups receive 20% off Twelve Data plans for 12 months through the Early Stage Program.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:36:50.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 20% off Twelve Data plans for 12 months for early-stage startups through the Early Stage Program
+          kind: discount
+          percentage:
+            basis_points: 2000
+            kind: exact
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1svf9kfncvc137py34fp8h0
+      access_operator_entity_id: ent_01m1svf9kfncvc137py34fp8h0
+    access:
+      availability: public
+      method: form
+      url: https://twelvedata.com
+    source_ids:
+      - src_42e1ffc6fe7d7e9e7b548a7446a84880060f17a4a6c19c68a0b274b59cd2a2eb

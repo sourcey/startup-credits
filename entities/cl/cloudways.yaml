@@ -1,0 +1,58 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1st6pdg17z60y7qfvmsxtgg
+  slug: cloudways
+  slug_aliases: []
+  name: Cloudways
+  domains:
+    - value: cloudways.com
+      role: primary
+      valid_from: 2026-09-05T22:14:40.000Z
+  category: hosting-infra
+profile:
+  description: Cloudways provides managed cloud hosting with automatic scaling and 24/7 support.
+  links:
+    site: https://www.cloudways.com
+sources:
+  - source_id: src_5ea92d78f07ac2ec88127e427e107c9a94962cf1476a22dbe9f02d8946f30e3a
+    url: https://www.cloudways.com/en/startup-program.php
+programs:
+  - program_id: prg_01m1st6pedx90qtmaxt0bdqdk9
+    program_slug: cloudways-startup-program
+    program_slug_aliases: []
+    title: Cloudways Startup Program
+    summary: Cloudways publishes a startup program with tiered platform credits, invoice discounts, support, mentorship, and co-marketing benefits.
+    source_ids:
+      - src_5ea92d78f07ac2ec88127e427e107c9a94962cf1476a22dbe9f02d8946f30e3a
+offers:
+  - offer_id: off_01m1st6peegxhnqecpy8j52jde
+    program_id: prg_01m1st6pedx90qtmaxt0bdqdk9
+    offer_slug: cloudways-startup-program
+    offer_slug_aliases: []
+    title: Cloudways Startup Program
+    summary: Startups receive tiered Cloudways platform credits, invoice discounts, support, mentorship, and co-marketing benefits.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:14:40.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Tiered Cloudways platform credits, invoice discounts, support, mentorship, and co-marketing benefits
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1st6pdg17z60y7qfvmsxtgg
+      access_operator_entity_id: ent_01m1st6pdg17z60y7qfvmsxtgg
+    access:
+      availability: public
+      method: form
+      url: https://www.cloudways.com/en/startup-program.php
+    source_ids:
+      - src_5ea92d78f07ac2ec88127e427e107c9a94962cf1476a22dbe9f02d8946f30e3a

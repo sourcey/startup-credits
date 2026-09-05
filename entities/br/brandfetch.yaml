@@ -1,0 +1,61 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1srn37yd0q0jfvwaagvm140
+  slug: brandfetch
+  slug_aliases: []
+  name: Brandfetch
+  domains:
+    - value: brandfetch.com
+      role: primary
+      valid_from: 2026-09-05T21:47:33.000Z
+  category: marketing
+profile:
+  description: Brandfetch helps companies manage and synchronize their brand assets across platforms.
+  links:
+    site: https://brandfetch.com
+sources:
+  - source_id: src_4e1686d3c1203cde36ab68a2cf36f3b529201daebbc4033a6c240fadaaa1e99f
+    url: https://brandfetch.com
+programs:
+  - program_id: prg_01m1srn3931zgc4yfbz86hfq03
+    program_slug: brandfetch-startup-program
+    program_slug_aliases: []
+    title: Brandfetch Startup Program
+    summary: Brandfetch offers qualifying startups and nonprofits a 40% discount on paid plans for the first twelve months.
+    source_ids:
+      - src_4e1686d3c1203cde36ab68a2cf36f3b529201daebbc4033a6c240fadaaa1e99f
+offers:
+  - offer_id: off_01m1srn393t95zy6r48agv72xn
+    program_id: prg_01m1srn3931zgc4yfbz86hfq03
+    offer_slug: brandfetch-startup-program
+    offer_slug_aliases: []
+    title: Brandfetch Startup Program
+    summary: Qualifying startups and nonprofits receive 40% off Brandfetch paid plans for the first twelve months.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T21:47:33.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 40% discount on Brandfetch paid plans for qualifying startups and nonprofits for 12 months
+          kind: discount
+          percentage:
+            basis_points: 4000
+            kind: exact
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1srn37yd0q0jfvwaagvm140
+      access_operator_entity_id: ent_01m1srn37yd0q0jfvwaagvm140
+    access:
+      availability: public
+      method: form
+      url: https://brandfetch.com
+    source_ids:
+      - src_4e1686d3c1203cde36ab68a2cf36f3b529201daebbc4033a6c240fadaaa1e99f

@@ -1,0 +1,58 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1sv34j0a03h1canhv9aaxfz
+  slug: socure
+  slug_aliases: []
+  name: Socure
+  domains:
+    - value: socure.com
+      role: primary
+      valid_from: 2026-09-05T22:30:11.000Z
+  category: auth-security
+profile:
+  description: Socure provides identity verification and fraud prevention tools.
+  links:
+    site: https://www.socure.com
+sources:
+  - source_id: src_b373b54b13f7bee29656410535e63b8b9a6efc191e40a268b8dca60d2a48bd99
+    url: https://www.socure.com/launch
+programs:
+  - program_id: prg_01m1sv34jcm1grdx441nz4tej7
+    program_slug: socure-startup-program
+    program_slug_aliases: []
+    title: Socure Launch for Startups
+    summary: Socure Launch offers identity verification and fraud prevention tools for qualifying early-stage startups.
+    source_ids:
+      - src_b373b54b13f7bee29656410535e63b8b9a6efc191e40a268b8dca60d2a48bd99
+offers:
+  - offer_id: off_01m1sv34jdz4nrbftvybgej5qy
+    program_id: prg_01m1sv34jcm1grdx441nz4tej7
+    offer_slug: socure-startup-program
+    offer_slug_aliases: []
+    title: Socure Launch for Startups
+    summary: Qualifying early-stage startups receive Socure identity verification and fraud prevention tools through the Launch program.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:30:11.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Socure identity verification and fraud prevention tools for qualifying early-stage startups through the Launch program
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1sv34j0a03h1canhv9aaxfz
+      access_operator_entity_id: ent_01m1sv34j0a03h1canhv9aaxfz
+    access:
+      availability: public
+      method: form
+      url: https://www.socure.com/launch
+    source_ids:
+      - src_b373b54b13f7bee29656410535e63b8b9a6efc191e40a268b8dca60d2a48bd99

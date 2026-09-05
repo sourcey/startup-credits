@@ -1,0 +1,61 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1sse1p4cn99nz05tr10mrss
+  slug: opstart
+  slug_aliases: []
+  name: OpStart
+  domains:
+    - value: opstart.co
+      role: primary
+      valid_from: 2026-09-05T22:01:11.000Z
+  category: finance-accounting
+profile:
+  description: OpStart provides bookkeeping, bill pay, and payroll support services for startups.
+  links:
+    site: https://opstart.co
+sources:
+  - source_id: src_261b7b1c2300594f05cb12eb62b77fd8df850a4d8ea7cc671a92117dd1bfa846
+    url: https://opstart.co
+programs:
+  - program_id: prg_01m1sse1pjt8gcq9a8hjt28qe3
+    program_slug: opstart-startup-program
+    program_slug_aliases: []
+    title: OpStart Startup Program
+    summary: Startup Stack members get 10% off OpStart bookkeeping, bill pay, payroll support, and related services for the first 12 months, capped at $1,000.
+    source_ids:
+      - src_261b7b1c2300594f05cb12eb62b77fd8df850a4d8ea7cc671a92117dd1bfa846
+offers:
+  - offer_id: off_01m1sse1pjses9gsrwwnc3fr04
+    program_id: prg_01m1sse1pjt8gcq9a8hjt28qe3
+    offer_slug: opstart-startup-program
+    offer_slug_aliases: []
+    title: OpStart Startup Program
+    summary: Startup Stack members receive 10% off OpStart services for 12 months, capped at $1,000.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:01:11.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 10% off OpStart bookkeeping, bill pay, and payroll support services for 12 months for Startup Stack members, capped at $1,000
+          kind: discount
+          percentage:
+            basis_points: 1000
+            kind: exact
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1sse1p4cn99nz05tr10mrss
+      access_operator_entity_id: ent_01m1sse1p4cn99nz05tr10mrss
+    access:
+      availability: public
+      method: form
+      url: https://opstart.co
+    source_ids:
+      - src_261b7b1c2300594f05cb12eb62b77fd8df850a4d8ea7cc671a92117dd1bfa846

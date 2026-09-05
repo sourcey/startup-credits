@@ -1,0 +1,58 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1ssre8aztb98tdw5zwmqhwa
+  slug: huawei-cloud
+  slug_aliases: []
+  name: Huawei Cloud
+  domains:
+    - value: huaweicloud.com
+      role: primary
+      valid_from: 2026-09-05T22:06:51.000Z
+  category: hosting-infra
+profile:
+  description: Huawei Cloud provides global cloud computing and infrastructure services.
+  links:
+    site: https://www.huaweicloud.com
+sources:
+  - source_id: src_52daea303e3d9f839e1041d56beb52788b1e38539f0c809f9b9fec1783251530
+    url: https://startup.huaweicloud.com/intl/en-us/index.html
+programs:
+  - program_id: prg_01m1ssre97036jm8t8q51hbcdt
+    program_slug: huawei-cloud-startup-program
+    program_slug_aliases: []
+    title: Huawei Cloud Startup Program
+    summary: Huawei Cloud offers a global startup-specific program with cloud credits and support services for qualifying startups.
+    source_ids:
+      - src_52daea303e3d9f839e1041d56beb52788b1e38539f0c809f9b9fec1783251530
+offers:
+  - offer_id: off_01m1ssre98yz47v4wqmq4ny2qp
+    program_id: prg_01m1ssre97036jm8t8q51hbcdt
+    offer_slug: huawei-cloud-startup-program
+    offer_slug_aliases: []
+    title: Huawei Cloud Startup Program
+    summary: Qualifying startups receive Huawei Cloud credits and support services through the global Huawei Cloud Startup Program.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:06:51.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Huawei Cloud credits and support services for qualifying startups through the Huawei Cloud Startup Program
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1ssre8aztb98tdw5zwmqhwa
+      access_operator_entity_id: ent_01m1ssre8aztb98tdw5zwmqhwa
+    access:
+      availability: public
+      method: form
+      url: https://startup.huaweicloud.com/intl/en-us/index.html
+    source_ids:
+      - src_52daea303e3d9f839e1041d56beb52788b1e38539f0c809f9b9fec1783251530

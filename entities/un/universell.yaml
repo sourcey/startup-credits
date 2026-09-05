@@ -1,0 +1,58 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1ssa8h64gg0wenfsj5b8n6s
+  slug: universell
+  slug_aliases: []
+  name: Universell
+  domains:
+    - value: universell.us
+      role: primary
+      valid_from: 2026-09-05T21:59:06.000Z
+  category: productivity
+profile:
+  description: Universell provides a business management platform integrating over 100 business tools for startups.
+  links:
+    site: https://universell.us
+sources:
+  - source_id: src_16cee82525c3c355e39c513c0374f8675e3383b9a76fd794ceb66e42133b7cd5
+    url: https://universell.us
+programs:
+  - program_id: prg_01m1ssa8j1qjdpbhafwq1hfse9
+    program_slug: universell-startup-program
+    program_slug_aliases: []
+    title: Universell Startup Program
+    summary: Universell offers qualified startups 12 months of free access to its $99 subscription tier for up to 10 employees with access to more than 100 integrated business tools.
+    source_ids:
+      - src_16cee82525c3c355e39c513c0374f8675e3383b9a76fd794ceb66e42133b7cd5
+offers:
+  - offer_id: off_01m1ssa8j1q4x2zhkcrtkjg959
+    program_id: prg_01m1ssa8j1qjdpbhafwq1hfse9
+    offer_slug: universell-startup-program
+    offer_slug_aliases: []
+    title: Universell Startup Program
+    summary: Qualified startups receive 12 months of free access to Universell's $99 tier for up to 10 employees with access to 100+ integrated business tools.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T21:59:06.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 12 months free access to Universell's $99 tier for up to 10 employees for qualified startups
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1ssa8h64gg0wenfsj5b8n6s
+      access_operator_entity_id: ent_01m1ssa8h64gg0wenfsj5b8n6s
+    access:
+      availability: public
+      method: form
+      url: https://universell.us
+    source_ids:
+      - src_16cee82525c3c355e39c513c0374f8675e3383b9a76fd794ceb66e42133b7cd5

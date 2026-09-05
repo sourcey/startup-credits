@@ -1,0 +1,58 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1ss4cktwqdz3ny3sn7f8qak
+  slug: trustcloud
+  slug_aliases: []
+  name: TrustCloud
+  domains:
+    - value: trustcloud.ai
+      role: primary
+      valid_from: 2026-09-05T21:55:53.000Z
+  category: legal-compliance
+profile:
+  description: TrustCloud provides SOC 2 compliance readiness and trust infrastructure for startups.
+  links:
+    site: https://trustcloud.ai
+sources:
+  - source_id: src_f13537bd3be502721f61b5949bd98e0d1a6e1affe5831a2ec97eeaecfc3cd401
+    url: https://trustcloud.ai
+programs:
+  - program_id: prg_01m1ss4ckz13pffkf6zhdc357s
+    program_slug: trustcloud-startup-program
+    program_slug_aliases: []
+    title: TrustCloud Free SOC 2 for Startups
+    summary: TrustCloud gives startups with up to 20 employees a free-forever Starter plan for SOC 2 Type I and Type II readiness, including a TrustShare portal.
+    source_ids:
+      - src_f13537bd3be502721f61b5949bd98e0d1a6e1affe5831a2ec97eeaecfc3cd401
+offers:
+  - offer_id: off_01m1ss4ckzhegfrcyv0fa97368
+    program_id: prg_01m1ss4ckz13pffkf6zhdc357s
+    offer_slug: trustcloud-startup-program
+    offer_slug_aliases: []
+    title: TrustCloud Free SOC 2 for Startups
+    summary: Startups with up to 20 employees receive a free-forever TrustCloud Starter plan for SOC 2 Type I and Type II readiness.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T21:55:53.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Free-forever TrustCloud Starter plan for SOC 2 Type I and Type II readiness for startups with up to 20 employees
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1ss4cktwqdz3ny3sn7f8qak
+      access_operator_entity_id: ent_01m1ss4cktwqdz3ny3sn7f8qak
+    access:
+      availability: public
+      method: form
+      url: https://trustcloud.ai
+    source_ids:
+      - src_f13537bd3be502721f61b5949bd98e0d1a6e1affe5831a2ec97eeaecfc3cd401

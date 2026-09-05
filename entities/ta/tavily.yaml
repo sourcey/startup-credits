@@ -1,0 +1,58 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1sv33g6kr4qyj1c3vefgew8
+  slug: tavily
+  slug_aliases: []
+  name: Tavily
+  domains:
+    - value: tavily.com
+      role: primary
+      valid_from: 2026-09-05T22:30:11.000Z
+  category: ai-ml
+profile:
+  description: Tavily provides AI search and information retrieval APIs.
+  links:
+    site: https://tavily.com
+sources:
+  - source_id: src_a91c8634aa2edc5a5ed1949f7a063a2093cd668cfaf3ddd9ebc7f70e5fe741fa
+    url: https://tavily.com/pricing
+programs:
+  - program_id: prg_01m1sv33gqjdmbgpd24h9qcshy
+    program_slug: tavily-startup-program
+    program_slug_aliases: []
+    title: Tavily Startup Program
+    summary: Tavily publishes an official startup program offering discounted per-credit API access and custom credit allocations for early-stage companies and AI builders.
+    source_ids:
+      - src_a91c8634aa2edc5a5ed1949f7a063a2093cd668cfaf3ddd9ebc7f70e5fe741fa
+offers:
+  - offer_id: off_01m1sv33gq4hyt8dy94qc708t8
+    program_id: prg_01m1sv33gqjdmbgpd24h9qcshy
+    offer_slug: tavily-startup-program
+    offer_slug_aliases: []
+    title: Tavily Startup Program
+    summary: Early-stage companies and AI builders receive discounted Tavily per-credit API access and custom credit allocations.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:30:11.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Discounted Tavily per-credit API access and custom credit allocations for early-stage companies and AI builders
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1sv33g6kr4qyj1c3vefgew8
+      access_operator_entity_id: ent_01m1sv33g6kr4qyj1c3vefgew8
+    access:
+      availability: public
+      method: form
+      url: https://tavily.com/pricing
+    source_ids:
+      - src_a91c8634aa2edc5a5ed1949f7a063a2093cd668cfaf3ddd9ebc7f70e5fe741fa

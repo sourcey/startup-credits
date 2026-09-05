@@ -1,0 +1,58 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1ssa6nz8vkpm1qxmeda4hae
+  slug: debito-pay
+  slug_aliases: []
+  name: Debito Pay
+  domains:
+    - value: debitopay.com
+      role: primary
+      valid_from: 2026-09-05T21:59:06.000Z
+  category: payments-fintech
+profile:
+  description: Debito Pay provides payment processing and financial infrastructure for African startups.
+  links:
+    site: https://debitopay.com
+sources:
+  - source_id: src_60556054191c26f57106a87d5b171ca71e9f45ac9be665d6c16fb5de0a0a3fea
+    url: https://debitopay.com
+programs:
+  - program_id: prg_01m1ssa6pet5j13g3jf76279kc
+    program_slug: debito-pay-startup-program
+    program_slug_aliases: []
+    title: Debito Pay Startup Program
+    summary: Debito Pay offers eligible African startups zero payment-processing fees for their first 12 months, plus free integration and support.
+    source_ids:
+      - src_60556054191c26f57106a87d5b171ca71e9f45ac9be665d6c16fb5de0a0a3fea
+offers:
+  - offer_id: off_01m1ssa6pedg5xtjhzb0kpbwwf
+    program_id: prg_01m1ssa6pet5j13g3jf76279kc
+    offer_slug: debito-pay-startup-program
+    offer_slug_aliases: []
+    title: Debito Pay Startup Program
+    summary: Eligible African startups receive zero payment-processing fees for their first 12 months plus free integration and support.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T21:59:06.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Zero payment-processing fees for 12 months plus free integration and support for eligible African startups
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1ssa6nz8vkpm1qxmeda4hae
+      access_operator_entity_id: ent_01m1ssa6nz8vkpm1qxmeda4hae
+    access:
+      availability: public
+      method: form
+      url: https://debitopay.com
+    source_ids:
+      - src_60556054191c26f57106a87d5b171ca71e9f45ac9be665d6c16fb5de0a0a3fea

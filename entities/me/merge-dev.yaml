@@ -1,0 +1,63 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1srr1c6rpz6b9gzhwmnp69f
+  slug: merge-dev
+  slug_aliases: []
+  name: Merge
+  domains:
+    - value: merge.dev
+      role: primary
+      valid_from: 2026-09-05T21:49:11.000Z
+  category: apis-integration
+profile:
+  description: Merge provides a unified API platform enabling companies to integrate with hundreds of third-party tools.
+  links:
+    site: https://www.merge.dev
+sources:
+  - source_id: src_f9724e0d918e3e61842cc47567718af60701136b9c250f8579f96ba92efcba3b
+    url: https://www.merge.dev/offers/startup-program
+programs:
+  - program_id: prg_01m1srr1cbm1ae9q4t6ascjzmg
+    program_slug: merge-dev-startup-program
+    program_slug_aliases: []
+    title: Merge Startup Program
+    summary: Merge offers qualifying startups $2,000 in Merge Gateway credits plus $5,000 off Merge Unified through its startup program.
+    source_ids:
+      - src_f9724e0d918e3e61842cc47567718af60701136b9c250f8579f96ba92efcba3b
+offers:
+  - offer_id: off_01m1srr1cbb9gw2nszm5v3qwz2
+    program_id: prg_01m1srr1cbm1ae9q4t6ascjzmg
+    offer_slug: merge-dev-startup-program
+    offer_slug_aliases: []
+    title: Merge Startup Program
+    summary: Eligible startups receive $2,000 in Merge Gateway credits and $5,000 off Merge Unified through the Merge startup program.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T21:49:11.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: $2,000 in Merge Gateway credits plus $5,000 off Merge Unified for eligible startups
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 200000
+            kind: up-to
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1srr1c6rpz6b9gzhwmnp69f
+      access_operator_entity_id: ent_01m1srr1c6rpz6b9gzhwmnp69f
+    access:
+      availability: public
+      method: form
+      url: https://www.merge.dev/offers/startup-program
+    source_ids:
+      - src_f9724e0d918e3e61842cc47567718af60701136b9c250f8579f96ba92efcba3b

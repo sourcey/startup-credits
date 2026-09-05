@@ -1,0 +1,61 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1srn2dypy5yfcvc1bzkmr13
+  slug: rows-n-columns
+  slug_aliases: []
+  name: Rows n' Columns
+  domains:
+    - value: rowsncolumns.app
+      role: primary
+      valid_from: 2026-09-05T21:47:33.000Z
+  category: productivity
+profile:
+  description: Rows n' Columns provides a composable React spreadsheet component for developers and product teams.
+  links:
+    site: https://rowsncolumns.app
+sources:
+  - source_id: src_b7b202174b52652dc004eb25cfc913edd6d022da1d40bf1beea4371432e31c97
+    url: https://rowsncolumns.app/pricing
+programs:
+  - program_id: prg_01m1srn2f6tbj20a1faxsah2hw
+    program_slug: rows-n-columns-startup-program
+    program_slug_aliases: []
+    title: Rows n' Columns Startup Program
+    summary: Rows n' Columns offers startups with five or fewer employees a 15% discount on Professional license plans.
+    source_ids:
+      - src_b7b202174b52652dc004eb25cfc913edd6d022da1d40bf1beea4371432e31c97
+offers:
+  - offer_id: off_01m1srn2f6eh00xq854bsrsnnq
+    program_id: prg_01m1srn2f6tbj20a1faxsah2hw
+    offer_slug: rows-n-columns-startup-program
+    offer_slug_aliases: []
+    title: Rows n' Columns Startup Program
+    summary: Startups with five or fewer employees receive 15% off Rows n' Columns Professional license plans.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T21:47:33.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 15% discount on Professional license plans for startups with five or fewer employees
+          kind: discount
+          percentage:
+            basis_points: 1500
+            kind: exact
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1srn2dypy5yfcvc1bzkmr13
+      access_operator_entity_id: ent_01m1srn2dypy5yfcvc1bzkmr13
+    access:
+      availability: public
+      method: form
+      url: https://rowsncolumns.app/pricing
+    source_ids:
+      - src_b7b202174b52652dc004eb25cfc913edd6d022da1d40bf1beea4371432e31c97

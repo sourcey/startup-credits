@@ -1,0 +1,63 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1stm336jpk2k6qnv5m4v4fs
+  slug: devin
+  slug_aliases: []
+  name: Devin
+  domains:
+    - value: devin.ai
+      role: primary
+      valid_from: 2026-09-05T22:21:58.000Z
+  category: ai-ml
+profile:
+  description: Devin provides AI software engineering and coding assistant tools.
+  links:
+    site: https://devin.ai
+sources:
+  - source_id: src_42aa897a033aa2d7563388ef0e36a3ad727cf743ef264e8188fe054e5d7ca709
+    url: https://devin.ai/startups
+programs:
+  - program_id: prg_01m1stm33hpcdd3zw5jmhcbkm4
+    program_slug: devin-startup-program
+    program_slug_aliases: []
+    title: Devin for Startups
+    summary: Devin for Startups offers $5,000 in Devin credits for accepted startups plus matching grants up to $5,000.
+    source_ids:
+      - src_42aa897a033aa2d7563388ef0e36a3ad727cf743ef264e8188fe054e5d7ca709
+offers:
+  - offer_id: off_01m1stm33h35nhrm4m4rcw3zxh
+    program_id: prg_01m1stm33hpcdd3zw5jmhcbkm4
+    offer_slug: devin-startup-program
+    offer_slug_aliases: []
+    title: Devin for Startups
+    summary: Accepted startups receive $5,000 in Devin credits plus matching grants up to $5,000 through the startup program.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:21:58.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: $5,000 in Devin credits plus matching grants up to $5,000 for accepted startups
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 500000
+            kind: up-to
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1stm336jpk2k6qnv5m4v4fs
+      access_operator_entity_id: ent_01m1stm336jpk2k6qnv5m4v4fs
+    access:
+      availability: public
+      method: form
+      url: https://devin.ai/startups
+    source_ids:
+      - src_42aa897a033aa2d7563388ef0e36a3ad727cf743ef264e8188fe054e5d7ca709

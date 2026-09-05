@@ -1,0 +1,58 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1ss15x91npdbqad56ffhqwm
+  slug: lyrid
+  slug_aliases: []
+  name: Lyrid
+  domains:
+    - value: lyrid.com
+      role: primary
+      valid_from: 2026-09-05T21:54:09.000Z
+  category: hosting-infra
+profile:
+  description: Lyrid provides cloud infrastructure and managed hosting services for startups.
+  links:
+    site: https://lyrid.com
+sources:
+  - source_id: src_dc14c43b7c9ce76f064f4ede788ca3e858017f83083b07add46bd3228ecde173
+    url: https://lyrid.com
+programs:
+  - program_id: prg_01m1ss15xrc813wackndnnecdh
+    program_slug: lyrid-startup-program
+    program_slug_aliases: []
+    title: Lyrid for Startups
+    summary: Lyrid offers a six-month Lyrid Enterprise plan at no charge for eligible new customers applying with an accelerator partner code.
+    source_ids:
+      - src_dc14c43b7c9ce76f064f4ede788ca3e858017f83083b07add46bd3228ecde173
+offers:
+  - offer_id: off_01m1ss15xrdkwnbv0jxc013b7q
+    program_id: prg_01m1ss15xrc813wackndnnecdh
+    offer_slug: lyrid-startup-program
+    offer_slug_aliases: []
+    title: Lyrid for Startups
+    summary: Eligible new customers with an accelerator partner code receive a six-month Lyrid Enterprise plan at no charge plus migration and engineering consulting.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T21:54:09.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Six-month Lyrid Enterprise plan at no charge plus migration and engineering consulting for eligible new customers with accelerator partner code
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1ss15x91npdbqad56ffhqwm
+      access_operator_entity_id: ent_01m1ss15x91npdbqad56ffhqwm
+    access:
+      availability: public
+      method: form
+      url: https://lyrid.com
+    source_ids:
+      - src_dc14c43b7c9ce76f064f4ede788ca3e858017f83083b07add46bd3228ecde173

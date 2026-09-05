@@ -1,0 +1,58 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1srr3mpmqyy6wajk590a8p6
+  slug: polybase
+  slug_aliases: []
+  name: Polybase
+  domains:
+    - value: polybase.xyz
+      role: primary
+      valid_from: 2026-09-05T21:49:11.000Z
+  category: databases
+profile:
+  description: Polybase provides a decentralized database for web3 and web2 applications with SQL-like query capabilities.
+  links:
+    site: https://polybase.xyz
+sources:
+  - source_id: src_5829ab0326e0a6d5a3fd7b35e5d4941e1ec669938a7aa2bb11273a029a3435e7
+    url: https://polybase.xyz
+programs:
+  - program_id: prg_01m1srr3n3efh8zsna8aydf81d
+    program_slug: polybase-startup-program
+    program_slug_aliases: []
+    title: Polybase Founders Program
+    summary: Polybase offers approved startups Polybase Cloud for 12 months for up to 25 seats at no cost through the Founders Program.
+    source_ids:
+      - src_5829ab0326e0a6d5a3fd7b35e5d4941e1ec669938a7aa2bb11273a029a3435e7
+offers:
+  - offer_id: off_01m1srr3n839jfwz59hp63tmfc
+    program_id: prg_01m1srr3n3efh8zsna8aydf81d
+    offer_slug: polybase-startup-program
+    offer_slug_aliases: []
+    title: Polybase Founders Program
+    summary: Eligible startups receive Polybase Cloud for 12 months for up to 25 seats at no cost through the Founders Program.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T21:49:11.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Polybase Cloud for 12 months for up to 25 seats at no cost for approved startups in the Founders Program
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1srr3mpmqyy6wajk590a8p6
+      access_operator_entity_id: ent_01m1srr3mpmqyy6wajk590a8p6
+    access:
+      availability: public
+      method: form
+      url: https://polybase.xyz
+    source_ids:
+      - src_5829ab0326e0a6d5a3fd7b35e5d4941e1ec669938a7aa2bb11273a029a3435e7

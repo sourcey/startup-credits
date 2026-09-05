@@ -1,0 +1,63 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1sszhmzr6ckedy5wk4nz943
+  slug: netcore
+  slug_aliases: []
+  name: Netcore
+  domains:
+    - value: netcorecloud.com
+      role: primary
+      valid_from: 2026-09-05T22:10:45.000Z
+  category: marketing
+profile:
+  description: Netcore provides email marketing and customer engagement tools for B2C companies.
+  links:
+    site: https://netcorecloud.com
+sources:
+  - source_id: src_19718e10cbaa9a6533de93aa9621e8ec92b6c405d11a384fb60b11e92756aedd
+    url: https://netcorecloud.com/startup-program/
+programs:
+  - program_id: prg_01m1sszhn6vpa82gjaqjqe6w6s
+    program_slug: netcore-startup-program
+    program_slug_aliases: []
+    title: Netcore Startup Program
+    summary: Netcore offers up to $30,000 in platform credits for qualifying B2C startups through its B2C Startup Program.
+    source_ids:
+      - src_19718e10cbaa9a6533de93aa9621e8ec92b6c405d11a384fb60b11e92756aedd
+offers:
+  - offer_id: off_01m1sszhn6zzbafk8rg9khsktb
+    program_id: prg_01m1sszhn6vpa82gjaqjqe6w6s
+    offer_slug: netcore-startup-program
+    offer_slug_aliases: []
+    title: Netcore Startup Program
+    summary: Qualifying B2C startups receive up to $30,000 in Netcore platform credits through the B2C Startup Program.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:10:45.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to $30,000 in Netcore platform credits for qualifying B2C startups
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 3000000
+            kind: up-to
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1sszhmzr6ckedy5wk4nz943
+      access_operator_entity_id: ent_01m1sszhmzr6ckedy5wk4nz943
+    access:
+      availability: public
+      method: form
+      url: https://netcorecloud.com/startup-program/
+    source_ids:
+      - src_19718e10cbaa9a6533de93aa9621e8ec92b6c405d11a384fb60b11e92756aedd

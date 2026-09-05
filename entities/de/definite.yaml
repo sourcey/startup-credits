@@ -1,0 +1,63 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1ss4d03cp8eznd47rz618dd
+  slug: definite
+  slug_aliases: []
+  name: Definite
+  domains:
+    - value: definite.app
+      role: primary
+      valid_from: 2026-09-05T21:55:53.000Z
+  category: ai-ml
+profile:
+  description: Definite provides AI-powered analytics and business intelligence tools for startups.
+  links:
+    site: https://definite.app
+sources:
+  - source_id: src_e80d4864d8e380941906c305e494b91b759e22265c469eeeb858e1c1216b0b82
+    url: https://definite.app
+programs:
+  - program_id: prg_01m1ss4d08etjqwypde8xtbkp3
+    program_slug: definite-startup-program
+    program_slug_aliases: []
+    title: Definite for Startups
+    summary: Definite gives eligible early-stage startups $25,000 in compute and AI credits, 12 months of its Platform free, and white-glove onboarding.
+    source_ids:
+      - src_e80d4864d8e380941906c305e494b91b759e22265c469eeeb858e1c1216b0b82
+offers:
+  - offer_id: off_01m1ss4d086cxjhpa2n40cse42
+    program_id: prg_01m1ss4d08etjqwypde8xtbkp3
+    offer_slug: definite-startup-program
+    offer_slug_aliases: []
+    title: Definite for Startups
+    summary: Eligible early-stage startups receive $25,000 in Definite compute and AI credits, 12 months free Platform, and white-glove onboarding.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T21:55:53.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: $25,000 in Definite compute and AI credits, 12 months free Platform access, and white-glove onboarding for eligible early-stage startups
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 2500000
+            kind: up-to
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1ss4d03cp8eznd47rz618dd
+      access_operator_entity_id: ent_01m1ss4d03cp8eznd47rz618dd
+    access:
+      availability: public
+      method: form
+      url: https://definite.app
+    source_ids:
+      - src_e80d4864d8e380941906c305e494b91b759e22265c469eeeb858e1c1216b0b82

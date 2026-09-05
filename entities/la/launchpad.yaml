@@ -1,0 +1,58 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1sta43sw6m5gng9hmmhqmpm
+  slug: launchpad
+  slug_aliases: []
+  name: Launchpad
+  domains:
+    - value: launchpad.io
+      role: primary
+      valid_from: 2026-09-05T22:16:32.000Z
+  category: productivity
+profile:
+  description: Launchpad provides a startup management and analytics platform.
+  links:
+    site: https://launchpad.io
+sources:
+  - source_id: src_b43886013690aa5dc45a98f33100f93a92d1513aab993709a761d03496bc5bc1
+    url: https://launchpad.io/startups
+programs:
+  - program_id: prg_01m1sta447vjf6n2n3ktnt0wja
+    program_slug: launchpad-startup-program
+    program_slug_aliases: []
+    title: Launchpad for Startups
+    summary: Selected startups complete a paid 90-day build period, then receive one complimentary year of the Starter Launchpad subscription plus $30,000 of premium development support.
+    source_ids:
+      - src_b43886013690aa5dc45a98f33100f93a92d1513aab993709a761d03496bc5bc1
+offers:
+  - offer_id: off_01m1sta447ef2k0td34zand9hx
+    program_id: prg_01m1sta447vjf6n2n3ktnt0wja
+    offer_slug: launchpad-startup-program
+    offer_slug_aliases: []
+    title: Launchpad for Startups
+    summary: Startups that complete a paid 90-day build period receive one complimentary year of Starter Launchpad subscription plus $30,000 of premium development support.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:16:32.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: One complimentary year of Starter Launchpad subscription plus $30,000 of premium development support after a paid 90-day build period
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1sta43sw6m5gng9hmmhqmpm
+      access_operator_entity_id: ent_01m1sta43sw6m5gng9hmmhqmpm
+    access:
+      availability: public
+      method: form
+      url: https://launchpad.io/startups
+    source_ids:
+      - src_b43886013690aa5dc45a98f33100f93a92d1513aab993709a761d03496bc5bc1

@@ -1,0 +1,58 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1ssa8tfnk7hx3bv0zv4w277
+  slug: aleph-cloud
+  slug_aliases: []
+  name: Aleph Cloud
+  domains:
+    - value: aleph.cloud
+      role: primary
+      valid_from: 2026-09-05T21:59:06.000Z
+  category: hosting-infra
+profile:
+  description: Aleph Cloud provides decentralized content delivery and compute infrastructure.
+  links:
+    site: https://aleph.cloud
+sources:
+  - source_id: src_078ebec7f215719a59e8674bfb51a592027946564a07ef2de419371feca54781
+    url: https://aleph.cloud
+programs:
+  - program_id: prg_01m1ssa8tkgzjwbexfn62c17p9
+    program_slug: aleph-cloud-startup-program
+    program_slug_aliases: []
+    title: Aleph Cloud Chainlink BUILD Program
+    summary: Aleph Cloud offers free compute credits, dedicated onboarding, and technical support to projects accepted into the Chainlink BUILD program.
+    source_ids:
+      - src_078ebec7f215719a59e8674bfb51a592027946564a07ef2de419371feca54781
+offers:
+  - offer_id: off_01m1ssa8tkxmffgbqtjxx9hbvr
+    program_id: prg_01m1ssa8tkgzjwbexfn62c17p9
+    offer_slug: aleph-cloud-startup-program
+    offer_slug_aliases: []
+    title: Aleph Cloud Chainlink BUILD Program
+    summary: Projects accepted into the Chainlink BUILD program receive free Aleph Cloud compute credits, dedicated onboarding, and technical support.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T21:59:06.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Free Aleph Cloud compute credits, dedicated onboarding, and technical support for projects in the Chainlink BUILD program
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1ssa8tfnk7hx3bv0zv4w277
+      access_operator_entity_id: ent_01m1ssa8tfnk7hx3bv0zv4w277
+    access:
+      availability: public
+      method: form
+      url: https://aleph.cloud
+    source_ids:
+      - src_078ebec7f215719a59e8674bfb51a592027946564a07ef2de419371feca54781

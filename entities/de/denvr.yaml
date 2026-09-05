@@ -1,0 +1,63 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1swjrm7gaybssbyz4e9czky
+  slug: denvr
+  slug_aliases: []
+  name: Denvr
+  domains:
+    - value: denvr.ai
+      role: primary
+      valid_from: 2026-09-05T22:56:11.000Z
+  category: ai-ml
+profile:
+  description: Denvr provides AI compute and GPU infrastructure.
+  links:
+    site: https://denvr.ai
+sources:
+  - source_id: src_6269e24deb5bf3d8b1331169c4632b57184be3c6786af11285a91ab261636f49
+    url: https://denvr.ai
+programs:
+  - program_id: prg_01m1swjrmxfjq41nmvv393chnm
+    program_slug: denvr-startup-program
+    program_slug_aliases: []
+    title: Denvr AI Ascend Program
+    summary: Denvr publishes an AI startup credit program. Approved applicants start with an initial $1,000 Denvr AI Cloud credits.
+    source_ids:
+      - src_6269e24deb5bf3d8b1331169c4632b57184be3c6786af11285a91ab261636f49
+offers:
+  - offer_id: off_01m1swjrmxxdekp9fe3w0t3vkd
+    program_id: prg_01m1swjrmxfjq41nmvv393chnm
+    offer_slug: denvr-startup-program
+    offer_slug_aliases: []
+    title: Denvr AI Ascend Program
+    summary: Approved applicants receive an initial $1,000 in Denvr AI Cloud credits through the Ascend Program.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:56:11.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: $1,000 in Denvr AI Cloud credits for approved applicants through the AI Ascend Program
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 100000
+            kind: up-to
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1swjrm7gaybssbyz4e9czky
+      access_operator_entity_id: ent_01m1swjrm7gaybssbyz4e9czky
+    access:
+      availability: public
+      method: form
+      url: https://denvr.ai
+    source_ids:
+      - src_6269e24deb5bf3d8b1331169c4632b57184be3c6786af11285a91ab261636f49

@@ -1,0 +1,58 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1st3vd6216r7qnawdgs9css
+  slug: zilliz
+  slug_aliases: []
+  name: Zilliz
+  domains:
+    - value: zilliz.com
+      role: primary
+      valid_from: 2026-09-05T22:13:03.000Z
+  category: ai-ml
+profile:
+  description: Zilliz provides Milvus, an open-source vector database for AI applications.
+  links:
+    site: https://zilliz.com
+sources:
+  - source_id: src_57d0fa5b1ceb294abc61e557b68cee3270df884cda9d0f1067a703f32851828c
+    url: https://zilliz.com
+programs:
+  - program_id: prg_01m1st3vdhc8111hvkmr3emdbc
+    program_slug: zilliz-startup-program
+    program_slug_aliases: []
+    title: Zilliz AI Startup Program
+    summary: The Zilliz AI Startup Program offers accepted early-stage AI startups program discounts for development, testing, and early production workloads.
+    source_ids:
+      - src_57d0fa5b1ceb294abc61e557b68cee3270df884cda9d0f1067a703f32851828c
+offers:
+  - offer_id: off_01m1st3vdk79yjcpmyjd0bhm70
+    program_id: prg_01m1st3vdhc8111hvkmr3emdbc
+    offer_slug: zilliz-startup-program
+    offer_slug_aliases: []
+    title: Zilliz AI Startup Program
+    summary: Accepted early-stage AI startups receive program discounts for development, testing, and early production through Zilliz AI Startup Program.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:13:03.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Zilliz program discounts for development, testing, and early production for accepted early-stage AI startups
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1st3vd6216r7qnawdgs9css
+      access_operator_entity_id: ent_01m1st3vd6216r7qnawdgs9css
+    access:
+      availability: public
+      method: form
+      url: https://zilliz.com
+    source_ids:
+      - src_57d0fa5b1ceb294abc61e557b68cee3270df884cda9d0f1067a703f32851828c

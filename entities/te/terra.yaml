@@ -1,0 +1,58 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1sv4r62f53bcc5ms3bz7je6
+  slug: terra
+  slug_aliases: []
+  name: Terra
+  domains:
+    - value: tryterra.co
+      role: primary
+      valid_from: 2026-09-05T22:31:03.000Z
+  category: apis-integration
+profile:
+  description: Terra provides health data APIs and wearable integrations.
+  links:
+    site: https://tryterra.co
+sources:
+  - source_id: src_792d6cf0ef45b6efcdd2cbcab2075b316b6dea3303c48e221210f8da7007b564
+    url: https://tryterra.co/accelerator
+programs:
+  - program_id: prg_01m1sv4r68ktf1vh0t1jv1sdst
+    program_slug: terra-startup-program
+    program_slug_aliases: []
+    title: Terra Startup Accelerator
+    summary: Terra publishes a rolling Startup Accelerator for early-stage teams building products where health data is central.
+    source_ids:
+      - src_792d6cf0ef45b6efcdd2cbcab2075b316b6dea3303c48e221210f8da7007b564
+offers:
+  - offer_id: off_01m1sv4r69eyhtrx49cn3vzn31
+    program_id: prg_01m1sv4r68ktf1vh0t1jv1sdst
+    offer_slug: terra-startup-program
+    offer_slug_aliases: []
+    title: Terra Startup Accelerator
+    summary: Early-stage teams building health data products receive Terra Startup Accelerator benefits.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:31:03.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Terra Startup Accelerator benefits for early-stage teams building health data products
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1sv4r62f53bcc5ms3bz7je6
+      access_operator_entity_id: ent_01m1sv4r62f53bcc5ms3bz7je6
+    access:
+      availability: public
+      method: form
+      url: https://tryterra.co/accelerator
+    source_ids:
+      - src_792d6cf0ef45b6efcdd2cbcab2075b316b6dea3303c48e221210f8da7007b564

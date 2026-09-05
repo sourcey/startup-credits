@@ -1,0 +1,63 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1swe3wa997yd7vajw0tb2rt
+  slug: pulseadt-startups
+  slug_aliases: []
+  name: PulseADT
+  domains:
+    - value: getpulseadt.com
+      role: primary
+      valid_from: 2026-09-05T22:53:39.000Z
+  category: data-analytics
+profile:
+  description: PulseADT provides API development and testing tools.
+  links:
+    site: https://getpulseadt.com
+sources:
+  - source_id: src_113ab098be87f99d0d24bfddbf5c897eac11185783120f26da4c87445ae03a83
+    url: https://getpulseadt.com
+programs:
+  - program_id: prg_01m1swe3xd3r2gqsvb465tgc2p
+    program_slug: pulseadt-startups-startup-program
+    program_slug_aliases: []
+    title: PulseADT Startup Credit Program
+    summary: The API Builder track grants eligible early-stage technology startups a $250 platform credit valid for 12 months after spending on API credits.
+    source_ids:
+      - src_113ab098be87f99d0d24bfddbf5c897eac11185783120f26da4c87445ae03a83
+offers:
+  - offer_id: off_01m1swe3xgt02vdg9xx78qb4y2
+    program_id: prg_01m1swe3xd3r2gqsvb465tgc2p
+    offer_slug: pulseadt-startups-startup-program
+    offer_slug_aliases: []
+    title: PulseADT Startup Credit Program
+    summary: Eligible early-stage technology startups receive a $250 PulseADT platform credit valid for 12 months after spending on API credits.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:53:39.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: $250 PulseADT platform credit for 12 months for eligible early-stage technology startups
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 25000
+            kind: up-to
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1swe3wa997yd7vajw0tb2rt
+      access_operator_entity_id: ent_01m1swe3wa997yd7vajw0tb2rt
+    access:
+      availability: public
+      method: form
+      url: https://getpulseadt.com
+    source_ids:
+      - src_113ab098be87f99d0d24bfddbf5c897eac11185783120f26da4c87445ae03a83

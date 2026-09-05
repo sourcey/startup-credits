@@ -1,0 +1,63 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1sv4rh6srgn56gf7qfe2vdj
+  slug: fal-startup
+  slug_aliases: []
+  name: fal
+  domains:
+    - value: fal.ai
+      role: primary
+      valid_from: 2026-09-05T22:31:03.000Z
+  category: ai-ml
+profile:
+  description: fal provides GPU compute and AI inference APIs for generative media.
+  links:
+    site: https://fal.ai
+sources:
+  - source_id: src_9fb5c091afba6a02d788d6e0ef763521a4b3a8421a79790c4db386d0e5911b66
+    url: https://fal.ai
+programs:
+  - program_id: prg_01m1sv4rj0rw66dbzcwbvr0agw
+    program_slug: fal-startup-startup-program
+    program_slug_aliases: []
+    title: fal Startup Program
+    summary: fal operates a Startup Program granting $1,000 in platform credits at approval, growing to $5,000 as the company's monthly usage grows.
+    source_ids:
+      - src_9fb5c091afba6a02d788d6e0ef763521a4b3a8421a79790c4db386d0e5911b66
+offers:
+  - offer_id: off_01m1sv4rj2d29fmcd53w3b5b2q
+    program_id: prg_01m1sv4rj0rw66dbzcwbvr0agw
+    offer_slug: fal-startup-startup-program
+    offer_slug_aliases: []
+    title: fal Startup Program
+    summary: fal grants $1,000 in platform credits at approval, growing to $5,000 as monthly usage grows through the Startup Program.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:31:03.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: $1,000 to $5,000 in fal platform credits for startups through the Startup Program
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 500000
+            kind: up-to
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1sv4rh6srgn56gf7qfe2vdj
+      access_operator_entity_id: ent_01m1sv4rh6srgn56gf7qfe2vdj
+    access:
+      availability: public
+      method: form
+      url: https://fal.ai
+    source_ids:
+      - src_9fb5c091afba6a02d788d6e0ef763521a4b3a8421a79790c4db386d0e5911b66

@@ -1,0 +1,63 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1sszjd49z2amzadwha1gx7y
+  slug: uniblock
+  slug_aliases: []
+  name: Uniblock
+  domains:
+    - value: uniblock.website
+      role: primary
+      valid_from: 2026-09-05T22:10:45.000Z
+  category: apis-integration
+profile:
+  description: Uniblock provides blockchain data APIs for web3 developers and teams.
+  links:
+    site: https://uniblock.website
+sources:
+  - source_id: src_d2ad2842ebd1f0f7fb4e27377648ed03a3c1d76994d6015b98555c8e6fb874cf
+    url: https://uniblock.website
+programs:
+  - program_id: prg_01m1sszjd87e45aezs27f9a664
+    program_slug: uniblock-startup-program
+    program_slug_aliases: []
+    title: Uniblock Startup Program
+    summary: Uniblock offers eligible early-stage blockchain data teams with a live or in-development product up to $10,000 in credits.
+    source_ids:
+      - src_d2ad2842ebd1f0f7fb4e27377648ed03a3c1d76994d6015b98555c8e6fb874cf
+offers:
+  - offer_id: off_01m1sszjd8mehkcs5gsrtac2vk
+    program_id: prg_01m1sszjd87e45aezs27f9a664
+    offer_slug: uniblock-startup-program
+    offer_slug_aliases: []
+    title: Uniblock Startup Program
+    summary: Eligible early-stage blockchain data teams with a live or in-development product receive up to $10,000 in Uniblock credits.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:10:45.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to $10,000 in Uniblock credits for eligible early-stage blockchain data teams with a live or in-development product
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 1000000
+            kind: up-to
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1sszjd49z2amzadwha1gx7y
+      access_operator_entity_id: ent_01m1sszjd49z2amzadwha1gx7y
+    access:
+      availability: public
+      method: form
+      url: https://uniblock.website
+    source_ids:
+      - src_d2ad2842ebd1f0f7fb4e27377648ed03a3c1d76994d6015b98555c8e6fb874cf

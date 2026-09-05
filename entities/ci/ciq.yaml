@@ -1,0 +1,58 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1stm40kcggyntdrqz578wfk
+  slug: ciq
+  slug_aliases: []
+  name: CIQ
+  domains:
+    - value: ciq.co
+      role: primary
+      valid_from: 2026-09-05T22:21:58.000Z
+  category: hosting-infra
+profile:
+  description: CIQ provides enterprise Linux and cloud infrastructure services.
+  links:
+    site: https://ciq.co
+sources:
+  - source_id: src_6355486a2e71f2ac1b7097d3a375058c22ddd1bae2950e3e271ae33aed2f227c
+    url: https://ciq.co
+programs:
+  - program_id: prg_01m1stm40wnprnd9xtvz9x11pp
+    program_slug: ciq-startup-program
+    program_slug_aliases: []
+    title: CIQ Startup Program
+    summary: CIQ publishes a startup program for eligible AI and deep-tech startups with six months of free access, followed by staged discounts through month 24, plus engineering support.
+    source_ids:
+      - src_6355486a2e71f2ac1b7097d3a375058c22ddd1bae2950e3e271ae33aed2f227c
+offers:
+  - offer_id: off_01m1stm40wn9py124rrsbqm1vg
+    program_id: prg_01m1stm40wnprnd9xtvz9x11pp
+    offer_slug: ciq-startup-program
+    offer_slug_aliases: []
+    title: CIQ Startup Program
+    summary: Eligible AI and deep-tech startups receive six months of free CIQ access, staged discounts through month 24, and engineering support.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:21:58.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Six months of free CIQ access, staged discounts through month 24, and engineering support for eligible AI and deep-tech startups
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1stm40kcggyntdrqz578wfk
+      access_operator_entity_id: ent_01m1stm40kcggyntdrqz578wfk
+    access:
+      availability: public
+      method: form
+      url: https://ciq.co
+    source_ids:
+      - src_6355486a2e71f2ac1b7097d3a375058c22ddd1bae2950e3e271ae33aed2f227c

@@ -1,0 +1,61 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1ss4c2b8wfpz77s6v2wpsph
+  slug: thoropass
+  slug_aliases: []
+  name: Thoropass
+  domains:
+    - value: thoropass.com
+      role: primary
+      valid_from: 2026-09-05T21:55:53.000Z
+  category: legal-compliance
+profile:
+  description: Thoropass provides SOC 2 compliance and audit management tools for startups and growing companies.
+  links:
+    site: https://thoropass.com
+sources:
+  - source_id: src_199ff9c1790e35771cad0d96c63a76161cb0789f36beff52c72dc611f8469d01
+    url: https://info.thoropass.com/jpm-startup-offers
+programs:
+  - program_id: prg_01m1ss4c2x01n8pm7dg05929ce
+    program_slug: thoropass-startup-program
+    program_slug_aliases: []
+    title: Thoropass JPM Startup Offer
+    summary: Thoropass gives eligible JPM Startup Offers participants 15% off its compliance platform and services.
+    source_ids:
+      - src_199ff9c1790e35771cad0d96c63a76161cb0789f36beff52c72dc611f8469d01
+offers:
+  - offer_id: off_01m1ss4c2xj1rv5rx36xj8nxrc
+    program_id: prg_01m1ss4c2x01n8pm7dg05929ce
+    offer_slug: thoropass-startup-program
+    offer_slug_aliases: []
+    title: Thoropass JPM Startup Offer
+    summary: Eligible JPM Startup Offers participants receive 15% off Thoropass compliance platform and services.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T21:55:53.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 15% off Thoropass compliance platform and services for eligible JPM Startup Offers participants
+          kind: discount
+          percentage:
+            basis_points: 1500
+            kind: exact
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1ss4c2b8wfpz77s6v2wpsph
+      access_operator_entity_id: ent_01m1ss4c2b8wfpz77s6v2wpsph
+    access:
+      availability: public
+      method: form
+      url: https://info.thoropass.com/jpm-startup-offers
+    source_ids:
+      - src_199ff9c1790e35771cad0d96c63a76161cb0789f36beff52c72dc611f8469d01

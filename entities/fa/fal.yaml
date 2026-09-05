@@ -1,0 +1,58 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1st81m6dfawvz7akt6bjxch
+  slug: fal
+  slug_aliases: []
+  name: fal
+  domains:
+    - value: fal.ai
+      role: primary
+      valid_from: 2026-09-05T22:15:23.000Z
+  category: ai-ml
+profile:
+  description: fal provides AI inference and compute infrastructure for machine learning models.
+  links:
+    site: https://fal.ai
+sources:
+  - source_id: src_57752d4305c2051c3106ce03412f628f8be7d995af3d969a2819512d8f82366f
+    url: https://fal.ai
+programs:
+  - program_id: prg_01m1st81mff7y1y5b5mq00w7np
+    program_slug: fal-startup-program
+    program_slug_aliases: []
+    title: fal Research Grants
+    summary: fal offers free compute resources to researchers and developers working on open-source AI initiatives.
+    source_ids:
+      - src_57752d4305c2051c3106ce03412f628f8be7d995af3d969a2819512d8f82366f
+offers:
+  - offer_id: off_01m1st81mfphvh5sq5nhvwc6py
+    program_id: prg_01m1st81mff7y1y5b5mq00w7np
+    offer_slug: fal-startup-program
+    offer_slug_aliases: []
+    title: fal Research Grants
+    summary: Researchers and developers working on open-source AI initiatives receive free fal compute resources through the Research Grants program.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:15:23.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Free fal compute resources for researchers and developers working on open-source AI initiatives
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1st81m6dfawvz7akt6bjxch
+      access_operator_entity_id: ent_01m1st81m6dfawvz7akt6bjxch
+    access:
+      availability: public
+      method: form
+      url: https://fal.ai
+    source_ids:
+      - src_57752d4305c2051c3106ce03412f628f8be7d995af3d969a2819512d8f82366f

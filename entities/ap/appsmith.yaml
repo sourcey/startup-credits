@@ -1,0 +1,63 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1srtqpm3jsgks1p13xybz5x
+  slug: appsmith
+  slug_aliases: []
+  name: Appsmith
+  domains:
+    - value: appsmith.com
+      role: primary
+      valid_from: 2026-09-05T21:50:37.000Z
+  category: devtools-other
+profile:
+  description: Appsmith provides an open-source low-code platform for building internal tools and business applications.
+  links:
+    site: https://www.appsmith.com
+sources:
+  - source_id: src_61958e42dfc0679aa0786da492fbd4c48ce3b0c9fae8d0f373794474cb863879
+    url: https://www.appsmith.com
+programs:
+  - program_id: prg_01m1srtqpwn2swrv5bnckd9m28
+    program_slug: appsmith-startup-program
+    program_slug_aliases: []
+    title: Appsmith Startup Program
+    summary: Appsmith offers qualifying startups $30,000 worth of Appsmith credits valid for 12 months, Business-plan features, and access to developer advocates.
+    source_ids:
+      - src_61958e42dfc0679aa0786da492fbd4c48ce3b0c9fae8d0f373794474cb863879
+offers:
+  - offer_id: off_01m1srtqpw529yafcg30tcmp5q
+    program_id: prg_01m1srtqpwn2swrv5bnckd9m28
+    offer_slug: appsmith-startup-program
+    offer_slug_aliases: []
+    title: Appsmith Startup Program
+    summary: Eligible startups receive $30,000 worth of Appsmith credits for 12 months, Business-plan features, and developer advocate access.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T21:50:37.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: $30,000 in Appsmith credits for 12 months, Business-plan features, and developer advocate access for qualifying startups
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 3000000
+            kind: up-to
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1srtqpm3jsgks1p13xybz5x
+      access_operator_entity_id: ent_01m1srtqpm3jsgks1p13xybz5x
+    access:
+      availability: public
+      method: form
+      url: https://www.appsmith.com
+    source_ids:
+      - src_61958e42dfc0679aa0786da492fbd4c48ce3b0c9fae8d0f373794474cb863879

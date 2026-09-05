@@ -1,0 +1,61 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1ss4bnv3eewbx9kbq1vq8vm
+  slug: cyscale
+  slug_aliases: []
+  name: Cyscale
+  domains:
+    - value: cyscale.com
+      role: primary
+      valid_from: 2026-09-05T21:55:53.000Z
+  category: auth-security
+profile:
+  description: Cyscale provides cloud security posture management and compliance automation tools.
+  links:
+    site: https://cyscale.com
+sources:
+  - source_id: src_603c6c1a24fb84a8148ffe475efe8f003c6ab954a24f20cc2615b3b198dd8ecd
+    url: https://cyscale.com
+programs:
+  - program_id: prg_01m1ss4bp5xgv0h2qcvy1ttw3y
+    program_slug: cyscale-startup-program
+    program_slug_aliases: []
+    title: Cyscale for Startups
+    summary: Cyscale offers startups founded less than five years ago with up to $2 million in funding six months of its cloud-security program free, followed by 75% off.
+    source_ids:
+      - src_603c6c1a24fb84a8148ffe475efe8f003c6ab954a24f20cc2615b3b198dd8ecd
+offers:
+  - offer_id: off_01m1ss4bp5cw7jxbvwa7vbxvkw
+    program_id: prg_01m1ss4bp5xgv0h2qcvy1ttw3y
+    offer_slug: cyscale-startup-program
+    offer_slug_aliases: []
+    title: Cyscale for Startups
+    summary: Startups founded less than five years ago with up to $2M funding receive six months free plus 75% off Cyscale's cloud-security program.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T21:55:53.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Six months free plus 75% off Cyscale cloud-security program for startups founded less than 5 years with up to $2M funding
+          kind: discount
+          percentage:
+            basis_points: 7500
+            kind: exact
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1ss4bnv3eewbx9kbq1vq8vm
+      access_operator_entity_id: ent_01m1ss4bnv3eewbx9kbq1vq8vm
+    access:
+      availability: public
+      method: form
+      url: https://cyscale.com
+    source_ids:
+      - src_603c6c1a24fb84a8148ffe475efe8f003c6ab954a24f20cc2615b3b198dd8ecd

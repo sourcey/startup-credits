@@ -1,0 +1,63 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1sv34ay48vchdshz1wnpbzz
+  slug: distribute
+  slug_aliases: []
+  name: Distribute
+  domains:
+    - value: distribute.app
+      role: primary
+      valid_from: 2026-09-05T22:30:11.000Z
+  category: productivity
+profile:
+  description: Distribute provides startup toolkit and platform services.
+  links:
+    site: https://distribute.app
+sources:
+  - source_id: src_f81d9097bb652af816b8c82b79a08542f7aec4bdd0fbda4832ed5a23e9ee7955
+    url: https://distribute.app/startup-program
+programs:
+  - program_id: prg_01m1sv34bdwye3cpnz1y8br82g
+    program_slug: distribute-startup-program
+    program_slug_aliases: []
+    title: Distribute Startup Program
+    summary: The Distribute Startup Program offers $100 to $5,000+ in platform credits, stage-based guidance, and EU-US startup support.
+    source_ids:
+      - src_f81d9097bb652af816b8c82b79a08542f7aec4bdd0fbda4832ed5a23e9ee7955
+offers:
+  - offer_id: off_01m1sv34bdrmd0kfdt9fprz5gw
+    program_id: prg_01m1sv34bdwye3cpnz1y8br82g
+    offer_slug: distribute-startup-program
+    offer_slug_aliases: []
+    title: Distribute Startup Program
+    summary: Eligible startups receive $100 to $5,000+ in Distribute platform credits with stage-based guidance and EU-US support.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:30:11.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: $100 to $5,000+ in Distribute platform credits with stage-based guidance and EU-US startup support
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 0
+            kind: up-to
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1sv34ay48vchdshz1wnpbzz
+      access_operator_entity_id: ent_01m1sv34ay48vchdshz1wnpbzz
+    access:
+      availability: public
+      method: form
+      url: https://distribute.app/startup-program
+    source_ids:
+      - src_f81d9097bb652af816b8c82b79a08542f7aec4bdd0fbda4832ed5a23e9ee7955

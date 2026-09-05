@@ -1,0 +1,67 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_rads66gndqre4cvgke1zaqmjjw
+  slug: supabase
+  slug_aliases: []
+  name: Supabase
+  domains:
+    - value: supabase.com
+      role: primary
+      valid_from: 2024-01-01T00:00:00.000Z
+  category: databases
+profile:
+  description: Supabase is an open-source Firebase alternative providing Postgres databases, authentication, edge functions, storage, and real-time capabilities for modern application development.
+  links:
+    site: https://supabase.com
+sources:
+  - source_id: src_zvr8hf84pfrm6c6e8metv4jbjn58fg9a
+    url: https://supabase.com/partners/startups
+programs:
+  - program_id: prg_xbhez4jxwq7w5r8jp0gxq4gx9y
+    program_slug: supabase-startup-program
+    program_slug_aliases: []
+    title: Supabase for Startups
+    summary: Supabase supports AI startups with tiered infrastructure credits, with the highest tier offering up to $50,000 for AI companies building with Supabase.
+    source_ids:
+      - src_zvr8hf84pfrm6c6e8metv4jbjn58fg9a
+offers:
+  - offer_id: off_knbb42bea4wk5h0e4g3c5nbt1z
+    program_id: prg_xbhez4jxwq7w5r8jp0gxq4gx9y
+    offer_slug: supabase-ai-startup-credits
+    offer_slug_aliases: []
+    title: Supabase for AI Startups
+    summary: "AI startups building with Supabase can receive tiered infrastructure credits: $10,000 (Silver), $25,000 (Gold), or $50,000 (Platinum), along with dedicated support and co-marketing opportunities."
+    lifecycle:
+      status: active
+      effective_from: 2024-01-01T00:00:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_kde4ncvqzvesna
+          description: Up to $50,000 in Supabase infrastructure credits
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 5000000
+            kind: up-to
+        - benefit_id: ben_m38tngjgz5pcba
+          description: Dedicated startup support and technical guidance
+          kind: other
+      consideration:
+        kind: unknown
+        description: The public program page does not establish separate consideration.
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: AI startups building with Supabase can apply; Supabase reviews applications and awards credits at its discretion based on startup stage and technical fit.
+    roles:
+      terms_authority_entity_id: ent_rads66gndqre4cvgke1zaqmjjw
+      access_operator_entity_id: ent_rads66gndqre4cvgke1zaqmjjw
+    access:
+      availability: public
+      method: form
+      url: https://supabase.com/partners/startups
+    source_ids:
+      - src_zvr8hf84pfrm6c6e8metv4jbjn58fg9a

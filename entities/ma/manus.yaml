@@ -1,0 +1,58 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1ss4crksn5985qr8f6mz6wb
+  slug: manus
+  slug_aliases: []
+  name: Manus
+  domains:
+    - value: manus.im
+      role: primary
+      valid_from: 2026-09-05T21:55:53.000Z
+  category: productivity
+profile:
+  description: Manus provides AI-powered productivity and workflow automation tools for startup teams.
+  links:
+    site: https://manus.im
+sources:
+  - source_id: src_907879aecfe3a7ff0113836fad95b444367d3031c6629f562d8703818a083db4
+    url: https://manus.im
+programs:
+  - program_id: prg_01m1ss4cs5e04fs1krpxv8f3bq
+    program_slug: manus-startup-program
+    program_slug_aliases: []
+    title: Manus for Startups
+    summary: Manus gives eligible startups six months of its Team subscription for up to 20 seats (valued at $4,800) through participating VC and accelerator partners.
+    source_ids:
+      - src_907879aecfe3a7ff0113836fad95b444367d3031c6629f562d8703818a083db4
+offers:
+  - offer_id: off_01m1ss4cs5sc25d3ss3aefxqg0
+    program_id: prg_01m1ss4cs5e04fs1krpxv8f3bq
+    offer_slug: manus-startup-program
+    offer_slug_aliases: []
+    title: Manus for Startups
+    summary: Eligible startups receive six months of the Manus Team subscription for up to 20 seats (valued at $4,800) via VC and accelerator partners.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T21:55:53.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Six months of Manus Team subscription for up to 20 seats (valued at $4,800) for eligible startups via VC and accelerator partners
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1ss4crksn5985qr8f6mz6wb
+      access_operator_entity_id: ent_01m1ss4crksn5985qr8f6mz6wb
+    access:
+      availability: public
+      method: form
+      url: https://manus.im
+    source_ids:
+      - src_907879aecfe3a7ff0113836fad95b444367d3031c6629f562d8703818a083db4

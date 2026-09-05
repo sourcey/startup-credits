@@ -1,0 +1,58 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1sszjqkm9k3bk33c1yyyx0z
+  slug: razorpay
+  slug_aliases: []
+  name: Razorpay
+  domains:
+    - value: razorpay.com
+      role: primary
+      valid_from: 2026-09-05T22:10:45.000Z
+  category: payments-fintech
+profile:
+  description: Razorpay provides payment processing and financial infrastructure for Indian businesses.
+  links:
+    site: https://razorpay.com
+sources:
+  - source_id: src_9825ec9bd4517624ca80f2aa38bba947b839e313b1032159b5585b66f1cf2162
+    url: https://razorpay.com
+programs:
+  - program_id: prg_01m1sszjqysb45hhtj7hp3d1mn
+    program_slug: razorpay-startup-program
+    program_slug_aliases: []
+    title: Razorpay Startup Perks
+    summary: Razorpay publishes Startup Perks for funded startups that are new merchants or have not actively used the Razorpay ecosystem.
+    source_ids:
+      - src_9825ec9bd4517624ca80f2aa38bba947b839e313b1032159b5585b66f1cf2162
+offers:
+  - offer_id: off_01m1sszjqy7hmkf316xxbbb826
+    program_id: prg_01m1sszjqysb45hhtj7hp3d1mn
+    offer_slug: razorpay-startup-program
+    offer_slug_aliases: []
+    title: Razorpay Startup Perks
+    summary: Funded startups that are new Razorpay merchants or inactive users receive Razorpay Startup Perks.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:10:45.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Razorpay Startup Perks for funded startups that are new merchants or inactive in the Razorpay ecosystem
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1sszjqkm9k3bk33c1yyyx0z
+      access_operator_entity_id: ent_01m1sszjqkm9k3bk33c1yyyx0z
+    access:
+      availability: public
+      method: form
+      url: https://razorpay.com
+    source_ids:
+      - src_9825ec9bd4517624ca80f2aa38bba947b839e313b1032159b5585b66f1cf2162

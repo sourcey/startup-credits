@@ -1,0 +1,63 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1srr2gap8hwxjaxs0x612rq
+  slug: twentythree
+  slug_aliases: []
+  name: TwentyThree
+  domains:
+    - value: twentythree.com
+      role: primary
+      valid_from: 2026-09-05T21:49:11.000Z
+  category: marketing
+profile:
+  description: TwentyThree provides a video marketing platform with analytics and engagement tools for B2B companies.
+  links:
+    site: https://twentythree.com
+sources:
+  - source_id: src_545d4c66c4025482682eb4448687bdf45493eac3c55b14ee5ba13617430d43e9
+    url: https://twentythree.com
+programs:
+  - program_id: prg_01m1srr2gpw1t4bpdnr9xean2d
+    program_slug: twentythree-startup-program
+    program_slug_aliases: []
+    title: TwentyThree Startup Program
+    summary: TwentyThree provides EUR 10,000 in video platform credits for qualifying startups through its startup program.
+    source_ids:
+      - src_545d4c66c4025482682eb4448687bdf45493eac3c55b14ee5ba13617430d43e9
+offers:
+  - offer_id: off_01m1srr2gp5ymggvqfbgvt3642
+    program_id: prg_01m1srr2gpw1t4bpdnr9xean2d
+    offer_slug: twentythree-startup-program
+    offer_slug_aliases: []
+    title: TwentyThree Startup Program
+    summary: Eligible startups receive EUR 10,000 in TwentyThree video platform credits through the startup program.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T21:49:11.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: EUR 10,000 in TwentyThree video platform credits for qualifying startups
+          kind: credit
+          value:
+            amount:
+              currency: EUR
+              minor_units: 1000000
+            kind: up-to
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1srr2gap8hwxjaxs0x612rq
+      access_operator_entity_id: ent_01m1srr2gap8hwxjaxs0x612rq
+    access:
+      availability: public
+      method: form
+      url: https://twentythree.com
+    source_ids:
+      - src_545d4c66c4025482682eb4448687bdf45493eac3c55b14ee5ba13617430d43e9

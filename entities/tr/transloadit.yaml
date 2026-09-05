@@ -1,0 +1,63 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1ss15gejfj3e6b4rpkzwakh
+  slug: transloadit
+  slug_aliases: []
+  name: Transloadit
+  domains:
+    - value: transloadit.com
+      role: primary
+      valid_from: 2026-09-05T21:54:09.000Z
+  category: apis-integration
+profile:
+  description: Transloadit provides file upload and processing APIs for developers and SaaS applications.
+  links:
+    site: https://transloadit.com
+sources:
+  - source_id: src_ca6c80650919cc397105551390e3f9d0c093c5ba841fed5f8ea68dba864ef90f
+    url: https://transloadit.com
+programs:
+  - program_id: prg_01m1ss15hgpp1jh236pdgqerz7
+    program_slug: transloadit-startup-program
+    program_slug_aliases: []
+    title: Transloadit Accelerator Program
+    summary: Transloadit offers founders and alumni of partner accelerators and incubators up to $2,000 in file-processing credits valid for one year.
+    source_ids:
+      - src_ca6c80650919cc397105551390e3f9d0c093c5ba841fed5f8ea68dba864ef90f
+offers:
+  - offer_id: off_01m1ss15hh7bh3e56g6cfnqhxt
+    program_id: prg_01m1ss15hgpp1jh236pdgqerz7
+    offer_slug: transloadit-startup-program
+    offer_slug_aliases: []
+    title: Transloadit Accelerator Program
+    summary: Founders and alumni of Transloadit partner accelerators and incubators receive up to $2,000 in file-processing credits for one year.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T21:54:09.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to $2,000 in Transloadit file-processing credits for one year for founders and alumni of partner accelerators
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 200000
+            kind: up-to
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1ss15gejfj3e6b4rpkzwakh
+      access_operator_entity_id: ent_01m1ss15gejfj3e6b4rpkzwakh
+    access:
+      availability: public
+      method: form
+      url: https://transloadit.com
+    source_ids:
+      - src_ca6c80650919cc397105551390e3f9d0c093c5ba841fed5f8ea68dba864ef90f

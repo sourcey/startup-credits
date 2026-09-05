@@ -1,0 +1,58 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1svsfv17yp2bbfhgpwb3h7e
+  slug: datalyse
+  slug_aliases: []
+  name: Datalyse
+  domains:
+    - value: datalyse.io
+      role: primary
+      valid_from: 2026-09-05T22:42:24.000Z
+  category: ai-ml
+profile:
+  description: Datalyse provides AI communication and analytics tools.
+  links:
+    site: https://datalyse.io
+sources:
+  - source_id: src_c4b10498c2bdcdcf47422fee80479e000b1d3b3945e8ea19cb241f131c388009
+    url: https://datalyse.io
+programs:
+  - program_id: prg_01m1svsfvp9qp5g1z133hw0x4z
+    program_slug: datalyse-startup-program
+    program_slug_aliases: []
+    title: Datalyse Startup Programme
+    summary: Datalyse gives eligible startups up to EUR 500 in credits usable for calls, AI, SMS, and platform features, plus free access.
+    source_ids:
+      - src_c4b10498c2bdcdcf47422fee80479e000b1d3b3945e8ea19cb241f131c388009
+offers:
+  - offer_id: off_01m1svsfvpykbrgncctmaxqa2s
+    program_id: prg_01m1svsfvp9qp5g1z133hw0x4z
+    offer_slug: datalyse-startup-program
+    offer_slug_aliases: []
+    title: Datalyse Startup Programme
+    summary: Eligible startups receive up to EUR 500 in Datalyse credits for calls, AI, SMS, and platform features plus free access.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:42:24.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to EUR 500 in Datalyse credits for calls, AI, SMS, and platform features plus free access for eligible startups
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1svsfv17yp2bbfhgpwb3h7e
+      access_operator_entity_id: ent_01m1svsfv17yp2bbfhgpwb3h7e
+    access:
+      availability: public
+      method: form
+      url: https://datalyse.io
+    source_ids:
+      - src_c4b10498c2bdcdcf47422fee80479e000b1d3b3945e8ea19cb241f131c388009

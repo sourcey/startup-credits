@@ -1,0 +1,58 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1ssxmzx3dmz30pjn77cbcg0
+  slug: qualcomm
+  slug_aliases: []
+  name: Qualcomm Scaler
+  domains:
+    - value: qualcomm.com
+      role: primary
+      valid_from: 2026-09-05T22:09:43.000Z
+  category: ai-ml
+profile:
+  description: Qualcomm Scaler provides AI and edge computing tools for hybrid AI startups.
+  links:
+    site: https://qualcomm.com
+sources:
+  - source_id: src_98635d2a711a94e045ca7f0ecab2254cccf7da47e83841bffaae9aa5c9b7257c
+    url: https://qualcomm.com
+programs:
+  - program_id: prg_01m1ssxn0g1e8hfxdcq5jfhj31
+    program_slug: qualcomm-startup-program
+    program_slug_aliases: []
+    title: Qualcomm Scaler Startup Program
+    summary: The Qualcomm Scaler Startup Program supports selected early-stage startups from pre-seed to Series A building hybrid AI solutions.
+    source_ids:
+      - src_98635d2a711a94e045ca7f0ecab2254cccf7da47e83841bffaae9aa5c9b7257c
+offers:
+  - offer_id: off_01m1ssxn0h7tsbe7zxdnx9gx8n
+    program_id: prg_01m1ssxn0g1e8hfxdcq5jfhj31
+    offer_slug: qualcomm-startup-program
+    offer_slug_aliases: []
+    title: Qualcomm Scaler Startup Program
+    summary: Selected early-stage startups from pre-seed to Series A building hybrid AI solutions receive Qualcomm Scaler program benefits.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:09:43.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Qualcomm Scaler program benefits for selected early-stage startups from pre-seed to Series A building hybrid AI solutions
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1ssxmzx3dmz30pjn77cbcg0
+      access_operator_entity_id: ent_01m1ssxmzx3dmz30pjn77cbcg0
+    access:
+      availability: public
+      method: form
+      url: https://qualcomm.com
+    source_ids:
+      - src_98635d2a711a94e045ca7f0ecab2254cccf7da47e83841bffaae9aa5c9b7257c

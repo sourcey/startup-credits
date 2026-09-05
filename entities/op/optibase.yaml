@@ -1,0 +1,58 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1stbhxh22kzar13wrs13e1v
+  slug: optibase
+  slug_aliases: []
+  name: Optibase
+  domains:
+    - value: optibase.io
+      role: primary
+      valid_from: 2026-09-05T22:17:19.000Z
+  category: hosting-infra
+profile:
+  description: Optibase provides video streaming and content delivery infrastructure.
+  links:
+    site: https://www.optibase.io
+sources:
+  - source_id: src_3cefd9fb376575a023ea3e5ad14ac23549ccb45b42c42aeda0b757925d97c272
+    url: https://www.optibase.io/startup-program
+programs:
+  - program_id: prg_01m1stbhytgy589wppct6hncwn
+    program_slug: optibase-startup-program
+    program_slug_aliases: []
+    title: Optibase Startup Program
+    summary: Optibase publishes a startup program offering eligible startups a custom monthly or yearly subscription discount for one year.
+    source_ids:
+      - src_3cefd9fb376575a023ea3e5ad14ac23549ccb45b42c42aeda0b757925d97c272
+offers:
+  - offer_id: off_01m1stbhytwst5y90r4cy6hrbj
+    program_id: prg_01m1stbhytgy589wppct6hncwn
+    offer_slug: optibase-startup-program
+    offer_slug_aliases: []
+    title: Optibase Startup Program
+    summary: Eligible startups receive a custom Optibase subscription discount for one year through the startup program.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:17:19.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Custom Optibase subscription discount for one year for eligible startups; exact percentage not publicly published.
+          kind: discount
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1stbhxh22kzar13wrs13e1v
+      access_operator_entity_id: ent_01m1stbhxh22kzar13wrs13e1v
+    access:
+      availability: public
+      method: form
+      url: https://www.optibase.io/startup-program
+    source_ids:
+      - src_3cefd9fb376575a023ea3e5ad14ac23549ccb45b42c42aeda0b757925d97c272

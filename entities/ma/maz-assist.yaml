@@ -1,0 +1,58 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1srtq8bnnmcjbtsdzajq86k
+  slug: maz-assist
+  slug_aliases: []
+  name: MAZ Assist
+  domains:
+    - value: mazassist.com
+      role: primary
+      valid_from: 2026-09-05T21:50:37.000Z
+  category: hr-people
+profile:
+  description: MAZ Assist provides AI-powered employee and HR support tools for startup teams.
+  links:
+    site: https://mazassist.com
+sources:
+  - source_id: src_ab077c6a081ef16d2a94e6693d5c81b2e91c32a2059910bb1ec243e44705594b
+    url: https://mazassist.com
+programs:
+  - program_id: prg_01m1srtq8ra6qpbmf243revzsh
+    program_slug: maz-assist-startup-program
+    program_slug_aliases: []
+    title: MAZ Assist Startups Program
+    summary: MAZ Assist gives eligible startups one AI Employee Starter plan free for 3 months, plus access to 1,000 targeted international decision-maker contacts.
+    source_ids:
+      - src_ab077c6a081ef16d2a94e6693d5c81b2e91c32a2059910bb1ec243e44705594b
+offers:
+  - offer_id: off_01m1srtq8s0tg56zkv8k27e6ba
+    program_id: prg_01m1srtq8ra6qpbmf243revzsh
+    offer_slug: maz-assist-startup-program
+    offer_slug_aliases: []
+    title: MAZ Assist Startups Program
+    summary: Eligible startups receive one AI Employee Starter plan free for 3 months plus 1,000 targeted international decision-maker contacts.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T21:50:37.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Free AI Employee Starter plan for 3 months plus 1,000 targeted international decision-maker contacts for eligible startups
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1srtq8bnnmcjbtsdzajq86k
+      access_operator_entity_id: ent_01m1srtq8bnnmcjbtsdzajq86k
+    access:
+      availability: public
+      method: form
+      url: https://mazassist.com
+    source_ids:
+      - src_ab077c6a081ef16d2a94e6693d5c81b2e91c32a2059910bb1ec243e44705594b

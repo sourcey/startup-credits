@@ -1,0 +1,58 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1srhgxq5j6rgb1xmt0y0mrq
+  slug: akinda
+  slug_aliases: []
+  name: Akinda
+  domains:
+    - value: akinda.io
+      role: primary
+      valid_from: 2026-09-05T21:45:33.000Z
+  category: apis-integration
+profile:
+  description: Akinda provides API infrastructure and integration tools for startups building data-connected products.
+  links:
+    site: https://akinda.io
+sources:
+  - source_id: src_530427c7c18b347708c0103188b17be1ce3cc24ad55a1927fd7643eee1c1150c
+    url: https://akinda.io
+programs:
+  - program_id: prg_01m1srhgyv8yw9ggb9e9d4fmcf
+    program_slug: akinda-startup-program
+    program_slug_aliases: []
+    title: Akinda Startup Program
+    summary: Akinda offers discounted first-term business API access for pre-seed or seed startups valued under $5 million building real products.
+    source_ids:
+      - src_530427c7c18b347708c0103188b17be1ce3cc24ad55a1927fd7643eee1c1150c
+offers:
+  - offer_id: off_01m1srhgyvepaf0bmx9zrdh3ht
+    program_id: prg_01m1srhgyv8yw9ggb9e9d4fmcf
+    offer_slug: akinda-startup-program
+    offer_slug_aliases: []
+    title: Akinda Startup Program
+    summary: Eligible pre-seed or seed startups valued under $5 million receive discounted first-term business API access through Akinda's startup program.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T21:45:33.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Discounted first-term business API access for pre-seed or seed startups valued under $5 million; exact percentage not publicly published.
+          kind: discount
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1srhgxq5j6rgb1xmt0y0mrq
+      access_operator_entity_id: ent_01m1srhgxq5j6rgb1xmt0y0mrq
+    access:
+      availability: public
+      method: form
+      url: https://akinda.io
+    source_ids:
+      - src_530427c7c18b347708c0103188b17be1ce3cc24ad55a1927fd7643eee1c1150c

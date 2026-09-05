@@ -1,0 +1,63 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1svgw9aqandp2n5kpnp6vte
+  slug: sendpulse
+  slug_aliases: []
+  name: SendPulse
+  domains:
+    - value: sendpulse.com
+      role: primary
+      valid_from: 2026-09-05T22:37:42.000Z
+  category: marketing
+profile:
+  description: SendPulse provides email marketing, SMS, and marketing automation tools.
+  links:
+    site: https://sendpulse.com
+sources:
+  - source_id: src_cc2110baf8830c3b29fcf2a6ed0c63262fe0a35a80352c9420879872a34f7df7
+    url: https://sendpulse.com
+programs:
+  - program_id: prg_01m1svgw9jyknmq0m8xn8r6wck
+    program_slug: sendpulse-startup-program
+    program_slug_aliases: []
+    title: SendPulse Startup Grant
+    summary: SendPulse offers eligible startups $5,000 in SendPulse credits for 12 months for its marketing, sales, automation, CRM, and WhatsApp services.
+    source_ids:
+      - src_cc2110baf8830c3b29fcf2a6ed0c63262fe0a35a80352c9420879872a34f7df7
+offers:
+  - offer_id: off_01m1svgw9j77gd6qac01r1va4j
+    program_id: prg_01m1svgw9jyknmq0m8xn8r6wck
+    offer_slug: sendpulse-startup-program
+    offer_slug_aliases: []
+    title: SendPulse Startup Grant
+    summary: Eligible startups receive $5,000 in SendPulse credits for 12 months for marketing, sales, automation, CRM, and WhatsApp services.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:37:42.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: $5,000 in SendPulse credits for 12 months for eligible startups for marketing, sales, automation, CRM, and WhatsApp services
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 500000
+            kind: up-to
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1svgw9aqandp2n5kpnp6vte
+      access_operator_entity_id: ent_01m1svgw9aqandp2n5kpnp6vte
+    access:
+      availability: public
+      method: form
+      url: https://sendpulse.com
+    source_ids:
+      - src_cc2110baf8830c3b29fcf2a6ed0c63262fe0a35a80352c9420879872a34f7df7

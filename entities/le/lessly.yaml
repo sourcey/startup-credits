@@ -1,0 +1,58 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1sse0n58hx8jhx5fk4x5h84
+  slug: lessly
+  slug_aliases: []
+  name: Lessly
+  domains:
+    - value: lessly.app
+      role: primary
+      valid_from: 2026-09-05T22:01:11.000Z
+  category: finance-accounting
+profile:
+  description: Lessly provides cloud-based accounting and financial management software for small businesses.
+  links:
+    site: https://lessly.app
+sources:
+  - source_id: src_b3ef504544711871bc9e0cfb2dbfc414fcaa3328b590822da398f2c54d80c9b1
+    url: https://lessly.app
+programs:
+  - program_id: prg_01m1sse0p6hhgmrycwnmtzs5tk
+    program_slug: lessly-startup-program
+    program_slug_aliases: []
+    title: Lessly First Financial Year Free
+    summary: Lessly offers new clients its full accounting service free for one financial year with no credit card, invoices, contract, or lock-in.
+    source_ids:
+      - src_b3ef504544711871bc9e0cfb2dbfc414fcaa3328b590822da398f2c54d80c9b1
+offers:
+  - offer_id: off_01m1sse0p64v2pzgsqqvnevfdd
+    program_id: prg_01m1sse0p6hhgmrycwnmtzs5tk
+    offer_slug: lessly-startup-program
+    offer_slug_aliases: []
+    title: Lessly First Financial Year Free
+    summary: New clients receive Lessly's full accounting service free for one financial year with no credit card, invoices, contract, or lock-in.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:01:11.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Full Lessly accounting service free for one financial year with no credit card, invoices, contract, or lock-in
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1sse0n58hx8jhx5fk4x5h84
+      access_operator_entity_id: ent_01m1sse0n58hx8jhx5fk4x5h84
+    access:
+      availability: public
+      method: form
+      url: https://lessly.app
+    source_ids:
+      - src_b3ef504544711871bc9e0cfb2dbfc414fcaa3328b590822da398f2c54d80c9b1

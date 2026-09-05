@@ -1,0 +1,61 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1sr2zgg8w08642705fy2jbn
+  slug: sinatra
+  slug_aliases: []
+  name: Sinatra
+  domains:
+    - value: sinatra.dev
+      role: primary
+      valid_from: 2026-09-05T21:38:57.000Z
+  category: productivity
+profile:
+  description: Sinatra is a productivity platform for startup teams, offering collaboration and workflow tools.
+  links:
+    site: https://www.sinatra.dev
+sources:
+  - source_id: src_b84db64408bcc09c406f43afd80bdfeb6502c8717dd74223f29ce24c43e447ba
+    url: https://www.sinatra.dev/startups
+programs:
+  - program_id: prg_01m1sr2zgsaca1x4hkbp79cnrb
+    program_slug: sinatra-startup-program
+    program_slug_aliases: []
+    title: Sinatra Startup Program
+    summary: Sinatra offers approved startup teams 50% off monthly seats for 12 months.
+    source_ids:
+      - src_b84db64408bcc09c406f43afd80bdfeb6502c8717dd74223f29ce24c43e447ba
+offers:
+  - offer_id: off_01m1sr2zgthk2amzymsvvt1pra
+    program_id: prg_01m1sr2zgsaca1x4hkbp79cnrb
+    offer_slug: sinatra-startup-program
+    offer_slug_aliases: []
+    title: Sinatra Startup Program
+    summary: Approved startup teams receive 50% off monthly seats for 12 months through the Sinatra startup program.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T21:38:57.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 50% off monthly seats for approved startup teams for 12 months
+          kind: discount
+          percentage:
+            basis_points: 5000
+            kind: exact
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply through the vendor's startup program page and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1sr2zgg8w08642705fy2jbn
+      access_operator_entity_id: ent_01m1sr2zgg8w08642705fy2jbn
+    access:
+      availability: public
+      method: form
+      url: https://www.sinatra.dev/startups
+    source_ids:
+      - src_b84db64408bcc09c406f43afd80bdfeb6502c8717dd74223f29ce24c43e447ba

@@ -1,0 +1,58 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1ss88caneqyn8nj9ex4nfxn
+  slug: air-startup
+  slug_aliases: []
+  name: Air
+  domains:
+    - value: air.inc
+      role: primary
+      valid_from: 2026-09-05T21:58:00.000Z
+  category: marketing
+profile:
+  description: Air provides creative collaboration and asset management tools for marketing teams.
+  links:
+    site: https://air.inc
+sources:
+  - source_id: src_eb5fd07bd17bafbb307b67683aaa77d8c15fa89b930251a19b58081c3dca097d
+    url: https://air.inc
+programs:
+  - program_id: prg_01m1ss88chsm289x333af8m7jz
+    program_slug: air-startup-startup-program
+    program_slug_aliases: []
+    title: Air Startup Program
+    summary: Air offers eligible partner-network startups up to six months free on Air's Business plan, worth up to USD 5,800.
+    source_ids:
+      - src_eb5fd07bd17bafbb307b67683aaa77d8c15fa89b930251a19b58081c3dca097d
+offers:
+  - offer_id: off_01m1ss88ch3xhmcbgqkrxrn7nt
+    program_id: prg_01m1ss88chsm289x333af8m7jz
+    offer_slug: air-startup-startup-program
+    offer_slug_aliases: []
+    title: Air Startup Program
+    summary: Eligible partner-network startups receive up to six months free on Air's Business plan, worth up to USD 5,800.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T21:58:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to six months free on Air's Business plan (worth up to USD 5,800) for eligible partner-network startups
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1ss88caneqyn8nj9ex4nfxn
+      access_operator_entity_id: ent_01m1ss88caneqyn8nj9ex4nfxn
+    access:
+      availability: public
+      method: form
+      url: https://air.inc
+    source_ids:
+      - src_eb5fd07bd17bafbb307b67683aaa77d8c15fa89b930251a19b58081c3dca097d

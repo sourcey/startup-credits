@@ -1,0 +1,63 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1sv7mzydcpn7wt98eprvv3y
+  slug: gameanalytics
+  slug_aliases: []
+  name: GameAnalytics
+  domains:
+    - value: gameanalytics.com
+      role: primary
+      valid_from: 2026-09-05T22:32:39.000Z
+  category: data-analytics
+profile:
+  description: GameAnalytics provides game analytics and player behavior tools.
+  links:
+    site: https://gameanalytics.com
+sources:
+  - source_id: src_dd1907ef29abff41930c41783e5d59d565f744e08ad47bf9365d8f0c3ae00e86
+    url: https://gameanalytics.com
+programs:
+  - program_id: prg_01m1sv7n0kwjcg79r6crm74k4c
+    program_slug: gameanalytics-startup-program
+    program_slug_aliases: []
+    title: GameAnalytics Startup Program
+    summary: GameAnalytics publishes a startup program for qualifying VC-backed, pre-Series-B game studios offering $60,000 in free credits.
+    source_ids:
+      - src_dd1907ef29abff41930c41783e5d59d565f744e08ad47bf9365d8f0c3ae00e86
+offers:
+  - offer_id: off_01m1sv7n14shbzctfs1tdzvje7
+    program_id: prg_01m1sv7n0kwjcg79r6crm74k4c
+    offer_slug: gameanalytics-startup-program
+    offer_slug_aliases: []
+    title: GameAnalytics Startup Program
+    summary: VC-backed, pre-Series-B game studios receive $60,000 in free GameAnalytics credits through the startup program.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:32:39.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: $60,000 in free GameAnalytics credits for qualifying VC-backed, pre-Series-B game studios
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 6000000
+            kind: up-to
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1sv7mzydcpn7wt98eprvv3y
+      access_operator_entity_id: ent_01m1sv7mzydcpn7wt98eprvv3y
+    access:
+      availability: public
+      method: form
+      url: https://gameanalytics.com
+    source_ids:
+      - src_dd1907ef29abff41930c41783e5d59d565f744e08ad47bf9365d8f0c3ae00e86

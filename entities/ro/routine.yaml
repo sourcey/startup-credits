@@ -1,0 +1,58 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1srr39b89e9n9za2mhdt3ek
+  slug: routine
+  slug_aliases: []
+  name: Routine
+  domains:
+    - value: routine.co
+      role: primary
+      valid_from: 2026-09-05T21:49:11.000Z
+  category: productivity
+profile:
+  description: Routine provides a smart daily planner and task management tool for professionals and startup teams.
+  links:
+    site: https://routine.co
+sources:
+  - source_id: src_0cb911e68a1f9fc91d4f1bcfed9cae0f26885c3f3e1ec328553c1cea7fcc968b
+    url: https://routine.co/partnerships/startups
+programs:
+  - program_id: prg_01m1srr39qy5xbktqqz1hyw4kr
+    program_slug: routine-startup-program
+    program_slug_aliases: []
+    title: Routine for Startups
+    summary: Routine offers qualifying non-paying startups one year of Routine Business free, worth up to USD 2,500 depending on team size.
+    source_ids:
+      - src_0cb911e68a1f9fc91d4f1bcfed9cae0f26885c3f3e1ec328553c1cea7fcc968b
+offers:
+  - offer_id: off_01m1srr39qyre78gfcc8tj3aax
+    program_id: prg_01m1srr39qy5xbktqqz1hyw4kr
+    offer_slug: routine-startup-program
+    offer_slug_aliases: []
+    title: Routine for Startups
+    summary: Eligible non-paying startups receive one year of Routine Business free, worth up to USD 2,500 depending on team size.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T21:49:11.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: One year of Routine Business free for qualifying non-paying startups, worth up to USD 2,500
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1srr39b89e9n9za2mhdt3ek
+      access_operator_entity_id: ent_01m1srr39b89e9n9za2mhdt3ek
+    access:
+      availability: public
+      method: form
+      url: https://routine.co/partnerships/startups
+    source_ids:
+      - src_0cb911e68a1f9fc91d4f1bcfed9cae0f26885c3f3e1ec328553c1cea7fcc968b

@@ -1,0 +1,58 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1ss4azxw73j463ws74mh0g3
+  slug: monosnap
+  slug_aliases: []
+  name: Monosnap
+  domains:
+    - value: monosnap.ai
+      role: primary
+      valid_from: 2026-09-05T21:55:53.000Z
+  category: devtools-other
+profile:
+  description: Monosnap provides screen capture, annotation, and sharing tools for teams and developers.
+  links:
+    site: https://monosnap.ai
+sources:
+  - source_id: src_0f8351c65eeb2d8bbb18787bdbe069771d21117f5e4545ab279fbf6f97063f34
+    url: https://monosnap.ai
+programs:
+  - program_id: prg_01m1ss4b06rhsgpnwy67sn6a93
+    program_slug: monosnap-startup-program
+    program_slug_aliases: []
+    title: Monosnap for Startups
+    summary: Monosnap provides eligible startups with tiered Commercial or Enterprise annual-plan benefits. Startups with less than USD 5 million raised receive free full access.
+    source_ids:
+      - src_0f8351c65eeb2d8bbb18787bdbe069771d21117f5e4545ab279fbf6f97063f34
+offers:
+  - offer_id: off_01m1ss4b06f8ya9n33h16sezpj
+    program_id: prg_01m1ss4b06rhsgpnwy67sn6a93
+    offer_slug: monosnap-startup-program
+    offer_slug_aliases: []
+    title: Monosnap for Startups
+    summary: Startups with less than USD 5 million raised receive free full access to Monosnap Commercial or Enterprise annual plans.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T21:55:53.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Free full access to Monosnap Commercial or Enterprise annual plans for startups with less than USD 5 million raised
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1ss4azxw73j463ws74mh0g3
+      access_operator_entity_id: ent_01m1ss4azxw73j463ws74mh0g3
+    access:
+      availability: public
+      method: form
+      url: https://monosnap.ai
+    source_ids:
+      - src_0f8351c65eeb2d8bbb18787bdbe069771d21117f5e4545ab279fbf6f97063f34

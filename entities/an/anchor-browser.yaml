@@ -1,0 +1,58 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1sv7pv7vcnh1cw0ans9yd9z
+  slug: anchor-browser
+  slug_aliases: []
+  name: Anchor Browser
+  domains:
+    - value: anchorbrowser.io
+      role: primary
+      valid_from: 2026-09-05T22:32:39.000Z
+  category: productivity
+profile:
+  description: Anchor Browser provides browser automation and web scraping tools.
+  links:
+    site: https://anchorbrowser.io
+sources:
+  - source_id: src_6a92ebced5c0dd9c5a47276ba5b518b2500fea77ff294ae421d872796e9c611e
+    url: https://anchorbrowser.io
+programs:
+  - program_id: prg_01m1sv7pvewvjrf8xg83zn4prj
+    program_slug: anchor-browser-startup-program
+    program_slug_aliases: []
+    title: Anchor Browser Startup Program
+    summary: Eligible production-stage startups building browser automation products can receive 24,000 credits and Growth-tier access.
+    source_ids:
+      - src_6a92ebced5c0dd9c5a47276ba5b518b2500fea77ff294ae421d872796e9c611e
+offers:
+  - offer_id: off_01m1sv7pvf6pnt7z0wz8y2gjhk
+    program_id: prg_01m1sv7pvewvjrf8xg83zn4prj
+    offer_slug: anchor-browser-startup-program
+    offer_slug_aliases: []
+    title: Anchor Browser Startup Program
+    summary: Production-stage startups building browser automation products receive 24,000 Anchor Browser credits and Growth-tier access.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:32:39.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 24,000 Anchor Browser credits and Growth-tier access for production-stage browser automation startups
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1sv7pv7vcnh1cw0ans9yd9z
+      access_operator_entity_id: ent_01m1sv7pv7vcnh1cw0ans9yd9z
+    access:
+      availability: public
+      method: form
+      url: https://anchorbrowser.io
+    source_ids:
+      - src_6a92ebced5c0dd9c5a47276ba5b518b2500fea77ff294ae421d872796e9c611e

@@ -1,0 +1,58 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1srtpb6as3rr5a9g0r0b517
+  slug: paypercut
+  slug_aliases: []
+  name: Paypercut
+  domains:
+    - value: paypercut.com
+      role: primary
+      valid_from: 2026-09-05T21:50:37.000Z
+  category: payments-fintech
+profile:
+  description: Paypercut provides payment processing and transaction management tools for European startups.
+  links:
+    site: https://paypercut.com
+sources:
+  - source_id: src_7651ebd452d769a92fe5b34c2d72705c6953a46c090df6ac511cba0c8d724c12
+    url: https://paypercut.com
+programs:
+  - program_id: prg_01m1srtpc5swfhtkf2sr6v2yyb
+    program_slug: paypercut-startup-program
+    program_slug_aliases: []
+    title: Paypercut for Startups
+    summary: Paypercut offers eligible early-stage European startups transaction-fee waivers and reduced pricing for up to 24 months, capped at EUR 10,000 in aggregate fee savings.
+    source_ids:
+      - src_7651ebd452d769a92fe5b34c2d72705c6953a46c090df6ac511cba0c8d724c12
+offers:
+  - offer_id: off_01m1srtpcaxs0zp25fpmhdwb6p
+    program_id: prg_01m1srtpc5swfhtkf2sr6v2yyb
+    offer_slug: paypercut-startup-program
+    offer_slug_aliases: []
+    title: Paypercut for Startups
+    summary: Eligible early-stage European startups receive transaction-fee waivers and reduced pricing for up to 24 months, capped at EUR 10,000.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T21:50:37.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Transaction-fee waivers and reduced pricing for up to 24 months for eligible European startups, capped at EUR 10,000
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1srtpb6as3rr5a9g0r0b517
+      access_operator_entity_id: ent_01m1srtpb6as3rr5a9g0r0b517
+    access:
+      availability: public
+      method: form
+      url: https://paypercut.com
+    source_ids:
+      - src_7651ebd452d769a92fe5b34c2d72705c6953a46c090df6ac511cba0c8d724c12

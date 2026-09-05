@@ -1,0 +1,63 @@
+schema_version: sourcey.entity-authoring/v1alpha3
+entity:
+  entity_id: ent_01m1st95r6pbmz3axfnjpkf67p
+  slug: intervue
+  slug_aliases: []
+  name: Intervue
+  domains:
+    - value: intervue.io
+      role: primary
+      valid_from: 2026-09-05T22:16:00.000Z
+  category: productivity
+profile:
+  description: Intervue provides live coding interview and technical assessment tools.
+  links:
+    site: https://www.intervue.io
+sources:
+  - source_id: src_8437241d063e4b5db6eca7847e3ab7a70d85d2ccb4e573f85e2915475fecf5e2
+    url: https://www.intervue.io/startups
+programs:
+  - program_id: prg_01m1st95rbn40m9vgmkzzaphzc
+    program_slug: intervue-startup-program
+    program_slug_aliases: []
+    title: Intervue for Startups
+    summary: Intervue publicly offers eligible startups $5,000 in credits usable toward any Intervue plan for six months, with access to enterprise-level features.
+    source_ids:
+      - src_8437241d063e4b5db6eca7847e3ab7a70d85d2ccb4e573f85e2915475fecf5e2
+offers:
+  - offer_id: off_01m1st95rc6jtmmsjn40ge2g8a
+    program_id: prg_01m1st95rbn40m9vgmkzzaphzc
+    offer_slug: intervue-startup-program
+    offer_slug_aliases: []
+    title: Intervue for Startups
+    summary: Eligible startups receive $5,000 in Intervue credits for six months with access to enterprise-level features.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T22:16:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: $5,000 in Intervue credits for six months with enterprise-level feature access for eligible startups
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 500000
+            kind: up-to
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups must apply and be approved; eligibility is at the vendor's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1st95r6pbmz3axfnjpkf67p
+      access_operator_entity_id: ent_01m1st95r6pbmz3axfnjpkf67p
+    access:
+      availability: public
+      method: form
+      url: https://www.intervue.io/startups
+    source_ids:
+      - src_8437241d063e4b5db6eca7847e3ab7a70d85d2ccb4e573f85e2915475fecf5e2
