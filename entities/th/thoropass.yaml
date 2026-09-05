@@ -1,0 +1,64 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_38ckgg56c38z4yf9dqjhddbt16
+  slug: thoropass
+  slug_aliases: []
+  name: Thoropass
+  domains:
+    - value: thoropass.com
+      role: primary
+      valid_from: 2026-09-01T07:04:42.890Z
+  category: legal-compliance
+profile:
+  description: Thoropass is a compliance platform and audit service that helps organizations prepare for and obtain certifications including SOC 2, ISO 27001, PCI DSS, GDPR, and HIPAA.
+  links:
+    site: https://www.thoropass.com/
+sources:
+  - source_id: src_0f8a424756e888a98051ee2d2a3c614e090853c4f9303b48dc93a22f3560b59c
+    url: https://info.thoropass.com/jpm-startup-offers
+programs:
+  - program_id: prg_cph3hve2e429b9chfda7asbh6n
+    program_slug: thoropass-jpm-startup-offer
+    program_slug_aliases: []
+    title: Thoropass JPM Startup Offer
+    summary: Thoropass provides special compliance-platform pricing to startups participating in JPM Startup Offers.
+    source_ids:
+      - src_0f8a424756e888a98051ee2d2a3c614e090853c4f9303b48dc93a22f3560b59c
+offers:
+  - offer_id: off_tajfferzzbp4j4fyqab81a4x68
+    program_id: prg_cph3hve2e429b9chfda7asbh6n
+    offer_slug: fifteen-percent-off-for-jpm-startup-offers
+    offer_slug_aliases: []
+    title: 15% Off Thoropass for JPM Startup Offers Participants
+    summary: Eligible JPM Startup Offers participants receive 15% off Thoropass's compliance platform and services.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-01T07:04:42.890Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Enjoy 15% off special pricing exclusively for JPM Startup Offers.
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 1500
+      consideration:
+        kind: unknown
+        description: The source does not state the price payable after applying the 15% discount.
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: external-verification
+        statement: The applicant is eligible for and participates in JPM Startup Offers.
+    roles:
+      terms_authority_entity_id: ent_38ckgg56c38z4yf9dqjhddbt16
+      access_operator_entity_id: ent_38ckgg56c38z4yf9dqjhddbt16
+    access:
+      availability: membership
+      method: form
+      url: https://info.thoropass.com/jpm-startup-offers
+      instructions: Complete Thoropass's JPM Startup Offers form to request the discounted compliance package.
+    terms_url: https://info.thoropass.com/jpm-startup-offers
+    source_ids:
+      - src_0f8a424756e888a98051ee2d2a3c614e090853c4f9303b48dc93a22f3560b59c
