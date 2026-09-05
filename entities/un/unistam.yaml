@@ -1,0 +1,92 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01791rkrhhep5c840vjwsg8p5v
+  slug: unistam
+  slug_aliases: []
+  name: Unistam
+  domains:
+    - value: unistamts.com
+      role: primary
+      valid_from: 2026-09-02T11:10:00.000Z
+  category: hosting-infra
+profile:
+  description: Unistam Technology Services provides managed cloud infrastructure, Simba Space hosting, business technology products, and founder consulting for early-stage teams.
+  links:
+    site: https://unistamts.com
+sources:
+  - source_id: src_a39e1cf7cc4463ca733b5203006194c7091f7e6b4cd21c15e2f0a7a415a41e72
+    url: https://unistamts.com/startups.php
+programs:
+  - program_id: prg_01k2rcztvt9xsbxfb6dx8vrcnb
+    program_slug: unistam-startup-program
+    program_slug_aliases: []
+    title: Unistam Startup Program
+    summary: Unistam's startup program gives eligible early-stage technology startups up to $50,000 in Simba Space cloud credits, managed infrastructure setup, 24/7 priority support, and founder consultation.
+    source_ids:
+      - src_a39e1cf7cc4463ca733b5203006194c7091f7e6b4cd21c15e2f0a7a415a41e72
+offers:
+  - offer_id: off_01k4sc4m3mae46w6t9smmhq60a
+    program_id: prg_01k2rcztvt9xsbxfb6dx8vrcnb
+    offer_slug: up-to-50000-simba-space-cloud-credits
+    offer_slug_aliases: []
+    title: Up to $50,000 in Simba Space cloud credits
+    summary: Eligible pre-seed to Series A technology startups receive up to $50,000 in Simba Space cloud infrastructure credits, one-stop hosting setup, 24/7 priority support, and regular founder consultation.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-02T11:10:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to $50,000 in Simba Space cloud infrastructure credits to host apps, databases, and services
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 5000000
+            kind: up-to
+        - benefit_id: ben_02
+          description: One-stop managed infrastructure setup for hosting, email, and collaboration so founders can focus on building
+          kind: other
+        - benefit_id: ben_03
+          description: 24/7 priority support with direct escalation paths
+          kind: other
+        - benefit_id: ben_04
+          description: Regular one-on-one founder consultation sessions on product, technology, and go-to-market strategy
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: not-machine-evaluable
+            statement: The company must be at pre-seed to Series A stage.
+          - criterion_id: cri_02
+            kind: manual
+            reason: not-machine-evaluable
+            statement: The company must be building a technology product.
+          - criterion_id: cri_03
+            kind: manual
+            reason: not-machine-evaluable
+            statement: The company must be a registered entity or have an entity registration in process.
+          - criterion_id: cri_04
+            kind: manual
+            reason: not-machine-evaluable
+            statement: The company must have a committed team with a clear vision.
+          - criterion_id: cri_05
+            kind: manual
+            reason: vendor-discretion
+            statement: Applications are reviewed on a rolling basis with limited spots each quarter; acceptance is subject to Unistam review.
+    roles:
+      terms_authority_entity_id: ent_01791rkrhhep5c840vjwsg8p5v
+      access_operator_entity_id: ent_01791rkrhhep5c840vjwsg8p5v
+    access:
+      availability: public
+      method: form
+      instructions: Open the Unistam Startup Program page and complete the on-page Apply Now form. Applications are reviewed on a rolling basis; limited spots each quarter.
+      url: https://unistamts.com/startups.php
+    terms_url: https://unistamts.com/startups.php
+    source_ids:
+      - src_a39e1cf7cc4463ca733b5203006194c7091f7e6b4cd21c15e2f0a7a415a41e72
