@@ -1,0 +1,74 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_bvsnw93368hnvkbcqfd0k9gya3
+  slug: jobo
+  slug_aliases: []
+  name: Jobo
+  domains:
+    - value: jobo.world
+      role: primary
+      valid_from: 2026-09-01T07:34:14.707Z
+  category: apis-integration
+profile:
+  description: Jobo provides job data APIs for search, feeds, exports, outbound distribution, auto-apply workflows, and integrations with applicant tracking systems.
+  links:
+    site: https://jobo.world
+sources:
+  - source_id: src_f6057b23efb130a99de5aae87414f74432b27a47582b3f6f55db07b0a4fb3b78
+    url: https://jobo.world/startups
+programs:
+  - program_id: prg_rs9zvhspb0j04tfcgqcn00hwfp
+    program_slug: jobo-startup-programme
+    program_slug_aliases: []
+    title: Jobo Startup Programme
+    summary: Jobo gives approved early-stage teams 50% off every subscription plan for 12 months.
+    source_ids:
+      - src_f6057b23efb130a99de5aae87414f74432b27a47582b3f6f55db07b0a4fb3b78
+offers:
+  - offer_id: off_940efpvb5n5331xrhqpgs61jtt
+    program_id: prg_rs9zvhspb0j04tfcgqcn00hwfp
+    offer_slug: fifty-percent-off-for-one-year
+    offer_slug_aliases: []
+    title: 50% off Jobo subscriptions for 12 months
+    summary: Approved early-stage teams receive 50% off Jobo's Job Search and Unlimited subscription plans for 12 months; pay-as-you-go usage remains at full price.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-01T07:34:14.707Z
+    economics:
+      benefits:
+        - applies_to: Jobo Job Search and Unlimited subscription plans
+          benefit_id: ben_01
+          description: 50% off the subscription price of every Jobo plan for 12 months; pay-as-you-go usage and usage beyond plan inclusions is not discounted.
+          duration:
+            kind: exact
+            value: P12M
+          kind: discount
+          percentage:
+            basis_points: 5000
+            kind: exact
+      consideration:
+        kind: variable
+        description: The approved team pays the remaining 50% of its selected subscription price and the full price of pay-as-you-go usage.
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: vendor-discretion
+            statement: The applicant must be an early-stage team approved by Jobo.
+          - criterion_id: cri_02
+            kind: manual
+            reason: external-verification
+            statement: The application requires a company website and a work email address on the same domain, along with the team size and funding stage.
+    roles:
+      terms_authority_entity_id: ent_bvsnw93368hnvkbcqfd0k9gya3
+      access_operator_entity_id: ent_bvsnw93368hnvkbcqfd0k9gya3
+    access:
+      availability: public
+      instructions: Submit the startup programme form on Jobo's first-party page for review.
+      method: form
+      url: https://jobo.world/startups
+    terms_url: https://jobo.world/startups
+    source_ids:
+      - src_f6057b23efb130a99de5aae87414f74432b27a47582b3f6f55db07b0a4fb3b78
