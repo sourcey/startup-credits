@@ -10,6 +10,7 @@ entity:
       valid_from: 2026-09-01T05:36:00.000Z
   category: commerce
 profile:
+  summary: Inventory management, forecasting, reporting, and warehouse operations platform.
   description: StockyTrack is an inventory platform for stock control, warehouses, forecasting, reporting, and multi-entity operations.
   links:
     site: https://stockytrack.com/
@@ -36,9 +37,8 @@ offers:
       effective_from: 2026-09-01T05:36:00.000Z
     economics:
       benefits:
-        - applies_to: Any StockyTrack plan
-          benefit_id: ben_01
-          description: 25% off any StockyTrack plan for 12 months.
+        - benefit_id: ben_01
+          description: 25% off for 12 months
           duration:
             kind: exact
             value: P1Y
@@ -48,19 +48,17 @@ offers:
             basis_points: 2500
       consideration:
         kind: variable
-        description: The company pays the remaining discounted price of the StockyTrack plan it selects.
+        description: StockyTrack prices the selected plan and publishes a 25% startup discount for 12 months.
     eligibility:
       rule:
-        kind: all
-        rules:
-          - criterion_id: cri_01
-            fact: company.age_months
-            kind: predicate
-            operator: lt
-            statement: The company is less than 18 months old.
-            value:
-              type: number
-              value: 18
+        criterion_id: cri_01
+        fact: company.age_months
+        kind: predicate
+        operator: lt
+        statement: The company is less than 18 months old.
+        value:
+          type: number
+          value: 18
     roles:
       terms_authority_entity_id: ent_ymf4p8yesv9tpeehh3d28qr141
       access_operator_entity_id: ent_ymf4p8yesv9tpeehh3d28qr141
