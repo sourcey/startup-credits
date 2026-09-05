@@ -1,0 +1,79 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1mv45vqb8bddwym7p24agh2
+  slug: pagerduty
+  slug_aliases: []
+  name: PagerDuty
+  domains:
+    - value: pagerduty.com
+      role: primary
+      valid_from: 2026-09-03T23:53:15.000Z
+  category: observability
+profile:
+  description: PagerDuty is an operations platform for incident response, on-call management, and automated remediation.
+  links:
+    site: https://www.pagerduty.com/
+sources:
+  - source_id: src_8899927869bf5bf793eee1ef828156e9db376008d33fabba256fadecf7ef51f6
+    url: https://www.pagerduty.com/startups/
+programs:
+  - program_id: prg_01m1mv45w20jvzwkqprm02xqar
+    program_slug: pagerduty-for-startups
+    program_slug_aliases: []
+    title: PagerDuty for Startups
+    summary: PagerDuty for Startups gives eligible new customers at Seed, Series A, or Series B six months of AI-Powered Operations at $0, including 20 seats, 20,000 events, and 1,000 AI actions.
+    source_ids:
+      - src_8899927869bf5bf793eee1ef828156e9db376008d33fabba256fadecf7ef51f6
+offers:
+  - offer_id: off_01m1mv45w2q0jkrj9vs2qhn6cy
+    program_id: prg_01m1mv45w20jvzwkqprm02xqar
+    offer_slug: six-months-ai-powered-operations-free
+    offer_slug_aliases: []
+    title: 6 months of AI-Powered Operations free
+    summary: Eligible new PagerDuty customers at Seed, Series A, or Series B receive 6 months of AI-Powered Operations at $0, including 20 seats, 20,000 events, and 1,000 AI actions.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-03T23:53:15.000Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_01
+          description: Six months of PagerDuty AI-Powered Operations at $0, including 20 seats per year, 20,000 events, and 1,000 AI actions
+          duration:
+            kind: exact
+            value: P6M
+          kind: free-service
+          service: PagerDuty AI-Powered Operations
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.is_current_customer
+            kind: predicate
+            operator: eq
+            statement: Must be a new PagerDuty customer
+            value:
+              type: boolean
+              value: false
+          - criterion_id: cri_02
+            fact: company.stage
+            kind: predicate
+            operator: in
+            statement: Startup must be at Seed, Series A, or Series B funding stage
+            value:
+              type: string-set
+              values:
+                - seed
+                - series-a
+                - series-b
+    roles:
+      terms_authority_entity_id: ent_01m1mv45vqb8bddwym7p24agh2
+      access_operator_entity_id: ent_01m1mv45vqb8bddwym7p24agh2
+    access:
+      availability: public
+      method: form
+      url: https://www.pagerduty.com/startups/
+    source_ids:
+      - src_8899927869bf5bf793eee1ef828156e9db376008d33fabba256fadecf7ef51f6
