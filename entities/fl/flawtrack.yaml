@@ -1,0 +1,62 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1sh694gcfdgv3be7ypjjpdz
+  slug: flawtrack
+  slug_aliases: []
+  name: Flawtrack
+  domains:
+    - value: flawtrack.com
+      role: primary
+      valid_from: 2026-09-05T19:40:00.000Z
+  category: auth-security
+profile:
+  description: Flawtrack provides attack surface management, vulnerability management, threat intelligence, and security services.
+  links:
+    site: https://www.flawtrack.com
+sources:
+  - source_id: src_7989dae78849d6e430b7b560b1373ad1e614f1a01533f06ce89b4d5714c99bbf
+    url: https://www.flawtrack.com/segments/startups
+programs:
+  - program_id: prg_01m1sh694rkz6eea5am5xfqhdm
+    program_slug: flawtrack-startup-program
+    program_slug_aliases: []
+    title: Flawtrack Startup Program
+    summary: Security platform benefits for startups at different funding stages.
+    source_ids:
+      - src_7989dae78849d6e430b7b560b1373ad1e614f1a01533f06ce89b4d5714c99bbf
+offers:
+  - offer_id: off_01m1sh694snmx5h2mpb6vsn1aa
+    program_id: prg_01m1sh694rkz6eea5am5xfqhdm
+    offer_slug: funded-startup-discount
+    offer_slug_aliases: []
+    title: Flawtrack Funded Startup Discount
+    summary: Flawtrack advertises a 90% discount for startups at Series A and later stages, with applications through its contact form.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T19:40:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Discount for funded startups at Series A and beyond.
+          kind: discount
+          percentage:
+            basis_points: 9000
+            kind: exact
+      consideration:
+        description: Discounted service charges; the source does not publish a base price or discount duration.
+        kind: variable
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_01
+        reason: not-machine-evaluable
+        statement: Funded startup at Series A or a later funding stage.
+    roles:
+      terms_authority_entity_id: ent_01m1sh694gcfdgv3be7ypjjpdz
+      access_operator_entity_id: ent_01m1sh694gcfdgv3be7ypjjpdz
+    access:
+      availability: public
+      method: form
+      url: https://www.flawtrack.com/contact
+    source_ids:
+      - src_7989dae78849d6e430b7b560b1373ad1e614f1a01533f06ce89b4d5714c99bbf
