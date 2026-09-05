@@ -1,0 +1,71 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1a761qy6fhy92p3q0638wwj
+  slug: manylayers
+  slug_aliases: []
+  name: ManyLayers
+  domains:
+    - value: manylayers.io
+      role: primary
+      valid_from: 2026-08-30T20:53:48.157Z
+  category: ai-ml
+profile:
+  description: ManyLayers provides AI model routing, guardrails, budgets, audit logs, team workspaces, RAG, agents, evaluations, and on-prem model deployment.
+  links:
+    site: https://manylayers.io
+sources:
+  - source_id: src_e20af7418a9594b332a6108a21879ad59732c9699e0d07d68787196be994b7e3
+    url: https://manylayers.io/startup-program/
+  - source_id: src_61887b7de1fc4e382694934502f9f2463c1d4f028f6af8d4dc1da2adad377957
+    url: https://manylayers.io/
+  - source_id: src_a87c6d4fb95f4bcd9e7cbb49cae8837c9cbc2430093883a8d90a62bbbcf231ce
+    url: https://manylayers.io/talk-to-us/
+programs:
+  - program_id: prg_01m1a761r67hp60vr5rsjm7zsq
+    program_slug: manylayers-startup-program
+    program_slug_aliases: []
+    title: ManyLayers Startup Program
+    summary: ManyLayers gives qualifying AI-first startups free access to its Team tier and full platform for 12 months, with onboarding and dedicated support.
+    source_ids:
+      - src_e20af7418a9594b332a6108a21879ad59732c9699e0d07d68787196be994b7e3
+offers:
+  - offer_id: off_01m1a761r7kfc08z6xjgna4etp
+    program_id: prg_01m1a761r67hp60vr5rsjm7zsq
+    offer_slug: twelve-months-free-team-tier
+    offer_slug_aliases: []
+    title: 12 months free on ManyLayers Team
+    summary: Accepted AI-first startups receive the ManyLayers Team tier free for 12 months, including Gateway, Workspace, Deploy, onboarding, and dedicated Slack support.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-30T20:53:48.157Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_01
+          description: Free Team tier for 12 months with all features included.
+          kind: free-service
+          service: ManyLayers Team tier
+          duration:
+            kind: exact
+            value: P1Y
+        - benefit_id: ben_02
+          description: Dedicated Slack channel with engineering support.
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_01
+        statement: Applicant must be an AI-first company founded within the last five years at Seed, Pre-Series A, or Series A stage, with no prior commercial contract and no current paid ManyLayers account.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01m1a761qy6fhy92p3q0638wwj
+      access_operator_entity_id: ent_01m1a761qy6fhy92p3q0638wwj
+    access:
+      availability: public
+      method: form
+      url: https://manylayers.io/talk-to-us/
+    source_ids:
+      - src_e20af7418a9594b332a6108a21879ad59732c9699e0d07d68787196be994b7e3
+      - src_61887b7de1fc4e382694934502f9f2463c1d4f028f6af8d4dc1da2adad377957
+      - src_a87c6d4fb95f4bcd9e7cbb49cae8837c9cbc2430093883a8d90a62bbbcf231ce
