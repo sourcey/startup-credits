@@ -1,0 +1,78 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1d29ksa49wmfr4xej31q61c
+  slug: massive
+  slug_aliases: []
+  name: Massive
+  domains:
+    - value: joinmassive.com
+      role: primary
+      valid_from: 2026-08-31T00:00:00.000Z
+  category: apis-integration
+profile:
+  summary: Web-data APIs backed by a global residential proxy network.
+  description: Massive provides Web Access, Web Render, and Web Search APIs for real-time web data collection through a global residential proxy network.
+  links:
+    site: https://www.joinmassive.com
+sources:
+  - source_id: src_53944968ae88125dd81f96439ea3d13ae9078664d4f846edfa99ea90f5eceb41
+    url: https://www.joinmassive.com/massive-for-startups
+programs:
+  - program_id: prg_01m1d29ksgnzx06sm2jtg330dj
+    program_slug: massive-for-startups
+    program_slug_aliases: []
+    title: Massive for Startups
+    summary: Massive's program gives qualifying early-stage companies free Web Access API bandwidth for three months.
+    source_ids:
+      - src_53944968ae88125dd81f96439ea3d13ae9078664d4f846edfa99ea90f5eceb41
+offers:
+  - offer_id: off_01m1d29kshhj7k62216j9v2kca
+    program_id: prg_01m1d29ksgnzx06sm2jtg330dj
+    offer_slug: three-month-web-access-api-bandwidth
+    offer_slug_aliases: []
+    title: 1 TB per month of Web Access API bandwidth free for three months
+    summary: Eligible startups receive 1 TB per month of residential proxy bandwidth through Massive's Web Access API, free for three months.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-31T00:00:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 1 TB per month of residential proxy bandwidth through the Web Access API, free for three months
+          duration:
+            kind: exact
+            value: P3M
+          kind: free-service
+          service: Massive Web Access API with 1 TB of residential proxy bandwidth per month
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: any
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: external-verification
+            statement: The applicant is a current or alumni Y Combinator company from any batch.
+          - criterion_id: cri_02
+            kind: manual
+            reason: external-verification
+            statement: The applicant is backed by an eligible accelerator, including Techstars, 500 Global, Antler, Entrepreneur First, or MassChallenge.
+          - criterion_id: cri_03
+            kind: manual
+            reason: external-verification
+            statement: The applicant is a pre-seed through Series B startup backed by a recognized venture-capital firm.
+          - criterion_id: cri_04
+            kind: manual
+            reason: external-verification
+            statement: The applicant is a bootstrapped or self-funded team with a live product or prototype.
+    roles:
+      terms_authority_entity_id: ent_01m1d29ksa49wmfr4xej31q61c
+      access_operator_entity_id: ent_01m1d29ksa49wmfr4xej31q61c
+    access:
+      availability: public
+      method: form
+      url: https://www.joinmassive.com/massive-for-startups
+    terms_url: https://www.joinmassive.com/massive-for-startups
+    source_ids:
+      - src_53944968ae88125dd81f96439ea3d13ae9078664d4f846edfa99ea90f5eceb41
