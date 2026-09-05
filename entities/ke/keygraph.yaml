@@ -1,0 +1,65 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1d67wcpvcmcr3befxgyyz77
+  slug: keygraph
+  slug_aliases: []
+  name: Keygraph
+  domains:
+    - value: keygraph.io
+      role: primary
+      valid_from: 2026-09-01T00:00:00.000Z
+  category: auth-security
+profile:
+  description: Keygraph provides a hosted application-security platform for penetration testing, code scanning, remediation, and vulnerability management.
+  links:
+    site: https://keygraph.io
+sources:
+  - source_id: src_d49cc59d5fcdf0f7d6ca686ba70e70e7ae56ae6c15b8abfa488331cc3299d894
+    url: https://keygraph.io/community-program
+  - source_id: src_ddbbca4e16fd70fdc25ae83d92ee233a2688fc296b9e989f55905315f8ce3535
+    url: https://keygraph.io/terms
+programs:
+  - program_id: prg_01m1d67wcw7w6dj18p650gkjpv
+    program_slug: keygraph-community-program
+    program_slug_aliases: []
+    title: Keygraph Community Program
+    summary: Keygraph's Community Program provides eligible startups with its complete managed Pro application-security platform free until a graduation event.
+    source_ids:
+      - src_d49cc59d5fcdf0f7d6ca686ba70e70e7ae56ae6c15b8abfa488331cc3299d894
+      - src_ddbbca4e16fd70fdc25ae83d92ee233a2688fc296b9e989f55905315f8ce3535
+offers:
+  - offer_id: off_01m1d67wcwjy8bfvvchzt9h0yr
+    program_id: prg_01m1d67wcw7w6dj18p650gkjpv
+    offer_slug: free-keygraph-pro-for-startups
+    offer_slug_aliases: []
+    title: Free Keygraph Pro for Eligible Startups
+    summary: Eligible seed and pre-Series-A startups with at most 20 Active Developers receive every Keygraph Pro module free until graduation, with a 90-day free conversion window afterward.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-01T00:00:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: The full Keygraph Pro platform, with every module included, at $0 in cloud service fees.
+          kind: free-service
+          service: Keygraph Pro
+      consideration:
+        kind: variable
+        description: Participants pay only for their own AI provider usage.
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_01
+        reason: external-verification
+        statement: Eligible startup applicants are seed and pre-Series-A startups with 20 or fewer Active Developers; individual developers are not eligible.
+    roles:
+      terms_authority_entity_id: ent_01m1d67wcpvcmcr3befxgyyz77
+      access_operator_entity_id: ent_01m1d67wcpvcmcr3befxgyyz77
+    access:
+      availability: public
+      method: form
+      url: https://docs.google.com/forms/d/e/1FAIpQLSeQs4HV97_0p3L4gZnHCAdBLnd2eqrbTnZPhbSuhdLqSQLygQ/viewform
+    terms_url: https://keygraph.io/terms
+    source_ids:
+      - src_d49cc59d5fcdf0f7d6ca686ba70e70e7ae56ae6c15b8abfa488331cc3299d894
+      - src_ddbbca4e16fd70fdc25ae83d92ee233a2688fc296b9e989f55905315f8ce3535
