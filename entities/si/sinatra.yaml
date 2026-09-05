@@ -1,0 +1,82 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1sc2b1ct8yzpsj0y547ynwc
+  slug: sinatra
+  slug_aliases: []
+  name: Sinatra
+  domains:
+    - value: sinatra.dev
+      role: primary
+      valid_from: 2026-09-05T18:07:37.512Z
+  category: devtools-other
+profile:
+  description: Sinatra turns assigned software issues into pull requests.
+  links:
+    site: https://www.sinatra.dev/startups
+sources:
+  - source_id: src_4ba85e28c689830f66d6dee6c2a6328d22bedbac60aefd9fd63a19653b5bd5e8
+    url: https://www.sinatra.dev/startups
+programs:
+  - program_id: prg_01m1sc2b1dvrvy3sdm6sr57jgc
+    program_slug: startup-program
+    program_slug_aliases: []
+    title: Sinatra for startups
+    summary: Approved startup teams pay USD 10 per member per month for 12 months, a 50% seat discount.
+      Model-provider usage is billed separately.
+    source_ids:
+      - src_4ba85e28c689830f66d6dee6c2a6328d22bedbac60aefd9fd63a19653b5bd5e8
+offers:
+  - offer_id: off_01m1sc2b1d1cc0z5ab5pf36eqc
+    program_id: prg_01m1sc2b1dvrvy3sdm6sr57jgc
+    offer_slug: startup-discount
+    offer_slug_aliases: []
+    title: Sinatra startup seat discount
+    summary: Approved startup teams pay USD 10 per member per month for 12 months, a 50% seat discount.
+      Model-provider usage is billed separately.
+    description: Apply using the company URL. Approved teams receive a single-use code by email to enter
+      when starting the monthly plan. At month 13, seats return to USD 20 per member per month;
+      billing remains monthly.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T18:07:37.512Z
+    economics:
+      benefits:
+        - benefit_id: ben_discount
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 5000
+          duration:
+            kind: exact
+            value: P12M
+          applies_to: Every Sinatra seat in the workspace on the monthly plan
+          description: 50% off the USD 20 monthly seat price for 12 months, making it USD 10 per member per
+            month.
+      consideration:
+        kind: unknown
+        description: Seats cost USD 10 per member per month for 12 months, then USD 20. A card is required.
+          Model-provider usage is billed separately at the provider's rates.
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_1
+            kind: manual
+            reason: external-verification
+            statement: Intended for startup teams with fewer than 100 people. Larger teams may apply for
+              individual review.
+          - criterion_id: cri_2
+            kind: manual
+            reason: external-verification
+            statement: Sinatra checks the company URL and manually approves applications. No funding-stage or
+              investor-list requirement is imposed.
+    roles:
+      terms_authority_entity_id: ent_01m1sc2b1ct8yzpsj0y547ynwc
+      access_operator_entity_id: ent_01m1sc2b1ct8yzpsj0y547ynwc
+    access:
+      availability: public
+      method: form
+      url: https://www.sinatra.dev/startups
+    terms_url: https://www.sinatra.dev/startups
+    source_ids:
+      - src_4ba85e28c689830f66d6dee6c2a6328d22bedbac60aefd9fd63a19653b5bd5e8
