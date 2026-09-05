@@ -60,9 +60,9 @@ offers:
       access_operator_entity_id: ent_2qxtp90m3kkbpg3h8t61y9c5dx
     access:
       availability: public
-      method: form
+      method: contact
       url: https://info.trustcloud.ai/soc2-for-startups-li
-      instructions: Complete the startup sign-up form on TrustCloud's Free SOC 2 page.
+      instructions: Use the Schedule Onboarding link on TrustCloud's Free SOC 2 page to begin onboarding.
     terms_url: https://info.trustcloud.ai/soc2-for-startups-li
     source_ids:
       - src_3de9d06c0231d706a9e50bf9b3bdc0e340a44ad43546f3d5cf2e642dce10aca1
