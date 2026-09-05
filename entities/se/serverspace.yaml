@@ -1,0 +1,90 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1afjg42me4vf1rarfd7tp51
+  slug: serverspace
+  slug_aliases: []
+  name: Serverspace
+  domains:
+    - value: serverspace.us
+      role: primary
+      valid_from: 2026-08-30T23:20:00Z
+  category: hosting-infra
+profile:
+  description: Serverspace is a cloud platform for deploying servers, storage, networks, Kubernetes, CDN, and infrastructure automation through one control panel.
+  links:
+    site: https://serverspace.us/home-page/
+sources:
+  - source_id: src_adbc339a52fe6becba2a957114acb6b5fd3d7c0828e665cc900134ed30771e36
+    url: https://serverspace.us/home-page/
+  - source_id: src_eff5cb59f4a262bcce6e2efcdc8b5d1d09b5e4602249d56fa869e737dfc78b87
+    url: https://serverspace.us/solutions/startup-cloud-program/
+programs:
+  - program_id: prg_01m1afjg48c4yb355ya63dd5za
+    program_slug: serverspace-startup-program
+    program_slug_aliases: []
+    title: Serverspace Startup Program
+    summary: Serverspace offers qualifying early-stage startups USD 10,000 in cloud-service credits for one year plus around-the-clock technical support.
+    source_ids:
+      - src_eff5cb59f4a262bcce6e2efcdc8b5d1d09b5e4602249d56fa869e737dfc78b87
+offers:
+  - offer_id: off_01m1afjg48ze4v7360ssbm0yxb
+    program_id: prg_01m1afjg48c4yb355ya63dd5za
+    offer_slug: startup-cloud-credits-and-support
+    offer_slug_aliases: []
+    title: Serverspace Startup Cloud Credits and Support
+    summary: Qualifying startups can receive USD 10,000 in cloud credits for one year and 24/7 human technical support; applications currently join a waitlist while active review is paused.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-30T23:20:00Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: USD 10,000 in credits for Serverspace cloud infrastructure services
+          duration:
+            kind: exact
+            value: P1Y
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 1000000
+            kind: exact
+        - benefit_id: ben_02
+          description: 24/7 human technical support with a stated 15-minute response time
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: external-verification
+            statement: The startup has an active company website and a business email address on that domain.
+          - criterion_id: cri_02
+            fact: company.age_years
+            kind: predicate
+            operator: lte
+            statement: The startup was founded within the last five years.
+            value:
+              type: number
+              value: 5
+          - criterion_id: cri_03
+            kind: manual
+            reason: external-verification
+            statement: The startup has its own logo and brand identity.
+          - criterion_id: cri_04
+            kind: manual
+            reason: external-verification
+            statement: The startup has a defined business plan or investor pitch describing its goals.
+    roles:
+      terms_authority_entity_id: ent_01m1afjg42me4vf1rarfd7tp51
+      access_operator_entity_id: ent_01m1afjg42me4vf1rarfd7tp51
+    access:
+      availability: public
+      instructions: Complete the startup-program form to join the waitlist; Serverspace states that active application review is temporarily paused because of submission volume.
+      method: form
+      url: https://serverspace.us/solutions/startup-cloud-program/
+    source_ids:
+      - src_eff5cb59f4a262bcce6e2efcdc8b5d1d09b5e4602249d56fa869e737dfc78b87
