@@ -1,0 +1,90 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m14w7a88v833kc8vg4anz9yw
+  slug: chimoney
+  slug_aliases: []
+  name: Chimoney
+  domains:
+    - value: chimoney.io
+      role: primary
+      valid_from: 2026-08-28T00:00:00.000Z
+  category: payments-fintech
+profile:
+  description: Chimoney provides payment infrastructure, wallets, APIs, and global payout orchestration for businesses, developers, AI agents, and humans.
+  links:
+    site: https://chimoney.io
+sources:
+  - source_id: src_658e6ff53c8a739afe630c304673bf59fdc1fa3c4a1d21a154d9ee11c624b94e
+    url: https://chimoney.io/startups/
+programs:
+  - program_id: prg_01m14w7a881x62aemerhy93f3p
+    program_slug: chimoney-for-startups
+    program_slug_aliases: []
+    title: Chimoney for Startups
+    summary: Chimoney's startup program gives qualifying startups free access to Global Bulk Payouts and Developer APIs for six months.
+    source_ids:
+      - src_658e6ff53c8a739afe630c304673bf59fdc1fa3c4a1d21a154d9ee11c624b94e
+offers:
+  - offer_id: off_01m14w7a88h255tdeakh0xqar2
+    program_id: prg_01m14w7a881x62aemerhy93f3p
+    offer_slug: six-months-free-global-payouts-and-apis
+    offer_slug_aliases: []
+    title: Six months free on Chimoney Global Payouts and Developer APIs
+    summary: Eligible startups receive Chimoney's Global Bulk Payouts service and Developer APIs free for six months.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-28T00:00:00.000Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_01
+          description: Six months of Chimoney Global Bulk Payouts at no cost
+          kind: free-service
+          service: Chimoney Global Bulk Payouts
+          duration:
+            kind: exact
+            value: P6M
+        - benefit_id: ben_02
+          description: Six months of Chimoney Developer APIs at no cost
+          kind: free-service
+          service: Chimoney Developer APIs
+          duration:
+            kind: exact
+            value: P6M
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - kind: any
+            rules:
+              - criterion_id: cri_01a
+                fact: company.funding_raised_usd
+                kind: predicate
+                operator: lt
+                statement: Startup has received less than $1 million in external investment or funding.
+                value:
+                  type: number
+                  value: 1000000
+              - criterion_id: cri_01b
+                fact: company.age_months
+                kind: predicate
+                operator: lte
+                statement: Startup was founded within the last three years.
+                value:
+                  type: number
+                  value: 36
+          - criterion_id: cri_02
+            kind: manual
+            reason: external-verification
+            statement: Offer is available only to new Chimoney customers or existing customers on the Free plan.
+    roles:
+      terms_authority_entity_id: ent_01m14w7a88v833kc8vg4anz9yw
+      access_operator_entity_id: ent_01m14w7a88v833kc8vg4anz9yw
+    access:
+      availability: public
+      method: form
+      url: https://chimoney.io/startups/
+    terms_url: https://chimoney.io/startups/
+    source_ids:
+      - src_658e6ff53c8a739afe630c304673bf59fdc1fa3c4a1d21a154d9ee11c624b94e
