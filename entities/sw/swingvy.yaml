@@ -1,0 +1,67 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_bk3mzkpepw8ns7k4z21nf4h8fq
+  slug: swingvy
+  slug_aliases: []
+  name: Swingvy
+  domains:
+    - value: swingvy.com
+      role: primary
+      valid_from: 2026-09-01T07:47:50.213Z
+  category: hr-people
+profile:
+  summary: All-in-one HR platform for payroll, benefits, leave, time, and people operations.
+  description: Swingvy provides an integrated people-operations platform for employee records, leave, time and attendance, expense claims, payroll, benefits, insights, and mobile HR workflows.
+  links:
+    site: https://www.swingvy.com
+sources:
+  - source_id: src_c63c7c4b4551b8323a4fe2316757731fce3dbb21957aea66e1278292304c6e8b
+    url: https://www.swingvy.com/sg/startups
+programs:
+  - program_id: prg_tjwnd1zf7nk92np2cnk62fn6y5
+    program_slug: swingvy-startup-program
+    program_slug_aliases: []
+    title: Swingvy Startup Program
+    summary: Swingvy gives eligible early-stage startups 50% off its all-in-one HR platform for one year.
+    source_ids:
+      - src_c63c7c4b4551b8323a4fe2316757731fce3dbb21957aea66e1278292304c6e8b
+offers:
+  - offer_id: off_dtacg5473vdw13fs9qc5jf5qfy
+    program_id: prg_tjwnd1zf7nk92np2cnk62fn6y5
+    offer_slug: fifty-percent-off-for-one-year
+    offer_slug_aliases: []
+    title: 50% off Swingvy for one year
+    summary: Startups less than three years old with fewer than 15 employees and no more than USD 1 million in funding receive 50% off Swingvy for one year.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-01T07:47:50.213Z
+    economics:
+      benefits:
+        - applies_to: Swingvy all-in-one HR platform
+          benefit_id: ben_01
+          description: 50% off Swingvy for one year
+          duration:
+            kind: exact
+            value: P1Y
+          kind: discount
+          percentage:
+            basis_points: 5000
+            kind: exact
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: external-verification
+        statement: Applicants must be early-stage startups less than three years old, with fewer than 15 employees and up to USD 1 million in funding.
+    roles:
+      terms_authority_entity_id: ent_bk3mzkpepw8ns7k4z21nf4h8fq
+      access_operator_entity_id: ent_bk3mzkpepw8ns7k4z21nf4h8fq
+    access:
+      availability: public
+      instructions: Use the Apply Now link on Swingvy's startup-program page and complete the Swingvy signup flow.
+      method: form
+      url: https://secure.swingvy.com/
+    source_ids:
+      - src_c63c7c4b4551b8323a4fe2316757731fce3dbb21957aea66e1278292304c6e8b
