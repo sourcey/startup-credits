@@ -1,0 +1,73 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1gmt6mxvbkne4fxs88f912y
+  slug: flystack
+  slug_aliases: []
+  name: Flystack
+  domains:
+    - value: flystack.dev
+      role: primary
+      valid_from: 2026-09-02T08:47:18.329Z
+  category: devtools-other
+profile:
+  description: Flystack provides production-ready APIs for flight data, AI, data, and automation, with managed infrastructure and developer resources.
+  links:
+    site: https://www.flystack.dev
+sources:
+  - source_id: src_b64b97f13e74da48717fe92d31c2fff6e7eb2677d306ebc1e449609e2f0cb03b
+    url: https://www.flystack.dev/startup-program
+  - source_id: src_80b6deb5e5f3ed3eae60239217d7e39221c4904a91ec2e8a1c2c0b1d559382c0
+    url: https://www.flystack.dev/pricing
+programs:
+  - program_id: prg_01m1gmt6n5qn76qt11rpxxwckc
+    program_slug: flystack-for-startups
+    program_slug_aliases: []
+    title: Flystack for Startups
+    summary: Flystack's startup program gives qualifying early-stage digital-product companies discounted access to its API platform for one year, plus priority support and developer resources.
+    source_ids:
+      - src_b64b97f13e74da48717fe92d31c2fff6e7eb2677d306ebc1e449609e2f0cb03b
+      - src_80b6deb5e5f3ed3eae60239217d7e39221c4904a91ec2e8a1c2c0b1d559382c0
+offers:
+  - offer_id: off_01m1gmt6n6886t60774d53zqwd
+    program_id: prg_01m1gmt6n5qn76qt11rpxxwckc
+    offer_slug: flystack-startup-plan-discount
+    offer_slug_aliases: []
+    title: Flystack startup plan discount
+    summary: Eligible early-stage digital-product companies receive up to 50% off a Flystack Premium or Startup plan for 12 months, with API access, priority support, and developer resources.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-02T08:47:18.329Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to 50% off a Flystack Premium or Startup plan for 12 months.
+          kind: discount
+          percentage:
+            kind: up-to
+            basis_points: 5000
+          duration:
+            kind: exact
+            value: P1Y
+          applies_to: Flystack Premium or Startup plan
+        - benefit_id: ben_02
+          description: API access, priority support, and developer resources during the startup program.
+          kind: other
+      consideration:
+        kind: variable
+        description: The startup pays the remaining discounted price of its selected Flystack plan.
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: not-machine-evaluable
+        statement: Applicant must be an early-stage digital-product company less than three years old, have raised under EUR 2 million, and maintain an active technical or product team.
+    roles:
+      terms_authority_entity_id: ent_01m1gmt6mxvbkne4fxs88f912y
+      access_operator_entity_id: ent_01m1gmt6mxvbkne4fxs88f912y
+    access:
+      availability: public
+      method: form
+      url: https://www.flystack.dev/startup-program
+    source_ids:
+      - src_b64b97f13e74da48717fe92d31c2fff6e7eb2677d306ebc1e449609e2f0cb03b
+      - src_80b6deb5e5f3ed3eae60239217d7e39221c4904a91ec2e8a1c2c0b1d559382c0
