@@ -1,0 +1,54 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1q13fr8v4pvxnd55wrvypcq
+  slug: vidyard
+  slug_aliases: []
+  name: Vidyard
+  domains:
+    - value: vidyard.com
+      role: primary
+      valid_from: 2026-09-04T20:17:38.234Z
+  category: marketing
+profile:
+  description: Vidyard provides AI-powered video messaging, hosting, analytics, personalization, and integrations for sales and revenue teams.
+  links:
+    site: https://www.vidyard.com
+sources:
+  - source_id: src_8282ef7a20b5f16ea671bb9be45b08aff3bb7e14f1459ccc11bdfc705e5dec36
+    url: https://www.vidyard.com/startups/
+programs: []
+offers:
+  - offer_id: off_01m1q13fr8shnwdr392p7ycgyr
+    offer_slug: vidyard-for-startups
+    offer_slug_aliases: []
+    title: Vidyard for Startups
+    summary: Eligible startups can receive at least 25% off selected enterprise-grade Vidyard features, including CRM integration.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-04T20:17:38.234Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The offer discounts selected paid Vidyard capabilities; final pricing is provided by Vidyard.
+      benefits:
+        - benefit_id: ben_01
+          description: At least 25% off selected enterprise-grade Vidyard features
+          kind: discount
+          percentage:
+            kind: at-least
+            basis_points: 2500
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Applicant must be a startup and qualify for the Vidyard for Startups plan following Vidyard review.
+        reason: vendor-discretion
+    roles:
+      terms_authority_entity_id: ent_01m1q13fr8v4pvxnd55wrvypcq
+      access_operator_entity_id: ent_01m1q13fr8v4pvxnd55wrvypcq
+    access:
+      availability: public
+      method: contact
+      url: https://www.vidyard.com/startups/
+    source_ids:
+      - src_8282ef7a20b5f16ea671bb9be45b08aff3bb7e14f1459ccc11bdfc705e5dec36
