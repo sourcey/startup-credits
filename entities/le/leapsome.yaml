@@ -1,0 +1,87 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_12xdyf267w559tv3a4tk2pj7ma
+  slug: leapsome
+  slug_aliases: []
+  name: Leapsome
+  domains:
+    - value: leapsome.com
+      role: primary
+      valid_from: 2026-09-01T08:28:47.6625505Z
+  category: hr-people
+profile:
+  summary: Human resources and talent-management software for growing companies.
+  description: Leapsome combines HRIS, employee records, performance reviews, goals, feedback, engagement surveys, learning, compensation, workflows, and people analytics in one platform.
+  links:
+    site: https://www.leapsome.com
+sources:
+  - source_id: src_463247973e7acf938d070cb9b8116d2d6d7985cc2ccaba22e85c318b022aeca7
+    url: https://site.leapsome.com/leapsome-for-startups
+programs:
+  - program_id: prg_885nm7jkw21ga3as42sm3kwdg3
+    program_slug: leapsome-for-startups
+    program_slug_aliases: []
+    title: Leapsome for Startups
+    summary: Eligible new startups with fewer than 50 employees receive 20% off Leapsome, or 25% off when affiliated with a Leapsome startup partner, for three years.
+    source_ids:
+      - src_463247973e7acf938d070cb9b8116d2d6d7985cc2ccaba22e85c318b022aeca7
+offers:
+  - offer_id: off_yj7zg8180zgwtw06mx4mnr28x8
+    program_id: prg_885nm7jkw21ga3as42sm3kwdg3
+    offer_slug: startup-discount-for-three-years
+    offer_slug_aliases: []
+    title: 20% or 25% off Leapsome for three years
+    summary: New Leapsome customers with fewer than 50 employees receive 20% off for three years, or 25% when affiliated with a Leapsome startup partner.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-01T08:28:47.6625505Z
+    economics:
+      benefits:
+        - applies_to: Leapsome subscription
+          benefit_id: ben_01
+          description: 20% off Leapsome for three years, increased to 25% for startups affiliated with a Leapsome startup partner
+          duration:
+            kind: exact
+            value: P3Y
+          kind: discount
+          percentage:
+            basis_points: 2500
+            kind: up-to
+      consideration:
+        kind: variable
+        description: The approved startup pays the remaining 75% or 80% of its Leapsome subscription price during the offer period, according to partner affiliation.
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: customer.is_new
+            kind: predicate
+            operator: eq
+            statement: The applicant must be new to Leapsome.
+            value:
+              type: boolean
+              value: true
+          - criterion_id: cri_02
+            fact: company.employee_count
+            kind: predicate
+            operator: lt
+            statement: The applicant must have fewer than 50 employees.
+            value:
+              type: number
+              value: 50
+          - criterion_id: cri_03
+            kind: manual
+            reason: external-verification
+            statement: Leapsome verifies whether the applicant has startup-partner affiliation to assign the 20% or 25% discount tier.
+    roles:
+      terms_authority_entity_id: ent_12xdyf267w559tv3a4tk2pj7ma
+      access_operator_entity_id: ent_12xdyf267w559tv3a4tk2pj7ma
+    access:
+      availability: public
+      instructions: Complete the founder-friendly demo form on the Leapsome for Startups page and provide any startup-partner affiliation to claim the applicable discount.
+      method: form
+      url: https://site.leapsome.com/leapsome-for-startups
+    terms_url: https://site.leapsome.com/leapsome-for-startups
+    source_ids:
+      - src_463247973e7acf938d070cb9b8116d2d6d7985cc2ccaba22e85c318b022aeca7
