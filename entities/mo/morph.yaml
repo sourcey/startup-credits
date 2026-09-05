@@ -1,0 +1,59 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m13tkye5955vkzep7cpgybfj
+  slug: morph
+  slug_aliases:
+    - morphllm
+  name: Morph
+  domains:
+    - value: morphllm.com
+      role: primary
+      valid_from: 2026-08-08T05:32:49.000Z
+  category: ai-ml
+profile:
+  description: Morph provides an OpenAI-compatible API and specialized models for code editing, code search, and context compression.
+  links:
+    site: https://www.morphllm.com
+sources:
+  - source_id: src_c3614f84c294bc01fcf6ed0aaa82ece54a2e4d60f6a0ee95e5c3c4c5d30213ef
+    url: https://www.morphllm.com/llms.txt
+  - source_id: src_f008215d0cae7854d11f09ac6582550db5cd35a4f07a332f96fc326cd6df3f62
+    url: https://www.morphllm.com/pricing
+programs: []
+offers:
+  - offer_id: off_01m13tkye9ttnf50rna45a44f7
+    offer_slug: morph-startup-api-credits
+    offer_slug_aliases: []
+    title: Morph Startup Credits
+    summary: Startups can receive up to $5,000 in Morph API credits.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-08T05:32:49.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to $5,000 in Morph API credits for startups
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 500000
+            kind: up-to
+      consideration:
+        kind: unknown
+        description: The source does not state separate consideration.
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: The Startup Credits offer is for startups.
+    roles:
+      terms_authority_entity_id: ent_01m13tkye5955vkzep7cpgybfj
+      access_operator_entity_id: ent_01m13tkye5955vkzep7cpgybfj
+    access:
+      availability: public
+      method: contact
+      url: https://www.morphllm.com/pricing
+    source_ids:
+      - src_f008215d0cae7854d11f09ac6582550db5cd35a4f07a332f96fc326cd6df3f62
