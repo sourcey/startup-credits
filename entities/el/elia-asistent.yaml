@@ -1,0 +1,70 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1a4f7a01eqbbgzbbw3pehyh
+  slug: elia-asistent
+  slug_aliases: []
+  name: ELIA Asistent
+  domains:
+    - value: elia-asistent.com
+      role: primary
+      valid_from: 2026-08-30T20:06:17.787Z
+  category: support
+profile:
+  description: ELIA Asistent provides AI-powered customer support across web chat, email, WhatsApp, and Telegram, with a built-in CRM and human handoff.
+  links:
+    site: https://elia-asistent.com
+sources:
+  - source_id: src_dd6d871237eab95071f39b3100998988d2f6bfcc104bb7d381a50ea67e714118
+    url: https://elia-asistent.com/startups
+  - source_id: src_0fe68b2e3ea5c96e6ddea367883382ed3910e151cde1444ef18f56b47893d879
+    url: https://elia-asistent.com/
+programs:
+  - program_id: prg_01m1a4f7awvd0gwvk13p8zwned
+    program_slug: elia-asistent-for-startups
+    program_slug_aliases: []
+    title: ELIA Asistent for Startups
+    summary: ELIA Asistent's startup program gives eligible early-stage teams half-price access to standard plans for their first six months.
+    source_ids:
+      - src_dd6d871237eab95071f39b3100998988d2f6bfcc104bb7d381a50ea67e714118
+offers:
+  - offer_id: off_01m1a4f7axxsdrtw5531w6g4xb
+    program_id: prg_01m1a4f7awvd0gwvk13p8zwned
+    offer_slug: elia-asistent-startup-discount
+    offer_slug_aliases: []
+    title: 50% off ELIA Asistent for six months
+    summary: Eligible early-stage teams receive 50% off a standard ELIA Asistent plan for their first six months after approval, with deployment, CRM, support, and the selected plan's product scope included.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-30T20:06:17.787Z
+    economics:
+      benefits:
+        - applies_to: standard ELIA Asistent plans
+          benefit_id: ben_01
+          description: 50% off the selected standard ELIA Asistent plan for the first six months.
+          duration:
+            kind: exact
+            value: P6M
+          kind: discount
+          percentage:
+            basis_points: 5000
+            kind: exact
+      consideration:
+        kind: variable
+        description: Purchase an approved standard ELIA Asistent plan at half its regular subscription price.
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: not-machine-evaluable
+        statement: Applicant must be an early-stage company or small operating team building a new product, service, or marketplace with a real need to automate website chat, email support, or both.
+    roles:
+      terms_authority_entity_id: ent_01m1a4f7a01eqbbgzbbw3pehyh
+      access_operator_entity_id: ent_01m1a4f7a01eqbbgzbbw3pehyh
+    access:
+      availability: public
+      method: form
+      url: https://elia-asistent.com/startups
+    terms_url: https://elia-asistent.com/startups
+    source_ids:
+      - src_dd6d871237eab95071f39b3100998988d2f6bfcc104bb7d381a50ea67e714118
+      - src_0fe68b2e3ea5c96e6ddea367883382ed3910e151cde1444ef18f56b47893d879
