@@ -1,0 +1,64 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_ga5fqb1awsf71jftecx9pq9skw
+  slug: userback
+  slug_aliases: []
+  name: Userback
+  domains:
+    - value: userback.io
+      role: primary
+      valid_from: 2026-09-01T06:49:52.445Z
+  category: support
+profile:
+  description: Userback is a customer-feedback platform for collecting bug reports, in-app feedback, surveys, session replays, feature requests, and product insights.
+  links:
+    site: https://userback.io/
+sources:
+  - source_id: src_1da5a4f2c8ee9f24f125fe78536b86543a5f897be3bf8597ab1f599384623435
+    url: https://userback.io/offer/startups/
+programs:
+  - program_id: prg_pbb41tsbnm0wd6ftgz0btz7czp
+    program_slug: userback-startup-program
+    program_slug_aliases: []
+    title: Userback Startup Program
+    summary: Userback gives eligible early-stage SaaS companies 25% off all annual plans for their first year.
+    source_ids:
+      - src_1da5a4f2c8ee9f24f125fe78536b86543a5f897be3bf8597ab1f599384623435
+offers:
+  - offer_id: off_atm6v4n9dree4795bjzdxpdkat
+    program_id: prg_pbb41tsbnm0wd6ftgz0btz7czp
+    offer_slug: twenty-five-percent-off-annual-plans-first-year
+    offer_slug_aliases: []
+    title: 25% Off Userback Annual Plans for One Year
+    summary: Eligible startups receive 25% off any Userback annual plan during their first year in the program.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-01T06:49:52.445Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 25% off all annual plans for the first year.
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 2500
+      consideration:
+        kind: unknown
+        description: The payable amount depends on the annual plan selected and is not stated on the program page.
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_01
+        reason: external-verification
+        statement: Applicants must have fewer than 10 employees, be primarily a SaaS business, have raised less than $1M in funding, and have been founded within the last two years.
+    roles:
+      terms_authority_entity_id: ent_ga5fqb1awsf71jftecx9pq9skw
+      access_operator_entity_id: ent_ga5fqb1awsf71jftecx9pq9skw
+    access:
+      availability: public
+      method: form
+      url: https://userback.io/offer/startups/
+      instructions: Complete the startup-program application form on Userback's offer page.
+    terms_url: https://userback.io/offer/startups/
+    source_ids:
+      - src_1da5a4f2c8ee9f24f125fe78536b86543a5f897be3bf8597ab1f599384623435
