@@ -1,0 +1,87 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1f3he1vqf0ahjmh29sz0mhz
+  slug: marketcheck
+  slug_aliases: []
+  name: MarketCheck
+  domains:
+    - value: marketcheck.uk
+      role: primary
+      valid_from: 2026-09-01T18:26:00.000Z
+  category: data-analytics
+profile:
+  description: MarketCheck is a UK automotive data platform that supplies vehicle listing data, pricing, VIN decoding, and market valuations through an API.
+  links:
+    site: https://marketcheck.uk
+sources:
+  - source_id: src_04336ae5b4c56f3e41fa231b9fc6e0493f03dffbacc221696e92f89c12f5966e
+    url: https://marketcheck.uk/automotive-sectors/marketcheck-for-startups
+programs:
+  - program_id: prg_01m1f3he230qw7z08v6akb98m9
+    program_slug: marketcheck-for-startups
+    program_slug_aliases: []
+    title: MarketCheck for Startups
+    summary: Eligible automotive AI startups get complete MarketCheck vehicle data API access with a £0 access fee for three months, 25,000 free API calls a month, and extra calls at £0.002.
+    source_ids:
+      - src_04336ae5b4c56f3e41fa231b9fc6e0493f03dffbacc221696e92f89c12f5966e
+offers:
+  - offer_id: off_01m1f3he23xf9bqpknxj8ndq5b
+    program_id: prg_01m1f3he230qw7z08v6akb98m9
+    offer_slug: zero-access-fee-three-months
+    offer_slug_aliases: []
+    title: £0 access fee for 3 months
+    summary: Automotive AI startups incorporated in the last 12 months, or unincorporated with qualifying criteria, operating in the UK, USA or Canadian markets get a £0 access fee for 3 months, 25,000 free API calls a month, and extra calls at £0.002.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-01T18:26:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: £0 access fee for 3 months
+          duration:
+            kind: exact
+            value: P3M
+          kind: free-service
+          service: MarketCheck vehicle data API
+        - benefit_id: ben_02
+          description: 25,000 free API calls a month
+          kind: other
+        - benefit_id: ben_03
+          description: Additional API calls at £0.002 per call
+          kind: other
+        - benefit_id: ben_04
+          description: Complete vehicle data API access, including historical pricing trends, VIN decoding, real-time market valuations, vehicle specifications, market analysis tools, priority technical support, and a dedicated startup account manager
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: not-machine-evaluable
+            statement: Applicant must be building AI-powered solutions for the automotive industry.
+          - criterion_id: cri_02
+            kind: manual
+            reason: not-machine-evaluable
+            statement: The startup must be incorporated within the last 12 months, or unincorporated with qualifying criteria.
+          - criterion_id: cri_03
+            kind: manual
+            reason: not-machine-evaluable
+            statement: The startup must be operating in the UK, USA, or Canadian automotive markets.
+          - criterion_id: cri_04
+            kind: manual
+            reason: not-machine-evaluable
+            statement: The startup must have a primary focus on automotive technology, services, or marketplace solutions.
+    roles:
+      terms_authority_entity_id: ent_01m1f3he1vqf0ahjmh29sz0mhz
+      access_operator_entity_id: ent_01m1f3he1vqf0ahjmh29sz0mhz
+    access:
+      availability: public
+      instructions: Open the MarketCheck for Startups page and use Request a free trial or the contact form on that page.
+      method: form
+      url: https://marketcheck.uk/automotive-sectors/marketcheck-for-startups
+    terms_url: https://marketcheck.uk/automotive-sectors/marketcheck-for-startups
+    source_ids:
+      - src_04336ae5b4c56f3e41fa231b9fc6e0493f03dffbacc221696e92f89c12f5966e
