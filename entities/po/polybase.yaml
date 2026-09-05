@@ -10,6 +10,7 @@ entity:
       valid_from: 2026-09-02T09:58:32.533Z
   category: productivity
 profile:
+  summary: European workspace for chat, tasks, documents, calls, storage, automation, and AI.
   description: Polybase is a European all-in-one workspace combining chat, tasks, documents, calls, calendar, storage, automation, and AI tools.
   links:
     site: https://polybase.io
@@ -38,14 +39,14 @@ offers:
     economics:
       benefits:
         - benefit_id: ben_01
-          description: Complete Polybase Cloud workspace free for 12 months for up to 25 seats
+          description: Polybase Cloud for twelve months, covering up to 25 seats per startup
           duration:
             kind: exact
             value: P1Y
           kind: free-service
-          service: Polybase Cloud workspace with all twelve modules for up to 25 seats
+          service: Polybase Cloud
         - benefit_id: ben_02
-          description: Migration help for the startup's channels and files
+          description: Migration help for your channels and files
           kind: other
       consideration:
         kind: none
