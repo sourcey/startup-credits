@@ -40,28 +40,18 @@ offers:
     economics:
       benefits:
         - benefit_id: ben_01
-          description: Complete managed Keygraph Pro platform with all generally available modules at no cloud-service charge until a graduation event.
+          description: The full Keygraph Pro platform, with every module included, at $0 in cloud service fees.
           kind: free-service
           service: Keygraph Pro
       consideration:
         kind: variable
-        description: Participants provide and pay for their own AI-provider inference usage through bring-your-own-key integrations.
+        description: Participants pay only for their own AI provider usage.
     eligibility:
       rule:
-        kind: all
-        rules:
-          - criterion_id: cri_01
-            kind: manual
-            reason: external-verification
-            statement: Applicant must be a seed or pre-Series-A startup; individual developers are not eligible.
-          - criterion_id: cri_02
-            kind: manual
-            reason: external-verification
-            statement: Startup must have 20 or fewer Active Developers as measured under Keygraph's terms.
-          - criterion_id: cri_03
-            kind: manual
-            reason: external-verification
-            statement: Program access is cloud-hosted and limited to the startup's internal application-security use; managed-service operation and resale are not permitted.
+        kind: manual
+        criterion_id: cri_01
+        reason: external-verification
+        statement: Eligible startup applicants are seed and pre-Series-A startups with 20 or fewer Active Developers; individual developers are not eligible.
     roles:
       terms_authority_entity_id: ent_01m1d67wcpvcmcr3befxgyyz77
       access_operator_entity_id: ent_01m1d67wcpvcmcr3befxgyyz77
