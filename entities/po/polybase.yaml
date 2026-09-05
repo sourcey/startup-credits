@@ -1,0 +1,69 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1grw9wmfh0xcq0w3xe837rn
+  slug: polybase
+  slug_aliases: []
+  name: Polybase
+  domains:
+    - value: polybase.io
+      role: primary
+      valid_from: 2026-09-02T09:58:32.533Z
+  category: productivity
+profile:
+  summary: European workspace for chat, tasks, documents, calls, storage, automation, and AI.
+  description: Polybase is a European all-in-one workspace combining chat, tasks, documents, calls, calendar, storage, automation, and AI tools.
+  links:
+    site: https://polybase.io
+sources:
+  - source_id: src_05facf186118bcfdd6f39df13fee3d75b19539e1de332870e20217f57dfc6361
+    url: https://polybase.io/founders
+programs:
+  - program_id: prg_01m1grw9wvwz0g37gcr96ptpmc
+    program_slug: polybase-founders-program
+    program_slug_aliases: []
+    title: Polybase Founders Program
+    summary: Polybase's limited-capacity Founders Program gives approved startups its complete cloud workspace free for 12 months for up to 25 seats.
+    source_ids:
+      - src_05facf186118bcfdd6f39df13fee3d75b19539e1de332870e20217f57dfc6361
+offers:
+  - offer_id: off_01m1grw9wv4d275gj0jj0f4vwn
+    program_id: prg_01m1grw9wvwz0g37gcr96ptpmc
+    offer_slug: one-year-free-polybase-cloud
+    offer_slug_aliases: []
+    title: One year free Polybase Cloud for up to 25 seats
+    summary: Approved startups receive the complete Polybase Cloud workspace free for 12 months for up to 25 seats, with migration help and no card or commitment.
+    description: The first-party page illustrates the offer with a 10-seat team using Core plus one module for 12 months, normally EUR 1,800; this is an example, not a universal offer value.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-02T09:58:32.533Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Polybase Cloud for twelve months, covering up to 25 seats per startup
+          duration:
+            kind: exact
+            value: P1Y
+          kind: free-service
+          service: Polybase Cloud
+        - benefit_id: ben_02
+          description: Migration help for your channels and files
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: external-verification
+        statement: The applicant must be a startup selected for one of the limited Founders Program spots.
+    roles:
+      terms_authority_entity_id: ent_01m1grw9wmfh0xcq0w3xe837rn
+      access_operator_entity_id: ent_01m1grw9wmfh0xcq0w3xe837rn
+    access:
+      availability: public
+      method: form
+      instructions: Submit the public Founders Program application form with the startup name, team size, and a short description of what the team is building; Polybase reviews the application and provisions approved workspaces.
+      url: https://polybase.io/founders
+    terms_url: https://polybase.io/founders
+    source_ids:
+      - src_05facf186118bcfdd6f39df13fee3d75b19539e1de332870e20217f57dfc6361
