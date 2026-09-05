@@ -1,0 +1,68 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1syc72c9mea4z30gx6jmgpn
+  slug: cynoia
+  slug_aliases: []
+  name: Cynoia
+  domains:
+    - value: cynoia.com
+      role: primary
+      valid_from: 2026-09-05T23:23:00.000Z
+  category: productivity
+profile:
+  description: Cynoia provides an all-in-one workspace for project management, team communication, meetings, files, notes, calendars, and business collaboration.
+  links:
+    site: https://cynoia.com
+sources:
+  - source_id: src_4e48f87630f843c8be39ea9e959ebefd07334536701fd63c0f69c47070f26062
+    url: https://cynoia.com/en/cynoia-impact/startups
+programs:
+  - program_id: prg_01m1syc72emynhhszh7z28vqnd
+    program_slug: cynoia-for-startups
+    program_slug_aliases: []
+    title: Cynoia for Startups
+    summary: Cynoia's startup program gives approved startups access to all premium Cynoia features at a 50% discount for 12 months.
+    source_ids:
+      - src_4e48f87630f843c8be39ea9e959ebefd07334536701fd63c0f69c47070f26062
+offers:
+  - offer_id: off_01m1syc72etzgj08vdny20s2fg
+    program_id: prg_01m1syc72emynhhszh7z28vqnd
+    offer_slug: premium-features-50-percent-off-for-12-months
+    offer_slug_aliases: []
+    title: 50% off Cynoia premium features for 12 months
+    summary: Approved startup applicants receive all premium Cynoia features at 50% off for 12 months after Cynoia reviews the request and applies the benefit to the account.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T23:23:00.000Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The startup application is free; the source does not establish a separate program fee.
+      benefits:
+        - benefit_id: ben_primary
+          description: 50% off all premium Cynoia features for 12 months
+          kind: discount
+          percentage:
+            basis_points: 5000
+            kind: exact
+          duration:
+            kind: exact
+            value: P12M
+          applies_to: All premium Cynoia features
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: The applicant is a startup and Cynoia reviews the submitted request before applying the benefit.
+        reason: vendor-discretion
+    roles:
+      terms_authority_entity_id: ent_01m1syc72c9mea4z30gx6jmgpn
+      access_operator_entity_id: ent_01m1syc72c9mea4z30gx6jmgpn
+    access:
+      availability: public
+      method: form
+      url: https://cynoia.com/en/cynoia-impact/startups
+      instructions: Open a Cynoia account, then complete the startup form using the same account details, especially the email address. Cynoia reviews the request and confirms when the benefit is applied.
+    terms_url: https://cynoia.com/en/cynoia-impact/startups
+    source_ids:
+      - src_4e48f87630f843c8be39ea9e959ebefd07334536701fd63c0f69c47070f26062
