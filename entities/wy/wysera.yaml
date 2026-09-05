@@ -1,0 +1,74 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_5hhcjbzrafvn4m9akppramvadd
+  slug: wysera
+  slug_aliases: []
+  name: Wysera
+  domains:
+    - value: wysera.ai
+      role: primary
+      valid_from: 2026-09-01T06:15:00.000Z
+  category: crm-sales
+profile:
+  description: Wysera is an agentic platform that brings marketing, sales, CRM, content, automation, and business operations together for lean teams.
+  links:
+    site: https://wysera.ai/
+sources:
+  - source_id: src_3ff2850af068653cf95f20a138237b000afa4dd2ac39123d7f83aa21d8b29780
+    url: https://wysera.ai/startups
+programs:
+  - program_id: prg_aftra9n3vxj1fb7f8k1hde0ycx
+    program_slug: wysera-startup-program
+    program_slug_aliases: []
+    title: Wysera Startup Program
+    summary: Wysera gives accepted early-stage B2B startups founding-member pricing and hands-on launch support.
+    source_ids:
+      - src_3ff2850af068653cf95f20a138237b000afa4dd2ac39123d7f83aa21d8b29780
+offers:
+  - offer_id: off_9zdbp8aj6798g1v9zj32wgjyqa
+    program_id: prg_aftra9n3vxj1fb7f8k1hde0ycx
+    offer_slug: founding-member-pricing-and-launch-sprint
+    offer_slug_aliases: []
+    title: Up to 30% Off Wysera for 12 Months
+    summary: Accepted early-stage B2B startups get 20% to 30% off Wysera for 12 months, full-platform access, and a free two-week done-with-you Launch Sprint.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-01T06:15:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Founding-member pricing provides 20% to 30% off for 12 months.
+          duration:
+            kind: exact
+            value: P1Y
+          kind: discount
+          percentage:
+            kind: up-to
+            basis_points: 3000
+        - benefit_id: ben_02
+          description: A free two-week done-with-you Launch Sprint for setup, migration, and initial campaign and automation delivery.
+          duration:
+            kind: exact
+            value: P14D
+          kind: free-service
+          service: Done-with-you Launch Sprint
+      consideration:
+        kind: unknown
+        description: The source does not publish the converted founding-member price.
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Wysera manually reviews early-stage B2B startups with a real product; agencies reselling the platform and pre-product ideas are not eligible, and membership is limited to one per company.
+    roles:
+      terms_authority_entity_id: ent_5hhcjbzrafvn4m9akppramvadd
+      access_operator_entity_id: ent_5hhcjbzrafvn4m9akppramvadd
+    access:
+      availability: public
+      method: contact
+      url: https://wysera.ai/startups
+      instructions: Follow the application instructions on the startup-program page to submit the startup name, website, and growth objective.
+    terms_url: https://wysera.ai/startups
+    source_ids:
+      - src_3ff2850af068653cf95f20a138237b000afa4dd2ac39123d7f83aa21d8b29780
