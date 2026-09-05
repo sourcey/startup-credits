@@ -1,0 +1,77 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_91fkbt1n1abwhx4s515s8rsr1x
+  slug: blockpi-network
+  slug_aliases: []
+  name: BlockPI Network
+  domains:
+    - value: blockpi.io
+      role: primary
+      valid_from: 2026-09-01T09:47:12.027Z
+  category: hosting-infra
+profile:
+  description: BlockPI Network provides multichain RPC, indexing, and data API infrastructure for
+    blockchain developers and applications.
+  links:
+    site: https://blockpi.io
+sources:
+  - source_id: src_36b92e3e90957ededbe3b753736f165d4e88722b5463fe8f72e79efa283c5f2f
+    url: https://blockpi.io/sui-builder-program/
+programs:
+  - program_id: prg_qa2h39df6tp3cjs663av3beqe6
+    program_slug: sui-builder-program
+    program_slug_aliases: []
+    title: Sui x BlockPI Builder Program
+    summary: BlockPI supports Sui builders from prototyping through institutional deployment with
+      RPC service credits, technical assistance, performance tools, service levels, and co-marketing.
+    source_ids:
+      - src_36b92e3e90957ededbe3b753736f165d4e88722b5463fe8f72e79efa283c5f2f
+offers:
+  - offer_id: off_xwdn512av8twz3aagxdj0jwhsr
+    program_id: prg_qa2h39df6tp3cjs663av3beqe6
+    offer_slug: free-rpc-credits-and-tiered-builder-support
+    offer_slug_aliases: []
+    title: Free RPC Credits and Tiered Sui Builder Support
+    summary: Accepted Sui builders receive a vendor-determined amount of free service credits and
+      stage-appropriate RPC infrastructure, technical support, analytics, service levels, or co-marketing.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-01T09:47:12.027Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Free BlockPI service credits in an amount based on the project's size and category
+          kind: other
+        - benefit_id: ben_02
+          description: Free access to Full-Stack RPC, community support, and basic performance analytics
+          kind: free-service
+          service: BlockPI Early-stage builder infrastructure and support
+        - benefit_id: ben_03
+          description: Premium RPC, priority technical support, localized SLA coverage, and co-marketing
+          kind: free-service
+          service: BlockPI Growth-stage builder infrastructure and support
+        - benefit_id: ben_04
+          description: Custom infrastructure architecture, a dedicated channel, and enterprise-grade security
+          kind: free-service
+          service: BlockPI Strategic-stage builder infrastructure and support
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Any project or individual developer building on Sui, or planning to build on Sui, may apply;
+          BlockPI reviews the application and determines the appropriate program stage and credit amount.
+    roles:
+      terms_authority_entity_id: ent_91fkbt1n1abwhx4s515s8rsr1x
+      access_operator_entity_id: ent_91fkbt1n1abwhx4s515s8rsr1x
+    access:
+      availability: public
+      method: form
+      url: https://blockpi.io/sui-builder-program/
+      instructions: Open the public program page, select Join now, submit the application form, and wait for
+        BlockPI's decision email; the vendor states that review normally takes two to three business days.
+    terms_url: https://blockpi.io/sui-builder-program/
+    source_ids:
+      - src_36b92e3e90957ededbe3b753736f165d4e88722b5463fe8f72e79efa283c5f2f
