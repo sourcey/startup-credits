@@ -1,0 +1,89 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1agcp3n0a5ct9v7yfcw6n0p
+  slug: lightdash
+  slug_aliases: []
+  name: Lightdash
+  domains:
+    - value: lightdash.com
+      role: primary
+      valid_from: 2026-08-30T23:36:00Z
+  category: data-analytics
+profile:
+  description: Lightdash is a business-intelligence platform that turns dbt projects into governed metrics, dashboards, and self-service analytics for teams.
+  links:
+    site: https://www.lightdash.com/
+sources:
+  - source_id: src_12c5f5575a3dea6dd0d479f83e3a0f4bc3f3eb56f4f2e889301171fa04c8dcf1
+    url: https://www.lightdash.com/startups
+  - source_id: src_6f53f4765cfa172d8baccd9a608f90b2208bf7cf1c25272eb41339c3fa6daaad
+    url: https://www.lightdash.com/start
+programs:
+  - program_id: prg_01m1agcp3xyqm8644vee5kd38x
+    program_slug: lightdash-for-startups
+    program_slug_aliases: []
+    title: Lightdash for Startups
+    summary: Lightdash gives qualifying young startups half-price Cloud or Pro access for a year, expert onboarding, and direct product-team support.
+    source_ids:
+      - src_12c5f5575a3dea6dd0d479f83e3a0f4bc3f3eb56f4f2e889301171fa04c8dcf1
+offers:
+  - offer_id: off_01m1agcp3x5kr1ye4nf6x24vbm
+    program_id: prg_01m1agcp3xyqm8644vee5kd38x
+    offer_slug: half-price-cloud-or-pro-for-one-year
+    offer_slug_aliases: []
+    title: 50% Off Lightdash Cloud or Pro for 12 Months
+    summary: Eligible startups receive 50% off Lightdash Cloud or Pro for 12 months, a benefit valued at up to USD 18,000, plus onboarding and dedicated support.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-30T23:36:00Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 50% off Lightdash Cloud or Pro for 12 months.
+          duration:
+            kind: exact
+            value: P1Y
+          kind: discount
+          percentage:
+            basis_points: 5000
+            kind: exact
+        - benefit_id: ben_02
+          description: Kickoff and training calls with the Lightdash data team.
+          kind: other
+        - benefit_id: ben_03
+          description: Expert support and direct access to the product team for feedback and beta features.
+          kind: other
+      consideration:
+        kind: unknown
+        description: The public program page states that the plans are half-price but does not publish the resulting payable price.
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.age_months
+            kind: predicate
+            operator: lt
+            statement: The company is less than five years old.
+            value:
+              type: number
+              value: 60
+          - criterion_id: cri_02
+            fact: company.funding_raised_usd
+            kind: predicate
+            operator: lt
+            statement: The company has raised less than USD 7.5 million.
+            value:
+              type: number
+              value: 7500000
+    roles:
+      terms_authority_entity_id: ent_01m1agcp3n0a5ct9v7yfcw6n0p
+      access_operator_entity_id: ent_01m1agcp3n0a5ct9v7yfcw6n0p
+    access:
+      availability: public
+      instructions: Use the application link published on the Lightdash for Startups page to contact the team and apply for the program.
+      method: contact
+      url: https://www.lightdash.com/start
+    source_ids:
+      - src_12c5f5575a3dea6dd0d479f83e3a0f4bc3f3eb56f4f2e889301171fa04c8dcf1
+      - src_6f53f4765cfa172d8baccd9a608f90b2208bf7cf1c25272eb41339c3fa6daaad
