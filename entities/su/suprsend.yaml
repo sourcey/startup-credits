@@ -1,0 +1,79 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_9tvpgkwe2xqjd99n8jada4jsb1
+  slug: suprsend
+  slug_aliases: []
+  name: SuprSend
+  domains:
+    - value: suprsend.com
+      role: primary
+      valid_from: 2026-09-01T08:35:09.7904464Z
+  category: communication
+profile:
+  summary: Notification infrastructure for product and engineering teams.
+  description: SuprSend provides APIs and workflow tooling for delivering transactional and product notifications across email, SMS, push, inbox, chat, and other channels.
+  links:
+    site: https://www.suprsend.com
+sources:
+  - source_id: src_b1a4f7c68eda2d07fa0fb6e61dbdeb6ecbb912956484d578aca75ae2ff98a81f
+    url: https://www.suprsend.com/suprsend-for-startups
+programs:
+  - program_id: prg_har7vwrtbx0p3245vrv9f9ccj2
+    program_slug: suprsend-for-startups
+    program_slug_aliases: []
+    title: SuprSend for Startups
+    summary: Eligible new partner-portfolio startups receive three months free and then 50% off for three more months on SuprSend Developer or Growth plans.
+    source_ids:
+      - src_b1a4f7c68eda2d07fa0fb6e61dbdeb6ecbb912956484d578aca75ae2ff98a81f
+offers:
+  - offer_id: off_vmdppgc7dzaxxfw8qkzhj3081p
+    program_id: prg_har7vwrtbx0p3245vrv9f9ccj2
+    offer_slug: three-months-free-then-half-off-three-months
+    offer_slug_aliases: []
+    title: Three months free, then three months at 50% off
+    summary: Eligible new startups receive a SuprSend Developer or Growth plan free for three months after signup, followed by a 50% discount for another three months.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-01T08:35:09.7904464Z
+    economics:
+      benefits:
+        - applies_to: SuprSend Developer or Growth plan
+          benefit_id: ben_01
+          description: 100% off the selected Developer or Growth plan for the first three months after signup
+          duration:
+            kind: exact
+            value: P3M
+          kind: discount
+          percentage:
+            basis_points: 10000
+            kind: exact
+        - applies_to: SuprSend Developer or Growth plan
+          benefit_id: ben_02
+          description: 50% off the selected Developer or Growth plan for the following three months
+          duration:
+            kind: exact
+            value: P3M
+          kind: discount
+          percentage:
+            basis_points: 5000
+            kind: exact
+      consideration:
+        kind: unknown
+        description: The published offer specifies a 50% discount for months four through six without stating a fixed resulting price.
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: external-verification
+        statement: Applicants must be new signups, be part of a SuprSend partner portfolio, have been founded less than five years ago, meet SuprSend's funding criteria, and not have previously used the offer.
+    roles:
+      terms_authority_entity_id: ent_9tvpgkwe2xqjd99n8jada4jsb1
+      access_operator_entity_id: ent_9tvpgkwe2xqjd99n8jada4jsb1
+    access:
+      availability: public
+      instructions: Use the application link on the SuprSend for Startups page and submit the applicant's startup and partner-portfolio details for review.
+      method: form
+      url: https://www.suprsend.com/suprsend-for-startups
+    terms_url: https://www.suprsend.com/suprsend-for-startups
+    source_ids:
+      - src_b1a4f7c68eda2d07fa0fb6e61dbdeb6ecbb912956484d578aca75ae2ff98a81f
