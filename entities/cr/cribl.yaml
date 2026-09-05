@@ -1,0 +1,57 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1q13fr4eejgxp2am1016a5x
+  slug: cribl
+  slug_aliases: []
+  name: Cribl
+  domains:
+    - value: cribl.io
+      role: primary
+      valid_from: 2026-09-04T20:17:38.234Z
+  category: observability
+profile:
+  description: Cribl provides a data engine for collecting, routing, shaping, and searching IT and security data across cloud and on-premises environments.
+  links:
+    site: https://cribl.io
+sources:
+  - source_id: src_b1ff3858e1bba947c29f353c7cf57ba51a9706e8a4598ebbcc22055c7e68737f
+    url: https://cribl.io/startup/
+  - source_id: src_e52967ae309b59b8ea2019eea9af617f1daf85fa20e73928c1f8f93335e558d0
+    url: https://cribl.io/news/cribl-launches-cribl-for-startups-program-to-support-the-next-generation-of-data-companies/
+programs: []
+offers:
+  - offer_id: off_01m1q13fr4d4tpyz5jrfd1496g
+    offer_slug: cribl-for-startups
+    offer_slug_aliases: []
+    title: Cribl for Startups
+    summary: Selected early-stage data companies receive free Cribl.Cloud access, technical advice, partner-network access, and co-marketing opportunities.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-04T20:17:38.234Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_01
+          description: Free access to Cribl.Cloud products, including Cribl Stream and Cribl Search
+          kind: free-service
+          service: Cribl.Cloud
+        - benefit_id: ben_02
+          description: One-on-one technical advice, partner-network access, and potential co-marketing support
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Applicant must be a Seed through Series A startup building monitoring, observability, cybersecurity, or DevOps data solutions and be selected by Cribl.
+        reason: vendor-discretion
+    roles:
+      terms_authority_entity_id: ent_01m1q13fr4eejgxp2am1016a5x
+      access_operator_entity_id: ent_01m1q13fr4eejgxp2am1016a5x
+    access:
+      availability: public
+      method: form
+      url: https://cribl.io/startup/
+    source_ids:
+      - src_b1ff3858e1bba947c29f353c7cf57ba51a9706e8a4598ebbcc22055c7e68737f
+      - src_e52967ae309b59b8ea2019eea9af617f1daf85fa20e73928c1f8f93335e558d0
