@@ -1,0 +1,101 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_jjkv9rakpkjvjn635myjc43z4m
+  slug: monosnap
+  slug_aliases: []
+  name: Monosnap
+  domains:
+    - value: monosnap.ai
+      role: primary
+      valid_from: 2026-09-01T07:43:50.459Z
+  category: productivity
+profile:
+  summary: Screenshot, video, GIF, annotation, cloud storage, and sharing tools for teams.
+  description: Monosnap provides screenshot annotation, screen and GIF recording, cloud file storage, sharing, integrations, and administrative controls for business teams.
+  links:
+    site: https://monosnap.ai
+sources:
+  - source_id: src_f50d98fc208886c56bb2d6a6ce95c19b959235c655c6fa4b917283724524b2d7
+    url: https://monosnap.zendesk.com/hc/en-us/articles/5536773521682-Monosnap-for-Strartups
+  - source_id: src_ad42aec0742ee1d222019a7493c3e88ab7e50ac5be439f4e8af44ae051c898eb
+    url: https://monosnap.ai/enterprise
+programs:
+  - program_id: prg_djqyc4mg5whq0gg6fv8hapv8k1
+    program_slug: monosnap-for-startups
+    program_slug_aliases: []
+    title: Monosnap for Startups
+    summary: Monosnap for Startups provides three years of tiered Commercial or Enterprise annual-plan pricing based on funding raised.
+    source_ids:
+      - src_f50d98fc208886c56bb2d6a6ce95c19b959235c655c6fa4b917283724524b2d7
+offers:
+  - offer_id: off_y1d8d14zanpn70kkwvtg3jx54k
+    program_id: prg_djqyc4mg5whq0gg6fv8hapv8k1
+    offer_slug: three-year-startup-pricing
+    offer_slug_aliases: []
+    title: Monosnap for Startups pricing
+    summary: Eligible startups receive tiered Commercial or Enterprise annual-plan pricing for three years based on funding raised.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-01T07:43:50.459Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Startups with less than $5M raised receive free full access to Monosnap software and all integrations in the first year.
+          kind: free-service
+          service: Monosnap software and all integrations
+          duration:
+            kind: exact
+            value: P1Y
+        - benefit_id: ben_02
+          description: Startups with less than $5M raised receive up to 20 GB of Monosnap cloud storage for each account in the first year.
+          kind: other
+        - benefit_id: ben_03
+          description: Startups with less than $5M raised receive 50% off full access to Monosnap service in the second year.
+          kind: discount
+          percentage:
+            basis_points: 5000
+            kind: exact
+        - benefit_id: ben_04
+          description: Startups with less than $5M raised receive 25% off full access to Monosnap service in the third year.
+          kind: discount
+          percentage:
+            basis_points: 2500
+            kind: exact
+        - benefit_id: ben_05
+          description: Startups with more than $5M raised receive 50% off full access to Monosnap service in the first year.
+          kind: discount
+          percentage:
+            basis_points: 5000
+            kind: exact
+        - benefit_id: ben_06
+          description: Startups with more than $5M raised receive 25% off full access to Monosnap service in the second year.
+          kind: discount
+          percentage:
+            basis_points: 2500
+            kind: exact
+        - benefit_id: ben_07
+          description: Startups with more than $5M raised receive 15% off full access to Monosnap service in the third year.
+          kind: discount
+          percentage:
+            basis_points: 1500
+            kind: exact
+      consideration:
+        kind: variable
+        description: Startup pricing applies to Commercial or Enterprise plans with annual payments; the Non-Commercial plan is excluded.
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_01
+        reason: external-verification
+        statement: Applicants must be associated with a Monosnap partner, or be a new Monosnap customer with outside pre-seed, seed, or Series A funding and fewer than 250 employees.
+    roles:
+      terms_authority_entity_id: ent_jjkv9rakpkjvjn635myjc43z4m
+      access_operator_entity_id: ent_jjkv9rakpkjvjn635myjc43z4m
+    access:
+      availability: public
+      instructions: Use the Apply now link on the Monosnap for Startups article.
+      method: contact
+      url: https://monosnap.zendesk.com/hc/en-us/articles/5536773521682-Monosnap-for-Strartups
+    source_ids:
+      - src_f50d98fc208886c56bb2d6a6ce95c19b959235c655c6fa4b917283724524b2d7
+      - src_ad42aec0742ee1d222019a7493c3e88ab7e50ac5be439f4e8af44ae051c898eb
