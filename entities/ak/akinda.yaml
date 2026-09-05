@@ -1,0 +1,104 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1r9qj5fct7e04mhz9359z6v
+  slug: akinda
+  slug_aliases: []
+  name: Akinda
+  domains:
+    - value: akinda.io
+      role: primary
+      # Start of this observed domain association in the catalog record, not domain registration.
+      valid_from: 2026-09-05T08:07:32.783Z
+  category: apis-integration
+profile:
+  description: Akinda provides a Shariah stock-screening API and reports for applications and
+    investment research tools.
+  links:
+    site: https://b2b.akinda.io
+sources:
+  - source_id: src_18d82f2d3f05db9a55165583859354d4dfd3cb5c976c46fee2c626d16bc96648
+    url: https://b2b.akinda.io/startup
+programs:
+  - program_id: prg_01m1r9qj5fxxrww3gwp2p55ch5
+    program_slug: akinda-for-startups
+    program_slug_aliases: []
+    title: Akinda for Startups
+    summary: Application-based access to discounted Shariah-screening API subscriptions for eligible
+      early-stage companies and independent builders.
+    source_ids:
+      - src_18d82f2d3f05db9a55165583859354d4dfd3cb5c976c46fee2c626d16bc96648
+offers:
+  - offer_id: off_01m1r9qj5fdv696kz21hd7qxze
+    program_id: prg_01m1r9qj5fxxrww3gwp2p55ch5
+    offer_slug: first-business-subscription-startup-discount
+    offer_slug_aliases: []
+    title: Discounted first Akinda business subscription
+    summary: Eligible pre-seed and seed teams can apply for a discounted first business subscription.
+      Akinda agrees the discount, term and usage limits during review; renewals use standard
+      business pricing.
+    lifecycle:
+      status: active
+      # Start of the observed active catalog record, not the vendor program's launch date.
+      effective_from: 2026-09-05T08:07:32.783Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          kind: other
+          description: A discount on the first subscription term of an Akinda business plan. The discount
+            amount, first-term length, rate limits, monthly volume and market coverage are agreed
+            individually during application review; no fixed percentage is published.
+      consideration:
+        kind: variable
+        description: Applying is free and does not require a card. The applicant pays for the subscription
+          only after review, scope agreement and acceptance of terms. Renewals after the discounted
+          first term use standard business pricing.
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.stage
+            kind: predicate
+            operator: in
+            statement: Applicant is at the pre-seed or seed stage.
+            value:
+              type: string-set
+              values:
+                - pre-seed
+                - seed
+          - criterion_id: cri_02
+            fact: company.valuation_usd
+            kind: predicate
+            operator: lt
+            statement: Applicant is valued at less than USD 5 million.
+            value:
+              type: number
+              value: 5000000
+          - criterion_id: cri_03
+            fact: company.has_prior_paid_akinda_business_subscription
+            kind: predicate
+            operator: eq
+            statement: Applicant has not previously subscribed to a paid Akinda business plan.
+            value:
+              type: boolean
+              value: false
+          - criterion_id: cri_04
+            kind: manual
+            reason: vendor-discretion
+            statement: Applicant is an early-stage company or independent builder shipping a real product for
+              users, such as an application, platform, research tool or broker integration, and can
+              explain the use case.
+          - criterion_id: cri_05
+            kind: manual
+            reason: vendor-discretion
+            statement: Akinda reviews the application and agrees the plan, discount, term, limits and market
+              coverage with the applicant before granting access.
+    roles:
+      terms_authority_entity_id: ent_01m1r9qj5fct7e04mhz9359z6v
+      access_operator_entity_id: ent_01m1r9qj5fct7e04mhz9359z6v
+    access:
+      availability: public
+      method: form
+      url: https://b2b.akinda.io/startup/apply
+    source_ids:
+      - src_18d82f2d3f05db9a55165583859354d4dfd3cb5c976c46fee2c626d16bc96648
