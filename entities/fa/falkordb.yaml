@@ -1,0 +1,95 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m16y9dymceqacvm663kw5z0z
+  slug: falkordb
+  slug_aliases: []
+  name: FalkorDB
+  domains:
+    - value: falkordb.com
+      role: primary
+      valid_from: 2026-08-29T14:20:30.040Z
+  category: databases
+profile:
+  description: FalkorDB develops an open-source graph database and GraphRAG tools for building knowledge graph and agentic AI applications.
+  links:
+    site: https://www.falkordb.com
+sources:
+  - source_id: src_90e1646168b9e8e88ef8256b64b2b0f6a58672d60285651b9fed1b88ec1fca83
+    url: https://www.falkordb.com/startup-program/
+programs:
+  - program_id: prg_01m16y9dyr3a3x6a3c7tka5pba
+    program_slug: falkordb-startup-program
+    program_slug_aliases: []
+    title: FalkorDB Startup Program
+    summary: FalkorDB supports qualifying early-stage startups with a six-month cloud discount, enterprise features, and help from a solutions architect.
+    source_ids:
+      - src_90e1646168b9e8e88ef8256b64b2b0f6a58672d60285651b9fed1b88ec1fca83
+offers:
+  - offer_id: off_01m16y9dyrrr6cd8t30m9zf33c
+    program_id: prg_01m16y9dyr3a3x6a3c7tka5pba
+    offer_slug: half-price-startup-tier-for-six-months
+    offer_slug_aliases: []
+    title: 50% off the Startup Tier for six months
+    summary: Qualifying startups receive 50% off FalkorDB's Startup Tier for six months, enterprise features on every tier, and a dedicated solutions architect.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-29T14:20:30.040Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          applies_to: FalkorDB Startup Tier
+          description: 50% off the FalkorDB Startup Tier for six months
+          duration:
+            kind: exact
+            value: P6M
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 5000
+        - benefit_id: ben_02
+          description: Enterprise features are included on every tier
+          kind: other
+        - benefit_id: ben_03
+          description: Guidance from a dedicated FalkorDB solutions architect
+          kind: other
+      consideration:
+        kind: variable
+        description: The startup pays half the regular price of the FalkorDB Startup Tier during the six-month discount period.
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.age_months
+            kind: predicate
+            operator: lt
+            statement: The startup must be less than five years old.
+            value:
+              type: number
+              value: 60
+          - criterion_id: cri_02
+            fact: company.funding_raised_usd
+            kind: predicate
+            operator: lt
+            statement: The startup must have raised less than $5 million.
+            value:
+              type: number
+              value: 5000000
+          - criterion_id: cri_03
+            kind: manual
+            statement: The startup must be at the Seed or Series A stage.
+            reason: external-verification
+          - criterion_id: cri_04
+            kind: manual
+            statement: The startup must be developing in generative AI, cybersecurity, or agentic AI.
+            reason: external-verification
+    roles:
+      terms_authority_entity_id: ent_01m16y9dymceqacvm663kw5z0z
+      access_operator_entity_id: ent_01m16y9dymceqacvm663kw5z0z
+    access:
+      availability: public
+      instructions: Submit information about the startup and its graph use case through the application on the official program page.
+      method: form
+      url: https://www.falkordb.com/startup-program/
+    source_ids:
+      - src_90e1646168b9e8e88ef8256b64b2b0f6a58672d60285651b9fed1b88ec1fca83
