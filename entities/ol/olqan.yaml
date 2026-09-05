@@ -1,0 +1,66 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1a761d5nqzwxfmefajdch5n
+  slug: olqan
+  slug_aliases: []
+  name: Olqan
+  domains:
+    - value: olqan.com
+      role: primary
+      valid_from: 2026-08-30T20:53:48.157Z
+  category: productivity
+profile:
+  description: Olqan unifies CRM, project management, finance, HR, support, procurement, and analytics in one business operations platform.
+  links:
+    site: https://olqan.com
+sources:
+  - source_id: src_f1ef04fed4f65461df48257364bc96be5fcc455c6ddb5339e78dadbfb9816018
+    url: https://olqan.com/startup-program/
+  - source_id: src_25801a2859f9c7929e8b82ee03d6d844179bc9f5ea195d036d862f0b8ae0e010
+    url: https://olqan.com/
+programs:
+  - program_id: prg_01m1a761ddr867k4j4570jvswg
+    program_slug: olqan-startup-program
+    program_slug_aliases: []
+    title: Olqan Startup Program
+    summary: Olqan's startup program gives qualifying new users its Growth plan free for 12 months, with onboarding, migration, and priority support.
+    source_ids:
+      - src_f1ef04fed4f65461df48257364bc96be5fcc455c6ddb5339e78dadbfb9816018
+offers:
+  - offer_id: off_01m1a761detcy2x7syaj1b7x19
+    program_id: prg_01m1a761ddr867k4j4570jvswg
+    offer_slug: twelve-months-free-growth-plan
+    offer_slug_aliases: []
+    title: 12 months free on Olqan Growth
+    summary: Accepted startups receive the Olqan Growth plan free for 12 months with all platform features, onboarding and migration, and 24/7 priority support.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-30T20:53:48.157Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_01
+          description: The Olqan Growth plan is provided at no charge for 12 months, including onboarding, migration, and priority support.
+          kind: free-service
+          service: Olqan Growth plan
+          duration:
+            kind: exact
+            value: P1Y
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_01
+        statement: Applicant must be a new Olqan user with fewer than 20 employees and no more than USD 2 million in funding.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01m1a761d5nqzwxfmefajdch5n
+      access_operator_entity_id: ent_01m1a761d5nqzwxfmefajdch5n
+    access:
+      availability: public
+      method: form
+      url: https://olqan.com/startup-program/
+    terms_url: https://olqan.com/startup-program/
+    source_ids:
+      - src_f1ef04fed4f65461df48257364bc96be5fcc455c6ddb5339e78dadbfb9816018
+      - src_25801a2859f9c7929e8b82ee03d6d844179bc9f5ea195d036d862f0b8ae0e010
