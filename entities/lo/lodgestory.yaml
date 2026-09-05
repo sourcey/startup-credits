@@ -1,0 +1,93 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1bm0w6jmxdge32e4qhrhbmh
+  slug: lodgestory
+  slug_aliases: []
+  name: Lodgestory
+  domains:
+    - value: lodgestory.com
+      role: primary
+      valid_from: 2026-08-31T09:57:31.607Z
+  category: support
+profile:
+  description: Lodgestory is an omnichannel customer communication platform with shared inboxes, automation, AI agents, and reporting.
+  links:
+    site: https://lodgestory.com
+sources:
+  - source_id: src_82d33385765de8048e06f188d514040041a042bb78683d0447b57c2b4286ab90
+    url: https://lodgestory.com/resources/blog/lodgestory-early-stage-program-startups
+  - source_id: src_82d33385765de8048e06f188d514040041a042bb78683d0447b57c2b4286ab91
+    url: https://lodgestory.com/signup
+programs:
+  - program_id: prg_01m1bm0w6kb6qtps5dt2axhwqj
+    program_slug: lodgestory-early-stage-program
+    program_slug_aliases: []
+    title: Lodgestory Early Stage Program
+    summary: Eligible early-stage startups receive three years of stepped discounts on Lodgestory Advanced, starting at 90% off in year one.
+    source_ids:
+      - src_82d33385765de8048e06f188d514040041a042bb78683d0447b57c2b4286ab90
+offers:
+  - offer_id: off_01m1bm0w6k8sxpdve2rqbbyhzx
+    program_id: prg_01m1bm0w6kb6qtps5dt2axhwqj
+    offer_slug: three-year-advanced-plan-discount
+    offer_slug_aliases: []
+    title: Up to 90% off Lodgestory Advanced for three years
+    summary: Accepted startups get 90% off Lodgestory Advanced in year one, 50% off in year two, and 25% off in year three, plus up to 300 AI agent resolutions monthly.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-31T09:57:31.607Z
+    economics:
+      consideration:
+        kind: variable
+        description: Discounted pricing starts at $65 per month in year one and steps down to smaller percentage discounts in years two and three.
+      benefits:
+        - benefit_id: ben_01
+          applies_to: Lodgestory Advanced plan
+          description: 90% off Lodgestory Advanced in year one
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 9000
+          duration:
+            kind: exact
+            value: P1Y
+        - benefit_id: ben_02
+          applies_to: Lodgestory Advanced plan
+          description: 50% off Lodgestory Advanced in year two
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 5000
+          duration:
+            kind: exact
+            value: P1Y
+        - benefit_id: ben_03
+          applies_to: Lodgestory Advanced plan
+          description: 25% off Lodgestory Advanced in year three
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 2500
+          duration:
+            kind: exact
+            value: P1Y
+        - benefit_id: ben_04
+          description: Up to 300 AI agent resolutions per month during the program
+          kind: free-service
+          service: Up to 300 Lodgestory AI agent resolutions per month
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_01
+        statement: The startup must have raised no more than USD 10 million, have fewer than 15 full-time employees, and not currently be on a paid Lodgestory plan.
+        reason: vendor-discretion
+    roles:
+      terms_authority_entity_id: ent_01m1bm0w6jmxdge32e4qhrhbmh
+      access_operator_entity_id: ent_01m1bm0w6jmxdge32e4qhrhbmh
+    access:
+      availability: public
+      method: form
+      url: https://lodgestory.com/signup
+    source_ids:
+      - src_82d33385765de8048e06f188d514040041a042bb78683d0447b57c2b4286ab90
+      - src_82d33385765de8048e06f188d514040041a042bb78683d0447b57c2b4286ab91
