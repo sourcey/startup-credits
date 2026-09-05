@@ -10,6 +10,7 @@ entity:
       valid_from: 2026-09-01T00:00:00.000Z
   category: finance-accounting
 profile:
+  summary: AI-assisted bookkeeping, financial operations, reporting, and planning.
   description: Futureproof provides an AI-agent finance team for business bookkeeping, financial operations, reporting, and planning.
   links:
     site: https://www.runfutureproof.com
