@@ -36,50 +36,27 @@ offers:
       effective_from: 2026-09-01T04:36:00.000Z
     economics:
       benefits:
-        - applies_to: Relevate Pro plan
-          benefit_id: ben_01
-          description: 50% off Relevate Pro for as long as the startup remains eligible.
+        - benefit_id: ben_01
+          description: 50% off Pro as long as the startup is eligible.
           kind: discount
           percentage:
             kind: exact
             basis_points: 5000
         - benefit_id: ben_02
-          description: Priority onboarding with setup help, migration support, and technical guidance.
+          description: Direct access to the Relevate team for setup help, migration support, and technical questions.
           kind: other
         - benefit_id: ben_03
-          description: Early access to new Relevate features.
+          description: Early access to new features.
           kind: other
       consideration:
-        kind: variable
-        description: The startup pays the remaining discounted Relevate Pro subscription price.
+        kind: unknown
+        description: The public program page states that access is discounted but does not publish the payable price.
     eligibility:
       rule:
-        kind: all
-        rules:
-          - criterion_id: cri_01
-            fact: company.funding_raised_usd
-            kind: predicate
-            operator: lt
-            statement: The startup has raised less than $1,000,000 in funding.
-            value:
-              type: number
-              value: 1000000
-          - criterion_id: cri_02
-            fact: company.age_months
-            kind: predicate
-            operator: lt
-            statement: The company is less than three years old; Relevate says it may review slightly older companies case by case.
-            value:
-              type: number
-              value: 36
-          - criterion_id: cri_03
-            fact: company.employee_count
-            kind: predicate
-            operator: lt
-            statement: The company has fewer than 20 employees.
-            value:
-              type: number
-              value: 20
+        kind: manual
+        criterion_id: cri_01
+        reason: external-verification
+        statement: The program is for venture-backed or bootstrapped startups with less than $1M in funding, less than three years old, and fewer than 20 employees; the three-year limit may be reviewed case by case.
     roles:
       terms_authority_entity_id: ent_1xfg0bpqbrsv4ymbrtk67njpgp
       access_operator_entity_id: ent_1xfg0bpqbrsv4ymbrtk67njpgp
