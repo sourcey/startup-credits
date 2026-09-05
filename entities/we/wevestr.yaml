@@ -1,0 +1,63 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1ssjsz8d28vs5d6dqn3efzh
+  slug: wevestr
+  slug_aliases: []
+  name: WE.VESTR
+  domains:
+  - value: wevestr.com
+    role: primary
+    valid_from: '2026-09-05T22:03:48.000Z'
+  category: ai-ml
+profile:
+  description: WE.VESTR startup program offering credits for early-stage companies.
+  links:
+    site: https://wevestr.com
+sources:
+- source_id: src_c2072cb4967ada15e9d07fca8113a3d0dd1517a6a1f6ca8ed73a78ca5367b111
+  url: https://wevestr.com/microsoft-for-startups
+- source_id: src_2ec71f2b3133fd7a271cc89a1c598fea2e9cae9f99bc4af7d813992570bdce7a
+  url: https://learn.microsoft.com/en-us/startups/benefits/technical-benefits/third-party-benefits/we-vestr
+programs: []
+offers:
+- offer_id: off_01m1ssjt7t854kd19z0az34g2m
+  offer_slug: wevestr-startup-discount
+  offer_slug_aliases: []
+  title: WE.VESTR Startup Discount
+  summary: Microsoft for Startups members can receive a first-year discount on WE.VESTR
+    equity-management plans. Microsoft's benefit documentation specifies 70% off for
+    eligible new customers with 30 or more stakeholders, valid for 12 months, with
+    acc
+  lifecycle:
+    status: active
+    effective_from: '2026-09-05T22:03:48.000Z'
+  economics:
+    consideration:
+      kind: unknown
+      description: Contact sales for pricing details.
+    benefits:
+    - benefit_id: ben_primary
+      description: 70% discount for 12 months
+      kind: discount
+      percentage:
+        kind: exact
+        basis_points: 7000
+      duration:
+        kind: exact
+        value: P1Y
+  eligibility:
+    rule:
+      kind: manual
+      criterion_id: cri_requirement
+      statement: Must qualify as a startup. Contact sales for eligibility details.
+      reason: not-machine-evaluable
+  roles:
+    terms_authority_entity_id: ent_01m1ssjsz8d28vs5d6dqn3efzh
+    access_operator_entity_id: ent_01m1ssjsz8d28vs5d6dqn3efzh
+  access:
+    availability: public
+    method: contact
+    url: https://learn.microsoft.com/en-us/startups/benefits/technical-benefits/third-party-benefits/we-vestr
+  source_ids:
+  - src_c2072cb4967ada15e9d07fca8113a3d0dd1517a6a1f6ca8ed73a78ca5367b111
+  - src_2ec71f2b3133fd7a271cc89a1c598fea2e9cae9f99bc4af7d813992570bdce7a
