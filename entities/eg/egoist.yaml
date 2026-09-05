@@ -1,0 +1,57 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1s6dfbyrh0jrr6w9240kvp5
+  slug: egoist
+  slug_aliases: []
+  name: Egoist
+  domains:
+    - value: ego.ist
+      role: primary
+      valid_from: 2026-09-05T16:28:00.000Z
+  category: apis-integration
+profile:
+  description: Egoist provides AI Passport, a managed layer that connects users' email, calendar, chats, and documents to apps with consent, token handling, and storage.
+  links:
+    site: https://ego.ist
+sources:
+  - source_id: src_649bb6c3dfd3f849afc3d7282f4d147bc3d7d17ac71ccc5225a623655749c05f
+    url: https://ego.ist/startups
+programs: []
+offers:
+  - offer_id: off_01m1s6dfc5p29yyfycqxdkjn0m
+    offer_slug: ai-passport-for-startups
+    offer_slug_aliases: []
+    title: AI Passport for Startups
+    summary: Approved startups get three months free of AI Passport (six months for Y Combinator companies), then $1,000 per month flat with unlimited users, storage, usage, and connectors.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T16:28:00.000Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_01
+          description: Three months free of AI Passport for approved startups, or six months free for Y Combinator companies
+          kind: free-service
+          service: AI Passport
+          duration:
+            kind: exact
+            value: P3M
+        - benefit_id: ben_02
+          description: Unlimited users, storage, usage, and connectors during the offer; private Slack channel and implementation help on approval
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_01
+        statement: Startups apply via the form on ego.ist/startups; Y Combinator companies receive six free months instead of three; approval is at vendor discretion.
+        reason: vendor-discretion
+    roles:
+      terms_authority_entity_id: ent_01m1s6dfbyrh0jrr6w9240kvp5
+      access_operator_entity_id: ent_01m1s6dfbyrh0jrr6w9240kvp5
+    access:
+      availability: public
+      method: form
+      url: https://ego.ist/startups
+    source_ids:
+      - src_649bb6c3dfd3f849afc3d7282f4d147bc3d7d17ac71ccc5225a623655749c05f
