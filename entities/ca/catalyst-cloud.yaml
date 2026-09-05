@@ -10,6 +10,7 @@ entity:
       valid_from: 2026-09-01T07:25:07.625Z
   category: hosting-infra
 profile:
+  summary: New Zealand cloud infrastructure for compute, storage, networking, and managed platforms.
   description: Catalyst Cloud provides New Zealand-based infrastructure and platform cloud services, including compute, storage, networking, Kubernetes, and managed databases.
   links:
     site: https://catalystcloud.nz
@@ -40,38 +41,20 @@ offers:
     economics:
       benefits:
         - benefit_id: ben_01
-          description: Up to NZD 1,000 of qualifying Catalyst Cloud development and testing usage is waived in each billing month during the initial six-month term.
+          description: Free Catalyst Cloud usage up to the value of $1,000 per month
           duration:
             kind: exact
             value: P6M
-          kind: credit
-          value:
-            amount:
-              currency: NZD
-              minor_units: 100000
-            kind: up-to
+          kind: free-service
+          service: Catalyst Cloud usage
       consideration:
         kind: none
     eligibility:
       rule:
-        kind: all
-        rules:
-          - criterion_id: cri_01
-            kind: manual
-            reason: external-verification
-            statement: Usage must support development or testing of a cloud-native platform-as-a-service or software-as-a-service offering targeting the New Zealand market.
-          - criterion_id: cri_02
-            kind: manual
-            reason: external-verification
-            statement: The customer must create a separate Catalyst Cloud project used exclusively for qualifying programme usage.
-          - criterion_id: cri_03
-            kind: manual
-            reason: external-verification
-            statement: The project must not support active production or revenue-earning processes, backup, or disaster recovery.
-          - criterion_id: cri_04
-            kind: manual
-            reason: external-verification
-            statement: All usage in a billing month must qualify; otherwise the credit may be unavailable or reversed for that month.
+        criterion_id: cri_01
+        kind: manual
+        reason: external-verification
+        statement: Usage must support development or testing of a cloud-native PaaS or SaaS offering for the New Zealand market in a separate qualifying project, not production, revenue-earning, backup, or disaster-recovery workloads.
     roles:
       terms_authority_entity_id: ent_ajthm4d56238pn916mpq44znpc
       access_operator_entity_id: ent_ajthm4d56238pn916mpq44znpc
