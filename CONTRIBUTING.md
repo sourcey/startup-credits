@@ -63,7 +63,7 @@ node -e 'console.log("src_"+require("node:crypto").randomBytes(32).toString("hex
 ## What evidence review checks
 
 The public `sourcey/validation` status proves the YAML shape and changed identity closure. Sourcey's separate
-admission review then checks the submitted facts against the record's public source URLs:
+admission result then checks the submitted facts against the record's public source URLs:
 
 - published economics, eligibility, lifecycle, domains, links, and access facts must be supported
   by cited source material;
@@ -103,10 +103,11 @@ git push --force-with-lease
 ```
 
 The repository's `sourcey/validation` status validates only the changed dependency closure
-through the exact digest-pinned Sourcey Catalog Verifier and enforces the DCO.
+through the exact lockfile-pinned public `@sourcey/catalog-verifier` package and enforces the DCO.
 It starts automatically when a pull request is opened or updated. A green `sourcey/validation`
-status means the submitted tree is structurally and semantically valid; contributors can
-push corrections to the same branch and receive a fresh result without maintainer review.
+status means the submitted tree passed the deterministic public structure, closure, and DCO
+rules. It does not claim the submitted facts are true. Contributors can push corrections to the
+same branch and receive a fresh result without maintainer review.
 External contributors do not need direct repository write access: GitHub may create a fork as the
 source of their pull request, and subsequent pushes to that same source branch update it normally.
 Sourcey's separate required `sourcey/admission` check proves that private,
@@ -118,22 +119,29 @@ For an exact local preflight, run this from a checkout with `origin/main` fetche
 
 ```bash
 base="$(git merge-base HEAD origin/main)"
-digest="$(<.github/sourcey-catalog-verifier.sha256)"
 work="$(mktemp -d)"
-archive="sourcey-catalog-verifier-sha256-${digest}.tar.gz"
-curl --fail --silent --show-error \
-  "https://artifacts.sourcey.com/catalog/code/catalog-verifier/sha256-${digest}/${archive}" \
-  --output "${work}/${archive}"
-curl --fail --silent --show-error \
-  "https://artifacts.sourcey.com/catalog/code/catalog-verifier/sha256-${digest}/${archive}.sha256" \
-  --output "${work}/${archive}.sha256"
-(cd "${work}" && shasum -a 256 --check "${archive}.sha256")
-mkdir "${work}/verifier"
-tar -xzf "${work}/${archive}" --strip-components=1 -C "${work}/verifier"
-node "${work}/verifier/sourcey-catalog-verify.js" \
-  validate-change --repository "$PWD" --base "${base}" --head HEAD \
-  --taxonomy "${work}/verifier/taxonomy.json"
-rm -rf "${work}"
+npm ci --prefix .github/catalog-verifier --ignore-scripts --no-audit --no-fund
+verifier=".github/catalog-verifier/node_modules/.bin/sourcey-catalog-verify"
+taxonomy=".github/catalog-verifier/node_modules/@sourcey/catalog-verifier/taxonomy.json"
+curl --fail-with-body --silent --show-error https://api.sourcey.com/v1/release \
+  --output "${work}/release.json"
+release_id="$(jq -er '.release_id' "${work}/release.json")"
+root_digest="$(<.github/sourcey-root-set.digest)"
+test "$(jq -er '.descriptor.snapshot_core.root_set_digest' "${work}/release.json")" = "$root_digest"
+"$verifier" identity-context-request startup-credits \
+  --repository "$PWD" --base "$base" --head HEAD --taxonomy "$taxonomy" \
+  --live-parent-release-id "$release_id" > "${work}/query.json"
+curl --fail-with-body --silent --show-error -H 'content-type: application/json' \
+  --data-binary @"${work}/query.json" \
+  https://api.sourcey.com/v1/catalog-verifier/identity-contexts \
+  | jq -e '.data' > "${work}/identity-context.json"
+"$verifier" validate startup-credits \
+  --repository "$PWD" --base "$base" --head HEAD --taxonomy "$taxonomy" \
+  --identity-context "${work}/identity-context.json" \
+  --root-set .github/sourcey-root-set.json --trusted-root-digest "$root_digest" \
+  --verified-at "$(node -p 'new Date().toISOString()')" --format human
 ```
 
-This is the same pinned executable used by CI, not a second validator.
+This is the same public npm package, signed identity-context protocol, and rooted trust input used
+by CI—not a second validator. The command makes its one network-dependent context issuance explicit;
+the final validation is offline over the saved bytes.

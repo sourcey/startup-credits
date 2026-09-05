@@ -14,8 +14,10 @@
 </p>
 
 <p align="center">
-  <!-- Counts are read live from the published release; nothing here is kept by hand. -->
-  <img alt="entities on record" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fsourcey.com%2Fcatalog.json&query=%24.data.entities.length&label=entities%20on%20record&style=flat-square&labelColor=0a0908&color=d0231c">
+  <!-- Counts are read live from the published release; nothing here is kept by hand.
+       The count comes from the list envelope, not catalog.json: the full artifact is
+       megabytes and a badge fetch times out on it. -->
+  <img alt="entities on record" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.sourcey.com%2Fv1%2Fentities%3Flimit%3D1&query=%24.summary.entity_count&label=entities%20on%20record&style=flat-square&labelColor=0a0908&color=d0231c">
   <img alt="last change" src="https://img.shields.io/github/last-commit/sourcey/startup-credits?style=flat-square&labelColor=0a0908&color=176b45&label=last%20change">
   <img alt="changes per month" src="https://img.shields.io/github/commit-activity/m/sourcey/startup-credits?style=flat-square&labelColor=0a0908&color=176b45&label=changes%2Fmonth">
   <img alt="data licence CC BY 4.0" src="https://img.shields.io/badge/data-CC%20BY%204.0-6a645d?style=flat-square&labelColor=0a0908">
