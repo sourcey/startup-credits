@@ -1,0 +1,67 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_kf66ej4ar5a1vk5f7akf4qpcm6
+  slug: uniblock
+  slug_aliases: []
+  name: Uniblock
+  domains:
+    - value: uniblock.dev
+      role: primary
+      valid_from: 2026-09-01T05:03:00.000Z
+  category: apis-integration
+profile:
+  summary: One API, credit balance, and billing layer for blockchain data providers.
+  description: Uniblock provides one API key, credit balance, and billing layer for routing requests across blockchain-data providers.
+  links:
+    site: https://uniblock.dev/
+sources:
+  - source_id: src_1f59b9d938be567a5b8c22f9747b2e98b8196f819b668a2fb20208051e9f821c
+    url: https://uniblock.dev/startup-program
+programs:
+  - program_id: prg_kk19nyhaxxp1g5qba9czjvmnnd
+    program_slug: uniblock-startup-program
+    program_slug_aliases: []
+    title: Uniblock Startup Program
+    summary: Uniblock gives eligible early-stage blockchain-data teams up to $10,000 in credits on its annual plan, with provider routing and engineering support.
+    source_ids:
+      - src_1f59b9d938be567a5b8c22f9747b2e98b8196f819b668a2fb20208051e9f821c
+offers:
+  - offer_id: off_sjqk2ng9gm1mkjsgm8012ezxzd
+    program_id: prg_kk19nyhaxxp1g5qba9czjvmnnd
+    offer_slug: up-to-ten-thousand-dollars-in-uniblock-credits
+    offer_slug_aliases: []
+    title: Up to $10,000 in Uniblock Credits
+    summary: Approved startups receive up to $10,000 in credits across Uniblock's routed provider stack, with one key, one balance, and engineering support.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-01T05:03:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to $10,000 in credits to build your whole stack on Uniblock.
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 1000000
+            kind: up-to
+      consideration:
+        kind: variable
+        description: "One offer: the annual Uniblock plan, with credits included."
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: external-verification
+        statement: Applicants must be early-stage teams building on blockchain data with a product live or in active development.
+    roles:
+      terms_authority_entity_id: ent_kf66ej4ar5a1vk5f7akf4qpcm6
+      access_operator_entity_id: ent_kf66ej4ar5a1vk5f7akf4qpcm6
+    access:
+      availability: public
+      method: form
+      url: https://uniblock.dev/startup-program
+      instructions: Submit the application form on the startup-program page and complete the short fit-and-scope call.
+    terms_url: https://uniblock.dev/startup-program
+    source_ids:
+      - src_1f59b9d938be567a5b8c22f9747b2e98b8196f819b668a2fb20208051e9f821c
