@@ -1,0 +1,110 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1bnbt8wayga8xzknz1m6kfk
+  slug: productbridge
+  slug_aliases: []
+  name: ProductBridge
+  domains:
+    - value: productbridge.io
+      role: primary
+      valid_from: 2026-08-31T10:20:44.791Z
+  category: support
+profile:
+  description: ProductBridge combines customer feedback, surveys, support chat, help-center content, roadmaps, and changelogs in one product platform.
+  links:
+    site: https://productbridge.io
+sources:
+  - source_id: src_829de5df3d3714388a987b97d46da22149c2abb3d5d00866312bf8f17c70fc17
+    url: https://productbridge.io/early-stage-program
+programs:
+  - program_id: prg_01m1bnbt93q1vrvzc8p5ve36s5
+    program_slug: early-stage-program
+    program_slug_aliases: []
+    title: ProductBridge Early Stage Program
+    summary: ProductBridge gives eligible young startups six free months, followed by stepped discounts through month 24 on its Growth plan.
+    source_ids:
+      - src_829de5df3d3714388a987b97d46da22149c2abb3d5d00866312bf8f17c70fc17
+offers:
+  - offer_id: off_01m1bnbt93hhagce71y66sv6wf
+    program_id: prg_01m1bnbt93q1vrvzc8p5ve36s5
+    offer_slug: growth-plan-two-year-stepped-discount
+    offer_slug_aliases: []
+    title: Six months free, then stepped Growth plan discounts
+    summary: Eligible startups get the Growth plan free for six months, then pay $14, $29, and $44 per month in successive six-month periods through month 24.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-31T10:20:44.791Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: $0 a month; the full product is free for six months.
+          kind: free-service
+          service: ProductBridge Growth plan
+          duration:
+            kind: exact
+            value: P6M
+        - benefit_id: ben_02
+          description: 75% off; $14 a month against the $59 list price during months 7–12.
+          kind: discount
+          percentage:
+            basis_points: 7500
+            kind: exact
+          duration:
+            kind: exact
+            value: P6M
+        - benefit_id: ben_03
+          description: 50% off; $29 a month against the $59 list price during months 13–18.
+          kind: discount
+          percentage:
+            basis_points: 5000
+            kind: exact
+          duration:
+            kind: exact
+            value: P6M
+        - benefit_id: ben_04
+          description: 25% off; $44 a month against the $59 list price during months 19–24.
+          kind: discount
+          percentage:
+            basis_points: 2500
+            kind: exact
+          duration:
+            kind: exact
+            value: P6M
+      consideration:
+        kind: variable
+        description: Nothing for the first six months; $14 a month for months 7–12, $29 for months 13–18, and $44 for months 19–24.
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.funding_raised_usd
+            kind: predicate
+            operator: lt
+            statement: The company has raised less than $1,000,000 in funding.
+            value:
+              type: number
+              value: 1000000
+          - criterion_id: cri_02
+            fact: company.age_months
+            kind: predicate
+            operator: lt
+            statement: The company was founded less than two years ago.
+            value:
+              type: number
+              value: 24
+          - criterion_id: cri_03
+            kind: manual
+            reason: external-verification
+            statement: The company has never previously been on a paid ProductBridge plan.
+    roles:
+      terms_authority_entity_id: ent_01m1bnbt8wayga8xzknz1m6kfk
+      access_operator_entity_id: ent_01m1bnbt8wayga8xzknz1m6kfk
+    access:
+      availability: public
+      instructions: Apply through ProductBridge's Early Stage Program form; applications are reviewed manually.
+      method: form
+      url: https://productbridge.io/early-stage-program
+    terms_url: https://productbridge.io/early-stage-program
+    source_ids:
+      - src_829de5df3d3714388a987b97d46da22149c2abb3d5d00866312bf8f17c70fc17
