@@ -1,0 +1,60 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1ssjye9dx1d146k9v3khw20
+  slug: cyberport
+  slug_aliases: []
+  name: Cyberport
+  domains:
+  - value: cyberport.hk
+    role: primary
+    valid_from: '2026-09-05T22:03:53.000Z'
+  category: ai-ml
+profile:
+  description: Cyberport startup program offering credits for early-stage companies.
+  links:
+    site: https://cyberport.hk
+sources:
+- source_id: src_5814ef678df20cf2640ee0d490a918f1c0b783a9eaaababbda707219a8ea4f67
+  url: https://www.cyberport.hk/en/entrepreneurship/hong_kong_programme/
+- source_id: src_2a2b08c167be041913269ed5ad45c3ae73a9fb5c92eaa05992a67af9a41f788a
+  url: https://www.cyberport.hk/wp-content/uploads/ENC.RF_.015a-GN_for_Applicants-CCMF-HK_Programme.pdf
+- source_id: src_a848df4648de829010c2a4fb433845e3ba83cac469a7b522fdb13ac5d07b277b
+  url: https://www.cyberport.hk/en/about_us/vision_focus/
+programs: []
+offers:
+- offer_id: off_01m1ssjz5n1s0450r0qwwwas52
+  offer_slug: cyberport-startup-discount
+  offer_slug_aliases: []
+  title: Cyberport Startup Discount
+  summary: A startup-specific cash grant for digital technology projects at the idea
+    or early development stage. The official page lists up to HKD 100,000 over six
+    months, subject to selection and reporting milestones. The next published application
+    d
+  lifecycle:
+    status: active
+    effective_from: '2026-09-05T22:03:53.000Z'
+  economics:
+    consideration:
+      kind: unknown
+      description: Contact sales for pricing details.
+    benefits:
+    - benefit_id: ben_primary
+      description: Discount for 12 months
+      kind: discount
+  eligibility:
+    rule:
+      kind: manual
+      criterion_id: cri_requirement
+      statement: Must qualify as a startup. Contact sales for eligibility details.
+      reason: not-machine-evaluable
+  roles:
+    terms_authority_entity_id: ent_01m1ssjye9dx1d146k9v3khw20
+    access_operator_entity_id: ent_01m1ssjye9dx1d146k9v3khw20
+  access:
+    availability: public
+    method: contact
+    url: https://www.cyberport.hk/en/about_us/vision_focus/
+  source_ids:
+  - src_5814ef678df20cf2640ee0d490a918f1c0b783a9eaaababbda707219a8ea4f67
+  - src_2a2b08c167be041913269ed5ad45c3ae73a9fb5c92eaa05992a67af9a41f788a
+  - src_a848df4648de829010c2a4fb433845e3ba83cac469a7b522fdb13ac5d07b277b
