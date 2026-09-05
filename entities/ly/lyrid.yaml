@@ -37,26 +37,20 @@ offers:
       effective_from: 2026-09-01T08:56:43.5181426Z
     economics:
       benefits:
-        - applies_to: Lyrid Enterprise plan
-          benefit_id: ben_01
-          description: 100% off the Lyrid Enterprise plan for six months
-          duration:
-            kind: exact
-            value: P6M
-          kind: discount
-          percentage:
-            basis_points: 10000
-            kind: exact
-        - benefit_id: ben_02
-          description: Migration and engineering consulting services during the six-month program
+        - benefit_id: ben_01
+          description: Lyrid Enterprise plan free for six months.
           duration:
             kind: exact
             value: P6M
           kind: free-service
-          service: Migration and engineering consulting
+          service: Lyrid Enterprise plan
+        - benefit_id: ben_02
+          description: Free migration and engineering consultancy services.
+          kind: free-service
+          service: Migration and engineering consultancy
       consideration:
         kind: variable
-        description: The approved startup pays no Enterprise-plan subscription charge during the six-month program and may continue at Lyrid's standard Enterprise pricing afterward.
+        description: $0 for the first six months, then $600 per month or $6,000 per year on the Enterprise Plan.
     eligibility:
       rule:
         kind: all
@@ -85,8 +79,8 @@ offers:
       terms_authority_entity_id: ent_ah767qatdx75k92rdtxxtprn9e
       access_operator_entity_id: ent_ah767qatdx75k92rdtxxtprn9e
     access:
-      availability: membership
-      instructions: Complete the application on the Lyrid for Startups page with a company email, website, company details, and accelerator partner code for Lyrid's review.
+      availability: public
+      instructions: Complete the application form with company email, role, name, phone number, website, and accelerator name.
       method: form
       url: https://www.lyrid.io/lyrid-for-startups
     terms_url: https://www.lyrid.io/lyrid-for-startups
