@@ -1,0 +1,61 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1d16yabjvdqx6nyja509a16
+  slug: groundcover
+  slug_aliases: []
+  name: groundcover
+  domains:
+    - value: groundcover.com
+      role: primary
+      valid_from: 2026-08-31T23:07:00.816Z
+  category: observability
+profile:
+  description: groundcover provides cloud-native observability for logs, metrics, traces, profiling, and infrastructure using eBPF and bring-your-own-cloud deployment.
+  links:
+    site: https://www.groundcover.com
+sources:
+  - source_id: src_9d469f65019d41595358eea6ac859c475832fa996b46ce44417e7b232b8f8768
+    url: https://www.groundcover.com/
+  - source_id: src_df1e55ae2a42360562f00b3d954023cf73703c598609601f5880088b195b0a09
+    url: https://docs.groundcover.com/
+  - source_id: src_96ea3dc9541a07805a0e2c5d60d3eed83d47101fdd3da088e283ca0859b0a230
+    url: https://startups.aws.com/offers?lang=en-US
+programs: []
+offers:
+  - offer_id: off_01m1d16yagamvm9x8ya4pk7y91
+    offer_slug: groundcover-for-startups
+    offer_slug_aliases: []
+    title: groundcover for Startups
+    summary: Eligible AWS startup customers receive 25% off their first-year groundcover subscription through AWS Marketplace.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-31T23:07:00.816Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 25% off the first-year groundcover subscription on AWS Marketplace
+          duration:
+            kind: exact
+            value: P1Y
+          kind: discount
+          percentage:
+            basis_points: 2500
+            kind: exact
+      consideration:
+        kind: unknown
+        description: The discounted first-year groundcover subscription on AWS Marketplace still requires payment; the source does not publish its base price.
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: external-verification
+        statement: Applicant must be an eligible AWS startup customer.
+    roles:
+      terms_authority_entity_id: ent_01m1d16yabjvdqx6nyja509a16
+      access_operator_entity_id: ent_01kyh8fpe10b164tj935t8k5zb
+    access:
+      availability: membership
+      method: form
+      url: https://startups.aws.com/offers/groundcover-inc
+    source_ids:
+      - src_96ea3dc9541a07805a0e2c5d60d3eed83d47101fdd3da088e283ca0859b0a230
