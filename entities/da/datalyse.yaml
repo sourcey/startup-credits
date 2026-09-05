@@ -1,0 +1,93 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_k18raa0xgfxwzgj828pamtfjr0
+  slug: datalyse
+  slug_aliases: []
+  name: Datalyse
+  domains:
+    - value: datalyse.io
+      role: primary
+      valid_from: 2026-09-01T06:30:00.000Z
+  category: crm-sales
+profile:
+  summary: CRM, communications, automation, AI, and business-operations platform.
+  description: Datalyse is an all-in-one platform for customer relationship management, sales, communications, automation, artificial intelligence, and business operations.
+  links:
+    site: https://datalyse.io/
+sources:
+  - source_id: src_02e41a99210ccf7438a975b7edecabf304f047f7f85b817b59d5f198836fc031
+    url: https://contact.datalyse.io/startups
+programs:
+  - program_id: prg_3tmxtk3axp76x9pn1stt81q2pk
+    program_slug: datalyse-startup-programme
+    program_slug_aliases: []
+    title: Datalyse Startup Programme
+    summary: Datalyse gives eligible startups free platform credits, six months of its Growth plan, priority support, and founder-community access.
+    source_ids:
+      - src_02e41a99210ccf7438a975b7edecabf304f047f7f85b817b59d5f198836fc031
+offers:
+  - offer_id: off_ehwy1p2rp6vyde65418z6zd39g
+    program_id: prg_3tmxtk3axp76x9pn1stt81q2pk
+    offer_slug: five-hundred-euros-in-credits-and-six-months-growth-plan
+    offer_slug_aliases: []
+    title: Up to €500 in Credits and Six Months of Growth
+    summary: Eligible startups get up to €500 in credits for calls, AI, SMS, and platform features, plus free access to the Datalyse Growth plan for six months.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-01T06:30:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to €500 in credits usable for calls, AI, SMS, and all Datalyse platform features.
+          kind: credit
+          value:
+            amount:
+              currency: EUR
+              minor_units: 50000
+            kind: up-to
+        - benefit_id: ben_02
+          description: Full access to the Datalyse Growth plan and its premium features at no cost for six months.
+          duration:
+            kind: exact
+            value: P6M
+          kind: free-service
+          service: Datalyse Growth plan
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.age_months
+            kind: predicate
+            operator: lt
+            statement: The company is less than two years old.
+            value:
+              type: number
+              value: 24
+          - criterion_id: cri_02
+            fact: company.employee_count
+            kind: predicate
+            operator: lt
+            statement: The company has fewer than 10 employees.
+            value:
+              type: number
+              value: 10
+          - criterion_id: cri_03
+            fact: applicant.is_new_customer
+            kind: predicate
+            operator: eq
+            statement: The applicant has not used Datalyse before.
+            value:
+              type: boolean
+              value: true
+    roles:
+      terms_authority_entity_id: ent_k18raa0xgfxwzgj828pamtfjr0
+      access_operator_entity_id: ent_k18raa0xgfxwzgj828pamtfjr0
+    access:
+      availability: public
+      method: contact
+      instructions: Use the Apply for the programme link on Datalyse's startup page to contact Datalyse.
+    source_ids:
+      - src_02e41a99210ccf7438a975b7edecabf304f047f7f85b817b59d5f198836fc031
