@@ -38,9 +38,6 @@ offers:
       benefits:
         - benefit_id: ben_01
           description: Twelve months of full production Royall API access including consent checks, identity resolution, licensing, and webhooks
-          duration:
-            kind: exact
-            value: P1Y
           kind: other
         - benefit_id: ben_02
           description: White-glove onboarding with a shared Slack channel, integration reviews, and help shipping the first verified consent check
