@@ -1,0 +1,56 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1ss00gpvaea3cjyk4pk3xv2
+  slug: wetransact
+  slug_aliases: []
+  name: WeTransact
+  domains:
+    - value: wetransact.io
+      role: primary
+      valid_from: 2026-09-05T21:53:32.695Z
+  category: crm-sales
+profile:
+  description: WeTransact helps software companies publish, operate, and sell SaaS offers through Microsoft Marketplace.
+  links:
+    site: https://www.wetransact.io/
+sources:
+  - source_id: src_5eb5b48fa7213393419ace595acfe4c0a1abbb66103a041bab9b5eb00420430e
+    url: https://www.wetransact.io/
+  - source_id: src_da65f74b216889008d86941a29a0b360d2663669399c070e7749b6046d1817ee
+    url: https://learn.microsoft.com/en-us/startups/benefits/technical-benefits/third-party-benefits/we-transact
+  - source_id: src_d7d4bc2546a9748e419e30914e0b9ffdc1183b1b60be18b6d8992b160f8e7653
+    url: https://www.wetransact.io/utility-pages/terms-conditions
+programs: []
+offers:
+  - offer_id: off_01m1ss00gq3a0v3bqsa1sbqqs7
+    offer_slug: microsoft-for-startups-marketplace-publishing
+    offer_slug_aliases: []
+    title: WeTransact marketplace publishing for Microsoft for Startups
+    summary: Eligible Microsoft for Startups Investor Network companies can use WeTransact to fast-track Microsoft Marketplace publishing with no upfront WeTransact cost and platform fees deferred until revenue.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T21:53:32.695Z
+    economics:
+      consideration:
+        kind: unknown
+        description: No upfront WeTransact platform cost; WeTransact platform fees are deferred until after the startup generates revenue. Microsoft Marketplace's 3% service fee still applies.
+      benefits:
+        - benefit_id: ben_primary
+          description: Fast-tracked Microsoft Marketplace publishing with no upfront WeTransact cost and WeTransact platform fees deferred until after revenue is generated.
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: The startup must be backed by a VC, accelerator, incubator, or university in the Microsoft for Startups Investor Network and have the WeTransact benefit available in its Benefits page.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01m1ss00gpvaea3cjyk4pk3xv2
+      access_operator_entity_id: ent_01kyh8fpe3n3yye39kmzvy410z
+    access:
+      availability: membership
+      method: other
+      instructions: Redeem the WeTransact benefit from the Microsoft for Startups Benefits page in the Azure Portal.
+    source_ids:
+      - src_da65f74b216889008d86941a29a0b360d2663669399c070e7749b6046d1817ee
+      - src_d7d4bc2546a9748e419e30914e0b9ffdc1183b1b60be18b6d8992b160f8e7653
