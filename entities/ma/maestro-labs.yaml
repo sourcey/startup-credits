@@ -36,9 +36,8 @@ offers:
       effective_from: 2026-09-01T04:52:00.000Z
     economics:
       benefits:
-        - applies_to: Maestro Labs products
-          benefit_id: ben_01
-          description: 75% off Maestro Labs products for 11 months.
+        - benefit_id: ben_01
+          description: Get 75% off for 11 months if you qualify.
           duration:
             kind: exact
             value: P11M
@@ -47,8 +46,8 @@ offers:
             kind: exact
             basis_points: 7500
       consideration:
-        kind: variable
-        description: The startup pays the remaining discounted subscription price for the Maestro Labs products it uses.
+        kind: unknown
+        description: The source does not state the price payable after applying the 75% discount.
     eligibility:
       rule:
         kind: all
