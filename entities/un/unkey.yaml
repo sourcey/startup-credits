@@ -1,0 +1,73 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1san0wqqdw55wbca23q9je1
+  slug: unkey
+  slug_aliases: []
+  name: Unkey
+  domains:
+    - value: unkey.com
+      role: primary
+      valid_from: 2024-01-01T00:00:00.000Z
+  category: api-key-management
+profile:
+  description: API key management for developers. Create, manage, and audit API keys with per-key rate limiting and real-time analytics.
+  links:
+    site: https://unkey.com
+sources:
+  - source_id: 8fbf37e3cf7097595545ad4b88d26b42327cd5da3dc01267ed79cdb6cb7e6036
+    url: https://unkey.com/startups
+programs:
+  - program_id: prg_01m1san187r4a48ye6k3xnr8h7
+    program_slug: startups-program
+    program_slug_aliases: []
+    title: Unkey Startups Program
+    summary: Monthly API credits and discounts for early-stage startups that have not raised more than $5 million.
+    source_ids:
+      - 8fbf37e3cf7097595545ad4b88d26b42327cd5da3dc01267ed79cdb6cb7e6036
+offers:
+  - offer_id: off_01m1san0zprfy7wx7ftp5te6dk
+    program_id: prg_01m1san187r4a48ye6k3xnr8h7
+    program_slug: startups-program
+    offer_slug: 1000-usd-monthly-startup-credits
+    offer_slug_aliases: []
+    title: $1,000 monthly credits for startups
+    summary: Eligible startups receive $1,000 in API credits every month, plus a 50 percent discount after the $5 million funding threshold.
+    lifecycle:
+      status: active
+      effective_from: 2024-01-01T00:00:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01m1san12kca1dg6gr8djtrz33
+          description: $1,000 in monthly API credits
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 100000
+            kind: up-to
+          duration:
+            kind: up-to
+            value: P1M
+        - benefit_id: ben_01m1san13s80pfy3z10px6ebkd
+          description: 50 percent discount after the $5M funding threshold
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 5000
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: manual
+        reason: vendor-discretion
+        criterion_id: cri_01
+        statement: Available to startups that have not raised more than $5 million in total funding. Approval and grant are at Unkey's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m1san0wqqdw55wbca23q9je1
+      access_operator_entity_id: ent_01m1san0wqqdw55wbca23q9je1
+    access:
+      availability: public
+      method: form
+      url: https://unkey.com/startups
+    source_ids:
+      - 8fbf37e3cf7097595545ad4b88d26b42327cd5da3dc01267ed79cdb6cb7e6036
