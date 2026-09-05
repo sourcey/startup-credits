@@ -1,0 +1,92 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1rhb7wsbxfty2rmmjnt2w6a
+  slug: nvoip
+  slug_aliases: []
+  name: Nvoip
+  domains:
+    - value: nvoip.com.br
+      role: primary
+      # Start of this observed catalog association, not domain registration.
+      valid_from: 2026-09-05T10:20:37.659Z
+  category: communication
+profile:
+  description: Nvoip provides business communication tools for voice, chat and WhatsApp, with chatbot,
+    voicebot and CRM integrations.
+  links:
+    site: https://www.nvoip.com.br/en/
+sources:
+  - source_id: src_28a4175790026b275866c29c0f0814468f5940990a73215979e3382acb9d620b
+    url: https://www.nvoip.com.br/en/nvoip-for-startups/
+programs:
+  - program_id: prg_01m1rhb7wv8e2dz31wfm30bpbd
+    program_slug: nvoip-for-startups
+    program_slug_aliases: []
+    title: Nvoip for Startups
+    summary: Communication-plan discounts for startups connected with Nvoip partner hubs.
+    source_ids:
+      - src_28a4175790026b275866c29c0f0814468f5940990a73215979e3382acb9d620b
+offers:
+  - offer_id: off_01m1rhb7wvr3mz90nnj70kxq43
+    program_id: prg_01m1rhb7wv8e2dz31wfm30bpbd
+    offer_slug: partner-hub-startup-plan-discount
+    offer_slug_aliases: []
+    title: Nvoip startup communication-plan discount
+    summary: Startups connected with Nvoip partner hubs can apply for 20% to 90% off communication
+      plans, depending on maturity, for up to two years.
+    lifecycle:
+      status: active
+      # Start of the observed active record, not the vendor program launch date.
+      effective_from: 2026-09-05T10:20:37.659Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          kind: discount
+          percentage:
+            kind: range
+            minimum_basis_points: 2000
+            maximum_basis_points: 9000
+          duration:
+            kind: up-to
+            value: P2Y
+          applies_to: Nvoip communication plans
+          description: The program advertises 20% to 90% off Nvoip plans, with the discount dependent on
+            startup maturity and a benefit period of up to two years.
+      consideration:
+        kind: variable
+        description: The startup pays the discounted plan price; the program page does not publish a fixed
+          payable amount.
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: predicate
+            fact: company.is_startup
+            operator: eq
+            statement: Applicant is a startup.
+            value:
+              type: boolean
+              value: true
+          - criterion_id: cri_02
+            kind: predicate
+            fact: company.has_nvoip_partner_hub_affiliation
+            operator: eq
+            statement: Applicant is connected with a Nvoip partner hub.
+            value:
+              type: boolean
+              value: true
+          - criterion_id: cri_03
+            kind: manual
+            reason: vendor-discretion
+            statement: The applicable discount depends on the startup maturity stage.
+    roles:
+      terms_authority_entity_id: ent_01m1rhb7wsbxfty2rmmjnt2w6a
+      access_operator_entity_id: ent_01m1rhb7wsbxfty2rmmjnt2w6a
+    access:
+      availability: public
+      method: form
+      url: https://www.nvoip.com.br/en/nvoip-for-startups/
+    terms_url: https://www.nvoip.com.br/en/nvoip-for-startups/
+    source_ids:
+      - src_28a4175790026b275866c29c0f0814468f5940990a73215979e3382acb9d620b
