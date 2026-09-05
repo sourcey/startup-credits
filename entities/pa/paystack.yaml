@@ -1,0 +1,67 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m19mcrtngareb5zpdv6sey3e
+  slug: paystack
+  slug_aliases: []
+  name: Paystack
+  domains:
+    - value: paystack.com
+      role: primary
+      valid_from: 2026-08-30T15:25:17.018Z
+  category: payments-fintech
+profile:
+  description: Paystack provides online payment infrastructure, APIs, and business tools to companies across Africa.
+  links:
+    site: https://paystack.com/
+sources:
+  - source_id: src_2d754c87c57c7b2dc5f256e39e3a7e7120a2d3ada4326e1644ddefd6a4a8d8a8
+    url: https://paystack.com/blog/company-news/paystack-catalyst
+  - source_id: src_ad324485543034ecdb704962da4b123ee54a2e8937102bed658131a2844db5fb
+    url: https://paystack.com/startups
+  - source_id: src_7e5f24edae6e3399b9783e15eb0c5492f7a2d5ec64e839fd31734f82cc726430
+    url: https://paystack.com/contact/startups
+programs:
+  - program_id: prg_01m19mcrttdct6bm1jkds41gwx
+    program_slug: paystack-catalyst
+    program_slug_aliases: []
+    title: Paystack Catalyst
+    summary: Paystack Catalyst gives African tech startups fee-free processing, startup-tool discounts, fundraising support, and priority technical consulting.
+    source_ids:
+      - src_2d754c87c57c7b2dc5f256e39e3a7e7120a2d3ada4326e1644ddefd6a4a8d8a8
+      - src_ad324485543034ecdb704962da4b123ee54a2e8937102bed658131a2844db5fb
+      - src_7e5f24edae6e3399b9783e15eb0c5492f7a2d5ec64e839fd31734f82cc726430
+offers:
+  - offer_id: off_01m19mcrttsbz511w9k8d6947g
+    program_id: prg_01m19mcrttdct6bm1jkds41gwx
+    offer_slug: fee-free-first-25000-usd-processing
+    offer_slug_aliases: []
+    title: Fee-free processing on the first USD 25,000
+    summary: Eligible tech startups serving Africa pay no Paystack transaction fees on their first USD 25,000 in payment volume, measured in local-currency equivalent.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-30T15:25:17.018Z
+    economics:
+      benefits:
+        - benefit_id: catalyst_processing_waiver
+          description: Paystack transaction fees are waived on the first USD 25,000 in payment processing, using the local-currency equivalent.
+          kind: waiver
+          waived_item: Transaction fees on the first USD 25,000 in Paystack payment processing
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: african_tech_startup
+        kind: manual
+        reason: external-verification
+        statement: Applicant must be a technology startup serving the African continent.
+    roles:
+      terms_authority_entity_id: ent_01m19mcrtngareb5zpdv6sey3e
+      access_operator_entity_id: ent_01m19mcrtngareb5zpdv6sey3e
+    access:
+      availability: public
+      method: form
+      url: https://paystack.com/contact/startups
+    source_ids:
+      - src_2d754c87c57c7b2dc5f256e39e3a7e7120a2d3ada4326e1644ddefd6a4a8d8a8
+      - src_ad324485543034ecdb704962da4b123ee54a2e8937102bed658131a2844db5fb
+      - src_7e5f24edae6e3399b9783e15eb0c5492f7a2d5ec64e839fd31734f82cc726430
