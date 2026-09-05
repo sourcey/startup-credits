@@ -1,0 +1,91 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1ss3epbpcf9cjs1bksy5c7r
+  slug: soax
+  slug_aliases: []
+  name: SOAX
+  domains:
+    - value: soax.com
+      role: primary
+      valid_from: 2026-09-05T21:55:54.537Z
+  category: devtools-other
+profile:
+  description: SOAX handles IP rotation and selection in one connected system, so requests travel a shorter path and your connection stays fast and reliable.
+  links:
+    site: https://soax.com
+sources:
+  - source_id: src_3e53ff74a35697d5bb89b6d6570c4ab31ec0880af81751e0d129f3b7a9bdffbc
+    url: https://soax.com/pricing/startups
+programs:
+  - program_id: prg_01m1ss3eqdbh196xzr8wc6xkar
+    program_slug: startup-program
+    program_slug_aliases: []
+    title: SOAX Startup Program
+    summary: Qualifying startups receive 50% off a SOAX Enterprise plan, with full access to proxies and scraper APIs, dedicated success manager support, and direct product influence.
+    source_ids:
+      - src_3e53ff74a35697d5bb89b6d6570c4ab31ec0880af81751e0d129f3b7a9bdffbc
+offers:
+  - offer_id: off_01m1ss3eqfpvvpj2116bf7ffc8
+    program_id: prg_01m1ss3eqdbh196xzr8wc6xkar
+    offer_slug: 50-percent-off-enterprise-plan
+    offer_slug_aliases: []
+    title: 50% Off SOAX Enterprise Plan
+    summary: Qualifying startups get 50% off a full-price Enterprise subscription, with full access to all SOAX tools and dedicated support.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T21:55:54.537Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 50% off a full-price subscription to premium Enterprise plans.
+          kind: discount
+          percentage:
+            basis_points: 5000
+            kind: exact
+        - benefit_id: ben_02
+          description: Full access to every SOAX product and all advanced features included in Enterprise plans, including proxies and scraper APIs.
+          kind: other
+        - benefit_id: ben_03
+          description: Dedicated customer success manager for integration, troubleshooting, and optimization.
+          kind: other
+        - benefit_id: ben_04
+          description: Collaborate directly with SOAX product managers to request features and shape the product roadmap.
+          kind: other
+        - benefit_id: ben_05
+          description: Personalized onboarding to optimize your data extraction pipeline from day one.
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.funding_raised_usd
+            kind: predicate
+            operator: lte
+            statement: Raised up to a maximum of $10 million in funding
+            value:
+              type: number
+              value: 10000000
+          - criterion_id: cri_02
+            fact: company.age_months
+            kind: predicate
+            operator: lte
+            statement: Incorporated less than 5 years ago
+            value:
+              type: number
+              value: 60
+          - criterion_id: cri_03
+            kind: manual
+            reason: not-machine-evaluable
+            statement: Must be a new SOAX customer
+    roles:
+      terms_authority_entity_id: ent_01m1ss3epbpcf9cjs1bksy5c7r
+      access_operator_entity_id: ent_01m1ss3epbpcf9cjs1bksy5c7r
+    access:
+      availability: public
+      method: form
+      url: https://soax.com/pricing/startups#apply-now
+    source_ids:
+      - src_3e53ff74a35697d5bb89b6d6570c4ab31ec0880af81751e0d129f3b7a9bdffbc
