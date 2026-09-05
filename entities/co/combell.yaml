@@ -1,0 +1,75 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1eg7dneeyjb68g3nec17c0t
+  slug: combell
+  slug_aliases: []
+  name: Combell
+  domains:
+    - value: combell.com
+      role: primary
+      valid_from: 2026-09-01T12:00:00.000Z
+  category: hosting-infra
+profile:
+  summary: Hosting, cloud, server, domain, and managed infrastructure services.
+  description: Combell provides domain, web hosting, server, cloud, and managed infrastructure services.
+  links:
+    site: https://www.combell.com/en/
+sources:
+  - source_id: src_7a6963e0e45e02ad2b6b6321da377047f791c4b3b3bbbc48499aa0facc8fc743
+    url: https://www.combell.com/en/cloud-angel-webfund
+programs:
+  - program_id: prg_01m1eg7dnm8ss8j7fnxszays6d
+    program_slug: cloud-angel-webfund
+    program_slug_aliases: []
+    title: Cloud Angel Webfund
+    summary: Combell's Cloud Angel Webfund supports selected startup hosting projects with a year of tailored hosting and guidance from a dedicated advisory team.
+    source_ids:
+      - src_7a6963e0e45e02ad2b6b6321da377047f791c4b3b3bbbc48499aa0facc8fc743
+offers:
+  - offer_id: off_01m1eg7dnmb4nb4rbrxfecpygx
+    program_id: prg_01m1eg7dnm8ss8j7fnxszays6d
+    offer_slug: one-year-all-in-hosting
+    offer_slug_aliases: []
+    title: One year of all-in hosting for selected startups
+    summary: Selected startups receive a tailored Combell hosting infrastructure for one year at no charge, plus guidance from a dedicated advisory team.
+    description: Combell publishes a total program budget of EUR 1,000,000 and says each selected startup receives a hosting budget sized to its project.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-01T12:00:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: One year all-in hosting services
+          duration:
+            kind: exact
+            value: P1Y
+          kind: free-service
+          service: hosting services
+        - benefit_id: ben_02
+          description: A dedicated advisory team guides selected startups through their growth.
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: not-machine-evaluable
+            statement: The applicant must be a startup.
+          - criterion_id: cri_02
+            kind: manual
+            reason: vendor-discretion
+            statement: The applicant must have a promising SaaS, e-commerce, or application hosting project with a good chance of success and continued operation in its second year.
+    roles:
+      terms_authority_entity_id: ent_01m1eg7dneeyjb68g3nec17c0t
+      access_operator_entity_id: ent_01m1eg7dneeyjb68g3nec17c0t
+    access:
+      availability: public
+      instructions: Enter an email address in Combell's Cloud Angel application form to request program information and begin the selection process.
+      method: form
+      url: https://www.combell.com/en/cloud-angel-webfund
+    terms_url: https://www.combell.com/en/cloud-angel-webfund
+    source_ids:
+      - src_7a6963e0e45e02ad2b6b6321da377047f791c4b3b3bbbc48499aa0facc8fc743
