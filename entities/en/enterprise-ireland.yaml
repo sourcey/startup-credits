@@ -1,0 +1,122 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1s5494jnwnprzxgsxy0tjw9
+  slug: enterprise-ireland
+  slug_aliases: []
+  name: Enterprise Ireland
+  domains:
+    - value: enterprise-ireland.com
+      role: primary
+      valid_from: 2026-09-05T16:06:21.070Z
+    - value: newfrontiers.ie
+      role: alias
+      valid_from: 2026-09-05T16:06:21.070Z
+  category: other
+profile:
+  description: Enterprise Ireland is the Irish Government trade and innovation agency and funds and
+    manages the nationwide New Frontiers founder development programme.
+  links:
+    site: https://www.enterprise-ireland.com/
+sources:
+  - source_id: src_1704c539afe7b2bd7e4a370c06ff2beda108713f7f9e21545d64c767fd29e97f
+    url: https://www.newfrontiers.ie/about
+  - source_id: src_64d944a3640e4cc90228f719000859755753df2c8f24929f4c88545efd9ed791
+    url: https://www.newfrontiers.ie/about/eligibility-criteria
+  - source_id: src_96d54e807c01fac0a4d25a1b0b9a41edb22d6d2115df1187453751edf0e62ec0
+    url: https://www.newfrontiers.ie/about/faq
+  - source_id: src_346d428d972293f698dd2206ba55a249e226507cc9d22a9d1e77d921f38881a8
+    url: https://www.newfrontiers.ie/register
+  - source_id: src_15799adbf13462499a902c3bfa8ed0ef5952d19920d767f0abc3fa995c9f403f
+    url: https://www.newfrontiers.ie/calendar
+programs:
+  - program_id: prg_01m1s5494jkq3zv6ck8k77r3qg
+    program_slug: new-frontiers
+    program_slug_aliases: []
+    title: New Frontiers
+    summary: Enterprise Ireland founder development programme delivered through third-level institutions
+      across Ireland.
+    source_ids:
+      - src_1704c539afe7b2bd7e4a370c06ff2beda108713f7f9e21545d64c767fd29e97f
+      - src_96d54e807c01fac0a4d25a1b0b9a41edb22d6d2115df1187453751edf0e62ec0
+offers:
+  - offer_id: off_01m1s5494jwet73ydepj97f1d0
+    program_id: prg_01m1s5494jkq3zv6ck8k77r3qg
+    offer_slug: new-frontiers-phase-2-founder-support
+    offer_slug_aliases: []
+    title: New Frontiers Phase 2 founder support
+    summary: Eligible founders in Ireland receive six months of startup support, including a EUR 17,500
+      allowance subject to eligibility and satisfactory performance. No equity is taken.
+    description: Register interest to contact a local Programme Manager; the national form is not an
+      application. The institution provides the application when recruitment opens. Deadlines vary
+      by location; consult the current calendar.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T16:06:21.070Z
+    economics:
+      consideration:
+        kind: unknown
+        description: No equity is taken. The cited pages do not specify a separate participation fee.
+      benefits:
+        - benefit_id: ben_allowance
+          kind: other
+          description: EUR 17,500 tax-free allowance for one founder during the six-month Phase 2 programme,
+            subject to eligibility and satisfactory performance.
+        - benefit_id: ben_coworking
+          kind: free-service
+          service: Co-working space during Phase 2
+          description: Free co-working space during the six-month Phase 2 programme.
+          duration:
+            kind: exact
+            value: P6M
+        - benefit_id: ben_support
+          kind: other
+          description: One-to-one mentoring, workshops, milestone reviews, access to R&D expertise and
+            Enterprise Ireland resources, and investment-readiness support.
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - kind: manual
+            criterion_id: cri_01
+            statement: Early-stage founder over 18, based and legally able to live and run the business in the
+              Republic of Ireland.
+            reason: external-verification
+          - kind: manual
+            criterion_id: cri_02
+            statement: Innovative business idea with export and employment potential; subject to the sector
+              exclusions published in the eligibility criteria.
+            reason: external-verification
+          - kind: manual
+            criterion_id: cri_03
+            statement: Competitive Phase 2 selection, including an interview; full-time commitment for six
+              months, campus attendance, and satisfactory milestone performance.
+            reason: external-verification
+          - kind: manual
+            criterion_id: cri_04
+            statement: Only one co-founder may participate and receive the allowance. Previous Phase 2 graduates
+              are ineligible; Phase 1 is not a prerequisite.
+            reason: external-verification
+          - kind: manual
+            criterion_id: cri_05
+            statement: Disclose applicant and co-founder funding. Funding above EUR 100,000 excludes the
+              allowance. Other public supports, prior feasibility funding, LEO grants, and
+              co-founder funding can restrict eligibility; published funding-conflict rules apply.
+            reason: external-verification
+          - kind: manual
+            criterion_id: cri_06
+            statement: Accepting Enterprise Ireland PSSF ends the allowance. Applications and deadlines are
+              managed by the selected local institution.
+            reason: external-verification
+    roles:
+      terms_authority_entity_id: ent_01m1s5494jnwnprzxgsxy0tjw9
+      access_operator_entity_id: ent_01m1s5494jnwnprzxgsxy0tjw9
+    access:
+      availability: public
+      method: form
+      url: https://www.newfrontiers.ie/register
+    source_ids:
+      - src_1704c539afe7b2bd7e4a370c06ff2beda108713f7f9e21545d64c767fd29e97f
+      - src_64d944a3640e4cc90228f719000859755753df2c8f24929f4c88545efd9ed791
+      - src_96d54e807c01fac0a4d25a1b0b9a41edb22d6d2115df1187453751edf0e62ec0
+      - src_346d428d972293f698dd2206ba55a249e226507cc9d22a9d1e77d921f38881a8
+      - src_15799adbf13462499a902c3bfa8ed0ef5952d19920d767f0abc3fa995c9f403f
