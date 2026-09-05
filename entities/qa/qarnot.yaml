@@ -1,0 +1,82 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_k30wqmjt82zxe4vmkmstd321js
+  slug: qarnot
+  slug_aliases: []
+  name: Qarnot
+  domains:
+    - value: qarnot.com
+      role: primary
+      valid_from: 2026-09-01T10:41:14.305Z
+  category: hosting-infra
+profile:
+  description: Qarnot provides low-carbon cloud infrastructure for high-performance computing workloads.
+  links:
+    site: https://qarnot.com
+sources:
+  - source_id: src_194dbedb481c4a6f53232ca730db451b5ded936aa5df09818aeb803c50cf951b
+    url: https://qarnot.com/en/start-up
+programs:
+  - program_id: prg_rnzy09gfv8288dyzhywx5s6z8a
+    program_slug: qarnot-startup-program
+    program_slug_aliases: []
+    title: Qarnot Startup Program
+    summary: Qarnot gives startups cloud credits, discounted HPC usage, and technical support for compute-intensive projects.
+    source_ids:
+      - src_194dbedb481c4a6f53232ca730db451b5ded936aa5df09818aeb803c50cf951b
+offers:
+  - offer_id: off_0k0yaqrp3cx0xm8g1fp5fxxf3r
+    program_id: prg_rnzy09gfv8288dyzhywx5s6z8a
+    offer_slug: 6000-eur-credits-and-50-percent-discount
+    offer_slug_aliases: []
+    title: €6,000 in credits, then 50% off compute usage
+    summary: Eligible startups receive €6,000 in Qarnot cloud credits for six months, followed by 50% off pay-as-you-go compute usage, with no data-transfer fees and dedicated support.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-01T10:41:14.305Z
+    economics:
+      consideration:
+        kind: variable
+        description: After the free credits are used, compute is billed on a pay-as-you-go basis at a 50% discount.
+      benefits:
+        - benefit_id: ben_01
+          description: €6,000 in Qarnot cloud credits for the first six months
+          kind: credit
+          value:
+            amount:
+              currency: EUR
+              minor_units: 600000
+            kind: exact
+          duration:
+            kind: exact
+            value: P6M
+        - benefit_id: ben_02
+          description: 50% off compute usage after the free credits are used
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 5000
+        - benefit_id: ben_03
+          description: No data-transfer fees
+          kind: waiver
+          waived_item: Data-transfer fees
+        - benefit_id: ben_04
+          description: Dedicated technical support, one-on-one engineering assistance, and custom documentation
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_01
+        statement: Applicant is a startup seeking high-performance cloud computing for its projects.
+        reason: external-verification
+    roles:
+      terms_authority_entity_id: ent_k30wqmjt82zxe4vmkmstd321js
+      access_operator_entity_id: ent_k30wqmjt82zxe4vmkmstd321js
+    access:
+      availability: public
+      instructions: Use the Speak to an expert form on Qarnot's public startup-program page to discuss the startup's needs and request program access.
+      method: contact
+      url: https://qarnot.com/en/start-up
+    terms_url: https://qarnot.com/en/start-up
+    source_ids:
+      - src_194dbedb481c4a6f53232ca730db451b5ded936aa5df09818aeb803c50cf951b
