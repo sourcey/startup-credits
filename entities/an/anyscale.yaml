@@ -1,0 +1,72 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_tx75drh0kf2nt9jgkwnf4a4n83
+  slug: anyscale
+  slug_aliases: []
+  name: Anyscale
+  domains:
+    - value: anyscale.com
+      role: primary
+      valid_from: 2026-09-01T09:22:02.883Z
+  category: ai-ml
+profile:
+  description: Anyscale provides a managed, Ray-compatible compute platform for training, data processing,
+    batch inference, and serving AI workloads.
+  links:
+    site: https://www.anyscale.com
+sources:
+  - source_id: src_9d22e9a81e169dd111260594c7d7133c129aa4779c50c314dcd13324ac474920
+    url: https://www.anyscale.com/startup
+programs:
+  - program_id: prg_k7n01dv7cnyv6s466p4sqan1jv
+    program_slug: ai-startup-program
+    program_slug_aliases: []
+    title: Anyscale AI Startup Program
+    summary: Anyscale helps AI startups launch applications with usage credits, dedicated technical support,
+      and access to its Ray-compatible platform.
+    source_ids:
+      - src_9d22e9a81e169dd111260594c7d7133c129aa4779c50c314dcd13324ac474920
+offers:
+  - offer_id: off_54wpnn7a466mb0jbrxevkkx81n
+    program_id: prg_k7n01dv7cnyv6s466p4sqan1jv
+    offer_slug: up-to-twenty-thousand-dollars-in-credits
+    offer_slug_aliases: []
+    title: Up to $20,000 in Anyscale Credits
+    summary: Selected startups can receive up to $20,000 in Anyscale credits and dedicated field-engineering
+      support for application architecture and implementation.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-01T09:22:02.883Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to $20,000 in Anyscale usage credits
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 2000000
+            kind: up-to
+        - benefit_id: ben_02
+          description: Dedicated field engineers support application architecture design and provide hands-on technical support.
+          kind: other
+      consideration:
+        kind: unknown
+        description: The source does not state separate consideration for program benefits.
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Anyscale reviews applicants for its AI Startup Program.
+    roles:
+      terms_authority_entity_id: ent_tx75drh0kf2nt9jgkwnf4a4n83
+      access_operator_entity_id: ent_tx75drh0kf2nt9jgkwnf4a4n83
+    access:
+      availability: public
+      method: contact
+      url: https://www.anyscale.com/contact-sales
+      instructions: Submit Anyscale's contact form to speak with its team about the AI Startup Program.
+    terms_url: https://www.anyscale.com/startup
+    source_ids:
+      - src_9d22e9a81e169dd111260594c7d7133c129aa4779c50c314dcd13324ac474920
