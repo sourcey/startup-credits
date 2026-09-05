@@ -1,0 +1,96 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_gyzfrn4fv4efkayz3t7hd52gyq
+  slug: pilot-io
+  slug_aliases: []
+  name: Pilot.io
+  domains:
+    - value: pilot.io
+      role: primary
+      valid_from: 2026-09-01T06:00:00.000Z
+  category: productivity
+profile:
+  description: Pilot is an AI-powered knowledge management platform that centralizes company content, supports universal search, and helps teams create and share internal knowledge.
+  links:
+    site: https://pilot.io/
+sources:
+  - source_id: src_7540b110a0b0a498dad16b7f83f237b853e15abb1753a03d8432900413c953bd
+    url: https://pilot.io/startup-pricing
+programs:
+  - program_id: prg_sydn58mv3ba73h008wavfvg4jy
+    program_slug: pilot-for-startups
+    program_slug_aliases: []
+    title: Pilot for Startups
+    summary: Pilot gives eligible early-stage companies $30,000 in credits for their first-year software subscription.
+    source_ids:
+      - src_7540b110a0b0a498dad16b7f83f237b853e15abb1753a03d8432900413c953bd
+offers:
+  - offer_id: off_8r7zy9kkq21qvdy6q6rrzhmkhf
+    program_id: prg_sydn58mv3ba73h008wavfvg4jy
+    offer_slug: thirty-thousand-dollars-in-pilot-credits
+    offer_slug_aliases: []
+    title: $30,000 in Pilot Credits
+    summary: Eligible startups receive $30,000 in credits toward Pilot's software subscription for their first year.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-01T06:00:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: $30,000 in credits toward Pilot's software subscription for the first year.
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 3000000
+            kind: up-to
+      consideration:
+        kind: unknown
+        description: The public page calls this a discounted rate but does not publish any amount payable after applying the credits.
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.age_months
+            kind: predicate
+            operator: lt
+            statement: The company is less than two years old.
+            value:
+              type: number
+              value: 24
+          - criterion_id: cri_02
+            fact: company.funding_raised_usd
+            kind: predicate
+            operator: lt
+            statement: The company has raised less than $1 million.
+            value:
+              type: number
+              value: 1000000
+          - criterion_id: cri_03
+            fact: company.employee_count
+            kind: predicate
+            operator: lt
+            statement: The company has fewer than 10 employees.
+            value:
+              type: number
+              value: 10
+          - criterion_id: cri_04
+            fact: applicant.is_new_customer
+            kind: predicate
+            operator: eq
+            statement: The applicant does not currently have a Pilot subscription.
+            value:
+              type: boolean
+              value: true
+    roles:
+      terms_authority_entity_id: ent_gyzfrn4fv4efkayz3t7hd52gyq
+      access_operator_entity_id: ent_gyzfrn4fv4efkayz3t7hd52gyq
+    access:
+      availability: public
+      method: form
+      url: https://pilotproduct.typeform.com/to/bCLn5g0J
+      instructions: Complete Pilot's startup application form for eligibility review.
+    terms_url: https://pilot.io/startup-pricing
+    source_ids:
+      - src_7540b110a0b0a498dad16b7f83f237b853e15abb1753a03d8432900413c953bd
