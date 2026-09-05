@@ -1,0 +1,75 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1b6vpaxks8hqvaqwedm4j2w
+  slug: unkey
+  slug_aliases: []
+  name: Unkey
+  domains:
+    - value: unkey.com
+      role: primary
+      valid_from: 2026-08-31T06:07:14.949Z
+  category: apis-integration
+profile:
+  description: Unkey is a developer platform for deploying APIs, routing traffic through global gateways, and understanding usage.
+  links:
+    site: https://www.unkey.com
+sources:
+  - source_id: src_5c9e38a6130fd24493d5cf73fb50b7ea43c2bd5b62e94a863ccb2a74ce2e6bb6
+    url: https://www.unkey.com/
+  - source_id: src_239cfd184abe4168fc96e8c7dfada5e09626bfee390347d0f0dec0794838cbf2
+    url: https://www.unkey.com/startups
+programs:
+  - program_id: prg_01m1b6vpb297w3qr48e8tdgtx1
+    program_slug: unkey-startups-program
+    program_slug_aliases: []
+    title: Unkey Startups Program
+    summary: Unkey's program gives eligible startups monthly credits, priority support, optional concierge onboarding, and hands-on migration help.
+    source_ids:
+      - src_239cfd184abe4168fc96e8c7dfada5e09626bfee390347d0f0dec0794838cbf2
+offers:
+  - offer_id: off_01m1b6vpb221z9gtkgepkc5n07
+    program_id: prg_01m1b6vpb297w3qr48e8tdgtx1
+    offer_slug: unkey-monthly-startup-credits
+    offer_slug_aliases: []
+    title: $1,000 in monthly Unkey credits
+    summary: Eligible startups receive $1,000 in Unkey credits every month, dedicated Slack support, optional 1:1 onboarding, and hands-on migration help.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-31T06:07:14.949Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: $1,000 in Unkey credits every month while the startup remains eligible.
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 100000
+            kind: exact
+        - benefit_id: ben_02
+          description: Priority support through a dedicated Slack channel.
+          kind: other
+        - benefit_id: ben_03
+          description: Optional 1:1 concierge onboarding and hands-on migration support.
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        fact: company.funding_raised_usd
+        kind: predicate
+        operator: lte
+        statement: Eligibility expires after the startup raises $5 million.
+        value:
+          type: number
+          value: 5000000
+    roles:
+      terms_authority_entity_id: ent_01m1b6vpaxks8hqvaqwedm4j2w
+      access_operator_entity_id: ent_01m1b6vpaxks8hqvaqwedm4j2w
+    access:
+      availability: public
+      method: form
+      url: https://www.unkey.com/startups
+    source_ids:
+      - src_239cfd184abe4168fc96e8c7dfada5e09626bfee390347d0f0dec0794838cbf2
