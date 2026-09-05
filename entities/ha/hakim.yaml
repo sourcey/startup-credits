@@ -1,0 +1,95 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1gw9wps2vwcp3y9pm603vpa
+  slug: hakim
+  slug_aliases: []
+  name: Hakim
+  domains:
+    - value: tryhakim.ai
+      role: primary
+      valid_from: 2026-09-02T10:48:00.000Z
+  category: ai-ml
+profile:
+  description: Hakim is a voice AI platform for Arabic TTS, STT, and voice-cloning models, with workspace APIs for founders shipping production voice agents.
+  links:
+    site: https://tryhakim.ai
+sources:
+  - source_id: src_d3dbc91bdd9831ce0a8591adeb49ea7f278a499b539aafe747a58ec69bab58f7
+    url: https://tryhakim.ai/en/startups
+programs:
+  - program_id: prg_01m1gw9wpsc5aqnzs68yq0fpjd
+    program_slug: hakim-startup-program
+    program_slug_aliases: []
+    title: Hakim Startup Program
+    summary: Hakim's MENA startup program gives eligible early-stage Arabic voice AI teams a $6,000 workspace credit grant, early unreleased model access, weekly engineering office hours, Slack support, and co-marketing.
+    source_ids:
+      - src_d3dbc91bdd9831ce0a8591adeb49ea7f278a499b539aafe747a58ec69bab58f7
+offers:
+  - offer_id: off_01m1gw9wpsfme948bws1kw4p6w
+    program_id: prg_01m1gw9wpsc5aqnzs68yq0fpjd
+    offer_slug: 6000-hakim-workspace-credits
+    offer_slug_aliases: []
+    title: $6,000 Hakim workspace credits
+    summary: Eligible MENA pre-seed to Series A startups (under $10M raised) receive $6,000 in Hakim workspace credits (about six months of Business plan), early model access, weekly office hours, and direct Slack support.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-02T10:48:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: $6,000 in Hakim workspace credits (equivalent to 6 months on the Business plan at $999/mo)
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 600000
+            kind: exact
+        - benefit_id: ben_02
+          description: Early access to unreleased TTS, STT, and voice-cloning models on the workspace before public launch
+          kind: other
+        - benefit_id: ben_03
+          description: Weekly technical office hours with the Hakim engineering team
+          kind: other
+        - benefit_id: ben_04
+          description: Direct Slack support channel with solutions and engineering during business hours
+          kind: other
+        - benefit_id: ben_05
+          description: Co-marketing campaigns including joint case studies and launch announcements
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: not-machine-evaluable
+            statement: The founding team must be MENA-based, headquartered or primarily operating in the MENA region.
+          - criterion_id: cri_02
+            kind: manual
+            reason: not-machine-evaluable
+            statement: The company must be pre-seed to Series A, founded within the last 5 years; bootstrapped startups count as early-stage if revenue is still under $2M ARR.
+          - criterion_id: cri_03
+            fact: company.funding_raised_usd
+            kind: predicate
+            operator: lt
+            statement: Total capital raised to date must be under $10M.
+            value:
+              type: number
+              value: 10000000
+          - criterion_id: cri_04
+            kind: manual
+            reason: vendor-discretion
+            statement: Acceptance is subject to Hakim review; close-but-not-perfect fits may be overridden at vendor discretion, with a decision typically within 5 working days.
+    roles:
+      terms_authority_entity_id: ent_01m1gw9wps2vwcp3y9pm603vpa
+      access_operator_entity_id: ent_01m1gw9wps2vwcp3y9pm603vpa
+    access:
+      availability: public
+      method: form
+      instructions: Open the Hakim Startup Program page and complete the on-page application form. Hakim states a decision within 5 working days, then a technical kickoff before credits and Slack access go live.
+      url: https://tryhakim.ai/en/startups
+    terms_url: https://tryhakim.ai/en/startups
+    source_ids:
+      - src_d3dbc91bdd9831ce0a8591adeb49ea7f278a499b539aafe747a58ec69bab58f7
