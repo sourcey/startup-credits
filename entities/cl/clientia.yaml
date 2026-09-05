@@ -10,6 +10,7 @@ entity:
       valid_from: 2026-08-31T22:12:11.042Z
   category: crm-sales
 profile:
+  summary: Client operations, contracts, billing, and payments for service firms.
   description: Clientia is a client operations platform for professional services firms and software businesses, combining records, contracts, billing, and payments.
   links:
     site: https://clientia.app
@@ -36,7 +37,7 @@ offers:
       effective_from: 2026-08-31T22:12:11.042Z
     economics:
       consideration:
-        kind: unknown
+        kind: variable
         description: Access requires payment at the discounted Studio or Atelier plan price.
       benefits:
         - benefit_id: ben_01
