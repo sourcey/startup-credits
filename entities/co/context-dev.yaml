@@ -1,0 +1,62 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1241ccgtstz0ym95x27jpgd
+  slug: context-dev
+  slug_aliases: []
+  name: Context.dev
+  domains:
+    - value: context.dev
+      role: primary
+      valid_from: 2026-08-27T17:51:55.000Z
+  category: data-analytics
+profile:
+  description: Context.dev provides APIs for web crawling, scraping, structured extraction, screenshots, and brand data.
+  links:
+    site: https://www.context.dev
+sources:
+  - source_id: src_b8649e38eec2ea93d2217bfc763e9acca405d9110c27009aae9cb9e3113af051
+    url: https://www.context.dev/startup-discount
+  - source_id: src_e433b384b545cabcc9358801bc3c04b5636ae8b9f08965d22f8528e3525c7378
+    url: https://www.context.dev/pricing
+programs: []
+offers:
+  - offer_id: off_01m1241ccm40cnctb3d571ypa3
+    offer_slug: context-dev-startup-discount
+    offer_slug_aliases: []
+    title: Context.dev Startup Discount
+    summary: Early-stage startups can apply for up to 30% off paid Context.dev plans for one year.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-27T17:51:55.000Z
+    economics:
+      benefits:
+        - applies_to: Paid Context.dev plans
+          benefit_id: ben_01
+          description: Up to 30% off for one year.
+          duration:
+            kind: exact
+            value: P1Y
+          kind: discount
+          percentage:
+            basis_points: 3000
+            kind: up-to
+      consideration:
+        kind: variable
+        description: The applicant pays the remaining discounted plan price.
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: not-machine-evaluable
+        statement: Applicant is an early-stage startup.
+    roles:
+      terms_authority_entity_id: ent_01m1241ccgtstz0ym95x27jpgd
+      access_operator_entity_id: ent_01m1241ccgtstz0ym95x27jpgd
+    access:
+      availability: public
+      method: form
+      url: https://www.context.dev/startup-discount
+    terms_url: https://www.context.dev/startup-discount
+    source_ids:
+      - src_b8649e38eec2ea93d2217bfc763e9acca405d9110c27009aae9cb9e3113af051
+      - src_e433b384b545cabcc9358801bc3c04b5636ae8b9f08965d22f8528e3525c7378
