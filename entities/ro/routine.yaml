@@ -1,0 +1,65 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1gsqpe7gbmbn7m01f18gsgz
+  slug: routine
+  slug_aliases: []
+  name: Routine
+  domains:
+    - value: routine.co
+      role: primary
+      valid_from: 2026-09-02T10:13:29.122Z
+  category: productivity
+profile:
+  summary: Productivity workspace for calendars, tasks, projects, notes, and team planning.
+  description: Routine is a productivity workspace that combines calendar, tasks, projects, notes, knowledge, and team planning.
+  links:
+    site: https://routine.co
+sources:
+  - source_id: src_aa72e94bf16d8d4795bf55fa9f6dca3aaf70a0250768951bd4a78a37c7b28673
+    url: https://routine.co/partnerships/startups
+programs:
+  - program_id: prg_01m1gsqpe7hrbbhmrjackg141b
+    program_slug: routine-for-startups
+    program_slug_aliases: []
+    title: Routine for Startups
+    summary: Routine's startup program gives approved early-stage teams a full year of Routine Business at no charge.
+    source_ids:
+      - src_aa72e94bf16d8d4795bf55fa9f6dca3aaf70a0250768951bd4a78a37c7b28673
+offers:
+  - offer_id: off_01m1gsqpe7zseds0eyn3bcbc8z
+    program_id: prg_01m1gsqpe7hrbbhmrjackg141b
+    offer_slug: one-year-free-routine-business
+    offer_slug_aliases: []
+    title: One year free Routine Business
+    summary: Approved startups receive Routine Business free for one year, with a first-party stated maximum value of up to $2,500 depending on team size.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-02T10:13:29.122Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: One year of Routine Business free
+          kind: free-service
+          service: Routine Business plan
+          duration:
+            kind: exact
+            value: P1Y
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: external-verification
+        statement: The applicant must be a non-paying Routine startup moving to the Business plan, have fewer than 20 employees and less than $2 million in funding, and use a public company website with a unique company email domain; the company must not have undergone a change of control or IPO, and Routine may require partner affiliation or a minimum funding level.
+    roles:
+      terms_authority_entity_id: ent_01m1gsqpe7gbmbn7m01f18gsgz
+      access_operator_entity_id: ent_01m1gsqpe7gbmbn7m01f18gsgz
+    access:
+      availability: public
+      method: form
+      instructions: Submit the Routine for Startups application; Routine verifies eligibility and applies the offer to approved organizations.
+      url: https://routine.co/partnerships/startups
+    terms_url: https://routine.co/partnerships/startups
+    source_ids:
+      - src_aa72e94bf16d8d4795bf55fa9f6dca3aaf70a0250768951bd4a78a37c7b28673
