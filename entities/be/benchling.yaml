@@ -1,0 +1,64 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1egre83vf1df4cvhxcsa4sz
+  slug: benchling
+  slug_aliases: []
+  name: Benchling
+  domains:
+    - value: benchling.com
+      role: primary
+      valid_from: 2026-09-01T12:00:00.000Z
+  category: productivity
+profile:
+  description: Benchling provides a cloud research and development platform for biotechnology teams to manage experiments, molecular data, samples, and inventory.
+  links:
+    site: https://www.benchling.com/
+sources:
+  - source_id: src_94873ce6c3e9a7c2e32231e47e26e3fa8ed6bb3d22d4125842b1154059e03f4d
+    url: https://www.benchling.com/startups
+programs:
+  - program_id: prg_01m1egre8nqyw537a8ghxftx48
+    program_slug: benchling-for-startups
+    program_slug_aliases: []
+    title: Benchling for Startups
+    summary: Benchling's quick-start program gives qualifying early-stage biotech teams its core R&D platform at startup-oriented pricing, with onboarding support.
+    source_ids:
+      - src_94873ce6c3e9a7c2e32231e47e26e3fa8ed6bb3d22d4125842b1154059e03f4d
+offers:
+  - offer_id: off_01m1egre8p25t8zdxj1qg87vs2
+    program_id: prg_01m1egre8nqyw537a8ghxftx48
+    offer_slug: benchling-startup-package
+    offer_slug_aliases: []
+    title: Benchling core R&D platform at startup pricing
+    summary: Qualifying biotech startups receive Benchling's notebook, molecular biology, registry, and inventory tools at startup-oriented pricing, plus onboarding support.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-01T12:00:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Access to Benchling's core R&D platform—Notebook, Molecular Biology, Registry, and Inventory—at startup-friendly pricing.
+          kind: other
+        - benefit_id: ben_02
+          description: Onboarding support built for small teams standing up their data infrastructure.
+          kind: other
+      consideration:
+        kind: unknown
+        description: Benchling for Startups is not free; it is priced for early-stage teams at a fraction of standard enterprise pricing, but the public page does not publish the price.
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_01
+        reason: external-verification
+        statement: Qualifying companies have 15 or fewer scientists, less than $25M in funding, and are new Benchling customers.
+    roles:
+      terms_authority_entity_id: ent_01m1egre83vf1df4cvhxcsa4sz
+      access_operator_entity_id: ent_01m1egre83vf1df4cvhxcsa4sz
+    access:
+      availability: public
+      instructions: Submit the application form on Benchling's startup program page.
+      method: form
+      url: https://www.benchling.com/startups
+    terms_url: https://www.benchling.com/startups
+    source_ids:
+      - src_94873ce6c3e9a7c2e32231e47e26e3fa8ed6bb3d22d4125842b1154059e03f4d
