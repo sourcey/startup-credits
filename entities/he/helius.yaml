@@ -1,0 +1,71 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_hxw819qwwsbkwpnet67tkm2e8j
+  slug: helius
+  slug_aliases: []
+  name: Helius
+  domains:
+    - value: helius.dev
+      role: primary
+      valid_from: 2026-09-01T10:04:16.914Z
+  category: apis-integration
+profile:
+  description: Helius provides Solana infrastructure and developer tooling, including RPC, data, streaming, and transaction-delivery services.
+  links:
+    site: https://www.helius.dev
+sources:
+  - source_id: src_b212f5ba702511b031d62059eec4257f307bb1f04f3e24b6d4d620399c20e1c1
+    url: https://www.helius.dev/startup-launchpad
+programs:
+  - program_id: prg_09gmexebgw7kg6g5awgx65jc1c
+    program_slug: helius-startup-launchpad
+    program_slug_aliases: []
+    title: Helius Startup Launchpad
+    summary: Helius supports early-stage Solana startups with free Business-plan access, mentoring, introductions, education, and founder resources.
+    source_ids:
+      - src_b212f5ba702511b031d62059eec4257f307bb1f04f3e24b6d4d620399c20e1c1
+offers:
+  - offer_id: off_44ht39qkac9116fw8h1r8ehkgw
+    program_id: prg_09gmexebgw7kg6g5awgx65jc1c
+    offer_slug: eight-months-free-business-plan
+    offer_slug_aliases: []
+    title: Eight free months of the Helius Business plan
+    summary: Selected startups receive eight free months of the Helius Business plan, a stated $4,000 value, plus mentoring, introductions, education, and founder-community access.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-01T10:04:16.914Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The public Launchpad page does not establish whether separate consideration is required.
+      benefits:
+        - benefit_id: ben_01
+          description: Eight free months of the Helius Business plan, stated by Helius as a $4,000 value
+          duration:
+            kind: exact
+            value: P8M
+          kind: free-service
+          service: Helius Business plan
+        - benefit_id: ben_02
+          description: Mentoring from experienced operators, strategic advice, and access to private founder groups, workshops, and office hours
+          kind: other
+        - benefit_id: ben_03
+          description: Introductions to investors, customers, talent, and strategic advisors
+          kind: other
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        statement: Helius selects startup teams based on a combination of factors such as having a working product, being earlier than Series A, accelerator participation, investor referrals, or placing in a Solana hackathon.
+        reason: vendor-discretion
+    roles:
+      terms_authority_entity_id: ent_hxw819qwwsbkwpnet67tkm2e8j
+      access_operator_entity_id: ent_hxw819qwwsbkwpnet67tkm2e8j
+    access:
+      availability: membership
+      instructions: Submit the Helius Startup Launchpad application from the public program page.
+      method: form
+      url: https://www.helius.dev/startup-launchpad
+    terms_url: https://www.helius.dev/startup-launchpad
+    source_ids:
+      - src_b212f5ba702511b031d62059eec4257f307bb1f04f3e24b6d4d620399c20e1c1
