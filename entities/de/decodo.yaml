@@ -10,6 +10,7 @@ entity:
       valid_from: 2026-08-31T00:00:00.000Z
   category: data-analytics
 profile:
+  summary: Proxy infrastructure and web-scraping APIs for public web data.
   description: Decodo provides residential, datacenter, ISP, and mobile proxy infrastructure and web scraping APIs for public web data collection.
   links:
     site: https://decodo.com
