@@ -1,0 +1,76 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1s0sydsmdwcqgjq27xq20hx
+  slug: cardboard
+  slug_aliases: []
+  name: Cardboard
+  domains:
+    - value: cardboard.inc
+      role: primary
+      valid_from: 2026-09-05T14:50:59.000Z
+  category: finance-accounting
+profile:
+  description: Cardboard manages software subscriptions, virtual payment cards, and receipt collection for businesses.
+  links:
+    site: https://cardboard.inc/
+    pricing: https://cardboard.inc/pricing/
+sources:
+  - source_id: src_efea598541f79fe902e47176a79ca225
+    url: https://cardboard.inc/campaigns/software-subscriptions/
+  - source_id: src_24cf81847b9d97c2e55b4a3c4f32ef5b
+    url: https://cardboard.inc/pricing/
+programs:
+  - program_id: prg_01m1s0sydtkjegt2ge4pm45j7c
+    program_slug: cardboard-for-startups
+    program_slug_aliases: []
+    title: Cardboard for Startups
+    summary: Cardboard's startup plan provides a first-year discount on its paid plans.
+    source_ids:
+      - src_efea598541f79fe902e47176a79ca225
+offers:
+  - offer_id: off_01m1s0sydtc7z5rt03ke8rxsf9
+    program_id: prg_01m1s0sydtkjegt2ge4pm45j7c
+    offer_slug: cardboard-startup-paid-plan-discount
+    offer_slug_aliases: []
+    title: Cardboard startup paid-plan discount
+    summary: Startups younger than two years qualify for an 80% discount on Cardboard paid plans during the first year.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T14:50:59.000Z
+    economics:
+      consideration:
+        kind: variable
+        description: The customer pays the discounted subscription charge for the selected Cardboard paid plan; pricing depends on plan and organization registration country.
+      benefits:
+        - benefit_id: ben_paid_plan_discount
+          description: 80% reduction in Cardboard paid-plan subscription charges during the first year.
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 8000
+          applies_to: Cardboard paid plans
+          duration:
+            kind: exact
+            value: P1Y
+    eligibility:
+      rule:
+        kind: predicate
+        criterion_id: cri_startup_age
+        statement: The startup must be less than two years old.
+        fact: company.age_years
+        operator: lt
+        value:
+          type: number
+          value: 2
+    roles:
+      terms_authority_entity_id: ent_01m1s0sydsmdwcqgjq27xq20hx
+      access_operator_entity_id: ent_01m1s0sydsmdwcqgjq27xq20hx
+    access:
+      availability: automatic
+      method: form
+      url: https://cardboard.inc/campaigns/software-subscriptions/
+      instructions: Use the startup-discount sign-up link on the Cardboard page. The published plan automatically qualifies startups younger than two years.
+    terms_url: https://cardboard.inc/campaigns/software-subscriptions/
+    source_ids:
+      - src_efea598541f79fe902e47176a79ca225
+      - src_24cf81847b9d97c2e55b4a3c4f32ef5b
