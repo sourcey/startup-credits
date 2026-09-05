@@ -1,0 +1,77 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1sry1ayrma2rpp0yakr8f91
+  slug: cyberport
+  slug_aliases: []
+  name: Cyberport
+  domains:
+    - value: cyberport.hk
+      role: primary
+      valid_from: 2025-06-01T00:00:00.000Z
+  category: other
+profile:
+  description: Cyberport is Hong Kong's digital technology flagship and government-operated tech hub supporting digital innovation, AI ecosystem development, and the digital economy.
+  links:
+    site: https://cyberport.hk
+sources:
+  - source_id: src_b5c4911e05edea412234d0e9b0acb27783381b5b6d0eb16346f86ce851e428a6
+    url: https://www.cyberport.hk/en/entrepreneurship/hong_kong_programme/
+  - source_id: src_cc587297e3cbfca939dc2d03ac21a8aaba8d273784603398adf3765167ad387e
+    url: https://www.cyberport.hk/en/about_us/vision_focus/
+programs:
+  - program_id: prg_01m1sry1bhx2x81s4x21vybf5m
+    program_slug: ccmf-hong-kong-programme
+    program_slug_aliases:
+      - cyberport-creative-micro-fund
+    title: Cyberport Creative Micro Fund (CCMF) Hong Kong Programme
+    summary: Cyberport's grant programme providing up to HK$100,000 and all-round nurturing support to high-potential digital technology projects at the idea or early development stage.
+    source_ids:
+      - src_b5c4911e05edea412234d0e9b0acb27783381b5b6d0eb16346f86ce851e428a6
+offers:
+  - offer_id: off_01m1sry1bj8qme7z7cy4exk4tw
+    program_id: prg_01m1sry1bhx2x81s4x21vybf5m
+    offer_slug: up-to-hkd-100-000-ccmf-grant
+    offer_slug_aliases:
+      - ccmf-hong-kong-grant
+    title: Up to HK$100,000 CCMF grant and nurturing support
+    summary: Eligible digital tech projects at idea or early development stage receive up to HK$100,000 in grant funding plus training, mentorship, and access to Cyberport's business networks.
+    lifecycle:
+      status: active
+      effective_from: 2025-06-01T00:00:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to HK$100,000 in cash grant disbursed in stages, subject to reporting milestones and programme progress
+          kind: credit
+          value:
+            amount:
+              currency: HKD
+              minor_units: 100000
+            kind: up-to
+        - benefit_id: ben_02
+          description: Access to Cyberport's training, mentorship, business advice, investment connections, and global business network
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: any
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: external-verification
+            statement: Individual applicant is a Hong Kong ID card holder aged 18 or above upon application deadline
+          - criterion_id: cri_02
+            kind: manual
+            reason: external-verification
+            statement: Applicant is a limited company registered and incorporated in Hong Kong upon admission
+    roles:
+      terms_authority_entity_id: ent_01m1sry1ayrma2rpp0yakr8f91
+      access_operator_entity_id: ent_01m1sry1ayrma2rpp0yakr8f91
+    access:
+      availability: public
+      method: form
+      url: https://www.cyberport.hk/en/entrepreneurship/hong_kong_programme/
+    source_ids:
+      - src_b5c4911e05edea412234d0e9b0acb27783381b5b6d0eb16346f86ce851e428a6
+      - src_cc587297e3cbfca939dc2d03ac21a8aaba8d273784603398adf3765167ad387e
