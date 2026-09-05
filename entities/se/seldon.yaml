@@ -1,0 +1,55 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m18z81wx5mrryt82cjg1c2zc
+  slug: seldon
+  slug_aliases: []
+  name: Seldon
+  domains:
+    - value: seldon-ai.com
+      role: primary
+      valid_from: 2026-08-30T09:15:42.367Z
+  category: ai-ml
+profile:
+  description: Seldon routes LLM traffic and provides Live Audit tools for reviewing repeated production workflows, cost, latency, auditability, and reliability.
+  links:
+    site: https://seldon-ai.com
+sources:
+  - source_id: src_f00cf804c4178e329a8d4dbd8146f43aa4a1b5e2bce29c69b03d48eab59b3468
+    url: https://seldon-ai.com/startup-program
+programs: []
+offers:
+  - offer_id: off_01m18z81wzan41dn0qyfm6gbw5
+    offer_slug: seldon-startup-program
+    offer_slug_aliases: []
+    title: Seldon Startup Program
+    summary: Eligible AI-native startups shipping production or near-production LLM features can receive up to $500 in promotional credits for routing traffic through Seldon and reviewing workflows with Live Audit.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-30T09:15:42.367Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to $500 in Seldon promotional credits
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 50000
+            kind: up-to
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_requirement_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Must be an AI-native startup with production or near-production LLM traffic and be approved after manual review based on fit, traffic volume, and whether routed traffic can produce a useful Live Audit.
+    roles:
+      terms_authority_entity_id: ent_01m18z81wx5mrryt82cjg1c2zc
+      access_operator_entity_id: ent_01m18z81wx5mrryt82cjg1c2zc
+    access:
+      availability: public
+      method: form
+      url: https://seldon-ai.com/startup-program
+    source_ids:
+      - src_f00cf804c4178e329a8d4dbd8146f43aa4a1b5e2bce29c69b03d48eab59b3468
