@@ -1,0 +1,105 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1f0r6f295c1vj24d26snw4v
+  slug: techtrack
+  slug_aliases: []
+  name: TechTrack
+  domains:
+    - value: techtrackdata.com
+      role: primary
+      valid_from: 2026-09-01T17:36:00.000Z
+  category: crm-sales
+profile:
+  description: TechTrack is a data platform for startup fundraising and B2B lead generation, with CRM integrations and pipeline tools.
+  links:
+    site: https://www.techtrackdata.com
+sources:
+  - source_id: src_f27d5334c0b1cd83d304bb77a1ada80f70147f0587eff0b167f68e15be453b82
+    url: https://www.techtrackdata.com/techtrack-for-early-stage/
+programs:
+  - program_id: prg_01m1f0r6faec2xhrnpr1x4vze1
+    program_slug: techtrack-for-startups
+    program_slug_aliases: []
+    title: TechTrack for Startups
+    summary: Eligible startups get advanced TechTrack features, Growth Academy, and the year-round digital partnering platform at a 95% discount.
+    source_ids:
+      - src_f27d5334c0b1cd83d304bb77a1ada80f70147f0587eff0b167f68e15be453b82
+offers:
+  - offer_id: off_01m1f0r6fb6y6t004tn5f4adrx
+    program_id: prg_01m1f0r6faec2xhrnpr1x4vze1
+    offer_slug: ninety-five-percent-off-startup-plan
+    offer_slug_aliases: []
+    title: 95% off the TechTrack startup plan
+    summary: New TechTrack customers with less than USD 2 million in funding, fewer than 20 employees, and a company younger than five years receive 95% off an annual plan that works out to USD 150 per month.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-01T17:36:00.000Z
+    economics:
+      benefits:
+        - applies_to: TechTrack annual startup plan
+          benefit_id: ben_01
+          description: 95% discount on the annual TechTrack startup plan
+          duration:
+            kind: exact
+            value: P1Y
+          kind: discount
+          percentage:
+            basis_points: 9500
+            kind: exact
+        - benefit_id: ben_02
+          description: Unlimited access to data, seats, pipelines, pipeline sharing, and integrations
+          kind: other
+        - benefit_id: ben_03
+          description: Access to Growth Academy and the year-round digital partnering platform
+          kind: other
+        - benefit_id: ben_04
+          description: 300 data verification credits per month
+          kind: other
+      consideration:
+        amount:
+          currency: USD
+          minor_units: 180000
+        kind: fixed
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: external-verification
+            statement: Applicant must be a new TechTrack customer.
+          - criterion_id: cri_02
+            fact: company.funding_raised_usd
+            kind: predicate
+            operator: lt
+            statement: The startup must have less than USD 2 million in funding.
+            value:
+              type: number
+              value: 2000000
+          - criterion_id: cri_03
+            fact: company.employee_count
+            kind: predicate
+            operator: lt
+            statement: The startup must have fewer than 20 employees.
+            value:
+              type: number
+              value: 20
+          - criterion_id: cri_04
+            fact: company.age_months
+            kind: predicate
+            operator: lt
+            statement: The company must be less than five years old.
+            value:
+              type: number
+              value: 60
+    roles:
+      terms_authority_entity_id: ent_01m1f0r6f295c1vj24d26snw4v
+      access_operator_entity_id: ent_01m1f0r6f295c1vj24d26snw4v
+    access:
+      availability: public
+      instructions: Open the TechTrack for Startups page and use Apply Now. TechTrack says its AI determines eligibility.
+      method: form
+      url: https://www.techtrackdata.com/get-started/
+    terms_url: https://www.techtrackdata.com/techtrack-for-early-stage/
+    source_ids:
+      - src_f27d5334c0b1cd83d304bb77a1ada80f70147f0587eff0b167f68e15be453b82
