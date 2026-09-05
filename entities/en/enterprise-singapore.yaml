@@ -1,0 +1,107 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1ssdt1rsz7yf4hr2kfnxqeq
+  slug: enterprise-singapore
+  slug_aliases: []
+  name: Enterprise Singapore
+  domains:
+    - value: enterprisesg.gov.sg
+      role: primary
+      valid_from: 2026-09-06T00:00:00Z
+    - value: startupsg.gov.sg
+      role: alias
+      valid_from: 2026-09-06T00:00:00Z
+  category: other
+profile:
+  description: Enterprise Singapore supports enterprise development and connects startups with funding, mentorship and ecosystem partners through Startup SG.
+  links:
+    site: https://www.enterprisesg.gov.sg/grow-your-business/partner-with-singapore/innovation-and-startups/join-startup-sg
+sources:
+  - source_id: src_4c21afc13cae0d7e7372f05e1c80b19864a83822d54c9978cb83df4d96d81c81
+    url: https://www.enterprisesg.gov.sg/grow-your-business/partner-with-singapore/innovation-and-startups/join-startup-sg
+  - source_id: src_a6f9616b3d3631d966ec4f15ce235eb5e82df9165ab64e927965c701e22d3a0c
+    url: https://www.startupsg.gov.sg/programmes/4894/startup-sg-founder
+  - source_id: src_2cc59c9e8993f8e1d367f49308347f9f6c4a417a9a27bfb80ca445e476ceee00
+    url: https://www.startupsg.gov.sg/programmes/4894/startup-sg-founder/eligibility
+  - source_id: src_e171d721c8c65a053cf3acf0a9fa5885d9cb3d65b8edcc210caa3c921fa797dd
+    url: https://www.startupsg.gov.sg/programmes/4894/startup-sg-founder/apply
+programs:
+  - program_id: prg_01m1ssdt1ts552e4cb0wxxhg1n
+    program_slug: startup-sg-founder
+    program_slug_aliases: []
+    title: Startup SG Founder
+    summary: Enterprise Singapore's programme combines startup grants with Accredited Mentor Partner support for eligible first-time founders.
+    source_ids:
+      - src_4c21afc13cae0d7e7372f05e1c80b19864a83822d54c9978cb83df4d96d81c81
+      - src_a6f9616b3d3631d966ec4f15ce235eb5e82df9165ab64e927965c701e22d3a0c
+offers:
+  - offer_id: off_01m1ssdt1t9fxfytc204d11qs2
+    program_id: prg_01m1ssdt1ts552e4cb0wxxhg1n
+    offer_slug: startup-sg-founder-grant-and-mentorship
+    offer_slug_aliases: []
+    title: Startup SG Founder grant and mentorship
+    summary: Eligible Singaporean and permanent-resident founders can apply for a SGD 20,000–50,000 startup grant with 1:1 capital co-matching and Accredited Mentor Partner support.
+    lifecycle:
+      status: active
+      effective_from: 2024-04-01T00:00:00+08:00
+    economics:
+      consideration:
+        kind: variable
+        description: Match the requested grant with capital at a 1:1 ratio. At application to EnterpriseSG, at least 50% of the matching amount must be paid-up capital on ACRA Bizfile; eligible AMP or third-party investments may support the remainder.
+      benefits:
+        - benefit_id: ben_founder_grant
+          kind: other
+          description: Startup grant of SGD 20,000 to SGD 50,000, subject to application and approval. This is grant funding, not a software credit or cashback.
+        - benefit_id: ben_amp_support
+          kind: other
+          description: Accredited Mentor Partner guidance, pitch training, networking connections and access to accounting and secretarial support.
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_applicants
+            kind: manual
+            reason: external-verification
+            statement: Both applicants must be Singapore citizens or permanent residents, hold equity, be key decision makers and contribute meaningfully throughout the 12-month grant period.
+          - criterion_id: cri_first_applicant
+            kind: manual
+            reason: external-verification
+            statement: The first applicant must be a first-time founder with no prior ACRA private limited entity, have evidence of entrepreneurship training, have no external employment and commit full time without ongoing study or part-time work.
+          - criterion_id: cri_second_applicant
+            kind: manual
+            reason: external-verification
+            statement: The second applicant must evidence entrepreneurship training or prior entrepreneurship experience; this applicant need not be a first-time founder or commit full time and may have external employment.
+          - criterion_id: cri_founder_equity
+            kind: manual
+            reason: external-verification
+            statement: The first-time founder applicants must collectively own at least 30% equity, and at least 51% of issued shares must be owned by Singapore citizens or permanent residents.
+          - criterion_id: cri_incorporation
+            kind: manual
+            reason: external-verification
+            statement: The startup must be a Singapore private limited entity registered for less than six months when applying to an Accredited Mentor Partner; founders who have not incorporated should seek AMP advice first.
+          - criterion_id: cri_operations
+            kind: manual
+            reason: external-verification
+            statement: Key headquarters activities, such as management and product development, must occur wholly or mainly in Singapore, and the business idea must not have received funding from another government organisation.
+          - criterion_id: cri_excluded_activities
+            kind: manual
+            reason: external-verification
+            statement: Excludes cafes, restaurants, nightclubs, lounges, bars, foot reflexology, massage parlours, gambling, prostitution, social escort services, employment agencies (including recruitment, relocation and manpower services), and geomancy.
+          - criterion_id: cri_selection
+            kind: manual
+            reason: vendor-discretion
+            statement: The innovative business proposal must satisfy AMP assessment of its concept, feasibility, team and market value, and receive a Letter of Recommendation before the EnterpriseSG application.
+    roles:
+      terms_authority_entity_id: ent_01m1ssdt1rsz7yf4hr2kfnxqeq
+      access_operator_entity_id: ent_01m1ssdt1rsz7yf4hr2kfnxqeq
+    access:
+      availability: referral
+      method: form
+      url: https://www.startupsg.gov.sg/programmes/4894/startup-sg-founder/apply
+      instructions: Work with an Accredited Mentor Partner and obtain a Letter of Recommendation. Follow the official application link, declare the requested grant quantum, and document the required co-matching capital. Incomplete applications are not considered.
+    terms_url: https://www.startupsg.gov.sg/programmes/4894/startup-sg-founder/eligibility
+    source_ids:
+      - src_4c21afc13cae0d7e7372f05e1c80b19864a83822d54c9978cb83df4d96d81c81
+      - src_a6f9616b3d3631d966ec4f15ce235eb5e82df9165ab64e927965c701e22d3a0c
+      - src_2cc59c9e8993f8e1d367f49308347f9f6c4a417a9a27bfb80ca445e476ceee00
+      - src_e171d721c8c65a053cf3acf0a9fa5885d9cb3d65b8edcc210caa3c921fa797dd
