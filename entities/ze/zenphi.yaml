@@ -1,0 +1,77 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1a760ppyeh51p9gv8mxbex5
+  slug: zenphi
+  slug_aliases: []
+  name: Zenphi
+  domains:
+    - value: zenphi.com
+      role: primary
+      valid_from: 2026-08-30T20:53:48.157Z
+  category: no-code
+profile:
+  description: Zenphi provides no-code AI agents and workflow automation for Google Workspace, with integrations, forms, document generation, and operational dashboards.
+  links:
+    site: https://zenphi.com
+sources:
+  - source_id: src_51bb943627818567e602d853ed4f6f46bf946125fb6426c3046175b41e1c87fe
+    url: https://zenphi.com/zenphi-for-startups/
+  - source_id: src_c8a4b03ecc98b420e57aadb5b9c45411acd3a67d4df0159a60b3f2a666f2dce9
+    url: https://zenphi.com/
+programs:
+  - program_id: prg_01m1a760q0xz9m2xbdk2xngeh6
+    program_slug: zenphi-for-startups
+    program_slug_aliases: []
+    title: Zenphi for Startups
+    summary: Zenphi's startup program gives qualifying young companies six months free on Pro followed by six months at 50% off.
+    source_ids:
+      - src_51bb943627818567e602d853ed4f6f46bf946125fb6426c3046175b41e1c87fe
+offers:
+  - offer_id: off_01m1a760q0w4jyxvh2rxtm9e2k
+    program_id: prg_01m1a760q0xz9m2xbdk2xngeh6
+    offer_slug: six-months-free-then-half-price
+    offer_slug_aliases: []
+    title: Six months free then six months at 50% off Zenphi Pro
+    summary: Accepted startups receive Zenphi Pro free for six months, followed by six months at 50% off, including premium automation features, unlimited workflows, integrations, and support.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-30T20:53:48.157Z
+    economics:
+      consideration:
+        kind: variable
+        description: Continued use during months seven through twelve requires purchasing Zenphi Pro at half its regular price.
+      benefits:
+        - benefit_id: ben_01
+          description: Zenphi Pro is provided at no charge for the first six months.
+          kind: free-service
+          service: Zenphi Pro plan
+          duration:
+            kind: exact
+            value: P6M
+        - benefit_id: ben_02
+          applies_to: Zenphi Pro plan
+          description: 50% off Zenphi Pro for the following six months.
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 5000
+          duration:
+            kind: exact
+            value: P6M
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_01
+        statement: Applicant must be new to Zenphi, have fewer than 10 employees, have raised no more than USD 2 million in outside funding, and be less than two years old.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01m1a760ppyeh51p9gv8mxbex5
+      access_operator_entity_id: ent_01m1a760ppyeh51p9gv8mxbex5
+    access:
+      availability: public
+      method: form
+      url: https://zenphi.com/zenphi-for-startups/
+    terms_url: https://zenphi.com/zenphi-for-startups/
+    source_ids:
+      - src_51bb943627818567e602d853ed4f6f46bf946125fb6426c3046175b41e1c87fe
+      - src_c8a4b03ecc98b420e57aadb5b9c45411acd3a67d4df0159a60b3f2a666f2dce9
