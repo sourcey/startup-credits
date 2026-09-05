@@ -1,0 +1,66 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_qy7jsrqc451qby3qnyy47jamm9
+  slug: tencent-rtc
+  slug_aliases: []
+  name: Tencent RTC
+  domains:
+    - value: trtc.io
+      role: primary
+      valid_from: 2026-09-01T09:56:04.972Z
+  category: communication
+profile:
+  summary: Real-time audio, video, and messaging SDKs and APIs.
+  description: Tencent RTC provides real-time communication SDKs and APIs for adding interactive audio, video, and messaging experiences to applications.
+  links:
+    site: https://trtc.io
+sources:
+  - source_id: src_ca4a9cd9271e96f755c712db5b133ecb1f5637101da29bbeaf229a52bb0bba8b
+    url: https://trtc.io/start-up
+programs:
+  - program_id: prg_22antv2gn834pc2qea7gn70svs
+    program_slug: tencent-rtc-startups-program
+    program_slug_aliases: []
+    title: Tencent RTC Startups Program
+    summary: Tencent RTC offers eligible startups free service credits to help them integrate interactive audio and video features into their products.
+    source_ids:
+      - src_ca4a9cd9271e96f755c712db5b133ecb1f5637101da29bbeaf229a52bb0bba8b
+offers:
+  - offer_id: off_geaqkedgdj7v4h0q26gj9b8430
+    program_id: prg_22antv2gn834pc2qea7gn70svs
+    offer_slug: up-to-3000-tencent-rtc-credits
+    offer_slug_aliases: []
+    title: Up to $3,000 in Tencent RTC credits
+    summary: Eligible startups can receive free Tencent RTC credits worth up to $3,000 after completing the public program questionnaire.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-01T09:56:04.972Z
+    economics:
+      consideration:
+        kind: unknown
+        description: Tencent RTC does not state any price or other payable consideration on the public program page.
+      benefits:
+        - benefit_id: ben_01
+          description: Free Tencent RTC credits worth up to $3,000
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 300000
+            kind: up-to
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        statement: Applicant must be an eligible startup as determined by Tencent RTC through its program questionnaire.
+        reason: vendor-discretion
+    roles:
+      terms_authority_entity_id: ent_qy7jsrqc451qby3qnyy47jamm9
+      access_operator_entity_id: ent_qy7jsrqc451qby3qnyy47jamm9
+    access:
+      availability: public
+      instructions: Complete the public Tencent RTC Startups Program questionnaire; Tencent RTC states that it will respond within 48 hours.
+      method: form
+      url: https://trtc.io/start-up
+    source_ids:
+      - src_ca4a9cd9271e96f755c712db5b133ecb1f5637101da29bbeaf229a52bb0bba8b
