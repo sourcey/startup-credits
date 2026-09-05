@@ -1,0 +1,75 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m170986pttjjy59cr8sa20hp
+  slug: metoro
+  slug_aliases: []
+  name: Metoro
+  domains:
+    - value: metoro.io
+      role: primary
+      valid_from: 2026-08-29T14:55:33.412Z
+  category: observability
+profile:
+  description: Metoro provides Kubernetes observability and AI SRE tooling for monitoring, incident investigation, deployment verification, and root-cause analysis.
+  links:
+    site: https://metoro.io
+sources:
+  - source_id: src_8c3d286f5a43e17f108c98509de735e06057d88c471d09e0cf4120a442206f76
+    url: https://metoro.io/pricing
+programs:
+  - program_id: prg_01m170986p9xjwvrctp8f9v06q
+    program_slug: metoro-for-startups
+    program_slug_aliases: []
+    title: Metoro For Startups
+    summary: Metoro offers qualifying companies less than three years old three months free, discounted startup pricing afterward, and a dedicated Slack support channel.
+    source_ids:
+      - src_8c3d286f5a43e17f108c98509de735e06057d88c471d09e0cf4120a442206f76
+offers:
+  - offer_id: off_01m170986pja99a37sg4v2c9ja
+    program_id: prg_01m170986p9xjwvrctp8f9v06q
+    offer_slug: three-months-free
+    offer_slug_aliases: []
+    title: Three months free for qualifying startups
+    summary: Qualifying companies less than three years old can use Metoro at no cost for three months, then move to discounted startup pricing.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-29T14:55:33.412Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Three months of Metoro at no cost.
+          duration:
+            kind: exact
+            value: P3M
+          kind: discount
+          percentage:
+            basis_points: 10000
+            kind: exact
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.age_months
+            kind: predicate
+            operator: lt
+            statement: The company must be less than three years old.
+            value:
+              type: number
+              value: 36
+          - criterion_id: cri_02
+            kind: manual
+            statement: The company must qualify for Metoro's startup programme.
+            reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01m170986pttjjy59cr8sa20hp
+      access_operator_entity_id: ent_01m170986pttjjy59cr8sa20hp
+    access:
+      availability: public
+      method: form
+      url: https://metoro.io/pricing
+    terms_url: https://metoro.io/pricing
+    source_ids:
+      - src_8c3d286f5a43e17f108c98509de735e06057d88c471d09e0cf4120a442206f76
