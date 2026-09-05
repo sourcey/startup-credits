@@ -1,0 +1,72 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m18zk7yw664z774p9pfh3qqt
+  slug: converse
+  slug_aliases: []
+  name: Converse by AXL Labs
+  domains:
+    - value: converse.axllabs.in
+      role: primary
+      valid_from: 2026-08-30T09:21:49.019Z
+  category: communication
+profile:
+  description: Converse by AXL Labs is a voice AI platform for deploying conversational agents across phone, SIP, web, and WhatsApp channels.
+  links:
+    site: https://converse.axllabs.in
+sources:
+  - source_id: src_8d9a00a9f67c707fb9d002101bf1277262e25a2f4c8e33690a41734f9d8d8ebb
+    url: https://converse.axllabs.in/startups
+programs: []
+offers:
+  - offer_id: off_01m18zk7ywpt9t7ad5d0rdhfvd
+    offer_slug: converse-for-startups
+    offer_slug_aliases: []
+    title: Converse for Startups
+    summary: Eligible new early-stage Voice AI companies receive ₹6,000 in credits as ₹1,000 per month for six months, plus priority onboarding and a direct Slack channel with Converse engineers.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-30T09:21:49.019Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: ₹6,000 in Converse credits, issued as ₹1,000 per month for the first six months
+          duration:
+            kind: exact
+            value: P6M
+          kind: credit
+          value:
+            amount:
+              currency: INR
+              minor_units: 600000
+            kind: exact
+        - benefit_id: ben_02
+          description: Priority technical onboarding and a direct Slack channel with Converse engineers
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: external-verification
+            statement: Company was founded less than three years ago and has raised less than $5 million in total funding.
+          - criterion_id: cri_02
+            kind: manual
+            reason: external-verification
+            statement: Company is associated with a recognized startup accelerator or backed by a verified venture-capital firm.
+          - criterion_id: cri_03
+            kind: manual
+            reason: external-verification
+            statement: Applicant is a new Converse customer or has not previously received Converse credits through another program.
+    roles:
+      terms_authority_entity_id: ent_01m18zk7yw664z774p9pfh3qqt
+      access_operator_entity_id: ent_01m18zk7yw664z774p9pfh3qqt
+    access:
+      availability: public
+      method: form
+      url: https://platform.converse.axllabs.in
+      instructions: Log in to the Converse Platform and apply from Billing Settings with incorporation details.
+    source_ids:
+      - src_8d9a00a9f67c707fb9d002101bf1277262e25a2f4c8e33690a41734f9d8d8ebb
