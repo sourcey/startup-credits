@@ -1,0 +1,67 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1a762a52r4ntg9n16eqvbhg
+  slug: air
+  slug_aliases:
+    - air-inc
+  name: Air
+  domains:
+    - value: air.inc
+      role: primary
+      valid_from: 2026-08-30T20:53:48.157Z
+  category: design
+profile:
+  description: Air is a creative operations platform for organizing, finding, editing, reviewing, approving, storing, and sharing brand assets.
+  links:
+    site: https://air.inc
+sources:
+  - source_id: src_c57d5e5418b97c048c38b46b0f41dbcc77279d777c380fedd9cce884176b93ec
+    url: https://air.inc/startups
+  - source_id: src_0056a8e67ed9360f56ad3701e30359421ce50b27d372b8b567d20d41bf70d21e
+    url: https://air.inc/
+programs:
+  - program_id: prg_01m1a762ag97erhhvj4fekrjjy
+    program_slug: air-for-startups
+    program_slug_aliases: []
+    title: Air for Startups
+    summary: Air's partner-network startup program gives qualifying seed through Series B companies up to six months free on its Business plan.
+    source_ids:
+      - src_c57d5e5418b97c048c38b46b0f41dbcc77279d777c380fedd9cce884176b93ec
+offers:
+  - offer_id: off_01m1a762ag7g38n5tp54rr0z29
+    program_id: prg_01m1a762ag97erhhvj4fekrjjy
+    offer_slug: up-to-six-months-free-business-plan
+    offer_slug_aliases: []
+    title: Up to six months free on Air Business
+    summary: Eligible partner-network startups receive up to six months free on Air's Business plan, covering storage and AI action credits, with a published value of up to USD 5,800.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-30T20:53:48.157Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_01
+          description: Up to six months of Air's Business plan at no charge, covering storage and AI action credits and valued by Air at up to USD 5,800.
+          kind: free-service
+          service: Air Business plan
+          duration:
+            kind: up-to
+            value: P6M
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_01
+        statement: Applicant must be a non-paying Air customer with a valid work email and live company website, be a portfolio company of an Air ecosystem partner, and be at Seed through Series B stage.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01m1a762a52r4ntg9n16eqvbhg
+      access_operator_entity_id: ent_01m1a762a52r4ntg9n16eqvbhg
+    access:
+      availability: public
+      method: form
+      url: https://air.inc/startups
+    terms_url: https://air.inc/startups
+    source_ids:
+      - src_c57d5e5418b97c048c38b46b0f41dbcc77279d777c380fedd9cce884176b93ec
+      - src_0056a8e67ed9360f56ad3701e30359421ce50b27d372b8b567d20d41bf70d21e
