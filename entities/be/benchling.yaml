@@ -37,38 +37,20 @@ offers:
     economics:
       benefits:
         - benefit_id: ben_01
-          description: Startup-oriented pricing for Benchling's core R&D platform, described by Benchling as a fraction of standard enterprise pricing
+          description: Access to Benchling's core R&D platform—Notebook, Molecular Biology, Registry, and Inventory—at startup-friendly pricing.
           kind: other
         - benefit_id: ben_02
-          description: Onboarding support designed for small teams establishing their data infrastructure
+          description: Onboarding support built for small teams standing up their data infrastructure.
           kind: other
       consideration:
         kind: unknown
-        description: Benchling states that the startup package is paid and priced below its standard enterprise offering, but it does not publish the startup price.
+        description: Benchling for Startups is not free; it is priced for early-stage teams at a fraction of standard enterprise pricing, but the public page does not publish the price.
     eligibility:
       rule:
-        kind: all
-        rules:
-          - criterion_id: cri_01
-            kind: manual
-            reason: not-machine-evaluable
-            statement: The company must have 15 or fewer scientists.
-          - criterion_id: cri_02
-            fact: company.funding_raised_usd
-            kind: predicate
-            operator: lt
-            statement: The company must have raised less than USD 25 million in funding.
-            value:
-              type: number
-              value: 25000000
-          - criterion_id: cri_03
-            fact: company.is_current_customer
-            kind: predicate
-            operator: eq
-            statement: The company must be a new Benchling customer.
-            value:
-              type: boolean
-              value: false
+        kind: manual
+        criterion_id: cri_01
+        reason: external-verification
+        statement: Qualifying companies have 15 or fewer scientists, less than $25M in funding, and are new Benchling customers.
     roles:
       terms_authority_entity_id: ent_01m1egre83vf1df4cvhxcsa4sz
       access_operator_entity_id: ent_01m1egre83vf1df4cvhxcsa4sz
