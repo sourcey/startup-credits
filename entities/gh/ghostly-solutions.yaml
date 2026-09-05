@@ -10,6 +10,7 @@ entity:
       valid_from: 2026-09-01T00:00:00.000Z
   category: auth-security
 profile:
+  summary: Identity-verification, fraud-prevention, and digital-security products.
   description: Ghostly Solutions provides enterprise security products for identity verification, fraud prevention, and secure digital operations.
   links:
     site: https://ghostlysolutions.com
