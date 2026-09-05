@@ -1,0 +1,92 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1r85cpcwzbfw8bfhaac5aj6
+  slug: visualeaf
+  slug_aliases: []
+  name: VisuaLeaf
+  domains:
+    - value: visualeaf.com
+      role: primary
+      valid_from: 2026-09-05T07:40:08.781Z
+  category: databases
+profile:
+  description: VisuaLeaf is a desktop database client for querying, administering,
+    and visualizing MongoDB, PostgreSQL, MySQL, and other databases.
+  links:
+    site: https://visualeaf.com/
+sources:
+  - source_id: src_5012c4dd40df99c6412569ef80af10184f3dc2607a3c169221bbb2ba883da845
+    url: https://visualeaf.com/startups/
+programs:
+  - program_id: prg_01m1r85cpd532ayt7gfa7qz0pe
+    program_slug: visualeaf-for-startups
+    program_slug_aliases: []
+    title: VisuaLeaf for Startups
+    summary: An application-based startup program providing discounted paid
+      database-client licences.
+    source_ids:
+      - src_5012c4dd40df99c6412569ef80af10184f3dc2607a3c169221bbb2ba883da845
+offers:
+  - offer_id: off_01m1r85cpd8tqzh3dcc66gdap3
+    program_id: prg_01m1r85cpd532ayt7gfa7qz0pe
+    offer_slug: first-year-startup-discount
+    offer_slug_aliases: []
+    title: 50% off VisuaLeaf licences for one year
+    summary: Approved startups receive half-price paid licences for their first
+      year, limited to ten licences. Subsequent renewal uses regular pricing.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T07:40:08.781Z
+    economics:
+      benefits:
+        - benefit_id: ben_licence_discount
+          kind: discount
+          description: First-year discount on up to ten licences of the selected paid
+            plan, including its updates and support.
+          percentage:
+            kind: exact
+            basis_points: 5000
+          duration:
+            kind: exact
+            value: P1Y
+          applies_to: Up to 10 paid VisuaLeaf licences
+      consideration:
+        kind: unknown
+        description: A paid purchase is required at the discounted price; the amount
+          depends on plan and licence count. After year one, regular renewal
+          pricing applies.
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_company_age
+            kind: manual
+            reason: external-verification
+            statement: Startup normally less than three years old; near-qualifying teams may
+              apply for individual review.
+          - criterion_id: cri_size
+            kind: manual
+            reason: external-verification
+            statement: Normally fewer than 15 employees and no more than 10 licences needed.
+          - criterion_id: cri_customer
+            kind: manual
+            reason: external-verification
+            statement: New to paid VisuaLeaf plans. Bootstrapped, self-funded, solo, and
+              pre-launch startups are welcome; funding or accelerator membership
+              is not required.
+          - criterion_id: cri_approval
+            kind: manual
+            reason: vendor-discretion
+            statement: Application is individually reviewed; approval is required.
+    roles:
+      terms_authority_entity_id: ent_01m1r85cpcwzbfw8bfhaac5aj6
+      access_operator_entity_id: ent_01m1r85cpcwzbfw8bfhaac5aj6
+    access:
+      availability: public
+      method: form
+      url: https://visualeaf.com/startups/
+      instructions: Apply on the startup page. Approved applicants receive a private
+        discounted checkout link, normally within two business days.
+    terms_url: https://visualeaf.com/startups/
+    source_ids:
+      - src_5012c4dd40df99c6412569ef80af10184f3dc2607a3c169221bbb2ba883da845
