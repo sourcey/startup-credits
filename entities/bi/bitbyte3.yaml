@@ -1,0 +1,88 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1sspbtp90t5n5fmna2gw9qt
+  slug: bitbyte3
+  slug_aliases: []
+  name: BitByte3
+  domains:
+    - value: bitbyte3.com
+      role: primary
+      valid_from: 2026-09-06T02:55:00.000Z
+  category: hosting-infra
+profile:
+  description: BitByte3 is an OTT streaming platform that launches branded video
+    services across web, mobile, and TV apps with flat-fee plans.
+  links:
+    site: https://bitbyte3.com
+sources:
+  - source_id: src_29d30bc02ed86d0cd9c287b71562b22ce8f9e3eb49b4e0efbd68690beadcaada
+    url: https://bitbyte3.com/solutions/startups
+programs:
+  - program_id: prg_01m1sspbvhftezw2zpza6r3dq0
+    program_slug: bitbyte3-for-startups
+    program_slug_aliases: []
+    title: BitByte3 for Startups
+    summary: A vendor-run startup program offering a first-year discount on paid
+      streaming platform plans with launch and customization support.
+    source_ids:
+      - src_29d30bc02ed86d0cd9c287b71562b22ce8f9e3eb49b4e0efbd68690beadcaada
+offers:
+  - offer_id: off_01m1sspbw1tb0wdzf8v8pe2q3r
+    program_id: prg_01m1sspbvhftezw2zpza6r3dq0
+    offer_slug: first-year-startup-discount
+    offer_slug_aliases: []
+    title: 25% off any BitByte3 plan for the first year
+    summary: Approved early-stage startups receive 25% off the Starter, Growth, or
+      Business plan for their first year, with monthly or yearly billing, plus
+      customization help during that year.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-06T02:55:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_plan_discount
+          kind: discount
+          description: First-year 25% discount on the Starter, Growth, or Business
+            plan, with monthly or yearly billing. Yearly billing adds the standard
+            10% annual saving.
+          percentage:
+            kind: exact
+            basis_points: 2500
+          duration:
+            kind: exact
+            value: P1Y
+          applies_to: Starter, Growth, or Business plan subscription
+        - benefit_id: ben_customization_help
+          kind: free-service
+          description: Customization help during the first year while the startup
+            iterates on its streaming service.
+          service: BitByte3 first-year customization support
+      consideration:
+        kind: unknown
+        description: A paid plan subscription at the discounted price is required.
+          After the first year, regular pricing applies.
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_stage
+            kind: manual
+            reason: vendor-discretion
+            statement: Early-stage teams validating an idea.
+          - criterion_id: cri_approval
+            kind: manual
+            reason: vendor-discretion
+            statement: Startup access requests are reviewed by BitByte3 before the
+              discount is granted.
+    roles:
+      terms_authority_entity_id: ent_01m1sspbtp90t5n5fmna2gw9qt
+      access_operator_entity_id: ent_01m1sspbtp90t5n5fmna2gw9qt
+    access:
+      availability: public
+      method: form
+      url: https://bitbyte3.com/solutions/startups
+      instructions: Request startup access on the For Startups page with a short
+        brief about the videos, audience, and launch goals.
+    terms_url: https://bitbyte3.com/solutions/startups
+    source_ids:
+      - src_29d30bc02ed86d0cd9c287b71562b22ce8f9e3eb49b4e0efbd68690beadcaada
