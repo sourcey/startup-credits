@@ -10,6 +10,7 @@ entity:
       valid_from: 2026-09-01T06:44:57.535Z
   category: legal-compliance
 profile:
+  summary: Governance, risk, compliance, audit-readiness, and trust-assurance platform.
   description: TrustCloud is a governance, risk, compliance, and trust-assurance platform for audit readiness, security questionnaires, control verification, and compliance sharing.
   links:
     site: https://www.trustcloud.ai/
@@ -37,7 +38,7 @@ offers:
     economics:
       benefits:
         - benefit_id: ben_01
-          description: TrustCloud Starter at no cost, including SOC 2 Type I and Type II readiness, a TrustShare compliance portal, two AI-assisted security questionnaires, 20 employee attestations, self-guided documentation, and an onboarding consultation.
+          description: Free SOC 2 Type I and Type II readiness, a short onboarding consultation, AI support for security questionnaires, and a public compliance portal.
           kind: free-service
           service: TrustCloud Starter
       consideration:
