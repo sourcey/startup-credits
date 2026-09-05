@@ -1,0 +1,97 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m14n28g7g3cecmp6shac7ndg
+  slug: linkutm
+  slug_aliases: []
+  name: linkutm
+  domains:
+    - value: linkutm.com
+      role: primary
+      valid_from: 2026-08-28T17:01:02.524Z
+  category: marketing
+profile:
+  description: linkutm provides UTM link management, branded short links, QR codes, campaign analytics, team workspaces, and a public REST API.
+  links:
+    site: https://linkutm.com
+sources:
+  - source_id: src_86457b54bb57370b8d678ff3dcc57d00512b2de17e0a54faeed6795f8a8e68a7
+    url: https://linkutm.com/startups
+  - source_id: src_e02a72667e39da1fda893fbd0590452d2fc9e7e5c8f71248dc37be00d72cb164
+    url: https://linkutm.com/
+programs:
+  - program_id: prg_01m14n28g8rb29jq2zd5rnb3qq
+    program_slug: linkutm-for-startups
+    program_slug_aliases: []
+    title: linkutm for Startups
+    summary: Eligible early-stage startups receive linkutm's complete Growth plan free for 12 months, a benefit the vendor values at $348.
+    source_ids:
+      - src_86457b54bb57370b8d678ff3dcc57d00512b2de17e0a54faeed6795f8a8e68a7
+offers:
+  - offer_id: off_01m14n28g8nce8xhaggew3j352
+    program_id: prg_01m14n28g8rb29jq2zd5rnb3qq
+    offer_slug: twelve-months-free-growth-plan
+    offer_slug_aliases: []
+    title: Twelve months free linkutm Growth plan
+    summary: Eligible startups receive the complete linkutm Growth plan free for 12 months, a $348 value with branded links, QR codes, analytics, domains, and REST API access.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-28T17:01:02.524Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_01
+          description: Complete linkutm Growth plan free for 12 months, valued by linkutm at $348
+          kind: free-service
+          service: linkutm Growth plan
+          duration:
+            kind: exact
+            value: P1Y
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.funding_raised_usd
+            kind: predicate
+            operator: lt
+            statement: Startup has raised less than $5,000,000 in total funding.
+            value:
+              type: number
+              value: 5000000
+          - criterion_id: cri_02
+            fact: company.age_years
+            kind: predicate
+            operator: lt
+            statement: Company was founded or incorporated less than five years ago.
+            value:
+              type: number
+              value: 5
+          - criterion_id: cri_03
+            fact: company.is_current_customer
+            kind: predicate
+            operator: eq
+            statement: Applicant is not currently on a paid linkutm plan.
+            value:
+              type: boolean
+              value: false
+          - criterion_id: cri_04
+            kind: manual
+            reason: external-verification
+            statement: Applicant has not redeemed a previous linkutm offer.
+          - criterion_id: cri_05
+            kind: manual
+            reason: external-verification
+            statement: Applicant uses a company email address matching the company website domain.
+    roles:
+      terms_authority_entity_id: ent_01m14n28g7g3cecmp6shac7ndg
+      access_operator_entity_id: ent_01m14n28g7g3cecmp6shac7ndg
+    access:
+      availability: public
+      method: form
+      url: https://linkutm.com/startups
+    terms_url: https://linkutm.com/startups
+    source_ids:
+      - src_86457b54bb57370b8d678ff3dcc57d00512b2de17e0a54faeed6795f8a8e68a7
+      - src_e02a72667e39da1fda893fbd0590452d2fc9e7e5c8f71248dc37be00d72cb164
+
