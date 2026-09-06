@@ -1,0 +1,75 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1v6yaa1kka10bhqz5d6g04f
+  slug: cloudsetu
+  slug_aliases: []
+  name: CloudSetu
+  domains:
+    - value: cloudsetu.com
+      role: primary
+      valid_from: 2026-09-06T11:16:31.920Z
+  category: hosting-infra
+profile:
+  summary: CloudSetu provides cloud computing, GPU infrastructure, and dedicated servers.
+  description: CloudSetu is an Indian provider of cloud computing, GPU infrastructure, colocation, and dedicated servers.
+  links:
+    site: https://cloudsetu.com
+sources:
+  - source_id: src_46f1fcfd42955445a17df89ba9e85fb79bfd45aa4030c56259be75a85dc7f7f9
+    url: https://cloudsetu.com/for-startups
+  - source_id: src_f94f6543ff14fae090f7de44ed2680ded165bf90f050bf21edd7a34c6f037ec6
+    url: https://cloudsetu.com/assets/index-COF498Wp.js
+programs:
+  - program_id: prg_01m1v6yaa1q3y9wktjjr3naqsd
+    program_slug: cloudsetu-startup-program
+    program_slug_aliases: []
+    title: CloudSetu Startup Program
+    summary: CloudSetu offers cloud credits to eligible Indian startups.
+    source_ids:
+      - src_46f1fcfd42955445a17df89ba9e85fb79bfd45aa4030c56259be75a85dc7f7f9
+offers:
+  - offer_id: off_01m1v6yaa1tdjkb83ecm2yaa5r
+    program_id: prg_01m1v6yaa1q3y9wktjjr3naqsd
+    offer_slug: indian-startup-cloud-credits
+    offer_slug_aliases: []
+    title: INR 21,000 startup cloud credits
+    summary: Eligible Indian startups receive INR 21,000 in free credits for CloudSetu GPU, bare metal, and cloud services.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-06T11:16:31.920Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_cloud_credit
+          kind: credit
+          description: Free credits for GPU, bare metal, and cloud plans.
+          value:
+            kind: exact
+            amount:
+              currency: INR
+              minor_units: 2100000
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_startup
+            kind: manual
+            reason: external-verification
+            statement: Applicant is an Indian startup eligible under CloudSetu's startup program.
+          - criterion_id: cri_recognition
+            kind: manual
+            reason: external-verification
+            statement: Provide startup recognition or registration status. Unregistered startups may require manual verification.
+    roles:
+      terms_authority_entity_id: ent_01m1v6yaa1kka10bhqz5d6g04f
+      access_operator_entity_id: ent_01m1v6yaa1kka10bhqz5d6g04f
+    access:
+      availability: public
+      method: form
+      url: https://cloudsetu.com/for-startups
+      instructions: 'Open Claim Credits and provide startup details and recognition status. No card required. The vendor contacts applicants to activate credits. The application states: "Credits valid for 30 days"; whether this limits activation or use is not specified.'
+    terms_url: https://cloudsetu.com/legal/terms-of-service
+    source_ids:
+      - src_46f1fcfd42955445a17df89ba9e85fb79bfd45aa4030c56259be75a85dc7f7f9
+      - src_f94f6543ff14fae090f7de44ed2680ded165bf90f050bf21edd7a34c6f037ec6
