@@ -53,6 +53,7 @@ entity:
       valid_from: 2026-01-01T00:00:00.000Z
   category: productivity
 profile:
+  summary: Collaboration and developer tools for software teams.
   description: Atlassian makes collaboration and developer tools for software teams.
   links:
     site: https://www.atlassian.com/

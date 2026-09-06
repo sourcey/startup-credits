@@ -20,9 +20,11 @@ For a new record, copy a nearby Entity file and preserve the shape:
 - Use only a category from the exact `taxonomy.json` bundled with the pinned Catalog Verifier.
   The local preflight downloads that file, and both local and CI failures print the complete
   current list; a nearby legacy record is not taxonomy authority.
+- Give every Entity a `profile.summary`: one or two plain sentences about what the company does.
+  Machine admission requires it; a submission without it is asked to add one.
 - Keep `profile.description` to 200 characters and describe the Entity itself, not its Offers.
-- Keep each `summary` to 240 characters: it is the compact public synopsis used in listings and
-  metadata. An Offer may use optional `description` for longer source-backed context. Economics,
+- Keep each `summary` (`profile.summary` and every Offer `summary`) to 240 characters: it is the
+  compact public synopsis used in listings and metadata. An Offer may use optional `description` for longer source-backed context. Economics,
   eligibility, and access still belong in their structured fields rather than repeated prose.
 
 Generate fresh IDs with Node's built-in crypto support. The first command prints one Entity,
