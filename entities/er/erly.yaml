@@ -1,0 +1,76 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1v974jhmjh4ptg198b7dj77
+  slug: erly
+  slug_aliases: []
+  name: erly
+  domains:
+    - value: erly.app
+      role: primary
+      valid_from: 2026-09-06T11:56:17.884Z
+  category: hr-people
+profile:
+  summary: erly provides WORKR business management software for HR, payroll, staff scheduling, timesheets, documents, and team collaboration.
+  description: erly provides WORKR business management software for HR, payroll, staff scheduling, timesheets, documents, and team collaboration.
+  links:
+    site: https://erly.app/workr/
+sources:
+  - source_id: src_70890f6e078088e223da95e2394d79777fefc702536ad3537c1e6b606dabce43
+    url: https://erly.app/register/
+  - source_id: src_4a29b8afaa8bc1c36bda67afa86e96b6b033dd9519f6da8d83d171a3086d126c
+    url: https://erly.app/workr/
+  - source_id: src_6894320d6db45d883993aa032f46993a259adf88c74c8dfde9a97178eb3cfa04
+    url: https://erly.app/terms.html
+programs: []
+offers:
+  - offer_id: off_01m1v974jvbzanj90akesj30jt
+    offer_slug: workr-startup-discount
+    offer_slug_aliases: []
+    title: WORKR startup discount
+    summary: Startups with fewer than 10 employees and under 3 years of operation can receive 50% off erly WORKR Premium or Premium+ for 12 months by contacting erly after registration.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-06T11:56:17.884Z
+    economics:
+      consideration:
+        kind: variable
+        description: Purchase an erly WORKR Premium or Premium+ subscription at the discounted price.
+      benefits:
+        - benefit_id: ben_workr_startup_discount
+          kind: discount
+          description: 50% off erly WORKR Premium or Premium+ for 12 months.
+          applies_to: erly WORKR Premium and Premium+ subscriptions
+          percentage:
+            kind: exact
+            basis_points: 5000
+          duration:
+            kind: exact
+            value: P12M
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_employee_count
+            kind: predicate
+            fact: company.employee_count
+            operator: lt
+            value:
+              type: number
+              value: 10
+            statement: The startup must have fewer than 10 employees.
+          - criterion_id: cri_operating_age
+            kind: manual
+            reason: not-machine-evaluable
+            statement: The applicant must be a startup operating for less than 3 years.
+    roles:
+      terms_authority_entity_id: ent_01m1v974jhmjh4ptg198b7dj77
+      access_operator_entity_id: ent_01m1v974jhmjh4ptg198b7dj77
+    access:
+      availability: public
+      method: form
+      url: https://erly.app/register/
+      instructions: Register for erly, then contact the vendor to request the startup discount for a Premium or Premium+ subscription.
+    source_ids:
+      - src_70890f6e078088e223da95e2394d79777fefc702536ad3537c1e6b606dabce43
+      - src_4a29b8afaa8bc1c36bda67afa86e96b6b033dd9519f6da8d83d171a3086d126c
+      - src_6894320d6db45d883993aa032f46993a259adf88c74c8dfde9a97178eb3cfa04
