@@ -71,7 +71,7 @@ offers:
               value: 60
           - criterion_id: cri_02
             kind: manual
-            statement: The company must have less than $2 million in combined funding or revenue.
+            statement: The company must meet the published requirement of less than $2 million in funding/revenue.
             reason: external-verification
           - criterion_id: cri_03
             fact: company.employee_count
@@ -82,13 +82,9 @@ offers:
               type: number
               value: 50
           - criterion_id: cri_04
-            fact: company.is_current_customer
-            kind: predicate
-            operator: eq
+            kind: manual
             statement: The company must not be a current paying Warestack customer.
-            value:
-              type: boolean
-              value: false
+            reason: external-verification
           - criterion_id: cri_05
             kind: manual
             statement: The application must use a work email rather than a personal email address.
