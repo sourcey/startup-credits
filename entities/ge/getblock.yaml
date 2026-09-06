@@ -10,6 +10,7 @@ entity:
       valid_from: 2026-09-06T07:05:00.000Z
   category: hosting-infra
 profile:
+  summary: GetBlock is a blockchain infrastructure provider offering RPC APIs, shared and dedicated nodes, and Web3 developer tooling across multiple chains.
   description: GetBlock provides blockchain RPC APIs, shared and dedicated nodes, and related Web3 infrastructure for developers and teams.
   links:
     site: https://getblock.io
