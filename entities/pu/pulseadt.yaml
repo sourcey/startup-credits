@@ -1,0 +1,53 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1w3rrtnzqfhcaeaq5decct3
+  slug: pulseadt
+  slug_aliases: []
+  name: PulseADT
+  domains:
+    - value: getpulseadt.com
+      role: primary
+      valid_from: 2026-09-06T19:47:36Z
+  category: devtools-other
+profile:
+  description: PulseADT provides API development and testing tools for developers and teams.
+  links:
+    site: https://getpulseadt.com
+sources:
+  - source_id: src_90bc10365386d1e40cd29886098e1270557f90c23b2f3bacb96b571c8efe2c16
+    url: https://getpulseadt.com/for-startups
+offers:
+  - offer_id: off_01m1w3rrttzbmxnzf9v6h8vpjw
+    offer_slug: pulseadt-startup-credit-program
+    offer_slug_aliases: []
+    title: PulseADT Startup Credit Program
+    summary: The API Builder track grants eligible early-stage technology startups a USD 250 platform credit valid for 12 months after spending at least USD 100 on API credits within 90 days, followed by an ongoing 30% discount.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-06T19:47:36Z
+    economics:
+      consideration:
+        kind: credits
+        description: USD 250 platform credit plus ongoing 30% discount after initial spending requirement.
+    benefits:
+      - benefit_id: ben_primary
+        description: USD 250 platform credit valid for 12 months after USD 100 spending within 90 days
+        kind: credits
+      - benefit_id: ben_02
+        description: 30% ongoing discount thereafter
+        kind: discount
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be an early-stage technology startup; the credit requires spending at least USD 100 on API credits within 90 days.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01m1w3rrtnzqfhcaeaq5decct3
+      access_operator_entity_id: ent_01m1w3rrtnzqfhcaeaq5decct3
+    access:
+      availability: public
+      method: form
+      url: https://getpulseadt.com/for-startups
+    source_ids:
+      - src_90bc10365386d1e40cd29886098e1270557f90c23b2f3bacb96b571c8efe2c16

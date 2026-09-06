@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1w3rf7mbtjqpj8am05cc1mh
+  slug: oprex
+  slug_aliases: []
+  name: Oprex
+  domains:
+    - value: oprex.id
+      role: primary
+      valid_from: 2026-09-06T19:42:47Z
+  category: productivity
+profile:
+  description: Oprex is a productivity and workflow platform for teams in Indonesia and Southeast Asia.
+  links:
+    site: https://oprex.id
+sources:
+  - source_id: src_79d65093bb8ade590fc6ad05865e0c99f2426eeb5b4109595d88efd7d24da5f0
+    url: https://oprex.id/company/startup-program
+offers:
+  - offer_id: off_01m1w3rf7z05x7be2j663hdd5b
+    offer_slug: oprex-startup-program
+    offer_slug_aliases: []
+    title: Oprex Startup Program
+    summary: Eligible early-stage teams receive the Oprex Pro plan free for 12 months. The public pricing page lists Pro at Rp 1,490,000 per month.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-06T19:42:47Z
+    economics:
+      consideration:
+        kind: free-period
+        description: Pro plan free for 12 months (Rp 1,490,000/month value).
+    benefits:
+      - benefit_id: ben_primary
+        description: Oprex Pro plan free for 12 months
+        kind: free-period
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be an early-stage team; specific criteria are published on the vendor startup program page.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01m1w3rf7mbtjqpj8am05cc1mh
+      access_operator_entity_id: ent_01m1w3rf7mbtjqpj8am05cc1mh
+    access:
+      availability: public
+      method: form
+      url: https://oprex.id/company/startup-program
+    source_ids:
+      - src_79d65093bb8ade590fc6ad05865e0c99f2426eeb5b4109595d88efd7d24da5f0

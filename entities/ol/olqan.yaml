@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1w3rvdpj5wmc7tfmnsdabpa
+  slug: olqan
+  slug_aliases: []
+  name: Olqan
+  domains:
+    - value: olqan.com
+      role: primary
+      valid_from: 2026-09-06T19:48:40Z
+  category: devtools-other
+profile:
+  description: Olqan provides development and analytics tools for startups and growth-stage companies.
+  links:
+    site: https://olqan.com
+sources:
+  - source_id: src_587824448b383cdaea1772737b1df1a866a67cb35e7a38299fb66551802f25dc
+    url: https://olqan.com/startup-program/
+offers:
+  - offer_id: off_01m1w3rve254d2nv61nrdnaeh5
+    offer_slug: olqan-startup-program
+    offer_slug_aliases: []
+    title: Olqan Startup Program
+    summary: Eligible new users receive the Olqan Growth plan free for 12 months, including onboarding, migration, and priority support.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-06T19:48:40Z
+    economics:
+      consideration:
+        kind: free-period
+        description: Growth plan free for 12 months, including onboarding, migration, and priority support.
+    benefits:
+      - benefit_id: ben_primary
+        description: Growth plan free for 12 months with onboarding, migration, and priority support
+        kind: free-period
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be an eligible new user; specific criteria are published on the vendor startup program page.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01m1w3rvdpj5wmc7tfmnsdabpa
+      access_operator_entity_id: ent_01m1w3rvdpj5wmc7tfmnsdabpa
+    access:
+      availability: public
+      method: form
+      url: https://olqan.com/startup-program/
+    source_ids:
+      - src_587824448b383cdaea1772737b1df1a866a67cb35e7a38299fb66551802f25dc

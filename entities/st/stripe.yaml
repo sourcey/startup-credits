@@ -18,6 +18,8 @@ sources:
     url: https://stripe.com/startups
   - source_id: src_5af15c175b972ada7f6e0487dc9385f214ca5825c52bf7ecdb54e53d1946183d
     url: https://pulley.com/perks
+  - source_id: src_1a1831792959a97a00d127e9899e50bf9540843d46a62120770b232b5312fd95
+    url: https://stripe.com/atlas
 programs:
   - program_id: prg_01kyygma8309wepbqk3a8d21wm
     program_slug: stripe-startup-programme
@@ -26,6 +28,13 @@ programs:
     summary: Designed to support venture-backed businesses with financial benefits, exclusive discounts, community, and expert resources.
     source_ids:
       - src_4410dda4d44891aad0cc0b21bb409ed3d27032c5bc1852a256708b3df0b1ff45
+  - program_id: prg_01m1w3be87kp3yyyr8m2brh4k4
+    program_slug: stripe-atlas
+    program_slug_aliases: []
+    title: Stripe Atlas
+    summary: Helps entrepreneurs worldwide incorporate a US company in Delaware (C corp or LLC).
+    source_ids:
+      - src_1a1831792959a97a00d127e9899e50bf9540843d46a62120770b232b5312fd95
 offers:
   - offer_id: off_01kyygma8386545a4wn8g6q28y
     program_id: prg_01kyygma8309wepbqk3a8d21wm
@@ -101,3 +110,46 @@ offers:
       method: other
     source_ids:
       - src_5af15c175b972ada7f6e0487dc9385f214ca5825c52bf7ecdb54e53d1946183d
+  - offer_id: off_01m1w3be87e4sh4d135q2er9e3
+    program_id: prg_01m1w3be87kp3yyyr8m2brh4k4
+    offer_slug: stripe-atlas-incorporation
+    offer_slug_aliases: []
+    title: Stripe Atlas Incorporation
+    summary: Incorporate a US company in Delaware for $500, including EIN, share documents, and $2,500 in Stripe product credits.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-06T00:00:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: $500 one-time setup fee (includes government fees and first year of registered agent services)
+          kind: cost
+          value:
+            amount:
+              currency: USD
+              minor_units: 50000
+            kind: exact
+        - benefit_id: ben_02
+          description: $2,500 in Stripe product credits for first year
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 250000
+            kind: exact
+      consideration:
+        kind: payment
+    eligibility:
+      rule:
+        kind: constant
+        statement: Open to any entrepreneur worldwide.
+        value: true
+    roles:
+      terms_authority_entity_id: ent_01kyygma830fqh16kvj744sk1c
+      access_operator_entity_id: ent_01kyygma830fqh16kvj744sk1c
+    access:
+      availability: public
+      method: form
+      url: https://stripe.com/atlas
+    source_ids:
+      - src_1a1831792959a97a00d127e9899e50bf9540843d46a62120770b232b5312fd95

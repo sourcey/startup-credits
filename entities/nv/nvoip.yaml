@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1w3rx9c0q6k34tte4x37f7c
+  slug: nvoip
+  slug_aliases: []
+  name: Nvoip
+  domains:
+    - value: nvoip.com.br
+      role: primary
+      valid_from: 2026-09-06T19:49:38Z
+  category: communication
+profile:
+  description: Nvoip provides communication and VoIP services and APIs for businesses and startups.
+  links:
+    site: https://www.nvoip.com.br
+sources:
+  - source_id: src_c770b4d01831f74317f071e33871ce355bd6cb89d619f2175f83e1aa544e973b
+    url: https://www.nvoip.com.br/en/nvoip-for-startups/
+offers:
+  - offer_id: off_01m1w3rxa57eys533440jzfqn5
+    offer_slug: nvoip-for-startups
+    offer_slug_aliases: []
+    title: Nvoip for Startups
+    summary: Nvoip's English-language startup program page offers discounts on its communication plans for startups connected with Nvoip partner hubs. The current page advertises up to 90% off, with the benefit dependent on startup maturity and lasting up to two years.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-06T19:49:38Z
+    economics:
+      consideration:
+        kind: discount
+        description: Up to 90% off communication plans for up to two years for startups connected with Nvoip partner hubs.
+    benefits:
+      - benefit_id: ben_primary
+        description: Up to 90% off communication plans for up to two years through partner hub connection
+        kind: discount
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a startup connected with an Nvoip partner hub; specific eligibility and discount levels are dependent on startup maturity.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01m1w3rx9c0q6k34tte4x37f7c
+      access_operator_entity_id: ent_01m1w3rx9c0q6k34tte4x37f7c
+    access:
+      availability: public
+      method: form
+      url: https://www.nvoip.com.br/en/nvoip-for-startups/
+    source_ids:
+      - src_c770b4d01831f74317f071e33871ce355bd6cb89d619f2175f83e1aa544e973b

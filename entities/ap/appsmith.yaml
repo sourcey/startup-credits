@@ -1,0 +1,58 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1w5647g1v1635b14h47fkz4
+  slug: appsmith
+  slug_aliases: []
+  name: Appsmith
+  domains:
+    - value: appsmith.com
+      role: primary
+      valid_from: 2026-09-06T20:04:00Z
+  category: no-code
+profile:
+  description: Appsmith is an open-source low-code platform for building internal tools, management dashboards, and business applications.
+  links:
+    site: https://www.appsmith.com
+sources:
+  - source_id: src_87c35e1c74bb8730ca73c99ecec27ebf21eba3fd5519650ce3548b8749bc36e5
+    url: https://www.appsmith.com/startup-program
+offers:
+  - offer_id: off_01m1w56480z63pnwwz30g5qfav
+    offer_slug: appsmith-startup-program
+    offer_slug_aliases: []
+    title: Appsmith Startup Program
+    summary: Early-stage startups incorporated less than 2 years ago and with less than USD 10 million in funding can receive USD 30,000 in credits valid for 12 months, full Business plan access, and dedicated developer advocate support.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-06T20:04:00Z
+    economics:
+      consideration:
+        kind: credits
+        description: USD 30,000 in platform credits, valid for 12 months from acceptance.
+    benefits:
+      - benefit_id: ben_primary
+        description: USD 30,000 in platform credits, valid for 12 months from acceptance
+        kind: credits
+        value:
+          amount:
+            currency: USD
+            minor_units: 3000000
+          kind: at-least
+      - benefit_id: ben_02
+        description: Full access to all Appsmith Business plan features
+        kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be incorporated less than 2 years ago and have raised less than USD 10 million in funding.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01m1w5647g1v1635b14h47fkz4
+      access_operator_entity_id: ent_01m1w5647g1v1635b14h47fkz4
+    access:
+      availability: public
+      method: form
+      url: https://www.appsmith.com/startup-program
+    source_ids:
+      - src_87c35e1c74bb8730ca73c99ecec27ebf21eba3fd5519650ce3548b8749bc36e5

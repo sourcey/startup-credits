@@ -1,0 +1,56 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1w3rt22rp90myqr0axndg1w
+  slug: aerospike
+  slug_aliases: []
+  name: Aerospike
+  domains:
+    - value: aerospike.com
+      role: primary
+      valid_from: 2026-09-06T19:48:40Z
+  category: databases
+profile:
+  description: Aerospike provides a real-time NoSQL database and data platform optimized for high-performance, high-scale applications.
+  links:
+    site: https://aerospike.com
+sources:
+  - source_id: src_0c3c1b7b8195196273f2bf8544a0a89dd4dbdb33d8a567fad28f5f4b0460d32b
+    url: https://aerospike.com/get/cloud-for-startups/
+offers:
+  - offer_id: off_01m1w3rt3chhkfnr1h3ttkywp7
+    offer_slug: aerospike-cloud-for-startups
+    offer_slug_aliases: []
+    title: Aerospike Cloud for Startups
+    summary: Aerospike Cloud for Startups offers early-stage companies USD 300 in credits, 10% off public pricing, one day of Solution Architect support, and zero commitment to start.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-06T19:48:40Z
+    economics:
+      consideration:
+        kind: credits
+        description: USD 300 in credits plus 10% off public pricing.
+    benefits:
+      - benefit_id: ben_primary
+        description: USD 300 in Aerospike Cloud credits
+        kind: credits
+      - benefit_id: ben_02
+        description: 10% off public pricing
+        kind: discount
+      - benefit_id: ben_03
+        description: One day of Solution Architect support
+        kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be an early-stage company; zero commitment required to start.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01m1w3rt22rp90myqr0axndg1w
+      access_operator_entity_id: ent_01m1w3rt22rp90myqr0axndg1w
+    access:
+      availability: public
+      method: form
+      url: https://aerospike.com/get/cloud-for-startups/
+    source_ids:
+      - src_0c3c1b7b8195196273f2bf8544a0a89dd4dbdb33d8a567fad28f5f4b0460d32b

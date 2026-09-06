@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1w3rqhdkc79f9bazvekpt3z
+  slug: kerno
+  slug_aliases: []
+  name: Kerno
+  domains:
+    - value: kerno.io
+      role: primary
+      valid_from: 2026-09-06T19:47:36Z
+  category: finance-accounting
+profile:
+  description: Kerno (FYCK Limited) provides financial and business management tools for startups and growing companies.
+  links:
+    site: https://www.kerno.io
+sources:
+  - source_id: src_37d79161df6a35ce278a6e5976f9cda3f43776edae733ee8f6d4114f425b8d79
+    url: https://www.kerno.io/pricing/
+offers:
+  - offer_id: off_01m1w3rqj1qkbqbewn4tax2b7y
+    offer_slug: kerno-startup-discount
+    offer_slug_aliases: []
+    title: Kerno Startup Discount
+    summary: Kerno offers 50% discount for pre-Series A startups with revenue under USD 2 million over the preceding 12 months.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-06T19:47:36Z
+    economics:
+      consideration:
+        kind: discount
+        description: 50% discount for eligible pre-Series A startups.
+    benefits:
+      - benefit_id: ben_primary
+        description: 50% discount for pre-Series A startups with revenue under USD 2 million
+        kind: discount
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be pre-Series A with revenue under USD 2 million over the preceding 12 months.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01m1w3rqhdkc79f9bazvekpt3z
+      access_operator_entity_id: ent_01m1w3rqhdkc79f9bazvekpt3z
+    access:
+      availability: public
+      method: form
+      url: https://www.kerno.io/pricing/
+    source_ids:
+      - src_37d79161df6a35ce278a6e5976f9cda3f43776edae733ee8f6d4114f425b8d79

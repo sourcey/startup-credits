@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1w3rgf4php658j5fpkdn73f
+  slug: cms-austria
+  slug_aliases: []
+  name: CMS Reich-Rohrwig Hainz Rechtsanwälte GmbH
+  domains:
+    - value: cms.law
+      role: primary
+      valid_from: 2026-09-06T19:43:48Z
+  category: legal-compliance
+profile:
+  description: CMS Reich-Rohrwig Hainz is a full-service commercial law firm in Austria offering legal services to businesses and startups.
+  links:
+    site: https://cms.law/en/aut
+sources:
+  - source_id: src_76ded3be8a8db7e5e2b8adba038b1118cc025820da427e4d6a12c7e87353613c
+    url: https://cms.law/en/aut/insight/start-ups/cms-equip-membership
+offers:
+  - offer_id: off_01m1w3rgfffmyxtbn1xmat0wcb
+    offer_slug: cms-equip-austria-startup-programme
+    offer_slug_aliases: []
+    title: CMS equIP Austria
+    summary: Accepted startup members receive 50% off standard hourly legal rates for three years, up to EUR 25,000 discount per year. Application and acceptance are required.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-06T19:43:48Z
+    economics:
+      consideration:
+        kind: discount
+        description: 50% off standard hourly legal rates for three years, capped at EUR 25,000 discount per year.
+    benefits:
+      - benefit_id: ben_primary
+        description: 50% off standard hourly legal rates for up to three years, up to EUR 25,000 per year
+        kind: discount
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be an eligible startup and complete the equIP application process; acceptance is required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01m1w3rgf4php658j5fpkdn73f
+      access_operator_entity_id: ent_01m1w3rgf4php658j5fpkdn73f
+    access:
+      availability: public
+      method: form
+      url: https://cms.law/content/download/486373/file/Application_Form_EquIP_2026.pdf
+    source_ids:
+      - src_76ded3be8a8db7e5e2b8adba038b1118cc025820da427e4d6a12c7e87353613c

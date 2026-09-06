@@ -1,0 +1,104 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1w4360shgqqm3gv6948340s
+  slug: crococlick
+  slug_aliases: []
+  name: CrocoClick
+  domains:
+  - value: crococlick.com
+    role: primary
+    valid_from: '2026-09-06T19:46:41.281Z'
+  category: productivity
+profile:
+  description: CrocoClick provides productivity and collaboration tools for businesses and teams.
+  links:
+    site: https://crococlick.com
+sources:
+- source_id: src_b9d2ec5e99697104baf658cbe8c618dc22f6afc9a233b2528e2a3158f653cbc6
+  url: https://help.crococlick.com/articles/0820414-crococlick-startup-program
+programs:
+- program_id: prg_01m1w436149g783sff7xhts4mw
+  program_slug: crococlick-young-enterprise-program
+  program_slug_aliases: []
+  title: CrocoClick Young Enterprise Program
+  summary: 'The Young Enterprise program offers qualifying companies discounted UNLIMITED access for three years: 86% in year one, 70% in year two, and 50% in year three.'
+  source_ids:
+  - src_b9d2ec5e99697104baf658cbe8c618dc22f6afc9a233b2528e2a3158f653cbc6
+offers:
+- offer_id: off_01m1w43614zak99pgrtns3gc9x
+  program_id: prg_01m1w436149g783sff7xhts4mw
+  offer_slug: young-enterprise-program-tiered-discount
+  offer_slug_aliases: []
+  title: Young Enterprise Program - Tiered Discount
+  summary: 'The Young Enterprise program offers qualifying companies discounted UNLIMITED access for three years: 86% in year one, 70% in year two, and 50% in year three.'
+  lifecycle:
+    status: active
+    effective_from: '2026-09-06T19:46:41.281Z'
+  economics:
+    benefits:
+    - benefit_id: ben_year1
+      description: 86% off UNLIMITED access in year one
+      kind: discount
+      percentage:
+        kind: exact
+        basis_points: 8600
+      duration:
+        kind: exact
+        value: P1Y
+    - benefit_id: ben_year2
+      description: 70% off UNLIMITED access in year two
+      kind: discount
+      percentage:
+        kind: exact
+        basis_points: 7000
+      duration:
+        kind: exact
+        value: P1Y
+    - benefit_id: ben_year3
+      description: 50% off UNLIMITED access in year three
+      kind: discount
+      percentage:
+        kind: exact
+        basis_points: 5000
+      duration:
+        kind: exact
+        value: P1Y
+    consideration:
+      kind: none
+  eligibility:
+    rule:
+      kind: all
+      rules:
+      - criterion_id: cri_age
+        fact: company.age_months
+        kind: predicate
+        operator: lte
+        value:
+          type: number
+          value: 12
+        statement: Company is under 12 months old.
+      - criterion_id: cri_revenue
+        fact: company.annual_revenue_usd
+        kind: predicate
+        operator: lt
+        value:
+          type: number
+          value: 25000
+        statement: Company has less than EUR 25,000 in revenue.
+      - criterion_id: cri_not_previous
+        fact: company.is_current_customer
+        kind: predicate
+        operator: eq
+        value:
+          type: boolean
+          value: false
+        statement: No previous paid CrocoClick subscription.
+  roles:
+    terms_authority_entity_id: ent_01m1w4360shgqqm3gv6948340s
+    access_operator_entity_id: ent_01m1w4360shgqqm3gv6948340s
+  access:
+    availability: public
+    method: form
+    url: https://help.crococlick.com/articles/0820414-crococlick-startup-program
+  source_ids:
+  - src_b9d2ec5e99697104baf658cbe8c618dc22f6afc9a233b2528e2a3158f653cbc6

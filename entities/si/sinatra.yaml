@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1w3rk4skcsjp6p846b4dcb4
+  slug: sinatra
+  slug_aliases: []
+  name: Sinatra
+  domains:
+    - value: sinatra.dev
+      role: primary
+      valid_from: 2026-09-06T19:45:10Z
+  category: devtools-other
+profile:
+  description: Sinatra provides development tools and infrastructure for building and deploying applications.
+  links:
+    site: https://www.sinatra.dev
+sources:
+  - source_id: src_72bd5de0c66499948398b5a11082b8cfb1b6024c9acf0309cf79248e6473d202
+    url: https://www.sinatra.dev/startups
+offers:
+  - offer_id: off_01m1w3rk5mm2x9rmnpj4g4a5t7
+    offer_slug: sinatra-startup-discount
+    offer_slug_aliases: []
+    title: Sinatra Startup Discount
+    summary: Approved startup teams receive 50% off monthly seats for 12 months.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-06T19:45:10Z
+    economics:
+      consideration:
+        kind: discount
+        description: 50% off monthly seats for 12 months.
+    benefits:
+      - benefit_id: ben_primary
+        description: 50% off monthly seats for 12 months
+        kind: discount
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be an approved startup team; specific criteria are published on the vendor startup page.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01m1w3rk4skcsjp6p846b4dcb4
+      access_operator_entity_id: ent_01m1w3rk4skcsjp6p846b4dcb4
+    access:
+      availability: public
+      method: form
+      url: https://www.sinatra.dev/startups
+    source_ids:
+      - src_72bd5de0c66499948398b5a11082b8cfb1b6024c9acf0309cf79248e6473d202

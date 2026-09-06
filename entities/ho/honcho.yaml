@@ -1,0 +1,56 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1w3rehgj50ky9mh2r5an0pd
+  slug: honcho
+  slug_aliases: []
+  name: Honcho
+  domains:
+    - value: honcho.dev
+      role: primary
+      valid_from: 2026-09-06T19:42:47Z
+  category: ai-ml
+profile:
+  description: Honcho is a platform that helps businesses deploy and manage AI agents and applications.
+  links:
+    site: https://honcho.dev
+sources:
+  - source_id: src_02fb1fc3329d38a9961e41f6fe41e22f458814ceb8dd77a0ef4024d19fa08b1a
+    url: https://honcho.dev
+offers:
+  - offer_id: off_01m1w3rej7kp98xqre8e5pxsdn
+    offer_slug: honcho-startup-offer
+    offer_slug_aliases: []
+    title: Honcho Startup Offer
+    summary: Startups with less than USD 5 million raised can apply for USD 1,000 in credits, 12 months of subsidized pricing, and integration support.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-06T19:42:47Z
+    economics:
+      consideration:
+        kind: credits
+        description: USD 1,000 in platform credits plus 12 months of subsidized pricing.
+    benefits:
+      - benefit_id: ben_primary
+        description: USD 1,000 in credits
+        kind: credits
+      - benefit_id: ben_02
+        description: 12 months of subsidized pricing
+        kind: other
+      - benefit_id: ben_03
+        description: Integration support
+        kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must have raised less than USD 5 million.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01m1w3rehgj50ky9mh2r5an0pd
+      access_operator_entity_id: ent_01m1w3rehgj50ky9mh2r5an0pd
+    access:
+      availability: public
+      method: form
+      url: https://honcho.dev
+    source_ids:
+      - src_02fb1fc3329d38a9961e41f6fe41e22f458814ceb8dd77a0ef4024d19fa08b1a

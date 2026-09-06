@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1w3rwykxphtyxrtjmbz13mn
+  slug: cardboard
+  slug_aliases: []
+  name: Cardboard
+  domains:
+    - value: cardboard.inc
+      role: primary
+      valid_from: 2026-09-06T19:49:38Z
+  category: other
+profile:
+  description: Cardboard provides software subscription management and procurement tools for businesses.
+  links:
+    site: https://cardboard.inc
+sources:
+  - source_id: src_2ccaeb4a55b7e947192dded88a95cf6d7679a60eb8a92d7ce32bdbf632ef4758
+    url: https://cardboard.inc/pricing/
+offers:
+  - offer_id: off_01m1w3rwzj759yhxgew42thh3b
+    offer_slug: cardboard-for-startups-paid-plan-discount
+    offer_slug_aliases: []
+    title: Cardboard for Startups
+    summary: Cardboard publishes an automatic 80% discount on its paid plans for companies incorporated less than two years ago. The discount runs for one year from signup.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-06T19:49:38Z
+    economics:
+      consideration:
+        kind: discount
+        description: Automatic 80% discount on paid plans for one year from signup.
+    benefits:
+      - benefit_id: ben_primary
+        description: 80% off paid plans for one year from signup
+        kind: discount
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a company incorporated less than two years ago; discount applies automatically upon signup verification.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01m1w3rwykxphtyxrtjmbz13mn
+      access_operator_entity_id: ent_01m1w3rwykxphtyxrtjmbz13mn
+    access:
+      availability: public
+      method: form
+      url: https://cardboard.inc/campaigns/software-subscriptions/
+    source_ids:
+      - src_2ccaeb4a55b7e947192dded88a95cf6d7679a60eb8a92d7ce32bdbf632ef4758

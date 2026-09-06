@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1w3rj61fd3dc49cag9v75pm
+  slug: flawtrack
+  slug_aliases: []
+  name: Flawtrack
+  domains:
+    - value: flawtrack.com
+      role: primary
+      valid_from: 2026-09-06T19:45:10Z
+  category: observability
+profile:
+  description: Flawtrack provides software reliability and error tracking tools for development teams.
+  links:
+    site: https://www.flawtrack.com
+sources:
+  - source_id: src_e749af39fad0f77742d6f58028121307392c317931efa7acf9a5a1422708728d
+    url: https://www.flawtrack.com/segments/startups
+offers:
+  - offer_id: off_01m1w3rj73br9z8vafba7nxfn0
+    offer_slug: flawtrack-funded-startup-discount
+    offer_slug_aliases: []
+    title: Flawtrack Funded Startup Discount
+    summary: The vendor advertises a 90% discount for funded startups at Series A and beyond. Duration and base pricing are not published on the source page.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-06T19:45:10Z
+    economics:
+      consideration:
+        kind: discount
+        description: 90% discount for funded startups at Series A and beyond.
+    benefits:
+      - benefit_id: ben_primary
+        description: 90% discount for Series A and beyond funded startups
+        kind: discount
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a funded startup at Series A or beyond stage.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01m1w3rj61fd3dc49cag9v75pm
+      access_operator_entity_id: ent_01m1w3rj61fd3dc49cag9v75pm
+    access:
+      availability: public
+      method: form
+      url: https://www.flawtrack.com/contact
+    source_ids:
+      - src_e749af39fad0f77742d6f58028121307392c317931efa7acf9a5a1422708728d

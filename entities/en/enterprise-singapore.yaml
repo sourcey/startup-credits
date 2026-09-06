@@ -1,0 +1,53 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1w3rhdnajvn1kfpywg4nm7k
+  slug: enterprise-singapore
+  slug_aliases: []
+  name: Enterprise Singapore
+  domains:
+    - value: enterprisesg.gov.sg
+      role: primary
+      valid_from: 2026-09-06T19:45:10Z
+  category: other
+profile:
+  description: Enterprise Singapore is a government agency supporting Singapore enterprises, promoting entrepreneurship and business growth.
+  links:
+    site: https://www.enterprisesg.gov.sg
+sources:
+  - source_id: src_ef81664c02cde7da07db7d711405406806710228f9d4cc174117760907e0387b
+    url: https://www.startupsg.gov.sg/programmes/4894/startup-sg-founder
+offers:
+  - offer_id: off_01m1w3rhdwe745cgktykx3r67c
+    offer_slug: startup-sg-founder
+    offer_slug_aliases: []
+    title: Startup SG Founder
+    summary: Startup SG Founder is a SGD 20,000-50,000 grant with 1:1 capital co-matching and Accredited Mentor Partner support for eligible first-time Singaporean or permanent-resident founders.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-06T19:45:10Z
+    economics:
+      consideration:
+        kind: grant
+        description: SGD 20,000-50,000 grant with 1:1 capital co-matching.
+    benefits:
+      - benefit_id: ben_primary
+        description: SGD 20,000-50,000 grant with 1:1 capital co-matching
+        kind: grant
+      - benefit_id: ben_02
+        description: Support from an Accredited Mentor Partner
+        kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a first-time Singaporean or permanent-resident founder; additional eligibility criteria are published on the Startup SG Founder page.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01m1w3rhdnajvn1kfpywg4nm7k
+      access_operator_entity_id: ent_01m1w3rhdnajvn1kfpywg4nm7k
+    access:
+      availability: public
+      method: form
+      url: https://www.startupsg.gov.sg/programmes/4894/startup-sg-founder/eligibility
+    source_ids:
+      - src_ef81664c02cde7da07db7d711405406806710228f9d4cc174117760907e0387b

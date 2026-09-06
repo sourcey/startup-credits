@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1w3rq00nj54dr4q70k51z1d
+  slug: imeetify
+  slug_aliases: []
+  name: iMeetify
+  domains:
+    - value: imeetify.com
+      role: primary
+      valid_from: 2026-09-06T19:47:36Z
+  category: communication
+profile:
+  description: iMeetify provides appointment scheduling and meeting management tools for businesses and professionals.
+  links:
+    site: https://www.imeetify.com
+sources:
+  - source_id: src_50262836e7e5769b36d3aa17a6c38c5baac93625f33ba5c8c72697e6b0069013
+    url: https://www.imeetify.com/imeetify-credits-for-startups
+offers:
+  - offer_id: off_01m1w3rq0f13x0g85q8fzww2an
+    offer_slug: imeetify-startup-credits
+    offer_slug_aliases: []
+    title: iMeetify Startup Credits
+    summary: iMeetify publishes a startup-specific offer of USD 1,000 in credits toward its appointment scheduling platform. No credit card or commitment is required; a public application form is available.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-06T19:47:36Z
+    economics:
+      consideration:
+        kind: credits
+        description: USD 1,000 in credits toward the appointment scheduling platform.
+    benefits:
+      - benefit_id: ben_primary
+        description: USD 1,000 in credits toward iMeetify appointment scheduling platform
+        kind: credits
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be an eligible startup and apply through the vendor's public application form; no credit card or commitment required.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01m1w3rq00nj54dr4q70k51z1d
+      access_operator_entity_id: ent_01m1w3rq00nj54dr4q70k51z1d
+    access:
+      availability: public
+      method: form
+      url: https://www.imeetify.com/imeetify-credits-for-startups
+    source_ids:
+      - src_50262836e7e5769b36d3aa17a6c38c5baac93625f33ba5c8c72697e6b0069013

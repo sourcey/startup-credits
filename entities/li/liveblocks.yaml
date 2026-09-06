@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1w3rhnjk9123k0q7rgk5921
+  slug: liveblocks
+  slug_aliases: []
+  name: Liveblocks
+  domains:
+    - value: liveblocks.io
+      role: primary
+      valid_from: 2026-09-06T19:45:10Z
+  category: devtools-other
+profile:
+  description: Liveblocks provides real-time collaboration infrastructure for building multiplayer applications with CRDTs and conflict-free data types.
+  links:
+    site: https://liveblocks.io
+sources:
+  - source_id: src_3ace73d1f69e2e086572b2eda19520018da0eeee7f3c8b6875dcad7be0b4cd0d
+    url: https://liveblocks.io/startups
+offers:
+  - offer_id: off_01m1w3rhnqvh09g5kagd6h2h0a
+    offer_slug: liveblocks-startup-program-discount
+    offer_slug_aliases: []
+    title: Liveblocks Startup Program
+    summary: The Liveblocks startup page advertises a startup program discount with an application form. Specific discount percentage and duration are not published.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-06T19:45:10Z
+    economics:
+      consideration:
+        kind: discount
+        description: Startup program discount; specific terms are not publicly published.
+    benefits:
+      - benefit_id: ben_primary
+        description: Startup program discount (specific terms not published)
+        kind: discount
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be an eligible startup; specific criteria are published on the vendor startup page and evaluated on application.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01m1w3rhnjk9123k0q7rgk5921
+      access_operator_entity_id: ent_01m1w3rhnjk9123k0q7rgk5921
+    access:
+      availability: public
+      method: form
+      url: https://liveblocks.io/startups
+    source_ids:
+      - src_3ace73d1f69e2e086572b2eda19520018da0eeee7f3c8b6875dcad7be0b4cd0d

@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1w3rsm18kdmxmm54ha0zjnj
+  slug: paypercut
+  slug_aliases: []
+  name: Paypercut
+  domains:
+    - value: paypercut.com
+      role: primary
+      valid_from: 2026-09-06T19:47:36Z
+  category: finance-accounting
+profile:
+  description: Paypercut provides payment and transaction services for businesses in Europe.
+  links:
+    site: https://paypercut.com
+sources:
+  - source_id: src_1907a1f06514a59d726dd006717ec20e2ea71afb6db19c765dbbfa9bf8add5fa
+    url: https://paypercut.com/paypercut-for-startups
+offers:
+  - offer_id: off_01m1w3rsm7gk3j4y60zscy4raj
+    offer_slug: paypercut-for-startups
+    offer_slug_aliases: []
+    title: Paypercut for Startups
+    summary: Paypercut for Startups provides eligible early-stage European startups with transaction-fee waivers and reduced pricing for up to 24 months, capped at EUR 10,000 in aggregate fee savings.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-06T19:47:36Z
+    economics:
+      consideration:
+        kind: fee-waiver
+        description: Transaction-fee waivers and reduced pricing for up to 24 months, capped at EUR 10,000 aggregate savings.
+    benefits:
+      - benefit_id: ben_primary
+        description: Transaction-fee waivers and reduced pricing for up to 24 months, capped at EUR 10,000
+        kind: fee-waiver
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be an eligible early-stage European startup; specific criteria are published on the vendor startup page.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01m1w3rsm18kdmxmm54ha0zjnj
+      access_operator_entity_id: ent_01m1w3rsm18kdmxmm54ha0zjnj
+    access:
+      availability: public
+      method: form
+      url: https://paypercut.com/paypercut-for-startups
+    source_ids:
+      - src_1907a1f06514a59d726dd006717ec20e2ea71afb6db19c765dbbfa9bf8add5fa

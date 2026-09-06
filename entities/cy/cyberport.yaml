@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1w3rmnnzpnnjhw8x872jx9q
+  slug: cyberport
+  slug_aliases: []
+  name: Cyberport
+  domains:
+    - value: cyberport.hk
+      role: primary
+      valid_from: 2026-09-06T19:46:00Z
+  category: other
+profile:
+  description: Cyberport is a digital technology hub in Hong Kong supporting tech entrepreneurs and startups with infrastructure, mentorship, and community programs.
+  links:
+    site: https://www.cyberport.hk
+sources:
+  - source_id: src_525507854119df43ea3bea9b1daebc6ff65356006050516474610d03faeec891
+    url: https://www.cyberport.hk/en/entrepreneurship/hong_kong_programme/
+offers:
+  - offer_id: off_01m1w3rmqhajavyw47a3yxtc0p
+    offer_slug: ccmf-hong-kong-programme
+    offer_slug_aliases: []
+    title: Cyberport CCMF Hong Kong Programme
+    summary: A startup-specific cash grant for digital technology projects at the idea or early development stage. The official page lists up to HKD 100,000 over six months, subject to selection and reporting milestones.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-06T19:46:00Z
+    economics:
+      consideration:
+        kind: grant
+        description: Up to HKD 100,000 cash grant over six months for digital technology projects.
+    benefits:
+      - benefit_id: ben_primary
+        description: Up to HKD 100,000 cash grant over six months
+        kind: grant
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be at the idea or early development stage for a digital technology project; individual and company eligibility routes apply; restrictions on overlapping programmes apply.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01m1w3rmnnzpnnjhw8x872jx9q
+      access_operator_entity_id: ent_01m1w3rmnnzpnnjhw8x872jx9q
+    access:
+      availability: public
+      method: form
+      url: https://www.cyberport.hk/en/entrepreneurship/hong_kong_programme/
+    source_ids:
+      - src_525507854119df43ea3bea9b1daebc6ff65356006050516474610d03faeec891

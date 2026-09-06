@@ -1,79 +1,50 @@
 schema_version: sourcey.entity-authoring/v1alpha1
 entity:
-  entity_id: ent_01m1v6swhdrkffwgyep3qsxn2s
+  entity_id: ent_01m1w3rw9h60cqynh2jw8gh4pc
   slug: pylon
   slug_aliases: []
   name: Pylon
   domains:
     - value: usepylon.com
       role: primary
-      valid_from: 2026-09-06T11:14:06.519Z
+      valid_from: 2026-09-06T19:49:38Z
   category: support
 profile:
-  summary: Pylon provides B2B customer support software with AI agents, ticketing, knowledge bases, and support across multiple channels.
-  description: Pylon provides B2B customer support software with AI agents, ticketing, knowledge bases, and support across multiple channels.
+  description: Pylon is a B2B support platform providing helpdesk, customer service, and support operations tools.
   links:
-    site: https://www.usepylon.com/
+    site: https://www.usepylon.com
 sources:
-  - source_id: src_7a7475661d885cdb1aab73305ca564c52dd2d511136005761d955875c9b28837
-    url: https://www.usepylon.com/
-  - source_id: src_63e1ec20a913cbb10619743d0bb78ad21e4aaeb5e189f1ec5c38a78badedf45d
-    url: https://www.brex.com/support/brex-partner-perks
-  - source_id: src_e96fa7e2506e2ca564581c244eb8e510e6292362218d0de08a2c6610e08b3a6a
+  - source_id: src_76a17f6024cd46b532d607dfae5c514c5154c821d53021b26bfd69aa464c190b
     url: https://www.brex.com/dayzerostack
-  - source_id: src_f98677a98aaaf58a2696c90c2c12392dc4d32493645bc1ad4474f204706e56ff
-    url: https://www.usepylon.com/legal/terms
-programs: []
 offers:
-  - offer_id: off_01m1v6swhqpsm17qj1x82qv7pe
-    offer_slug: brex-day-zero-stack-annual-contract-discount
+  - offer_id: off_01m1w3rwa4yqfb4ytc0hmpgs4v
+    offer_slug: pylon-brex-day-zero-stack-discount
     offer_slug_aliases: []
-    title: Brex Day Zero Stack annual-contract discount
-    summary: Eligible Brex cardholders who are new Pylon customers can receive 15% off Pylon annual contracts through the Day Zero Stack partner perk.
+    title: Pylon Annual Contract Discount through Brex Day Zero Stack
+    summary: Brex publicly lists a 15% discount on Pylon annual contracts for new customers. Access is for eligible Brex cardholders through the Brex Day Zero Stack rewards program.
     lifecycle:
       status: active
-      effective_from: 2026-09-06T11:14:06.519Z
+      effective_from: 2026-09-06T19:49:38Z
     economics:
       consideration:
-        kind: variable
-        description: Customers pay Pylon the fees specified in their Order Form.
-      benefits:
-        - benefit_id: ben_annual_contract_discount
-          kind: discount
-          description: 15% off Pylon annual contracts.
-          applies_to: Pylon annual contracts
-          percentage:
-            kind: exact
-            basis_points: 1500
+        kind: discount
+        description: 15% discount on annual contracts.
+    benefits:
+      - benefit_id: ben_primary
+        description: 15% off Pylon annual contracts
+        kind: discount
     eligibility:
       rule:
-        kind: all
-        rules:
-          - criterion_id: cri_new_customer
-            kind: predicate
-            fact: company.is_current_customer
-            operator: eq
-            value:
-              type: boolean
-              value: false
-            statement: New Pylon customers only.
-          - criterion_id: cri_brex_cardholder
-            kind: manual
-            reason: external-verification
-            statement: Must be a Brex cardholder with access to the Pylon partner perk.
-          - criterion_id: cri_account_availability
-            kind: manual
-            reason: external-verification
-            statement: The Pylon perk must still appear in the account's Rewards > Perks and discounts list.
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be an eligible Brex cardholder and new Pylon customer; access is through the Brex Day Zero Stack rewards program.
+        reason: not-machine-evaluable
     roles:
-      terms_authority_entity_id: ent_01m1v6swhdrkffwgyep3qsxn2s
+      terms_authority_entity_id: ent_01m1w3rw9h60cqynh2jw8gh4pc
       access_operator_entity_id: ent_01kyyts97rczvy7tt3n9gd0y3n
     access:
-      availability: membership
-      method: other
-      url: https://www.brex.com/support/brex-partner-perks
-      instructions: A Brex account or card admin, or another user with the required product capability, opens Rewards > Perks and discounts in the dashboard, selects Pylon, reviews any qualification requirements, and follows the displayed redemption instructions.
+      availability: restricted
+      method: partner-code
+      url: https://www.brex.com/dayzerostack
     source_ids:
-      - src_63e1ec20a913cbb10619743d0bb78ad21e4aaeb5e189f1ec5c38a78badedf45d
-      - src_e96fa7e2506e2ca564581c244eb8e510e6292362218d0de08a2c6610e08b3a6a
-      - src_f98677a98aaaf58a2696c90c2c12392dc4d32493645bc1ad4474f204706e56ff
+      - src_76a17f6024cd46b532d607dfae5c514c5154c821d53021b26bfd69aa464c190b
