@@ -1,0 +1,69 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1t6xj9tdgahc772e0rvnx1k
+  slug: laravel
+  slug_aliases: []
+  name: Laravel
+  domains:
+    - value: laravel.com
+      role: primary
+      valid_from: 2026-09-06T01:56:52Z
+  category: hosting-infra
+profile:
+  description: Laravel creates web application frameworks and developer tools, including Laravel Cloud, a managed platform for deploying Laravel applications.
+  links:
+    site: https://laravel.com
+sources:
+  - source_id: src_3d256661b7186fe9a00315b8338b4f11a0ebc90cd5b03bc05cb7c59da969d5ec
+    url: https://startups.aws.com/offers?lang=en-US
+  - source_id: src_9c1df9902b7365d5aa2cb0c1b51f9322e986e9bfd4891080ecfeb8b4a1316d8a
+    url: https://aws.amazon.com/startups/credits?lang=en-US
+  - source_id: src_105574a4857a30c678bdcde50aa802ee2acf7face37430c59646bb7cf12c1e62
+    url: https://laravel.com/cloud
+programs: []
+offers:
+  - offer_id: off_01m1t6xj9yh7cbrdvmvzy92gry
+    offer_slug: laravel-cloud-aws-activate
+    offer_slug_aliases: []
+    title: $300 Laravel Cloud AWS Activate credit
+    summary: AWS Activate startups with a visible business can receive $300 toward Laravel Cloud, a managed one-click deployment platform; live apps with initial customers qualify, while pre-launch startups describe what they are building.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-06T01:56:52Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The public AWS partner offer does not state whether separate payment or another consideration is required.
+      benefits:
+        - benefit_id: ben_primary
+          description: $300 credit toward Laravel Cloud
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 30000
+            kind: exact
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_aws_activate_membership
+            kind: manual
+            reason: external-verification
+            statement: Must be an AWS Activate member to access AWS Activate partner offers.
+          - criterion_id: cri_laravel_visible_business
+            kind: manual
+            reason: external-verification
+            statement: Applicants need a visible business. Live web applications should have some initial customers even if not fully scaled; applicants with a pre-launch startup should explain what they are building.
+    roles:
+      terms_authority_entity_id: ent_01m1t6xj9tdgahc772e0rvnx1k
+      access_operator_entity_id: ent_01kyh8fpe10b164tj935t8k5zb
+    access:
+      availability: membership
+      method: other
+      instructions: Open AWS Activate Offers and use the EASY APPLY control for the gated Laravel Cloud offer.
+      url: https://startups.aws.com/offers
+    source_ids:
+      - src_3d256661b7186fe9a00315b8338b4f11a0ebc90cd5b03bc05cb7c59da969d5ec
+      - src_9c1df9902b7365d5aa2cb0c1b51f9322e986e9bfd4891080ecfeb8b4a1316d8a
+      - src_105574a4857a30c678bdcde50aa802ee2acf7face37430c59646bb7cf12c1e62
