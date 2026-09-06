@@ -10,6 +10,7 @@ entity:
       valid_from: 2026-08-31T06:07:14.949Z
   category: apis-integration
 profile:
+  summary: Unkey provides API deployment, global gateways, and usage monitoring for developers.
   description: Unkey is a developer platform for deploying APIs, routing traffic through global gateways, and understanding usage.
   links:
     site: https://www.unkey.com
