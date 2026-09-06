@@ -1,0 +1,73 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1v8ag3gcf09z2685me31q1p
+  slug: honcho
+  slug_aliases: []
+  name: Honcho
+  domains:
+    - value: honcho.dev
+      role: primary
+      valid_from: 2026-09-06T11:40:00.000Z
+  category: ai-ml
+profile:
+  summary: Honcho provides memory and reasoning infrastructure for stateful AI agents.
+  description: Honcho stores interactions and builds context for AI agents through memory and reasoning APIs.
+  links:
+    site: https://honcho.dev/
+sources:
+  - source_id: src_9afc3906602245307cffa767bac78c56
+    url: https://honcho.dev/
+programs: []
+offers:
+  - offer_id: off_01m1v8ag3hvcr5yffv740e9tnk
+    offer_slug: startup-credits-and-subsidized-pricing
+    offer_slug_aliases: []
+    title: Honcho startup credits and subsidized pricing
+    summary: Startups with less than USD 5 million raised can apply for USD 1,000 in credits, 12 months of subsidized pricing, and integration support.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-06T11:40:00.000Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The public startup offer does not specify separate consideration.
+      benefits:
+        - benefit_id: ben_credits
+          description: USD 1,000 in Honcho credits.
+          kind: credit
+          value:
+            kind: exact
+            amount:
+              currency: USD
+              minor_units: 100000
+        - benefit_id: ben_pricing
+          description: Twelve months of subsidized pricing; the subsidy rate is not published.
+          kind: other
+        - benefit_id: ben_support
+          description: Integration support.
+          kind: other
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_startup
+            kind: manual
+            reason: not-machine-evaluable
+            statement: Applicant must be a startup.
+          - criterion_id: cri_funding
+            fact: company.funding_raised_usd
+            kind: predicate
+            operator: lt
+            statement: Startup has raised less than USD 5 million.
+            value:
+              type: number
+              value: 5000000
+    roles:
+      terms_authority_entity_id: ent_01m1v8ag3gcf09z2685me31q1p
+      access_operator_entity_id: ent_01m1v8ag3gcf09z2685me31q1p
+    access:
+      availability: public
+      method: form
+      url: https://honcho.dev/
+    source_ids:
+      - src_9afc3906602245307cffa767bac78c56
