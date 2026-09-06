@@ -1,0 +1,72 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1vhy0gaag11grf7eam85cxr
+  slug: hopohopo
+  slug_aliases: []
+  name: Hopohopo
+  domains:
+    - value: hopohopo.io
+      role: primary
+      valid_from: 2026-09-06T00:00:00.000Z
+  category: crm-sales
+profile:
+  description: Hopohopo provides fundraising CRM software for startups and portfolio-management tools for investors and accelerators.
+  summary: Hopohopo helps startups find investors and manage fundraising pipelines, with collaboration tools for their investors and mentors.
+  links:
+    site: https://www.hopohopo.io/
+sources:
+  - source_id: src_315c827087bda84477da46d283e8fd3a535d7701c1ff2d82f39118a4fadc5ca9
+    url: https://www.hopohopo.io/partner-program-welcome
+  - source_id: src_072a98faccae997b9e862073987364a3f32ba06c5a28b69bc014caf291cc6033
+    url: https://www.hopohopo.io/
+  - source_id: src_46404659ab7939d6c748694626ca2a2afcb719f7a75665a103f8971071e166e6
+    url: https://www.hopohopo.io/terms-of-service
+programs:
+  - program_id: prg_01m1vhy0gbstayzr68bywd7j99
+    program_slug: hopohopo-partner-program
+    program_slug_aliases: []
+    title: Hopohopo Partner Program
+    summary: Investors and accelerators can provide a one-year CRM discount to startups in their portfolios.
+    source_ids:
+      - src_315c827087bda84477da46d283e8fd3a535d7701c1ff2d82f39118a4fadc5ca9
+offers:
+  - offer_id: off_01m1vhy0gb8a8ka7yrdkv945qa
+    program_id: prg_01m1vhy0gbstayzr68bywd7j99
+    offer_slug: portfolio-startup-pro-discount
+    offer_slug_aliases: []
+    title: Hopohopo portfolio startup discount
+    summary: Startups in participating portfolios receive 50% off the Hopohopo CRM Pro Plan for one year.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-06T00:00:00.000Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_01m1vhy0gby2036gn1nk0wvyks
+          description: 50% discount on the Hopohopo CRM Pro Plan for one year.
+          duration:
+            kind: exact
+            value: P1Y
+          kind: discount
+          percentage:
+            basis_points: 5000
+            kind: exact
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_hopohopo_portfolio_membership
+        statement: Startup belongs to an investor or accelerator portfolio participating in the Hopohopo Partner Program; Hopohopo confirms eligibility.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01m1vhy0gaag11grf7eam85cxr
+      access_operator_entity_id: ent_01m1vhy0gaag11grf7eam85cxr
+    access:
+      availability: membership
+      method: code
+      public_code: PORTFOLIO50
+      url: https://www.hopohopo.io/partner-program-welcome
+      instructions: Confirm portfolio eligibility with Hopohopo, then redeem through the participating partner's invitation using PORTFOLIO50.
+    source_ids:
+      - src_315c827087bda84477da46d283e8fd3a535d7701c1ff2d82f39118a4fadc5ca9
+      - src_46404659ab7939d6c748694626ca2a2afcb719f7a75665a103f8971071e166e6
