@@ -1,0 +1,85 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1v7h1jxeaazykqbp0rrkmej
+  slug: coefficient
+  slug_aliases: []
+  name: Coefficient
+  domains:
+    - value: coefficient.io
+      role: primary
+      valid_from: 2026-09-06T11:26:00.000Z
+  category: data-analytics
+profile:
+  description: Coefficient connects live business data to Google Sheets and Excel for reporting, dashboards, and automated workflows.
+  summary: Coefficient connects business systems to Google Sheets and Excel so teams can report on live data and automate spreadsheet workflows.
+  links:
+    site: https://coefficient.io/
+sources:
+  - source_id: src_62f47a0f9c2271c4509aa0b2e5e87d163ed9449576f443daea05fee31ddb626f
+    url: https://coefficient.io/pricing
+  - source_id: src_a821a0bdc2b2ef7699d642e4dce21e28d9ae8f9d7f0f49ec2e855547d093088d
+    url: https://coefficient.io/startup
+programs:
+  - program_id: prg_01m1v7h1k2wgsd207s8m7zq1j9
+    program_slug: coefficient-for-startups
+    program_slug_aliases: []
+    title: Coefficient for Startups
+    summary: Coefficient offers a first-year subscription discount to qualifying early-stage startups.
+    source_ids:
+      - src_62f47a0f9c2271c4509aa0b2e5e87d163ed9449576f443daea05fee31ddb626f
+      - src_a821a0bdc2b2ef7699d642e4dce21e28d9ae8f9d7f0f49ec2e855547d093088d
+offers:
+  - offer_id: off_01m1v7h1k2dmfr5grdefvcz32d
+    program_id: prg_01m1v7h1k2wgsd207s8m7zq1j9
+    offer_slug: first-year-startup-discount
+    offer_slug_aliases: []
+    title: Up to 50% off Coefficient for the first year
+    summary: Eligible startups can receive up to 50% off Coefficient for their first year.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-06T11:26:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_first_year
+          description: Up to 50% off for the first year
+          kind: discount
+          percentage:
+            kind: up-to
+            basis_points: 5000
+          duration:
+            kind: exact
+            value: P1Y
+      consideration:
+        kind: variable
+        description: Purchase a Coefficient subscription at the approved startup discount; the amount due depends on the plan and discount granted.
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_funding
+            kind: predicate
+            fact: company.funding_raised_usd
+            operator: lte
+            value:
+              type: number
+              value: 20000000
+            statement: The startup has raised no more than $20 million.
+          - criterion_id: cri_stage
+            kind: manual
+            reason: external-verification
+            statement: The startup is bootstrapped, angel-funded, debt-funded, pre-seed, seed, or Series A.
+          - criterion_id: cri_employees
+            kind: manual
+            reason: external-verification
+            statement: The startup has 25 or fewer full-time employees.
+    roles:
+      terms_authority_entity_id: ent_01m1v7h1jxeaazykqbp0rrkmej
+      access_operator_entity_id: ent_01m1v7h1jxeaazykqbp0rrkmej
+    access:
+      availability: public
+      method: form
+      url: https://coefficient.io/startup
+    terms_url: https://coefficient.io/startup
+    source_ids:
+      - src_62f47a0f9c2271c4509aa0b2e5e87d163ed9449576f443daea05fee31ddb626f
+      - src_a821a0bdc2b2ef7699d642e4dce21e28d9ae8f9d7f0f49ec2e855547d093088d
