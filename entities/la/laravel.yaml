@@ -62,7 +62,7 @@ offers:
       availability: membership
       method: other
       instructions: Open AWS Activate Offers and use the EASY APPLY control for the gated Laravel Cloud offer.
-      url: https://startups.aws.com/offers
+      url: https://startups.aws.com/offers?lang=en-US
     source_ids:
       - src_3d256661b7186fe9a00315b8338b4f11a0ebc90cd5b03bc05cb7c59da969d5ec
       - src_9c1df9902b7365d5aa2cb0c1b51f9322e986e9bfd4891080ecfeb8b4a1316d8a
