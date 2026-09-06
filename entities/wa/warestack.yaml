@@ -1,0 +1,106 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1vzyawafvw3qtfcccdd6t24
+  slug: warestack
+  slug_aliases: []
+  name: Warestack
+  domains:
+    - value: warestack.com
+      role: primary
+      valid_from: 2026-09-06T18:33:26.000Z
+  category: devtools-other
+profile:
+  description: Warestack provides engineering delivery governance for GitHub organizations through delivery signals, reports, and deterministic pull-request rules.
+  summary: Warestack helps engineering teams monitor delivery risk, report on development activity, and enforce deterministic governance rules across GitHub repositories.
+  links:
+    site: https://www.warestack.com/
+sources:
+  - source_id: src_eec46e8ebeb7ba077e3db484728ee3c0ba51131051eeeaccd448e0767ee36be9
+    url: https://www.warestack.com/
+  - source_id: src_eec5fef7c4a546a59540bacb052aac53f4d44f53af1a78be53e37c15d2f94b05
+    url: https://www.warestack.com/startup-program
+programs:
+  - program_id: prg_01m1vzyawepeegvhex90cac91q
+    program_slug: warestack-startup-program
+    program_slug_aliases: []
+    title: Warestack Startup Program
+    summary: Warestack gives qualifying startups six months of its Starter plan at no cost, with published usage limits and savings of up to $2,000.
+    source_ids:
+      - src_eec5fef7c4a546a59540bacb052aac53f4d44f53af1a78be53e37c15d2f94b05
+offers:
+  - offer_id: off_01m1vzyawe43face2jhnw6qknn
+    program_id: prg_01m1vzyawepeegvhex90cac91q
+    offer_slug: starter-plan-free-for-six-months
+    offer_slug_aliases: []
+    title: Warestack Starter plan free for six months
+    summary: Eligible startups receive Warestack's Starter plan free for six months, with up to five repositories, 250 monthly pull requests, ten team members, 30 governance rules, and savings up to $2,000.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-06T18:33:26.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Six months of the Warestack Starter plan at no cost
+          duration:
+            kind: exact
+            value: P6M
+          kind: free-service
+          service: Warestack Starter plan
+        - benefit_id: ben_02
+          description: Up to $2,000 in savings during the six-month program period
+          kind: other
+        - benefit_id: ben_03
+          description: Starter plan usage for up to five repositories, 250 pull requests per month, and one team of up to ten members
+          kind: other
+        - benefit_id: ben_04
+          description: Access to 30 governance rules, natural-language querying, and four scheduled reports per month
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.age_months
+            kind: predicate
+            operator: lt
+            statement: The company must be less than five years old.
+            value:
+              type: number
+              value: 60
+          - criterion_id: cri_02
+            kind: manual
+            statement: The company must have less than $2 million in combined funding or revenue.
+            reason: external-verification
+          - criterion_id: cri_03
+            fact: company.employee_count
+            kind: predicate
+            operator: lt
+            statement: The company must have fewer than 50 employees.
+            value:
+              type: number
+              value: 50
+          - criterion_id: cri_04
+            fact: company.is_current_customer
+            kind: predicate
+            operator: eq
+            statement: The company must not be a current paying Warestack customer.
+            value:
+              type: boolean
+              value: false
+          - criterion_id: cri_05
+            kind: manual
+            statement: The application must use a work email rather than a personal email address.
+            reason: external-verification
+    roles:
+      terms_authority_entity_id: ent_01m1vzyawafvw3qtfcccdd6t24
+      access_operator_entity_id: ent_01m1vzyawafvw3qtfcccdd6t24
+    access:
+      availability: public
+      instructions: Apply with a company name, work email, company website, country, funding stage, and team size; applications are typically reviewed within three to five business days.
+      method: form
+      url: https://www.warestack.com/startup-program
+    terms_url: https://www.warestack.com/startup-program
+    source_ids:
+      - src_eec5fef7c4a546a59540bacb052aac53f4d44f53af1a78be53e37c15d2f94b05
