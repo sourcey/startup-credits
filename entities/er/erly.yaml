@@ -34,7 +34,7 @@ offers:
     economics:
       consideration:
         kind: variable
-        description: Purchase an erly WORKR Premium or Premium+ subscription at the discounted price.
+        description: Subscription fees are charged monthly and depend on the package and staff count.
       benefits:
         - benefit_id: ben_workr_startup_discount
           kind: discount
@@ -69,7 +69,7 @@ offers:
       availability: public
       method: form
       url: https://erly.app/register/
-      instructions: Register for erly, then contact the vendor to request the startup discount for a Premium or Premium+ subscription.
+      instructions: Register for erly, then contact the vendor to request the startup discount.
     source_ids:
       - src_70890f6e078088e223da95e2394d79777fefc702536ad3537c1e6b606dabce43
       - src_4a29b8afaa8bc1c36bda67afa86e96b6b033dd9519f6da8d83d171a3086d126c
