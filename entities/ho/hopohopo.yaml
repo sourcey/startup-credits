@@ -41,7 +41,8 @@ offers:
       effective_from: 2026-09-06T00:00:00.000Z
     economics:
       consideration:
-        kind: none
+        kind: unknown
+        description: The offer discounts the Pro Plan subscription; the cited partner page does not specify the remaining subscription amount.
       benefits:
         - benefit_id: ben_01m1vhy0gby2036gn1nk0wvyks
           description: 50% discount on the Hopohopo CRM Pro Plan for one year.
