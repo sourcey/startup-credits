@@ -49,11 +49,6 @@ offers:
           duration:
             kind: exact
             value: P3M
-          value:
-            amount:
-              currency: USD
-              minor_units: 60000
-            kind: exact
     eligibility:
       rule:
         kind: all
