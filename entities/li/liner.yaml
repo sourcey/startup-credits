@@ -10,6 +10,7 @@ entity:
       valid_from: 2026-08-28T08:31:00Z
   category: ai-ml
 profile:
+  summary: Liner provides AI-powered web and academic search, cited research tools, and developer APIs for search and research applications.
   description: Liner provides web and academic search, cited research agents, and developer APIs for search and research applications.
   links:
     site: https://liner.com
