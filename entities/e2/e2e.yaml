@@ -1,0 +1,76 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1trhb2b063p4q4f8wja007s
+  slug: e2e
+  slug_aliases: []
+  name: E2E Networks
+  domains:
+    - value: e2enetworks.com
+      role: primary
+      valid_from: 2026-09-06T00:00:00.000Z
+  category: hosting-infra
+profile:
+  description: E2E Networks is an Indian cloud infrastructure provider offering GPU compute, bare metal servers, and cloud hosting services.
+  links:
+    site: https://www.e2enetworks.com
+sources:
+  - source_id: src_01m1trhb7hn3bnsj9fc6p717jn
+    url: https://www.e2enetworks.com/meity-startup
+programs:
+  - program_id: ent_01m1trhb2j8g8ybg15mme45tc4
+    program_slug: meity-startup
+    program_slug_aliases: []
+    title: MeitY Startup Program
+    summary: MeitY-supported cloud credits and technical support for early-stage Indian tech startups.
+    source_ids:
+      - src_01m1trhb7hn3bnsj9fc6p717jn
+offers:
+  - offer_id: ent_01m1trhb2ks3vwdvjmdm8b4wvf
+    program_id: ent_01m1trhb2j8g8ybg15mme45tc4
+    offer_slug: meity-startup-credits
+    offer_slug_aliases: []
+    title: E2E Cloud for MeitY Startups
+    summary: Portfolio startups in the E2E Cloud for MeitY Startups program receive INR 20,000 in free cloud credits, with technical support and training.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-06T00:00:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: INR 20,000 in free cloud credits
+          kind: credit
+          value:
+            amount:
+              currency: INR
+              minor_units: 2000000
+            kind: fixed
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        fact: company.nationality
+        kind: predicate
+        operator: eq
+        statement: Must be an Indian startup registered with MeitY
+        value:
+          type: string
+          value: India
+      criteria:
+        - criterion_id: cri_01
+          fact: company.registration
+          kind: predicate
+          operator: eq
+          statement: Must be a MeitY-registered startup
+          value:
+            type: string
+            value: meity-startup
+    roles:
+      terms_authority_entity_id: ent_01m1trhb2b063p4q4f8wja007s
+      access_operator_entity_id: ent_01m1trhb2b063p4q4f8wja007s
+    access:
+      availability: application-required
+      method: form
+      url: https://www.e2enetworks.com/meity-startup
+    source_ids:
+      - src_01m1trhb7hn3bnsj9fc6p717jn

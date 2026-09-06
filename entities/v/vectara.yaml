@@ -1,0 +1,64 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_420252b9605142cea080ccc6
+  slug: vectara
+  slug_aliases: []
+  name: Vectara
+  domains:
+  - value: vectara.com
+    role: primary
+    valid_from: '2026-09-06T07:03:13.224Z'
+  category: startup-program
+profile:
+  description: Vectara offers startups credits, discounts, tailored onboarding and
+    support, plus co-marketing and go-to-market alignment through its Startup Partnerships
+    program.
+  links:
+    site: https://vectara.com
+sources:
+- source_id: src_47b5f51e48c06e935630264f45905ac84051bc483d09f793
+  url: https://www.vectara.com/startups
+programs:
+- program_id: prg_dfdf0067022440a6b175adde
+  program_slug: vectara-startup-program
+  program_slug_aliases: []
+  title: Vectara Startup Program
+  summary: Vectara offers startups credits, discounts, tailored onboarding and support,
+    plus co-marketing and go-to-market alignment through its Startup Partnerships
+    program.
+  source_ids:
+  - src_47b5f51e48c06e935630264f45905ac84051bc483d09f793
+offers:
+- offer_id: off_0b9483d3a9b54d0b8f6bd9b3
+  program_id: prg_dfdf0067022440a6b175adde
+  offer_slug: vectara-startup-discount
+  offer_slug_aliases: []
+  title: Vectara startup discount
+  summary: Vectara offers startups credits, discounts, tailored onboarding and support,
+    plus co-marketing and go-to-market alignment through its Startup Partnerships
+    program.
+  lifecycle:
+    status: active
+    effective_from: '2026-09-06T07:03:13.224Z'
+  economics:
+    consideration:
+      kind: none
+    benefits:
+    - benefit_id: ben_01
+      description: Startup program benefits as published by vendor.
+      kind: other
+  eligibility:
+    rule:
+      kind: manual
+      criterion_id: cri_01
+      statement: Contact Vectara for eligibility requirements.
+      reason: vendor-discretion
+  roles:
+    terms_authority_entity_id: ent_420252b9605142cea080ccc6
+    access_operator_entity_id: ent_420252b9605142cea080ccc6
+  access:
+    availability: public
+    method: form
+    url: https://www.vectara.com/startups
+  source_ids:
+  - src_47b5f51e48c06e935630264f45905ac84051bc483d09f793

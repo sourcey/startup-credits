@@ -1,0 +1,64 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_7d5544947ced4d0283afc0f8
+  slug: liveblocks
+  slug_aliases: []
+  name: Liveblocks
+  domains:
+  - value: liveblocks.io
+    role: primary
+    valid_from: '2026-09-06T07:03:13.371Z'
+  category: startup-program
+profile:
+  description: The current Liveblocks startup page advertises a startup program discount
+    and provides an application form. It does not publish a discount percentage or
+    duration, so the record should preserve those u
+  links:
+    site: https://liveblocks.io
+sources:
+- source_id: src_e53c380bf63bdc61773c57a6e9bdaebf040df88cd33c3444
+  url: https://liveblocks.io/startups
+programs:
+- program_id: prg_41015e5d87e34aa794c5d7eb
+  program_slug: liveblocks-startup-program
+  program_slug_aliases: []
+  title: Liveblocks Startup Program
+  summary: The current Liveblocks startup page advertises a startup program discount
+    and provides an application form. It does not publish a discount percentage or
+    duration, so the record should preserve those u
+  source_ids:
+  - src_e53c380bf63bdc61773c57a6e9bdaebf040df88cd33c3444
+offers:
+- offer_id: off_ac1a2d4e32c14fdc96c7eb86
+  program_id: prg_41015e5d87e34aa794c5d7eb
+  offer_slug: liveblocks-startup-discount
+  offer_slug_aliases: []
+  title: Liveblocks startup discount
+  summary: The current Liveblocks startup page advertises a startup program discount
+    and provides an application form. It does not publish a discount percentage or
+    duration, so the record should preserve those unknowns.
+  lifecycle:
+    status: active
+    effective_from: '2026-09-06T07:03:13.371Z'
+  economics:
+    consideration:
+      kind: none
+    benefits:
+    - benefit_id: ben_01
+      description: Startup program benefits as published by vendor.
+      kind: other
+  eligibility:
+    rule:
+      kind: manual
+      criterion_id: cri_01
+      statement: Contact Liveblocks for eligibility requirements.
+      reason: vendor-discretion
+  roles:
+    terms_authority_entity_id: ent_7d5544947ced4d0283afc0f8
+    access_operator_entity_id: ent_7d5544947ced4d0283afc0f8
+  access:
+    availability: public
+    method: form
+    url: https://liveblocks.io/startups
+  source_ids:
+  - src_e53c380bf63bdc61773c57a6e9bdaebf040df88cd33c3444

@@ -1,0 +1,84 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1trhbygggzxpj4dzyvfdjn7
+  slug: cms
+  slug_aliases: []
+  name: CMS Reich-Rohrwig Hainz
+  domains:
+    - value: cms.law
+      role: primary
+      valid_from: 2026-09-06T00:00:00.000Z
+  category: legal-services
+profile:
+  description: CMS Reich-Rohrwig Hainz is an Austrian law firm offering legal services for businesses, including a startup-focused program providing discounted legal rates.
+  links:
+    site: https://cms.law/en/aut
+sources:
+  - source_id: src_01m1trhc4adysh5mnymjy20aqd
+    url: https://cms.law/en/aut/insight/start-ups/cms-equip-membership
+programs:
+  - program_id: ent_01m1trhbznb46p2xrmas31snr3
+    program_slug: equip-austria
+    program_slug_aliases: []
+    title: CMS equIP Austria
+    summary: Legal services program offering discounted rates for qualifying startups in Austria.
+    source_ids:
+      - src_01m1trhc4adysh5mnymjy20aqd
+offers:
+  - offer_id: ent_01m1trhbzpvh5eg3qeadxvgddq
+    program_id: ent_01m1trhbznb46p2xrmas31snr3
+    offer_slug: equip-austria-startup
+    offer_slug_aliases: []
+    title: CMS equIP Austria Startup Program
+    summary: Accepted startup members receive 50% off standard hourly legal rates for three years, up to EUR 25,000 discount per year.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-06T00:00:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 50% off standard hourly legal rates
+          kind: discount
+          value:
+            percentage: 50
+            description: 50% discount on standard hourly rates
+        - benefit_id: ben_02
+          description: Up to EUR 25,000 discount per year
+          kind: discount
+          value:
+            kind: cap
+            cap:
+              amount:
+                currency: EUR
+                minor_units: 2500000
+              period: annual
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        fact: company.location
+        kind: predicate
+        operator: eq
+        statement: Must be a startup based or operating in Austria
+        value:
+          type: string
+          value: AT
+      criteria:
+        - criterion_id: cri_01
+          fact: company.type
+          kind: predicate
+          operator: eq
+          statement: Must be a qualifying startup
+          value:
+            type: string
+            value: startup
+    roles:
+      terms_authority_entity_id: ent_01m1trhbygggzxpj4dzyvfdjn7
+      access_operator_entity_id: ent_01m1trhbygggzxpj4dzyvfdjn7
+    access:
+      availability: application-required
+      method: form
+      url: https://cms.law/en/aut/insight/start-ups/cms-equip-membership
+    source_ids:
+      - src_01m1trhc4adysh5mnymjy20aqd

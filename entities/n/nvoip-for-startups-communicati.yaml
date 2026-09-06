@@ -1,0 +1,66 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_69912497d154405087f03207
+  slug: nvoip-for-startups-communicati
+  slug_aliases: []
+  name: Nvoip for Startups communication discount
+  domains:
+  - value: nvoip.com.br
+    role: primary
+    valid_from: '2026-09-06T07:03:13.677Z'
+  category: startup-program
+profile:
+  description: Nvoip's English-language startup program page offers discounts on its
+    communication plans for startups connected with Nvoip partner hubs. The current
+    page advertises up to 90% off, with the benefit de
+  links:
+    site: https://nvoip.com.br
+sources:
+- source_id: src_b34e6af2567d27539c5da70343e6d190bd094bb577eeab11
+  url: https://www.nvoip.com.br/en/nvoip-for-startups/
+programs:
+- program_id: prg_3d13f6be30d743028f10e676
+  program_slug: nvoip-for-startups-communicati-startup-program
+  program_slug_aliases: []
+  title: Nvoip for Startups communication discount Startup Program
+  summary: Nvoip's English-language startup program page offers discounts on its communication
+    plans for startups connected with Nvoip partner hubs. The current page advertises
+    up to 90% off, with the benefit de
+  source_ids:
+  - src_b34e6af2567d27539c5da70343e6d190bd094bb577eeab11
+offers:
+- offer_id: off_37391a6b8da94a2e9dc93782
+  program_id: prg_3d13f6be30d743028f10e676
+  offer_slug: nvoip-for-startups-communicati-startup-discount
+  offer_slug_aliases: []
+  title: Nvoip for Startups communication discount startup discount
+  summary: Nvoip's English-language startup program page offers discounts on its communication
+    plans for startups connected with Nvoip partner hubs. The current page advertises
+    up to 90% off, with the benefit dependent on startup maturity and lasting up to
+    two years.
+  lifecycle:
+    status: active
+    effective_from: '2026-09-06T07:03:13.677Z'
+  economics:
+    consideration:
+      kind: none
+    benefits:
+    - benefit_id: ben_01
+      description: Startup program benefits as published by vendor.
+      kind: other
+  eligibility:
+    rule:
+      kind: manual
+      criterion_id: cri_01
+      statement: Contact Nvoip for Startups communication discount for eligibility
+        requirements.
+      reason: vendor-discretion
+  roles:
+    terms_authority_entity_id: ent_69912497d154405087f03207
+    access_operator_entity_id: ent_69912497d154405087f03207
+  access:
+    availability: public
+    method: form
+    url: https://www.nvoip.com.br/en/nvoip-for-startups/
+  source_ids:
+  - src_b34e6af2567d27539c5da70343e6d190bd094bb577eeab11

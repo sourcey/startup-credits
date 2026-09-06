@@ -1,0 +1,52 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_E9aoTB4dKKhXcIPdA63Hz
+  slug: layer-pr
+  slug_aliases: []
+  name: Layer PR
+  domains:
+  - value: layerpr.com
+    role: primary
+    valid_from: '2026-09-06 00:00:00+00:00'
+  category: marketing-sales
+profile:
+  description: Layer PR provides public relations and communications services for
+    startups.
+  links:
+    site: https://layerpr.com
+sources:
+- source_id: src_931c8d56588c7e19e2d6e16006f5f941035dc2a4
+  url: https://layerpr.com/startup-program/
+programs: []
+offers:
+- offer_id: off_funG56P9-IRuocFfZgRSk
+  offer_slug: layer-pr-startup-program
+  offer_slug_aliases: []
+  title: Layer PR Startup Program
+  summary: Layer PR offers qualifying revenue-generating startups up to 50% off invoices
+    during its one-year program.
+  lifecycle:
+    status: active
+    effective_from: '2026-09-06 00:00:00+00:00'
+  economics:
+    benefits:
+    - benefit_id: ben_01
+      description: Up to 50% off PR service invoices during the one-year program
+      kind: discount
+    consideration:
+      kind: none
+  eligibility:
+    rule:
+      kind: manual
+      criterion_id: cri_01
+      statement: Revenue-generating startups; qualification required.
+      reason: not-machine-evaluable
+  roles:
+    terms_authority_entity_id: ent_E9aoTB4dKKhXcIPdA63Hz
+    access_operator_entity_id: ent_E9aoTB4dKKhXcIPdA63Hz
+  access:
+    availability: public
+    method: form
+    url: https://layerpr.com/startup-program/
+  source_ids:
+  - src_931c8d56588c7e19e2d6e16006f5f941035dc2a4

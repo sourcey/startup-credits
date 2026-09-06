@@ -1,0 +1,59 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_xfZUXo4iXt_V9-gRpj-dE
+  slug: enterprise-ireland
+  slug_aliases: []
+  name: Enterprise Ireland
+  domains:
+  - value: enterprise-ireland.com
+    role: primary
+    valid_from: '2026-09-06 00:00:00+00:00'
+  category: government
+profile:
+  description: Enterprise Ireland is the Irish government organisation responsible
+    for the development and growth of Irish enterprises in world markets.
+  links:
+    site: https://www.enterprise-ireland.com
+sources:
+- source_id: src_407b2e000115e57ae81b42796f5ebc059a9a02f6
+  url: https://www.newfrontiers.ie/about
+programs: []
+offers:
+- offer_id: off_DOafBmlqP8UXFt-9JPtUe
+  offer_slug: new-frontiers-phase-2
+  offer_slug_aliases: []
+  title: New Frontiers Phase 2
+  summary: Enterprise Ireland New Frontiers Phase 2 is a six-month program providing
+    a EUR 17,500 allowance to eligible early-stage entrepreneurs, subject to programme
+    participation and performance requirements.
+  lifecycle:
+    status: active
+    effective_from: '2026-09-06 00:00:00+00:00'
+  economics:
+    benefits:
+    - benefit_id: ben_01
+      description: EUR 17,500 allowance over six months
+      kind: grant
+      value:
+        amount:
+          currency: EUR
+          minor_units: 17500
+        kind: at-least
+    consideration:
+      kind: none
+  eligibility:
+    rule:
+      kind: manual
+      criterion_id: cri_01
+      statement: Early-stage entrepreneurs meeting Enterprise Ireland New Frontiers
+        Phase 2 eligibility criteria.
+      reason: not-machine-evaluable
+  roles:
+    terms_authority_entity_id: ent_xfZUXo4iXt_V9-gRpj-dE
+    access_operator_entity_id: ent_xfZUXo4iXt_V9-gRpj-dE
+  access:
+    availability: public
+    method: form
+    url: https://www.newfrontiers.ie/register
+  source_ids:
+  - src_407b2e000115e57ae81b42796f5ebc059a9a02f6

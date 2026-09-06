@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_wmktKmMkGj8KBHhCBKV0e
+  slug: soax
+  slug_aliases: []
+  name: SOAX
+  domains:
+  - value: soax.com
+    role: primary
+    valid_from: '2026-09-06 00:00:00+00:00'
+  category: developer-tools
+profile:
+  description: SOAX provides proxy and web scraping infrastructure services.
+  links:
+    site: https://www.soax.com
+sources:
+- source_id: src_269dcfead9f6dc33e718da7696d9d8e32f4ff575
+  url: https://www.soax.com/pricing/startups
+programs: []
+offers:
+- offer_id: off_9eOe2lEXKTyVUsp_jpPPD
+  offer_slug: soax-startup-discount
+  offer_slug_aliases: []
+  title: SOAX Startup Discount
+  summary: SOAX offers eligible startups 50% off Enterprise plans.
+  lifecycle:
+    status: active
+    effective_from: '2026-09-06 00:00:00+00:00'
+  economics:
+    benefits:
+    - benefit_id: ben_01
+      description: 50% off Enterprise plans
+      kind: discount
+    consideration:
+      kind: none
+  eligibility:
+    rule:
+      kind: manual
+      criterion_id: cri_01
+      statement: Eligible startups.
+      reason: not-machine-evaluable
+  roles:
+    terms_authority_entity_id: ent_wmktKmMkGj8KBHhCBKV0e
+    access_operator_entity_id: ent_wmktKmMkGj8KBHhCBKV0e
+  access:
+    availability: public
+    method: form
+    url: https://www.soax.com/pricing/startups
+  source_ids:
+  - src_269dcfead9f6dc33e718da7696d9d8e32f4ff575

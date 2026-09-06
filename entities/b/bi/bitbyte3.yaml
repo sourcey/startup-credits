@@ -1,0 +1,53 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_AHjxUmUR9a7kgv2gd6qbN
+  slug: bitbyte3
+  slug_aliases: []
+  name: BitByte3
+  domains:
+  - value: bitbyte3.com
+    role: primary
+    valid_from: '2026-09-06 00:00:00+00:00'
+  category: developer-tools
+profile:
+  description: BitByte3 provides development and automation tools for technical teams.
+  links:
+    site: https://bitbyte3.com
+sources:
+- source_id: src_59b503c47b453ec94403322e3f0d1263a3c259ee
+  url: https://bitbyte3.com/solutions/startups
+programs: []
+offers:
+- offer_id: off_F3Li0DLgbQ3siI1Na_M_9
+  offer_slug: bitbyte3-first-year-startup-discount
+  offer_slug_aliases: []
+  title: BitByte3 First-Year Startup Discount
+  summary: BitByte3 publishes a startup-specific 25% discount for the first year on
+    Starter, Growth, or Business plans, available with monthly or yearly billing,
+    subject to review.
+  lifecycle:
+    status: active
+    effective_from: '2026-09-06 00:00:00+00:00'
+  economics:
+    benefits:
+    - benefit_id: ben_01
+      description: 25% discount for the first year on Starter, Growth, or Business
+        plans
+      kind: discount
+    consideration:
+      kind: none
+  eligibility:
+    rule:
+      kind: manual
+      criterion_id: cri_01
+      statement: Eligible startups on BitByte3 startup plans.
+      reason: not-machine-evaluable
+  roles:
+    terms_authority_entity_id: ent_AHjxUmUR9a7kgv2gd6qbN
+    access_operator_entity_id: ent_AHjxUmUR9a7kgv2gd6qbN
+  access:
+    availability: public
+    method: form
+    url: https://bitbyte3.com/solutions/startups
+  source_ids:
+  - src_59b503c47b453ec94403322e3f0d1263a3c259ee

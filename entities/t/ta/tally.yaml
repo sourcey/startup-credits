@@ -1,0 +1,54 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_69Bc15UApLCo22sWHeCss
+  slug: tally
+  slug_aliases: []
+  name: Tally
+  domains:
+  - value: tally.so
+    role: primary
+    valid_from: '2026-09-06 00:00:00+00:00'
+  category: productivity
+profile:
+  description: Tally provides an online form builder that helps teams collect and
+    manage data.
+  links:
+    site: https://tally.so
+sources:
+- source_id: src_affb385ae2a6415e514df457c112bdb128b982d7
+  url: https://tally.so/r/kwoOVw
+programs: []
+offers:
+- offer_id: off_T6Yogi68euEzbmJ2imHLG
+  offer_slug: tally-for-startups
+  offer_slug_aliases: []
+  title: Tally for Startups
+  summary: Tally publishes a startup-specific offer of 50% off Tally Pro for one year,
+    available through its Partner Program for eligible startups with no previous paid
+    subscription.
+  lifecycle:
+    status: active
+    effective_from: '2026-09-06 00:00:00+00:00'
+  economics:
+    benefits:
+    - benefit_id: ben_01
+      description: 50% off Tally Pro for one year
+      kind: discount
+    consideration:
+      kind: none
+  eligibility:
+    rule:
+      kind: manual
+      criterion_id: cri_01
+      statement: Startups with no previous Tally paid subscription; partner program
+        membership required.
+      reason: not-machine-evaluable
+  roles:
+    terms_authority_entity_id: ent_69Bc15UApLCo22sWHeCss
+    access_operator_entity_id: ent_69Bc15UApLCo22sWHeCss
+  access:
+    availability: membership
+    method: form
+    url: https://tally.so/r/kwoOVw
+  source_ids:
+  - src_affb385ae2a6415e514df457c112bdb128b982d7

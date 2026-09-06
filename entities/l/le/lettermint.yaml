@@ -1,0 +1,56 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_WV6gc_BTzZ7cITnU2ILgy
+  slug: lettermint
+  slug_aliases: []
+  name: Lettermint
+  domains:
+  - value: lettermint.co
+    role: primary
+    valid_from: '2026-09-06 00:00:00+00:00'
+  category: productivity
+profile:
+  description: Lettermint provides document creation and management tools for teams.
+  links:
+    site: https://lettermint.co
+sources:
+- source_id: src_b202c99cef3415c0550d601c08616f5a302b7cf3
+  url: https://lettermint.co/promo-codes-and-discounts/startups
+programs: []
+offers:
+- offer_id: off_TuFTPeM4OeVKNwmfzywgL
+  offer_slug: lettermint-startup-account-credit
+  offer_slug_aliases: []
+  title: Lettermint Startup Account Credit
+  summary: Lettermint offers a startup-specific EUR 60 account credit, valid for 12
+    months after activation, for eligible startups.
+  lifecycle:
+    status: active
+    effective_from: '2026-09-06 00:00:00+00:00'
+  economics:
+    benefits:
+    - benefit_id: ben_01
+      description: EUR 60 account credit valid for 12 months after activation
+      kind: credit
+      value:
+        amount:
+          currency: EUR
+          minor_units: 60
+        kind: at-least
+    consideration:
+      kind: none
+  eligibility:
+    rule:
+      kind: manual
+      criterion_id: cri_01
+      statement: Eligible startups applying through the Lettermint startup program.
+      reason: not-machine-evaluable
+  roles:
+    terms_authority_entity_id: ent_WV6gc_BTzZ7cITnU2ILgy
+    access_operator_entity_id: ent_WV6gc_BTzZ7cITnU2ILgy
+  access:
+    availability: public
+    method: form
+    url: https://lettermint.co/promo-codes-and-discounts/startups
+  source_ids:
+  - src_b202c99cef3415c0550d601c08616f5a302b7cf3

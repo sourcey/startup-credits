@@ -1,0 +1,65 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_d5d6e99e53bd4e0ab458be93
+  slug: cms-austria
+  slug_aliases: []
+  name: CMS Reich-Rohrwig Hainz Rechtsanwälte GmbH (CMS Austria)
+  domains:
+  - value: cms.law
+    role: primary
+    valid_from: '2026-09-06T07:03:13.326Z'
+  category: startup-program
+profile:
+  description: 'CMS equIP Austria: accepted startup members receive 50% off standard
+    hourly legal rates for three years, up to EUR25,000 discount per year. Application
+    and acceptance are required; no automatic global'
+  links:
+    site: https://cms.law
+sources:
+- source_id: src_6792b55a3a8e8cfa40deec56eeee4e0bba1133e8356d9d45
+  url: https://cms.law
+programs:
+- program_id: prg_8b21fa78c2864126be373c1b
+  program_slug: cms-austria-startup-program
+  program_slug_aliases: []
+  title: CMS Reich-Rohrwig Hainz Rechtsanwälte GmbH (CMS Austria) Startup Program
+  summary: 'CMS equIP Austria: accepted startup members receive 50% off standard hourly
+    legal rates for three years, up to EUR25,000 discount per year. Application and
+    acceptance are required; no automatic global'
+  source_ids:
+  - src_6792b55a3a8e8cfa40deec56eeee4e0bba1133e8356d9d45
+offers:
+- offer_id: off_988484dcf459401099935808
+  program_id: prg_8b21fa78c2864126be373c1b
+  offer_slug: cms-austria-startup-discount
+  offer_slug_aliases: []
+  title: CMS Reich-Rohrwig Hainz Rechtsanwälte GmbH (CMS Austria) startup discount
+  summary: 'CMS equIP Austria: accepted startup members receive 50% off standard hourly
+    legal rates for three years, up to EUR25,000 discount per year. Application and
+    acceptance are required; no automatic global entitlement or cash credit is claimed.'
+  lifecycle:
+    status: active
+    effective_from: '2026-09-06T07:03:13.326Z'
+  economics:
+    consideration:
+      kind: none
+    benefits:
+    - benefit_id: ben_01
+      description: Startup program benefits as published by vendor.
+      kind: other
+  eligibility:
+    rule:
+      kind: manual
+      criterion_id: cri_01
+      statement: Contact CMS Reich-Rohrwig Hainz Rechtsanwälte GmbH (CMS Austria)
+        for eligibility requirements.
+      reason: vendor-discretion
+  roles:
+    terms_authority_entity_id: ent_d5d6e99e53bd4e0ab458be93
+    access_operator_entity_id: ent_d5d6e99e53bd4e0ab458be93
+  access:
+    availability: public
+    method: form
+    url: https://cms.law
+  source_ids:
+  - src_6792b55a3a8e8cfa40deec56eeee4e0bba1133e8356d9d45

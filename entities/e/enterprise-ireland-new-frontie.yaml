@@ -1,0 +1,62 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_7fdd26dafe6e4d4d82396fc2
+  slug: enterprise-ireland-new-frontie
+  slug_aliases: []
+  name: Enterprise Ireland New Frontiers Phase 2 support
+  domains:
+  - value: newfrontiers.ie
+    role: primary
+    valid_from: '2026-09-06T07:03:13.489Z'
+  category: startup-program
+profile:
+  description: Enterprise Ireland New Frontiers Phase 2 support startup program for
+    eligible startups.
+  links:
+    site: https://newfrontiers.ie
+sources:
+- source_id: src_f95327360b7a86bd57d7e8e843e94cea5a9006e98e87e5dd
+  url: https://newfrontiers.ie
+programs:
+- program_id: prg_2faa6cf63c414788a8a64526
+  program_slug: enterprise-ireland-new-frontie-startup-program
+  program_slug_aliases: []
+  title: Enterprise Ireland New Frontiers Phase 2 support Startup Program
+  summary: Enterprise Ireland New Frontiers Phase 2 support startup program for eligible
+    startups.
+  source_ids:
+  - src_f95327360b7a86bd57d7e8e843e94cea5a9006e98e87e5dd
+offers:
+- offer_id: off_6d47c180cd444045aae86ce8
+  program_id: prg_2faa6cf63c414788a8a64526
+  offer_slug: enterprise-ireland-new-frontie-startup-discount
+  offer_slug_aliases: []
+  title: Enterprise Ireland New Frontiers Phase 2 support startup program
+  summary: Enterprise Ireland New Frontiers Phase 2 support startup program for eligible
+    startups.
+  lifecycle:
+    status: active
+    effective_from: '2026-09-06T07:03:13.489Z'
+  economics:
+    consideration:
+      kind: none
+    benefits:
+    - benefit_id: ben_01
+      description: Startup program benefits as published by vendor.
+      kind: other
+  eligibility:
+    rule:
+      kind: manual
+      criterion_id: cri_01
+      statement: Contact Enterprise Ireland New Frontiers Phase 2 support for eligibility
+        requirements.
+      reason: vendor-discretion
+  roles:
+    terms_authority_entity_id: ent_7fdd26dafe6e4d4d82396fc2
+    access_operator_entity_id: ent_7fdd26dafe6e4d4d82396fc2
+  access:
+    availability: public
+    method: form
+    url: https://newfrontiers.ie
+  source_ids:
+  - src_f95327360b7a86bd57d7e8e843e94cea5a9006e98e87e5dd

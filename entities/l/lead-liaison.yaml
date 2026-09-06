@@ -1,0 +1,62 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_9ca2c6db0f3946a680149845
+  slug: lead-liaison
+  slug_aliases: []
+  name: Lead Liaison Seed-Stage startup discount
+  domains:
+  - value: leadliaison.com
+    role: primary
+    valid_from: '2026-09-06T07:03:13.303Z'
+  category: startup-program
+profile:
+  description: 'Reserving Lead Liaison and one Seed-Stage startup subscription offer.
+    Source: https://www.leadliaison.com/startups/'
+  links:
+    site: https://leadliaison.com
+sources:
+- source_id: src_cfffc265f7e4a9b9252067917388be693599440f026e8198
+  url: https://www.leadliaison.com/startups/
+programs:
+- program_id: prg_db63e357fb714107a0020850
+  program_slug: lead-liaison-startup-program
+  program_slug_aliases: []
+  title: Lead Liaison Seed-Stage startup discount Startup Program
+  summary: 'Reserving Lead Liaison and one Seed-Stage startup subscription offer.
+    Source: https://www.leadliaison.com/startups/'
+  source_ids:
+  - src_cfffc265f7e4a9b9252067917388be693599440f026e8198
+offers:
+- offer_id: off_6a98ca0e762040399089277f
+  program_id: prg_db63e357fb714107a0020850
+  offer_slug: lead-liaison-startup-discount
+  offer_slug_aliases: []
+  title: Lead Liaison Seed-Stage startup discount startup program
+  summary: 'Reserving Lead Liaison and one Seed-Stage startup subscription offer.
+    Source: https://www.leadliaison.com/startups/'
+  lifecycle:
+    status: active
+    effective_from: '2026-09-06T07:03:13.303Z'
+  economics:
+    consideration:
+      kind: none
+    benefits:
+    - benefit_id: ben_01
+      description: Startup program benefits as published by vendor.
+      kind: other
+  eligibility:
+    rule:
+      kind: manual
+      criterion_id: cri_01
+      statement: Contact Lead Liaison Seed-Stage startup discount for eligibility
+        requirements.
+      reason: vendor-discretion
+  roles:
+    terms_authority_entity_id: ent_9ca2c6db0f3946a680149845
+    access_operator_entity_id: ent_9ca2c6db0f3946a680149845
+  access:
+    availability: public
+    method: form
+    url: https://www.leadliaison.com/startups/
+  source_ids:
+  - src_cfffc265f7e4a9b9252067917388be693599440f026e8198

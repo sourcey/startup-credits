@@ -1,0 +1,62 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_846e44301f034f4ab7344a55
+  slug: hkust
+  slug_aliases: []
+  name: HKUST — HKUST x HKSTP Co-ideation startup grant
+  domains:
+  - value: ec.hkust.edu.hk
+    role: primary
+    valid_from: '2026-09-06T07:03:13.556Z'
+  category: startup-program
+profile:
+  description: HKUST — HKUST x HKSTP Co-ideation startup grant startup program for
+    eligible startups.
+  links:
+    site: https://ec.hkust.edu.hk
+sources:
+- source_id: src_9a3050869dfba23a96f8e837cabf851e1d4a76a13a9d0989
+  url: https://ec.hkust.edu.hk
+programs:
+- program_id: prg_042b301743f744c4b420d927
+  program_slug: hkust-startup-program
+  program_slug_aliases: []
+  title: HKUST — HKUST x HKSTP Co-ideation startup grant Startup Program
+  summary: HKUST — HKUST x HKSTP Co-ideation startup grant startup program for eligible
+    startups.
+  source_ids:
+  - src_9a3050869dfba23a96f8e837cabf851e1d4a76a13a9d0989
+offers:
+- offer_id: off_f3f3e72ffa1e4c0f9b3b3fea
+  program_id: prg_042b301743f744c4b420d927
+  offer_slug: hkust-startup-discount
+  offer_slug_aliases: []
+  title: HKUST — HKUST x HKSTP Co-ideation startup grant startup grant
+  summary: HKUST — HKUST x HKSTP Co-ideation startup grant startup program for eligible
+    startups.
+  lifecycle:
+    status: active
+    effective_from: '2026-09-06T07:03:13.556Z'
+  economics:
+    consideration:
+      kind: none
+    benefits:
+    - benefit_id: ben_01
+      description: Startup program benefits as published by vendor.
+      kind: other
+  eligibility:
+    rule:
+      kind: manual
+      criterion_id: cri_01
+      statement: Contact HKUST — HKUST x HKSTP Co-ideation startup grant for eligibility
+        requirements.
+      reason: vendor-discretion
+  roles:
+    terms_authority_entity_id: ent_846e44301f034f4ab7344a55
+    access_operator_entity_id: ent_846e44301f034f4ab7344a55
+  access:
+    availability: public
+    method: form
+    url: https://ec.hkust.edu.hk
+  source_ids:
+  - src_9a3050869dfba23a96f8e837cabf851e1d4a76a13a9d0989

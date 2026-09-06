@@ -1,0 +1,58 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_792aba3747994308a2107ad3
+  slug: soax-startup-discount
+  slug_aliases: []
+  name: SOAX startup discount
+  domains:
+  - value: soax.com
+    role: primary
+    valid_from: '2026-09-06T07:03:13.436Z'
+  category: startup-program
+profile:
+  description: SOAX offers eligible startups 50% off Enterprise plans.
+  links:
+    site: https://soax.com
+sources:
+- source_id: src_269dcfead9f6dc33e718da7696d9d8e32f4ff5751e7a3477
+  url: https://www.soax.com/pricing/startups
+programs:
+- program_id: prg_0768c68aa0cd42c6938905d1
+  program_slug: soax-startup-discount-startup-program
+  program_slug_aliases: []
+  title: SOAX startup discount Startup Program
+  summary: SOAX offers eligible startups 50% off Enterprise plans.
+  source_ids:
+  - src_269dcfead9f6dc33e718da7696d9d8e32f4ff5751e7a3477
+offers:
+- offer_id: off_943eae71a27b4daf86f0270e
+  program_id: prg_0768c68aa0cd42c6938905d1
+  offer_slug: soax-startup-discount-startup-discount
+  offer_slug_aliases: []
+  title: SOAX startup discount startup program
+  summary: SOAX offers eligible startups 50% off Enterprise plans.
+  lifecycle:
+    status: active
+    effective_from: '2026-09-06T07:03:13.436Z'
+  economics:
+    consideration:
+      kind: none
+    benefits:
+    - benefit_id: ben_01
+      description: Startup program benefits as published by vendor.
+      kind: other
+  eligibility:
+    rule:
+      kind: manual
+      criterion_id: cri_01
+      statement: Contact SOAX startup discount for eligibility requirements.
+      reason: vendor-discretion
+  roles:
+    terms_authority_entity_id: ent_792aba3747994308a2107ad3
+    access_operator_entity_id: ent_792aba3747994308a2107ad3
+  access:
+    availability: public
+    method: form
+    url: https://www.soax.com/pricing/startups
+  source_ids:
+  - src_269dcfead9f6dc33e718da7696d9d8e32f4ff5751e7a3477

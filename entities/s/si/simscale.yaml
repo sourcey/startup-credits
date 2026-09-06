@@ -1,0 +1,55 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_TPr9LXbDUNkpxW8vu1c69
+  slug: simscale
+  slug_aliases: []
+  name: SimScale
+  domains:
+  - value: simscale.com
+    role: primary
+    valid_from: '2026-09-06 00:00:00+00:00'
+  category: developer-tools
+profile:
+  description: SimScale provides cloud-based computer-aided engineering (CAE) simulation
+    tools.
+  links:
+    site: https://www.simscale.com
+sources:
+- source_id: src_6c03359f62241c7acc61e4267b6333b91ed32e00
+  url: https://www.simscale.com/technology/integrations-partners/onshape/
+programs: []
+offers:
+- offer_id: off_Aw0JT_M-LhT29HMZzJ8Uv
+  offer_slug: simscale-onshape-startup-benefit
+  offer_slug_aliases: []
+  title: SimScale Onshape Startup Benefit
+  summary: SimScale offers hardware startups and entrepreneurs in the dedicated Onshape
+    startup program three months of free cloud simulation, up to 20,000 core hours,
+    and live in-product support.
+  lifecycle:
+    status: active
+    effective_from: '2026-09-06 00:00:00+00:00'
+  economics:
+    benefits:
+    - benefit_id: ben_01
+      description: Three months free cloud simulation, up to 20,000 core hours, and
+        live in-product support
+      kind: credit
+    consideration:
+      kind: none
+  eligibility:
+    rule:
+      kind: manual
+      criterion_id: cri_01
+      statement: Hardware startups and entrepreneurs enrolled in the Onshape startup
+        program.
+      reason: not-machine-evaluable
+  roles:
+    terms_authority_entity_id: ent_TPr9LXbDUNkpxW8vu1c69
+    access_operator_entity_id: ent_TPr9LXbDUNkpxW8vu1c69
+  access:
+    availability: public
+    method: form
+    url: https://www.simscale.com/technology/integrations-partners/onshape/
+  source_ids:
+  - src_6c03359f62241c7acc61e4267b6333b91ed32e00

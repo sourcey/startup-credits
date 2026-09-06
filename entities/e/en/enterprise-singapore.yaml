@@ -1,0 +1,59 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_AGoVMZxFKfPLRJ2ssilYO
+  slug: enterprise-singapore
+  slug_aliases: []
+  name: Enterprise Singapore
+  domains:
+  - value: enterprisesg.gov.sg
+    role: primary
+    valid_from: '2026-09-06 00:00:00+00:00'
+  category: government
+profile:
+  description: Enterprise Singapore is a government agency supporting Singapore enterprises
+    and promoting startup growth.
+  links:
+    site: https://www.enterprisesg.gov.sg
+sources:
+- source_id: src_dc1a093c377031ce67944befeb178dafdff1ac25
+  url: https://www.startupsg.gov.sg/programmes/4894/startup-sg-founder
+programs: []
+offers:
+- offer_id: off_Ab_ObNaB2HJJ3W6XXRlg0
+  offer_slug: startup-sg-founder-grant
+  offer_slug_aliases: []
+  title: Startup SG Founder Grant
+  summary: Startup SG Founder provides SGD 20,000–50,000 in grant support with 1:1
+    capital co-matching and Accredited Mentor Partner support for eligible first-time
+    Singaporean or permanent-resident founders.
+  lifecycle:
+    status: active
+    effective_from: '2026-09-06 00:00:00+00:00'
+  economics:
+    benefits:
+    - benefit_id: ben_01
+      description: SGD 20,000–50,000 grant with 1:1 capital co-matching and AMP support
+      kind: grant
+      value:
+        amount:
+          currency: SGD
+          minor_units: 50000
+        kind: at-least
+    consideration:
+      kind: none
+  eligibility:
+    rule:
+      kind: manual
+      criterion_id: cri_01
+      statement: Eligible first-time Singaporean or permanent-resident founders; 1:1
+        capital co-matching required.
+      reason: not-machine-evaluable
+  roles:
+    terms_authority_entity_id: ent_AGoVMZxFKfPLRJ2ssilYO
+    access_operator_entity_id: ent_AGoVMZxFKfPLRJ2ssilYO
+  access:
+    availability: public
+    method: form
+    url: https://www.startupsg.gov.sg/programmes/4894/startup-sg-founder/apply
+  source_ids:
+  - src_dc1a093c377031ce67944befeb178dafdff1ac25

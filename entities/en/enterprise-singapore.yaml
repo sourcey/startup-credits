@@ -1,0 +1,128 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1szhdvztk4s3ac1k69fm86r
+  slug: enterprise-singapore
+  slug_aliases: []
+  name: Enterprise Singapore
+  domains:
+    - value: enterprisesg.gov.sg
+      role: primary
+      valid_from: 2026-08-01T00:00:00.000Z
+    - value: startupsg.gov.sg
+      role: related
+      valid_from: 2026-08-01T00:00:00.000Z
+  category: government-accelerator
+profile:
+  description: Enterprise Singapore is the government agency championing enterprise development, supporting Singapore SMEs and startups through schemes like Startup SG Founder.
+  links:
+    site: https://www.enterprisesg.gov.sg
+    startups: https://www.startupsg.gov.sg
+sources:
+  - source_id: src_d94a9170fb23dfc1e93e1dee094ba7f9e4e8ce99a4fed2b4fbbf4f70d8050050
+    url: https://www.enterprisesg.gov.sg/grow-your-business/partner-with-singapore/innovation-and-startups/join-startup-sg
+  - source_id: src_bfea2f360a847412a4d1d2829397df020975ddebdacfc6ec4c32d57320988652
+    url: https://www.startupsg.gov.sg/programmes/4894/startup-sg-founder
+  - source_id: src_045f9d6d5f9d9b5c811711eedcd19df76cac7347a97b01c283ff71e5f0a24134
+    url: https://www.startupsg.gov.sg/programmes/4894/startup-sg-founder/eligibility
+  - source_id: src_964a0468427d03c5820d8e6e3f0257c610a68cf3f85e0b498ee4521198eb36c0
+    url: https://www.startupsg.gov.sg/programmes/4894/startup-sg-founder/apply
+programs:
+  - program_id: prg_01m1szhdway9ghnzag5dfba5zz
+    program_slug: startup-sg-founder
+    program_slug_aliases: []
+    title: Startup SG Founder
+    summary: Government grant with 1:1 capital co-matching and Accredited Mentor Partner support for first-time Singaporean or permanent-resident founders.
+    source_ids:
+      - src_d94a9170fb23dfc1e93e1dee094ba7f9e4e8ce99a4fed2b4fbbf4f70d8050050
+      - src_bfea2f360a847412a4d1d2829397df020975ddebdacfc6ec4c32d57320988652
+offers:
+  - offer_id: off_01m1szhdwafsj9m3p3wy8e9xyj
+    program_id: prg_01m1szhdway9ghnzag5dfba5zz
+    offer_slug: startup-sg-founder
+    offer_slug_aliases: []
+    title: Startup SG Founder Grant
+    summary: SGD 20,000–50,000 grant with 1:1 capital co-matching for eligible first-time Singaporean or permanent-resident founders.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-01T00:00:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: SGD 20,000–50,000 grant
+          kind: grant
+          value:
+            amount:
+              currency: SGD
+              minor_units: 2000000
+            kind: range
+            range:
+              min:
+                currency: SGD
+                minor_units: 2000000
+              max:
+                currency: SGD
+                minor_units: 5000000
+        - benefit_id: ben_02
+          description: 1:1 capital co-matching from third-party investors
+          kind: match-funding
+          value:
+            ratio: "1:1"
+            description: For every SGD 1 invested by third-party investors, the government matches SGD 1
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        fact: founder.residency
+        kind: predicate
+        operator: eq
+        statement: First-time Singaporean or permanent-resident founders
+        value:
+          type: string
+          value: singapore-pr
+      criteria:
+        - criterion_id: cri_01
+          fact: founder.experience
+          kind: predicate
+          operator: eq
+          statement: Must be first-time founders
+          value:
+            type: string
+            value: first-time
+        - criterion_id: cri_02
+          fact: founder.nationality
+          kind: predicate
+          operator: in
+          statement: Must be Singaporean citizen or permanent resident
+          value:
+            type: array
+            items:
+              - Singapore Citizen
+              - Permanent Resident
+        - criterion_id: cri_03
+          fact: company.location
+          kind: predicate
+          operator: eq
+          statement: Must register and operate business in Singapore
+          value:
+            type: string
+            value: SG
+        - criterion_id: cri_04
+          fact: company.age
+          kind: predicate
+          operator: eq
+          statement: Entity must not be incorporated more than 6 months before application
+          value:
+            type: string
+            value: less-than-6-months
+    roles:
+      terms_authority_entity_id: ent_01m1szhdvztk4s3ac1k69fm86r
+      access_operator_entity_id: ent_01m1szhdvztk4s3ac1k69fm86r
+    access:
+      availability: public
+      method: form
+      url: https://www.startupsg.gov.sg/programmes/4894/startup-sg-founder/apply
+    source_ids:
+      - src_bfea2f360a847412a4d1d2829397df020975ddebdacfc6ec4c32d57320988652
+      - src_045f9d6d5f9d9b5c811711eedcd19df76cac7347a97b01c283ff71e5f0a24134
+      - src_964a0468427d03c5820d8e6e3f0257c610a68cf3f85e0b498ee4521198eb36c0

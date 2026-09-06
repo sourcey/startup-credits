@@ -1,0 +1,55 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_q5R-GtBRKXjK0z7J6k8Db
+  slug: akinda
+  slug_aliases: []
+  name: Akinda
+  domains:
+  - value: akinda.io
+    role: primary
+    valid_from: '2026-09-06 00:00:00+00:00'
+  category: developer-tools
+profile:
+  description: Akinda provides business API infrastructure for startups and enterprises.
+  links:
+    site: https://b2b.akinda.io
+sources:
+- source_id: src_f1d4b5972e298c0bfe01cee50ae96ff3e2ac3b75
+  url: https://b2b.akinda.io/startup
+programs: []
+offers:
+- offer_id: off_OVmr-MM1Fu4fsfrhh-Tn9
+  offer_slug: akinda-startup-api-discount
+  offer_slug_aliases: []
+  title: Akinda Startup API Discount
+  summary: Akinda offers discounted first-term business API access for pre-seed or
+    seed startups valued under $5 million, including independent builders shipping
+    a real product. Applicants must not have subscribed to a paid Akinda business
+    plan before. Discount terms are agreed after application review.
+  lifecycle:
+    status: active
+    effective_from: '2026-09-06 00:00:00+00:00'
+  economics:
+    benefits:
+    - benefit_id: ben_01
+      description: Discounted first-term business API access (terms agreed after application
+        review)
+      kind: discount
+    consideration:
+      kind: none
+  eligibility:
+    rule:
+      kind: manual
+      criterion_id: cri_01
+      statement: Pre-seed or seed startups valued under $5 million; must not have
+        previously subscribed to a paid Akinda business plan.
+      reason: not-machine-evaluable
+  roles:
+    terms_authority_entity_id: ent_q5R-GtBRKXjK0z7J6k8Db
+    access_operator_entity_id: ent_q5R-GtBRKXjK0z7J6k8Db
+  access:
+    availability: public
+    method: form
+    url: https://b2b.akinda.io/startup/apply
+  source_ids:
+  - src_f1d4b5972e298c0bfe01cee50ae96ff3e2ac3b75

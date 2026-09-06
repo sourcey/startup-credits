@@ -1,0 +1,54 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_SsbnYnU6LP0r3TKYYL7Nm
+  slug: lead-liaison
+  slug_aliases: []
+  name: Lead Liaison
+  domains:
+  - value: leadliaison.com
+    role: primary
+    valid_from: '2026-09-06 00:00:00+00:00'
+  category: marketing-sales
+profile:
+  description: Lead Liaison provides marketing automation and sales engagement software.
+  links:
+    site: https://www.leadliaison.com
+sources:
+- source_id: src_cfffc265f7e4a9b9252067917388be693599440f
+  url: https://www.leadliaison.com/startups/
+programs: []
+offers:
+- offer_id: off_DX1n9e7bUnlRefPBg60Tq
+  offer_slug: seed-stage-startup-subscription-discount
+  offer_slug_aliases: []
+  title: Seed-Stage Startup Subscription Discount
+  summary: Lead Liaison offers seed-stage startups a 90% discount on subscription
+    licenses for 24 months, followed by 50% off for 12 months, subject to funding,
+    partner affiliation, new-customer, and second-year training conditions.
+  lifecycle:
+    status: active
+    effective_from: '2026-09-06 00:00:00+00:00'
+  economics:
+    benefits:
+    - benefit_id: ben_01
+      description: 90% off subscription licenses for 24 months, then 50% off for 12
+        months
+      kind: discount
+    consideration:
+      kind: none
+  eligibility:
+    rule:
+      kind: manual
+      criterion_id: cri_01
+      statement: Seed-stage startups meeting funding, partner affiliation, and new-customer
+        conditions.
+      reason: not-machine-evaluable
+  roles:
+    terms_authority_entity_id: ent_SsbnYnU6LP0r3TKYYL7Nm
+    access_operator_entity_id: ent_SsbnYnU6LP0r3TKYYL7Nm
+  access:
+    availability: public
+    method: form
+    url: https://www.leadliaison.com/startups/
+  source_ids:
+  - src_cfffc265f7e4a9b9252067917388be693599440f

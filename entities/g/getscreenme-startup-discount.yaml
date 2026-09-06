@@ -1,0 +1,61 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_470d57a1a0854d59b23830c5
+  slug: getscreenme-startup-discount
+  slug_aliases: []
+  name: Getscreen.me startup discount
+  domains:
+  - value: getscreen.me
+    role: primary
+    valid_from: '2026-09-06T07:03:13.335Z'
+  category: startup-program
+profile:
+  description: Getscreen.me publishes a startup-specific discount of up to 25% on
+    business subscriptions for private commercial companies less than five years old.
+  links:
+    site: https://getscreen.me
+sources:
+- source_id: src_26b153d52c2c87f694d961357fb1eb92468c36c1d771d2ce
+  url: https://getscreen.me/en/pricing/discounts/
+programs:
+- program_id: prg_08eaa5f7c55640609da19099
+  program_slug: getscreenme-startup-discount-startup-program
+  program_slug_aliases: []
+  title: Getscreen.me startup discount Startup Program
+  summary: Getscreen.me publishes a startup-specific discount of up to 25% on business
+    subscriptions for private commercial companies less than five years old.
+  source_ids:
+  - src_26b153d52c2c87f694d961357fb1eb92468c36c1d771d2ce
+offers:
+- offer_id: off_ba7de5cad2854531b30e8d31
+  program_id: prg_08eaa5f7c55640609da19099
+  offer_slug: getscreenme-startup-discount-startup-discount
+  offer_slug_aliases: []
+  title: Getscreen.me startup discount startup discount
+  summary: Getscreen.me publishes a startup-specific discount of up to 25% on business
+    subscriptions for private commercial companies less than five years old.
+  lifecycle:
+    status: active
+    effective_from: '2026-09-06T07:03:13.335Z'
+  economics:
+    consideration:
+      kind: none
+    benefits:
+    - benefit_id: ben_01
+      description: Startup program benefits as published by vendor.
+      kind: other
+  eligibility:
+    rule:
+      kind: manual
+      criterion_id: cri_01
+      statement: Contact Getscreen.me startup discount for eligibility requirements.
+      reason: vendor-discretion
+  roles:
+    terms_authority_entity_id: ent_470d57a1a0854d59b23830c5
+    access_operator_entity_id: ent_470d57a1a0854d59b23830c5
+  access:
+    availability: public
+    method: form
+    url: https://getscreen.me/en/pricing/discounts/
+  source_ids:
+  - src_26b153d52c2c87f694d961357fb1eb92468c36c1d771d2ce

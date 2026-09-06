@@ -1,0 +1,52 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_rFtn82n0w8fJP-qh9kRrX
+  slug: kerno
+  slug_aliases: []
+  name: Kerno
+  domains:
+  - value: kerno.io
+    role: primary
+    valid_from: '2026-09-06 00:00:00+00:00'
+  category: ai-ml
+profile:
+  description: Kerno provides AI-powered legal research and contract analysis tools.
+  links:
+    site: https://www.kerno.io
+sources:
+- source_id: src_0c9d0acc6ea58808f57f63c5928e753e9c4e0d39
+  url: https://www.kerno.io/pricing/
+programs: []
+offers:
+- offer_id: off_vhHMv3PfaiMz8kO_ehlgQ
+  offer_slug: pre-series-a-startup-discount
+  offer_slug_aliases: []
+  title: Pre-Series A Startup Discount
+  summary: 50% discount for pre-Series A startups with revenue under $2 million over
+    the preceding 12 months.
+  lifecycle:
+    status: active
+    effective_from: '2026-09-06 00:00:00+00:00'
+  economics:
+    benefits:
+    - benefit_id: ben_01
+      description: 50% discount on standard pricing
+      kind: discount
+    consideration:
+      kind: none
+  eligibility:
+    rule:
+      kind: manual
+      criterion_id: cri_01
+      statement: Pre-Series A startups with revenue under $2 million over the preceding
+        12 months.
+      reason: not-machine-evaluable
+  roles:
+    terms_authority_entity_id: ent_rFtn82n0w8fJP-qh9kRrX
+    access_operator_entity_id: ent_rFtn82n0w8fJP-qh9kRrX
+  access:
+    availability: public
+    method: contact
+    url: https://www.kerno.io/pricing/
+  source_ids:
+  - src_0c9d0acc6ea58808f57f63c5928e753e9c4e0d39

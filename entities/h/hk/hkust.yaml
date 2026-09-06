@@ -1,0 +1,59 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_HHFx70kHnu3nvocyOtakz
+  slug: hkust
+  slug_aliases: []
+  name: HKUST
+  domains:
+  - value: hkust.edu.hk
+    role: primary
+    valid_from: '2026-09-06 00:00:00+00:00'
+  category: government
+profile:
+  description: The Hong Kong University of Science and Technology (HKUST) operates
+    co-ideation programs with HKSTP for early-stage startups.
+  links:
+    site: https://www.hkust.edu.hk
+sources:
+- source_id: src_8f4033fb0f6ffdb00bf280eee495eb9657e1f4cb
+  url: https://ec.hkust.edu.hk/hkustxhkstp-co-ideation-program
+programs: []
+offers:
+- offer_id: off_doLPznAiWV2Q6DAM6hAva
+  offer_slug: hkust-x-hkstp-co-ideation-program
+  offer_slug_aliases: []
+  title: HKUST x HKSTP Co-ideation Program
+  summary: HKUST operates the HKUST x HKSTP Co-ideation application route, offering
+    up to HKD 100,000 in financial grant support over six months, subject to selection
+    and three milestones. HKUST-member ownership and Hong Kong incorporation are required.
+  lifecycle:
+    status: active
+    effective_from: '2026-09-06 00:00:00+00:00'
+  economics:
+    benefits:
+    - benefit_id: ben_01
+      description: Up to HKD 100,000 in grant support over six months
+      kind: grant
+      value:
+        amount:
+          currency: HKD
+          minor_units: 100000
+        kind: at-least
+    consideration:
+      kind: none
+  eligibility:
+    rule:
+      kind: manual
+      criterion_id: cri_01
+      statement: HKUST member-owners; Hong Kong-eligible companies meeting HKUST x
+        HKSTP Co-ideation eligibility; incorporation required.
+      reason: not-machine-evaluable
+  roles:
+    terms_authority_entity_id: ent_HHFx70kHnu3nvocyOtakz
+    access_operator_entity_id: ent_HHFx70kHnu3nvocyOtakz
+  access:
+    availability: public
+    method: form
+    url: https://ec.hkust.edu.hk/hkustxhkstp-co-ideation-program
+  source_ids:
+  - src_8f4033fb0f6ffdb00bf280eee495eb9657e1f4cb

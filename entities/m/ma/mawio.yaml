@@ -1,0 +1,58 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_eifp_ZMIl2rcKIePePKIt
+  slug: mawio
+  slug_aliases: []
+  name: Mawio
+  domains:
+  - value: mawio.dev
+    role: primary
+    valid_from: '2026-09-06 00:00:00+00:00'
+  category: ai-ml
+profile:
+  description: Mawio provides AI agent infrastructure and API services for developers.
+  links:
+    site: https://mawio.dev
+sources:
+- source_id: src_9fca3edab092d73dbfd0b1ebfe87b787cbdc16b9
+  url: https://mawio.dev/startups
+programs: []
+offers:
+- offer_id: off_gjFOtjyvfMa3uSW5kn_b5
+  offer_slug: mawio-startup-program
+  offer_slug_aliases: []
+  title: Mawio Startup Program
+  summary: Mawio offers $10,000 in free API credits for approved pre-seed to Series
+    A AI-agent startups younger than three years and below $5M annual revenue, alongside
+    a six-month Startup Tier.
+  lifecycle:
+    status: active
+    effective_from: '2026-09-06 00:00:00+00:00'
+  economics:
+    benefits:
+    - benefit_id: ben_01
+      description: $10,000 in free API credits with six-month Startup Tier
+      kind: credit
+      value:
+        amount:
+          currency: USD
+          minor_units: 1000000
+        kind: at-least
+    consideration:
+      kind: none
+  eligibility:
+    rule:
+      kind: manual
+      criterion_id: cri_01
+      statement: Pre-seed to Series A AI-agent startups younger than three years and
+        below $5M annual revenue.
+      reason: not-machine-evaluable
+  roles:
+    terms_authority_entity_id: ent_eifp_ZMIl2rcKIePePKIt
+    access_operator_entity_id: ent_eifp_ZMIl2rcKIePePKIt
+  access:
+    availability: public
+    method: contact
+    url: https://mawio.dev/startups
+  source_ids:
+  - src_9fca3edab092d73dbfd0b1ebfe87b787cbdc16b9

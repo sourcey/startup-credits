@@ -1,0 +1,52 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_pMA5AZTxOUMXvPn9P5HKA
+  slug: nvoip
+  slug_aliases: []
+  name: Nvoip
+  domains:
+  - value: nvoip.com.br
+    role: primary
+    valid_from: '2026-09-06 00:00:00+00:00'
+  category: communications
+profile:
+  description: Nvoip provides communication APIs and solutions for businesses.
+  links:
+    site: https://www.nvoip.com.br
+sources:
+- source_id: src_b34e6af2567d27539c5da70343e6d190bd094bb5
+  url: https://www.nvoip.com.br/en/nvoip-for-startups/
+programs: []
+offers:
+- offer_id: off_TCUEkJj_lASkifyiOYfol
+  offer_slug: nvoip-for-startups-communication-discount
+  offer_slug_aliases: []
+  title: Nvoip for Startups Communication Discount
+  summary: Nvoip's startup program advertises up to 90% off on communication plans
+    for startups connected with Nvoip partner hubs, with the benefit dependent on
+    startup maturity and lasting up to two years.
+  lifecycle:
+    status: active
+    effective_from: '2026-09-06 00:00:00+00:00'
+  economics:
+    benefits:
+    - benefit_id: ben_01
+      description: Up to 90% off communication plans for up to two years
+      kind: discount
+    consideration:
+      kind: none
+  eligibility:
+    rule:
+      kind: manual
+      criterion_id: cri_01
+      statement: Startups connected with Nvoip partner hubs.
+      reason: not-machine-evaluable
+  roles:
+    terms_authority_entity_id: ent_pMA5AZTxOUMXvPn9P5HKA
+    access_operator_entity_id: ent_pMA5AZTxOUMXvPn9P5HKA
+  access:
+    availability: public
+    method: form
+    url: https://www.nvoip.com.br/en/nvoip-for-startups/
+  source_ids:
+  - src_b34e6af2567d27539c5da70343e6d190bd094bb5

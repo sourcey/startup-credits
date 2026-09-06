@@ -1,0 +1,60 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_0997f1b677ec4ab2a8dc9afb
+  slug: tally-startup-discount-through
+  slug_aliases: []
+  name: Tally startup discount through its Partner Program
+  domains:
+  - value: tally.so
+    role: primary
+    valid_from: '2026-09-06T07:03:13.462Z'
+  category: startup-program
+profile:
+  description: Tally publishes a startup-specific offer of 50% off Tally Pro for one
+    year.
+  links:
+    site: https://tally.so
+sources:
+- source_id: src_660a5cdc829e415b724a150a2699c5479d64f258dc07b490
+  url: https://tally.so
+programs:
+- program_id: prg_57d0039c147f4fb9a0707bd1
+  program_slug: tally-startup-discount-through-startup-program
+  program_slug_aliases: []
+  title: Tally startup discount through its Partner Program Startup Program
+  summary: Tally publishes a startup-specific offer of 50% off Tally Pro for one year.
+  source_ids:
+  - src_660a5cdc829e415b724a150a2699c5479d64f258dc07b490
+offers:
+- offer_id: off_29c3c93c727849a6a8737139
+  program_id: prg_57d0039c147f4fb9a0707bd1
+  offer_slug: tally-startup-discount-through-startup-discount
+  offer_slug_aliases: []
+  title: Tally startup discount through its Partner Program startup program
+  summary: Tally publishes a startup-specific offer of 50% off Tally Pro for one year.
+  lifecycle:
+    status: active
+    effective_from: '2026-09-06T07:03:13.462Z'
+  economics:
+    consideration:
+      kind: none
+    benefits:
+    - benefit_id: ben_01
+      description: Startup program benefits as published by vendor.
+      kind: other
+  eligibility:
+    rule:
+      kind: manual
+      criterion_id: cri_01
+      statement: Contact Tally startup discount through its Partner Program for eligibility
+        requirements.
+      reason: vendor-discretion
+  roles:
+    terms_authority_entity_id: ent_0997f1b677ec4ab2a8dc9afb
+    access_operator_entity_id: ent_0997f1b677ec4ab2a8dc9afb
+  access:
+    availability: public
+    method: form
+    url: https://tally.so
+  source_ids:
+  - src_660a5cdc829e415b724a150a2699c5479d64f258dc07b490

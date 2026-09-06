@@ -1,0 +1,70 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1trhbh14gqdttf6cmrbe0ey
+  slug: vectara
+  slug_aliases: []
+  name: Vectara
+  domains:
+    - value: vectara.com
+      role: primary
+      valid_from: 2026-09-06T00:00:00.000Z
+  category: ai-ml
+profile:
+  description: Vectara is an AI-powered search-as-a-service platform offering semantic search, summarization, and conversational AI capabilities for developers.
+  links:
+    site: https://vectara.com
+sources:
+  - source_id: src_01m1trhbppacp5axqnxda8bqp5
+    url: https://www.vectara.com/startups
+programs:
+  - program_id: ent_01m1trhbjfvy3kwj6y11pxskwx
+    program_slug: startup-partnerships
+    program_slug_aliases: []
+    title: Startup Partnerships
+    summary: Startup-focused program offering credits, discounts, tailored onboarding, and go-to-market alignment for early-stage companies.
+    source_ids:
+      - src_01m1trhbppacp5axqnxda8bqp5
+offers:
+  - offer_id: ent_01m1trhbjfagn9ex9sfa8db614
+    program_id: ent_01m1trhbjfvy3kwj6y11pxskwx
+    offer_slug: startup-partnerships
+    offer_slug_aliases: []
+    title: Vectara Startup Partnerships
+    summary: Startups receive credits, discounts, tailored onboarding and support, plus co-marketing and go-to-market alignment through Vectara's Startup Partnerships program.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-06T00:00:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: API credits for qualifying startups
+          kind: credit
+          value:
+            kind: unspecified
+        - benefit_id: ben_02
+          description: Discounted pricing on platform usage
+          kind: discount
+          value:
+            kind: unspecified
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        fact: company.stage
+        kind: predicate
+        operator: in
+        statement: Must be an early-stage startup
+        value:
+          type: array
+          items:
+            - early-stage
+    roles:
+      terms_authority_entity_id: ent_01m1trhbh14gqdttf6cmrbe0ey
+      access_operator_entity_id: ent_01m1trhbh14gqdttf6cmrbe0ey
+    access:
+      availability: application-required
+      method: form
+      url: https://www.vectara.com/startups
+    source_ids:
+      - src_01m1trhbppacp5axqnxda8bqp5

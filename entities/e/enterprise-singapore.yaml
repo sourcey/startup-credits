@@ -1,0 +1,65 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_bf3a8e8c6a3c41b1a3e77246
+  slug: enterprise-singapore
+  slug_aliases: []
+  name: Enterprise Singapore — Startup SG Founder
+  domains:
+  - value: enterprisesg.gov.sg
+    role: primary
+    valid_from: '2026-09-06T07:03:13.362Z'
+  category: startup-program
+profile:
+  description: 'Proposed single offer: Startup SG Founder, a SGD 20,000–50,000 grant
+    with 1:1 capital co-matching and Accredited Mentor Partner support for eligible
+    first-time Singaporean/permanent-resident founders.'
+  links:
+    site: https://enterprisesg.gov.sg
+sources:
+- source_id: src_b25dd62da494cc366623d3877a7d3b85dc7afb51b66296f3
+  url: https://www.enterprisesg.gov.sg/grow-your-business/partner-with-singapore/innovation-and-startups/join-startup-sg
+programs:
+- program_id: prg_94160ea45e13498bbb056d09
+  program_slug: enterprise-singapore-startup-program
+  program_slug_aliases: []
+  title: Enterprise Singapore — Startup SG Founder Startup Program
+  summary: 'Proposed single offer: Startup SG Founder, a SGD 20,000–50,000 grant with
+    1:1 capital co-matching and Accredited Mentor Partner support for eligible first-time
+    Singaporean/permanent-resident founders.'
+  source_ids:
+  - src_b25dd62da494cc366623d3877a7d3b85dc7afb51b66296f3
+offers:
+- offer_id: off_636b192fe1ff4730a0f1c233
+  program_id: prg_94160ea45e13498bbb056d09
+  offer_slug: enterprise-singapore-startup-discount
+  offer_slug_aliases: []
+  title: Enterprise Singapore — Startup SG Founder startup grant
+  summary: 'Proposed single offer: Startup SG Founder, a SGD 20,000–50,000 grant with
+    1:1 capital co-matching and Accredited Mentor Partner support for eligible first-time
+    Singaporean/permanent-resident founders.'
+  lifecycle:
+    status: active
+    effective_from: '2026-09-06T07:03:13.362Z'
+  economics:
+    consideration:
+      kind: none
+    benefits:
+    - benefit_id: ben_01
+      description: Startup program benefits as published by vendor.
+      kind: other
+  eligibility:
+    rule:
+      kind: manual
+      criterion_id: cri_01
+      statement: Contact Enterprise Singapore — Startup SG Founder for eligibility
+        requirements.
+      reason: vendor-discretion
+  roles:
+    terms_authority_entity_id: ent_bf3a8e8c6a3c41b1a3e77246
+    access_operator_entity_id: ent_bf3a8e8c6a3c41b1a3e77246
+  access:
+    availability: public
+    method: form
+    url: https://www.enterprisesg.gov.sg/grow-your-business/partner-with-singapore/innovation-and-startups/join-startup-sg
+  source_ids:
+  - src_b25dd62da494cc366623d3877a7d3b85dc7afb51b66296f3

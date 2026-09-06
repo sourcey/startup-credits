@@ -1,0 +1,59 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_14cdaf6c19174d5793f75dd1
+  slug: cardboard-for-startups-paidpla
+  slug_aliases: []
+  name: Cardboard for Startups paid-plan discount
+  domains:
+  - value: cardboard.inc
+    role: primary
+    valid_from: '2026-09-06T07:03:13.656Z'
+  category: startup-program
+profile:
+  description: 'Startup program context: https://cardboard.inc/campaigns/software-subscriptions/'
+  links:
+    site: https://cardboard.inc
+sources:
+- source_id: src_48935260c54508edc3d7a945f5473dcd382d88538733a015
+  url: https://gofrantic.com/bounties/120)
+programs:
+- program_id: prg_7a061ebfd95c4f10ab27daf3
+  program_slug: cardboard-for-startups-paidpla-startup-program
+  program_slug_aliases: []
+  title: Cardboard for Startups paid-plan discount Startup Program
+  summary: 'Startup program context: https://cardboard.inc/campaigns/software-subscriptions/'
+  source_ids:
+  - src_48935260c54508edc3d7a945f5473dcd382d88538733a015
+offers:
+- offer_id: off_e304ddb9cf114fffa22e0352
+  program_id: prg_7a061ebfd95c4f10ab27daf3
+  offer_slug: cardboard-for-startups-paidpla-startup-discount
+  offer_slug_aliases: []
+  title: Cardboard for Startups paid-plan discount startup program
+  summary: 'Startup program context: https://cardboard.inc/campaigns/software-subscriptions/'
+  lifecycle:
+    status: active
+    effective_from: '2026-09-06T07:03:13.656Z'
+  economics:
+    consideration:
+      kind: none
+    benefits:
+    - benefit_id: ben_01
+      description: Startup program benefits as published by vendor.
+      kind: other
+  eligibility:
+    rule:
+      kind: manual
+      criterion_id: cri_01
+      statement: Contact Cardboard for Startups paid-plan discount for eligibility
+        requirements.
+      reason: vendor-discretion
+  roles:
+    terms_authority_entity_id: ent_14cdaf6c19174d5793f75dd1
+    access_operator_entity_id: ent_14cdaf6c19174d5793f75dd1
+  access:
+    availability: public
+    method: form
+    url: https://gofrantic.com/bounties/120)
+  source_ids:
+  - src_48935260c54508edc3d7a945f5473dcd382d88538733a015

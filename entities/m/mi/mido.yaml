@@ -1,0 +1,57 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_-nZQ9u3BkUv60NVbCI1gw
+  slug: mido
+  slug_aliases: []
+  name: Mido
+  domains:
+  - value: heymido.com
+    role: primary
+    valid_from: '2026-09-06 00:00:00+00:00'
+  category: ai-ml
+profile:
+  description: Mido provides AI-powered platform services for venture-backed startups.
+  links:
+    site: https://heymido.com
+sources:
+- source_id: src_e8c2ac04cc96b6699c389cb15e663ea9a7b4e4a6
+  url: https://heymido.com/startups
+programs: []
+offers:
+- offer_id: off_2mbaR7PUQZRDDt2ZGskXH
+  offer_slug: mido-for-startups
+  offer_slug_aliases: []
+  title: Mido for Startups
+  summary: Mido for Startups provides selected venture-backed teams with $5,000–$25,000
+    in platform credits, priority support, and strategy guidance.
+  lifecycle:
+    status: active
+    effective_from: '2026-09-06 00:00:00+00:00'
+  economics:
+    benefits:
+    - benefit_id: ben_01
+      description: $5,000–$25,000 in platform credits, priority support, and strategy
+        guidance
+      kind: credit
+      value:
+        amount:
+          currency: USD
+          minor_units: 2500000
+        kind: at-least
+    consideration:
+      kind: none
+  eligibility:
+    rule:
+      kind: manual
+      criterion_id: cri_01
+      statement: Venture-backed startups selected for the Mido for Startups program.
+      reason: not-machine-evaluable
+  roles:
+    terms_authority_entity_id: ent_-nZQ9u3BkUv60NVbCI1gw
+    access_operator_entity_id: ent_-nZQ9u3BkUv60NVbCI1gw
+  access:
+    availability: public
+    method: form
+    url: https://heymido.com/startups
+  source_ids:
+  - src_e8c2ac04cc96b6699c389cb15e663ea9a7b4e4a6

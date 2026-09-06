@@ -1,0 +1,61 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_8c47085dfbb3489981eb1af0
+  slug: layer-pr-startup-program
+  slug_aliases: []
+  name: Layer PR startup program
+  domains:
+  - value: layerpr.com
+    role: primary
+    valid_from: '2026-09-06T07:03:13.389Z'
+  category: startup-program
+profile:
+  description: Layer PR offers qualifying revenue-generating startups up to 50% off
+    invoices during its one-year program.
+  links:
+    site: https://layerpr.com
+sources:
+- source_id: src_931c8d56588c7e19e2d6e16006f5f941035dc2a434f02441
+  url: https://layerpr.com/startup-program/
+programs:
+- program_id: prg_ac1379e1b4404b17bcfe9506
+  program_slug: layer-pr-startup-program-startup-program
+  program_slug_aliases: []
+  title: Layer PR startup program Startup Program
+  summary: Layer PR offers qualifying revenue-generating startups up to 50% off invoices
+    during its one-year program.
+  source_ids:
+  - src_931c8d56588c7e19e2d6e16006f5f941035dc2a434f02441
+offers:
+- offer_id: off_1c7e7cb2f13f4096b79e5ad5
+  program_id: prg_ac1379e1b4404b17bcfe9506
+  offer_slug: layer-pr-startup-program-startup-discount
+  offer_slug_aliases: []
+  title: Layer PR startup program startup program
+  summary: Layer PR offers qualifying revenue-generating startups up to 50% off invoices
+    during its one-year program.
+  lifecycle:
+    status: active
+    effective_from: '2026-09-06T07:03:13.389Z'
+  economics:
+    consideration:
+      kind: none
+    benefits:
+    - benefit_id: ben_01
+      description: Startup program benefits as published by vendor.
+      kind: other
+  eligibility:
+    rule:
+      kind: manual
+      criterion_id: cri_01
+      statement: Contact Layer PR startup program for eligibility requirements.
+      reason: vendor-discretion
+  roles:
+    terms_authority_entity_id: ent_8c47085dfbb3489981eb1af0
+    access_operator_entity_id: ent_8c47085dfbb3489981eb1af0
+  access:
+    availability: public
+    method: form
+    url: https://layerpr.com/startup-program/
+  source_ids:
+  - src_931c8d56588c7e19e2d6e16006f5f941035dc2a434f02441

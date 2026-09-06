@@ -1,0 +1,58 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_uF_lNoNitLFFb61H7S1VS
+  slug: cms-austria
+  slug_aliases: []
+  name: CMS Austria
+  domains:
+  - value: cms.law
+    role: primary
+    valid_from: '2026-09-06 00:00:00+00:00'
+  category: legal
+profile:
+  description: CMS Reich-Rohrwig Hainz Rechtsanwälte GmbH (CMS Austria) is a full-service
+    law firm providing legal services across Austria.
+  links:
+    site: https://cms.law/en/aut
+sources:
+- source_id: src_ec4a3e200b0d95e72e65135f5ca42e7cb6b6695a
+  url: https://cms.law/en/aut/insight/start-ups/cms-equip-membership
+programs: []
+offers:
+- offer_id: off_C5EVZrS7AquXpvBO76moD
+  offer_slug: cms-austria-equip-startup-programme
+  offer_slug_aliases: []
+  title: CMS Austria equIP Startup Programme
+  summary: 'CMS equIP Austria: accepted startup members receive 50% off standard hourly
+    legal rates for three years, up to EUR 25,000 discount per year.'
+  lifecycle:
+    status: active
+    effective_from: '2026-09-06 00:00:00+00:00'
+  economics:
+    benefits:
+    - benefit_id: ben_01
+      description: 50% off standard hourly legal rates, up to EUR 25,000 per year
+        for three years
+      kind: discount
+      value:
+        amount:
+          currency: EUR
+          minor_units: 25000
+        kind: at-least
+    consideration:
+      kind: none
+  eligibility:
+    rule:
+      kind: manual
+      criterion_id: cri_01
+      statement: Accepted startup members; application and acceptance required.
+      reason: not-machine-evaluable
+  roles:
+    terms_authority_entity_id: ent_uF_lNoNitLFFb61H7S1VS
+    access_operator_entity_id: ent_uF_lNoNitLFFb61H7S1VS
+  access:
+    availability: public
+    method: form
+    url: https://cms.law/en/aut/insight/start-ups/cms-equip-membership
+  source_ids:
+  - src_ec4a3e200b0d95e72e65135f5ca42e7cb6b6695a

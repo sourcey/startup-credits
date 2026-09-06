@@ -1,0 +1,65 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_914d0d2b02c14ee1b173b527
+  slug: cyberport
+  slug_aliases: []
+  name: Cyberport
+  domains:
+  - value: cyberport.hk
+    role: primary
+    valid_from: '2026-09-06T07:03:13.639Z'
+  category: startup-program
+profile:
+  description: A startup-specific cash grant for digital technology projects at the
+    idea or early development stage. The official page lists up to HKD 100,000 over
+    six months, subject to selection and reporting mile
+  links:
+    site: https://cyberport.hk
+sources:
+- source_id: src_009fe09e0f2d29d5b4fab9d17bce49117e55c38048b47521
+  url: https://www.cyberport.hk/en/entrepreneurship/hong_kong_programme/
+programs:
+- program_id: prg_f4e278abc40142d7a02e3e98
+  program_slug: cyberport-startup-program
+  program_slug_aliases: []
+  title: Cyberport Startup Program
+  summary: A startup-specific cash grant for digital technology projects at the idea
+    or early development stage. The official page lists up to HKD 100,000 over six
+    months, subject to selection and reporting mile
+  source_ids:
+  - src_009fe09e0f2d29d5b4fab9d17bce49117e55c38048b47521
+offers:
+- offer_id: off_48d386dabce44b20b4982647
+  program_id: prg_f4e278abc40142d7a02e3e98
+  offer_slug: cyberport-startup-discount
+  offer_slug_aliases: []
+  title: Cyberport startup grant
+  summary: A startup-specific cash grant for digital technology projects at the idea
+    or early development stage. The official page lists up to HKD 100,000 over six
+    months, subject to selection and reporting milestones. The next published application
+    deadline is 1 December 2026 for the February 2027 intake. I w
+  lifecycle:
+    status: active
+    effective_from: '2026-09-06T07:03:13.639Z'
+  economics:
+    consideration:
+      kind: none
+    benefits:
+    - benefit_id: ben_01
+      description: Startup program benefits as published by vendor.
+      kind: other
+  eligibility:
+    rule:
+      kind: manual
+      criterion_id: cri_01
+      statement: Contact Cyberport for eligibility requirements.
+      reason: vendor-discretion
+  roles:
+    terms_authority_entity_id: ent_914d0d2b02c14ee1b173b527
+    access_operator_entity_id: ent_914d0d2b02c14ee1b173b527
+  access:
+    availability: public
+    method: form
+    url: https://www.cyberport.hk/en/entrepreneurship/hong_kong_programme/
+  source_ids:
+  - src_009fe09e0f2d29d5b4fab9d17bce49117e55c38048b47521

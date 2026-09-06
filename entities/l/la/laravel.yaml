@@ -1,0 +1,57 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_e3QrfJ_uoVFGISV_MVb5n
+  slug: laravel
+  slug_aliases: []
+  name: Laravel
+  domains:
+  - value: laravel.com
+    role: primary
+    valid_from: '2026-09-06 00:00:00+00:00'
+  category: cloud
+profile:
+  description: Laravel Cloud provides a cloud hosting platform built for the Laravel
+    ecosystem.
+  links:
+    site: https://laravel.com/cloud
+sources:
+- source_id: src_636c922deff150eb2be98353c8064116fc0723ad
+  url: https://aws.amazon.com/startups/credits
+programs: []
+offers:
+- offer_id: off_v2bbxBqbdnOGCkskZTwwA
+  offer_slug: laravel-cloud-credit-through-aws-activate
+  offer_slug_aliases: []
+  title: Laravel Cloud Credit through AWS Activate
+  summary: AWS Activate currently lists $300 in credits to deploy anything on Laravel
+    Cloud. This is a partner offer accessed through AWS Activate for eligible startups.
+  lifecycle:
+    status: active
+    effective_from: '2026-09-06 00:00:00+00:00'
+  economics:
+    benefits:
+    - benefit_id: ben_01
+      description: $300 in Laravel Cloud credits through AWS Activate
+      kind: credit
+      value:
+        amount:
+          currency: USD
+          minor_units: 30000
+        kind: at-least
+    consideration:
+      kind: none
+  eligibility:
+    rule:
+      kind: manual
+      criterion_id: cri_01
+      statement: Eligible startups through AWS Activate program membership.
+      reason: not-machine-evaluable
+  roles:
+    terms_authority_entity_id: ent_e3QrfJ_uoVFGISV_MVb5n
+    access_operator_entity_id: ent_e3QrfJ_uoVFGISV_MVb5n
+  access:
+    availability: membership
+    method: other
+    url: https://startups.aws.com/offers?lang=en-US
+  source_ids:
+  - src_636c922deff150eb2be98353c8064116fc0723ad

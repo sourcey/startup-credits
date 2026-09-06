@@ -1,0 +1,51 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1sxvrpw3e6xj0405cwc2cjt
+  slug: liveblocks
+  slug_aliases: []
+  name: Liveblocks
+  domains:
+    - value: liveblocks.io
+      role: primary
+      valid_from: 2026-01-01T00:00:00.000Z
+  category: devtools-other
+profile:
+  description: Liveblocks provides realtime infrastructure for multiplayer apps — powering sync, comments, and notifications so teams and AI agents can collaborate without building the plumbing.
+  links:
+    site: https://liveblocks.io
+sources:
+  - source_id: src_e5b54405dacd60fde034c89568ce68f66fa10832783857a9ac3f23e8645681cd
+    url: https://liveblocks.io/startups
+programs: []
+offers:
+  - offer_id: off_01m1sxvrq3adyb0hewa6h6rrm3
+    offer_slug: liveblocks-startup-program
+    offer_slug_aliases: []
+    title: Liveblocks Startup Program
+    summary: Eligible startups can receive a startup program discount on Liveblocks through an application form; specific discount rate and duration are not published on the vendor page.
+    lifecycle:
+      status: active
+      effective_from: 2026-01-01T00:00:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_primary
+          description: Startup program discount on Liveblocks; specific rate and duration not publicly stated by the vendor.
+          kind: discount
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Open to startups applying through the Liveblocks startup program. Applications are reviewed and approved by Liveblocks.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01m1sxvrpw3e6xj0405cwc2cjt
+      access_operator_entity_id: ent_01m1sxvrpw3e6xj0405cwc2cjt
+    access:
+      availability: public
+      method: form
+      url: https://liveblocks.io/startups
+    source_ids:
+      - src_e5b54405dacd60fde034c89568ce68f66fa10832783857a9ac3f23e8645681cd

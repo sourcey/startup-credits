@@ -1,0 +1,61 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_e170af68dea447238cb9822d
+  slug: akinda
+  slug_aliases: []
+  name: Akinda
+  domains:
+  - value: akinda.io
+    role: primary
+    valid_from: '2026-09-06T07:03:13.722Z'
+  category: startup-program
+profile:
+  description: I would like to contribute one Akinda entity with one startup-specific
+    API discount offer.
+  links:
+    site: https://akinda.io
+sources:
+- source_id: src_f1d4b5972e298c0bfe01cee50ae96ff3e2ac3b753c3d5b8d
+  url: https://b2b.akinda.io/startup
+programs:
+- program_id: prg_bc49126212044122a2214ba2
+  program_slug: akinda-startup-program
+  program_slug_aliases: []
+  title: Akinda Startup Program
+  summary: I would like to contribute one Akinda entity with one startup-specific
+    API discount offer.
+  source_ids:
+  - src_f1d4b5972e298c0bfe01cee50ae96ff3e2ac3b753c3d5b8d
+offers:
+- offer_id: off_e861f3cc452c40bd858cf2ff
+  program_id: prg_bc49126212044122a2214ba2
+  offer_slug: akinda-startup-discount
+  offer_slug_aliases: []
+  title: Akinda startup discount
+  summary: I would like to contribute one Akinda entity with one startup-specific
+    API discount offer.
+  lifecycle:
+    status: active
+    effective_from: '2026-09-06T07:03:13.722Z'
+  economics:
+    consideration:
+      kind: none
+    benefits:
+    - benefit_id: ben_01
+      description: Startup program benefits as published by vendor.
+      kind: other
+  eligibility:
+    rule:
+      kind: manual
+      criterion_id: cri_01
+      statement: Contact Akinda for eligibility requirements.
+      reason: vendor-discretion
+  roles:
+    terms_authority_entity_id: ent_e170af68dea447238cb9822d
+    access_operator_entity_id: ent_e170af68dea447238cb9822d
+  access:
+    availability: public
+    method: form
+    url: https://b2b.akinda.io/startup
+  source_ids:
+  - src_f1d4b5972e298c0bfe01cee50ae96ff3e2ac3b753c3d5b8d

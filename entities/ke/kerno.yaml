@@ -1,0 +1,68 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1tr9k2x3mg6f1bazbrqv7y7
+  slug: kerno
+  slug_aliases: []
+  name: Kerno
+  domains:
+    - value: kerno.io
+      role: primary
+      valid_from: 2026-09-01T00:00:00.000Z
+  category: developer-tools
+profile:
+  description: Kerno is a runtime verification platform that tests and validates code changes against a live application and its dependencies.
+  links:
+    site: https://kerno.io
+sources:
+  - source_id: src_02ff57563f50c5694062916e1ae985e4bfd05870d135278277ac8a90b67e5714
+    url: https://www.kerno.io/pricing/
+programs:
+  - program_id: prg_01m1tr9k399cfp829m48ce0zhd
+    program_slug: kerno-startup-program
+    program_slug_aliases: []
+    title: Kerno Startup Discount
+    summary: Kerno offers 50% off for pre-Series A startups with revenue under $2 million over the preceding 12 months.
+    source_ids:
+      - src_02ff57563f50c5694062916e1ae985e4bfd05870d135278277ac8a90b67e5714
+offers:
+  - offer_id: off_01m1tr9k396k4txr996a5xebpk
+    program_id: prg_01m1tr9k399cfp829m48ce0zhd
+    offer_slug: startup-discount
+    offer_slug_aliases: []
+    title: 50% off for early-stage startups
+    summary: Pre-Series A startups with under $2M revenue in the past 12 months receive 50% off Kerno plans.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-01T00:00:00.000Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The startup pays the remaining discounted subscription price; the public pricing page does not publish a fixed post-discount price.
+      benefits:
+        - benefit_id: ben_01
+          description: 50% off Kerno plans for pre-Series A startups with revenue under $2M in the past 12 months.
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 5000
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: not-machine-evaluable
+            statement: Applicant is a pre-Series A startup.
+          - criterion_id: cri_02
+            kind: manual
+            reason: not-machine-evaluable
+            statement: Applicant's revenue is under $2 million over the preceding 12 months.
+    roles:
+      terms_authority_entity_id: ent_01m1tr9k2x3mg6f1bazbrqv7y7
+      access_operator_entity_id: ent_01m1tr9k2x3mg6f1bazbrqv7y7
+    access:
+      availability: application
+      method: form
+      url: https://kerno.io/pricing/
+    source_ids:
+      - src_02ff57563f50c5694062916e1ae985e4bfd05870d135278277ac8a90b67e5714

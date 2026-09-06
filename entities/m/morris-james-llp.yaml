@@ -1,0 +1,65 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_360b2958dae44b43b43b3164
+  slug: morris-james-llp
+  slug_aliases: []
+  name: Morris James LLP
+  domains:
+  - value: morrisjames.com
+    role: primary
+    valid_from: '2026-09-06T07:03:13.344Z'
+  category: startup-program
+profile:
+  description: The Morris James Start-Up Program offers qualifying companies 30% off
+    standard corporate legal rates for the first year of engagement. Qualification
+    is case-by-case; the source describes typical early
+  links:
+    site: https://morrisjames.com
+sources:
+- source_id: src_530c52adebf6ce3e6ea2b3b2c399b6483b5b8fdae1993edb
+  url: https://www.morrisjames.com/service/corporate-ma/start-up-program/
+programs:
+- program_id: prg_1868308ee5444e0da8778028
+  program_slug: morris-james-llp-startup-program
+  program_slug_aliases: []
+  title: Morris James LLP Startup Program
+  summary: The Morris James Start-Up Program offers qualifying companies 30% off standard
+    corporate legal rates for the first year of engagement. Qualification is case-by-case;
+    the source describes typical early
+  source_ids:
+  - src_530c52adebf6ce3e6ea2b3b2c399b6483b5b8fdae1993edb
+offers:
+- offer_id: off_bd46957d71874d97b62a2d37
+  program_id: prg_1868308ee5444e0da8778028
+  offer_slug: morris-james-llp-startup-discount
+  offer_slug_aliases: []
+  title: Morris James LLP startup discount
+  summary: The Morris James Start-Up Program offers qualifying companies 30% off standard
+    corporate legal rates for the first year of engagement. Qualification is case-by-case;
+    the source describes typical early-stage, pre-revenue/low-revenue companies without
+    a significant capital raise. This is a discount on
+  lifecycle:
+    status: active
+    effective_from: '2026-09-06T07:03:13.344Z'
+  economics:
+    consideration:
+      kind: none
+    benefits:
+    - benefit_id: ben_01
+      description: Startup program benefits as published by vendor.
+      kind: other
+  eligibility:
+    rule:
+      kind: manual
+      criterion_id: cri_01
+      statement: Contact Morris James LLP for eligibility requirements.
+      reason: vendor-discretion
+  roles:
+    terms_authority_entity_id: ent_360b2958dae44b43b43b3164
+    access_operator_entity_id: ent_360b2958dae44b43b43b3164
+  access:
+    availability: public
+    method: form
+    url: https://www.morrisjames.com/service/corporate-ma/start-up-program/
+  source_ids:
+  - src_530c52adebf6ce3e6ea2b3b2c399b6483b5b8fdae1993edb

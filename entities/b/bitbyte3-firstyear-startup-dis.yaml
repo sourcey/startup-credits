@@ -1,0 +1,64 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_dfa5f7f3801d49f790cc1e25
+  slug: bitbyte3-firstyear-startup-dis
+  slug_aliases: []
+  name: BitByte3 first-year startup discount
+  domains:
+  - value: bitbyte3.com
+    role: primary
+    valid_from: '2026-09-06T07:03:13.846Z'
+  category: startup-program
+profile:
+  description: 'BitByte3 publishes a startup-specific 25% discount for the first year
+    on Starter, Growth, or Business, available with monthly or yearly billing, subject
+    to review: https://bitbyte3.com/solutions/start'
+  links:
+    site: https://bitbyte3.com
+sources:
+- source_id: src_59b503c47b453ec94403322e3f0d1263a3c259eec25982c6
+  url: https://bitbyte3.com/solutions/startups
+programs:
+- program_id: prg_631f9b7634a9441d98b77916
+  program_slug: bitbyte3-firstyear-startup-dis-startup-program
+  program_slug_aliases: []
+  title: BitByte3 first-year startup discount Startup Program
+  summary: 'BitByte3 publishes a startup-specific 25% discount for the first year
+    on Starter, Growth, or Business, available with monthly or yearly billing, subject
+    to review: https://bitbyte3.com/solutions/start'
+  source_ids:
+  - src_59b503c47b453ec94403322e3f0d1263a3c259eec25982c6
+offers:
+- offer_id: off_2ea6c0b06c0c466aba63fc49
+  program_id: prg_631f9b7634a9441d98b77916
+  offer_slug: bitbyte3-firstyear-startup-dis-startup-discount
+  offer_slug_aliases: []
+  title: BitByte3 first-year startup discount startup discount
+  summary: 'BitByte3 publishes a startup-specific 25% discount for the first year
+    on Starter, Growth, or Business, available with monthly or yearly billing, subject
+    to review: https://bitbyte3.com/solutions/startups'
+  lifecycle:
+    status: active
+    effective_from: '2026-09-06T07:03:13.846Z'
+  economics:
+    consideration:
+      kind: none
+    benefits:
+    - benefit_id: ben_01
+      description: Startup program benefits as published by vendor.
+      kind: other
+  eligibility:
+    rule:
+      kind: manual
+      criterion_id: cri_01
+      statement: Contact BitByte3 first-year startup discount for eligibility requirements.
+      reason: vendor-discretion
+  roles:
+    terms_authority_entity_id: ent_dfa5f7f3801d49f790cc1e25
+    access_operator_entity_id: ent_dfa5f7f3801d49f790cc1e25
+  access:
+    availability: public
+    method: form
+    url: https://bitbyte3.com/solutions/startups
+  source_ids:
+  - src_59b503c47b453ec94403322e3f0d1263a3c259eec25982c6

@@ -1,0 +1,65 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_6d8d4510b6cf411c945914b5
+  slug: laravel
+  slug_aliases: []
+  name: Laravel
+  domains:
+  - value: laravel.com
+    role: primary
+    valid_from: '2026-09-06T07:03:13.353Z'
+  category: startup-program
+profile:
+  description: AWS Activate currently lists “$300 to deploy anything on Laravel Cloud.”
+    This is a partner offer accessed through AWS Activate, rather than Laravel Cloud's
+    ordinary public pricing. The proposed record
+  links:
+    site: https://laravel.com
+sources:
+- source_id: src_10ecae1e3a3fc59cd7ab5d4aaa63ed251910b75464208870
+  url: https://laravel.com/cloud
+programs:
+- program_id: prg_72995295348a41e3b90be38a
+  program_slug: laravel-startup-program
+  program_slug_aliases: []
+  title: Laravel Startup Program
+  summary: AWS Activate currently lists “$300 to deploy anything on Laravel Cloud.”
+    This is a partner offer accessed through AWS Activate, rather than Laravel Cloud's
+    ordinary public pricing. The proposed record
+  source_ids:
+  - src_10ecae1e3a3fc59cd7ab5d4aaa63ed251910b75464208870
+offers:
+- offer_id: off_14e913a463654f0084c59d42
+  program_id: prg_72995295348a41e3b90be38a
+  offer_slug: laravel-startup-discount
+  offer_slug_aliases: []
+  title: Laravel startup program
+  summary: AWS Activate currently lists “$300 to deploy anything on Laravel Cloud.”
+    This is a partner offer accessed through AWS Activate, rather than Laravel Cloud's
+    ordinary public pricing. The proposed record will model AWS as the access operator
+    and include the published membership and business eligibility
+  lifecycle:
+    status: active
+    effective_from: '2026-09-06T07:03:13.353Z'
+  economics:
+    consideration:
+      kind: none
+    benefits:
+    - benefit_id: ben_01
+      description: Startup program benefits as published by vendor.
+      kind: other
+  eligibility:
+    rule:
+      kind: manual
+      criterion_id: cri_01
+      statement: Contact Laravel for eligibility requirements.
+      reason: vendor-discretion
+  roles:
+    terms_authority_entity_id: ent_6d8d4510b6cf411c945914b5
+    access_operator_entity_id: ent_6d8d4510b6cf411c945914b5
+  access:
+    availability: public
+    method: form
+    url: https://laravel.com/cloud
+  source_ids:
+  - src_10ecae1e3a3fc59cd7ab5d4aaa63ed251910b75464208870

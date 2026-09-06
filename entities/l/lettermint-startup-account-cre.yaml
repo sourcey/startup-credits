@@ -1,0 +1,61 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_f2a9ef17dee7400c91d0eea0
+  slug: lettermint-startup-account-cre
+  slug_aliases: []
+  name: Lettermint startup account credit
+  domains:
+  - value: lettermint.co
+    role: primary
+    valid_from: '2026-09-06T07:03:13.596Z'
+  category: startup-program
+profile:
+  description: Proposing one new Lettermint entity and its startup-specific EUR 60
+    account credit, valid for 12 months after activation.
+  links:
+    site: https://lettermint.co
+sources:
+- source_id: src_b202c99cef3415c0550d601c08616f5a302b7cf3cc5e9460
+  url: https://lettermint.co/promo-codes-and-discounts/startups
+programs:
+- program_id: prg_76dba770a1834839bb0e77b5
+  program_slug: lettermint-startup-account-cre-startup-program
+  program_slug_aliases: []
+  title: Lettermint startup account credit Startup Program
+  summary: Proposing one new Lettermint entity and its startup-specific EUR 60 account
+    credit, valid for 12 months after activation.
+  source_ids:
+  - src_b202c99cef3415c0550d601c08616f5a302b7cf3cc5e9460
+offers:
+- offer_id: off_81080315ff3c4db59a69b47a
+  program_id: prg_76dba770a1834839bb0e77b5
+  offer_slug: lettermint-startup-account-cre-startup-discount
+  offer_slug_aliases: []
+  title: Lettermint startup account credit startup program
+  summary: Proposing one new Lettermint entity and its startup-specific EUR 60 account
+    credit, valid for 12 months after activation.
+  lifecycle:
+    status: active
+    effective_from: '2026-09-06T07:03:13.596Z'
+  economics:
+    consideration:
+      kind: none
+    benefits:
+    - benefit_id: ben_01
+      description: Startup program benefits as published by vendor.
+      kind: other
+  eligibility:
+    rule:
+      kind: manual
+      criterion_id: cri_01
+      statement: Contact Lettermint startup account credit for eligibility requirements.
+      reason: vendor-discretion
+  roles:
+    terms_authority_entity_id: ent_f2a9ef17dee7400c91d0eea0
+    access_operator_entity_id: ent_f2a9ef17dee7400c91d0eea0
+  access:
+    availability: public
+    method: form
+    url: https://lettermint.co/promo-codes-and-discounts/startups
+  source_ids:
+  - src_b202c99cef3415c0550d601c08616f5a302b7cf3cc5e9460

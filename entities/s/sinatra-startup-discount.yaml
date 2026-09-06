@@ -1,0 +1,59 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_2ab04f5f5a2343caa2581247
+  slug: sinatra-startup-discount
+  slug_aliases: []
+  name: Sinatra startup discount
+  domains:
+  - value: sinatra.dev
+    role: primary
+    valid_from: '2026-09-06T07:03:13.416Z'
+  category: startup-program
+profile:
+  description: Sinatra offers approved startup teams 50% off monthly seats for 12
+    months.
+  links:
+    site: https://sinatra.dev
+sources:
+- source_id: src_51aeca44730d2264e2c62d62dc2a3441d6833103d4fe3c1f
+  url: https://www.sinatra.dev/startups
+programs:
+- program_id: prg_00913b0c349441beb2faa7bd
+  program_slug: sinatra-startup-discount-startup-program
+  program_slug_aliases: []
+  title: Sinatra startup discount Startup Program
+  summary: Sinatra offers approved startup teams 50% off monthly seats for 12 months.
+  source_ids:
+  - src_51aeca44730d2264e2c62d62dc2a3441d6833103d4fe3c1f
+offers:
+- offer_id: off_549a0d3664bc4742a6172d95
+  program_id: prg_00913b0c349441beb2faa7bd
+  offer_slug: sinatra-startup-discount-startup-discount
+  offer_slug_aliases: []
+  title: Sinatra startup discount startup program
+  summary: Sinatra offers approved startup teams 50% off monthly seats for 12 months.
+  lifecycle:
+    status: active
+    effective_from: '2026-09-06T07:03:13.416Z'
+  economics:
+    consideration:
+      kind: none
+    benefits:
+    - benefit_id: ben_01
+      description: Startup program benefits as published by vendor.
+      kind: other
+  eligibility:
+    rule:
+      kind: manual
+      criterion_id: cri_01
+      statement: Contact Sinatra startup discount for eligibility requirements.
+      reason: vendor-discretion
+  roles:
+    terms_authority_entity_id: ent_2ab04f5f5a2343caa2581247
+    access_operator_entity_id: ent_2ab04f5f5a2343caa2581247
+  access:
+    availability: public
+    method: form
+    url: https://www.sinatra.dev/startups
+  source_ids:
+  - src_51aeca44730d2264e2c62d62dc2a3441d6833103d4fe3c1f

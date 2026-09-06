@@ -1,0 +1,60 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_YFF7VG-B5vIeEJcM1jDE2
+  slug: cyberport
+  slug_aliases: []
+  name: Cyberport
+  domains:
+  - value: cyberport.hk
+    role: primary
+    valid_from: '2026-09-06 00:00:00+00:00'
+  category: government
+profile:
+  description: Cyberport is a Hong Kong government-supported digital entertainment
+    hub that supports tech startups through funding and community programs.
+  links:
+    site: https://www.cyberport.hk
+sources:
+- source_id: src_009fe09e0f2d29d5b4fab9d17bce49117e55c380
+  url: https://www.cyberport.hk/en/entrepreneurship/hong_kong_programme/
+programs: []
+offers:
+- offer_id: off_2xJ3svqQ1-zU0Q57LuYkq
+  offer_slug: cyberport-ccmf-hong-kong-programme
+  offer_slug_aliases: []
+  title: Cyberport CCMF Hong Kong Programme
+  summary: A startup-specific cash grant for digital technology projects at the idea
+    or early development stage. The official page lists up to HKD 100,000 over six
+    months, subject to selection and reporting milestones.
+  lifecycle:
+    status: active
+    effective_from: '2026-09-06 00:00:00+00:00'
+  economics:
+    benefits:
+    - benefit_id: ben_01
+      description: Up to HKD 100,000 over six months for digital technology projects
+      kind: grant
+      value:
+        amount:
+          currency: HKD
+          minor_units: 100000
+        kind: at-least
+    consideration:
+      kind: none
+  eligibility:
+    rule:
+      kind: manual
+      criterion_id: cri_01
+      statement: Digital technology startups at idea or early development stage; Hong
+        Kong-eligible; individual/company routes available; restrictions on overlapping
+        programmes apply.
+      reason: not-machine-evaluable
+  roles:
+    terms_authority_entity_id: ent_YFF7VG-B5vIeEJcM1jDE2
+    access_operator_entity_id: ent_YFF7VG-B5vIeEJcM1jDE2
+  access:
+    availability: public
+    method: form
+    url: https://www.cyberport.hk/en/entrepreneurship/hong_kong_programme/
+  source_ids:
+  - src_009fe09e0f2d29d5b4fab9d17bce49117e55c380

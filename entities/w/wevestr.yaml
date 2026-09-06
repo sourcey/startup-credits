@@ -1,0 +1,65 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_192c822cf7114dc49a961258
+  slug: wevestr
+  slug_aliases: []
+  name: WE.VESTR
+  domains:
+  - value: wevestr.com
+    role: primary
+    valid_from: '2026-09-06T07:03:13.516Z'
+  category: startup-program
+profile:
+  description: Microsoft for Startups members can receive a first-year discount on
+    WE.VESTR equity-management plans. Microsoft's benefit documentation specifies
+    70% off for eligible new customers with 30 or more sta
+  links:
+    site: https://wevestr.com
+sources:
+- source_id: src_ee4d29c41b039dc0982c1c06119060b228a8e5e82c05fc40
+  url: https://wevestr.com/microsoft-for-startups
+programs:
+- program_id: prg_e9175f1e559d48e3bad0d85d
+  program_slug: wevestr-startup-program
+  program_slug_aliases: []
+  title: WE.VESTR Startup Program
+  summary: Microsoft for Startups members can receive a first-year discount on WE.VESTR
+    equity-management plans. Microsoft's benefit documentation specifies 70% off for
+    eligible new customers with 30 or more sta
+  source_ids:
+  - src_ee4d29c41b039dc0982c1c06119060b228a8e5e82c05fc40
+offers:
+- offer_id: off_3378865889f0421ba1bde4bd
+  program_id: prg_e9175f1e559d48e3bad0d85d
+  offer_slug: wevestr-startup-discount
+  offer_slug_aliases: []
+  title: WE.VESTR startup discount
+  summary: 'Microsoft for Startups members can receive a first-year discount on WE.VESTR
+    equity-management plans. Microsoft''s benefit documentation specifies 70% off
+    for eligible new customers with 30 or more stakeholders, valid for 12 months,
+    with access gated through the Microsoft for Startups Benefits page. '
+  lifecycle:
+    status: active
+    effective_from: '2026-09-06T07:03:13.516Z'
+  economics:
+    consideration:
+      kind: none
+    benefits:
+    - benefit_id: ben_01
+      description: Startup program benefits as published by vendor.
+      kind: other
+  eligibility:
+    rule:
+      kind: manual
+      criterion_id: cri_01
+      statement: Contact WE.VESTR for eligibility requirements.
+      reason: vendor-discretion
+  roles:
+    terms_authority_entity_id: ent_192c822cf7114dc49a961258
+    access_operator_entity_id: ent_192c822cf7114dc49a961258
+  access:
+    availability: public
+    method: form
+    url: https://wevestr.com/microsoft-for-startups
+  source_ids:
+  - src_ee4d29c41b039dc0982c1c06119060b228a8e5e82c05fc40

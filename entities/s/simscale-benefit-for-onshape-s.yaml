@@ -1,0 +1,65 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_9c78c8e68140497398ebe23e
+  slug: simscale-benefit-for-onshape-s
+  slug_aliases: []
+  name: SimScale benefit for Onshape startups
+  domains:
+  - value: simscale.com
+    role: primary
+    valid_from: '2026-09-06T07:03:13.782Z'
+  category: startup-program
+profile:
+  description: 'SimScale offers hardware startups and entrepreneurs in the dedicated
+    Onshape program three months of free cloud simulation, up to 20,000 core hours,
+    and live in-product support. This is restricted to '
+  links:
+    site: https://simscale.com
+sources:
+- source_id: src_6c03359f62241c7acc61e4267b6333b91ed32e002228d096
+  url: https://www.simscale.com/technology/integrations-partners/onshape/
+programs:
+- program_id: prg_c82bc61fdc5c4b2bbe488f7f
+  program_slug: simscale-benefit-for-onshape-s-startup-program
+  program_slug_aliases: []
+  title: SimScale benefit for Onshape startups Startup Program
+  summary: 'SimScale offers hardware startups and entrepreneurs in the dedicated Onshape
+    program three months of free cloud simulation, up to 20,000 core hours, and live
+    in-product support. This is restricted to '
+  source_ids:
+  - src_6c03359f62241c7acc61e4267b6333b91ed32e002228d096
+offers:
+- offer_id: off_123e79c5dcee47209307c89d
+  program_id: prg_c82bc61fdc5c4b2bbe488f7f
+  offer_slug: simscale-benefit-for-onshape-s-startup-discount
+  offer_slug_aliases: []
+  title: SimScale benefit for Onshape startups startup program
+  summary: SimScale offers hardware startups and entrepreneurs in the dedicated Onshape
+    program three months of free cloud simulation, up to 20,000 core hours, and live
+    in-product support. This is restricted to the Onshape startup program, with no
+    invented dollar valuation.
+  lifecycle:
+    status: active
+    effective_from: '2026-09-06T07:03:13.782Z'
+  economics:
+    consideration:
+      kind: none
+    benefits:
+    - benefit_id: ben_01
+      description: Startup program benefits as published by vendor.
+      kind: other
+  eligibility:
+    rule:
+      kind: manual
+      criterion_id: cri_01
+      statement: Contact SimScale benefit for Onshape startups for eligibility requirements.
+      reason: vendor-discretion
+  roles:
+    terms_authority_entity_id: ent_9c78c8e68140497398ebe23e
+    access_operator_entity_id: ent_9c78c8e68140497398ebe23e
+  access:
+    availability: public
+    method: form
+    url: https://www.simscale.com/technology/integrations-partners/onshape/
+  source_ids:
+  - src_6c03359f62241c7acc61e4267b6333b91ed32e002228d096

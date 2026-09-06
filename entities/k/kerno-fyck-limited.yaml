@@ -1,0 +1,64 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_3673affba67c408ca24a6662
+  slug: kerno-fyck-limited
+  slug_aliases: []
+  name: Kerno (FYCK Limited)
+  domains:
+  - value: kerno.io
+    role: primary
+    valid_from: '2026-09-06T07:03:13.317Z'
+  category: startup-program
+profile:
+  description: 50% discount for pre-Series A startups with revenue under $2 million
+    over the preceding12 months. No duration, seat limit or ISO currency is assumed
+    beyond the vendor's published terms. One standalone
+  links:
+    site: https://kerno.io
+sources:
+- source_id: src_0c9d0acc6ea58808f57f63c5928e753e9c4e0d393b373f3d
+  url: https://www.kerno.io/pricing/
+programs:
+- program_id: prg_2f11bdc3a3bc4b0da8e5c129
+  program_slug: kerno-fyck-limited-startup-program
+  program_slug_aliases: []
+  title: Kerno (FYCK Limited) Startup Program
+  summary: 50% discount for pre-Series A startups with revenue under $2 million over
+    the preceding12 months. No duration, seat limit or ISO currency is assumed beyond
+    the vendor's published terms. One standalone
+  source_ids:
+  - src_0c9d0acc6ea58808f57f63c5928e753e9c4e0d393b373f3d
+offers:
+- offer_id: off_30640362ecd6487dbd534206
+  program_id: prg_2f11bdc3a3bc4b0da8e5c129
+  offer_slug: kerno-fyck-limited-startup-discount
+  offer_slug_aliases: []
+  title: Kerno (FYCK Limited) startup discount
+  summary: 50% discount for pre-Series A startups with revenue under $2 million over
+    the preceding12 months. No duration, seat limit or ISO currency is assumed beyond
+    the vendor's published terms. One standalone Offer is intended.
+  lifecycle:
+    status: active
+    effective_from: '2026-09-06T07:03:13.317Z'
+  economics:
+    consideration:
+      kind: none
+    benefits:
+    - benefit_id: ben_01
+      description: Startup program benefits as published by vendor.
+      kind: other
+  eligibility:
+    rule:
+      kind: manual
+      criterion_id: cri_01
+      statement: Contact Kerno (FYCK Limited) for eligibility requirements.
+      reason: vendor-discretion
+  roles:
+    terms_authority_entity_id: ent_3673affba67c408ca24a6662
+    access_operator_entity_id: ent_3673affba67c408ca24a6662
+  access:
+    availability: public
+    method: form
+    url: https://www.kerno.io/pricing/
+  source_ids:
+  - src_0c9d0acc6ea58808f57f63c5928e753e9c4e0d393b373f3d

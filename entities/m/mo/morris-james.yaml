@@ -1,0 +1,55 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_27oL2Nd0afSXMFRfWCrKE
+  slug: morris-james
+  slug_aliases: []
+  name: Morris James LLP
+  domains:
+  - value: morrisjames.com
+    role: primary
+    valid_from: '2026-09-06 00:00:00+00:00'
+  category: legal
+profile:
+  description: Morris James LLP is a Delaware-based corporate law firm specializing
+    in early-stage company representation.
+  links:
+    site: https://www.morrisjames.com
+sources:
+- source_id: src_530c52adebf6ce3e6ea2b3b2c399b6483b5b8fda
+  url: https://www.morrisjames.com/service/corporate-ma/start-up-program/
+programs: []
+offers:
+- offer_id: off_QRfMA_tMGDPQz73V1KUmr
+  offer_slug: morris-james-start-up-program
+  offer_slug_aliases: []
+  title: Morris James Start-Up Program
+  summary: The Morris James Start-Up Program offers qualifying companies 30% off standard
+    corporate legal rates for the first year of engagement. Qualification is case-by-case
+    for early-stage, pre-revenue/low-revenue companies without a significant capital
+    raise.
+  lifecycle:
+    status: active
+    effective_from: '2026-09-06 00:00:00+00:00'
+  economics:
+    benefits:
+    - benefit_id: ben_01
+      description: 30% off standard corporate legal rates for the first year
+      kind: discount
+    consideration:
+      kind: none
+  eligibility:
+    rule:
+      kind: manual
+      criterion_id: cri_01
+      statement: Early-stage, pre-revenue or low-revenue companies without a significant
+        capital raise; case-by-case qualification.
+      reason: not-machine-evaluable
+  roles:
+    terms_authority_entity_id: ent_27oL2Nd0afSXMFRfWCrKE
+    access_operator_entity_id: ent_27oL2Nd0afSXMFRfWCrKE
+  access:
+    availability: public
+    method: contact
+    url: https://www.morrisjames.com/service/corporate-ma/start-up-program/
+  source_ids:
+  - src_530c52adebf6ce3e6ea2b3b2c399b6483b5b8fda

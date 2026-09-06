@@ -1,0 +1,58 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_89b9a37d412e4cf79753311e
+  slug: mawio-startup-program
+  slug_aliases: []
+  name: Mawio Startup Program
+  domains:
+  - value: mawio.dev
+    role: primary
+    valid_from: '2026-09-06T07:03:13.691Z'
+  category: startup-program
+profile:
+  description: 'First-party source: https://mawio.dev/startups'
+  links:
+    site: https://mawio.dev
+sources:
+- source_id: src_9fca3edab092d73dbfd0b1ebfe87b787cbdc16b92c573e7d
+  url: https://mawio.dev/startups
+programs:
+- program_id: prg_52e13ab33cb14df2ae2eaa22
+  program_slug: mawio-startup-program-startup-program
+  program_slug_aliases: []
+  title: Mawio Startup Program Startup Program
+  summary: 'First-party source: https://mawio.dev/startups'
+  source_ids:
+  - src_9fca3edab092d73dbfd0b1ebfe87b787cbdc16b92c573e7d
+offers:
+- offer_id: off_c9410ef69fec4f86aa05c53a
+  program_id: prg_52e13ab33cb14df2ae2eaa22
+  offer_slug: mawio-startup-program-startup-discount
+  offer_slug_aliases: []
+  title: Mawio Startup Program startup program
+  summary: 'First-party source: https://mawio.dev/startups'
+  lifecycle:
+    status: active
+    effective_from: '2026-09-06T07:03:13.691Z'
+  economics:
+    consideration:
+      kind: none
+    benefits:
+    - benefit_id: ben_01
+      description: Startup program benefits as published by vendor.
+      kind: other
+  eligibility:
+    rule:
+      kind: manual
+      criterion_id: cri_01
+      statement: Contact Mawio Startup Program for eligibility requirements.
+      reason: vendor-discretion
+  roles:
+    terms_authority_entity_id: ent_89b9a37d412e4cf79753311e
+    access_operator_entity_id: ent_89b9a37d412e4cf79753311e
+  access:
+    availability: public
+    method: form
+    url: https://mawio.dev/startups
+  source_ids:
+  - src_9fca3edab092d73dbfd0b1ebfe87b787cbdc16b92c573e7d
