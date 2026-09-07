@@ -14,6 +14,7 @@ entity:
   category: other
 profile:
   description: Enterprise Singapore supports enterprise development and connects startups with funding, mentorship and ecosystem partners through Startup SG.
+  summary: Enterprise Singapore supports enterprise development and connects startups with funding, mentorship and ecosystem partners through Startup SG.
   links:
     site: https://www.enterprisesg.gov.sg/grow-your-business/partner-with-singapore/innovation-and-startups/join-startup-sg
 sources:
@@ -25,6 +26,8 @@ sources:
     url: https://www.startupsg.gov.sg/programmes/4894/startup-sg-founder/eligibility
   - source_id: src_e171d721c8c65a053cf3acf0a9fa5885d9cb3d65b8edcc210caa3c921fa797dd
     url: https://www.startupsg.gov.sg/programmes/4894/startup-sg-founder/apply
+  - source_id: src_96853df8cde671ba04c1b1515ed3db1e7f75a95c24ba4944f24e31d6127f004d
+    url: https://www.startupsg.gov.sg/api/v0/programmes/4894
 programs:
   - program_id: prg_01m1ssdt1ts552e4cb0wxxhg1n
     program_slug: startup-sg-founder
@@ -34,6 +37,7 @@ programs:
     source_ids:
       - src_4c21afc13cae0d7e7372f05e1c80b19864a83822d54c9978cb83df4d96d81c81
       - src_a6f9616b3d3631d966ec4f15ce235eb5e82df9165ab64e927965c701e22d3a0c
+      - src_96853df8cde671ba04c1b1515ed3db1e7f75a95c24ba4944f24e31d6127f004d
 offers:
   - offer_id: off_01m1ssdt1t9fxfytc204d11qs2
     program_id: prg_01m1ssdt1ts552e4cb0wxxhg1n
@@ -105,3 +109,4 @@ offers:
       - src_a6f9616b3d3631d966ec4f15ce235eb5e82df9165ab64e927965c701e22d3a0c
       - src_2cc59c9e8993f8e1d367f49308347f9f6c4a417a9a27bfb80ca445e476ceee00
       - src_e171d721c8c65a053cf3acf0a9fa5885d9cb3d65b8edcc210caa3c921fa797dd
+      - src_96853df8cde671ba04c1b1515ed3db1e7f75a95c24ba4944f24e31d6127f004d
