@@ -10,6 +10,7 @@ entity:
       valid_from: 2026-08-28T17:01:02.524Z
   category: marketing
 profile:
+  summary: linkutm is a campaign-link platform for creating branded short links, structured UTM tags, QR codes, and click analytics.
   description: linkutm provides UTM link management, branded short links, QR codes, campaign analytics, team workspaces, and a public REST API.
   links:
     site: https://linkutm.com
@@ -41,7 +42,7 @@ offers:
         kind: none
       benefits:
         - benefit_id: ben_01
-          description: Complete linkutm Growth plan free for 12 months, valued by linkutm at $348
+          description: The full linkutm Growth plan free for 12 months, normally valued at $348 per year.
           kind: free-service
           service: linkutm Growth plan
           duration:
@@ -93,5 +94,3 @@ offers:
     terms_url: https://linkutm.com/startups
     source_ids:
       - src_86457b54bb57370b8d678ff3dcc57d00512b2de17e0a54faeed6795f8a8e68a7
-      - src_e02a72667e39da1fda893fbd0590452d2fc9e7e5c8f71248dc37be00d72cb164
-
