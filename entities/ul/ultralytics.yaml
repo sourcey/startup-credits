@@ -10,6 +10,7 @@ entity:
       valid_from: 2026-08-31T00:40:53.000Z
   category: ai-ml
 profile:
+  summary: Ultralytics builds computer vision software, including the YOLO model family and a platform for annotation, training, and deployment.
   description: Ultralytics builds computer vision software, including the YOLO model family and a platform for annotation, training, and deployment.
   links:
     site: https://www.ultralytics.com
@@ -35,9 +36,11 @@ offers:
       status: active
       effective_from: 2026-08-31T00:40:53.000Z
     economics:
+      consideration:
+        kind: none
       benefits:
         - benefit_id: ben_01
-          description: Up to $10,000 in Ultralytics Platform credits for eligible Platform services such as dataset organization, YOLO26 training, and production deployment preparation. Credits are not general-purpose cloud credits.
+          description: Up to $10,000 in Platform credits across eligible Ultralytics Platform services to organize datasets, train YOLO26 models, and prepare production deployments. Credits are not general-purpose cloud credits.
           kind: credit
           value:
             amount:
@@ -45,37 +48,27 @@ offers:
               minor_units: 1000000
             kind: up-to
         - benefit_id: ben_02
-          description: Qualified startups can save on the first year of an Ultralytics Enterprise License for private and commercial YOLO products. The vendor page does not publish a fixed percentage.
+          description: Qualified startups can save on the first year of an Ultralytics Enterprise License for private and commercial YOLO products.
           kind: other
         - benefit_id: ben_03
-          description: Guidance from Ultralytics computer vision experts on a practical path from use case and data to training, deployment, and scale.
+          description: Guidance from Ultralytics computer vision experts to shape a practical path from use case and data to training, deployment, and scale.
           kind: other
-      consideration:
-        kind: none
     eligibility:
       rule:
         kind: all
         rules:
           - criterion_id: cri_01
-            fact: company.stage
-            kind: predicate
-            operator: in
+            kind: manual
+            reason: vendor-discretion
             statement: Privately held, for-profit startups that have raised institutional Seed, Series A, Series B, Series C, or later funding.
-            value:
-              type: string-set
-              values:
-                - Seed
-                - Series A
-                - Series B
-                - Series C
           - criterion_id: cri_02
             kind: manual
             reason: vendor-discretion
-            statement: Computer vision is central to the product or planned for a concrete use case within the next 90 days.
+            statement: Computer vision is central to your product or planned for a concrete use case within the next 90 days.
           - criterion_id: cri_03
             kind: manual
             reason: vendor-discretion
-            statement: The team has a company website, a business email, and enough product context to begin evaluating or building now.
+            statement: Your team has a company website, a business email, and enough product context to begin evaluating or building now.
     roles:
       terms_authority_entity_id: ent_01m1am5sz6fjf4tmpkc7244k6j
       access_operator_entity_id: ent_01m1am5sz6fjf4tmpkc7244k6j
