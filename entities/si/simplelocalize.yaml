@@ -10,6 +10,7 @@ entity:
       valid_from: 2026-09-04T23:24:19.000Z
   category: devtools-other
 profile:
+  summary: SimpleLocalize is a translation management platform with a web-based editor, translation hosting, APIs, and developer integrations.
   description: SimpleLocalize provides translation management with a web-based editor, translation hosting, APIs, and developer integrations.
   links:
     site: https://simplelocalize.io
