@@ -30,7 +30,7 @@ offers:
     economics:
       consideration:
         kind: variable
-        description: From the fourth month, the startup pays the applicable Hippo Video plan price at a 70% discount for one year.
+        description: From the fourth month, discounted pricing applies for one year at 70% off annual, 65% off quarterly, or 60% off monthly billing.
       benefits:
         - benefit_id: ben_01
           description: Hippo Video is free of cost for the first three months
@@ -60,13 +60,9 @@ offers:
         kind: all
         rules:
           - criterion_id: cri_01
-            fact: company.funding_raised_usd
-            kind: predicate
-            operator: lte
-            statement: Startup funding must not exceed $2,000,000.
-            value:
-              type: number
-              value: 2000000
+            kind: manual
+            statement: Total funding must not exceed US$2M.
+            reason: external-verification
           - criterion_id: cri_02
             kind: manual
             statement: Applicant must be a new Hippo Video customer and cannot combine this offer with another offer or discount.
