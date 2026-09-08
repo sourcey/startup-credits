@@ -1,0 +1,55 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1w5cscwqfjcckfyspvfjz0q
+  slug: cribl
+  slug_aliases: []
+  name: Cribl
+  domains:
+    - value: cribl.io
+      role: primary
+      valid_from: 2026-09-06T20:08:43Z
+  category: observability
+profile:
+  description: Cribl provides a data processing and observability platform that enables organizations to collect, process, and route machine data from any source to any destination.
+  links:
+    site: https://cribl.io
+sources:
+  - source_id: src_0e725493674efa9f35b17ae7eea3af9bf967e81eea63febe2c1bd0269624965d
+    url: https://cribl.io/startup/
+offers:
+  - offer_id: off_01m1w5csdk1r1t8e05v4fd3rmx
+    offer_slug: cribl-for-startups
+    offer_slug_aliases: []
+    title: Cribl for Startups
+    summary: Seed-through-Series-A companies building monitoring, observability, cybersecurity, or DevOps data solutions can receive free Cribl.Cloud access including Cribl Stream and Cribl Search, hands-on technical advice, and access to Cribl's partner network with co-marketing opportunities.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-06T20:08:43Z
+    economics:
+      consideration:
+        kind: free
+    benefits:
+      - benefit_id: ben_primary
+        description: Free access to all Cribl.Cloud products, including Cribl Stream and Cribl Search
+        kind: other
+      - benefit_id: ben_02
+        description: Hands-on technical advice and expert guidance on data strategy from Cribl's team
+        kind: other
+      - benefit_id: ben_03
+        description: Access to Cribl's partner network and go-to-market opportunities through co-marketing and startup events
+        kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a Seed-through-Series-A company building monitoring, observability, cybersecurity, or DevOps data solutions; selection is made by Cribl.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01m1w5cscwqfjcckfyspvfjz0q
+      access_operator_entity_id: ent_01m1w5cscwqfjcckfyspvfjz0q
+    access:
+      availability: public
+      method: form
+      url: https://cribl.io/startup/
+    source_ids:
+      - src_0e725493674efa9f35b17ae7eea3af9bf967e81eea63febe2c1bd0269624965d
