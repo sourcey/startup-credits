@@ -30,7 +30,7 @@ offers:
     economics:
       consideration:
         kind: variable
-        description: From the fourth month, discounted pricing applies for one year at 70% off annual, 65% off quarterly, or 60% off monthly billing.
+        description: Discounted pricing applies for one year from the fourth month.
       benefits:
         - benefit_id: ben_01
           description: Hippo Video is free of cost for the first three months
