@@ -32,10 +32,11 @@ offers:
       effective_from: 2026-08-08T05:32:49.000Z
     economics:
       consideration:
-        kind: none
+        kind: unknown
+        description: The cited source does not state whether separate consideration is required.
       benefits:
         - benefit_id: ben_01
-          description: Up to $1,000 in Morph API credits for startups
+          description: API credits up to $1,000
           kind: credit
           value:
             amount:
@@ -53,7 +54,7 @@ offers:
       access_operator_entity_id: ent_01m13tkye5955vkzep7cpgybfj
     access:
       availability: public
-      method: form
+      method: other
       instructions: For the fastest approval, create an account and an organization, then add a billing method with usage-based billing first.
       url: https://www.morphllm.com/startups
     source_ids:
