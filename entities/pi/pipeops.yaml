@@ -10,6 +10,7 @@ entity:
       valid_from: 2026-08-29T08:50:10.901Z
   category: hosting-infra
 profile:
+  summary: PipeOps automates DevOps workflows so teams can deploy and manage applications and cloud infrastructure.
   description: PipeOps automates cloud deployment and infrastructure management so engineering teams can deploy, manage, monitor, and scale applications.
   links:
     site: https://pipeops.io/
@@ -24,14 +25,14 @@ offers:
     offer_slug: pipeops-cchub-startup-credits
     offer_slug_aliases: []
     title: Up to $600 in PipeOps Credits for CcHub Startups
-    summary: CcHub startups can receive up to $600 in PipeOps credits usable for 12 months, full access to the add-ons library, priority support, and guided onboarding.
+    summary: CcHub startups can receive up to $600 in PipeOps credits, use them over 12 months, access up to 100 add-ons, and receive priority support.
     lifecycle:
       status: active
       effective_from: 2026-08-29T08:50:10.901Z
     economics:
       benefits:
         - benefit_id: ben_01
-          description: Up to $600 in PipeOps credits usable across billable PipeOps services for 12 months
+          description: Up to $600 in PipeOps credits, equivalent to six months of fees
           duration:
             kind: exact
             value: P1Y
@@ -42,10 +43,10 @@ offers:
               minor_units: 60000
             kind: up-to
         - benefit_id: ben_02
-          description: Full access to the PipeOps add-ons library with up to 100 add-ons
+          description: Full access to the add-ons library with up to 100 add-ons
           kind: other
         - benefit_id: ben_03
-          description: Priority support and onboarding assistance
+          description: Priority support
           kind: other
       consideration:
         kind: none
