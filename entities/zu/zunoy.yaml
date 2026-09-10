@@ -10,6 +10,7 @@ entity:
       valid_from: 2026-08-28T03:34:40.531Z
   category: productivity
 profile:
+  summary: Zunoy provides an all-in-one SaaS suite for teams to build, test, ship, and manage their work.
   description: All-in-one SaaS workspace combining developer, operations, collaboration, HR, content, and knowledge tools under one account.
   links:
     site: https://zunoy.com
@@ -37,86 +38,23 @@ offers:
     economics:
       benefits:
         - benefit_id: ben_01
-          description: Free access to Zunoy's Growth/Business Plan for 12 months for organizations with up to 25 users.
+          description: Free access to Zunoy products for 12 months
           duration:
             kind: exact
             value: P1Y
           kind: free-service
-          service: Zunoy Growth/Business Plan
+          service: Growth/Business Plan
         - benefit_id: ben_02
-          description: Priority support, resources, guides, and community access during the program.
+          description: Priority support and access to resources, guides, and community
           kind: other
       consideration:
         kind: none
     eligibility:
       rule:
-        kind: all
-        rules:
-          - kind: any
-            rules:
-              - kind: all
-                rules:
-                  - criterion_id: cri_01
-                    fact: company.age_months
-                    kind: predicate
-                    operator: lt
-                    statement: A startup must be less than 5 years old.
-                    value:
-                      type: number
-                      value: 60
-                  - criterion_id: cri_02
-                    fact: company.stage
-                    kind: predicate
-                    operator: in
-                    statement: A startup must be registered and at the pre-seed through Series A stage.
-                    value:
-                      type: string-set
-                      values:
-                        - pre-seed
-                        - seed
-                        - series-a
-              - kind: all
-                rules:
-                  - criterion_id: cri_03
-                    fact: company.is_nonprofit
-                    kind: predicate
-                    operator: eq
-                    statement: A nonprofit applicant must be a verified nonprofit or NGO.
-                    value:
-                      type: boolean
-                      value: true
-                  - criterion_id: cri_04
-                    fact: company.annual_operating_budget_usd
-                    kind: predicate
-                    operator: lt
-                    statement: A nonprofit applicant must have an annual operating budget under $500,000.
-                    value:
-                      type: number
-                      value: 500000
-          - criterion_id: cri_05
-            fact: company.employee_count
-            kind: predicate
-            operator: lt
-            statement: The applicant's entire team must be smaller than 25 people.
-            value:
-              type: number
-              value: 25
-          - criterion_id: cri_06
-            fact: company.has_social_impact_mission
-            kind: predicate
-            operator: eq
-            statement: The organization must use software to create social or community impact.
-            value:
-              type: boolean
-              value: true
-          - criterion_id: cri_07
-            fact: company.use_case
-            kind: predicate
-            operator: eq
-            statement: Zunoy must support the organization's core mission or product rather than an internal experiment.
-            value:
-              type: string
-              value: core mission or product
+        criterion_id: cri_01
+        kind: manual
+        reason: external-verification
+        statement: A registered early-stage startup from pre-seed through Series A that is less than five years old, or a verified nonprofit or NGO with an annual operating budget under $500,000, may apply; the team must be smaller than 25 people, use software to create social or community impact, and use Zunoy to support its core mission or product.
     roles:
       terms_authority_entity_id: ent_01m136y5j00q3zgs0ys3g1ktck
       access_operator_entity_id: ent_01m136y5j00q3zgs0ys3g1ktck
