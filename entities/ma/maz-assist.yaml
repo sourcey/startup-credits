@@ -1,0 +1,97 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1fvhxtzbsxpw0ep7zy7n3wp
+  slug: maz-assist
+  slug_aliases: []
+  name: MAZ Assist
+  domains:
+    - value: mazassist.com
+      role: primary
+      valid_from: 2026-09-02T01:24:35.000Z
+  category: ai-ml
+
+profile:
+  description: MAZ Assist provides AI employees and growth tools for sales, hiring, customer engagement, and business outreach.
+  links:
+    site: https://www.mazassist.com/
+
+sources:
+  - source_id: src_44ba3251e017dd60ff3678f73529974ac98ef409f7d5300add5bfe47b4f7171f
+    url: https://www.mazassist.com/for-startups
+
+programs:
+  - program_id: prg_01m1fvhxv0h49bf4yqdrkk24j2
+    program_slug: maz-assist-startups-program
+    program_slug_aliases: []
+    title: MAZ Assist Startups Program
+    summary: MAZ Assist gives approved startups one AI Employee Starter plan free for three months plus 1,000 targeted international decision-maker contacts.
+    source_ids:
+      - src_44ba3251e017dd60ff3678f73529974ac98ef409f7d5300add5bfe47b4f7171f
+
+offers:
+  - offer_id: off_01m1fvhxv0apn8d8d788dxdtat
+    program_id: prg_01m1fvhxv0h49bf4yqdrkk24j2
+    offer_slug: three-months-free-ai-employee-starter
+    offer_slug_aliases: []
+    title: Three months free on one AI Employee Starter plan
+    summary: Approved startups receive one AI Employee Starter plan free for three months plus access to 1,000 targeted international decision-maker contacts.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-02T01:24:35.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: One AI Employee Starter plan free for three months
+          kind: free-service
+          service: MAZ Assist AI Employee Starter plan
+          duration:
+            kind: exact
+            value: P3M
+        - benefit_id: ben_02
+          description: Access to 1,000 targeted international decision-maker contacts
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: external-verification
+            statement: Must be a physically present, legally registered company in the USA, UK, Canada, Australia, UAE, or India.
+          - criterion_id: cri_02
+            kind: manual
+            reason: external-verification
+            statement: Must have a live website or product page that is already receiving visitors.
+          - criterion_id: cri_03
+            kind: manual
+            reason: external-verification
+            statement: Must apply using a company-domain email address rather than a free email provider.
+          - criterion_id: cri_04
+            fact: company.employee_count
+            kind: predicate
+            operator: lt
+            statement: Company has fewer than 25 employees.
+            value:
+              type: number
+              value: 25
+          - criterion_id: cri_05
+            fact: company.is_current_customer
+            kind: predicate
+            operator: eq
+            statement: Must not already be a paying MAZ Assist customer.
+            value:
+              type: boolean
+              value: false
+    roles:
+      terms_authority_entity_id: ent_01m1fvhxtzbsxpw0ep7zy7n3wp
+      access_operator_entity_id: ent_01m1fvhxtzbsxpw0ep7zy7n3wp
+    access:
+      availability: public
+      method: form
+      url: https://www.mazassist.com/for-startups
+      instructions: Apply with the company email, website, and startup details; MAZ Assist reviews applications and provides activation steps if approved.
+    terms_url: https://www.mazassist.com/for-startups
+    source_ids:
+      - src_44ba3251e017dd60ff3678f73529974ac98ef409f7d5300add5bfe47b4f7171f
