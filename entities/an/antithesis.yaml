@@ -1,0 +1,71 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m13xyc0zyd90aspye34vt9ab
+  slug: antithesis
+  slug_aliases: []
+  name: Antithesis
+  domains:
+    - value: antithesis.com
+      role: primary
+      valid_from: 2026-08-28T10:16:44.000Z
+  category: ci-cd
+profile:
+  description: Antithesis provides deterministic simulation testing that analyzes software runtime behavior, finds faults, and produces reproducible debugging information.
+  links:
+    site: https://antithesis.com
+sources:
+  - source_id: src_ebcd567b1cc4b1d38e7e62e9922d8005ead88304f58c67f02d6d346f31a8cb47
+    url: https://antithesis.com/
+  - source_id: src_cd5f3d5ab090af2af8a2731397dc37b71e647e0f75a8ad2ff9d28f3192d7bf3c
+    url: https://startups.aws.com/offers
+programs: []
+offers:
+  - offer_id: off_01m13xyc11w521xe91eb64s91m
+    offer_slug: antithesis-aws-activate-offer
+    offer_slug_aliases: []
+    title: Antithesis AWS Activate offer
+    summary: AWS Activate members can receive 10% off the first year of an Antithesis subscription plus $500 in AWS credit.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-28T10:16:44.000Z
+    economics:
+      benefits:
+        - applies_to: First-year Antithesis subscription price
+          benefit_id: ben_01
+          description: 10% off the first-year Antithesis subscription price
+          duration:
+            kind: exact
+            value: P1Y
+          kind: discount
+          percentage:
+            basis_points: 1000
+            kind: exact
+        - benefit_id: ben_02
+          description: $500 in AWS credit
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 50000
+            kind: exact
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        fact: company.partner_memberships
+        kind: predicate
+        operator: contains
+        statement: Applicant must be an AWS Activate member eligible to access the partner offer.
+        value:
+          type: string
+          value: AWS Activate
+    roles:
+      terms_authority_entity_id: ent_01m13xyc0zyd90aspye34vt9ab
+      access_operator_entity_id: ent_01kyh8fpe10b164tj935t8k5zb
+    access:
+      availability: membership
+      method: form
+      url: https://startups.aws.com/offers/antithesis
+    source_ids:
+      - src_cd5f3d5ab090af2af8a2731397dc37b71e647e0f75a8ad2ff9d28f3192d7bf3c
