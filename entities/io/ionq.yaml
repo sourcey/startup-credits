@@ -1,0 +1,82 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_vqe3am14bqj2pefb8t7v5j79ak
+  slug: ionq
+  slug_aliases: []
+  name: IonQ
+  domains:
+    - value: ionq.com
+      role: primary
+      valid_from: 2026-09-01T10:34:43.092Z
+  category: hosting-infra
+profile:
+  description: IonQ develops trapped-ion quantum computers and provides cloud access to quantum-computing systems.
+  links:
+    site: https://www.ionq.com
+sources:
+  - source_id: src_2d09ab4eb68769314203d1fe7e3fe1a55c82b1cbc4fef5a30cab1eba61e02910
+    url: https://www.ionq.com/programs/research-credits
+  - source_id: src_caa64a0811c6060cf1b4a7f1d73943f7bf4d0bb0017805fe3621ebfad754ee58
+    url: https://www.ionq.com/programs/research-credits/call-for-proposals
+programs:
+  - program_id: prg_dy04cjdwps65bneqtqytw28etv
+    program_slug: ionq-research-credits-program
+    program_slug_aliases: []
+    title: IonQ Research Credits Program
+    summary: IonQ awards quantum-compute credits to qualified academics for approved research and teaching projects.
+    source_ids:
+      - src_2d09ab4eb68769314203d1fe7e3fe1a55c82b1cbc4fef5a30cab1eba61e02910
+      - src_caa64a0811c6060cf1b4a7f1d73943f7bf4d0bb0017805fe3621ebfad754ee58
+offers:
+  - offer_id: off_yctfwm9kn5f7anmd6n1x24rfw3
+    program_id: prg_dy04cjdwps65bneqtqytw28etv
+    offer_slug: up-to-10000-ionq-research-credits
+    offer_slug_aliases: []
+    title: Up to $10,000 in IonQ research credits
+    summary: Accepted proposals receive up to $10,000 in credits for quantum-compute time on IonQ hardware through IonQ Quantum Cloud or a cloud partner.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-01T10:34:43.092Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_01
+          description: Up to $10,000 in credits for quantum-compute time on IonQ hardware
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 1000000
+            kind: up-to
+          duration:
+            kind: exact
+            value: P1Y
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            statement: The primary applicant is a verifiable graduate student or faculty member at an accredited academic institution in a country served by IonQ or one of its cloud partners.
+            reason: external-verification
+          - criterion_id: cri_02
+            kind: manual
+            statement: The proposal has clear research or teaching goals related to quantum computing, quantum information science, or an adjacent field.
+            reason: vendor-discretion
+          - criterion_id: cri_03
+            kind: manual
+            statement: The proposed project is feasible and articulates a need for quantum-compute time.
+            reason: vendor-discretion
+    roles:
+      terms_authority_entity_id: ent_vqe3am14bqj2pefb8t7v5j79ak
+      access_operator_entity_id: ent_vqe3am14bqj2pefb8t7v5j79ak
+    access:
+      availability: public
+      instructions: Submit the public IonQ Research Credits Program application with applicant, institution, project, timeline, proposal, and resource-estimate details. IonQ accepts proposals on a rolling basis.
+      method: form
+      url: https://www.ionq.com/programs/research-credits/application
+    terms_url: https://www.ionq.com/programs/research-credits/call-for-proposals
+    source_ids:
+      - src_2d09ab4eb68769314203d1fe7e3fe1a55c82b1cbc4fef5a30cab1eba61e02910
+      - src_caa64a0811c6060cf1b4a7f1d73943f7bf4d0bb0017805fe3621ebfad754ee58
