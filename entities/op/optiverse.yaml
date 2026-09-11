@@ -1,0 +1,68 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m129frw0v0twz5djmxz1rhvc
+  slug: optiverse
+  slug_aliases: []
+  name: Optiverse
+  domains:
+    - value: optiverse.ai
+      role: primary
+      valid_from: 2026-08-27T19:00:00Z
+  category: productivity
+profile:
+  description: Optiverse is a Swiss-hosted AI meeting intelligence platform for capturing meetings, making conversations searchable, and turning approved follow-up actions into workflows.
+  links:
+    site: https://www.optiverse.ai
+sources:
+  - source_id: src_50b935518e2a2de069d9fd7e734abdc331fdc5a3535cbd68137c258e7f785919
+    url: https://www.optiverse.ai/startups
+  - source_id: src_a5740c2b06229b94b1f39c62b68c18ca9368ad50206d8a741894af1a33021e11
+    url: https://www.optiverse.ai/pricing
+  - source_id: src_aa713355b5dfc29e96396bf507192425c9b88d2cc415ac666dc12ae306b08b2f
+    url: https://www.optiverse.ai/
+programs:
+  - program_id: prg_01m129frw0xa2sm632nvjmes3g
+    program_slug: optiverse-startup-program
+    program_slug_aliases: []
+    title: Optiverse Startup Program
+    summary: Optiverse's startup program gives selected teams six Pro licenses for six months at no license cost.
+    source_ids:
+      - src_50b935518e2a2de069d9fd7e734abdc331fdc5a3535cbd68137c258e7f785919
+      - src_a5740c2b06229b94b1f39c62b68c18ca9368ad50206d8a741894af1a33021e11
+offers:
+  - offer_id: off_01m129frw0z9takpns48btarg9
+    program_id: prg_01m129frw0xa2sm632nvjmes3g
+    offer_slug: six-pro-licenses-for-six-months
+    offer_slug_aliases: []
+    title: Six Pro licenses for six months
+    summary: Selected startups receive six Optiverse Pro licenses for six months at no license cost for use by their own team in one workspace.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-27T19:00:00Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Six Optiverse Pro licenses for six months at no license cost
+          duration:
+            kind: exact
+            value: P6M
+          kind: free-service
+          service: Optiverse Pro (6 licenses)
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Applicant is a startup and is selected by Optiverse based on fit, available program capacity, and the information provided.
+    roles:
+      terms_authority_entity_id: ent_01m129frw0v0twz5djmxz1rhvc
+      access_operator_entity_id: ent_01m129frw0v0twz5djmxz1rhvc
+    access:
+      availability: public
+      method: form
+      url: https://www.optiverse.ai/startups
+    source_ids:
+      - src_50b935518e2a2de069d9fd7e734abdc331fdc5a3535cbd68137c258e7f785919
+      - src_a5740c2b06229b94b1f39c62b68c18ca9368ad50206d8a741894af1a33021e11
