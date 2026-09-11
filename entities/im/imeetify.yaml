@@ -1,0 +1,68 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1v2hg7v3cfzfg9se1v18d42
+  slug: imeetify
+  slug_aliases: []
+  name: iMeetify
+  domains:
+    - value: imeetify.com
+      role: primary
+      valid_from: 2026-09-06T11:00:00.000Z
+  category: productivity
+profile:
+  summary: iMeetify provides online appointment scheduling, event management, reminders, and calendar integrations for businesses and professionals.
+  description: iMeetify is an appointment scheduling platform for booking consultations, recurring appointments, workshops, and group events.
+  links:
+    site: https://www.imeetify.com
+sources:
+  - source_id: src_814bf57049e95de2043265ff4d7e84cae47b94dbc48101d962b9ef6a9148a783
+    url: https://www.imeetify.com/
+  - source_id: src_c42d242993102752cf00829528b06c070304bae5f9cac7ce3ab0fb9cb32ec901
+    url: https://www.imeetify.com/imeetify-credits-for-startups
+programs:
+  - program_id: prg_01m1v2hg7xyc42zgwjq1305jwp
+    program_slug: imeetify-startup-credits
+    program_slug_aliases: []
+    title: iMeetify Startup Credits
+    summary: iMeetify offers eligible startups $1,000 in credits for its appointment scheduling platform through a public application.
+    source_ids:
+      - src_c42d242993102752cf00829528b06c070304bae5f9cac7ce3ab0fb9cb32ec901
+offers:
+  - offer_id: off_01m1v2hg7x6aakdt693cp7bhj8
+    program_id: prg_01m1v2hg7xyc42zgwjq1305jwp
+    offer_slug: 1000-imeetify-startup-credits
+    offer_slug_aliases: []
+    title: $1,000 in iMeetify startup credits
+    summary: Eligible startups can apply for $1,000 in credits toward iMeetify's appointment scheduling platform, with no credit card or commitment required.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-06T11:00:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: $1,000 startup credits.
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 100000
+            kind: exact
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_requirement_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Eligible startups can apply, and iMeetify's team will reach out after submission.
+    roles:
+      terms_authority_entity_id: ent_01m1v2hg7v3cfzfg9se1v18d42
+      access_operator_entity_id: ent_01m1v2hg7v3cfzfg9se1v18d42
+    access:
+      availability: public
+      method: form
+      url: https://www.imeetify.com/imeetify-credits-for-startups
+      instructions: Submit your full name, email address, startup name, and location in the application form.
+    terms_url: https://www.imeetify.com/imeetify-credits-for-startups
+    source_ids:
+      - src_c42d242993102752cf00829528b06c070304bae5f9cac7ce3ab0fb9cb32ec901
