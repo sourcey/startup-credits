@@ -1,0 +1,62 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1w3rgq51y3mv4q532jmd87h
+  slug: getscreen-me
+  slug_aliases: []
+  name: Getscreen.me
+  domains:
+  - value: getscreen.me
+    role: primary
+    valid_from: '2026-09-06T19:43:48Z'
+  category: communication
+profile:
+  description: Getscreen.me provides remote access and screen sharing solutions for
+    individuals and teams.
+  links:
+    site: https://getscreen.me
+sources:
+- source_id: src_c35cf9c08df20d8705a5ee996a7305c6a95005494409bab26110d5182766900d
+  url: https://getscreen.me/en/pricing/discounts/
+programs:
+- program_id: prg_zbfwmb6g5jv9k19j055wgqmmjc
+  program_slug: getscreen-me-startup-program
+  program_slug_aliases: []
+  title: Getscreen.me Startup Discount
+  summary: Getscreen.me publishes a startup-specific discount of up to 25% on business
+    subscriptions for private commercial companies less than five years old.
+  source_ids:
+  - src_c35cf9c08df20d8705a5ee996a7305c6a95005494409bab26110d5182766900d
+offers:
+- offer_id: off_01m1w3rgqcesbctrfd10gc3vds
+  offer_slug: getscreen-me-startup-discount
+  offer_slug_aliases: []
+  title: Getscreen.me Startup Discount
+  summary: Getscreen.me publishes a startup-specific discount of up to 25% on business
+    subscriptions for private commercial companies less than five years old.
+  lifecycle:
+    status: active
+    effective_from: '2026-09-06T19:43:48Z'
+  economics:
+    consideration:
+      kind: variable
+      description: Up to 25% discount on business subscriptions.
+    benefits:
+    - benefit_id: ben_016
+      kind: other
+      description: Startup program discount or credit; specific terms vary by program.
+  eligibility:
+    rule:
+      kind: manual
+      criterion_id: cri_requirement_01
+      statement: Must be a private commercial company less than five years old.
+      reason: not-machine-evaluable
+  roles:
+    terms_authority_entity_id: ent_01m1w3rgq51y3mv4q532jmd87h
+    access_operator_entity_id: ent_01m1w3rgq51y3mv4q532jmd87h
+  access:
+    availability: public
+    method: form
+    url: https://getscreen.me/en/pricing/discounts/
+  source_ids:
+  - src_c35cf9c08df20d8705a5ee996a7305c6a95005494409bab26110d5182766900d
+  program_id: prg_zbfwmb6g5jv9k19j055wgqmmjc

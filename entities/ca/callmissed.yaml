@@ -1,0 +1,65 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1w3rs3tqcmt132qbfa3m6zh
+  slug: callmissed
+  slug_aliases: []
+  name: CallMissed
+  domains:
+  - value: callmissed.com
+    role: primary
+    valid_from: '2026-09-06T19:47:36Z'
+  category: communication
+profile:
+  description: CallMissed provides communication APIs and tools for B2C and developer
+    products.
+  links:
+    site: https://www.callmissed.com
+sources:
+- source_id: src_ecedb3b26b36f07662a99743ad54ee7d4cd5d5d3c274c6c6ffcecb734e50d39b
+  url: https://www.callmissed.com/solutions/startups
+programs:
+- program_id: prg_z92dmzjkwzhrat7csb15gdh7da
+  program_slug: callmissed-startup-program
+  program_slug_aliases: []
+  title: CallMissed Startup Credits
+  summary: Qualifying early-stage startups building B2C or developer products in India
+    can apply for USD 1,000 in additional CallMissed API credits, equal to 100,000
+    credits at USD 0.01 each.
+  source_ids:
+  - src_ecedb3b26b36f07662a99743ad54ee7d4cd5d5d3c274c6c6ffcecb734e50d39b
+offers:
+- offer_id: off_01m1w3rs4hdckdds8sssj2hczm
+  offer_slug: callmissed-startup-credits
+  offer_slug_aliases: []
+  title: CallMissed Startup Credits
+  summary: Qualifying early-stage startups building B2C or developer products in India
+    can apply for USD 1,000 in additional CallMissed API credits, equal to 100,000
+    credits at USD 0.01 each.
+  lifecycle:
+    status: active
+    effective_from: '2026-09-06T19:47:36Z'
+  economics:
+    consideration:
+      kind: variable
+      description: USD 1,000 in API credits (100,000 credits at USD 0.01 each).
+    benefits:
+    - benefit_id: ben_004
+      kind: other
+      description: Startup program discount or credit; specific terms vary by program.
+  eligibility:
+    rule:
+      kind: manual
+      criterion_id: cri_requirement_01
+      statement: Must be an early-stage startup building B2C or developer products
+        in India.
+      reason: not-machine-evaluable
+  roles:
+    terms_authority_entity_id: ent_01m1w3rs3tqcmt132qbfa3m6zh
+    access_operator_entity_id: ent_01m1w3rs3tqcmt132qbfa3m6zh
+  access:
+    availability: public
+    method: form
+    url: https://www.callmissed.com/solutions/startups
+  source_ids:
+  - src_ecedb3b26b36f07662a99743ad54ee7d4cd5d5d3c274c6c6ffcecb734e50d39b
+  program_id: prg_z92dmzjkwzhrat7csb15gdh7da

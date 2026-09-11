@@ -1,0 +1,65 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1w3retaxb22rx20cg7mtvgw
+  slug: coefficient
+  slug_aliases: []
+  name: Coefficient
+  domains:
+  - value: coefficient.io
+    role: primary
+    valid_from: '2026-09-06T19:42:47Z'
+  category: finance-accounting
+profile:
+  description: Coefficient provides a live data platform connecting spreadsheets to
+    real-time business data from SaaS tools and databases.
+  links:
+    site: https://coefficient.io
+sources:
+- source_id: src_29d7963ea1a24691193b60d585278f1fcbe5b6c654d03727a41e0d7487c1b557
+  url: https://coefficient.io/startup
+programs:
+- program_id: prg_7maesy18b1war7c6xvdpz8h588
+  program_slug: coefficient-startup-program
+  program_slug_aliases: []
+  title: Coefficient for Startups
+  summary: Coefficient for Startups offers up to 50% off for the first year, with
+    published eligibility requiring USD 20 million or less raised, bootstrapped/angel-funded/debt-funded/pre-seed/seed/Series
+    A status, and 25 or fewer employees.
+  source_ids:
+  - src_29d7963ea1a24691193b60d585278f1fcbe5b6c654d03727a41e0d7487c1b557
+offers:
+- offer_id: off_01m1w3retfq7w3synrc2v19s71
+  offer_slug: coefficient-for-startups
+  offer_slug_aliases: []
+  title: Coefficient for Startups
+  summary: Coefficient for Startups offers up to 50% off for the first year, with
+    published eligibility requiring USD 20 million or less raised, bootstrapped/angel-funded/debt-funded/pre-seed/seed/Series
+    A status, and 25 or fewer employees.
+  lifecycle:
+    status: active
+    effective_from: '2026-09-06T19:42:47Z'
+  economics:
+    consideration:
+      kind: variable
+      description: Up to 50% off for the first year.
+    benefits:
+    - benefit_id: ben_008
+      kind: other
+      description: Startup program discount or credit; specific terms vary by program.
+  eligibility:
+    rule:
+      kind: manual
+      criterion_id: cri_requirement_01
+      statement: Must have raised USD 20 million or less, be in bootstrapped/angel-funded/debt-funded/pre-seed/seed/Series
+        A status, and have 25 or fewer employees.
+      reason: not-machine-evaluable
+  roles:
+    terms_authority_entity_id: ent_01m1w3retaxb22rx20cg7mtvgw
+    access_operator_entity_id: ent_01m1w3retaxb22rx20cg7mtvgw
+  access:
+    availability: public
+    method: form
+    url: https://coefficient.io/startup
+  source_ids:
+  - src_29d7963ea1a24691193b60d585278f1fcbe5b6c654d03727a41e0d7487c1b557
+  program_id: prg_7maesy18b1war7c6xvdpz8h588

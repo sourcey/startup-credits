@@ -1,0 +1,62 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1w435fn3rjr11pzc40wm9tx
+  slug: hopohopo
+  slug_aliases: []
+  name: Hopohopo
+  domains:
+  - value: hopohopo.io
+    role: primary
+    valid_from: '2026-09-06T19:46:41.281Z'
+  category: crm-sales
+profile:
+  description: Hopohopo is a CRM platform offering sales, marketing, and customer
+    management tools for growing businesses.
+  links:
+    site: https://www.hopohopo.io
+sources:
+- source_id: src_7f77e7d94511f6a1b44a37af09562a3004989df68707949aa21c81326ff6db55
+  url: https://www.hopohopo.io/partner-program-welcome
+programs:
+- program_id: prg_re9wv1afj29xxqyhjtbx55b6qm
+  program_slug: hopohopo-startup-program
+  program_slug_aliases: []
+  title: Partner Program Startup Discount
+  summary: Startups in participating investor or accelerator portfolios receive 50%
+    off the Hopohopo CRM Pro Plan for one year.
+  source_ids:
+  - src_7f77e7d94511f6a1b44a37af09562a3004989df68707949aa21c81326ff6db55
+offers:
+- offer_id: off_01m1w435fv3pfemcd9mes6z7hy
+  offer_slug: partner-program-startup-discount
+  offer_slug_aliases: []
+  title: Partner Program Startup Discount
+  summary: Startups in participating investor or accelerator portfolios receive 50%
+    off the Hopohopo CRM Pro Plan for one year.
+  lifecycle:
+    status: active
+    effective_from: '2026-09-06T19:46:41.281Z'
+  economics:
+    consideration:
+      kind: none
+    benefits:
+    - benefit_id: ben_018
+      kind: other
+      description: Startup program discount or credit; specific terms vary by program.
+  eligibility:
+    rule:
+      kind: manual
+      criterion_id: cri_portfolio
+      statement: Startup must belong to a participating investor or accelerator portfolio;
+        eligibility is verified through the portfolio invitation and partner code.
+      reason: external-verification
+  roles:
+    terms_authority_entity_id: ent_01m1w435fn3rjr11pzc40wm9tx
+    access_operator_entity_id: ent_01m1w435fn3rjr11pzc40wm9tx
+  access:
+    availability: public
+    method: other
+    url: https://www.hopohopo.io/partner-program-welcome
+  source_ids:
+  - src_7f77e7d94511f6a1b44a37af09562a3004989df68707949aa21c81326ff6db55
+  program_id: prg_re9wv1afj29xxqyhjtbx55b6qm

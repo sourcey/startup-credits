@@ -1,0 +1,63 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1w3rtqmjhnkz6cnnd6n7wwe
+  slug: air
+  slug_aliases: []
+  name: Air
+  domains:
+  - value: air.inc
+    role: primary
+    valid_from: '2026-09-06T19:48:40Z'
+  category: productivity
+profile:
+  description: Air is a creative operations platform for managing visual content,
+    collaboration, and creative workflows for teams.
+  links:
+    site: https://air.inc
+sources:
+- source_id: src_a73f5186325c366d8cf08b17259664741390b18fcc8cfa151ba416f8b9d4e620
+  url: https://air.inc/startups
+programs:
+- program_id: prg_xr5h61gdpef77ppc6prcec1q6x
+  program_slug: air-startup-program
+  program_slug_aliases: []
+  title: Air Startup Program
+  summary: Eligible partner-network startups receive up to six months free on Air's
+    Business plan, worth up to USD 5,800.
+  source_ids:
+  - src_a73f5186325c366d8cf08b17259664741390b18fcc8cfa151ba416f8b9d4e620
+offers:
+- offer_id: off_01m1w3rtrr81pm3k1969d1ayc1
+  offer_slug: air-startup-program
+  offer_slug_aliases: []
+  title: Air Startup Program
+  summary: Eligible partner-network startups receive up to six months free on Air's
+    Business plan, worth up to USD 5,800.
+  lifecycle:
+    status: active
+    effective_from: '2026-09-06T19:48:40Z'
+  economics:
+    consideration:
+      kind: variable
+      description: Up to six months free on the Business plan, worth up to USD 5,800.
+    benefits:
+    - benefit_id: ben_002
+      kind: other
+      description: Startup program discount or credit; specific terms vary by program.
+  eligibility:
+    rule:
+      kind: manual
+      criterion_id: cri_requirement_01
+      statement: Must be part of the partner network; specific partner-network criteria
+        are published on the vendor startup page.
+      reason: not-machine-evaluable
+  roles:
+    terms_authority_entity_id: ent_01m1w3rtqmjhnkz6cnnd6n7wwe
+    access_operator_entity_id: ent_01m1w3rtqmjhnkz6cnnd6n7wwe
+  access:
+    availability: public
+    method: form
+    url: https://air.inc/startups
+  source_ids:
+  - src_a73f5186325c366d8cf08b17259664741390b18fcc8cfa151ba416f8b9d4e620
+  program_id: prg_xr5h61gdpef77ppc6prcec1q6x

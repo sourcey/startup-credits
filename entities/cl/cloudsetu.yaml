@@ -1,0 +1,63 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1w3rnyt9q2zk0yym0b80kx3
+  slug: cloudsetu
+  slug_aliases: []
+  name: CloudSetu
+  domains:
+  - value: cloudsetu.com
+    role: primary
+    valid_from: '2026-09-06T19:46:00Z'
+  category: hosting-infra
+profile:
+  description: CloudSetu provides cloud services and infrastructure for businesses
+    and startups in India.
+  links:
+    site: https://cloudsetu.com
+sources:
+- source_id: src_972ec5c7dfd8e22081d8623b990a1687c2589e6c1b9c3dbef7c28c4aab56df89
+  url: https://cloudsetu.com/for-startups
+programs:
+- program_id: prg_5fthxm4zr0yq7as8j6a5gwc7qw
+  program_slug: cloudsetu-startup-program
+  program_slug_aliases: []
+  title: CloudSetu Startup Credits
+  summary: CloudSetu advertises INR 21,000 in cloud credits for qualifying Indian
+    startups.
+  source_ids:
+  - src_972ec5c7dfd8e22081d8623b990a1687c2589e6c1b9c3dbef7c28c4aab56df89
+offers:
+- offer_id: off_01m1w3rnzq9840r73ts9evntbe
+  offer_slug: cloudsetu-startup-credits
+  offer_slug_aliases: []
+  title: CloudSetu Startup Credits
+  summary: CloudSetu advertises INR 21,000 in cloud credits for qualifying Indian
+    startups.
+  lifecycle:
+    status: active
+    effective_from: '2026-09-06T19:46:00Z'
+  economics:
+    consideration:
+      kind: variable
+      description: INR 21,000 in cloud credits for qualifying Indian startups.
+    benefits:
+    - benefit_id: ben_006
+      kind: other
+      description: Startup program discount or credit; specific terms vary by program.
+  eligibility:
+    rule:
+      kind: manual
+      criterion_id: cri_requirement_01
+      statement: Must be a qualifying Indian startup; specific criteria are published
+        on the vendor startup page.
+      reason: not-machine-evaluable
+  roles:
+    terms_authority_entity_id: ent_01m1w3rnyt9q2zk0yym0b80kx3
+    access_operator_entity_id: ent_01m1w3rnyt9q2zk0yym0b80kx3
+  access:
+    availability: public
+    method: form
+    url: https://cloudsetu.com/for-startups
+  source_ids:
+  - src_972ec5c7dfd8e22081d8623b990a1687c2589e6c1b9c3dbef7c28c4aab56df89
+  program_id: prg_5fthxm4zr0yq7as8j6a5gwc7qw

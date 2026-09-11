@@ -1,0 +1,65 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1w3rh08gtrbrdqr32e9qaxq
+  slug: laravel
+  slug_aliases: []
+  name: Laravel
+  domains:
+  - value: laravel.com
+    role: primary
+    valid_from: '2026-09-06T19:44:08Z'
+  category: hosting-infra
+profile:
+  description: Laravel Cloud is a managed deployment platform for Laravel applications,
+    providing infrastructure and hosting services.
+  links:
+    site: https://laravel.com/cloud
+sources:
+- source_id: src_47ff47a24afdb6034cfe4872e73005f97b877c964dfa9338f709c702f19a0bd4
+  url: https://startups.aws.com/offers?lang=en-US
+programs:
+- program_id: prg_pr8c9gzg21fnmnszkvpfvm331r
+  program_slug: laravel-startup-program
+  program_slug_aliases: []
+  title: Laravel Cloud Credit through AWS Activate
+  summary: AWS Activate currently lists USD 300 in credits to deploy anything on Laravel
+    Cloud. This is a partner offer accessed through AWS Activate, not Laravel Cloud's
+    ordinary public pricing.
+  source_ids:
+  - src_47ff47a24afdb6034cfe4872e73005f97b877c964dfa9338f709c702f19a0bd4
+offers:
+- offer_id: off_01m1w3rh0m5mdrc867vw88mbw4
+  offer_slug: laravel-cloud-credit-through-aws-activate
+  offer_slug_aliases: []
+  title: Laravel Cloud Credit through AWS Activate
+  summary: AWS Activate currently lists USD 300 in credits to deploy anything on Laravel
+    Cloud. This is a partner offer accessed through AWS Activate, not Laravel Cloud's
+    ordinary public pricing.
+  lifecycle:
+    status: active
+    effective_from: '2026-09-06T19:44:08Z'
+  economics:
+    consideration:
+      kind: variable
+      description: USD 300 in Laravel Cloud credits through AWS Activate.
+    benefits:
+    - benefit_id: ben_021
+      kind: other
+      description: Startup program discount or credit; specific terms vary by program.
+  eligibility:
+    rule:
+      kind: manual
+      criterion_id: cri_requirement_01
+      statement: Must meet AWS Activate membership and business eligibility requirements
+        as published by AWS.
+      reason: not-machine-evaluable
+  roles:
+    terms_authority_entity_id: ent_01m1w3rh08gtrbrdqr32e9qaxq
+    access_operator_entity_id: ent_01kyh8fpe10b164tj935t8k5zb
+  access:
+    availability: public
+    method: form
+    url: https://startups.aws.com/offers
+  source_ids:
+  - src_47ff47a24afdb6034cfe4872e73005f97b877c964dfa9338f709c702f19a0bd4
+  program_id: prg_pr8c9gzg21fnmnszkvpfvm331r

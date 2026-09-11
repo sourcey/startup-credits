@@ -1,0 +1,65 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1w3rxnpx0bsrs6tfrem7wdx
+  slug: mawio
+  slug_aliases: []
+  name: Mawio
+  domains:
+  - value: mawio.dev
+    role: primary
+    valid_from: '2026-09-06T19:49:38Z'
+  category: ai-ml
+profile:
+  description: Mawio provides AI agent infrastructure and APIs for pre-seed to Series
+    A AI-agent startups.
+  links:
+    site: https://mawio.dev
+sources:
+- source_id: src_52fe16970547fb364601287dd30283e20a5ada6fb3760bee78e151f73a2b5672
+  url: https://mawio.dev/startups
+programs:
+- program_id: prg_bdvh0arkfe7zngvavm3y3ws68z
+  program_slug: mawio-startup-program
+  program_slug_aliases: []
+  title: Mawio Startup Program
+  summary: The page advertises USD 10,000 in free API credits for approved pre-seed
+    to Series A AI-agent startups younger than three years and below USD 5 million
+    annual revenue, alongside a six-month Startup Tier. Applications go to startups@mawio...
+  source_ids:
+  - src_52fe16970547fb364601287dd30283e20a5ada6fb3760bee78e151f73a2b5672
+offers:
+- offer_id: off_01m1w3rxnvg1zxd2fgy600pam7
+  offer_slug: mawio-startup-program
+  offer_slug_aliases: []
+  title: Mawio Startup Program
+  summary: The page advertises USD 10,000 in free API credits for approved pre-seed
+    to Series A AI-agent startups younger than three years and below USD 5 million
+    annual revenue, alongside a six-month Startup Tier. Applications go to startups@mawio...
+  lifecycle:
+    status: active
+    effective_from: '2026-09-06T19:49:38Z'
+  economics:
+    consideration:
+      kind: variable
+      description: USD 10,000 in free API credits for approved startups, with a six-month
+        Startup Tier.
+    benefits:
+    - benefit_id: ben_027
+      kind: other
+      description: Startup program discount or credit; specific terms vary by program.
+  eligibility:
+    rule:
+      kind: manual
+      criterion_id: cri_requirement_01
+      statement: Must be a pre-seed to Series A AI-agent startup younger than three
+        years with below USD 5 million annual revenue.
+      reason: not-machine-evaluable
+  roles:
+    terms_authority_entity_id: ent_01m1w3rxnpx0bsrs6tfrem7wdx
+    access_operator_entity_id: ent_01m1w3rxnpx0bsrs6tfrem7wdx
+  access:
+    availability: public
+    method: contact
+  source_ids:
+  - src_52fe16970547fb364601287dd30283e20a5ada6fb3760bee78e151f73a2b5672
+  program_id: prg_bdvh0arkfe7zngvavm3y3ws68z

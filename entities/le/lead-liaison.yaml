@@ -1,0 +1,66 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1w3rg5vfe2htdetwspdxwky
+  slug: lead-liaison
+  slug_aliases: []
+  name: Lead Liaison
+  domains:
+  - value: leadliaison.com
+    role: primary
+    valid_from: '2026-09-06T19:43:17Z'
+  category: crm-sales
+profile:
+  description: Lead Liaison provides sales and marketing automation software including
+    CRM, marketing, and revenue operations tools.
+  links:
+    site: https://www.leadliaison.com
+sources:
+- source_id: src_07e182c86eb05bcd40febc39e5d8f6e9c55bc896a3ce771eb2dd8ee1ae77acd2
+  url: https://www.leadliaison.com/startups/
+programs:
+- program_id: prg_17tzrsw8yjje551x7qj93cp56y
+  program_slug: lead-liaison-startup-program
+  program_slug_aliases: []
+  title: Lead Liaison Seed-Stage Startup Discount
+  summary: The vendor publishes 90% off subscription licenses for 24 months, then
+    50% for 12 months, with funding, partner affiliation, new-customer, and second-year
+    training conditions.
+  source_ids:
+  - src_07e182c86eb05bcd40febc39e5d8f6e9c55bc896a3ce771eb2dd8ee1ae77acd2
+offers:
+- offer_id: off_01m1w3rg6h2fbw3xnyxc0b7kyb
+  offer_slug: lead-liaison-seed-stage-startup-discount
+  offer_slug_aliases: []
+  title: Lead Liaison Seed-Stage Startup Discount
+  summary: The vendor publishes 90% off subscription licenses for 24 months, then
+    50% for 12 months, with funding, partner affiliation, new-customer, and second-year
+    training conditions.
+  lifecycle:
+    status: active
+    effective_from: '2026-09-06T19:43:17Z'
+  economics:
+    consideration:
+      kind: variable
+      description: 90% off for 24 months, then 50% off for 12 months on subscription
+        licenses.
+    benefits:
+    - benefit_id: ben_023
+      kind: other
+      description: Startup program discount or credit; specific terms vary by program.
+  eligibility:
+    rule:
+      kind: manual
+      criterion_id: cri_requirement_01
+      statement: Subject to funding, partner affiliation, new-customer, and second-year
+        training conditions as published on the vendor startup page.
+      reason: not-machine-evaluable
+  roles:
+    terms_authority_entity_id: ent_01m1w3rg5vfe2htdetwspdxwky
+    access_operator_entity_id: ent_01m1w3rg5vfe2htdetwspdxwky
+  access:
+    availability: public
+    method: form
+    url: https://www.leadliaison.com/startups/
+  source_ids:
+  - src_07e182c86eb05bcd40febc39e5d8f6e9c55bc896a3ce771eb2dd8ee1ae77acd2
+  program_id: prg_17tzrsw8yjje551x7qj93cp56y

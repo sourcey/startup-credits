@@ -1,0 +1,63 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1w3rr0tcfvc242ahdd0ftvc
+  slug: morris-james
+  slug_aliases: []
+  name: Morris James LLP
+  domains:
+  - value: morrisjames.com
+    role: primary
+    valid_from: '2026-09-06T19:47:36Z'
+  category: legal-compliance
+profile:
+  description: Morris James LLP is a regional law firm in the United States providing
+    corporate and business legal services, including to startups and entrepreneurs.
+  links:
+    site: https://www.morrisjames.com
+sources:
+- source_id: src_1590816f64f2d1d2bf7b10039e9cb3b05ba5c07ca7d7c5aa884565fb8b8b3532
+  url: https://www.morrisjames.com/service/corporate-ma/start-up-program/
+programs:
+- program_id: prg_0k2phqhpf8b7qhq9wvexqwyg7p
+  program_slug: morris-james-startup-program
+  program_slug_aliases: []
+  title: Morris James Start-Up Program
+  summary: The Morris James Start-Up Program offers qualifying companies 30% off standard
+    corporate legal rates for the first year of engagement. Qualification is case-by-case.
+  source_ids:
+  - src_1590816f64f2d1d2bf7b10039e9cb3b05ba5c07ca7d7c5aa884565fb8b8b3532
+offers:
+- offer_id: off_01m1w3rr164y03798fvddvewkb
+  offer_slug: morris-james-start-up-program
+  offer_slug_aliases: []
+  title: Morris James Start-Up Program
+  summary: The Morris James Start-Up Program offers qualifying companies 30% off standard
+    corporate legal rates for the first year of engagement. Qualification is case-by-case.
+  lifecycle:
+    status: active
+    effective_from: '2026-09-06T19:47:36Z'
+  economics:
+    consideration:
+      kind: variable
+      description: 30% off standard corporate legal rates for the first year of engagement.
+    benefits:
+    - benefit_id: ben_028
+      kind: other
+      description: Startup program discount or credit; specific terms vary by program.
+  eligibility:
+    rule:
+      kind: manual
+      criterion_id: cri_requirement_01
+      statement: Qualification is case-by-case; typical criteria include early-stage
+        status and legal needs consistent with startup representation.
+      reason: not-machine-evaluable
+  roles:
+    terms_authority_entity_id: ent_01m1w3rr0tcfvc242ahdd0ftvc
+    access_operator_entity_id: ent_01m1w3rr0tcfvc242ahdd0ftvc
+  access:
+    availability: public
+    method: form
+    url: https://www.morrisjames.com/service/corporate-ma/start-up-program/
+  source_ids:
+  - src_1590816f64f2d1d2bf7b10039e9cb3b05ba5c07ca7d7c5aa884565fb8b8b3532
+  program_id: prg_0k2phqhpf8b7qhq9wvexqwyg7p
