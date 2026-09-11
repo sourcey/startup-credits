@@ -1,0 +1,82 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+
+entity:
+  entity_id: ent_01m1yxxvv8h9f4nz3762q1ce4x
+  slug: dlh-io
+  slug_aliases: []
+  name: DLH.io
+  domains:
+    - value: datalakehouse.io
+      role: primary
+      valid_from: 2026-09-07T21:57:21.000Z
+  category: data-analytics
+profile:
+  summary: DLH.io provides data integration and AI infrastructure for teams working across cloud data platforms and operational data sources.
+  description: DLH.io provides data integration and AI infrastructure for connecting cloud data platforms and operational data sources.
+  links:
+    site: https://datalakehouse.io
+
+sources:
+  - source_id: src_9ddbc1fe83d1a9cb2731afdde7f486d0e9d932e9434729888e50add299c4df0d
+    url: https://datalakehouse.io/startups
+
+programs:
+  - program_id: prg_01m1yxxvvaqj2qey2x3kc92eaf
+    program_slug: startup-program
+    program_slug_aliases: []
+    title: DLH.io Startup Program
+    summary: DLH.io's startup program provides eligible early-stage companies with data and AI credits, onboarding, support, and product access.
+    source_ids:
+      - src_9ddbc1fe83d1a9cb2731afdde7f486d0e9d932e9434729888e50add299c4df0d
+
+offers:
+  - offer_id: off_01m1yxxvva8h6fxz9cat124hyf
+    program_id: prg_01m1yxxvvaqj2qey2x3kc92eaf
+    offer_slug: venture-backed-startup-track
+    offer_slug_aliases: []
+    title: DLH.io Venture-Backed Startup Track
+    summary: Eligible Seed to Series B startups can receive up to $50,000 in DLH.io credits plus dedicated onboarding, priority support, and GTM opportunities.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T21:57:21.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to $50,000 in DLH.io credits
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 5000000
+            kind: up-to
+        - benefit_id: ben_02
+          description: Dedicated onboarding and data architecture review, priority support and roadmap input, and co-marketing and speaking opportunities
+          kind: other
+      consideration:
+        kind: unknown
+        description: The public startup-program page does not state separate consideration for participation.
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: not-machine-evaluable
+            statement: Applicant must be a Seed to Series B company.
+          - criterion_id: cri_02
+            kind: manual
+            reason: external-verification
+            statement: Applicant must be backed by a venture capital firm or accelerator.
+          - criterion_id: cri_03
+            kind: manual
+            reason: external-verification
+            statement: Applicant must have more than $1 million in funding.
+    roles:
+      terms_authority_entity_id: ent_01m1yxxvv8h9f4nz3762q1ce4x
+      access_operator_entity_id: ent_01m1yxxvv8h9f4nz3762q1ce4x
+    access:
+      availability: public
+      method: form
+      url: https://datalakehouse.io/startups
+    source_ids:
+      - src_9ddbc1fe83d1a9cb2731afdde7f486d0e9d932e9434729888e50add299c4df0d
