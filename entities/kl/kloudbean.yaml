@@ -1,0 +1,109 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m19ghsg3ew9f6h1rytqhjy5y
+  slug: kloudbean
+  slug_aliases: []
+  name: KloudBean
+  domains:
+    - value: kloudbean.com
+      role: primary
+      valid_from: 2026-08-30T14:18:07.000Z
+  category: hosting-infra
+profile:
+  description: KloudBean provides managed cloud hosting for applications, databases, storage, and related infrastructure across multiple cloud providers.
+  links:
+    site: https://www.kloudbean.com
+sources:
+  - source_id: src_cc65de841bba017cd4059fc96ae1ee8c8dd9192b361c104c066d207d258e194a
+    url: https://www.kloudbean.com/agency-startup-program/
+programs:
+  - program_id: prg_01m19ghsg6e9jj023hv0xt6bx0
+    program_slug: kloudbean-startup-program
+    program_slug_aliases: []
+    title: KloudBean Startup Program
+    summary: KloudBean's program provides approved early-stage startups with hosting credits, temporary free platform access, migration, and support.
+    source_ids:
+      - src_cc65de841bba017cd4059fc96ae1ee8c8dd9192b361c104c066d207d258e194a
+offers:
+  - offer_id: off_01m19ghsg6563c1x0xeph0p0mh
+    program_id: prg_01m19ghsg6e9jj023hv0xt6bx0
+    offer_slug: launch-tier-hosting-credits
+    offer_slug_aliases: []
+    title: KloudBean Startup Program Launch Tier
+    summary: Eligible MVP-stage startups can receive $2,500 in hosting credits over 12 months plus three months of free KloudBean platform access.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-30T14:18:07.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: $2,500 in hosting credits distributed over 12 months
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 250000
+            kind: exact
+          duration:
+            kind: exact
+            value: P1Y
+        - benefit_id: ben_02
+          description: Three months of free platform access with no setup fees
+          kind: free-service
+          service: KloudBean platform access
+          duration:
+            kind: exact
+            value: P3M
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.age_months
+            kind: predicate
+            operator: lt
+            statement: Startup is less than two years old.
+            value:
+              type: number
+              value: 24
+          - criterion_id: cri_02
+            fact: company.funding_raised_usd
+            kind: predicate
+            operator: lt
+            statement: Startup has raised less than $1 million in total funding.
+            value:
+              type: number
+              value: 1000000
+          - criterion_id: cri_03
+            fact: company.employee_count
+            kind: predicate
+            operator: lt
+            statement: Startup has fewer than 10 employees.
+            value:
+              type: number
+              value: 10
+          - criterion_id: cri_04
+            fact: company.revenue_stage
+            kind: predicate
+            operator: in
+            statement: Startup is pre-revenue or at an early-revenue stage.
+            value:
+              type: string-set
+              values:
+                - pre-revenue
+                - early-revenue
+          - criterion_id: cri_05
+            kind: manual
+            reason: vendor-discretion
+            statement: Applicant must be approved and assigned to the Launch Tier by KloudBean based on MVP stage and infrastructure needs.
+    roles:
+      terms_authority_entity_id: ent_01m19ghsg3ew9f6h1rytqhjy5y
+      access_operator_entity_id: ent_01m19ghsg3ew9f6h1rytqhjy5y
+    access:
+      availability: public
+      method: form
+      url: https://www.kloudbean.com/agency-startup-program/
+    source_ids:
+      - src_cc65de841bba017cd4059fc96ae1ee8c8dd9192b361c104c066d207d258e194a
