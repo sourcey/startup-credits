@@ -1,0 +1,63 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m15f0p7rhgm20hwzgfrdc5q9
+  slug: fynite
+  slug_aliases: []
+  name: Fynite
+  domains:
+    - value: fynite.ai
+      role: primary
+      valid_from: 2026-08-29T00:35:17.000Z
+  category: ai-ml
+profile:
+  description: Fynite provides an agentic AI platform for launching AI-powered business applications and automating business workflows.
+  links:
+    site: https://www.fynite.ai
+sources:
+  - source_id: src_cd9f7e6e31b41a9cb783f33bcbfd42f933d6639284cd80ee7e190f5d4a819af6
+    url: https://www.fynite.ai/builders-program-for-startups
+programs:
+  - program_id: prg_01m15f0p7xn1pegkb36qttktc2
+    program_slug: fynite-builders-program
+    program_slug_aliases: []
+    title: Fynite Builders Program
+    summary: Fynite's Builders Program offers qualifying AI startups platform credits to launch agentic AI business applications.
+    source_ids:
+      - src_cd9f7e6e31b41a9cb783f33bcbfd42f933d6639284cd80ee7e190f5d4a819af6
+offers:
+  - offer_id: off_01m15f0p7xda486mh43e9bf0j4
+    program_id: prg_01m15f0p7xn1pegkb36qttktc2
+    offer_slug: five-thousand-dollars-platform-credits
+    offer_slug_aliases: []
+    title: $5,000 in Fynite platform credits
+    summary: Accepted qualifying AI startups receive $5,000 in Fynite platform credits; the program states that applications are reviewed and only 50 startup spots are available.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-29T00:35:17.000Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_primary
+          description: $5,000 in platform credits applied to the accepted startup's Fynite account
+          kind: credit
+          value:
+            kind: exact
+            amount:
+              currency: USD
+              minor_units: 500000
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_builders_program_review
+        statement: Fynite reviews applications from qualifying AI startups; the program states that only 50 startup spots are available on a first-come, first-served basis.
+        reason: vendor-discretion
+    roles:
+      terms_authority_entity_id: ent_01m15f0p7rhgm20hwzgfrdc5q9
+      access_operator_entity_id: ent_01m15f0p7rhgm20hwzgfrdc5q9
+    access:
+      availability: public
+      method: form
+      url: https://www.fynite.ai/builders-program-for-startups
+    source_ids:
+      - src_cd9f7e6e31b41a9cb783f33bcbfd42f933d6639284cd80ee7e190f5d4a819af6
