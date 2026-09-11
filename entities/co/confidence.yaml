@@ -1,0 +1,83 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1x4wyvd6r859m7pk9xx6d2x
+  slug: confidence
+  slug_aliases: []
+  name: Confidence
+  domains:
+    - value: confidence.spotify.com
+      role: primary
+      valid_from: 2026-09-07T05:19:21.000Z
+  category: data-analytics
+profile:
+  summary: Warehouse-native experimentation and feature-flagging platform from Spotify.
+  description: Confidence is Spotify's warehouse-native experimentation platform for feature flags, A/B testing, rollouts, and metrics analysis.
+  links:
+    site: https://confidence.spotify.com
+sources:
+  - source_id: src_0154ca43088b4fae4edf624bc99d2c281f292b7f77aa42169d9ba882638525cc
+    url: https://confidence.spotify.com/pricing
+programs:
+  - program_id: prg_01m1x4wyw23k0c0dvd7tknb329
+    program_slug: confidence-early-stage-startup
+    program_slug_aliases: []
+    title: Confidence Early Stage Startup Program
+    summary: Confidence's early-stage startup program grants qualifying startups up to $75,000 in credits plus Growth-plan capabilities and onboarding support.
+    source_ids:
+      - src_0154ca43088b4fae4edf624bc99d2c281f292b7f77aa42169d9ba882638525cc
+offers:
+  - offer_id: off_01m1x4wyw2x9k6t91etqsaas48
+    program_id: prg_01m1x4wyw23k0c0dvd7tknb329
+    offer_slug: up-to-75000-confidence-credits
+    offer_slug_aliases: []
+    title: Up to $75,000 in Confidence Credits
+    summary: Early-stage startups can apply for up to $75,000 in Confidence credits with Growth capabilities, role-based access control, 12-month audit logs, unlimited surfaces, and migration support.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T05:19:21.000Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_01
+          description: Up to $75,000 in Confidence credits for early-stage startups getting started with experimentation.
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 7500000
+            kind: up-to
+        - benefit_id: ben_02
+          description: Everything in the Growth plan, plus role-based access control.
+          kind: free-service
+          service: Growth plan capabilities with role-based access control
+        - benefit_id: ben_03
+          description: Audit logs retained for 12 months.
+          kind: free-service
+          service: 12-month audit log retention
+        - benefit_id: ben_04
+          description: Unlimited surfaces.
+          kind: free-service
+          service: Unlimited surfaces
+        - benefit_id: ben_05
+          description: Migration and onboarding support.
+          kind: free-service
+          service: Migration and onboarding support
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: external-verification
+            statement: Applicant must be an early-stage startup applying for the Confidence early stage startup program.
+    roles:
+      terms_authority_entity_id: ent_01m1x4wyvd6r859m7pk9xx6d2x
+      access_operator_entity_id: ent_01m1x4wyvd6r859m7pk9xx6d2x
+    access:
+      availability: public
+      method: contact
+      url: https://confidence.spotify.com/pricing
+      instructions: Use the early stage startup contact route published on the Confidence pricing page to apply for the credits program.
+    source_ids:
+      - src_0154ca43088b4fae4edf624bc99d2c281f292b7f77aa42169d9ba882638525cc
