@@ -1,0 +1,64 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1tjwy8x2rxsxn5d0xsgz3s3
+  slug: lead-liaison
+  slug_aliases: []
+  name: Lead Liaison
+  domains:
+    - value: leadliaison.com
+      role: primary
+      valid_from: 2026-09-06T05:26:15.069Z
+  category: crm-sales
+profile:
+  description: Lead Liaison provides sales and marketing software, including marketing automation, website visitor tracking, and sales enablement.
+  links:
+    site: https://www.leadliaison.com/
+sources:
+  - source_id: src_4a4b702193180cea43e63c3d920b4349cf24ec10abcbd877c39ce0861e997322
+    url: https://www.leadliaison.com/startups/
+programs: []
+offers:
+  - offer_id: off_01m1tjwy8yd72edkh7mmngxxz9
+    offer_slug: seed-stage-startup-discount
+    offer_slug_aliases: []
+    title: Seed-Stage startup subscription discount
+    summary: Eligible seed-stage startups receive 90% off subscription licenses for 24 months, then 50% off for 12 months, subject to the program qualification and training requirements.
+    description: Professional Services are excluded. The second-year discount requires a Sales & Marketing University graduate certificate. Series A funding moves participants to the separate Series A program.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-06T05:26:15.069Z
+    economics:
+      consideration:
+        kind: variable
+        description: A paid subscription license is required; the amount depends on the selected license and discount phase. Professional Services are not discounted.
+      benefits:
+        - benefit_id: ben_01m1tjwy8yr4xkr9afsggprpps
+          kind: discount
+          applies_to: Subscription licenses during months 1 through 24
+          description: 90% off list price for the first 24 months; second-year continuation requires a Sales & Marketing University graduate certificate.
+          percentage:
+            kind: exact
+            basis_points: 9000
+        - benefit_id: ben_01m1tjwy8y1kr9zvacnckz1wjm
+          kind: discount
+          applies_to: Subscription licenses during months 25 through 36
+          description: 50% off list price for the next 12 months after the initial 24-month phase.
+          percentage:
+            kind: exact
+            basis_points: 5000
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_seed_stage_qualification
+        reason: external-verification
+        statement: The startup must have less than USD 2 million in total funding, must not be an existing customer, and must participate in or be an alumnus of an approved incubator, accelerator, or VC in the Seed-Stage Program. The second-year discount requires a Sales & Marketing University graduate certificate. Misrepresentation may remove the discount, terminate the subscription, and require repayment. Receipt of Series A funding moves the startup to the separate Series A program.
+    roles:
+      terms_authority_entity_id: ent_01m1tjwy8x2rxsxn5d0xsgz3s3
+      access_operator_entity_id: ent_01m1tjwy8x2rxsxn5d0xsgz3s3
+    access:
+      availability: public
+      method: form
+      url: https://www.leadliaison.com/startups/
+    terms_url: https://www.leadliaison.com/startups/
+    source_ids:
+      - src_4a4b702193180cea43e63c3d920b4349cf24ec10abcbd877c39ce0861e997322
