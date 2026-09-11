@@ -1,0 +1,84 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m14mrh4hh69jtzk732s4pv8c
+  slug: navtalk
+  slug_aliases: []
+  name: NavTalk
+  domains:
+    - value: navtalk.ai
+      role: primary
+      valid_from: 2026-08-28T16:55:47.317Z
+  category: ai-ml
+profile:
+  description: NavTalk provides real-time AI avatar technology and APIs for interactive support, education, sales, healthcare, and kiosk experiences.
+  links:
+    site: https://navtalk.ai/en/
+sources:
+  - source_id: src_d923a69ce04dcc6af6b613f55fc8eb31b63562916c96f51b2191372a0f04cc1c
+    url: https://navtalk.ai/en/startup/
+  - source_id: src_e0237f129a6e8a6b0fa74f9d757240d984f20b490182ee75506c014bc62b7d72
+    url: https://navtalk.ai/en/startup/application/
+  - source_id: src_eb706feb666867dec1787405af1c1c18fc7feb83ed7576bc9048e51b91794b57
+    url: https://navtalk.ai/policy/terms-of-service/
+programs:
+  - program_id: prg_01m14mrh4ka055z5yckvdamwng
+    program_slug: navtalk-for-startups
+    program_slug_aliases: []
+    title: NavTalk for Startups
+    summary: Qualified startups receive the NavTalk Growth Plan free for 12 months, including full platform features, API access, and startup support.
+    source_ids:
+      - src_d923a69ce04dcc6af6b613f55fc8eb31b63562916c96f51b2191372a0f04cc1c
+      - src_e0237f129a6e8a6b0fa74f9d757240d984f20b490182ee75506c014bc62b7d72
+offers:
+  - offer_id: off_01m14mrh4kfap2tpdsrcywmmmz
+    program_id: prg_01m14mrh4ka055z5yckvdamwng
+    offer_slug: one-year-free-growth-plan
+    offer_slug_aliases: []
+    title: One year free NavTalk Growth Plan
+    summary: Qualified startups less than five years old and actively building a product receive the NavTalk Growth Plan free for one year, a benefit NavTalk values at $1,188.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-28T16:55:47.317Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_01
+          description: NavTalk Growth Plan with full platform features and API access free for 12 months, valued by NavTalk at $1,188
+          kind: free-service
+          service: NavTalk Growth Plan
+          duration:
+            kind: exact
+            value: P1Y
+        - benefit_id: ben_02
+          description: Priority startup support for onboarding, deployment, integration, and technical questions
+          kind: other
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.age_years
+            kind: predicate
+            operator: lt
+            statement: Startup is less than five years old.
+            value:
+              type: number
+              value: 5
+          - criterion_id: cri_02
+            kind: manual
+            reason: external-verification
+            statement: Startup is actively building a product.
+    roles:
+      terms_authority_entity_id: ent_01m14mrh4hh69jtzk732s4pv8c
+      access_operator_entity_id: ent_01m14mrh4hh69jtzk732s4pv8c
+    access:
+      availability: public
+      method: form
+      url: https://navtalk.ai/en/startup/application/
+    terms_url: https://navtalk.ai/policy/terms-of-service/
+    source_ids:
+      - src_d923a69ce04dcc6af6b613f55fc8eb31b63562916c96f51b2191372a0f04cc1c
+      - src_e0237f129a6e8a6b0fa74f9d757240d984f20b490182ee75506c014bc62b7d72
+      - src_eb706feb666867dec1787405af1c1c18fc7feb83ed7576bc9048e51b91794b57
+
