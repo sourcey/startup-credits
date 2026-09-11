@@ -1,0 +1,88 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m0zpgrcvgj11d1b0fsbt8dzy
+  slug: jaxsuite-ai
+  slug_aliases: []
+  name: JaxSuite AI
+  domains:
+    - value: jaxsuite.com
+      role: primary
+      valid_from: 2026-08-26T18:50:00.475Z
+  category: crm-sales
+profile:
+  description: JaxSuite AI is a sales platform for cold outreach, lead data, campaign automation, CRM workflows, and email deliverability.
+  links:
+    site: https://www.jaxsuite.com
+sources:
+  - source_id: src_eb060abc7091f0fbb65cecd297293b57a6526b4989144d0d2d359ad78c825d05
+    url: https://www.jaxsuite.com/startups
+programs:
+  - program_id: prg_01m0zpgrcv6ye0h0a23rxb105a
+    program_slug: jaxsuite-for-startups
+    program_slug_aliases: []
+    title: JaxSuite for Startups
+    summary: JaxSuite gives eligible early-stage companies 50% off Outreach and CRM subscriptions for 12 months, with advertised savings up to $45,000.
+    source_ids:
+      - src_eb060abc7091f0fbb65cecd297293b57a6526b4989144d0d2d359ad78c825d05
+offers:
+  - offer_id: off_01m0zpgrcvpb11ry6npbm73zvy
+    program_id: prg_01m0zpgrcv6ye0h0a23rxb105a
+    offer_slug: jaxsuite-startup-50-percent-off
+    offer_slug_aliases: []
+    title: 50% Off JaxSuite for One Year
+    summary: Eligible pre-seed through Series B startups receive 50% off JaxSuite Outreach and CRM subscriptions for 12 months.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-26T18:50:00.475Z
+    economics:
+      benefits:
+        - applies_to: JaxSuite Outreach and CRM subscriptions
+          benefit_id: ben_01
+          description: 50% off Outreach and CRM subscriptions for 12 months
+          duration:
+            kind: exact
+            value: P1Y
+          kind: discount
+          percentage:
+            basis_points: 5000
+            kind: exact
+      consideration:
+        kind: variable
+        description: The startup purchases eligible Outreach or CRM subscriptions at the discounted price.
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: external-verification
+            statement: The company is an early-stage startup from pre-seed through Series B
+          - criterion_id: cri_02
+            fact: company.is_current_customer
+            kind: predicate
+            operator: eq
+            statement: The company has not previously been a paid JaxSuite subscriber
+            value:
+              type: boolean
+              value: false
+          - criterion_id: cri_03
+            kind: manual
+            reason: external-verification
+            statement: The applicant is a founder or senior member of the company team
+          - criterion_id: cri_04
+            kind: manual
+            reason: external-verification
+            statement: The company has created a free JaxSuite workspace before applying
+          - criterion_id: cri_05
+            kind: manual
+            reason: external-verification
+            statement: The company has not previously received the startup discount
+    roles:
+      terms_authority_entity_id: ent_01m0zpgrcvgj11d1b0fsbt8dzy
+      access_operator_entity_id: ent_01m0zpgrcvgj11d1b0fsbt8dzy
+    access:
+      availability: public
+      method: form
+      url: https://www.jaxsuite.com/startups
+    source_ids:
+      - src_eb060abc7091f0fbb65cecd297293b57a6526b4989144d0d2d359ad78c825d05
