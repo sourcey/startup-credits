@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1x4wd7h6c1p00rrnf42ecmt
+  slug: anchorbrowser
+  slug_aliases: []
+  name: Anchor Browser
+  domains:
+    - value: anchorbrowser.io
+      role: primary
+      valid_from: 2026-09-07T05:19:00.000Z
+  category: other
+profile:
+  description: Anchor Browser startup program offering credits and benefits for qualifying early-stage companies.
+  links:
+    site: https://anchorbrowser.io
+sources:
+  - source_id: src_802443b1eef1eac00e19f715c085e10c2fb617b5245e5172b9121363c4454312
+    url: https://anchorbrowser.io/startup-program
+programs: []
+offers:
+  - offer_id: off_01m1x4wd7qha9xf9cspf0b8esy
+    offer_slug: startup-program
+    offer_slug_aliases: []
+    title: Anchor Browser Startup Program
+    summary: 'Eligible production-stage startups building browser automation products can receive 24,000 credits and Growth-tier access free for six months, with dedicated support. After six months, teams may move to the published annual Growth plan or o'
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T05:19:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Startup program benefits as published by Anchor Browser
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_requirement_01
+        kind: manual
+        reason: not-machine-evaluable
+        statement: Contact Anchor Browser for eligibility requirements as published on the vendor's startup page.
+    roles:
+      terms_authority_entity_id: ent_01m1x4wd7h6c1p00rrnf42ecmt
+      access_operator_entity_id: ent_01m1x4wd7h6c1p00rrnf42ecmt
+    access:
+      availability: public
+      method: form
+      url: https://anchorbrowser.io/startup-program
+    source_ids:
+      - src_802443b1eef1eac00e19f715c085e10c2fb617b5245e5172b9121363c4454312

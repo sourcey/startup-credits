@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1x4wcspywdv10ystmwsz35n
+  slug: humeai
+  slug_aliases: []
+  name: Hume AI
+  domains:
+    - value: hume.ai
+      role: primary
+      valid_from: 2026-09-07T05:19:00.000Z
+  category: ai-ml
+profile:
+  description: Hume AI startup program offering credits and benefits for qualifying early-stage companies.
+  links:
+    site: https://hume.ai
+sources:
+  - source_id: src_b8bc228df71909a10b73fb594ad1620b15bac1a4ecf178a594a14aa2f0d3c9ca
+    url: https://www.hume.ai/startup-program
+programs: []
+offers:
+  - offer_id: off_01m1x4wcsy53g2brrxtqqwbq46
+    offer_slug: startup-program
+    offer_slug_aliases: []
+    title: Hume AI Startup Program
+    summary: 'Hume AI publishes a Startup Program offering early-stage startups discounted API access, dedicated support, technical guidance, and resources for building with empathic AI.'
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T05:19:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Startup program benefits as published by Hume AI
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_requirement_01
+        kind: manual
+        reason: not-machine-evaluable
+        statement: Contact Hume AI for eligibility requirements as published on the vendor's startup page.
+    roles:
+      terms_authority_entity_id: ent_01m1x4wcspywdv10ystmwsz35n
+      access_operator_entity_id: ent_01m1x4wcspywdv10ystmwsz35n
+    access:
+      availability: public
+      method: form
+      url: https://www.hume.ai/startup-program
+    source_ids:
+      - src_b8bc228df71909a10b73fb594ad1620b15bac1a4ecf178a594a14aa2f0d3c9ca

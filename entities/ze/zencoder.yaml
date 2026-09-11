@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1x4wcav5fbxkpxc7tx9q75d
+  slug: zencoder
+  slug_aliases: []
+  name: Zencoder
+  domains:
+    - value: zencoder.ai
+      role: primary
+      valid_from: 2026-09-07T05:18:59.000Z
+  category: ai-ml
+profile:
+  description: Zencoder startup program offering credits and benefits for qualifying early-stage companies.
+  links:
+    site: https://zencoder.ai
+sources:
+  - source_id: src_face889decccaa8ffbc38dfef0da8743ee0c99ae640b933e6301d6e24986b35c
+    url: https://zencoder.ai/legal/zencoder-startup-program-terms-and-conditions
+programs: []
+offers:
+  - offer_id: off_01m1x4wcaz97zf7an1fmb9jc15
+    offer_slug: startup-program
+    offer_slug_aliases: []
+    title: Zencoder Startup Program
+    summary: '40% off eligible plans in year 1, 30% in year 2, and 20% in year 3 for qualifying early-stage companies. Canonical source: https://zencoder.ai/legal/zencoder-startup-program-terms-and-conditions  Duplicate check: no current entity file, ope'
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T05:18:59.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Startup program benefits as published by Zencoder
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_requirement_01
+        kind: manual
+        reason: not-machine-evaluable
+        statement: Contact Zencoder for eligibility requirements as published on the vendor's startup page.
+    roles:
+      terms_authority_entity_id: ent_01m1x4wcav5fbxkpxc7tx9q75d
+      access_operator_entity_id: ent_01m1x4wcav5fbxkpxc7tx9q75d
+    access:
+      availability: public
+      method: form
+      url: https://zencoder.ai/legal/zencoder-startup-program-terms-and-conditions
+    source_ids:
+      - src_face889decccaa8ffbc38dfef0da8743ee0c99ae640b933e6301d6e24986b35c
