@@ -1,0 +1,87 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1fqts3y86h8cypdvcxxn49v
+  slug: red-hat
+  slug_aliases: []
+  name: Red Hat
+  domains:
+    - value: redhat.com
+      role: primary
+      valid_from: 2026-09-02T00:20:48.382Z
+  category: devtools-other
+
+profile:
+  description: Red Hat provides enterprise open source software, including Red Hat Enterprise Linux (RHEL), for hybrid cloud and enterprise infrastructure.
+  links:
+    site: https://www.redhat.com/
+
+sources:
+  - source_id: src_85b0fb172ecc881d485a0637663849b789e47cc529cf51e50b01d06cc0f147b9
+    url: https://www.redhat.com/en/engage/partner-with-red-hat-20260714
+  - source_id: src_f994e1846132e336fbed0702e76abeaf669e238eeac67c15ed218bc3ea1609fc
+    url: https://www.redhat.com/en/blog/red-hat-extends-rhel-special-offering-participants-google-startups-cloud-program
+
+programs: []
+
+offers:
+  - offer_id: off_01m1fqts3y95weyazxspm384cb
+    offer_slug: rhel-google-startups-special-offer
+    offer_slug_aliases: []
+    title: RHEL special offer for Google Startups
+    summary: Eligible Google for Startups Cloud Program members receive $2,000 in RHEL software credits for up to 6 months plus 6 months of technical support.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-02T00:20:48.382Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_01
+          description: $2,000 in software credits for Red Hat Enterprise Linux for Google Cloud
+          duration:
+            kind: up-to
+            value: P6M
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 200000
+            kind: exact
+        - benefit_id: ben_02
+          description: 6 months of technical support for RHEL for Google Cloud
+          duration:
+            kind: exact
+            value: P6M
+          kind: free-service
+          service: Technical support for RHEL for Google Cloud
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: external-verification
+            statement: Must be an active, verified Start Tier member of the Google for Startups Cloud Program.
+          - criterion_id: cri_02
+            fact: company.is_current_customer
+            kind: predicate
+            operator: eq
+            statement: Must be a new Red Hat customer.
+            value:
+              type: boolean
+              value: false
+          - criterion_id: cri_03
+            kind: manual
+            reason: external-verification
+            statement: Must provide a valid Google Billing ID matching the email linked to the Google Startup Program account and an authorized point of contact.
+    roles:
+      terms_authority_entity_id: ent_01m1fqts3y86h8cypdvcxxn49v
+      access_operator_entity_id: ent_01m1fqts3y86h8cypdvcxxn49v
+    access:
+      availability: membership
+      method: form
+      url: https://www.redhat.com/en/engage/partner-with-red-hat-20260714
+      instructions: Submit the form with startup information, Google Billing ID, and the authorized contact who can accept the Google Private Offer.
+    source_ids:
+      - src_85b0fb172ecc881d485a0637663849b789e47cc529cf51e50b01d06cc0f147b9
+      - src_f994e1846132e336fbed0702e76abeaf669e238eeac67c15ed218bc3ea1609fc
