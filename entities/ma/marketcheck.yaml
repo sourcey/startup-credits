@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1x4wch2gskqc09yntbjq03x
+  slug: marketcheck
+  slug_aliases: []
+  name: MarketCheck
+  domains:
+    - value: marketcheck.uk
+      role: primary
+      valid_from: 2026-09-07T05:19:00.000Z
+  category: other
+profile:
+  description: MarketCheck startup program offering credits and benefits for qualifying early-stage companies.
+  links:
+    site: https://marketcheck.uk
+sources:
+  - source_id: src_f0e22ba021ae2d1923c4ecdbb4b7d298331aa56f91dcdfcaf37b2bb66f901ac6
+    url: https://marketcheck.uk/automotive-sectors/marketcheck-for-startups
+programs: []
+offers:
+  - offer_id: off_01m1x4wch7y7qh4h4c435t0c4c
+    offer_slug: startup-program
+    offer_slug_aliases: []
+    title: MarketCheck Startup Program
+    summary: 'MarketCheck for Startups provides AI-first automotive startups with no access fee for three months, 25,000 free API calls per month, and additional calls at GBP 0.002 each.'
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T05:19:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Startup program benefits as published by MarketCheck
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_requirement_01
+        kind: manual
+        reason: not-machine-evaluable
+        statement: Contact MarketCheck for eligibility requirements as published on the vendor's startup page.
+    roles:
+      terms_authority_entity_id: ent_01m1x4wch2gskqc09yntbjq03x
+      access_operator_entity_id: ent_01m1x4wch2gskqc09yntbjq03x
+    access:
+      availability: public
+      method: form
+      url: https://marketcheck.uk/automotive-sectors/marketcheck-for-startups
+    source_ids:
+      - src_f0e22ba021ae2d1923c4ecdbb4b7d298331aa56f91dcdfcaf37b2bb66f901ac6

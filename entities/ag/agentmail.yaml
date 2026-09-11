@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1x4wd44actytwnzy98j9p3c
+  slug: agentmail
+  slug_aliases: []
+  name: AgentMail
+  domains:
+    - value: agentmail.to
+      role: primary
+      valid_from: 2026-09-07T05:19:00.000Z
+  category: ai-ml
+profile:
+  description: AgentMail startup program offering credits and benefits for qualifying early-stage companies.
+  links:
+    site: https://agentmail.to
+sources:
+  - source_id: src_86afa0eee36a0d9c0d7af67e86823526c7b3f0287739422b32a7f69c17364bf6
+    url: https://www.agentmail.to/startups
+programs: []
+offers:
+  - offer_id: off_01m1x4wd4as9911d37yz8e91rm
+    offer_slug: startup-program
+    offer_slug_aliases: []
+    title: AgentMail Startup Program
+    summary: 'Eligible early-stage companies building AI agents and funded between USD 500,000 and USD 10 million can receive AgentMail''s USD 200/month Startup tier free for three months, without a credit card. The tier includes 150 inboxes, 150,000 emai'
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T05:19:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Startup program benefits as published by AgentMail
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_requirement_01
+        kind: manual
+        reason: not-machine-evaluable
+        statement: Contact AgentMail for eligibility requirements as published on the vendor's startup page.
+    roles:
+      terms_authority_entity_id: ent_01m1x4wd44actytwnzy98j9p3c
+      access_operator_entity_id: ent_01m1x4wd44actytwnzy98j9p3c
+    access:
+      availability: public
+      method: form
+      url: https://www.agentmail.to/startups
+    source_ids:
+      - src_86afa0eee36a0d9c0d7af67e86823526c7b3f0287739422b32a7f69c17364bf6
