@@ -1,0 +1,55 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1san0vb7v3xg7ejq91bxtfd
+  slug: railway
+  slug_aliases: []
+  name: Railway
+  domains:
+    - value: railway.com
+      role: primary
+      valid_from: 2021-01-01T00:00:00.000Z
+  category: hosting-infra
+profile:
+  description: Cloud hosting platform for full-stack applications. Deploy in seconds with usage-based pricing and zero configuration.
+  links:
+    site: https://railway.com
+sources:
+  - source_id: cd014b583f963f188f340a05dbf0d7fca8be8d3168293a54caaec85edfe5d441
+    url: https://railway.com/pricing
+offers:
+  - offer_id: off_01m1san0y3ctnzrk5821zkxdje
+    offer_slug: 5-usd-credit-trial
+    offer_slug_aliases: []
+    title: $5 one-time credit grant
+    summary: New Railway users receive a $5 one-time credit to try the platform.
+    lifecycle:
+      status: active
+      effective_from: 2021-01-01T00:00:00.000Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: $5 one-time credit
+          kind: credit
+          value:
+            kind: exact
+            amount:
+              currency: USD
+              minor_units: 500
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: New Railway users may receive credits at Railway's discretion.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01m1san0vb7v3xg7ejq91bxtfd
+      access_operator_entity_id: ent_01m1san0vb7v3xg7ejq91bxtfd
+    access:
+      availability: public
+      method: form
+      url: https://railway.com
+    source_ids:
+      - cd014b583f963f188f340a05dbf0d7fca8be8d3168293a54caaec85edfe5d441
