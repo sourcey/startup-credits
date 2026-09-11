@@ -1,0 +1,60 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1t6rmn5mxcg9fxr9crsz13c
+  slug: laravel
+  slug_aliases: []
+  name: Laravel
+  domains:
+  - value: laravel.com
+    role: primary
+    valid_from: '2026-09-06T02:06:08.000Z'
+  category: ai-ml
+profile:
+  description: Laravel startup program offering credits for early-stage companies.
+  links:
+    site: https://laravel.com
+sources:
+- source_id: src_8304c98b7f20e56c82273a796a527610e5132864dd27d22915c0190079edf65c
+  url: https://laravel.com/cloud
+- source_id: src_9b2522b63a3a5c16ff1e8f9f7ac1372a9c77ad363dd579fc316d94e32f17a73e
+  url: https://startups.aws.com/offers?lang=en-US
+- source_id: src_658c3fc6cc27203484972dea855806876d719a961fc4839c83c0b5f8cdeadcc2
+  url: https://aws.amazon.com/startups/credits?lang=en-US
+programs: []
+offers:
+- offer_id: off_01m1t7ehdc5xc1cfpvatfbb2a1
+  offer_slug: laravel-startup-discount
+  offer_slug_aliases: []
+  title: Laravel Startup Discount
+  summary: "AWS Activate currently lists \u201C$300 to deploy anything on Laravel\
+    \ Cloud.\u201D This is a partner offer accessed through AWS Activate, rather than\
+    \ Laravel Cloud's ordinary public pricing. The proposed record will model AWS\
+    \ as the access operator a"
+  lifecycle:
+    status: active
+    effective_from: '2026-09-06T02:06:08.000Z'
+  economics:
+    consideration:
+      kind: unknown
+      description: Contact sales for pricing details.
+    benefits:
+    - benefit_id: ben_primary
+      description: Discount for 12 months
+      kind: discount
+  eligibility:
+    rule:
+      kind: manual
+      criterion_id: cri_requirement
+      statement: Must qualify as a startup. Contact sales for eligibility details.
+      reason: not-machine-evaluable
+  roles:
+    terms_authority_entity_id: ent_01m1t6rmn5mxcg9fxr9crsz13c
+    access_operator_entity_id: ent_01m1t6rmn5mxcg9fxr9crsz13c
+  access:
+    availability: public
+    method: contact
+    url: https://aws.amazon.com/startups/credits?lang=en-US
+  source_ids:
+  - src_8304c98b7f20e56c82273a796a527610e5132864dd27d22915c0190079edf65c
+  - src_9b2522b63a3a5c16ff1e8f9f7ac1372a9c77ad363dd579fc316d94e32f17a73e
+  - src_658c3fc6cc27203484972dea855806876d719a961fc4839c83c0b5f8cdeadcc2
