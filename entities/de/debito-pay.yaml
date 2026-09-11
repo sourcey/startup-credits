@@ -1,0 +1,70 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1358xf9dvc02f3fedyhna2r
+  slug: debito-pay
+  slug_aliases: []
+  name: Debito Pay
+  domains:
+    - value: debitopay.com
+      role: primary
+      valid_from: 2026-08-28T00:00:00.000Z
+  category: payments-fintech
+profile:
+  description: Debito Pay provides payment processing and integration services for businesses in Africa.
+  links:
+    site: https://debitopay.com/
+sources:
+  - source_id: src_a940db21e510b3b4a95872a1b957082316a4d4709da8033638f9cd918b5c7af6
+    url: https://debitopay.com/startup-program/
+programs:
+  - program_id: prg_01m1358xf9ae8zvxnvk9szxma6
+    program_slug: startup-program
+    program_slug_aliases: []
+    title: Debito Pay Startup Program
+    summary: Fee-free payment processing and integration support for eligible early-stage African startups.
+    source_ids:
+      - src_a940db21e510b3b4a95872a1b957082316a4d4709da8033638f9cd918b5c7af6
+offers:
+  - offer_id: off_01m1358xf97xmg66trkap1hxpf
+    program_id: prg_01m1358xf9ae8zvxnvk9szxma6
+    offer_slug: zero-processing-fees-for-one-year
+    offer_slug_aliases: []
+    title: Zero Debito Pay processing fees for 12 months
+    summary: Eligible African startups receive zero payment-processing fees for their first 12 months, plus free integration and support.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-28T00:00:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 100% off Debito Pay payment-processing fees for 12 months.
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 10000
+          duration:
+            kind: exact
+            value: P1Y
+        - benefit_id: ben_02
+          description: Free payment integration and support.
+          kind: other
+      consideration:
+        kind: unknown
+        description: The offer waives processing fees, but ordinary transaction settlement may still apply.
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Applicant must be an African startup less than three years old and processing fewer than 100 transactions per month.
+    roles:
+      terms_authority_entity_id: ent_01m1358xf9dvc02f3fedyhna2r
+      access_operator_entity_id: ent_01m1358xf9dvc02f3fedyhna2r
+    access:
+      availability: public
+      method: form
+      url: https://debitopay.com/startup-program/
+      instructions: Apply through the form on the Debito Pay Startup Program page.
+    terms_url: https://debitopay.com/startup-program/
+    source_ids:
+      - src_a940db21e510b3b4a95872a1b957082316a4d4709da8033638f9cd918b5c7af6
