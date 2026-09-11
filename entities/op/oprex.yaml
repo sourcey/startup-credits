@@ -1,0 +1,55 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1tsge4hpbf03frerj2wsvra
+  slug: oprex
+  slug_aliases: []
+  name: Oprex
+  domains:
+  - value: oprex.id
+    role: primary
+    valid_from: '2026-09-06T07:21:45.000Z'
+  category: devtools-other
+profile:
+  description: Oprex startup program offering credits for early-stage companies.
+  links:
+    site: https://oprex.id
+sources:
+- source_id: src_5f47b4d5204b3c3cf14dddfbd3dd87cc64ffbc816664af0ee256554ebc240dd9
+  url: https://oprex.id/company/startup-program
+- source_id: src_bf901e3bf3fc8172a4144682592fbaeac5f34923d6a27bbe0709d2401dd2fb74
+  url: https://oprex.id/pricing
+programs: []
+offers:
+- offer_id: off_01m1tsge9emwy4z29vww4fb4m9
+  offer_slug: oprex-startup-discount
+  offer_slug_aliases: []
+  title: Oprex Startup Discount
+  summary: Eligible early-stage teams receive the Oprex Pro plan free for 12 months.
+    The public pricing page lists Pro at Rp 1,490,000 per month.
+  lifecycle:
+    status: active
+    effective_from: '2026-09-06T07:21:45.000Z'
+  economics:
+    consideration:
+      kind: unknown
+      description: Contact sales for pricing details.
+    benefits:
+    - benefit_id: ben_primary
+      description: Discount for 12 months
+      kind: discount
+  eligibility:
+    rule:
+      kind: manual
+      criterion_id: cri_requirement
+      statement: Must qualify as a startup. Contact sales for eligibility details.
+      reason: not-machine-evaluable
+  roles:
+    terms_authority_entity_id: ent_01m1tsge4hpbf03frerj2wsvra
+    access_operator_entity_id: ent_01m1tsge4hpbf03frerj2wsvra
+  access:
+    availability: public
+    method: contact
+    url: https://oprex.id/pricing
+  source_ids:
+  - src_5f47b4d5204b3c3cf14dddfbd3dd87cc64ffbc816664af0ee256554ebc240dd9
+  - src_bf901e3bf3fc8172a4144682592fbaeac5f34923d6a27bbe0709d2401dd2fb74
