@@ -1,0 +1,64 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1ghezyyn5qr80tv629js3fv
+  slug: callmissed
+  slug_aliases: []
+  name: CallMissed
+  domains:
+    - value: callmissed.com
+      role: primary
+      valid_from: 2026-09-02T07:48:45.348Z
+  category: communication
+profile:
+  description: CallMissed provides AI agents and APIs for customer support across WhatsApp, voice, SMS, email, and web, including LLM inference, speech-to-text, and text-to-speech.
+  links:
+    site: https://www.callmissed.com
+sources:
+  - source_id: src_93f5981560d537d3d437a724bdfb24fc62b1bf375439f206f1207c897b27cd4b
+    url: https://www.callmissed.com/solutions/startups
+programs:
+  - program_id: prg_01m1ghezz4q2nhf2sv9bspqftn
+    program_slug: callmissed-startup-credits
+    program_slug_aliases: []
+    title: CallMissed Startup Credits
+    summary: CallMissed's startup program provides approved early-stage teams in India with additional API credits for LLM, speech, image, and voice-agent usage.
+    source_ids:
+      - src_93f5981560d537d3d437a724bdfb24fc62b1bf375439f206f1207c897b27cd4b
+offers:
+  - offer_id: off_01m1ghezz4evabcn9gm695pmdq
+    program_id: prg_01m1ghezz4q2nhf2sv9bspqftn
+    offer_slug: 1000-usd-in-api-credits
+    offer_slug_aliases: []
+    title: $1,000 in additional API credits
+    summary: Approved early-stage startups receive $1,000 in additional CallMissed API credits, equal to 100,000 platform credits at $0.01 each.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-02T07:48:45.348Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: $1,000 in additional API credits, equal to 100,000 CallMissed platform credits at $0.01 each, for LLM, STT, TTS, image-generation, and voice-session usage.
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 100000
+            kind: exact
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Early-stage startups building B2C or developer products in India may apply; teams using WhatsApp, voice, or CallMissed's LLM, STT, and TTS APIs are emphasized, while DPIIT-registered startups, selected accelerator portfolios, and strong MVP teams are prioritized.
+    roles:
+      terms_authority_entity_id: ent_01m1ghezyyn5qr80tv629js3fv
+      access_operator_entity_id: ent_01m1ghezyyn5qr80tv629js3fv
+    access:
+      availability: public
+      method: contact
+      instructions: Create a CallMissed account, then email the published startup-program contact with the requested company, founder, product, stage, usage, and supporting details for review.
+      url: https://www.callmissed.com/solutions/startups
+    source_ids:
+      - src_93f5981560d537d3d437a724bdfb24fc62b1bf375439f206f1207c897b27cd4b
