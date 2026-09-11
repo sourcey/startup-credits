@@ -1,0 +1,87 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1syxpwzrdkwky8sj74bqhdt
+  slug: enterprise-singapore
+  slug_aliases: []
+  name: Enterprise Singapore
+  domains:
+    - value: enterprisesg.gov.sg
+      role: primary
+      valid_from: 2026-09-05T23:37:26.000Z
+  category: other
+profile:
+  description: Enterprise Singapore supports Singaporean startups and enterprises through funding, mentorship, and market access programmes.
+  links:
+    site: https://www.enterprisesg.gov.sg
+sources:
+  - source_id: src_6128d68493668f97d416fa3e4c3400fc79bf305ad9caf910b6858d170525c9c7
+    url: https://www.enterprisesg.gov.sg/grow-your-business/partner-with-singapore/innovation-and-startups/join-startup-sg
+  - source_id: src_e794c867d50b680a9c0e41b0da115316afb7445cecd5c202285abae9ec04d82d
+    url: https://www.startupsg.gov.sg/programmes/4894/startup-sg-founder
+programs:
+  - program_id: prg_01m1syxpx3fqa8knp96xgf7b9b
+    program_slug: startup-sg-founder
+    program_slug_aliases: []
+    title: Startup SG Founder
+    summary: Government grant with 1:1 capital co-matching and mentorship support for first-time Singaporean and permanent-resident founders.
+    source_ids:
+      - src_6128d68493668f97d416fa3e4c3400fc79bf305ad9caf910b6858d170525c9c7
+      - src_e794c867d50b680a9c0e41b0da115316afb7445cecd5c202285abae9ec04d82d
+offers:
+  - offer_id: off_01m1syxpx4zm6qfk0pvva0k8ha
+    program_id: prg_01m1syxpx3fqa8knp96xgf7b9b
+    offer_slug: sgd-20000-50000-capital-grant
+    offer_slug_aliases:
+      - startup-sg-founder-grant
+    title: SGD 20,000–50,000 capital grant with 1:1 co-matching
+    summary: First-time Singaporean and permanent-resident founders can receive SGD 20,000–50,000 in grant funding with 1:1 capital co-matching from a third party.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T23:37:26.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_capital_grant
+          description: SGD 20,000–50,000 grant disbursed upon meeting programme milestones
+          kind: credit
+          value:
+            kind: range
+            amount:
+              currency: SGD
+              minor_units: 50000
+            min_amount:
+              currency: SGD
+              minor_units: 20000
+        - benefit_id: ben_co_matching
+          description: 1:1 capital co-matching from a third-party investor or mentor
+          kind: other
+        - benefit_id: ben_mentorship
+          description: Support from an Accredited Mentor Partner
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_first_time_founder
+            kind: manual
+            reason: self-attestation
+            statement: First-time Singaporean or permanent-resident founder
+          - criterion_id: cri_venture
+            kind: manual
+            reason: external-verification
+            statement: Applying with a new Singapore-registered venture
+          - criterion_id: cri_amp
+            kind: manual
+            reason: external-verification
+            statement: Engaged with an Accredited Mentor Partner for programme participation
+    roles:
+      terms_authority_entity_id: ent_01m1syxpwzrdkwky8sj74bqhdt
+      access_operator_entity_id: ent_01m1syxpwzrdkwky8sj74bqhdt
+    access:
+      availability: public
+      method: form
+      url: https://www.startupsg.gov.sg/programmes/4894/startup-sg-founder/apply
+    source_ids:
+      - src_6128d68493668f97d416fa3e4c3400fc79bf305ad9caf910b6858d170525c9c7
+      - src_e794c867d50b680a9c0e41b0da115316afb7445cecd5c202285abae9ec04d82d

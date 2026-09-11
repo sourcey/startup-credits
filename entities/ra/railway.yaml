@@ -1,0 +1,80 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1t0g0y0f85ffkp680q0erqe
+  slug: railway
+  slug_aliases: []
+  name: Railway
+  domains:
+    - value: railway.com
+      role: primary
+      valid_from: 2026-09-06T00:00:00Z
+  category: hosting-infra
+profile:
+  description: Railway is a cloud platform for deploying full-stack applications with managed databases, storage, and caching.
+  links:
+    site: https://railway.com
+sources:
+  - source_id: src_1fab75e3884c3cf5fe9b2349476379ad41ea00756ef568da878ae7c0e08dbb61
+    url: https://railway.com/pricing
+programs:
+  - program_id: prg_01m1t0g0ykabyzdbx4n7ktehd4
+    program_slug: railway-starter-credits
+    program_slug_aliases: []
+    title: Railway Starter Credits
+    summary: New users receive a one-time $5 credit upon sign-up with no credit card required.
+    source_ids:
+      - src_1fab75e3884c3cf5fe9b2349476379ad41ea00756ef568da878ae7c0e08dbb61
+offers:
+  - offer_id: off_01m1t0g0ykspzpsms0gqww2834
+    program_id: prg_01m1t0g0ykabyzdbx4n7ktehd4
+    offer_slug: railway-trial-credit
+    offer_slug_aliases: []
+    title: Railway Trial Credit
+    summary: New users receive $5 in one-time credits upon sign-up, usable on any Railway resources, with no credit card required.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-06T00:00:00Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_01
+          description: $5 one-time trial credits for new users.
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 50000
+            kind: up-to
+          duration:
+            kind: exact
+            value: P30D
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: user.is_new
+            kind: predicate
+            operator: eq
+            statement: User is a new Railway account holder.
+            value:
+              type: boolean
+              value: true
+          - criterion_id: cri_02
+            fact: company.age_years
+            kind: predicate
+            operator: lte
+            statement: Company has been operating for less than 5 years.
+            value:
+              type: number
+              value: 5
+    roles:
+      terms_authority_entity_id: ent_01m1t0g0y0f85ffkp680q0erqe
+      access_operator_entity_id: ent_01m1t0g0y0f85ffkp680q0erqe
+    access:
+      availability: public
+      method: form
+      url: https://railway.com/pricing
+    source_ids:
+      - src_1fab75e3884c3cf5fe9b2349476379ad41ea00756ef568da878ae7c0e08dbb61

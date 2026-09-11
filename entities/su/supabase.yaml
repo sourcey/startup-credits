@@ -1,0 +1,84 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1t0g16b04x3r93frfk2181y
+  slug: supabase
+  slug_aliases: []
+  name: Supabase
+  domains:
+    - value: supabase.com
+      role: primary
+      valid_from: 2026-09-06T00:00:00Z
+  category: databases
+profile:
+  description: Supabase is an open-source Firebase alternative providing hosted Postgres, authentication, realtime subscriptions, and storage.
+  links:
+    site: https://supabase.com
+sources:
+  - source_id: src_5e4089a28276d469c62c96104f1702253465e850cbf999779ebe69868fb27484
+    url: https://supabase.com/pricing
+programs:
+  - program_id: prg_01m1t0g1780x3nw3y65gdg75c0
+    program_slug: supabase-free-tier
+    program_slug_aliases: []
+    title: Supabase Free Tier
+    summary: Free tier provides 500MB Postgres database, authentication, realtime, and storage for all users.
+    source_ids:
+      - src_5e4089a28276d469c62c96104f1702253465e850cbf999779ebe69868fb27484
+offers:
+  - offer_id: off_01m1t0g17be7nnzv7156d50697
+    program_id: prg_01m1t0g1780x3nw3y65gdg75c0
+    offer_slug: supabase-pro-free
+    offer_slug_aliases: []
+    title: Supabase Pro Free Plan
+    summary: Free plan includes 500MB Postgres, authentication for 50K monthly active users, realtime subscriptions, and storage — no credit card required.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-06T00:00:00Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_01
+          description: 500MB Postgres database storage.
+          kind: other
+        - benefit_id: ben_02
+          description: Authentication for 50,000 monthly active users.
+          kind: other
+        - benefit_id: ben_03
+          description: Realtime subscriptions.
+          kind: other
+        - benefit_id: ben_04
+          description: 1GB file storage.
+          kind: other
+        - benefit_id: ben_05
+          description: No credit card required.
+          kind: other
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: user.is_new
+            kind: predicate
+            operator: eq
+            statement: User creates a Supabase account.
+            value:
+              type: boolean
+              value: true
+          - criterion_id: cri_02
+            fact: company.age_years
+            kind: predicate
+            operator: lte
+            statement: Company has been operating for less than 5 years.
+            value:
+              type: number
+              value: 5
+    roles:
+      terms_authority_entity_id: ent_01m1t0g16b04x3r93frfk2181y
+      access_operator_entity_id: ent_01m1t0g16b04x3r93frfk2181y
+    access:
+      availability: public
+      method: form
+      url: https://supabase.com/dashboard
+    source_ids:
+      - src_5e4089a28276d469c62c96104f1702253465e850cbf999779ebe69868fb27484
