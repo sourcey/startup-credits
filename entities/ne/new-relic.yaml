@@ -31,10 +31,17 @@ offers:
         kind: unknown
         description: The source record did not establish separate consideration.
       benefits:
-        - benefit_id: ben_primary
+        - benefit_id: ben_01
           description: 5 free users & generous monthly data ingest
           kind: free-service
           service: 5 free users & generous monthly data ingest
+        - benefit_id: ben_02
+          description: Access to every AI feature from day one
+          kind: free-service
+          service: All AI features
+        - benefit_id: ben_03
+          description: Dedicated engineering support at launch
+          kind: other
     eligibility:
       rule:
         kind: manual
