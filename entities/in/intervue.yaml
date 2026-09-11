@@ -1,0 +1,73 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01qnfbnmjg6mas98385bvfn06y
+  slug: intervue
+  slug_aliases: []
+  name: Intervue
+  domains:
+    - value: intervue.io
+      role: primary
+      valid_from: 2026-09-06T21:40:00.000Z
+  category: hr-people
+profile:
+  summary: Technical interviewing, coding assessment, and expert interview services for hiring teams.
+  description: Intervue provides technical interviewing, coding assessment, and expert interview services for hiring teams.
+  links:
+    site: https://www.intervue.io
+sources:
+  - source_id: src_43d3f02a0923af4d847389f55ffb6c1b629b70878646e6d2b2959949151b6804
+    url: https://www.intervue.io/startups
+programs:
+  - program_id: prg_01cm0rs63np24nj4wec6mktcsc
+    program_slug: intervue-for-startups
+    program_slug_aliases: []
+    title: Intervue for Startups
+    summary: Intervue for Startups gives eligible startups $5,000 in credits usable toward any Intervue plan for six months, with access to enterprise-level features.
+    source_ids:
+      - src_43d3f02a0923af4d847389f55ffb6c1b629b70878646e6d2b2959949151b6804
+offers:
+  - offer_id: off_014cbz7243sgbs58c65ybyq708
+    program_id: prg_01cm0rs63np24nj4wec6mktcsc
+    offer_slug: 5000-credits-six-months
+    offer_slug_aliases: []
+    title: $5,000 in Intervue credits for six months
+    summary: Eligible startups receive $5,000 in credits usable toward any Intervue plan for six months, with access to enterprise-level features regardless of plan.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-06T21:40:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: $5,000 in credits usable toward any Intervue plan
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 500000
+            kind: exact
+          duration:
+            kind: exact
+            value: P6M
+        - benefit_id: ben_02
+          description: Access to enterprise-level features regardless of the selected plan
+          kind: other
+      consideration:
+        kind: unknown
+        description: The startups page does not state a separate consideration or fee beyond applying for the program.
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: The offer is available to startups that Intervue determines are eligible for its startup program.
+    roles:
+      terms_authority_entity_id: ent_01qnfbnmjg6mas98385bvfn06y
+      access_operator_entity_id: ent_01qnfbnmjg6mas98385bvfn06y
+    access:
+      availability: public
+      method: form
+      instructions: Apply now to get started with Intervue's startup program right away.
+      url: https://www.intervue.io/startups
+    terms_url: https://www.intervue.io/terms
+    source_ids:
+      - src_43d3f02a0923af4d847389f55ffb6c1b629b70878646e6d2b2959949151b6804
