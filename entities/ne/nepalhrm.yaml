@@ -1,0 +1,77 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1f2z052nfwnp1gmkzfqtwpc
+  slug: nepalhrm
+  slug_aliases: []
+  name: NepalHRM
+  domains:
+    - value: nepalhrm.com
+      role: primary
+      valid_from: 2026-09-01T18:20:00.000Z
+  category: hr-people
+profile:
+  description: NepalHRM is HR and Nepal-compliant payroll software for Nepali businesses, covering payroll, attendance, leave, recruitment, onboarding, performance, and a mobile app.
+  links:
+    site: https://nepalhrm.com
+sources:
+  - source_id: src_d893f0af93f01ffb6c6320ffbcd8fbd7a7b67a469c696c5598307276bd33319a
+    url: https://nepalhrm.com/startup-program/
+  - source_id: src_193c1fc96308660014631945547ddd90b4a183ffbde8aceed6856ca3e8697090
+    url: https://nepalhrm.com/pricing/
+programs:
+  - program_id: prg_01m1f2z05bjx6dn54dxd0rmt1r
+    program_slug: nepalhrm-startup-program
+    program_slug_aliases: []
+    title: NepalHRM Startup Program
+    summary: Eligible Nepali startups with 10 active employees or fewer get the full NepalHRM HR and payroll platform free forever, with no credit card and no expiry.
+    source_ids:
+      - src_d893f0af93f01ffb6c6320ffbcd8fbd7a7b67a469c696c5598307276bd33319a
+offers:
+  - offer_id: off_01m1f2z05bb7cbg5nshpamq2em
+    program_id: prg_01m1f2z05bjx6dn54dxd0rmt1r
+    offer_slug: free-forever-up-to-ten-employees
+    offer_slug_aliases: []
+    title: Free forever for teams of 10 or fewer
+    summary: Registered Nepali businesses, startups, and teams with 10 active employees or fewer receive the full NepalHRM platform, including Nepal-compliant payroll, at NPR 0 with no credit card, minimum commitment, or expiry.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-01T18:20:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Full NepalHRM platform, including Nepal-compliant payroll, free for teams of 10 active employees or fewer
+          kind: free-service
+          service: NepalHRM HR and Nepal-compliant payroll platform
+        - benefit_id: ben_02
+          description: First month at the next paid tier is complimentary when the team grows past 10 employees
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: external-verification
+            statement: Applicant must be a registered Nepali business, startup, or team.
+          - criterion_id: cri_02
+            fact: company.employee_count
+            kind: predicate
+            operator: lte
+            statement: The startup must have 10 active employees or fewer.
+            value:
+              type: number
+              value: 10
+    roles:
+      terms_authority_entity_id: ent_01m1f2z052nfwnp1gmkzfqtwpc
+      access_operator_entity_id: ent_01m1f2z052nfwnp1gmkzfqtwpc
+    access:
+      availability: public
+      instructions: Open the NepalHRM Startup Program page and use Start free forever. NepalHRM says no credit card is required.
+      method: form
+      url: https://nepalhrm.com/startup-program/
+    terms_url: https://nepalhrm.com/startup-program/
+    source_ids:
+      - src_d893f0af93f01ffb6c6320ffbcd8fbd7a7b67a469c696c5598307276bd33319a
+      - src_193c1fc96308660014631945547ddd90b4a183ffbde8aceed6856ca3e8697090
