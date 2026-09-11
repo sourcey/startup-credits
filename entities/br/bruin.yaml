@@ -1,0 +1,59 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m11dd48g2fska22w0sw42mye
+  slug: bruin
+  slug_aliases: []
+  name: Bruin
+  domains:
+    - value: getbruin.com
+      role: primary
+      valid_from: 2026-08-27T10:49:20.000Z
+  category: data-analytics
+profile:
+  description: Bruin provides open-source data ingestion, transformation, orchestration, quality, lineage, and AI analysis tools.
+  links:
+    site: https://getbruin.com/
+sources:
+  - source_id: src_db5502a26d3ca87fa945831ed53cfcee56752d72ceca154da2b827c8959a9b02
+    url: https://getbruin.com/startups/
+programs:
+  - program_id: prg_01m11dd48jp2kvb1ng1smfm61a
+    program_slug: bruin-for-startups
+    program_slug_aliases: []
+    title: Bruin for Startups
+    summary: Bruin helps startup teams set up a self-hosted data pipeline and local AI analyst with its open-source tools and direct engineering support.
+    source_ids:
+      - src_db5502a26d3ca87fa945831ed53cfcee56752d72ceca154da2b827c8959a9b02
+offers:
+  - offer_id: off_01m11dd48jjycve8mcsc2cwg75
+    program_id: prg_01m11dd48jp2kvb1ng1smfm61a
+    offer_slug: free-engineer-assisted-data-stack-setup
+    offer_slug_aliases: []
+    title: Free engineer-assisted data stack setup
+    summary: Teams can book a free planning call and hands-on workshop in which a Bruin engineer helps set up a self-hosted data pipeline and local AI analyst.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-27T10:49:20.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: A free planning call and hands-on setup workshop with a Bruin engineer.
+          kind: free-service
+          service: Engineer-assisted data pipeline and local AI analyst setup
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: constant
+        statement: The planning call is open to every team, and no application is required.
+        value: true
+    roles:
+      terms_authority_entity_id: ent_01m11dd48g2fska22w0sw42mye
+      access_operator_entity_id: ent_01m11dd48g2fska22w0sw42mye
+    access:
+      availability: public
+      method: form
+      url: https://koalendar.com/e/meet-with-arsalan
+    source_ids:
+      - src_db5502a26d3ca87fa945831ed53cfcee56752d72ceca154da2b827c8959a9b02
