@@ -1,0 +1,51 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_h9zmfx1m100000000000000000
+  slug: torchlite
+  slug_aliases: []
+  name: Torchlite
+  domains:
+  - value: torchlite.com
+    role: primary
+    valid_from: '2026-01-01T00:00:00Z'
+  category: marketing
+profile:
+  summary: Partner relationship management (PRM) platform with a startup programme for early-stage companies.
+  description: Torchlite is a partner relationship management (PRM) platform helping companies run and track partner programs including affiliates, resellers, and referral partners, with a startup programme for early-stage companies.
+  links:
+    site: https://torchlite.com
+sources:
+- source_id: src_758f1935732bac50f81e8b3d79886763f52ce28cc784a912dc98feebb25eb11d
+  url: https://torchlite.com/prm-for-startups/
+programs: []
+offers:
+- offer_id: off_h9zmfx1m100000000000000000
+  offer_slug: prm-for-startups
+  offer_slug_aliases: []
+  title: Torchlite PRM for Startups
+  summary: Discounted Torchlite partner relationship management (PRM) platform access for qualifying early-stage startups via the PRM for Startups programme.
+  lifecycle:
+    status: active
+    effective_from: '2026-01-01T00:00:00Z'
+  economics:
+    benefits:
+    - benefit_id: ben_01
+      description: Discounted Torchlite PRM platform access for qualifying startups.
+      kind: other
+    consideration:
+      kind: none
+  eligibility:
+    rule:
+      kind: manual
+      criterion_id: cri_01
+      statement: Qualifying early-stage startup companies.
+      reason: not-machine-evaluable
+  roles:
+    terms_authority_entity_id: ent_h9zmfx1m100000000000000000
+    access_operator_entity_id: ent_h9zmfx1m100000000000000000
+  access:
+    availability: public
+    method: form
+    url: https://torchlite.com/prm-for-startups/
+  source_ids:
+  - src_758f1935732bac50f81e8b3d79886763f52ce28cc784a912dc98feebb25eb11d
