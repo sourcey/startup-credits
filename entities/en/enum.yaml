@@ -1,0 +1,93 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1gr7c4knperwmvwreekgghn
+  slug: enum
+  slug_aliases: []
+  name: enum
+  domains:
+    - value: enum.co
+      role: primary
+      valid_from: 2026-09-02T00:00:00.000Z
+  category: hosting-infra
+profile:
+  description: enum is a European cloud infrastructure provider offering managed Kubernetes,
+    object and block storage, networking, and DNS on its own infrastructure in Frankfurt.
+  links:
+    site: https://enum.co
+sources:
+  - source_id: src_f72cfd58fd7548d1c81ae146a8efe1d65ed2f646ea8cb330ce96a49ab80216a0
+    url: https://enum.co/startups
+programs:
+  - program_id: prg_01m1gr7c4n1me5f5t7gdvjx084
+    program_slug: enum-for-startups
+    program_slug_aliases: []
+    title: enum for Startups
+    summary: enum's curated startup program offers eligible European startups and scaleups cloud
+      credits and full access to its Kubernetes, storage, and networking platform.
+    source_ids:
+      - src_f72cfd58fd7548d1c81ae146a8efe1d65ed2f646ea8cb330ce96a49ab80216a0
+offers:
+  - offer_id: off_01m1gr7c4nx502wcewpqg3y9vz
+    program_id: prg_01m1gr7c4n1me5f5t7gdvjx084
+    offer_slug: up-to-100000-eur-cloud-credits-for-12-months
+    offer_slug_aliases: []
+    title: Up to €100,000 in enum cloud credits for 12 months
+    summary: Eligible EU-headquartered startups and scaleups ready for production workloads may
+      receive up to €100,000 in enum cloud credits over 12 months, with an extension possible.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-02T00:00:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to €100,000 in enum platform cloud credits
+          duration:
+            kind: exact
+            value: P1Y
+          kind: credit
+          value:
+            amount:
+              currency: EUR
+              minor_units: 10000000
+            kind: up-to
+        - benefit_id: ben_02
+          description: Full platform access to enum Kubernetes Engine, object storage, networking,
+            and a highly available production-ready Kubernetes cluster
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.headquarters_region
+            kind: predicate
+            operator: eq
+            statement: Company is a European startup or scaleup headquartered in the EU.
+            value:
+              type: string
+              value: EU
+          - criterion_id: cri_02
+            fact: company.product_cloud_fit
+            kind: predicate
+            operator: present
+            statement: Company is building a product suited to European cloud infrastructure.
+          - criterion_id: cri_03
+            fact: company.production_readiness
+            kind: predicate
+            operator: eq
+            statement: Company is ready to deploy production workloads rather than only testing.
+            value:
+              type: boolean
+              value: true
+    roles:
+      terms_authority_entity_id: ent_01m1gr7c4knperwmvwreekgghn
+      access_operator_entity_id: ent_01m1gr7c4knperwmvwreekgghn
+    access:
+      availability: public
+      method: form
+      url: https://enum.co/startups
+    terms_url: https://enum.co/startups
+    source_ids:
+      - src_f72cfd58fd7548d1c81ae146a8efe1d65ed2f646ea8cb330ce96a49ab80216a0
