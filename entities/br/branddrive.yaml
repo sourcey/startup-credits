@@ -1,0 +1,83 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1xny2k2qnr5ysb3wc5v7wzy
+  slug: branddrive
+  slug_aliases: []
+  name: BrandDrive
+  domains:
+    - value: branddrive.co
+      role: primary
+      valid_from: 2026-09-07T10:10:00.000Z
+  category: finance-accounting
+profile:
+  summary: AI operating system for African businesses covering invoicing, inventory, expenses, and analytics.
+  description: BrandDrive is a financial technology platform that helps African businesses run invoicing, inventory, expenses, and analytics in one place.
+  links:
+    site: https://branddrive.co
+sources:
+  - source_id: src_335d846453730ebab1c1e5b00d540473b6a4ceca7b007b6e7003b0b04e3bee51
+    url: https://branddrive.co/startup-program
+programs:
+  - program_id: prg_01m1xny2k2k60wbee2kvt4fpg3
+    program_slug: startup-program
+    program_slug_aliases:
+      - startup-support
+    title: BrandDrive Startup Program
+    summary: BrandDrive offers eligible early-stage new customers free access to the BrandDrive platform, with a published six-month free term and a page headline of up to twelve months free.
+    source_ids:
+      - src_335d846453730ebab1c1e5b00d540473b6a4ceca7b007b6e7003b0b04e3bee51
+offers:
+  - offer_id: off_01m1xny2k2r4xjdf68fde9z85k
+    program_id: prg_01m1xny2k2k60wbee2kvt4fpg3
+    offer_slug: six-months-free-access
+    offer_slug_aliases: []
+    title: Six Months Free BrandDrive Access
+    summary: Eligible new businesses under five years old that have raised less than $500K receive six months of free BrandDrive access after applying through the public startup program page.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T10:10:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Free BrandDrive platform access for six months
+          duration:
+            kind: exact
+            value: P6M
+          kind: free-service
+          service: BrandDrive platform access
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.funding_raised_usd
+            kind: predicate
+            operator: lt
+            statement: The business has raised less than $500K in total funding.
+            value:
+              type: number
+              value: 500000
+          - criterion_id: cri_02
+            kind: manual
+            reason: external-verification
+            statement: The business is not currently and has never been a BrandDrive customer.
+          - criterion_id: cri_03
+            fact: company.age_months
+            kind: predicate
+            operator: lte
+            statement: The business has been in operation for no more than 5 years (60 months or fewer).
+            value:
+              type: number
+              value: 60
+    roles:
+      terms_authority_entity_id: ent_01m1xny2k2qnr5ysb3wc5v7wzy
+      access_operator_entity_id: ent_01m1xny2k2qnr5ysb3wc5v7wzy
+    access:
+      availability: public
+      method: form
+      url: https://branddrive.co/startup-program
+    terms_url: https://branddrive.co/startup-program
+    source_ids:
+      - src_335d846453730ebab1c1e5b00d540473b6a4ceca7b007b6e7003b0b04e3bee51
