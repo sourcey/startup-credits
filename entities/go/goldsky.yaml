@@ -1,0 +1,51 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_h4e8ex1m100000000000000000
+  slug: goldsky
+  slug_aliases: []
+  name: Goldsky
+  domains:
+  - value: goldsky.com
+    role: primary
+    valid_from: '2026-01-01T00:00:00Z'
+  category: data-analytics
+profile:
+  summary: Real-time data infrastructure platform with startup programme.
+  description: Goldsky is a real-time data infrastructure platform providing streaming, ingestion, and transformation services, with a startup programme offering free usage credits for qualifying early-stage companies.
+  links:
+    site: https://goldsky.com
+sources:
+- source_id: src_0b56e396b26527af07b141de100a334881930f45f7deeef70f978862adfbfbbb
+  url: https://goldsky.com/pricing
+programs: []
+offers:
+- offer_id: off_h4e8ex1m100000000000000000
+  offer_slug: startup-programme
+  offer_slug_aliases: []
+  title: Goldsky Startup Programme
+  summary: Free usage credits on Goldsky's real-time data platform for qualifying early-stage companies.
+  lifecycle:
+    status: active
+    effective_from: '2026-01-01T00:00:00Z'
+  economics:
+    benefits:
+    - benefit_id: ben_01
+      description: Free usage credits on Goldsky real-time data platform for qualifying startups.
+      kind: other
+    consideration:
+      kind: none
+  eligibility:
+    rule:
+      kind: manual
+      criterion_id: cri_01
+      statement: Qualifying early-stage startup companies.
+      reason: not-machine-evaluable
+  roles:
+    terms_authority_entity_id: ent_h4e8ex1m100000000000000000
+    access_operator_entity_id: ent_h4e8ex1m100000000000000000
+  access:
+    availability: public
+    method: form
+    url: https://goldsky.com/pricing
+  source_ids:
+  - src_0b56e396b26527af07b141de100a334881930f45f7deeef70f978862adfbfbbb
