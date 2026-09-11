@@ -1,0 +1,51 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_xke8hx1m100000000000000000
+  slug: manus
+  slug_aliases: []
+  name: Manus
+  domains:
+  - value: manus.im
+    role: primary
+    valid_from: '2026-01-01T00:00:00Z'
+  category: other
+profile:
+  summary: Manus gives eligible startups six months of its Team subscription for up to 20 seats, valued at $4,800. The current application route is available only through participating VC and accelerator referra
+  description: Manus offers a startup programme as described in its vendor page.
+  links:
+    site: https://manus.im
+sources:
+- source_id: src_d3414794302313051ff07dbd8dd995c0ebe7c046e86106f1415de7019a7852b3
+  url: https://manus.im
+programs: []
+offers:
+- offer_id: off_xke8hx1m100000000000000000
+  offer_slug: startup-programme
+  offer_slug_aliases: []
+  title: Manus Startup Programme
+  summary: Manus gives eligible startups six months of its Team subscription for up to 20 seats, valued at $4,800. The current application route is available only through participating VC and accelerator referrals.
+  lifecycle:
+    status: active
+    effective_from: '2026-01-01T00:00:00Z'
+  economics:
+    benefits:
+    - benefit_id: ben_01
+      description: Startup programme benefits for qualifying companies.
+      kind: other
+    consideration:
+      kind: none
+  eligibility:
+    rule:
+      kind: manual
+      criterion_id: cri_01
+      statement: Qualifying startup companies.
+      reason: not-machine-evaluable
+  roles:
+    terms_authority_entity_id: ent_xke8hx1m100000000000000000
+    access_operator_entity_id: ent_xke8hx1m100000000000000000
+  access:
+    availability: public
+    method: form
+    url: https://manus.im
+  source_ids:
+  - src_d3414794302313051ff07dbd8dd995c0ebe7c046e86106f1415de7019a7852b3
