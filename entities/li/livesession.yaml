@@ -1,0 +1,95 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1ay07bkwknz0kpedyphhy5c
+  slug: livesession
+  slug_aliases: []
+  name: LiveSession
+  domains:
+    - value: livesession.io
+      role: primary
+      valid_from: 2026-08-31T03:35:00.000Z
+  category: data-analytics
+profile:
+  description: LiveSession provides product analytics, session replay, error tracking, and user engagement insights for product teams.
+  links:
+    site: https://livesession.io
+sources:
+  - source_id: src_7d46771ac6becbeae05cac0fdd8aeab42c1031d6eb94b38b6d30ce0168a59d17
+    url: https://livesession.io/startup-program
+programs:
+  - program_id: prg_01m1ay07bndstgbdt356p1fepm
+    program_slug: startup-program
+    program_slug_aliases: []
+    title: LiveSession Startup Program
+    summary: LiveSession offers eligible early-stage startups a discounted first year on its Pro plan with expanded session volume and unlimited teammate seats.
+    source_ids:
+      - src_7d46771ac6becbeae05cac0fdd8aeab42c1031d6eb94b38b6d30ce0168a59d17
+offers:
+  - offer_id: off_01m1ay07bn1c0409f8s3j4ct3f
+    program_id: prg_01m1ay07bndstgbdt356p1fepm
+    offer_slug: startup-discount
+    offer_slug_aliases: []
+    title: LiveSession startup discount
+    summary: Eligible startups receive 50% off the first year with Pro plan features, 25,000 monthly sessions, and unlimited teammate seats, saving up to $1,000.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-31T03:35:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 50% discount for the first year, with savings up to $1,000
+          duration:
+            kind: exact
+            value: P1Y
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 5000
+        - benefit_id: ben_02
+          description: Pro plan features with 25,000 monthly sessions and unlimited teammate seats
+          kind: other
+      consideration:
+        kind: unknown
+        description: The vendor does not publish the discounted subscription price on this page.
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.funding_raised_usd
+            kind: predicate
+            operator: lte
+            statement: Company must have raised up to $5 million in funding.
+            value:
+              type: number
+              value: 5000000
+          - criterion_id: cri_02
+            fact: company.age_months
+            kind: predicate
+            operator: lt
+            statement: Company must be less than 2 years old.
+            value:
+              type: number
+              value: 24
+          - criterion_id: cri_03
+            fact: company.employee_count
+            kind: predicate
+            operator: lte
+            statement: Company must have 20 or fewer employees.
+            value:
+              type: number
+              value: 20
+          - criterion_id: cri_04
+            kind: manual
+            reason: not-machine-evaluable
+            statement: Company must be a new or non-paying LiveSession customer.
+    roles:
+      terms_authority_entity_id: ent_01m1ay07bkwknz0kpedyphhy5c
+      access_operator_entity_id: ent_01m1ay07bkwknz0kpedyphhy5c
+    access:
+      availability: public
+      method: form
+      url: https://livesession.io/startup-program
+    terms_url: https://livesession.io/startup-program
+    source_ids:
+      - src_7d46771ac6becbeae05cac0fdd8aeab42c1031d6eb94b38b6d30ce0168a59d17
