@@ -1,0 +1,72 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1da8599n7f8y3j57fe4c17x
+  slug: depot
+  slug_aliases: []
+  name: Depot
+  domains:
+    - value: depot.dev
+      role: primary
+      valid_from: 2026-08-23T13:40:00.000Z
+  category: ci-cd
+profile:
+  description: Depot provides accelerated container builds, managed GitHub Actions runners, remote caching, and CI infrastructure for software teams.
+  links:
+    site: https://depot.dev
+sources:
+  - source_id: src_80e7ce38e8348ea1d16022b9142b9959723e81fa52fa1d217e55a2882d80694e
+    url: https://depot.dev
+  - source_id: src_2fefdb9d7f83fce6a6e5c3eeca603a3b7556add41fc7bdda83196740fa3ca629
+    url: https://depot.dev/docs/posthog-for-startups
+  - source_id: src_84419745e4f8c130148382c14eb4bf3962fcd848e24b11be34d7106de4063f71
+    url: https://posthog.com/startups
+programs: []
+offers:
+  - offer_id: off_01m1da859mg19r8mm43dsfzn6c
+    offer_slug: posthog-for-startups-depot-credits
+    offer_slug_aliases: []
+    title: PostHog for Startups Depot credits
+    summary: Approved PostHog for Startups participants who are new Depot customers receive a partner code worth $5,000 in Depot credits, valid for one year from checkout activation.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-23T13:40:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: $5,000 in credits covering Developer or Startup plan fees and Depot usage, including builds, runners, CI, Registry, and Cache.
+          duration:
+            kind: exact
+            value: P1Y
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 500000
+            kind: exact
+      consideration:
+        kind: unknown
+        description: The public sources do not establish separate consideration beyond approved PostHog startup membership and being a new Depot customer.
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            statement: Applicant is approved for PostHog for Startups.
+            reason: external-verification
+          - criterion_id: cri_02
+            kind: manual
+            statement: Applicant is a new Depot customer.
+            reason: external-verification
+    roles:
+      terms_authority_entity_id: ent_01m1da8599n7f8y3j57fe4c17x
+      access_operator_entity_id: ent_01kyh8fpe4h2ykh2786fd0krzp
+    access:
+      availability: membership
+      method: form
+      instructions: Apply to PostHog for Startups. After approval, sign up for Depot, choose a plan, and enter the supplied partner code in Stripe checkout; Depot grants the credits after checkout.
+      url: https://posthog.com/startups
+    terms_url: https://depot.dev/docs/posthog-for-startups
+    source_ids:
+      - src_2fefdb9d7f83fce6a6e5c3eeca603a3b7556add41fc7bdda83196740fa3ca629
+      - src_84419745e4f8c130148382c14eb4bf3962fcd848e24b11be34d7106de4063f71
