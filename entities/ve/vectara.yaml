@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_k10fcx1m100000000000000000
+  slug: vectara
+  slug_aliases: []
+  name: Vectara
+  domains:
+  - value: vectara.com
+    role: primary
+    valid_from: '2026-01-01T00:00:00Z'
+  category: ai-ml
+profile:
+  description: Vectara provides trusted AI-powered search and RAG (Retrieval-Augmented Generation) platform for developers.
+  links:
+    site: https://www.vectara.com
+sources:
+- source_id: src_47b5f51e48c06e935630264f45905ac84051bc483d09f7933c7626be721d1824
+  url: https://www.vectara.com/startups
+programs: []
+offers:
+- offer_id: off_k10fcx1m100000000000000000
+  offer_slug: startup-partnerships
+  offer_slug_aliases: []
+  title: Vectara Startup Partnerships
+  summary: Vectara offers startups credits, discounts, tailored onboarding and support, plus co-marketing and go-to-market alignment through its Startup Partnerships program.
+  lifecycle:
+    status: active
+    effective_from: '2026-01-01T00:00:00Z'
+  economics:
+    benefits:
+    - benefit_id: ben_01
+      description: Credits, discounts, tailored onboarding and support for startups via Vectara Startup Partnerships program.
+      kind: other
+    consideration:
+      kind: none
+  eligibility:
+    rule:
+      kind: manual
+      criterion_id: cri_01
+      statement: Eligible startup companies via application.
+      reason: not-machine-evaluable
+  roles:
+    terms_authority_entity_id: ent_k10fcx1m100000000000000000
+    access_operator_entity_id: ent_k10fcx1m100000000000000000
+  access:
+    availability: public
+    method: form
+    url: https://www.vectara.com/startups
+  source_ids:
+  - src_47b5f51e48c06e935630264f45905ac84051bc483d09f7933c7626be721d1824
