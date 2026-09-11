@@ -1,0 +1,63 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1w3re4nq09xh055pwdz5q2y
+  slug: tuple
+  slug_aliases: []
+  name: Tuple
+  domains:
+  - value: tuple.app
+    role: primary
+    valid_from: '2026-09-06T19:42:18Z'
+  category: devtools-other
+profile:
+  description: Tuple is a screen-sharing app built specifically for pair programming,
+    offering high-quality, low-bandwidth sessions.
+  links:
+    site: https://tuple.app
+sources:
+- source_id: src_613578dab6b49a3424aa2a711f469f65ab95d7ce92e5dff6385ad3c4f5559d3a
+  url: https://tuple.app/startups
+programs:
+- program_id: prg_yva1n7v7fhdsrepmy021g3v64v
+  program_slug: tuple-startup-program
+  program_slug_aliases: []
+  title: Tuple Startup Plan
+  summary: Eligible startups receive a startup subscription discount through the vendor's
+    public pricing page and startup application form.
+  source_ids:
+  - src_613578dab6b49a3424aa2a711f469f65ab95d7ce92e5dff6385ad3c4f5559d3a
+offers:
+- offer_id: off_01m1w3re510s7rm1e5yks1r23g
+  offer_slug: tuple-startup-plan
+  offer_slug_aliases: []
+  title: Tuple Startup Plan
+  summary: Eligible startups receive a startup subscription discount through the vendor's
+    public pricing page and startup application form.
+  lifecycle:
+    status: active
+    effective_from: '2026-09-06T19:42:18Z'
+  economics:
+    consideration:
+      kind: variable
+      description: The source record did not establish separate consideration.
+    benefits:
+    - benefit_id: ben_042
+      kind: other
+      description: Startup program discount or credit; specific terms vary by program.
+  eligibility:
+    rule:
+      kind: manual
+      criterion_id: cri_requirement_01
+      statement: Must be an early-stage startup; specific eligibility criteria are
+        published on the vendor startup application page.
+      reason: not-machine-evaluable
+  roles:
+    terms_authority_entity_id: ent_01m1w3re4nq09xh055pwdz5q2y
+    access_operator_entity_id: ent_01m1w3re4nq09xh055pwdz5q2y
+  access:
+    availability: public
+    method: form
+    url: https://tuple.app/startups
+  source_ids:
+  - src_613578dab6b49a3424aa2a711f469f65ab95d7ce92e5dff6385ad3c4f5559d3a
+  program_id: prg_yva1n7v7fhdsrepmy021g3v64v

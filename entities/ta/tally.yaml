@@ -1,0 +1,65 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1w3rm2svr8w97bs0zcp2cag
+  slug: tally
+  slug_aliases: []
+  name: Tally
+  domains:
+  - value: tally.so
+    role: primary
+    valid_from: '2026-09-06T19:46:00Z'
+  category: productivity
+profile:
+  description: Tally is an online form builder that helps teams create, manage, and
+    analyze forms and surveys.
+  links:
+    site: https://tally.so
+sources:
+- source_id: src_06a4089b0738754063e6f5d1d6958762c3dd0e3f0d876a5f1686a0fa710aab13
+  url: https://tally.so/help/tally-for-startups
+programs:
+- program_id: prg_f8hh2r4zq1gsw0xhp9thy11z7h
+  program_slug: tally-startup-program
+  program_slug_aliases: []
+  title: Tally for Startups
+  summary: Tally publishes a startup-specific offer of 50% off Tally Pro for one year
+    through its Partner Program. Eligibility requires a partner membership, partner
+    code, free Tally account, no previous paid customer, and compliance with cancellat...
+  source_ids:
+  - src_06a4089b0738754063e6f5d1d6958762c3dd0e3f0d876a5f1686a0fa710aab13
+offers:
+- offer_id: off_01m1w3rm3cq0ttfdmqdmt8z58v
+  offer_slug: tally-for-startups
+  offer_slug_aliases: []
+  title: Tally for Startups
+  summary: Tally publishes a startup-specific offer of 50% off Tally Pro for one year
+    through its Partner Program. Eligibility requires a partner membership, partner
+    code, free Tally account, no previous paid customer, and compliance with cancellat...
+  lifecycle:
+    status: active
+    effective_from: '2026-09-06T19:46:00Z'
+  economics:
+    consideration:
+      kind: variable
+      description: 50% off Tally Pro for one year through the Partner Program.
+    benefits:
+    - benefit_id: ben_040
+      kind: other
+      description: Startup program discount or credit; specific terms vary by program.
+  eligibility:
+    rule:
+      kind: manual
+      criterion_id: cri_requirement_01
+      statement: Must have a partner membership and code, a free Tally account, no
+        previous paid Tally subscription, and comply with cancellation restrictions.
+      reason: not-machine-evaluable
+  roles:
+    terms_authority_entity_id: ent_01m1w3rm2svr8w97bs0zcp2cag
+    access_operator_entity_id: ent_01m1w3rm2svr8w97bs0zcp2cag
+  access:
+    availability: public
+    method: form
+    url: https://tally.so/r/kwoOVw
+  source_ids:
+  - src_06a4089b0738754063e6f5d1d6958762c3dd0e3f0d876a5f1686a0fa710aab13
+  program_id: prg_f8hh2r4zq1gsw0xhp9thy11z7h

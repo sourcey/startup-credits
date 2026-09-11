@@ -1,0 +1,63 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1w3rr98k8nfz7bptzjfbffk
+  slug: taskgate
+  slug_aliases: []
+  name: TaskGate.io
+  domains:
+  - value: taskgate.io
+    role: primary
+    valid_from: '2026-09-06T19:47:36Z'
+  category: crm-sales
+profile:
+  description: TaskGate.io provides CRM, HRM, ERP, and project management platform
+    solutions for businesses.
+  links:
+    site: https://www.taskgate.io
+sources:
+- source_id: src_8453b5619af6dee3a1e11aafcfc00539136a1eb6e910c4aee8949478ee906c6e
+  url: https://www.taskgate.io/general-9
+programs:
+- program_id: prg_ebtpe662cabh1pwsnm2bj4gjan
+  program_slug: taskgate-startup-program
+  program_slug_aliases: []
+  title: TaskGate.io Startup Program
+  summary: Eligible registered startups can receive up to 50% off TaskGate.io annual
+    packages, covering its CRM, HRM, ERP, and project management platform.
+  source_ids:
+  - src_8453b5619af6dee3a1e11aafcfc00539136a1eb6e910c4aee8949478ee906c6e
+offers:
+- offer_id: off_01m1w3rrb3vmsjjwvkpwb2d4hg
+  offer_slug: taskgate-startup-program
+  offer_slug_aliases: []
+  title: TaskGate.io Startup Program
+  summary: Eligible registered startups can receive up to 50% off TaskGate.io annual
+    packages, covering its CRM, HRM, ERP, and project management platform.
+  lifecycle:
+    status: active
+    effective_from: '2026-09-06T19:47:36Z'
+  economics:
+    consideration:
+      kind: variable
+      description: Up to 50% off annual packages.
+    benefits:
+    - benefit_id: ben_041
+      kind: other
+      description: Startup program discount or credit; specific terms vary by program.
+  eligibility:
+    rule:
+      kind: manual
+      criterion_id: cri_requirement_01
+      statement: Must be a registered startup; specific criteria are published on
+        the vendor startup page.
+      reason: not-machine-evaluable
+  roles:
+    terms_authority_entity_id: ent_01m1w3rr98k8nfz7bptzjfbffk
+    access_operator_entity_id: ent_01m1w3rr98k8nfz7bptzjfbffk
+  access:
+    availability: public
+    method: form
+    url: https://www.taskgate.io/general-9
+  source_ids:
+  - src_8453b5619af6dee3a1e11aafcfc00539136a1eb6e910c4aee8949478ee906c6e
+  program_id: prg_ebtpe662cabh1pwsnm2bj4gjan
