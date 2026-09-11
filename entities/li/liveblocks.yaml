@@ -1,0 +1,57 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1ssjp3v5f3kppg7sz24tgsn
+  slug: liveblocks
+  slug_aliases: []
+  name: Liveblocks
+  domains:
+  - value: liveblocks.io
+    role: primary
+    valid_from: '2026-09-05T22:03:44.000Z'
+  category: ai-ml
+profile:
+  description: Liveblocks startup program offering credits for early-stage companies.
+  links:
+    site: https://liveblocks.io
+sources:
+- source_id: src_d939fc45e5269ed0690e4134231181626a207e71d8a7049d64e54a7a6ba6305c
+  url: https://liveblocks.io/startups
+- source_id: src_2e908e8a915ecbc8c08638793eb2a042427675d981df16d5927b17e3fba0dd53
+  url: https://liveblocks.io/pricing
+programs: []
+offers:
+- offer_id: off_01m1ssjpbxfjjf11xqgpekatd4
+  offer_slug: liveblocks-startup-discount
+  offer_slug_aliases: []
+  title: Liveblocks Startup Discount
+  summary: The current Liveblocks startup page advertises a startup program discount
+    and provides an application form. It does not publish a discount percentage or
+    duration, so the record should preserve those unknowns. No open Liveblocks issue
+    or pul
+  lifecycle:
+    status: active
+    effective_from: '2026-09-05T22:03:44.000Z'
+  economics:
+    consideration:
+      kind: unknown
+      description: Contact sales for pricing details.
+    benefits:
+    - benefit_id: ben_primary
+      description: Discount for 12 months
+      kind: discount
+  eligibility:
+    rule:
+      kind: manual
+      criterion_id: cri_requirement
+      statement: Must qualify as a startup. Contact sales for eligibility details.
+      reason: not-machine-evaluable
+  roles:
+    terms_authority_entity_id: ent_01m1ssjp3v5f3kppg7sz24tgsn
+    access_operator_entity_id: ent_01m1ssjp3v5f3kppg7sz24tgsn
+  access:
+    availability: public
+    method: contact
+    url: https://liveblocks.io/pricing
+  source_ids:
+  - src_d939fc45e5269ed0690e4134231181626a207e71d8a7049d64e54a7a6ba6305c
+  - src_2e908e8a915ecbc8c08638793eb2a042427675d981df16d5927b17e3fba0dd53
