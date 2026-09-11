@@ -1,0 +1,82 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1a761d5nqzwxfmefajdch5n
+  slug: olqan
+  slug_aliases: []
+  name: Olqan
+  domains:
+    - value: olqan.com
+      role: primary
+      valid_from: 2026-08-30T20:53:48.157Z
+  category: productivity
+profile:
+  summary: One business platform for sales, projects, finance, HR, tickets, procurement, and analytics.
+  description: Olqan unifies CRM, project management, finance, HR, support, procurement, and analytics in one business operations platform.
+  links:
+    site: https://olqan.com
+sources:
+  - source_id: src_f1ef04fed4f65461df48257364bc96be5fcc455c6ddb5339e78dadbfb9816018
+    url: https://olqan.com/startup-program/
+  - source_id: src_25801a2859f9c7929e8b82ee03d6d844179bc9f5ea195d036d862f0b8ae0e010
+    url: https://olqan.com/
+programs:
+  - program_id: prg_01m1a761ddr867k4j4570jvswg
+    program_slug: olqan-startup-program
+    program_slug_aliases: []
+    title: Olqan Startup Program
+    summary: Olqan's startup program gives qualifying new users a three-year structure with six free months in year one, four in year two, and two in year three.
+    source_ids:
+      - src_f1ef04fed4f65461df48257364bc96be5fcc455c6ddb5339e78dadbfb9816018
+offers:
+  - offer_id: off_01m1a761detcy2x7syaj1b7x19
+    program_id: prg_01m1a761ddr867k4j4570jvswg
+    offer_slug: three-year-free-months-structure
+    offer_slug_aliases: []
+    title: Six, four, and two free months across three years
+    summary: Accepted startups pay for six months and get six free in year one, pay for eight and get four free in year two, then pay for ten and get two free in year three.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-30T20:53:48.157Z
+    economics:
+      consideration:
+        kind: unknown
+        description: "Year 1: pay 6 months; year 2: pay 8 months; year 3: pay 10 months."
+      benefits:
+        - benefit_id: ben_01
+          description: Pay for six months and get six months free in year one
+          kind: free-service
+          service: Six months of Olqan access in year one
+          duration:
+            kind: exact
+            value: P6M
+        - benefit_id: ben_02
+          description: Pay for eight months and get four months free in year two
+          kind: free-service
+          service: Four months of Olqan access in year two
+          duration:
+            kind: exact
+            value: P4M
+        - benefit_id: ben_03
+          description: Pay for ten months and get two months free in year three
+          kind: free-service
+          service: Two months of Olqan access in year three
+          duration:
+            kind: exact
+            value: P2M
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_01
+        statement: Applicant must be a new Olqan user with fewer than 20 employees and no more than USD 2 million in funding.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01m1a761d5nqzwxfmefajdch5n
+      access_operator_entity_id: ent_01m1a761d5nqzwxfmefajdch5n
+    access:
+      availability: public
+      method: form
+      url: https://olqan.com/startup-program/
+    terms_url: https://olqan.com/startup-program/
+    source_ids:
+      - src_f1ef04fed4f65461df48257364bc96be5fcc455c6ddb5339e78dadbfb9816018
+      - src_25801a2859f9c7929e8b82ee03d6d844179bc9f5ea195d036d862f0b8ae0e010
