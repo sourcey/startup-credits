@@ -1,0 +1,72 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01dnj4mgenaqn97qy9af2vr477
+  slug: workroomly
+  slug_aliases: []
+  name: Workroomly
+  domains:
+    - value: workroomly.com
+      role: primary
+      valid_from: 2026-09-06T21:45:00.000Z
+  category: productivity
+profile:
+  summary: Customer operations workspace covering acquisition, engagement, and delivery for startups and SMEs.
+  description: Workroomly is a customer operations workspace that unifies acquisition, engagement, and delivery workflows for startups and SMEs.
+  links:
+    site: https://www.workroomly.com
+sources:
+  - source_id: src_8fb32a56c372176ac2387d5dcdf187a35ae33b7ca3785c2c343b495cfe522282
+    url: https://www.workroomly.com/founders_program/
+programs:
+  - program_id: prg_012kqyt9w4wk1afyk0yksh32fp
+    program_slug: workroomly-founders-program
+    program_slug_aliases: []
+    title: Workroomly Founders Program
+    summary: The Workroomly Founders Program awards selected startups and SMEs tiered credits of ₦1 million, ₦2.5 million, or ₦5 million for six months toward business email, workspace seats, and AI workflows, with guided onboarding.
+    source_ids:
+      - src_8fb32a56c372176ac2387d5dcdf187a35ae33b7ca3785c2c343b495cfe522282
+offers:
+  - offer_id: off_01qdv5nywd62gj4xvhzv0zbdy1
+    program_id: prg_012kqyt9w4wk1afyk0yksh32fp
+    offer_slug: founders-program-credits
+    offer_slug_aliases: []
+    title: Up to ₦5M Founders Program credits for six months
+    summary: Selected startups and SMEs receive tiered Founders Program credits of ₦1M (Launch), ₦2.5M (Growth), or ₦5M (Scale) valid for six months, with founder onboarding support. Credits are discretionary after human review.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-06T21:45:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to ₦5,000,000 in Workroomly Founders Program credits (tiers ₦1M / ₦2.5M / ₦5M)
+          kind: credit
+          value:
+            amount:
+              currency: NGN
+              minor_units: 500000000
+            kind: up-to
+          duration:
+            kind: exact
+            value: P6M
+        - benefit_id: ben_02
+          description: Concierge setup, founder success support, and guided onboarding
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Registered startup or SME under seven years old with clear traction or a data-backed thesis and operational fit with the customer workspace; credits are discretionary after human review.
+    roles:
+      terms_authority_entity_id: ent_01dnj4mgenaqn97qy9af2vr477
+      access_operator_entity_id: ent_01dnj4mgenaqn97qy9af2vr477
+    access:
+      availability: public
+      method: form
+      instructions: Apply for credits from the Workroomly Founders Program page. Most startups hear back within 48 hours.
+      url: https://www.workroomly.com/founders_program/
+    terms_url: https://www.workroomly.com/founders_program/
+    source_ids:
+      - src_8fb32a56c372176ac2387d5dcdf187a35ae33b7ca3785c2c343b495cfe522282
