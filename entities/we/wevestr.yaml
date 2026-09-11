@@ -1,0 +1,66 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1w3rwj6fyv2hea10ha1wsv4
+  slug: wevestr
+  slug_aliases: []
+  name: WE.VESTR
+  domains:
+  - value: wevestr.com
+    role: primary
+    valid_from: '2026-09-06T19:49:38Z'
+  category: finance-accounting
+profile:
+  description: WE.VESTR provides equity management and cap table tools for startups
+    and growth companies.
+  links:
+    site: https://wevestr.com
+sources:
+- source_id: src_01704c2d908c655015a9c7a11c5041cda459057d0a8246f0afaf64196e840b50
+  url: https://wevestr.com/microsoft-for-startups
+programs:
+- program_id: prg_41p37am8rb769kze4cjg5v7gcn
+  program_slug: wevestr-startup-program
+  program_slug_aliases: []
+  title: WE.VESTR Microsoft for Startups Discount
+  summary: Microsoft for Startups members can receive a first-year discount on WE.VESTR
+    equity-management plans. Microsoft's benefit documentation specifies 70% off for
+    eligible new customers with 30 or more stakeholders, valid for 12 months, with...
+  source_ids:
+  - src_01704c2d908c655015a9c7a11c5041cda459057d0a8246f0afaf64196e840b50
+offers:
+- offer_id: off_01m1w3rwjkrq56yr1b6g4b755s
+  offer_slug: wevestr-microsoft-for-startups-discount
+  offer_slug_aliases: []
+  title: WE.VESTR Microsoft for Startups Discount
+  summary: Microsoft for Startups members can receive a first-year discount on WE.VESTR
+    equity-management plans. Microsoft's benefit documentation specifies 70% off for
+    eligible new customers with 30 or more stakeholders, valid for 12 months, with...
+  lifecycle:
+    status: active
+    effective_from: '2026-09-06T19:49:38Z'
+  economics:
+    consideration:
+      kind: variable
+      description: 70% off for the first year for eligible new customers with 30 or
+        more stakeholders.
+    benefits:
+    - benefit_id: ben_045
+      kind: other
+      description: Startup program discount or credit; specific terms vary by program.
+  eligibility:
+    rule:
+      kind: manual
+      criterion_id: cri_requirement_01
+      statement: Must be a Microsoft for Startups member and a new WE.VESTR customer
+        with 30 or more stakeholders.
+      reason: not-machine-evaluable
+  roles:
+    terms_authority_entity_id: ent_01m1w3rwj6fyv2hea10ha1wsv4
+    access_operator_entity_id: ent_01kyh8fpe3n3yye39kmzvy410z
+  access:
+    availability: other
+    method: form
+    url: https://learn.microsoft.com/en-us/startups/benefits/technical-benefits/third-party-benefits/we-vestr
+  source_ids:
+  - src_01704c2d908c655015a9c7a11c5041cda459057d0a8246f0afaf64196e840b50
+  program_id: prg_41p37am8rb769kze4cjg5v7gcn

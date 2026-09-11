@@ -1,0 +1,91 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1w43588h8ah31m13ggqamrx
+  slug: warestack
+  slug_aliases: []
+  name: Warestack
+  domains:
+  - value: warestack.com
+    role: primary
+    valid_from: '2026-09-06T19:46:41.281Z'
+  category: hosting-infra
+profile:
+  description: Warestack provides managed cloud platform services for deploying applications,
+    databases, and caches with built-in scaling and monitoring.
+  links:
+    site: https://www.warestack.com
+sources:
+- source_id: src_1727fb8fc538afda407014b419930c493060d4ef71670d27090610f2f7293ef8
+  url: https://www.warestack.com/startup-program
+programs:
+- program_id: prg_59jkpx5nvcm2zmszm70av9qw57
+  program_slug: warestack-startup-program
+  program_slug_aliases: []
+  title: Starter Plan Free for Six Months
+  summary: Qualifying startups receive the Warestack Starter plan free for six months,
+    with published usage limits and up to $2,000 in savings versus standard rates.
+  source_ids:
+  - src_1727fb8fc538afda407014b419930c493060d4ef71670d27090610f2f7293ef8
+offers:
+- offer_id: off_01m1w4358ex3fr76dqzrbzk9fc
+  program_id: prg_59jkpx5nvcm2zmszm70av9qw57
+  offer_slug: starter-plan-free-for-six-months
+  offer_slug_aliases: []
+  title: Starter Plan Free for Six Months
+  summary: Qualifying startups receive the Warestack Starter plan free for six months,
+    with published usage limits and up to $2,000 in savings versus standard rates.
+  lifecycle:
+    status: active
+    effective_from: '2026-09-06T19:46:41.281Z'
+  economics:
+    consideration:
+      kind: none
+    benefits:
+    - benefit_id: ben_044
+      kind: other
+      description: Startup program discount or credit; specific terms vary by program.
+  eligibility:
+    rule:
+      kind: all
+      rules:
+      - criterion_id: cri_age
+        fact: company.age_months
+        kind: predicate
+        operator: lte
+        value:
+          type: number
+          value: 60
+        statement: Company is under five years old.
+      - criterion_id: cri_funding
+        fact: company.funding_raised_usd
+        kind: predicate
+        operator: lte
+        value:
+          type: number
+          value: 2000000
+        statement: Company has raised under $2 million in funding or revenue.
+      - criterion_id: cri_employees
+        fact: company.employee_count
+        kind: predicate
+        operator: lt
+        value:
+          type: number
+          value: 50
+        statement: Company has fewer than 50 employees.
+      - criterion_id: cri_not_customer
+        fact: company.is_current_customer
+        kind: predicate
+        operator: eq
+        value:
+          type: boolean
+          value: false
+        statement: Not a current paying Warestack customer.
+  roles:
+    terms_authority_entity_id: ent_01m1w43588h8ah31m13ggqamrx
+    access_operator_entity_id: ent_01m1w43588h8ah31m13ggqamrx
+  access:
+    availability: public
+    method: form
+    url: https://www.warestack.com/startup-program
+  source_ids:
+  - src_1727fb8fc538afda407014b419930c493060d4ef71670d27090610f2f7293ef8

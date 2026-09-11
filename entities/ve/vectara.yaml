@@ -1,0 +1,65 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1w3rfrt6a0c33twvqykyr1p
+  slug: vectara
+  slug_aliases: []
+  name: Vectara
+  domains:
+  - value: vectara.com
+    role: primary
+    valid_from: '2026-09-06T19:43:17Z'
+  category: ai-ml
+profile:
+  description: Vectara provides a neural search platform and APIs for building semantic
+    search and retrieval-augmented generation applications.
+  links:
+    site: https://vectara.com
+sources:
+- source_id: src_2047721b416eeaec0a7a01ff6868e883d4832be76aa92c1fc2d76dae5c88a689
+  url: https://www.vectara.com/startups
+programs:
+- program_id: prg_70s1jwasn898eb2r06v8enyt1y
+  program_slug: vectara-startup-program
+  program_slug_aliases: []
+  title: Vectara Startup Partnerships
+  summary: Vectara offers startups credits, discounts, tailored onboarding and support,
+    plus co-marketing and go-to-market alignment through its Startup Partnerships
+    program.
+  source_ids:
+  - src_2047721b416eeaec0a7a01ff6868e883d4832be76aa92c1fc2d76dae5c88a689
+offers:
+- offer_id: off_01m1w3rfshbpy4c5azk3kxghdm
+  offer_slug: vectara-startup-partnerships
+  offer_slug_aliases: []
+  title: Vectara Startup Partnerships
+  summary: Vectara offers startups credits, discounts, tailored onboarding and support,
+    plus co-marketing and go-to-market alignment through its Startup Partnerships
+    program.
+  lifecycle:
+    status: active
+    effective_from: '2026-09-06T19:43:17Z'
+  economics:
+    consideration:
+      kind: variable
+      description: Startup credits, discounts, and tailored onboarding.
+    benefits:
+    - benefit_id: ben_043
+      kind: other
+      description: Startup program discount or credit; specific terms vary by program.
+  eligibility:
+    rule:
+      kind: manual
+      criterion_id: cri_requirement_01
+      statement: Must be an eligible startup; specific criteria are published on the
+        vendor startup partnerships page.
+      reason: not-machine-evaluable
+  roles:
+    terms_authority_entity_id: ent_01m1w3rfrt6a0c33twvqykyr1p
+    access_operator_entity_id: ent_01m1w3rfrt6a0c33twvqykyr1p
+  access:
+    availability: public
+    method: form
+    url: https://www.vectara.com/startups
+  source_ids:
+  - src_2047721b416eeaec0a7a01ff6868e883d4832be76aa92c1fc2d76dae5c88a689
+  program_id: prg_70s1jwasn898eb2r06v8enyt1y
