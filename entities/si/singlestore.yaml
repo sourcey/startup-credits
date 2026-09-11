@@ -1,0 +1,59 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1ext8m2q9d38t9vnmyn61q6
+  slug: singlestore
+  slug_aliases: []
+  name: SingleStore
+  domains:
+    - value: singlestore.com
+      role: primary
+      valid_from: 2026-09-01T16:46:09.044Z
+  category: databases
+profile:
+  description: SingleStore provides managed database workspaces for transactional, analytical, and AI workloads through SingleStore Helios Cloud.
+  links:
+    site: https://www.singlestore.com
+sources:
+  - source_id: src_6dcfe79b43570c6ff312727f1d9edd3a497f77c0bdc96d61b0b8dc65bde468a8
+    url: https://www.singlestore.com/pricing/
+programs: []
+offers:
+  - offer_id: off_01m1ext8mfbyqhf627yeam949y
+    offer_slug: 500-in-helios-cloud-credits
+    offer_slug_aliases: []
+    title: $500 in SingleStore Helios Cloud credits
+    summary: Get started with $500 in free credits for a managed Standard Helios Cloud workspace, alongside a separate free Shared workspace for evaluation and development.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-01T16:46:09.044Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: $500 in free credits toward a managed Standard Helios Cloud workspace.
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 50000
+            kind: exact
+        - benefit_id: ben_02
+          description: One free Shared workspace for evaluation, development, and non-production testing.
+          kind: other
+      consideration:
+        kind: unknown
+        description: The public pricing page does not state separate fees or other consideration for receiving the introductory credits.
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: external-verification
+        statement: The applicant is getting started with a managed Standard Helios Cloud workspace.
+    roles:
+      terms_authority_entity_id: ent_01m1ext8m2q9d38t9vnmyn61q6
+      access_operator_entity_id: ent_01m1ext8m2q9d38t9vnmyn61q6
+    access:
+      availability: public
+      method: form
+      url: https://www.singlestore.com/pricing/
+    source_ids:
+      - src_6dcfe79b43570c6ff312727f1d9edd3a497f77c0bdc96d61b0b8dc65bde468a8
