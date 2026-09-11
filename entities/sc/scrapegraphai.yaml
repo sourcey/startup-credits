@@ -1,0 +1,94 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1h0tfwv8vhm4ktdk48b5276
+  slug: scrapegraphai
+  slug_aliases: []
+  name: ScrapeGraphAI
+  domains:
+    - value: scrapegraphai.com
+      role: primary
+      valid_from: 2026-09-02T12:14:00.000Z
+  category: data-analytics
+profile:
+  description: ScrapeGraphAI provides AI-powered APIs for web scraping, structured data extraction, search, crawling, and website change monitoring.
+  links:
+    site: https://scrapegraphai.com
+sources:
+  - source_id: src_48a5fdadbefb306e2c48417df4ad54c8059f08fbea44dc966c453e3e3b6022ee
+    url: https://scrapegraphai.com/for-startups
+programs:
+  - program_id: prg_01m1h0tfx33rp7xrm3j5xx8z0j
+    program_slug: scrapegraphai-startup-program
+    program_slug_aliases: []
+    title: ScrapeGraphAI Startup Program
+    summary: ScrapeGraphAI gives eligible startups the Growth plan free for 3 months, including 100,000 credits per month, for building and scaling web-data products.
+    source_ids:
+      - src_48a5fdadbefb306e2c48417df4ad54c8059f08fbea44dc966c453e3e3b6022ee
+offers:
+  - offer_id: off_01m1h0tfx596pp52gk2fnw5vtc
+    program_id: prg_01m1h0tfx33rp7xrm3j5xx8z0j
+    offer_slug: growth-plan-free-for-three-months
+    offer_slug_aliases: []
+    title: Growth plan free for three months
+    summary: Eligible startups receive the ScrapeGraphAI Growth plan free for 3 months with 100,000 credits per month, 500 requests/minute, basic proxy rotation, and priority support.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-02T12:14:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: ScrapeGraphAI Growth plan free for 3 months, including 100,000 credits per month, a 500 requests/minute rate limit, basic proxy rotation, and priority support
+          duration:
+            kind: exact
+            value: P3M
+          kind: free-service
+          service: ScrapeGraphAI Growth plan
+        - benefit_id: ben_02
+          description: 100,000 credits per month during the free Growth plan period
+          kind: other
+        - benefit_id: ben_03
+          description: 500 requests/minute rate limit
+          kind: other
+        - benefit_id: ben_04
+          description: Basic proxy rotation
+          kind: other
+        - benefit_id: ben_05
+          description: Priority technical support
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: any
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: not-machine-evaluable
+            statement: The startup is currently in Y Combinator or is a YC alumni company.
+          - criterion_id: cri_02
+            kind: manual
+            reason: not-machine-evaluable
+            statement: The startup is a Techstars portfolio company.
+          - criterion_id: cri_03
+            kind: manual
+            reason: not-machine-evaluable
+            statement: The startup is a 500 Global portfolio company.
+          - criterion_id: cri_04
+            kind: manual
+            reason: not-machine-evaluable
+            statement: The startup is bootstrapped/self-funded with at least $5K MRR.
+          - criterion_id: cri_05
+            kind: manual
+            reason: vendor-discretion
+            statement: Other startups may apply and are evaluated by ScrapeGraphAI case by case.
+    roles:
+      terms_authority_entity_id: ent_01m1h0tfwv8vhm4ktdk48b5276
+      access_operator_entity_id: ent_01m1h0tfwv8vhm4ktdk48b5276
+    access:
+      availability: public
+      method: form
+      instructions: Open the ScrapeGraphAI For Startups page and complete the on-page Apply for Startup Program form. No credit card is required for the startup program.
+      url: https://scrapegraphai.com/for-startups
+    terms_url: https://scrapegraphai.com/for-startups
+    source_ids:
+      - src_48a5fdadbefb306e2c48417df4ad54c8059f08fbea44dc966c453e3e3b6022ee
