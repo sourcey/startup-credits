@@ -1,0 +1,79 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1tjpy1xd3br53m1rrrd8kss
+  slug: cms-austria
+  slug_aliases: []
+  name: CMS Reich-Rohrwig Hainz Rechtsanwälte GmbH
+  domains:
+    - value: cms.law
+      role: primary
+      valid_from: 2026-09-06T05:22:58.238Z
+  category: legal-compliance
+profile:
+  description: CMS Reich-Rohrwig Hainz Rechtsanwälte GmbH is an Austrian law firm and CMS member firm providing legal services.
+  links:
+    site: https://cms.law/en/aut/insight/start-ups
+sources:
+  - source_id: src_177e1b047f3ddb7508195c224cc8064a07adb0ceb9f7c25956ee00c71ceda18a
+    url: https://cms.law/en/aut/insight/start-ups
+  - source_id: src_4289462033c29c08952876d388a8176cf3124ad4348538e7cf05b61e412f4c11
+    url: https://cms.law/en/aut/insight/start-ups/cms-equip-membership
+  - source_id: src_401ce53c8f7f95f79b3a3ef1e9ba1e2e2f9ca160fbdb7d70de68c6ab75df8b96
+    url: https://cms.law/content/download/486373/file/Application_Form_EquIP_2026.pdf
+  - source_id: src_b332dca954ffd3c3be895e4655394cfb560c2b89f71a702aebc22a8e0a9ea2b5
+    url: https://cms.law/content/download/479241/file/BRO-equiP-EN-072024.pdf
+  - source_id: src_9018749f27d39638cbb66c8d158108ac56cae6b45649283623d0390473c68154
+    url: https://cms.law/en/aut/footer-configuration/legal-information
+programs:
+  - program_id: prg_01m1tjpy1ye2bv8v6yrgv5qz9a
+    program_slug: cms-equip-austria
+    program_slug_aliases: []
+    title: CMS equIP Austria
+    summary: A legal accelerator for startups with innovative business ideas or technologies.
+    source_ids:
+      - src_177e1b047f3ddb7508195c224cc8064a07adb0ceb9f7c25956ee00c71ceda18a
+      - src_4289462033c29c08952876d388a8176cf3124ad4348538e7cf05b61e412f4c11
+      - src_b332dca954ffd3c3be895e4655394cfb560c2b89f71a702aebc22a8e0a9ea2b5
+offers:
+  - offer_id: off_01m1tjpy1yapje6hy0e14dvv89
+    program_id: prg_01m1tjpy1ye2bv8v6yrgv5qz9a
+    offer_slug: equip-legal-rate-discount
+    offer_slug_aliases: []
+    title: equIP Legal Rate Discount
+    summary: Startup equIP members receive 50% off standard hourly legal rates for three years, capped at EUR25,000 of discount per year.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-06T05:22:58.238Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          kind: discount
+          applies_to: standard hourly legal rates
+          description: The discount is capped at EUR25,000 per year during the three-year equIP membership. This is a ceiling on the discount, not a cash credit or a ceiling on eligible fees.
+          percentage:
+            kind: exact
+            basis_points: 5000
+          duration:
+            kind: exact
+            value: P3Y
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: external-verification
+        statement: The startup must apply for and become a member of CMS equIP in Austria, a programme for startups based on innovative business ideas or technologies.
+    roles:
+      terms_authority_entity_id: ent_01m1tjpy1xd3br53m1rrrd8kss
+      access_operator_entity_id: ent_01m1tjpy1xd3br53m1rrrd8kss
+    access:
+      availability: public
+      method: contact
+      url: https://cms.law/content/download/486373/file/Application_Form_EquIP_2026.pdf
+      instructions: Complete the linked application and submit it to the contact address published in the form with a pitch deck, business plan and financial plan. Programme participation is free; legal services remain chargeable at the discounted rates.
+    source_ids:
+      - src_177e1b047f3ddb7508195c224cc8064a07adb0ceb9f7c25956ee00c71ceda18a
+      - src_4289462033c29c08952876d388a8176cf3124ad4348538e7cf05b61e412f4c11
+      - src_401ce53c8f7f95f79b3a3ef1e9ba1e2e2f9ca160fbdb7d70de68c6ab75df8b96
+      - src_b332dca954ffd3c3be895e4655394cfb560c2b89f71a702aebc22a8e0a9ea2b5
