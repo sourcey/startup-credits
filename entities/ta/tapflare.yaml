@@ -1,0 +1,63 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1awnj8c6g1qg8gegx0fevg6
+  slug: tapflare
+  slug_aliases: []
+  name: Tapflare
+  domains:
+    - value: tapflare.com
+      role: primary
+      valid_from: 2026-08-31T03:09:08.288Z
+  category: design
+profile:
+  description: Tapflare provides subscription-based graphic design and website development through senior specialists managed by a dedicated project manager.
+  links:
+    site: https://tapflare.com
+sources:
+  - source_id: src_5b62e5f566c23391bd0fc9fae6766b17228b29d4fd1e80dfc41275721f85eda6
+    url: https://tapflare.com/startups
+programs:
+  - program_id: prg_01m1awnj8dz8jjfvkwzxnqdpv3
+    program_slug: tapflare-startup-program
+    program_slug_aliases: []
+    title: Tapflare Startup Program
+    summary: Tapflare supports qualified startups with credits for graphic design and website development services.
+    source_ids:
+      - src_5b62e5f566c23391bd0fc9fae6766b17228b29d4fd1e80dfc41275721f85eda6
+offers:
+  - offer_id: off_01m1awnj8d8ftqmqbxrbhrzbsp
+    program_id: prg_01m1awnj8dz8jjfvkwzxnqdpv3
+    offer_slug: tapflare-startup-credits
+    offer_slug_aliases: []
+    title: Tapflare Startup Credits
+    summary: Qualified startups can receive up to $1,500 in Tapflare credits applicable to any plan, providing about one to three months of graphic design and website development.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-31T03:09:08.288Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to $1,500 in Tapflare credits applicable to any Tapflare plan
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 150000
+            kind: up-to
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Tapflare evaluates applicants against several criteria, including a software-based product or service, founding within five years, $50,000 to $5 million in funding, and a valid website and email address.
+    roles:
+      terms_authority_entity_id: ent_01m1awnj8c6g1qg8gegx0fevg6
+      access_operator_entity_id: ent_01m1awnj8c6g1qg8gegx0fevg6
+    access:
+      availability: public
+      method: form
+      url: https://tapflare.com/startups
+    source_ids:
+      - src_5b62e5f566c23391bd0fc9fae6766b17228b29d4fd1e80dfc41275721f85eda6
