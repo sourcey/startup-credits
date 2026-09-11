@@ -1,0 +1,51 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_pd3jex1m100000000000000000
+  slug: tencent-trtc
+  slug_aliases: []
+  name: Tencent RTC
+  domains:
+  - value: trtc.tencentcloud.com
+    role: primary
+    valid_from: '2026-01-01T00:00:00Z'
+  category: communication
+profile:
+  summary: Tencent's real-time communication service with a startup programme for early-stage companies.
+  description: Tencent RTC (TRTC) is a real-time audio/video communication service from Tencent Cloud, providing low-latency video calling, conferencing, and live streaming APIs, with a startup programme for early-stage companies.
+  links:
+    site: https://trtc.tencentcloud.com
+sources:
+- source_id: src_ca4a9cd9271e96f755c712db5b133ecb1f5637101da29bbeaf229a52bb0bba8b
+  url: https://trtc.tencentcloud.com/start-up
+programs: []
+offers:
+- offer_id: off_pd3jex1m100000000000000000
+  offer_slug: startup-programme
+  offer_slug_aliases: []
+  title: Tencent RTC Startup Programme
+  summary: Discounted or free usage of Tencent RTC (TRTC) real-time communication service for qualifying early-stage companies.
+  lifecycle:
+    status: active
+    effective_from: '2026-01-01T00:00:00Z'
+  economics:
+    benefits:
+    - benefit_id: ben_01
+      description: Discounted or free usage of Tencent RTC real-time communication service for startups.
+      kind: other
+    consideration:
+      kind: none
+  eligibility:
+    rule:
+      kind: manual
+      criterion_id: cri_01
+      statement: Qualifying early-stage startup companies.
+      reason: not-machine-evaluable
+  roles:
+    terms_authority_entity_id: ent_pd3jex1m100000000000000000
+    access_operator_entity_id: ent_pd3jex1m100000000000000000
+  access:
+    availability: public
+    method: form
+    url: https://trtc.tencentcloud.com/start-up
+  source_ids:
+  - src_ca4a9cd9271e96f755c712db5b133ecb1f5637101da29bbeaf229a52bb0bba8b
