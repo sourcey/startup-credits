@@ -1,0 +1,69 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m19kwp6v2r6gfkqe473mfepy
+  slug: nhn-cloud
+  slug_aliases: []
+  name: NHN Cloud
+  domains:
+    - value: nhncloud.com
+      role: primary
+      valid_from: 2026-08-30T15:16:30.047Z
+  category: hosting-infra
+profile:
+  description: NHN Cloud provides cloud infrastructure, migration, operations, security, and managed support services for businesses.
+  links:
+    site: https://www.nhncloud.com/kr
+sources:
+  - source_id: src_6a7c5cfa2914e61421cfdfa03de0c930ac35c044b203ea447cd48bffc8383b74
+    url: https://info.nhncloud.com/promotion/startup
+programs:
+  - program_id: prg_01m19kwp6zn37jq3v3m1kassfc
+    program_slug: nhn-cloud-startup-growth-support-promotion
+    program_slug_aliases: []
+    title: NHN Cloud Startup Growth Support Promotion
+    summary: NHN Cloud's program provides eligible startups with cloud credits, migration and operations support, education, and potential business and marketing collaboration.
+    source_ids:
+      - src_6a7c5cfa2914e61421cfdfa03de0c930ac35c044b203ea447cd48bffc8383b74
+offers:
+  - offer_id: off_01m19kwp6zxe845p030j94d1ef
+    program_id: prg_01m19kwp6zn37jq3v3m1kassfc
+    offer_slug: nhn-cloud-startup-credits
+    offer_slug_aliases: []
+    title: Up to KRW 54 million in NHN Cloud credits
+    summary: Eligible startups can receive up to KRW 54 million in NHN Cloud service credits after application, consultation, and final contract confirmation.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-30T15:16:30.047Z
+    economics:
+      benefits:
+        - benefit_id: startup_credits
+          description: Up to KRW 54 million in credits for eligible NHN Cloud services; GPU, Notification, and some licensed products are excluded
+          kind: credit
+          value:
+            kind: up-to
+            amount:
+              currency: KRW
+              minor_units: 54000000
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: no_prior_infrastructure_use
+            kind: manual
+            reason: external-verification
+            statement: Applicant must be a startup with no prior use of NHN Cloud cloud infrastructure.
+          - criterion_id: incorporated_business
+            kind: manual
+            reason: external-verification
+            statement: Individual sole proprietors are not eligible.
+    roles:
+      terms_authority_entity_id: ent_01m19kwp6v2r6gfkqe473mfepy
+      access_operator_entity_id: ent_01m19kwp6v2r6gfkqe473mfepy
+    access:
+      availability: public
+      method: form
+      url: https://info.nhncloud.com/promotion/startup
+    source_ids:
+      - src_6a7c5cfa2914e61421cfdfa03de0c930ac35c044b203ea447cd48bffc8383b74
