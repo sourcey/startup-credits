@@ -1,0 +1,57 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1tnaepd10yyn2w51mxnma3m
+  slug: strongkeep
+  slug_aliases: []
+  name: StrongKeep
+  domains:
+    - value: strongkeep.com
+      role: primary
+      valid_from: 2026-09-06T06:08:35.021Z
+  category: auth-security
+profile:
+  description: StrongKeep bundles device protection, a web firewall, password management, staff training, and compliance guidance for businesses.
+  links:
+    site: https://www.strongkeep.com/
+sources:
+  - source_id: src_60657552df05ee67292e1eaaea21f5236fae77e98d64238be54ed0fb8fae5118
+    url: https://www.strongkeep.com/partners/500/
+programs: []
+offers:
+  - offer_id: off_01m1tnaepe0tbpvgss8qjcgdrk
+    offer_slug: 500-global-portfolio-discount
+    offer_slug_aliases: []
+    title: 500 Global portfolio annual-plan discount
+    summary: 500 Global portfolio startups receive 25% off StrongKeep Protection and Compliance annual base plans; additional devices remain full price. Offer valid until 30 June 2027.
+    description: StrongKeep may modify or withdraw this portfolio offer without notice. Use of the service is subject to StrongKeep's terms of service.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-06T06:08:35.021Z
+    economics:
+      consideration:
+        kind: variable
+        description: A paid annual Protection or Compliance base plan is required. Extra device coverage beyond the five included devices is charged at normal rates.
+      benefits:
+        - benefit_id: ben_01m1tnaepef8ph8vm66x58etmd
+          kind: discount
+          applies_to: Protection and Compliance annual base plans
+          percentage:
+            kind: exact
+            basis_points: 2500
+          description: 25% off annual base plans; the discount is applied at checkout after registration through the vendor partner-page links.
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_500_global_portfolio
+        reason: external-verification
+        statement: Exclusive to 500 Global portfolio companies. One account per company; non-transferable and not combinable with other promotions or discounts. Valid until 30 June 2027.
+    roles:
+      terms_authority_entity_id: ent_01m1tnaepd10yyn2w51mxnma3m
+      access_operator_entity_id: ent_01m1tnaepd10yyn2w51mxnma3m
+    access:
+      availability: public
+      method: automatic
+      url: https://www.strongkeep.com/partners/500/
+    terms_url: https://www.strongkeep.com/partners/500/
+    source_ids:
+      - src_60657552df05ee67292e1eaaea21f5236fae77e98d64238be54ed0fb8fae5118
