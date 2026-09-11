@@ -1,0 +1,69 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m16x1fwk7k4fkdsz9v702vsx
+  slug: yandex-cloud
+  slug_aliases: []
+  name: Yandex Cloud
+  domains:
+    - value: yandex.cloud
+      role: primary
+      valid_from: 2026-08-29T13:58:41.000Z
+  category: hosting-infra
+profile:
+  description: Yandex Cloud provides managed compute, networking, storage, databases, data, AI, container, and serverless cloud services.
+  links:
+    site: https://yandex.cloud
+sources:
+  - source_id: src_bb2d8d661d3936c693afed7a83a4058fcd9890ed77bc334c08a8d1844a167f61
+    url: https://yandex.cloud/en/cloud-credits-for-trial
+programs: []
+offers:
+  - offer_id: off_01m16x1fwphzzace31b8j7j9qd
+    offer_slug: yandex-cloud-startup-credits
+    offer_slug_aliases: []
+    title: Up to $20,000 in Yandex Cloud credits
+    summary: Early-stage technology teams can receive $5,000 for six months, while qualifying scaling-stage teams can receive up to $20,000 for 12 months.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-29T13:58:41.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: $5,000 for six months at early product stages, or up to $20,000 for 12 months at the scaling stage
+          duration:
+            kind: up-to
+            value: P1Y
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 2000000
+            kind: up-to
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            statement: Yandex evaluates product maturity using its TAIL scale; TRL 1-7 products may receive the early-stage tier and TRL 8-9 products may receive the scaling-stage tier.
+            reason: vendor-discretion
+          - criterion_id: cri_02
+            kind: manual
+            statement: The applicant must be a technology company and not an educational institution, government entity, nonprofit, personal blog, development shop, consultancy, or agency.
+            reason: not-machine-evaluable
+          - criterion_id: cri_03
+            kind: manual
+            statement: The startup must not have completed an IPO or been acquired, and its Yandex ID and billing account must use the business email supplied in the application.
+            reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01m16x1fwk7k4fkdsz9v702vsx
+      access_operator_entity_id: ent_01m16x1fwk7k4fkdsz9v702vsx
+    access:
+      availability: public
+      instructions: Submit the form on the official credits page; a Yandex Cloud specialist follows up to discuss the project and grant tier.
+      method: form
+      url: https://yandex.cloud/en/cloud-credits-for-trial
+    source_ids:
+      - src_bb2d8d661d3936c693afed7a83a4058fcd9890ed77bc334c08a8d1844a167f61
