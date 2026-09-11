@@ -1,0 +1,51 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_skq5bx1m100000000000000000
+  slug: warestack
+  slug_aliases: []
+  name: WareStack
+  domains:
+  - value: warestack.com
+    role: primary
+    valid_from: '2026-01-01T00:00:00Z'
+  category: hosting-infra
+profile:
+  description: WareStack provides cloud hosting and infrastructure for startups.
+  links:
+    site: https://warestack.com
+sources:
+- source_id: src_8720260f7134c03d2ad98e6e06a7326f8175e1ef0bc78359d873f1036a4f8c42
+  url: https://warestack.com
+programs: []
+offers:
+- offer_id: off_skq5bx1m100000000000000000
+  offer_slug: warestack-startup
+  offer_slug_aliases: []
+  title: WareStack Startup Program
+  summary: Free or discounted cloud hosting infrastructure.
+  lifecycle:
+    status: active
+    effective_from: '2026-01-01T00:00:00Z'
+  economics:
+    benefits:
+    - benefit_id: ben_01
+      description: Free or discounted cloud hosting infrastructure.
+      kind: free-service
+      service: Free or discounted cloud hosting infrastructure.
+    consideration:
+      kind: none
+  eligibility:
+    rule:
+      kind: manual
+      criterion_id: cri_01
+      statement: Qualified startups.
+      reason: not-machine-evaluable
+  roles:
+    terms_authority_entity_id: ent_skq5bx1m100000000000000000
+    access_operator_entity_id: ent_skq5bx1m100000000000000000
+  access:
+    availability: public
+    method: form
+    url: https://warestack.com
+  source_ids:
+  - src_8720260f7134c03d2ad98e6e06a7326f8175e1ef0bc78359d873f1036a4f8c42
