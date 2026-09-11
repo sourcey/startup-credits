@@ -1,0 +1,74 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1s03pxm26znwefpb8h1aewx
+  slug: wevestr
+  slug_aliases: []
+  name: WE.VESTR
+  domains:
+    - value: wevestr.com
+      role: primary
+      valid_from: 2026-09-05T14:35:00.000Z
+  category: finance-accounting
+profile:
+  description: WE.VESTR provides equity management software for cap tables, shareholder reporting, fundraising, and employee equity plans.
+  links:
+    site: https://wevestr.com/
+sources:
+  - source_id: src_20d5d2e5406b5de70c762837f1fc686a409782108a7a5cf4f56bf2bea9eeff85
+    url: https://wevestr.com/microsoft-for-startups
+  - source_id: src_d2e33b5e533d1c25998e0a5f6546dad82e87a6b876f89976d1f4bd18041deaf0
+    url: https://wevestr.com/pricing
+programs: []
+offers:
+  - offer_id: off_01m1s03pxmsy9kg3ss4y9p8y96
+    offer_slug: microsoft-for-startups-paid-plan-discount
+    offer_slug_aliases: []
+    title: WE.VESTR Grow first-year discount for Microsoft for Startups members
+    summary: Verified Microsoft for Startups Founders Hub members can start the Grow plan at EUR 45 per month, excluding VAT, for the first year instead of the standard EUR 150 monthly rate.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T14:35:00.000Z
+    economics:
+      consideration:
+        kind: fixed
+        amount:
+          currency: EUR
+          minor_units: 4500
+      benefits:
+        - benefit_id: ben_paid_plan_discount
+          kind: discount
+          description: Grow costs EUR 45 per month excluding VAT for the first year instead of the standard EUR 150 per month. The vendor shows the first month free on both plans.
+          percentage:
+            kind: exact
+            basis_points: 7000
+          duration:
+            kind: exact
+            value: P1Y
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - kind: manual
+            criterion_id: cri_microsoft_membership
+            statement: The applicant is a Microsoft for Startups Founders Hub member and completes WE.VESTR's membership verification for the discount.
+            reason: external-verification
+          - kind: manual
+            criterion_id: cri_new_customer
+            statement: The applicant starts a new Grow subscription using WE.VESTR's dedicated Microsoft for Startups onboarding link.
+            reason: external-verification
+          - kind: manual
+            criterion_id: cri_paid_plan_stakeholders
+            statement: The applicant selects the Grow plan, which supports up to 50 stakeholders.
+            reason: external-verification
+    roles:
+      terms_authority_entity_id: ent_01m1s03pxm26znwefpb8h1aewx
+      access_operator_entity_id: ent_01m1s03pxm26znwefpb8h1aewx
+    access:
+      availability: membership
+      method: form
+      url: https://wevestr.com/microsoft-for-startups
+      instructions: Use the Grow plan's Start for Free link on the vendor's Microsoft for Startups page and complete WE.VESTR's membership verification. Prices exclude VAT and use monthly invoicing; the discount applies for the first year.
+    terms_url: https://wevestr.com/terms-and-conditions
+    source_ids:
+      - src_20d5d2e5406b5de70c762837f1fc686a409782108a7a5cf4f56bf2bea9eeff85
+      - src_d2e33b5e533d1c25998e0a5f6546dad82e87a6b876f89976d1f4bd18041deaf0
