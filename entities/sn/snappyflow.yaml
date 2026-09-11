@@ -1,0 +1,79 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m11hrs571g8fnhw7qawhj3xn
+  slug: snappyflow
+  slug_aliases: []
+  name: SnappyFlow
+  domains:
+    - value: snappyflow.io
+      role: primary
+      valid_from: 2026-08-27T12:05:29.000Z
+  category: observability
+profile:
+  description: SnappyFlow is a full-stack observability platform for logs, metrics, traces, profiling, alerting, and dashboards across cloud and self-hosted deployments.
+  links:
+    site: https://www.snappyflow.io
+sources:
+  - source_id: src_8bc8078087c7752095cdddc8a95b67ff7dd1037213ab78ae54fd47090681a107
+    url: https://www.snappyflow.io/startup
+programs:
+  - program_id: prg_01m11hrs59exd3pr9nxj2d8e7k
+    program_slug: snappyflow-for-startups
+    program_slug_aliases: []
+    title: SnappyFlow for Startups
+    summary: SnappyFlow's startup program provides observability credits, performance-engineering advisory sessions, and go-to-market guidance.
+    source_ids:
+      - src_8bc8078087c7752095cdddc8a95b67ff7dd1037213ab78ae54fd47090681a107
+offers:
+  - offer_id: off_01m11hrs593snb29eesrfsqtn5
+    program_id: prg_01m11hrs59exd3pr9nxj2d8e7k
+    offer_slug: startup-observability-credits
+    offer_slug_aliases: []
+    title: Up to $2,000 in SnappyFlow credits for startups
+    summary: Startups receive $500 in SnappyFlow credits valid for six months; selected participants can request another $1,500 when the program ends.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-27T12:05:29.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: A guaranteed $500 in SnappyFlow credits valid for six months
+          duration:
+            kind: exact
+            value: P6M
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 50000
+            kind: exact
+        - benefit_id: ben_02
+          description: Selected startups can request up to $1,500 in additional SnappyFlow credits at the end of the program
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 150000
+            kind: up-to
+        - benefit_id: ben_03
+          description: Advisory and deep-dive sessions with SnappyFlow performance-engineering experts
+          kind: free-service
+          service: Performance-engineering advisory sessions
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Applicant must be a startup and is subject to SnappyFlow's program review; additional credits are limited to selected startups.
+    roles:
+      terms_authority_entity_id: ent_01m11hrs571g8fnhw7qawhj3xn
+      access_operator_entity_id: ent_01m11hrs571g8fnhw7qawhj3xn
+    access:
+      availability: public
+      method: form
+      url: https://www.snappyflow.io/startup
+    terms_url: https://www.snappyflow.io/startup
+    source_ids:
+      - src_8bc8078087c7752095cdddc8a95b67ff7dd1037213ab78ae54fd47090681a107
