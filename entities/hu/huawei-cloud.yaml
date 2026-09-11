@@ -1,0 +1,67 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m11dxdq4y9hf38akgfsr7b24
+  slug: huawei-cloud
+  slug_aliases: []
+  name: Huawei Cloud
+  domains:
+    - value: huaweicloud.com
+      role: primary
+      valid_from: 2026-08-27T10:58:07.205Z
+  category: hosting-infra
+profile:
+  description: Huawei Cloud provides cloud infrastructure, platform, data, and artificial intelligence services.
+  links:
+    site: https://www.huaweicloud.com/intl/en-us/
+sources:
+  - source_id: src_88ddaa69c4798f93b213c7cd8ee2b7ee0fc5e4b14b33933f1fcf3324d9b94e43
+    url: https://startup.huaweicloud.com/intl/en-us/index.html
+programs:
+  - program_id: prg_01m11dxdq5hrw9gq05a0f9gjcd
+    program_slug: huawei-cloud-startup-program
+    program_slug_aliases: []
+    title: Huawei Cloud Startup Program
+    summary: Huawei Cloud helps approved startups migrate to the cloud and grow with cloud credits, technical enablement, and business resources.
+    source_ids:
+      - src_88ddaa69c4798f93b213c7cd8ee2b7ee0fc5e4b14b33933f1fcf3324d9b94e43
+offers:
+  - offer_id: off_01m11dxdq5mxfa4xbtx870r6n1
+    program_id: prg_01m11dxdq5hrw9gq05a0f9gjcd
+    offer_slug: startup-cloud-credits
+    offer_slug_aliases: []
+    title: Up to USD 150,000 in Huawei Cloud credits
+    summary: Approved startups receive Huawei Cloud cash-credit vouchers and dedicated support for cloud migration.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-27T10:58:07.205Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to USD 150,000 in Huawei Cloud cash-credit vouchers.
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 15000000
+            kind: up-to
+        - benefit_id: ben_02
+          description: Smooth cloud migration with support from dedicated Huawei Cloud teams.
+          kind: other
+      consideration:
+        kind: unknown
+        description: The public startup-program page does not establish separate consideration.
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: external-verification
+        statement: The applicant must be an enterprise established less than five years ago, must not be listed, and must not be more than 50 percent owned by a listed company. It must register a Huawei Cloud account, complete enterprise real-name verification, submit the requested materials, and pass Huawei Cloud review.
+    roles:
+      terms_authority_entity_id: ent_01m11dxdq4y9hf38akgfsr7b24
+      access_operator_entity_id: ent_01m11dxdq4y9hf38akgfsr7b24
+    access:
+      availability: public
+      method: form
+      url: https://startup.huaweicloud.com/intl/center
+    source_ids:
+      - src_88ddaa69c4798f93b213c7cd8ee2b7ee0fc5e4b14b33933f1fcf3324d9b94e43
