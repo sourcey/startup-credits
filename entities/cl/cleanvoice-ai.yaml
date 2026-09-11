@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m17d7s314s6dqm0rm4e9enm6
+  slug: cleanvoice-ai
+  slug_aliases: []
+  name: Cleanvoice AI
+  domains:
+    - value: cleanvoice.ai
+      role: primary
+      valid_from: 2026-08-29T18:41:44.000Z
+  category: ai-ml
+profile:
+  description: Cleanvoice AI provides APIs and software for automated audio editing, enhancement, and transcription.
+  links:
+    site: https://cleanvoice.ai
+sources:
+  - source_id: src_941514193f80893f894c491fe20fc3b7282f65c401a22106931095e55b6725c9
+    url: https://cleanvoice.ai/descript-api-alternative/
+programs: []
+offers:
+  - offer_id: off_01m17d7s33we90973amyh5cz27
+    offer_slug: 200-free-api-hours-for-early-stage-startups
+    offer_slug_aliases: []
+    title: 200 free Cleanvoice API hours for early-stage startups
+    summary: Early-stage startups building audio projects can apply for 200 hours of free Cleanvoice API credits covering editing, enhancement, and transcription features.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-29T18:41:44.000Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_primary
+          description: 200 hours of free API credits covering Cleanvoice editing, enhancement, and transcription features
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirements
+        statement: Applicants must be early-stage startups working on audio projects and describe the startup, what it is building, and how it would use Cleanvoice; Cleanvoice reviews submissions.
+        reason: vendor-discretion
+    roles:
+      terms_authority_entity_id: ent_01m17d7s314s6dqm0rm4e9enm6
+      access_operator_entity_id: ent_01m17d7s314s6dqm0rm4e9enm6
+    access:
+      availability: public
+      method: contact
+      url: https://cleanvoice.ai/descript-api-alternative/
+    source_ids:
+      - src_941514193f80893f894c491fe20fc3b7282f65c401a22106931095e55b6725c9
