@@ -1,0 +1,61 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1srg28ecwtvrqeakc5hr6kt
+  slug: flawtrack
+  slug_aliases: []
+  name: Flawtrack
+  domains:
+    - value: flawtrack.com
+      role: primary
+      valid_from: 2026-08-24T00:00:00.000Z
+  category: devtools-other
+profile:
+  description: Continuous Threat Exposure Management from a NASCA-licensed Malaysian provider: attack surface discovery, dark web monitoring, and penetration testing.
+  links:
+    site: https://www.flawtrack.com/
+sources:
+  - source_id: src_5604b2338c2b52d5d566c1dc5f75d8b1899e0d5b3412f4696c6797dd0ad19ec9
+    url: https://www.flawtrack.com/segments/startups
+programs: []
+offers:
+  - offer_id: off_01m1srg291kygf1s510aepqye9
+    offer_slug: funded-startup-90-percent-discount
+    offer_slug_aliases: []
+    access:
+      availability: public
+      method: contact
+      url: https://www.flawtrack.com/contact
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 90% discount on Flawtrack services for eligible funded startups.
+          kind: discount
+          value:
+            amount:
+              currency: USD
+              minor_units: 90000
+            kind: percentage
+            unit: basis-points
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: external-verification
+            statement: Applicant is a funded startup at Series A stage or beyond.
+          - criterion_id: cri_02
+            fact: company.funding_stage
+            kind: predicate
+            operator: gte
+            threshold: series-a
+            statement: The startup has raised at least Series A funding.
+    lifecycle:
+      effective_from: 2026-08-24T00:00:00.000Z
+      status: active
+    roles:
+      terms_authority_entity_id: ent_01m1srg28ecwtvrqeakc5hr6kt
+      access_operator_entity_id: ent_01m1srg28ecwtvrqeakc5hr6kt
+    summary: Funded startups at Series A and beyond can receive a 90% discount on Flawtrack security services.

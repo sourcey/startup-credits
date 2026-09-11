@@ -1,0 +1,69 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1srgpx2pktqxafpdr8qc738
+  slug: sinatra
+  slug_aliases: []
+  name: Sinatra
+  domains:
+    - value: sinatra.dev
+      role: primary
+      valid_from: 2026-08-25T00:00:00.000Z
+  category: devtools-other
+profile:
+  description: AI coding assistant that creates pull requests from Linear tickets and GitHub issues.
+  links:
+    site: https://www.sinatra.dev
+sources:
+  - source_id: src_902f1deefc3c8bda93ecae83cb45104d8de8a8ecd83c753e64bf4838a85efa7b
+    url: https://www.sinatra.dev/startups
+programs:
+  - program_id: prg_01m1srgpxzdfx5t263x702qmv5
+    program_slug: sinatra-for-startups
+    program_slug_aliases: []
+    title: Sinatra for Startups
+    summary: 50% off the $20 seat for 12 months, so $10 per member per month for qualifying startup teams.
+    source_ids:
+      - src_902f1deefc3c8bda93ecae83cb45104d8de8a8ecd83c753e64bf4838a85efa7b
+offers:
+  - offer_id: off_01m1srgpxzxgjsya2tc7427s91
+    program_id: prg_01m1srgpxzdfx5t263x702qmv5
+    offer_slug: 50-percent-off-for-12-months
+    offer_slug_aliases: []
+    title: 50% off for 12 months
+    summary: Qualifying startup teams receive $10 per member per month instead of $20 for 12 months.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-25T00:00:00.000Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_01
+          applies_to: Sinatra seat
+          description: 50% discount on monthly seat price ($10 instead of $20 per member per month) for 12 months.
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 5000
+          duration:
+            kind: exact
+            value: P1Y
+    eligibility:
+      rule:
+        kind: predicate
+        fact: company.size
+        operator: lte
+        statement: Must be a team under 100 people.
+        value:
+          type: integer
+          value: 100
+    roles:
+      terms_authority_entity_id: ent_01m1srgpx2pktqxafpdr8qc738
+      access_operator_entity_id: ent_01m1srgpx2pktqxafpdr8qc738
+    access:
+      availability: public
+      method: form
+      url: https://www.sinatra.dev/startups
+    terms_url: https://www.sinatra.dev/pricing
+    source_ids:
+      - src_902f1deefc3c8bda93ecae83cb45104d8de8a8ecd83c753e64bf4838a85efa7b

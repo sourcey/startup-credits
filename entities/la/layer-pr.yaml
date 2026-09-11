@@ -1,0 +1,83 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1srfeh8dh1na4001fjh1e8n
+  slug: layer-pr
+  slug_aliases: []
+  name: Layer PR
+  domains:
+    - value: layerpr.com
+      role: primary
+      valid_from: 2026-08-24T00:00:00.000Z
+  category: devtools-other
+profile:
+  description: Layer PR is a public relations agency offering global PR, crisis management, IPO communications, ESG, and marketing services to businesses.
+  links:
+    site: https://layerpr.com
+sources:
+  - source_id: src_1efceee7544e6ebc9e5fded8046d94c11e046d2c1a6c445348c44fa7b6e6334f
+    url: https://layerpr.com/startup-program/
+programs:
+  - program_id: prg_01m1srfehgzptgbk44hv6n49qp
+    program_slug: startup-program
+    program_slug_aliases: []
+    title: Layer PR Startup Program
+    summary: Layer PR's one-year startup program offers qualifying revenue-generating startups up to 50% off invoices, plus dedicated PR support, media training, and access to global media coverage.
+    source_ids:
+      - src_1efceee7544e6ebc9e5fded8046d94c11e046d2c1a6c445348c44fa7b6e6334f
+offers:
+  - offer_id: off_01m1srfehgnqgwdpjhbrqqzezs
+    program_id: prg_01m1srfehgzptgbk44hv6n49qp
+    offer_slug: up-to-fifty-percent-off-for-twelve-months
+    offer_slug_aliases: []
+    title: Up to 50% off invoices for 12 months
+    summary: Eligible startups receive up to 50% off their Layer PR invoices throughout the one-year Startup Program, with additional support including dedicated PR guidance, media training, and global media coverage assistance.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-24T00:00:00.000Z
+    economics:
+      consideration:
+        kind: variable
+        description: The startup pays the reduced invoice amount after the discount is applied.
+      benefits:
+        - benefit_id: ben_01
+          description: Up to 50% off Layer PR invoices for 12 months
+          kind: discount
+          percentage:
+            kind: up-to
+            basis_points: 5000
+          duration:
+            kind: exact
+            value: P1Y
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.age_years
+            kind: predicate
+            operator: lte
+            statement: Founded within the last five years
+            value:
+              type: number
+              value: 5
+          - criterion_id: cri_02
+            fact: company.is_revenue_generating
+            kind: predicate
+            operator: eq
+            statement: Revenue-generating startup or small business
+            value:
+              type: boolean
+              value: true
+          - criterion_id: cri_03
+            kind: manual
+            reason: not-machine-evaluable
+            statement: Must complete the application form on the Layer PR Startup Program page
+    roles:
+      terms_authority_entity_id: ent_01m1srfeh8dh1na4001fjh1e8n
+      access_operator_entity_id: ent_01m1srfeh8dh1na4001fjh1e8n
+    access:
+      availability: public
+      method: form
+      url: https://layerpr.com/startup-program/
+    source_ids:
+      - src_1efceee7544e6ebc9e5fded8046d94c11e046d2c1a6c445348c44fa7b6e6334f
