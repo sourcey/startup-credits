@@ -1,0 +1,90 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_12xdyf267w559tv3a4tk2pj7ma
+  slug: leapsome
+  slug_aliases: []
+  name: Leapsome
+  domains:
+    - value: leapsome.com
+      role: primary
+      valid_from: 2026-09-01T08:28:47.6625505Z
+  category: hr-people
+profile:
+  summary: Human resources and talent-management software for growing companies.
+  description: Leapsome combines HRIS, employee records, performance reviews, goals, feedback, engagement surveys, learning, compensation, workflows, and people analytics in one platform.
+  links:
+    site: https://www.leapsome.com
+sources:
+  - source_id: src_f268e0219fcba1ee4e744fc3026bd2ce08d741daad6d742045bf7a6fc940be00
+    url: https://www.leapsome.com/leapsome-for-startups
+  - source_id: src_7631dba08e80323075965d81f7b305697a7a1541febeb6e96616dc5bd945e89f
+    url: https://www.leapsome.com/pricing
+programs:
+  - program_id: prg_885nm7jkw21ga3as42sm3kwdg3
+    program_slug: leapsome-for-startups
+    program_slug_aliases: []
+    title: Leapsome for Startups
+    summary: Eligible new startups with fewer than 50 employees receive 20% off Leapsome, or 25% off when affiliated with a Leapsome startup partner, for three years.
+    source_ids:
+      - src_f268e0219fcba1ee4e744fc3026bd2ce08d741daad6d742045bf7a6fc940be00
+      - src_7631dba08e80323075965d81f7b305697a7a1541febeb6e96616dc5bd945e89f
+offers:
+  - offer_id: off_yj7zg8180zgwtw06mx4mnr28x8
+    program_id: prg_885nm7jkw21ga3as42sm3kwdg3
+    offer_slug: startup-discount-for-three-years
+    offer_slug_aliases: []
+    title: 20% or 25% off Leapsome for three years
+    summary: New Leapsome customers with fewer than 50 employees receive 20% off for three years, or 25% when affiliated with a Leapsome startup partner.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-01T08:28:47.6625505Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 25% off if affiliated with one of Leapsome's startup partners; 20% off if not affiliated with one of Leapsome's startup partners.
+          duration:
+            kind: exact
+            value: P3Y
+          kind: discount
+          percentage:
+            basis_points: 2500
+            kind: up-to
+      consideration:
+        kind: variable
+        description: Leapsome modules can be bought individually or combined in any combination.
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: customer.is_new
+            kind: predicate
+            operator: eq
+            statement: The applicant must be new to Leapsome.
+            value:
+              type: boolean
+              value: true
+          - criterion_id: cri_02
+            fact: company.employee_count
+            kind: predicate
+            operator: lt
+            statement: The applicant must have fewer than 50 employees.
+            value:
+              type: number
+              value: 50
+          - criterion_id: cri_03
+            kind: manual
+            reason: external-verification
+            statement: The applicant must be affiliated with one of Leapsome's startup partners for the 25% discount, or not affiliated for the 20% discount.
+    roles:
+      terms_authority_entity_id: ent_12xdyf267w559tv3a4tk2pj7ma
+      access_operator_entity_id: ent_12xdyf267w559tv3a4tk2pj7ma
+    access:
+      availability: public
+      instructions: Claim the startup discount by booking a founder-friendly demo with one of Leapsome's experts.
+      method: form
+      url: https://www.leapsome.com/leapsome-for-startups
+    terms_url: https://www.leapsome.com/leapsome-for-startups
+    source_ids:
+      - src_f268e0219fcba1ee4e744fc3026bd2ce08d741daad6d742045bf7a6fc940be00
+      - src_7631dba08e80323075965d81f7b305697a7a1541febeb6e96616dc5bd945e89f
