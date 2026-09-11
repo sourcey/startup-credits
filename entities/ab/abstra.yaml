@@ -1,0 +1,96 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1djmv7mdwdbwyjgbzy1act6
+  slug: abstra
+  slug_aliases: []
+  name: Abstra
+  domains:
+    - value: abstra.io
+      role: primary
+      valid_from: 2026-09-01T04:10:00.000Z
+  category: finance-accounting
+profile:
+  summary: AI-powered workflow automation for finance operations.
+  description: Abstra provides an AI-powered workflow platform for automating finance operations, including credit analysis, account onboarding, and revenue operations.
+  links:
+    site: https://www.abstra.io/
+sources:
+  - source_id: src_b59b5dc67706cdc85dce397690848f309c627e1b45fd6b064a92729a19275ba7
+    url: https://www.abstra.io/en/pricing
+  - source_id: src_30027b4ff6f5c7e8a37a4434091d9b1e372b3ae75ab9ec80f842a5d4ea9fa1cf
+    url: https://www.abstra.io/assets/app-CrWDFeom.js
+programs:
+  - program_id: prg_01m1djmv9d9hvyq3fbxn10hkaj
+    program_slug: abstra-startup-discount-program
+    program_slug_aliases: []
+    title: Abstra Startup Discount Program
+    summary: Abstra gives qualifying early-stage companies discounted Professional-plan access plus startup support, community access, and growth consulting.
+    source_ids:
+      - src_b59b5dc67706cdc85dce397690848f309c627e1b45fd6b064a92729a19275ba7
+      - src_30027b4ff6f5c7e8a37a4434091d9b1e372b3ae75ab9ec80f842a5d4ea9fa1cf
+offers:
+  - offer_id: off_01m1djmv9ec4k01e2wj0ber7f9
+    program_id: prg_01m1djmv9d9hvyq3fbxn10hkaj
+    offer_slug: half-off-professional-for-six-months
+    offer_slug_aliases: []
+    title: 50% Off Abstra Professional for Six Months
+    summary: Eligible startups receive 50% off the Abstra Professional plan for six months, dedicated startup support, startup-community access, and growth consulting.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-01T04:10:00.000Z
+    economics:
+      benefits:
+        - applies_to: Abstra Professional plan
+          benefit_id: ben_01
+          description: 50% off the Abstra Professional plan for six months.
+          duration:
+            kind: exact
+            value: P6M
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 5000
+        - benefit_id: ben_02
+          description: Dedicated startup support.
+          kind: other
+        - benefit_id: ben_03
+          description: Access to Abstra's startup community.
+          kind: other
+        - benefit_id: ben_04
+          description: Growth consulting included with the startup offer.
+          kind: other
+      consideration:
+        kind: variable
+        description: The Professional plan has custom pricing; approved startups receive the stated 50% discount for six months.
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.age_months
+            kind: predicate
+            operator: lt
+            statement: The company is less than two years old.
+            value:
+              type: number
+              value: 24
+          - criterion_id: cri_02
+            fact: company.annual_revenue_usd
+            kind: predicate
+            operator: lt
+            statement: The company has less than $1 million in annual recurring revenue.
+            value:
+              type: number
+              value: 1000000
+    roles:
+      terms_authority_entity_id: ent_01m1djmv7mdwdbwyjgbzy1act6
+      access_operator_entity_id: ent_01m1djmv7mdwdbwyjgbzy1act6
+    access:
+      availability: public
+      method: form
+      url: https://www.abstra.io/en/pricing
+      instructions: Use the Apply for Discount action in the Startup Discount Program section of Abstra's pricing page.
+    terms_url: https://www.abstra.io/en/pricing
+    source_ids:
+      - src_b59b5dc67706cdc85dce397690848f309c627e1b45fd6b064a92729a19275ba7
+      - src_30027b4ff6f5c7e8a37a4434091d9b1e372b3ae75ab9ec80f842a5d4ea9fa1cf
