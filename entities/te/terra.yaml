@@ -1,0 +1,80 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m0x4hx2ed4gm605a8eatywek
+  slug: terra
+  slug_aliases: []
+  name: Terra
+  domains:
+    - value: tryterra.co
+      role: primary
+      valid_from: 2026-08-25T00:00:00.000Z
+  category: apis-integration
+profile:
+  description: Terra provides a unified API for integrating health data from apps, wearables, sensors, and laboratory sources.
+  links:
+    site: https://tryterra.co
+sources:
+  - source_id: src_40f50554e81b40477766d18b3a1a9f15f7f6d116967b81e4727146f0012564a3
+    url: https://tryterra.co/accelerator
+programs:
+  - program_id: prg_01m0x4hx2kh5v5knfj9yrq7qch
+    program_slug: terra-startup-accelerator
+    program_slug_aliases: []
+    title: Terra Startup Accelerator
+    summary: Terra's rolling accelerator gives qualifying early-stage health technology teams API credits and hands-on integration support without application fees or equity.
+    source_ids:
+      - src_40f50554e81b40477766d18b3a1a9f15f7f6d116967b81e4727146f0012564a3
+offers:
+  - offer_id: off_01m0x4hx2ktxwmy3pntj132m9j
+    program_id: prg_01m0x4hx2kh5v5knfj9yrq7qch
+    offer_slug: up-to-100k-api-credits
+    offer_slug_aliases: []
+    title: Up to $100,000 in Terra API credits
+    summary: Accepted teams receive up to $100,000 in Terra API credits for up to six months, plus a named account manager and hands-on integration support.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-25T00:00:00.000Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_01
+          description: Up to $100,000 in Terra API credits for up to six months
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 10000000
+            kind: up-to
+          duration:
+            kind: up-to
+            value: P6M
+        - benefit_id: ben_02
+          description: Named account management and hands-on integration support
+          kind: free-service
+          service: account management and integration support
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: vendor-discretion
+            statement: Applicant is an early-stage team building a product where health data is central.
+          - criterion_id: cri_02
+            kind: manual
+            reason: vendor-discretion
+            statement: Applicant has a working or near-working product, users, pilots, revenue, or a prototype with a credible path to market.
+          - criterion_id: cri_03
+            kind: manual
+            reason: vendor-discretion
+            statement: Applicant demonstrates technical depth and a business model with a credible path to afford Terra after the accelerator.
+    roles:
+      terms_authority_entity_id: ent_01m0x4hx2ed4gm605a8eatywek
+      access_operator_entity_id: ent_01m0x4hx2ed4gm605a8eatywek
+    access:
+      availability: public
+      method: form
+      url: https://tryterra.co/accelerator
+    source_ids:
+      - src_40f50554e81b40477766d18b3a1a9f15f7f6d116967b81e4727146f0012564a3
