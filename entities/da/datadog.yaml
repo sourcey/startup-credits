@@ -22,23 +22,26 @@ offers:
     offer_slug: datadog-for-startups
     offer_slug_aliases: []
     title: Datadog for Startups
-    summary: Datadog for Startups provides early-stage companies up to a year of free access to the complete Datadog platform, providing up to $100,000 in credits.
+    summary: Up to $100,000 in credits for a year of free access to the complete Datadog platform — no watered-down tiers or hidden limits.
     lifecycle:
       status: active
       effective_from: 2026-07-27T07:40:35.276Z
     economics:
       consideration:
-        kind: unknown
-        description: The source record did not establish separate consideration.
+        kind: free
+        description: Complimentary access; no monetary payment required.
       benefits:
         - benefit_id: ben_primary
-          description: Up to $100,000 in credits (up to 1 year free)
+          description: Up to $100,000 in credits covering the full Datadog platform for up to one year, with all GA products and any products that GA during the program term — no tier restrictions or hidden limits.
+          kind: other
+        - benefit_id: ben_onboarding
+          description: Optional TEM (technical engagement manager) for personalized onboarding support.
           kind: other
     eligibility:
       rule:
         kind: manual
         criterion_id: cri_requirement_01
-        statement: Must be Series A or earlier, referred by an official referral partner, and new to Datadog (no current/past customer status or prior DDFS credits).
+        statement: Must be Series A or earlier, referred by an official referral partner (VCs, hyperscalers, or vendor partner startup programs), and new to Datadog — no current or prior customer status, and no prior DDFS credits.
         reason: not-machine-evaluable
     roles:
       terms_authority_entity_id: ent_01kyh8fpe2hwmmvk3eex1hq433

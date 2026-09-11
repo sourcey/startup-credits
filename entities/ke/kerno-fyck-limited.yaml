@@ -1,0 +1,63 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1tk3d8rt3z4dqjm63xgn2q3
+  slug: kerno-fyck-limited
+  slug_aliases: []
+  name: Kerno (FYCK Limited)
+  domains:
+  - value: kerno.io
+    role: primary
+    valid_from: '2026-09-06T05:29:47.000Z'
+  category: devtools-other
+profile:
+  description: Kerno (FYCK Limited) startup program offering credits for early-stage
+    companies.
+  links:
+    site: https://kerno.io
+sources:
+- source_id: src_0a9ee348639d158b1f9502158c9612aff0d61f06ea2cb45f76e70b4def03086a
+  url: https://www.kerno.io/pricing/
+- source_id: src_8f0834f1ef1c380e61e0a1dc628df16da3f3655d7be0396b89906628aeb52f58
+  url: https://www.kerno.io/terms/
+programs: []
+offers:
+- offer_id: off_01m1tk3e893jfj6gy188thvwq7
+  offer_slug: kerno-fyck-limited-startup-discount
+  offer_slug_aliases: []
+  title: Kerno (FYCK Limited) Startup Discount
+  summary: 50% discount for pre-Series A startups with revenue under $2 million over
+    the preceding12 months. No duration, seat limit or ISO currency is assumed beyond
+    the vendor's published terms. One standalone Offer is intended.
+  lifecycle:
+    status: active
+    effective_from: '2026-09-06T05:29:48.000Z'
+  economics:
+    consideration:
+      kind: unknown
+      description: Contact sales for pricing details.
+    benefits:
+    - benefit_id: ben_primary
+      description: 50% discount for 12 months
+      kind: discount
+      percentage:
+        kind: exact
+        basis_points: 5000
+      duration:
+        kind: exact
+        value: P1Y
+  eligibility:
+    rule:
+      kind: manual
+      criterion_id: cri_requirement
+      statement: Must qualify as a startup. Contact sales for eligibility details.
+      reason: not-machine-evaluable
+  roles:
+    terms_authority_entity_id: ent_01m1tk3d8rt3z4dqjm63xgn2q3
+    access_operator_entity_id: ent_01m1tk3d8rt3z4dqjm63xgn2q3
+  access:
+    availability: public
+    method: contact
+    url: https://www.kerno.io/terms/
+  source_ids:
+  - src_0a9ee348639d158b1f9502158c9612aff0d61f06ea2cb45f76e70b4def03086a
+  - src_8f0834f1ef1c380e61e0a1dc628df16da3f3655d7be0396b89906628aeb52f58

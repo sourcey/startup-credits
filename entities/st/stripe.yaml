@@ -18,6 +18,8 @@ sources:
     url: https://stripe.com/startups
   - source_id: src_5af15c175b972ada7f6e0487dc9385f214ca5825c52bf7ecdb54e53d1946183d
     url: https://pulley.com/perks
+  - source_id: src_35221a7b3c8af87ce71df3d188b46a1f8ab72c6a9811f7e8228e08554e5f40f2
+    url: https://stripe.com/atlas
 programs:
   - program_id: prg_01kyygma8309wepbqk3a8d21wm
     program_slug: stripe-startup-programme
@@ -26,6 +28,13 @@ programs:
     summary: Designed to support venture-backed businesses with financial benefits, exclusive discounts, community, and expert resources.
     source_ids:
       - src_4410dda4d44891aad0cc0b21bb409ed3d27032c5bc1852a256708b3df0b1ff45
+  - program_id: prg_01m1sta48bx3mxew5nd6k7fmmm
+    program_slug: stripe-atlas
+    program_slug_aliases: []
+    title: Stripe Atlas
+    summary: Stripe Atlas helps entrepreneurs incorporate a US company in Delaware, get an EIN, issue equity, and access banking and payment tools.
+    source_ids:
+      - src_35221a7b3c8af87ce71df3d188b46a1f8ab72c6a9811f7e8228e08554e5f40f2
 offers:
   - offer_id: off_01kyygma8386545a4wn8g6q28y
     program_id: prg_01kyygma8309wepbqk3a8d21wm
@@ -101,3 +110,62 @@ offers:
       method: other
     source_ids:
       - src_5af15c175b972ada7f6e0487dc9385f214ca5825c52bf7ecdb54e53d1946183d
+  - offer_id: off_01m1sta48rey2ts0kwk9zsxngm
+    program_id: prg_01m1sta48bx3mxew5nd6k7fmmm
+    offer_slug: stripe-atlas-incorporation
+    offer_slug_aliases: []
+    title: Stripe Atlas Incorporation
+    summary: Incorporate a Delaware C corporation or LLC through Stripe Atlas for $500, including state filing fees, expedited processing, EIN, equity issuance, and 83(b) election filing, plus $2,500 in Stripe credits and $50,000+ in startup tool discounts.
+    lifecycle:
+      status: active
+      effective_from: 2026-07-31T23:19:01.190Z
+    economics:
+      benefits:
+        - benefit_id: ben_1
+          description: Company incorporation in Delaware (C corporation or LLC) with next-day expedited processing and state filing fees
+          kind: other
+        - benefit_id: ben_2
+          description: Company tax ID (EIN) issuance
+          kind: other
+        - benefit_id: ben_3
+          description: Founder equity issuance and share purchase agreement documents
+          kind: other
+        - benefit_id: ben_4
+          description: 83(b) election filing support and document templates created with Cooley LLP
+          kind: other
+        - benefit_id: ben_5
+          description: $2,500 in Stripe product credits for use in the first year after incorporation
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 250000
+            kind: exact
+        - benefit_id: ben_6
+          description: Over $50,000 in discounts on tools such as Mercury, Xero, AWS, and more
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 5000000
+            kind: at-least
+      consideration:
+        kind: fixed
+        amount:
+          currency: USD
+          minor_units: 50000
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: constant
+        statement: Open to any entrepreneur worldwide who wants to incorporate a US company.
+        value: true
+    roles:
+      terms_authority_entity_id: ent_01kyygma830fqh16kvj744sk1c
+      access_operator_entity_id: ent_01kyygma830fqh16kvj744sk1c
+    access:
+      availability: public
+      method: form
+      url: https://stripe.com/atlas
+    source_ids:
+      - src_35221a7b3c8af87ce71df3d188b46a1f8ab72c6a9811f7e8228e08554e5f40f2
