@@ -1,0 +1,69 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m11t6mphjd89xpq20mn7sxgx
+  slug: heygen
+  slug_aliases: []
+  name: HeyGen
+  domains:
+    - value: heygen.com
+      role: primary
+      valid_from: 2026-08-27T00:00:00.000Z
+  category: ai-ml
+profile:
+  description: HeyGen provides an AI video generation platform that enables startups to create custom avatars, product demos, pitch videos, and localized content at scale.
+  links:
+    site: https://www.heygen.com
+sources:
+  - source_id: src_05acefc8ba245ad49bfc73dfd6e0cd4133b590fec1fd3bc1c785bfa6047fd02b
+    url: https://www.heygen.com/startups
+programs:
+  - program_id: prg_01m11t6mppr2t932batt65gd44
+    program_slug: heygen-for-startups
+    program_slug_aliases: []
+    title: HeyGen for Startups
+    summary: HeyGen for Startups offers eligible venture-backed and accelerator-graduated early-stage companies significant discounts on its AI video generation platform.
+    source_ids:
+      - src_05acefc8ba245ad49bfc73dfd6e0cd4133b590fec1fd3bc1c785bfa6047fd02b
+offers:
+  - offer_id: off_01m11t6mppetjjwgv021g39290
+    program_id: prg_01m11t6mppr2t932batt65gd44
+    offer_slug: heygen-startup-discount
+    offer_slug_aliases: []
+    title: HeyGen for Startups program discount
+    summary: Eligible early-stage startups receive discounted access to HeyGen's AI video generation platform for product demos, pitch videos, and global localization.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-27T00:00:00.000Z
+    economics:
+      benefits:
+        - applies_to: HeyGen platform plans
+          benefit_id: ben_01
+          description: Discounted pricing and access to HeyGen AI video generation tools for pitch videos, product demos, and localization
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 7500
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: any
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: external-verification
+            statement: Startup has graduated from a recognized accelerator or is venture-backed.
+          - criterion_id: cri_02
+            kind: manual
+            reason: external-verification
+            statement: Startup is in early-stage development (pre-Series B).
+    roles:
+      terms_authority_entity_id: ent_01m11t6mphjd89xpq20mn7sxgx
+      access_operator_entity_id: ent_01m11t6mphjd89xpq20mn7sxgx
+    access:
+      availability: public
+      instructions: Apply through the official HeyGen startups page to verify accelerator or VC backing.
+      method: form
+      url: https://www.heygen.com/startups
+    source_ids:
+      - src_05acefc8ba245ad49bfc73dfd6e0cd4133b590fec1fd3bc1c785bfa6047fd02b
