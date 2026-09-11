@@ -1,0 +1,67 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m26j61ef7s9ycdd42h7r4y2z
+  slug: supabase
+  slug_aliases: []
+  name: Supabase
+  domains:
+    - value: supabase.com
+      role: primary
+      valid_from: 2026-09-10T00:00:00.000Z
+  category: developer-tools
+profile:
+  description: Supabase is an open-source Firebase alternative built on Postgres, providing a complete backend platform with database, authentication, storage, edge functions, and real-time subscriptions for application development.
+  links:
+    site: https://supabase.com/solutions/startups
+sources:
+  - source_id: src_3ecb3e3ea758ac18ca511b55f99f958e67dd6fe21d0ed382ac23187fc46cd5c4
+    url: https://supabase.com/solutions/startups
+programs:
+  - program_id: prg_01m26j61ekcrjw7fhb4k4b28zd
+    program_slug: supabase-for-startups
+    program_slug_aliases: []
+    title: Supabase for Startups
+    summary: Provides early-stage startups with platform credits and free Pro plan access to build and scale backend infrastructure on Supabase's Postgres-based platform.
+    source_ids:
+      - src_3ecb3e3ea758ac18ca511b55f99f958e67dd6fe21d0ed382ac23187fc46cd5c4
+offers:
+  - offer_id: off_01m26j61ekpytm2s89hshgma78
+    program_id: prg_01m26j61ekcrjw7fhb4k4b28zd
+    offer_slug: supabase-launch-startups
+    offer_slug_aliases: []
+    title: Supabase Launch for Startups
+    summary: Eligible startups receive platform credits and free Pro plan access for 6 months, covering database, authentication, storage, edge functions, and real-time subscriptions.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-10T00:00:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Platform credits toward compute, storage, and usage overages
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 30000
+            kind: at-least
+        - benefit_id: ben_02
+          description: 6 months free on Pro plan (normally $25/month)
+          kind: free-service
+          service: Supabase Pro plan for 6 months
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        statement: Must be an early-stage startup with under $5M in total funding, founded within the last 3 years, and fewer than 10 employees. Access typically requires a referral from an approved partner, accelerator, or venture fund.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01m26j61ef7s9ycdd42h7r4y2z
+      access_operator_entity_id: ent_01m26j61ef7s9ycdd42h7r4y2z
+    access:
+      availability: membership
+      method: form
+      url: https://supabase.com/solutions/startups
+    source_ids:
+      - src_3ecb3e3ea758ac18ca511b55f99f958e67dd6fe21d0ed382ac23187fc46cd5c4
