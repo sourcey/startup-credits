@@ -16,5 +16,39 @@ profile:
 sources:
   - source_id: src_8b3cca7df388cc3512ce2f63771b5907f79342a1c62b86e217c778a55fab7872
     url: https://www.twilio.com/en-us
+  - source_id: src_01kyyts97tg62epymp01r8t62x
+    url: https://www.twilio.com/en-us/solutions/startups
 programs: []
-offers: []
+offers:
+  - offer_id: off_01m14fhx1gktp0a7nyhvhm33kj
+    offer_slug: twilio-startups
+    offer_slug_aliases: []
+    title: Twilio for Startups
+    summary: Early-stage startups can receive Twilio credits and discounted access
+      to the Twilio platform through the Twilio for Startups program.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-01T00:00:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Twilio credits toward the Twilio platform for eligible
+            early-stage startups.
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: constant
+        statement: Available to eligible early-stage startups through the Twilio
+          for Startups program.
+        value: true
+    roles:
+      terms_authority_entity_id: ent_01kyyts97tg62epymp01r8t62x
+      access_operator_entity_id: ent_01kyyts97tg62epymp01r8t62x
+    access:
+      availability: public
+      method: other
+    source_ids:
+      - src_01kyyts97tg62epymp01r8t62x
