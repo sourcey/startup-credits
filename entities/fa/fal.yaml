@@ -1,0 +1,70 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m0wkwfwx84qb4gc5z6cgecf5
+  slug: fal
+  slug_aliases: []
+  name: fal
+  domains:
+    - value: fal.ai
+      role: primary
+      valid_from: 2026-08-25T00:00:00.000Z
+  category: ai-ml
+profile:
+  description: fal is a generative media inference platform that serves more than 1,000 image, video, audio, and 3D models through a single API.
+  links:
+    site: https://fal.ai
+sources:
+  - source_id: src_84b7c02a912a03695e93dd33fd8b215a2cbcde0bad5786e6c0b5c9bacb0798a9
+    url: https://fal.ai/
+  - source_id: src_99c803c2483c0b0bfac53d262eeb074304cd05837ca92fa3022a944fb4cda439
+    url: https://fal.ai/startups
+programs: []
+offers:
+  - offer_id: off_01m0wkwfwzytq3g5vpjzeq1qyh
+    offer_slug: startup-program-credits
+    offer_slug_aliases: []
+    title: fal Startup Program credits
+    summary: Scaling startups building generative media on fal receive $1,000 in platform credits at approval and can grow the allocation to $5,000 as monthly usage crosses each threshold; partner perks are included.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-25T00:00:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Platform credits starting at $1,000 USD and growing to a maximum of $5,000 USD as the company's monthly spend on fal crosses each program threshold, applicable to fal usage-based pricing.
+          kind: credit
+          value:
+            kind: range
+            maximum:
+              currency: USD
+              minor_units: 500000
+            minimum:
+              currency: USD
+              minor_units: 100000
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: external-verification
+            statement: Company must be scaling generative media workloads on fal with proven traction or venture backing.
+          - criterion_id: cri_02
+            kind: manual
+            reason: not-machine-evaluable
+            statement: Team must be based in Europe or Asia.
+          - criterion_id: cri_03
+            kind: manual
+            reason: external-verification
+            statement: One program per company; companies already receiving the Builder Grant are not eligible for this program.
+    roles:
+      terms_authority_entity_id: ent_01m0wkwfwx84qb4gc5z6cgecf5
+      access_operator_entity_id: ent_01m0wkwfwx84qb4gc5z6cgecf5
+    access:
+      availability: public
+      method: form
+      url: https://fal.ai/startups
+    source_ids:
+      - src_99c803c2483c0b0bfac53d262eeb074304cd05837ca92fa3022a944fb4cda439
