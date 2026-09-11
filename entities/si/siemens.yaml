@@ -1,0 +1,98 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m187g09rd7b79n07pfjsp4zp
+  slug: siemens
+  slug_aliases: []
+  name: Siemens
+  domains:
+    - value: siemens.com
+      role: primary
+      valid_from: 2026-08-30T02:20:48Z
+  category: design
+profile:
+  description: Siemens provides industrial software and technology, including Solid Edge tools for product design, simulation, manufacturing, and data management.
+  links:
+    site: https://www.siemens.com
+sources:
+  - source_id: src_84c3e9f1872bfb34d2e295b3fb6e5900f7911e93a2435b663ad257502da3a6ff
+    url: https://resources.sw.siemens.com/en-US/solid-edge-for-startups/
+programs:
+  - program_id: prg_01m187g09tba0y01tjszf251dy
+    program_slug: solid-edge-for-startups
+    program_slug_aliases: []
+    title: Solid Edge for Startups
+    summary: Siemens provides eligible early-stage design firms and product manufacturers with free access to Solid Edge software and startup support resources.
+    source_ids:
+      - src_84c3e9f1872bfb34d2e295b3fb6e5900f7911e93a2435b663ad257502da3a6ff
+offers:
+  - offer_id: off_01m187g09t6ha3p0tr684vnyp1
+    program_id: prg_01m187g09tba0y01tjszf251dy
+    offer_slug: solid-edge-for-startups-free-year
+    offer_slug_aliases: []
+    title: Solid Edge for Startups Free Year
+    summary: Eligible startups receive one year of Solid Edge software at no cost, plus training, product-expert guidance, best-practice resources, and co-marketing opportunities.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-30T02:20:48Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: One year of Solid Edge software at no cost
+          duration:
+            kind: exact
+            value: P1Y
+          kind: free-service
+          service: Solid Edge software
+        - benefit_id: ben_02
+          description: Access to Solid Edge training resources and guidance from a community of product experts
+          kind: other
+        - benefit_id: ben_03
+          description: Best-practice resources and co-marketing opportunities
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: not-machine-evaluable
+            statement: Applicant is a design firm or product manufacturer
+          - criterion_id: cri_02
+            fact: company.age_months
+            kind: predicate
+            operator: lte
+            statement: Legal entity has been in business for three years or less
+            value:
+              type: number
+              value: 36
+          - criterion_id: cri_03
+            fact: company.funding_raised_usd
+            kind: predicate
+            operator: lt
+            statement: Funding is less than $1 million USD
+            value:
+              type: number
+              value: 1000000
+          - criterion_id: cri_04
+            fact: company.annual_revenue_usd
+            kind: predicate
+            operator: lt
+            statement: Annual revenue is less than $1 million USD
+            value:
+              type: number
+              value: 1000000
+          - criterion_id: cri_05
+            kind: manual
+            reason: vendor-discretion
+            statement: Application is subject to Siemens eligibility review
+    roles:
+      terms_authority_entity_id: ent_01m187g09rd7b79n07pfjsp4zp
+      access_operator_entity_id: ent_01m187g09rd7b79n07pfjsp4zp
+    access:
+      availability: public
+      method: form
+      url: https://resources.sw.siemens.com/en-US/solid-edge-for-startups/
+    source_ids:
+      - src_84c3e9f1872bfb34d2e295b3fb6e5900f7911e93a2435b663ad257502da3a6ff
