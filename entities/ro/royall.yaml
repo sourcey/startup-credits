@@ -1,0 +1,116 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m14n28g7jnm67efvmg2av53k
+  slug: royall
+  slug_aliases: []
+  name: Royall
+  domains:
+    - value: royall.ai
+      role: primary
+      valid_from: 2026-08-28T17:01:02.524Z
+  category: auth-security
+profile:
+  description: Royall provides identity resolution, real-time consent checks, and license routing for products that use people's faces, voices, names, or likenesses.
+  links:
+    site: https://royall.ai
+sources:
+  - source_id: src_d311d40a6a94d33239d91f25661bf6554cb43f3f98e25f8896affacc0c23d619
+    url: https://royall.ai/startups
+  - source_id: src_1c672af63e70560a710c9b10fa1b6bfeea170ba9bdcd0c28e386cc56fe7919e1
+    url: https://vault.royall.ai/legal/tos
+programs:
+  - program_id: prg_01m14n28g7e0y637sjbzzf4tr7
+    program_slug: royall-for-startups
+    program_slug_aliases: []
+    title: Royall for Startups
+    summary: Eligible early-stage AI startups receive full production access to Royall's consent and licensing API free for 12 months.
+    source_ids:
+      - src_d311d40a6a94d33239d91f25661bf6554cb43f3f98e25f8896affacc0c23d619
+offers:
+  - offer_id: off_01m14n28g772gyr8b8ksgxbk4n
+    program_id: prg_01m14n28g7e0y637sjbzzf4tr7
+    offer_slug: twelve-months-free-full-production-api-access
+    offer_slug_aliases: []
+    title: Twelve months free Royall API access
+    summary: Eligible early-stage AI startups receive full production Royall API access free for 12 months, including consent checks, identity resolution, licensing, and webhooks.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-28T17:01:02.524Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_01
+          description: Full production Royall API access free for 12 months with consent checks, identity resolution, licensing, webhooks, sandbox, and live keys
+          kind: free-service
+          service: Royall API
+          duration:
+            kind: exact
+            value: P1Y
+        - benefit_id: ben_02
+          description: Shared Slack channel, integration reviews, and direct onboarding assistance
+          kind: other
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - kind: any
+            rules:
+              - criterion_id: cri_01
+                fact: company.funding_raised_usd
+                kind: predicate
+                operator: lt
+                statement: Company has raised less than $3,000,000.
+                value:
+                  type: number
+                  value: 3000000
+              - criterion_id: cri_02
+                fact: company.funding_stage
+                kind: predicate
+                operator: in
+                statement: Company is at pre-seed or seed stage.
+                value:
+                  type: string-set
+                  values:
+                    - pre-seed
+                    - seed
+          - criterion_id: cri_03
+            fact: company.employee_count
+            kind: predicate
+            operator: lt
+            statement: Company has fewer than 15 employees.
+            value:
+              type: number
+              value: 15
+          - criterion_id: cri_04
+            fact: company.age_years
+            kind: predicate
+            operator: lt
+            statement: Company was founded within the last three years.
+            value:
+              type: number
+              value: 3
+          - criterion_id: cri_05
+            kind: manual
+            reason: external-verification
+            statement: Company is building a product that generates, hosts, or authenticates media featuring real people.
+          - criterion_id: cri_06
+            fact: company.is_current_customer
+            kind: predicate
+            operator: eq
+            statement: Company is not currently a paying Royall customer.
+            value:
+              type: boolean
+              value: false
+    roles:
+      terms_authority_entity_id: ent_01m14n28g7jnm67efvmg2av53k
+      access_operator_entity_id: ent_01m14n28g7jnm67efvmg2av53k
+    access:
+      availability: public
+      method: form
+      url: https://royall.ai/startups
+    terms_url: https://vault.royall.ai/legal/tos
+    source_ids:
+      - src_d311d40a6a94d33239d91f25661bf6554cb43f3f98e25f8896affacc0c23d619
+      - src_1c672af63e70560a710c9b10fa1b6bfeea170ba9bdcd0c28e386cc56fe7919e1
+
