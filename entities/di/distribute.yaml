@@ -1,0 +1,91 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m11nxtqwtwggytan8n7b7xe9
+  slug: distribute
+  slug_aliases: []
+  name: Distribute
+  domains:
+    - value: distribute.app
+      role: primary
+      valid_from: 2026-08-27T13:17:00.000Z
+  category: hosting-infra
+profile:
+  description: Distribute provides cloud infrastructure for deploying applications, databases, AI models, serverless functions, and API gateways.
+  links:
+    site: https://distribute.app
+sources:
+  - source_id: src_24913241edfec3086865aeb460e44d6fab71c6dd3427a344b61ebf06a5b77513
+    url: https://distribute.app/startup-program
+  - source_id: src_1733a41f8a534a7e9ea8c1dc417ee112650122b599ca4ca22b7dcb016c6a90d0
+    url: https://distribute.app/startup-credits
+programs:
+  - program_id: prg_01m11nxtqypjcptx65e7k4jbcb
+    program_slug: distribute-startup-program
+    program_slug_aliases: []
+    title: Distribute Startup Program
+    summary: Distribute's program provides stage-scaled cloud credits and application review for early-stage teams deploying apps, databases, and AI workloads in or for the EU.
+    source_ids:
+      - src_24913241edfec3086865aeb460e44d6fab71c6dd3427a344b61ebf06a5b77513
+      - src_1733a41f8a534a7e9ea8c1dc417ee112650122b599ca4ca22b7dcb016c6a90d0
+offers:
+  - offer_id: off_01m11nxtqygbvzj2w44f0yssj7
+    program_id: prg_01m11nxtqypjcptx65e7k4jbcb
+    offer_slug: startup-cloud-credits
+    offer_slug_aliases: []
+    title: $100 to $5,000+ in Distribute startup credits
+    summary: Approved early-stage teams receive $100 to $5,000 or more in credits, scaled by company stage, for apps, databases, AI Studio, and other Distribute platform services.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-27T13:17:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Stage-scaled Distribute platform credits ranging from $100 for an idea or prototype, $500 for MVP runway, and $1,000+ for a scaling team, with awards reaching $5,000+
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.stage
+            kind: predicate
+            operator: in
+            statement: Company must be at pre-seed or seed stage.
+            value:
+              type: string-set
+              values:
+                - pre-seed
+                - seed
+          - criterion_id: cri_02
+            fact: company.age_months
+            kind: predicate
+            operator: lt
+            statement: Company must be less than 24 months old.
+            value:
+              type: number
+              value: 24
+          - criterion_id: cri_03
+            kind: manual
+            reason: external-verification
+            statement: Company must be raising funds or pre-revenue.
+          - criterion_id: cri_04
+            kind: manual
+            reason: external-verification
+            statement: Company must be building in the EU or planning to serve EU customers with sovereignty-compliant infrastructure.
+          - criterion_id: cri_05
+            kind: manual
+            reason: external-verification
+            statement: Company must have a working product beyond the prototype stage or be actively shipping to early users.
+    roles:
+      terms_authority_entity_id: ent_01m11nxtqwtwggytan8n7b7xe9
+      access_operator_entity_id: ent_01m11nxtqwtwggytan8n7b7xe9
+    access:
+      availability: public
+      instructions: Complete the startup credits form; create a Distribute account first if no username is available to credit.
+      method: form
+      url: https://distribute.app/startup-credits
+    source_ids:
+      - src_24913241edfec3086865aeb460e44d6fab71c6dd3427a344b61ebf06a5b77513
+      - src_1733a41f8a534a7e9ea8c1dc417ee112650122b599ca4ca22b7dcb016c6a90d0
