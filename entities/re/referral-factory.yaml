@@ -1,0 +1,69 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m0zpgrcv4ywnffqt37evv1wg
+  slug: referral-factory
+  slug_aliases: []
+  name: Referral Factory
+  domains:
+    - value: referral-factory.com
+      role: primary
+      valid_from: 2026-08-26T18:50:00.475Z
+  category: marketing
+profile:
+  description: Referral Factory is referral program software for launching, promoting, tracking, qualifying, and rewarding customer referrals.
+  links:
+    site: https://referral-factory.com
+sources:
+  - source_id: src_c8104fedf2f313559cfa58a4a7dd4393094a009a6d27ca3d3b336f3a8a01bcb5
+    url: https://referral-factory.com/startup-program
+programs:
+  - program_id: prg_01m0zpgrcvrk23bgrx7jx8wp2s
+    program_slug: referral-factory-startup-program
+    program_slug_aliases: []
+    title: Referral Factory Startup Program
+    summary: Referral Factory gives qualifying startups and small businesses 50% off an eligible subscription to its referral marketing platform.
+    source_ids:
+      - src_c8104fedf2f313559cfa58a4a7dd4393094a009a6d27ca3d3b336f3a8a01bcb5
+offers:
+  - offer_id: off_01m0zpgrcvw6rrcpasa0k50rhw
+    program_id: prg_01m0zpgrcvrk23bgrx7jx8wp2s
+    offer_slug: referral-factory-startup-50-percent-off
+    offer_slug_aliases: []
+    title: 50% Off Referral Factory
+    summary: Approved startups and small businesses receive 50% off a qualifying Referral Factory subscription.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-26T18:50:00.475Z
+    economics:
+      benefits:
+        - applies_to: qualifying Referral Factory subscription
+          benefit_id: ben_01
+          description: 50% off a qualifying Referral Factory subscription
+          kind: discount
+          percentage:
+            basis_points: 5000
+            kind: exact
+      consideration:
+        kind: variable
+        description: The applicant purchases an eligible subscription at the discounted price.
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: external-verification
+            statement: The applicant is a qualifying startup or small business
+          - criterion_id: cri_02
+            kind: manual
+            reason: external-verification
+            statement: Referral Factory approves the application after a human eligibility review
+    roles:
+      terms_authority_entity_id: ent_01m0zpgrcv4ywnffqt37evv1wg
+      access_operator_entity_id: ent_01m0zpgrcv4ywnffqt37evv1wg
+    access:
+      availability: public
+      method: form
+      url: https://referral-factory.com/startup-program
+    source_ids:
+      - src_c8104fedf2f313559cfa58a4a7dd4393094a009a6d27ca3d3b336f3a8a01bcb5
