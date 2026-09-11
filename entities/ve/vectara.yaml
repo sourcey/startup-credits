@@ -1,0 +1,62 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1tpd57gm3k7knzvaf6frnf4
+  slug: vectara
+  slug_aliases: []
+  name: Vectara
+  domains:
+    - value: vectara.com
+      role: primary
+      valid_from: 2026-09-06T06:27:32.000Z
+  category: ai-ml
+profile:
+  description: Vectara provides a serverless retrieval-augmented generation platform for building generative AI applications and products.
+  links:
+    site: https://www.vectara.com
+sources:
+  - source_id: src_0cce2836df390c02bc90f0b94cee80200d23a8f2b0ceeefe3a70a082764ca297
+    url: https://www.vectara.com/startups
+programs:
+  - program_id: prg_01m1tpd57jvhy8eyszz47vkd21
+    program_slug: startup-partnerships
+    program_slug_aliases: []
+    title: Vectara Startup Partnerships
+    summary: Vectara's startup program combines financial incentives with tailored enablement, onboarding, support, co-marketing, and go-to-market alignment.
+    source_ids:
+      - src_0cce2836df390c02bc90f0b94cee80200d23a8f2b0ceeefe3a70a082764ca297
+offers:
+  - offer_id: off_01m1tpd57kyxgygpakkfk50gzs
+    program_id: prg_01m1tpd57jvhy8eyszz47vkd21
+    offer_slug: vectara-startup-partnerships
+    offer_slug_aliases: []
+    title: Vectara Startup Partnerships
+    summary: Startups can apply for Vectara credits and discounts, tailored enablement and support, co-marketing support, and partner go-to-market alignment.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-06T06:27:32.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Vectara credits and discounts for participating startups.
+          kind: other
+        - benefit_id: ben_02
+          description: Tailored enablement, onboarding, support, co-marketing support, and partner go-to-market alignment.
+          kind: other
+      consideration:
+        kind: unknown
+        description: The source does not state whether separate consideration is required.
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: All startups are encouraged to submit an application, especially those developing generative AI and retrieval-augmented generation products.
+    roles:
+      terms_authority_entity_id: ent_01m1tpd57gm3k7knzvaf6frnf4
+      access_operator_entity_id: ent_01m1tpd57gm3k7knzvaf6frnf4
+    access:
+      availability: public
+      method: form
+      url: https://www.vectara.com/startups
+    source_ids:
+      - src_0cce2836df390c02bc90f0b94cee80200d23a8f2b0ceeefe3a70a082764ca297
