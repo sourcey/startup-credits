@@ -1,0 +1,87 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1axsbpg5p157117zpvhhhjc
+  slug: textexpander
+  slug_aliases: []
+  name: TextExpander
+  domains:
+    - value: textexpander.com
+      role: primary
+      valid_from: 2026-08-31T03:30:00.000Z
+  category: productivity
+profile:
+  description: TextExpander provides shared text snippets, templates, and AI recommendations that help teams reuse approved content across applications.
+  links:
+    site: https://textexpander.com
+sources:
+  - source_id: src_d0602515735722aac0d885815a865307738edcd29d3aac9dbb1be7e6b0e9d42a
+    url: https://textexpander.com/startups/apply
+programs:
+  - program_id: prg_01m1axsbpkpm4vnnj2mkt2tdne
+    program_slug: startup-program
+    program_slug_aliases: []
+    title: TextExpander Startup Program
+    summary: TextExpander offers eligible early-stage companies free access for one year for teams of up to 50 employees.
+    source_ids:
+      - src_d0602515735722aac0d885815a865307738edcd29d3aac9dbb1be7e6b0e9d42a
+offers:
+  - offer_id: off_01m1axsbpkt0mz9wrazt98tqcv
+    program_id: prg_01m1axsbpkpm4vnnj2mkt2tdne
+    offer_slug: one-year-free
+    offer_slug_aliases: []
+    title: One year of TextExpander free
+    summary: Eligible startups receive TextExpander free for one year for up to 50 employees.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-31T03:30:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: One year of TextExpander free for up to 50 employees
+          duration:
+            kind: exact
+            value: P1Y
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 10000
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.age_months
+            kind: predicate
+            operator: lt
+            statement: Company must be less than 5 years old.
+            value:
+              type: number
+              value: 60
+          - criterion_id: cri_02
+            kind: manual
+            reason: external-verification
+            statement: Company must be affiliated with a recognized accelerator, incubator, or venture capital firm portfolio.
+          - criterion_id: cri_03
+            fact: company.funding_raised_usd
+            kind: predicate
+            operator: lte
+            statement: Company must have raised no more than $20 million and be no later than Series A.
+            value:
+              type: number
+              value: 20000000
+          - criterion_id: cri_04
+            kind: manual
+            reason: not-machine-evaluable
+            statement: Company must be a brand-new TextExpander customer.
+    roles:
+      terms_authority_entity_id: ent_01m1axsbpg5p157117zpvhhhjc
+      access_operator_entity_id: ent_01m1axsbpg5p157117zpvhhhjc
+    access:
+      availability: public
+      method: form
+      url: https://textexpander.com/startups/apply
+    terms_url: https://textexpander.com/startups/apply
+    source_ids:
+      - src_d0602515735722aac0d885815a865307738edcd29d3aac9dbb1be7e6b0e9d42a
