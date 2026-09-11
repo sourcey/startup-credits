@@ -1,0 +1,71 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1yy416v3p69s2kcgg3jbh3r
+  slug: dlh
+  slug_aliases:
+    - datalakehouse
+    - dlh-io
+  name: DLH.io
+  domains:
+    - value: datalakehouse.io
+      role: primary
+      valid_from: 2026-09-07T21:51:00.000Z
+    - value: dlh.io
+      role: alias
+      valid_from: 2026-09-07T21:51:00.000Z
+  category: data-analytics
+profile:
+  summary: DLH.io provides data integration and AI tooling that connects startups to platforms such as Snowflake, Databricks, BigQuery, Athena, Fabric, and MotherDuck.
+  description: DLH.io (DataLakeHouse) is a data and AI platform that helps early-stage teams connect to warehouse and lakehouse systems, use connectors and AI features, and operationalize data workflows.
+  links:
+    site: https://datalakehouse.io/
+sources:
+  - source_id: src_a9da2a3353e5461f736a4c8286b779d49231f323f11a28d222f098633bce3fc3
+    url: https://datalakehouse.io/startups
+programs:
+  - program_id: prg_01m1yy416v1h0any2t9sfp7mxt
+    program_slug: dlh-startup-program
+    program_slug_aliases:
+      - startups
+    title: DLH.io Startup Program
+    summary: DLH.io offers qualifying startups up to USD 50,000 in credits across published self-funded and venture-backed tracks, plus onboarding and support benefits.
+    source_ids:
+      - src_a9da2a3353e5461f736a4c8286b779d49231f323f11a28d222f098633bce3fc3
+offers:
+  - offer_id: off_01m1yy416vaxsejkzd9s5tktpd
+    program_id: prg_01m1yy416v1h0any2t9sfp7mxt
+    offer_slug: startup-program-credits
+    offer_slug_aliases: []
+    title: DLH.io Startup Program credits
+    summary: Qualifying startups can receive up to $50,000 in DLH.io credits and dedicated onboarding support under the published Startup Program tracks.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T21:51:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to $50,000 in DLH.io credits
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 5000000
+            kind: up-to
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_01
+        reason: vendor-discretion
+        statement: Qualifying startups under the published DLH.io Startup Program tracks may apply.
+    roles:
+      terms_authority_entity_id: ent_01m1yy416v3p69s2kcgg3jbh3r
+      access_operator_entity_id: ent_01m1yy416v3p69s2kcgg3jbh3r
+    access:
+      availability: public
+      method: form
+      url: https://datalakehouse.io/startups
+      instructions: Open the DLH.io Startups page and submit the Apply Now application form, or ask an investor to refer the company.
+    source_ids:
+      - src_a9da2a3353e5461f736a4c8286b779d49231f323f11a28d222f098633bce3fc3
