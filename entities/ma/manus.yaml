@@ -1,0 +1,63 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_bmhtqhfcks7z3w7adz6q1eyjmy
+  slug: manus
+  slug_aliases: []
+  name: Manus
+  domains:
+    - value: manus.im
+      role: primary
+      valid_from: 2026-09-01T06:35:28.316Z
+  category: ai-ml
+profile:
+  summary: General-purpose AI agent platform for multi-step digital work.
+  description: Manus is a general-purpose artificial intelligence agent platform that carries out multi-step digital tasks for individuals and teams.
+  links:
+    site: https://manus.im/
+sources:
+  - source_id: src_f66878a7fb571dd10ae7b4d72a516402513338010350ac0562d8b70b9bbb4f4a
+    url: https://events.manus.im/startups
+programs:
+  - program_id: prg_hrv7k160pxx3qv90g44nh6qff5
+    program_slug: manus-for-startups
+    program_slug_aliases: []
+    title: Manus for Startups
+    summary: Manus gives eligible venture-backed startups six months of Manus Team for up to 20 seats through its VC and accelerator partner network.
+    source_ids:
+      - src_f66878a7fb571dd10ae7b4d72a516402513338010350ac0562d8b70b9bbb4f4a
+offers:
+  - offer_id: off_9yryrbmfgp9kz0zappcpggvw7y
+    program_id: prg_hrv7k160pxx3qv90g44nh6qff5
+    offer_slug: six-months-manus-team-up-to-twenty-seats
+    offer_slug_aliases: []
+    title: Six Months of Manus Team for Up to 20 Seats
+    summary: Eligible startups receive six months of the Manus Team subscription for up to 20 seats, a benefit Manus values at $4,800.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-01T06:35:28.316Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 6 months of Team Subscription for up to 20 seats
+          duration:
+            kind: exact
+            value: P6M
+          kind: free-service
+          service: Manus Team
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: external-verification
+        statement: At this time, we are only accepting new applications via our VC partner network.
+    roles:
+      terms_authority_entity_id: ent_bmhtqhfcks7z3w7adz6q1eyjmy
+      access_operator_entity_id: ent_bmhtqhfcks7z3w7adz6q1eyjmy
+    access:
+      availability: referral
+      method: other
+      instructions: Ask a participating lead investor or accelerator for its Manus for Startups referral link; open applications are currently paused.
+    source_ids:
+      - src_f66878a7fb571dd10ae7b4d72a516402513338010350ac0562d8b70b9bbb4f4a
