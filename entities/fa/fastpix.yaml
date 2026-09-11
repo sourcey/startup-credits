@@ -1,0 +1,92 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1f7nxm3nsy8vat0hp862ssx
+  slug: fastpix
+  slug_aliases: []
+  name: FastPix
+  domains:
+    - value: fastpix.com
+      role: primary
+      valid_from: 2026-09-01T19:38:00.000Z
+  category: hosting-infra
+profile:
+  description: FastPix is a video API platform for encoding, storage, streaming, transformations, analytics, and related developer tools.
+  links:
+    site: https://fastpix.com
+sources:
+  - source_id: src_8671e1786f44b7bf3740e870b35efe0c9a7b8f6707bf25e34223f612c59ed20d
+    url: https://fastpix.com/startup-program
+programs:
+  - program_id: prg_01m1f7nxmayfyf4neprqenvtbm
+    program_slug: fastpix-for-startups
+    program_slug_aliases: []
+    title: FastPix for Startups Program
+    summary: Eligible startups less than four years old with less than $10 million in funding get $600 in FastPix credits for one year plus 100,000 Video Data views a month.
+    source_ids:
+      - src_8671e1786f44b7bf3740e870b35efe0c9a7b8f6707bf25e34223f612c59ed20d
+offers:
+  - offer_id: off_01m1f7nxmaja5bsray80b88exy
+    program_id: prg_01m1f7nxmayfyf4neprqenvtbm
+    offer_slug: six-hundred-credits-one-year
+    offer_slug_aliases: []
+    title: $600 in free credits for one year
+    summary: Startups less than four years old with less than $10 million in funding receive $600 in FastPix credits valid for one year from activation, 100,000 Video Data views a month, and $1,200 extra credits if they are Y Combinator or VC-backed.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-01T19:38:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: $600 in free FastPix credits
+          duration:
+            kind: exact
+            value: P1Y
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 60000
+            kind: exact
+        - benefit_id: ben_02
+          description: 100,000 Video Data views per month
+          kind: other
+        - benefit_id: ben_03
+          description: Additional $1,200 credits if the company is a Y Combinator company or has received VC funding
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: vendor-discretion
+            statement: Offer only valid for startups.
+          - criterion_id: cri_02
+            fact: company.age_months
+            kind: predicate
+            operator: lt
+            statement: The company must be less than 4 years old.
+            value:
+              type: number
+              value: 48
+          - criterion_id: cri_03
+            fact: company.funding_raised_usd
+            kind: predicate
+            operator: lt
+            statement: The startup must have less than $10 million in funding.
+            value:
+              type: number
+              value: 10000000
+    roles:
+      terms_authority_entity_id: ent_01m1f7nxm3nsy8vat0hp862ssx
+      access_operator_entity_id: ent_01m1f7nxm3nsy8vat0hp862ssx
+    access:
+      availability: public
+      instructions: Open the FastPix for Startups page and describe how the startup will use FastPix. FastPix says it reviews applications and emails accepted startups.
+      method: form
+      url: https://fastpix.com/startup-program
+    terms_url: https://fastpix.com/startup-program
+    source_ids:
+      - src_8671e1786f44b7bf3740e870b35efe0c9a7b8f6707bf25e34223f612c59ed20d
