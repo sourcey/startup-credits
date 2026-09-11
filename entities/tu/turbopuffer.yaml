@@ -1,0 +1,68 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_y312gb12x5ee43e6kftfb5b2qp
+  slug: turbopuffer
+  slug_aliases: []
+  name: turbopuffer
+  domains:
+    - value: turbopuffer.com
+      role: primary
+      valid_from: 2026-09-01T10:51:22.312Z
+  category: databases
+profile:
+  description: turbopuffer is a search engine for unstructured data built on object storage with a caching layer.
+  links:
+    site: https://turbopuffer.com
+sources:
+  - source_id: src_2f46f2e0a117ed5558a9d9513d217c36ddcddef5fde67ea334e2e4a2b2d1e1bf
+    url: https://turbopuffer.com/startups
+programs:
+  - program_id: prg_18trf4fastz24zk98qnnchgrqq
+    program_slug: turbopuffer-for-startups
+    program_slug_aliases: []
+    title: turbopuffer for startups
+    summary: turbopuffer offers platform credits to qualifying startups and scaleups through its partner network.
+    source_ids:
+      - src_2f46f2e0a117ed5558a9d9513d217c36ddcddef5fde67ea334e2e4a2b2d1e1bf
+offers:
+  - offer_id: off_aepsn116ms7sdr4ew6vt18gfwh
+    program_id: prg_18trf4fastz24zk98qnnchgrqq
+    offer_slug: startup-and-scaleup-credits
+    offer_slug_aliases: []
+    title: Up to $8,192 in turbopuffer credits for startups and scaleups
+    summary: Partner-referred startups receive $8,192 in credits; scaleups receive $2,048 in credits and a dedicated Slack channel.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-01T10:51:22.312Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_01
+          description: Up to $8,192 in turbopuffer credits according to the applicant's startup or scaleup tier
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 819200
+            kind: up-to
+        - benefit_id: ben_02
+          description: A dedicated Slack channel with turbopuffer for qualifying scaleups
+          kind: other
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        statement: Applicant must have a partner code. Startups with fewer than 50 employees and less than $50 million raised receive $8,192; larger scaleups receive $2,048 and a dedicated Slack channel.
+        reason: external-verification
+    roles:
+      terms_authority_entity_id: ent_y312gb12x5ee43e6kftfb5b2qp
+      access_operator_entity_id: ent_y312gb12x5ee43e6kftfb5b2qp
+    access:
+      availability: referral
+      instructions: Create a turbopuffer account, retrieve the organization ID from organization settings, and submit the public startup application using the code supplied by a shared turbopuffer partner.
+      method: form
+      url: https://turbopuffer.com/startups
+    terms_url: https://turbopuffer.com/startups
+    source_ids:
+      - src_2f46f2e0a117ed5558a9d9513d217c36ddcddef5fde67ea334e2e4a2b2d1e1bf
