@@ -1,0 +1,98 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1f9qg8nrgrq3zevx6qa4qx5
+  slug: novita
+  slug_aliases: []
+  name: Novita AI
+  domains:
+    - value: novita.ai
+      role: primary
+      valid_from: 2026-09-01T20:14:00.000Z
+  category: ai-ml
+profile:
+  description: Novita AI is a platform for Model APIs and Agent Sandbox covering LLM, image, video, voice, and related AI product workflows.
+  links:
+    site: https://novita.ai
+sources:
+  - source_id: src_7ccb12c52d3eb27d7e2b0d3309624b99bdd694bed906c148aae8dda6c9455286
+    url: https://startups.novita.ai/
+programs:
+  - program_id: prg_01m1f9qg8nssw829pkj85x9eja
+    program_slug: novita-ai-for-startups
+    program_slug_aliases: []
+    title: Novita AI for Startups
+    summary: Eligible venture-backed, AI-native startups at Series B or earlier that are new Novita users receive up to $10,000 in usage credits across Model APIs and Agent Sandbox, redeemable for one year.
+    source_ids:
+      - src_7ccb12c52d3eb27d7e2b0d3309624b99bdd694bed906c148aae8dda6c9455286
+offers:
+  - offer_id: off_01m1f9qg8n6e9yys0k6mdnkqxa
+    program_id: prg_01m1f9qg8nssw829pkj85x9eja
+    offer_slug: up-to-ten-thousand-usage-credits
+    offer_slug_aliases: []
+    title: Up to $10,000 in usage credits
+    summary: Venture-backed Series B or earlier AI-native startups that are new Novita users get up to $10,000 usage credits ($1,000 upfront; next $5,000 1:1; final $4,000 at 2:1), split across Agent Sandbox and Model API for one year.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-01T20:14:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to $10,000 in usage credits across Model APIs and Agent Sandbox
+          duration:
+            kind: exact
+            value: P1Y
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 1000000
+            kind: up-to
+        - benefit_id: ben_02
+          description: Up to $1,000 in credits upfront
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 100000
+            kind: up-to
+        - benefit_id: ben_03
+          description: Next $5,000 matched 1:1 (every $1 spent earns $1 credit)
+          kind: other
+        - benefit_id: ben_04
+          description: Final $4,000 at 2:1 spend (every $2 spent earns $1 credit)
+          kind: other
+        - benefit_id: ben_05
+          description: Credits split up to $5,000 for Agent Sandbox and up to $5,000 for Model API
+          kind: other
+        - benefit_id: ben_06
+          description: Dedicated support from Novita engineers and co-marketing spotlight across Novita channels
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: not-machine-evaluable
+            statement: The startup must be venture-backed and Series B or earlier.
+          - criterion_id: cri_02
+            kind: manual
+            reason: not-machine-evaluable
+            statement: The startup must have an AI-native product or platform.
+          - criterion_id: cri_03
+            kind: manual
+            reason: not-machine-evaluable
+            statement: The applicant must be a new Novita user.
+    roles:
+      terms_authority_entity_id: ent_01m1f9qg8nrgrq3zevx6qa4qx5
+      access_operator_entity_id: ent_01m1f9qg8nrgrq3zevx6qa4qx5
+    access:
+      availability: public
+      instructions: Open the Novita AI for Startups page and complete the Google Form application. Novita reviews stage, team, spend, backing, traction, and expected Model API or Agent Sandbox usage.
+      method: form
+      url: https://docs.google.com/forms/d/e/1FAIpQLSfU4-JTNobsrS24ZuTu6aGqN7nZxFgVFJc8JCQH7tAy624P4Q/viewform
+    terms_url: https://startups.novita.ai/
+    source_ids:
+      - src_7ccb12c52d3eb27d7e2b0d3309624b99bdd694bed906c148aae8dda6c9455286
