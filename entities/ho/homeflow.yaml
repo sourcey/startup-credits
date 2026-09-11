@@ -1,0 +1,58 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m14fnzdcg7xn3qryebphbtqn
+  slug: homeflow
+  slug_aliases: []
+  name: Homeflow
+  domains:
+    - value: homeflow.co.uk
+      role: primary
+      valid_from: 2026-08-28T00:00:00.000Z
+  category: marketing
+profile:
+  description: Homeflow provides websites, online valuation lead generation, and lead-management software for estate agencies.
+  links:
+    site: https://www.homeflow.co.uk
+sources:
+  - source_id: src_91364e5867536766574b87e18132d94f68cd43f721459989a834ea7d25228a4d
+    url: https://www.homeflow.co.uk/startup-estate-agencies
+programs: []
+offers:
+  - offer_id: off_01m14fnzdck21zvzf5q3w5bajb
+    offer_slug: startup-estate-agency-monthly-fee-discount
+    offer_slug_aliases: []
+    title: 50% off monthly fees for startup estate agencies
+    summary: Startup estate agencies receive 50% off Homeflow monthly fees for 12 months, with no obligation after the discounted period.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-28T00:00:00.000Z
+    economics:
+      benefits:
+        - applies_to: Homeflow monthly fees
+          benefit_id: ben_01
+          description: 50% discount on monthly fees for 12 months
+          duration:
+            kind: exact
+            value: P12M
+          kind: discount
+          percentage:
+            basis_points: 5000
+            kind: exact
+      consideration:
+        kind: unknown
+        description: The startup page does not publish the underlying monthly fee amount.
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_01
+        reason: not-machine-evaluable
+        statement: Offer is for startup estate agencies.
+    roles:
+      terms_authority_entity_id: ent_01m14fnzdcg7xn3qryebphbtqn
+      access_operator_entity_id: ent_01m14fnzdcg7xn3qryebphbtqn
+    access:
+      availability: public
+      method: contact
+      url: https://www.homeflow.co.uk/startup-estate-agencies
+    source_ids:
+      - src_91364e5867536766574b87e18132d94f68cd43f721459989a834ea7d25228a4d
