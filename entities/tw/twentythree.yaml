@@ -1,0 +1,67 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1w607s83r4jjk913t1q0756
+  slug: twentythree
+  slug_aliases:
+    - twenty-three
+  name: TwentyThree
+  domains:
+    - value: twentythree.com
+      role: primary
+      valid_from: 2026-09-06T20:20:00.000Z
+  category: marketing
+profile:
+  summary: European video marketing platform for webinars, video libraries, and product storytelling.
+  description: TwentyThree is a European video marketing platform for webinars, video libraries, branding, and product storytelling.
+  links:
+    site: https://www.twentythree.com
+sources:
+  - source_id: src_e616d9d7466a8c34a294e998f4031ecdeaadef94e82e28ac1491c5462fdb98da
+    url: https://video.twentythree.com/twentythree-summit-keynote-2026
+programs:
+  - program_id: prg_01m1w607s8cm4srxvrdh2ma9z8
+    program_slug: twentythree-startup-program
+    program_slug_aliases: []
+    title: TwentyThree Startup Program
+    summary: TwentyThree Startup Program gives eligible European startups less than three years old 10,000 Euro in platform credits, granted through venture-capital or agency partners.
+    source_ids:
+      - src_e616d9d7466a8c34a294e998f4031ecdeaadef94e82e28ac1491c5462fdb98da
+offers:
+  - offer_id: off_01m1w607s88g5rgsc4cmpdde66
+    program_id: prg_01m1w607s8cm4srxvrdh2ma9z8
+    offer_slug: 10000-euro-credits
+    offer_slug_aliases: []
+    title: 10,000 Euro in TwentyThree credits
+    summary: Eligible European startups less than three years old receive 10,000 Euro in TwentyThree credits, granted through a venture capitalist or TwentyThree agency partner.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-06T20:20:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 10,000 Euro in credits
+          kind: credit
+          value:
+            amount:
+              currency: EUR
+              minor_units: 1000000
+            kind: exact
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: not-machine-evaluable
+        statement: The company is a European bootstrap or venture-funded startup less than three years old that is just about getting going, and receives the credits through a venture capitalist or TwentyThree agency partners that can grant the credits.
+    roles:
+      terms_authority_entity_id: ent_01m1w607s83r4jjk913t1q0756
+      access_operator_entity_id: ent_01m1w607s83r4jjk913t1q0756
+    access:
+      availability: other
+      method: other
+      instructions: Request TwentyThree Startup Program credits through a participating venture capitalist or TwentyThree agency partner that can grant the 10,000 Euro credit package to an eligible European startup less than three years old. Program details were announced in the first-party TwentyThree Summit 2026 keynote.
+      url: https://video.twentythree.com/twentythree-summit-keynote-2026
+    terms_url: https://video.twentythree.com/twentythree-summit-keynote-2026
+    source_ids:
+      - src_e616d9d7466a8c34a294e998f4031ecdeaadef94e82e28ac1491c5462fdb98da
