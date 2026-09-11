@@ -1,0 +1,111 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1v5cnp5b88ag4mbmqd6nqn4
+  slug: crococlick
+  slug_aliases: []
+  name: CrocoClick
+  domains:
+    - value: crococlick.com
+      role: primary
+      valid_from: 2026-09-06T10:49:25.674Z
+  category: crm-sales
+profile:
+  summary: CrocoClick combines CRM, websites, billing, and marketing automation.
+  description: CrocoClick provides CRM, websites, billing, calendars, and marketing automation software.
+  links:
+    site: https://crococlick.com
+sources:
+  - source_id: src_81a5fd9ed80b22cce4d473c20bb0504d05d726fbebfee20e8253a327ae9eebad
+    url: https://help.crococlick.com/articles/0820414-crococlick-startup-program
+programs:
+  - program_id: prg_01m1v5cnp5dmp544g36vz6caka
+    program_slug: crococlick-startup-program
+    program_slug_aliases: []
+    title: CrocoClick Startup Program
+    summary: Young companies receive three years of discounted Unlimited subscriptions.
+    source_ids:
+      - src_81a5fd9ed80b22cce4d473c20bb0504d05d726fbebfee20e8253a327ae9eebad
+offers:
+  - offer_id: off_01m1v5cnp5c6y9mze284z3mxt8
+    program_id: prg_01m1v5cnp5dmp544g36vz6caka
+    offer_slug: unlimited-startup-discount
+    offer_slug_aliases: []
+    title: Three-year Unlimited startup discount
+    summary: Eligible startups receive sequential Unlimited discounts of 86% in year one, 70% in year two, and 50% in year three.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-06T10:49:25.674Z
+    economics:
+      consideration:
+        kind: variable
+        description: Monthly payments are EUR 55.58 in year one, EUR 119.10 in year two, and EUR 198.50 in year three; published standard price EUR 397/month.
+      benefits:
+        - benefit_id: ben_year_one
+          kind: discount
+          description: First-year Unlimited subscription discount.
+          applies_to: CrocoClick Unlimited, program year one only
+          percentage:
+            kind: exact
+            basis_points: 8600
+          duration:
+            kind: exact
+            value: P1Y
+        - benefit_id: ben_year_two
+          kind: discount
+          description: Second-year Unlimited subscription discount; follows year one.
+          applies_to: CrocoClick Unlimited, program year two only
+          percentage:
+            kind: exact
+            basis_points: 7000
+          duration:
+            kind: exact
+            value: P1Y
+        - benefit_id: ben_year_three
+          kind: discount
+          description: Third-year Unlimited subscription discount; follows year two.
+          applies_to: CrocoClick Unlimited, program year three only
+          percentage:
+            kind: exact
+            basis_points: 5000
+          duration:
+            kind: exact
+            value: P1Y
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_age
+            kind: predicate
+            fact: company.age_months
+            operator: lt
+            value:
+              type: number
+              value: 12
+            statement: Company founded less than 12 months ago.
+          - criterion_id: cri_revenue
+            kind: manual
+            reason: not-machine-evaluable
+            statement: Revenue below EUR 25,000; the source does not specify a measurement period.
+          - criterion_id: cri_paid_history
+            kind: predicate
+            fact: company.has_ever_paid_crococlick
+            operator: eq
+            value:
+              type: boolean
+              value: false
+            statement: Never previously held a paid CrocoClick subscription.
+          - criterion_id: cri_review
+            kind: manual
+            reason: vendor-discretion
+            statement: Every application is reviewed manually by CrocoClick.
+    roles:
+      terms_authority_entity_id: ent_01m1v5cnp5b88ag4mbmqd6nqn4
+      access_operator_entity_id: ent_01m1v5cnp5b88ag4mbmqd6nqn4
+    access:
+      availability: public
+      method: form
+      url: https://crococlick.com/candidature-jeune-entreprise
+      instructions: Apply through the vendor page; application interface is French.
+    terms_url: https://help.crococlick.com/articles/0820414-crococlick-startup-program
+    source_ids:
+      - src_81a5fd9ed80b22cce4d473c20bb0504d05d726fbebfee20e8253a327ae9eebad
