@@ -1,0 +1,59 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1ths4ae9c3kx7z2ygtcmq1y
+  slug: morris-james-llp
+  slug_aliases: []
+  name: Morris James LLP
+  domains:
+  - value: morrisjames.com
+    role: primary
+    valid_from: '2026-09-06T05:06:42.000Z'
+  category: ai-ml
+profile:
+  description: Morris James LLP startup program offering credits for early-stage companies.
+  links:
+    site: https://morrisjames.com
+sources:
+- source_id: src_6c1ac89e81f4212700f79a162a6f1f052ad5d5deaaf5dfb885ebe3afd607122c
+  url: https://www.morrisjames.com/service/corporate-ma/start-up-program/
+programs: []
+offers:
+- offer_id: off_01m1ths52etsxghvjrzvc8bghe
+  offer_slug: morris-james-llp-startup-discount
+  offer_slug_aliases: []
+  title: Morris James LLP Startup Discount
+  summary: The Morris James Start-Up Program offers qualifying companies 30% off standard
+    corporate legal rates for the first year of engagement. Qualification is case-by-case;
+    the source describes typical early-stage, pre-revenue/low-revenue companie
+  lifecycle:
+    status: active
+    effective_from: '2026-09-06T05:06:42.000Z'
+  economics:
+    consideration:
+      kind: unknown
+      description: Contact sales for pricing details.
+    benefits:
+    - benefit_id: ben_primary
+      description: 30% discount for 12 months
+      kind: discount
+      percentage:
+        kind: exact
+        basis_points: 3000
+      duration:
+        kind: exact
+        value: P1Y
+  eligibility:
+    rule:
+      kind: manual
+      criterion_id: cri_requirement
+      statement: Must qualify as a startup. Contact sales for eligibility details.
+      reason: not-machine-evaluable
+  roles:
+    terms_authority_entity_id: ent_01m1ths4ae9c3kx7z2ygtcmq1y
+    access_operator_entity_id: ent_01m1ths4ae9c3kx7z2ygtcmq1y
+  access:
+    availability: public
+    method: contact
+    url: https://www.morrisjames.com/service/corporate-ma/start-up-program/
+  source_ids:
+  - src_6c1ac89e81f4212700f79a162a6f1f052ad5d5deaaf5dfb885ebe3afd607122c
