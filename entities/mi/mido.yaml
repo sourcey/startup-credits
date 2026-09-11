@@ -1,0 +1,103 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1r5wh458zx4rr5nxy7qbxhd
+  slug: mido
+  slug_aliases: []
+  name: Mido
+  domains:
+    - value: heymido.com
+      role: primary
+      valid_from: 2026-09-05T07:00:21.253Z
+  category: data-analytics
+profile:
+  description: Mido, from Good Trouble Labs, provides launch simulation, product
+    intelligence, and competitive analysis for games, apps, and software.
+  links:
+    site: https://heymido.com
+sources:
+  - source_id: src_5d15bd7af477d36fd973b6289fb8abafad05f5683ca13985623cd7909d081922
+    url: https://heymido.com/startups
+  - source_id: src_7af78095a5c2fc37b924ecc18caec9a30b3b6e8ed0ca3ac892ab9aaa52b55007
+    url: https://heymido.com/about
+  - source_id: src_66613338e0eb39c4d54d5d233eb28b87372998b26321470afafca3840d018fda
+    url: https://heymido.com/terms-of-service
+programs:
+  - program_id: prg_01m1r5wh45xc34s0cxkevwq4kf
+    program_slug: mido-for-startups
+    program_slug_aliases: []
+    title: Mido for Startups
+    summary: A selective program supporting early-stage product companies with
+      platform credits and guidance.
+    source_ids:
+      - src_5d15bd7af477d36fd973b6289fb8abafad05f5683ca13985623cd7909d081922
+offers:
+  - offer_id: off_01m1r5wh459643fb30264q8sr8
+    program_id: prg_01m1r5wh45xc34s0cxkevwq4kf
+    offer_slug: startup-platform-credits
+    offer_slug_aliases: []
+    title: $5,000–$25,000 in Mido startup credits
+    summary: Selected venture-backed teams receive Mido credits, priority support,
+      and strategy sessions. Applications are reviewed with limited monthly
+      places.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T07:00:21.253Z
+    economics:
+      benefits:
+        - benefit_id: ben_credits
+          kind: credit
+          description: Credits for launch simulation and product and market analysis;
+            initial expiry is not published.
+          value:
+            kind: range
+            minimum:
+              currency: USD
+              minor_units: 500000
+            maximum:
+              currency: USD
+              minor_units: 2500000
+        - benefit_id: ben_support
+          kind: other
+          description: Partner Slack support, individual training, and strategy guidance.
+      consideration:
+        kind: unknown
+        description: Separate program consideration is not published. Purchased plans
+          follow the pricing and billing terms presented at purchase.
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_stage
+            kind: predicate
+            fact: company.stage
+            operator: in
+            value:
+              type: string-set
+              values:
+                - pre-seed
+                - seed
+                - series-a
+            statement: Venture-backed company at Pre-Seed through Series A.
+          - criterion_id: cri_age
+            kind: manual
+            reason: not-machine-evaluable
+            statement: Founded within the past five years, with at least two employees, and
+              developing a product.
+          - criterion_id: cri_review
+            kind: manual
+            reason: vendor-discretion
+            statement: Mido selects a limited number of teams monthly. Graduation extensions
+              depend on growth milestones.
+    roles:
+      terms_authority_entity_id: ent_01m1r5wh458zx4rr5nxy7qbxhd
+      access_operator_entity_id: ent_01m1r5wh458zx4rr5nxy7qbxhd
+    access:
+      availability: public
+      method: form
+      url: https://heymido.com/startups
+      instructions: Submit the program application with contact, company, funding,
+        team, product, and intended-use details; await selection and onboarding.
+    terms_url: https://heymido.com/terms-of-service
+    source_ids:
+      - src_5d15bd7af477d36fd973b6289fb8abafad05f5683ca13985623cd7909d081922
+      - src_66613338e0eb39c4d54d5d233eb28b87372998b26321470afafca3840d018fda
