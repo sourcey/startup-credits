@@ -1,0 +1,51 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_st2kax1m100000000000000000
+  slug: imeetify
+  slug_aliases: []
+  name: iMeetify
+  domains:
+  - value: imeetify.com
+    role: primary
+    valid_from: '2026-01-01T00:00:00Z'
+  category: communication
+profile:
+  description: Startup credits for video conferencing and collaboration platform.
+  links:
+    site: https://imeetify.com
+sources:
+- source_id: src_3be9d0fd697106eba587d0cb4a78f61ade63a11402dc8d10ea9e9644ad01e52d
+  url: https://imeetify.com
+programs: []
+offers:
+- offer_id: off_st2kax1m100000000000000000
+  offer_slug: imeetify-startup-discount
+  offer_slug_aliases: []
+  title: iMeetify Startup Credits
+  summary: Credits toward iMeetify video conferencing platform.
+  lifecycle:
+    status: active
+    effective_from: '2026-01-01T00:00:00Z'
+  economics:
+    benefits:
+    - benefit_id: ben_01
+      description: Credits toward iMeetify video conferencing platform.
+      kind: free-service
+      service: Credits toward iMeetify video conferencing platform.
+    consideration:
+      kind: none
+  eligibility:
+    rule:
+      kind: manual
+      criterion_id: cri_requirement_01
+      statement: Qualified startup companies.
+      reason: not-machine-evaluable
+  roles:
+    terms_authority_entity_id: ent_st2kax1m100000000000000000
+    access_operator_entity_id: ent_st2kax1m100000000000000000
+  access:
+    availability: public
+    method: form
+    url: https://imeetify.com
+  source_ids:
+  - src_3be9d0fd697106eba587d0cb4a78f61ade63a11402dc8d10ea9e9644ad01e52d

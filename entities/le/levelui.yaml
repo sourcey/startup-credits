@@ -1,0 +1,51 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_jt2kax1m100000000000000000
+  slug: levelui
+  slug_aliases: []
+  name: Level UI
+  domains:
+  - value: levelui.com
+    role: primary
+    valid_from: '2026-01-01T00:00:00Z'
+  category: design
+profile:
+  description: Startup partner discount for Level UI design platform.
+  links:
+    site: https://levelui.com
+sources:
+- source_id: src_4cf400822fc7f8e1f01f2f1a479419014ce89ff2c57538d0fcad70f132d601d0
+  url: https://levelui.com/promotions/startup-partner-discount
+programs: []
+offers:
+- offer_id: off_jt2kax1m100000000000000000
+  offer_slug: levelui-startup-discount
+  offer_slug_aliases: []
+  title: Level UI Startup Partner Discount
+  summary: First project discount on Level UI design platform.
+  lifecycle:
+    status: active
+    effective_from: '2026-01-01T00:00:00Z'
+  economics:
+    benefits:
+    - benefit_id: ben_01
+      description: First project discount on Level UI design platform.
+      kind: free-service
+      service: First project discount on Level UI design platform.
+    consideration:
+      kind: none
+  eligibility:
+    rule:
+      kind: manual
+      criterion_id: cri_requirement_01
+      statement: Startups with valid business registration.
+      reason: not-machine-evaluable
+  roles:
+    terms_authority_entity_id: ent_jt2kax1m100000000000000000
+    access_operator_entity_id: ent_jt2kax1m100000000000000000
+  access:
+    availability: public
+    method: form
+    url: https://levelui.com/promotions/startup-partner-discount
+  source_ids:
+  - src_4cf400822fc7f8e1f01f2f1a479419014ce89ff2c57538d0fcad70f132d601d0

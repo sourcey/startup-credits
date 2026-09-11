@@ -1,0 +1,51 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_yt2kax1m100000000000000000
+  slug: leadliaison
+  slug_aliases: []
+  name: Lead Liaison
+  domains:
+  - value: leadliaison.com
+    role: primary
+    valid_from: '2026-01-01T00:00:00Z'
+  category: crm-sales
+profile:
+  description: Seed-stage startup discount for Lead Liaison CRM and sales platform.
+  links:
+    site: https://leadliaison.com
+sources:
+- source_id: src_cfffc265f7e4a9b9252067917388be693599440f026e81989ce5b81058e38f53
+  url: https://www.leadliaison.com/startups/
+programs: []
+offers:
+- offer_id: off_yt2kax1m100000000000000000
+  offer_slug: leadliaison-startup-discount
+  offer_slug_aliases: []
+  title: Lead Liaison Seed-Stage Startup Discount
+  summary: Discounted access to Lead Liaison CRM and sales tools.
+  lifecycle:
+    status: active
+    effective_from: '2026-01-01T00:00:00Z'
+  economics:
+    benefits:
+    - benefit_id: ben_01
+      description: Discounted access to Lead Liaison CRM and sales tools.
+      kind: free-service
+      service: Discounted access to Lead Liaison CRM and sales tools.
+    consideration:
+      kind: none
+  eligibility:
+    rule:
+      kind: manual
+      criterion_id: cri_requirement_01
+      statement: Seed-stage startups.
+      reason: not-machine-evaluable
+  roles:
+    terms_authority_entity_id: ent_yt2kax1m100000000000000000
+    access_operator_entity_id: ent_yt2kax1m100000000000000000
+  access:
+    availability: public
+    method: form
+    url: https://www.leadliaison.com/startups/
+  source_ids:
+  - src_cfffc265f7e4a9b9252067917388be693599440f026e81989ce5b81058e38f53

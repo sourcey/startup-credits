@@ -1,0 +1,51 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_av2kax1m100000000000000000
+  slug: morrisjames
+  slug_aliases: []
+  name: Morris James LLP
+  domains:
+  - value: morris-james.com
+    role: primary
+    valid_from: '2026-01-01T00:00:00Z'
+  category: legal-compliance
+profile:
+  description: Corporate legal services programme for Delaware startups.
+  links:
+    site: https://morris-james.com
+sources:
+- source_id: src_faa9811b45035bb7c2c3cf6395664f2e918cccce25f3512700bc3ce598c1a7d0
+  url: https://morris-james.com
+programs: []
+offers:
+- offer_id: off_av2kax1m100000000000000000
+  offer_slug: morrisjames-startup-discount
+  offer_slug_aliases: []
+  title: Morris James LLP Start-Up Program
+  summary: Access to corporate legal services at startup-friendly rates.
+  lifecycle:
+    status: active
+    effective_from: '2026-01-01T00:00:00Z'
+  economics:
+    benefits:
+    - benefit_id: ben_01
+      description: Access to corporate legal services at startup-friendly rates.
+      kind: free-service
+      service: Access to corporate legal services at startup-friendly rates.
+    consideration:
+      kind: none
+  eligibility:
+    rule:
+      kind: manual
+      criterion_id: cri_requirement_01
+      statement: Startups requiring corporate legal services.
+      reason: not-machine-evaluable
+  roles:
+    terms_authority_entity_id: ent_av2kax1m100000000000000000
+    access_operator_entity_id: ent_av2kax1m100000000000000000
+  access:
+    availability: public
+    method: form
+    url: https://morris-james.com
+  source_ids:
+  - src_faa9811b45035bb7c2c3cf6395664f2e918cccce25f3512700bc3ce598c1a7d0
