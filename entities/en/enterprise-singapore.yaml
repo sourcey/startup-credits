@@ -1,0 +1,69 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1t013nvktzy8rqyrpjkazkr
+  slug: enterprise-singapore
+  slug_aliases: []
+  name: Enterprise Singapore
+  domains:
+    - value: enterprisesg.gov.sg
+      role: primary
+  category: government
+profile:
+  description: Enterprise Singapore supports startups and SMEs through grant programs, mentorship, and internationalization support for Singapore-based companies.
+  links:
+    site: https://www.enterprisesg.gov.sg
+sources:
+  - source_id: src_4ab12b83e19d1a44a8600c8fafce666cb562293df4615e4bda74733c36f2970f
+    url: https://www.enterprisesg.gov.sg/grow-your-business/partner-with-singapore/innovation-and-startups/join-startup-sg
+  - source_id: src_6b29a8c1d8e2f3b4a5c6d7e8f9a0b1c2d3e4f5a6b7c8d9e0f1a2b3c4d5e6f7a
+    url: https://www.startupsg.gov.sg/programmes/4894/startup-sg-founder
+  - source_id: src_7c30b9d2e9f3a4c5b6d7e8f9a0b1c2d3e4f5a6b7c8d9e0f1a2b3c4d5e6f8b
+    url: https://www.startupsg.gov.sg/programmes/4894/startup-sg-founder/eligibility
+  - source_id: src_8d41c0e3f0a4b5d6c7e8f9a0b1c2d3e4f5a6b7c8d9e0f1a2b3c4d5e6f9c
+    url: https://www.startupsg.gov.sg/programmes/4894/startup-sg-founder/apply
+programs: []
+offers:
+  - offer_id: off_01m1t013p9wvyky9zggf57a3m1
+    offer_slug: startup-sg-founder-grant
+    offer_slug_aliases: []
+    title: Startup SG Founder Grant
+    summary: SGD 20,000–50,000 grant with 1:1 capital co-matching for eligible first-time Singaporean or permanent-resident founders.
+    lifecycle:
+      status: active
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: SGD 20,000–50,000 grant with 1:1 capital co-matching
+          kind: grant
+          value:
+            amount:
+              currency: SGD
+              minor_units: 2000000
+            kind: range
+            range:
+              minimum:
+                currency: SGD
+                minor_units: 2000000
+              maximum:
+                currency: SGD
+                minor_units: 5000000
+        - benefit_id: ben_02
+          description: Accredited Mentor Partner support
+          kind: mentorship
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: constant
+        statement: Available to first-time Singaporean or permanent-resident founders.
+        value: true
+    roles:
+      terms_authority_entity_id: ent_01m1t013nvktzy8rqyrpjkazkr
+    access:
+      availability: application
+      method: online
+    source_ids:
+      - src_6b29a8c1d8e2f3b4a5c6d7e8f9a0b1c2d3e4f5a6b7c8d9e0f1a2b3c4d5e6f7a
+      - src_7c30b9d2e9f3a4c5b6d7e8f9a0b1c2d3e4f5a6b7c8d9e0f1a2b3c4d5e6f8b
+      - src_8d41c0e3f0a4b5d6c7e8f9a0b1c2d3e4f5a6b7c8d9e0f1a2b3c4d5e6f9c
