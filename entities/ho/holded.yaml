@@ -1,0 +1,60 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1b5h2g8yd72z5821y0r56re
+  slug: holded
+  slug_aliases: []
+  name: Holded
+  domains:
+    - value: holded.com
+      role: primary
+      valid_from: 2026-08-31T05:40:00.000Z
+  category: finance-accounting
+profile:
+  description: Holded provides cloud business management software for invoicing, accounting, treasury, HR, inventory, CRM, projects, payroll, and related operations.
+  links:
+    site: https://www.holded.com
+sources:
+  - source_id: src_da7999d62f964bdcd4800e66ade84497ab2c517664acda1c2e620a5e136de8cf
+    url: https://www.holded.com/startups
+programs: []
+offers:
+  - offer_id: off_01m1b5h2g8ea0ktb058phj494s
+    offer_slug: startup-fifty-percent-off-three-months
+    offer_slug_aliases: []
+    title: 50% off Holded for 3 months
+    summary: Startups receive 50% off any Holded plan for the first 3 months, with all features included and no commitment after the discount period.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-31T05:40:00.000Z
+    economics:
+      benefits:
+        - applies_to: Any Holded plan
+          benefit_id: ben_01
+          description: 50% off any Holded plan for the first 3 months
+          duration:
+            kind: exact
+            value: P3M
+          kind: discount
+          percentage:
+            basis_points: 5000
+            kind: exact
+      consideration:
+        kind: variable
+        description: The startup pays the remaining discounted subscription price for its selected Holded plan.
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: not-machine-evaluable
+        statement: The applicant is a startup.
+    roles:
+      terms_authority_entity_id: ent_01m1b5h2g8yd72z5821y0r56re
+      access_operator_entity_id: ent_01m1b5h2g8yd72z5821y0r56re
+    access:
+      availability: public
+      method: other
+      instructions: Open Holded's startup page and use the Claim your discount link to select a plan.
+      url: https://www.holded.com/startups
+    terms_url: https://www.holded.com/startups
+    source_ids:
+      - src_da7999d62f964bdcd4800e66ade84497ab2c517664acda1c2e620a5e136de8cf
