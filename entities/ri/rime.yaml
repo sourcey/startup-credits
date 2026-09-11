@@ -1,0 +1,67 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m18zk7ywbkrzkz02tckj4te6
+  slug: rime
+  slug_aliases: []
+  name: Rime
+  domains:
+    - value: rime.ai
+      role: primary
+      valid_from: 2026-08-30T09:21:49.019Z
+  category: ai-ml
+profile:
+  description: Rime provides text-to-speech APIs for building voice interfaces, accessibility applications, and other audio products.
+  links:
+    site: https://www.rime.ai
+sources:
+  - source_id: src_240e53a8ec377ab817035e91b962278786d5c9c6379bdbcf2aa6112bfe8f1c56
+    url: https://www.rime.ai/resources/announcing-our-5k-credits-program-for-yc-startups
+programs: []
+offers:
+  - offer_id: off_01m18zk7ywttz2s6wahb110eea
+    offer_slug: rime-startup-credits-program
+    offer_slug_aliases: []
+    title: Rime Startup Credits Program
+    summary: Eligible Y Combinator startups from W24 onward that use or plan to integrate text-to-speech receive $5,000 in API credits during their first year, priority support, and early feature access.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-30T09:21:49.019Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: $5,000 in Rime API credits during the startup's first year
+          duration:
+            kind: exact
+            value: P1Y
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 500000
+            kind: exact
+        - benefit_id: ben_02
+          description: Priority support and early access to new Rime features
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: external-verification
+            statement: Startup is part of Y Combinator's W24 batch or a later batch.
+          - criterion_id: cri_02
+            kind: manual
+            reason: not-machine-evaluable
+            statement: Startup actively uses or plans to integrate text-to-speech capabilities into its product.
+    roles:
+      terms_authority_entity_id: ent_01m18zk7ywbkrzkz02tckj4te6
+      access_operator_entity_id: ent_01m18zk7ywbkrzkz02tckj4te6
+    access:
+      availability: public
+      method: form
+      url: https://tally.so/r/31JO8Q
+    source_ids:
+      - src_240e53a8ec377ab817035e91b962278786d5c9c6379bdbcf2aa6112bfe8f1c56
