@@ -1,0 +1,81 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1ahj1p55ts52njv7fpcyzs2
+  slug: fabricbloc
+  slug_aliases: []
+  name: FabricBloc
+  domains:
+    - value: fabricbloc.com
+      role: primary
+      valid_from: 2026-08-30T23:55:03.000Z
+  category: payments-fintech
+profile:
+  description: FabricBloc provides APIs and a macOS Studio for creating and operating onchain wallets, tokens, NFTs, vaults, analytics, and scoped agent workflows.
+  links:
+    site: https://fabricbloc.com/
+sources:
+  - source_id: src_4438dd7a46173f3427687773135e2bab85f4ff07cf8f7dac65f19265a8b500c7
+    url: https://fabricbloc.com/founders
+programs:
+  - program_id: prg_01m1ahj1pbm9dx724kdw8n3zx4
+    program_slug: fabricbloc-founders-program
+    program_slug_aliases: []
+    title: FabricBloc Founders Program
+    summary: Pre-seed and seed-stage technical teams can receive FabricBloc PRO free for 12 months plus engineering office hours, priority support, early API access, and launch co-marketing.
+    source_ids:
+      - src_4438dd7a46173f3427687773135e2bab85f4ff07cf8f7dac65f19265a8b500c7
+offers:
+  - offer_id: off_01m1ahj1pbd3shr5fx244fnemp
+    program_id: prg_01m1ahj1pbm9dx724kdw8n3zx4
+    offer_slug: fabricbloc-pro-free-for-one-year
+    offer_slug_aliases: []
+    title: FabricBloc PRO free for 12 months
+    summary: Eligible pre-seed and seed-stage teams receive FabricBloc PRO free for 12 months, monthly engineering office hours, priority support, early API access, and launch co-marketing.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-30T23:55:03.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: FabricBloc PRO free for 12 months
+          duration:
+            kind: exact
+            value: P1Y
+          kind: free-service
+          service: FabricBloc PRO
+        - benefit_id: ben_02
+          description: Monthly office hours with the FabricBloc engineering team
+          kind: other
+        - benefit_id: ben_03
+          description: Priority support channel
+          kind: other
+        - benefit_id: ben_04
+          description: Early access to new APIs and features
+          kind: other
+        - benefit_id: ben_05
+          description: Co-marketing support for the team's launch
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: not-machine-evaluable
+            statement: Must be a pre-seed or seed-stage team building a primary product on FabricBloc
+          - criterion_id: cri_02
+            kind: manual
+            reason: not-machine-evaluable
+            statement: At least one technical co-founder is required
+    roles:
+      terms_authority_entity_id: ent_01m1ahj1p55ts52njv7fpcyzs2
+      access_operator_entity_id: ent_01m1ahj1p55ts52njv7fpcyzs2
+    access:
+      availability: public
+      method: form
+      url: https://fabricbloc.com/contact
+    terms_url: https://fabricbloc.com/founders
+    source_ids:
+      - src_4438dd7a46173f3427687773135e2bab85f4ff07cf8f7dac65f19265a8b500c7
