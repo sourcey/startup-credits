@@ -1,0 +1,89 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1temg49e1zk33e9c5cqamn4
+  slug: servebolt
+  slug_aliases: []
+  name: Servebolt
+  domains:
+    - value: servebolt.com
+      role: primary
+      valid_from: 2026-09-06T03:20:00.000Z
+  category: hosting-infra
+profile:
+  description: Servebolt provides managed performance hosting with its own
+    Servebolt Linux stack, CDN, and accelerated domains for websites and
+    applications.
+  links:
+    site: https://servebolt.com
+sources:
+  - source_id: src_2433b9a4a06e317972219b724450781b489abae3ed1504f87e36b4be11293167
+    url: https://servebolt.com/solutions/startups/
+programs:
+  - program_id: prg_01m1temg49x0ewdjgnr2grhsn6
+    program_slug: servebolt-startup-program
+    program_slug_aliases: []
+    title: Servebolt Startup Program
+    summary: Servebolt's early-stage startup program offering a first-year
+      discount on paid hosting plans with technical support.
+    source_ids:
+      - src_2433b9a4a06e317972219b724450781b489abae3ed1504f87e36b4be11293167
+offers:
+  - offer_id: off_01m1temg49sj5kyske7nmvw67t
+    program_id: prg_01m1temg49x0ewdjgnr2grhsn6
+    offer_slug: early-stage-first-year-discount
+    offer_slug_aliases: []
+    title: 50% off Servebolt plans for the first year
+    summary: Eligible early-stage startups receive 50% off every Servebolt plan
+      from the Pro plan upward for one year, plus technical support.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-06T03:20:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_first_year_discount
+          kind: discount
+          description: 50% off every Servebolt plan from the Pro plan upward
+            for one year, plus technical support.
+          percentage:
+            kind: exact
+            basis_points: 5000
+          duration:
+            kind: exact
+            value: P1Y
+          applies_to: Servebolt Pro and higher plans
+      consideration:
+        kind: unknown
+        description: A paid Servebolt plan subscription at the discounted price
+          is required; after the first year regular pricing applies.
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_revenue
+            kind: manual
+            reason: external-verification
+            statement: At most 500,000 EUR in annual revenue.
+          - criterion_id: cri_age
+            kind: manual
+            reason: external-verification
+            statement: Established less than three years ago.
+          - criterion_id: cri_ownership
+            kind: manual
+            reason: external-verification
+            statement: At least 40% privately held stock.
+          - criterion_id: cri_customer
+            kind: manual
+            reason: external-verification
+            statement: New to Servebolt.
+    roles:
+      terms_authority_entity_id: ent_01m1temg49e1zk33e9c5cqamn4
+      access_operator_entity_id: ent_01m1temg49e1zk33e9c5cqamn4
+    access:
+      availability: public
+      method: form
+      url: https://servebolt.com/solutions/startups/
+      instructions: Apply on the Servebolt for Startups page to join the
+        startup program.
+    terms_url: https://servebolt.com/solutions/startups/
+    source_ids:
+      - src_2433b9a4a06e317972219b724450781b489abae3ed1504f87e36b4be11293167
