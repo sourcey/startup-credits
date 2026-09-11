@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_vnb0dx1m100000000000000000
+  slug: getscreen-me
+  slug_aliases: []
+  name: Getscreen.me
+  domains:
+  - value: getscreen.me
+    role: primary
+    valid_from: '2026-01-01T00:00:00Z'
+  category: communication
+profile:
+  description: Getscreen.me is a secure remote access and screen sharing platform for teams and startups.
+  links:
+    site: https://getscreen.me
+sources:
+- source_id: src_26b153d52c2c87f694d961357fb1eb92468c36c1d771d2ce2f2618e33ecda076
+  url: https://getscreen.me/en/pricing/discounts/
+programs: []
+offers:
+- offer_id: off_vnb0dx1m100000000000000000
+  offer_slug: startup-discount
+  offer_slug_aliases: []
+  title: Getscreen.me Startup Discount
+  summary: Getscreen.me offers a startup discount on its remote access and screen sharing platform.
+  lifecycle:
+    status: active
+    effective_from: '2026-01-01T00:00:00Z'
+  economics:
+    benefits:
+    - benefit_id: ben_01
+      description: Startup discount on Getscreen.me remote access platform.
+      kind: other
+    consideration:
+      kind: none
+  eligibility:
+    rule:
+      kind: manual
+      criterion_id: cri_01
+      statement: Qualified startup companies.
+      reason: not-machine-evaluable
+  roles:
+    terms_authority_entity_id: ent_vnb0dx1m100000000000000000
+    access_operator_entity_id: ent_vnb0dx1m100000000000000000
+  access:
+    availability: public
+    method: form
+    url: https://getscreen.me/en/pricing/discounts/
+  source_ids:
+  - src_26b153d52c2c87f694d961357fb1eb92468c36c1d771d2ce2f2618e33ecda076
