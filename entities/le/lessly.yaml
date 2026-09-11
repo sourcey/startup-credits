@@ -1,0 +1,64 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m13y1rrn4w9s66wj53xc0vbv
+  slug: lessly
+  slug_aliases: []
+  name: Lessly
+  domains:
+    - value: lessly.app
+      role: primary
+      valid_from: 2026-08-28T10:18:35.000Z
+    - value: go.lessly.co.nz
+      role: alias
+      valid_from: 2026-08-28T10:18:35.000Z
+  category: finance-accounting
+profile:
+  description: Lessly provides app-based accounting, tax, and compliance services for startups and other businesses in New Zealand.
+  links:
+    site: https://lessly.app
+sources:
+  - source_id: src_d76ef50eb4322e2ada735e5c9a2d7f90db868bc2954f12d559d2304417ef9731
+    url: https://lessly.app
+  - source_id: src_338c6e91fb58cd1873b2daf6e3db6edb5c94f9d11c393b2ac3324364d5df426f
+    url: https://go.lessly.co.nz
+programs: []
+offers:
+  - offer_id: off_01m13y1rrqm9nnred0qavt1jtq
+    offer_slug: lessly-first-financial-year-free
+    offer_slug_aliases: []
+    title: First Financial Year of Accounting Free
+    summary: New Lessly clients receive a full accounting service for one financial year at no cost, with no credit card, invoices, contract, or lock-in.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-28T10:18:35.000Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_01
+          description: Full Lessly accounting service free for one financial year
+          kind: waiver
+          waived_item: Lessly full accounting service fees for one financial year
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            statement: Applicant must be a new Lessly client during the current financial year.
+            reason: external-verification
+          - criterion_id: cri_02
+            kind: manual
+            statement: If an applicant operates multiple entities, only one entity is eligible for the free first financial year.
+            reason: external-verification
+    roles:
+      terms_authority_entity_id: ent_01m13y1rrn4w9s66wj53xc0vbv
+      access_operator_entity_id: ent_01m13y1rrn4w9s66wj53xc0vbv
+    access:
+      availability: public
+      instructions: Complete the claim form with contact and business details; Lessly states that it will respond within one business day.
+      method: form
+      url: https://go.lessly.co.nz
+    source_ids:
+      - src_d76ef50eb4322e2ada735e5c9a2d7f90db868bc2954f12d559d2304417ef9731
+      - src_338c6e91fb58cd1873b2daf6e3db6edb5c94f9d11c393b2ac3324364d5df426f
