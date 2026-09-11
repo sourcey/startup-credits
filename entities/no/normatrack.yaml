@@ -1,0 +1,68 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m16c6h2e9gymwkh4k1p4dbdk
+  slug: normatrack
+  slug_aliases: []
+  name: NormaTrack
+  domains:
+    - value: normatrack.com
+      role: primary
+      valid_from: 2026-08-29T00:00:00Z
+  category: legal-compliance
+profile:
+  description: NormaTrack provides compliance management and digital product passport software for brands managing product and regulatory data.
+  links:
+    site: https://www.normatrack.com
+sources:
+  - source_id: src_3182b0a7286b280b565cdfbdbf87637254bdfd74f09435397378531a7eb1c257
+    url: https://www.normatrack.com/pricing
+  - source_id: src_bc398f390f88f33d6e3320ff9073b736993aa1afb048951329b56060ddae9dbd
+    url: https://www.normatrack.com/request-demo
+programs:
+  - program_id: prg_01m16c6h2es6xx9qe74fn9hdc6
+    program_slug: normatrack-startup-program
+    program_slug_aliases: []
+    title: NormaTrack Startup Program
+    summary: NormaTrack offers eligible small brands its Growth plan free for six months, with no credit card required.
+    source_ids:
+      - src_3182b0a7286b280b565cdfbdbf87637254bdfd74f09435397378531a7eb1c257
+      - src_bc398f390f88f33d6e3320ff9073b736993aa1afb048951329b56060ddae9dbd
+offers:
+  - offer_id: off_01m16c6h2ejw2btv8y64awd43n
+    program_id: prg_01m16c6h2es6xx9qe74fn9hdc6
+    offer_slug: growth-plan-free-for-six-months
+    offer_slug_aliases: []
+    title: Growth plan free for six months
+    summary: Eligible brands with fewer than 20 employees and fewer than 500 active products receive NormaTrack Growth free for six months.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-29T00:00:00Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_01
+          description: Free access to the NormaTrack Growth plan for six months, with no credit card required.
+          kind: free-service
+          service: NormaTrack Growth plan
+          duration:
+            kind: exact
+            value: P6M
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: The applicant must be a brand with fewer than 20 employees and fewer than 500 active products.
+    roles:
+      terms_authority_entity_id: ent_01m16c6h2e9gymwkh4k1p4dbdk
+      access_operator_entity_id: ent_01m16c6h2e9gymwkh4k1p4dbdk
+    access:
+      availability: public
+      instructions: Request a NormaTrack demo to apply for the Startup Program. No credit card is required for the six-month free period.
+      method: form
+      url: https://www.normatrack.com/request-demo
+    terms_url: https://www.normatrack.com/pricing
+    source_ids:
+      - src_3182b0a7286b280b565cdfbdbf87637254bdfd74f09435397378531a7eb1c257
+      - src_bc398f390f88f33d6e3320ff9073b736993aa1afb048951329b56060ddae9dbd
