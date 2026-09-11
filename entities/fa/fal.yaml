@@ -1,0 +1,164 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1t2dtatcj1wg64azgj7jews
+  slug: fal
+  slug_aliases: []
+  name: fal
+  domains:
+    - value: fal.ai
+      role: primary
+      valid_from: 2026-09-06T00:00:00.000Z
+  category: ai-ml
+profile:
+  description: fal is a generative AI platform offering image, video, and agent models including Seedream, Flux, Ideogram, Kling, Veo, and more.
+  links:
+    site: https://fal.ai
+sources:
+  - source_id: src_7fff800f508cb6e3aa1eeb6c4c641954fc779d9984b0fd9727f8693edcc5e3c4
+    url: https://fal.ai/startup-program
+programs:
+  - program_id: prg_01m1t2dtb1ebpadymhkwg0cre0
+    program_slug: startup-program
+    program_slug_aliases: []
+    title: Startup Program
+    summary: Credits that grow as you do — $1,000–$5,000 in fal credits plus partner perks for startups with traction or venture backing in Europe and Asia.
+    source_ids:
+      - src_7fff800f508cb6e3aa1eeb6c4c641954fc779d9984b0fd9727f8693edcc5e3c4
+offers:
+  - offer_id: off_01m1t2dtb1ajq8e91rjjtjbfrc
+    program_id: prg_01m1t2dtb1ebpadymhkwg0cre0
+    offer_slug: startup-usd-1000-credits
+    offer_slug_aliases: []
+    title: Startup tier — $1,000 credits
+    summary: Every approved team starts with $1,000 in fal credits as the default entry point to the Startup Program.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-06T00:00:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_startup_credits
+          description: $1,000 in fal credits for the default Startup tier
+          kind: credit
+          value:
+            kind: up-to
+            amount:
+              currency: USD
+              minor_units: 100000
+        - benefit_id: ben_partner_perks
+          description: Partner perks bundled with acceptance (details confirmed upon acceptance)
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_region
+            kind: manual
+            reason: self-attestation
+            statement: Team based in Europe or Asia
+          - criterion_id: cri_traction_or_funding
+            kind: manual
+            reason: self-attestation
+            statement: Proven track record through real users, meaningful traction, or revenue, or institutional VC backing
+    roles:
+      terms_authority_entity_id: ent_01m1t2dtatcj1wg64azgj7jews
+      access_operator_entity_id: ent_01m1t2dtatcj1wg64azgj7jews
+    access:
+      availability: public
+      method: form
+      url: https://fal.ai/startup-program
+    source_ids:
+      - src_7fff800f508cb6e3aa1eeb6c4c641954fc779d9984b0fd9727f8693edcc5e3c4
+  - offer_id: off_01m1t2dtb1205p2d0ferfrfmw1
+    program_id: prg_01m1t2dtb1ebpadymhkwg0cre0
+    offer_slug: scale-tier-usd-2500-credits
+    offer_slug_aliases: []
+    title: Scale tier — $2,500 credits
+    summary: Teams spending $1,000/month on fal can request a bump to $2,500 in credits, adding $1,500 on top of the startup tier.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-06T00:00:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_scale_credits
+          description: $2,500 in fal credits for the Scale tier (+$1,500 bump from startup)
+          kind: credit
+          value:
+            kind: up-to
+            amount:
+              currency: USD
+              minor_units: 250000
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_region
+            kind: manual
+            reason: self-attestation
+            statement: Team based in Europe or Asia
+          - criterion_id: cri_spend_threshold
+            kind: manual
+            reason: external-verification
+            statement: Monthly spend on fal reaches $1,000; can start at Scale if meeting this threshold at time of application
+          - criterion_id: cri_traction_or_funding
+            kind: manual
+            reason: self-attestation
+            statement: Proven track record through real users, meaningful traction, or revenue, or institutional VC backing
+    roles:
+      terms_authority_entity_id: ent_01m1t2dtatcj1wg64azgj7jews
+      access_operator_entity_id: ent_01m1t2dtatcj1wg64azgj7jews
+    access:
+      availability: public
+      method: form
+      url: https://fal.ai/startup-program
+    source_ids:
+      - src_7fff800f508cb6e3aa1eeb6c4c641954fc779d9984b0fd9727f8693edcc5e3c4
+  - offer_id: off_01m1t2dtb1ys9qwt4kyksxxmsp
+    program_id: prg_01m1t2dtb1ebpadymhkwg0cre0
+    offer_slug: growth-tier-usd-5000-credits
+    offer_slug_aliases: []
+    title: Growth tier — $5,000 credits
+    summary: Teams spending $2,500/month on fal can request a bump to $5,000 in credits, adding $2,500 on top of the scale tier.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-06T00:00:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_growth_credits
+          description: $5,000 in fal credits for the Growth tier (+$2,500 bump from scale)
+          kind: credit
+          value:
+            kind: up-to
+            amount:
+              currency: USD
+              minor_units: 500000
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_region
+            kind: manual
+            reason: self-attestation
+            statement: Team based in Europe or Asia
+          - criterion_id: cri_spend_threshold_growth
+            kind: manual
+            reason: external-verification
+            statement: Monthly spend on fal reaches $2,500; can start at Growth if meeting this threshold at time of application
+          - criterion_id: cri_traction_or_funding
+            kind: manual
+            reason: self-attestation
+            statement: Proven track record through real users, meaningful traction, or revenue, or institutional VC backing
+    roles:
+      terms_authority_entity_id: ent_01m1t2dtatcj1wg64azgj7jews
+      access_operator_entity_id: ent_01m1t2dtatcj1wg64azgj7jews
+    access:
+      availability: public
+      method: form
+      url: https://fal.ai/startup-program
+    source_ids:
+      - src_7fff800f508cb6e3aa1eeb6c4c641954fc779d9984b0fd9727f8693edcc5e3c4

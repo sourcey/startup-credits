@@ -1,0 +1,97 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01decd128608f95599da1f3c
+  slug: lettermint
+  slug_aliases: []
+  name: Lettermint
+  domains:
+    - value: lettermint.co
+      role: primary
+      valid_from: 2025-01-01T00:00:00.000Z
+  category: productivity
+profile:
+  description: Lettermint provides transactional email services for developers and businesses, offering reliable email delivery with a developer-friendly API.
+  links:
+    site: https://lettermint.co
+sources:
+  - source_id: src_b202c99cef3415c0550d601c08616f5a302b7cf3cc5e94608ce59380077ad4f0
+    url: https://lettermint.co/promo-codes-and-discounts/startups
+programs: []
+offers:
+  - offer_id: off_01d4c6cd0c5865e77717954b
+    offer_slug: lettermint-startup-discount
+    offer_slug_aliases: []
+    title: Lettermint Startup Discount
+    summary: Eligible startups receive €60 in account credit, valid for 12 months after activation, which can be used toward any Lettermint subscription.
+    lifecycle:
+      status: active
+      effective_from: 2025-01-01T00:00:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: €60 account credit valid for 12 months after activation
+          duration:
+            kind: exact
+            value: P1Y
+          kind: credit
+          value:
+            amount:
+              currency: EUR
+              minor_units: 6000
+            kind: exact
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.funding_raised_usd
+            kind: predicate
+            operator: eq
+            statement: Has not raised any funding
+            value:
+              type: number
+              value: 0
+          - criterion_id: cri_02
+            fact: company.age_months
+            kind: predicate
+            operator: lte
+            statement: Startup is not older than 3 years
+            value:
+              type: number
+              value: 36
+          - criterion_id: cri_03
+            fact: company.arr_usd
+            kind: predicate
+            operator: lte
+            statement: Annual recurring revenue does not exceed €100,000
+            value:
+              type: number
+              value: 100000
+          - criterion_id: cri_04
+            fact: company.is_registered
+            kind: predicate
+            operator: eq
+            statement: Must be a registered company
+            value:
+              type: boolean
+              value: true
+          - criterion_id: cri_05
+            fact: company.has_used_service
+            kind: predicate
+            operator: eq
+            statement: Has not previously applied for a startup discount
+            value:
+              type: boolean
+              value: false
+    roles:
+      terms_authority_entity_id: ent_01decd128608f95599da1f3c
+      access_operator_entity_id: ent_01decd128608f95599da1f3c
+    access:
+      availability: public
+      instructions: Create a free account, then request the discount via support ticket in the dashboard.
+      method: form
+      url: https://lettermint.co/promo-codes-and-discounts/startups
+    source_ids:
+      - src_b202c99cef3415c0550d601c08616f5a302b7cf3cc5e94608ce59380077ad4f0
