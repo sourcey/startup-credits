@@ -1,0 +1,81 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1scbjyptgwzpyyd54zhf112
+  slug: layer-pr
+  slug_aliases: []
+  name: Layer PR
+  domains:
+    - value: layerpr.com
+      role: primary
+      valid_from: 2026-09-05T18:12:40.530Z
+  category: marketing
+profile:
+  summary: Layer PR provides public relations, media training, marketing, and communications services.
+  description: Layer PR provides public relations, media training, marketing, and communications services.
+  links:
+    site: https://layerpr.com/startup-program/
+sources:
+  - source_id: src_533b2db0a7b29129bde7e45424c0ef20244ec1e759cece6a34f1c2c8215576c4
+    url: https://layerpr.com/startup-program/
+programs:
+  - program_id: prg_01m1scbjyp2c76mwrvvwt0tvzs
+    program_slug: startup-program
+    program_slug_aliases: []
+    title: Layer PR Startup Program
+    summary: Eligible revenue-generating startups and small businesses receive up to 50% off monthly or
+      annual invoices during a one-year program.
+    source_ids:
+      - src_533b2db0a7b29129bde7e45424c0ef20244ec1e759cece6a34f1c2c8215576c4
+offers:
+  - offer_id: off_01m1scbjypdcmfk95d9qv3gb60
+    program_id: prg_01m1scbjyp2c76mwrvvwt0tvzs
+    offer_slug: startup-discount
+    offer_slug_aliases: []
+    title: Layer PR startup discount
+    summary: Eligible revenue-generating startups and small businesses receive up to 50% off monthly or
+      annual invoices during a one-year program.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T18:12:40.530Z
+    economics:
+      benefits:
+        - benefit_id: ben_discount
+          kind: discount
+          percentage:
+            kind: up-to
+            basis_points: 5000
+          duration:
+            kind: exact
+            value: P1Y
+          applies_to: Layer PR monthly or annual invoices during the Startup Program
+          description: Up to 50% off monthly or annual invoices throughout the one-year program.
+      consideration:
+        kind: unknown
+        description: Discounted invoices remain payable. The public page does not state service prices or a
+          separate participation fee.
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_1
+            kind: predicate
+            fact: company.age_months
+            operator: lte
+            value:
+              type: number
+              value: 60
+            statement: The startup or small business was founded within the last five years.
+          - criterion_id: cri_2
+            kind: manual
+            reason: external-verification
+            statement: The startup or small business must generate revenue. Bootstrapped startups may apply.
+    roles:
+      terms_authority_entity_id: ent_01m1scbjyptgwzpyyd54zhf112
+      access_operator_entity_id: ent_01m1scbjyptgwzpyyd54zhf112
+    access:
+      availability: public
+      method: form
+      url: https://layerpr.com/startup-program/
+    terms_url: https://layerpr.com/startup-program/
+    source_ids:
+      - src_533b2db0a7b29129bde7e45424c0ef20244ec1e759cece6a34f1c2c8215576c4
