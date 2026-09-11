@@ -1,0 +1,71 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m0xa6ecdzf91x073s4bdp79f
+  slug: safestack
+  slug_aliases: []
+  name: SafeStack
+  domains:
+    - value: safestack.io
+      role: primary
+      valid_from: 2026-08-25T20:36:10.765Z
+  category: auth-security
+profile:
+  description: SafeStack provides application-security education, developer training, and compliance-focused security tooling for organizations.
+  links:
+    site: https://safestack.io
+sources:
+  - source_id: src_126e0eb787bad3b9624c72cfa8577f18b404c654350051e1297bea85d8405c89
+    url: https://safestack.io/secure-your-startup-discount
+  - source_id: src_e374e0bfbad24f039f6e98d168155f6a86fd58c635b9414aaef24cbb3c364321
+    url: https://form.jotform.com/241708982273868
+programs:
+  - program_id: prg_01m0xa6ecdw7ftmtgk5hv3zav3
+    program_slug: safestack-startup-discount
+    program_slug_aliases: []
+    title: SafeStack Startup Discount
+    summary: SafeStack offers qualifying early-stage companies 50% off its team plan for the first 12 months.
+    source_ids:
+      - src_126e0eb787bad3b9624c72cfa8577f18b404c654350051e1297bea85d8405c89
+      - src_e374e0bfbad24f039f6e98d168155f6a86fd58c635b9414aaef24cbb3c364321
+offers:
+  - offer_id: off_01m0xa6ecd8gzw28kbh8vzn8z7
+    program_id: prg_01m0xa6ecdw7ftmtgk5hv3zav3
+    offer_slug: fifty-percent-off-team-plan-for-one-year
+    offer_slug_aliases: []
+    title: 50% off the team plan for 12 months
+    summary: Approved early-stage companies receive a 50% discount on the SafeStack team plan for their first 12 months.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-25T20:36:10.765Z
+    economics:
+      benefits:
+        - applies_to: SafeStack team plan
+          benefit_id: ben_01
+          description: 50% off the SafeStack team plan for the first 12 months
+          duration:
+            kind: exact
+            value: P1Y
+          kind: discount
+          percentage:
+            basis_points: 5000
+            kind: exact
+      consideration:
+        kind: variable
+        description: Purchase the SafeStack team plan after approval at the remaining discounted price; the public source does not publish a fixed plan price.
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: external-verification
+        statement: Applicant must be a new SafeStack customer, have fewer than 20 developers, have been founded less than 10 years ago, be pre-Series A, and pass SafeStack review.
+    roles:
+      terms_authority_entity_id: ent_01m0xa6ecdzf91x073s4bdp79f
+      access_operator_entity_id: ent_01m0xa6ecdzf91x073s4bdp79f
+    access:
+      availability: public
+      method: form
+      url: https://form.jotform.com/241708982273868
+      instructions: Submit the SafeStack Startup Discount application form and complete the required follow-up demo booking.
+    source_ids:
+      - src_126e0eb787bad3b9624c72cfa8577f18b404c654350051e1297bea85d8405c89
+      - src_e374e0bfbad24f039f6e98d168155f6a86fd58c635b9414aaef24cbb3c364321
