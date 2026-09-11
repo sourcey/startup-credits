@@ -1,0 +1,87 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m12e5sz8vnq2nv6s6mz75gqc
+  slug: symmetry-systems
+  slug_aliases: []
+  name: Symmetry Systems
+  domains:
+    - value: symmetry-systems.com
+      role: primary
+      valid_from: 2026-08-27T00:00:00Z
+  category: auth-security
+profile:
+  description: Symmetry Systems provides data security posture management and access governance for cloud data, analytics, and AI environments.
+  links:
+    site: https://www.symmetry-systems.com
+sources:
+  - source_id: src_937d0cdfc742d9eb2ae66dd2b92d68da62fd689d56f9e72c8b9b9f3375aff02d
+    url: https://www.symmetry-systems.com/symmetry-for-dataai-startups/
+programs:
+  - program_id: prg_01m12e5sz9a4056ykrf4e14s2s
+    program_slug: symmetry-for-data-ai-startups
+    program_slug_aliases: []
+    title: Symmetry for Data+AI Startups
+    summary: Symmetry Systems gives eligible young Data+AI startups full enterprise platform access at no cost for 12 months.
+    source_ids:
+      - src_937d0cdfc742d9eb2ae66dd2b92d68da62fd689d56f9e72c8b9b9f3375aff02d
+offers:
+  - offer_id: off_01m12e5sz99rgnn37fce4tywag
+    program_id: prg_01m12e5sz9a4056ykrf4e14s2s
+    offer_slug: twelve-months-free-enterprise-platform
+    offer_slug_aliases: []
+    title: Twelve months free on the Symmetry Systems enterprise platform
+    summary: Eligible startups receive full access to the Symmetry Systems enterprise platform free for 12 months, with priority technical support.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-27T00:00:00Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Full enterprise platform access at no cost for 12 months
+          kind: free-service
+          service: Symmetry Systems enterprise platform
+          duration:
+            kind: exact
+            value: P12M
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.age_months
+            kind: predicate
+            operator: lt
+            statement: The startup was founded within the last three years.
+            value:
+              type: number
+              value: 36
+          - criterion_id: cri_02
+            fact: company.funding_raised_usd
+            kind: predicate
+            operator: lt
+            statement: The startup has raised less than $5 million in funding.
+            value:
+              type: number
+              value: 5000000
+          - criterion_id: cri_03
+            kind: manual
+            reason: external-verification
+            statement: The startup is building or implementing AI or machine-learning technologies.
+          - criterion_id: cri_04
+            kind: manual
+            reason: external-verification
+            statement: The startup has not previously been a Symmetry Systems customer.
+    roles:
+      terms_authority_entity_id: ent_01m12e5sz8vnq2nv6s6mz75gqc
+      access_operator_entity_id: ent_01m12e5sz8vnq2nv6s6mz75gqc
+    access:
+      availability: public
+      method: form
+      url: https://www.symmetry-systems.com/getstarted/
+      instructions: Use the Apply Now link on the startup-program page and submit the application form.
+    terms_url: https://www.symmetry-systems.com/symmetry-for-dataai-startups/
+    source_ids:
+      - src_937d0cdfc742d9eb2ae66dd2b92d68da62fd689d56f9e72c8b9b9f3375aff02d
+
