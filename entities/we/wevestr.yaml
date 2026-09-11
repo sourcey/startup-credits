@@ -1,0 +1,94 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1srjgzbq7g4avpk4w5tdxwk
+  slug: wevestr
+  slug_aliases: []
+  name: WE.VESTR
+  domains:
+  - value: wevestr.com
+    role: primary
+    valid_from: '2026-09-05T21:49:37.540Z'
+  category: banking
+profile:
+  description: WE.VESTR is an equity management platform that helps startups manage
+    cap tables, stakeholder records, and equity plans from incorporation through exit.
+  links:
+    site: https://wevestr.com
+sources:
+- source_id: src_3ae35796bef4f724cb10137b35d223dc417019945a5d475c144af33775c7539f
+  url: https://wevestr.com/microsoft-for-startups
+- source_id: src_b2019d3b081760cfe71ef2510252e8fb8cc3cd24f5a50b705ed7c98cb43641a2
+  url: https://learn.microsoft.com/en-us/startups/benefits/technical-benefits/third-party-benefits/we-vest
+programs:
+- program_id: prg_01m1srjgzqyned01scq3epfpnp
+  program_slug: microsoft-for-startups
+  program_slug_aliases: []
+  title: Microsoft for Startups
+  summary: Microsoft for Startups provides equity-management discounts to its member
+    startups through third-party partner offers.
+  source_ids:
+  - src_b2019d3b081760cfe71ef2510252e8fb8cc3cd24f5a50b705ed7c98cb43641a2
+offers:
+- offer_id: off_01m1srjgzqzv7hs0jbq16b845x
+  program_id: prg_01m1srjgzqyned01scq3epfpnp
+  offer_slug: 70-percent-off-first-year-for-microsoft-for-startups
+  offer_slug_aliases: []
+  title: 70% off the first year of WE.VESTR equity-management plans for Microsoft
+    for Startups members
+  summary: Microsoft for Startups members who are new WE.VESTR customers can receive
+    70% off their first year of WE.VESTR equity-management plans, valid for 12 months.
+  lifecycle:
+    status: active
+    effective_from: '2026-09-05T21:49:37.540Z'
+  economics:
+    benefits:
+    - benefit_id: ben_01
+      applies_to: WE.VESTR equity-management plans
+      description: 70% off for the first year of WE.VESTR equity-management plans,
+        valid for 12 months
+      duration:
+        kind: exact
+        value: P1Y
+      kind: discount
+      percentage:
+        basis_points: 7000
+        kind: exact
+    consideration:
+      kind: none
+  eligibility:
+    rule:
+      kind: all
+      rules:
+      - criterion_id: cri_01
+        kind: manual
+        reason: external-verification
+        statement: Must be a member of Microsoft for Startups.
+      - criterion_id: cri_02
+        kind: predicate
+        fact: company.is_current_customer
+        operator: eq
+        statement: Must be a new WE.VESTR customer.
+        value:
+          type: boolean
+          value: false
+      - criterion_id: cri_03
+        kind: predicate
+        fact: company.stakeholder_count
+        operator: gte
+        statement: Must have at least 30 stakeholders.
+        value:
+          type: integer
+          value: 30
+  roles:
+    terms_authority_entity_id: ent_01m1srjgzbq7g4avpk4w5tdxwk
+    access_operator_entity_id: ent_01kyh8fpe3n3yye39kmzvy410z
+  access:
+    availability: membership
+    method: form
+    url: https://learn.microsoft.com/en-us/startups/benefits/technical-benefits/third-party-benefits/we-vest
+    instructions: Access the offer through the Microsoft for Startups Founders Hub
+      Benefits page. The WE.VESTR first-year discount is listed under third-party
+      technical benefits and requires active Microsoft for Startups membership.
+  source_ids:
+  - src_3ae35796bef4f724cb10137b35d223dc417019945a5d475c144af33775c7539f
+  - src_b2019d3b081760cfe71ef2510252e8fb8cc3cd24f5a50b705ed7c98cb43641a2

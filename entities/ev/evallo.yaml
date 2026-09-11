@@ -1,0 +1,69 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1sypjh87ff407e9cd858ee6
+  slug: evallo
+  slug_aliases: []
+  name: Evallo
+  domains:
+    - value: evallo.ai
+      role: primary
+  category: productivity-operations
+profile:
+  description: Evallo provides a complete software suite for tutoring businesses, including scheduling, invoicing, prepwork, and CRM for tutors and tutoring companies.
+  links:
+    site: https://evallo.ai
+sources:
+  - source_id: src_9346a2c503eb1745c988fd5596c91ac28913a28ce4d438a1e5818e85db04c664
+    url: https://evallo.ai/evallo-for-startups
+programs:
+  - program_id: prg_01m1sypjh8a8788427277cdc45
+    program_slug: evallo-for-startups
+    program_slug_aliases: []
+    title: Evallo for Startups
+    summary: Evallo offers eligible tutoring businesses full access to its platform at no cost for 12 months.
+    source_ids:
+      - src_9346a2c503eb1745c988fd5596c91ac28913a28ce4d438a1e5818e85db04c664
+offers:
+  - offer_id: off_01m1sypjh8c87aad35e21c8f2d
+    program_id: prg_01m1sypjh8a8788427277cdc45
+    offer_slug: free-12-month-platform-access
+    offer_slug_aliases: []
+    title: Free platform access for 12 months
+    summary: Eligible tutoring businesses receive full Evallo platform access for 12 months at no cost, covering scheduling, invoicing, prepwork, and CRM features.
+    lifecycle:
+      status: active
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Full Evallo platform access for 12 months including calendar, invoicing, prepwork, and CRM tools
+          duration:
+            kind: exact
+            value: P12M
+          kind: free-access
+        - benefit_id: ben_02
+          description: Support for 1 to 10 users depending on business size
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: external-verification
+            statement: The company is a tutoring business or individual tutor providing educational services.
+          - criterion_id: cri_02
+            kind: manual
+            reason: vendor-discretion
+            statement: The company meets Evallo's eligibility requirements as reviewed during application.
+    roles:
+      terms_authority_entity_id: ent_01m1sypjh87ff407e9cd858ee6
+      access_operator_entity_id: ent_01m1sypjh87ff407e9cd858ee6
+    access:
+      availability: public
+      instructions: Submit an application through the Evallo for Startups page. Evallo reviews applications and responds to qualified candidates.
+      method: form
+      url: https://evallo.ai/evallo-for-startups
+    source_ids:
+      - src_9346a2c503eb1745c988fd5596c91ac28913a28ce4d438a1e5818e85db04c664
