@@ -1,0 +1,67 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01kb9k2cwd8arr0ccw1v7zfds0
+  slug: collieai
+  slug_aliases:
+    - collie-ai
+    - collie
+  name: CollieAi
+  domains:
+    - value: collieai.io
+      role: primary
+      valid_from: 2026-09-06T21:28:00.000Z
+  category: auth-security
+profile:
+  summary: Provider-agnostic AI firewall and security proxy for LLM applications.
+  description: CollieAi is a drop-in, provider-agnostic security proxy for LLM applications that filters prompts and responses to block prompt injection, jailbreaks, PII leaks, and related threats.
+  links:
+    site: https://collieai.io
+sources:
+  - source_id: src_d4a09a1223140c440906ccbd2316f0927d25fb2a18876b63a2bc459d82439da5
+    url: https://collieai.io/startups/
+programs:
+  - program_id: prg_01yxhwf9f0222sx4j4c7pg5dct
+    program_slug: collieai-for-startups
+    program_slug_aliases: []
+    title: CollieAi for Startups
+    summary: CollieAi gives eligible early-stage startups founded under 3 years ago 6 months of the Growth plan free, valued at $294 against the $49/month Growth price.
+    source_ids:
+      - src_d4a09a1223140c440906ccbd2316f0927d25fb2a18876b63a2bc459d82439da5
+offers:
+  - offer_id: off_01b80j0da4cthwzrcsnn2zh4tq
+    program_id: prg_01yxhwf9f0222sx4j4c7pg5dct
+    offer_slug: growth-free-six-months
+    offer_slug_aliases: []
+    title: Growth, free for 6 months
+    summary: Eligible early-stage startups founded under 3 years ago receive Growth free for 6 months.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-06T21:28:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Growth, free for 6 months
+          duration:
+            kind: exact
+            value: P6M
+          kind: free-service
+          service: Growth
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: not-machine-evaluable
+        statement: The applicant is an early-stage startup founded under 3 years ago.
+    roles:
+      terms_authority_entity_id: ent_01kb9k2cwd8arr0ccw1v7zfds0
+      access_operator_entity_id: ent_01kb9k2cwd8arr0ccw1v7zfds0
+    access:
+      availability: public
+      method: form
+      instructions: Apply for the Startup Program from the CollieAi for Startups page. Every application is reviewed within 24 hours. No credit card is required to apply.
+      url: https://collieai.io/startups/
+    terms_url: https://collieai.io/terms
+    source_ids:
+      - src_d4a09a1223140c440906ccbd2316f0927d25fb2a18876b63a2bc459d82439da5
