@@ -1,0 +1,87 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m0x9wjpwz9qsqt9mc88s51hp
+  slug: zencoder
+  slug_aliases: []
+  name: Zencoder
+  domains:
+    - value: zencoder.ai
+      role: primary
+      valid_from: 2026-08-25T20:31:11.391Z
+  category: devtools-other
+profile:
+  description: Zencoder provides AI coding agents and workflow automation for software development teams.
+  links:
+    site: https://zencoder.ai
+sources:
+  - source_id: src_68570d70717d7edf78075e8f8296d3c10aeb8e04c4ad192358d526de585f9dd5
+    url: https://zencoder.ai/legal/zencoder-startup-program-terms-and-conditions
+programs:
+  - program_id: prg_01m0x9wjpw4g7fw1etzh0ph5rv
+    program_slug: zencoder-for-startups
+    program_slug_aliases: []
+    title: Zencoder for Startups
+    summary: Zencoder offers qualifying early-stage companies discounted annual subscriptions for three consecutive years.
+    source_ids:
+      - src_68570d70717d7edf78075e8f8296d3c10aeb8e04c4ad192358d526de585f9dd5
+offers:
+  - offer_id: off_01m0x9wjpwnjdkjcdy23nysyrs
+    program_id: prg_01m0x9wjpw4g7fw1etzh0ph5rv
+    offer_slug: forty-thirty-twenty-percent-three-year-discount
+    offer_slug_aliases: []
+    title: 40% off year one, 30% off year two, and 20% off year three
+    summary: Approved startups receive 40% off an eligible Zencoder plan in year one, 30% off in year two, and 20% off in year three.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-25T20:31:11.391Z
+    economics:
+      benefits:
+        - applies_to: Zencoder Core, Advanced, or Max annual subscriptions
+          benefit_id: ben_01
+          description: 40% discount in the first year
+          duration:
+            kind: exact
+            value: P1Y
+          kind: discount
+          percentage:
+            basis_points: 4000
+            kind: exact
+        - applies_to: Zencoder Core, Advanced, or Max annual subscriptions
+          benefit_id: ben_02
+          description: 30% discount in the second year
+          duration:
+            kind: exact
+            value: P1Y
+          kind: discount
+          percentage:
+            basis_points: 3000
+            kind: exact
+        - applies_to: Zencoder Core, Advanced, or Max annual subscriptions
+          benefit_id: ben_03
+          description: 20% discount in the third year
+          duration:
+            kind: exact
+            value: P1Y
+          kind: discount
+          percentage:
+            basis_points: 2000
+            kind: exact
+      consideration:
+        kind: variable
+        description: An annual paid Core, Advanced, or Max subscription is required after approval, at the remaining discounted price.
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: external-verification
+        statement: Applicant must have no more than 25 full-time employees; be at Pre-seed, Seed, or Series A stage, or be bootstrapped and less than three years old with equivalent early-stage characteristics; apply once with a business-domain email; and pass Zencoder review. Existing Enterprise customers, agencies, consultancies, resellers applying for clients, previous participants and related entities are excluded.
+    roles:
+      terms_authority_entity_id: ent_01m0x9wjpwz9qsqt9mc88s51hp
+      access_operator_entity_id: ent_01m0x9wjpwz9qsqt9mc88s51hp
+    access:
+      availability: public
+      method: contact
+      url: https://zencoder.ai/legal/zencoder-startup-program-terms-and-conditions
+      instructions: Contact Zencoder using the startup-program address published in the program terms, request the official application form, and submit it with a business-domain email.
+    source_ids:
+      - src_68570d70717d7edf78075e8f8296d3c10aeb8e04c4ad192358d526de585f9dd5
