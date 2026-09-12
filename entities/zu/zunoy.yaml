@@ -45,7 +45,7 @@ offers:
           kind: free-service
           service: Growth/Business Plan
         - benefit_id: ben_02
-          description: Priority support to help organizations get started
+          description: Priority support to help you get started fast
           kind: other
       consideration:
         kind: none
@@ -56,23 +56,23 @@ offers:
           - criterion_id: cri_01
             kind: manual
             reason: external-verification
-            statement: The startup must be less than five years old, or the NGO must have an annual operating budget under $500,000.
+            statement: The startup is less than five years old or the NGO has an annual operating budget under $500,000.
           - criterion_id: cri_02
             kind: manual
             reason: external-verification
-            statement: The applicant must be a registered early-stage startup from pre-seed to Series A or a verified nonprofit or NGO.
+            statement: The applicant is a registered early-stage startup from pre-seed to Series A or a verified nonprofit or NGO.
           - criterion_id: cri_03
             kind: manual
             reason: external-verification
-            statement: The applicant's entire team must be smaller than 25 people.
+            statement: The applicant's entire team is smaller than 25 people.
           - criterion_id: cri_04
             kind: manual
             reason: external-verification
-            statement: The organization must use software to create social or community impact.
+            statement: The organization uses software to create social or community impact.
           - criterion_id: cri_05
             kind: manual
             reason: external-verification
-            statement: Zunoy must support the organization's core mission or product rather than an internal experiment.
+            statement: Zunoy will be used to support the organization's core mission or product, not just internal experiments.
     roles:
       terms_authority_entity_id: ent_01m136y5j00q3zgs0ys3g1ktck
       access_operator_entity_id: ent_01m136y5j00q3zgs0ys3g1ktck
