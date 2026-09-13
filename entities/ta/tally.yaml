@@ -10,7 +10,7 @@ entity:
       valid_from: 2026-09-03T19:15:17.920Z
   category: no-code
 profile:
-  description: Tally is a free no-code form builder with unlimited forms and submissions.
+  description: Tally operates a partner program for startup-support organizations.
   links:
     site: https://tally.so
 sources:
@@ -32,17 +32,18 @@ offers:
     offer_slug: tally-startup-discount
     offer_slug_aliases: []
     title: Tally Startup Discount
-    summary: Eligible partner-affiliated startups can get 50% off Tally Pro for one year by applying with a partner code through Tally's startup program form.
+    summary: Startups can apply to receive 50% off Tally Pro during one year.
     lifecycle:
       status: active
       effective_from: 2026-09-03T19:15:17.920Z
     economics:
       consideration:
-        kind: none
+        kind: unknown
+        description: The source record did not establish separate consideration.
       benefits:
         - benefit_id: ben_01
           applies_to: Tally Pro
-          description: 50% off Tally Pro for one year.
+          description: 50% off Tally Pro during one year.
           kind: discount
           percentage:
             kind: exact
