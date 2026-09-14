@@ -8,7 +8,7 @@ entity:
     - value: blacksmith.sh
       role: primary
       valid_from: 2026-09-14T00:00:00.000Z
-  category: developer-tools
+  category: ci-cd
 profile:
   summary: Blacksmith provides faster, lower-cost GitHub Actions runners with caching, observability, and multi-OS support for CI workloads.
   description: Blacksmith runs GitHub Actions on faster hardware with lower per-minute pricing than GitHub-hosted runners, plus cache and observability features for CI pipelines.
