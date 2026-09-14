@@ -1,0 +1,93 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m2gp4wjgf02jwc5cyd5q1d8d
+  slug: vatis-tech
+  slug_aliases: []
+  name: Vatis Tech
+  domains:
+    - value: vatis.tech
+      role: primary
+      valid_from: 2026-09-14T19:26:18.706Z
+  category: ai-ml
+profile:
+  summary: Vatis Tech provides speech recognition and audio intelligence tools, including a speech-to-text API for developers building voice-powered products.
+  description: Vatis Tech provides speech-to-text APIs and audio intelligence for developers and businesses.
+  links:
+    site: https://vatis.tech
+sources:
+  - source_id: src_f322e6b33a6884e52c5771fbbe8ce149c8e1c74f5cf858cd6c99bf6cc0884ed5
+    url: https://vatis.tech/startup-grants
+programs:
+  - program_id: prg_01m2gp4wjj547gjwwxw47ybbbb
+    program_slug: grants-for-startups
+    program_slug_aliases: []
+    title: Vatis Tech Grants for Startups
+    summary: Vatis Tech supports early-stage companies building long-term products with its speech-to-text API through an application-based grant program.
+    source_ids:
+      - src_f322e6b33a6884e52c5771fbbe8ce149c8e1c74f5cf858cd6c99bf6cc0884ed5
+offers:
+  - offer_id: off_01m2gp4wjjxq6bw7np1eg2fqhr
+    program_id: prg_01m2gp4wjj547gjwwxw47ybbbb
+    offer_slug: three-month-speech-to-text-grant
+    offer_slug_aliases: []
+    title: 1,000 hours of speech-to-text API access over 3 months
+    summary: Approved early-stage companies receive 60,000 speech-to-text minutes over three months, with enterprise access. Participation requires twelve months of website logo display.
+    description: Unused hours expire at the end of the three-month grant. Usage beyond the 1,000-hour allowance is charged under the Pro plan for Developers, or a separately agreed long-term paid plan.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-14T19:26:18.706Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          kind: free-service
+          service: Vatis Tech speech-to-text API
+          description: 60,000 minutes, equivalent to 1,000 hours, of speech-to-text processing over three months, with enterprise-level benefits and early access to new features.
+          duration:
+            kind: exact
+            value: P3M
+      consideration:
+        kind: variable
+        description: Accepted companies display the Vatis Tech logo on their website for twelve months. Additional usage after the allowance is exhausted is charged under the Pro plan for Developers unless a paid plan is separately agreed.
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: external-verification
+            statement: The applicant is an early-stage company building a product or business model using speech-to-text API technology.
+          - criterion_id: cri_02
+            kind: predicate
+            fact: company.employee_count
+            operator: lte
+            value:
+              type: number
+              value: 20
+            statement: The company has no more than 20 employees.
+          - criterion_id: cri_03
+            kind: manual
+            reason: external-verification
+            statement: The company has a clearly defined monetization strategy.
+          - criterion_id: cri_04
+            kind: manual
+            reason: external-verification
+            statement: The company is developing a long-term market product; one-off projects are ineligible.
+          - criterion_id: cri_05
+            kind: manual
+            reason: external-verification
+            statement: Each company is limited to one application for this program.
+          - criterion_id: cri_06
+            kind: manual
+            reason: vendor-discretion
+            statement: The application must be reviewed and accepted by Vatis Tech.
+    roles:
+      terms_authority_entity_id: ent_01m2gp4wjgf02jwc5cyd5q1d8d
+      access_operator_entity_id: ent_01m2gp4wjgf02jwc5cyd5q1d8d
+    access:
+      availability: public
+      method: form
+      url: https://vatis.tech/startup-grants
+      instructions: Apply using the form on the grant page, or use the email fallback listed there if the form does not load. Vatis Tech expects to respond within one week; free hours become usable 24-48 hours after acceptance.
+    terms_url: https://vatis.tech/startup-grants
+    source_ids:
+      - src_f322e6b33a6884e52c5771fbbe8ce149c8e1c74f5cf858cd6c99bf6cc0884ed5
