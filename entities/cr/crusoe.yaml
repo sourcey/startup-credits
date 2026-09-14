@@ -1,0 +1,64 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m2g3ay0rg9m7p61gsv1asad8
+  slug: crusoe
+  slug_aliases: []
+  name: Crusoe
+  domains:
+    - value: crusoe.ai
+      role: primary
+      valid_from: 2026-09-14T14:00:00.000Z
+  category: hosting-infra
+profile:
+  summary: Crusoe is an energy-first AI infrastructure company that builds and operates
+    data centers and provides Crusoe Cloud, a GPU cloud platform for training and
+    inference at scale.
+  description: Crusoe is an energy-first AI factory company providing Crusoe Cloud,
+    an AI infrastructure platform with NVIDIA and AMD GPU compute for training and
+    inference workloads.
+  links:
+    site: https://crusoe.ai
+sources:
+  - source_id: src_0729ce97817ff606f84ce7bfce7a464676491dfa208957b3ddc903dfc82361d0
+    url: https://crusoe.ai/startup
+programs: []
+offers:
+  - offer_id: off_01m2g3ay0ykepfxemyvxwxvjn0
+    offer_slug: crusoe-startup-credits-gb200-nvl72
+    offer_slug_aliases: []
+    title: Crusoe Startup Credits for GB200 NVL72 Compute
+    summary: Eligible late-stage AI startups can apply to receive up to $100,000 in
+      credits for virtualized NVIDIA GB200 NVL72 servers on Crusoe Cloud, usable on
+      on-demand and spot instances and toward reservations, pending availability.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-14T14:00:00.000Z
+    economics:
+      consideration:
+        kind: none
+        description: The credits are granted at Crusoe's discretion to accepted applicants
+          with no separate fee stated on the source page.
+      benefits:
+        - benefit_id: ben_primary
+          description: Up to $100,000 in credits for virtualized NVIDIA GB200 NVL72
+            servers on Crusoe Cloud
+          kind: credit
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Applicants must have raised at least $10,000,000 USD in funding
+          within the last 36 months or have at least $10,000,000 USD ARR; have model
+          training or inference as their primary focus (healthcare workloads excluded);
+          not be an existing Crusoe customer; and have been legally founded in 2020
+          or later with a last funding date in 2022 or later.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01m2g3ay0rg9m7p61gsv1asad8
+      access_operator_entity_id: ent_01m2g3ay0rg9m7p61gsv1asad8
+    access:
+      availability: public
+      method: form
+      url: https://crusoe.ai/startup
+    source_ids:
+      - src_0729ce97817ff606f84ce7bfce7a464676491dfa208957b3ddc903dfc82361d0
