@@ -1,0 +1,91 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m2fwtf0y9xd6yzbvck38bzc4
+  slug: swarmia
+  slug_aliases: []
+  name: Swarmia
+  domains:
+    - value: swarmia.com
+      role: primary
+      valid_from: 2026-09-14T12:03:43.000Z
+  category: devtools-other
+profile:
+  summary: Engineering intelligence platform combining engineering metrics, AI coding tool insights, developer experience surveys, and automated feedback loops.
+  description: Swarmia is an engineering intelligence platform for engineering metrics, AI coding tool adoption and cost, developer surveys, and feedback loops.
+  links:
+    site: https://www.swarmia.com/
+sources:
+  - source_id: src_f74731d47b4a7360631a3f8f6e98562d960621e20311a4e92b538df74e8d5182
+    url: https://www.swarmia.com/partner-program/
+  - source_id: src_3b4bf963462e48f232e893f93bc51259a9a7c962fec170f3d0d7b409e630412c
+    url: https://www.swarmia.com/startups/
+programs:
+  - program_id: prg_01m2fwtf1510jrswtp8fp8gxj7
+    program_slug: swarmia-partner-program
+    program_slug_aliases: []
+    title: Swarmia Partner Program
+    summary: Swarmia's partner program lets investors, accelerators, and other program members offer their portfolio companies discounted first-year access to Swarmia's Standard and Enterprise annual plans.
+    source_ids:
+      - src_f74731d47b4a7360631a3f8f6e98562d960621e20311a4e92b538df74e8d5182
+offers:
+  - offer_id: off_01m2fwtf15tz164rbpbznk2h98
+    program_id: prg_01m2fwtf1510jrswtp8fp8gxj7
+    offer_slug: swarmia-partner-portfolio-first-year-discount
+    offer_slug_aliases: []
+    title: Swarmia Partner Program First-Year Discount
+    summary: Companies in a Swarmia partner's portfolio get 50% off the first full year of a Standard or Enterprise annual plan with up to 50 developers, or 30% off with 50 or more developers.
+    description: Swarmia's partner program grants portfolio companies of member investors and accelerators a first-year discount on Standard and Enterprise plans. Startups with up to 50 developers receive 50% off and companies with 50 or more developers receive 30% off. The discount applies to the first full year and requires an annual deal. Applicants must be new to Swarmia's Standard or Enterprise annual plan and their investor must already be a program partner before the discount is granted.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-14T12:03:43.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          applies_to: Swarmia Standard or Enterprise annual plan
+          description: 50% off the first full year for companies with up to 50 developers.
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 5000
+          duration:
+            kind: exact
+            value: P1Y
+        - benefit_id: ben_02
+          applies_to: Swarmia Standard or Enterprise annual plan
+          description: 30% off the first full year for companies with 50 or more developers.
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 3000
+          duration:
+            kind: exact
+            value: P1Y
+      consideration:
+        kind: variable
+        description: Purchase a Standard or Enterprise annual plan at its discounted price; the discount requires an annual deal.
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: not-machine-evaluable
+            statement: The company's investor must already be a member of the Swarmia partner program before the discount is granted.
+          - criterion_id: cri_02
+            kind: predicate
+            fact: company.is_current_customer
+            operator: eq
+            statement: The company must be new to Swarmia's Standard or Enterprise annual plan.
+            value:
+              type: boolean
+              value: false
+    roles:
+      terms_authority_entity_id: ent_01m2fwtf0y9xd6yzbvck38bzc4
+      access_operator_entity_id: ent_01m2fwtf0y9xd6yzbvck38bzc4
+    access:
+      availability: public
+      method: form
+      url: https://www.swarmia.com/partner-program/
+    terms_url: https://www.swarmia.com/partner-program/
+    source_ids:
+      - src_f74731d47b4a7360631a3f8f6e98562d960621e20311a4e92b538df74e8d5182
