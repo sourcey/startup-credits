@@ -1,0 +1,75 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m2g10k1jv2ca3svwcwsttgr2
+  slug: arpio
+  slug_aliases: []
+  name: Arpio
+  domains:
+    - value: arpio.io
+      role: primary
+      valid_from: 2026-09-14T13:15:00.000Z
+  category: hosting-infra
+profile:
+  summary: Arpio provides automated disaster recovery and cyber resilience for cloud applications and infrastructure.
+  description: Arpio automates disaster recovery and cyber resilience for cloud applications and infrastructure.
+  links:
+    site: https://arpio.io/
+sources:
+  - source_id: src_6feed3f1309162d537f4b06f91d7ced47f8af7d3f9c3f20824961969a8a08c68
+    url: https://startups.aws.com/offers
+  - source_id: src_001ac14075e5018ae579ff73c1a9f371088dcd1aeeb57fe03090dbc86cafacba
+    url: https://arpio.io/
+programs:
+  - program_id: prg_01m2g10k1n3jadvv9fg32n16b9
+    program_slug: arpio-for-startups
+    program_slug_aliases: []
+    title: Arpio for Startups
+    summary: Arpio's startup offer combines a one-time service credit with resilience architecture guidance and infrastructure dependency mapping.
+    source_ids:
+      - src_6feed3f1309162d537f4b06f91d7ced47f8af7d3f9c3f20824961969a8a08c68
+      - src_001ac14075e5018ae579ff73c1a9f371088dcd1aeeb57fe03090dbc86cafacba
+offers:
+  - offer_id: off_01m2g10k1naewbne1wtrz1q1wp
+    program_id: prg_01m2g10k1n3jadvv9fg32n16b9
+    offer_slug: one-time-10000-arpio-credit-after-free-proof-of-value
+    offer_slug_aliases: []
+    title: One-time $10,000 Arpio credit after a free Proof of Value
+    summary: Eligible startups can receive a one-time $10,000 Arpio credit after entering a free Proof of Value engagement, plus resilience architecture advice and dependency mapping.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-14T13:15:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: One-time $10,000 Arpio service credit
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 1000000
+            kind: exact
+        - benefit_id: ben_02
+          description: Dedicated technical advice from Arpio's resilience architect community
+          kind: other
+        - benefit_id: ben_03
+          description: Custom infrastructure dependency mapping
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_01
+        reason: external-verification
+        statement: Eligible startups listed in the AWS Startups Global Startup Program offer must enter a free Arpio Proof of Value engagement; Arpio and AWS determine eligibility.
+    roles:
+      terms_authority_entity_id: ent_01m2g10k1jv2ca3svwcwsttgr2
+      access_operator_entity_id: ent_01kyh8fpe10b164tj935t8k5zb
+    access:
+      availability: public
+      method: form
+      url: https://startups.aws.com/offers
+    terms_url: https://startups.aws.com/offers
+    source_ids:
+      - src_6feed3f1309162d537f4b06f91d7ced47f8af7d3f9c3f20824961969a8a08c68
+      - src_001ac14075e5018ae579ff73c1a9f371088dcd1aeeb57fe03090dbc86cafacba
