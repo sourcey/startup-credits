@@ -1,0 +1,77 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m2h2tzjb5hn0m9twy0ntq6jz
+  slug: timeweb-cloud
+  slug_aliases: []
+  name: Timeweb Cloud
+  domains:
+    - value: timeweb.cloud
+      role: primary
+      valid_from: 2026-09-14T23:08:05.769Z
+  category: hosting-infra
+profile:
+  summary: Cloud infrastructure for businesses, startups, and independent developers, including virtual machines, managed databases, storage, and Kubernetes.
+  description: Timeweb Cloud provides cloud infrastructure and managed services for businesses, startups, and independent developers.
+  links:
+    site: https://timeweb.cloud
+sources:
+  - source_id: src_25fad78985beec152ab444898b47a83d3bc716f33c8729d8cdc7eecbb97e052a
+    url: https://timeweb.cloud/about
+  - source_id: src_298b20607bc2a61d73d15290ac9f46b6ee3aad7653ec58d4b28ca7dc26aaaae7
+    url: https://timeweb.cloud/grant
+programs: []
+offers:
+  - offer_id: off_01m2h2tzje5ycdj0bdew1fyk18
+    offer_slug: cloud-grant
+    offer_slug_aliases: []
+    title: Timeweb Cloud Grant
+    summary: Eligible new Russian businesses can receive 5,000 to 1,000,000 RUB in Timeweb Cloud service bonuses for an individually set period of one to six months.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-14T23:08:05.769Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 5,000 to 1,000,000 service bonuses for eligible cloud services, excluding dedicated servers, GPU servers, and AI agents, usable for one to six months
+          duration:
+            kind: up-to
+            value: P6M
+          kind: credit
+          value:
+            amount:
+              currency: RUB
+              minor_units: 100000000
+            kind: up-to
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: external-verification
+            statement: The applicant must be a Russian Federation resident legal entity or individual entrepreneur.
+          - criterion_id: cri_02
+            kind: manual
+            reason: external-verification
+            statement: The applicant must not have previously purchased or used Timeweb or Timeweb Cloud services or previously received this grant.
+          - criterion_id: cri_03
+            kind: manual
+            reason: external-verification
+            statement: The funded project must not be related to game hosting.
+          - criterion_id: cri_04
+            kind: manual
+            reason: vendor-discretion
+            statement: Timeweb Cloud individually determines the approved grant amount and its one-to-six-month validity period.
+    roles:
+      terms_authority_entity_id: ent_01m2h2tzjb5hn0m9twy0ntq6jz
+      access_operator_entity_id: ent_01m2h2tzjb5hn0m9twy0ntq6jz
+    access:
+      availability: public
+      instructions: Submit the grant form; Timeweb Cloud normally responds within one or two business days and may request eligibility documents.
+      method: form
+      url: https://timeweb.cloud/grant
+    terms_url: https://timeweb.cloud/grant
+    source_ids:
+      - src_298b20607bc2a61d73d15290ac9f46b6ee3aad7653ec58d4b28ca7dc26aaaae7
