@@ -1,0 +1,56 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m2gz324azeyrykapstf1jncd
+  slug: golioth
+  slug_aliases: []
+  name: Golioth
+  domains:
+    - value: golioth.io
+      role: primary
+      valid_from: 2026-09-14T22:00:00.000Z
+  category: hosting-infra
+profile:
+  description: Golioth provides cloud infrastructure for connected devices, including device management, software updates, and data routing.
+  summary: Golioth helps hardware teams connect devices to the cloud, manage fleets, deliver software updates, and route device data.
+  links:
+    site: https://golioth.io/
+sources:
+  - source_id: src_ee9dffed6ab2e6090a70e0cb75a46fd31655b2c180d74fab858b763eddf7103a
+    url: https://golioth.io/pricing
+  - source_id: src_7fcb6aa6737538d25c8ded94ab36d3f23f6e655ad977638cdd6603750b088396
+    url: https://golioth.io/product
+programs: []
+offers:
+  - offer_id: off_01m2gz324awmsr3tsw227drwey
+    offer_slug: startup-and-nonprofit-credits
+    offer_slug_aliases: []
+    title: Credits for startups and nonprofits
+    summary: Qualified early-stage startups and nonprofits can request Golioth platform credits by contacting the company.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-14T22:00:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_startup_credits
+          kind: other
+          description: Platform credits for qualified early-stage startups and nonprofits; the amount and duration are not published.
+      consideration:
+        kind: unknown
+        description: The public pages do not specify consideration for these credits.
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_qualification
+        statement: Must be a qualified early-stage startup or nonprofit.
+        reason: external-verification
+    roles:
+      terms_authority_entity_id: ent_01m2gz324azeyrykapstf1jncd
+      access_operator_entity_id: ent_01m2gz324azeyrykapstf1jncd
+    access:
+      availability: public
+      method: contact
+      url: https://golioth.io/pricing
+      instructions: Use the contact details on the pricing page to ask about startup and nonprofit credits.
+    source_ids:
+      - src_ee9dffed6ab2e6090a70e0cb75a46fd31655b2c180d74fab858b763eddf7103a
+      - src_7fcb6aa6737538d25c8ded94ab36d3f23f6e655ad977638cdd6603750b088396
