@@ -36,13 +36,16 @@ offers:
     economics:
       consideration:
         kind: none
-        description: The credits are granted at Crusoe's discretion to accepted applicants
-          with no separate fee stated on the source page.
       benefits:
-        - benefit_id: ben_primary
+        - benefit_id: ben_01
           description: Up to $100,000 in credits for virtualized NVIDIA GB200 NVL72
             servers on Crusoe Cloud
           kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 10000000
+            kind: up-to
     eligibility:
       rule:
         kind: manual
