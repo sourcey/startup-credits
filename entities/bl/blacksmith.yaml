@@ -1,0 +1,65 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m2fvv2wcjtt25jyvbnfw9pr3
+  slug: blacksmith
+  slug_aliases: []
+  name: Blacksmith
+  domains:
+    - value: blacksmith.sh
+      role: primary
+      valid_from: 2026-09-14T00:00:00.000Z
+  category: developer-tools
+profile:
+  summary: Blacksmith provides faster, lower-cost GitHub Actions runners with caching, observability, and multi-OS support for CI workloads.
+  description: Blacksmith runs GitHub Actions on faster hardware with lower per-minute pricing than GitHub-hosted runners, plus cache and observability features for CI pipelines.
+  links:
+    site: https://www.blacksmith.sh
+sources:
+  - source_id: src_d3d56ff73e6773925d3957f1d017c8faf582b3b1bf30f2ea016dfdd5ad0a2a31
+    url: https://www.blacksmith.sh/pricing
+  - source_id: src_edc2760dd5341c19c4f723126a17d19f27f36ddd97cc7dee5e4701178d52565e
+    url: https://www.blacksmith.sh/
+programs:
+  - program_id: prg_01m2fvv2wcyab5whrq655zw59m
+    program_slug: blacksmith-startup-program
+    program_slug_aliases: []
+    title: Blacksmith Startup Program
+    summary: Blacksmith offers a startup discount on its GitHub Actions runner platform for qualifying early-stage companies after signup.
+    source_ids:
+      - src_d3d56ff73e6773925d3957f1d017c8faf582b3b1bf30f2ea016dfdd5ad0a2a31
+offers:
+  - offer_id: off_01m2fvv2wcxhzczvjgsxxff96z
+    program_id: prg_01m2fvv2wcyab5whrq655zw59m
+    offer_slug: blacksmith-startup-discount
+    offer_slug_aliases: []
+    title: Blacksmith startup discount on CI runners
+    summary: Qualifying startups can request a startup discount on Blacksmith after signing up, subject to headcount, funding, and company-age limits published on the pricing page.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-14T00:00:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Startup discount on Blacksmith GitHub Actions runner usage after signup and request.
+          kind: discount
+          percentage:
+            kind: unknown
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: not-machine-evaluable
+        statement: Applicant must have under 100 employees, under USD 50 million raised, and be under 5 years in business, then reach out after signing up to request the startup discount.
+    roles:
+      terms_authority_entity_id: ent_01m2fvv2wcjtt25jyvbnfw9pr3
+      access_operator_entity_id: ent_01m2fvv2wcjtt25jyvbnfw9pr3
+    access:
+      availability: public
+      method: form
+      url: https://www.blacksmith.sh/pricing
+    terms_url: https://www.blacksmith.sh/pricing
+    source_ids:
+      - src_d3d56ff73e6773925d3957f1d017c8faf582b3b1bf30f2ea016dfdd5ad0a2a31
+      - src_edc2760dd5341c19c4f723126a17d19f27f36ddd97cc7dee5e4701178d52565e
