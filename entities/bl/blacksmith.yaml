@@ -40,10 +40,11 @@ offers:
     economics:
       benefits:
         - benefit_id: ben_01
-          description: Startup discount on Blacksmith GitHub Actions runner usage after signup and request.
+          description: Startup discount on Blacksmith GitHub Actions runner usage after signup and request (amount determined after qualification).
           kind: discount
           percentage:
-            kind: unknown
+            kind: up-to
+            basis_points: 10000
       consideration:
         kind: none
     eligibility:
