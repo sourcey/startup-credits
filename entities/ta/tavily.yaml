@@ -1,0 +1,69 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m11xen07pvmyfk67h6gv034y
+  slug: tavily
+  slug_aliases: []
+  name: Tavily
+  domains:
+    - value: tavily.com
+      role: primary
+      valid_from: 2026-08-27T00:00:00.000Z
+  category: ai-ml
+profile:
+  description: Tavily provides real-time web search and content extraction APIs purpose-built for AI agents and LLM applications.
+  links:
+    site: https://tavily.com
+sources:
+  - source_id: src_e2441956379b94aab5e1d68c9021725bcaafc058659fdc751dd9a4029c554330
+    url: https://tavily.com/pricing
+programs:
+  - program_id: prg_01m11xen0bmg8jbpxdvxyxcgx9
+    program_slug: tavily-startup-program
+    program_slug_aliases: []
+    title: Tavily Startup Program
+    summary: Tavily offers early-stage startups and accelerator portfolios discounted API access and credits to build AI search capabilities.
+    source_ids:
+      - src_e2441956379b94aab5e1d68c9021725bcaafc058659fdc751dd9a4029c554330
+offers:
+  - offer_id: off_01m11xen0bgqbetb86vw7a08nz
+    program_id: prg_01m11xen0bmg8jbpxdvxyxcgx9
+    offer_slug: tavily-startup-discount
+    offer_slug_aliases: []
+    title: Tavily Startup API discount
+    summary: Eligible startups receive discounted API access and custom credit allowances across search, map, and extract endpoints.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-27T00:00:00.000Z
+    economics:
+      benefits:
+        - applies_to: Tavily search and extraction APIs
+          benefit_id: ben_01
+          description: Discounted per-credit pricing and startup-friendly API tier access
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 5000
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: any
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: external-verification
+            statement: Startup is affiliated with a recognized VC or accelerator partner.
+          - criterion_id: cri_02
+            kind: manual
+            reason: external-verification
+            statement: Early-stage company actively developing an LLM or AI agent product.
+    roles:
+      terms_authority_entity_id: ent_01m11xen07pvmyfk67h6gv034y
+      access_operator_entity_id: ent_01m11xen07pvmyfk67h6gv034y
+    access:
+      availability: public
+      instructions: Contact Tavily or apply through accelerator partner channels for startup onboarding.
+      method: contact
+      url: https://tavily.com/pricing
+    source_ids:
+      - src_e2441956379b94aab5e1d68c9021725bcaafc058659fdc751dd9a4029c554330
