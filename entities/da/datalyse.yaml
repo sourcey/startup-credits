@@ -10,8 +10,8 @@ entity:
       valid_from: 2026-09-01T06:30:00.000Z
   category: crm-sales
 profile:
-  summary: CRM, communications, automation, AI, and business-operations platform.
   description: Datalyse is an all-in-one platform for customer relationship management, sales, communications, automation, artificial intelligence, and business operations.
+  summary: CRM, communications, automation, AI, and business-operations platform.
   links:
     site: https://datalyse.io/
 sources:
