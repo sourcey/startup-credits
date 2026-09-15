@@ -1,0 +1,88 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m14rwjzjdx0zrr1negge5pd7
+  slug: universell
+  slug_aliases: []
+  name: Universell
+  domains:
+    - value: universell.us
+      role: primary
+      valid_from: 2026-08-28T18:07:37.000Z
+  category: crm-sales
+profile:
+  description: Universell is an integrated business platform for CRM, payments, inventory, workforce management, marketing, e-commerce, and analytics.
+  links:
+    site: https://www.universell.us
+sources:
+  - source_id: src_31ed546bef24eb84094750a146b467ccf0e46d71325667674f00cb5d01e6eaef
+    url: https://www.universell.us/start-up/
+programs:
+  - program_id: prg_01m14rwjzqajjghrxq9y5z13ry
+    program_slug: universell-startup-program
+    program_slug_aliases: []
+    title: Universell Startup Program
+    summary: Universell gives qualified early-stage businesses 12 months of free access to its $99 subscription tier for teams of up to 10 employees.
+    source_ids:
+      - src_31ed546bef24eb84094750a146b467ccf0e46d71325667674f00cb5d01e6eaef
+offers:
+  - offer_id: off_01m14rwjzq30qh0s0w1hsvy5ac
+    program_id: prg_01m14rwjzqajjghrxq9y5z13ry
+    offer_slug: twelve-months-free-platform-access
+    offer_slug_aliases: []
+    title: 12 months of free Universell platform access
+    summary: Qualified startups receive the Universell $99 subscription tier free for 12 months for up to 10 employees, with access to more than 100 integrated business tools.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-28T18:07:37.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Free access to the Universell $99 subscription tier for up to 10 employees.
+          duration:
+            kind: exact
+            value: P1Y
+          kind: free-service
+          service: Universell $99 subscription tier for up to 10 employees
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.age_months
+            kind: predicate
+            operator: lte
+            statement: Business must have been operating for no more than 30 months.
+            value:
+              type: number
+              value: 30
+          - criterion_id: cri_02
+            fact: company.employee_count
+            kind: predicate
+            operator: gte
+            statement: Business must have at least one employee.
+            value:
+              type: number
+              value: 1
+          - criterion_id: cri_03
+            fact: company.employee_count
+            kind: predicate
+            operator: lte
+            statement: Business must have no more than 10 employees.
+            value:
+              type: number
+              value: 10
+          - criterion_id: cri_04
+            kind: manual
+            reason: external-verification
+            statement: Applicant must provide a business plan, articles of incorporation, and a utility bill for business-address verification.
+    roles:
+      terms_authority_entity_id: ent_01m14rwjzjdx0zrr1negge5pd7
+      access_operator_entity_id: ent_01m14rwjzjdx0zrr1negge5pd7
+    access:
+      availability: public
+      method: form
+      url: https://www.universell.us/get-started-flow/
+    source_ids:
+      - src_31ed546bef24eb84094750a146b467ccf0e46d71325667674f00cb5d01e6eaef
