@@ -1,0 +1,102 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m16f4r3dkrkhyr9j1e0z667y
+  slug: reducto
+  slug_aliases: []
+  name: Reducto
+  domains:
+    - value: reducto.ai
+      role: primary
+      valid_from: 2026-08-29T00:00:00.000Z
+  category: ai-ml
+profile:
+  description: Reducto provides document parsing, OCR, classification, extraction, editing, redaction, and translation tools for production document workflows.
+  links:
+    site: https://reducto.ai
+sources:
+  - source_id: src_15029d107fa3024890ed1e0b320f144e1b223d24b40408ffa7d0681294ab849b
+    url: https://reducto.ai/startups
+programs:
+  - program_id: prg_01m16f4r3fpzrxgytgc9dg44v4
+    program_slug: startup-program
+    program_slug_aliases: []
+    title: Reducto for Startups
+    summary: Reducto for Startups provides early-stage companies with document-processing credits, discounted Growth platform fees, and startup support for one year.
+    source_ids:
+      - src_15029d107fa3024890ed1e0b320f144e1b223d24b40408ffa7d0681294ab849b
+offers:
+  - offer_id: off_01m16f4r3hqff3ksjzmg9cqjx8
+    program_id: prg_01m16f4r3fpzrxgytgc9dg44v4
+    offer_slug: 1500-usd-credits-and-growth-fee-discount
+    offer_slug_aliases: []
+    title: $1,500 in Credits and Up to 100% Off the Growth Platform Fee
+    summary: Eligible seed, pre-seed, and early-stage startups receive $1,500 in Reducto credits and up to 100% off the Growth tier platform fee for one year under an annual contract.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-29T00:00:00.000Z
+    economics:
+      consideration:
+        kind: variable
+        description: The credits and discounted platform fee apply for one year under an annual contract.
+      benefits:
+        - benefit_id: ben_01
+          description: $1,500 in Reducto credits for testing and early production usage
+          duration:
+            kind: exact
+            value: P1Y
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 150000
+            kind: exact
+        - benefit_id: ben_02
+          description: Up to 100% off the Growth tier platform fee for one year
+          duration:
+            kind: exact
+            value: P1Y
+          kind: discount
+          percentage:
+            basis_points: 10000
+            kind: up-to
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: vendor-discretion
+            statement: Seed, pre-seed, and early-stage startups building on Reducto may apply, with applications reviewed case by case.
+          - criterion_id: cri_02
+            fact: company.funding_raised_usd
+            kind: predicate
+            operator: lt
+            statement: The startup generally has less than $15 million in funding.
+            value:
+              type: number
+              value: 15000000
+          - criterion_id: cri_03
+            fact: company.annual_revenue_usd
+            kind: predicate
+            operator: lt
+            statement: The startup generally has less than $3 million in annual revenue.
+            value:
+              type: number
+              value: 3000000
+          - criterion_id: cri_04
+            fact: company.employee_count
+            kind: predicate
+            operator: lt
+            statement: The startup generally has fewer than 50 employees.
+            value:
+              type: number
+              value: 50
+    roles:
+      terms_authority_entity_id: ent_01m16f4r3dkrkhyr9j1e0z667y
+      access_operator_entity_id: ent_01m16f4r3dkrkhyr9j1e0z667y
+    access:
+      availability: public
+      method: form
+      url: https://forms.gle/fVbik2ER6CdP4mft7
+    source_ids:
+      - src_15029d107fa3024890ed1e0b320f144e1b223d24b40408ffa7d0681294ab849b
