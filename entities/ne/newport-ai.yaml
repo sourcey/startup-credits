@@ -1,0 +1,62 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m18zk7ywzt580e17thqw9pjc
+  slug: newport-ai
+  slug_aliases: []
+  name: Newport AI
+  domains:
+    - value: newport.ai
+      role: primary
+      valid_from: 2026-08-30T09:21:49.019Z
+  category: hosting-infra
+profile:
+  description: Newport AI provides GPU cloud infrastructure for AI training, inference, sandbox, and batch-processing workloads.
+  links:
+    site: https://newport.ai
+sources:
+  - source_id: src_5141c7e7d9cd1416fa1f93200868161b2deb716a7c7fae7b45a32d9e137c3a4a
+    url: https://newport.ai/
+programs: []
+offers:
+  - offer_id: off_01m18zk7ywt8ps2jqgxv5yf38p
+    offer_slug: newport-ai-startup-gpu-discount
+    offer_slug_aliases: []
+    title: Newport AI Startup GPU Discount
+    summary: Eligible institutional Series A-or-later VC-backed startups receive 15% off the first 4,380 GPU hours, which Newport estimates saves about $2,628 annually per GPU.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-30T09:21:49.019Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 15% discount on the first 4,380 GPU hours, estimated by Newport at about $2,628 annual savings per GPU
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 1500
+      consideration:
+        kind: variable
+        description: The startup pays the discounted GPU-hour charges and a $1 initial deposit; depending on creditworthiness, Newport may request a one-to-three-month deposit at ready-for-service.
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: external-verification
+            statement: Startup is venture-capital backed and has raised an institutional Series A round or a later round.
+          - criterion_id: cri_02
+            kind: manual
+            reason: vendor-discretion
+            statement: Newport approves the allocation and determines any ready-for-service deposit based on creditworthiness.
+    roles:
+      terms_authority_entity_id: ent_01m18zk7ywzt580e17thqw9pjc
+      access_operator_entity_id: ent_01m18zk7ywzt580e17thqw9pjc
+    access:
+      availability: public
+      method: form
+      url: https://newport.ai/
+      instructions: Apply for an allocation before the program deadline of September 30, 2026.
+    terms_url: https://newport.ai/
+    source_ids:
+      - src_5141c7e7d9cd1416fa1f93200868161b2deb716a7c7fae7b45a32d9e137c3a4a
