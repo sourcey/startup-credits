@@ -1,0 +1,73 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m165q36n8hyaqmk9vrsbzrcq
+  slug: lamatic-ai
+  slug_aliases: []
+  name: Lamatic AI
+  domains:
+    - value: lamatic.ai
+      role: primary
+      valid_from: 2026-08-29T07:00:00.000Z
+  category: ai-ml
+profile:
+  description: Lamatic AI provides infrastructure and visual tools for building, deploying, and scaling AI-powered applications.
+  links:
+    site: https://lamatic.ai
+    pricing: https://lamatic.ai/pricing
+sources:
+  - source_id: src_8e6cf29748a6b030534268c3d50aa98c8c969653444800269ad4e857b96bf9b2
+    url: https://lamatic.ai/
+  - source_id: src_2f50d3d55203a8c0c6ca221a45e3407fc4f3430cc6be4c13cae01c20beeb35f4
+    url: https://lamatic.ai/solutions/saas
+programs:
+  - program_id: prg_01m165q36n5a10t64bbmken1tj
+    program_slug: lamatic-startup-program
+    program_slug_aliases: []
+    title: Lamatic Startup Program
+    summary: A startup program for eligible AI-powered SaaS teams that includes platform credits, priority support, and technical expertise.
+    source_ids:
+      - src_2f50d3d55203a8c0c6ca221a45e3407fc4f3430cc6be4c13cae01c20beeb35f4
+offers:
+  - offer_id: off_01m165q36n9y0jtmkeenqe061g
+    program_id: prg_01m165q36n5a10t64bbmken1tj
+    offer_slug: up-to-5000-in-startup-credits
+    offer_slug_aliases: []
+    title: Up to $5,000 in Lamatic Startup Credits
+    summary: Eligible AI-powered SaaS startups receive up to $5,000 in Lamatic credits, priority support, and technical advisory resources.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-29T07:00:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to $5,000 in Lamatic platform credits.
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 500000
+            kind: up-to
+        - benefit_id: ben_02
+          description: Priority support through private Slack and scheduled live support calls.
+          kind: other
+        - benefit_id: ben_03
+          description: A Lamatic Blueprint, advisory services, and access to the Talent Platform.
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: The applicant is an eligible AI-powered SaaS startup approved for the Lamatic Startup Program.
+    roles:
+      terms_authority_entity_id: ent_01m165q36n8hyaqmk9vrsbzrcq
+      access_operator_entity_id: ent_01m165q36n8hyaqmk9vrsbzrcq
+    access:
+      availability: public
+      method: form
+      url: https://lamatic.ai/solutions/saas
+    terms_url: https://lamatic.ai/solutions/saas
+    source_ids:
+      - src_2f50d3d55203a8c0c6ca221a45e3407fc4f3430cc6be4c13cae01c20beeb35f4
