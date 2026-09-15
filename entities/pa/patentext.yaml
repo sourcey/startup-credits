@@ -1,0 +1,66 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1384ddys8yy2mxr9bkvf86d
+  slug: patentext
+  slug_aliases: []
+  name: Patentext
+  domains:
+    - value: patentext.com
+      role: primary
+      valid_from: 2026-08-28T03:55:33.000Z
+  category: legal-compliance
+profile:
+  description: Patentext provides a platform and patent services for identifying inventions, developing filing strategy, organizing technical records, and managing patent portfolios.
+  links:
+    site: https://www.patentext.com/
+sources:
+  - source_id: src_806d9ea57f54c3a57992a86147d746f6b1a14e019529f831c50525b4ed74fd40
+    url: https://www.patentext.com/startup-program/
+programs:
+  - program_id: prg_01m1384ddzgjgfryg4yb10mskp
+    program_slug: patentext-startup-program
+    program_slug_aliases: []
+    title: Patentext Startup Program
+    summary: Patentext selects U.S.-based technology companies for a first-year discount on eligible platform fees to help them build and manage patent portfolios.
+    source_ids:
+      - src_806d9ea57f54c3a57992a86147d746f6b1a14e019529f831c50525b4ed74fd40
+offers:
+  - offer_id: off_01m1384ddz2g33ypcbj3ar88bz
+    program_id: prg_01m1384ddzgjgfryg4yb10mskp
+    offer_slug: fifty-percent-off-first-year
+    offer_slug_aliases: []
+    title: 50% off Patentext fees for one year, up to $3,000
+    summary: Selected U.S.-based technology companies receive 50% off eligible Patentext platform fees during their first year, with total savings capped at $3,000.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-28T03:55:33.000Z
+    economics:
+      consideration:
+        kind: variable
+        description: Approved companies pay the remaining eligible Patentext platform fees after the 50% discount.
+      benefits:
+        - benefit_id: ben_01
+          description: 50% off eligible Patentext platform fees during the first year, up to $3,000 in total savings
+          duration:
+            kind: exact
+            value: P1Y
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 5000
+          applies_to: Eligible Patentext platform fees
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_01
+        statement: Patentext selects operating technology companies headquartered or primarily operating in the United States that have an active technical, engineering, or R&D team developing differentiated technology, outside funding or meaningful commercial traction, recurring patent needs, and overall program fit.
+        reason: vendor-discretion
+    roles:
+      terms_authority_entity_id: ent_01m1384ddys8yy2mxr9bkvf86d
+      access_operator_entity_id: ent_01m1384ddys8yy2mxr9bkvf86d
+    access:
+      availability: public
+      method: form
+      url: https://www.patentext.com/startup-program/
+    source_ids:
+      - src_806d9ea57f54c3a57992a86147d746f6b1a14e019529f831c50525b4ed74fd40
