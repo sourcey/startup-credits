@@ -1,0 +1,68 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m165q36nkfrgg02s4bmb82sf
+  slug: cocodly
+  slug_aliases: []
+  name: Cocodly
+  domains:
+    - value: cocodly.com
+      role: primary
+      valid_from: 2026-08-29T07:00:00.000Z
+  category: no-code
+profile:
+  description: Cocodly is an AI platform for building and publishing websites, applications, and internal tools.
+  links:
+    site: https://www.cocodly.com
+    pricing: https://www.cocodly.com/pricing
+sources:
+  - source_id: src_4f1092774e1cd15e3ef524d687960c3e2ab289383a5eb0af46b0b0e83a690e09
+    url: https://www.cocodly.com/
+  - source_id: src_7bbb89d6e20cf72b8383aaf4f997e300b0cca70955c75cb442154cd74b19c4b1
+    url: https://www.cocodly.com/programs/startups
+programs:
+  - program_id: prg_01m165q36n8dedav6jw8q2566n
+    program_slug: cocodly-for-startups
+    program_slug_aliases: []
+    title: Cocodly for Startups
+    summary: Cocodly offers qualified pre-seed and seed teams credits toward paid plans, subject to approval and availability.
+    source_ids:
+      - src_7bbb89d6e20cf72b8383aaf4f997e300b0cca70955c75cb442154cd74b19c4b1
+offers:
+  - offer_id: off_01m165q36n2e7g0c2cfp6d2sfs
+    program_id: prg_01m165q36n8dedav6jw8q2566n
+    offer_slug: up-to-5000-in-startup-credits
+    offer_slug_aliases: []
+    title: Up to $5,000 in Cocodly Startup Credits
+    summary: Qualified pre-seed and seed teams may receive credits toward Cocodly paid plans, up to the equivalent of $5,000 in platform value.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-29T07:00:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Credits toward paid plans worth up to $5,000 in platform value.
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 500000
+            kind: up-to
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: The applicant is a qualified pre-seed or seed team approved based on its company structure, product or idea, and intended Cocodly use.
+    roles:
+      terms_authority_entity_id: ent_01m165q36nkfrgg02s4bmb82sf
+      access_operator_entity_id: ent_01m165q36nkfrgg02s4bmb82sf
+    access:
+      availability: public
+      method: contact
+      url: https://www.cocodly.com/programs/startups
+      instructions: Send the requested team, stage, and product information using the contact method on the startup program page.
+    terms_url: https://www.cocodly.com/programs/startups
+    source_ids:
+      - src_7bbb89d6e20cf72b8383aaf4f997e300b0cca70955c75cb442154cd74b19c4b1
