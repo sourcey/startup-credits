@@ -1,0 +1,68 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1bm0w51ntzz3znbpbznjev0
+  slug: fallax
+  slug_aliases: []
+  name: Fallax
+  domains:
+    - value: fallax.io
+      role: primary
+      valid_from: 2026-08-31T09:57:31.607Z
+  category: legal-compliance
+profile:
+  summary: Internal phishing simulation and security-awareness training that doubles as audit evidence.
+  description: Fallax provides internal phishing simulation and security-awareness training that doubles as audit evidence.
+  links:
+    site: https://fallax.io
+sources:
+  - source_id: src_b4626effcd583dfe0fef2e98ff6071521cfac3737fd830ec0bbd4206adab5c73
+    url: https://fallax.io/startups
+programs:
+  - program_id: prg_01m1bm0w52abpwmcfw1954nahp
+    program_slug: fallax-for-startups
+    program_slug_aliases: []
+    title: Fallax for Startups
+    summary: Eligible startups receive 80% off Fallax's published rate for 12 months, with the whole product, unlimited campaigns and admins, and full evidence export.
+    source_ids:
+      - src_b4626effcd583dfe0fef2e98ff6071521cfac3737fd830ec0bbd4206adab5c73
+offers:
+  - offer_id: off_01m1bm0w525v1k453bd7yyyc1s
+    program_id: prg_01m1bm0w52abpwmcfw1954nahp
+    offer_slug: eighty-percent-off-for-twelve-months
+    offer_slug_aliases: []
+    title: 80% off Fallax for 12 months
+    summary: Qualified startups get 80% off Fallax's published rate for 12 months, including the whole product, unlimited campaigns and admins, and full evidence export.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-31T09:57:31.607Z
+    economics:
+      consideration:
+        kind: variable
+        description: The first 10 seats remain free; the startup pays 20% of the published rate for seats above 10 during the 12-month term.
+      benefits:
+        - benefit_id: ben_01
+          applies_to: Fallax published rate card
+          description: 80% off the published rate for 12 months
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 8000
+          duration:
+            kind: exact
+            value: P1Y
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_01
+        statement: The company must have fewer than 100 people including contractors, have raised no more than USD 10 million, be founded within the past three years, be new to Fallax, use it for its own staff, and apply within 90 days of signup.
+        reason: vendor-discretion
+    roles:
+      terms_authority_entity_id: ent_01m1bm0w51ntzz3znbpbznjev0
+      access_operator_entity_id: ent_01m1bm0w51ntzz3znbpbznjev0
+    access:
+      availability: public
+      method: contact
+      url: https://fallax.io/startups
+      instructions: Apply by email from the company domain with one public link showing qualification.
+    source_ids:
+      - src_b4626effcd583dfe0fef2e98ff6071521cfac3737fd830ec0bbd4206adab5c73
