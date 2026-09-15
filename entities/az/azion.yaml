@@ -1,0 +1,63 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m12m2v623ge0zhmg0fmcrmf0
+  slug: azion
+  slug_aliases: []
+  name: Azion
+  domains:
+    - value: azion.com
+      role: primary
+      valid_from: 2026-08-27T21:15:00.000Z
+  category: hosting-infra
+profile:
+  description: Azion provides an edge platform for building, securing, delivering, and observing applications across edge, multi-cloud, on-premise, and mobile environments.
+  links:
+    site: https://www.azion.com
+sources:
+  - source_id: src_797ee6c974064421ea79e73472609ae3581efdf84c28b631933c07545682632c
+    url: https://www.azion.com/en/lp/azion-scale-up/
+  - source_id: src_a03a135d1c2737026449c4f8a099fc9d89e0a56278aaa64b7c87ebff1d39d7fb
+    url: https://www.azion.com/en/documentation/agreements/azion-incentive-credits-terms-and-conditions/
+programs:
+  - program_id: prg_01m12m2v62ez3ny6x7jw0nsm7y
+    program_slug: azion-scale-up
+    program_slug_aliases: []
+    title: Azion Scale Up Credit Program
+    summary: Azion's Scale Up program offers companies up to $120,000 in promotional service credits for use on the Azion platform.
+    source_ids:
+      - src_797ee6c974064421ea79e73472609ae3581efdf84c28b631933c07545682632c
+      - src_a03a135d1c2737026449c4f8a099fc9d89e0a56278aaa64b7c87ebff1d39d7fb
+offers:
+  - offer_id: off_01m12m2v626mfkavzq0c5gasrw
+    program_id: prg_01m12m2v62ez3ny6x7jw0nsm7y
+    offer_slug: up-to-120000-service-credits
+    offer_slug_aliases: []
+    title: Up to $120,000 in Azion service credits
+    summary: Approved participants can receive up to $120,000 in Azion service credits; the applicable amount, purpose, and validity are governed by the issued Incentive Credit Note.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-27T21:15:00.000Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The public Scale Up page presents the program as free; the credit terms do not establish a separate payment required to receive Incentive Credits.
+      benefits:
+        - benefit_id: ben_primary
+          description: Up to $120,000 in promotional service credits that may offset future charges for eligible Azion products and services.
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_01
+        statement: Credits may only be used by Eligible Accounts and are subject to the purpose and validity stated in the applicable Incentive Credit Note.
+        reason: vendor-discretion
+    roles:
+      terms_authority_entity_id: ent_01m12m2v623ge0zhmg0fmcrmf0
+      access_operator_entity_id: ent_01m12m2v623ge0zhmg0fmcrmf0
+    access:
+      availability: public
+      method: form
+      url: https://www.azion.com/en/lp/azion-scale-up/
+    source_ids:
+      - src_797ee6c974064421ea79e73472609ae3581efdf84c28b631933c07545682632c
+      - src_a03a135d1c2737026449c4f8a099fc9d89e0a56278aaa64b7c87ebff1d39d7fb
