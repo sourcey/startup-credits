@@ -1,0 +1,84 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m14sb0xhk4wmw2d3zegftxrk
+  slug: licensespring
+  slug_aliases: []
+  name: LicenseSpring
+  domains:
+    - value: licensespring.com
+      role: primary
+      valid_from: 2026-08-28T18:15:39.000Z
+  category: devtools-other
+profile:
+  description: LicenseSpring provides cloud-based software licensing, entitlement management, activation, usage metering, and SDKs for software and hardware vendors.
+  links:
+    site: https://licensespring.com
+sources:
+  - source_id: src_3cc4834cc32e23ac964a7d32c4f441e614124e2fff008b5fe8b93154c7874089
+    url: https://licensespring.com/startup-program
+programs:
+  - program_id: prg_01m14sb0xqzjy4m3denwyx9y65
+    program_slug: licensespring-startup-program
+    program_slug_aliases: []
+    title: LicenseSpring Startup Program
+    summary: LicenseSpring gives eligible early-stage companies a discount on its Business Plus software licensing tier for up to two years.
+    source_ids:
+      - src_3cc4834cc32e23ac964a7d32c4f441e614124e2fff008b5fe8b93154c7874089
+offers:
+  - offer_id: off_01m14sb0xq78hd2qqq5dz96zn4
+    program_id: prg_01m14sb0xqzjy4m3denwyx9y65
+    offer_slug: up-to-seventy-five-percent-off-business-plus
+    offer_slug_aliases: []
+    title: Up to 75% off Business Plus for up to two years
+    summary: Eligible startups receive up to 75% off LicenseSpring's Business Plus tier for up to two years.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-28T18:15:39.000Z
+    economics:
+      benefits:
+        - applies_to: LicenseSpring Business Plus tier
+          benefit_id: ben_01
+          description: Up to 75% off the Business Plus tier for up to two years.
+          duration:
+            kind: up-to
+            value: P2Y
+          kind: discount
+          percentage:
+            basis_points: 7500
+            kind: up-to
+      consideration:
+        kind: variable
+        description: The startup pays the remaining price of its Business Plus subscription after the awarded discount.
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.age_months
+            kind: predicate
+            operator: lt
+            statement: Startup must have been founded less than three years ago.
+            value:
+              type: number
+              value: 36
+          - criterion_id: cri_02
+            fact: company.employee_count
+            kind: predicate
+            operator: lt
+            statement: Startup team must have fewer than 15 people.
+            value:
+              type: number
+              value: 15
+          - criterion_id: cri_03
+            kind: manual
+            reason: external-verification
+            statement: Applicant must not be an existing LicenseSpring customer.
+    roles:
+      terms_authority_entity_id: ent_01m14sb0xhk4wmw2d3zegftxrk
+      access_operator_entity_id: ent_01m14sb0xhk4wmw2d3zegftxrk
+    access:
+      availability: public
+      method: form
+      url: https://licensespring.com/startup-program
+    source_ids:
+      - src_3cc4834cc32e23ac964a7d32c4f441e614124e2fff008b5fe8b93154c7874089
