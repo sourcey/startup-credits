@@ -1,0 +1,52 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_nwn5z81eg610pjypj32t73pp7p
+  slug: planetscale
+  slug_aliases: []
+  name: PlanetScale
+  domains:
+    - value: planetscale.com
+      role: primary
+      valid_from: 2026-08-27T00:35:00.000Z
+  category: databases
+profile:
+  description: PlanetScale is a serverless database platform built by the team behind GitHub and Vitess, offering fully managed MySQL-compatible and Postgres databases that stay online as applications scale.
+  links:
+    site: https://planetscale.com
+    pricing: https://planetscale.com/pricing
+sources:
+  - source_id: src_4aa68567b235d5c8efe5f2e914fe936d3f0d54533ee849da8fedb99c58af08f9
+    url: https://planetscale.com/startups
+programs: []
+offers:
+  - offer_id: off_7zx6cvfcss3z98ht5mq0gntge6
+    offer_slug: planetscale-for-startups
+    offer_slug_aliases: []
+    title: PlanetScale for Startups
+    summary: Startup-focused database platform with a free tier, clusters from $5/month, automatic failover, free migrations from AWS RDS, Aurora, Google Cloud SQL and DigitalOcean, plus dedicated database expert support.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-27T00:35:00.000Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free tier plus database clusters starting at $5/month with high availability, automated backups, branching, and dedicated startup-focused support.
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Designed for startups and early-stage teams; open to any new user signing up for PlanetScale.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_nwn5z81eg610pjypj32t73pp7p
+      access_operator_entity_id: ent_nwn5z81eg610pjypj32t73pp7p
+    access:
+      availability: public
+      method: form
+      url: https://planetscale.com/startups
+    source_ids:
+      - src_4aa68567b235d5c8efe5f2e914fe936d3f0d54533ee849da8fedb99c58af08f9
