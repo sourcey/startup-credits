@@ -1,0 +1,89 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m123yq1fwsbx784wkbrb53tm
+  slug: ciq
+  slug_aliases: []
+  name: CIQ
+  domains:
+    - value: ciq.com
+      role: primary
+      valid_from: 2026-08-27T17:23:18.325Z
+  category: hosting-infra
+profile:
+  description: CIQ provides enterprise software infrastructure for AI and HPC workloads, including Fuzzball orchestration and commercial Rocky Linux products.
+  links:
+    site: https://ciq.com/
+sources:
+  - source_id: src_1c12cf3983d44f90cfe0edf15f458d0ebf2e4f2d40d3768a450a823208e5238c
+    url: https://ciq.com/solutions/startups
+programs:
+  - program_id: prg_01m123yq1j71gpgxnq1x2wppq0
+    program_slug: ciq-startup-program
+    program_slug_aliases: []
+    title: CIQ Startup Program
+    summary: CIQ's application-based program provides six months of access to Fuzzball, RLC Pro AI, and RLC-H, followed by 80% and 50% discount stages through month 24, with engineering support.
+    source_ids:
+      - src_1c12cf3983d44f90cfe0edf15f458d0ebf2e4f2d40d3768a450a823208e5238c
+offers:
+  - offer_id: off_01m123yq1k72sj8qbt32r9g9wt
+    program_id: prg_01m123yq1j71gpgxnq1x2wppq0
+    offer_slug: startup-software-and-support-discounts
+    offer_slug_aliases: []
+    title: CIQ startup software and support discounts
+    summary: Eligible startups receive 80% off at CIQ's 12-month stage and 50% off at its 18–24-month stage, plus an initial six months free and engineering support.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-27T17:23:18.325Z
+    economics:
+      benefits:
+        - applies_to: Fuzzball, RLC Pro AI, and RLC-H
+          benefit_id: ben_01
+          description: 100% off for six months, with no usage limits or node restrictions, subject to terms and conditions.
+          duration:
+            kind: exact
+            value: P6M
+          kind: discount
+          percentage:
+            basis_points: 10000
+            kind: exact
+        - benefit_id: ben_02
+          description: 80% off at the 12-month program stage.
+          kind: discount
+          percentage:
+            basis_points: 8000
+            kind: exact
+        - benefit_id: ben_03
+          description: 50% off at the 18–24-month program stage.
+          kind: discount
+          percentage:
+            basis_points: 5000
+            kind: exact
+        - benefit_id: ben_04
+          description: Engineering support for architecture design, performance tuning, and deployment guidance.
+          kind: other
+      consideration:
+        kind: variable
+        description: Participants pay the remaining discounted CIQ price during the 80% and 50% stages; the source does not publish the base price or a separate program fee.
+    eligibility:
+      rule:
+        kind: any
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: external-verification
+            statement: Applicant is a venture-capital-backed AI or deep-tech startup from Seed through Series D.
+          - criterion_id: cri_02
+            kind: manual
+            reason: vendor-discretion
+            statement: Applicant is bootstrapped and meets significant technical milestones; CIQ evaluates this route case by case.
+    roles:
+      terms_authority_entity_id: ent_01m123yq1fwsbx784wkbrb53tm
+      access_operator_entity_id: ent_01m123yq1fwsbx784wkbrb53tm
+    access:
+      availability: public
+      method: form
+      url: https://ciq.com/solutions/startups
+      instructions: Select Apply now on the program page to open CIQ's application form.
+    terms_url: https://ciq.com/solutions/startups
+    source_ids:
+      - src_1c12cf3983d44f90cfe0edf15f458d0ebf2e4f2d40d3768a450a823208e5238c
