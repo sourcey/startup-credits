@@ -10,6 +10,7 @@ entity:
       valid_from: 2026-09-04T05:00:00.000Z
   category: hosting-infra
 profile:
+  summary: HOSTKEY supplies server and GPU infrastructure for compute-intensive projects.
   description: HOSTKEY provides dedicated servers, GPU infrastructure, cloud hosting, colocation, and managed services for compute-intensive workloads.
   links:
     site: https://hostkey.com
@@ -21,7 +22,7 @@ programs:
     program_slug: hostkey-gpu-grant-program
     program_slug_aliases: []
     title: HOSTKEY GPU Grant Program
-    summary: HOSTKEY's active grant program provides selected data science, AI, machine learning, and other GPU-intensive research projects with GPU computing power.
+    summary: HOSTKEY accepts applications for a grant program supporting scientific research and prospective startups that use GPU processing for practical data-science results.
     source_ids:
       - src_f70afc55fe774285eb857f02a07a4ab34a7d43d738adebbbcfa53d63826e59f2
 offers:
@@ -30,29 +31,30 @@ offers:
     offer_slug: hostkey-gpu-compute-grant
     offer_slug_aliases: []
     title: HOSTKEY GPU Compute Grant
-    summary: Selected projects receive GPU computing power for the work described in their application; the configuration and number of limited grants are determined by HOSTKEY.
+    summary: Winners receive computing power to implement the work described in their application; the number of grants is limited.
     lifecycle:
       status: active
       effective_from: 2026-09-04T05:00:00.000Z
     economics:
       consideration:
         kind: variable
-        description: Winners must provide a follow-up report, project annotations and results, allow HOSTKEY to publish project annotations, and link to HOSTKEY in resulting publications.
+        description: A winner must submit a follow-up research report, provide project annotations and results, permit HOSTKEY to publish project annotations, and link to HOSTKEY in publications.
       benefits:
         - benefit_id: ben_primary
-          description: GPU computing power for the approved project, with the server configuration determined through the application and selection process
+          description: Computing power for implementing the work declared in the winning application
           kind: other
     eligibility:
       rule:
         kind: manual
         criterion_id: cri_requirement_01
-        statement: Applicants must lead a qualifying data science, AI, machine learning, big-data, graphics, or video-rendering project and submit the requested proposal and supporting qualifications; HOSTKEY's expert panel selects a limited number of winners.
+        statement: Applicants must be full-time faculty or research fellows at a recognized academic institution, be the project's principal investigator, work in data science, AI, machine learning, big-data analysis, graphics, or video rendering, and submit no more than one application per round.
         reason: not-machine-evaluable
     roles:
       terms_authority_entity_id: ent_01m1ncr9av2ccdp5jhkwmvfye7
       access_operator_entity_id: ent_01m1ncr9av2ccdp5jhkwmvfye7
     access:
       availability: public
+      instructions: Submit the application with a project proposal, the requested GPU configuration and justification, a CV, relevant publication links, and a recommendation when requested.
       method: form
       url: https://hostkey.com/about-us/grants-for-scientific-projects-and-startups/
     source_ids:
