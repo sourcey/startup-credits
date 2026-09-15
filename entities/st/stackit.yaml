@@ -1,0 +1,85 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m11ahe8kk49781dzyya68ef3
+  slug: stackit
+  slug_aliases: []
+  name: STACKIT
+  domains:
+    - value: stackit.com
+      role: primary
+      valid_from: 2026-08-27T09:59:08.000Z
+  category: hosting-infra
+profile:
+  description: STACKIT is a European cloud platform offering infrastructure, managed services, databases, storage, Kubernetes, security, and developer tools.
+  links:
+    site: https://stackit.com
+sources:
+  - source_id: src_88b977718300be5b3898387bec149a08176a2f9123a68cd3151b28233d86a4e3
+    url: https://stackit.com/en/why-stackit/benefits/startup-program
+  - source_id: src_d51e4607464ab21086f9e8d385932eb9caacfeaff8598a20bf97782edbe77425
+    url: https://stackit.com/en/facts
+programs:
+  - program_id: prg_01m11ahe8nhyqk2cpjvmtrphk6
+    program_slug: stackit-startup-program
+    program_slug_aliases: []
+    title: STACKIT Startup Program
+    summary: STACKIT supports eligible young EU software companies with tailored cloud credits, expert mentoring, ecosystem access, and opportunities for proof-of-concept collaboration.
+    source_ids:
+      - src_88b977718300be5b3898387bec149a08176a2f9123a68cd3151b28233d86a4e3
+offers:
+  - offer_id: off_01m11ahe8ne3ywwx1fjtqpk8ys
+    program_id: prg_01m11ahe8nhyqk2cpjvmtrphk6
+    offer_slug: startup-cloud-credits-and-mentoring
+    offer_slug_aliases: []
+    title: STACKIT startup cloud credits and mentoring
+    summary: Approved startups receive cloud credits tailored to their stage and technical needs for the full STACKIT service portfolio, plus expert mentoring and ecosystem support.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-27T09:59:08.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Cloud credits for the full STACKIT service portfolio, with the amount determined from the startup's stage and technical complexity.
+          kind: other
+        - benefit_id: ben_02
+          description: One-on-one mentoring from business development, AI, cybersecurity, and cloud experts, with access to the STACKIT and Schwarz Group ecosystems.
+          kind: other
+      consideration:
+        description: The public program page does not state a separate fee for applying to or joining the program.
+        kind: unknown
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: external-verification
+            statement: The startup is headquartered within the European Union.
+          - criterion_id: cri_02
+            kind: manual
+            reason: external-verification
+            statement: The startup is less than five years old.
+          - criterion_id: cri_03
+            kind: manual
+            reason: external-verification
+            statement: The startup is a software company with a software-based product or digital business model.
+          - criterion_id: cri_04
+            kind: manual
+            reason: external-verification
+            statement: The product has a basic technological foundation that can scale on cloud infrastructure.
+          - criterion_id: cri_05
+            kind: manual
+            reason: vendor-discretion
+            statement: STACKIT reviews the application and determines the credit package from the applicant's needs.
+    roles:
+      terms_authority_entity_id: ent_01m11ahe8kk49781dzyya68ef3
+      access_operator_entity_id: ent_01m11ahe8kk49781dzyya68ef3
+    access:
+      availability: public
+      instructions: Apply through the official Startup Program page; STACKIT reviews the application and contacts selected startups.
+      method: form
+      url: https://stackit.com/en/why-stackit/benefits/startup-program
+    terms_url: https://stackit.com/en/why-stackit/benefits/startup-program
+    source_ids:
+      - src_88b977718300be5b3898387bec149a08176a2f9123a68cd3151b28233d86a4e3
+      - src_d51e4607464ab21086f9e8d385932eb9caacfeaff8598a20bf97782edbe77425
