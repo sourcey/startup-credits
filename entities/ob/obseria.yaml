@@ -1,0 +1,80 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m0zpgrcqphx5cnr9pgqch2cv
+  slug: obseria
+  slug_aliases: []
+  name: Obseria
+  domains:
+    - value: obseria.io
+      role: primary
+      valid_from: 2026-08-26T18:50:00.475Z
+  category: observability
+profile:
+  description: Obseria is an OpenTelemetry-native observability platform for monitoring applications, infrastructure, logs, traces, and metrics.
+  links:
+    site: https://obseria.io
+sources:
+  - source_id: src_b314ee1e19d2f53abcccce2e055ac64ef3f1a51efb08559794add6ce36ffba12
+    url: https://obseria.io/en/pricing/startup/
+programs:
+  - program_id: prg_01m0zpgrcr3gz30frer8p8r86s
+    program_slug: obseria-for-startups
+    program_slug_aliases: []
+    title: Obseria for Startups
+    summary: Obseria gives eligible early-stage startups and newly launched product teams 50% off an annual plan for their first year.
+    source_ids:
+      - src_b314ee1e19d2f53abcccce2e055ac64ef3f1a51efb08559794add6ce36ffba12
+offers:
+  - offer_id: off_01m0zpgrcrek79tp731j1fazww
+    program_id: prg_01m0zpgrcr3gz30frer8p8r86s
+    offer_slug: obseria-startup-50-percent-off
+    offer_slug_aliases: []
+    title: 50% Off Obseria for One Year
+    summary: Approved new customers receive 50% off an annual Obseria plan for the first 12 months.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-26T18:50:00.475Z
+    economics:
+      benefits:
+        - applies_to: Obseria annual plan
+          benefit_id: ben_01
+          description: 50% off an annual Obseria plan for the first year
+          duration:
+            kind: exact
+            value: P1Y
+          kind: discount
+          percentage:
+            basis_points: 5000
+            kind: exact
+      consideration:
+        kind: variable
+        description: The startup purchases an eligible annual plan at the discounted price.
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: external-verification
+            statement: The applicant is an early-stage startup or a newly launched product team
+          - criterion_id: cri_02
+            fact: company.is_current_customer
+            kind: predicate
+            operator: eq
+            statement: The applicant is a new Obseria customer
+            value:
+              type: boolean
+              value: false
+          - criterion_id: cri_03
+            kind: manual
+            reason: external-verification
+            statement: Obseria approves the applicant after an eligibility review
+    roles:
+      terms_authority_entity_id: ent_01m0zpgrcqphx5cnr9pgqch2cv
+      access_operator_entity_id: ent_01m0zpgrcqphx5cnr9pgqch2cv
+    access:
+      availability: public
+      method: form
+      url: https://obseria.io/en/pricing/startup/
+    source_ids:
+      - src_b314ee1e19d2f53abcccce2e055ac64ef3f1a51efb08559794add6ce36ffba12
