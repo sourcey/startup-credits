@@ -1,0 +1,60 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1358xf97zs2nec9c2bbgrk7
+  slug: deepidv
+  slug_aliases: []
+  name: deepidv
+  domains:
+    - value: deepidv.com
+      role: primary
+      valid_from: 2026-08-28T00:00:00.000Z
+  category: auth-security
+profile:
+  description: deepidv provides identity verification, fraud prevention, and monitoring APIs for digital products.
+  links:
+    site: https://www.deepidv.com/
+sources:
+  - source_id: src_9f442fd605d839c89406bc07a0b6d2d30d2026421c46250ae5da2d51618bd8e3
+    url: https://www.deepidv.com/startups
+programs:
+  - program_id: prg_01m1358xf95awcrdfxmca4w6k2
+    program_slug: startup-program
+    program_slug_aliases: []
+    title: deepidv Startup Program
+    summary: Free identity verification infrastructure for qualifying startups from idea stage through Series A.
+    source_ids:
+      - src_9f442fd605d839c89406bc07a0b6d2d30d2026421c46250ae5da2d51618bd8e3
+offers:
+  - offer_id: off_01m1358xf9j92x35tz9b1fy41j
+    program_id: prg_01m1358xf95awcrdfxmca4w6k2
+    offer_slug: free-identity-verification-apis
+    offer_slug_aliases: []
+    title: Free deepidv API access for 6 to 12 months
+    summary: Qualified startups receive full verification, fraud-prevention, and monitoring API access free for 6 to 12 months.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-28T00:00:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Full API access free for 6 to 12 months, with no feature gates or usage caps.
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Applicant must be a startup between idea stage and Series A and be approved through deepidv's manual review.
+    roles:
+      terms_authority_entity_id: ent_01m1358xf97zs2nec9c2bbgrk7
+      access_operator_entity_id: ent_01m1358xf97zs2nec9c2bbgrk7
+    access:
+      availability: public
+      method: form
+      url: https://www.deepidv.com/startups
+      instructions: Apply through the form on the deepidv Startup Program page.
+    terms_url: https://www.deepidv.com/startups
+    source_ids:
+      - src_9f442fd605d839c89406bc07a0b6d2d30d2026421c46250ae5da2d51618bd8e3
