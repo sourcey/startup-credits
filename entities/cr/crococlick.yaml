@@ -10,8 +10,7 @@ entity:
       valid_from: 2026-09-06T10:49:25.674Z
   category: crm-sales
 profile:
-  summary: CrocoClick combines CRM, websites, billing, and marketing automation.
-  description: CrocoClick provides CRM, websites, billing, calendars, and marketing automation software.
+  summary: CrocoClick provides CRM, websites, billing, calendars, and marketing automation.
   links:
     site: https://crococlick.com
 sources:
@@ -21,8 +20,8 @@ programs:
   - program_id: prg_01m1v5cnp5dmp544g36vz6caka
     program_slug: crococlick-startup-program
     program_slug_aliases: []
-    title: CrocoClick Startup Program
-    summary: Young companies receive three years of discounted Unlimited subscriptions.
+    title: CrocoClick Young Enterprise Program
+    summary: The program provides CrocoClick Unlimited at reduced prices for three years.
     source_ids:
       - src_81a5fd9ed80b22cce4d473c20bb0504d05d726fbebfee20e8253a327ae9eebad
 offers:
@@ -30,19 +29,19 @@ offers:
     program_id: prg_01m1v5cnp5dmp544g36vz6caka
     offer_slug: unlimited-startup-discount
     offer_slug_aliases: []
-    title: Three-year Unlimited startup discount
-    summary: Eligible startups receive sequential Unlimited discounts of 86% in year one, 70% in year two, and 50% in year three.
+    title: Three-year CrocoClick Unlimited discount
+    summary: Eligible companies receive Unlimited discounts of 86% in year one, 70% in year two, and 50% in year three.
     lifecycle:
       status: active
       effective_from: 2026-09-06T10:49:25.674Z
     economics:
       consideration:
         kind: variable
-        description: Monthly payments are EUR 55.58 in year one, EUR 119.10 in year two, and EUR 198.50 in year three; published standard price EUR 397/month.
+        description: Monthly payments are EUR 55.58 in year one, EUR 119.10 in year two, and EUR 198.50 in year three; the published standard price is EUR 397 per month.
       benefits:
         - benefit_id: ben_year_one
           kind: discount
-          description: First-year Unlimited subscription discount.
+          description: First-year CrocoClick Unlimited discount.
           applies_to: CrocoClick Unlimited, program year one only
           percentage:
             kind: exact
@@ -52,7 +51,7 @@ offers:
             value: P1Y
         - benefit_id: ben_year_two
           kind: discount
-          description: Second-year Unlimited subscription discount; follows year one.
+          description: Second-year CrocoClick Unlimited discount.
           applies_to: CrocoClick Unlimited, program year two only
           percentage:
             kind: exact
@@ -62,7 +61,7 @@ offers:
             value: P1Y
         - benefit_id: ben_year_three
           kind: discount
-          description: Third-year Unlimited subscription discount; follows year two.
+          description: Third-year CrocoClick Unlimited discount.
           applies_to: CrocoClick Unlimited, program year three only
           percentage:
             kind: exact
@@ -74,18 +73,10 @@ offers:
       rule:
         kind: all
         rules:
-          - criterion_id: cri_age
-            kind: predicate
-            fact: company.age_months
-            operator: lt
-            value:
-              type: number
-              value: 12
-            statement: Company founded less than 12 months ago.
           - criterion_id: cri_revenue
             kind: manual
             reason: not-machine-evaluable
-            statement: Revenue below EUR 25,000; the source does not specify a measurement period.
+            statement: Less than EUR 25,000 in collected revenue.
           - criterion_id: cri_paid_history
             kind: predicate
             fact: company.has_ever_paid_crococlick
@@ -105,7 +96,6 @@ offers:
       availability: public
       method: form
       url: https://crococlick.com/candidature-jeune-entreprise
-      instructions: Apply through the vendor page; application interface is French.
     terms_url: https://help.crococlick.com/articles/0820414-crococlick-startup-program
     source_ids:
       - src_81a5fd9ed80b22cce4d473c20bb0504d05d726fbebfee20e8253a327ae9eebad
