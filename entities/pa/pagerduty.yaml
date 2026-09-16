@@ -1,0 +1,52 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m2gq99kkj3h47ag899040sx2
+  slug: pagerduty
+  slug_aliases: []
+  name: PagerDuty
+  domains:
+    - value: pagerduty.com
+      role: primary
+      valid_from: 2026-09-14T19:50:00.000Z
+  category: observability
+profile:
+  description: PagerDuty is an operations platform for incident detection, on-call management, and AI-powered response.
+  summary: PagerDuty helps teams detect, respond to, and resolve incidents with on-call and AI-powered operations.
+  links:
+    site: https://www.pagerduty.com/
+sources:
+  - source_id: src_ef81bbfe4de5d453a6bc0bef452e3ac9be5870b1d2a62f14042a3e5f710c2f7f
+    url: https://www.pagerduty.com/startups/
+programs: []
+offers:
+  - offer_id: off_01m2gq99m0mvcvzepvn1exr7kx
+    offer_slug: pagerduty-for-startups
+    offer_slug_aliases: []
+    title: PagerDuty for Startups
+    summary: Eligible early-stage startups get 6 months of PagerDuty AI-powered operations free, with no credit card or sales call required.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-14T19:50:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 6 months of PagerDuty AI-powered operations free
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a new PagerDuty customer at Seed, Series A, or Series B funding stage.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01m2gq99kkj3h47ag899040sx2
+      access_operator_entity_id: ent_01m2gq99kkj3h47ag899040sx2
+    access:
+      availability: public
+      instructions: Submit the eligibility form on the PagerDuty for Startups page with a work email, company name, funding stage, and country.
+      method: form
+      url: https://www.pagerduty.com/startups/
+    source_ids:
+      - src_ef81bbfe4de5d453a6bc0bef452e3ac9be5870b1d2a62f14042a3e5f710c2f7f
