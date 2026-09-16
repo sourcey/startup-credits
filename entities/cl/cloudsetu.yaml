@@ -17,14 +17,14 @@ profile:
 sources:
   - source_id: src_46f1fcfd42955445a17df89ba9e85fb79bfd45aa4030c56259be75a85dc7f7f9
     url: https://cloudsetu.com/for-startups
-  - source_id: src_f94f6543ff14fae090f7de44ed2680ded165bf90f050bf21edd7a34c6f037ec6
-    url: https://cloudsetu.com/assets/index-COF498Wp.js
+  - source_id: src_d47583ed9492372d80f1e828834ee465ff81d9f7dd73edaebd31a5fd0cb0aa00
+    url: https://cloudsetu.com/legal/terms-of-service
 programs:
   - program_id: prg_01m1v6yaa1q3y9wktjjr3naqsd
     program_slug: cloudsetu-startup-program
     program_slug_aliases: []
     title: CloudSetu Startup Program
-    summary: CloudSetu offers cloud credits to eligible Indian startups.
+    summary: CloudSetu offers cloud credits to Indian startups.
     source_ids:
       - src_46f1fcfd42955445a17df89ba9e85fb79bfd45aa4030c56259be75a85dc7f7f9
 offers:
@@ -33,7 +33,7 @@ offers:
     offer_slug: indian-startup-cloud-credits
     offer_slug_aliases: []
     title: INR 21,000 startup cloud credits
-    summary: Eligible Indian startups receive INR 21,000 in free credits for CloudSetu GPU, bare metal, and cloud services.
+    summary: Indian startups can apply for INR 21,000 in free CloudSetu credits for GPU, bare metal, and cloud plans.
     lifecycle:
       status: active
       effective_from: 2026-09-06T11:16:31.920Z
@@ -56,20 +56,16 @@ offers:
           - criterion_id: cri_startup
             kind: manual
             reason: external-verification
-            statement: Applicant is an Indian startup eligible under CloudSetu's startup program.
-          - criterion_id: cri_recognition
-            kind: manual
-            reason: external-verification
-            statement: Provide startup recognition or registration status. Unregistered startups may require manual verification.
+            statement: Applicant is an Indian startup.
     roles:
       terms_authority_entity_id: ent_01m1v6yaa1kka10bhqz5d6g04f
       access_operator_entity_id: ent_01m1v6yaa1kka10bhqz5d6g04f
     access:
       availability: public
-      method: form
+      method: other
       url: https://cloudsetu.com/for-startups
-      instructions: 'Open Claim Credits and provide startup details and recognition status. No card required. The vendor contacts applicants to activate credits. The application states: "Credits valid for 30 days"; whether this limits activation or use is not specified.'
+      instructions: Use CloudSetu's For Startups page to apply for the published startup credits.
     terms_url: https://cloudsetu.com/legal/terms-of-service
     source_ids:
       - src_46f1fcfd42955445a17df89ba9e85fb79bfd45aa4030c56259be75a85dc7f7f9
-      - src_f94f6543ff14fae090f7de44ed2680ded165bf90f050bf21edd7a34c6f037ec6
+      - src_d47583ed9492372d80f1e828834ee465ff81d9f7dd73edaebd31a5fd0cb0aa00
