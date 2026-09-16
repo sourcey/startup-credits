@@ -1,0 +1,66 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1z393x4caytd1djse859vys
+  slug: akamai
+  slug_aliases: []
+  name: Akamai
+  domains:
+    - value: akamai.com
+      role: primary
+      valid_from: 2026-09-07T23:29:00.000Z
+  category: hosting-infra
+profile:
+  description: Akamai provides distributed cloud computing, edge delivery, security, compute, storage, networking, and managed infrastructure services.
+  links:
+    site: https://www.akamai.com
+sources:
+  - source_id: src_2c861de7aded1a3b24f73338265aeeb936e5c1f3ecae3de37dec5b05fe2e05a8
+    url: https://www.akamai.com/cloud/start-ups/rise
+programs:
+  - program_id: prg_01m1z393x4fsrjsyr10d93t0zq
+    program_slug: akamai-cloud-rise
+    program_slug_aliases:
+      - rise
+      - akamai-cloud-rise-start-up-program
+    title: Akamai Cloud Rise Start-Up Program
+    summary: Akamai Cloud Rise is a three-year start-up program that provides first-year cloud credits plus later-year discounts, solutions-engineering guidance, community access, and dedicated account management.
+    source_ids:
+      - src_2c861de7aded1a3b24f73338265aeeb936e5c1f3ecae3de37dec5b05fe2e05a8
+offers:
+  - offer_id: off_01m1z393x41mregfsfgsr2mkd7
+    program_id: prg_01m1z393x4fsrjsyr10d93t0zq
+    offer_slug: rise-first-year-cloud-credits
+    offer_slug_aliases: []
+    title: Up to $120,000 in first-year Akamai Cloud credits
+    summary: Eligible early-stage companies can receive up to US$120,000 in Akamai Cloud infrastructure credits during the first year of the Rise program.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T23:29:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to US$120,000 in Akamai Cloud credits during the first year
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 12000000
+            kind: up-to
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_01
+        reason: vendor-discretion
+        statement: Applicant must be an early-stage for-profit company fewer than seven years old that is new to Rise, plans to grow workloads on Akamai Cloud, and passes Akamai's Rise eligibility review.
+    roles:
+      terms_authority_entity_id: ent_01m1z393x4caytd1djse859vys
+      access_operator_entity_id: ent_01m1z393x4caytd1djse859vys
+    access:
+      availability: public
+      method: form
+      url: https://www.akamai.com/cloud/start-ups/rise
+      instructions: Create an Akamai Cloud account with a corporate email and credit card, then submit the Rise intake form on the Rise start-up program page.
+    source_ids:
+      - src_2c861de7aded1a3b24f73338265aeeb936e5c1f3ecae3de37dec5b05fe2e05a8
