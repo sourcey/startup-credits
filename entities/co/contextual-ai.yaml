@@ -1,0 +1,63 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1gr4tcnkxtxc5q0x7vghvxc
+  slug: contextual-ai
+  slug_aliases: []
+  name: Contextual AI
+  domains:
+    - value: contextual.ai
+      role: primary
+      valid_from: 2026-09-02T09:45:46.852Z
+  category: ai-ml
+profile:
+  description: Contextual AI provides a unified context layer and platform for building expert AI agents that reason over technical and institutional knowledge.
+  links:
+    site: https://contextual.ai
+sources:
+  - source_id: src_f68897c4d07327a680a5396d07bdd1ef80b5eaf2bc44d6de53eb2e976ef206db
+    url: https://contextual.ai/
+  - source_id: src_2d78d872226d475d2ed553e9d76b0524b016469e2e16736c79f218bcc745ce66
+    url: https://cloud.google.com/startup/perks
+  - source_id: src_22cb27410aa61e1b45e47c4134fec0042f361a4e41ce58df08e2cab973fefb05
+    url: https://docs.google.com/forms/d/1YYqh23ulfT_Rx2ftcGm4M6Xtxgau42D1yb4iUyEPtbc/viewform
+programs: []
+offers:
+  - offer_id: off_01m1gr4tcxa3r33jpzx98h47kf
+    offer_slug: google-for-startups-scale-contextual-ai-credits
+    offer_slug_aliases: []
+    title: Contextual AI credits for Google for Startups Scale members
+    summary: Google for Startups Cloud Program Scale members can request $1,500 in Contextual AI platform credits plus expert support for building AI agents and applications.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-02T09:45:46.852Z
+    economics:
+      benefits:
+        - benefit_id: ben_platform_credits
+          description: $1,500 in Contextual AI platform credits
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 150000
+            kind: exact
+        - benefit_id: ben_expert_support
+          description: Expert support for building AI agents and applications
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_google_scale_membership
+        kind: constant
+        statement: Applicant must be a current Scale Tier member of the Google for Startups Cloud Program.
+        value: true
+    roles:
+      terms_authority_entity_id: ent_01m1gr4tcnkxtxc5q0x7vghvxc
+      access_operator_entity_id: ent_01kyh8fpe210m3jqn5xgzztgv8
+    access:
+      availability: membership
+      method: form
+      url: https://docs.google.com/forms/d/1YYqh23ulfT_Rx2ftcGm4M6Xtxgau42D1yb4iUyEPtbc/viewform
+    source_ids:
+      - src_2d78d872226d475d2ed553e9d76b0524b016469e2e16736c79f218bcc745ce66
+      - src_22cb27410aa61e1b45e47c4134fec0042f361a4e41ce58df08e2cab973fefb05
