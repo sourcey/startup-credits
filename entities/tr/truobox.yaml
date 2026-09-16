@@ -1,0 +1,91 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1wgfrc52dmtp3ne3pm3xjq3
+  slug: truobox
+  slug_aliases: []
+  name: Truobox
+  domains:
+    - value: truobox.com
+      role: primary
+      valid_from: 2026-09-06T23:24:00.000Z
+  category: hosting-infra
+profile:
+  summary: Truobox provides VPS hosting, WordPress and Laravel hosting, domains, storage, SSL, and business email.
+  description: Truobox provides VPS hosting, WordPress and Laravel hosting, domains, storage, SSL, and business email.
+  links:
+    site: https://www.truobox.com
+sources:
+  - source_id: src_ba19471c8cfede397c30014a76a2c3540dd8cb1946bfb1a42664e9b9d2d70dd2
+    url: https://www.truobox.com/en/startup-program/
+programs:
+  - program_id: prg_01m1wgfrcajxx724ke0k4jja2c
+    program_slug: truobox-startup-program
+    program_slug_aliases: []
+    title: Truobox Startup Program
+    summary: Truobox Startup Program gives early-stage startups up to $5,000 in cloud credits for 12 months across VPS, hosting, domains, and storage.
+    source_ids:
+      - src_ba19471c8cfede397c30014a76a2c3540dd8cb1946bfb1a42664e9b9d2d70dd2
+offers:
+  - offer_id: off_01m1wgfrcatefe4463zx4bwxgz
+    program_id: prg_01m1wgfrcajxx724ke0k4jja2c
+    offer_slug: up-to-5000-cloud-credits-12-months
+    offer_slug_aliases: []
+    title: Up to $5,000 in cloud credits for 12 months
+    summary: Eligible early-stage startups receive up to $5,000 in Truobox credits for any Truobox services during the first 12 months, with no commitment or credit card required.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-06T23:24:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to $5,000 in credits to use on any Truobox service during the first 12 months
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 500000
+            kind: up-to
+          duration:
+            kind: exact
+            value: P12M
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.age_months
+            kind: predicate
+            operator: lt
+            statement: Startup must be less than 3 years old.
+            value:
+              type: number
+              value: 36
+          - criterion_id: cri_02
+            kind: manual
+            reason: vendor-discretion
+            statement: Less than $1M in annual revenue.
+          - criterion_id: cri_03
+            kind: manual
+            reason: vendor-discretion
+            statement: Building a product or service that requires cloud infrastructure.
+          - criterion_id: cri_04
+            fact: company.is_current_customer
+            kind: predicate
+            operator: eq
+            statement: Available for new customers who have not previously used Truobox services.
+            value:
+              type: boolean
+              value: false
+    roles:
+      terms_authority_entity_id: ent_01m1wgfrc52dmtp3ne3pm3xjq3
+      access_operator_entity_id: ent_01m1wgfrc52dmtp3ne3pm3xjq3
+    access:
+      availability: public
+      method: form
+      instructions: Apply from the Truobox Startup Program page. No credit card is required.
+      url: https://www.truobox.com/en/startup-program/
+    terms_url: https://www.truobox.com/en/startup-program/
+    source_ids:
+      - src_ba19471c8cfede397c30014a76a2c3540dd8cb1946bfb1a42664e9b9d2d70dd2

@@ -1,0 +1,92 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_shydn2gtxxnj5cyqrmyj3qxbhw
+  slug: edge-network
+  name: Edge
+  domains:
+    - value: edge.network
+      role: primary
+      valid_from: 2026-09-07T17:44:52.151Z
+  category: hosting-infra
+profile:
+  summary: Edge provides distributed cloud infrastructure including compute, CDN, DNS, storage, security, and zero-egress-fee services.
+  description: Edge provides distributed cloud infrastructure for applications, including virtual machines, CDN, DNS, storage, DDoS protection, SSL, bot protection, and team access controls.
+  links:
+    site: https://edge.network/
+sources:
+  - source_id: src_bb62a48c5df964e9d926d0e6654b3b25c1421981a03dbb986e5a94911bfe6283
+    url: https://edge.network/
+  - source_id: src_1686cb2949314fa03bb2c5c4c29b1a3e22ddfe510baf92517bd4e48e91f74704
+    url: https://edge.network/solutions/startups
+programs:
+  - program_id: prg_b8t7btt9j20nvwjpnphvzz0jvq
+    program_slug: edge-for-startups
+    title: Edge for Startups
+    summary: Edge supports qualifying early-stage companies with infrastructure credits, technical support, engineering access, co-marketing, and community access.
+    source_ids:
+      - src_1686cb2949314fa03bb2c5c4c29b1a3e22ddfe510baf92517bd4e48e91f74704
+offers:
+  - offer_id: off_24rkzr0g104wfw1wrjejjqw6kf
+    program_id: prg_b8t7btt9j20nvwjpnphvzz0jvq
+    offer_slug: edge-startup-credits
+    title: Edge startup credits
+    summary: Qualifying early-stage companies can receive USD 5,000 in Edge infrastructure credits for their first year, plus support and community benefits.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T17:44:52.151Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_first_year_credits
+          kind: credit
+          description: USD 5,000 in credits for the first year on Edge.
+          value:
+            kind: exact
+            amount:
+              currency: USD
+              minor_units: 500000
+        - benefit_id: ben_priority_support
+          kind: other
+          description: Priority technical support and direct access to the engineering team.
+        - benefit_id: ben_marketing_community
+          kind: other
+          description: Co-marketing opportunities and access to the startup community.
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_early_stage
+            kind: manual
+            reason: external-verification
+            statement: The applicant must be an early-stage company.
+          - criterion_id: cri_funding_limit
+            kind: predicate
+            fact: company.funding_raised_usd
+            operator: lt
+            value:
+              type: number
+              value: 5000000
+            statement: The company must have raised less than USD 5 million in total funding.
+          - criterion_id: cri_company_age
+            kind: manual
+            reason: external-verification
+            statement: The company must have been founded within the last five years.
+          - criterion_id: cri_new_customer
+            kind: manual
+            reason: external-verification
+            statement: The applicant must not currently be an Edge customer.
+          - criterion_id: cri_partner_affiliation
+            kind: manual
+            reason: external-verification
+            statement: The company must be affiliated with an approved accelerator, incubator, or venture-capital partner.
+    roles:
+      terms_authority_entity_id: ent_shydn2gtxxnj5cyqrmyj3qxbhw
+      access_operator_entity_id: ent_shydn2gtxxnj5cyqrmyj3qxbhw
+    access:
+      availability: public
+      method: form
+      url: https://edge.network/solutions/startups
+      instructions: Review the published eligibility criteria and submit the startup-program application through the Apply Now form.
+    source_ids:
+      - src_1686cb2949314fa03bb2c5c4c29b1a3e22ddfe510baf92517bd4e48e91f74704

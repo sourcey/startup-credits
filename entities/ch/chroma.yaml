@@ -1,0 +1,60 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1dbcf4r72xmbp4wk66xvrvd
+  slug: chroma
+  slug_aliases: []
+  name: Chroma
+  domains:
+    - value: trychroma.com
+      role: primary
+      valid_from: 2026-08-14T08:55:00.000Z
+  category: databases
+profile:
+  description: Chroma provides open-source search infrastructure for AI with vector, full-text, regex, and metadata search across local and serverless deployments.
+  links:
+    site: https://www.trychroma.com/
+sources:
+  - source_id: src_66856a5877e12177e1d793770c2ff44b8a3641abd97f3cd2080dbcb57da9914d
+    url: https://www.trychroma.com/
+  - source_id: src_b27503973d2ee99b4e44cb33b0689c61b2d6da2b19730ac095725955bf307e28
+    url: https://posthog.com/startups
+programs: []
+offers:
+  - offer_id: off_01m1dbcf7n7my6fa4ysm0snxew
+    offer_slug: posthog-startup-chroma-credit
+    offer_slug_aliases: []
+    title: $5,000 Chroma credit for PostHog startup members
+    summary: Accepted PostHog for Startups participants can receive $5,000 in Chroma credit as a partner perk.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-14T08:55:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: $5,000 in Chroma credit.
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 500000
+            kind: exact
+      consideration:
+        kind: unknown
+        description: The public startup page does not establish separate consideration for the partner perk.
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        statement: Applicant is accepted into PostHog for Startups.
+        reason: external-verification
+    roles:
+      terms_authority_entity_id: ent_01m1dbcf4r72xmbp4wk66xvrvd
+      access_operator_entity_id: ent_01kyh8fpe4h2ykh2786fd0krzp
+    access:
+      availability: membership
+      instructions: Apply to PostHog for Startups to receive the Chroma partner perk if accepted.
+      method: form
+      url: https://posthog.com/startups
+    terms_url: https://posthog.com/startups
+    source_ids:
+      - src_b27503973d2ee99b4e44cb33b0689c61b2d6da2b19730ac095725955bf307e28

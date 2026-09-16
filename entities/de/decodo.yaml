@@ -1,0 +1,88 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1d4bvbac4fxstmvffv9rp9w
+  slug: decodo
+  slug_aliases: []
+  name: Decodo
+  domains:
+    - value: decodo.com
+      role: primary
+      valid_from: 2026-08-31T00:00:00.000Z
+  category: data-analytics
+profile:
+  summary: Proxy infrastructure and web-scraping APIs for public web data.
+  description: Decodo provides residential, datacenter, ISP, and mobile proxy infrastructure and web scraping APIs for public web data collection.
+  links:
+    site: https://decodo.com
+sources:
+  - source_id: src_0b9bc405c065ee1a14622f0a3f8a7203e014a330c6bc976989eb84e43f482787
+    url: https://decodo.com/startup-program
+programs:
+  - program_id: prg_01m1d4bvbp68b8frg6a4tzq6hw
+    program_slug: decodo-startup-program
+    program_slug_aliases: []
+    title: Decodo Startup Program
+    summary: Decodo's startup program provides eligible early-stage, supported startups with proxy credits and technical support for data-driven products.
+    source_ids:
+      - src_0b9bc405c065ee1a14622f0a3f8a7203e014a330c6bc976989eb84e43f482787
+offers:
+  - offer_id: off_01m1d4bvbqv0w3v78vkxwnrr4z
+    program_id: prg_01m1d4bvbp68b8frg6a4tzq6hw
+    offer_slug: up-to-5000-decodo-proxy-credits
+    offer_slug_aliases: []
+    title: Up to $5,000 in Decodo Proxy Credits
+    summary: Eligible startups receive up to $5,000 in Decodo proxy credits that remain active until used, plus 24/7 technical support and potential co-marketing opportunities.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-31T00:00:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to $5,000 in proxy credits that remain active until fully used.
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 500000
+            kind: up-to
+        - benefit_id: ben_02
+          description: 24/7 technical support for setup, integration, troubleshooting, and performance optimization.
+          kind: free-service
+          service: 24/7 technical support
+        - benefit_id: ben_03
+          description: Potential strategic co-marketing opportunities, including joint content and cross-promotions.
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.stage
+            kind: predicate
+            operator: in
+            statement: Startup must be early-stage, from pre-seed through Series A.
+            value:
+              type: string-set
+              values:
+                - pre-seed
+                - seed
+                - series-a
+          - criterion_id: cri_02
+            kind: manual
+            reason: external-verification
+            statement: Startup must be backed by a venture-capital firm or supported by an accelerator.
+          - criterion_id: cri_03
+            kind: manual
+            reason: external-verification
+            statement: Startup must be actively building or scaling data-driven workflows.
+    roles:
+      terms_authority_entity_id: ent_01m1d4bvbac4fxstmvffv9rp9w
+      access_operator_entity_id: ent_01m1d4bvbac4fxstmvffv9rp9w
+    access:
+      availability: public
+      method: form
+      url: https://decodo.com/startup-program
+    source_ids:
+      - src_0b9bc405c065ee1a14622f0a3f8a7203e014a330c6bc976989eb84e43f482787

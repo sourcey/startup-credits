@@ -158,6 +158,7 @@ jobs:
             exit 1
           fi
       - name: Publish the App-bound validation result for the exact candidate head
+        id: publish-validation-check
         if: always()
         env:
           GH_TOKEN: ${{ github.token }}
@@ -170,6 +171,8 @@ jobs:
           identity_context_digest="${SOURCEY_IDENTITY_CONTEXT_DIGEST:-$(printf '%064d' 0)}"
           [[ "$identity_context_digest" =~ ^[a-f0-9]{64}$ ]]
           external_id="sourcey-validation-v1:${BASE_REVISION}:${HEAD_REVISION}:${verifier_digest}:${identity_context_digest}"
+          echo "SOURCEY_VALIDATION_EXTERNAL_ID=$external_id" >> "$GITHUB_ENV"
+          echo "SOURCEY_VALIDATION_CONCLUSION=$VALIDATION_CONCLUSION" >> "$GITHUB_ENV"
           checks="$RUNNER_TEMP/sourcey-validation-checks.json"
           gh api --method GET \
             "repos/${GITHUB_REPOSITORY}/commits/${HEAD_REVISION}/check-runs" \
@@ -224,6 +227,30 @@ jobs:
              and .html_url == $details_url
              and .app.slug == "github-actions"' \
             "$RUNNER_TEMP/sourcey-validation-readback.json" >/dev/null
+      - name: Dispatch the exact validation event to Sourcey
+        if: always() && steps.publish-validation-check.outcome == 'success'
+        # Delivery accelerates the durable cursor recovery path. A transport
+        # outage must never rewrite an already published validation verdict.
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ secrets.SOURCEY_WORKSPACE_DISPATCH_TOKEN }}
+          PULL_REQUEST_NUMBER: ${{ github.event.pull_request.number }}
+          BASE_REVISION: ${{ github.event.pull_request.base.sha }}
+          HEAD_REVISION: ${{ github.event.pull_request.head.sha }}
+          REPOSITORY_ID: ${{ github.event.repository.id }}
+        run: |
+          test -n "$GH_TOKEN"
+          test -n "$SOURCEY_VALIDATION_EXTERNAL_ID"
+          test -n "$SOURCEY_VALIDATION_CONCLUSION"
+          gh api --method POST repos/sourcey/sourcey-workspace/dispatches \
+            -f event_type=startup-credits-validation \
+            -f "client_payload[repository]=$GITHUB_REPOSITORY" \
+            -f "client_payload[repository_id]=$REPOSITORY_ID" \
+            -f "client_payload[pull_request_number]=$PULL_REQUEST_NUMBER" \
+            -f "client_payload[base_sha]=$BASE_REVISION" \
+            -f "client_payload[head_sha]=$HEAD_REVISION" \
+            -f "client_payload[conclusion]=$SOURCEY_VALIDATION_CONCLUSION" \
+            -f "client_payload[validation_external_id]=$SOURCEY_VALIDATION_EXTERNAL_ID"
       - name: Publish the exact Sourcey validation result
         if: always()
         env:

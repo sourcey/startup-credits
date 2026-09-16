@@ -1,0 +1,80 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m16y0htnnsq1kmzac26dgkzh
+  slug: anvevoice
+  slug_aliases: []
+  name: AnveVoice
+  domains:
+    - value: anvevoice.app
+      role: primary
+      valid_from: 2026-08-29T14:15:39.096Z
+  category: ai-ml
+profile:
+  description: AnveVoice provides embeddable voice AI agents and speech APIs for websites, including multilingual conversations and on-page actions.
+  summary: AnveVoice provides embeddable voice AI agents and speech APIs that help websites handle multilingual conversations and on-page workflows.
+  links:
+    site: https://anvevoice.app
+sources:
+  - source_id: src_324ec1242dab6d5ba4cf29562b87373262255f1c2f09fc7cc47de3c5407e8a15
+    url: https://anvevoice.app/startups
+  - source_id: src_89cc441d328586b2fd9924ba1b6d5eccf7991cdc8fb454d21c673bb89272523c
+    url: https://anvevoice.app/llms.txt
+  - source_id: src_141f878fc5a13aca332edf211df02ae786f740c2bd1ad961653bd4ff8ac4745f
+    url: https://anvevoice.app/pricing
+programs:
+  - program_id: prg_01m16y0htr5e7atav28vycxxpe
+    program_slug: anvevoice-for-startups
+    program_slug_aliases: []
+    title: AnveVoice for Startups
+    summary: AnveVoice offers qualifying startups three months free on the Growth plan followed by 50% off all plans for six months.
+    source_ids:
+      - src_324ec1242dab6d5ba4cf29562b87373262255f1c2f09fc7cc47de3c5407e8a15
+offers:
+  - offer_id: off_01m16y0htrqb8c0dbq60pj2s5t
+    program_id: prg_01m16y0htr5e7atav28vycxxpe
+    offer_slug: three-months-free-and-six-months-half-price
+    offer_slug_aliases: []
+    title: Three months free plus six months at 50% off
+    summary: Qualifying startups receive three free months on AnveVoice Growth and then 50% off any AnveVoice plan for six months.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-29T14:15:39.096Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 3 months free on Growth
+          duration:
+            kind: exact
+            value: P3M
+          kind: free-service
+          service: Growth
+        - benefit_id: ben_02
+          description: 50% off 6 months on all plans
+          duration:
+            kind: exact
+            value: P6M
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 5000
+      consideration:
+        kind: variable
+        description: Growth is $39 per month, Scale is $129 per month, and Enterprise pricing is custom.
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        statement: Eligible startups were founded within the last three years, have under $5 million in annual revenue, have fewer than 50 employees, and have a live website.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01m16y0htnnsq1kmzac26dgkzh
+      access_operator_entity_id: ent_01m16y0htnnsq1kmzac26dgkzh
+    access:
+      availability: public
+      instructions: Apply at the official AnveVoice for Startups page.
+      method: form
+      url: https://anvevoice.app/startups
+    source_ids:
+      - src_324ec1242dab6d5ba4cf29562b87373262255f1c2f09fc7cc47de3c5407e8a15
+      - src_89cc441d328586b2fd9924ba1b6d5eccf7991cdc8fb454d21c673bb89272523c
+      - src_141f878fc5a13aca332edf211df02ae786f740c2bd1ad961653bd4ff8ac4745f

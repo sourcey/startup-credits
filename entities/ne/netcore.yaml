@@ -1,0 +1,93 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1wt0193ynssmqwzaenrtrkv
+  slug: netcore
+  slug_aliases: []
+  name: Netcore
+  domains:
+    - value: netcore.ai
+      role: primary
+      valid_from: 2026-09-07T02:04:00.000Z
+    - value: netcorecloud.com
+      role: alias
+      valid_from: 2026-09-07T02:04:00.000Z
+  category: marketing
+profile:
+  summary: Netcore is an agentic marketing platform for customer engagement across email, SMS, WhatsApp, RCS, and other channels.
+  description: Netcore provides an AI-powered customer engagement and marketing automation platform with omnichannel campaign capabilities across email, SMS, WhatsApp, RCS, and related channels.
+  links:
+    site: https://netcore.ai
+sources:
+  - source_id: src_aaa89a4bf729468e93fdeb6732286f89e65d903ea0e51d207e269fb0a7d4cad3
+    url: https://netcore.ai/startup-program/
+programs:
+  - program_id: prg_01m1wt01a6e671ynw0nkk75axn
+    program_slug: netcore-b2c-startup-program
+    program_slug_aliases: []
+    title: Netcore B2C Startup Program
+    summary: Netcore B2C Startup Program offers eligible startups up to $30,000 in platform credits with no cost to join, plus mentorship and network support.
+    source_ids:
+      - src_aaa89a4bf729468e93fdeb6732286f89e65d903ea0e51d207e269fb0a7d4cad3
+offers:
+  - offer_id: off_01m1wt01azj1196xys1mxhhemw
+    program_id: prg_01m1wt01a6e671ynw0nkk75axn
+    offer_slug: up-to-30000-platform-credits
+    offer_slug_aliases: []
+    title: Up to $30,000 in platform credits
+    summary: Eligible startups can receive up to $30,000 in platform credits to use across Netcore's omnichannel marketing platform, with no cost to join the program.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T02:04:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to $30,000 in platform credits
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 3000000
+            kind: up-to
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.age_months
+            kind: predicate
+            operator: lt
+            statement: Startups that have been in operation for less than 3 years.
+            value:
+              type: number
+              value: 36
+          - criterion_id: cri_02
+            fact: company.funding_raised_usd
+            kind: predicate
+            operator: lt
+            statement: Secured under $15 million in funding.
+            value:
+              type: number
+              value: 15000000
+          - criterion_id: cri_03
+            kind: manual
+            reason: vendor-discretion
+            statement: Not currently a Netcore customer.
+          - criterion_id: cri_04
+            kind: manual
+            reason: vendor-discretion
+            statement: B2C retention focus — primary focus is beyond acquisition.
+          - criterion_id: cri_05
+            kind: manual
+            reason: vendor-discretion
+            statement: Healthy traction with high demand and readiness to scale.
+    roles:
+      terms_authority_entity_id: ent_01m1wt0193ynssmqwzaenrtrkv
+      access_operator_entity_id: ent_01m1wt0193ynssmqwzaenrtrkv
+    access:
+      availability: public
+      method: form
+      url: https://tally.so/r/mK5eQV
+    source_ids:
+      - src_aaa89a4bf729468e93fdeb6732286f89e65d903ea0e51d207e269fb0a7d4cad3

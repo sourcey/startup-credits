@@ -1,0 +1,80 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_0jgrq407csjcw0cqdj4882bfje
+  slug: monday-com
+  name: monday.com
+  domains:
+    - value: monday.com
+      role: primary
+      valid_from: 2026-09-07T17:34:25.511Z
+  category: productivity
+profile:
+  summary: monday.com provides work management, CRM, software development, and service workflows on a configurable cloud platform.
+  description: monday.com provides configurable cloud products for work management, customer relationship management, software development, and service operations.
+  links:
+    site: https://monday.com/
+sources:
+  - source_id: src_9e5109a0eb1af54a325124f37a1b6282493bd84c5b14e267503bbe9c5a151cff
+    url: https://monday.com/
+  - source_id: src_30cc2e0b04cda0b9959c096a225a4c3374ddd7543f6297a846b57235e4a67ebc
+    url: https://monday.com/ap/devforstartups
+  - source_id: src_8aee14723c775903b60579fc81b90af520da1932e43439f1f14e854835bdc6bc
+    url: https://monday.com/l/miscellaneous/startup/
+programs:
+  - program_id: prg_nc4z13esp7shc7yqz5ctd2dkmc
+    program_slug: monday-dev-for-startups
+    title: monday dev for startups
+    summary: The program offers eligible early-stage, VC-backed startups a reduced first-year price for ten monday dev Pro seats.
+    source_ids:
+      - src_30cc2e0b04cda0b9959c096a225a4c3374ddd7543f6297a846b57235e4a67ebc
+      - src_8aee14723c775903b60579fc81b90af520da1932e43439f1f14e854835bdc6bc
+offers:
+  - offer_id: off_cbttdm2jtwb5mg4tzw5g5pst5d
+    program_id: prg_nc4z13esp7shc7yqz5ctd2dkmc
+    offer_slug: monday-dev-first-year-startup-plan
+    title: monday dev first-year startup plan
+    summary: Eligible startups can purchase a one-year subscription for ten monday dev Pro seats for a one-off payment of USD 240.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T17:34:25.511Z
+    economics:
+      consideration:
+        kind: fixed
+        amount:
+          currency: USD
+          minor_units: 24000
+      benefits:
+        - benefit_id: ben_ten_pro_seats_one_year
+          kind: other
+          description: A one-year subscription for ten monday dev Pro seats.
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_employee_limit
+            kind: manual
+            reason: external-verification
+            statement: The organization must have no more than 50 employees.
+          - criterion_id: cri_company_age
+            kind: manual
+            reason: external-verification
+            statement: The organization must have been formed within the two years before applying.
+          - criterion_id: cri_investor_support
+            kind: manual
+            reason: external-verification
+            statement: The organization must be supported by a venture capital firm, startup accelerator, or incubator.
+          - criterion_id: cri_not_paid_customer
+            kind: manual
+            reason: external-verification
+            statement: The organization must not be a monday.com paying customer when it applies.
+    roles:
+      terms_authority_entity_id: ent_0jgrq407csjcw0cqdj4882bfje
+      access_operator_entity_id: ent_0jgrq407csjcw0cqdj4882bfje
+    access:
+      availability: public
+      method: form
+      url: https://monday.com/ap/devforstartups
+      instructions: Start a free monday dev trial, complete the program application form, and wait for monday.com to review the application and email an access code.
+    source_ids:
+      - src_30cc2e0b04cda0b9959c096a225a4c3374ddd7543f6297a846b57235e4a67ebc
+      - src_8aee14723c775903b60579fc81b90af520da1932e43439f1f14e854835bdc6bc

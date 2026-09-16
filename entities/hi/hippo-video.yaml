@@ -1,0 +1,78 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1q13fr88dvpnbza4awtqes5
+  slug: hippo-video
+  slug_aliases: []
+  name: Hippo Video
+  domains:
+    - value: hippovideo.io
+      role: primary
+      valid_from: 2026-09-04T20:17:38.234Z
+  category: marketing
+profile:
+  summary: AI-powered video platform for personalized sales outreach, product demos, customer communication, and video analytics.
+  description: Hippo Video is an AI-powered video platform for personalized sales outreach, product demonstrations, customer communication, and video analytics.
+  links:
+    site: https://www.hippovideo.io
+sources:
+  - source_id: src_55a5b2585448831e12d3cee29a9cd901a5e0708800255dfd5e7c3a15689019a0
+    url: https://www.hippovideo.io/startups
+programs: []
+offers:
+  - offer_id: off_01m1q13fr86be491w537ccdktv
+    offer_slug: hippo-video-for-startups
+    offer_slug_aliases: []
+    title: Hippo Video for Startups
+    summary: Eligible startups receive three months free, then up to 70% off for one year, plus free personalization and testimonial add-ons for that year.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-04T20:17:38.234Z
+    economics:
+      consideration:
+        kind: variable
+        description: Discounted pricing applies for one year from the fourth month.
+      benefits:
+        - benefit_id: ben_01
+          description: Hippo Video is free of cost for the first three months
+          duration:
+            kind: exact
+            value: P3M
+          kind: free-service
+          service: Hippo Video
+        - benefit_id: ben_02
+          description: A 70% discount applies from the fourth month for one year
+          duration:
+            kind: exact
+            value: P1Y
+          kind: discount
+          percentage:
+            kind: up-to
+            basis_points: 7000
+        - benefit_id: ben_03
+          description: Premium personalization and testimonial add-ons are free for one year
+          duration:
+            kind: exact
+            value: P1Y
+          kind: free-service
+          service: Premium personalization and testimonial add-ons
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            statement: Total funding must not exceed US$2M.
+            reason: external-verification
+          - criterion_id: cri_02
+            kind: manual
+            statement: Applicant must be a new Hippo Video customer and cannot combine this offer with another offer or discount.
+            reason: external-verification
+    roles:
+      terms_authority_entity_id: ent_01m1q13fr88dvpnbza4awtqes5
+      access_operator_entity_id: ent_01m1q13fr88dvpnbza4awtqes5
+    access:
+      availability: public
+      method: form
+      url: https://www.hippovideo.io/users/sign_up
+    source_ids:
+      - src_55a5b2585448831e12d3cee29a9cd901a5e0708800255dfd5e7c3a15689019a0

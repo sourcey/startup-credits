@@ -1,0 +1,76 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m18vsgb0313gpw238tcsky2e
+  slug: xtrace
+  slug_aliases: []
+  name: XTrace
+  domains:
+    - value: xtrace.ai
+      role: primary
+      valid_from: 2026-08-30T00:00:00Z
+  category: ai-ml
+profile:
+  description: XTrace provides memory and observability infrastructure for AI agents.
+  links:
+    site: https://xtrace.ai
+sources:
+  - source_id: src_01m18vsgb3982byxbgsq688v2r
+    url: https://xtrace.ai/startup-program
+programs:
+  - program_id: prg_01m18vsgb3qv5ww4305vrd65qn
+    program_slug: xtrace-startup-program
+    program_slug_aliases: []
+    title: XTrace Startup Program
+    summary: XTrace's startup program provides new users with three months of memory and observability infrastructure credits, Pro access, and implementation support.
+    source_ids:
+      - src_01m18vsgb3982byxbgsq688v2r
+offers:
+  - offer_id: off_01m18vsgb3cmq8c4dxh2vye7kp
+    program_id: prg_01m18vsgb3qv5ww4305vrd65qn
+    offer_slug: 5000-xtrace-credit-for-three-months
+    offer_slug_aliases: []
+    title: Up to $5,000 in XTrace credit for three months
+    summary: New XTrace users accepted to the startup program receive up to $5,000 in credit and full Pro access to the Memory API for three months, plus setup help.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-30T00:00:00Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to $5,000 in XTrace credit for three months, usable across the platform.
+          duration:
+            kind: exact
+            value: P3M
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 500000
+            kind: up-to
+        - benefit_id: ben_02
+          description: Full Pro access to the Memory API for three months.
+          kind: other
+        - benefit_id: ben_03
+          description: Hands-on setup help with an engineer, including SDK installation and schema mapping.
+          kind: free-service
+          service: startup onboarding and implementation help
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: external-verification
+            statement: Applicant must be a new XTrace user and submit the public startup-program application for vendor review.
+    roles:
+      terms_authority_entity_id: ent_01m18vsgb0313gpw238tcsky2e
+      access_operator_entity_id: ent_01m18vsgb0313gpw238tcsky2e
+    access:
+      availability: public
+      method: form
+      url: https://xtrace.ai/startup-program
+    terms_url: https://xtrace.ai/startup-program
+    source_ids:
+      - src_01m18vsgb3982byxbgsq688v2r

@@ -1,0 +1,59 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01kz2f7q8h3n5w6y9m2p4r7t8v
+  slug: runway
+  slug_aliases: []
+  name: Runway
+  domains:
+    - value: runway.com
+      role: primary
+      valid_from: 2026-09-14T00:00:00.000Z
+  category: ai-ml
+profile:
+  description: Runway provides generative AI tools and APIs for creating, editing, and deploying video and interactive media.
+  summary: Runway builds generative AI tools and APIs for video and interactive media, including the Runway Characters platform for startup builders.
+  links:
+    site: https://runway.com
+sources:
+  - source_id: src_8f7e7d6bd8beef2f01a6af6b8b6bfc2cb0f7d2cc2b45b0e20e6f6e26b7d4a1c9
+    url: https://runway.com/product/builders
+programs:
+  - program_id: prg_01kz2f7q8j4n6w8y1m3p5r7t9x
+    program_slug: runway-builders
+    program_slug_aliases: []
+    title: Runway Builders Program
+    summary: The Runway Builders Program helps Seed-to-Series-C startups build with Runway Characters through complimentary API credits, higher rate limits, and early access.
+    source_ids:
+      - src_8f7e7d6bd8beef2f01a6af6b8b6bfc2cb0f7d2cc2b45b0e20e6f6e26b7d4a1c9
+offers:
+  - offer_id: off_01kz2f7q8k5n7w9y2m4p6r8t1z
+    program_id: prg_01kz2f7q8j4n6w8y1m3p5r7t9x
+    offer_slug: runway-builders-api-credits
+    offer_slug_aliases: []
+    title: Runway Builders API Credits
+    summary: Seed-to-Series-C startups receive complementary Runway API credits and early access to build with Runway Characters.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-14T00:00:00.000Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_01
+          description: Complementary API credits and early access to build with Runway Characters
+          kind: other
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: not-machine-evaluable
+        statement: Applicant must be a Seed-to-Series-C startup.
+    roles:
+      terms_authority_entity_id: ent_01kz2f7q8h3n5w6y9m2p4r7t8v
+      access_operator_entity_id: ent_01kz2f7q8h3n5w6y9m2p4r7t8v
+    access:
+      availability: public
+      method: form
+      url: https://runway.com/product/builders
+    source_ids:
+      - src_8f7e7d6bd8beef2f01a6af6b8b6bfc2cb0f7d2cc2b45b0e20e6f6e26b7d4a1c9

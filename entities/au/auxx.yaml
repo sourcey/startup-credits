@@ -1,0 +1,86 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1bm0w59g34hrq47vk6axm9m
+  slug: auxx
+  slug_aliases: []
+  name: auxx.Ai
+  domains:
+    - value: auxx.ai
+      role: primary
+      valid_from: 2026-08-31T09:57:31.607Z
+  category: support
+profile:
+  description: auxx.Ai provides an AI customer-support platform that drafts replies, manages conversations, and automates support workflows.
+  links:
+    site: https://auxx.ai
+sources:
+  - source_id: src_37d4410520842e1d2bd3391e7c4ba9dd427a5cc7e9257fae26f6babadca2d7e3
+    url: https://auxx.ai/startups
+programs:
+  - program_id: prg_01m1bm0w59b8xjgakaz7qjc20x
+    program_slug: auxx-for-startups
+    program_slug_aliases: []
+    title: auxx.Ai for Startups
+    summary: Eligible startups receive phased discounts on the auxx.Ai Growth plan for three years, starting at 90% off in year one.
+    source_ids:
+      - src_37d4410520842e1d2bd3391e7c4ba9dd427a5cc7e9257fae26f6babadca2d7e3
+offers:
+  - offer_id: off_01m1bm0w59yqg8g25sfyqatyvv
+    program_id: prg_01m1bm0w59b8xjgakaz7qjc20x
+    offer_slug: three-year-growth-plan-discount
+    offer_slug_aliases: []
+    title: Up to 90% off auxx.Ai Growth for three years
+    summary: Qualified startups pay $5 per month in year one, $25 per month in year two, and $37.50 per month in year three for the normally $50-per-month Growth plan.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-31T09:57:31.607Z
+    economics:
+      consideration:
+        kind: variable
+        description: The discounted monthly price is $5 in year one, $25 in year two, and $37.50 in year three before returning to standard pricing.
+      benefits:
+        - benefit_id: ben_01
+          applies_to: auxx.Ai Growth plan
+          description: 90% off the Growth plan in year one
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 9000
+          duration:
+            kind: exact
+            value: P1Y
+        - benefit_id: ben_02
+          applies_to: auxx.Ai Growth plan
+          description: 50% off the Growth plan in year two
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 5000
+          duration:
+            kind: exact
+            value: P1Y
+        - benefit_id: ben_03
+          applies_to: auxx.Ai Growth plan
+          description: 25% off the Growth plan in year three
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 2500
+          duration:
+            kind: exact
+            value: P1Y
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_01
+        statement: The startup must have raised no more than USD 10 million and have fewer than 15 team members.
+        reason: vendor-discretion
+    roles:
+      terms_authority_entity_id: ent_01m1bm0w59g34hrq47vk6axm9m
+      access_operator_entity_id: ent_01m1bm0w59g34hrq47vk6axm9m
+    access:
+      availability: public
+      method: automatic
+      url: https://auxx.ai/startups
+    source_ids:
+      - src_37d4410520842e1d2bd3391e7c4ba9dd427a5cc7e9257fae26f6babadca2d7e3

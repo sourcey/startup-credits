@@ -7,7 +7,8 @@
 
 <p align="center">
   <a href="https://sourcey.com/startup-credits">Browse startup credits</a> ·
-  <a href="https://sourcey.com/catalog.json">catalog.json</a> ·
+  <a href="https://sourcey.com/companies">Companies</a> ·
+  <a href="https://sourcey.com/startup-credits.json">startup-credits.json</a> ·
   <a href="https://sourcey.com/llms.txt">llms.txt</a> ·
   <a href="https://mcp.sourcey.com/mcp">MCP</a> ·
   <a href="https://api.sourcey.com/openapi.yml">API</a>
@@ -15,7 +16,7 @@
 
 <p align="center">
   <!-- Counts are read live from the published release; nothing here is kept by hand.
-       The count comes from the list envelope, not catalog.json: the full artifact is
+       The count comes from the list envelope, not the bulk dataset: the full artifact is
        megabytes and a badge fetch times out on it. -->
   <img alt="entities on record" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.sourcey.com%2Fv1%2Fentities%3Flimit%3D1&query=%24.summary.entity_count&label=entities%20on%20record&style=flat-square&labelColor=0a0908&color=d0231c">
   <img alt="last change" src="https://img.shields.io/github/last-commit/sourcey/startup-credits?style=flat-square&labelColor=0a0908&color=176b45&label=last%20change">
@@ -31,7 +32,9 @@ actually pay once somebody tells them the program exists.
 The second price isn't a secret. It's just spread across a few hundred vendor
 pages, worded differently every time, and quietly revised whenever the vendor
 feels like it. So we write it down. One file per Entity, every fact carrying the
-page it came from and the day we read it.
+page it came from and the day we read it. Published companies appear in
+[Sourcey](https://sourcey.com/companies), alongside their offers, capabilities,
+assessments and evidence.
 
 Nothing here is for sale. Tiers come from evidence and are never influenced by
 payment, and the [rules](https://sourcey.com/policies) are published as catalog

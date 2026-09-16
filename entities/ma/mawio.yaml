@@ -1,0 +1,95 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1red949hfkxzd7a6bgwy7rh
+  slug: mawio
+  slug_aliases: []
+  name: Mawio
+  domains:
+    - value: mawio.dev
+      role: primary
+      valid_from: 2026-09-05T09:29:18.731Z
+  category: hosting-infra
+profile:
+  description: Mawio provides sandbox compute infrastructure for AI agents and applications.
+  links:
+    site: https://mawio.dev/
+sources:
+  - source_id: src_8de3b6c0dba6c268c41df43e3023d2c4eec5cdb4d22cc381cb09ba9f140d4fdf
+    url: https://mawio.dev/startups
+programs:
+  - program_id: prg_01m1red94b50ne4jt91ph5tjzk
+    program_slug: mawio-startup-program
+    program_slug_aliases: []
+    title: Mawio Startup Program
+    summary: An application-based program supporting early-stage companies building
+      AI agent products.
+    source_ids:
+      - src_8de3b6c0dba6c268c41df43e3023d2c4eec5cdb4d22cc381cb09ba9f140d4fdf
+offers:
+  - offer_id: off_01m1red94bdjmfk248hyxkwqyy
+    program_id: prg_01m1red94b50ne4jt91ph5tjzk
+    offer_slug: startup-api-credits
+    offer_slug_aliases: []
+    title: $10,000 in Mawio startup API credits
+    summary: Approved AI-agent startups receive API credits, a six-month Startup
+      Tier, engineering support, and early-access opportunities.
+    description: The startup page does not specify post-program pricing or overage terms.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T09:29:18.731Z
+    economics:
+      benefits:
+        - benefit_id: ben_api_credits
+          kind: credit
+          value:
+            kind: exact
+            amount:
+              currency: USD
+              minor_units: 1000000
+          description: Free API credits. The source does not separately state the
+            credit-expiry date.
+        - benefit_id: ben_startup_tier
+          kind: free-service
+          service: Mawio Startup Tier
+          description: 10,000 sandbox-minutes per month and up to 10 concurrent sandboxes;
+            all languages and runtimes, EU and Switzerland, and email support.
+          duration:
+            kind: exact
+            value: P6M
+        - benefit_id: ben_support
+          kind: other
+          description: Direct engineering Slack channel, priority support, architecture
+            reviews, early access to features and regions, and co-marketing and
+            case-study opportunities.
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_stage
+            kind: manual
+            reason: external-verification
+            statement: Pre-seed to Series A startups building AI agent products.
+          - criterion_id: cri_age_revenue
+            kind: manual
+            reason: external-verification
+            statement: Less than three years old with under $5 million in annual revenue.
+          - criterion_id: cri_approval
+            kind: manual
+            reason: vendor-discretion
+            statement: The Mawio team personally reviews each application and approval is
+              required.
+    roles:
+      terms_authority_entity_id: ent_01m1red949hfkxzd7a6bgwy7rh
+      access_operator_entity_id: ent_01m1red949hfkxzd7a6bgwy7rh
+    access:
+      availability: public
+      method: contact
+      url: https://mawio.dev/startups
+      instructions: Use the Apply to Program email link on the startup page. Describe
+        the product, team, and intended Mawio use. The page states review within
+        48 hours and onboarding within 24 hours of approval.
+    terms_url: https://mawio.dev/startups
+    source_ids:
+      - src_8de3b6c0dba6c268c41df43e3023d2c4eec5cdb4d22cc381cb09ba9f140d4fdf

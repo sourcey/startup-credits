@@ -1,0 +1,78 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1xsbafhcj5ejj5rredbwf74
+  slug: paytm
+  slug_aliases: []
+  name: Paytm
+  domains:
+    - value: paytm.com
+      role: primary
+      valid_from: 2026-09-07T11:17:00.000Z
+    - value: business.paytm.com
+      role: alias
+      valid_from: 2026-09-07T11:17:00.000Z
+  category: payments-fintech
+profile:
+  summary: Indian payments and financial services company for payment gateway, merchant tools, banking products, and advertising.
+  description: Paytm is an Indian payments and financial services company offering payment gateway, merchant tools, banking products, and advertising for businesses.
+  links:
+    site: https://business.paytm.com/
+sources:
+  - source_id: src_9e970492414cf2f2b3b458cb0743981c8c5b3318cc2411a30ba1e72fa279f9e6
+    url: https://business.paytm.com/paytm-startups
+programs:
+  - program_id: prg_01m1xsbag1crqmnr69jzrgvyeg
+    program_slug: paytm-for-startups
+    program_slug_aliases: []
+    title: Paytm for Startups
+    summary: Paytm for Startups offers eligible first-time Payment Gateway customers commission-free payment acceptance worth ₹6 lakh over six months, with setup and maintenance charges waived.
+    source_ids:
+      - src_9e970492414cf2f2b3b458cb0743981c8c5b3318cc2411a30ba1e72fa279f9e6
+offers:
+  - offer_id: off_01m1xsbag1dwq78y0c0ss5yvrk
+    program_id: prg_01m1xsbag1crqmnr69jzrgvyeg
+    offer_slug: six-lakh-inr-commission-free-processing
+    offer_slug_aliases: []
+    title: INR 6 lakh commission-free payment acceptance
+    summary: First-time Paytm Payment Gateway customers registered with a national or state startup program get ₹6 lakh worth of commission-free acceptance for six months (₹1 lakh per month), with setup and maintenance charges waived.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T11:17:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Commission-free payment acceptance worth ₹6 lakh over six months (₹1 lakh per month)
+          kind: waiver
+          waived_item: Payment processing commission on INR 6 lakh in total payment volume (INR 1 lakh per month for six months)
+        - benefit_id: ben_02
+          description: Setup charges waived for eligible Paytm Payment Gateway startup customers
+          kind: waiver
+          waived_item: Paytm Payment Gateway setup charges
+        - benefit_id: ben_03
+          description: Maintenance charges waived for eligible Paytm Payment Gateway startup customers
+          kind: waiver
+          waived_item: Paytm Payment Gateway maintenance charges
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: external-verification
+            statement: The applicant must be a first-time Paytm Payment Gateway customer.
+          - criterion_id: cri_02
+            kind: manual
+            reason: external-verification
+            statement: The startup must be registered with a national or state-level startup program such as an incubator, Startup India, or DPIIT.
+    roles:
+      terms_authority_entity_id: ent_01m1xsbafhcj5ejj5rredbwf74
+      access_operator_entity_id: ent_01m1xsbafhcj5ejj5rredbwf74
+    access:
+      availability: public
+      method: form
+      instructions: Open the Paytm for Startups page and complete the on-page Get Started application form with company details, contact information, and the Paytm products of interest.
+      url: https://business.paytm.com/paytm-startups
+    source_ids:
+      - src_9e970492414cf2f2b3b458cb0743981c8c5b3318cc2411a30ba1e72fa279f9e6

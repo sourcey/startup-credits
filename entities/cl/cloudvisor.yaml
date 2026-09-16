@@ -1,0 +1,56 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m2gt2exwcstjwkn5t4ry5jnp
+  slug: cloudvisor
+  slug_aliases: []
+  name: Cloudvisor
+  domains:
+    - value: cloudvisor.co
+      role: primary
+      valid_from: 2026-09-14T20:34:53.000Z
+  category: hosting-infra
+profile:
+  summary: AWS billing and cloud cost management services for startups.
+  description: Cloudvisor provides AWS Resell billing and cloud cost management services for startups.
+  links:
+    site: https://cloudvisor.co/
+sources:
+  - source_id: src_016187ebb3d7af13988cecb66e623d0025f177e81d8c9449338c4db793822706
+    url: https://cloudvisor.co/aws-for-startups/
+programs: []
+offers:
+  - offer_id: off_01m2gt2ey1x5yggtqxzaqws9pg
+    offer_slug: cloudvisor-aws-startup-discount
+    offer_slug_aliases: []
+    title: 3% AWS usage discount for startups
+    summary: Startups joining Cloudvisor AWS Resell receive an automatic 3% discount on AWS usage with no additional service fee.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-14T20:34:53.000Z
+    economics:
+      consideration:
+        kind: variable
+        description: Participants continue paying for AWS usage after the automatic 3% discount and join Cloudvisor's AWS Resell billing relationship.
+      benefits:
+        - benefit_id: ben_01
+          applies_to: AWS usage through Cloudvisor AWS Resell
+          description: Automatic 3% discount on AWS usage
+          kind: discount
+          percentage:
+            basis_points: 300
+            kind: exact
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: external-verification
+        statement: Applicant is a startup that becomes a Cloudvisor AWS Resell customer.
+    roles:
+      terms_authority_entity_id: ent_01m2gt2exwcstjwkn5t4ry5jnp
+      access_operator_entity_id: ent_01m2gt2exwcstjwkn5t4ry5jnp
+    access:
+      availability: public
+      method: contact
+      url: https://cloudvisor.co/book-a-free-consultation/
+    source_ids:
+      - src_016187ebb3d7af13988cecb66e623d0025f177e81d8c9449338c4db793822706

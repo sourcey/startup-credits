@@ -1,0 +1,59 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_xkg8vrs2cgv5y2gtnv78xh5den
+  slug: fish-audio
+  name: Fish Audio
+  domains:
+    - value: fish.audio
+      role: primary
+      valid_from: 2026-09-07T17:48:46.951Z
+  category: ai-ml
+profile:
+  summary: Fish Audio provides real-time text-to-speech, speech-to-text, voice cloning, audio translation, and voice AI tools for applications.
+  description: Fish Audio provides real-time text-to-speech, speech-to-text, voice cloning, voice changing, audio translation, sound effects, and voice AI tools for applications.
+  links:
+    site: https://fish.audio/
+sources:
+  - source_id: src_1d1f8c72e483fff2b6ceface093cfdb055c029279493ae2079d211f638a39870
+    url: https://fish.audio/
+  - source_id: src_6b3898e3c8ec012460c8e9e3f96bfcc9ba6c97f38266dc86ce2727f9e9a5ea25
+    url: https://fish.audio/startup/
+programs:
+  - program_id: prg_51vbe87b7hk3vvh80fmvf1q4ry
+    program_slug: fish-audio-startup-program
+    title: Fish Audio Startup Program
+    summary: The program gives early-stage teams free access to Fish Audio's real-time voice engine, higher concurrency, and premium support for three months.
+    source_ids:
+      - src_6b3898e3c8ec012460c8e9e3f96bfcc9ba6c97f38266dc86ce2727f9e9a5ea25
+offers:
+  - offer_id: off_bmmv7frjp35eztcm15ctq1e693
+    program_id: prg_51vbe87b7hk3vvh80fmvf1q4ry
+    offer_slug: fish-audio-three-month-startup-access
+    title: Three months and 12 million characters per month of free access
+    summary: Early-stage teams get three months and 12 million characters per month of free access to Fish Audio's real-time speech engine.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T17:48:46.951Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_monthly_characters
+          kind: other
+          description: You get 3 months and 12 million characters per month of free access to Fish Audio's real-time, emotionally rich speech engine.
+    eligibility:
+      rule:
+        criterion_id: cri_early_stage_team
+        kind: manual
+        reason: external-verification
+        statement: The applicant must be an early-stage team building a voice-enabled product such as an AI companion, expressive character, or agent.
+    roles:
+      terms_authority_entity_id: ent_xkg8vrs2cgv5y2gtnv78xh5den
+      access_operator_entity_id: ent_xkg8vrs2cgv5y2gtnv78xh5den
+    access:
+      availability: public
+      method: form
+      url: https://fish.audio/startup/
+      instructions: Open the public Startup Program page and use the Apply action to submit the application.
+    source_ids:
+      - src_6b3898e3c8ec012460c8e9e3f96bfcc9ba6c97f38266dc86ce2727f9e9a5ea25

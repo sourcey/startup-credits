@@ -1,0 +1,67 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1y3gtvyxk46qqgj6vt5pg08
+  slug: tenki
+  slug_aliases: []
+  name: Tenki
+  domains:
+    - value: tenki.cloud
+      role: primary
+      valid_from: 2026-09-07T14:15:00.000Z
+  category: hosting-infra
+profile:
+  summary: Cloud infrastructure for engineering teams covering GitHub Actions runners, AI code review, and sandboxes for AI agents.
+  description: Tenki provides cloud infrastructure for code and agents, including managed GitHub Actions runners, an AI code reviewer, and isolated Linux sandboxes for AI agents.
+  links:
+    site: https://tenki.cloud/
+sources:
+  - source_id: src_7d26ee82c436d2286a5798f0c1e01cfe1bedf8c60bd82b8eba8e0e372b141589
+    url: https://tenki.cloud/startups
+  - source_id: src_74cb86594fa3466ac24976731776b1972cb78536ec4a8dbae704243a977a2c4c
+    url: https://tenki.cloud/pricing
+programs:
+  - program_id: prg_01m1y3gtvy58j1kaf326eqr1dm
+    program_slug: tenki-for-startups
+    program_slug_aliases: []
+    title: Tenki for Startups
+    summary: Approved startups receive USD 10,000 in free Tenki credits for Sandboxes, GitHub Runners, and AI Code Reviewer.
+    source_ids:
+      - src_7d26ee82c436d2286a5798f0c1e01cfe1bedf8c60bd82b8eba8e0e372b141589
+offers:
+  - offer_id: off_01m1y3gtvyhkszqpyx5sepzbt9
+    program_id: prg_01m1y3gtvy58j1kaf326eqr1dm
+    offer_slug: ten-thousand-free-credits
+    offer_slug_aliases: []
+    title: USD 10,000 in free Tenki credits
+    summary: Approved startups receive USD 10,000 in free Tenki credits usable across Sandboxes, GitHub Runners, and AI Code Reviewer.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T14:15:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: USD 10,000 in free Tenki credits credited on approval
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 1000000
+            kind: exact
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: external-verification
+        statement: Startups that have not raised beyond Series B; Tenki also reviews team size, funding, and company age.
+    roles:
+      terms_authority_entity_id: ent_01m1y3gtvyxk46qqgj6vt5pg08
+      access_operator_entity_id: ent_01m1y3gtvyxk46qqgj6vt5pg08
+    access:
+      availability: public
+      method: form
+      instructions: Create a Tenki account, upgrade the workspace to Team, then apply from the Tenki for Startups page.
+      url: https://tenki.cloud/startups
+    source_ids:
+      - src_7d26ee82c436d2286a5798f0c1e01cfe1bedf8c60bd82b8eba8e0e372b141589

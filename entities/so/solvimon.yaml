@@ -1,0 +1,62 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1xwj00n3qf436f4d5bkzv6j
+  slug: solvimon
+  slug_aliases: []
+  name: Solvimon
+  domains:
+    - value: solvimon.com
+      role: primary
+      valid_from: 2026-09-07T12:10:00.000Z
+  category: finance-accounting
+profile:
+  summary: Billing and revenue management for AI companies covering credits, usage, seats, and enterprise contracts.
+  description: Solvimon provides billing and revenue management for AI companies, covering credits, usage, seats, and enterprise contracts in one system.
+  links:
+    site: https://www.solvimon.com/
+sources:
+  - source_id: src_127435e09751ad985a70f98b77b6108849ec93c835fa599c6312c1b5e339a403
+    url: https://www.solvimon.com/pricing/vc/yc
+programs:
+  - program_id: prg_01m1xwj00phm7aycb60hrwd9pq
+    program_slug: solvimon-y-combinator-offer
+    program_slug_aliases: []
+    title: Solvimon x Y Combinator
+    summary: YC founders get free billing infrastructure until USD 3 million in billed revenue, then 0.4% of billed revenue afterwards, exclusive to Y Combinator portfolio companies.
+    source_ids:
+      - src_127435e09751ad985a70f98b77b6108849ec93c835fa599c6312c1b5e339a403
+offers:
+  - offer_id: off_01m1xwj00ppazvdaw3xecfmz8t
+    program_id: prg_01m1xwj00phm7aycb60hrwd9pq
+    offer_slug: free-billing-until-three-million-revenue
+    offer_slug_aliases: []
+    title: Free billing until USD 3 million in billed revenue
+    summary: First USD 3 million in billed revenue is free for Y Combinator founders; afterwards Solvimon charges 0.4% of billed revenue. Offer is exclusive to Y Combinator.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T12:10:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: First USD 3 million in billed revenue is free
+          kind: free-service
+          service: Solvimon billing infrastructure until USD 3 million in billed revenue
+      consideration:
+        kind: variable
+        description: 0.4% of billed revenue afterwards
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: external-verification
+        statement: Exclusive to Y Combinator portfolio companies and YC founders.
+    roles:
+      terms_authority_entity_id: ent_01m1xwj00n3qf436f4d5bkzv6j
+      access_operator_entity_id: ent_01m1xwj00n3qf436f4d5bkzv6j
+    access:
+      availability: membership
+      method: form
+      instructions: Open the Solvimon Y Combinator pricing page and use the on-page call to action to start with the YC portfolio offer.
+      url: https://www.solvimon.com/pricing/vc/yc
+    source_ids:
+      - src_127435e09751ad985a70f98b77b6108849ec93c835fa599c6312c1b5e339a403

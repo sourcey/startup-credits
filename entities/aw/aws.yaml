@@ -8,8 +8,12 @@ entity:
     - value: aws.amazon.com
       role: primary
       valid_from: 2026-07-27T07:35:36.165Z
+    - value: startups.aws.com
+      role: alias
+      valid_from: 2026-09-06T22:29:47.342Z
   category: hosting-infra
 profile:
+  summary: AWS provides cloud infrastructure, data services, and AI and machine-learning tools.
   description: Amazon Web Services provides cloud infrastructure, data services, and AI/ML tools to help startups build and scale.
   links:
     site: https://aws.amazon.com/startups/
@@ -20,6 +24,8 @@ sources:
     url: https://aws.amazon.com/startups/credits/?lang=en-US
   - source_id: src_cf2af0a7186d9689ec442ec8389c719ceca156824afc8c204bf2ebd32be186f0
     url: https://aws.amazon.com/aws-startups/learn/applying-for-aws-activate-credits-a-step-by-step-guide/
+  - source_id: src_96ea3dc9541a07805a0e2c5d60d3eed83d47101fdd3da088e283ca0859b0a230
+    url: https://startups.aws.com/offers?lang=en-US
 programs:
   - program_id: prg_01kyyjpn03angf9erfjwke4c42
     program_slug: aws-activate

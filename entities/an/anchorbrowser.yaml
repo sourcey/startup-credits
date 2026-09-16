@@ -1,0 +1,100 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1h4xy7sb0837x36etba7b60
+  slug: anchorbrowser
+  slug_aliases:
+    - anchor-browser
+  name: Anchor Browser
+  domains:
+    - value: anchorbrowser.io
+      role: primary
+      valid_from: 2026-09-02T13:28:00.000Z
+  category: devtools-other
+profile:
+  description: Anchor Browser provides production browser infrastructure for automating workflows on real-world websites.
+  links:
+    site: https://anchorbrowser.io
+sources:
+  - source_id: src_627826c715692988e5e00c189af6fc06af4fe245da38024932a90512b764c1fd
+    url: https://anchorbrowser.io/startup-program
+programs:
+  - program_id: prg_01m1h4xy7s54w4z3y8z135frta
+    program_slug: anchorbrowser-startup-program
+    program_slug_aliases: []
+    title: Anchor Browser Startup Program
+    summary: Anchor Browser gives eligible production-stage startups 24,000 credits and full Growth tier access free for six months, plus a dedicated Slack channel.
+    source_ids:
+      - src_627826c715692988e5e00c189af6fc06af4fe245da38024932a90512b764c1fd
+offers:
+  - offer_id: off_01m1h4xy7s9mrkddqnhc7brrf8
+    program_id: prg_01m1h4xy7s54w4z3y8z135frta
+    offer_slug: 24000-credits-growth-tier-free-six-months
+    offer_slug_aliases: []
+    title: 24,000 credits and Growth tier free for six months
+    summary: Eligible production-stage startups receive 24,000 credits and full Growth tier access free for six months, including stealth, captcha solving, proxies, up to 200 concurrent browsers, and a dedicated Slack channel.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-02T13:28:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Full Anchor Browser Growth tier access free for six months
+          duration:
+            kind: exact
+            value: P6M
+          kind: free-service
+          service: Anchor Browser Growth tier
+        - benefit_id: ben_02
+          description: 24,000 credits to build and scale integrations during the six-month free period
+          kind: other
+        - benefit_id: ben_03
+          description: Extra stealth advanced anti-detection and fingerprint protection
+          kind: other
+        - benefit_id: ben_04
+          description: Automatic captcha solving
+          kind: other
+        - benefit_id: ben_05
+          description: Session persistence and identity management
+          kind: other
+        - benefit_id: ben_06
+          description: Custom proxy and multi-region support (US, EU, Asia, Australia)
+          kind: other
+        - benefit_id: ben_07
+          description: Up to 200 concurrent browsers
+          kind: other
+        - benefit_id: ben_08
+          description: Dedicated Slack channel with direct access to Anchor Browser founders and engineering
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: not-machine-evaluable
+            statement: The startup already has a product in production.
+          - criterion_id: cri_02
+            kind: manual
+            reason: not-machine-evaluable
+            statement: The startup has active customers.
+          - criterion_id: cri_03
+            kind: manual
+            reason: not-machine-evaluable
+            statement: The startup has a clear browser automation use case and is building products that rely on browser infrastructure.
+          - criterion_id: cri_04
+            kind: manual
+            reason: vendor-discretion
+            statement: Ideal teams expect to scale to a significant volume of monthly browser tasks and are ready to build reliable workflows on the platform; acceptance is subject to Anchor Browser review.
+    roles:
+      terms_authority_entity_id: ent_01m1h4xy7sb0837x36etba7b60
+      access_operator_entity_id: ent_01m1h4xy7sb0837x36etba7b60
+    access:
+      availability: public
+      method: contact
+      instructions: Open the Anchor Browser Startup Program page and reach out via the published contact phone number to apply. Anchor Browser works with teams that already have a product in production, active customers, and a clear browser automation use case.
+      url: https://anchorbrowser.io/startup-program
+    terms_url: https://anchorbrowser.io/startup-program
+    source_ids:
+      - src_627826c715692988e5e00c189af6fc06af4fe245da38024932a90512b764c1fd
