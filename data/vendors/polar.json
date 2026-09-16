@@ -1,0 +1,18 @@
+{
+  "id": "polar",
+  "name": "Polar",
+  "title": "Polar Startup Program",
+  "url": "https://polar.sh/startup-program",
+  "description": "Polar offers the Scale plan free for 12 months (standard price $400/mo), with 3.40% + $0.30 transaction fees still applying, prioritized ticket support and a dedicated Slack channel.",
+  "offer": {
+    "plan": "Scale",
+    "duration": "12 months",
+    "price": "$0/mo for 12 months (standard $400/mo)",
+    "fees": "3.40% + $0.30"
+  },
+  "perks": [
+    "Scale plan free for 12 months",
+    "Prioritized ticket support",
+    "Dedicated Slack channel"
+  ]
+}
