@@ -19,12 +19,14 @@ sources:
     url: https://coefficient.io/pricing
   - source_id: src_a821a0bdc2b2ef7699d642e4dce21e28d9ae8f9d7f0f49ec2e855547d093088d
     url: https://coefficient.io/startup
+  - source_id: src_5060419818cbd84b9d00bdd6b8092c555606017ab8d7674ef3c1ce95a7d19c60
+    url: https://coefficient.io/terms
 programs:
   - program_id: prg_01m1v7h1k2wgsd207s8m7zq1j9
     program_slug: coefficient-for-startups
     program_slug_aliases: []
     title: Coefficient for Startups
-    summary: Coefficient offers a first-year subscription discount to qualifying early-stage startups.
+    summary: Coefficient offers qualifying startups a first-year discount.
     source_ids:
       - src_62f47a0f9c2271c4509aa0b2e5e87d163ed9449576f443daea05fee31ddb626f
       - src_a821a0bdc2b2ef7699d642e4dce21e28d9ae8f9d7f0f49ec2e855547d093088d
@@ -77,9 +79,11 @@ offers:
       access_operator_entity_id: ent_01m1v7h1jxeaazykqbp0rrkmej
     access:
       availability: public
-      method: form
+      method: other
       url: https://coefficient.io/startup
-    terms_url: https://coefficient.io/startup
+      instructions: Open Coefficient for Startups, which the pricing page links as the qualification route for the startup discount.
+    terms_url: https://coefficient.io/terms
     source_ids:
       - src_62f47a0f9c2271c4509aa0b2e5e87d163ed9449576f443daea05fee31ddb626f
       - src_a821a0bdc2b2ef7699d642e4dce21e28d9ae8f9d7f0f49ec2e855547d093088d
+      - src_5060419818cbd84b9d00bdd6b8092c555606017ab8d7674ef3c1ce95a7d19c60
