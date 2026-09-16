@@ -11,6 +11,7 @@ entity:
   category: crm-sales
 profile:
   summary: CrocoClick provides CRM, websites, billing, calendars, and marketing automation.
+  description: CrocoClick provides CRM, websites, billing, calendars, and marketing automation software.
   links:
     site: https://crococlick.com
 sources:
