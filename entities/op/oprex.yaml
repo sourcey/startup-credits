@@ -1,0 +1,78 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1tvkx9ke94q2qhck9j3e8ag
+  slug: opex
+  slug_aliases: []
+  name: Oprex
+  domains:
+  - value: opex.id
+    role: primary
+    valid_from: '2026-09-06T00:00:00.000Z'
+  category: developer-tools
+profile:
+  description: Oprex provides an integrated SDLC platform covering requirements, bug tracking, test management, releases, and helpdesk for development teams.
+  links:
+    site: https://oprex.id
+sources:
+- source_id: src_0eda8529c8cd204e5a5e81b8ec8d6d4ec0e5e91c7dbb254cf539e869c364038e
+  url: https://oprex.id/company/startup-program
+programs:
+- program_id: prg_01m1tvkxa181k8b22pbsywbkcw
+  program_slug: opex-startup-program
+  program_slug_aliases: []
+  title: Oprex Startup Program
+  summary: Early-stage startups receive the Oprex Pro plan free for 12 months, with migration help and direct access to the Oprex team.
+  source_ids:
+  - src_0eda8529c8cd204e5a5e81b8ec8d6d4ec0e5e91c7dbb254cf539e869c364038e
+offers:
+- offer_id: off_01m1tvkxa1xv8e0b7r4xxhkemc
+  program_id: prg_01m1tvkxa181k8b22pbsywbkcw
+  offer_slug: opex-pro-plan-free-for-12-months
+  offer_slug_aliases: []
+  title: Oprex Pro plan free for 12 months
+  summary: Eligible early-stage startups get the full Oprex Pro tier — projects, members, pipeline minutes, and priority support — at no cost for one year.
+  lifecycle:
+    status: active
+    effective_from: '2026-09-06T00:00:00.000Z'
+  economics:
+    consideration:
+      kind: none
+    benefits:
+    - benefit_id: ben_01
+      description: Pro plan free for 12 months (Rp 1,490,000/month value)
+      kind: free-period
+    - benefit_id: ben_02
+      description: Migration help for existing issues, requirements, and test cases
+      kind: other
+    - benefit_id: ben_03
+      description: Direct communication channel with Oprex team
+      kind: other
+  eligibility:
+    rule:
+      kind: composite
+      criterion_id: cri_01
+      operator: and
+      operands:
+      - criterion_id: cri_age
+        statement: Founded within the last three years
+        kind: custom
+      - criterion_id: cri_size
+        statement: Fewer than 20 people
+        kind: team-size
+      - criterion_id: cri_new
+        statement: Has not previously been on a paid Oprex plan
+        kind: custom
+      - criterion_id: cri_product
+        statement: Building a real product — pre-revenue is fine, pre-idea is not
+        kind: custom
+      note: Accelerator, incubator, and university-spinout teams are explicitly welcome. Being outside Indonesia is not a barrier.
+      reason: not-machine-evaluable
+  roles:
+    terms_authority_entity_id: ent_01m1tvkx9ke94q2qhck9j3e8ag
+    access_operator_entity_id: ent_01m1tvkx9ke94q2qhck9j3e8ag
+  access:
+    availability: public
+    method: form
+    url: https://oprex.id/company/startup-program
+  source_ids:
+  - src_0eda8529c8cd204e5a5e81b8ec8d6d4ec0e5e91c7dbb254cf539e869c364038e
