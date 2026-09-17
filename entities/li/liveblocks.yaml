@@ -1,0 +1,58 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1smgekvfa4wnn4sg6qp1g9t
+  slug: liveblocks
+  slug_aliases: []
+  name: Liveblocks
+  domains:
+    - value: liveblocks.io
+      role: primary
+      valid_from: 2026-09-05T20:35:08.539Z
+  category: apis-integration
+profile:
+  description: Liveblocks provides a sync engine and collaboration features for
+    multiplayer and human-AI products.
+  links:
+    site: https://liveblocks.io
+sources:
+  - source_id: src_17ee519d1f5d40973c14a148b7c74b94031903d445c8315a22543223ba3a825f
+    url: https://liveblocks.io/startups
+programs: []
+offers:
+  - offer_id: off_01m1smgem4608ep793kayf8qyc
+    offer_slug: liveblocks-startup-program-discount
+    offer_slug_aliases: []
+    title: Liveblocks startup program discount
+    summary: Startups can apply for a discount on Liveblocks. The public application
+      page does not specify the discount amount or duration.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T20:35:08.539Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The startup page does not publish the discounted price or a
+          required purchase commitment.
+      benefits:
+        - benefit_id: ben_primary
+          kind: other
+          description: Startup program discount; amount and duration are not published on
+            the application page.
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_startup_application
+        statement: Startups apply through the vendor form, which requests company
+          details, team size, funding, annual revenue, and estimated monthly
+          active users. Liveblocks reviews applications; the page does not
+          publish eligibility thresholds.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01m1smgekvfa4wnn4sg6qp1g9t
+      access_operator_entity_id: ent_01m1smgekvfa4wnn4sg6qp1g9t
+    access:
+      availability: public
+      method: form
+      url: https://liveblocks.io/startups
+    source_ids:
+      - src_17ee519d1f5d40973c14a148b7c74b94031903d445c8315a22543223ba3a825f
