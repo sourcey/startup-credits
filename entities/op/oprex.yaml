@@ -1,0 +1,65 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m28sa5qshc77wdccskptgv9r
+  slug: oprex
+  slug_aliases: []
+  name: Oprex
+  domains:
+    - value: oprex.id
+      role: primary
+      valid_from: 2026-09-11T19:48:00.000Z
+  category: productivity
+profile:
+  summary: Oprex provides business operations software and a Pro plan for teams.
+  description: Oprex provides business operations software for teams and offers a startup program with access to its Pro plan.
+  links:
+    site: https://oprex.id/
+sources:
+  - source_id: src_f281c587c4e05273315eb8f178e36339a7b4cfd1771431329c551f5a0768c527
+    url: https://oprex.id/company/startup-program
+  - source_id: src_6afcb3620782b3b0da928f43c72bac495c0f8cce1bb5cac0d35600d1be29d33c
+    url: https://oprex.id/pricing
+programs:
+  - program_id: prg_01m28sa5qwtyet0kkv7929r7jd
+    program_slug: oprex-startup-program
+    program_slug_aliases: []
+    title: Oprex Startup Program
+    summary: Oprex offers eligible early-stage teams access to its Pro plan free for 12 months through the Startup Program.
+    source_ids:
+      - src_f281c587c4e05273315eb8f178e36339a7b4cfd1771431329c551f5a0768c527
+      - src_6afcb3620782b3b0da928f43c72bac495c0f8cce1bb5cac0d35600d1be29d33c
+offers:
+  - offer_id: off_01m28sa5qwkkxwqe9vnjztp0ap
+    program_id: prg_01m28sa5qwtyet0kkv7929r7jd
+    offer_slug: oprex-pro-startup-plan
+    offer_slug_aliases: []
+    title: Oprex Pro plan for startups
+    summary: Eligible early-stage teams receive the Oprex Pro plan free for 12 months through the Startup Program.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-11T19:48:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Oprex Pro plan free for 12 months
+          kind: free-service
+          service: Oprex Pro plan
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_01
+        reason: vendor-discretion
+        statement: Eligible early-stage teams may apply for the Oprex Startup Program, subject to Oprex review.
+    roles:
+      terms_authority_entity_id: ent_01m28sa5qshc77wdccskptgv9r
+      access_operator_entity_id: ent_01m28sa5qshc77wdccskptgv9r
+    access:
+      availability: public
+      method: form
+      url: https://oprex.id/company/startup-program
+      instructions: Open the Oprex Startup Program page and follow its application instructions.
+    source_ids:
+      - src_f281c587c4e05273315eb8f178e36339a7b4cfd1771431329c551f5a0768c527
+      - src_6afcb3620782b3b0da928f43c72bac495c0f8cce1bb5cac0d35600d1be29d33c
