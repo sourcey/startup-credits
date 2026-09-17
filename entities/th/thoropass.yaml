@@ -1,0 +1,51 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_5vjggx1m100000000000000000
+  slug: thoropass
+  slug_aliases: []
+  name: Thoropass
+  domains:
+  - value: thoropass.com
+    role: primary
+    valid_from: '2026-01-01T00:00:00Z'
+  category: auth-security
+profile:
+  summary: Compliance and audit platform with a startup programme for early-stage companies.
+  description: Thoropass is a compliance and audit automation platform that helps companies achieve and maintain security and privacy certifications (SOC 2, ISO 27001, HIPAA, PCI), with a startup programme offering discounted access to early-stage companies.
+  links:
+    site: https://www.thoropass.com
+sources:
+- source_id: src_0f8a424756e888a98051ee2d2a3c614e090853c4f9303b48dc93a22f3560b59c
+  url: https://info.thoropass.com/jpm-startup-offers
+programs: []
+offers:
+- offer_id: off_5vjggx1m100000000000000000
+  offer_slug: startup-programme
+  offer_slug_aliases: []
+  title: Thoropass Startup Programme
+  summary: Discounted Thoropass compliance and audit automation platform access for qualifying early-stage startup companies.
+  lifecycle:
+    status: active
+    effective_from: '2026-01-01T00:00:00Z'
+  economics:
+    benefits:
+    - benefit_id: ben_01
+      description: Discounted Thoropass compliance and audit platform access for qualifying startups.
+      kind: other
+    consideration:
+      kind: none
+  eligibility:
+    rule:
+      kind: manual
+      criterion_id: cri_01
+      statement: Qualifying early-stage startup companies.
+      reason: not-machine-evaluable
+  roles:
+    terms_authority_entity_id: ent_5vjggx1m100000000000000000
+    access_operator_entity_id: ent_5vjggx1m100000000000000000
+  access:
+    availability: public
+    method: form
+    url: https://info.thoropass.com/jpm-startup-offers
+  source_ids:
+  - src_0f8a424756e888a98051ee2d2a3c614e090853c4f9303b48dc93a22f3560b59c
