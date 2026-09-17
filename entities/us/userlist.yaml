@@ -1,0 +1,51 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_jvqhfx1m100000000000000000
+  slug: userlist
+  slug_aliases: []
+  name: Userlist
+  domains:
+  - value: userlist.com
+    role: primary
+    valid_from: '2026-01-01T00:00:00Z'
+  category: marketing
+profile:
+  summary: Browser-based messaging and customer messaging platform with a startup programme.
+  description: Userlist is a browser-based messaging and customer messaging platform for SaaS companies, with a startup programme offering discounted pricing for qualifying early-stage startups.
+  links:
+    site: https://userlist.com
+sources:
+- source_id: src_5c40e4b1b3221163e0da6e701b69efc54e669f334bd8c7fda53dbdb43252ef85
+  url: https://userlist.com/docs/getting-started/billing/
+programs: []
+offers:
+- offer_id: off_jvqhfx1m100000000000000000
+  offer_slug: startup-programme
+  offer_slug_aliases: []
+  title: Userlist Startup Programme
+  summary: Discounted Userlist messaging platform access for qualifying early-stage startup companies.
+  lifecycle:
+    status: active
+    effective_from: '2026-01-01T00:00:00Z'
+  economics:
+    benefits:
+    - benefit_id: ben_01
+      description: Discounted Userlist messaging platform access for qualifying startups.
+      kind: other
+    consideration:
+      kind: none
+  eligibility:
+    rule:
+      kind: manual
+      criterion_id: cri_01
+      statement: Qualifying early-stage startup companies.
+      reason: not-machine-evaluable
+  roles:
+    terms_authority_entity_id: ent_jvqhfx1m100000000000000000
+    access_operator_entity_id: ent_jvqhfx1m100000000000000000
+  access:
+    availability: public
+    method: form
+    url: https://userlist.com/docs/getting-started/billing/
+  source_ids:
+  - src_5c40e4b1b3221163e0da6e701b69efc54e669f334bd8c7fda53dbdb43252ef85
