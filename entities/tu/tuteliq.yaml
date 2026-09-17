@@ -1,0 +1,80 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m14my7de6ra66wnvxzvt47x3
+  slug: tuteliq
+  slug_aliases: []
+  name: Tuteliq
+  domains:
+    - value: tuteliq.ai
+      role: primary
+      valid_from: 2026-08-28T16:58:50.170Z
+  category: auth-security
+profile:
+  description: Tuteliq provides child-safety APIs for detecting grooming, bullying, self-harm, fraud, radicalisation, and synthetic media across multiple content types.
+  links:
+    site: https://tuteliq.ai
+sources:
+  - source_id: src_bbfe4a6f4151f42be52629dc85ae4aaad6925954710e52a7180b4b4a8789f113
+    url: https://tuteliq.ai/startups
+  - source_id: src_8f0fef4a204ea1204d65583a9ed85264b3b70e768252601740fc621dc997da1c
+    url: https://tuteliq.ai/terms
+programs:
+  - program_id: prg_01m14my7dg9j3fgtcnz0qrsr6d
+    program_slug: tuteliq-startup-program
+    program_slug_aliases: []
+    title: Tuteliq Startup Program
+    summary: Approved early-stage companies building products for children or young people receive Tuteliq's Build plan free for 12 months.
+    source_ids:
+      - src_bbfe4a6f4151f42be52629dc85ae4aaad6925954710e52a7180b4b4a8789f113
+offers:
+  - offer_id: off_01m14my7dgqmcy8dagj5vp8ad8
+    program_id: prg_01m14my7dg9j3fgtcnz0qrsr6d
+    offer_slug: twelve-months-free-build-plan
+    offer_slug_aliases: []
+    title: Twelve months free Tuteliq Build plan
+    summary: Approved pre-Series-A companies serving children or young people receive the Tuteliq Build plan free for 12 months, including 25,000 messages monthly and full API access.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-28T16:58:50.170Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_01
+          description: Tuteliq Build plan with 25,000 messages per month, full API access, and the moderation dashboard free for 12 months
+          kind: free-service
+          service: Tuteliq Build plan
+          duration:
+            kind: exact
+            value: P1Y
+        - benefit_id: ben_02
+          description: Direct access to Tuteliq's safeguarding and engineering team during integration
+          kind: other
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: external-verification
+            statement: Company's product is used by, built for, or built around children and young people.
+          - criterion_id: cri_02
+            kind: manual
+            reason: vendor-discretion
+            statement: Company is building a product with a clear child-safety or wellbeing purpose.
+          - criterion_id: cri_03
+            kind: manual
+            reason: external-verification
+            statement: Company is early-stage and has not yet raised a Series A round.
+    roles:
+      terms_authority_entity_id: ent_01m14my7de6ra66wnvxzvt47x3
+      access_operator_entity_id: ent_01m14my7de6ra66wnvxzvt47x3
+    access:
+      availability: public
+      method: form
+      url: https://tuteliq.ai/startups
+    terms_url: https://tuteliq.ai/terms
+    source_ids:
+      - src_bbfe4a6f4151f42be52629dc85ae4aaad6925954710e52a7180b4b4a8789f113
+      - src_8f0fef4a204ea1204d65583a9ed85264b3b70e768252601740fc621dc997da1c
+
