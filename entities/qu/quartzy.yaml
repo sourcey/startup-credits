@@ -1,0 +1,81 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_21x3svha04vkekgk9dr7tv3yac
+  slug: quartzy
+  slug_aliases: []
+  name: Quartzy
+  domains:
+    - value: quartzy.com
+      role: primary
+      valid_from: 2026-09-01T10:46:44.580Z
+  category: commerce
+profile:
+  description: Quartzy provides inventory, procurement, and supply-ordering software for life-science laboratories and organizations.
+  links:
+    site: https://www.quartzy.com
+sources:
+  - source_id: src_4fcd28421f68563453d953ff11f3a49ab60e18a7b3d041c4c29011c316d6f547
+    url: https://www.quartzy.com/pricing
+programs:
+  - program_id: prg_5tzwgv5wetmf5shvp81z0agqh5
+    program_slug: quartzy-new-subscriber-program
+    program_slug_aliases: []
+    title: Quartzy New Subscriber Program
+    summary: Quartzy gives eligible new subscribers Shop credit issued by participating suppliers during onboarding.
+    source_ids:
+      - src_4fcd28421f68563453d953ff11f3a49ab60e18a7b3d041c4c29011c316d6f547
+offers:
+  - offer_id: off_vram90xtjyf24amc9bw9z2bh09
+    program_id: prg_5tzwgv5wetmf5shvp81z0agqh5
+    offer_slug: new-subscriber-shop-credit
+    offer_slug_aliases: []
+    title: Up to $3,000 in Quartzy Shop credit for new subscribers
+    summary: New annual subscribers receive $750 in Shop credit on Academia or $3,000 on Industry when they subscribe by September 30, 2026.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-01T10:46:44.580Z
+      effective_until: 2026-09-30T23:59:59.999Z
+    economics:
+      consideration:
+        kind: variable
+        description: The annual Academia subscription costs $600 for up to three users; the annual Industry subscription costs $3,000 for up to five users.
+      benefits:
+        - benefit_id: ben_01
+          description: $750 in Quartzy Shop credit issued by participating suppliers during onboarding
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 75000
+            kind: exact
+        - benefit_id: ben_02
+          description: $3,000 in Quartzy Shop credit for Industry subscribers, issued by participating suppliers during onboarding
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 300000
+            kind: exact
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            statement: Applicant is a new Quartzy customer.
+            reason: external-verification
+          - criterion_id: cri_02
+            kind: manual
+            statement: Applicant subscribes to the Quartzy Academia or Industry annual plan by September 30, 2026; the selected plan determines the credit amount.
+            reason: external-verification
+    roles:
+      terms_authority_entity_id: ent_21x3svha04vkekgk9dr7tv3yac
+      access_operator_entity_id: ent_21x3svha04vkekgk9dr7tv3yac
+    access:
+      availability: public
+      instructions: Use Get Started on Quartzy's public pricing page and complete a new Academia or Industry annual subscription by September 30, 2026. Participating suppliers issue the applicable Shop credit during onboarding.
+      method: form
+      url: https://www.quartzy.com/pricing
+    terms_url: https://www.quartzy.com/pricing
+    source_ids:
+      - src_4fcd28421f68563453d953ff11f3a49ab60e18a7b3d041c4c29011c316d6f547
