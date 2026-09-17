@@ -1,0 +1,87 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1temg2bp2zcsp84qpq2n9g1
+  slug: turbopuffer
+  slug_aliases: []
+  name: turbopuffer
+  domains:
+    - value: turbopuffer.com
+      role: primary
+      valid_from: 2026-09-06T03:20:00.000Z
+  category: ai-ml
+profile:
+  description: turbopuffer is a search engine for connecting large amounts of
+    unstructured data to AI, built on object storage with an intelligent cache
+    layer.
+  links:
+    site: https://turbopuffer.com
+sources:
+  - source_id: src_b16e23aeca1ebf3efd8ec4e28eeed6b2838e2be4d1b7080071d607af70edf80e
+    url: https://turbopuffer.com/startups
+programs:
+  - program_id: prg_01m1temg2b1v9x9e6rjcb8k67x
+    program_slug: turbopuffer-for-startups
+    program_slug_aliases: []
+    title: turbopuffer for startups
+    summary: A partner-gated startup program granting credits for the
+      turbopuffer search engine.
+    source_ids:
+      - src_b16e23aeca1ebf3efd8ec4e28eeed6b2838e2be4d1b7080071d607af70edf80e
+offers:
+  - offer_id: off_01m1temg2bbc8tvwk2b24wkn2x
+    program_id: prg_01m1temg2b1v9x9e6rjcb8k67x
+    offer_slug: startup-partner-credits
+    offer_slug_aliases: []
+    title: Up to $8,192 in turbopuffer credits for startups
+    summary: Eligible startups receive $8,192 in turbopuffer credits; scaleups
+      receive $2,048 in credits plus dedicated Slack support. Applied with a
+      partner code.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-06T03:20:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_startup_credits
+          kind: credit
+          description: $8,192 in turbopuffer credits for startups with fewer
+            than 50 employees and less than $50M raised. Scaleups with 50 or
+            more employees or $50M or more raised receive $2,048 in credits and
+            dedicated Slack support.
+          value:
+            amount:
+              currency: USD
+              minor_units: 819200
+            kind: up-to
+          duration:
+            kind: up-to
+            value: P1Y
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_size
+            kind: manual
+            reason: external-verification
+            statement: Startup tier requires fewer than 50 employees and less
+              than $50M raised; scaleup tier covers the rest.
+          - criterion_id: cri_partner_code
+            kind: manual
+            reason: vendor-discretion
+            statement: A partner code from a shared partner is required to
+              apply, and turbopuffer notifies the applicant when credits are
+              applied to their account.
+    roles:
+      terms_authority_entity_id: ent_01m1temg2bp2zcsp84qpq2n9g1
+      access_operator_entity_id: ent_01m1temg2bp2zcsp84qpq2n9g1
+    access:
+      availability: public
+      method: form
+      url: https://turbopuffer.com/startups
+      instructions: Sign up for turbopuffer and retrieve the Org ID from the
+        dashboard, then apply for credits with the partner code on the startups
+        page.
+    terms_url: https://turbopuffer.com/startups
+    source_ids:
+      - src_b16e23aeca1ebf3efd8ec4e28eeed6b2838e2be4d1b7080071d607af70edf80e
