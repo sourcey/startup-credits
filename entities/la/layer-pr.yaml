@@ -1,0 +1,50 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_y10ndx1m100000000000000000
+  slug: layer-pr
+  slug_aliases: []
+  name: Layer PR
+  domains:
+  - value: layerpr.com
+    role: primary
+    valid_from: '2026-01-01T00:00:00Z'
+  category: marketing
+profile:
+  description: Layer PR is a public relations agency offering dedicated startup PR programs including media outreach, content creation, and brand positioning services.
+  links:
+    site: https://www.layerpr.com
+sources:
+- source_id: src_7e2346b943086e984c1acd34092adeffaab593340553d60baa8ee7a94d733c5b
+  url: https://www.layerpr.com/startup-program
+programs: []
+offers:
+- offer_id: off_y10ndx1m100000000000000000
+  offer_slug: startup-program
+  offer_slug_aliases: []
+  title: Layer PR Startup Program
+  summary: Layer PR offers a dedicated startup PR program covering media outreach, content creation, and brand positioning for early-stage companies.
+  lifecycle:
+    status: active
+    effective_from: '2026-01-01T00:00:00Z'
+  economics:
+    benefits:
+    - benefit_id: ben_01
+      description: Dedicated PR services including media outreach, content creation and brand positioning for startups.
+      kind: other
+    consideration:
+      kind: none
+  eligibility:
+    rule:
+      kind: manual
+      criterion_id: cri_01
+      statement: Early-stage startup companies.
+      reason: not-machine-evaluable
+  roles:
+    terms_authority_entity_id: ent_y10ndx1m100000000000000000
+    access_operator_entity_id: ent_y10ndx1m100000000000000000
+  access:
+    availability: public
+    method: form
+    url: https://www.layerpr.com/startup-program
+  source_ids:
+  - src_7e2346b943086e984c1acd34092adeffaab593340553d60baa8ee7a94d733c5b
