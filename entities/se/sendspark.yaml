@@ -1,0 +1,57 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1q13fr826m3t6v9gvhfmhzf
+  slug: sendspark
+  slug_aliases: []
+  name: Sendspark
+  domains:
+    - value: sendspark.com
+      role: primary
+      valid_from: 2026-09-04T20:17:38.234Z
+  category: marketing
+profile:
+  description: Sendspark provides AI-personalized video messaging, voice cloning, dynamic backgrounds, analytics, and integrations for B2B sales outreach.
+  links:
+    site: https://www.sendspark.com
+sources:
+  - source_id: src_0be00bc338a34ae0227ae70acefadf32220c8213cfc8a9da90b96b6f707fbdbc
+    url: https://www.sendspark.com/video/startups
+programs: []
+offers:
+  - offer_id: off_01m1q13fr8b1188w7ag2ffje0d
+    offer_slug: sendspark-for-startups
+    offer_slug_aliases: []
+    title: Sendspark for Startups
+    summary: Eligible startups receive 50% off Sendspark for up to one year to create and distribute personalized sales, product, and investor videos.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-04T20:17:38.234Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The benefit is a discount on a paid Sendspark subscription.
+      benefits:
+        - benefit_id: ben_01
+          description: 50% off Sendspark for up to one year
+          duration:
+            kind: up-to
+            value: P1Y
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 5000
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Applicant must be a startup and qualify for the Sendspark for Startups offer.
+        reason: vendor-discretion
+    roles:
+      terms_authority_entity_id: ent_01m1q13fr826m3t6v9gvhfmhzf
+      access_operator_entity_id: ent_01m1q13fr826m3t6v9gvhfmhzf
+    access:
+      availability: public
+      method: contact
+      url: https://www.sendspark.com/video/startups
+    source_ids:
+      - src_0be00bc338a34ae0227ae70acefadf32220c8213cfc8a9da90b96b6f707fbdbc
