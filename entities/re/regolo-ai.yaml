@@ -1,0 +1,59 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m16d3y4s0bm4rjgqk2tv5s2q
+  slug: regolo-ai
+  slug_aliases: []
+  name: Regolo.ai
+  domains:
+    - value: regolo.ai
+      role: primary
+      valid_from: 2026-08-29T09:00:00Z
+  category: ai-ml
+profile:
+  description: Regolo.ai provides EU-native AI infrastructure with access to open-source models.
+  links:
+    site: https://regolo.ai/builder-program/
+sources:
+  - source_id: src_fd62e1aa604804bd6e98355ebd5fbc91b768b5ccb95782e666515b741b4795ab
+    url: https://regolo.ai/builder-program/
+programs:
+  - program_id: prg_01m16d3y4yvx5x43q36jf5ced0
+    program_slug: regolo-builder-program
+    program_slug_aliases: []
+    title: Regolo Builder Program
+    summary: Accepted startups receive 60 days of unlimited tokens for open-source models through Regolo.ai's Builder Program.
+    source_ids:
+      - src_fd62e1aa604804bd6e98355ebd5fbc91b768b5ccb95782e666515b741b4795ab
+offers:
+  - offer_id: off_01m16d3y4ypg4kgs4768ehswt0
+    program_id: prg_01m16d3y4yvx5x43q36jf5ced0
+    offer_slug: 60-days-unlimited-tokens
+    offer_slug_aliases: []
+    title: 60 Days of Unlimited Tokens
+    summary: Accepted startups receive 60 days of unlimited tokens for open-source models with no credit card required.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-29T09:00:00Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Unlimited tokens for open-source models for 60 days
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Applicant must be an accepted startup in development or market-fit.
+    roles:
+      terms_authority_entity_id: ent_01m16d3y4s0bm4rjgqk2tv5s2q
+      access_operator_entity_id: ent_01m16d3y4s0bm4rjgqk2tv5s2q
+    access:
+      availability: public
+      method: form
+      url: https://regolo.ai/apply-for-startup-access/
+    terms_url: https://regolo.ai/builder-program/
+    source_ids:
+      - src_fd62e1aa604804bd6e98355ebd5fbc91b768b5ccb95782e666515b741b4795ab
