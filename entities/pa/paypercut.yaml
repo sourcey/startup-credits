@@ -1,0 +1,69 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1gfg0rmfrtpnxz5dfqjgdc6
+  slug: paypercut
+  slug_aliases: []
+  name: Paypercut
+  domains:
+    - value: paypercut.com
+      role: primary
+      valid_from: 2026-09-02T07:14:21.792Z
+  category: payments-fintech
+profile:
+  description: Paypercut provides online checkout, billing, payment links, and managed-payout infrastructure for European businesses.
+  links:
+    site: https://paypercut.com
+sources:
+  - source_id: src_3cd117ec3b8ea46714568d9ddd2e4460d4a512cba205880c84308fadc3663a1b
+    url: https://paypercut.com/paypercut-for-startups
+  - source_id: src_5d2c7ca515e80b1da5f5cbc8aedd555c7f5c8c1c5f04aff022eb9cc178dfb22e
+    url: https://paypercut.com/terms-conditions-for-startups
+programs:
+  - program_id: prg_01m1gfg0rt6pwxpckrkny3yqy7
+    program_slug: paypercut-for-startups
+    program_slug_aliases: []
+    title: Paypercut for Startups
+    summary: Paypercut's program gives approved early-stage European startups transaction-fee waivers followed by reduced pricing, with total savings capped at EUR 10,000.
+    source_ids:
+      - src_3cd117ec3b8ea46714568d9ddd2e4460d4a512cba205880c84308fadc3663a1b
+      - src_5d2c7ca515e80b1da5f5cbc8aedd555c7f5c8c1c5f04aff022eb9cc178dfb22e
+offers:
+  - offer_id: off_01m1gfg0rtakaz28vsdck7sc3y
+    program_id: prg_01m1gfg0rt6pwxpckrkny3yqy7
+    offer_slug: paypercut-startup-fee-benefits
+    offer_slug_aliases: []
+    title: Up to EUR 10,000 in payment-fee savings
+    summary: Approved startups receive fee waivers for the first six months and reduced startup pricing through month 24, capped at EUR 10,000 in aggregate savings.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-02T07:14:21.792Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Fees under Merchant Agreement section 5.1.1 are waived on up to EUR 10,000 of transaction volume per calendar month during months 1-6; unused monthly allowances do not roll over.
+          kind: waiver
+          waived_item: Fees on up to EUR 10,000 of transaction volume per calendar month
+        - benefit_id: ben_02
+          description: Reduced startup pricing applies from months 7-24 according to Paypercut's published currency and card fee schedule.
+          kind: other
+        - benefit_id: ben_03
+          description: Aggregate waived and reduced fee savings are capped at EUR 10,000 during the 24-month program period.
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: external-verification
+        statement: Applicant must be a legally registered early-stage European startup with a live website, be at idea through early-scaling stage, submit the requested company information, and pass Paypercut's eligibility and due-diligence review; both bootstrapped and VC-backed startups may apply.
+    roles:
+      terms_authority_entity_id: ent_01m1gfg0rmfrtpnxz5dfqjgdc6
+      access_operator_entity_id: ent_01m1gfg0rmfrtpnxz5dfqjgdc6
+    access:
+      availability: public
+      method: form
+      url: https://paypercut.com/paypercut-for-startups
+    source_ids:
+      - src_3cd117ec3b8ea46714568d9ddd2e4460d4a512cba205880c84308fadc3663a1b
+      - src_5d2c7ca515e80b1da5f5cbc8aedd555c7f5c8c1c5f04aff022eb9cc178dfb22e
