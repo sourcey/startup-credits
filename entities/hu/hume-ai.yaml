@@ -1,0 +1,64 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m19htygp4b2c40t67tvahj9w
+  slug: hume-ai
+  slug_aliases: []
+  name: Hume AI
+  domains:
+    - value: hume.ai
+      role: primary
+      valid_from: 2026-08-30T14:40:41.000Z
+  category: ai-ml
+profile:
+  description: Hume AI provides an AI toolkit for voice and emotion.
+  links:
+    site: https://www.hume.ai
+sources:
+  - source_id: src_dcccee8b5af3b915318d8b5b73a57dd249bee70bab47e96d549a43b1aacbfa94
+    url: https://www.hume.ai/startup-program
+programs:
+  - program_id: prg_01m19htygrp98bh6ny1fhbd901
+    program_slug: hume-ai-startup-program
+    program_slug_aliases: []
+    title: Hume AI Startup Program
+    summary: Hume AI's program gives early-stage startups discounted API access, dedicated support and technical guidance, and resources for building with empathic AI.
+    source_ids:
+      - src_dcccee8b5af3b915318d8b5b73a57dd249bee70bab47e96d549a43b1aacbfa94
+offers:
+  - offer_id: off_01m19htygrgpmch9pw1hvwr1bd
+    offer_slug: hume-ai-startup-program
+    offer_slug_aliases: []
+    title: Hume AI Startup Program
+    summary: Early-stage startups receive discounted API access, dedicated support and technical guidance, and resources for building with empathic AI.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-30T14:40:41.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_discounted_api_access
+          description: Discounted API access for early-stage startups
+          kind: other
+        - benefit_id: ben_support
+          description: Dedicated support and technical guidance
+          kind: other
+        - benefit_id: ben_resources
+          description: Resources to help build with empathic AI
+          kind: other
+      consideration:
+        kind: unknown
+        description: The public program page does not state separate consideration terms or the discount amount.
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_early_stage
+        statement: Applicant is an early-stage startup.
+        reason: vendor-discretion
+    roles:
+      terms_authority_entity_id: ent_01m19htygp4b2c40t67tvahj9w
+      access_operator_entity_id: ent_01m19htygp4b2c40t67tvahj9w
+    access:
+      availability: public
+      method: form
+      url: https://www.hume.ai/startup-program
+    source_ids:
+      - src_dcccee8b5af3b915318d8b5b73a57dd249bee70bab47e96d549a43b1aacbfa94
