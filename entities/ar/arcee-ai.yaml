@@ -1,0 +1,61 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m165q36errtaf78hte0twqpe
+  slug: arcee-ai
+  slug_aliases: []
+  name: Arcee AI
+  domains:
+    - value: arcee.ai
+      role: primary
+      valid_from: 2026-08-29T07:00:00.000Z
+  category: ai-ml
+profile:
+  description: Arcee AI develops open-weight language models and provides API inference for the Trinity model family.
+  links:
+    site: https://www.arcee.ai
+sources:
+  - source_id: src_6f7cc5d9d83fe6eb796edd328c3cd873a6ee29cefea952a4617f593b06d0de41
+    url: https://www.arcee.ai/
+  - source_id: src_76d75e2c1f1925bfe19f701e6360ca0a8c9f17a2c264d725e0bc63ac8e493d2d
+    url: https://www.arcee.ai/blog/introducing-the-trinity-builders-program
+programs:
+  - program_id: prg_01m165q36fddd6rqt50kzaa4zc
+    program_slug: trinity-builders-program
+    program_slug_aliases: []
+    title: Trinity Builders Program
+    summary: A community credit grant for developers, researchers, open-source builders, and application teams working with Trinity models.
+    source_ids:
+      - src_76d75e2c1f1925bfe19f701e6360ca0a8c9f17a2c264d725e0bc63ac8e493d2d
+offers:
+  - offer_id: off_01m165q36f57wrc32cdv4fetph
+    program_id: prg_01m165q36fddd6rqt50kzaa4zc
+    offer_slug: free-trinity-api-credits
+    offer_slug_aliases: []
+    title: Free Trinity API Credits
+    summary: Approved builders receive free API credits for Trinity models, with allocations based on project scope and available capacity and credits valid for 90 days.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-29T07:00:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Free Trinity-model API credits allocated according to project scope and available capacity.
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: The applicant is building with Trinity models and is approved after review of project scope, community impact, and available capacity.
+    roles:
+      terms_authority_entity_id: ent_01m165q36errtaf78hte0twqpe
+      access_operator_entity_id: ent_01m165q36errtaf78hte0twqpe
+    access:
+      availability: public
+      method: form
+      url: https://www.arcee.ai/blog/introducing-the-trinity-builders-program
+    terms_url: https://www.arcee.ai/blog/introducing-the-trinity-builders-program
+    source_ids:
+      - src_76d75e2c1f1925bfe19f701e6360ca0a8c9f17a2c264d725e0bc63ac8e493d2d
