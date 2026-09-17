@@ -1,0 +1,83 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01nt2f40apxve8zp9gdzdm4nec
+  slug: llamagen
+  slug_aliases: []
+  name: LlamaGen
+  domains:
+    - value: llamagen.ai
+      role: primary
+      valid_from: 2026-09-07T00:10:00.000Z
+  category: ai-ml
+profile:
+  summary: LlamaGen provides an AI Comic API for comics, storyboards, illustrations, and visual storytelling.
+  description: LlamaGen provides an AI Comic API for comics, storyboards, illustrations, and visual storytelling in products.
+  links:
+    site: https://llamagen.ai
+sources:
+  - source_id: src_7967fc750d0e8033d98bd3570658c0e79f98b65460a6e2f93b60e2f20d6c5fdf
+    url: https://llamagen.ai/startups
+programs:
+  - program_id: prg_0164v50na305rk30zznywp8nve
+    program_slug: llamagen-startup-program
+    program_slug_aliases: []
+    title: LlamaGen for Startups
+    summary: LlamaGen for Startups gives approved startups up to $10,000 in Comic API credits valid for 12 months across every LlamaGen API endpoint.
+    source_ids:
+      - src_7967fc750d0e8033d98bd3570658c0e79f98b65460a6e2f93b60e2f20d6c5fdf
+offers:
+  - offer_id: off_012wwr5gh9tym29yfwej398h2b
+    program_id: prg_0164v50na305rk30zznywp8nve
+    offer_slug: up-to-10000-comic-api-credits-12-months
+    offer_slug_aliases: []
+    title: Up to $10,000 in Comic API credits for 12 months
+    summary: Eligible startups receive up to $10,000 in Comic API credits, valid for 12 months across every LlamaGen API endpoint.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T00:10:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to $10,000 in Comic API credits
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 1000000
+            kind: up-to
+          duration:
+            kind: exact
+            value: P12M
+        - benefit_id: ben_02
+          description: Hands-on integration support
+          kind: free-service
+          service: Practical help as you move from prototype to production
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: vendor-discretion
+            statement: Founding team is actively building a company or product.
+          - criterion_id: cri_02
+            kind: manual
+            reason: vendor-discretion
+            statement: A website, demo, prototype, or a clear build plan is enough.
+          - criterion_id: cri_03
+            kind: manual
+            reason: vendor-discretion
+            statement: LlamaGen will power a user-facing comic, illustration, or story workflow.
+    roles:
+      terms_authority_entity_id: ent_01nt2f40apxve8zp9gdzdm4nec
+      access_operator_entity_id: ent_01nt2f40apxve8zp9gdzdm4nec
+    access:
+      availability: public
+      method: form
+      instructions: Apply from the LlamaGen for Startups page. No pitch deck is required. New and existing LlamaGen users may apply.
+      url: https://llamagen.ai/startups
+    terms_url: https://llamagen.ai/startups
+    source_ids:
+      - src_7967fc750d0e8033d98bd3570658c0e79f98b65460a6e2f93b60e2f20d6c5fdf
