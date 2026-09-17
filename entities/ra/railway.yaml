@@ -8,7 +8,7 @@ entity:
     - value: railway.app
       role: primary
       valid_from: 2026-09-17T11:19:00Z
-  category: infrastructure-ops
+  category: hosting-infra
 profile:
   summary: Railway is a platform-as-a-service that provides instant infrastructure deployment from GitHub with no configuration.
   description: Railway provides instant deployment infrastructure with GitHub integration, ephemeral environments, and managed databases with automatic scaling.
