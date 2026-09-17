@@ -1,0 +1,84 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1d350czamnj0y9bhqsq34hy
+  slug: sendpulse
+  slug_aliases: []
+  name: SendPulse
+  domains:
+    - value: sendpulse.com
+      role: primary
+      valid_from: 2026-08-31T00:00:00.000Z
+  category: marketing
+profile:
+  description: SendPulse provides email, SMS, chatbot, CRM, website, course, and marketing automation tools for customer communications.
+  links:
+    site: https://sendpulse.com
+sources:
+  - source_id: src_0a81acb692a2e628b12255f5a98e57a3677a684c94714fd12bef9b7c7564fcb0
+    url: https://sendpulse.com/startup
+programs:
+  - program_id: prg_01m1d350d3tk6kkx3sct0gfbxj
+    program_slug: sendpulse-startup-grant
+    program_slug_aliases: []
+    title: SendPulse Startup Grant
+    summary: SendPulse's startup grant gives eligible early-stage companies credits for its marketing, sales, and customer communication tools.
+    source_ids:
+      - src_0a81acb692a2e628b12255f5a98e57a3677a684c94714fd12bef9b7c7564fcb0
+offers:
+  - offer_id: off_01m1d350d3a8edpw557g5nhta3
+    program_id: prg_01m1d350d3tk6kkx3sct0gfbxj
+    offer_slug: sendpulse-startup-credit
+    offer_slug_aliases: []
+    title: $5,000 SendPulse Startup Credit
+    summary: Eligible startups receive $5,000 in SendPulse credits for 12 months; the credit excludes email verification, SMS marketing, and WhatsApp and Viber campaigns.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-31T00:00:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: $5,000 in SendPulse credits valid for one year.
+          duration:
+            kind: exact
+            value: P1Y
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 500000
+            kind: exact
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.age_months
+            kind: predicate
+            operator: lte
+            statement: Startup must have launched within the past three years.
+            value:
+              type: number
+              value: 36
+          - criterion_id: cri_02
+            kind: manual
+            reason: external-verification
+            statement: Startup must offer an innovative product.
+          - criterion_id: cri_03
+            kind: manual
+            reason: external-verification
+            statement: Startup must not be an eCommerce project or online business.
+          - criterion_id: cri_04
+            kind: manual
+            reason: external-verification
+            statement: Applicant must have no history of using paid SendPulse pricing plans; existing free-plan users may apply.
+    roles:
+      terms_authority_entity_id: ent_01m1d350czamnj0y9bhqsq34hy
+      access_operator_entity_id: ent_01m1d350czamnj0y9bhqsq34hy
+    access:
+      availability: public
+      method: form
+      url: https://sendpulse.com/startup
+    source_ids:
+      - src_0a81acb692a2e628b12255f5a98e57a3677a684c94714fd12bef9b7c7564fcb0
