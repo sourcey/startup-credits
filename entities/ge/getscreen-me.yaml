@@ -1,0 +1,57 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1thedwswzb80swkxceze2ef
+  slug: getscreen-me
+  slug_aliases: []
+  name: Getscreen.me
+  domains:
+    - value: getscreen.me
+      role: primary
+      valid_from: 2026-09-06T05:00:50.969Z
+  category: support
+profile:
+  description: Getscreen.me provides browser-based remote desktop access, remote support, screen sharing, and tools for managing devices.
+  links:
+    site: https://getscreen.me/en/
+sources:
+  - source_id: src_2a4cd933bb6822d519b8b8db3883931c078c0e63a13ee670776f50d71b03ed2c
+    url: https://getscreen.me/en/pricing/discounts/
+programs: []
+offers:
+  - offer_id: off_01m1thedwt58j61s6jyry7pg9x
+    offer_slug: startup-business-subscription-discount
+    offer_slug_aliases: []
+    title: Startup business subscription discount
+    summary: Private commercial companies less than five years old can request up to 25% off Getscreen.me business subscriptions.
+    description: Use the For Startups section and its Request a Discount form. The source does not publish a fixed discount duration or renewal terms.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-06T05:00:50.969Z
+    economics:
+      benefits:
+        - benefit_id: ben_01m1thedwtqafcevgjw5z1gwe7
+          kind: discount
+          applies_to: Business subscriptions
+          description: Up to 25% off business subscriptions for eligible startups.
+          percentage:
+            kind: up-to
+            basis_points: 2500
+      consideration:
+        kind: variable
+        description: A paid business subscription is required; the final price depends on the subscription and approved discount.
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_startup_eligibility
+        reason: external-verification
+        statement: The applicant must be a private commercial company less than five years old and submit information about the startup through the discount request form.
+    roles:
+      terms_authority_entity_id: ent_01m1thedwswzb80swkxceze2ef
+      access_operator_entity_id: ent_01m1thedwswzb80swkxceze2ef
+    access:
+      availability: public
+      method: form
+      url: https://getscreen.me/en/pricing/discounts/
+    terms_url: https://getscreen.me/en/pricing/discounts/
+    source_ids:
+      - src_2a4cd933bb6822d519b8b8db3883931c078c0e63a13ee670776f50d71b03ed2c
