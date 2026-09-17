@@ -1,0 +1,72 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1qmsa5pbe7136bq6wdh858a
+  slug: rows-n-columns
+  slug_aliases: []
+  name: Rows n' Columns
+  domains:
+    - value: rowsncolumns.app
+      role: primary
+      valid_from: 2026-09-05T02:01:30.038Z
+  category: devtools-other
+profile:
+  description: Rows n' Columns provides a composable React spreadsheet component with customizable data models, formulas, and collaborative editing.
+  links:
+    site: https://www.rowsncolumns.app/
+sources:
+  - source_id: src_23933e091199bdcff2f2ac6493aa859f16faf853831df8c312ed8ce1c8213dbf
+    url: https://www.rowsncolumns.app/pricing
+  - source_id: src_09955edd64fd2707482c970c2484b4b4b87f36c171a1afa72b4edf666dc38653
+    url: https://www.rowsncolumns.app/
+  - source_id: src_4ec28a62d06500d55deeb06b6cb070f8aab410786594f20e26d11d14303943ad
+    url: https://www.rowsncolumns.app/contact
+programs: []
+offers:
+  - offer_id: off_01m1qmsa5ppz7b1gngnjmnvkca
+    offer_slug: professional-startup-discount
+    offer_slug_aliases: []
+    title: 15% off the Professional license for startups
+    summary: Startups with five or fewer employees can receive 15% off the Professional spreadsheet license by contacting sales.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T02:01:30.038Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          applies_to: Professional license
+          description: 15% discount on the Professional perpetual license for single-application commercial use, including one year of updates and support.
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 1500
+      consideration:
+        kind: variable
+        description: Purchase of a Professional license at the discounted price; contact sales to confirm the amount due.
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: external-verification
+            statement: The applicant is a startup.
+          - criterion_id: cri_02
+            kind: predicate
+            fact: company.employee_count
+            operator: lte
+            statement: The startup has five or fewer employees.
+            value:
+              type: number
+              value: 5
+    roles:
+      terms_authority_entity_id: ent_01m1qmsa5pbe7136bq6wdh858a
+      access_operator_entity_id: ent_01m1qmsa5pbe7136bq6wdh858a
+    access:
+      availability: public
+      method: form
+      url: https://www.rowsncolumns.app/contact
+    terms_url: https://www.rowsncolumns.app/pricing
+    source_ids:
+      - src_23933e091199bdcff2f2ac6493aa859f16faf853831df8c312ed8ce1c8213dbf
+      - src_09955edd64fd2707482c970c2484b4b4b87f36c171a1afa72b4edf666dc38653
+      - src_4ec28a62d06500d55deeb06b6cb070f8aab410786594f20e26d11d14303943ad
