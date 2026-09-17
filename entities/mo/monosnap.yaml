@@ -1,0 +1,51 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_mq04gx1m100000000000000000
+  slug: monosnap
+  slug_aliases: []
+  name: Monosnap
+  domains:
+  - value: monosnap.com
+    role: primary
+    valid_from: '2026-01-01T00:00:00Z'
+  category: productivity
+profile:
+  summary: Screen capture and annotation tool with a startup programme for early-stage companies.
+  description: Monosnap is a screen capture and annotation tool forMac and Windows that helps teams capture, annotate, and share screenshots and videos, with a startup programme offering free access for qualifying early-stage companies.
+  links:
+    site: https://monosnap.com
+sources:
+- source_id: src_d7eb53637e89e4c53c12fea80b78c4f4c30e61eac6d6be2c7ed7a4771b26da39
+  url: https://monosnap.zendesk.com/hc/en-us/articles/5536773521682-Monosnap-for-startups
+programs: []
+offers:
+- offer_id: off_mq04gx1m100000000000000000
+  offer_slug: startup-programme
+  offer_slug_aliases: []
+  title: Monosnap Startup Programme
+  summary: Free Monosnap screen capture and annotation tool access for qualifying early-stage companies via the Monosnap startup programme.
+  lifecycle:
+    status: active
+    effective_from: '2026-01-01T00:00:00Z'
+  economics:
+    benefits:
+    - benefit_id: ben_01
+      description: Free Monosnap screen capture tool access for qualifying startups.
+      kind: other
+    consideration:
+      kind: none
+  eligibility:
+    rule:
+      kind: manual
+      criterion_id: cri_01
+      statement: Qualifying early-stage startup companies.
+      reason: not-machine-evaluable
+  roles:
+    terms_authority_entity_id: ent_mq04gx1m100000000000000000
+    access_operator_entity_id: ent_mq04gx1m100000000000000000
+  access:
+    availability: public
+    method: form
+    url: https://monosnap.zendesk.com/hc/en-us/articles/5536773521682-Monosnap-for-startups
+  source_ids:
+  - src_d7eb53637e89e4c53c12fea80b78c4f4c30e61eac6d6be2c7ed7a4771b26da39
