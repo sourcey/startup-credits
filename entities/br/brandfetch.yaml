@@ -1,0 +1,64 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1ssfckpnecyc8h1eah70s4t
+  slug: brandfetch
+  slug_aliases: []
+  name: Brandfetch
+  domains:
+  - value: brandfetch.com
+    role: primary
+    valid_from: '2026-09-05T22:01:56.000Z'
+  category: design
+profile:
+  description: Brandfetch startup program offering credits for early-stage companies.
+  links:
+    site: https://brandfetch.com
+sources:
+- source_id: src_923a8a9406c719bb4fcc044b61dc6528d17a4b92a200908eec36ffcdb63a3207
+  url: https://brandfetch.com/developers/pricing
+- source_id: src_0325af18c6b266907411e72e3cf56b753563e91af1abb1e5c5e7099f9793d65c
+  url: https://brandfetch.com/developers/contact/sales
+programs: []
+offers:
+- offer_id: off_01m1ssfczsqrg7xaa05hpp47ew
+  offer_slug: brandfetch-startup-discount
+  offer_slug_aliases: []
+  title: Brandfetch Startup Discount
+  summary: Brandfetch offers qualifying startups and nonprofits a 40% discount on
+    paid plans for the first twelve months. Applicants contact the sales team; the
+    public pricing FAQ does not specify funding, company-age, or headcount thresholds.
+    I am pr
+  lifecycle:
+    status: active
+    effective_from: '2026-09-05T22:01:57.000Z'
+  economics:
+    consideration:
+      kind: unknown
+      description: Contact sales for pricing details.
+    benefits:
+    - benefit_id: ben_primary
+      description: 40% discount for 12 months for startups and nonprofits
+      kind: discount
+      percentage:
+        kind: exact
+        basis_points: 4000
+      duration:
+        kind: exact
+        value: P1Y
+  eligibility:
+    rule:
+      kind: manual
+      criterion_id: cri_requirement
+      statement: Must qualify as a startup or nonprofit. Contact sales team for eligibility
+        details.
+      reason: not-machine-evaluable
+  roles:
+    terms_authority_entity_id: ent_01m1ssfckpnecyc8h1eah70s4t
+    access_operator_entity_id: ent_01m1ssfckpnecyc8h1eah70s4t
+  access:
+    availability: public
+    method: contact
+    url: https://brandfetch.com/developers/contact/sales
+  source_ids:
+  - src_923a8a9406c719bb4fcc044b61dc6528d17a4b92a200908eec36ffcdb63a3207
+  - src_0325af18c6b266907411e72e3cf56b753563e91af1abb1e5c5e7099f9793d65c
