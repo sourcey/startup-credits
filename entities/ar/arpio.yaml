@@ -1,0 +1,81 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01s55fcbp5k64cjhayme8vhwdw
+  slug: arpio
+  slug_aliases: []
+  name: Arpio
+  domains:
+    - value: arpio.io
+      role: primary
+      valid_from: 2026-09-02T02:15:00.000Z
+  category: auth-security
+profile:
+  description: Arpio is a cloud disaster recovery platform that orchestrates failover for AWS and Azure workloads so businesses can recover from outages and cyberattacks.
+  links:
+    site: https://arpio.io
+sources:
+  - source_id: src_3e8bf299a9fd4cc2d41da5e0e19b35e1ff9dfb67f4affc75f5b57add816d4f3d
+    url: https://startups.aws.com/offers
+programs:
+  - program_id: prg_01wrf9k6qkeht32s2dqfqe8kbz
+    program_slug: arpio-for-startups
+    program_slug_aliases: []
+    title: Arpio for Startups
+    summary: Arpio for Startups gives eligible companies a one-time $10,000 Arpio credit after a free Proof of Value engagement, plus resilience-architect advice and custom infrastructure dependency mapping.
+    source_ids:
+      - src_3e8bf299a9fd4cc2d41da5e0e19b35e1ff9dfb67f4affc75f5b57add816d4f3d
+offers:
+  - offer_id: off_01masp59pvt3bwvdzz8j666q22
+    program_id: prg_01wrf9k6qkeht32s2dqfqe8kbz
+    offer_slug: 10000-arpio-credit-after-pov
+    offer_slug_aliases: []
+    title: $10,000 Arpio credit after free POV
+    summary: Eligible startups get a one-time $10,000 Arpio credit after entering a free Proof of Value engagement, dedicated resilience-architect advice, and custom infrastructure dependency mapping (AWS Activate Offers).
+    lifecycle:
+      status: active
+      effective_from: 2026-09-02T02:15:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: One-time Arpio credit of $10,000, eligible after entering a free Arpio Proof of Value (POV) engagement
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 1000000
+            kind: exact
+        - benefit_id: ben_02
+          description: Dedicated expert technical advice from Arpio's resilience architect expert community
+          kind: other
+        - benefit_id: ben_03
+          description: Custom infrastructure dependency mapping
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: not-machine-evaluable
+            statement: The applicant must be an eligible startup company as defined by the Arpio for Startups offer on the AWS Activate Offers catalog.
+          - criterion_id: cri_02
+            kind: manual
+            reason: not-machine-evaluable
+            statement: The $10,000 Arpio credit becomes eligible after the company enters a free Arpio Proof of Value (POV) engagement.
+          - criterion_id: cri_03
+            kind: manual
+            reason: vendor-discretion
+            statement: Acceptance and credit issuance are subject to Arpio review through the AWS Activate Offers Easy Apply path.
+    roles:
+      terms_authority_entity_id: ent_01s55fcbp5k64cjhayme8vhwdw
+      access_operator_entity_id: ent_01s55fcbp5k64cjhayme8vhwdw
+    access:
+      availability: public
+      method: form
+      instructions: Open the AWS Activate Offers catalog, find Arpio for Startups ($10k Credit), and use Easy Apply. Credit eligibility follows entry into a free Arpio Proof of Value engagement.
+      url: https://startups.aws.com/offers
+    terms_url: https://startups.aws.com/offers
+    source_ids:
+      - src_3e8bf299a9fd4cc2d41da5e0e19b35e1ff9dfb67f4affc75f5b57add816d4f3d
