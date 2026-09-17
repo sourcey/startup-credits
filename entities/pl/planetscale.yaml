@@ -1,0 +1,51 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_planetscale_startup_credits
+  slug: planetscale
+  slug_aliases: []
+  name: PlanetScale
+  domains:
+    - value: planetscale.com
+      role: primary
+      valid_from: 2026-09-04T00:00:00.000Z
+  category: database
+profile:
+  description: PlanetScale is a MySQL-compatible and Postgres-compatible database platform built on Vitess, offering zero-downtime migrations, branching, and connection pooling for modern applications.
+  links:
+    site: https://planetscale.com
+sources:
+  - source_id: src_planetscale_startups_2026
+    url: https://planetscale.com/startups
+programs: []
+offers:
+  - offer_id: off_planetscale_migration_credits
+    offer_slug: planetscale-for-startups
+    offer_slug_aliases: []
+    title: PlanetScale for Startups
+    summary: Migration assistance and credits for startups moving to PlanetScale from other database providers, available on a case-by-case basis through the startup program.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-04T00:00:00.000Z
+    economics:
+      consideration:
+        kind: unknown
+        description: Credits and migration assistance offered on a case-by-case basis through the startup program.
+      benefits:
+        - benefit_id: ben_migration
+          description: Migration assistance packages with credits to offset migration costs
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_planetscale_eligibility
+        statement: Startups looking to migrate from Amazon RDS, Google Cloud SQL, Supabase, Neon, Heroku, or other managed database providers. Contact PlanetScale to discuss credit eligibility.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_planetscale_startup_credits
+      access_operator_entity_id: ent_planetscale_startup_credits
+    access:
+      availability: public
+      method: form
+      url: https://planetscale.com/contact
+    source_ids:
+      - src_planetscale_startups_2026
