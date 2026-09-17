@@ -20,6 +20,8 @@ sources:
     url: https://www.morphllm.com/llms.txt
   - source_id: src_783ac5453e4de613db7e2bbf5d298fb0aadc364af34c514225df42057ec2403e
     url: https://www.morphllm.com/startups.md
+  - source_id: src_45fa54b2ce92dacfef517c05fa4cca0b80dd0b5600e53fbe98bb9c2ee35adeb2
+    url: https://www.morphllm.com/pricing.md
 programs: []
 offers:
   - offer_id: off_01m13tkye9ttnf50rna45a44f7
@@ -32,8 +34,8 @@ offers:
       effective_from: 2026-08-08T05:32:49.000Z
     economics:
       consideration:
-        kind: unknown
-        description: The cited source does not state whether separate consideration is required.
+        kind: variable
+        description: Morph uses usage-based billing, and the startup page instructs applicants to add a billing method before the fastest approval.
       benefits:
         - benefit_id: ben_01
           description: API credits up to $1,000
@@ -59,3 +61,4 @@ offers:
       url: https://www.morphllm.com/startups
     source_ids:
       - src_783ac5453e4de613db7e2bbf5d298fb0aadc364af34c514225df42057ec2403e
+      - src_45fa54b2ce92dacfef517c05fa4cca0b80dd0b5600e53fbe98bb9c2ee35adeb2
