@@ -57,7 +57,7 @@ offers:
       access_operator_entity_id: ent_01m2qha8xy47qp9gty0v2nwmqg
     access:
       availability: public
-      method: email
+      method: contact
       url: https://railway.com/changelog/2024-04-26-startup-program
       instructions: Inquire through Railway support or the community forum citing the Railway Startup Program.
     source_ids:
