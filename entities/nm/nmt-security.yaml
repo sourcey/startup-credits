@@ -1,0 +1,58 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1yft3pn48gnnzr8gp4npcp4
+  slug: nmt-security
+  name: NMT Security
+  domains:
+    - value: nmtsecurity.com
+      role: primary
+      valid_from: 2026-09-07T17:47:59.000Z
+  category: auth-security
+profile:
+  summary: NMT Security provides AI-driven cyber decision intelligence for regulated enterprises.
+  description: NMT Security provides AI-driven cyber decision intelligence for regulated enterprises.
+  links:
+    site: https://nmtsecurity.com/
+sources:
+  - source_id: src_8fcf2e0a2c8396ffb9e78323962cacf11889de503a0036d2350b9c113fdc1db9
+    url: https://nmtsecurity.com/startups
+programs: []
+offers:
+  - offer_id: off_01m1yft3pv8k2q09jbacxes0h7
+    offer_slug: free-security-essentials-for-startups
+    title: Free security essentials for startups
+    summary: Enterprise-grade security, free for startups.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T17:47:59.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_startup_essentials
+          kind: free-service
+          service: Security Policy Pack
+          description: Ready-to-use security policies mapped to ISO 27001 and SOC 2 are provided free.
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_early_stage
+            kind: manual
+            reason: vendor-discretion
+            statement: NMT Security must confirm that the applicant is a qualifying early-stage startup, typically from pre-seed through Series A.
+          - criterion_id: cri_enterprise_focus
+            kind: manual
+            reason: external-verification
+            statement: The startup builds for or sells to enterprise customers.
+    roles:
+      terms_authority_entity_id: ent_01m1yft3pn48gnnzr8gp4npcp4
+      access_operator_entity_id: ent_01m1yft3pn48gnnzr8gp4npcp4
+    access:
+      availability: public
+      method: form
+      url: https://nmtsecurity.com/startups
+      instructions: Submit the application form on the public startup page; NMT Security confirms eligibility and sets up the free workspace.
+    terms_url: https://nmtsecurity.com/startups
+    source_ids:
+      - src_8fcf2e0a2c8396ffb9e78323962cacf11889de503a0036d2350b9c113fdc1db9
