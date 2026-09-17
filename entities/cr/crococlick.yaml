@@ -74,6 +74,14 @@ offers:
       rule:
         kind: all
         rules:
+          - criterion_id: cri_age
+            kind: predicate
+            fact: company.age_months
+            operator: lt
+            value:
+              type: number
+              value: 12
+            statement: Company was founded less than 12 months ago.
           - criterion_id: cri_revenue
             kind: manual
             reason: not-machine-evaluable
