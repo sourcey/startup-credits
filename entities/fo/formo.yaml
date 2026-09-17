@@ -1,0 +1,91 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1fd1j7m4vs9q2ww177f5env
+  slug: formo
+  slug_aliases: []
+  name: Formo
+  domains:
+    - value: formo.so
+      role: primary
+      valid_from: 2026-09-01T21:12:00.000Z
+  category: data-analytics
+profile:
+  description: Formo is a data platform for onchain applications with product analytics, wallet intelligence, attribution, segmentation, and retention tools.
+  links:
+    site: https://formo.so
+sources:
+  - source_id: src_0db8333c82d25f06c2f6a972b31da5462395a0a1bce2c7ea62cbb8f1f25191e2
+    url: https://formo.so/startups
+  - source_id: src_44549522245c706b2cb7b0ad6b12dd6692c1bc2d04d056b495772fcf8148ee83
+    url: https://app.formo.so/XllUJsVgEkA9RL669clnY
+programs:
+  - program_id: prg_01m1fd1j7m30nehb0vc0jh8xtf
+    program_slug: formo-startup-program
+    program_slug_aliases: []
+    title: Formo Startup Program
+    summary: Formo supports eligible early-stage crypto startups with temporary plan discounts, dedicated support, product collaboration, and access to its partner network.
+    source_ids:
+      - src_0db8333c82d25f06c2f6a972b31da5462395a0a1bce2c7ea62cbb8f1f25191e2
+offers:
+  - offer_id: off_01m1fd1j7mydvhjwxvt13ww17e
+    program_id: prg_01m1fd1j7m30nehb0vc0jh8xtf
+    offer_slug: up-to-50-percent-off-for-three-months
+    offer_slug_aliases: []
+    title: Up to 50% off any Formo plan for three months
+    summary: Eligible early-stage crypto startups receive up to 50% off any Formo plan for three months, dedicated support resources, and access to the Formo network.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-01T21:12:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to 50% off any Formo plan for three months
+          kind: discount
+          percentage:
+            kind: up-to
+            basis_points: 5000
+          duration:
+            kind: exact
+            value: P3M
+          applies_to: Any Formo plan
+        - benefit_id: ben_02
+          description: Dedicated support and product collaboration while building
+          kind: other
+        - benefit_id: ben_03
+          description: Access to Formo's partner network and launch-amplification opportunities
+          kind: other
+      consideration:
+        kind: variable
+        description: The startup pays the remaining price of its selected Formo plan after the approved discount.
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: not-machine-evaluable
+            statement: The applicant must be an early-stage startup building in crypto.
+          - criterion_id: cri_02
+            fact: company.age_months
+            kind: predicate
+            operator: lt
+            statement: The company must have been founded within the last 2 years.
+            value:
+              type: number
+              value: 24
+          - criterion_id: cri_03
+            kind: manual
+            reason: not-machine-evaluable
+            statement: The applicant must apply within 30 days of signing up for Formo.
+    roles:
+      terms_authority_entity_id: ent_01m1fd1j7m4vs9q2ww177f5env
+      access_operator_entity_id: ent_01m1fd1j7m4vs9q2ww177f5env
+    access:
+      availability: public
+      instructions: Open the Formo Startup Program page and complete the application form. Formo says it reviews applications and responds within three business days.
+      method: form
+      url: https://app.formo.so/XllUJsVgEkA9RL669clnY
+    terms_url: https://formo.so/startups
+    source_ids:
+      - src_0db8333c82d25f06c2f6a972b31da5462395a0a1bce2c7ea62cbb8f1f25191e2
+      - src_44549522245c706b2cb7b0ad6b12dd6692c1bc2d04d056b495772fcf8148ee83
