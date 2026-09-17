@@ -1,0 +1,82 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_4hd29w001wcx2y8sbc1pyv4awv
+  slug: torchlite
+  slug_aliases: []
+  name: Torchlite
+  domains:
+    - value: torchlite.com
+      role: primary
+      valid_from: 2026-09-01T08:11:17.0643742Z
+  category: crm-sales
+profile:
+  summary: Partner relationship management software for building and scaling partner programs.
+  description: Torchlite provides partner relationship management software for managing partner portals, enablement, referrals, resellers, technology alliances, marketplaces, integrations, incentives, payouts, leads, and deals.
+  links:
+    site: https://torchlite.com
+sources:
+  - source_id: src_758f1935732bac50f81e8b3d79886763f52ce28cc784a912dc98feebb25eb11d
+    url: https://torchlite.com/prm-for-startups/
+programs:
+  - program_id: prg_bwncpa1jtqfxe2x6vfds8xd2qf
+    program_slug: torchlite-prm-for-startups
+    program_slug_aliases: []
+    title: Torchlite PRM for Startups
+    summary: Torchlite gives qualifying startups discounted PRM software for two years plus no-cost CRM integration.
+    source_ids:
+      - src_758f1935732bac50f81e8b3d79886763f52ce28cc784a912dc98feebb25eb11d
+offers:
+  - offer_id: off_46xhsxje3a0dkrqqvnz5gcw2wh
+    program_id: prg_bwncpa1jtqfxe2x6vfds8xd2qf
+    offer_slug: discounted-prm-for-two-years-and-free-crm-integration
+    offer_slug_aliases: []
+    title: 75% off year one, 50% off year two, and free CRM integration
+    summary: Approved startups receive 75% off Torchlite in the first year, 50% off in the second year, and no-cost integration with an existing CRM.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-01T08:11:17.0643742Z
+    economics:
+      benefits:
+        - applies_to: First year of Torchlite PRM software
+          benefit_id: ben_01
+          description: 75% off Torchlite during the first year
+          duration:
+            kind: exact
+            value: P1Y
+          kind: discount
+          percentage:
+            basis_points: 7500
+            kind: exact
+        - applies_to: Second year of Torchlite PRM software
+          benefit_id: ben_02
+          description: 50% off Torchlite during the second year
+          duration:
+            kind: exact
+            value: P1Y
+          kind: discount
+          percentage:
+            basis_points: 5000
+            kind: exact
+        - benefit_id: ben_03
+          description: No-cost integration with an existing CRM such as Salesforce or HubSpot
+          kind: other
+      consideration:
+        kind: variable
+        description: The approved startup pays the remaining discounted Torchlite subscription price during the two-year offer period.
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: The applicant must be a startup or early-stage business building or starting a partner program and receive approval from Torchlite.
+    roles:
+      terms_authority_entity_id: ent_4hd29w001wcx2y8sbc1pyv4awv
+      access_operator_entity_id: ent_4hd29w001wcx2y8sbc1pyv4awv
+    access:
+      availability: public
+      instructions: Use Torchlite's Book a Demo form and identify the company as a startup applying for the PRM for Startups offer.
+      method: form
+      url: https://torchlite.com/book-a-demo/
+    terms_url: https://torchlite.com/prm-for-startups/
+    source_ids:
+      - src_758f1935732bac50f81e8b3d79886763f52ce28cc784a912dc98feebb25eb11d
