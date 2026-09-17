@@ -25,7 +25,7 @@ programs:
     program_slug: railway-for-startups
     program_slug_aliases: []
     title: Railway for Startups
-    summary: Railway provides ,000 in credits to early-stage startups and founders building on their platform through a structured credit program.
+    summary: Railway provides startup credits to early-stage startups and founders building on their platform through a structured credit program.
     source_ids:
       - src_8f4e2a3b6c9d1e5f7a8b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4
 offers:
@@ -34,7 +34,7 @@ offers:
     offer_slug: railway-startup-credits
     offer_slug_aliases: []
     title: Railway startup credits
-    summary: Early-stage startups can receive ,000 in Railway credits through the Railway Startup Program to deploy and scale applications.
+    summary: Early-stage startups can receive credits through the Railway Startup Program to deploy and scale applications.
     lifecycle:
       status: active
       effective_from: 2026-09-17T11:19:00Z
@@ -44,14 +44,14 @@ offers:
         description: The public program page does not specify monetary consideration required from applicants.
       benefits:
         - benefit_id: ben_primary
-          description: ,000 in startup credits
+          description: USD 5000 in startup credits
           kind: other
     eligibility:
       rule:
         criterion_id: cri_01
         kind: manual
         reason: external-verification
-        statement: Applicants must have between  and  in outside funding, be founded in 2020 or later, and have less than  in lifetime platform spend.
+        statement: Applicants must have between USD 2M and 25M in outside funding, be founded in 2020 or later, and have less than USD 100 in lifetime platform spend.
     roles:
       terms_authority_entity_id: ent_01m2qha8xy47qp9gty0v2nwmqg
       access_operator_entity_id: ent_01m2qha8xy47qp9gty0v2nwmqg
