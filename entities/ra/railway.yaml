@@ -42,11 +42,7 @@ offers:
       benefits:
         - benefit_id: ben_01
           description: Railway platform credits applicable to compute, memory, storage, and bandwidth usage
-          kind: credit
-          value:
-            amount: 100
-            currency: USD
-            unit: total
+          kind: other
     eligibility:
       rule:
         criterion_id: cri_01
