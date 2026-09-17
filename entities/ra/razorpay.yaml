@@ -1,0 +1,115 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1fqkzp0x8avdj1j7wv3cjc4
+  slug: razorpay
+  slug_aliases: []
+  name: Razorpay
+  domains:
+    - value: razorpay.com
+      role: primary
+      valid_from: 2026-09-02T00:14:00.000Z
+  category: payments-fintech
+profile:
+  description: Razorpay is an Indian full-stack payments and business-banking platform covering payment gateway, international payments, payroll, and corporate cards for startups and businesses.
+  links:
+    site: https://razorpay.com
+sources:
+  - source_id: src_44b71b61cda85048f978132c95c492726aba7677e832b149f864cc8566067372
+    url: https://razorpay.com/m/startup-perks/
+  - source_id: src_a82f2c583a36e69a9c7699c27afb6308f2f8f38e5c70d6089b82eb134e7a6a65
+    url: https://razorpay.com/m/startup-perks/terms/
+programs:
+  - program_id: prg_01m1fqkzp009pm6dxaq0w8tht4
+    program_slug: razorpay-startup-perks
+    program_slug_aliases: []
+    title: Razorpay Startup Perks
+    summary: Razorpay Startup Perks gives funded startups up to ₹1 Cr in benefits spanning free payment credits, Magic Checkout waivers, intelligent routing, and SaaS benefits via a collateral-free corporate card.
+    source_ids:
+      - src_44b71b61cda85048f978132c95c492726aba7677e832b149f864cc8566067372
+      - src_a82f2c583a36e69a9c7699c27afb6308f2f8f38e5c70d6089b82eb134e7a6a65
+offers:
+  - offer_id: off_01m1fqkzp0fhhcz8j5bnzgtzd1
+    program_id: prg_01m1fqkzp009pm6dxaq0w8tht4
+    offer_slug: up-to-1cr-startup-perks-payment-credits
+    offer_slug_aliases: []
+    title: Up to ₹1 Cr in Startup Perks payment credits and benefits
+    summary: "Eligible funded startups get up to ₹30L domestic and ₹20L international free payment credits (angel: ₹3L each), Magic Checkout free up to 6 months, and up to ₹50L SaaS benefits via collateral-free corporate card."
+    lifecycle:
+      status: active
+      effective_from: 2026-09-02T00:14:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to ₹30 lakh free domestic payment credits for VC-funded startups (₹3 lakh for angel-funded)
+          kind: credit
+          value:
+            amount:
+              currency: INR
+              minor_units: 300000000
+            kind: up-to
+          duration:
+            kind: exact
+            value: P3M
+        - benefit_id: ben_02
+          description: Up to ₹20 lakh free international payment credits for VC-funded startups (₹3 lakh for angel-funded)
+          kind: credit
+          value:
+            amount:
+              currency: INR
+              minor_units: 200000000
+            kind: up-to
+          duration:
+            kind: exact
+            value: P3M
+        - benefit_id: ben_03
+          description: Magic Checkout free for 90 days (angel-funded) or 6 months (VC-funded)
+          kind: free-service
+          service: Magic Checkout
+        - benefit_id: ben_04
+          description: One year of free intelligent payment routing for VC-funded startups
+          kind: free-service
+          service: Intelligent payment routing
+          duration:
+            kind: exact
+            value: P1Y
+        - benefit_id: ben_05
+          description: Collateral-free corporate credit card with up to ₹50 lakh SaaS benefits (₹20 lakh for angel-funded)
+          kind: credit
+          value:
+            amount:
+              currency: INR
+              minor_units: 500000000
+            kind: up-to
+        - benefit_id: ben_06
+          description: Dedicated manager and round-the-clock support
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: not-machine-evaluable
+            statement: The applicant must be a funded startup (seed-funded, angel-backed, Shark Tank-funded, or Series A to Series C).
+          - criterion_id: cri_02
+            kind: manual
+            reason: not-machine-evaluable
+            statement: The applicant must be a new Razorpay merchant or must not have actively used the Razorpay ecosystem in the previous three months or more.
+          - criterion_id: cri_03
+            kind: manual
+            reason: vendor-discretion
+            statement: Offer amounts are subject to Razorpay's internal risk assessment and underwriting; Razorpay may provide a lesser offer than listed, and free payment credits are first-come, first-served.
+    roles:
+      terms_authority_entity_id: ent_01m1fqkzp0x8avdj1j7wv3cjc4
+      access_operator_entity_id: ent_01m1fqkzp0x8avdj1j7wv3cjc4
+    access:
+      availability: public
+      method: form
+      instructions: Open the Razorpay Startup Perks page and complete the application form with company details and funding proof. Review the Startup Perks terms before applying.
+      url: https://razorpay.com/m/startup-perks/
+    terms_url: https://razorpay.com/m/startup-perks/terms/
+    source_ids:
+      - src_44b71b61cda85048f978132c95c492726aba7677e832b149f864cc8566067372
+      - src_a82f2c583a36e69a9c7699c27afb6308f2f8f38e5c70d6089b82eb134e7a6a65
