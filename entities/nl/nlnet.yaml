@@ -1,0 +1,81 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m2qh1kkcgbmvsgderc31z5sy
+  slug: nlnet
+  slug_aliases: []
+  name: NLnet Foundation
+  domains:
+    - value: nlnet.nl
+      role: primary
+      valid_from: 2026-09-17T00:00:00.000Z
+  category: other
+profile:
+  description: NLnet Foundation funds open internet projects through grants for open hardware, open software,
+    open standards, open science and open data.
+  summary: NLnet Foundation is a foundation that has financially supported projects contributing to an
+    open internet since 1997.
+  links:
+    site: https://nlnet.nl
+sources:
+  - source_id: src_c6396ce284c54cc12682d8c91e1f7802f21dd84ce8b71593dabe53ac2d5886a9
+    url: https://nlnet.nl/propose/
+  - source_id: src_5fbb7c3a95b2343f16d069d6c334e4f918410da4f7c5ec0aa67af0432d268565
+    url: https://nlnet.nl/
+programs:
+  - program_id: prg_01m2qh1kkdpwqav429r41r9gaj
+    program_slug: nlnet-grants
+    program_slug_aliases: []
+    title: NLnet Grants
+    summary: NLnet runs several funds with different themes that award grants for technical development
+      released under open licences.
+    source_ids:
+      - src_c6396ce284c54cc12682d8c91e1f7802f21dd84ce8b71593dabe53ac2d5886a9
+offers:
+  - offer_id: off_01m2qh1kkd8n9nbnfhqf1rxdtw
+    program_id: prg_01m2qh1kkdpwqav429r41r9gaj
+    offer_slug: nlnet-first-grant
+    offer_slug_aliases: []
+    title: NLnet first grant
+    summary: A first grant of between EUR 5,000 and EUR 50,000 for open technical development, requested
+      through NLnet's open call.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-17T00:00:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: A first grant of between EUR 5,000 and EUR 50,000, sized by the budget breakdown in
+            the proposal.
+          kind: credit
+          value:
+            amount:
+              currency: EUR
+              minor_units: 5000000
+            kind: up-to
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: external-verification
+            statement: The project is primarily technical development, and its software, hardware and
+              content are released under open licences applying preferably open standards.
+          - criterion_id: cri_02
+            kind: manual
+            reason: external-verification
+            statement: Applications to NLnet's EU-supported funds need a strong European dimension,
+              usually meaning applicants mostly from Horizon Europe-eligible countries.
+    roles:
+      terms_authority_entity_id: ent_01m2qh1kkcgbmvsgderc31z5sy
+      access_operator_entity_id: ent_01m2qh1kkcgbmvsgderc31z5sy
+    access:
+      availability: public
+      method: form
+      url: https://nlnet.nl/propose/
+    terms_url: https://nlnet.nl/propose/
+    source_ids:
+      - src_c6396ce284c54cc12682d8c91e1f7802f21dd84ce8b71593dabe53ac2d5886a9
+      - src_5fbb7c3a95b2343f16d069d6c334e4f918410da4f7c5ec0aa67af0432d268565
