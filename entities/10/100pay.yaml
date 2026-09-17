@@ -1,0 +1,80 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1fgf3641s19yp0ghk8fhfq0
+  slug: 100pay
+  slug_aliases: []
+  name: 100Pay
+  domains:
+    - value: 100pay.co
+      role: primary
+      valid_from: 2026-09-01T22:04:00.000Z
+  category: payments-fintech
+profile:
+  description: 100Pay is a payments and financial platform for businesses, with crypto checkout, invoices, cards, and developer APIs across fiat and digital assets.
+  links:
+    site: https://100pay.co
+sources:
+  - source_id: src_375b9b941ed3bd90d9adb25818f273685b65c461e56d3728fc029b06ee77b512
+    url: https://100pay.co/startups
+programs:
+  - program_id: prg_01m1fgf36dsgqhrcc9bf51vry2
+    program_slug: 100pay-startup-program
+    program_slug_aliases: []
+    title: 100Pay Startup Program
+    summary: 100Pay's startup accelerator supports builders with partner cloud credits, AI tooling support, subsidized enterprise tools, mentorship, and introductions to VCs and liquidity partners.
+    source_ids:
+      - src_375b9b941ed3bd90d9adb25818f273685b65c461e56d3728fc029b06ee77b512
+offers:
+  - offer_id: off_01m1fgf36d97y44axjn30yytrp
+    program_id: prg_01m1fgf36dsgqhrcc9bf51vry2
+    offer_slug: up-to-100k-cloud-infrastructure-credits
+    offer_slug_aliases: []
+    title: Up to $100,000 in cloud infrastructure credits
+    summary: Eligible startups can receive up to $100,000 in partner cloud credits (AWS, Google Cloud), plus AI tooling support, subsidized enterprise tools, mentorship, and VC introductions. Apply by email on a rolling basis.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-01T22:04:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to $100,000 in cloud infrastructure credits from premier hosting partners (AWS, Google Cloud)
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 10000000
+            kind: up-to
+        - benefit_id: ben_02
+          description: Subsidized quotas and elite tiers for LLM integrations, OpenAI credits, and Agentic Commerce routing frameworks
+          kind: other
+        - benefit_id: ben_03
+          description: Subsidized GitHub Enterprise environments, Stripe/100Pay processing grace periods, and Notion project tooling
+          kind: other
+        - benefit_id: ben_04
+          description: Direct mentorship from 100Pay executive designers and engineers, pitch-deck and financial modeling sprints, and curated introductions to VCs and liquidity partners
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: not-machine-evaluable
+            statement: Applications are reviewed on a rolling basis for startups applying to the 100Pay Startup Program.
+          - criterion_id: cri_02
+            kind: manual
+            reason: not-machine-evaluable
+            statement: Applicants must apply by email using the contact method on the 100Pay for Startups page, including a description of the startup, website, and other relevant links including socials.
+    roles:
+      terms_authority_entity_id: ent_01m1fgf3641s19yp0ghk8fhfq0
+      access_operator_entity_id: ent_01m1fgf3641s19yp0ghk8fhfq0
+    access:
+      availability: public
+      method: other
+      instructions: Open the 100Pay for Startups page and apply by email using the contact method shown there. Include what your startup is about, your website, and other relevant links including socials. Applications are reviewed on a rolling basis.
+      url: https://100pay.co/startups
+    terms_url: https://100pay.co/startups
+    source_ids:
+      - src_375b9b941ed3bd90d9adb25818f273685b65c461e56d3728fc029b06ee77b512
