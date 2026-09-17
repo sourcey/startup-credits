@@ -1,0 +1,76 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m14psdf75t5z56v68a4skmb4
+  slug: smartbdm
+  slug_aliases: []
+  name: SmartBDM
+  domains:
+    - value: smartbdm.ai
+      role: primary
+      valid_from: 2026-08-28T17:30:56.000Z
+  category: crm-sales
+profile:
+  description: SmartBDM is an AI-powered sales and marketing platform that combines CRM, lead management, pipeline automation, conversation intelligence, and team collaboration.
+  links:
+    site: https://www.smartbdm.ai
+sources:
+  - source_id: src_2125c9d8642e9a239291716c3c00c24ec10187142e2c12121860ced26e74f8df
+    url: https://www.smartbdm.ai/startups
+programs:
+  - program_id: prg_01m14psdfdyseztk4w069ghkjy
+    program_slug: smartbdm-for-startups
+    program_slug_aliases: []
+    title: SmartBDM for Startups
+    summary: SmartBDM offers eligible early-stage startups discounted access to its Growth plan for 12 months.
+    source_ids:
+      - src_2125c9d8642e9a239291716c3c00c24ec10187142e2c12121860ced26e74f8df
+offers:
+  - offer_id: off_01m14psdfdgckgwnmtg0yef1bn
+    program_id: prg_01m14psdfdyseztk4w069ghkjy
+    offer_slug: smartbdm-growth-plan-startup-discount
+    offer_slug_aliases: []
+    title: SmartBDM Growth Plan Startup Discount
+    summary: Eligible startups receive 50% off the SmartBDM Growth plan for 12 months, paying ₹50,000 per month instead of ₹100,000.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-28T17:30:56.000Z
+    economics:
+      benefits:
+        - applies_to: SmartBDM Growth plan
+          benefit_id: ben_01
+          description: 50% off the SmartBDM Growth plan for 12 months
+          duration:
+            kind: exact
+            value: P1Y
+          kind: discount
+          percentage:
+            basis_points: 5000
+            kind: exact
+      consideration:
+        kind: variable
+        description: ₹50,000 per month, billed quarterly upfront with a three-month minimum commitment.
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.age_months
+            kind: predicate
+            operator: lt
+            statement: Company must be less than two years old from its incorporation date.
+            value:
+              type: number
+              value: 24
+          - criterion_id: cri_02
+            kind: manual
+            reason: external-verification
+            statement: Company must have raised less than $5 million in total funding or be self-funded.
+    roles:
+      terms_authority_entity_id: ent_01m14psdf75t5z56v68a4skmb4
+      access_operator_entity_id: ent_01m14psdf75t5z56v68a4skmb4
+    access:
+      availability: public
+      method: form
+      url: https://www.smartbdm.ai/startups
+    source_ids:
+      - src_2125c9d8642e9a239291716c3c00c24ec10187142e2c12121860ced26e74f8df
