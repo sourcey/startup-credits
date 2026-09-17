@@ -1,0 +1,74 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m2gx228qkqzjx920tmnsywx7
+  slug: novita
+  slug_aliases: []
+  name: Novita AI
+  domains:
+    - value: novita.ai
+      role: primary
+      valid_from: 2026-09-14T21:27:00.000Z
+  category: ai-ml
+profile:
+  summary: Novita AI provides model APIs and an agent sandbox for building AI-native products across LLM, image, video, and voice workloads.
+  description: Novita AI offers model APIs and agent sandbox environments for AI-native product workflows.
+  links:
+    site: https://novita.ai
+sources:
+  - source_id: src_c73762a69e34f8d3abe4b7165b48398d503c5cf4a740affaa87adbe127f5ee60
+    url: https://startups.novita.ai/
+programs:
+  - program_id: prg_01m2gx228x3w54f5zjrcgkfd57
+    program_slug: novita-startup-program
+    program_slug_aliases: []
+    title: Novita Startup Program
+    summary: Novita AI for Startups supports eligible AI-native startups with usage credits across Model APIs and Agent Sandbox, plus marketing spotlight and dedicated engineering support.
+    source_ids:
+      - src_c73762a69e34f8d3abe4b7165b48398d503c5cf4a740affaa87adbe127f5ee60
+offers:
+  - offer_id: off_01m2gx228xwb4n86628detdytp
+    program_id: prg_01m2gx228x3w54f5zjrcgkfd57
+    offer_slug: novita-startup-usage-credits
+    offer_slug_aliases: []
+    title: Novita Startup Program usage credits
+    summary: Eligible venture-backed AI-native startups that are new Novita users can receive up to $10,000 in Model API and Agent Sandbox usage credits redeemable for one year.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-14T21:27:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to $10,000 in usage credits across Novita AI Model APIs and Agent Sandbox, redeemable for one year. Up to $1,000 is provided upfront; the next $5,000 is matched 1:1 with spend; the final $4,000 is matched at one credit dollar per two dollars spent. Credits are split with up to $5,000 for Agent Sandbox and up to $5,000 for Model API usage.
+          duration:
+            kind: exact
+            value: P1Y
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 1000000
+            kind: up-to
+        - benefit_id: ben_02
+          description: Spotlight marketing across Novita channels including X, LinkedIn, Discord, and newsletter.
+          kind: other
+        - benefit_id: ben_03
+          description: Dedicated support from Novita engineers on Slack or another platform chosen with the applicant.
+          kind: other
+      consideration:
+        description: After the upfront credits, matching credits require applicant spend as described on the program page; Novita reviews applications before awarding credits.
+        kind: variable
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Applicant must be venture-backed and Series B or earlier, building an AI-native product or platform, and a new Novita user. Novita reviews stage, team, current spend, backing, traction, and expected Model API or Agent Sandbox usage.
+    roles:
+      terms_authority_entity_id: ent_01m2gx228qkqzjx920tmnsywx7
+      access_operator_entity_id: ent_01m2gx228qkqzjx920tmnsywx7
+    access:
+      availability: public
+      method: form
+      url: https://startups.novita.ai/
+    source_ids:
+      - src_c73762a69e34f8d3abe4b7165b48398d503c5cf4a740affaa87adbe127f5ee60
