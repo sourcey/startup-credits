@@ -1,0 +1,87 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1fky64kx6sg9w2aa1jwvrj9
+  slug: vapi
+  slug_aliases: []
+  name: Vapi
+  domains:
+    - value: vapi.ai
+      role: primary
+      valid_from: 2026-09-01T23:12:00.000Z
+  category: ai-ml
+profile:
+  description: Vapi is a voice AI platform for developers to build, test, and deploy voice agents over phone and web calls.
+  links:
+    site: https://vapi.ai
+sources:
+  - source_id: src_6ec5ed2462a71f50063a2d2a2ac0299d3655ab7ae843c7bef5d854381b0f5057
+    url: https://vapi.ai/startups
+programs:
+  - program_id: prg_01m1fky64k0gcczf8913fdwmen
+    program_slug: vapi-for-startups
+    program_slug_aliases: []
+    title: Vapi for Startups
+    summary: Vapi's startup grant program provides eligible voice AI startups with 90,000 free minutes over 12 months, dedicated Slack support, priority feature access, and community access.
+    source_ids:
+      - src_6ec5ed2462a71f50063a2d2a2ac0299d3655ab7ae843c7bef5d854381b0f5057
+offers:
+  - offer_id: off_01m1fky64kk1vtnf1yq0p10w7f
+    program_id: prg_01m1fky64k0gcczf8913fdwmen
+    offer_slug: 90000-free-minutes-startup-grant
+    offer_slug_aliases: []
+    title: 90,000 free minutes startup grant
+    summary: Eligible pre-seed to Series A voice AI startups ($250k+ funding) get 7,500 free minutes per month for 12 months (90,000 total), plus Slack support, priority features, and community access. Applications are currently on hold.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-01T23:12:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 7,500 free minutes per month for 12 months (90,000 minutes total)
+          duration:
+            kind: exact
+            value: P12M
+          kind: free-service
+          service: 7,500 free voice minutes monthly for 12 months
+        - benefit_id: ben_02
+          description: Dedicated Slack channel with forward-deployed engineers
+          kind: other
+        - benefit_id: ben_03
+          description: Priority early access to new features and a direct line for feedback
+          kind: other
+        - benefit_id: ben_04
+          description: Access to an exclusive community of voice AI innovators
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: not-machine-evaluable
+            statement: The applicant must be a startup building voice AI products or features.
+          - criterion_id: cri_02
+            kind: manual
+            reason: not-machine-evaluable
+            statement: The company must be pre-seed to Series A and have raised at least $250k in funding.
+          - criterion_id: cri_03
+            kind: manual
+            reason: not-machine-evaluable
+            statement: The project must focus on innovative voice applications and plan to launch to customers within 6 months.
+          - criterion_id: cri_04
+            kind: manual
+            reason: vendor-discretion
+            statement: Meeting qualification criteria does not guarantee acceptance; applications are reviewed at Vapi's discretion. The first-party startups page currently shows applications on hold.
+    roles:
+      terms_authority_entity_id: ent_01m1fky64kx6sg9w2aa1jwvrj9
+      access_operator_entity_id: ent_01m1fky64kx6sg9w2aa1jwvrj9
+    access:
+      availability: public
+      method: form
+      instructions: Open the Vapi for Startups page and complete the application form when applications are open. The page currently notes that applications are on hold.
+      url: https://vapi.ai/startups
+    terms_url: https://vapi.ai/startups
+    source_ids:
+      - src_6ec5ed2462a71f50063a2d2a2ac0299d3655ab7ae843c7bef5d854381b0f5057
