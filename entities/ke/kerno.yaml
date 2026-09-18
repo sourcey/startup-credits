@@ -1,0 +1,57 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1tk5c8arff7qrc0s3my86gt
+  slug: kerno
+  slug_aliases: []
+  name: Kerno
+  domains:
+    - value: kerno.io
+      role: primary
+      valid_from: 2026-09-06T05:30:51.530Z
+  category: devtools-other
+profile:
+  description: Kerno, operated by FYCK Limited, provides runtime verification software that tests code changes against an application and its dependencies.
+  links:
+    site: https://www.kerno.io/pricing/
+sources:
+  - source_id: src_f755931a0322803ae6974f092fdecc5679fdbe84a67ef383d77877d4f9b3be50
+    url: https://www.kerno.io/pricing/
+  - source_id: src_824636683d2539609235d2b31762151352f1c4f64a91f0c0b39b5aadac2e47fe
+    url: https://www.kerno.io/terms/
+programs: []
+offers:
+  - offer_id: off_01m1tk5c8awtrx1jbjvys2h85c
+    offer_slug: early-stage-startup-discount
+    offer_slug_aliases: []
+    title: Early-Stage Startup Discount
+    summary: Pre-Series A startups with under $2M revenue in the past 12 months receive 50% off Kerno.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-06T05:30:51.530Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          kind: discount
+          applies_to: Kerno
+          description: 50% discount for qualifying early-stage startups.
+          percentage:
+            kind: exact
+            basis_points: 5000
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: external-verification
+        statement: The company is a pre-Series A startup with under $2M revenue in the past 12 months.
+    roles:
+      terms_authority_entity_id: ent_01m1tk5c8arff7qrc0s3my86gt
+      access_operator_entity_id: ent_01m1tk5c8arff7qrc0s3my86gt
+    access:
+      availability: public
+      method: contact
+      url: https://www.kerno.io/pricing/
+      instructions: Use the Apply for startup discount contact link on the pricing page to request the discount.
+    source_ids:
+      - src_f755931a0322803ae6974f092fdecc5679fdbe84a67ef383d77877d4f9b3be50
