@@ -1,0 +1,70 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1ym2j76rzjhb2q3bbmh424v
+  slug: cosmocloud
+  slug_aliases: []
+  name: Cosmocloud
+  domains:
+    - value: cosmocloud.io
+      role: primary
+      valid_from: 2026-09-07T14:00:00.000Z
+  category: no-code
+profile:
+  summary: Cosmocloud is a no-code backend platform for building microservices, APIs, and background jobs.
+  description: Cosmocloud provides a no-code backend development platform that enables teams to build complex APIs, background jobs, and microservices with high scalability.
+  links:
+    site: https://www.cosmocloud.io/
+sources:
+  - source_id: src_3f2e9b6f2e66de8380152efee6f88baf8522a1500efdff32cb9b507bf69651be
+    url: https://www.cosmocloud.io/startups
+programs:
+  - program_id: prg_01m1ym2j7bxj5869nr2s1t9qyp
+    program_slug: cosmocloud-for-startups
+    program_slug_aliases: []
+    title: Cosmocloud for Startups
+    summary: Cosmocloud for Startups offers early-stage startups up to ,000 in free credits, expert technical sessions, and community networking opportunities.
+    source_ids:
+      - src_3f2e9b6f2e66de8380152efee6f88baf8522a1500efdff32cb9b507bf69651be
+offers:
+  - offer_id: off_01m1ym2j7byytcw6d4kxthb23y
+    program_id: prg_01m1ym2j7bxj5869nr2s1t9qyp
+    offer_slug: cosmocloud-startup-credits
+    offer_slug_aliases: []
+    title: Up to ,000 in free credits for early stage startups
+    summary: Qualifying startups at Series B or earlier receive up to ,000 in free credits usable across platform resources on Cosmocloud.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T14:00:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to ,000 in free credits to build and deploy applications with No-Code APIs.
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 200000
+            kind: up-to
+        - benefit_id: ben_02
+          description: Dedicated sessions with technical experts offering personalized recommendations.
+          kind: free-service
+          service: Technical recommendations and architecture advice
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: external-verification
+        statement: This program is meant for early stage startups currently at Series B or earlier.
+    roles:
+      terms_authority_entity_id: ent_01m1ym2j76rzjhb2q3bbmh424v
+      access_operator_entity_id: ent_01m1ym2j76rzjhb2q3bbmh424v
+    access:
+      availability: public
+      instructions: Apply via the Google form application link provided on the Cosmocloud startups page.
+      method: form
+      url: https://forms.gle/hiN5rSM8KCFUfceH8
+    terms_url: https://www.cosmocloud.io/startups
+    source_ids:
+      - src_3f2e9b6f2e66de8380152efee6f88baf8522a1500efdff32cb9b507bf69651be
