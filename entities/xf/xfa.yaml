@@ -1,0 +1,54 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1awsktzw38vjb65d13x4xgd
+  slug: xfa
+  slug_aliases: []
+  name: XFA
+  domains:
+    - value: xfa.tech
+      role: primary
+      valid_from: 2026-08-31T03:11:39.000Z
+  category: auth-security
+profile:
+  description: XFA provides device-security software for securing access from work devices.
+  links:
+    site: https://xfa.tech
+sources:
+  - source_id: src_c855f35b038bc64af77e4dd954e54bb730166583b206c5042bf552d8ff9da31b
+    url: https://xfa.tech/usecases/startups
+programs: []
+offers:
+  - offer_id: off_01m1awskv2rqv3nm65zq4et2wq
+    offer_slug: free-xfa-for-two-years-up-to-five-users
+    offer_slug_aliases: []
+    title: Free XFA for two years for up to five users
+    summary: Startups can apply for free access to the XFA solution for two years for up to five users.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-31T03:11:39.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Free access to the XFA solution for two years for up to five users.
+          duration:
+            kind: exact
+            value: P2Y
+          kind: free-service
+          service: XFA solution for up to five users
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: not-machine-evaluable
+        statement: Applicant must be a startup.
+    roles:
+      terms_authority_entity_id: ent_01m1awsktzw38vjb65d13x4xgd
+      access_operator_entity_id: ent_01m1awsktzw38vjb65d13x4xgd
+    access:
+      availability: public
+      method: form
+      url: https://xfa.tech/usecases/startups
+    source_ids:
+      - src_c855f35b038bc64af77e4dd954e54bb730166583b206c5042bf552d8ff9da31b
