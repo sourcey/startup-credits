@@ -1,0 +1,62 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1nybq8qpz6bpzc6r7wtz2ct
+  slug: zitadel
+  slug_aliases: []
+  name: ZITADEL
+  domains:
+    - value: zitadel.com
+      role: primary
+      valid_from: 2026-09-04T10:19:29.478Z
+  category: auth-security
+profile:
+  summary: ZITADEL provides an identity platform for authentication and user management, available as ZITADEL Cloud or self-hosted.
+  description: ZITADEL builds an identity platform so that a startup does not have to, offered as ZITADEL Cloud or self-hosted.
+  links:
+    site: https://zitadel.com
+sources:
+  - source_id: src_25f54f852ab833c8fb3ad75b9903c965461c2b5a37bdfee5ac45f75e18d0df41
+    url: https://zitadel.com/startup
+  - source_id: src_e794754cd80e05b7c556e42bfd926db58ca7e9930434c6eefd7edc6502a7d653
+    url: https://zitadel.com/pricing
+programs: []
+offers:
+  - offer_id: off_01m1nybq8q8qy5kjptseskndca
+    offer_slug: zitadel-startup-program
+    offer_slug_aliases: []
+    title: ZITADEL Startup Program
+    summary: Financial credits toward ZITADEL Cloud plus all Cloud features and direct engineering sessions for the first 12 months of an approved startup's participation.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-04T10:19:29.478Z
+    economics:
+      consideration:
+        kind: variable
+        description: The startup pays the ZITADEL Cloud plan price beyond the financial credits; the public list price is US$100 per month for Pro, with Free at US$0 per month and Enterprise priced custom.
+      benefits:
+        - benefit_id: ben_cloud_features
+          description: Use all features of ZITADEL Cloud
+          kind: other
+        - benefit_id: ben_engineers
+          description: Talk directly to our engineers
+          kind: other
+        - benefit_id: ben_financial_credits
+          description: Financial credits
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Company must have less than $2M in funding, be no more than 2 years old, and be backed by an investor or accelerator.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01m1nybq8qpz6bpzc6r7wtz2ct
+      access_operator_entity_id: ent_01m1nybq8qpz6bpzc6r7wtz2ct
+    access:
+      availability: public
+      method: form
+      url: https://share-eu1.hsforms.com/1JgHRqQyXRXic8xlGUVMzRA2dljbt
+      instructions: Verify eligibility, register and submit the startup program form; ZITADEL assesses the application, sends details by email, and applies credits to the Team account.
+    source_ids:
+      - src_25f54f852ab833c8fb3ad75b9903c965461c2b5a37bdfee5ac45f75e18d0df41
+      - src_e794754cd80e05b7c556e42bfd926db58ca7e9930434c6eefd7edc6502a7d653
