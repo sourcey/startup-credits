@@ -1,0 +1,102 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m2h4d9bcmtt3mbv9ayqs7zq1
+  slug: local-enterprise-offices
+  slug_aliases: []
+  name: Local Enterprise Offices
+  domains:
+    - value: localenterprise.ie
+      role: primary
+      valid_from: 2026-09-14T23:35:33.996Z
+  category: other
+profile:
+  summary: Local Enterprise Offices provide business advice and support through 31 teams across Ireland's local
+    authority network.
+  description: Local Enterprise Offices support entrepreneurs and small businesses in starting and growing
+    businesses in Ireland.
+  links:
+    site: https://www.localenterprise.ie/about-us/
+sources:
+  - source_id: src_8c8f075fea685d2e00e60415249f5d84e50178440c72b759813c6231afb51a7c
+    url: https://www.localenterprise.ie/about-us/
+  - source_id: src_4e8280e4fb117636136e6c0390d353b79050d22a63bc7f985d81e80fa6a2d5d6
+    url: https://www.localenterprise.ie/discover-business-supports/funding-and-grants/financial-supports/priming-grant/
+  - source_id: src_287454ee5aaee720344a27d31251802bfc13449454782a95881f5b6c82a847de
+    url: https://www.localenterprise.ie/discover-business-supports/funding-and-grants/financial-supports/eligibility-criteria/eligibility-criteria.html
+  - source_id: src_8e1fdb0994dfdfe392d30263d7724e43083893b6670b9bcd3bc77cec764d9ed6
+    url: https://www.localenterprise.ie/find-your-local-enterprise-office/
+programs: []
+offers:
+  - offer_id: off_01m2h4d9bcyn3q4nc2n1yq49k1
+    offer_slug: priming-grant
+    offer_slug_aliases: []
+    title: Priming Grant
+    summary: Eligible Irish microenterprises in their first 18 months can apply for a grant covering up to 50% of
+      investment, normally capped at EUR 80,000, with an exceptional EUR 150,000 ceiling.
+    description: Eligible expenditure includes capital, salaries, consultancy, innovation, marketing and
+      overheads. Grants of EUR 50,000 or more, or EUR 100,000 cumulatively over three years, require
+      Enterprise Ireland approval.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-14T23:35:33.996Z
+    economics:
+      benefits:
+        - benefit_id: ben_priming_grant
+          kind: other
+          description: Startup grant capped at the lower of 50% of investment and EUR 80,000. Exceptional projects
+            showing potential to graduate to Enterprise Ireland can receive up to EUR 150,000, still within
+            50%. Employment support is capped at EUR 15,000 per full-time job created, within the overall
+            limits.
+      consideration:
+        kind: variable
+        description: "The applicant must fund the investment not covered by the grant: at least 50%, and more when the
+          applicable monetary cap binds."
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - kind: manual
+            criterion_id: cri_early_local_business
+            reason: external-verification
+            statement: Sole traders, partnerships or limited companies must be within their first 18 months, established,
+              registered and operating in the relevant Local Enterprise Office area, with a demonstrated
+              commercial market, growth potential and potential new jobs.
+          - kind: manual
+            criterion_id: cri_size
+            reason: external-verification
+            statement: Normally at most 10 employees; larger enterprises may qualify under specific criteria through a
+              local advisor. Partner and linked enterprises must be included when assessing size and financial
+              thresholds.
+          - kind: manual
+            criterion_id: cri_sectors
+            reason: external-verification
+            statement: Priority goes to manufacturing and internationally traded services with export potential. Unique
+              tourism services targeting overseas visitors may receive salary support where local displacement
+              and deadweight are avoided.
+          - kind: manual
+            criterion_id: cri_exclusions
+            reason: external-verification
+            statement: Enterprise Ireland, IDA and Udaras na Gaeltachta clients are excluded, as are domestically focused
+              retail, personal, professional and construction services; coal, steel, gambling, adult
+              entertainment, tobacco and unauthorised cannabis products are also ineligible.
+          - kind: manual
+            criterion_id: cri_application
+            reason: external-verification
+            statement: Submit an application before committing to, ordering, purchasing, contracting for or starting any
+              project expenditure or activity. Local assessment must establish commercial viability and avoid
+              unacceptable deadweight, displacement and ineligible activities.
+    roles:
+      terms_authority_entity_id: ent_01m2h4d9bcmtt3mbv9ayqs7zq1
+      access_operator_entity_id: ent_01m2h4d9bcmtt3mbv9ayqs7zq1
+    access:
+      availability: public
+      method: contact
+      url: https://www.localenterprise.ie/find-your-local-enterprise-office/
+      instructions: Find and contact the Local Enterprise Office serving the business location to discuss
+        eligibility and the grant application process.
+    terms_url: https://www.localenterprise.ie/discover-business-supports/funding-and-grants/financial-supports/priming-grant/
+    source_ids:
+      - src_8c8f075fea685d2e00e60415249f5d84e50178440c72b759813c6231afb51a7c
+      - src_4e8280e4fb117636136e6c0390d353b79050d22a63bc7f985d81e80fa6a2d5d6
+      - src_287454ee5aaee720344a27d31251802bfc13449454782a95881f5b6c82a847de
+      - src_8e1fdb0994dfdfe392d30263d7724e43083893b6670b9bcd3bc77cec764d9ed6
