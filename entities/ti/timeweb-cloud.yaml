@@ -1,0 +1,58 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_ekgqm3hfbtgpp6qdyts1zt6615
+  slug: timeweb-cloud
+  slug_aliases: []
+  name: Timeweb Cloud
+  domains:
+  - value: timeweb.cloud
+    role: primary
+    valid_from: '2026-09-16T00:00:00Z'
+  category: hosting-infra
+profile:
+  summary: Timeweb Cloud provides cloud infrastructure and related hosting services.
+  description: Cloud infrastructure and hosting services.
+  links:
+    site: https://timeweb.cloud
+sources:
+- source_id: src_zcz4h05eg0c4hg6sgcg86m42gq
+  url: https://timeweb.cloud/grant
+- source_id: src_jyqastw0jscy4n8mfyert6ek5g
+  url: https://timeweb.cloud/about
+programs: []
+offers:
+- offer_id: off_prc3r2ey6efcrbws5nnkvams79
+  offer_slug: cloud-grant
+  offer_slug_aliases: []
+  title: Timeweb Cloud Grant
+  summary: Eligible Russian businesses and startups can receive service bonuses for
+    Timeweb Cloud for one to six months, subject to the published criteria.
+  lifecycle:
+    status: active
+    effective_from: '2026-09-16T00:00:00Z'
+  economics:
+    consideration:
+      kind: none
+    benefits:
+    - benefit_id: ben_primary
+      description: Timeweb Cloud service bonus grant of RUB 5,000 to RUB 1,000,000
+        for one to six months.
+      kind: other
+  eligibility:
+    rule:
+      kind: manual
+      criterion_id: cri_01
+      statement: Applicant must be a Russian Federation resident legal entity or individual
+        entrepreneur, must be a new Timeweb Cloud customer, and must meet the published
+        exclusions and grant criteria.
+      reason: external-verification
+  roles:
+    terms_authority_entity_id: ent_ekgqm3hfbtgpp6qdyts1zt6615
+    access_operator_entity_id: ent_ekgqm3hfbtgpp6qdyts1zt6615
+  access:
+    availability: public
+    method: form
+    url: https://timeweb.cloud/grant
+  source_ids:
+  - src_zcz4h05eg0c4hg6sgcg86m42gq
+  - src_jyqastw0jscy4n8mfyert6ek5g
