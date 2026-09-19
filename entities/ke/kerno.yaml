@@ -1,0 +1,60 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_xt9d8f5kea6f034wjrsn0q91nq
+  slug: kerno
+  slug_aliases: []
+  name: Kerno
+  domains:
+  - value: kerno.io
+    role: primary
+    valid_from: '2026-09-16T03:35:00Z'
+  category: finance-accounting
+profile:
+  summary: Kerno provides financial operations and reporting tools for growing businesses.
+  description: Financial operations and reporting tools.
+  links:
+    site: https://www.kerno.io
+sources:
+- source_id: src_8pq4m9a03r3pg9ek0fbdssa4ee
+  url: https://www.kerno.io/pricing/
+- source_id: src_1eb2hm5ha9070pnc373ym43542
+  url: https://www.kerno.io/terms/
+programs: []
+offers:
+- offer_id: off_n0k7xgd7w63k7dd6ta0veb04yh
+  offer_slug: startup-discount
+  offer_slug_aliases: []
+  title: Kerno Startup Discount
+  summary: Pre-Series A startups with revenue under USD 2 million in the preceding
+    year can receive 50% off under Kerno’s published terms.
+  lifecycle:
+    status: active
+    effective_from: '2026-09-16T03:35:00Z'
+  economics:
+    consideration:
+      kind: variable
+      description: The customer subscribes to Kerno under the published terms.
+    benefits:
+    - benefit_id: ben_primary
+      description: 50% discount for qualifying pre-Series A startups.
+      kind: discount
+      percentage:
+        kind: exact
+        basis_points: 5000
+  eligibility:
+    rule:
+      kind: manual
+      criterion_id: cri_01
+      statement: Startup must be pre-Series A and have revenue under USD 2 million
+        over the preceding 12 months.
+      reason: external-verification
+  roles:
+    terms_authority_entity_id: ent_xt9d8f5kea6f034wjrsn0q91nq
+    access_operator_entity_id: ent_xt9d8f5kea6f034wjrsn0q91nq
+  access:
+    availability: public
+    method: form
+    url: https://www.kerno.io/pricing/
+  source_ids:
+  - src_8pq4m9a03r3pg9ek0fbdssa4ee
+  - src_1eb2hm5ha9070pnc373ym43542
