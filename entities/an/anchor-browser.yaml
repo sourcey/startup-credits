@@ -1,0 +1,66 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m2gqhzrm4kpgh4apyj9zh0py
+  slug: anchor-browser
+  slug_aliases: []
+  name: Anchor Browser
+  domains:
+    - value: anchorbrowser.io
+      role: primary
+      valid_from: 2026-09-14T20:00:00.000Z
+  category: hosting-infra
+profile:
+  summary: Cloud browser infrastructure for AI agents, providing hosted browser sessions with anti-detection, captcha solving, proxies, and identity management.
+  description: Anchor Browser provides managed cloud browser infrastructure that lets AI agents and automation products run reliable workflows on real websites.
+  links:
+    site: https://anchorbrowser.io/
+sources:
+  - source_id: src_7c136e1938f51c26ecbef513c489b3060053d3b9326c5014fe1a04e38e417a2c
+    url: https://anchorbrowser.io/startup-program
+programs:
+  - program_id: prg_01m2gqhzrv7f2m687w6jay6enr
+    program_slug: anchor-startup-program
+    program_slug_aliases: []
+    title: Anchor Startup Program
+    summary: Production-stage startups building on browser infrastructure get six months of free Growth tier access with 24,000 credits and a dedicated Slack channel.
+    source_ids:
+      - src_7c136e1938f51c26ecbef513c489b3060053d3b9326c5014fe1a04e38e417a2c
+offers:
+  - offer_id: off_01m2gqhzrvg4sthg5mr4q6g6ek
+    program_id: prg_01m2gqhzrv7f2m687w6jay6enr
+    offer_slug: six-months-free-growth-tier
+    offer_slug_aliases: []
+    title: Six months of free Growth tier with 24,000 credits
+    summary: Accepted startups receive 24,000 credits and full Growth tier access free for six months, then move to the Growth tier at USD 24,000 per year.
+    description: Growth tier access covers extra stealth anti-detection and fingerprint protection, automatic captcha solving, session persistence and identity management, custom proxy and multi-region support across the US, EU, Asia, and Australia, up to 200 concurrent browsers, SOC 2 Type II, ISO 27001 and GDPR compliance, and a dedicated Slack channel with the founders and engineering team. Teams may opt out after the first month.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-14T20:00:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 24,000 credits and full Growth tier access free for the first six months
+          kind: free-service
+          service: Anchor Browser Growth tier including 24,000 credits
+          duration:
+            kind: exact
+            value: P6M
+      consideration:
+        kind: variable
+        description: After the six free months the Growth tier is USD 24,000 per year, which includes 24,000 credits every year; teams may opt out after the first month.
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: external-verification
+        statement: Startups that already have a product in production, active customers, and a clear browser automation use case, and that expect to scale to a significant volume of monthly browser tasks.
+    roles:
+      terms_authority_entity_id: ent_01m2gqhzrm4kpgh4apyj9zh0py
+      access_operator_entity_id: ent_01m2gqhzrm4kpgh4apyj9zh0py
+    access:
+      availability: public
+      method: contact
+      instructions: Use the Get started call to action on the Anchor Startup Program page to reach the Anchor team and apply.
+      url: https://anchorbrowser.io/startup-program
+    source_ids:
+      - src_7c136e1938f51c26ecbef513c489b3060053d3b9326c5014fe1a04e38e417a2c
