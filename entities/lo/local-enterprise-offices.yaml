@@ -1,0 +1,64 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_nzxb7z3n1eph8ecaxk51114ppe
+  slug: local-enterprise-offices
+  slug_aliases: []
+  name: Local Enterprise Offices
+  domains:
+  - value: localenterprise.ie
+    role: primary
+    valid_from: '2026-09-15T23:40:00Z'
+  category: finance-accounting
+profile:
+  summary: Local Enterprise Offices provide business advice, training, and financial
+    supports to Irish microenterprises.
+  description: Irish local enterprise support offices for small businesses.
+  links:
+    site: https://www.localenterprise.ie/
+sources:
+- source_id: src_7yg7z5mt5ynfcphxs70ss7pf2v
+  url: https://www.localenterprise.ie/about-us/
+- source_id: src_aypwz2zprnzsfnk2wdg4eg5zpm
+  url: https://www.localenterprise.ie/discover-business-supports/funding-and-grants/financial-supports/priming-grant/
+- source_id: src_jas73wx5gtvb616hmzx03pcg79
+  url: https://www.localenterprise.ie/discover-business-supports/funding-and-grants/financial-supports/eligibility-criteria/eligibility-criteria.html
+programs: []
+offers:
+- offer_id: off_rse5pspp2zmxkeqkrbqn5tzn1j
+  offer_slug: priming-grant
+  offer_slug_aliases: []
+  title: Priming Grant
+  summary: Eligible microenterprises can receive grant support for investment during
+    their first 18 months, subject to local review and co-funding.
+  lifecycle:
+    status: active
+    effective_from: '2026-09-15T23:40:00Z'
+  economics:
+    consideration:
+      kind: variable
+      description: Applicants must provide co-funding and satisfy local review and
+        sector requirements.
+    benefits:
+    - benefit_id: ben_primary
+      description: Grant support of up to 50% of investment, normally capped at EUR
+        80,000 and exceptionally up to EUR 150,000.
+      kind: other
+  eligibility:
+    rule:
+      kind: manual
+      criterion_id: cri_01
+      statement: Eligible microenterprises generally within their first 18 months
+        must meet the published Priming Grant criteria, including local review, sector
+        restrictions, and applicant co-funding.
+      reason: external-verification
+  roles:
+    terms_authority_entity_id: ent_nzxb7z3n1eph8ecaxk51114ppe
+    access_operator_entity_id: ent_nzxb7z3n1eph8ecaxk51114ppe
+  access:
+    availability: public
+    method: contact
+    url: https://www.localenterprise.ie/discover-business-supports/funding-and-grants/financial-supports/priming-grant/
+  source_ids:
+  - src_7yg7z5mt5ynfcphxs70ss7pf2v
+  - src_aypwz2zprnzsfnk2wdg4eg5zpm
+  - src_jas73wx5gtvb616hmzx03pcg79
