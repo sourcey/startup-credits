@@ -1,0 +1,59 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_dpk7279wxnd2dmcwt9gen293kp
+  slug: seidat
+  slug_aliases: []
+  name: Seidat
+  domains:
+  - value: seidat.com
+    role: primary
+    valid_from: '2026-09-16T01:10:00Z'
+  category: productivity
+profile:
+  summary: Seidat provides collaborative presentation and visual communication software
+    for teams.
+  description: Collaborative presentation and visual communication software.
+  links:
+    site: https://www.seidat.com
+sources:
+- source_id: src_fc2cbc4e3q6z0f63kep1qe3w13
+  url: https://www.seidat.com/startup-program/
+programs: []
+offers:
+- offer_id: off_c7a75ms4ck78jby4250k0fyzmv
+  offer_slug: startup-program
+  offer_slug_aliases: []
+  title: Seidat Startup Program
+  summary: Eligible new startups can access discounted Seidat Startup Core pricing
+    with annual billing and startup terms for the first three years.
+  lifecycle:
+    status: active
+    effective_from: '2026-09-16T01:10:00Z'
+  economics:
+    consideration:
+      kind: variable
+      description: Annual billing and the published Startup Core subscription price
+        plus per-user pricing apply.
+    benefits:
+    - benefit_id: ben_primary
+      description: Startup Core at EUR 75 per month plus EUR 5 per user, versus the
+        published EUR 299 per month base price, with discounted pricing for the first
+        three years.
+      kind: other
+  eligibility:
+    rule:
+      kind: manual
+      criterion_id: cri_01
+      statement: Must be an eligible new startup meeting Seidat’s published Startup
+        Program requirements; the source contains a turnover-threshold inconsistency
+        requiring confirmation.
+      reason: external-verification
+  roles:
+    terms_authority_entity_id: ent_dpk7279wxnd2dmcwt9gen293kp
+    access_operator_entity_id: ent_dpk7279wxnd2dmcwt9gen293kp
+  access:
+    availability: public
+    method: form
+    url: https://www.seidat.com/startup-program/
+  source_ids:
+  - src_fc2cbc4e3q6z0f63kep1qe3w13
