@@ -1,0 +1,66 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_29e6b2dj0azvaj6rv5s6yfjspm
+  slug: cms-austria
+  slug_aliases: []
+  name: CMS Austria
+  domains:
+  - value: cms.law
+    role: primary
+    valid_from: '2026-09-16T03:50:00Z'
+  category: legal-compliance
+profile:
+  summary: CMS Austria provides legal services and startup support through its equIP
+    programme.
+  description: Legal services and startup support in Austria.
+  links:
+    site: https://cms.law/en/aut
+sources:
+- source_id: src_th5zswxrtq8d0haacxg1j6t8q8
+  url: https://cms.law/en/aut/insight/start-ups/cms-equip-membership
+- source_id: src_jd688rjgsygm4n45b2cerzpgbn
+  url: https://cms.law/en/aut/footer-configuration/legal-information
+programs: []
+offers:
+- offer_id: off_pprvcegn44nzj3kpth25eyaxsp
+  offer_slug: equip-membership
+  offer_slug_aliases: []
+  title: CMS equIP Austria
+  summary: Accepted startup members receive 50% off standard hourly legal rates for
+    three years, subject to application and acceptance.
+  lifecycle:
+    status: active
+    effective_from: '2026-09-16T03:50:00Z'
+  economics:
+    consideration:
+      kind: variable
+      description: Accepted members engage CMS Austria for legal services under the
+        published programme terms.
+    benefits:
+    - benefit_id: ben_primary
+      description: 50% off standard hourly legal rates for three years, up to the
+        published annual discount limit.
+      kind: discount
+      percentage:
+        kind: exact
+        basis_points: 5000
+      duration:
+        kind: exact
+        value: P3Y
+  eligibility:
+    rule:
+      kind: manual
+      criterion_id: cri_01
+      statement: Startup must apply to and be accepted into CMS equIP Austria under
+        the published membership criteria.
+      reason: external-verification
+  roles:
+    terms_authority_entity_id: ent_29e6b2dj0azvaj6rv5s6yfjspm
+    access_operator_entity_id: ent_29e6b2dj0azvaj6rv5s6yfjspm
+  access:
+    availability: public
+    method: form
+    url: https://cms.law/en/aut/insight/start-ups/cms-equip-membership
+  source_ids:
+  - src_th5zswxrtq8d0haacxg1j6t8q8
+  - src_jd688rjgsygm4n45b2cerzpgbn
