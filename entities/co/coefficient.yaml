@@ -1,0 +1,62 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_gyd19v57p9dd3ktbj7kfwjggeg
+  slug: coefficient
+  slug_aliases: []
+  name: Coefficient
+  domains:
+  - value: coefficient.io
+    role: primary
+    valid_from: '2026-09-16T02:15:00Z'
+  category: productivity
+profile:
+  summary: Coefficient provides spreadsheet-based data analysis and business intelligence
+    tools.
+  description: Spreadsheet-based data analysis and business intelligence tools.
+  links:
+    site: https://coefficient.io
+sources:
+- source_id: src_zdg13sjzvxvh1x4260bn52b5b8
+  url: https://coefficient.io/pricing
+- source_id: src_10rtshr6p308d7y3bgzs5nmzyz
+  url: https://coefficient.io/startup
+programs: []
+offers:
+- offer_id: off_r70zg31ww8e1anw255c1kveg7h
+  offer_slug: coefficient-for-startups
+  offer_slug_aliases: []
+  title: Coefficient for Startups
+  summary: Eligible early-stage startups can receive up to 50% off in the first year,
+    subject to the published fundraising and team-size criteria.
+  lifecycle:
+    status: active
+    effective_from: '2026-09-16T02:15:00Z'
+  economics:
+    consideration:
+      kind: variable
+      description: The applicant purchases a qualifying Coefficient plan under the
+        startup pricing terms.
+    benefits:
+    - benefit_id: ben_primary
+      description: Up to 50% off during the first year.
+      kind: discount
+      percentage:
+        kind: up-to
+        basis_points: 5000
+  eligibility:
+    rule:
+      kind: manual
+      criterion_id: cri_01
+      statement: Startup must have raised no more than USD 20 million, be bootstrapped
+        or in an eligible funding stage, and have no more than 25 full-time employees.
+      reason: external-verification
+  roles:
+    terms_authority_entity_id: ent_gyd19v57p9dd3ktbj7kfwjggeg
+    access_operator_entity_id: ent_gyd19v57p9dd3ktbj7kfwjggeg
+  access:
+    availability: public
+    method: form
+    url: https://coefficient.io/startup
+  source_ids:
+  - src_zdg13sjzvxvh1x4260bn52b5b8
+  - src_10rtshr6p308d7y3bgzs5nmzyz
