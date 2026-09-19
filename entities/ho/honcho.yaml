@@ -1,0 +1,57 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_3916vn98ypm4c7nqk5f4rt6qb7
+  slug: honcho
+  slug_aliases: []
+  name: Honcho
+  domains:
+  - value: honcho.dev
+    role: primary
+    valid_from: '2026-09-16T02:45:00Z'
+  category: databases
+profile:
+  summary: Honcho provides developer tools for building and managing AI agent memory
+    and context.
+  description: Developer tools for AI agent memory and context.
+  links:
+    site: https://honcho.dev
+sources:
+- source_id: src_5e9eezcxhae4wdetdqy2y0hfjm
+  url: https://honcho.dev/
+programs: []
+offers:
+- offer_id: off_782swyat46v53b7rf6mc2ad266
+  offer_slug: startup-offer
+  offer_slug_aliases: []
+  title: Honcho Startup Offer
+  summary: Startups that have raised less than USD 5 million can apply for credits,
+    subsidized pricing, and integration support.
+  lifecycle:
+    status: active
+    effective_from: '2026-09-16T02:45:00Z'
+  economics:
+    consideration:
+      kind: unknown
+      description: The public source does not establish separate monetary consideration
+        for the startup offer.
+    benefits:
+    - benefit_id: ben_primary
+      description: USD 1,000 in credits, 12 months of subsidized pricing, and integration
+        support.
+      kind: other
+  eligibility:
+    rule:
+      kind: manual
+      criterion_id: cri_01
+      statement: Startup must have raised less than USD 5 million and be accepted
+        through Honcho’s application process.
+      reason: external-verification
+  roles:
+    terms_authority_entity_id: ent_3916vn98ypm4c7nqk5f4rt6qb7
+    access_operator_entity_id: ent_3916vn98ypm4c7nqk5f4rt6qb7
+  access:
+    availability: public
+    method: form
+    url: https://honcho.dev/
+  source_ids:
+  - src_5e9eezcxhae4wdetdqy2y0hfjm
