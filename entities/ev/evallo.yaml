@@ -1,0 +1,65 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1bqrqfqhdn88er13vnkwdz2
+  slug: evallo
+  slug_aliases: []
+  name: Evallo
+  domains:
+    - value: evallo.ai
+      role: primary
+      valid_from: 2026-08-31T10:57:00Z
+  category: productivity
+profile:
+  description: Evallo provides scheduling, invoicing, CRM, prepwork, and operational tools for tutoring businesses and independent tutors.
+  links:
+    site: https://evallo.ai
+sources:
+  - source_id: src_7131cea25dbafe04e04aee018679bf46e377ee1da17911d413bd9aab9cbb350b
+    url: https://evallo.ai/resources/about-us
+  - source_id: src_a35d56b8a6fb74e0c3aad6e92c193f914acb12231da3c93410cb6a43c97c9cbf
+    url: https://evallo.ai/evallo-for-startups
+programs:
+  - program_id: prg_01m1bqrqfqe905endz7yvs0ebz
+    program_slug: evallo-for-startups
+    program_slug_aliases: []
+    title: Evallo for Startups
+    summary: Evallo gives individual tutors and tutoring businesses full platform access at no cost for one year.
+    source_ids:
+      - src_a35d56b8a6fb74e0c3aad6e92c193f914acb12231da3c93410cb6a43c97c9cbf
+offers:
+  - offer_id: off_01m1bqrqfq5a7g844mybdp4rdb
+    program_id: prg_01m1bqrqfqe905endz7yvs0ebz
+    offer_slug: twelve-months-free-full-platform
+    offer_slug_aliases: []
+    title: Twelve months free full-platform access
+    summary: Individual tutors and tutoring businesses can use the complete Evallo platform free for 12 months, with no feature locks, per-user pricing, hidden fees, or forced upgrades.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-31T10:57:00Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_01
+          description: Full access to the Evallo platform at no cost for 12 months
+          kind: free-service
+          service: Evallo platform
+          duration:
+            kind: exact
+            value: P1Y
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_01
+        statement: The offer is for individual tutors and tutoring businesses.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01m1bqrqfqhdn88er13vnkwdz2
+      access_operator_entity_id: ent_01m1bqrqfqhdn88er13vnkwdz2
+    access:
+      availability: public
+      method: form
+      url: https://evallo.ai/evallo-for-startups
+    terms_url: https://evallo.ai/evallo-for-startups
+    source_ids:
+      - src_a35d56b8a6fb74e0c3aad6e92c193f914acb12231da3c93410cb6a43c97c9cbf
