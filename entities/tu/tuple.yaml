@@ -1,0 +1,82 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1vzf8n7m1yt9et1fn7889hx
+  slug: tuple
+  slug_aliases: []
+  name: Tuple
+  domains:
+    - value: tuple.app
+      role: primary
+      valid_from: 2026-09-06T18:25:12.873Z
+  category: devtools-other
+profile:
+  summary: Tuple provides a remote pair programming app with screen sharing, audio, and shared control for developers.
+  description: Tuple makes a remote pair programming app for developers.
+  links:
+    site: https://tuple.app/
+sources:
+  - source_id: src_daf0a33591a7329aba6d731f3c70ca95500c865ef2bd68b0b2884e787febd8bd
+    url: https://tuple.app/
+  - source_id: src_88d02abbb847ff229a2e388fab84d32336221b364a20171c3305f05a93af46e2
+    url: https://tuple.app/pricing
+  - source_id: src_85642afa1084dae0f41bd2cfdb96536fcb0841f73b96b3774ef22d525c1f5af1
+    url: https://tuple.app/startups
+  - source_id: src_742e3fa99921500bc8fe2ed90d68b8d34a80634aa131bc14b448745d7fc3ef03
+    url: https://tuple.app/terms
+programs: []
+offers:
+  - offer_id: off_01m1vzf8n97syakfpyc73qkncc
+    offer_slug: startup-plan-discount
+    offer_slug_aliases: []
+    title: Tuple Startup Plan
+    summary: Startups less than two years old with fewer than 50 employees can apply for 90% off their first year of Tuple. Formation documents are required with the application.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-06T18:25:12.873Z
+    economics:
+      consideration:
+        kind: variable
+        description: A paid Tuple subscription at the discounted rate.
+      benefits:
+        - benefit_id: ben_startup_discount
+          kind: discount
+          description: 90% off a Tuple subscription for the first year.
+          applies_to: Tuple subscription
+          percentage:
+            kind: exact
+            basis_points: 9000
+          duration:
+            kind: exact
+            value: P1Y
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_startup_age
+            kind: manual
+            reason: external-verification
+            statement: The company must be less than two years old.
+          - criterion_id: cri_employee_count
+            kind: predicate
+            fact: company.employee_count
+            operator: lt
+            value:
+              type: number
+              value: 50
+            statement: The company must have fewer than 50 employees.
+          - criterion_id: cri_formation_documents
+            kind: manual
+            reason: external-verification
+            statement: The application requires formation documents that validate the startup name and founding date, along with the startup name, email, founding age, and headcount.
+    roles:
+      terms_authority_entity_id: ent_01m1vzf8n7m1yt9et1fn7889hx
+      access_operator_entity_id: ent_01m1vzf8n7m1yt9et1fn7889hx
+    access:
+      availability: public
+      method: form
+      url: https://tuple.app/startups
+    terms_url: https://tuple.app/terms
+    source_ids:
+      - src_88d02abbb847ff229a2e388fab84d32336221b364a20171c3305f05a93af46e2
+      - src_85642afa1084dae0f41bd2cfdb96536fcb0841f73b96b3774ef22d525c1f5af1
+      - src_742e3fa99921500bc8fe2ed90d68b8d34a80634aa131bc14b448745d7fc3ef03
