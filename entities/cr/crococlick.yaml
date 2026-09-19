@@ -1,0 +1,70 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_y1ht21gygvqqqpznybtv07mrd3
+  slug: crococlick
+  slug_aliases: []
+  name: CrocoClick
+  domains:
+  - value: crococlick.com
+    role: primary
+    valid_from: '2026-09-16T02:45:00Z'
+  category: marketing
+profile:
+  summary: CrocoClick provides marketing and customer engagement tools for businesses.
+  description: Marketing and customer engagement software.
+  links:
+    site: https://crococlick.com
+sources:
+- source_id: src_62a5xzn6awp785zd8zafy9dpgd
+  url: https://help.crococlick.com/articles/0820414-crococlick-startup-program
+programs: []
+offers:
+- offer_id: off_55zmqvjmeawhxcvx4nmaggrb3p
+  offer_slug: young-enterprise
+  offer_slug_aliases: []
+  title: Young Enterprise Program
+  summary: Qualifying companies under 12 months old can receive discounted unlimited
+    CrocoClick access for three years.
+  lifecycle:
+    status: active
+    effective_from: '2026-09-16T02:45:00Z'
+  economics:
+    consideration:
+      kind: variable
+      description: Applicants must have no prior paid CrocoClick subscription and
+        purchase the service under the discounted terms.
+    benefits:
+    - benefit_id: ben_y1
+      description: 86% off unlimited CrocoClick access in year one.
+      kind: discount
+      percentage:
+        kind: exact
+        basis_points: 8600
+    - benefit_id: ben_y2
+      description: 70% off unlimited CrocoClick access in year two.
+      kind: discount
+      percentage:
+        kind: exact
+        basis_points: 7000
+    - benefit_id: ben_y3
+      description: 50% off unlimited CrocoClick access in year three.
+      kind: discount
+      percentage:
+        kind: exact
+        basis_points: 5000
+  eligibility:
+    rule:
+      kind: manual
+      criterion_id: cri_01
+      statement: Company must be under 12 months old, have less than EUR 25,000 revenue,
+        and have no previous paid CrocoClick subscription.
+      reason: external-verification
+  roles:
+    terms_authority_entity_id: ent_y1ht21gygvqqqpznybtv07mrd3
+    access_operator_entity_id: ent_y1ht21gygvqqqpznybtv07mrd3
+  access:
+    availability: public
+    method: form
+    url: https://help.crococlick.com/articles/0820414-crococlick-startup-program
+  source_ids:
+  - src_62a5xzn6awp785zd8zafy9dpgd
