@@ -1,0 +1,64 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m2qha8xy47qp9gty0v2nwmqg
+  slug: railway
+  slug_aliases: []
+  name: Railway
+  domains:
+    - value: railway.com
+      role: primary
+      valid_from: 2026-09-17T11:19:00Z
+    - value: railway.app
+      role: alias
+      valid_from: 2020-01-01T00:00:00Z
+  category: hosting-infra
+profile:
+  summary: Railway is a platform-as-a-service that provides instant infrastructure deployment from GitHub with no configuration.
+  description: Railway provides instant deployment infrastructure with GitHub integration, ephemeral environments, and managed databases with automatic scaling.
+  links:
+    site: https://railway.com
+sources:
+  - source_id: src_8f4e2a3b6c9d1e5f7a8b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4
+    url: https://railway.com/changelog/2024-04-26-startup-program
+programs:
+  - program_id: prg_01m2qha8xy8gx18bkm4q3zp5jh
+    program_slug: railway-for-startups
+    program_slug_aliases: []
+    title: Railway for Startups
+    summary: Railway provides startup credits to early-stage startups and founders building on their platform through a structured credit program.
+    source_ids:
+      - src_8f4e2a3b6c9d1e5f7a8b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4
+offers:
+  - offer_id: off_01m2qha8xya5n2zd7gw8rkt3pv
+    program_id: prg_01m2qha8xy8gx18bkm4q3zp5jh
+    offer_slug: railway-startup-credits
+    offer_slug_aliases: []
+    title: Railway startup credits
+    summary: Early-stage startups can receive credits through the Railway Startup Program to deploy and scale applications.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-17T11:19:00Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The public program page does not specify monetary consideration required from applicants.
+      benefits:
+        - benefit_id: ben_primary
+          description: USD 5000 in startup credits
+          kind: other
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: external-verification
+        statement: Applicants must have between USD 2M and 25M in outside funding, be founded in 2020 or later, and have less than USD 100 in lifetime platform spend.
+    roles:
+      terms_authority_entity_id: ent_01m2qha8xy47qp9gty0v2nwmqg
+      access_operator_entity_id: ent_01m2qha8xy47qp9gty0v2nwmqg
+    access:
+      availability: public
+      method: contact
+      url: https://railway.com/changelog/2024-04-26-startup-program
+      instructions: Inquire through Railway support or the community forum citing the Railway Startup Program.
+    source_ids:
+      - src_8f4e2a3b6c9d1e5f7a8b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4
