@@ -1,0 +1,59 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_xc34gaz89tymfy8c0cq7q9zap0
+  slug: golioth
+  slug_aliases: []
+  name: Golioth
+  domains:
+  - value: golioth.io
+    role: primary
+    valid_from: '2026-09-16T00:10:00Z'
+  category: apis-integration
+profile:
+  summary: Golioth provides cloud tools for connected products and IoT device management.
+  description: Cloud tools for connected products and IoT devices.
+  links:
+    site: https://golioth.io
+sources:
+- source_id: src_vs55tpkrwnc21s0r2x05jech39
+  url: https://golioth.io/pricing
+- source_id: src_n5ca8d5sqkb207zx7q7fh27740
+  url: https://golioth.io/product
+programs: []
+offers:
+- offer_id: off_66e5fnx5cqqwkw0ed176m8whhs
+  offer_slug: startup-credits
+  offer_slug_aliases: []
+  title: Golioth Startup Credits
+  summary: Qualified early-stage startups and nonprofits can inquire about Golioth
+    credits; the public pages do not state a fixed amount or duration.
+  lifecycle:
+    status: active
+    effective_from: '2026-09-16T00:10:00Z'
+  economics:
+    consideration:
+      kind: unknown
+      description: The public pages do not state separate consideration for the startup
+        credit inquiry.
+    benefits:
+    - benefit_id: ben_primary
+      description: Startup credits for qualified early-stage startups and nonprofits;
+        amount and duration are determined through inquiry.
+      kind: other
+  eligibility:
+    rule:
+      kind: manual
+      criterion_id: cri_01
+      statement: Must be a qualified early-stage startup or nonprofit and inquire
+        through Golioth.
+      reason: external-verification
+  roles:
+    terms_authority_entity_id: ent_xc34gaz89tymfy8c0cq7q9zap0
+    access_operator_entity_id: ent_xc34gaz89tymfy8c0cq7q9zap0
+  access:
+    availability: public
+    method: contact
+    url: https://golioth.io/pricing
+  source_ids:
+  - src_vs55tpkrwnc21s0r2x05jech39
+  - src_n5ca8d5sqkb207zx7q7fh27740
