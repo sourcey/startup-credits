@@ -1,0 +1,124 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m2gjra3d2k897am5ry9k44wq
+  slug: venturewell
+  slug_aliases: []
+  name: VentureWell
+  domains:
+    - value: venturewell.org
+      role: primary
+      valid_from: 2026-09-14T18:27:00.848Z
+  category: other
+profile:
+  summary: VentureWell supports early-stage science and technology ventures with funding,
+    entrepreneurship training, mentorship, and networks.
+  description: VentureWell supports science and technology innovators as they develop inventions into
+    ventures with social or environmental impact.
+  links:
+    site: https://venturewell.org/
+sources:
+  - source_id: src_c8a802af03f6ffcde01d20345b1b54fbeb2e4689391d037625094720750f3f98
+    url: https://venturewell.org/e-team-program/
+  - source_id: src_9af4dc8757c00b84744e017ff2631c631a6be11cca718e0ab0360adb01c6e225
+    url: https://venturewell.org/student-grants/e-team-guidelines/
+  - source_id: src_3d3f4f1cac5e3f1c5007a6b3585dadad2b0c35f2c179c4f4497a206410a651de
+    url: https://venturewell.org/student-grants/e-team-program-frequently-asked-questions/
+programs:
+  - program_id: prg_01m2gjra3f2rtv583hj1tm21en
+    program_slug: e-team-program
+    program_slug_aliases: []
+    title: E-Team Program
+    summary: Funding and entrepreneurship training for student-led science and engineering ventures
+      seeking to commercialize scalable innovations.
+    source_ids:
+      - src_c8a802af03f6ffcde01d20345b1b54fbeb2e4689391d037625094720750f3f98
+      - src_9af4dc8757c00b84744e017ff2631c631a6be11cca718e0ab0360adb01c6e225
+offers:
+  - offer_id: off_01m2gjra3fqp59tbfcxj2pwr1k
+    program_id: prg_01m2gjra3f2rtv583hj1tm21en
+    offer_slug: pioneer-winter-2027-student-venture-grant
+    offer_slug_aliases: []
+    title: Pioneer grant and training for student ventures — Winter 2027
+    summary: Eligible student-led ventures can receive USD 5,000 in non-dilutive Pioneer funding through
+      their U.S. institution and required entrepreneurship training. Apply by September 29, 2026.
+    description: Pioneer is the first stage of the E-Team Program. The Winter 2027 application window
+      opened July 27, 2026. Applications close September 29, 2026 at 11:59 p.m. Eastern Time. The
+      required workshop takes place January 14–15, 2027 in Miami, Florida. Selection is competitive;
+      a later Propel grant requires a separate application after successful Pioneer participation.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-14T18:27:00.848Z
+      effective_until: 2026-09-30T03:59:00Z
+    economics:
+      consideration:
+        kind: variable
+        description: There is no registration fee for the required workshop. Teams use a portion of the USD
+          5,000 grant for required workshop travel expenses; the remainder can support product
+          development.
+      benefits:
+        - benefit_id: ben_01
+          kind: other
+          description: USD 5,000 in non-dilutive Pioneer grant funding, awarded to and administered by the
+            team’s U.S. college or university, rather than paid directly to the team, individual, or
+            venture.
+        - benefit_id: ben_02
+          kind: free-service
+          service: Pioneer entrepreneurship training workshop
+          description: Required entrepreneurship training to help the student venture discover a market and
+            possible commercialization pathways; the workshop has no registration fee.
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            statement: A student-led team must include at least two active, enrolled college or university
+              students committed to developing and commercializing the technology. Students must be
+              enrolled at the beginning of the grant period.
+            reason: external-verification
+          - criterion_id: cri_02
+            kind: manual
+            statement: Grant funding is awarded only to U.S.-based colleges and universities. U.S.-based teams
+              may include international students or serve international markets; independent
+              individuals do not qualify.
+            reason: external-verification
+          - criterion_id: cri_03
+            kind: manual
+            statement: The venture must develop a science or engineering innovation with social or environmental
+              impact, scalability, and a path to commercialization. Pure research, one-off projects,
+              and apps without strong innovation or impact do not qualify.
+            reason: external-verification
+          - criterion_id: cri_04
+            kind: manual
+            statement: The team needs a supporting Principal Investigator and verification of support from its
+              university administrative contact and department chair. Students must lead the
+              venture’s development.
+            reason: external-verification
+          - criterion_id: cri_05
+            kind: manual
+            statement: New teams enter the E-Team Program through Pioneer. Funded team members must attend the
+              January 14–15, 2027 Pioneer workshop in Miami and contribute to the final grant
+              report.
+            reason: external-verification
+          - criterion_id: cri_06
+            kind: manual
+            statement: Applications must be submitted through the online portal by September 29, 2026 at 11:59
+              p.m. Eastern Time. Required materials include a narrative, support letter, team
+              resumes, and institutional support verification.
+            reason: external-verification
+    roles:
+      terms_authority_entity_id: ent_01m2gjra3d2k897am5ry9k44wq
+      access_operator_entity_id: ent_01m2gjra3d2k897am5ry9k44wq
+    access:
+      availability: public
+      method: form
+      url: https://oms.aws.venturewell.org/go/pioneer-winter-2027
+      instructions: Create or sign in to a VentureWell account and submit the Pioneer application for
+        Winter 2027. Grant funds are administered by the team’s institution, and required workshop
+        expenses must be covered before remaining funds support product development. No
+        institutional overhead may be taken from the grant.
+    source_ids:
+      - src_c8a802af03f6ffcde01d20345b1b54fbeb2e4689391d037625094720750f3f98
+      - src_9af4dc8757c00b84744e017ff2631c631a6be11cca718e0ab0360adb01c6e225
+      - src_3d3f4f1cac5e3f1c5007a6b3585dadad2b0c35f2c179c4f4497a206410a651de
+    terms_url: https://venturewell.org/student-grants/e-team-program-frequently-asked-questions/
