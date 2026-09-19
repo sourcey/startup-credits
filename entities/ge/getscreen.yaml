@@ -1,0 +1,58 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_zakfmge205tfmh8fwk24dwrq01
+  slug: getscreen
+  slug_aliases: []
+  name: Getscreen.me
+  domains:
+  - value: getscreen.me
+    role: primary
+    valid_from: '2026-09-16T03:45:00Z'
+  category: productivity
+profile:
+  summary: Getscreen.me provides remote desktop access and support tools for businesses.
+  description: Remote desktop access and support tools.
+  links:
+    site: https://getscreen.me
+sources:
+- source_id: src_fwqaj9z2ds2937bds2ey8yrm0q
+  url: https://getscreen.me/en/pricing/discounts/
+programs: []
+offers:
+- offer_id: off_bvyzx2rm39pxb28846ez4h7b0a
+  offer_slug: startup-discount
+  offer_slug_aliases: []
+  title: Startup Discount
+  summary: Private commercial companies under five years old can receive up to 25%
+    off Getscreen.me business subscriptions.
+  lifecycle:
+    status: active
+    effective_from: '2026-09-16T03:45:00Z'
+  economics:
+    consideration:
+      kind: variable
+      description: The customer purchases a qualifying Getscreen.me business subscription
+        under the published terms.
+    benefits:
+    - benefit_id: ben_primary
+      description: Up to 25% off business subscriptions.
+      kind: discount
+      percentage:
+        kind: up-to
+        basis_points: 2500
+  eligibility:
+    rule:
+      kind: manual
+      criterion_id: cri_01
+      statement: Must be a private commercial company less than five years old meeting
+        the published startup discount conditions.
+      reason: external-verification
+  roles:
+    terms_authority_entity_id: ent_zakfmge205tfmh8fwk24dwrq01
+    access_operator_entity_id: ent_zakfmge205tfmh8fwk24dwrq01
+  access:
+    availability: public
+    method: form
+    url: https://getscreen.me/en/pricing/discounts/
+  source_ids:
+  - src_fwqaj9z2ds2937bds2ey8yrm0q
