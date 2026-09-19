@@ -1,0 +1,69 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m2gzr3mxd2g7fy54dppvz5v1
+  slug: fly-io
+  slug_aliases: []
+  name: Fly.io
+  domains:
+    - value: fly.io
+      role: primary
+      valid_from: 2026-09-14T22:12:00.000Z
+  category: hosting-infra
+profile:
+  summary: Public cloud platform for running full-stack apps on microVMs close to users.
+  description: Fly.io is a public cloud that runs application workloads on Firecracker microVMs across global regions, with usage-based billing for compute, storage, and related services.
+  links:
+    site: https://fly.io
+sources:
+  - source_id: src_8cd574f52be35e0688879a7aa51f0106ea4b2b6f1f276daf8dd06081f1bbac67
+    url: https://fly.io/pricing/
+programs:
+  - program_id: prg_01m2gzr3myh0n61n7m9vzagc9n
+    program_slug: fly-io-startup-program
+    program_slug_aliases: []
+    title: Fly.io Startup Program
+    summary: Fly.io Startup Program gives eligible early-stage companies up to $15,000 in platform credit plus a direct line to the Fly.io team.
+    source_ids:
+      - src_8cd574f52be35e0688879a7aa51f0106ea4b2b6f1f276daf8dd06081f1bbac67
+offers:
+  - offer_id: off_01m2gzr3myakek0a89sedpmz2r
+    program_id: prg_01m2gzr3myh0n61n7m9vzagc9n
+    offer_slug: up-to-15000-startup-credit
+    offer_slug_aliases: []
+    title: Up to $15,000 Startup Credit
+    summary: Eligible early-stage companies can receive up to $15,000 in Fly.io platform credit and a direct line to the Fly.io team by applying through the pricing page startup program contact.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-14T22:12:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to $15,000 in Fly.io platform credit for eligible early-stage companies.
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 1500000
+            kind: up-to
+        - benefit_id: ben_02
+          description: Direct line to the Fly.io team for accepted startup program participants.
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_01
+        reason: vendor-discretion
+        statement: Must be an eligible early-stage company as determined by Fly.io when reviewing the startup program application.
+    roles:
+      terms_authority_entity_id: ent_01m2gzr3mxd2g7fy54dppvz5v1
+      access_operator_entity_id: ent_01m2gzr3mxd2g7fy54dppvz5v1
+    access:
+      availability: public
+      method: contact
+      instructions: Open the Fly.io pricing page Startup program section and use the Apply for credit contact to request startup credits.
+      url: https://fly.io/pricing/
+    terms_url: https://fly.io/pricing/
+    source_ids:
+      - src_8cd574f52be35e0688879a7aa51f0106ea4b2b6f1f276daf8dd06081f1bbac67
