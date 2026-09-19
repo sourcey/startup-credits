@@ -1,0 +1,56 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_13mbna4wx9eykgwswrj7dnegsr
+  slug: idrive
+  slug_aliases: []
+  name: IDrive
+  domains:
+  - value: idrive.com
+    role: primary
+    valid_from: '2026-09-16T00:30:00Z'
+  category: databases
+profile:
+  summary: IDrive provides cloud storage, backup, and S3-compatible object storage
+    services.
+  description: Cloud storage and backup services.
+  links:
+    site: https://www.idrive.com
+sources:
+- source_id: src_qrygbfqhb67cwyvpbepxfq9kzj
+  url: https://www.idrive.com/s3-storage-e2/idrive-for-startups
+programs: []
+offers:
+- offer_id: off_vy3ctef6xhfdk4mg5s8075dkd0
+  offer_slug: idrive-e2-for-startups
+  offer_slug_aliases: []
+  title: IDrive e2 for Startups
+  summary: Eligible startups can apply for 100 TB of IDrive e2 S3-compatible object
+    storage, subject to application and incorporation or accelerator proof.
+  lifecycle:
+    status: active
+    effective_from: '2026-09-16T00:30:00Z'
+  economics:
+    consideration:
+      kind: variable
+      description: Application and incorporation or accelerator/incubator proof are
+        required; usage above the free allowance is paid.
+    benefits:
+    - benefit_id: ben_primary
+      description: 100 TB of IDrive e2 S3-compatible object storage.
+      kind: other
+  eligibility:
+    rule:
+      kind: manual
+      criterion_id: cri_01
+      statement: Applicant must be an eligible startup able to provide incorporation
+        proof or recognized accelerator or incubator membership.
+      reason: external-verification
+  roles:
+    terms_authority_entity_id: ent_13mbna4wx9eykgwswrj7dnegsr
+    access_operator_entity_id: ent_13mbna4wx9eykgwswrj7dnegsr
+  access:
+    availability: public
+    method: form
+    url: https://www.idrive.com/s3-storage-e2/idrive-for-startups
+  source_ids:
+  - src_qrygbfqhb67cwyvpbepxfq9kzj
