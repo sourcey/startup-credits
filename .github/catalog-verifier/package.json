@@ -2,6 +2,6 @@
   "name": "sourcey-startup-credits-verifier-runtime",
   "private": true,
   "dependencies": {
-    "@sourcey/catalog-verifier": "1.1.0"
+    "@sourcey/catalog-verifier": "1.1.1"
   }
 }
