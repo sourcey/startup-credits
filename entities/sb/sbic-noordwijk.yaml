@@ -1,0 +1,69 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_wv15cj4szc8cmtjr6hgmqbwhy6
+  slug: sbic-noordwijk
+  slug_aliases: []
+  name: SBIC Noordwijk
+  domains:
+  - value: sbicnoordwijk.nl
+    role: primary
+    valid_from: '2026-09-16T00:40:00Z'
+  category: other
+profile:
+  summary: SBIC Noordwijk operates startup incubation and space-business support programmes
+    in the Netherlands.
+  description: Dutch space startup incubator and business support operator.
+  links:
+    site: https://www.sbicnoordwijk.nl
+sources:
+- source_id: src_m1c1g1hb69bf48zdd7fct31q7g
+  url: https://www.sbicnoordwijk.nl/esa-bic/
+programs:
+- program_id: prg_7bske4094nwrtwjh6zxfsy7jtb
+  program_slug: esa-bic
+  program_slug_aliases: []
+  title: ESA BIC Noordwijk
+  summary: A two-year incubation programme for early-stage space-related startups
+    in the Netherlands.
+  source_ids:
+  - src_m1c1g1hb69bf48zdd7fct31q7g
+offers:
+- offer_id: off_sb78vx55q5nbw8c5j7e0x127r0
+  offer_slug: esa-bic-incubation
+  offer_slug_aliases: []
+  title: ESA BIC Noordwijk Incubation Programme
+  summary: Eligible space-related startups can receive non-equity incentive funding,
+    technical support, and business support through the two-year programme.
+  lifecycle:
+    status: active
+    effective_from: '2026-09-16T00:40:00Z'
+  economics:
+    consideration:
+      kind: variable
+      description: Applicants must meet selection criteria and pay applicable workspace
+        or community membership costs; the grant excludes salaries and rent.
+    benefits:
+    - benefit_id: ben_funding
+      description: Up to EUR 60,000 in non-equity incentive funding for product development
+        and intellectual property rights.
+      kind: other
+    - benefit_id: ben_support
+      description: Up to 80 hours of technical support and business support.
+      kind: free-service
+      service: ESA BIC technical and business support
+  eligibility:
+    rule:
+      kind: manual
+      criterion_id: cri_01
+      statement: Applicant must satisfy the programme space connection, company age,
+        residency, development stage, and selection requirements.
+      reason: external-verification
+  roles:
+    terms_authority_entity_id: ent_wv15cj4szc8cmtjr6hgmqbwhy6
+    access_operator_entity_id: ent_wv15cj4szc8cmtjr6hgmqbwhy6
+  access:
+    availability: public
+    method: form
+    url: https://www.sbicnoordwijk.nl/esa-bic/
+  source_ids:
+  - src_m1c1g1hb69bf48zdd7fct31q7g
