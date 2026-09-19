@@ -1,0 +1,137 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m2gjk01hv8qfkvdpfn0cjgbq
+  slug: sbic-noordwijk
+  slug_aliases: []
+  name: SBIC Noordwijk
+  domains:
+    - value: sbicnoordwijk.nl
+      role: primary
+      valid_from: 2026-09-14T18:24:07Z
+  category: other
+profile:
+  summary: SBIC Noordwijk supports entrepreneurs and startups that develop products or services using space technology, with incubation, business support and a local community in the Netherlands.
+  description: SBIC Noordwijk is a Dutch space-business hub providing incubation, business support and a community for entrepreneurs using space technology.
+  links:
+    site: https://www.sbicnoordwijk.nl/
+sources:
+  - source_id: src_597a8b87a1934a8d662cd8e62fc69d3e09b6aa502d0c58d48afb56e39bcdfd33
+    url: https://www.sbicnoordwijk.nl/esa-bic/
+  - source_id: src_2a11d287f7c79cc0817ada6b95573facd8be39fe2b8470958d49917ac7b08f73
+    url: https://www.sbicnoordwijk.nl/startup-hub/
+  - source_id: src_3d88e4f391bad604e6f5760bfb402c727bfb69256c34a51c810dabecd2025dd8
+    url: https://www.sbicnoordwijk.nl/community-membership/
+  - source_id: src_0e6eea8e3459a45b2b8c545531e3233678f025951423e7efce4f8557e22d4313
+    url: https://www.sbicnoordwijk.nl/esa-bic-application-startups/
+programs:
+  - program_id: prg_01m2gjk01rztgg453qd5dzvsjc
+    program_slug: esa-bic-noordwijk
+    program_slug_aliases: []
+    title: ESA BIC Noordwijk
+    summary: A two-year incubation programme managed by SBIC Noordwijk for startups commercialising space technology or data and developing products or services for the space industry.
+    source_ids:
+      - src_597a8b87a1934a8d662cd8e62fc69d3e09b6aa502d0c58d48afb56e39bcdfd33
+offers:
+  - offer_id: off_01m2gjk01r500d07sfbsqhjt7k
+    program_id: prg_01m2gjk01rztgg453qd5dzvsjc
+    offer_slug: esa-bic-noordwijk-incubation
+    offer_slug_aliases: []
+    title: ESA BIC Noordwijk incubation funding and support
+    summary: Eligible space startups can apply for two years of incubation with up to EUR 60,000 in non-equity funding, up to 80 hours of technical support, and business support.
+    description: >-
+      The Permanent Open Call accepts applications at any time, with selection
+      twice yearly. The next selection deadline is 5 October 2026 at 23:59;
+      the public page does not specify a time zone. An optional document
+      pre-check is available for submissions received by the end of 28 September.
+      Funding supports product development and intellectual property rights;
+      a small part may support marketing. It cannot pay salaries or office rent.
+      Expenditure is normally restricted to the Netherlands; exceptional
+      overseas expenditure needs advance approval from the incubation manager.
+      The grant is not guaranteed: applicants undergo formal review, a pitch
+      to the Tender Evaluation Board, selection and contract negotiations.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-14T18:24:07Z
+    economics:
+      benefits:
+        - benefit_id: ben_funding
+          kind: other
+          description: Up to EUR 60,000 of non-equity incentive funding during the two-year incubation for product development and intellectual property rights. Payments compensate expenditure in instalments; recipients initially need to pay their own bills.
+        - benefit_id: ben_technical_support
+          kind: free-service
+          service: Up to 80 hours of technical support from ESA or SBIC technical partners.
+          description: Technical support for the incubated startup, with up to 80 hours available from ESA or SBIC technical partners.
+        - benefit_id: ben_business_support
+          kind: free-service
+          service: Business development support, advice, coaching and IP consulting.
+          description: Business support, IP consulting, workshops, training, and access to the ESA commercialisation community and SBIC alumni network.
+      consideration:
+        kind: variable
+        description: No equity or programme fee, but paid workspace and community membership are required. At least one founder needs flex membership; other founders and core team members need at least basic membership. Basic membership is EUR 100/month or EUR 1,100/year. Flex membership also requires a separate reception/postal-services agreement; total costs depend on the selected arrangement. Recipients initially finance their development bills; grant funding cannot pay salaries or rent.
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - kind: any
+            rules:
+              - criterion_id: cri_age
+                kind: predicate
+                fact: company.age_months
+                operator: lte
+                value:
+                  type: number
+                  value: 60
+                statement: An existing startup must be no more than five years old.
+              - criterion_id: cri_not_yet_founded
+                kind: predicate
+                fact: company.is_incorporated
+                operator: eq
+                value:
+                  type: boolean
+                  value: false
+                statement: Applicants may apply with a startup that has not yet been founded.
+          - criterion_id: cri_space_connection
+            kind: manual
+            reason: vendor-discretion
+            statement: The innovative, validated business idea must have a space technology or data connection. Upstream ideas require prior approval from the Netherlands Space Agency before application.
+          - criterion_id: cri_residence
+            kind: manual
+            reason: external-verification
+            statement: Applicants must reside in the Netherlands. ESA member-state citizens qualify; citizens of other countries require a working permit or startup visa in place before applying.
+          - criterion_id: cri_development_stage
+            kind: manual
+            reason: vendor-discretion
+            statement: Applicants must not yet have a completed prototype or market introduction; a prototype being developed internally is allowed.
+          - criterion_id: cri_local_presence
+            kind: manual
+            reason: external-verification
+            statement: The startup must register its main office at SBIC Noordwijk, rent workspace and join the community. Co-founders holding at least 51 percent of the shares are expected to attend regularly, at least two days per week.
+          - criterion_id: cri_community
+            kind: manual
+            reason: not-machine-evaluable
+            statement: The team must actively contribute to the SBIC and ESA space-business community and participate in its events and programme activities.
+          - criterion_id: cri_selection
+            kind: manual
+            reason: vendor-discretion
+            statement: Admission depends on formal application review, presentation to the Tender Evaluation Board, selection and successful contract negotiations.
+    roles:
+      terms_authority_entity_id: ent_01m2gjk01hv8qfkvdpfn0cjgbq
+      access_operator_entity_id: ent_01m2gjk01hv8qfkvdpfn0cjgbq
+    access:
+      availability: public
+      method: contact
+      url: https://www.sbicnoordwijk.nl/esa-bic/
+      instructions: >-
+        Assess the space connection, arrange an introduction with the SBIC team,
+        and obtain NLSA approval first for an upstream idea. Request the Permanent
+        Open Call document pack through the form linked on the official page.
+        Complete the cover letter, business plan, incubation proposal and related
+        appendices, then submit them by email using the address published on that
+        page. The next selection deadline is 5 October 2026 at 23:59, with the
+        time zone unspecified on the public page. The optional pre-check deadline
+        is the end of 28 September. A formal review and selection pitch follow.
+    terms_url: https://www.sbicnoordwijk.nl/esa-bic/
+    source_ids:
+      - src_597a8b87a1934a8d662cd8e62fc69d3e09b6aa502d0c58d48afb56e39bcdfd33
+      - src_3d88e4f391bad604e6f5760bfb402c727bfb69256c34a51c810dabecd2025dd8
+      - src_0e6eea8e3459a45b2b8c545531e3233678f025951423e7efce4f8557e22d4313
