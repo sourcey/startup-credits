@@ -1,0 +1,69 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m2h0mcrez1ygsrh0wjrwfttr
+  slug: runable
+  slug_aliases: []
+  name: Runable
+  domains:
+    - value: runable.com
+      role: primary
+      valid_from: 2026-09-14T22:29:38.092Z
+  category: ai-ml
+profile:
+  summary: Runable provides an AI work platform for websites, apps, presentations, research reports, media, marketing, and integrations.
+  description: Runable provides an AI work platform for websites, apps, presentations, research reports, media, marketing, and integrations.
+  links:
+    site: https://runable.com
+sources:
+  - source_id: src_1943d9462d5af9f2368ed039c24e08fe41b58d72183093893b5ab2d6ae75aad4
+    url: https://runable.com/programs/for-startups
+programs:
+  - program_id: prg_01m2h0mcrgnkk1bwnx268c40a0
+    program_slug: runable-for-startups
+    program_slug_aliases: []
+    title: Runable for Startups
+    summary: Runable offers approved startups USD 5,000 in platform credits plus onboarding and direct support from its team.
+    source_ids:
+      - src_1943d9462d5af9f2368ed039c24e08fe41b58d72183093893b5ab2d6ae75aad4
+offers:
+  - offer_id: off_01m2h0mcrg74s8tq6fvq5mfj0y
+    program_id: prg_01m2h0mcrgnkk1bwnx268c40a0
+    offer_slug: five-thousand-dollars-in-platform-credits
+    offer_slug_aliases: []
+    title: USD 5,000 in Runable credits
+    summary: Approved startups receive USD 5,000 in Runable credits, onboarding, priority on bugs, early feature access, and a private support channel.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-14T22:29:38.092Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: USD 5,000 in Runable platform credits.
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 500000
+            kind: exact
+        - benefit_id: ben_02
+          description: Onboarding, priority on bugs, early feature access, and a private support channel with the Runable team.
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: The applicant is a startup approved by Runable after submitting the public application form.
+    roles:
+      terms_authority_entity_id: ent_01m2h0mcrez1ygsrh0wjrwfttr
+      access_operator_entity_id: ent_01m2h0mcrez1ygsrh0wjrwfttr
+    access:
+      availability: public
+      method: form
+      url: https://runable.com/programs/for-startups
+      instructions: Submit the startup application form with company, contact, funding-stage, incorporation, location, LinkedIn, and website details.
+    terms_url: https://runable.com/programs/for-startups
+    source_ids:
+      - src_1943d9462d5af9f2368ed039c24e08fe41b58d72183093893b5ab2d6ae75aad4
