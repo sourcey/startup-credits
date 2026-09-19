@@ -1,0 +1,58 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_7nxm7j2m100000000000000000
+  slug: enum
+  slug_aliases: []
+  name: enum
+  domains:
+  - value: enum.co
+    role: primary
+    valid_from: '2026-01-01T00:00:00Z'
+  category: hosting-infra
+profile:
+  description: enum for Startups offers eligible European startups and scaleups up
+    to €100,000 in sovereign cloud credits over 12 months.
+  links:
+    site: https://enum.co
+sources:
+- source_id: src_c1885a2afa55bdbb955c5641dd12ac9431372378e0dfbcc53e02a9f309036298
+  url: https://enum.co/startups
+programs: []
+offers:
+- offer_id: off_7nxm7j2m100000000000000000
+  offer_slug: enum-startup-discount
+  offer_slug_aliases: []
+  title: enum for Startups
+  summary: Up to €100,000 in enum sovereign cloud credits over 12 months
+  lifecycle:
+    status: active
+    effective_from: '2026-01-01T00:00:00Z'
+  economics:
+    benefits:
+    - benefit_id: ben_01
+      description: Up to €100,000 in enum cloud credits over 12 months
+      kind: credit
+      value:
+        amount:
+          currency: EUR
+          minor_units: 10000000
+        kind: up-to
+    consideration:
+      kind: unknown
+      description: The source record did not establish separate consideration.
+  eligibility:
+    rule:
+      kind: manual
+      criterion_id: cri_requirement_01
+      statement: Applicant must be an eligible European startup or scaleup; the program
+        page describes eligibility and application review.
+      reason: not-machine-evaluable
+  roles:
+    terms_authority_entity_id: ent_7nxm7j2m100000000000000000
+    access_operator_entity_id: ent_7nxm7j2m100000000000000000
+  access:
+    availability: public
+    method: form
+    url: https://enum.co/startups
+  source_ids:
+  - src_c1885a2afa55bdbb955c5641dd12ac9431372378e0dfbcc53e02a9f309036298
