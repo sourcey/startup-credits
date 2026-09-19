@@ -1,0 +1,62 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_m5df20t46560xsd1645mx0kb09
+  slug: tuple
+  slug_aliases: []
+  name: Tuple
+  domains:
+  - value: tuple.app
+    role: primary
+    valid_from: '2026-09-16T02:55:00Z'
+  category: productivity
+profile:
+  summary: Tuple provides remote pair-programming software for engineering teams.
+  description: Remote pair-programming software for engineering teams.
+  links:
+    site: https://tuple.app
+sources:
+- source_id: src_v4e2c917fjr5d2qvg7ddmtwwex
+  url: https://tuple.app/pricing
+- source_id: src_wmfrpdk2fbfbx5wp7rk2qqdw8r
+  url: https://tuple.app/startups
+programs: []
+offers:
+- offer_id: off_tj2btsetgq3r6js2ht1m37a3dk
+  offer_slug: startup-discount
+  offer_slug_aliases: []
+  title: Tuple Startup Discount
+  summary: Companies under two years old with fewer than 50 employees can receive
+    a one-year 90% discount on Tuple subscriptions.
+  lifecycle:
+    status: active
+    effective_from: '2026-09-16T02:55:00Z'
+  economics:
+    consideration:
+      kind: variable
+      description: The customer subscribes to Tuple and applies for the startup discount.
+    benefits:
+    - benefit_id: ben_primary
+      description: 90% off the Tuple subscription for one year.
+      kind: discount
+      percentage:
+        kind: exact
+        basis_points: 9000
+      duration:
+        kind: exact
+        value: P1Y
+  eligibility:
+    rule:
+      kind: manual
+      criterion_id: cri_01
+      statement: Company must be less than two years old and have fewer than 50 employees.
+      reason: external-verification
+  roles:
+    terms_authority_entity_id: ent_m5df20t46560xsd1645mx0kb09
+    access_operator_entity_id: ent_m5df20t46560xsd1645mx0kb09
+  access:
+    availability: public
+    method: form
+    url: https://tuple.app/startups
+  source_ids:
+  - src_v4e2c917fjr5d2qvg7ddmtwwex
+  - src_wmfrpdk2fbfbx5wp7rk2qqdw8r
