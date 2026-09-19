@@ -1,0 +1,59 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_tkqnwctpj64hsk4ca00pp2x947
+  slug: level-ui
+  slug_aliases: []
+  name: Level UI
+  domains:
+  - value: levelui.com
+    role: primary
+    valid_from: '2026-09-16T01:20:00Z'
+  category: design
+profile:
+  summary: Level UI provides product design and user interface services for digital
+    products.
+  description: Product design and user interface services.
+  links:
+    site: https://levelui.com
+sources:
+- source_id: src_s9rsm8r55sx9besvxthdtbg4nc
+  url: https://levelui.com/promotions/startup-partner-discount
+programs: []
+offers:
+- offer_id: off_9jjj82df0f2pekzb6kvpgvg7qz
+  offer_slug: startup-partner-discount
+  offer_slug_aliases: []
+  title: Startup Partner Discount
+  summary: Companies registered less than two years ago can receive 30% off their
+    first Level UI project after supplying incorporation proof.
+  lifecycle:
+    status: active
+    effective_from: '2026-09-16T01:20:00Z'
+  economics:
+    consideration:
+      kind: variable
+      description: The customer purchases a first project and supplies incorporation
+        proof.
+    benefits:
+    - benefit_id: ben_primary
+      description: 30% off the first project.
+      kind: discount
+      percentage:
+        kind: exact
+        basis_points: 3000
+  eligibility:
+    rule:
+      kind: manual
+      criterion_id: cri_01
+      statement: Company must have been registered for less than two years and provide
+        incorporation proof.
+      reason: external-verification
+  roles:
+    terms_authority_entity_id: ent_tkqnwctpj64hsk4ca00pp2x947
+    access_operator_entity_id: ent_tkqnwctpj64hsk4ca00pp2x947
+  access:
+    availability: public
+    method: form
+    url: https://levelui.com/promotions/startup-partner-discount
+  source_ids:
+  - src_s9rsm8r55sx9besvxthdtbg4nc
