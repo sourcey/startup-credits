@@ -1,0 +1,67 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_1z3hkxmccweeay373dnhj8ywh6
+  slug: runable
+  slug_aliases: []
+  name: Runable
+  domains:
+  - value: runable.com
+    role: primary
+    valid_from: '2026-09-15T23:00:00.000Z'
+  category: devtools-other
+profile:
+  description: AI-powered software testing tools for startups.
+  links:
+    site: https://runable.com
+  summary: Runable provides AI-powered software testing tools for startups.
+sources:
+- source_id: src_m1dnkww5ra0tw8c1tenk1a8ch2
+  url: https://runable.com/programs/for-startups
+programs:
+- program_id: prg_vmxjvm19cvfwbqswdmet903ecm
+  program_slug: startup-program
+  program_slug_aliases: []
+  title: Runable Startup Program
+  summary: A startup program offering approved startups platform credits and startup
+    support benefits.
+  source_ids:
+  - src_m1dnkww5ra0tw8c1tenk1a8ch2
+offers:
+- offer_id: off_0tc4b4ytbcgpd795vy5nyf4hx4
+  offer_slug: runable-startup-credits
+  offer_slug_aliases: []
+  title: Runable Startup Program Credits
+  summary: Approved startups can receive USD 5,000 in Runable platform credits, onboarding,
+    priority bug handling, early feature access, and a private support channel.
+  lifecycle:
+    status: active
+    effective_from: '2026-09-15T23:00:00.000Z'
+  economics:
+    consideration:
+      kind: unknown
+      description: The source describes approval requirements but does not establish
+        a separate monetary consideration.
+    benefits:
+    - benefit_id: ben_primary
+      description: USD 5,000 in Runable platform credits
+      kind: credit
+      value:
+        amount:
+          currency: USD
+          minor_units: 5000000
+        kind: exact
+  eligibility:
+    rule:
+      kind: manual
+      criterion_id: cri_01
+      statement: Must be an approved startup accepted into Runable’s startup program.
+      reason: external-verification
+  roles:
+    terms_authority_entity_id: ent_1z3hkxmccweeay373dnhj8ywh6
+    access_operator_entity_id: ent_1z3hkxmccweeay373dnhj8ywh6
+  access:
+    availability: public
+    method: form
+    url: https://runable.com/programs/for-startups
+  source_ids:
+  - src_m1dnkww5ra0tw8c1tenk1a8ch2
