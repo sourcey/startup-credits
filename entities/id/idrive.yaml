@@ -1,0 +1,55 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m2gphmph8tje9ywy13wwzhx6
+  slug: idrive
+  slug_aliases: []
+  name: IDrive
+  domains:
+    - value: idrive.com
+      role: primary
+      valid_from: 2026-09-14T19:33:00.000Z
+  category: hosting-infra
+profile:
+  summary: IDrive provides S3-compatible object storage through IDrive e2 for cloud applications, datasets, backups, and media workloads.
+  description: IDrive e2 is an S3-compatible object storage platform for cloud applications and data workloads.
+  links:
+    site: https://www.idrive.com/s3-storage-e2/idrive-for-startups
+sources:
+  - source_id: src_80a601b58c6770303bb3ce5e6db873b9e09dfb2de8e70e9d95a1d5d392ca257a
+    url: https://www.idrive.com/s3-storage-e2/idrive-for-startups
+programs: []
+offers:
+  - offer_id: off_01m2gphmpkykggeb2aqw06n3j9
+    offer_slug: startup-storage
+    offer_slug_aliases: []
+    title: IDrive e2 startup storage offer
+    summary: Eligible startups can apply for 100 TB of free IDrive e2 S3-compatible object storage, with paid usage above that allowance.
+    description: Applicants provide company and product details, eligibility evidence, intended use, and cloud or on-premises deployment preferences. The source does not specify a benefit duration.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-14T19:33:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_startup_storage
+          kind: free-service
+          service: 100 TB of IDrive e2 S3-compatible object storage
+          description: Eligible startups receive a free 100 TB storage allowance.
+      consideration:
+        kind: variable
+        description: Storage above the free 100 TB allowance is paid.
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_startup_approval
+        reason: vendor-discretion
+        statement: Qualified startups must apply and provide incorporation proof or membership in a recognized accelerator or incubator, such as Y Combinator, Techstars, or 500 Global.
+    roles:
+      terms_authority_entity_id: ent_01m2gphmph8tje9ywy13wwzhx6
+      access_operator_entity_id: ent_01m2gphmph8tje9ywy13wwzhx6
+    access:
+      availability: public
+      method: form
+      url: https://www.idrive.com/s3-storage-e2/idrive-for-startups
+    terms_url: https://www.idrive.com/s3-storage-e2/idrive-for-startups
+    source_ids:
+      - src_80a601b58c6770303bb3ce5e6db873b9e09dfb2de8e70e9d95a1d5d392ca257a
