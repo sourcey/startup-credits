@@ -1,0 +1,80 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m3012fyhq8qezfg3an05m218
+  slug: livekit
+  slug_aliases: []
+  name: LiveKit
+  domains:
+    - value: livekit.com
+      role: primary
+      valid_from: 2026-09-20T20:30:00.000Z
+  category: communication
+profile:
+  summary: LiveKit provides open-source and hosted infrastructure for building realtime voice, video, and physical AI applications.
+  description: LiveKit provides open-source and hosted infrastructure for realtime voice, video, and physical AI applications.
+  links:
+    site: https://livekit.com
+sources:
+  - source_id: src_a49a32348f8f1ad58881f681a5e27de12978b21b04d338c4de99070aaf0ad440
+    url: https://livekit.com/startups
+programs:
+  - program_id: prg_01m3012fypq3dg9jr2ta2eg2dt
+    program_slug: livekit-startup-program
+    program_slug_aliases: []
+    title: LiveKit Startup Program
+    summary: LiveKit's startup program provides qualifying early-stage teams with Cloud Scale access, cloud credits, and inference credits.
+    source_ids:
+      - src_a49a32348f8f1ad58881f681a5e27de12978b21b04d338c4de99070aaf0ad440
+offers:
+  - offer_id: off_01m3012fyq6tcgt9j93qr2ffk9
+    program_id: prg_01m3012fypq3dg9jr2ta2eg2dt
+    offer_slug: up-to-23000-infrastructure-and-inference-credits
+    offer_slug_aliases: []
+    title: Up to $23,000 in LiveKit infrastructure and inference credits
+    summary: Qualifying early-stage teams can receive one year of Cloud Scale, $10,000 in additional cloud credits, and $7,000 in inference credits.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-20T20:30:00.000Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_01
+          description: LiveKit Cloud Scale plan is free for 12 months.
+          kind: free-service
+          service: LiveKit Cloud Scale plan
+          duration:
+            kind: exact
+            value: P12M
+        - benefit_id: ben_02
+          description: Additional LiveKit Cloud credits for usage beyond the included Scale allowance.
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 1000000
+            kind: exact
+        - benefit_id: ben_03
+          description: Inference credits for participating models available through LiveKit Inference.
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 700000
+            kind: exact
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_01
+        statement: Applicant must be an early-stage team where voice, video, or physical AI is core, with fewer than 50 employees, under USD 5 million raised and pre-Series A unless reviewed case by case, a live website with an identifiable founding team, real end users, and incorporation or active incorporation.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01m3012fyhq8qezfg3an05m218
+      access_operator_entity_id: ent_01m3012fyhq8qezfg3an05m218
+    access:
+      availability: public
+      method: form
+      url: https://livekit.com/startups
+    terms_url: https://livekit.com/startups
+    source_ids:
+      - src_a49a32348f8f1ad58881f681a5e27de12978b21b04d338c4de99070aaf0ad440
