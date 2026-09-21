@@ -81,11 +81,11 @@ offers:
             value:
               type: number
               value: 12
-            statement: Company was founded less than 12 months ago.
+            statement: The company was founded less than 12 months ago.
           - criterion_id: cri_revenue
             kind: manual
             reason: not-machine-evaluable
-            statement: Less than EUR 25,000 in collected revenue.
+            statement: The company has less than EUR 25,000 in revenue.
           - criterion_id: cri_paid_history
             kind: predicate
             fact: company.has_ever_paid_crococlick
@@ -93,7 +93,7 @@ offers:
             value:
               type: boolean
               value: false
-            statement: Never previously held a paid CrocoClick subscription.
+            statement: The company has never had a paid CrocoClick subscription.
           - criterion_id: cri_review
             kind: manual
             reason: vendor-discretion
