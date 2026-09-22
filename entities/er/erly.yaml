@@ -32,12 +32,12 @@ offers:
     economics:
       consideration:
         kind: variable
-        description: The offer discounts an eligible paid erly WORKR subscription; plan and per-staff pricing vary.
+        description: 'Premium: $5 per staff/month (min. $10 per month); Premium+: $8 per staff/month (min. $30 per month).'
       benefits:
         - benefit_id: ben_workr_startup_discount
           kind: discount
-          description: 50% off for 12 months.
-          applies_to: eligible erly WORKR paid subscriptions
+          description: Startup Discount (50% off for 12 months).
+          applies_to: Premium and Premium+
           percentage:
             kind: exact
             basis_points: 5000
