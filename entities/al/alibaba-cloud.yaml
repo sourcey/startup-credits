@@ -10,102 +10,11 @@ entity:
       valid_from: 2026-08-01T13:50:00.000Z
   category: hosting-infra
 profile:
-  summary: Alibaba Cloud provides global cloud infrastructure, data platforms, and AI developer services for startups and enterprises.
   description: Alibaba Cloud provides cloud computing services and solutions, including elastic computing, storage, networking, databases, security, and AI products for businesses worldwide.
   links:
-    site: https://www.alibabacloud.com
+    site: https://alibabacloud.com
 sources:
-  - source_id: src_94c85f77c10f51bb2d014317744c165e83a48a53300057b8de8e1eb792455b9f
+  - source_id: src_69309b819e80f182ea81c33481746fa4d46cce19b0ae039b212d0b17a2690d02
     url: https://www.alibabacloud.com/
-  - source_id: src_b1a7713b24fb38f3db6c4d68d2202d52796ad1b778729896b81dfc0d452af45a
-    url: https://www.alibabacloud.com/en/startup/ai
-  - source_id: src_5d6fbe7b3284b5765035ffb60a23fc80003f3017524b869a87ae5142b92cfa03
-    url: https://www.alibabacloud.com/en/startup/cloudcreditredemption
-  - source_id: src_f55c9fc9785f842b307787fdb4150cd31f13f59c740bebee4d749e53df278855
-    url: https://www.alibabacloud.com/startup/terms-and-conditions
-programs:
-  - program_id: prg_01m2fvyn5m4876e7vfzetz8f2b
-    program_slug: ai-catalyst-program
-    program_slug_aliases: []
-    title: Alibaba Cloud AI Catalyst Program
-    summary: Alibaba Cloud's AI Catalyst Program supports AI-first startups with cloud credits, Model Studio tokens, expert office hours, partner network access, and Academy training.
-    source_ids:
-      - src_b1a7713b24fb38f3db6c4d68d2202d52796ad1b778729896b81dfc0d452af45a
-      - src_5d6fbe7b3284b5765035ffb60a23fc80003f3017524b869a87ae5142b92cfa03
-      - src_f55c9fc9785f842b307787fdb4150cd31f13f59c740bebee4d749e53df278855
-offers:
-  - offer_id: off_01m2fvyn5mwqv30h04t6k2v9ey
-    program_id: prg_01m2fvyn5m4876e7vfzetz8f2b
-    offer_slug: up-to-120k-cloud-credits-and-model-studio-tokens
-    offer_slug_aliases: []
-    title: Up to USD 120,000 cloud credits plus Model Studio tokens
-    summary: Approved AI startups can receive up to USD 120,000 in Alibaba Cloud credits, up to 2B free Model Studio tokens, POC coupons, expert office hours, event access, and 12 months of Academy access.
-    lifecycle:
-      status: active
-      effective_from: 2026-09-14T00:00:00.000Z
-    economics:
-      consideration:
-        kind: none
-      benefits:
-        - benefit_id: ben_01
-          description: Up to USD 120,000 in Alibaba Cloud public cloud credits with a published lifetime redemption cap of USD 120,000.
-          kind: credit
-          value:
-            amount:
-              currency: USD
-              minor_units: 12000000
-            kind: up-to
-        - benefit_id: ben_02
-          description: Up to 2 billion free Model Studio tokens for AI workloads under the AI Catalyst Program.
-          kind: free-service
-          service: Alibaba Cloud Model Studio tokens
-        - benefit_id: ben_03
-          description: POC coupons for proof-of-concept work on Alibaba Cloud.
-          kind: other
-        - benefit_id: ben_04
-          description: 1:1 office hours with Alibaba Cloud AI experts covering products, solutions, and infrastructure.
-          kind: free-service
-          service: Alibaba Cloud AI expert office hours
-        - benefit_id: ben_05
-          description: Invitation to Alibaba Cloud events and access to AI Alliance and partner network channels.
-          kind: other
-        - benefit_id: ben_06
-          description: 12 months of access to Alibaba Cloud Academy courses and selected certifications.
-          kind: free-service
-          service: Alibaba Cloud Academy
-          duration:
-            kind: exact
-            value: P1Y
-    eligibility:
-      rule:
-        kind: all
-        rules:
-          - criterion_id: cri_01
-            kind: manual
-            reason: not-machine-evaluable
-            statement: Company uses AI as core technology to develop its primary products or solutions.
-          - criterion_id: cri_02
-            kind: manual
-            reason: not-machine-evaluable
-            statement: Company is unlisted, founded within the last 10 years, and has an accessible website.
-          - criterion_id: cri_03
-            kind: manual
-            reason: not-machine-evaluable
-            statement: Applicant provides a proposal showing a plan to use Alibaba Cloud and its AI tools.
-          - criterion_id: cri_04
-            kind: manual
-            reason: not-machine-evaluable
-            statement: Account is not under a reseller or distributor; eligibility is at the full discretion of Alibaba Cloud.
-    roles:
-      terms_authority_entity_id: ent_01kyyts97sh2v27g7w2234k40n
-      access_operator_entity_id: ent_01kyyts97sh2v27g7w2234k40n
-    access:
-      availability: public
-      method: form
-      url: https://survey.alibabacloud.com/uone/sg/survey/Ki6nZZ5hr
-      instructions: Submit the online AI Catalyst application form linked from the Alibaba Cloud AI Catalyst program page; successful applicants are notified by email and then redeem credits per program instructions.
-    terms_url: https://www.alibabacloud.com/startup/terms-and-conditions
-    source_ids:
-      - src_b1a7713b24fb38f3db6c4d68d2202d52796ad1b778729896b81dfc0d452af45a
-      - src_5d6fbe7b3284b5765035ffb60a23fc80003f3017524b869a87ae5142b92cfa03
-      - src_f55c9fc9785f842b307787fdb4150cd31f13f59c740bebee4d749e53df278855
+programs: []
+offers: []
