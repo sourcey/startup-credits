@@ -1,0 +1,71 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m36ft64vdx5pz082hhr0tvgq
+  slug: tavily
+  slug_aliases: []
+  name: Tavily
+  domains:
+    - value: tavily.com
+      role: primary
+      valid_from: 2026-09-23T06:39:34.000Z
+  category: ai-ml
+profile:
+  summary: Tavily provides a web access API for AI agents, with search, extraction, crawling, mapping, and research endpoints.
+  description: Tavily provides one API for real-time web access, including search, extraction, crawling, mapping, and research for AI agents.
+  links:
+    site: https://www.tavily.com/
+sources:
+  - source_id: src_66275eaf28ae93da651db3fc11add192e7a7023ad021d8afe843e4a26a8b7b29
+    url: https://www.tavily.com/
+  - source_id: src_3a6e5f18b8abdc9f70250652e2b5bb9b9acd5d17724f224495cb0e64c08e7232
+    url: https://www.tavily.com/startups
+programs:
+  - program_id: prg_01m36ft64y1zwzxq2f3f32wdzq
+    program_slug: tavily-for-startups
+    program_slug_aliases: []
+    title: Tavily for Startups
+    summary: Tavily gives qualifying early-stage teams free API credits, engineering support, network access, and go-to-market opportunities.
+    source_ids:
+      - src_3a6e5f18b8abdc9f70250652e2b5bb9b9acd5d17724f224495cb0e64c08e7232
+offers:
+  - offer_id: off_01m36ft64y4n02cw4m0d9p0shs
+    program_id: prg_01m36ft64y1zwzxq2f3f32wdzq
+    offer_slug: up-to-100k-api-credits-for-six-months
+    offer_slug_aliases: []
+    title: Up to 100k Tavily API credits for six months
+    summary: Qualifying startups receive up to 100k Tavily API credits for six months, direct engineering support, network access, and go-to-market opportunities.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-23T06:39:34.000Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_api_credits
+          description: Up to 100k Tavily API credits for six months.
+          kind: other
+        - benefit_id: ben_support
+          description: Direct support from Tavily's engineering team.
+          kind: other
+        - benefit_id: ben_network
+          description: Access to the Tavily and Nebius founder and investor network.
+          kind: other
+        - benefit_id: ben_go_to_market
+          description: Exclusive go-to-market opportunities.
+          kind: other
+    eligibility:
+      rule:
+        criterion_id: cri_early_stage_vc_backed
+        kind: manual
+        reason: external-verification
+        statement: Applicants must be early-stage, VC-backed startups building AI agents or LLMs, typically from pre-seed through Series A.
+    roles:
+      terms_authority_entity_id: ent_01m36ft64vdx5pz082hhr0tvgq
+      access_operator_entity_id: ent_01m36ft64vdx5pz082hhr0tvgq
+    access:
+      availability: public
+      method: form
+      url: https://www.tavily.com/startups
+      instructions: Submit the public Tavily for Startups application with company, funding, and product details.
+    source_ids:
+      - src_3a6e5f18b8abdc9f70250652e2b5bb9b9acd5d17724f224495cb0e64c08e7232
