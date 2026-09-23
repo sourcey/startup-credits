@@ -67,5 +67,6 @@ offers:
       method: form
       url: https://www.tavily.com/startups
       instructions: Submit the public Tavily for Startups application with company, funding, and product details.
+    terms_url: https://www.tavily.com/startups
     source_ids:
       - src_3a6e5f18b8abdc9f70250652e2b5bb9b9acd5d17724f224495cb0e64c08e7232
