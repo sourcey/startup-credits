@@ -10,7 +10,8 @@ entity:
       valid_from: 2026-08-27T00:00:00.000Z
   category: hosting-infra
 profile:
-  description: Huawei Cloud provides cloud services and a global startup enablement program for eligible early-stage companies.
+  summary: Huawei Cloud is Huawei's cloud platform, providing AI, compute, storage, networking, database, and security services to businesses worldwide.
+  description: Huawei Cloud offers AI, compute, storage, networking, database, and security services, with 34 regions and a presence in more than 170 countries and regions.
   links:
     site: https://www.huaweicloud.com/intl/en-us/
 sources:
@@ -23,7 +24,7 @@ programs:
     program_slug: startup-program
     program_slug_aliases: []
     title: Huawei Cloud Startup Program
-    summary: Huawei Cloud's global startup program provides cloud credits, migration support, entrepreneurial enablement, and business resources for eligible startups.
+    summary: The Huawei Cloud Startup Program is a global enablement program that gives eligible startups cloud credits, migration support, entrepreneurial coaching, and business resources.
     source_ids:
       - src_6e5ce7a395d0e9bf1eee9d720dd7a16dca7ae6dd77745279899bd7ebc1809aa2
 offers:
@@ -32,39 +33,54 @@ offers:
     offer_slug: up-to-150000-in-huawei-cloud-cash-credits
     offer_slug_aliases: []
     title: Up to $150,000 in Huawei Cloud cash credits
-    summary: Approved startups can receive Huawei Cloud cash-credit vouchers, with up to USD 150,000 available, plus dedicated cloud-migration support.
+    summary: Approved startups under 5 years old receive at least 5,000 in Huawei Cloud cash credit vouchers on joining and can apply for up to USD 150,000, plus dedicated cloud migration support.
     lifecycle:
       status: active
       effective_from: 2026-08-27T00:00:00.000Z
     economics:
       benefits:
         - benefit_id: ben_01
-          description: Up to USD 150,000 in Huawei Cloud cash-credit vouchers
+          description: Huawei Cloud cash credit vouchers, a minimum of 5,000 on joining with the possibility to apply for up to USD 150,000
           kind: credit
           value:
             amount:
               currency: USD
               minor_units: 15000000
             kind: up-to
+        - benefit_id: ben_02
+          description: Cloud migration with support from dedicated Huawei Cloud teams
+          kind: free-service
+          service: Cloud migration support
+        - benefit_id: ben_03
+          description: Entrepreneurial coaching, prioritized co-selling opportunities in the KooGallery marketplace, and co-marketing opportunities with Huawei
+          kind: other
       consideration:
         kind: unknown
-        description: The public program page does not publish a participant fee or resulting paid-service price.
+        description: The startup program page does not state a program fee.
     eligibility:
       rule:
         kind: all
         rules:
           - criterion_id: cri_01
-            kind: manual
-            reason: not-machine-evaluable
-            statement: The enterprise must have been established less than 5 years ago.
+            fact: company.age_months
+            kind: predicate
+            operator: lt
+            statement: The enterprise was established less than 5 years ago.
+            value:
+              type: number
+              value: 60
           - criterion_id: cri_02
             kind: manual
-            reason: not-machine-evaluable
-            statement: The enterprise must not be publicly listed.
+            reason: external-verification
+            statement: The enterprise is not publicly listed.
           - criterion_id: cri_03
             kind: manual
-            reason: not-machine-evaluable
-            statement: No more than 50% of the enterprise's shares may be held by a listed company.
+            reason: external-verification
+            statement: No more than 50% of the enterprise's shares are held by a listed company.
+          - criterion_id: cri_04
+            kind: manual
+            reason: vendor-discretion
+            statement: Huawei Cloud reviews each application and its supporting materials before approval.
     roles:
       terms_authority_entity_id: ent_01m10a6k997xv38yccj4v17gbj
       access_operator_entity_id: ent_01m10a6k997xv38yccj4v17gbj
@@ -72,5 +88,6 @@ offers:
       availability: public
       method: form
       url: https://startup.huaweicloud.com/intl/en-us/
+      instructions: Register a Huawei Cloud account and complete enterprise real-name verification, then apply for membership and upload the requested materials for qualification review.
     source_ids:
       - src_6e5ce7a395d0e9bf1eee9d720dd7a16dca7ae6dd77745279899bd7ebc1809aa2
