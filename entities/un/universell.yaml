@@ -38,7 +38,7 @@ offers:
     economics:
       benefits:
         - benefit_id: ben_01
-          description: 12 months of free access to the Universell $99 subscription tier, with support for up to 10 employees and access to 100+ integrated business tools.
+          description: 12 months of free access to the Universell $99 subscription tier.
           duration:
             kind: exact
             value: P1Y
