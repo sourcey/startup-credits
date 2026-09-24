@@ -10,8 +10,8 @@ entity:
       valid_from: 2026-09-14T22:00:00.000Z
   category: hosting-infra
 profile:
-  description: Golioth provides cloud infrastructure for connected devices, including device management, software updates, and data routing.
-  summary: Golioth helps hardware teams connect devices to the cloud, manage fleets, deliver software updates, and route device data.
+  summary: Golioth is an IoT platform that gives hardware teams cloud infrastructure for connected devices, including device management, over-the-air updates, and data pipelines.
+  description: Golioth is an IoT cloud platform for hardware teams, covering device management, over-the-air updates, data pipelines, location, and connectivity.
   links:
     site: https://golioth.io/
 sources:
@@ -24,8 +24,8 @@ offers:
   - offer_id: off_01m2gz324awmsr3tsw227drwey
     offer_slug: startup-and-nonprofit-credits
     offer_slug_aliases: []
-    title: Credits for startups and nonprofits
-    summary: Qualified early-stage startups and nonprofits can request Golioth platform credits by contacting the company.
+    title: Golioth credits for early-stage startups
+    summary: Golioth offers credits to qualified early-stage startups and non-profits; startups contact Golioth to learn more.
     lifecycle:
       status: active
       effective_from: 2026-09-14T22:00:00.000Z
@@ -33,16 +33,16 @@ offers:
       benefits:
         - benefit_id: ben_startup_credits
           kind: other
-          description: Platform credits for qualified early-stage startups and nonprofits; the amount and duration are not published.
+          description: Golioth credits for qualified early-stage startups and non-profits
       consideration:
         kind: unknown
-        description: The public pages do not specify consideration for these credits.
+        description: Golioth shares the credit terms after a qualified startup contacts it.
     eligibility:
       rule:
         kind: manual
         criterion_id: cri_qualification
-        statement: Must be a qualified early-stage startup or nonprofit.
-        reason: external-verification
+        statement: Golioth offers the credits to qualified early-stage startups and non-profits.
+        reason: vendor-discretion
     roles:
       terms_authority_entity_id: ent_01m2gz324azeyrykapstf1jncd
       access_operator_entity_id: ent_01m2gz324azeyrykapstf1jncd
@@ -50,7 +50,6 @@ offers:
       availability: public
       method: contact
       url: https://golioth.io/pricing
-      instructions: Use the contact details on the pricing page to ask about startup and nonprofit credits.
+      instructions: Use Contact us in the startup and non-profit note on the Golioth pricing page, which opens an email to the Golioth team.
     source_ids:
       - src_ee9dffed6ab2e6090a70e0cb75a46fd31655b2c180d74fab858b763eddf7103a
-      - src_7fcb6aa6737538d25c8ded94ab36d3f23f6e655ad977638cdd6603750b088396
