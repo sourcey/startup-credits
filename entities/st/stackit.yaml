@@ -1,0 +1,83 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m11ahe8kk49781dzyya68ef3
+  slug: stackit
+  slug_aliases: []
+  name: STACKIT
+  domains:
+    - value: stackit.com
+      role: primary
+      valid_from: 2026-08-27T09:59:08.000Z
+  category: hosting-infra
+profile:
+  summary: STACKIT is the cloud brand of Schwarz Digits, offering IaaS, PaaS, SaaS, and colocation from its own data centers in Germany and Austria.
+  description: STACKIT is the cloud brand of Schwarz Digits, the IT and digital division of the Schwarz Group, with infrastructure run in its own data centers in Germany and Austria.
+  links:
+    site: https://stackit.com
+sources:
+  - source_id: src_88b977718300be5b3898387bec149a08176a2f9123a68cd3151b28233d86a4e3
+    url: https://stackit.com/en/why-stackit/benefits/startup-program
+  - source_id: src_d51e4607464ab21086f9e8d385932eb9caacfeaff8598a20bf97782edbe77425
+    url: https://stackit.com/en/facts
+programs:
+  - program_id: prg_01m11ahe8nhyqk2cpjvmtrphk6
+    program_slug: stackit-startup-program
+    program_slug_aliases: []
+    title: STACKIT Startup Program
+    summary: The STACKIT Startup Program supports young EU software companies with cloud credits, one-on-one expert coaching, access to the Schwarz Group ecosystem, and possible proof-of-concept projects.
+    source_ids:
+      - src_88b977718300be5b3898387bec149a08176a2f9123a68cd3151b28233d86a4e3
+offers:
+  - offer_id: off_01m11ahe8ne3ywwx1fjtqpk8ys
+    program_id: prg_01m11ahe8nhyqk2cpjvmtrphk6
+    offer_slug: startup-cloud-credits-and-mentoring
+    offer_slug_aliases: []
+    title: STACKIT startup cloud credits and coaching
+    summary: EU-headquartered software startups under 5 years old can receive STACKIT cloud credits sized to their stage and technical complexity, plus one-on-one coaching from STACKIT experts.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-27T09:59:08.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Cloud credits awarded based on the stage and technical complexity of the project, usable across the entire STACKIT service portfolio.
+          kind: other
+        - benefit_id: ben_02
+          description: One-on-one coaching from STACKIT business development, AI, cybersecurity, and cloud experts, with CTO and CEO mentoring for selected startups, plus connections to investors.
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: external-verification
+            statement: The startup is headquartered within the European Union.
+          - criterion_id: cri_02
+            fact: company.age_months
+            kind: predicate
+            operator: lt
+            statement: The startup is less than 5 years old.
+            value:
+              type: number
+              value: 60
+          - criterion_id: cri_03
+            kind: manual
+            reason: external-verification
+            statement: The startup is a software company with a digital business model and a basic technological foundation that can scale on cloud infrastructure.
+          - criterion_id: cri_04
+            kind: manual
+            reason: vendor-discretion
+            statement: STACKIT assesses each application and sets the credit package based on the startup's needs.
+    roles:
+      terms_authority_entity_id: ent_01m11ahe8kk49781dzyya68ef3
+      access_operator_entity_id: ent_01m11ahe8kk49781dzyya68ef3
+    access:
+      availability: public
+      method: form
+      url: https://stackit.com/en/why-stackit/benefits/startup-program
+      instructions: Apply through the application form linked from the Startup Program page; STACKIT then contacts the startup to credit its account.
+    source_ids:
+      - src_88b977718300be5b3898387bec149a08176a2f9123a68cd3151b28233d86a4e3
