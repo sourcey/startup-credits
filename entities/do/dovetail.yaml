@@ -1,0 +1,60 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1tm8d9k6z1cce0c6ndfdzdy
+  slug: dovetail
+  slug_aliases: []
+  name: Dovetail
+  domains:
+    - value: withdovetail.com
+      role: primary
+      valid_from: 2026-09-06T05:49:59.475Z
+  category: legal-compliance
+profile:
+  summary: Dovetail, formerly FormlyAI, is a regulatory partner for medical device companies, with an embedded regulatory team and the Dovetail QMS Plus platform.
+  description: Dovetail, formerly FormlyAI, provides regulatory software and support for medical device teams.
+  links:
+    site: https://www.withdovetail.com/
+sources:
+  - source_id: src_e5743b0a753bf6c0893edb7202915cce179c8627644cc80c07a4c99953c10113
+    url: https://www.withdovetail.com/offer/fda-pathway-pre-submission-meeting
+  - source_id: src_9bc6d7af60c5d9ee0ea47d075edc09b2414b89d5e19bc676321510454b37e601
+    url: https://www.withdovetail.com/offer/fda-pathway-pre-submission-meeting/apply
+  - source_id: src_3dc08d66e4e7264f330ab7164d833fb85c14b671c57c5324bd3474ac8a932b91
+    url: https://blog.withdovetail.com/blog-post/formlyai-is-now-dovetail/
+programs: []
+offers:
+  - offer_id: off_01m1tm8d9mw0cpvej6c69sme2v
+    offer_slug: fda-pathway-pre-submission-meeting
+    offer_slug_aliases: []
+    title: FDA Pathway & Pre-Submission Meeting Program
+    summary: Dovetail opens its FDA pathway and pre-submission (Q-Sub) meeting program to three medical device founders a month at no cost, preparing them from wherever they are in the process.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-06T05:49:59.475Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_01m1tm8d9m8rgtexr0q82p6xzh
+          kind: free-service
+          service: FDA pathway and pre-submission meeting preparation
+          description: At no cost, Dovetail reviews an existing submission and FDA correspondence, stress-tests a drafted Q-Sub package, or builds a Q-Sub question framework from scratch, and supports the founder through the FDA meeting.
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_founder_application
+        reason: vendor-discretion
+        statement: Medical device founders complete a short application; eligible founders are invited, with three places a month reviewed in order of arrival, a waiting list once full, and no guaranteed place.
+    roles:
+      terms_authority_entity_id: ent_01m1tm8d9k6z1cce0c6ndfdzdy
+      access_operator_entity_id: ent_01m1tm8d9k6z1cce0c6ndfdzdy
+    access:
+      availability: public
+      method: form
+      url: https://www.withdovetail.com/offer/fda-pathway-pre-submission-meeting/apply
+      instructions: Complete the application with the device, intended FDA pathway and stage in the pre-submission process; eligible founders are contacted to book a pathway call.
+    terms_url: https://www.withdovetail.com/offer/fda-pathway-pre-submission-meeting
+    source_ids:
+      - src_e5743b0a753bf6c0893edb7202915cce179c8627644cc80c07a4c99953c10113
+      - src_9bc6d7af60c5d9ee0ea47d075edc09b2414b89d5e19bc676321510454b37e601
+      - src_3dc08d66e4e7264f330ab7164d833fb85c14b671c57c5324bd3474ac8a932b91
