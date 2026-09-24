@@ -10,6 +10,7 @@ entity:
       valid_from: 2026-09-05T20:35:08.539Z
   category: apis-integration
 profile:
+  summary: Liveblocks provides a sync engine and collaboration features, such as comments and notifications, for multiplayer and AI products.
   description: Liveblocks provides a sync engine and collaboration features for
     multiplayer and human-AI products.
   links:
@@ -46,7 +47,7 @@ offers:
           details, team size, funding, annual revenue, and estimated monthly
           active users. Liveblocks reviews applications; the page does not
           publish eligibility thresholds.
-        reason: not-machine-evaluable
+        reason: vendor-discretion
     roles:
       terms_authority_entity_id: ent_01m1smgekvfa4wnn4sg6qp1g9t
       access_operator_entity_id: ent_01m1smgekvfa4wnn4sg6qp1g9t
