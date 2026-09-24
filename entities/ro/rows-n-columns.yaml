@@ -34,25 +34,20 @@ offers:
     economics:
       benefits:
         - benefit_id: ben_01
-          applies_to: Professional license ($3,500 perpetual license with 1 year of updates and support)
-          description: 15% discount for startups on the Professional license
+          description: Professional $3,500 (15% Discount for startups)
           kind: discount
           percentage:
             kind: exact
             basis_points: 1500
       consideration:
         kind: variable
-        description: The startup pays the $3,500 Professional license price less the 15% startup discount.
+        description: The startup receives a 15% discount for startups on the $3,500 Professional license.
     eligibility:
       rule:
         criterion_id: cri_02
-        kind: predicate
-        fact: company.employee_count
-        operator: lte
-        statement: The discount is for startups with 5 or fewer employees.
-        value:
-          type: number
-          value: 5
+        kind: manual
+        reason: not-machine-evaluable
+        statement: 15% discount for startups (<= 5 employees).
     roles:
       terms_authority_entity_id: ent_01m1qmsa5pbe7136bq6wdh858a
       access_operator_entity_id: ent_01m1qmsa5pbe7136bq6wdh858a
