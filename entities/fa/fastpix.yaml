@@ -1,0 +1,78 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1f7nxm3nsy8vat0hp862ssx
+  slug: fastpix
+  slug_aliases: []
+  name: FastPix
+  domains:
+    - value: fastpix.com
+      role: primary
+      valid_from: 2026-09-01T19:38:00.000Z
+  category: hosting-infra
+profile:
+  summary: FastPix is a video API platform for video on demand, live streaming, video data analytics, and in-video AI, with usage-based per-minute pricing.
+  description: FastPix is a video API platform for encoding, storage, streaming, transformations, analytics, and related developer tools.
+  links:
+    site: https://fastpix.com
+sources:
+  - source_id: src_8671e1786f44b7bf3740e870b35efe0c9a7b8f6707bf25e34223f612c59ed20d
+    url: https://fastpix.com/startup-program
+  - source_id: src_d55baa6b01abff5190dcb1325fd3570e46ce671c188e23b684c1158eddf49683
+    url: https://fastpix.com/
+programs:
+  - program_id: prg_01m1f7nxmayfyf4neprqenvtbm
+    program_slug: fastpix-for-startups
+    program_slug_aliases: []
+    title: FastPix for Startups Program
+    summary: Eligible startups less than four years old with less than $10 million in funding get $600 in FastPix credits for one year plus 100,000 Video Data views a month.
+    source_ids:
+      - src_8671e1786f44b7bf3740e870b35efe0c9a7b8f6707bf25e34223f612c59ed20d
+offers:
+  - offer_id: off_01m1f7nxmaja5bsray80b88exy
+    program_id: prg_01m1f7nxmayfyf4neprqenvtbm
+    offer_slug: six-hundred-credits-one-year
+    offer_slug_aliases: []
+    title: $600 in FastPix credits for one year
+    summary: Startups less than 4 years old with less than $10 million in funding get $600 in free FastPix credit that lasts a year, plus 100k free Video Data streaming views per month.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-01T19:38:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: $600 in free FastPix credit, lasting one year from activation
+          duration:
+            kind: exact
+            value: P1Y
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 60000
+            kind: exact
+        - benefit_id: ben_02
+          description: Full access to FastPix Video Data with 100,000 streaming views per month free
+          kind: other
+        - benefit_id: ben_03
+          description: An extra $1,200 in credits if the startup is a Y Combinator company or has received VC funding
+          kind: other
+      consideration:
+        kind: variable
+        description: The startup signs up for a paid FastPix plan, which charges only for usage; after the credits it continues on pay-as-you-go pricing.
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: not-machine-evaluable
+        statement: The program is only valid for startups; teams must be less than 4 years old and have less than $10 million in funding to qualify.
+    roles:
+      terms_authority_entity_id: ent_01m1f7nxm3nsy8vat0hp862ssx
+      access_operator_entity_id: ent_01m1f7nxm3nsy8vat0hp862ssx
+    access:
+      availability: public
+      instructions: Sign up for FastPix, upgrade to the paid plan on the billing page, then complete the application on the startup program page. FastPix reviews it and notifies accepted startups by email.
+      method: form
+      url: https://fastpix.com/startup-program
+    terms_url: https://fastpix.com/startup-program
+    source_ids:
+      - src_8671e1786f44b7bf3740e870b35efe0c9a7b8f6707bf25e34223f612c59ed20d
