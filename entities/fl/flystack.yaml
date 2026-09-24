@@ -1,0 +1,93 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1358xf983f6fe6crtnmw8fq
+  slug: flystack
+  slug_aliases: []
+  name: Flystack
+  domains:
+    - value: flystack.dev
+      role: primary
+      valid_from: 2026-08-28T00:00:00.000Z
+  category: apis-integration
+profile:
+  summary: Flystack provides flight data APIs for real-time flight tracking, flight prices, airport schedules, and a global aviation database of airports, airlines, and routes.
+  description: Flystack provides real-time flight tracking, flight price, airport schedule, and aviation database APIs for developers.
+  links:
+    site: https://www.flystack.dev/
+    pricing: https://www.flystack.dev/pricing
+sources:
+  - source_id: src_359d39692eab39861c18e9fc9da215a52fc68c3af3df4b7b9a3f6dc0f4d68b25
+    url: https://www.flystack.dev/startup-program
+  - source_id: src_60d9701ead68bf9f8b5811549b81678ecd53d83ca0d0e6eaf3d5050e0eecd126
+    url: https://www.flystack.dev/pricing
+  - source_id: src_115d10a17f7c879e14e1dea8594f4a4b355f193f195da6e48a25d92b3eab8b91
+    url: https://www.flystack.dev/
+programs:
+  - program_id: prg_01m1358xfarp2sj8qypxkkpn67
+    program_slug: startup-program
+    program_slug_aliases: []
+    title: Flystack Startup Program
+    summary: The Flystack Startup Program gives eligible early-stage startups exclusive discounts on the Premium or Startup plan for 12 months, with all features and priority support.
+    source_ids:
+      - src_359d39692eab39861c18e9fc9da215a52fc68c3af3df4b7b9a3f6dc0f4d68b25
+      - src_60d9701ead68bf9f8b5811549b81678ecd53d83ca0d0e6eaf3d5050e0eecd126
+offers:
+  - offer_id: off_01m1358xfa12sk1bp4pv4xsdna
+    program_id: prg_01m1358xfarp2sj8qypxkkpn67
+    offer_slug: discounted-plans-for-one-year
+    offer_slug_aliases: []
+    title: Up to 50% off Flystack Premium or Startup plans for 12 months
+    summary: Eligible startups get up to 50% off the Flystack Premium or Startup plan for 12 months, with access to all features, production APIs, and priority support.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-28T00:00:00.000Z
+    economics:
+      benefits:
+        - applies_to: Flystack Premium and Startup plans
+          benefit_id: ben_01
+          description: Discounted rates on Premium or Startup plans for 12 months, up to 50% off.
+          kind: discount
+          percentage:
+            basis_points: 5000
+            kind: up-to
+          duration:
+            kind: exact
+            value: P12M
+        - benefit_id: ben_02
+          description: Priority support with direct access to the Flystack team for integration and optimization help, plus tutorials and guides.
+          kind: other
+      consideration:
+        kind: variable
+        description: The startup pays the discounted rate on its Premium or Startup plan for 12 months, with no hidden costs.
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.age_months
+            kind: predicate
+            operator: lt
+            statement: The company is less than 3 years old.
+            value:
+              type: number
+              value: 36
+          - criterion_id: cri_02
+            kind: manual
+            reason: external-verification
+            statement: The company has raised under EUR 2M in funding.
+          - criterion_id: cri_03
+            kind: manual
+            reason: not-machine-evaluable
+            statement: The company is an early-stage company building digital products with an active technical and product team.
+    roles:
+      terms_authority_entity_id: ent_01m1358xf983f6fe6crtnmw8fq
+      access_operator_entity_id: ent_01m1358xf983f6fe6crtnmw8fq
+    access:
+      availability: public
+      method: form
+      url: https://www.flystack.dev/startup-program
+      instructions: Apply with the form on the startup program page; Flystack reviews applications within a few business days.
+    source_ids:
+      - src_359d39692eab39861c18e9fc9da215a52fc68c3af3df4b7b9a3f6dc0f4d68b25
+      - src_60d9701ead68bf9f8b5811549b81678ecd53d83ca0d0e6eaf3d5050e0eecd126
+      - src_115d10a17f7c879e14e1dea8594f4a4b355f193f195da6e48a25d92b3eab8b91
