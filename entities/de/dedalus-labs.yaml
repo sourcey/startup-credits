@@ -1,0 +1,74 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m39775h9k27rv8r2gvv4cynn
+  slug: dedalus-labs
+  slug_aliases:
+    - dedalus
+  name: Dedalus Labs
+  domains:
+    - value: dedaluslabs.one
+      role: primary
+      valid_from: 2026-09-06T21:40:00.000Z
+  category: ai-ml
+profile:
+  summary: Dedalus Labs provides persistent sandboxes for AI agents, MCP server hosting, a marketplace of hosted MCP tools, and an agents SDK.
+  description: Dedalus Labs runs Dedalus Machines, persistent sandboxes for long-running AI agents, and offers MCP server hosting, a hosted tool marketplace, and an agents SDK.
+  links:
+    site: https://www.dedaluslabs.one/
+sources:
+  - source_id: src_eccd0c2cdb1541c10875af0fa1e55d0e93b85126083deef3da26af37d5f3085e
+    url: https://www.dedaluslabs.one/
+  - source_id: src_4fccb715bc9a23c4e7f9e204b37c4e1163b79ca0e6ee3043aaf267ff80f21a44
+    url: https://www.dedaluslabs.one/startup
+programs:
+  - program_id: prg_01m39775h982vwr9h7qxkzc0pe
+    program_slug: dedalus-for-startups
+    program_slug_aliases: []
+    title: Dedalus for Startups
+    summary: Dedalus for Startups gives startups $3,000 in Dedalus credits, 24/7 email support, a personalized Slack support channel, and a stack review.
+    source_ids:
+      - src_4fccb715bc9a23c4e7f9e204b37c4e1163b79ca0e6ee3043aaf267ff80f21a44
+offers:
+  - offer_id: off_01m39775h9jx2sex5e1gb12g7p
+    program_id: prg_01m39775h982vwr9h7qxkzc0pe
+    offer_slug: 3000-dedalus-credits
+    offer_slug_aliases: []
+    title: $3,000 Dedalus credits
+    summary: Startups in the Dedalus for Startups program receive $3,000 in Dedalus credits, 24/7 email support, a personalized Slack support channel, and a white-glove stack review.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-06T21:40:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: $3,000 in Dedalus credits
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 300000
+            kind: exact
+        - benefit_id: ben_02
+          description: 24/7 email support and a personalized Slack support channel
+          kind: other
+        - benefit_id: ben_03
+          description: White-glove stack review with rollout, auth, and observability fixes
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: The program is for startups. Applicants tell Dedalus what they are building and are moved into the startups flow; YC founders have a separate path to redeem $3k in free credits.
+    roles:
+      terms_authority_entity_id: ent_01m39775h9k27rv8r2gvv4cynn
+      access_operator_entity_id: ent_01m39775h9k27rv8r2gvv4cynn
+    access:
+      availability: public
+      method: contact
+      instructions: Use the Apply to Startup Program button on the Dedalus for Startups page, which opens an email to Dedalus asking for the founder name, company website, team size, what you are building, and the account to receive credits.
+      url: https://www.dedaluslabs.one/startup
+    source_ids:
+      - src_4fccb715bc9a23c4e7f9e204b37c4e1163b79ca0e6ee3043aaf267ff80f21a44
