@@ -10,6 +10,7 @@ entity:
       valid_from: 2026-08-29T18:41:44.000Z
   category: ai-ml
 profile:
+  summary: Cleanvoice AI is an AI audio editing tool and API that removes filler words, mouth sounds, and background noise, enhances speech, and transcribes audio.
   description: Cleanvoice AI provides APIs and software for automated audio editing, enhancement, and transcription.
   links:
     site: https://cleanvoice.ai
@@ -44,6 +45,7 @@ offers:
       access_operator_entity_id: ent_01m17d7s314s6dqm0rm4e9enm6
     access:
       availability: public
+      instructions: Use the Write Us and Apply email link in the startup credits section of the page with your startup name, what you are building, and how you would use Cleanvoice; Cleanvoice replies within 2 business days.
       method: contact
       url: https://cleanvoice.ai/descript-api-alternative/
     source_ids:
