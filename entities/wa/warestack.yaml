@@ -1,0 +1,100 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1vzyawafvw3qtfcccdd6t24
+  slug: warestack
+  slug_aliases: []
+  name: Warestack
+  domains:
+    - value: warestack.com
+      role: primary
+      valid_from: 2026-09-06T18:33:26.000Z
+  category: devtools-other
+profile:
+  summary: Warestack helps engineering teams spot delivery risk and flag, route, or block risky changes with deterministic rules across GitHub repositories.
+  description: Warestack provides engineering delivery governance for GitHub organizations through delivery signals, reports, and deterministic pull-request rules.
+  links:
+    site: https://www.warestack.com/
+sources:
+  - source_id: src_eec46e8ebeb7ba077e3db484728ee3c0ba51131051eeeaccd448e0767ee36be9
+    url: https://www.warestack.com/
+  - source_id: src_eec5fef7c4a546a59540bacb052aac53f4d44f53af1a78be53e37c15d2f94b05
+    url: https://www.warestack.com/startup-program
+programs:
+  - program_id: prg_01m1vzyawepeegvhex90cac91q
+    program_slug: warestack-startup-program
+    program_slug_aliases: []
+    title: Warestack Startup Program
+    summary: Warestack's Startup Program gives qualifying startups its Starter plan free for 6 months, saving up to $2,000.
+    source_ids:
+      - src_eec5fef7c4a546a59540bacb052aac53f4d44f53af1a78be53e37c15d2f94b05
+offers:
+  - offer_id: off_01m1vzyawe43face2jhnw6qknn
+    program_id: prg_01m1vzyawepeegvhex90cac91q
+    offer_slug: starter-plan-free-for-six-months
+    offer_slug_aliases: []
+    title: Warestack Starter plan free for 6 months
+    summary: Startups under 5 years old with less than USD 2M in funding or revenue and fewer than 50 employees get the Warestack Starter plan free for 6 months, saving up to USD 2,000.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-06T18:33:26.000Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_01
+          description: 6 months free on the Starter plan, with up to $2,000 in savings.
+          duration:
+            kind: exact
+            value: P6M
+          kind: free-service
+          service: Warestack Starter plan
+        - benefit_id: ben_02
+          description: The Starter plan covers up to 5 repositories, up to 250 PRs per month, 1 team of up to 10 members, 30 governance rules, natural language querying, and 4 scheduled reports per month.
+          kind: other
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.age_months
+            kind: predicate
+            operator: lt
+            statement: Less than 5 years old.
+            value:
+              type: number
+              value: 60
+          - criterion_id: cri_02
+            kind: manual
+            statement: Less than $2M in funding/revenue.
+            reason: external-verification
+          - criterion_id: cri_03
+            fact: company.employee_count
+            kind: predicate
+            operator: lt
+            statement: Fewer than 50 employees.
+            value:
+              type: number
+              value: 50
+          - criterion_id: cri_04
+            fact: company.is_current_customer
+            kind: predicate
+            operator: eq
+            statement: Not a current paying customer.
+            value:
+              type: boolean
+              value: false
+          - criterion_id: cri_05
+            kind: manual
+            statement: The application must use a work email; personal emails such as Gmail or Yahoo are not accepted.
+            reason: external-verification
+    roles:
+      terms_authority_entity_id: ent_01m1vzyawafvw3qtfcccdd6t24
+      access_operator_entity_id: ent_01m1vzyawafvw3qtfcccdd6t24
+    access:
+      availability: public
+      instructions: Apply with company name, work email, company website, country, funding stage, and team size; applications are typically reviewed within 3 to 5 business days.
+      method: form
+      url: https://www.warestack.com/startup-program
+    source_ids:
+      - src_eec5fef7c4a546a59540bacb052aac53f4d44f53af1a78be53e37c15d2f94b05
+      - src_eec46e8ebeb7ba077e3db484728ee3c0ba51131051eeeaccd448e0767ee36be9
