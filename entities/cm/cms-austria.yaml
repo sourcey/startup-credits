@@ -1,0 +1,78 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1tjpy1xd3br53m1rrrd8kss
+  slug: cms-austria
+  slug_aliases: []
+  name: CMS Reich-Rohrwig Hainz Rechtsanwälte GmbH
+  domains:
+    - value: cms.law
+      role: primary
+      valid_from: 2026-09-06T05:22:58.238Z
+  category: legal-compliance
+profile:
+  summary: CMS Reich-Rohrwig Hainz is the CMS member firm in Austria, a Vienna law firm advising businesses, including start-ups, on legal and tax matters.
+  description: CMS Reich-Rohrwig Hainz Rechtsanwälte GmbH is the Austrian CMS member firm, a Vienna law firm that provides legal and tax advice.
+  links:
+    site: https://cms.law/en/aut/
+sources:
+  - source_id: src_177e1b047f3ddb7508195c224cc8064a07adb0ceb9f7c25956ee00c71ceda18a
+    url: https://cms.law/en/aut/insight/start-ups
+  - source_id: src_4289462033c29c08952876d388a8176cf3124ad4348538e7cf05b61e412f4c11
+    url: https://cms.law/en/aut/insight/start-ups/cms-equip-membership
+  - source_id: src_9018749f27d39638cbb66c8d158108ac56cae6b45649283623d0390473c68154
+    url: https://cms.law/en/aut/footer-configuration/Legal-Information
+programs:
+  - program_id: prg_01m1tjpy1ye2bv8v6yrgv5qz9a
+    program_slug: cms-equip-austria
+    program_slug_aliases: []
+    title: CMS equIP
+    summary: equIP is a legal accelerator developed by CMS especially for start-ups based on innovative business ideas or technologies.
+    source_ids:
+      - src_177e1b047f3ddb7508195c224cc8064a07adb0ceb9f7c25956ee00c71ceda18a
+      - src_4289462033c29c08952876d388a8176cf3124ad4348538e7cf05b61e412f4c11
+offers:
+  - offer_id: off_01m1tjpy1yapje6hy0e14dvv89
+    program_id: prg_01m1tjpy1ye2bv8v6yrgv5qz9a
+    offer_slug: equip-legal-rate-discount
+    offer_slug_aliases: []
+    title: 50% off standard hourly rates with CMS equIP membership
+    summary: equIP membership lasts 3 years and includes a 50% discount on standard hourly rates for 3 years, up to EUR 25,000 discount per year.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-06T05:22:58.238Z
+    economics:
+      consideration:
+        kind: variable
+        description: Members pay CMS's standard hourly rates less the 50% discount during the 3-year membership, with the discount capped at EUR 25,000 per year.
+      benefits:
+        - benefit_id: ben_01
+          kind: discount
+          applies_to: Standard hourly rates
+          description: 50% discount on standard hourly rates for 3 years, up to EUR 25,000 discount per year.
+          percentage:
+            kind: exact
+            basis_points: 5000
+          duration:
+            kind: exact
+            value: P3Y
+        - benefit_id: ben_02
+          kind: other
+          description: Contact with investors, decision makers and business partners at exclusive events, and use of equIP at all participating CMS offices.
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: The start-up is based on an innovative business idea or technology and is accepted as a member of CMS equIP after applying.
+    roles:
+      terms_authority_entity_id: ent_01m1tjpy1xd3br53m1rrrd8kss
+      access_operator_entity_id: ent_01m1tjpy1xd3br53m1rrrd8kss
+    access:
+      availability: public
+      method: form
+      url: https://cms.law/en/aut/insight/start-ups
+      instructions: Use Apply now on the CMS equIP page to download the equIP application form.
+    source_ids:
+      - src_177e1b047f3ddb7508195c224cc8064a07adb0ceb9f7c25956ee00c71ceda18a
+      - src_4289462033c29c08952876d388a8176cf3124ad4348538e7cf05b61e412f4c11
+      - src_9018749f27d39638cbb66c8d158108ac56cae6b45649283623d0390473c68154
