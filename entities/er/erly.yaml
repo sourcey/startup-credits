@@ -32,12 +32,12 @@ offers:
     economics:
       consideration:
         kind: variable
-        description: 'Premium: $5 per staff/month (min. $10 per month); Premium+: $8 per staff/month (min. $30 per month).'
+        description: 'A paid WORKR subscription: Premium is $5 per staff/month (minimum $10/month); Premium+ is $8 per staff/month (minimum $30/month).'
       benefits:
         - benefit_id: ben_workr_startup_discount
           kind: discount
-          description: Startup Discount (50% off for 12 months).
-          applies_to: Premium and Premium+
+          description: 50% off for 12 months.
+          applies_to: WORKR Premium and Premium+ subscriptions
           percentage:
             kind: exact
             basis_points: 5000
@@ -65,9 +65,8 @@ offers:
       access_operator_entity_id: ent_01m1v974jhmjh4ptg198b7dj77
     access:
       availability: public
-      method: form
-      url: https://erly.app/register/
-      instructions: Register for erly, then contact erly to request the startup discount.
+      method: contact
+      instructions: Register for erly, then contact erly after registration to request the startup discount.
     source_ids:
       - src_70890f6e078088e223da95e2394d79777fefc702536ad3537c1e6b606dabce43
       - src_4a29b8afaa8bc1c36bda67afa86e96b6b033dd9519f6da8d83d171a3086d126c
