@@ -1,0 +1,87 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1rr3w4h8hbspth6ckmjdqqa
+  slug: lettermint
+  slug_aliases: []
+  name: Lettermint
+  domains:
+    - value: lettermint.co
+      role: primary
+      valid_from: 2026-09-05T00:00:00.000Z
+  category: communication
+profile:
+  summary: Lettermint is an email sending platform for transactional, broadcast, and inbound email, built in the Netherlands and hosted in Europe.
+  description: Lettermint provides transactional, broadcast, and inbound email services from the Netherlands, with hosting in Europe.
+  links:
+    site: https://lettermint.co
+sources:
+  - source_id: src_9ab3f3ff9aae910fa06db6bbdde00123b6fa32a48c93d6c5f7c8232756dcb0b7
+    url: https://lettermint.co/promo-codes-and-discounts/startups
+programs: []
+offers:
+  - offer_id: off_01m1rr3w4j16e2n4sgwhey49y2
+    offer_slug: startup-account-credit
+    offer_slug_aliases: []
+    title: EUR 60 startup account credit
+    summary: Unfunded startups up to 3 years old with no more than EUR 100,000 ARR can get EUR 60 in Lettermint account credit, enough for 6 months of Starter, valid for 12 months after activation.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T00:00:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          kind: credit
+          description: EUR 60 in credit on the Lettermint account, enough to use the Starter subscription free for 6 months or usable on other subscriptions; valid for 12 months after activation
+          value:
+            kind: exact
+            amount:
+              currency: EUR
+              minor_units: 6000
+          duration:
+            kind: exact
+            value: P12M
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: predicate
+            fact: company.funding_raised_usd
+            operator: eq
+            value:
+              type: number
+              value: 0
+            statement: The startup has raised no funding.
+          - criterion_id: cri_02
+            kind: predicate
+            fact: company.age_months
+            operator: lte
+            value:
+              type: number
+              value: 36
+            statement: The startup is at most three years old.
+          - criterion_id: cri_03
+            kind: manual
+            reason: not-machine-evaluable
+            statement: Annual recurring revenue is at most EUR 100,000.
+          - criterion_id: cri_04
+            kind: manual
+            reason: not-machine-evaluable
+            statement: The startup is a registered company.
+          - criterion_id: cri_05
+            kind: manual
+            reason: not-machine-evaluable
+            statement: The startup has not previously applied for Lettermint's startup discount.
+    roles:
+      terms_authority_entity_id: ent_01m1rr3w4h8hbspth6ckmjdqqa
+      access_operator_entity_id: ent_01m1rr3w4h8hbspth6ckmjdqqa
+    access:
+      availability: public
+      method: contact
+      url: https://lettermint.co/promo-codes-and-discounts/startups
+      instructions: Create and verify a free Lettermint account with the domain and project set up, then create a support request from the dashboard asking for the startup discount. Lettermint emails you once the credit is applied.
+    terms_url: https://lettermint.co/promo-codes-and-discounts/startups
+    source_ids:
+      - src_9ab3f3ff9aae910fa06db6bbdde00123b6fa32a48c93d6c5f7c8232756dcb0b7
