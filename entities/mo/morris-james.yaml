@@ -1,0 +1,68 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1th6yj535jyd6p5d9s59g82
+  slug: morris-james
+  slug_aliases: []
+  name: Morris James LLP
+  domains:
+    - value: morrisjames.com
+      role: primary
+      valid_from: 2026-09-06T04:56:45.894Z
+  category: legal-compliance
+profile:
+  summary: Morris James is a Delaware-based, full-service law firm that advises start-ups and emerging companies as they form, fund, and scale.
+  description: Morris James is a Delaware-based, full-service law firm providing corporate, transactional, tax, employment, intellectual property, and litigation counsel.
+  links:
+    site: https://www.morrisjames.com/
+sources:
+  - source_id: src_8b806d02d346ee619320bf6f98f4c9faa3348cb4b292909c2562bdc3b3a62fbd
+    url: https://www.morrisjames.com/service/mergers-acquisitions-corporate/start-up-program/
+programs:
+  - program_id: prg_01m1th6yj61nm044jqf8q9fqjw
+    program_slug: morris-james-start-up-program
+    program_slug_aliases: []
+    title: Morris James Start-Up Program
+    summary: The Morris James Start-Up Program provides legal counsel to entrepreneurs and emerging companies from formation through growth.
+    source_ids:
+      - src_8b806d02d346ee619320bf6f98f4c9faa3348cb4b292909c2562bdc3b3a62fbd
+offers:
+  - offer_id: off_01m1th6yj6ntdd3gzba1jafqdk
+    program_id: prg_01m1th6yj61nm044jqf8q9fqjw
+    offer_slug: first-year-corporate-rate-discount
+    offer_slug_aliases: []
+    title: 30% off standard corporate rates for the first year
+    summary: Qualifying start-ups get 30% off Morris James's standard corporate rates for the first year of the engagement, with eligibility decided case by case.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-06T04:56:45.894Z
+    economics:
+      consideration:
+        kind: variable
+        description: The startup receives a discount of 30% to Morris James's standard corporate rates for the first year of its engagement.
+      benefits:
+        - benefit_id: ben_01
+          kind: discount
+          applies_to: Standard corporate rates
+          description: A discount of 30% to standard corporate rates for the first year of the engagement.
+          percentage:
+            kind: exact
+            basis_points: 3000
+          duration:
+            kind: exact
+            value: P1Y
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Qualification is decided case by case; a qualifying company is typically within its first few years of operations, pre-revenue or with little revenue to date, and has not yet had a significant capital raise.
+    roles:
+      terms_authority_entity_id: ent_01m1th6yj535jyd6p5d9s59g82
+      access_operator_entity_id: ent_01m1th6yj535jyd6p5d9s59g82
+    access:
+      availability: public
+      method: form
+      url: https://www.morrisjames.com/service/mergers-acquisitions-corporate/start-up-program/
+      instructions: Submit the online contact form on the Start-Up Program page to be connected with an attorney.
+    source_ids:
+      - src_8b806d02d346ee619320bf6f98f4c9faa3348cb4b292909c2562bdc3b3a62fbd
