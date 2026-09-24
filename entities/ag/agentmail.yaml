@@ -1,0 +1,67 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1c2a0zpk1wx0kkvnvx50nmf
+  slug: agentmail
+  slug_aliases: []
+  name: AgentMail
+  domains:
+    - value: agentmail.to
+      role: primary
+      valid_from: 2026-08-31T14:06:56.000Z
+  category: communication
+profile:
+  summary: AgentMail is an email inbox API for AI agents that gives each agent its own inbox, with threads, attachments, realtime events, and custom domains.
+  description: AgentMail provides programmable email inboxes and infrastructure for AI agents.
+  links:
+    site: https://www.agentmail.to
+sources:
+  - source_id: src_84a1cbcf334e998aad8a8257972599369dc4d6772b8962bbcebf85e3c8fad175
+    url: https://www.agentmail.to/startups
+  - source_id: src_6536837e1f583251c117dd56c7c5b523a97e1137fd1b1334c1206b53f0801a87
+    url: https://www.agentmail.to/
+programs:
+  - program_id: prg_01m1c2a0zrsx5p2t74nsg2zyxq
+    program_slug: agentmail-for-startups
+    program_slug_aliases: []
+    title: AgentMail for Startups
+    summary: AgentMail's startup program gives eligible early-stage AI-agent companies three months of its Startup tier at no cost.
+    source_ids:
+      - src_84a1cbcf334e998aad8a8257972599369dc4d6772b8962bbcebf85e3c8fad175
+offers:
+  - offer_id: off_01m1c2a0zrdkbxrqczzwsmcfgy
+    program_id: prg_01m1c2a0zrsx5p2t74nsg2zyxq
+    offer_slug: three-months-free-startup-tier
+    offer_slug_aliases: []
+    title: Three months free on AgentMail Startup
+    summary: Approved startups receive three months of AgentMail's USD 200-per-month Startup tier free, including 150 inboxes, 150 custom domains, 10 organization seats, and a SOC 2 report.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-31T14:06:56.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Three months of the AgentMail Startup tier, normally priced at USD 200 per month
+          kind: free-service
+          service: AgentMail Startup tier
+          duration:
+            kind: exact
+            value: P3M
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: external-verification
+        statement: Early-stage startups building with AI agents that have raised between $500K and $10M in funding and are currently not, and never previously, a customer of AgentMail.
+    roles:
+      terms_authority_entity_id: ent_01m1c2a0zpk1wx0kkvnvx50nmf
+      access_operator_entity_id: ent_01m1c2a0zpk1wx0kkvnvx50nmf
+    access:
+      availability: public
+      instructions: Submit the public startup-program form. AgentMail says no credit card is required and that applications are reviewed within a few business days.
+      method: form
+      url: https://www.agentmail.to/startups
+    terms_url: https://www.agentmail.to/startups
+    source_ids:
+      - src_84a1cbcf334e998aad8a8257972599369dc4d6772b8962bbcebf85e3c8fad175
