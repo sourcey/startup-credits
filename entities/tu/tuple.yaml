@@ -1,0 +1,77 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1vzf8n7m1yt9et1fn7889hx
+  slug: tuple
+  slug_aliases: []
+  name: Tuple
+  domains:
+    - value: tuple.app
+      role: primary
+      valid_from: 2026-09-06T18:25:12.873Z
+  category: devtools-other
+profile:
+  summary: Tuple is a remote pair programming app for developers on macOS and Windows.
+  description: Tuple makes a remote pair programming app for developers.
+  links:
+    site: https://tuple.app/
+    pricing: https://tuple.app/pricing
+sources:
+  - source_id: src_daf0a33591a7329aba6d731f3c70ca95500c865ef2bd68b0b2884e787febd8bd
+    url: https://tuple.app/
+  - source_id: src_88d02abbb847ff229a2e388fab84d32336221b364a20171c3305f05a93af46e2
+    url: https://tuple.app/pricing
+programs: []
+offers:
+  - offer_id: off_01m1vzf8n97syakfpyc73qkncc
+    offer_slug: startup-plan-discount
+    offer_slug_aliases: []
+    title: 90% off Tuple for a year for startups
+    summary: Companies less than two years old with fewer than 50 employees can apply to have a one-year 90% discount added to their Tuple subscription.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-06T18:25:12.873Z
+    economics:
+      consideration:
+        kind: variable
+        description: The startup receives a one-year 90% discount added to its subscription.
+      benefits:
+        - benefit_id: ben_startup_discount
+          kind: discount
+          description: A one-year 90% discount added to your subscription.
+          percentage:
+            kind: exact
+            basis_points: 9000
+          duration:
+            kind: exact
+            value: P1Y
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_startup_age
+            kind: predicate
+            fact: company.age_months
+            operator: lt
+            value:
+              type: number
+              value: 24
+            statement: The company is less than two years old.
+          - criterion_id: cri_employee_count
+            kind: predicate
+            fact: company.employee_count
+            operator: lt
+            value:
+              type: number
+              value: 50
+            statement: The company has fewer than 50 employees.
+    roles:
+      terms_authority_entity_id: ent_01m1vzf8n7m1yt9et1fn7889hx
+      access_operator_entity_id: ent_01m1vzf8n7m1yt9et1fn7889hx
+    access:
+      availability: public
+      method: form
+      url: https://tuple.app/startups
+      instructions: Use Apply for discount on the Tuple pricing page to open the startup plan application.
+    source_ids:
+      - src_daf0a33591a7329aba6d731f3c70ca95500c865ef2bd68b0b2884e787febd8bd
+      - src_88d02abbb847ff229a2e388fab84d32336221b364a20171c3305f05a93af46e2
