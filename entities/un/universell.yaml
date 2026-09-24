@@ -10,6 +10,7 @@ entity:
       valid_from: 2026-08-28T18:07:37.000Z
   category: crm-sales
 profile:
+  summary: Universell is an all-in-one business platform that combines e-commerce, payments, POS, inventory, marketing, a deals pipeline, telephony, and workflow automation.
   description: Universell is an integrated business platform for CRM, payments, inventory, workforce management, marketing, e-commerce, and analytics.
   links:
     site: https://www.universell.us
@@ -21,7 +22,7 @@ programs:
     program_slug: universell-startup-program
     program_slug_aliases: []
     title: Universell Startup Program
-    summary: Universell gives qualified early-stage businesses 12 months of free access to its $99 subscription tier for teams of up to 10 employees.
+    summary: The Universell Startup Program gives qualified new or early-stage businesses 12 months of free access to the Universell $99 subscription tier.
     source_ids:
       - src_31ed546bef24eb84094750a146b467ccf0e46d71325667674f00cb5d01e6eaef
 offers:
@@ -30,19 +31,19 @@ offers:
     offer_slug: twelve-months-free-platform-access
     offer_slug_aliases: []
     title: 12 months of free Universell platform access
-    summary: Qualified startups receive the Universell $99 subscription tier free for 12 months for up to 10 employees, with access to more than 100 integrated business tools.
+    summary: Qualified startups receive 12 months of free access to the Universell $99 subscription tier, with support for up to 10 employees and 100+ integrated business tools, and no obligation afterwards.
     lifecycle:
       status: active
       effective_from: 2026-08-28T18:07:37.000Z
     economics:
       benefits:
         - benefit_id: ben_01
-          description: Free access to the Universell $99 subscription tier for up to 10 employees.
+          description: 12 months of free access to the Universell $99 subscription tier, with support for up to 10 employees and access to 100+ integrated business tools.
           duration:
             kind: exact
             value: P1Y
           kind: free-service
-          service: Universell $99 subscription tier for up to 10 employees
+          service: Universell $99 subscription tier
       consideration:
         kind: none
     eligibility:
@@ -53,7 +54,7 @@ offers:
             fact: company.age_months
             kind: predicate
             operator: lte
-            statement: Business must have been operating for no more than 30 months.
+            statement: The business has been in operation for 0 to 30 months.
             value:
               type: number
               value: 30
@@ -61,7 +62,7 @@ offers:
             fact: company.employee_count
             kind: predicate
             operator: gte
-            statement: Business must have at least one employee.
+            statement: The business has 1 to 10 employees.
             value:
               type: number
               value: 1
@@ -69,14 +70,14 @@ offers:
             fact: company.employee_count
             kind: predicate
             operator: lte
-            statement: Business must have no more than 10 employees.
+            statement: The business has 1 to 10 employees.
             value:
               type: number
               value: 10
           - criterion_id: cri_04
             kind: manual
             reason: external-verification
-            statement: Applicant must provide a business plan, articles of incorporation, and a utility bill for business-address verification.
+            statement: The applicant provides a business plan, articles of incorporation, and a utility bill for business address verification.
     roles:
       terms_authority_entity_id: ent_01m14rwjzjdx0zrr1negge5pd7
       access_operator_entity_id: ent_01m14rwjzjdx0zrr1negge5pd7
