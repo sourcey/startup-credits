@@ -1,0 +1,70 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m0kb3kncz7ev60zcqy3jr83b
+  slug: influship
+  slug_aliases: []
+  name: Influship
+  domains:
+    - value: influship.com
+      role: primary
+      valid_from: 2026-08-21T23:39:45Z
+  category: marketing
+profile:
+  summary: Influship is an AI influencer marketing platform for discovering and evaluating creators, with its creator data also available through an API, AI agent tools, and datasets.
+  description: Influship provides creator intelligence, influencer discovery and search, a creator database, datasets, and an API for marketing products and AI agents.
+  links:
+    site: https://www.influship.com
+sources:
+  - source_id: src_6ea0f1cb945d33358692d415e9ecc80e11608c0385ecde9f16038cbd74fdc287
+    url: https://www.influship.com/startups
+programs:
+  - program_id: prg_01m0kb3kne8qgp0wtmq1wrrsec
+    program_slug: startup-program
+    program_slug_aliases: []
+    title: Influship Startup Program
+    summary: The Influship Startup Program gives startups building with creator data free API credits, tailored technical onboarding, dedicated support, and early API access.
+    source_ids:
+      - src_6ea0f1cb945d33358692d415e9ecc80e11608c0385ecde9f16038cbd74fdc287
+offers:
+  - offer_id: off_01m0kb3knek4pamz80vf47663n
+    program_id: prg_01m0kb3kne8qgp0wtmq1wrrsec
+    offer_slug: api-credits-and-integration-support
+    offer_slug_aliases: []
+    title: API credits and integration support
+    summary: Approved startups receive a free Influship API credit grant sized to their project in an intro call, a 1:1 technical onboarding call, dedicated support, and early access to new API features.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-21T23:39:45Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_01
+          description: A free API credit grant tailored to the project, sized in an intro call based on the use case and expected API usage; there is no fixed amount.
+          kind: other
+        - benefit_id: ben_02
+          description: A dedicated 1:1 technical onboarding call to plan the API integration.
+          kind: other
+        - benefit_id: ben_03
+          description: Direct access to the Influship team through a dedicated support channel.
+          kind: other
+        - benefit_id: ben_04
+          description: Early access to new API features and endpoints before they are generally available.
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_01
+        statement: The applicant is a startup at any stage, bootstrapped or funded, building a product that uses influencer or creator data and planning to integrate the Influship API; Influship reviews each application.
+        reason: vendor-discretion
+    roles:
+      terms_authority_entity_id: ent_01m0kb3kncz7ev60zcqy3jr83b
+      access_operator_entity_id: ent_01m0kb3kncz7ev60zcqy3jr83b
+    access:
+      availability: public
+      instructions: Submit the startup-program form; Influship reviews the application and schedules a call to size the credit grant and onboarding plan.
+      method: form
+      url: https://www.influship.com/startups
+    terms_url: https://www.influship.com/startups
+    source_ids:
+      - src_6ea0f1cb945d33358692d415e9ecc80e11608c0385ecde9f16038cbd74fdc287
