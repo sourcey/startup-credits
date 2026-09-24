@@ -10,8 +10,8 @@ entity:
       valid_from: 2026-09-22T15:00:00.000Z
   category: hosting-infra
 profile:
-  summary: OVHcloud provides cloud computing and web hosting, including public cloud, hosted private cloud, dedicated servers, and web hosting.
-  description: OVHcloud is a cloud computing and web hosting provider offering public cloud, hosted private cloud, and dedicated servers.
+  summary: OVHcloud is a cloud computing and web hosting provider offering public cloud, private cloud, VPS and dedicated servers, and domains, hosting, and email.
+  description: OVHcloud is a cloud computing and web hosting provider offering public cloud, private cloud, VPS, dedicated servers, and web hosting.
   links:
     site: https://www.ovhcloud.com/en/
 sources:
@@ -21,14 +21,12 @@ sources:
     url: https://startup.ovhcloud.com/en/startups/
   - source_id: src_09fa02128a8b2180e58686d983b19574a7d3a2db2ce7d7728403d8f1fda10146
     url: https://startup.ovhcloud.com/en/faq-support/
-  - source_id: src_014b4b3348ba525240113b4e843cb9fda27e21938c0bca430737cbe16604c49c
-    url: https://docs.ovhcloud.com/en/guides/account-and-service-management/startup-program/view-credits
 programs:
   - program_id: prg_01m34t111ncrwb6c556fq4j12a
-    program_slug: startup-program-start
+    program_slug: ovhcloud-startup-program
     program_slug_aliases: []
-    title: OVHcloud Startup Program Start level
-    summary: The Start level gives selected pre-seed and seed startups 12 months of OVHcloud credits and engineer consultation.
+    title: OVHcloud Startup Program
+    summary: The OVHcloud Startup Program gives selected startups free cloud credits as vouchers, engineer consultation, and mentoring, starting with a 12-month Start level for pre-seed and seed startups.
     source_ids:
       - src_54b1cb1501ab3068274630398446043ab421087c33ae9751e136a98ad9ee4d6f
       - src_09fa02128a8b2180e58686d983b19574a7d3a2db2ce7d7728403d8f1fda10146
@@ -37,16 +35,8 @@ offers:
     program_id: prg_01m34t111ncrwb6c556fq4j12a
     offer_slug: start-level-cloud-credits
     offer_slug_aliases: []
-    title: Start level cloud credits
-    summary: Selected pre-seed and seed startups can receive €10,000 in free cloud credits and 6 hours of engineer consultation for 12 months.
-    description: >-
-      The Start level offers €10,000 of free credits for OVHcloud public cloud and hosted private cloud,
-      plus 6 hours of 1-on-1 consultation with an engineer, for 12 months.
-      Startup Program vouchers do not pay for Bare Metal Cloud or Web Cloud products.
-      For GPU instances, only V100, V100S, and RTX5000 are eligible.
-      The program is free: OVHcloud does not take shares and does not ask participants to repay vouchers they use or do not use.
-      Participation lasts a maximum of 12 months from contract signature. Remaining vouchers are then invalid.
-      Credits are activated within 48 business hours after the contract is signed.
+    title: Start level, EUR 10,000 in free cloud credits
+    summary: Selected pre-seed and seed startups get EUR 10,000 in free credits for OVHcloud Public Cloud and Hosted Private Cloud, plus 6 hours of 1-on-1 consultation with an engineer, over 12 months.
     lifecycle:
       status: active
       effective_from: 2026-09-22T15:00:00.000Z
@@ -55,7 +45,7 @@ offers:
         kind: none
       benefits:
         - benefit_id: ben_01
-          description: €10,000 of free credits for public cloud and hosted private cloud. Bare Metal Cloud and Web Cloud are not covered. GPU instances are limited to V100, V100S, and RTX5000.
+          description: EUR 10,000 of free credits for Public Cloud and Hosted Private Cloud solutions, used within the 12-month Start level. Bare Metal Cloud and Web Cloud products are not covered, and only V100, V100S, and RTX5000 GPU instances are eligible.
           kind: credit
           value:
             amount:
@@ -66,40 +56,37 @@ offers:
             kind: exact
             value: P12M
         - benefit_id: ben_02
-          description: 6 hours of free 1-on-1 consultation with an OVHcloud engineer during the 12-month Start level.
-          kind: free-service
-          service: OVHcloud engineer consultation
-          duration:
-            kind: exact
-            value: P12M
+          description: 6 hours of 1-on-1 consultation with an engineer, plus access to standard support
+          kind: other
+        - benefit_id: ben_03
+          description: 1-on-1 time with a regional manager, 1-on-1 mentoring, social media visibility, and Showcase events with VCs and potential partners
+          kind: other
     eligibility:
       rule:
         kind: all
         rules:
           - criterion_id: cri_01
-            kind: manual
-            reason: vendor-discretion
-            statement: Applicant is a selected pre-seed or seed startup.
+            fact: company.stage
+            kind: predicate
+            operator: in
+            statement: Start level is for selected pre-seed and seed startups.
+            value:
+              type: string-set
+              values:
+                - pre-seed
+                - seed
           - criterion_id: cri_02
             kind: manual
             reason: external-verification
-            statement: Applicant proposes an innovative technical project with growth potential and at least a proof of concept or minimum viable product that can be implemented on OVHcloud.
+            statement: The startup proposes an innovative, technical project with growth potential and at least a proof of concept or MVP that can be implemented on OVHcloud.
           - criterion_id: cri_03
             kind: manual
             reason: external-verification
-            statement: The project is a professional startup or activity. Projects that are not linked to a professional startup or activity, including NGOs and associations, are not supported.
+            statement: Projects not linked to a professional startup or activity, such as NGOs and associations, and companies that already took part in an OVHcloud Startup Program (previously Digital Launch Pad) are not supported.
           - criterion_id: cri_04
             kind: manual
-            reason: external-verification
-            statement: The company has not already signed up for or taken part in an OVHcloud Startup Program, previously called Digital Launch Pad.
-          - criterion_id: cri_05
-            kind: manual
             reason: vendor-discretion
-            statement: A selection committee reviews the application and may decline it. OVHcloud sends a response within 7 days.
-          - criterion_id: cri_06
-            kind: manual
-            reason: external-verification
-            statement: The startup needs cloud infrastructure soon, because allocated vouchers must be used within the program time limit or they are lost.
+            statement: OVHcloud reviews each application and responds within 7 days.
     roles:
       terms_authority_entity_id: ent_01m34t111jy06hzzcy4gbes3ja
       access_operator_entity_id: ent_01m34t111jy06hzzcy4gbes3ja
@@ -107,10 +94,8 @@ offers:
       availability: public
       method: form
       url: https://startup.ovhcloud.com/en/startups/
-      instructions: Apply on the Start level page with the OVHcloud customer account that should receive the vouchers, or create an account in the application. After acceptance, sign the Startup Program contract. Credits activate within 48 business hours after signature and remain valid for 12 months from that date. Keep a valid payment method on the account for products the credits do not cover and for service continuity after the credits expire.
+      instructions: Apply on the Start level page with the OVHcloud account that should receive the vouchers, or create one. Accepted startups sign the Startup Program contract, and vouchers are issued within 48 hours.
     terms_url: https://startup.ovhcloud.com/en/faq-support/
     source_ids:
-      - src_5484a4a2d4b4557ed835372f5389bdb4ef63ee1a7f7f8c3eeb18958be686cf00
       - src_54b1cb1501ab3068274630398446043ab421087c33ae9751e136a98ad9ee4d6f
       - src_09fa02128a8b2180e58686d983b19574a7d3a2db2ce7d7728403d8f1fda10146
-      - src_014b4b3348ba525240113b4e843cb9fda27e21938c0bca430737cbe16604c49c
