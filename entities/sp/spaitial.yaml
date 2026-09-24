@@ -42,13 +42,13 @@ offers:
     economics:
       consideration:
         kind: variable
-        description: Participants give concrete feedback on the model, API, and workflow, and use attribution such as "Powered by SpAItial Echo" when publishing program work.
+        description: Participants give concrete feedback on model quality, API ergonomics, editing, exports, latency, and bugs.
       benefits:
         - benefit_id: ben_01
-          description: Free credits to prototype, integrate, and test Echo in live product workflows; the Startup Agreement sets no minimum credit amount.
+          description: Approved startups receive credits to prototype, integrate, and test Echo in live product workflows.
           kind: other
         - benefit_id: ben_02
-          description: Priority API access with higher rate limits, early access to new Echo checkpoints, and integration support from the SpAItial team.
+          description: Higher rate limits and early API access.
           kind: other
         - benefit_id: ben_03
           description: When there is a fit, SpAItial may feature shared outputs, demos, launches, and case studies across its channels.
@@ -58,7 +58,7 @@ offers:
         criterion_id: cri_01
         kind: manual
         reason: vendor-discretion
-        statement: Applicant has a real product, workflow, or prototype where Echo can be used now, a founding team that can ship quickly, and a clear plan to integrate Echo; SpAItial accepts applicants at its discretion.
+        statement: A real product, workflow, or prototype where Echo can be used now, a founding team that can ship quickly during the program window, and a clear plan to integrate Echo into the product or workflow.
     roles:
       terms_authority_entity_id: ent_01w20rjdmrdgb2vvr1z69f27a9
       access_operator_entity_id: ent_01w20rjdmrdgb2vvr1z69f27a9
