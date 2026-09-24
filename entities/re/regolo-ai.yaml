@@ -40,14 +40,11 @@ offers:
     economics:
       benefits:
         - benefit_id: ben_01
-          description: 60 days free with unlimited tokens on any open-source model, twice the standard trial, up to 50,000,000 tokens per day, with no credit card required.
-          kind: other
-        - benefit_id: ben_02
-          description: Community support from the team building Regolo infrastructure and a weekly Agentic AI Playbook of implementation tutorials.
+          description: 60 days free with unlimited tokens, 2x the standard trial. Use any open source model while validating your product.
           kind: other
       consideration:
         kind: variable
-        description: Accepted startups are expected to add Regolo's logo to their website, publish content about real usage and outcomes, and mention Regolo in demos, pitches, and technical stack slides.
+        description: Builder Program is a co-marketing commitment. Accepted startups are expected to add the regolo logo on their website, publish content about real usage and outcomes, and mention regolo in demos, pitches, and technical stack slides.
     eligibility:
       rule:
         criterion_id: cri_01
@@ -59,7 +56,6 @@ offers:
       access_operator_entity_id: ent_01m16d3y4s0bm4rjgqk2tv5s2q
     access:
       availability: public
-      instructions: Submit the Apply for Startup Access form. Regolo reviews applications within 48 hours and contacts approved startups by email.
       method: form
       url: https://regolo.ai/apply-for-startup-access/
     terms_url: https://regolo.ai/builder-program/
