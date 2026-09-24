@@ -33,14 +33,14 @@ offers:
     offer_slug: unkey-monthly-startup-credits
     offer_slug_aliases: []
     title: $1,000 in monthly Unkey credits
-    summary: Eligible startups receive $1,000 in Unkey credits every month, dedicated Slack support, optional 1:1 onboarding, and hands-on migration help.
+    summary: Startups that have raised less than $5 million receive $1,000 in Unkey credits every month, priority support in a dedicated Slack channel, optional 1:1 onboarding, and migration help.
     lifecycle:
       status: active
       effective_from: 2026-08-31T06:07:14.949Z
     economics:
       benefits:
         - benefit_id: ben_01
-          description: $1,000 in Unkey credits every month while the startup remains eligible.
+          description: $1,000 in Unkey credits every month while the startup builds and ships.
           kind: credit
           value:
             amount:
@@ -48,10 +48,10 @@ offers:
               minor_units: 100000
             kind: exact
         - benefit_id: ben_02
-          description: Priority support through a dedicated Slack channel.
+          description: Priority support in a dedicated Slack channel.
           kind: other
         - benefit_id: ben_03
-          description: Optional 1:1 concierge onboarding and hands-on migration support.
+          description: An optional 1:1 concierge onboarding session and hands-on support to migrate to Unkey from an existing platform.
           kind: other
       consideration:
         kind: none
@@ -60,8 +60,8 @@ offers:
         criterion_id: cri_01
         fact: company.funding_raised_usd
         kind: predicate
-        operator: lte
-        statement: Eligibility expires after the startup raises $5 million.
+        operator: lt
+        statement: The startup has raised less than $5 million; eligibility expires after raising $5 million.
         value:
           type: number
           value: 5000000
