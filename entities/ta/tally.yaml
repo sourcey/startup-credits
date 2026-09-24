@@ -1,0 +1,87 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1mb4syqqknr9h413355mrw0
+  slug: tally
+  slug_aliases: []
+  name: Tally
+  domains:
+    - value: tally.so
+      role: primary
+      valid_from: 2026-09-03T19:15:17.920Z
+  category: no-code
+profile:
+  summary: Tally is an online form builder where users create forms by typing questions like in a text document, without code.
+  description: Tally is an online form builder that works like a text document, with unlimited forms and submissions on its free plan within fair usage guidelines.
+  links:
+    site: https://tally.so
+sources:
+  - source_id: src_92c249051da5e3172904c1d1ff99c5226e4172812a30c768416f76def359d983
+    url: https://tally.so/help/tally-for-startups
+  - source_id: src_4087976f88354da2fc2cc1c1525cf8f3db8411895860f62b7835ad25ebfd7fab
+    url: https://tally.so/r/kwoOVw
+  - source_id: src_7075a8b7e12da5c4b7afec415e81ca30ab1ee0be64736a899fb7ddc555e1ba5f
+    url: https://tally.so/
+programs:
+  - program_id: prg_01m1mb4syyq7wn3kt5v9xz2b7m
+    program_slug: tally-startup-program
+    program_slug_aliases: []
+    title: Tally Startup Program
+    summary: Through Tally's Partner Program, VC firms, accelerators, incubators, communities, and other startup support organizations can give their startup members a Tally Pro discount.
+    source_ids:
+      - src_92c249051da5e3172904c1d1ff99c5226e4172812a30c768416f76def359d983
+offers:
+  - offer_id: off_01m1mb4syy7er4wec63cdqhas0
+    program_id: prg_01m1mb4syyq7wn3kt5v9xz2b7m
+    offer_slug: tally-startup-discount
+    offer_slug_aliases: []
+    title: 50% off Tally Pro for one year
+    summary: Startups can apply to receive 50% off Tally Pro during 1 year.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-03T19:15:17.920Z
+    economics:
+      consideration:
+        kind: variable
+        description: The startup receives 50% off Tally Pro during 1 year.
+      benefits:
+        - benefit_id: ben_01
+          applies_to: Tally Pro
+          description: 50% off Tally Pro during 1 year
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 5000
+          duration:
+            kind: exact
+            value: P1Y
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: not-machine-evaluable
+            statement: Must be a startup that is a member of one of Tally's partners.
+          - criterion_id: cri_02
+            kind: manual
+            reason: not-machine-evaluable
+            statement: Must have received a partner code.
+          - criterion_id: cri_03
+            kind: manual
+            reason: not-machine-evaluable
+            statement: Must have created a free Tally account.
+          - criterion_id: cri_04
+            kind: manual
+            reason: not-machine-evaluable
+            statement: Must never have been a Tally paid customer.
+    roles:
+      terms_authority_entity_id: ent_01m1mb4syqqknr9h413355mrw0
+      access_operator_entity_id: ent_01m1mb4syqqknr9h413355mrw0
+    access:
+      availability: membership
+      method: form
+      url: https://tally.so/r/kwoOVw
+      instructions: Get a partner code from a Tally partner organization, create a free Tally account, then apply through the Tally startup discount form.
+    source_ids:
+      - src_92c249051da5e3172904c1d1ff99c5226e4172812a30c768416f76def359d983
+      - src_4087976f88354da2fc2cc1c1525cf8f3db8411895860f62b7835ad25ebfd7fab
