@@ -45,8 +45,7 @@ offers:
       benefits:
         - benefit_id: ben_year_one
           kind: discount
-          description: -86% discount on the UNLIMITED plan in year 1, for a total monthly price of EUR 55.58.
-          applies_to: CrocoClick UNLIMITED plan, year 1 of the program
+          description: "Year 1: UNLIMITED plan, monthly price EUR 397, discount applied -86%, total monthly price after discount EUR 55.58."
           percentage:
             kind: exact
             basis_points: 8600
@@ -55,8 +54,7 @@ offers:
             value: P1Y
         - benefit_id: ben_year_two
           kind: discount
-          description: -70% discount on the UNLIMITED plan in year 2, for a total monthly price of EUR 119.10.
-          applies_to: CrocoClick UNLIMITED plan, year 2 of the program
+          description: "Year 2: UNLIMITED plan, monthly price EUR 397, discount applied -70%, total monthly price after discount EUR 119.10."
           percentage:
             kind: exact
             basis_points: 7000
