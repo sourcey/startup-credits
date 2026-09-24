@@ -1,0 +1,59 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1tk5c8arff7qrc0s3my86gt
+  slug: kerno
+  slug_aliases: []
+  name: Kerno
+  domains:
+    - value: kerno.io
+      role: primary
+      valid_from: 2026-09-06T05:30:51.530Z
+  category: devtools-other
+profile:
+  summary: Kerno is an AI backend testing tool that tests code changes against a team's real stack and dependencies.
+  description: Kerno, operated by FYCK Limited, is an AI backend testing tool that runs regression and security tests on code changes against a team's live stack.
+  links:
+    site: https://kerno.io/
+sources:
+  - source_id: src_f755931a0322803ae6974f092fdecc5679fdbe84a67ef383d77877d4f9b3be50
+    url: https://www.kerno.io/pricing/
+  - source_id: src_65ca40eba65426481e9fee96233ba9b578e9a83c8b6bb1c08e1bbe7d1b043220
+    url: https://www.kerno.io/startups/
+programs: []
+offers:
+  - offer_id: off_01m1tk5c8awtrx1jbjvys2h85c
+    offer_slug: early-stage-startup-discount
+    offer_slug_aliases: []
+    title: Kerno for Startups
+    summary: Pre-Series A startups with under USD 2M revenue in the past 12 months get Kerno Pro at USD 25 per developer per month, 50% off the USD 50 list price, locked in for their first two years.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-06T05:30:51.530Z
+    economics:
+      consideration:
+        kind: variable
+        description: The startup receives 50% off Kerno.
+      benefits:
+        - benefit_id: ben_01
+          kind: discount
+          description: Kerno for Startups is $25 per developer per month, 50% off Kerno Pro, locked in for your first two years.
+          percentage:
+            kind: exact
+            basis_points: 5000
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_01
+        reason: external-verification
+        statement: Pre-Series A startups with under $2M revenue in the past 12 months.
+    roles:
+      terms_authority_entity_id: ent_01m1tk5c8arff7qrc0s3my86gt
+      access_operator_entity_id: ent_01m1tk5c8arff7qrc0s3my86gt
+    access:
+      availability: public
+      method: other
+      url: https://www.kerno.io/startups/
+      instructions: The startup price is listed on the Kerno for Startups page, which links to account registration; the page does not describe a separate application step.
+    source_ids:
+      - src_f755931a0322803ae6974f092fdecc5679fdbe84a67ef383d77877d4f9b3be50
+      - src_65ca40eba65426481e9fee96233ba9b578e9a83c8b6bb1c08e1bbe7d1b043220
