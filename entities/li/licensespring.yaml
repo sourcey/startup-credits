@@ -10,6 +10,7 @@ entity:
       valid_from: 2026-08-28T18:15:39.000Z
   category: devtools-other
 profile:
+  summary: LicenseSpring is a software licensing platform that lets software vendors license, protect, and monetize their products with flexible licensing models, usage analytics, and SDKs.
   description: LicenseSpring provides cloud-based software licensing, entitlement management, activation, usage metering, and SDKs for software and hardware vendors.
   links:
     site: https://licensespring.com
@@ -21,7 +22,7 @@ programs:
     program_slug: licensespring-startup-program
     program_slug_aliases: []
     title: LicenseSpring Startup Program
-    summary: LicenseSpring gives eligible early-stage companies a discount on its Business Plus software licensing tier for up to two years.
+    summary: The LicenseSpring Startup Program offers eligible startups up to 75% off the Business Plus tier for up to 2 years.
     source_ids:
       - src_3cc4834cc32e23ac964a7d32c4f441e614124e2fff008b5fe8b93154c7874089
 offers:
@@ -48,7 +49,7 @@ offers:
             kind: up-to
       consideration:
         kind: variable
-        description: The startup pays the remaining price of its Business Plus subscription after the awarded discount.
+        description: The startup subscribes to the Business Plus tier and receives a discount of up to 75% for up to 2 years.
     eligibility:
       rule:
         kind: all
@@ -57,7 +58,7 @@ offers:
             fact: company.age_months
             kind: predicate
             operator: lt
-            statement: Startup must have been founded less than three years ago.
+            statement: The startup was founded less than 3 years ago.
             value:
               type: number
               value: 36
@@ -65,14 +66,14 @@ offers:
             fact: company.employee_count
             kind: predicate
             operator: lt
-            statement: Startup team must have fewer than 15 people.
+            statement: The startup's team has fewer than 15 people.
             value:
               type: number
               value: 15
           - criterion_id: cri_03
             kind: manual
             reason: external-verification
-            statement: Applicant must not be an existing LicenseSpring customer.
+            statement: The startup is not an existing LicenseSpring customer; investor referrals can include a referral code.
     roles:
       terms_authority_entity_id: ent_01m14sb0xhk4wmw2d3zegftxrk
       access_operator_entity_id: ent_01m14sb0xhk4wmw2d3zegftxrk
