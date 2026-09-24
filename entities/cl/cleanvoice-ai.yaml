@@ -32,7 +32,7 @@ offers:
         kind: none
       benefits:
         - benefit_id: ben_primary
-          description: 200 hours of free API credits covering Cleanvoice editing, enhancement, and transcription features
+          description: 200 hours of free API credits for early-stage startups. Includes all features to edit, enhance, and transcribe.
           kind: other
     eligibility:
       rule:
