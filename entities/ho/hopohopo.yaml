@@ -40,10 +40,10 @@ offers:
     economics:
       consideration:
         kind: variable
-        description: Portfolio startups pay for the Hopohopo CRM Pro Plan with 50% off for one year.
+        description: The startup receives 50% off Hopohopo CRM for the entire year.
       benefits:
         - benefit_id: ben_01m1vhy0gby2036gn1nk0wvyks
-          description: 50% discount on the Pro Plan of Hopohopo CRM, active for one year.
+          description: 50% off Hopohopo CRM for the entire year with the code PORTFOLIO50.
           applies_to: Hopohopo CRM Pro Plan
           duration:
             kind: exact
