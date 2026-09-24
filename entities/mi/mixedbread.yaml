@@ -1,0 +1,79 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1c4vntb4k9bqgxctg9snt19
+  slug: mixedbread
+  slug_aliases: []
+  name: Mixedbread
+  domains:
+    - value: mixedbread.com
+      role: primary
+      valid_from: 2026-08-31T14:51:40.000Z
+  category: ai-ml
+profile:
+  summary: Mixedbread indexes text, images, PDFs, video, and audio and provides search over that data for AI agents.
+  description: Mixedbread provides search infrastructure that indexes text, images, PDFs, video, and audio so AI agents can search and act on a company's data.
+  links:
+    site: https://www.mixedbread.com
+    pricing: https://www.mixedbread.com/pricing
+sources:
+  - source_id: src_eb03f4bb398b3d172930bc6f92d638243398c5f5d31323cc48bdddb4657cb33f
+    url: https://www.mixedbread.com/pricing
+  - source_id: src_4b5f3cef450bc1814388db7d923167c5a1103572eb4eb0d4828c331dfdb6fe7f
+    url: https://www.mixedbread.com/
+programs:
+  - program_id: prg_01m1c4vntd9nge959h1hfp4hdy
+    program_slug: mixedbread-for-startups
+    program_slug_aliases: []
+    title: Mixedbread for Startups
+    summary: Mixedbread for Startups gives qualified startups up to $250 in one-time credits, with more available case by case.
+    source_ids:
+      - src_eb03f4bb398b3d172930bc6f92d638243398c5f5d31323cc48bdddb4657cb33f
+offers:
+  - offer_id: off_01m1c4vntddgrb0dqknz2a7d3d
+    program_id: prg_01m1c4vntd9nge959h1hfp4hdy
+    offer_slug: 250-in-one-time-startup-credits
+    offer_slug_aliases: []
+    title: Up to $250 in one-time Mixedbread startup credits
+    summary: Qualified startups that already pay for Mixedbread, are backed by institutional VCs, and have raised up to $20M get up to $250 in one-time credits, with more available case by case.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-31T14:51:40.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to $250 in one-time credits to build on Mixedbread, with more available case by case
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 25000
+            kind: up-to
+      consideration:
+        kind: variable
+        description: The startup must be an existing paying user of Mixedbread.
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: external-verification
+            statement: The startup is an existing paying user of Mixedbread.
+          - criterion_id: cri_02
+            kind: manual
+            reason: external-verification
+            statement: The startup has raised from institutional venture capital firms.
+          - criterion_id: cri_03
+            kind: manual
+            reason: external-verification
+            statement: The startup has raised up to $20M in venture funding.
+    roles:
+      terms_authority_entity_id: ent_01m1c4vntb4k9bqgxctg9snt19
+      access_operator_entity_id: ent_01m1c4vntb4k9bqgxctg9snt19
+    access:
+      availability: public
+      method: form
+      instructions: Use the Apply now button in the Mixedbread for Startups section of the pricing page; Mixedbread contacts qualifying startups within the week.
+      url: https://www.mixedbread.com/pricing
+    source_ids:
+      - src_eb03f4bb398b3d172930bc6f92d638243398c5f5d31323cc48bdddb4657cb33f
