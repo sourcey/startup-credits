@@ -10,12 +10,15 @@ entity:
       valid_from: 2026-09-04T00:00:00.000Z
   category: auth-security
 profile:
-  description: Deepinfo provides external attack surface management, threat intelligence, brand risk protection, third-party risk management, and digital shadow intelligence.
+  summary: Deepinfo is a continuous threat exposure management platform that monitors external attack surfaces, cyber threats, brand risk, and third-party risk.
+  description: Deepinfo provides external attack surface management, cyber threat intelligence, brand risk protection, third-party risk management, and deep search over internet-scale data.
   links:
     site: https://www.deepinfo.com
 sources:
   - source_id: src_2817a1fcf11e2a579f8ae5500afd2b085436a270acc9c5a0bd439d29b70c65b6
     url: https://www.deepinfo.com/programs/startup/
+  - source_id: src_8264ae78b855a734dd9b7405a50b6e40220d792aa608ca7ff873a7cf9d61331d
+    url: https://www.deepinfo.com/
 programs:
   - program_id: prg_01m1q4j3mh4xcbrj3h3rw5h095
     program_slug: deepinfo-startup-program
