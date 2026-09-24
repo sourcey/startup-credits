@@ -37,9 +37,8 @@ offers:
       effective_from: 2026-08-28T18:10:33.000Z
     economics:
       benefits:
-        - applies_to: Recruitly Professional and Enterprise plans, per recruiter seat
-          benefit_id: ben_01
-          description: 75% off the Professional and Enterprise plans for three years, with full access to every feature.
+        - benefit_id: ben_01
+          description: New agencies get 75% off Professional and Enterprise for three years.
           duration:
             kind: exact
             value: P3Y
@@ -47,12 +46,9 @@ offers:
           percentage:
             basis_points: 7500
             kind: exact
-        - benefit_id: ben_02
-          description: A dedicated agency success manager who sets up the system, migrates data, trains the desk, and stays reachable, plus access to the recruiting agency network.
-          kind: other
       consideration:
         kind: variable
-        description: The agency pays $25 per recruiter seat a month on Professional or $37.50 on Enterprise, billed annually for three years, then moves to standard pricing.
+        description: The agency receives 75% off Professional and Enterprise for three years.
     eligibility:
       rule:
         kind: all
