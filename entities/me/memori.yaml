@@ -10,11 +10,13 @@ entity:
       valid_from: 2026-08-31T01:26:52.000Z
   category: ai-ml
 profile:
-  description: Memori provides memory infrastructure for AI agents and applications.
+  summary: Memori provides agent-native memory infrastructure, an LLM-agnostic layer that turns agent execution and conversation into structured, persistent state.
+  description: Memori provides agent-native memory infrastructure that captures, classifies, and recalls facts, preferences, rules, and summaries for production AI agents.
   links:
-    site: https://www.memorilabs.ai
-    pricing: https://www.memorilabs.ai/pricing/
+    site: https://www.memorilabs.ai/
 sources:
+  - source_id: src_0aa9a9e806dd2297006b27223c003bcba42a5fe880c9e2e6a1144f7cc74b0602
+    url: https://www.memorilabs.ai/
   - source_id: src_5f8ddb2b4f3688724812cc86e55e4c0d0539243cdb602fc95e39943c1d4c437d
     url: https://www.memorilabs.ai/startup-program/
 programs:
@@ -22,7 +24,7 @@ programs:
     program_slug: memori-startup-program
     program_slug_aliases: []
     title: Memori Startup Program
-    summary: Memori's startup program gives qualifying early-stage startups three months of Pro access with production-scale memory allowances and direct support.
+    summary: Memori's startup program gives early-stage startups shipping production AI 3 months of Pro access for free.
     source_ids:
       - src_5f8ddb2b4f3688724812cc86e55e4c0d0539243cdb602fc95e39943c1d4c437d
 offers:
@@ -31,21 +33,21 @@ offers:
     offer_slug: three-months-free-memori-pro
     offer_slug_aliases: []
     title: Three months of Memori Pro free
-    summary: Eligible early-stage startups shipping production AI with under $5M raised receive three months of Memori Pro free, with monthly memory allowances, unlimited end users, and direct support.
+    summary: Early-stage startups shipping production AI that have raised less than $5M can apply for 3 months of Memori Pro free, with 150,000 memories created and 500,000 recalled per month and private Slack support.
     lifecycle:
       status: active
       effective_from: 2026-08-31T01:26:52.000Z
     economics:
       benefits:
         - benefit_id: ben_01
-          description: Three months of Memori Pro access, including 150,000 memories created and 500,000 memories recalled per month with unlimited end users.
+          description: 3 months of Pro access for free, with 150,000 memories created and 500,000 recalled per month and unlimited end users.
           kind: free-service
-          service: Memori Pro access
+          service: Memori Pro plan
           duration:
             kind: exact
             value: P3M
         - benefit_id: ben_02
-          description: Private Slack support, multi-agent support, and Advanced Augmentation are included.
+          description: A private Slack channel with direct access to the Memori team, plus multi-agent support and Advanced Augmentation.
           kind: other
       consideration:
         kind: none
@@ -57,14 +59,14 @@ offers:
             fact: company.funding_raised_usd
             kind: predicate
             operator: lt
-            statement: Startup has raised less than $5 million in total funding.
+            statement: The startup has raised less than $5M.
             value:
               type: number
               value: 5000000
           - criterion_id: cri_02
             kind: manual
             reason: not-machine-evaluable
-            statement: Applicant must be an early-stage startup shipping production AI.
+            statement: The applicant is an early-stage startup shipping production AI.
     roles:
       terms_authority_entity_id: ent_01m1apt68vwe1dqkc7jb8yj9vn
       access_operator_entity_id: ent_01m1apt68vwe1dqkc7jb8yj9vn
@@ -72,6 +74,5 @@ offers:
       availability: public
       method: form
       url: https://www.memorilabs.ai/startup-program/
-    terms_url: https://www.memorilabs.ai/startup-program/
     source_ids:
       - src_5f8ddb2b4f3688724812cc86e55e4c0d0539243cdb602fc95e39943c1d4c437d
