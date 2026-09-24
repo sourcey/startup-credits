@@ -38,29 +38,16 @@ offers:
     economics:
       benefits:
         - benefit_id: ben_01
-          description: Free Aleph Cloud credits for virtual machines, storage, serverless functions, web hosting, confidential compute, and GPU instances; the amount and duration are confirmed during review based on project scope and needs.
-          kind: other
-        - benefit_id: ben_02
-          description: Dedicated onboarding and hands-on technical support from the Aleph Cloud engineering team to architect and deploy the project's stack.
+          description: Aleph Cloud credits to deploy VMs, storage, serverless functions, and more, at no cost as a Chainlink BUILD member.
           kind: other
       consideration:
         kind: none
     eligibility:
       rule:
-        kind: all
-        rules:
-          - criterion_id: cri_01
-            fact: company.partner_memberships
-            kind: predicate
-            operator: contains
-            statement: The program is exclusively for projects accepted into the Chainlink BUILD program, at any stage and on any chain.
-            value:
-              type: string
-              value: Chainlink BUILD
-          - criterion_id: cri_02
-            kind: manual
-            reason: vendor-discretion
-            statement: Aleph Cloud reviews each request and confirms the credit allocation and service package.
+        criterion_id: cri_01
+        kind: manual
+        reason: external-verification
+        statement: This program is exclusively for projects accepted into the Chainlink BUILD program.
     roles:
       terms_authority_entity_id: ent_01m14rcwbc381m2vg78gb791na
       access_operator_entity_id: ent_01m14rcwbc381m2vg78gb791na
