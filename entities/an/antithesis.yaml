@@ -10,7 +10,8 @@ entity:
       valid_from: 2026-08-28T10:16:44.000Z
   category: ci-cd
 profile:
-  description: Antithesis provides deterministic simulation testing that analyzes software runtime behavior, finds faults, and produces reproducible debugging information.
+  summary: Antithesis is a deterministic simulation testing platform that runs a complete system under injected faults, finds unanticipated bugs, and reproduces each one with a root cause.
+  description: Antithesis provides deterministic simulation testing that runs in CI, in the local development loop, or as an agent skill, with root cause analysis for every bug.
   links:
     site: https://antithesis.com
 sources:
@@ -23,8 +24,8 @@ offers:
   - offer_id: off_01m13xyc11w521xe91eb64s91m
     offer_slug: antithesis-aws-activate-offer
     offer_slug_aliases: []
-    title: Antithesis AWS Activate offer
-    summary: AWS Activate members can receive 10% off the first year of an Antithesis subscription plus $500 in AWS credit.
+    title: 10% off Antithesis for the first year plus $500 in AWS credit
+    summary: AWS Activate members can apply for 10% off the first-year Antithesis subscription price plus $500 in AWS credit, listed among AWS Activate partner offers.
     lifecycle:
       status: active
       effective_from: 2026-08-28T10:16:44.000Z
@@ -32,7 +33,7 @@ offers:
       benefits:
         - applies_to: First-year Antithesis subscription price
           benefit_id: ben_01
-          description: 10% off the first-year Antithesis subscription price
+          description: 10% discount on the first-year Antithesis subscription price.
           duration:
             kind: exact
             value: P1Y
@@ -41,7 +42,7 @@ offers:
             basis_points: 1000
             kind: exact
         - benefit_id: ben_02
-          description: $500 in AWS credit
+          description: $500 in AWS credit.
           kind: credit
           value:
             amount:
@@ -49,14 +50,15 @@ offers:
               minor_units: 50000
             kind: exact
       consideration:
-        kind: none
+        kind: variable
+        description: The startup buys an Antithesis subscription and receives 10% off its first-year price, plus $500 in AWS credit.
     eligibility:
       rule:
         criterion_id: cri_01
         fact: company.partner_memberships
         kind: predicate
         operator: contains
-        statement: Applicant must be an AWS Activate member eligible to access the partner offer.
+        statement: The startup is an AWS Activate member signed in to AWS Startups, where Activate partner offers are shown to eligible startups.
         value:
           type: string
           value: AWS Activate
@@ -67,5 +69,6 @@ offers:
       availability: membership
       method: form
       url: https://startups.aws.com/offers/antithesis
+      instructions: Sign in to AWS Startups and apply through the Antithesis offer in the AWS Activate offers catalog.
     source_ids:
       - src_cd5f3d5ab090af2af8a2731397dc37b71e647e0f75a8ad2ff9d28f3192d7bf3c
