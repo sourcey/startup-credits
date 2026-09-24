@@ -1,0 +1,74 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m2h0mcrez1ygsrh0wjrwfttr
+  slug: runable
+  slug_aliases: []
+  name: Runable
+  domains:
+    - value: runable.com
+      role: primary
+      valid_from: 2026-09-14T22:29:38.092Z
+  category: ai-ml
+profile:
+  summary: Runable is an AI general agent that plans and executes work end to end, building websites, apps, slides, videos, and research reports and running marketing with 1,000+ integrations.
+  description: Runable is an AI general agent that builds websites, apps, slides, and videos, writes research reports, and runs marketing work for businesses.
+  links:
+    site: https://runable.com/
+sources:
+  - source_id: src_3c7c55e4104cceaad4260a20e8f2c3e9214bc708597514354ea45481921da7a1
+    url: https://runable.com/
+  - source_id: src_1943d9462d5af9f2368ed039c24e08fe41b58d72183093893b5ab2d6ae75aad4
+    url: https://runable.com/programs/for-startups
+programs:
+  - program_id: prg_01m2h0mcrgnkk1bwnx268c40a0
+    program_slug: runable-for-startups
+    program_slug_aliases: []
+    title: Runable for Startups
+    summary: Runable for Startups gives approved startups $5000 in free credits, access to the full Runable platform, and founder-level support from the Runable team.
+    source_ids:
+      - src_1943d9462d5af9f2368ed039c24e08fe41b58d72183093893b5ab2d6ae75aad4
+offers:
+  - offer_id: off_01m2h0mcrg74s8tq6fvq5mfj0y
+    program_id: prg_01m2h0mcrgnkk1bwnx268c40a0
+    offer_slug: five-thousand-dollars-in-platform-credits
+    offer_slug_aliases: []
+    title: $5000 in free Runable credits
+    summary: Approved startups get $5000 in free Runable credits in their account the same week, full platform access, a private Slack or WhatsApp channel with Runable engineers, onboarding, and priority on bugs.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-14T22:29:38.092Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: $5000 in free credits, added to the startup's account the same week it is approved
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 500000
+            kind: exact
+        - benefit_id: ben_02
+          description: Access to the full Runable platform, with no feature flags
+          kind: other
+        - benefit_id: ben_03
+          description: A private Slack or WhatsApp channel with Runable engineers, an onboarding session, priority on bugs, and early access to new agents
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: The program is for startups; a Runable reviewer reads each application and replies within 48 hours with approval or the reason it was declined.
+    roles:
+      terms_authority_entity_id: ent_01m2h0mcrez1ygsrh0wjrwfttr
+      access_operator_entity_id: ent_01m2h0mcrez1ygsrh0wjrwfttr
+    access:
+      availability: public
+      method: form
+      url: https://runable.com/programs/for-startups
+      instructions: Submit the application form on the Runable for Startups page with company name, email, LinkedIn, website, incorporation date, funding stage, and location.
+    terms_url: https://runable.com/programs/for-startups
+    source_ids:
+      - src_1943d9462d5af9f2368ed039c24e08fe41b58d72183093893b5ab2d6ae75aad4
