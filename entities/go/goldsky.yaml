@@ -10,29 +10,33 @@ entity:
       valid_from: 2026-09-04T20:17:38.234Z
   category: data-analytics
 profile:
+  summary: Goldsky provides real-time blockchain data infrastructure, including streaming pipelines, subgraphs for querying onchain data, and RPC endpoints.
   description: Goldsky provides real-time blockchain data infrastructure, including indexing, streaming pipelines, RPC services, and managed data products.
   links:
     site: https://goldsky.com
 sources:
   - source_id: src_5ebf55a27f67e6c84c2afaa77d721a9bc87af04b4a87ae7a1ddb8915be1ff9c0
     url: https://goldsky.com/pricing
+  - source_id: src_214aee4e2f175052385888525d2be148bf965dab3b76a03b935367b11d515168
+    url: https://goldsky.com/
 programs: []
 offers:
   - offer_id: off_01m1q13fr8842gky9mtejv753r
     offer_slug: goldsky-early-stage-company-discount
     offer_slug_aliases: []
     title: Goldsky Early-Stage Company Discount
-    summary: Eligible early-stage companies in Goldsky's partner network receive 50% off their first year of Goldsky service.
+    summary: Early-stage companies that are part of Goldsky's partner network get 50% off their first year on a Goldsky plan.
     lifecycle:
       status: active
       effective_from: 2026-09-04T20:17:38.234Z
     economics:
       consideration:
-        kind: unknown
-        description: The benefit is a discount on paid Goldsky service.
+        kind: variable
+        description: The company pays the discounted Goldsky plan price during the first year.
       benefits:
         - benefit_id: ben_01
-          description: 50% off the first year of Goldsky service
+          applies_to: Goldsky plans
+          description: 50% off the 1st year for early-stage companies in Goldsky's partner network
           duration:
             kind: exact
             value: P1Y
