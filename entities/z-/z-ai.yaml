@@ -1,0 +1,71 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1wc71esjbtzm2dn52w4q3ne
+  slug: z-ai
+  slug_aliases: []
+  name: Z.ai
+  domains:
+    - value: z.ai
+      role: primary
+      valid_from: 2026-09-06T22:10:00.000Z
+  category: ai-ml
+profile:
+  summary: Z.ai builds the GLM family of large language models and provides them to developers through the Z.ai API platform.
+  description: Z.ai builds the GLM family of language models, which developers use through the Z.ai API platform.
+  links:
+    site: https://z.ai
+sources:
+  - source_id: src_0ff3f69dd716a90d650c49f390fe6efb86b5b0e39c45629fa7b0350f3b58e8ea
+    url: https://z.ai/company
+  - source_id: src_95014b84b080cd289714e360164e636d1c03c8368435dd77e95ce6c49a45b98d
+    url: https://startup.z.ai/
+programs:
+  - program_id: prg_01m1wc71fk28ea6z29trtmqfb1
+    program_slug: z-ai-startups-program
+    program_slug_aliases: []
+    title: Z.ai Startups Program
+    summary: The Z.ai Startups Program gives approved startups free GLM API credits, priority support and rate limits, community access, and early access to new models.
+    source_ids:
+      - src_95014b84b080cd289714e360164e636d1c03c8368435dd77e95ce6c49a45b98d
+offers:
+  - offer_id: off_01m1wc71fprhgbrj6j3rgmm6ks
+    program_id: prg_01m1wc71fk28ea6z29trtmqfb1
+    offer_slug: free-api-credits-up-to-1b-tokens
+    offer_slug_aliases: []
+    title: Free API credits of up to 1B tokens
+    summary: Approved startups get free Z.ai API credits of up to 1B tokens with volume pricing on GLM, plus dedicated technical support, priority rate limits, a founder community, and early model access.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-06T22:10:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Free API credits of up to 1B tokens, and volume pricing on GLM
+          kind: other
+        - benefit_id: ben_02
+          description: Dedicated technical support and priority rate limits
+          kind: other
+        - benefit_id: ben_03
+          description: Access to a network of 300+ AI founders, VCs, and accelerators
+          kind: other
+        - benefit_id: ben_04
+          description: Early access to new models and features
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startups apply through the application form; the Z.ai team reviews each application and approves startups for credits and resources.
+    roles:
+      terms_authority_entity_id: ent_01m1wc71esjbtzm2dn52w4q3ne
+      access_operator_entity_id: ent_01m1wc71esjbtzm2dn52w4q3ne
+    access:
+      availability: public
+      method: form
+      instructions: Complete the application form on the Z.ai Startups Program page with your startup details, including your latest funding round. Approved startups receive their API credits and resources.
+      url: https://startup.z.ai/
+    source_ids:
+      - src_95014b84b080cd289714e360164e636d1c03c8368435dd77e95ce6c49a45b98d
