@@ -10,8 +10,8 @@ entity:
       valid_from: 2026-09-06T00:00:00.000Z
   category: crm-sales
 profile:
+  summary: Hopohopo is a fundraising CRM that helps startups find and reach investors, with portfolio tools for investors and accelerators.
   description: Hopohopo provides fundraising CRM software for startups and portfolio-management tools for investors and accelerators.
-  summary: Hopohopo helps startups find investors and manage fundraising pipelines, with collaboration tools for their investors and mentors.
   links:
     site: https://www.hopohopo.io/
 sources:
@@ -19,14 +19,12 @@ sources:
     url: https://www.hopohopo.io/partner-program-welcome
   - source_id: src_072a98faccae997b9e862073987364a3f32ba06c5a28b69bc014caf291cc6033
     url: https://www.hopohopo.io/
-  - source_id: src_46404659ab7939d6c748694626ca2a2afcb719f7a75665a103f8971071e166e6
-    url: https://www.hopohopo.io/terms-of-service
 programs:
   - program_id: prg_01m1vhy0gbstayzr68bywd7j99
     program_slug: hopohopo-partner-program
     program_slug_aliases: []
     title: Hopohopo Partner Program
-    summary: Investors and accelerators can provide a one-year CRM discount to startups in their portfolios.
+    summary: A free program through which accelerators, incubators, VCs and business angels give their portfolio startups 50% off Hopohopo CRM for a year.
     source_ids:
       - src_315c827087bda84477da46d283e8fd3a535d7701c1ff2d82f39118a4fadc5ca9
 offers:
@@ -34,18 +32,19 @@ offers:
     program_id: prg_01m1vhy0gbstayzr68bywd7j99
     offer_slug: portfolio-startup-pro-discount
     offer_slug_aliases: []
-    title: Hopohopo portfolio startup discount
-    summary: Startups in participating portfolios receive 50% off the Hopohopo CRM Pro Plan for one year.
+    title: 50% off Hopohopo CRM Pro for portfolio startups
+    summary: Startups in the portfolio of an investor or accelerator in the Hopohopo Partner Program get 50% off the Hopohopo CRM Pro Plan for one year with the code PORTFOLIO50.
     lifecycle:
       status: active
       effective_from: 2026-09-06T00:00:00.000Z
     economics:
       consideration:
-        kind: unknown
-        description: The offer discounts the Pro Plan subscription; the cited partner page does not specify the remaining subscription amount.
+        kind: variable
+        description: Portfolio startups pay for the Hopohopo CRM Pro Plan with 50% off for one year.
       benefits:
         - benefit_id: ben_01m1vhy0gby2036gn1nk0wvyks
-          description: 50% discount on the Hopohopo CRM Pro Plan for one year.
+          description: 50% discount on the Pro Plan of Hopohopo CRM, active for one year.
+          applies_to: Hopohopo CRM Pro Plan
           duration:
             kind: exact
             value: P1Y
@@ -57,8 +56,8 @@ offers:
       rule:
         kind: manual
         criterion_id: cri_hopohopo_portfolio_membership
-        statement: Startup belongs to an investor or accelerator portfolio participating in the Hopohopo Partner Program; Hopohopo confirms eligibility.
-        reason: not-machine-evaluable
+        statement: The startup is part of the portfolio of an investor or accelerator in the Hopohopo Partner Program; Hopohopo can confirm eligibility for startups that ask.
+        reason: external-verification
     roles:
       terms_authority_entity_id: ent_01m1vhy0gaag11grf7eam85cxr
       access_operator_entity_id: ent_01m1vhy0gaag11grf7eam85cxr
@@ -67,7 +66,7 @@ offers:
       method: code
       public_code: PORTFOLIO50
       url: https://www.hopohopo.io/partner-program-welcome
-      instructions: Confirm portfolio eligibility with Hopohopo, then redeem through the participating partner's invitation using PORTFOLIO50.
+      instructions: Portfolio startups invited by a partner use the code PORTFOLIO50; a startup can also use the form on the partner page to check whether its investor or accelerator already uses Hopohopo.
     source_ids:
       - src_315c827087bda84477da46d283e8fd3a535d7701c1ff2d82f39118a4fadc5ca9
-      - src_46404659ab7939d6c748694626ca2a2afcb719f7a75665a103f8971071e166e6
+      - src_072a98faccae997b9e862073987364a3f32ba06c5a28b69bc014caf291cc6033
