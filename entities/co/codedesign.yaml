@@ -11,7 +11,8 @@ entity:
       valid_from: 2026-08-27T00:00:00.000Z
   category: no-code
 profile:
-  description: CodeDesign.ai is an AI website builder for generating, customizing, publishing, and collaborating on websites, funnels, and landing pages.
+  summary: CodeDesign.ai is an AI website builder for generating, editing, and publishing websites, funnels, and landing pages.
+  description: CodeDesign.ai is an AI website builder with AI writing tools, templates, a visual builder, domain registration, and team collaboration.
   links:
     site: https://codedesign.ai
 sources:
@@ -23,7 +24,7 @@ programs:
     program_slug_aliases:
       - codedesign-startup-credits-program
     title: CodeDesign Startup Programme
-    summary: CodeDesign's startup programme gives eligible early-stage startups a free year of its Growth plan credits to build and launch websites, funnels, and landing pages.
+    summary: The CodeDesign Startup Programme gives eligible early-stage startups a free year of Growth plan credits to build and launch websites, funnels, and landing pages.
     source_ids:
       - src_08b3ec417f276ef7978968df7d731de5b4104a46e45f46c8172f9eb7a74eeabf
 offers:
@@ -32,7 +33,7 @@ offers:
     offer_slug: free-year-of-codedesign-growth-plan
     offer_slug_aliases: []
     title: Free year of CodeDesign Growth plan
-    summary: Eligible startups receive a free year of the CodeDesign Growth plan for their team, advertised as saving $500, with credits for AI website and funnel creation.
+    summary: Eligible startups receive a full year of the CodeDesign Growth plan for their entire team at no cost, which CodeDesign says saves $500, with credits for building websites and funnels.
     lifecycle:
       status: active
       effective_from: 2026-08-27T00:00:00.000Z
@@ -41,14 +42,14 @@ offers:
         kind: none
       benefits:
         - benefit_id: ben_01
-          description: Free year of the CodeDesign Growth plan for the startup's team, advertised as saving $500
+          description: A full year of the CodeDesign Growth plan for the startup's entire team at no cost, which CodeDesign says saves $500.
           kind: free-service
           service: CodeDesign Growth plan
           duration:
             kind: exact
             value: P12M
         - benefit_id: ben_02
-          description: Credits usable for AI website generation, templates, funnels, landing pages, SEO optimization tools, and premium customization features
+          description: Free startup credits for generating websites with AI, unlocking templates, building funnels and landing pages, and running SEO tools; the amount depends on the startup's stage.
           kind: other
     eligibility:
       rule:
@@ -58,19 +59,19 @@ offers:
             fact: company.funding_raised_usd
             kind: predicate
             operator: lt
-            statement: Applicant must have raised fewer than $2 million in funding.
+            statement: The startup has raised less than $2 million in funding; bootstrapped startups are welcome.
             value:
               type: number
               value: 2000000
           - criterion_id: cri_02
             kind: manual
             reason: external-verification
-            statement: Applicant must be a new CodeDesign customer.
+            statement: The program is available only to new CodeDesign.ai customers.
           - criterion_id: cri_03
             fact: company.employee_count
             kind: predicate
             operator: lt
-            statement: Applicant must have fewer than 50 employees.
+            statement: The startup has fewer than 50 employees.
             value:
               type: number
               value: 50
@@ -78,14 +79,14 @@ offers:
             fact: company.age_months
             kind: predicate
             operator: lt
-            statement: Applicant company must be less than 2 years old.
+            statement: The startup is less than 2 years old.
             value:
               type: number
               value: 24
           - criterion_id: cri_05
             kind: manual
             reason: vendor-discretion
-            statement: CodeDesign reviews the application and emails the decision.
+            statement: CodeDesign reviews each application, usually within 7 to 10 business days, and emails the decision.
     roles:
       terms_authority_entity_id: ent_018wk69b96v8yffdwq25njtd5w
       access_operator_entity_id: ent_018wk69b96v8yffdwq25njtd5w
