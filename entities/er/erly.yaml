@@ -25,19 +25,18 @@ offers:
     offer_slug: workr-startup-discount
     offer_slug_aliases: []
     title: WORKR startup discount, 50% off for 12 months
-    summary: Start-ups with fewer than 10 employees operating for less than 3 years get 50% off erly WORKR Premium or Premium+ for 12 months by contacting erly after registering.
+    summary: Start-ups with less than 10 employees operating for less than 3 years are eligible for erly's Startup Discount of 50% off for 12 months by contacting erly after registration.
     lifecycle:
       status: active
       effective_from: 2026-09-06T11:56:17.884Z
     economics:
       consideration:
         kind: variable
-        description: The start-up pays for Premium ($5 per staff per month, minimum $10 per month) or Premium+ ($8 per staff per month, minimum $30 per month) with 50% off for 12 months.
+        description: The startup receives the Startup Discount (50% off for 12 months).
       benefits:
         - benefit_id: ben_workr_startup_discount
           kind: discount
           description: Startup Discount (50% off for 12 months).
-          applies_to: WORKR Premium and Premium+ plans
           percentage:
             kind: exact
             basis_points: 5000
