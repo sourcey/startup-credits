@@ -1,0 +1,82 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_k30wqmjt82zxe4vmkmstd321js
+  slug: qarnot
+  slug_aliases: []
+  name: Qarnot
+  domains:
+    - value: qarnot.com
+      role: primary
+      valid_from: 2026-09-01T10:41:14.305Z
+  category: hosting-infra
+profile:
+  summary: Qarnot is a European cloud HPC platform that engineering teams use to run simulations on demand, with pay-as-you-go pricing and SDKs for automation.
+  description: Qarnot provides a ready-to-use cloud HPC platform for engineering simulations, operated in Europe, with simulation software, SDKs, and pay-as-you-go pricing.
+  links:
+    site: https://qarnot.com
+sources:
+  - source_id: src_194dbedb481c4a6f53232ca730db451b5ded936aa5df09818aeb803c50cf951b
+    url: https://qarnot.com/en/start-up
+  - source_id: src_4366615c3e32c9f15a68a086d9e72a00dbd49b97fd5446389571a5d969a698b3
+    url: https://qarnot.com/en
+programs:
+  - program_id: prg_rnzy09gfv8288dyzhywx5s6z8a
+    program_slug: qarnot-startup-program
+    program_slug_aliases: []
+    title: Qarnot Startup Program
+    summary: Qarnot's start-up program gives start-ups free cloud credits, discounted pay-as-you-go computing, no data transfer fees, and dedicated technical support.
+    source_ids:
+      - src_194dbedb481c4a6f53232ca730db451b5ded936aa5df09818aeb803c50cf951b
+offers:
+  - offer_id: off_0k0yaqrp3cx0xm8g1fp5fxxf3r
+    program_id: prg_rnzy09gfv8288dyzhywx5s6z8a
+    offer_slug: 6000-eur-credits-and-50-percent-discount
+    offer_slug_aliases: []
+    title: €6,000 in credits, then 50% off compute usage
+    summary: Start-ups get €6,000 in free Qarnot cloud credits for the first six months, then a 50% discount on pay-as-you-go computing, with no data transfer fees and dedicated support.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-01T10:41:14.305Z
+    economics:
+      consideration:
+        kind: variable
+        description: The startup receives a 50% discount on computing usage with pay-as-you-go billing after using its free credits.
+      benefits:
+        - benefit_id: ben_01
+          description: €6,000 free credits for the first six months
+          kind: credit
+          value:
+            amount:
+              currency: EUR
+              minor_units: 600000
+            kind: exact
+          duration:
+            kind: exact
+            value: P6M
+        - benefit_id: ben_02
+          description: After using your free credits, a 50% discount on computing usage with pay-as-you-go billing
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 5000
+        - benefit_id: ben_03
+          description: No data transfer fees
+          kind: waiver
+          waived_item: Data transfer fees
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_01
+        statement: The applicant is a start-up joining Qarnot's start-up program.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_k30wqmjt82zxe4vmkmstd321js
+      access_operator_entity_id: ent_k30wqmjt82zxe4vmkmstd321js
+    access:
+      availability: public
+      instructions: Use the Speak to an expert form on the start-up program page; a Qarnot expert contacts the applicant to discuss its needs.
+      method: contact
+      url: https://qarnot.com/en/start-up
+    terms_url: https://qarnot.com/en/start-up
+    source_ids:
+      - src_194dbedb481c4a6f53232ca730db451b5ded936aa5df09818aeb803c50cf951b
