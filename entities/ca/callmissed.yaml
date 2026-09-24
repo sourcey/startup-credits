@@ -1,0 +1,67 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m0x9dbv7sh27d9c7kw5228q9
+  slug: callmissed
+  slug_aliases: []
+  name: CallMissed
+  domains:
+    - value: callmissed.com
+      role: primary
+      valid_from: 2026-08-25T00:00:00.000Z
+  category: communication
+profile:
+  summary: CallMissed is an AI platform for B2C teams that runs WhatsApp and voice agents and offers LLM and speech APIs through one OpenAI-compatible key.
+  description: CallMissed provides AI agents for WhatsApp, voice, SMS, and email in 22 Indian languages, with developer APIs for language models, speech-to-text, and text-to-speech.
+  links:
+    site: https://www.callmissed.com
+sources:
+  - source_id: src_a4630791e3ace0347b104db469b076c132d701a10584c4dc3afcc007cb2a3911
+    url: https://www.callmissed.com/solutions/startups
+  - source_id: src_f67cc17754f4b417dd7461cc69c5424b7feacc54c6bce719bd20ba7ad2232c10
+    url: https://www.callmissed.com/
+programs:
+  - program_id: prg_01m0x9dbv791m7qx9b6c9h4pys
+    program_slug: startup-credits-program
+    program_slug_aliases: []
+    title: CallMissed Startup Program
+    summary: CallMissed's startup program gives qualifying early-stage startups API credits for building on its WhatsApp, voice, speech, and language-model APIs.
+    source_ids:
+      - src_a4630791e3ace0347b104db469b076c132d701a10584c4dc3afcc007cb2a3911
+offers:
+  - offer_id: off_01m0x9dbv70n7dcgdn41jm5tfq
+    program_id: prg_01m0x9dbv791m7qx9b6c9h4pys
+    offer_slug: 1000-usd-api-credits
+    offer_slug_aliases: []
+    title: $1,000 in CallMissed API credits
+    summary: Qualifying early-stage startups receive $1,000 in CallMissed API credits, equal to 100,000 credits at $0.01 each, on top of the free signup bundle.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-25T00:00:00.000Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_01
+          description: $1,000 in API credits (100,000 CallMissed credits at $0.01 each), added on top of the 1,000 free signup credits
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 100000
+            kind: exact
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_01
+        reason: vendor-discretion
+        statement: Early-stage startups building B2C or developer products in India, especially those using WhatsApp, voice, or CallMissed's LLM, STT, and TTS APIs, qualify; DPIIT-registered startups, YC, Antler, or Surge portfolio companies, and strong MVP teams are prioritized.
+    roles:
+      terms_authority_entity_id: ent_01m0x9dbv7sh27d9c7kw5228q9
+      access_operator_entity_id: ent_01m0x9dbv7sh27d9c7kw5228q9
+    access:
+      availability: public
+      method: contact
+      url: https://www.callmissed.com/solutions/startups
+      instructions: Create a free CallMissed account, then email the address published on the startup page with the subject "Startup Credits Application" and the company, founder, product, stage, intended use, expected usage, and demo details it lists.
+    source_ids:
+      - src_a4630791e3ace0347b104db469b076c132d701a10584c4dc3afcc007cb2a3911
