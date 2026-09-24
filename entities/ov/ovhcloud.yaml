@@ -1,0 +1,101 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m34t111jy06hzzcy4gbes3ja
+  slug: ovhcloud
+  slug_aliases: []
+  name: OVHcloud
+  domains:
+    - value: ovhcloud.com
+      role: primary
+      valid_from: 2026-09-22T15:00:00.000Z
+  category: hosting-infra
+profile:
+  summary: OVHcloud is a cloud computing and web hosting provider offering public cloud, private cloud, VPS and dedicated servers, and domains, hosting, and email.
+  description: OVHcloud is a cloud computing and web hosting provider offering public cloud, private cloud, VPS, dedicated servers, and web hosting.
+  links:
+    site: https://www.ovhcloud.com/en/
+sources:
+  - source_id: src_5484a4a2d4b4557ed835372f5389bdb4ef63ee1a7f7f8c3eeb18958be686cf00
+    url: https://www.ovhcloud.com/en/
+  - source_id: src_54b1cb1501ab3068274630398446043ab421087c33ae9751e136a98ad9ee4d6f
+    url: https://startup.ovhcloud.com/en/startups/
+  - source_id: src_09fa02128a8b2180e58686d983b19574a7d3a2db2ce7d7728403d8f1fda10146
+    url: https://startup.ovhcloud.com/en/faq-support/
+programs:
+  - program_id: prg_01m34t111ncrwb6c556fq4j12a
+    program_slug: ovhcloud-startup-program
+    program_slug_aliases: []
+    title: OVHcloud Startup Program
+    summary: The OVHcloud Startup Program gives selected startups free cloud credits as vouchers, engineer consultation, and mentoring, starting with a 12-month Start level for pre-seed and seed startups.
+    source_ids:
+      - src_54b1cb1501ab3068274630398446043ab421087c33ae9751e136a98ad9ee4d6f
+      - src_09fa02128a8b2180e58686d983b19574a7d3a2db2ce7d7728403d8f1fda10146
+offers:
+  - offer_id: off_01m34t111njfjt86c64rmz2386
+    program_id: prg_01m34t111ncrwb6c556fq4j12a
+    offer_slug: start-level-cloud-credits
+    offer_slug_aliases: []
+    title: Start level, EUR 10,000 in free cloud credits
+    summary: Selected pre-seed and seed startups get EUR 10,000 in free credits for OVHcloud Public Cloud and Hosted Private Cloud, plus 6 hours of 1-on-1 consultation with an engineer, over 12 months.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-22T15:00:00.000Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_01
+          description: EUR 10,000 of free credits for Public Cloud and Hosted Private Cloud solutions, used within the 12-month Start level. Bare Metal Cloud and Web Cloud products are not covered, and only V100, V100S, and RTX5000 GPU instances are eligible.
+          kind: credit
+          value:
+            amount:
+              currency: EUR
+              minor_units: 1000000
+            kind: exact
+          duration:
+            kind: exact
+            value: P12M
+        - benefit_id: ben_02
+          description: 6 hours of 1-on-1 consultation with an engineer, plus access to standard support
+          kind: other
+        - benefit_id: ben_03
+          description: 1-on-1 time with a regional manager, 1-on-1 mentoring, social media visibility, and Showcase events with VCs and potential partners
+          kind: other
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.stage
+            kind: predicate
+            operator: in
+            statement: Start level is for selected pre-seed and seed startups.
+            value:
+              type: string-set
+              values:
+                - pre-seed
+                - seed
+          - criterion_id: cri_02
+            kind: manual
+            reason: external-verification
+            statement: The startup proposes an innovative, technical project with growth potential and at least a proof of concept or MVP that can be implemented on OVHcloud.
+          - criterion_id: cri_03
+            kind: manual
+            reason: external-verification
+            statement: Projects not linked to a professional startup or activity, such as NGOs and associations, and companies that already took part in an OVHcloud Startup Program (previously Digital Launch Pad) are not supported.
+          - criterion_id: cri_04
+            kind: manual
+            reason: vendor-discretion
+            statement: OVHcloud reviews each application and responds within 7 days.
+    roles:
+      terms_authority_entity_id: ent_01m34t111jy06hzzcy4gbes3ja
+      access_operator_entity_id: ent_01m34t111jy06hzzcy4gbes3ja
+    access:
+      availability: public
+      method: form
+      url: https://startup.ovhcloud.com/en/startups/
+      instructions: Apply on the Start level page with the OVHcloud account that should receive the vouchers, or create one. Accepted startups sign the Startup Program contract, and vouchers are issued within 48 hours.
+    terms_url: https://startup.ovhcloud.com/en/faq-support/
+    source_ids:
+      - src_54b1cb1501ab3068274630398446043ab421087c33ae9751e136a98ad9ee4d6f
+      - src_09fa02128a8b2180e58686d983b19574a7d3a2db2ce7d7728403d8f1fda10146
