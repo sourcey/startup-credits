@@ -10,6 +10,7 @@ entity:
       valid_from: 2026-08-28T18:10:33.000Z
   category: hr-people
 profile:
+  summary: Recruitly is a recruiting CRM for agencies that combines applicant tracking, business development, sourcing, job multi-posting, campaigns, e-signature, and billing in one platform.
   description: Recruitly provides recruiting agencies with CRM, applicant tracking, sourcing, marketing, automation, communication, and job-board tools.
   links:
     site: https://recruitly.io
@@ -20,8 +21,8 @@ programs:
   - program_id: prg_01m14s1z79phsmgyb8ycdh5hj9
     program_slug: recruitly-startup-program
     program_slug_aliases: []
-    title: Recruitly Startup Program
-    summary: Recruitly offers eligible early-stage recruiting agencies discounted plans, dedicated onboarding, training, and ongoing support for three years.
+    title: Recruitly recruiting startup programme
+    summary: Recruitly's recruiting startup programme gives new agencies 75% off the Professional and Enterprise plans for three years, plus a dedicated agency success manager and network access.
     source_ids:
       - src_6254c6cc3c29f6979a0244ab345f9afe4499a69325969cdd617fb5401ea4d553
 offers:
@@ -29,16 +30,16 @@ offers:
     program_id: prg_01m14s1z79phsmgyb8ycdh5hj9
     offer_slug: seventy-five-percent-off-for-three-years
     offer_slug_aliases: []
-    title: 75% off Recruitly plans for three years
-    summary: Eligible recruiting agencies receive 75% off Recruitly plans for their first three years, with dedicated onboarding, training, and ongoing support.
+    title: 75% off Recruitly Professional and Enterprise for three years
+    summary: New recruiting agencies get 75% off Recruitly Professional ($25 instead of $100 per seat a month) or Enterprise ($37.50 instead of $150), billed annually for three years.
     lifecycle:
       status: active
       effective_from: 2026-08-28T18:10:33.000Z
     economics:
       benefits:
-        - applies_to: Recruitly plans
+        - applies_to: Recruitly Professional and Enterprise plans, per recruiter seat
           benefit_id: ben_01
-          description: 75% off Recruitly plans for three years.
+          description: 75% off the Professional and Enterprise plans for three years, with full access to every feature.
           duration:
             kind: exact
             value: P3Y
@@ -47,11 +48,11 @@ offers:
             basis_points: 7500
             kind: exact
         - benefit_id: ben_02
-          description: Dedicated onboarding, training, and ongoing guidance from a Recruitly agency success manager.
+          description: A dedicated agency success manager who sets up the system, migrates data, trains the desk, and stays reachable, plus access to the recruiting agency network.
           kind: other
       consideration:
         kind: variable
-        description: The agency pays the remaining 25% of its selected Recruitly plan during the three-year discount term.
+        description: The agency pays $25 per recruiter seat a month on Professional or $37.50 on Enterprise, billed annually for three years, then moves to standard pricing.
     eligibility:
       rule:
         kind: all
@@ -60,19 +61,19 @@ offers:
             fact: company.age_months
             kind: predicate
             operator: lte
-            statement: Recruiting agency must have been founded within the last three years.
+            statement: The agency was founded in the last 3 years.
             value:
               type: number
               value: 36
           - criterion_id: cri_02
             kind: manual
             reason: external-verification
-            statement: Recruiting agency must have fewer than 10 recruiters when it applies.
+            statement: The agency has fewer than 10 recruiters when it applies.
           - criterion_id: cri_03
             fact: company.annual_revenue_usd
             kind: predicate
             operator: lt
-            statement: Recruiting agency must have less than $500,000 in annual revenue.
+            statement: The agency has under $500K in annual revenue, measured when it applies.
             value:
               type: number
               value: 500000
