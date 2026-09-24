@@ -22,7 +22,7 @@ programs:
     program_slug: devin-for-startups
     program_slug_aliases: []
     title: Devin for Startups
-    summary: Devin for Startups offers approved startups $65K in credits and grants, plus unlimited seats, founder events, and a swag pack.
+    summary: Devin for Startups gives approved startups $65K in credits and grants to build with the AI software engineer.
     source_ids:
       - src_181a324543605aa19a1bddd4362ebf9eb6a53e5ceba1665bfa6d6e0b4ecaa2b4
 offers:
