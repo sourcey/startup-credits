@@ -1,0 +1,65 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m0wkwfwx84qb4gc5z6cgecf5
+  slug: fal
+  slug_aliases: []
+  name: fal
+  domains:
+    - value: fal.ai
+      role: primary
+      valid_from: 2026-08-25T00:00:00.000Z
+  category: ai-ml
+profile:
+  summary: fal is a generative media platform for developers that runs image, video, audio, and 3D models through an API, with serverless GPUs and dedicated clusters.
+  description: fal is a generative media platform that offers more than 1,000 image, video, audio, and 3D models through an API, plus serverless GPUs and on-demand compute clusters.
+  links:
+    site: https://fal.ai
+sources:
+  - source_id: src_84b7c02a912a03695e93dd33fd8b215a2cbcde0bad5786e6c0b5c9bacb0798a9
+    url: https://fal.ai/
+  - source_id: src_99c803c2483c0b0bfac53d262eeb074304cd05837ca92fa3022a944fb4cda439
+    url: https://fal.ai/startups
+  - source_id: src_958c2775f8f15355cf172fe0c1806f7965c45c2b3d4ab7bd4bf2e278b70d17fa
+    url: https://fal.ai/startup-program
+programs: []
+offers:
+  - offer_id: off_01m0wkwfwzytq3g5vpjzeq1qyh
+    offer_slug: startup-program-credits
+    offer_slug_aliases: []
+    title: fal Startup Program credits from $1,000 to $5,000
+    summary: Startups in Europe and Asia with real traction or venture backing start with $1,000 in fal credits, raised to $2,500 and then $5,000 as monthly fal spend reaches $1,000 and $2,500.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-25T00:00:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Start with $1,000 in fal credits and grow to $5,000 as usage on fal scales.
+          kind: credit
+          value:
+            kind: range
+            minimum:
+              currency: USD
+              minor_units: 100000
+            maximum:
+              currency: USD
+              minor_units: 500000
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_01
+        reason: vendor-discretion
+        statement: You qualify if you have a proven track record (real users, meaningful traction, or revenue) or you are VC-backed, raised from an institutional investor; the program is open to teams based in Europe and Asia, with one application per company every 3 months and no reselling or transferring.
+    roles:
+      terms_authority_entity_id: ent_01m0wkwfwx84qb4gc5z6cgecf5
+      access_operator_entity_id: ent_01m0wkwfwx84qb4gc5z6cgecf5
+    access:
+      availability: public
+      method: form
+      url: https://fal.ai/startup-program
+      instructions: Create or sign in to a fal account, then submit the Startup Program application; approval usually includes a short intro call to size the credits.
+    source_ids:
+      - src_99c803c2483c0b0bfac53d262eeb074304cd05837ca92fa3022a944fb4cda439
+      - src_958c2775f8f15355cf172fe0c1806f7965c45c2b3d4ab7bd4bf2e278b70d17fa
