@@ -1,0 +1,63 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1s0sydsmdwcqgjq27xq20hx
+  slug: cardboard
+  slug_aliases: []
+  name: Cardboard
+  domains:
+    - value: cardboard.inc
+      role: primary
+      valid_from: 2026-09-05T14:50:59.000Z
+  category: finance-accounting
+profile:
+  summary: Software subscription management, virtual payment cards, and receipt collection for businesses.
+  description: Cardboard manages software subscriptions, virtual payment cards, and receipt collection for businesses.
+  links:
+    site: https://cardboard.inc/
+    pricing: https://cardboard.inc/pricing/
+sources:
+  - source_id: src_24cf81847b9d97c2e55b4a3c4f32ef5b
+    url: https://cardboard.inc/pricing/
+programs: []
+offers:
+  - offer_id: off_01m1s0sydtc7z5rt03ke8rxsf9
+    offer_slug: cardboard-startup-paid-plan-discount
+    offer_slug_aliases: []
+    title: 80% off Cardboard paid plans for one year
+    summary: Businesses incorporated less than two years ago get 80% off Cardboard's paid plans for one year from the day they sign up, applied automatically.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T14:50:59.000Z
+    economics:
+      consideration:
+        kind: variable
+        description: The startup receives 80% off for one year from the day it signs up.
+      benefits:
+        - benefit_id: ben_paid_plan_discount
+          description: 80% off for one year from the day you sign up.
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 8000
+          duration:
+            kind: exact
+            value: P1Y
+    eligibility:
+      rule:
+        kind: predicate
+        criterion_id: cri_startup_age
+        statement: The business was incorporated less than two years ago.
+        fact: company.age_years
+        operator: lt
+        value:
+          type: number
+          value: 2
+    roles:
+      terms_authority_entity_id: ent_01m1s0sydsmdwcqgjq27xq20hx
+      access_operator_entity_id: ent_01m1s0sydsmdwcqgjq27xq20hx
+    access:
+      availability: automatic
+      method: automatic
+      url: https://cardboard.inc/pricing/
+    source_ids:
+      - src_24cf81847b9d97c2e55b4a3c4f32ef5b
