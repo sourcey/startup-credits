@@ -23,7 +23,7 @@ programs:
     program_slug: enum-for-startups
     program_slug_aliases: []
     title: enum for Startups
-    summary: enum for Startups is a curated program that gives selected European startups and scaleups cloud credits, a production-ready Kubernetes cluster, and full platform access.
+    summary: enum for Startups offers European startups and scaleups up to 100,000 € in cloud credits over 12 months, a production-ready Kubernetes cluster, and full platform access.
     source_ids:
       - src_f72cfd58fd7548d1c81ae146a8efe1d65ed2f646ea8cb330ce96a49ab80216a0
 offers:
@@ -53,8 +53,7 @@ offers:
           description: A highly available, production-ready Kubernetes cluster and full platform access to Kubernetes Engine, object storage, and networking
           kind: other
       consideration:
-        kind: unknown
-        description: The startup page does not establish separate consideration for the cloud credits.
+        kind: none
     eligibility:
       rule:
         kind: all
