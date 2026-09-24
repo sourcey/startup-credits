@@ -1,0 +1,76 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1sspbtp90t5n5fmna2gw9qt
+  slug: bitbyte3
+  slug_aliases: []
+  name: BitByte3
+  domains:
+    - value: bitbyte3.com
+      role: primary
+      valid_from: 2026-09-06T02:55:00.000Z
+  category: hosting-infra
+profile:
+  summary: BitByte3 builds and runs branded video streaming services, with a website and mobile and TV apps.
+  description: BitByte3 builds and runs branded video streaming services, with websites, mobile and TV apps, billing, and support on one platform.
+  links:
+    site: https://bitbyte3.com
+sources:
+  - source_id: src_29d30bc02ed86d0cd9c287b71562b22ce8f9e3eb49b4e0efbd68690beadcaada
+    url: https://bitbyte3.com/solutions/startups
+programs:
+  - program_id: prg_01m1sspbvhftezw2zpza6r3dq0
+    program_slug: bitbyte3-for-startups
+    program_slug_aliases: []
+    title: BitByte3 for Startups
+    summary: BitByte3's startup pricing gives early-stage teams 25% off any plan for the first year, with setup and customization help for a web-first launch.
+    source_ids:
+      - src_29d30bc02ed86d0cd9c287b71562b22ce8f9e3eb49b4e0efbd68690beadcaada
+offers:
+  - offer_id: off_01m1sspbw1tb0wdzf8v8pe2q3r
+    program_id: prg_01m1sspbvhftezw2zpza6r3dq0
+    offer_slug: first-year-startup-discount
+    offer_slug_aliases: []
+    title: 25% off any BitByte3 plan for the first year
+    summary: Early-stage teams validating an idea get 25% off the Starter, Growth or Business plan for their first year, billed monthly or yearly, plus customization help, subject to review.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-06T02:55:00.000Z
+    economics:
+      consideration:
+        kind: variable
+        description: The startup receives 25% off any plan for its first year.
+      benefits:
+        - benefit_id: ben_plan_discount
+          kind: discount
+          description: 25% off any plan for your first year.
+          percentage:
+            kind: exact
+            basis_points: 2500
+          duration:
+            kind: exact
+            value: P1Y
+        - benefit_id: ben_customization_help
+          kind: other
+          description: Customization help during your first year.
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_stage
+            kind: manual
+            reason: vendor-discretion
+            statement: For early-stage teams validating an idea.
+          - criterion_id: cri_approval
+            kind: manual
+            reason: vendor-discretion
+            statement: Startup access requests are subject to review by BitByte3.
+    roles:
+      terms_authority_entity_id: ent_01m1sspbtp90t5n5fmna2gw9qt
+      access_operator_entity_id: ent_01m1sspbtp90t5n5fmna2gw9qt
+    access:
+      availability: public
+      method: form
+      url: https://bitbyte3.com/solutions/startups
+      instructions: Use Request startup access on the For Startups page and send a short brief about the videos, audience and launch goals.
+    source_ids:
+      - src_29d30bc02ed86d0cd9c287b71562b22ce8f9e3eb49b4e0efbd68690beadcaada
