@@ -10,7 +10,8 @@ entity:
       valid_from: 2026-08-27T00:00:00.000Z
   category: devtools-other
 profile:
-  description: Devin is an AI software engineering platform for planning, coding, reviewing, and shipping software tasks through web, CLI, and desktop interfaces.
+  summary: Devin is an AI software engineer that handles pull requests, bug fixes, refactors, and migrations through a web workspace, a CLI, and a desktop app.
+  description: Devin is an AI software engineering platform, used from a browser workspace, a command-line tool, and Devin Desktop.
   links:
     site: https://devin.ai
 sources:
@@ -21,7 +22,7 @@ programs:
     program_slug: devin-for-startups
     program_slug_aliases: []
     title: Devin for Startups
-    summary: Devin for Startups gives accepted early-stage teams free Devin credits, matching grants, unlimited seats, events, early previews, and startup swag.
+    summary: Devin for Startups offers approved startups $65K in credits and grants, plus unlimited seats, founder events, and a swag pack.
     source_ids:
       - src_181a324543605aa19a1bddd4362ebf9eb6a53e5ceba1665bfa6d6e0b4ecaa2b4
 offers:
@@ -29,18 +30,18 @@ offers:
     program_id: prg_01rrayx6ctpe0k2cjkryxgbarg
     offer_slug: devin-startups-credits-and-matching-grants
     offer_slug_aliases: []
-    title: $15,000 in Devin credits plus matching grants
-    summary: Accepted startups receive $15,000 in Devin credits loaded into their account on approval, plus dollar-for-dollar matching grants up to $50,000 on later reloads.
+    title: $15K in Devin credits plus up to $50K in matching grants
+    summary: Approved startups get $15K in Devin credits on the day they are approved, and Devin matches every reloaded dollar with up to $50K in grants on their next $100K of usage.
     lifecycle:
       status: active
       effective_from: 2026-08-27T00:00:00.000Z
     economics:
       consideration:
         kind: variable
-        description: The initial $15,000 credit grant is free; the additional matching grant requires paid reload spend and is capped at $50,000.
+        description: The $15K in credits is free; the matching grants match dollars the startup reloads, up to $50K in grants on its next $100K of usage.
       benefits:
         - benefit_id: ben_01
-          description: $15,000 in Devin credits loaded into the startup's account on approval
+          description: $15K in free Devin credits, loaded into the startup's account the day it is approved.
           kind: credit
           value:
             amount:
@@ -48,7 +49,7 @@ offers:
               minor_units: 1500000
             kind: exact
         - benefit_id: ben_02
-          description: Dollar-for-dollar matching grants up to $50,000 on the next $100,000 of Devin usage
+          description: A 1:1 match on every dollar reloaded, up to $50K in grants on the next $100K of usage.
           kind: credit
           value:
             amount:
@@ -56,14 +57,14 @@ offers:
               minor_units: 5000000
             kind: up-to
         - benefit_id: ben_03
-          description: Unlimited seats, exclusive founder events and product previews, and an accepted-startup swag pack
+          description: Unlimited seats, invitations to founder meetups, product deep-dives, and early access previews with the Cognition team, and a Devin swag pack.
           kind: other
     eligibility:
       rule:
         kind: manual
         criterion_id: cri_01
         reason: vendor-discretion
-        statement: Devin reviews startup applications on a rolling basis and accepts early-stage teams at its discretion.
+        statement: The applicant is a startup that applies with details about its company; Devin reviews applications on a rolling basis.
     roles:
       terms_authority_entity_id: ent_010f5dtwe926ckmqd050jfvq8f
       access_operator_entity_id: ent_010f5dtwe926ckmqd050jfvq8f
