@@ -1,0 +1,71 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_960vbjxjveh59m31dceczj95ex
+  slug: transloadit
+  slug_aliases: []
+  name: Transloadit
+  domains:
+    - value: transloadit.com
+      role: primary
+      valid_from: 2026-09-01T09:12:44.086Z
+  category: apis-integration
+profile:
+  summary: Transloadit provides APIs for uploading, encoding, and processing images, video, audio, and documents.
+  description: Transloadit provides file uploading, importing, and processing APIs for video and audio encoding, image and document processing, and AI tasks, with a CDN.
+  links:
+    site: https://transloadit.com
+sources:
+  - source_id: src_683d370916e5e4408c41d0c20a8086f4b62e8e1be01d2a0572cba71d2409ed60
+    url: https://transloadit.com/blog/2020/02/accelerator-partnerships-first/
+  - source_id: src_ad5d9edaebf7d3278c78bca6ecb7c69c6223cb1bca940b91c6d471b0bcafe7a8
+    url: https://transloadit.com/
+programs:
+  - program_id: prg_vwrc81ft5eshjjgz93vtse5c15
+    program_slug: accelerator-startup-program
+    program_slug_aliases: []
+    title: Transloadit Accelerator Startup Program
+    summary: Transloadit supports founders and alumni of its partner accelerators and incubators with file-processing credits for one year.
+    source_ids:
+      - src_683d370916e5e4408c41d0c20a8086f4b62e8e1be01d2a0572cba71d2409ed60
+offers:
+  - offer_id: off_bev9mcxh1kr4wc6sn66bf4vfjq
+    program_id: prg_vwrc81ft5eshjjgz93vtse5c15
+    offer_slug: up-to-two-thousand-dollars-for-one-year
+    offer_slug_aliases: []
+    title: Up to $2,000 in Transloadit Credits for One Year
+    summary: Current founders and alumni of Transloadit's partner accelerators and incubators can receive up to $2,000 in Transloadit credit for file processing, for one year.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-01T09:12:44.086Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to $2000 in Transloadit credit for file processing needs
+          duration:
+            kind: exact
+            value: P1Y
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 200000
+            kind: up-to
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: external-verification
+        statement: The applicant is a current founder or alumnus at one of Transloadit's partner accelerators.
+    roles:
+      terms_authority_entity_id: ent_960vbjxjveh59m31dceczj95ex
+      access_operator_entity_id: ent_960vbjxjveh59m31dceczj95ex
+    access:
+      availability: membership
+      method: contact
+      url: https://transloadit.com/blog/2020/02/accelerator-partnerships-first/
+      instructions: Current founders and alumni of a partner accelerator contact Transloadit's perks team at the email address given in the post to claim the credit.
+    terms_url: https://transloadit.com/blog/2020/02/accelerator-partnerships-first/
+    source_ids:
+      - src_683d370916e5e4408c41d0c20a8086f4b62e8e1be01d2a0572cba71d2409ed60
