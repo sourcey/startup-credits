@@ -1,0 +1,58 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1tnaepd10yyn2w51mxnma3m
+  slug: strongkeep
+  slug_aliases: []
+  name: StrongKeep
+  domains:
+    - value: strongkeep.com
+      role: primary
+      valid_from: 2026-09-06T06:08:35.021Z
+  category: auth-security
+profile:
+  summary: StrongKeep is a cybersecurity platform that bundles anti-malware, a web firewall, a password manager, a server scanner and staff training.
+  description: StrongKeep bundles device protection, a web firewall, password management, staff training, and compliance guidance for businesses.
+  links:
+    site: https://www.strongkeep.com/
+sources:
+  - source_id: src_60657552df05ee67292e1eaaea21f5236fae77e98d64238be54ed0fb8fae5118
+    url: https://www.strongkeep.com/partners/500/
+programs: []
+offers:
+  - offer_id: off_01m1tnaepe0tbpvgss8qjcgdrk
+    offer_slug: 500-global-portfolio-discount
+    offer_slug_aliases: []
+    title: 25% off StrongKeep annual plans for 500 Global portfolio companies
+    summary: 500 Global portfolio companies get 25% off StrongKeep's Protection and Compliance annual base plans, applied automatically at checkout, until 30 June 2027.
+    description: The offer is valid until 30 June 2027, is limited to one account per company, is non-transferable, and cannot be combined with any other promotion or discount. StrongKeep may modify or withdraw it without notice.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-06T06:08:35.021Z
+    economics:
+      consideration:
+        kind: variable
+        description: The startup receives a 25% discount on annual base plans for the Protection and Compliance plans, applied automatically at checkout.
+      benefits:
+        - benefit_id: ben_01m1tnaepef8ph8vm66x58etmd
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 2500
+          description: 25% discount applies to annual base plans for the Protection and Compliance plans.
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_500_global_portfolio
+        reason: external-verification
+        statement: Exclusive to 500 Global portfolio companies.
+    roles:
+      terms_authority_entity_id: ent_01m1tnaepd10yyn2w51mxnma3m
+      access_operator_entity_id: ent_01m1tnaepd10yyn2w51mxnma3m
+    access:
+      availability: membership
+      method: automatic
+      url: https://www.strongkeep.com/partners/500/
+      instructions: Register through the links on StrongKeep's 500 Global partner page; the promo code is applied automatically at checkout.
+    terms_url: https://www.strongkeep.com/partners/500/
+    source_ids:
+      - src_60657552df05ee67292e1eaaea21f5236fae77e98d64238be54ed0fb8fae5118
