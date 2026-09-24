@@ -1,0 +1,110 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1angtwz2pfnxqyfe0fnr269
+  slug: productlane
+  slug_aliases: []
+  name: Productlane
+  domains:
+    - value: productlane.com
+      role: primary
+      valid_from: 2026-08-31T01:04:13.905Z
+  category: support
+profile:
+  summary: Productlane is a customer support platform built around Linear, with a support inbox, AI agent, help center, feedback portal, roadmaps, and changelog.
+  description: Productlane provides a Linear-native support platform with an inbox, AI agent, help center, feedback portal, roadmaps, and changelog.
+  links:
+    site: https://productlane.com
+sources:
+  - source_id: src_6fab27f32e19ab949dc077e2d787fb3c7fe7821fca061395a360ab566a105f2e
+    url: https://hello.productlane.com/docs/administration/startup-program
+  - source_id: src_36ed81ec9b1f80015b7e94a5abb388f0534feb7735318b71abe355d3ca373a5a
+    url: https://productlane.com/startup
+programs:
+  - program_id: prg_01m1angtx6neabhd1s6fgkt2cr
+    program_slug: early-stage-program
+    program_slug_aliases: []
+    title: Productlane Early Stage Program
+    summary: Productlane's Early Stage program puts eligible early-stage companies on the Scale plan with incremental discounts over their first 3 years.
+    source_ids:
+      - src_6fab27f32e19ab949dc077e2d787fb3c7fe7821fca061395a360ab566a105f2e
+      - src_36ed81ec9b1f80015b7e94a5abb388f0534feb7735318b71abe355d3ca373a5a
+offers:
+  - offer_id: off_01m1angtx7q2gcwcxg2hqr4g2c
+    program_id: prg_01m1angtx6neabhd1s6fgkt2cr
+    offer_slug: early-stage-scale-plan
+    offer_slug_aliases: []
+    title: Productlane Early Stage Scale Plan
+    summary: Approved startups get the Scale plan with 6 full seats for $65 per month in year one (89% off $594) and $451 per month in year two (24% off), plus free viewer seats and 100 free Agent resolutions a month in year one.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-31T01:04:13.905Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          applies_to: Productlane Scale plan with six full seats during year one
+          description: The first-year price is $65 per month, an 89% discount from the published $594 monthly list price.
+          duration:
+            kind: exact
+            value: P1Y
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 8900
+        - benefit_id: ben_02
+          applies_to: Productlane Scale plan with six full seats during year two
+          description: The second-year price is $451 per month, a 24% discount from the published $594 monthly list price.
+          duration:
+            kind: exact
+            value: P1Y
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 2400
+        - benefit_id: ben_03
+          description: Unlimited internal viewer seats are free and are not billed.
+          kind: free-service
+          service: Productlane internal viewer seats
+        - benefit_id: ben_04
+          description: 100 free Productlane Agent resolutions per month in year one; additional resolutions are charged at $0.79 each.
+          kind: other
+      consideration:
+        kind: variable
+        description: The startup receives the Scale plan at $65/month in its first year, an 89% discount off the standard list price of $594, and at $451/month in its second year, a 24% discount.
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.funding_raised_usd
+            kind: predicate
+            operator: lt
+            statement: The company must have raised less than $10 million in funding.
+            value:
+              type: number
+              value: 10000000
+          - criterion_id: cri_02
+            fact: company.employee_count
+            kind: predicate
+            operator: lt
+            statement: The company must have fewer than 15 employees.
+            value:
+              type: number
+              value: 15
+          - criterion_id: cri_03
+            kind: manual
+            reason: external-verification
+            statement: The company has not been on a paid Productlane plan before.
+          - criterion_id: cri_04
+            kind: manual
+            reason: external-verification
+            statement: The standard program supports no more than six full seats; viewer seats do not count toward this limit.
+    roles:
+      terms_authority_entity_id: ent_01m1angtwz2pfnxqyfe0fnr269
+      access_operator_entity_id: ent_01m1angtwz2pfnxqyfe0fnr269
+    access:
+      availability: public
+      method: form
+      url: https://productlane.com/startup
+    source_ids:
+      - src_6fab27f32e19ab949dc077e2d787fb3c7fe7821fca061395a360ab566a105f2e
+      - src_36ed81ec9b1f80015b7e94a5abb388f0534feb7735318b71abe355d3ca373a5a
