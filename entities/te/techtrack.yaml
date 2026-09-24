@@ -1,0 +1,101 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1f0r6f295c1vj24d26snw4v
+  slug: techtrack
+  slug_aliases: []
+  name: TechTrack
+  domains:
+    - value: techtrackdata.com
+      role: primary
+      valid_from: 2026-09-01T17:36:00.000Z
+  category: crm-sales
+profile:
+  summary: TechTrack is a database, CRM, and marketing automation tool for startups, consultants, and investors, used for fundraising and B2B lead generation.
+  description: TechTrack by Quantum Growth Advisors tracks startups, investors, and deals, and combines that data with CRM, pipeline, and marketing automation tools.
+  links:
+    site: https://www.techtrackdata.com
+sources:
+  - source_id: src_f27d5334c0b1cd83d304bb77a1ada80f70147f0587eff0b167f68e15be453b82
+    url: https://www.techtrackdata.com/techtrack-for-early-stage/
+  - source_id: src_7bbb5b218b833f95226d590ef94573675aa7711c088a253a13262b1a92ef3996
+    url: https://www.techtrackdata.com/
+programs:
+  - program_id: prg_01m1f0r6faec2xhrnpr1x4vze1
+    program_slug: techtrack-for-startups
+    program_slug_aliases: []
+    title: TechTrack for Startups
+    summary: Eligible startups get advanced TechTrack features, Growth Academy, and the year-round digital partnering platform at a 95% discount.
+    source_ids:
+      - src_f27d5334c0b1cd83d304bb77a1ada80f70147f0587eff0b167f68e15be453b82
+offers:
+  - offer_id: off_01m1f0r6fb6y6t004tn5f4adrx
+    program_id: prg_01m1f0r6faec2xhrnpr1x4vze1
+    offer_slug: ninety-five-percent-off-startup-plan
+    offer_slug_aliases: []
+    title: 95% off the TechTrack startup plan
+    summary: New TechTrack customers with less than $2M in funding, fewer than 20 employees, and a company under 5 years old get TechTrack at a 95% discount, an annual plan that works out to $150 a month.
+    description: The startup package includes unlimited data, seats, pipelines, pipeline sharing, and integrations, with 300 data verification credits per month. Eligibility is reassessed at each annual renewal.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-01T17:36:00.000Z
+    economics:
+      benefits:
+        - applies_to: Advanced TechTrack features, Growth Academy, and the year-round digital partnering platform
+          benefit_id: ben_01
+          description: 95% discount on advanced TechTrack features, Growth Academy access, and the year-round digital partnering platform
+          kind: discount
+          percentage:
+            basis_points: 9500
+            kind: exact
+      consideration:
+        amount:
+          currency: USD
+          minor_units: 180000
+        kind: fixed
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: customer.is_new
+            kind: predicate
+            operator: eq
+            statement: The applicant is a new TechTrack customer.
+            value:
+              type: boolean
+              value: true
+          - criterion_id: cri_02
+            fact: company.funding_raised_usd
+            kind: predicate
+            operator: lt
+            statement: The startup has less than $2M in funding.
+            value:
+              type: number
+              value: 2000000
+          - criterion_id: cri_03
+            fact: company.employee_count
+            kind: predicate
+            operator: lt
+            statement: The startup has less than 20 employees.
+            value:
+              type: number
+              value: 20
+          - criterion_id: cri_04
+            fact: company.age_months
+            kind: predicate
+            operator: lt
+            statement: The company is less than 5 years old.
+            value:
+              type: number
+              value: 60
+    roles:
+      terms_authority_entity_id: ent_01m1f0r6f295c1vj24d26snw4v
+      access_operator_entity_id: ent_01m1f0r6f295c1vj24d26snw4v
+    access:
+      availability: public
+      instructions: Use Apply Now on the TechTrack for Startups page; TechTrack says its AI automatically determines whether the startup is eligible.
+      method: form
+      url: https://www.techtrackdata.com/get-started/
+    terms_url: https://www.techtrackdata.com/techtrack-for-early-stage/
+    source_ids:
+      - src_f27d5334c0b1cd83d304bb77a1ada80f70147f0587eff0b167f68e15be453b82
