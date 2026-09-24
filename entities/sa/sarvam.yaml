@@ -43,20 +43,17 @@ offers:
         description: Program participants are expected to display "Powered by Sarvam" in their product as a condition of the program.
       benefits:
         - benefit_id: ben_01
-          description: 6 to 12 months of API credits, with the allocation set by use case, stage, and expected scale; unused credits do not roll over after the program term.
+          description: 6 to 12 months of API credits matched to the startup's scale.
           kind: other
         - benefit_id: ben_02
           description: Priority support with direct access to Sarvam's engineering team.
-          kind: other
-        - benefit_id: ben_03
-          description: Launch visibility through co-branded case studies and launch amplification.
           kind: other
     eligibility:
       rule:
         kind: manual
         criterion_id: cri_01
         reason: vendor-discretion
-        statement: The applicant is a startup that submits the program application with its company, product, funding, and expected API usage details for Sarvam review; existing Sarvam users can apply.
+        statement: The applicant is a startup that applies to the program with details about the startup and how it plans to use Sarvam's APIs.
     roles:
       terms_authority_entity_id: ent_0194c1qf480040fykdbwazydrd
       access_operator_entity_id: ent_0194c1qf480040fykdbwazydrd
