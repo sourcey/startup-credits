@@ -1,0 +1,160 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1yy416v3p69s2kcgg3jbh3r
+  slug: dlh
+  slug_aliases:
+    - datalakehouse
+    - dlh-io
+  name: DLH.io
+  domains:
+    - value: datalakehouse.io
+      role: primary
+      valid_from: 2026-09-07T21:51:00.000Z
+    - value: dlh.io
+      role: alias
+      valid_from: 2026-09-07T21:51:00.000Z
+  category: data-analytics
+profile:
+  summary: DLH.io is a data integration and AI analytics platform that unifies data and APIs from sales, operations, loyalty, HR, and payroll systems for reporting, warehousing, and AI.
+  description: DLH.io provides no-code data integration, pipelines, and AI analytics that unify operational data into warehouses such as Snowflake, Databricks, and BigQuery.
+  links:
+    site: https://datalakehouse.io/
+sources:
+  - source_id: src_9b7e7852970269d7f91bf2aed616abed4695eb7a8952e7d88bedb690afdb2e35
+    url: https://datalakehouse.io/
+  - source_id: src_a9da2a3353e5461f736a4c8286b779d49231f323f11a28d222f098633bce3fc3
+    url: https://datalakehouse.io/startups
+programs:
+  - program_id: prg_01m1yy416v1h0any2t9sfp7mxt
+    program_slug: dlh-startup-program
+    program_slug_aliases:
+      - startups
+    title: DLH.io Startup Program
+    summary: The DLH.io Startup Program gives qualifying startups data and AI credits through two tracks, up to $5,000 for self-funded startups and up to $50,000 for venture-backed startups.
+    source_ids:
+      - src_a9da2a3353e5461f736a4c8286b779d49231f323f11a28d222f098633bce3fc3
+offers:
+  - offer_id: off_01m1yy416vaxsejkzd9s5tktpd
+    program_id: prg_01m1yy416v1h0any2t9sfp7mxt
+    offer_slug: venture-backed-startup-credits
+    offer_slug_aliases: []
+    title: Up to $50,000 in DLH.io credits for venture-backed startups
+    summary: Seed to Series B startups that are VC or accelerator-backed with more than $1M in funding can receive up to $50,000 in DLH.io credits, onboarding, a data architecture review, and priority support.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T21:51:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to $50,000 in DLH.io credits
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 5000000
+            kind: up-to
+        - benefit_id: ben_02
+          description: Dedicated onboarding and data architecture review
+          kind: other
+        - benefit_id: ben_03
+          description: Priority support and roadmap input
+          kind: other
+        - benefit_id: ben_04
+          description: Co-marketing and speaking opportunities
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.stage
+            kind: predicate
+            operator: in
+            statement: Seed to Series B companies.
+            value:
+              type: string-set
+              values:
+                - seed
+                - series-a
+                - series-b
+          - criterion_id: cri_02
+            kind: manual
+            reason: external-verification
+            statement: VC or accelerator-backed teams.
+          - criterion_id: cri_03
+            fact: company.funding_raised_usd
+            kind: predicate
+            operator: gt
+            statement: More than $1M in funding.
+            value:
+              type: number
+              value: 1000000
+    roles:
+      terms_authority_entity_id: ent_01m1yy416v3p69s2kcgg3jbh3r
+      access_operator_entity_id: ent_01m1yy416v3p69s2kcgg3jbh3r
+    access:
+      availability: public
+      method: form
+      url: https://datalakehouse.io/startups
+      instructions: Submit the Apply Now form on the DLH.io Startup Program page, or ask your investor.
+    source_ids:
+      - src_a9da2a3353e5461f736a4c8286b779d49231f323f11a28d222f098633bce3fc3
+  - offer_id: off_01m398btqtxn5v28s5xk2p75m0
+    program_id: prg_01m1yy416v1h0any2t9sfp7mxt
+    offer_slug: self-funded-startup-credits
+    offer_slug_aliases: []
+    title: Up to $5,000 in DLH.io credits for self-funded startups
+    summary: Pre-seed and bootstrapped companies building an MVP or early product with less than $1M in funding can receive up to $5,000 in DLH.io credits, onboarding support, and early feature access.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T21:51:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to $5,000 in DLH.io credits
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 500000
+            kind: up-to
+        - benefit_id: ben_02
+          description: Onboarding support and documentation
+          kind: other
+        - benefit_id: ben_03
+          description: Early access to new connectors and AI features, and Community Slack access
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: external-verification
+            statement: Pre-seed and bootstrapped companies.
+          - criterion_id: cri_02
+            kind: manual
+            reason: not-machine-evaluable
+            statement: Building an MVP or early product.
+          - criterion_id: cri_03
+            fact: company.funding_raised_usd
+            kind: predicate
+            operator: lt
+            statement: Less than $1M in funding.
+            value:
+              type: number
+              value: 1000000
+    roles:
+      terms_authority_entity_id: ent_01m1yy416v3p69s2kcgg3jbh3r
+      access_operator_entity_id: ent_01m1yy416v3p69s2kcgg3jbh3r
+    access:
+      availability: public
+      method: form
+      url: https://datalakehouse.io/startups
+      instructions: Submit the Apply Now form on the DLH.io Startup Program page, or ask your investor.
+    source_ids:
+      - src_a9da2a3353e5461f736a4c8286b779d49231f323f11a28d222f098633bce3fc3
