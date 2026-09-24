@@ -1,0 +1,94 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m398c75264bth1eq29drb9zv
+  slug: unistam
+  slug_aliases: []
+  name: Unistam
+  domains:
+    - value: unistamts.com
+      role: primary
+      valid_from: 2026-09-02T11:10:00.000Z
+  category: hosting-infra
+profile:
+  summary: Unistam Technology Services delivers cloud infrastructure, enterprise support, and digital transformation services, and operates the Simba Space cloud hosting platform.
+  description: Unistam Technology Services provides managed cloud infrastructure, Simba Space hosting, business technology products, and founder consulting for early-stage teams.
+  links:
+    site: https://unistamts.com
+sources:
+  - source_id: src_a39e1cf7cc4463ca733b5203006194c7091f7e6b4cd21c15e2f0a7a415a41e72
+    url: https://unistamts.com/startups.php
+  - source_id: src_1e969bead8e146cfafea9baf4539fd684b2545e06e60125b47a40528a5bbf29c
+    url: https://unistamts.com/
+programs:
+  - program_id: prg_01m398c752dc749mn6m9q8c3r4
+    program_slug: unistam-startup-program
+    program_slug_aliases: []
+    title: Unistam Startup Program
+    summary: Unistam's startup program gives eligible early-stage technology startups up to $50,000 in Simba Space cloud credits, managed infrastructure setup, 24/7 priority support, and founder consultation.
+    source_ids:
+      - src_a39e1cf7cc4463ca733b5203006194c7091f7e6b4cd21c15e2f0a7a415a41e72
+offers:
+  - offer_id: off_01m398c7522jsbdz7137csf374
+    program_id: prg_01m398c752dc749mn6m9q8c3r4
+    offer_slug: up-to-50000-simba-space-cloud-credits
+    offer_slug_aliases: []
+    title: Up to $50,000 in Simba Space cloud credits
+    summary: Eligible pre-seed to Series A technology startups receive up to $50,000 in cloud infrastructure credits across Simba Space, one-stop infrastructure, 24/7 support, and regular founder consultation.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-02T11:10:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to $50,000 in cloud infrastructure credits across Simba Space to host apps, databases, and services.
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 5000000
+            kind: up-to
+        - benefit_id: ben_02
+          description: One-stop infrastructure, with hosting, email, and collaboration set up and managed.
+          kind: other
+        - benefit_id: ben_03
+          description: 24/7 support with priority response times and direct escalation paths.
+          kind: other
+        - benefit_id: ben_04
+          description: Regular 1-on-1 founder consultation sessions with leadership for product, technology, and go-to-market strategy advice.
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: not-machine-evaluable
+            statement: The company must be at pre-seed to Series A stage.
+          - criterion_id: cri_02
+            kind: manual
+            reason: not-machine-evaluable
+            statement: The company must be building a technology product.
+          - criterion_id: cri_03
+            kind: manual
+            reason: not-machine-evaluable
+            statement: The company must be a registered entity or have an entity registration in process.
+          - criterion_id: cri_04
+            kind: manual
+            reason: not-machine-evaluable
+            statement: The company must have a committed team with a clear vision.
+          - criterion_id: cri_05
+            kind: manual
+            reason: vendor-discretion
+            statement: Applications are reviewed on a rolling basis with limited spots each quarter; acceptance is subject to Unistam review.
+    roles:
+      terms_authority_entity_id: ent_01m398c75264bth1eq29drb9zv
+      access_operator_entity_id: ent_01m398c75264bth1eq29drb9zv
+    access:
+      availability: public
+      method: contact
+      url: https://unistamts.com/startups.php
+    terms_url: https://unistamts.com/startups.php
+    source_ids:
+      - src_a39e1cf7cc4463ca733b5203006194c7091f7e6b4cd21c15e2f0a7a415a41e72
