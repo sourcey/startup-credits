@@ -33,30 +33,22 @@ offers:
     offer_slug: up-to-150000-in-huawei-cloud-cash-credits
     offer_slug_aliases: []
     title: Up to $150,000 in Huawei Cloud cash credits
-    summary: Approved startups under 5 years old receive at least 5,000 in Huawei Cloud cash credit vouchers on joining and can apply for up to USD 150,000, plus dedicated cloud migration support.
+    summary: Approved startups under 5 years old receive at least 5,000 in Huawei Cloud cash credit vouchers on joining and can apply for up to USD 150,000.
     lifecycle:
       status: active
       effective_from: 2026-08-27T00:00:00.000Z
     economics:
       benefits:
         - benefit_id: ben_01
-          description: Huawei Cloud cash credit vouchers, a minimum of 5,000 on joining with the possibility to apply for up to USD 150,000
+          description: A minimum of 5,000 in Huawei Cloud cash credits voucher on joining, with the possibility to apply for up to 150,000.
           kind: credit
           value:
             amount:
               currency: USD
               minor_units: 15000000
             kind: up-to
-        - benefit_id: ben_02
-          description: Cloud migration with support from dedicated Huawei Cloud teams
-          kind: free-service
-          service: Cloud migration support
-        - benefit_id: ben_03
-          description: Entrepreneurial coaching, prioritized co-selling opportunities in the KooGallery marketplace, and co-marketing opportunities with Huawei
-          kind: other
       consideration:
-        kind: unknown
-        description: The startup program page does not state a program fee.
+        kind: none
     eligibility:
       rule:
         kind: all
