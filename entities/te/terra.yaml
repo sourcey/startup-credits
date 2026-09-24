@@ -1,0 +1,87 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m0x4hx2ed4gm605a8eatywek
+  slug: terra
+  slug_aliases: []
+  name: Terra
+  domains:
+    - value: tryterra.co
+      role: primary
+      valid_from: 2026-08-25T00:00:00.000Z
+  category: apis-integration
+profile:
+  summary: Terra provides one API that connects applications to health and fitness data from more than 500 wearables, health apps, sensors, and lab providers.
+  description: Terra is a unified health data API that connects 500+ health apps, wearables, sensors, and labs and delivers standardized health metrics to developers by webhook.
+  links:
+    site: https://tryterra.co
+sources:
+  - source_id: src_1b9f87a7803fb6bcdacabf3130b133205de2cc413edcbc9f34380fb094ec7ba1
+    url: https://tryterra.co/accelerator
+  - source_id: src_6ee38983e2b97fb6ae1783d49d0a2a9dcdd84b57204740dbeba8eed44308451e
+    url: https://tryterra.co/
+programs:
+  - program_id: prg_01m0x4hx2kh5v5knfj9yrq7qch
+    program_slug: terra-startup-accelerator
+    program_slug_aliases: []
+    title: Terra Startup Accelerator
+    summary: Terra's rolling Startup Accelerator gives early-stage teams building on health data API credits, a named account manager, and hands-on integration support, with no equity taken and no cost to apply.
+    source_ids:
+      - src_1b9f87a7803fb6bcdacabf3130b133205de2cc413edcbc9f34380fb094ec7ba1
+offers:
+  - offer_id: off_01m0x4hx2ktxwmy3pntj132m9j
+    program_id: prg_01m0x4hx2kh5v5knfj9yrq7qch
+    offer_slug: up-to-100k-api-credits
+    offer_slug_aliases: []
+    title: Up to $100,000 in Terra API credits
+    summary: Accepted early-stage health data teams receive up to $100,000 in Terra API credits over up to six months, applied to monthly invoices, plus a named account manager and integration support.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-25T00:00:00.000Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_01
+          description: Up to $100,000 in Terra API credits over up to six months.
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 10000000
+            kind: up-to
+          duration:
+            kind: up-to
+            value: P6M
+        - benefit_id: ben_02
+          description: A named account manager and hands-on integration support.
+          kind: other
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: vendor-discretion
+            statement: The team is pre-revenue or early-revenue and cannot yet afford paid Terra API access.
+          - criterion_id: cri_02
+            kind: manual
+            reason: vendor-discretion
+            statement: Health data is core to the product rather than an added feature.
+          - criterion_id: cri_03
+            kind: manual
+            reason: external-verification
+            statement: The team is new to Terra, not an existing paying customer or a past accelerator recipient.
+          - criterion_id: cri_04
+            kind: manual
+            reason: vendor-discretion
+            statement: Terra reviews each application and sets the credit amount and duration in its decision, accepting about 0.8% of applicants.
+    roles:
+      terms_authority_entity_id: ent_01m0x4hx2ed4gm605a8eatywek
+      access_operator_entity_id: ent_01m0x4hx2ed4gm605a8eatywek
+    access:
+      availability: public
+      method: form
+      url: https://tryterra.co/accelerator
+      instructions: Submit the short-answer application on the accelerator page; Terra replies within 10 business days.
+    source_ids:
+      - src_1b9f87a7803fb6bcdacabf3130b133205de2cc413edcbc9f34380fb094ec7ba1
