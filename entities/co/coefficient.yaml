@@ -35,17 +35,17 @@ offers:
     offer_slug: first-year-startup-discount
     offer_slug_aliases: []
     title: Up to 50% off Coefficient for the first year
-    summary: Qualified startups with USD 20 million or less in funding, Series A or earlier, and 25 or fewer full-time employees can get up to 50% off Coefficient for their first year.
+    summary: Startups that have raised $20 million or less, are bootstrapped, angel-funded, debt-funded, pre-seed, seed or Series A, and have 25 or fewer full-time employees can get up to 50% off for the first year.
     lifecycle:
       status: active
       effective_from: 2026-09-06T11:26:00.000Z
     economics:
       consideration:
         kind: variable
-        description: Qualified startups pay for their Coefficient plan with up to 50% off for the first year.
+        description: The startup receives up to 50% off for the first year.
       benefits:
         - benefit_id: ben_first_year
-          description: Up to 50% off for the first year for startups.
+          description: Startups can get a discount for a year, up to 50% off for the first year.
           kind: discount
           percentage:
             kind: up-to
@@ -84,7 +84,6 @@ offers:
       availability: public
       method: form
       url: https://coefficient.io/startup
-      instructions: Use See if you qualify on the Coefficient pricing page to open the Startup Plan Request.
     source_ids:
       - src_62f47a0f9c2271c4509aa0b2e5e87d163ed9449576f443daea05fee31ddb626f
       - src_a821a0bdc2b2ef7699d642e4dce21e28d9ae8f9d7f0f49ec2e855547d093088d
