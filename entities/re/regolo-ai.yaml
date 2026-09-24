@@ -10,18 +10,21 @@ entity:
       valid_from: 2026-08-29T09:00:00Z
   category: ai-ml
 profile:
-  description: Regolo.ai provides EU-native AI infrastructure with access to open-source models.
+  summary: Regolo.ai provides EU-hosted AI inference for 100+ open-source models through OpenAI-compatible APIs, with zero data retention and EU data residency.
+  description: Regolo.ai provides EU-hosted inference for 100+ open-source models via OpenAI-compatible APIs, with zero data retention, EU data residency, and renewable-powered data centers.
   links:
-    site: https://regolo.ai/builder-program/
+    site: https://regolo.ai
 sources:
   - source_id: src_fd62e1aa604804bd6e98355ebd5fbc91b768b5ccb95782e666515b741b4795ab
     url: https://regolo.ai/builder-program/
+  - source_id: src_bc5dfbfd8ab5920ca20bce2fe543dcdeda65c158d79d672ce36cfe6ec9c1b0d7
+    url: https://regolo.ai/apply-for-startup-access/
 programs:
   - program_id: prg_01m16d3y4yvx5x43q36jf5ced0
     program_slug: regolo-builder-program
     program_slug_aliases: []
     title: Regolo Builder Program
-    summary: Accepted startups receive 60 days of unlimited tokens for open-source models through Regolo.ai's Builder Program.
+    summary: The Regolo Builder Program gives startups shipping real products 60 days of free, unlimited tokens on open-source models, in exchange for a co-marketing commitment.
     source_ids:
       - src_fd62e1aa604804bd6e98355ebd5fbc91b768b5ccb95782e666515b741b4795ab
 offers:
@@ -29,31 +32,37 @@ offers:
     program_id: prg_01m16d3y4yvx5x43q36jf5ced0
     offer_slug: 60-days-unlimited-tokens
     offer_slug_aliases: []
-    title: 60 Days of Unlimited Tokens
-    summary: Accepted startups receive 60 days of unlimited tokens for open-source models with no credit card required.
+    title: 60 days of free unlimited tokens on Regolo.ai
+    summary: Accepted startups get 60 days free with unlimited tokens on any open-source model, twice the standard trial, with no credit card required, in exchange for co-marketing.
     lifecycle:
       status: active
       effective_from: 2026-08-29T09:00:00Z
     economics:
       benefits:
         - benefit_id: ben_01
-          description: Unlimited tokens for open-source models for 60 days
+          description: 60 days free with unlimited tokens on any open-source model, twice the standard trial, up to 50,000,000 tokens per day, with no credit card required.
+          kind: other
+        - benefit_id: ben_02
+          description: Community support from the team building Regolo infrastructure and a weekly Agentic AI Playbook of implementation tutorials.
           kind: other
       consideration:
-        kind: none
+        kind: variable
+        description: Accepted startups are expected to add Regolo's logo to their website, publish content about real usage and outcomes, and mention Regolo in demos, pitches, and technical stack slides.
     eligibility:
       rule:
         criterion_id: cri_01
         kind: manual
         reason: vendor-discretion
-        statement: Applicant must be an accepted startup in development or market-fit.
+        statement: The program is for startups shipping real products, in development or at market fit; applications are reviewed and cohorts are limited.
     roles:
       terms_authority_entity_id: ent_01m16d3y4s0bm4rjgqk2tv5s2q
       access_operator_entity_id: ent_01m16d3y4s0bm4rjgqk2tv5s2q
     access:
       availability: public
+      instructions: Submit the Apply for Startup Access form. Regolo reviews applications within 48 hours and contacts approved startups by email.
       method: form
       url: https://regolo.ai/apply-for-startup-access/
     terms_url: https://regolo.ai/builder-program/
     source_ids:
       - src_fd62e1aa604804bd6e98355ebd5fbc91b768b5ccb95782e666515b741b4795ab
+      - src_bc5dfbfd8ab5920ca20bce2fe543dcdeda65c158d79d672ce36cfe6ec9c1b0d7
