@@ -54,7 +54,7 @@ offers:
             basis_points: 5000
       consideration:
         kind: variable
-        description: The startup pays the remaining 50% of the Strix Pro price, listed at $29 per seat per month, for six months; pentests on Pro are billed separately per test.
+        description: The startup receives 50% off Pro for 6 months.
     eligibility:
       rule:
         kind: manual
