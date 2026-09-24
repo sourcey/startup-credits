@@ -1,0 +1,82 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_4hd29w001wcx2y8sbc1pyv4awv
+  slug: torchlite
+  slug_aliases: []
+  name: Torchlite
+  domains:
+    - value: torchlite.com
+      role: primary
+      valid_from: 2026-09-01T08:11:17.0643742Z
+  category: crm-sales
+profile:
+  summary: Torchlite makes partner relationship management (PRM) software for running channel, referral, affiliate, and reseller partner programs.
+  description: Torchlite provides PRM software with portals, enablement, training, marketplaces, CRM integrations, and payout calculations for affiliate, referral, reseller, and technology programs.
+  links:
+    site: https://torchlite.com
+sources:
+  - source_id: src_758f1935732bac50f81e8b3d79886763f52ce28cc784a912dc98feebb25eb11d
+    url: https://torchlite.com/prm-for-startups/
+  - source_id: src_9f50e858e72b67faee7b9a6d56e1560fea75e71e7f5787d67795305eecdef5f8
+    url: https://torchlite.com/book-a-demo/
+programs:
+  - program_id: prg_bwncpa1jtqfxe2x6vfds8xd2qf
+    program_slug: torchlite-prm-for-startups
+    program_slug_aliases: []
+    title: Torchlite PRM for Startups
+    summary: PRM For Startups offers early-stage partner programs and businesses a 75% first year discount, a 50% second year discount, and no-cost CRM integration.
+    source_ids:
+      - src_758f1935732bac50f81e8b3d79886763f52ce28cc784a912dc98feebb25eb11d
+offers:
+  - offer_id: off_46xhsxje3a0dkrqqvnz5gcw2wh
+    program_id: prg_bwncpa1jtqfxe2x6vfds8xd2qf
+    offer_slug: discounted-prm-for-two-years-and-free-crm-integration
+    offer_slug_aliases: []
+    title: 75% off year one, 50% off year two, and free CRM integration
+    summary: Startups building or starting a partner program get 75% off Torchlite in the first year, 50% off in the second year, and free integration with their existing CRM.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-01T08:11:17.0643742Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 75% discount for the first year
+          duration:
+            kind: exact
+            value: P1Y
+          kind: discount
+          percentage:
+            basis_points: 7500
+            kind: exact
+        - benefit_id: ben_02
+          description: A 50% discount in your second year
+          duration:
+            kind: exact
+            value: P1Y
+          kind: discount
+          percentage:
+            basis_points: 5000
+            kind: exact
+        - benefit_id: ben_03
+          description: No-cost CRM integration of your existing CRM system, with free integration for popular platforms like Salesforce and HubSpot
+          kind: other
+      consideration:
+        kind: variable
+        description: The startup pays the discounted Torchlite price, as little as $250 per month in the first year, with no long-term contract and 30 days' notice to cancel.
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: The applicant is an early-stage partner program or business, including a company just starting its partner program.
+    roles:
+      terms_authority_entity_id: ent_4hd29w001wcx2y8sbc1pyv4awv
+      access_operator_entity_id: ent_4hd29w001wcx2y8sbc1pyv4awv
+    access:
+      availability: public
+      method: form
+      url: https://torchlite.com/book-a-demo/
+    terms_url: https://torchlite.com/prm-for-startups/
+    source_ids:
+      - src_758f1935732bac50f81e8b3d79886763f52ce28cc784a912dc98feebb25eb11d
+      - src_9f50e858e72b67faee7b9a6d56e1560fea75e71e7f5787d67795305eecdef5f8
