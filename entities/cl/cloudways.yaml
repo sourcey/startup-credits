@@ -1,0 +1,93 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1fv14a6rxnjcvsy3fapzga2
+  slug: cloudways
+  slug_aliases: []
+  name: Cloudways
+  domains:
+    - value: cloudways.com
+      role: primary
+      valid_from: 2026-09-02T01:14:00.000Z
+  category: hosting-infra
+profile:
+  summary: Cloudways is a managed cloud hosting platform for digital agencies, eCommerce stores, and online businesses, with 24/7 expert support.
+  description: Cloudways is a managed cloud hosting platform that runs applications on infrastructure from providers such as DigitalOcean, Vultr, Linode, AWS, and Google Cloud.
+  links:
+    site: https://www.cloudways.com
+sources:
+  - source_id: src_eb7ced8d2880833450ab6061c87fbecab72fae85d56a2d363a914f2617aa9205
+    url: https://www.cloudways.com/en/startup-program.php
+  - source_id: src_20f92e912b3e764b83b97c32a32cc08f1ad0717d134f827a49dd505363169b27
+    url: https://www.cloudways.com/en/
+programs:
+  - program_id: prg_01m1fv14a6639k2b32zz4z8g5q
+    program_slug: cloudways-startup-program
+    program_slug_aliases: []
+    title: Cloudways Startup Program
+    summary: The Cloudways Startup Program offers platform credits, invoice discounts, priority support, and mentorship in Build, Grow, and Expand tiers; new applications are temporarily closed, with a waitlist.
+    source_ids:
+      - src_eb7ced8d2880833450ab6061c87fbecab72fae85d56a2d363a914f2617aa9205
+offers:
+  - offer_id: off_01m1fv14a6m2whxc1xh1d1f1hb
+    program_id: prg_01m1fv14a6639k2b32zz4z8g5q
+    offer_slug: build-tier-15000-platform-credit
+    offer_slug_aliases: []
+    title: Build tier $15,000 platform credit
+    summary: Bootstrapped startups or those with under $1M in funding get a $15,000 Cloudways credit, applied as 15% off monthly invoices, plus priority support. New applications are closed; a waitlist is open.
+    description: Cloudways states that it has temporarily closed new applications to the Startup Program while it focuses on its existing cohort, and that startups can join the waitlist. Program enrollment cannot be combined with other Cloudways promotions.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-02T01:14:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: $15,000 Cloudways platform credit, applied as a 15% discount on each monthly Cloudways invoice until the credited amount is consumed
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 1500000
+            kind: exact
+        - benefit_id: ben_02
+          description: 24x7 priority technical support
+          kind: other
+        - benefit_id: ben_03
+          description: Free Advance Support add-on worth $1,200 per year
+          kind: free-service
+          service: Cloudways Advance Support add-on
+        - benefit_id: ben_04
+          description: Personalized mentorship from startup experts, community access for founders and experts, startup-focused resources, and Startup Toolkit Build
+          kind: other
+      consideration:
+        kind: variable
+        description: The startup pays the remaining 85% of each monthly Cloudways invoice; the 15% discount is drawn from the platform credit.
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: not-machine-evaluable
+            statement: The startup has a business website and a domain-associated email address.
+          - criterion_id: cri_02
+            kind: manual
+            reason: not-machine-evaluable
+            statement: The startup has a Cloudways trial account.
+          - criterion_id: cri_03
+            kind: manual
+            reason: external-verification
+            statement: The startup has less than $1 million in funding or is bootstrapped.
+          - criterion_id: cri_04
+            kind: manual
+            reason: not-machine-evaluable
+            statement: The applicant is not an agency.
+    roles:
+      terms_authority_entity_id: ent_01m1fv14a6rxnjcvsy3fapzga2
+      access_operator_entity_id: ent_01m1fv14a6rxnjcvsy3fapzga2
+    access:
+      availability: public
+      method: form
+      instructions: New applications are temporarily closed. Startups can use Join the Waitlist on the Cloudways Startup Program page.
+      url: https://www.cloudways.com/en/startup-program.php
+    source_ids:
+      - src_eb7ced8d2880833450ab6061c87fbecab72fae85d56a2d363a914f2617aa9205
