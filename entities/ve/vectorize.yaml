@@ -38,7 +38,7 @@ offers:
     economics:
       benefits:
         - benefit_id: ben_01
-          description: Up to $15,000 in Hindsight Cloud credits, lasting 3 months from approval; $1,000 to start, then $4,000 and $10,000 in additional bonus credits unlocked as the product grows.
+          description: Up to $15,000 in Hindsight Cloud credits. Start with $1,000 free, then unlock more as the startup grows.
           duration:
             kind: exact
             value: P3M
@@ -48,47 +48,14 @@ offers:
               currency: USD
               minor_units: 1500000
             kind: up-to
-        - benefit_id: ben_02
-          description: A dedicated Slack channel with the Vectorize engineering team, monthly office hours, and an architecture review of the startup's memory system.
-          kind: other
       consideration:
         kind: none
     eligibility:
       rule:
-        kind: all
-        rules:
-          - criterion_id: cri_requirement_01
-            fact: company.is_incorporated
-            kind: predicate
-            operator: eq
-            statement: The applicant is an incorporated company or other registered business entity; solo founders with an LLC count.
-            value:
-              type: boolean
-              value: true
-          - criterion_id: cri_requirement_02
-            fact: company.funding_raised_usd
-            kind: predicate
-            operator: lt
-            statement: The company has raised under $10M in funding.
-            value:
-              type: number
-              value: 10000000
-          - criterion_id: cri_requirement_03
-            kind: manual
-            reason: not-machine-evaluable
-            statement: The company is angel-backed, pre-seed, seed, or early Series A, or profitable with real customer traction.
-          - criterion_id: cri_requirement_04
-            kind: manual
-            reason: not-machine-evaluable
-            statement: The company ships a product on Hindsight whose customers use the agents it builds; agencies, consultancies, custom solution shops, internal-only deployments, and research projects do not qualify.
-          - criterion_id: cri_requirement_05
-            fact: company.is_current_customer
-            kind: predicate
-            operator: eq
-            statement: The company is not currently a paying Hindsight Cloud customer.
-            value:
-              type: boolean
-              value: false
+        criterion_id: cri_requirement_01
+        kind: manual
+        reason: not-machine-evaluable
+        statement: Incorporated company (a registered business entity; solo founders with an LLC count), under $10M in funding (angel-backed, pre-seed, seed, or early Series A), a product built on Hindsight whose customers use the agents it builds (agencies, custom solution shops, and internal-only deployments do not qualify), and not currently a paying Hindsight Cloud customer.
     roles:
       terms_authority_entity_id: ent_01m0s6ee20skktfs8myvv5g3tz
       access_operator_entity_id: ent_01m0s6ee20skktfs8myvv5g3tz
