@@ -34,7 +34,7 @@ offers:
     economics:
       benefits:
         - benefit_id: ben_01
-          description: fal credits starting at $1,000, increased to $2,500 once monthly fal spend reaches $1,000 and to $5,000 once it reaches $2,500, added on request.
+          description: Start with $1,000 in fal credits and grow to $5,000 as usage on fal scales.
           kind: credit
           value:
             kind: range
@@ -45,24 +45,13 @@ offers:
               currency: USD
               minor_units: 500000
       consideration:
-        kind: unknown
-        description: The fal startup pages do not state a fee or commitment for joining the Startup Program.
+        kind: none
     eligibility:
       rule:
-        kind: all
-        rules:
-          - criterion_id: cri_01
-            kind: manual
-            reason: external-verification
-            statement: The company has a proven track record, such as real users, meaningful traction, or revenue, or is VC-backed by an institutional investor.
-          - criterion_id: cri_02
-            kind: manual
-            reason: not-machine-evaluable
-            statement: The team is based in Europe or Asia.
-          - criterion_id: cri_03
-            kind: manual
-            reason: vendor-discretion
-            statement: One program and one application per company every three months; credits are for building the company's own product and cannot be resold or transferred.
+        kind: manual
+        criterion_id: cri_01
+        reason: vendor-discretion
+        statement: You qualify if you have a proven track record (real users, meaningful traction, or revenue) or you are VC-backed, raised from an institutional investor; the program is open to teams based in Europe and Asia, with one application per company every 3 months and no reselling or transferring.
     roles:
       terms_authority_entity_id: ent_01m0wkwfwx84qb4gc5z6cgecf5
       access_operator_entity_id: ent_01m0wkwfwx84qb4gc5z6cgecf5
