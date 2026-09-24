@@ -11,7 +11,8 @@ entity:
       valid_from: 2026-08-27T00:00:00.000Z
   category: ai-ml
 profile:
-  description: Sarvam AI provides developer APIs for speech-to-text, text-to-speech, chat completion, text processing, document intelligence, and multilingual AI workflows.
+  summary: Sarvam AI provides speech, vision, and language model APIs with native support for 22 Indian languages and English.
+  description: Sarvam AI provides developer APIs for speech-to-text, text-to-speech, translation, chat completion, text processing, and document intelligence.
   links:
     site: https://www.sarvam.ai
 sources:
@@ -23,7 +24,7 @@ programs:
     program_slug_aliases:
       - sarvam-startup-program
     title: Sarvam AI Startup Program
-    summary: Sarvam AI's startup program provides selected startups with API credits, priority support, production-ready infrastructure, and launch visibility for speech, vision, and LLM APIs.
+    summary: The Sarvam Startup Program gives approved startups API credits, priority support, and launch visibility across Sarvam's speech, vision, and LLM APIs.
     source_ids:
       - src_c3b0c07fb827b8ce780b19e9f2077b09cd214e0a9bad6cba18de95463d6d13ca
 offers:
@@ -32,30 +33,30 @@ offers:
     offer_slug: sarvam-startup-program-api-credits
     offer_slug_aliases: []
     title: 6 to 12 months of Sarvam AI API credits
-    summary: Approved startups receive 6 to 12 months of Sarvam AI credits matched to their scale, plus production APIs, priority engineering support, and launch visibility.
+    summary: Approved startups receive 6 to 12 months of Sarvam API credits sized to their use case, stage, and expected scale, plus priority support and launch visibility.
     lifecycle:
       status: active
       effective_from: 2026-08-27T00:00:00.000Z
     economics:
       consideration:
         kind: variable
-        description: Sarvam sizes credits and support based on the startup's application, expected usage, and approval review.
+        description: Program participants are expected to display "Powered by Sarvam" in their product as a condition of the program.
       benefits:
         - benefit_id: ben_01
-          description: 6 to 12 months of credits matched to the startup's scale across Sarvam speech, vision, and LLM APIs
+          description: 6 to 12 months of API credits, with the allocation set by use case, stage, and expected scale; unused credits do not roll over after the program term.
           kind: other
         - benefit_id: ben_02
-          description: Direct access to Sarvam's engineering team for priority support
+          description: Priority support with direct access to Sarvam's engineering team.
           kind: other
         - benefit_id: ben_03
-          description: Co-branded case studies and launch amplification
+          description: Launch visibility through co-branded case studies and launch amplification.
           kind: other
     eligibility:
       rule:
         kind: manual
         criterion_id: cri_01
         reason: vendor-discretion
-        statement: Applicant must submit company, stage, funding, location, founder, API-interest, usage-scale, and product details for Sarvam AI review.
+        statement: The applicant is a startup that submits the program application with its company, product, funding, and expected API usage details for Sarvam review; existing Sarvam users can apply.
     roles:
       terms_authority_entity_id: ent_0194c1qf480040fykdbwazydrd
       access_operator_entity_id: ent_0194c1qf480040fykdbwazydrd
