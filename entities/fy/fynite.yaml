@@ -10,6 +10,7 @@ entity:
       valid_from: 2026-08-29T00:35:17.000Z
   category: ai-ml
 profile:
+  summary: Fynite is an agentic AI platform for launching AI business applications, such as ticket resolvers, finance analysts, and lead engines, from templates connected to company data.
   description: Fynite provides an agentic AI platform for launching AI-powered business applications and automating business workflows.
   links:
     site: https://www.fynite.ai
@@ -57,6 +58,7 @@ offers:
       access_operator_entity_id: ent_01m15f0p7rhgm20hwzgfrdc5q9
     access:
       availability: public
+      instructions: Apply through the Builders Program form on the Fynite page; applications are reviewed and 50 spots are available on a first-come, first-served basis.
       method: form
       url: https://www.fynite.ai/builders-program-for-startups
     source_ids:
