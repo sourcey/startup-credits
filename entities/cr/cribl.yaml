@@ -10,6 +10,7 @@ entity:
       valid_from: 2026-09-04T20:17:38.234Z
   category: observability
 profile:
+  summary: Cribl is a telemetry data platform for IT and security teams, with products including Cribl Stream, Edge, Search, and Lake for collecting, routing, and analyzing data.
   description: Cribl provides a data engine for collecting, routing, shaping, and searching IT and security data across cloud and on-premises environments.
   links:
     site: https://cribl.io
@@ -24,7 +25,7 @@ offers:
     offer_slug: cribl-for-startups
     offer_slug_aliases: []
     title: Cribl for Startups
-    summary: Selected early-stage data companies receive free Cribl.Cloud access, technical advice, partner-network access, and co-marketing opportunities.
+    summary: Selected seed to Series A startups building IT and security data products receive free Cribl.Cloud credits, one-on-one technical advice, and go-to-market opportunities.
     lifecycle:
       status: active
       effective_from: 2026-09-04T20:17:38.234Z
@@ -33,17 +34,19 @@ offers:
         kind: none
       benefits:
         - benefit_id: ben_01
-          description: Free access to Cribl.Cloud products, including Cribl Stream and Cribl Search
-          kind: free-service
-          service: Cribl.Cloud
+          description: Free credits for Cribl.Cloud with access to all Cribl.Cloud products, including Cribl Stream and Cribl Search; the credit amount is not published
+          kind: other
         - benefit_id: ben_02
-          description: One-on-one technical advice, partner-network access, and potential co-marketing support
+          description: One-on-one technical advice sessions to help scale the startup's solution
+          kind: other
+        - benefit_id: ben_03
+          description: Access to Cribl's partner network and go-to-market opportunities through community events and marketing initiatives
           kind: other
     eligibility:
       rule:
         kind: manual
         criterion_id: cri_requirement_01
-        statement: Applicant must be a Seed through Series A startup building monitoring, observability, cybersecurity, or DevOps data solutions and be selected by Cribl.
+        statement: Applicant must be a company between seed stage and Series A in the monitoring, observability, cybersecurity, or DevOps spaces, and be selected by Cribl.
         reason: vendor-discretion
     roles:
       terms_authority_entity_id: ent_01m1q13fr4eejgxp2am1016a5x
