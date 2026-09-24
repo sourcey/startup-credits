@@ -10,7 +10,8 @@ entity:
       valid_from: 2026-09-05T00:00:00.000Z
   category: communication
 profile:
-  description: Lettermint provides transactional email delivery.
+  summary: Lettermint is an email sending platform for transactional, broadcast, and inbound email, built in the Netherlands and hosted in Europe.
+  description: Lettermint provides transactional, broadcast, and inbound email services from the Netherlands, with hosting in Europe.
   links:
     site: https://lettermint.co
 sources:
@@ -22,7 +23,7 @@ offers:
     offer_slug: startup-account-credit
     offer_slug_aliases: []
     title: EUR 60 startup account credit
-    summary: Eligible unfunded startups can apply for EUR 60 in subscription credit, valid for 12 months after activation.
+    summary: Unfunded startups up to 3 years old with no more than EUR 100,000 ARR can get EUR 60 in Lettermint account credit, enough for 6 months of Starter, valid for 12 months after activation.
     lifecycle:
       status: active
       effective_from: 2026-09-05T00:00:00.000Z
@@ -30,7 +31,7 @@ offers:
       benefits:
         - benefit_id: ben_01
           kind: credit
-          description: Account credit usable across Lettermint subscriptions.
+          description: EUR 60 in credit on the Lettermint account, enough to use the Starter subscription free for 6 months or usable on other subscriptions; valid for 12 months after activation
           value:
             kind: exact
             amount:
@@ -78,9 +79,9 @@ offers:
       access_operator_entity_id: ent_01m1rr3w4h8hbspth6ckmjdqqa
     access:
       availability: public
-      method: form
+      method: contact
       url: https://lettermint.co/promo-codes-and-discounts/startups
-      instructions: Create and verify a free account, configure the domain and project, then request the startup discount through dashboard Support. Approval is confirmed by email.
+      instructions: Create and verify a free Lettermint account with the domain and project set up, then create a support request from the dashboard asking for the startup discount. Lettermint emails you once the credit is applied.
     terms_url: https://lettermint.co/promo-codes-and-discounts/startups
     source_ids:
       - src_9ab3f3ff9aae910fa06db6bbdde00123b6fa32a48c93d6c5f7c8232756dcb0b7
