@@ -42,15 +42,12 @@ offers:
         kind: none
       benefits:
         - benefit_id: ben_01
-          description: A full year of the CodeDesign Growth plan for the startup's entire team at no cost, which CodeDesign says saves $500.
+          description: Save $500 with a full year of the CodeDesign Growth plan for the entire team at no cost.
           kind: free-service
           service: CodeDesign Growth plan
           duration:
             kind: exact
             value: P12M
-        - benefit_id: ben_02
-          description: Free startup credits for generating websites with AI, unlocking templates, building funnels and landing pages, and running SEO tools; the amount depends on the startup's stage.
-          kind: other
     eligibility:
       rule:
         kind: all
