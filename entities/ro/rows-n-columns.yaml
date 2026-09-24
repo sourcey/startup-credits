@@ -10,6 +10,7 @@ entity:
       valid_from: 2026-09-05T02:01:30.038Z
   category: devtools-other
 profile:
+  summary: Rows n' Columns makes a composable, declarative spreadsheet component for React that renders in HTML Canvas to handle millions of rows and columns.
   description: Rows n' Columns provides a composable React spreadsheet component with customizable data models, formulas, and collaborative editing.
   links:
     site: https://www.rowsncolumns.app/
@@ -26,44 +27,38 @@ offers:
     offer_slug: professional-startup-discount
     offer_slug_aliases: []
     title: 15% off the Professional license for startups
-    summary: Startups with five or fewer employees can receive 15% off the Professional spreadsheet license by contacting sales.
+    summary: Startups with 5 or fewer employees get a 15% discount on the $3,500 Rows n' Columns Professional license, arranged through Contact Sales.
     lifecycle:
       status: active
       effective_from: 2026-09-05T02:01:30.038Z
     economics:
       benefits:
         - benefit_id: ben_01
-          applies_to: Professional license
-          description: 15% discount on the Professional perpetual license for single-application commercial use, including one year of updates and support.
+          applies_to: Professional license ($3,500 perpetual license with 1 year of updates and support)
+          description: 15% discount for startups on the Professional license
           kind: discount
           percentage:
             kind: exact
             basis_points: 1500
       consideration:
         kind: variable
-        description: Purchase of a Professional license at the discounted price; contact sales to confirm the amount due.
+        description: The startup pays the $3,500 Professional license price less the 15% startup discount.
     eligibility:
       rule:
-        kind: all
-        rules:
-          - criterion_id: cri_01
-            kind: manual
-            reason: external-verification
-            statement: The applicant is a startup.
-          - criterion_id: cri_02
-            kind: predicate
-            fact: company.employee_count
-            operator: lte
-            statement: The startup has five or fewer employees.
-            value:
-              type: number
-              value: 5
+        criterion_id: cri_02
+        kind: predicate
+        fact: company.employee_count
+        operator: lte
+        statement: The discount is for startups with 5 or fewer employees.
+        value:
+          type: number
+          value: 5
     roles:
       terms_authority_entity_id: ent_01m1qmsa5pbe7136bq6wdh858a
       access_operator_entity_id: ent_01m1qmsa5pbe7136bq6wdh858a
     access:
       availability: public
-      method: form
+      method: contact
       url: https://www.rowsncolumns.app/contact
     terms_url: https://www.rowsncolumns.app/pricing
     source_ids:
