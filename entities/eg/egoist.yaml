@@ -1,0 +1,60 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1s6dfbyrh0jrr6w9240kvp5
+  slug: egoist
+  slug_aliases: []
+  name: Egoist
+  domains:
+    - value: ego.ist
+      role: primary
+      valid_from: 2026-09-05T16:28:00.000Z
+  category: apis-integration
+profile:
+  summary: Egoist makes AI Passport, a managed layer that connects users' email, calendar, chats and documents to apps with the owner's consent.
+  description: Egoist provides AI Passport, a managed layer that connects users' email, calendar, chats, and documents to apps with consent, token handling, and storage.
+  links:
+    site: https://ego.ist
+sources:
+  - source_id: src_649bb6c3dfd3f849afc3d7282f4d147bc3d7d17ac71ccc5225a623655749c05f
+    url: https://ego.ist/startups
+programs: []
+offers:
+  - offer_id: off_01m1s6dfc5p29yyfycqxdkjn0m
+    offer_slug: ai-passport-for-startups
+    offer_slug_aliases: []
+    title: AI Passport for Startups
+    summary: Approved startups get AI Passport free for 3 months, or 6 months for Y Combinator companies, then pay USD 1,000 per month flat with no usage meters.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T16:28:00.000Z
+    economics:
+      consideration:
+        kind: variable
+        description: Nothing is paid during the free months; afterwards the price is USD 1,000 per month flat, held for 12 months from day one, with no term and cancellation effective at the end of the billing period.
+      benefits:
+        - benefit_id: ben_01
+          description: 3 months free, 6 for YC companies.
+          kind: free-service
+          service: AI Passport
+          duration:
+            kind: up-to
+            value: P6M
+        - benefit_id: ben_02
+          description: Unlimited users, storage and usage with no meters and no overage, every connector, direct help with implementation, and a private Slack channel with the team.
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_01
+        statement: The startup applies through the startup offer form and is approved by Egoist; Y Combinator companies receive 6 free months instead of 3.
+        reason: vendor-discretion
+    roles:
+      terms_authority_entity_id: ent_01m1s6dfbyrh0jrr6w9240kvp5
+      access_operator_entity_id: ent_01m1s6dfbyrh0jrr6w9240kvp5
+    access:
+      availability: public
+      method: form
+      url: https://ego.ist/startups
+      instructions: Submit the Apply for the Startup Offer form with name, work email, company and what you are building; approval comes with a Slack invite.
+    source_ids:
+      - src_649bb6c3dfd3f849afc3d7282f4d147bc3d7d17ac71ccc5225a623655749c05f
