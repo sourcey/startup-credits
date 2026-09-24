@@ -1,0 +1,60 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m14rcwbc381m2vg78gb791na
+  slug: aleph-cloud
+  slug_aliases: []
+  name: Aleph Cloud
+  domains:
+    - value: aleph.cloud
+      role: primary
+      valid_from: 2026-08-28T17:59:02.000Z
+  category: hosting-infra
+profile:
+  summary: Aleph Cloud is a decentralized cloud that runs virtual machines, GPU instances, confidential compute, storage, and web hosting on a network of independent node operators.
+  description: Aleph Cloud provides decentralized compute, storage, confidential computing, GPU, and web-hosting infrastructure.
+  links:
+    site: https://aleph.cloud/
+sources:
+  - source_id: src_0bc980dc2d86f0004f41e6da547e8e17cb5906ff15eccaa520dfe4791f2eb040
+    url: https://aleph.cloud/chainlink-build/
+programs:
+  - program_id: prg_01m14rcwbjf6tq2r7c0yeh57fc
+    program_slug: chainlink-build-aleph-cloud
+    program_slug_aliases: []
+    title: Chainlink BUILD x Aleph Cloud
+    summary: Aleph Cloud gives projects in the Chainlink BUILD program free compute credits, dedicated onboarding, and technical support to deploy on its decentralized cloud.
+    source_ids:
+      - src_0bc980dc2d86f0004f41e6da547e8e17cb5906ff15eccaa520dfe4791f2eb040
+offers:
+  - offer_id: off_01m14rcwbjrbrs2a7rs8cwjj52
+    program_id: prg_01m14rcwbjf6tq2r7c0yeh57fc
+    offer_slug: chainlink-build-free-cloud-credits
+    offer_slug_aliases: []
+    title: Free Aleph Cloud credits for Chainlink BUILD members
+    summary: Chainlink BUILD members can request free Aleph Cloud compute credits, with the amount and duration confirmed during review, plus dedicated onboarding and technical support.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-28T17:59:02.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Aleph Cloud credits to deploy VMs, storage, serverless functions, and more, at no cost as a Chainlink BUILD member.
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: external-verification
+        statement: This program is exclusively for projects accepted into the Chainlink BUILD program.
+    roles:
+      terms_authority_entity_id: ent_01m14rcwbc381m2vg78gb791na
+      access_operator_entity_id: ent_01m14rcwbc381m2vg78gb791na
+    access:
+      availability: membership
+      method: form
+      url: https://aleph.cloud/chainlink-build/
+      instructions: Submit the request form with project details, team information, the Aleph Cloud services needed, and an ETH wallet address for receiving the credits.
+    source_ids:
+      - src_0bc980dc2d86f0004f41e6da547e8e17cb5906ff15eccaa520dfe4791f2eb040
