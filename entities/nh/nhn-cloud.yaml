@@ -1,0 +1,72 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m19kwp6v2r6gfkqe473mfepy
+  slug: nhn-cloud
+  slug_aliases: []
+  name: NHN Cloud
+  domains:
+    - value: nhncloud.com
+      role: primary
+      valid_from: 2026-08-30T15:16:30.047Z
+  category: hosting-infra
+profile:
+  summary: NHN Cloud is a South Korean cloud provider offering cloud infrastructure services, with MSP-led migration and operations support and 24/365 security monitoring.
+  description: NHN Cloud provides cloud infrastructure services in South Korea, with migration, operations, security monitoring, and marketplace support for businesses.
+  links:
+    site: https://www.nhncloud.com/kr
+sources:
+  - source_id: src_6a7c5cfa2914e61421cfdfa03de0c930ac35c044b203ea447cd48bffc8383b74
+    url: https://info.nhncloud.com/promotion/startup
+programs:
+  - program_id: prg_01m19kwp6zn37jq3v3m1kassfc
+    program_slug: nhn-cloud-startup-growth-support-promotion
+    program_slug_aliases: []
+    title: NHN Cloud Startup Growth Support Promotion
+    summary: The NHN Cloud Startup Growth Support Promotion gives startups new to NHN Cloud infrastructure up to KRW 54 million in credits, plus migration support, cloud training, and business and marketing collaboration.
+    source_ids:
+      - src_6a7c5cfa2914e61421cfdfa03de0c930ac35c044b203ea447cd48bffc8383b74
+offers:
+  - offer_id: off_01m19kwp6zxe845p030j94d1ef
+    program_id: prg_01m19kwp6zn37jq3v3m1kassfc
+    offer_slug: nhn-cloud-startup-credits
+    offer_slug_aliases: []
+    title: Up to KRW 54 million in NHN Cloud credits
+    summary: Startups with no prior NHN Cloud infrastructure use can receive up to KRW 54 million in credits, starting with KRW 10 million for first-time startups and stage-based credits as they grow.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-30T15:16:30.047Z
+    economics:
+      benefits:
+        - benefit_id: startup_credits
+          description: Up to KRW 54 million in NHN Cloud credits.
+          kind: credit
+          value:
+            kind: up-to
+            amount:
+              currency: KRW
+              minor_units: 54000000
+      consideration:
+        kind: variable
+        description: Credits are granted once the final contract is confirmed after the promotion application and a consultation with the assigned consultant.
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: no_prior_infrastructure_use
+            kind: manual
+            reason: external-verification
+            statement: The applicant is a startup with no prior use of NHN Cloud cloud infrastructure; users of services such as Notification or AppGuard without infrastructure use also qualify.
+          - criterion_id: incorporated_business
+            kind: manual
+            reason: external-verification
+            statement: Individual sole proprietors cannot apply.
+    roles:
+      terms_authority_entity_id: ent_01m19kwp6v2r6gfkqe473mfepy
+      access_operator_entity_id: ent_01m19kwp6v2r6gfkqe473mfepy
+    access:
+      availability: public
+      instructions: Submit the application form on the promotion page, reply to the cloud usage survey sent by email, and receive tailored terms from an assigned consultant; no documents are required to apply.
+      method: form
+      url: https://info.nhncloud.com/promotion/startup
+    source_ids:
+      - src_6a7c5cfa2914e61421cfdfa03de0c930ac35c044b203ea447cd48bffc8383b74
