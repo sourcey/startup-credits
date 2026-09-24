@@ -10,37 +10,38 @@ entity:
       valid_from: 2026-08-28T17:59:02.000Z
   category: hosting-infra
 profile:
+  summary: Aleph Cloud is a decentralized cloud that runs virtual machines, GPU instances, confidential compute, storage, and web hosting on a network of independent node operators.
   description: Aleph Cloud provides decentralized compute, storage, confidential computing, GPU, and web-hosting infrastructure.
   links:
-    site: https://www.aleph.cloud
+    site: https://aleph.cloud/
 sources:
-  - source_id: src_28bc39dbb43454ed69120683e343d18db4cf8ff460c9a818a60a11e90b36782b
-    url: https://www.aleph.cloud/chainlink-build
+  - source_id: src_0bc980dc2d86f0004f41e6da547e8e17cb5906ff15eccaa520dfe4791f2eb040
+    url: https://aleph.cloud/chainlink-build/
 programs:
   - program_id: prg_01m14rcwbjf6tq2r7c0yeh57fc
     program_slug: chainlink-build-aleph-cloud
     program_slug_aliases: []
     title: Chainlink BUILD x Aleph Cloud
-    summary: Aleph Cloud offers Chainlink BUILD members free infrastructure credits, technical onboarding, and deployment support.
+    summary: Aleph Cloud gives projects in the Chainlink BUILD program free compute credits, dedicated onboarding, and technical support to deploy on its decentralized cloud.
     source_ids:
-      - src_28bc39dbb43454ed69120683e343d18db4cf8ff460c9a818a60a11e90b36782b
+      - src_0bc980dc2d86f0004f41e6da547e8e17cb5906ff15eccaa520dfe4791f2eb040
 offers:
   - offer_id: off_01m14rcwbjrbrs2a7rs8cwjj52
     program_id: prg_01m14rcwbjf6tq2r7c0yeh57fc
     offer_slug: chainlink-build-free-cloud-credits
     offer_slug_aliases: []
     title: Free Aleph Cloud credits for Chainlink BUILD members
-    summary: Chainlink BUILD members can apply for free Aleph Cloud credits covering compute, storage, serverless functions, web hosting, confidential compute, and GPU instances.
+    summary: Chainlink BUILD members can request free Aleph Cloud compute credits, with the amount and duration confirmed during review, plus dedicated onboarding and technical support.
     lifecycle:
       status: active
       effective_from: 2026-08-28T17:59:02.000Z
     economics:
       benefits:
         - benefit_id: ben_01
-          description: Free Aleph Cloud credits for virtual machines, storage, serverless functions, web hosting, confidential compute, and GPU instances.
+          description: Free Aleph Cloud credits for virtual machines, storage, serverless functions, web hosting, confidential compute, and GPU instances; the amount and duration are confirmed during review based on project scope and needs.
           kind: other
         - benefit_id: ben_02
-          description: Dedicated technical onboarding and deployment support from Aleph Cloud.
+          description: Dedicated onboarding and hands-on technical support from the Aleph Cloud engineering team to architect and deploy the project's stack.
           kind: other
       consideration:
         kind: none
@@ -49,19 +50,24 @@ offers:
         kind: all
         rules:
           - criterion_id: cri_01
-            kind: manual
-            reason: external-verification
-            statement: Project must be accepted into the Chainlink BUILD program.
+            fact: company.partner_memberships
+            kind: predicate
+            operator: contains
+            statement: The program is exclusively for projects accepted into the Chainlink BUILD program, at any stage and on any chain.
+            value:
+              type: string
+              value: Chainlink BUILD
           - criterion_id: cri_02
             kind: manual
             reason: vendor-discretion
-            statement: Aleph Cloud reviews the request and confirms the credit amount, duration, and service package based on project scope and needs.
+            statement: Aleph Cloud reviews each request and confirms the credit allocation and service package.
     roles:
       terms_authority_entity_id: ent_01m14rcwbc381m2vg78gb791na
       access_operator_entity_id: ent_01m14rcwbc381m2vg78gb791na
     access:
-      availability: public
+      availability: membership
       method: form
-      url: https://www.aleph.cloud/chainlink-build
+      url: https://aleph.cloud/chainlink-build/
+      instructions: Submit the request form with project details, team information, the Aleph Cloud services needed, and an ETH wallet address for receiving the credits.
     source_ids:
-      - src_28bc39dbb43454ed69120683e343d18db4cf8ff460c9a818a60a11e90b36782b
+      - src_0bc980dc2d86f0004f41e6da547e8e17cb5906ff15eccaa520dfe4791f2eb040
