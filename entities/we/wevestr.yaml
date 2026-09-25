@@ -1,0 +1,57 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1s03pxm26znwefpb8h1aewx
+  slug: wevestr
+  slug_aliases: []
+  name: WE.VESTR
+  domains:
+    - value: wevestr.com
+      role: primary
+      valid_from: 2026-09-05T14:35:00.000Z
+  category: finance-accounting
+profile:
+  summary: Equity management software for cap tables, shareholder management, fundraising and employee equity plans.
+  description: WE.VESTR provides equity management software for cap tables, shareholder reporting, fundraising, and employee equity plans.
+  links:
+    site: https://wevestr.com/
+    pricing: https://wevestr.com/pricing
+sources:
+  - source_id: src_20d5d2e5406b5de70c762837f1fc686a409782108a7a5cf4f56bf2bea9eeff85
+    url: https://wevestr.com/microsoft-for-startups
+  - source_id: src_d2e33b5e533d1c25998e0a5f6546dad82e87a6b876f89976d1f4bd18041deaf0
+    url: https://wevestr.com/pricing
+programs: []
+offers:
+  - offer_id: off_01m1s03pxmsy9kg3ss4y9p8y96
+    offer_slug: microsoft-for-startups-paid-plan-discount
+    offer_slug_aliases: []
+    title: First-year discount for Microsoft for Startups Founders Hub members
+    summary: Members of Microsoft for Startups Founders Hub get a discount for the first year, with Grow shown at EUR 45 and Scale at EUR 126 per month, applicable on verification of membership.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T14:35:00.000Z
+    economics:
+      consideration:
+        kind: variable
+        description: Members pay the discounted monthly price of the chosen plan during the first year, EUR 45 for Grow or EUR 126 for Scale, excluding VAT and based on monthly pricing.
+      benefits:
+        - benefit_id: ben_paid_plan_discount
+          kind: other
+          description: A discount for the first year for members of Microsoft for Startups Founders Hub, with Grow shown at EUR 45 and Scale at EUR 126 per month.
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_microsoft_membership
+        statement: The discount applies on verification of membership in Microsoft for Startups Founders Hub.
+        reason: external-verification
+    roles:
+      terms_authority_entity_id: ent_01m1s03pxm26znwefpb8h1aewx
+      access_operator_entity_id: ent_01m1s03pxm26znwefpb8h1aewx
+    access:
+      availability: membership
+      method: other
+      url: https://wevestr.com/microsoft-for-startups
+      instructions: Use the Start for Free link for the chosen plan on WE.VESTR's Microsoft for Startups page; the discount is applied once Founders Hub membership is verified.
+    source_ids:
+      - src_20d5d2e5406b5de70c762837f1fc686a409782108a7a5cf4f56bf2bea9eeff85
+      - src_d2e33b5e533d1c25998e0a5f6546dad82e87a6b876f89976d1f4bd18041deaf0
