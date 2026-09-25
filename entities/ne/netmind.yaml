@@ -1,0 +1,69 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1345cb87fp2trxkgx8gm0pt
+  slug: netmind
+  slug_aliases: []
+  name: NetMind
+  domains:
+    - value: netmind.ai
+      role: primary
+      valid_from: 2026-08-28T00:00:00.000Z
+  category: ai-ml
+profile:
+  summary: NetMind provides a model inference API, dedicated model endpoints, and on-demand GPU clusters for developers and businesses building AI products.
+  description: NetMind provides AI inference APIs, dedicated model endpoints, GPU infrastructure, and AI services for developers and businesses.
+  links:
+    site: https://www.netmind.ai/
+    pricing: https://www.netmind.ai/pricing
+sources:
+  - source_id: src_315e82fd18aaf80491d78df8e0d86396950dd07495d59a1c5f074f0e11584f08
+    url: https://www.netmind.ai/elevate
+  - source_id: src_6559c1bf2fa5c7ae5bf44b224f1c2e24d95351c894e3fa5343c56904d8378e88
+    url: https://www.netmind.ai/event/freeCredit
+programs:
+  - program_id: prg_01m1345cbemdxpjtzwtyyk5tj6
+    program_slug: netmind-elevate
+    program_slug_aliases: []
+    title: NetMind Elevate Program
+    summary: The NetMind Elevate Program lets startups apply for free inference credits to accelerate their venture or project.
+    source_ids:
+      - src_315e82fd18aaf80491d78df8e0d86396950dd07495d59a1c5f074f0e11584f08
+      - src_6559c1bf2fa5c7ae5bf44b224f1c2e24d95351c894e3fa5343c56904d8378e88
+offers:
+  - offer_id: off_01m1345cbfntyxrpke0efr0r99
+    program_id: prg_01m1345cbemdxpjtzwtyyk5tj6
+    offer_slug: netmind-elevate-inference-credits
+    offer_slug_aliases: []
+    title: Up to $100,000 in NetMind inference credits
+    summary: Startups can apply to the NetMind Elevate Program for up to $100,000 in free NetMind inference credits to accelerate their venture or project.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-28T00:00:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to $100,000 in free NetMind inference credits for an approved startup.
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 10000000
+            kind: up-to
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: The applicant is a startup that submits the Elevate application with its company, stage, funding, AI use case, and expected usage details, and NetMind approves it.
+    roles:
+      terms_authority_entity_id: ent_01m1345cb87fp2trxkgx8gm0pt
+      access_operator_entity_id: ent_01m1345cb87fp2trxkgx8gm0pt
+    access:
+      availability: public
+      method: form
+      url: https://www.netmind.ai/elevate
+    source_ids:
+      - src_315e82fd18aaf80491d78df8e0d86396950dd07495d59a1c5f074f0e11584f08
+      - src_6559c1bf2fa5c7ae5bf44b224f1c2e24d95351c894e3fa5343c56904d8378e88
