@@ -1,0 +1,62 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1251hwbgv413evqe7vbyewn
+  slug: opstart
+  slug_aliases: []
+  name: OpStart
+  domains:
+    - value: opstart.co
+      role: primary
+      valid_from: 2026-08-27T17:42:19.000Z
+  category: finance-accounting
+profile:
+  summary: OpStart is an outsourced finance team for startups that handles bookkeeping, taxes, billing and invoicing, payroll compliance, and fractional CFO work.
+  description: OpStart provides bookkeeping, tax, billing and invoicing, payroll compliance, back-office setup, and fractional CFO services for startups.
+  links:
+    site: https://www.opstart.co
+sources:
+  - source_id: src_4c622b40cbe86a8bf9b12d01368a1b9c6448cb621f9344deca06b0d5e5730e41
+    url: https://www.opstart.co/startup-stack/
+programs: []
+offers:
+  - offer_id: off_01m1251hwdc7z9nzsjm8mcwa13
+    offer_slug: startup-stack-discount
+    offer_slug_aliases: []
+    title: 10% off OpStart for Startup Stack members
+    summary: Startups in Startup Stack get 10% off OpStart bookkeeping, bill pay, payroll support, and more for the first twelve months, with the discount capped at $1,000.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-27T17:42:19.000Z
+    economics:
+      consideration:
+        kind: variable
+        description: The startup receives a 10% discount (capped at $1,000) for the first twelve months of bookkeeping, bill pay, payroll support, and more.
+      benefits:
+        - benefit_id: ben_01
+          description: 10% discount (capped at $1,000) for the first twelve months of bookkeeping, bill pay, payroll support, and more.
+          duration:
+            kind: exact
+            value: P12M
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 1000
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        fact: company.partner_memberships
+        kind: predicate
+        operator: contains
+        statement: The startup is a Startup Stack member; OpStart offers the discount in partnership with Startup Stack.
+        value:
+          type: string
+          value: Startup Stack
+    roles:
+      terms_authority_entity_id: ent_01m1251hwbgv413evqe7vbyewn
+      access_operator_entity_id: ent_01m1251hwbgv413evqe7vbyewn
+    access:
+      availability: membership
+      method: form
+      url: https://www.opstart.co/startup-stack/
+    source_ids:
+      - src_4c622b40cbe86a8bf9b12d01368a1b9c6448cb621f9344deca06b0d5e5730e41
