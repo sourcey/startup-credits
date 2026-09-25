@@ -1,0 +1,54 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1gnyp9s6vrv5r5ygyhtjtwx
+  slug: browserbase
+  slug_aliases: []
+  name: Browserbase
+  domains:
+    - value: browserbase.com
+      role: primary
+      valid_from: 2026-09-02T09:07:14.036Z
+  category: apis-integration
+profile:
+  summary: Browserbase provides cloud browsers and web data APIs that let AI agents and automations use the web.
+  description: Browserbase provides cloud browsers, web search and fetch APIs, model routing, session observability, and the Stagehand SDK for browser agents.
+  links:
+    site: https://www.browserbase.com
+sources:
+  - source_id: src_35c7020601f380ba2d8cf4e1d75b5824a16b25c54c011cce7cc8cc185576494f
+    url: https://www.browserbase.com/11labs-founder-pack
+  - source_id: src_711b2cfdb95dbc0f637bf8b45bac38cb1e47985186d436920e5e9fdd3f435a1f
+    url: https://www.browserbase.com/
+programs: []
+offers:
+  - offer_id: off_01m1gnyp9zwbjj1ghtnq32d4p3
+    offer_slug: elevenlabs-founder-pack-browserbase-credits
+    offer_slug_aliases: []
+    title: Browserbase credits for ElevenLabs Founder Pack members
+    summary: Browserbase's startup page lets ElevenLabs Founder Pack members redeem their Founder Pack credits on Browserbase. The page does not publish the credit amount.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-02T09:07:14.036Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_primary
+          description: Redeem your ElevenLabs Founder Pack credits on Browserbase.
+          kind: other
+    eligibility:
+      rule:
+        criterion_id: cri_membership_01
+        kind: manual
+        reason: external-verification
+        statement: Applicant is an ElevenLabs Founder Pack member with Browserbase credits to redeem.
+    roles:
+      terms_authority_entity_id: ent_01m1gnyp9s6vrv5r5ygyhtjtwx
+      access_operator_entity_id: ent_01m1gnyp9s6vrv5r5ygyhtjtwx
+    access:
+      availability: membership
+      method: form
+      url: https://www.browserbase.com/11labs-founder-pack
+      instructions: Use the Redeem now button on the Browserbase ElevenLabs Founder Pack page.
+    source_ids:
+      - src_35c7020601f380ba2d8cf4e1d75b5824a16b25c54c011cce7cc8cc185576494f
