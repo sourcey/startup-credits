@@ -16,5 +16,68 @@ profile:
 sources:
   - source_id: src_69309b819e80f182ea81c33481746fa4d46cce19b0ae039b212d0b17a2690d02
     url: https://www.alibabacloud.com/
-programs: []
-offers: []
+  - source_id: src_b7c63a4e922f8e9c61fba38369b79f0b09adcc2abc56beea95a8b6a7ce7ba42c
+    url: https://www.alibabacloud.com/startup
+programs:
+  - program_id: prg_01m3dxt39f6wmxk5rarrj8y07h
+    program_slug: alibaba-cloud-ai-catalyst-program
+    program_slug_aliases: []
+    title: Alibaba Cloud AI Catalyst Program
+    summary: Alibaba Cloud's program for early-stage AI companies, offering Model Studio tokens, cloud credits, and technical and go-to-market support.
+    source_ids:
+      - src_b7c63a4e922f8e9c61fba38369b79f0b09adcc2abc56beea95a8b6a7ce7ba42c
+offers:
+  - offer_id: off_01m3dxt39fr751ate1rqjrzgqw
+    program_id: prg_01m3dxt39f6wmxk5rarrj8y07h
+    offer_slug: alibaba-cloud-ai-catalyst-credits-and-model-studio-tokens
+    offer_slug_aliases: []
+    title: AI Catalyst Program credits and Model Studio tokens
+    summary: Accepted AI startups get up to 2 billion free Model Studio tokens, up to $120,000 in cloud credits, POC coupons, 1:1 office hours with AI experts, and 12 months of Alibaba Cloud Academy access.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-26T00:00:00.000Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_01
+          kind: credit
+          value:
+            kind: up-to
+            amount:
+              currency: USD
+              minor_units: 12000000
+          description: Up to $120,000 in Alibaba Cloud credits to support the startup's use of Alibaba Cloud and its AI tools.
+        - benefit_id: ben_02
+          kind: other
+          description: Up to 2 billion free Model Studio tokens for building on Alibaba Cloud's model platform.
+        - benefit_id: ben_03
+          kind: other
+          description: POC coupons for proof-of-concept work on Alibaba Cloud.
+        - benefit_id: ben_04
+          kind: free-service
+          service: Alibaba Cloud Academy access
+          duration:
+            kind: exact
+            value: P12M
+          description: 12 months of access to Alibaba Cloud Academy to learn about cloud and AI and get certified on selected courses.
+        - benefit_id: ben_05
+          kind: other
+          description: 1:1 office hours with Alibaba Cloud AI experts covering products, solutions, and infrastructure, plus invitations to Alibaba Cloud events globally.
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_alibaba_catalyst_01
+        statement: An unlisted company founded within the last 10 years with an accessible website that submits a solid proposal to use Alibaba Cloud and its AI tools; accounts under resellers or distributors are not eligible, and eligibility is at the full discretion of Alibaba Cloud.
+        reason: vendor-discretion
+    roles:
+      terms_authority_entity_id: ent_01kyyts97sh2v27g7w2234k40n
+      access_operator_entity_id: ent_01kyyts97sh2v27g7w2234k40n
+    source_ids:
+      - src_b7c63a4e922f8e9c61fba38369b79f0b09adcc2abc56beea95a8b6a7ce7ba42c
+    access:
+      availability: public
+      method: form
+      url: https://www.alibabacloud.com/startup
+      instructions: Submit the online application form linked from the program page; applications are reviewed and successful applicants are notified by email within 4-5 business days.
+    terms_url: https://www.alibabacloud.com/startup/terms-and-conditions
