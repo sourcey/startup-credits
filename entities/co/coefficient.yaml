@@ -70,12 +70,8 @@ offers:
             reason: external-verification
             statement: The startup is bootstrapped, angel-funded, debt-funded, pre-seed, seed, or Series A.
           - criterion_id: cri_employees
-            kind: predicate
-            fact: company.employee_count
-            operator: lte
-            value:
-              type: number
-              value: 25
+            kind: manual
+            reason: external-verification
             statement: The startup has 25 or fewer full-time employees.
     roles:
       terms_authority_entity_id: ent_01m1v7h1jxeaazykqbp0rrkmej
