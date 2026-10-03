@@ -35,17 +35,17 @@ offers:
     offer_slug: first-year-startup-discount
     offer_slug_aliases: []
     title: Up to 50% off Coefficient for the first year
-    summary: Startups that have raised $20 million or less, are bootstrapped, angel-funded, debt-funded, pre-seed, seed or Series A, and have 25 or fewer full-time employees can get up to 50% off for the first year.
+    summary: Qualified startups can get up to 50% off Coefficient for the first year.
     lifecycle:
       status: active
       effective_from: 2026-09-06T11:26:00.000Z
     economics:
       consideration:
         kind: variable
-        description: The startup receives up to 50% off for the first year.
+        description: Qualified startups can receive discounted pricing for the first year, with a discount of up to 50%.
       benefits:
         - benefit_id: ben_first_year
-          description: Startups can get a discount for a year, up to 50% off for the first year.
+          description: Up to 50% off for the first year for startups.
           kind: discount
           percentage:
             kind: up-to
