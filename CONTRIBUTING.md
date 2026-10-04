@@ -7,6 +7,12 @@ The shard is the first two characters of the Entity slug (or the whole slug
 when it is shorter), and the filename is exactly `{slug}.yaml`; CI verifies
 that identity-derived path.
 
+Accepted public record facts may also appear in facts-only datasets, including
+on Hugging Face, for discovery, analysis and possible AI training. Sourcey does
+not export private submission details, retained source documents or media in
+those datasets. See the [public data terms](https://sourcey.com/terms) for
+reuse, attribution and corrections.
+
 Keep a data pull request data-only; do not mix Entity YAML with documentation or workflow edits.
 For a new record, copy a nearby Entity file and preserve the shape:
 
