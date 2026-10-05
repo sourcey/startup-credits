@@ -10,7 +10,7 @@ entity:
       valid_from: 2026-08-01T13:50:00.000Z
   category: hosting-infra
 profile:
-  description: Alibaba Cloud provides cloud computing services and solutions, including elastic computing, storage, networking, databases, security, and AI products for businesses worldwide.
+  description: Alibaba Cloud provides an integrated suite of scalable, secure and reliable cloud products and services.
   links:
     site: https://alibabacloud.com
 sources:
