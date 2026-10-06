@@ -1,0 +1,97 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1241ccgtstz0ym95x27jpgd
+  slug: context-dev
+  slug_aliases: []
+  name: Context.dev
+  domains:
+    - value: context.dev
+      role: primary
+      valid_from: 2026-08-27T17:51:55.000Z
+  category: data-analytics
+profile:
+  summary: Context.dev provides web data infrastructure for AI agents, with APIs for scraping, web research answers, crawling, monitoring, and brand data.
+  description: Context.dev provides APIs for web scraping, crawling, structured extraction, screenshots, web research answers, and brand data.
+  links:
+    site: https://www.context.dev
+    pricing: https://www.context.dev/pricing
+sources:
+  - source_id: src_4ccf12747cac2d27d3f25c09cb5701eddda5549f17abf85106414bd9f3176eb0
+    url: https://www.context.dev/startups
+  - source_id: src_e433b384b545cabcc9358801bc3c04b5636ae8b9f08965d22f8528e3525c7378
+    url: https://www.context.dev/pricing
+programs: []
+offers:
+  - offer_id: off_01m1241ccm40cnctb3d571ypa3
+    offer_slug: context-dev-startup-discount
+    offer_slug_aliases: []
+    title: 30% off a Context.dev annual plan for 12 months
+    summary: Eligible startups and registered nonprofits get 30% off an eligible self-serve annual paid plan for 12 months, plus a private Slack Connect channel with the Context.dev team.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-27T17:51:55.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 30% off the listed annual subscription price of an eligible self-serve paid plan for 12 months.
+          duration:
+            kind: exact
+            value: P1Y
+          kind: discount
+          percentage:
+            basis_points: 3000
+            kind: exact
+      consideration:
+        kind: variable
+        description: The startup receives 30% off its annual paid plan for 12 months.
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - kind: any
+            rules:
+              - kind: all
+                rules:
+                  - criterion_id: cri_01
+                    fact: company.age_months
+                    kind: predicate
+                    operator: lt
+                    statement: The startup was founded less than 5 years ago.
+                    value:
+                      type: number
+                      value: 60
+                  - criterion_id: cri_02
+                    fact: company.employee_count
+                    kind: predicate
+                    operator: lt
+                    statement: The startup has fewer than 50 employees.
+                    value:
+                      type: number
+                      value: 50
+                  - criterion_id: cri_03
+                    fact: company.funding_raised_usd
+                    kind: predicate
+                    operator: lt
+                    statement: The startup has raised less than $10M; bootstrapped startups are welcome.
+                    value:
+                      type: number
+                      value: 10000000
+              - criterion_id: cri_04
+                kind: manual
+                reason: external-verification
+                statement: Registered nonprofits can apply with proof of nonprofit status instead of meeting the startup age, size, and funding limits.
+          - criterion_id: cri_05
+            kind: manual
+            reason: not-machine-evaluable
+            statement: The applicant is building a product or recurring workflow using Context.dev.
+    roles:
+      terms_authority_entity_id: ent_01m1241ccgtstz0ym95x27jpgd
+      access_operator_entity_id: ent_01m1241ccgtstz0ym95x27jpgd
+    access:
+      availability: public
+      method: form
+      url: https://www.context.dev/startups
+    terms_url: https://www.context.dev/startups
+    source_ids:
+      - src_4ccf12747cac2d27d3f25c09cb5701eddda5549f17abf85106414bd9f3176eb0
+      - src_e433b384b545cabcc9358801bc3c04b5636ae8b9f08965d22f8528e3525c7378
