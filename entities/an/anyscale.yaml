@@ -1,0 +1,69 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_tx75drh0kf2nt9jgkwnf4a4n83
+  slug: anyscale
+  slug_aliases: []
+  name: Anyscale
+  domains:
+    - value: anyscale.com
+      role: primary
+      valid_from: 2026-09-01T09:22:02.883Z
+  category: ai-ml
+profile:
+  summary: Anyscale is an AI compute platform built on Ray for running data processing, model training, and inference workloads at production scale.
+  description: Anyscale is an AI compute platform powered by Ray for multimodal data curation, distributed model training, batch embedding generation, and post-training workloads.
+  links:
+    site: https://www.anyscale.com
+sources:
+  - source_id: src_9d22e9a81e169dd111260594c7d7133c129aa4779c50c314dcd13324ac474920
+    url: https://www.anyscale.com/startup
+  - source_id: src_ef971164c15225b595ce0044be018c1e37193e295e16c63350c77696c659560b
+    url: https://www.anyscale.com/
+programs:
+  - program_id: prg_k7n01dv7cnyv6s466p4sqan1jv
+    program_slug: ai-startup-program
+    program_slug_aliases: []
+    title: Anyscale AI Startup Program
+    summary: The Anyscale AI Startup Program gives teams building AI-native applications Anyscale credits, technical support, and access to the Anyscale platform.
+    source_ids:
+      - src_9d22e9a81e169dd111260594c7d7133c129aa4779c50c314dcd13324ac474920
+offers:
+  - offer_id: off_54wpnn7a466mb0jbrxevkkx81n
+    program_id: prg_k7n01dv7cnyv6s466p4sqan1jv
+    offer_slug: up-to-twenty-thousand-dollars-in-credits
+    offer_slug_aliases: []
+    title: Up to $20K in Anyscale credits
+    summary: Startups accepted into the Anyscale AI Startup Program can access up to $20K in Anyscale credits plus dedicated field engineers for architecture design and hands-on technical support.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-01T09:22:02.883Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Access up to $20K in Anyscale credits
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 2000000
+            kind: up-to
+        - benefit_id: ben_02
+          description: Dedicated Field Engineers to support application architecture design and hands-on technical support
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: The program is for startups building the next generation of AI-native applications with Anyscale.
+    roles:
+      terms_authority_entity_id: ent_tx75drh0kf2nt9jgkwnf4a4n83
+      access_operator_entity_id: ent_tx75drh0kf2nt9jgkwnf4a4n83
+    access:
+      availability: public
+      method: form
+      url: https://www.anyscale.com/startup
+    source_ids:
+      - src_9d22e9a81e169dd111260594c7d7133c129aa4779c50c314dcd13324ac474920
