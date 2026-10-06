@@ -1,0 +1,72 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01w20rjdmrdgb2vvr1z69f27a9
+  slug: spaitial
+  slug_aliases:
+    - spaitial-ai
+  name: SpAItial
+  domains:
+    - value: spaitial.ai
+      role: primary
+      valid_from: 2026-08-27T00:00:00.000Z
+  category: ai-ml
+profile:
+  summary: SpAItial builds Echo, a physically grounded world model with an app and an API for generating persistent 3D environments.
+  description: SpAItial is an AI lab that develops Echo, a physically grounded world model for generating and reasoning about persistent 3D environments.
+  links:
+    site: https://spaitial.ai
+sources:
+  - source_id: src_e2654bb219f754ba81b0a93d264db4547ab35cff505971d044052f6a482e887b
+    url: https://spaitial.ai/startups
+  - source_id: src_dd91846c37176a90d765e4133bb96fc42d41224044a3b0a144146cebd413e07a
+    url: https://spaitial.ai/creative-startup-agreement
+programs:
+  - program_id: prg_015r9vsh87djse68cqtnpk1dg6
+    program_slug: spaitial-startup-program
+    program_slug_aliases: []
+    title: SpAItial Startup Program
+    summary: SpAItial's Startup Program gives selected startups building with Echo credits, priority API access, early model access, and a direct line to the SpAItial team.
+    source_ids:
+      - src_e2654bb219f754ba81b0a93d264db4547ab35cff505971d044052f6a482e887b
+      - src_dd91846c37176a90d765e4133bb96fc42d41224044a3b0a144146cebd413e07a
+offers:
+  - offer_id: off_01n1ymx4yjzqqp743rnrgxzchv
+    program_id: prg_015r9vsh87djse68cqtnpk1dg6
+    offer_slug: spaitial-echo-startup-credits
+    offer_slug_aliases: []
+    title: Echo credits and priority API access for startups
+    summary: Approved startups receive free Echo credits for real product usage, higher rate limits and early API access, early Echo model access, integration support, and possible launch amplification.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-27T00:00:00.000Z
+    economics:
+      consideration:
+        kind: variable
+        description: Participants give concrete feedback on model quality, API ergonomics, editing, exports, latency, and bugs.
+      benefits:
+        - benefit_id: ben_01
+          description: Approved startups receive credits to prototype, integrate, and test Echo in live product workflows.
+          kind: other
+        - benefit_id: ben_02
+          description: Higher rate limits and early API access.
+          kind: other
+        - benefit_id: ben_03
+          description: When there is a fit, SpAItial may feature shared outputs, demos, launches, and case studies across its channels.
+          kind: other
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: A real product, workflow, or prototype where Echo can be used now, a founding team that can ship quickly during the program window, and a clear plan to integrate Echo into the product or workflow.
+    roles:
+      terms_authority_entity_id: ent_01w20rjdmrdgb2vvr1z69f27a9
+      access_operator_entity_id: ent_01w20rjdmrdgb2vvr1z69f27a9
+    access:
+      availability: public
+      method: form
+      url: https://spaitial.ai/startups
+    terms_url: https://spaitial.ai/creative-startup-agreement
+    source_ids:
+      - src_e2654bb219f754ba81b0a93d264db4547ab35cff505971d044052f6a482e887b
+      - src_dd91846c37176a90d765e4133bb96fc42d41224044a3b0a144146cebd413e07a
