@@ -1,0 +1,73 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1xftksys2kgdncmbwg6af1b
+  slug: bubble
+  slug_aliases: []
+  name: Bubble
+  domains:
+    - value: bubble.io
+      role: primary
+      valid_from: 2026-09-07T08:30:16.000Z
+  category: no-code
+profile:
+  summary: Bubble is a no-code AI app builder for building, hosting, and launching web and mobile apps without writing code.
+  description: Bubble is a no-code platform for building web and mobile apps, with a visual editor, integrations, databases, and one-click hosting.
+  links:
+    site: https://bubble.io/
+sources:
+  - source_id: src_6c4220531926cd45397858fcd44c4b6f2b91be206fb930d32adb3891aeebbfa9
+    url: https://bubble.io/
+  - source_id: src_c0de12594b65e7c0aaf4c18a66ed9838caae4e1a6cb8c6715a4c25d749227d0d
+    url: https://bubble.io/partnership/microsoft-for-startups-urm
+programs: []
+offers:
+  - offer_id: off_01m1xftksy14enagfpv3v16xbn
+    offer_slug: 3500-bubble-credits-microsoft-for-startups-urm
+    offer_slug_aliases: []
+    title: $3,500 Bubble credits for Microsoft for Startups URM founders
+    summary: Microsoft for Startups members who are founders from underrepresented minority backgrounds can get $3,500 in Bubble credits for their first 6 months on monthly subscription plans.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T08:30:16.000Z
+    economics:
+      consideration:
+        kind: variable
+        description: Credits apply only to monthly Bubble subscription plans for new paying users, who must link a credit card to redeem them.
+      benefits:
+        - benefit_id: ben_01
+          description: $3,500 in Bubble credits for the first 6 months, valid for 6 months after redeeming
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 350000
+            kind: exact
+          duration:
+            kind: exact
+            value: P6M
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: external-verification
+            statement: Only Microsoft for Startups members that are founders from underrepresented minority backgrounds can redeem the deal.
+          - criterion_id: cri_02
+            kind: manual
+            reason: external-verification
+            statement: The Bubble account must use the same email as the Microsoft for Startups membership.
+          - criterion_id: cri_03
+            kind: manual
+            reason: external-verification
+            statement: For new paying Bubble users only, valid once per organization, and not combinable with another Bubble coupon or deal. Not applicable on Dedicated plans or to one-time plugin or template purchases.
+    roles:
+      terms_authority_entity_id: ent_01m1xftksys2kgdncmbwg6af1b
+      access_operator_entity_id: ent_01m1xftksys2kgdncmbwg6af1b
+    access:
+      availability: membership
+      method: form
+      url: https://bubble.io/partnership/microsoft-for-startups-urm
+      instructions: Claim the deal on the Bubble Microsoft for Startups-URM page with a Bubble account that uses your Microsoft for Startups membership email, and link a credit card to redeem the credits.
+    source_ids:
+      - src_c0de12594b65e7c0aaf4c18a66ed9838caae4e1a6cb8c6715a4c25d749227d0d
