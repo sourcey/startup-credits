@@ -1,0 +1,78 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m16c6h2e9gymwkh4k1p4dbdk
+  slug: normatrack
+  slug_aliases: []
+  name: NormaTrack
+  domains:
+    - value: normatrack.com
+      role: primary
+      valid_from: 2026-08-29T00:00:00Z
+  category: legal-compliance
+profile:
+  summary: NormaTrack is compliance software for fashion and textile brands, covering supply chain traceability, automated life cycle assessment, and EU Digital Product Passports.
+  description: NormaTrack provides supply chain traceability, automated life cycle assessment, and EU-compliant Digital Product Passports for fashion and textile brands.
+  links:
+    site: https://www.normatrack.com
+sources:
+  - source_id: src_3182b0a7286b280b565cdfbdbf87637254bdfd74f09435397378531a7eb1c257
+    url: https://www.normatrack.com/pricing
+  - source_id: src_bc398f390f88f33d6e3320ff9073b736993aa1afb048951329b56060ddae9dbd
+    url: https://www.normatrack.com/request-demo
+programs:
+  - program_id: prg_01m16c6h2es6xx9qe74fn9hdc6
+    program_slug: normatrack-startup-program
+    program_slug_aliases: []
+    title: NormaTrack Startup Program
+    summary: The NormaTrack startup program gives early-stage brands with fewer than 20 employees and under 500 active products 6 months free on the Growth plan, with no credit card required.
+    source_ids:
+      - src_3182b0a7286b280b565cdfbdbf87637254bdfd74f09435397378531a7eb1c257
+      - src_bc398f390f88f33d6e3320ff9073b736993aa1afb048951329b56060ddae9dbd
+offers:
+  - offer_id: off_01m16c6h2ejw2btv8y64awd43n
+    program_id: prg_01m16c6h2es6xx9qe74fn9hdc6
+    offer_slug: growth-plan-free-for-six-months
+    offer_slug_aliases: []
+    title: NormaTrack Growth plan free for 6 months
+    summary: Brands with fewer than 20 employees and under 500 active products get 6 months free on the NormaTrack Growth plan (listed at 349 euros per month), with no credit card required.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-29T00:00:00Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 6 months free on the Growth plan, no credit card required.
+          kind: free-service
+          service: Growth plan
+          duration:
+            kind: exact
+            value: P6M
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.employee_count
+            kind: predicate
+            operator: lt
+            statement: The brand has fewer than 20 employees.
+            value:
+              type: number
+              value: 20
+          - criterion_id: cri_02
+            kind: manual
+            reason: external-verification
+            statement: The brand has under 500 active products.
+    roles:
+      terms_authority_entity_id: ent_01m16c6h2e9gymwkh4k1p4dbdk
+      access_operator_entity_id: ent_01m16c6h2e9gymwkh4k1p4dbdk
+    access:
+      availability: public
+      instructions: Use the startup program Apply now link on the NormaTrack pricing page, which opens the request form; no credit card is required.
+      method: form
+      url: https://www.normatrack.com/request-demo
+    source_ids:
+      - src_3182b0a7286b280b565cdfbdbf87637254bdfd74f09435397378531a7eb1c257
+      - src_bc398f390f88f33d6e3320ff9073b736993aa1afb048951329b56060ddae9dbd
