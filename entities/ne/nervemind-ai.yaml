@@ -1,0 +1,72 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m16c6h29v99bcpzp84pfr599
+  slug: nervemind-ai
+  slug_aliases: []
+  name: NerveMind AI
+  domains:
+    - value: nervemindos.com
+      role: primary
+      valid_from: 2026-08-29T00:00:00Z
+  category: legal-compliance
+profile:
+  summary: NerveMind AI makes NerveMind CGOS, an AI governance operating system that controls what AI applications, agents, and workflows can do, with human authority gates and audit trails.
+  description: NerveMind AI makes NerveMind CGOS, an enterprise AI governance operating system and runtime control plane for AI applications, agents, and workflows.
+  links:
+    site: https://nervemindos.com
+sources:
+  - source_id: src_72fc75bc200be043fe2c8aebbe6052666c25fc57ca62fbf2cc26be4b6b69f1aa
+    url: https://nervemindos.com/startup-program
+  - source_id: src_d28b4bfd13e6fcfc6fbd52db1740926b6800f60d29921475a0b40ebf7827ae49
+    url: https://nervemindos.com/startup-program/apply
+programs:
+  - program_id: prg_01m16c6h29xtxpatevgmwd0zgc
+    program_slug: nervemind-cgos-startup-program
+    program_slug_aliases: []
+    title: NerveMind CGOS Startup Program
+    summary: The NerveMind CGOS Startup Program gives approved startups and small businesses building AI products 50% off one self-serve CGOS plan for 12 months, limited to the first 50 approved companies.
+    source_ids:
+      - src_72fc75bc200be043fe2c8aebbe6052666c25fc57ca62fbf2cc26be4b6b69f1aa
+      - src_d28b4bfd13e6fcfc6fbd52db1740926b6800f60d29921475a0b40ebf7827ae49
+offers:
+  - offer_id: off_01m16c6h2ad1v2qfrgz6hsdjdy
+    program_id: prg_01m16c6h29xtxpatevgmwd0zgc
+    offer_slug: 50-percent-off-cgos-for-12-months
+    offer_slug_aliases: []
+    title: 50% off a self-serve CGOS plan for 12 months
+    summary: Approved applicants get a single-use code for 50% off one self-serve CGOS plan (Developer, Growth, Enterprise, or Enterprise Plus) on the billing interval they choose, for 12 months.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-29T00:00:00Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          applies_to: One self-serve CGOS plan (Developer, Growth, Enterprise, or Enterprise Plus) on the monthly or yearly billing interval selected at checkout
+          description: 50% off the selected self-serve CGOS plan and billing interval for 12 months after approval.
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 5000
+          duration:
+            kind: exact
+            value: P1Y
+      consideration:
+        kind: variable
+        description: Approved companies redeem a single-use 50% promotion code at checkout on one plan and one billing interval; list prices are $699 to $8,999 per month or $8,388 to $107,988 per year.
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Early-stage startups, small businesses, and growing mid-size companies building or deploying AI-enabled products, generally with annual revenue not exceeding $1 million, approved after individual review; the program is limited to the first 50 approved companies.
+    roles:
+      terms_authority_entity_id: ent_01m16c6h29v99bcpzp84pfr599
+      access_operator_entity_id: ent_01m16c6h29v99bcpzp84pfr599
+    access:
+      availability: public
+      method: form
+      url: https://nervemindos.com/startup-program/apply
+    terms_url: https://nervemindos.com/startup-program
+    source_ids:
+      - src_72fc75bc200be043fe2c8aebbe6052666c25fc57ca62fbf2cc26be4b6b69f1aa
+      - src_d28b4bfd13e6fcfc6fbd52db1740926b6800f60d29921475a0b40ebf7827ae49
