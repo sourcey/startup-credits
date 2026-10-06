@@ -1,0 +1,82 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1xjt9mdzsev9576yzmyd59q
+  slug: level-ui
+  slug_aliases: []
+  name: Level UI
+  domains:
+    - value: levelui.com
+      role: primary
+      valid_from: 2026-09-07T09:20:00.000Z
+  category: design
+profile:
+  summary: Level UI is a digital agency with offices in Bucharest and Berlin that builds custom websites, web apps, and digital platforms, with design, branding, and marketing services.
+  description: Level UI is a digital agency in Bucharest and Berlin building custom websites, web apps, and digital platforms, plus UI/UX, branding, and marketing work.
+  links:
+    site: https://levelui.com/
+sources:
+  - source_id: src_3690a201cf1afd29ca9047d4f6376bf3d3bbd2d0113b976ad4c596b27191417a
+    url: https://levelui.com/
+  - source_id: src_7a54c32b7375afb4412bc3b8d708aaa41bc7905855ac907dbf387dbf256c76a6
+    url: https://levelui.com/promotions/startup-partner-discount
+programs:
+  - program_id: prg_01m1xjt9my0sgbd877pzs6qr5j
+    program_slug: startup-partner-discount
+    program_slug_aliases: []
+    title: Level UI Startup Partner Discount
+    summary: Level UI offers companies under two years old 30% off their first project across any Level UI service or package.
+    source_ids:
+      - src_7a54c32b7375afb4412bc3b8d708aaa41bc7905855ac907dbf387dbf256c76a6
+offers:
+  - offer_id: off_01m1xjt9myf36hnra38hve23w0
+    program_id: prg_01m1xjt9my0sgbd877pzs6qr5j
+    offer_slug: thirty-percent-off-first-project
+    offer_slug_aliases: []
+    title: 30% Off First Project for Startups Under 2 Years
+    summary: Companies legally registered within the last 24 months receive 30% off any Level UI service or package on their first project after providing incorporation proof.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-07T09:20:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 30% off any service or package Level UI offers, applied once per company to its first project
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 3000
+          applies_to: Any Level UI service or package, on the company's first project
+      consideration:
+        kind: variable
+        description: The company pays the discounted price for its first project; later work is billed at Level UI's standard pricing.
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.age_months
+            kind: predicate
+            operator: lt
+            statement: The company was legally registered less than 2 years ago (within the last 24 months).
+            value:
+              type: number
+              value: 24
+          - criterion_id: cri_02
+            kind: manual
+            reason: external-verification
+            statement: The applicant must provide a registration certificate, incorporation document, or equivalent proof of incorporation date.
+          - criterion_id: cri_03
+            kind: manual
+            reason: external-verification
+            statement: The discount applies once per company, to the first project with Level UI.
+    roles:
+      terms_authority_entity_id: ent_01m1xjt9mdzsev9576yzmyd59q
+      access_operator_entity_id: ent_01m1xjt9mdzsev9576yzmyd59q
+    access:
+      availability: public
+      method: contact
+      url: https://levelui.com/promotions/startup-partner-discount
+      instructions: Mention that the company is under two years old when reaching out through the contact form, WhatsApp, or project wizard, and provide registration proof for verification.
+    terms_url: https://levelui.com/promotions/startup-partner-discount
+    source_ids:
+      - src_7a54c32b7375afb4412bc3b8d708aaa41bc7905855ac907dbf387dbf256c76a6
