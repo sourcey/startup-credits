@@ -1,0 +1,72 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m496nes7vqrgk2wvaenhb2qx
+  slug: theneo
+  slug_aliases: []
+  name: Theneo
+  domains:
+    - value: theneo.io
+      role: primary
+      valid_from: 2026-10-06T18:13:50.000Z
+  category: devtools-other
+profile:
+  summary: Theneo provides developer portals for API references, guides, changelogs, and private customer documentation, with collaborative editing and AI documentation tools.
+  description: Theneo is a developer portal and API documentation platform with collaborative editing and AI tools.
+  links:
+    site: https://www.theneo.io/
+    pricing: https://www.theneo.io/pricing
+sources:
+  - source_id: src_561fecfb5d52f5cf779af313c8941edf9a258a6c430e134d831adeb75d38c398
+    url: https://www.theneo.io/
+  - source_id: src_75c644e9f9df872a5e7a5e9e0ee0b52fc7122a9883c7fadb73df142707257443
+    url: https://www.theneo.io/blog/best-api-documentation-platform-for-startups
+  - source_id: src_4534ce7e502ac32ae434209b8953193d68dd543d3e7dc741b03f5ec0f4f1a9c8
+    url: https://www.theneo.io/pricing
+programs:
+  - program_id: prg_01m496nes8x8f7wcx76njjmp2v
+    program_slug: theneo-startup-program
+    program_slug_aliases: []
+    title: Theneo Startup Program
+    summary: Theneo offers eligible early-stage startups its Growth annual tier, with a free year for recent Y Combinator companies and discounts for other eligible startups.
+    source_ids:
+      - src_75c644e9f9df872a5e7a5e9e0ee0b52fc7122a9883c7fadb73df142707257443
+offers:
+  - offer_id: off_01m496nes9ay1yza9xjbdv7n0z
+    program_id: prg_01m496nes8x8f7wcx76njjmp2v
+    offer_slug: growth-annual-tier-free-for-one-year-for-yc-startups
+    offer_slug_aliases: []
+    title: One year of Theneo Growth free for recent YC startups
+    summary: Approved startups from recent Y Combinator batches receive the Theneo Growth annual tier free for one year. Contact Theneo to confirm eligibility and activate the offer.
+    lifecycle:
+      status: active
+      effective_from: 2026-10-06T18:13:50.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          kind: free-service
+          service: Theneo Growth annual tier
+          duration:
+            kind: exact
+            value: P1Y
+          description: Recent Y Combinator batch companies receive one full year of the Growth annual tier at no cost.
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: external-verification
+            statement: The applicant must be an eligible early-stage startup from a recent Y Combinator batch; Theneo confirms eligibility by email.
+    roles:
+      terms_authority_entity_id: ent_01m496nes7vqrgk2wvaenhb2qx
+      access_operator_entity_id: ent_01m496nes7vqrgk2wvaenhb2qx
+    access:
+      availability: public
+      method: contact
+      url: https://www.theneo.io/blog/best-api-documentation-platform-for-startups
+      instructions: Contact Theneo through the email route published on this vendor page to confirm eligibility and activate the startup offer.
+    terms_url: https://www.theneo.io/blog/best-api-documentation-platform-for-startups
+    source_ids:
+      - src_75c644e9f9df872a5e7a5e9e0ee0b52fc7122a9883c7fadb73df142707257443
