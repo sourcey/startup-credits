@@ -1,0 +1,68 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m19htygp4b2c40t67tvahj9w
+  slug: hume-ai
+  slug_aliases: []
+  name: Hume AI
+  domains:
+    - value: hume.ai
+      role: primary
+      valid_from: 2026-08-30T14:40:41.000Z
+  category: ai-ml
+profile:
+  summary: Hume AI provides an Expression Measurement API, a Human Feedback API, and evaluation leaderboards for voice, speech, and conversational AI.
+  description: Hume AI provides human feedback, evaluation, and expression measurement APIs for voice, speech, and conversational AI.
+  links:
+    site: https://www.hume.ai
+sources:
+  - source_id: src_dcccee8b5af3b915318d8b5b73a57dd249bee70bab47e96d549a43b1aacbfa94
+    url: https://www.hume.ai/startup-program
+  - source_id: src_bc791a070b2eb1fb660569fa035a295974f77ec84abc07c72c98c1dfd4784c79
+    url: https://www.hume.ai/
+programs:
+  - program_id: prg_01m19htygrp98bh6ny1fhbd901
+    program_slug: hume-ai-startup-program
+    program_slug_aliases: []
+    title: Hume AI Startup Program
+    summary: The Hume AI Startup Program offers early-stage startups discounted API access, dedicated support and technical guidance, and resources to help them build with empathic AI.
+    source_ids:
+      - src_dcccee8b5af3b915318d8b5b73a57dd249bee70bab47e96d549a43b1aacbfa94
+offers:
+  - offer_id: off_01m19htygrgpmch9pw1hvwr1bd
+    program_id: prg_01m19htygrp98bh6ny1fhbd901
+    offer_slug: hume-ai-startup-program
+    offer_slug_aliases: []
+    title: Discounted Hume AI API access for early-stage startups
+    summary: Early-stage startups accepted into the Hume AI Startup Program get discounted API access, dedicated support and technical guidance, and resources; the page does not publish the discount amount.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-30T14:40:41.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_discounted_api_access
+          description: Discounted API access for early-stage startups.
+          kind: other
+        - benefit_id: ben_support
+          description: Dedicated support and technical guidance.
+          kind: other
+        - benefit_id: ben_resources
+          description: Resources to help you build with empathic AI.
+          kind: other
+      consideration:
+        kind: variable
+        description: The startup receives discounted API access for early-stage startups.
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_early_stage
+        statement: The applicant is an early-stage startup accepted into the Hume AI Startup Program.
+        reason: vendor-discretion
+    roles:
+      terms_authority_entity_id: ent_01m19htygp4b2c40t67tvahj9w
+      access_operator_entity_id: ent_01m19htygp4b2c40t67tvahj9w
+    access:
+      availability: public
+      method: form
+      url: https://www.hume.ai/startup-program
+    source_ids:
+      - src_dcccee8b5af3b915318d8b5b73a57dd249bee70bab47e96d549a43b1aacbfa94
