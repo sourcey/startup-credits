@@ -38,14 +38,7 @@ offers:
     economics:
       benefits:
         - benefit_id: ben_01
-          kind: discount
-          percentage:
-            kind: exact
-            basis_points: 5000
-          duration:
-            kind: exact
-            value: P1Y
-          applies_to: Alaris Enterprise Platform
+          kind: other
           description: 50% off the full Alaris Enterprise Platform for 12 months.
         - benefit_id: ben_02
           kind: other
