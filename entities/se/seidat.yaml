@@ -1,0 +1,98 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m2ghxkevzrnc9xev9hq8s80d
+  slug: seidat
+  slug_aliases: []
+  name: Seidat
+  domains:
+    - value: seidat.com
+      role: primary
+      valid_from: 2026-09-14T18:12:25.000Z
+  category: crm-sales
+profile:
+  summary: Seidat is a sales presentation platform for hotel sales and marketing teams to create, share, and track on-brand sales materials.
+  description: Seidat is a sales presentation platform that hotel sales and marketing teams use to create, share, and track on-brand presentations.
+  links:
+    site: https://www.seidat.com/
+sources:
+  - source_id: src_514cd797e16b031f15900ceed5845eea43c20b43a9b4637d8ad7403abf607c99
+    url: https://www.seidat.com/
+  - source_id: src_194500ee8b0c0c788fac599bdf5cf7c96341fd4443cbbb790add1b364fd4c95c
+    url: https://www.seidat.com/startup-program/
+programs:
+  - program_id: prg_01m2ghxkf1r32dkzfat0faf0hk
+    program_slug: seidat-startup-program
+    program_slug_aliases: []
+    title: Seidat Startup Program
+    summary: Seidat Startup Program gives eligible new startup customers discounted Core, Plus, and Pro plans for the first three years, with an average base-fee discount over 75%.
+    source_ids:
+      - src_194500ee8b0c0c788fac599bdf5cf7c96341fd4443cbbb790add1b364fd4c95c
+offers:
+  - offer_id: off_01m2ghxkf1wg4069ff60qv8e7e
+    program_id: prg_01m2ghxkf1r32dkzfat0faf0hk
+    offer_slug: over-75-percent-off-seidat-three-years
+    offer_slug_aliases: []
+    title: Startup prices on Seidat plans for three years
+    summary: New Seidat clients founded within 5 years with under 2 million EUR turnover pay Startup Core, Plus, or Pro prices for three years, for example Core at 75 EUR a month plus 5 EUR per user instead of 299 EUR.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-14T18:12:25.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Startup Program prices for the first three years, with an average discount on the subscription base fee of over 75%
+          duration:
+            kind: exact
+            value: P3Y
+          kind: discount
+          percentage:
+            basis_points: 7500
+            kind: at-least
+          applies_to: Seidat subscription base fee on the Startup Core, Startup Plus, and Startup Pro plans
+        - benefit_id: ben_02
+          description: Startup Core at 75 EUR per month plus 5 EUR per user, instead of 299 EUR
+          kind: other
+        - benefit_id: ben_03
+          description: Startup Plus at 100 EUR per month plus 7 EUR per user, instead of 399 EUR
+          kind: other
+        - benefit_id: ben_04
+          description: Startup Pro at 175 EUR per month plus 10 EUR per user, instead of 699 EUR
+          kind: other
+      consideration:
+        kind: variable
+        description: The startup pays the Startup Program price, shown monthly on an annual contract charged every 12 months and excluding VAT. After three years the subscription continues at standard rates.
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: not-machine-evaluable
+            statement: Annual turnover is less than 2 million EUR.
+          - criterion_id: cri_02
+            fact: company.age_months
+            kind: predicate
+            operator: lte
+            statement: The business was founded within the last 5 years.
+            value:
+              type: number
+              value: 60
+          - criterion_id: cri_03
+            kind: manual
+            reason: not-machine-evaluable
+            statement: The business does not have and never had a Seidat subscription (new client only).
+          - criterion_id: cri_04
+            kind: manual
+            reason: vendor-discretion
+            statement: Seidat reviews Startup Program applications; a trial may start before approval, and the correct startup price is applied after review.
+    roles:
+      terms_authority_entity_id: ent_01m2ghxkevzrnc9xev9hq8s80d
+      access_operator_entity_id: ent_01m2ghxkevzrnc9xev9hq8s80d
+    access:
+      availability: public
+      method: contact
+      instructions: Use Contact Sales on the Seidat Startup Program page to apply. A trial can start before the application is approved, and the startup price is applied after review.
+      url: https://www.seidat.com/startup-program/
+    terms_url: https://www.seidat.com/startup-program/
+    source_ids:
+      - src_194500ee8b0c0c788fac599bdf5cf7c96341fd4443cbbb790add1b364fd4c95c
