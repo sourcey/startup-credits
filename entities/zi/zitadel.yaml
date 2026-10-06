@@ -1,0 +1,76 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1nybq8qpz6bpzc6r7wtz2ct
+  slug: zitadel
+  slug_aliases: []
+  name: ZITADEL
+  domains:
+    - value: zitadel.com
+      role: primary
+      valid_from: 2026-09-04T10:19:29.478Z
+  category: auth-security
+profile:
+  summary: ZITADEL provides an identity platform for authentication and user management, available as ZITADEL Cloud or self-hosted.
+  description: ZITADEL provides an identity management platform that companies use as the managed ZITADEL Cloud service or self-host.
+  links:
+    site: https://zitadel.com
+sources:
+  - source_id: src_25f54f852ab833c8fb3ad75b9903c965461c2b5a37bdfee5ac45f75e18d0df41
+    url: https://zitadel.com/startup
+programs: []
+offers:
+  - offer_id: off_01m1nybq8q8qy5kjptseskndca
+    offer_slug: zitadel-startup-program
+    offer_slug_aliases: []
+    title: ZITADEL Startup Program
+    summary: Startups no more than 2 years old, with less than $2M in funding and investor or accelerator backing, get financial credits, all ZITADEL Cloud features, and sessions with ZITADEL engineers for their first 12 months.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-04T10:19:29.478Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_cloud_features
+          description: Use all features of ZITADEL Cloud
+          kind: other
+        - benefit_id: ben_engineers
+          description: Talk directly to our engineers
+          kind: other
+        - benefit_id: ben_financial_credits
+          description: Financial credits
+          kind: other
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_requirement_01
+            fact: company.funding_raised_usd
+            kind: predicate
+            operator: lt
+            statement: Company has less than $2M in funding.
+            value:
+              type: number
+              value: 2000000
+          - criterion_id: cri_requirement_02
+            fact: company.age_months
+            kind: predicate
+            operator: lte
+            statement: Company is no more than 2 years old.
+            value:
+              type: number
+              value: 24
+          - criterion_id: cri_requirement_03
+            kind: manual
+            reason: external-verification
+            statement: Company is backed by an investor or accelerator.
+    roles:
+      terms_authority_entity_id: ent_01m1nybq8qpz6bpzc6r7wtz2ct
+      access_operator_entity_id: ent_01m1nybq8qpz6bpzc6r7wtz2ct
+    access:
+      availability: public
+      method: form
+      url: https://share-eu1.hsforms.com/1JgHRqQyXRXic8xlGUVMzRA2dljbt
+      instructions: Register through the form on the ZITADEL startup page. ZITADEL reviews the application, emails further details, and applies the financial credits to the startup's team after it signs up for ZITADEL Cloud.
+    source_ids:
+      - src_25f54f852ab833c8fb3ad75b9903c965461c2b5a37bdfee5ac45f75e18d0df41
