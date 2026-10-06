@@ -1,0 +1,81 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m4907gf5thmv0ycv6g749gx8
+  slug: alaris-security
+  slug_aliases: []
+  name: Alaris Security
+  domains:
+    - value: alaris.security
+      role: primary
+      valid_from: 2026-10-06T16:20:00.000Z
+  category: auth-security
+profile:
+  summary: Autonomous cybersecurity platform spanning SOC, endpoint security, detection engineering, cloud security, and threat hunting.
+  description: Alaris Security provides autonomous security operations across endpoint, cloud, identity, network, and detection engineering.
+  links:
+    site: https://alaris.security/
+sources:
+  - source_id: src_6b942d0349e1446f967f16289c81c5b1fc0500d6d29885aa5a3eeaebd49d7ba1
+    url: https://www.alaris.security/startup-shield
+programs:
+  - program_id: prg_01m4907gf7danvb1hf381c3az5
+    program_slug: startup-shield
+    program_slug_aliases: []
+    title: Startup Shield
+    summary: Startup Shield gives qualifying VC-backed startups 50% off the full Alaris Enterprise Platform for 12 months with dedicated onboarding.
+    source_ids:
+      - src_6b942d0349e1446f967f16289c81c5b1fc0500d6d29885aa5a3eeaebd49d7ba1
+offers:
+  - offer_id: off_01m4907gf9yp5ctvtkyh30tn09
+    program_id: prg_01m4907gf7danvb1hf381c3az5
+    offer_slug: enterprise-platform-50-percent-off
+    offer_slug_aliases: []
+    title: 50% off Alaris Enterprise Platform for 12 months
+    summary: VC-backed startups from Seed through Series C with fewer than 1,000 employees receive 50% off the full Alaris Enterprise Platform for 12 months.
+    lifecycle:
+      status: active
+      effective_from: 2026-04-03T00:00:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 5000
+          duration:
+            kind: exact
+            value: P1Y
+          applies_to: Alaris Enterprise Platform
+          description: 50% off the full Alaris Enterprise Platform for 12 months.
+        - benefit_id: ben_02
+          kind: other
+          description: A dedicated Alaris security engineer provides onboarding for the first 30 days.
+      consideration:
+        kind: variable
+        description: Approved startups pay the discounted Startup Shield rate; there is no application fee.
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: external-verification
+            statement: The startup must be VC-backed at Seed through Series C.
+          - criterion_id: cri_02
+            kind: predicate
+            fact: company.employee_count
+            operator: lt
+            value:
+              type: number
+              value: 1000
+            statement: The startup must have fewer than 1,000 employees.
+    roles:
+      terms_authority_entity_id: ent_01m4907gf5thmv0ycv6g749gx8
+      access_operator_entity_id: ent_01m4907gf5thmv0ycv6g749gx8
+    access:
+      availability: public
+      method: form
+      url: https://www.alaris.security/startup-shield
+      instructions: Apply through the Startup Shield form; applications are reviewed on a rolling basis.
+    source_ids:
+      - src_6b942d0349e1446f967f16289c81c5b1fc0500d6d29885aa5a3eeaebd49d7ba1
