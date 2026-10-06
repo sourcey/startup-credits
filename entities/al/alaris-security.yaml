@@ -17,6 +17,8 @@ profile:
 sources:
   - source_id: src_6b942d0349e1446f967f16289c81c5b1fc0500d6d29885aa5a3eeaebd49d7ba1
     url: https://www.alaris.security/startup-shield
+  - source_id: src_9e3b8291e78d2f6f59f1f87f4f557645e6a2b94c7df2a7f9ad43d945c8aef001
+    url: https://alaris.security/newsroom/2026/04/startup-shield-program
 programs:
   - program_id: prg_01m4907gf7danvb1hf381c3az5
     program_slug: startup-shield
@@ -25,6 +27,7 @@ programs:
     summary: Startup Shield gives qualifying VC-backed startups 50% off the full Alaris Enterprise Platform for 12 months with dedicated onboarding.
     source_ids:
       - src_6b942d0349e1446f967f16289c81c5b1fc0500d6d29885aa5a3eeaebd49d7ba1
+      - src_9e3b8291e78d2f6f59f1f87f4f557645e6a2b94c7df2a7f9ad43d945c8aef001
 offers:
   - offer_id: off_01m4907gf9yp5ctvtkyh30tn09
     program_id: prg_01m4907gf7danvb1hf381c3az5
@@ -44,31 +47,20 @@ offers:
           kind: other
           description: A dedicated Alaris security engineer provides onboarding for the first 30 days.
       consideration:
-        kind: variable
-        description: Approved startups pay the discounted Startup Shield rate; there is no application fee.
+        kind: unknown
+        description: The public program pages do not establish separate consideration beyond the stated Startup Shield offer.
     eligibility:
       rule:
-        kind: all
-        rules:
-          - criterion_id: cri_01
-            kind: manual
-            reason: external-verification
-            statement: The startup must be VC-backed at Seed through Series C.
-          - criterion_id: cri_02
-            kind: predicate
-            fact: company.employee_count
-            operator: lt
-            value:
-              type: number
-              value: 1000
-            statement: The startup must have fewer than 1,000 employees.
+        criterion_id: cri_01
+        kind: manual
+        reason: external-verification
+        statement: Startup Shield is for qualifying VC-backed startups from Seed through Series C with fewer than 1,000 employees.
     roles:
       terms_authority_entity_id: ent_01m4907gf5thmv0ycv6g749gx8
       access_operator_entity_id: ent_01m4907gf5thmv0ycv6g749gx8
     access:
-      availability: public
-      method: form
-      url: https://www.alaris.security/startup-shield
-      instructions: Apply through the Startup Shield form; applications are reviewed on a rolling basis.
+      availability: other
+      method: other
     source_ids:
       - src_6b942d0349e1446f967f16289c81c5b1fc0500d6d29885aa5a3eeaebd49d7ba1
+      - src_9e3b8291e78d2f6f59f1f87f4f557645e6a2b94c7df2a7f9ad43d945c8aef001
