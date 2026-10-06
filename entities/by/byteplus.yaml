@@ -1,0 +1,13 @@
+# BytePlus
+---
+vendor: BytePlus
+canonical: byteplus.com
+programs:
+  - name: V-Start / AI Startups Accelerator
+    url: https://www.byteplus.com/en/contact-us/vstart
+    offers:
+      - name: Up to USD 100,000 in cloud coupons
+        url: https://www.byteplus.com/en/contact-us/vstart
+        details: Publicly accepts applications. Offers up to USD 100,000 in cloud coupons for startup applicants at Series D or earlier. Requires a registered business and an authorized applicant. Incentives are non-transferable and cannot be redeemed for cash.
+        terms: https://docs.byteplus.com/en/docs/legal/tnc_ve-start_global_startups
+        source: https://www.byteplus.com/en/contact-us/vstart
