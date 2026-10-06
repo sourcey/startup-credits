@@ -1,0 +1,88 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1tjwy8x2rxsxn5d0xsgz3s3
+  slug: lead-liaison
+  slug_aliases: []
+  name: Lead Liaison
+  domains:
+    - value: leadliaison.com
+      role: primary
+      valid_from: 2026-09-06T05:26:15.069Z
+  category: crm-sales
+profile:
+  summary: Lead Liaison makes sales and marketing software, including marketing automation, sales automation, website visitor tracking, and event lead management.
+  description: Lead Liaison provides sales and marketing software, including marketing automation, website visitor tracking, and sales enablement.
+  links:
+    site: https://www.leadliaison.com/
+sources:
+  - source_id: src_4a4b702193180cea43e63c3d920b4349cf24ec10abcbd877c39ce0861e997322
+    url: https://www.leadliaison.com/startups/
+programs: []
+offers:
+  - offer_id: off_01m1tjwy8yd72edkh7mmngxxz9
+    offer_slug: seed-stage-startup-discount
+    offer_slug_aliases: []
+    title: Lead Liaison for Startups Seed-Stage discount
+    summary: Seed-stage startups with under USD 2 million in total funding from an approved incubator, accelerator or VC get 90% off Lead Liaison subscription licenses for 24 months, then 50% off for 12 months.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-06T05:26:15.069Z
+    economics:
+      consideration:
+        kind: variable
+        description: The startup pays list price less 90% for 24 months, then less 50% for the next 12 months, on any subscription license; Professional Services are not discounted.
+      benefits:
+        - benefit_id: ben_01m1tjwy8yr4xkr9afsggprpps
+          kind: discount
+          applies_to: Any subscription license
+          description: 90% discount off list price for 24 months.
+          percentage:
+            kind: exact
+            basis_points: 9000
+          duration:
+            kind: exact
+            value: P24M
+        - benefit_id: ben_01m1tjwy8y1kr9zvacnckz1wjm
+          kind: discount
+          applies_to: Any subscription license
+          description: 50% discount for the next 12 months; this later discount requires a graduate certificate from Lead Liaison's Sales & Marketing University.
+          percentage:
+            kind: exact
+            basis_points: 5000
+          duration:
+            kind: exact
+            value: P12M
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_seed_stage_qualification
+            kind: predicate
+            fact: company.funding_raised_usd
+            operator: lt
+            value:
+              type: number
+              value: 2000000
+            statement: The startup has less than USD 2 million in total funding.
+          - criterion_id: cri_seed_stage_new_customer
+            kind: predicate
+            fact: company.is_current_customer
+            operator: eq
+            value:
+              type: boolean
+              value: false
+            statement: The startup must not be an existing Lead Liaison customer.
+          - criterion_id: cri_seed_stage_partner
+            kind: manual
+            reason: external-verification
+            statement: The startup is a participant or alumnus of an approved incubator, accelerator, or VC in Lead Liaison's Seed-Stage Program.
+    roles:
+      terms_authority_entity_id: ent_01m1tjwy8x2rxsxn5d0xsgz3s3
+      access_operator_entity_id: ent_01m1tjwy8x2rxsxn5d0xsgz3s3
+    access:
+      availability: public
+      method: form
+      url: https://www.leadliaison.com/startups/
+      instructions: Use Apply Now on the Lead Liaison for Startups page. Startups that later receive Series A funding move to the separate Series A program.
+    source_ids:
+      - src_4a4b702193180cea43e63c3d920b4349cf24ec10abcbd877c39ce0861e997322
