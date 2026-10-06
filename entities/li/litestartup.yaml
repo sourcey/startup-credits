@@ -62,12 +62,8 @@ offers:
         kind: all
         rules:
           - criterion_id: cri_01
-            kind: predicate
-            fact: company.age_months
-            operator: lte
-            value:
-              type: number
-              value: 12
+            kind: manual
+            reason: external-verification
             statement: The startup was founded within the last year.
           - criterion_id: cri_02
             kind: manual
