@@ -1,0 +1,67 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m0s6ee20skktfs8myvv5g3tz
+  slug: vectorize
+  slug_aliases: []
+  name: Vectorize
+  domains:
+    - value: vectorize.io
+      role: primary
+      valid_from: 2026-08-24T06:13:00.000Z
+  category: ai-ml
+profile:
+  summary: Vectorize builds Hindsight, an agent memory layer that lets AI agents remember users across sessions and learn over time, available open source or as Hindsight Cloud.
+  description: Vectorize builds Hindsight, an open-source and fully managed memory platform for AI agents, with per-user memory, cross-session persistence, and fast recall.
+  links:
+    site: https://vectorize.io
+sources:
+  - source_id: src_ed0d677e02586d65ffb3c3d7489765aaac1dace5dcb18cbf22e3d70cf9d768d5
+    url: https://vectorize.io/startups
+programs:
+  - program_id: prg_01m0s6ee20qngparntqtx0saqm
+    program_slug: hindsight-cloud-for-startups
+    program_slug_aliases: []
+    title: Hindsight Cloud for Startups
+    summary: Hindsight Cloud for Startups gives funded product startups building on Hindsight up to $15,000 in Hindsight Cloud credits and engineering support.
+    source_ids:
+      - src_ed0d677e02586d65ffb3c3d7489765aaac1dace5dcb18cbf22e3d70cf9d768d5
+offers:
+  - offer_id: off_01m0s6ee20rydrdz997fj7qss8
+    program_id: prg_01m0s6ee20qngparntqtx0saqm
+    offer_slug: up-to-15000-in-hindsight-cloud-credits
+    offer_slug_aliases: []
+    title: Up to $15,000 in Hindsight Cloud credits
+    summary: Approved startups get up to $15,000 in Hindsight Cloud credits, starting with $1,000 free and unlocking $4,000 and then $10,000 in bonus credits as they grow; credits last 3 months from approval.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-24T06:13:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to $15,000 in Hindsight Cloud credits. Start with $1,000 free, then unlock more as the startup grows.
+          duration:
+            kind: exact
+            value: P3M
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 1500000
+            kind: up-to
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_requirement_01
+        kind: manual
+        reason: not-machine-evaluable
+        statement: Incorporated company (a registered business entity; solo founders with an LLC count), under $10M in funding (angel-backed, pre-seed, seed, or early Series A), a product built on Hindsight whose customers use the agents it builds (agencies, custom solution shops, and internal-only deployments do not qualify), and not currently a paying Hindsight Cloud customer.
+    roles:
+      terms_authority_entity_id: ent_01m0s6ee20skktfs8myvv5g3tz
+      access_operator_entity_id: ent_01m0s6ee20skktfs8myvv5g3tz
+    access:
+      availability: public
+      method: form
+      url: https://vectorize.io/startups
+    source_ids:
+      - src_ed0d677e02586d65ffb3c3d7489765aaac1dace5dcb18cbf22e3d70cf9d768d5
