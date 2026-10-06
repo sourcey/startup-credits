@@ -1,0 +1,141 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m4908yt0yawbapsxzrjz2vn0
+  slug: aircall
+  slug_aliases: []
+  name: Aircall
+  domains:
+    - value: aircall.io
+      role: primary
+      valid_from: 2026-10-06T16:20:46.016Z
+  category: communication
+profile:
+  summary: Aircall provides business telephony and messaging with AI voice agents
+    for sales and customer support teams.
+  description: Aircall provides business telephony, messaging, and AI voice agents
+    for sales and customer support.
+  links:
+    site: https://aircall.io/
+sources:
+  - source_id: src_13f2773a62e4a32eacc06a5e00b95d0e80a6d96ae98cce4768f786817567cc36
+    url: https://aircall.io/aircall-for-startups/
+  - source_id: src_7e56b5bbf9f44bbb0e229453929c925f8c538d1f78e5f244ca95d7406bb8dc7d
+    url: https://support.aircall.io/en-gb/articles/38311795640477
+programs:
+  - program_id: prg_01m4908yt064wf3prt4rw6ry3d
+    program_slug: aircall-for-startups
+    program_slug_aliases: []
+    title: Aircall for Startups
+    summary: Aircall offers a multi-year Professional plan discount program for
+      eligible early-stage startups.
+    source_ids:
+      - src_13f2773a62e4a32eacc06a5e00b95d0e80a6d96ae98cce4768f786817567cc36
+      - src_7e56b5bbf9f44bbb0e229453929c925f8c538d1f78e5f244ca95d7406bb8dc7d
+offers:
+  - offer_id: off_01m4908yt0jaw626b4v5g2w91f
+    program_id: prg_01m4908yt064wf3prt4rw6ry3d
+    offer_slug: startup-professional-step-down
+    offer_slug_aliases: []
+    title: Aircall startup Professional plan bundle
+    summary: Eligible startups receive 84% off Professional and 500 free AI voice
+      agent minutes per month in year one, then 45% off Professional and 50% off
+      AI voice agent minutes in year two.
+    description: The bundle requires at least three seats. Discounts apply to
+      Professional, not Essentials or Custom, and exclude other add-ons. Year
+      three returns to list pricing. Approved applicants have 14 days to accept
+      the offer.
+    lifecycle:
+      status: active
+      effective_from: 2026-10-06T16:20:46.016Z
+    economics:
+      consideration:
+        kind: variable
+        description: "Three-user bundle: year one costs USD 60/month billed annually or
+          USD 84/month billed monthly; year two USD 192.50/month annually or USD
+          234.50/month monthly. Year three returns to USD 325/month annually or
+          USD 385/month monthly. Extra seats cost more."
+      benefits:
+        - benefit_id: ben_year_one
+          kind: discount
+          description: 84% off Professional for three users during year one
+          percentage:
+            kind: exact
+            basis_points: 8400
+          applies_to: Professional plan in year one
+          duration:
+            kind: exact
+            value: P1Y
+        - benefit_id: ben_aiva_year_one
+          kind: free-service
+          description: 500 AI voice agent minutes per month included free during year one
+          service: 500 AI voice agent minutes per month
+          duration:
+            kind: exact
+            value: P1Y
+        - benefit_id: ben_year_two
+          kind: discount
+          description: 45% off Professional during year two
+          percentage:
+            kind: exact
+            basis_points: 4500
+          applies_to: Professional plan in year two
+          duration:
+            kind: exact
+            value: P1Y
+        - benefit_id: ben_aiva_year_two
+          kind: discount
+          description: 50% off AI voice agent minutes during year two
+          percentage:
+            kind: exact
+            basis_points: 5000
+          applies_to: AI voice agent minutes in year two
+          duration:
+            kind: exact
+            value: P1Y
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - kind: manual
+            criterion_id: cri_employees
+            statement: Startup must have fewer than 25 employees.
+            reason: external-verification
+          - kind: manual
+            criterion_id: cri_funding
+            statement: Startup must have raised less than USD 10 million and be below Series
+              A.
+            reason: external-verification
+          - kind: manual
+            criterion_id: cri_backing
+            statement: Startup must be backed by a VC, accelerator, or approved venture
+              partner, or have verifiable venture funding.
+            reason: external-verification
+          - kind: manual
+            criterion_id: cri_entity
+            statement: Startup must be an independent legal entity and not a subsidiary of a
+              larger company.
+            reason: external-verification
+          - kind: manual
+            criterion_id: cri_customer
+            statement: Startup must not be a current or former Aircall customer.
+            reason: external-verification
+          - kind: manual
+            criterion_id: cri_seats
+            statement: The program requires at least three user seats.
+            reason: external-verification
+          - kind: manual
+            criterion_id: cri_approval
+            statement: Aircall reviews the application and verifies eligibility before
+              approving participation.
+            reason: external-verification
+    roles:
+      terms_authority_entity_id: ent_01m4908yt0yawbapsxzrjz2vn0
+      access_operator_entity_id: ent_01m4908yt0yawbapsxzrjz2vn0
+    access:
+      availability: public
+      method: form
+      url: https://aircall.io/aircall-for-startups/
+    terms_url: https://support.aircall.io/en-gb/articles/38311795640477
+    source_ids:
+      - src_13f2773a62e4a32eacc06a5e00b95d0e80a6d96ae98cce4768f786817567cc36
+      - src_7e56b5bbf9f44bbb0e229453929c925f8c538d1f78e5f244ca95d7406bb8dc7d
