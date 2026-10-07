@@ -1,0 +1,78 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m4brwhhjhk0c6fsasb31dpwa
+  slug: axiom
+  slug_aliases: []
+  name: Axiom
+  domains:
+    - value: axiom.co
+      role: primary
+      valid_from: 2026-10-07T18:00:00.000Z
+  category: observability
+profile:
+  summary: Axiom provides cloud-native event data, logging, and analytics with high-density storage and fast querying.
+  description: Axiom provides cloud-native logging, analytics, and observability with high-density serverless storage and fast querying.
+  links:
+    site: https://axiom.co
+sources:
+  - source_id: src_c79ed2a459877f3cc035f72a3d7a90c4b06423aeaadadef8b014fffb03e72d92
+    url: https://axiom.co/docs/legal/axiom-for-startups
+programs:
+  - program_id: prg_01m4brwhhsafd45kqt7yyxer94
+    program_slug: axiom-for-startups
+    program_slug_aliases: []
+    title: Axiom for Startups
+    summary: Axiom for Startups provides qualifying early-stage companies a platform-fee waiver and compute discounts to scale logging and observability.
+    source_ids:
+      - src_c79ed2a459877f3cc035f72a3d7a90c4b06423aeaadadef8b014fffb03e72d92
+offers:
+  - offer_id: off_01m4brwhhs0z2cf7395xh55e80
+    program_id: prg_01m4brwhhsafd45kqt7yyxer94
+    offer_slug: axiom-for-startups-discount-and-fee-waiver
+    offer_slug_aliases: []
+    title: Axiom for Startups Discount and Fee Waiver
+    summary: Qualifying startups receive a waiver of the $25/month Axiom Cloud platform fee and a 30% discount on Data Loading and Query Compute for 12 months, up to $10,000 in savings.
+    lifecycle:
+      status: active
+      effective_from: 2026-10-07T18:00:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 30% discount on standard Data Loading and Query Compute charges for up to 12 months or until $10,000 in savings
+          kind: discount
+          percentage:
+            basis_points: 3000
+            kind: exact
+        - benefit_id: ben_02
+          description: Waiver of the $25 monthly Axiom Cloud platform fee for 12 months
+          kind: waiver
+          waived_item: Axiom Cloud platform fee
+      consideration:
+        kind: variable
+        description: Standard storage and add-on charges apply, as well as compute charges after the discount or $10,000 limit.
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.is_current_customer
+            kind: predicate
+            operator: eq
+            statement: Must not be an existing paid Axiom Cloud customer.
+            value:
+              type: boolean
+              value: false
+          - criterion_id: cri_02
+            kind: manual
+            reason: vendor-discretion
+            statement: Must apply through a participating accelerator, investor, or startup community.
+    roles:
+      terms_authority_entity_id: ent_01m4brwhhjhk0c6fsasb31dpwa
+      access_operator_entity_id: ent_01m4brwhhjhk0c6fsasb31dpwa
+    access:
+      availability: public
+      method: form
+      url: https://axiom.co/docs/legal/axiom-for-startups
+    terms_url: https://axiom.co/docs/legal/axiom-for-startups
+    source_ids:
+      - src_c79ed2a459877f3cc035f72a3d7a90c4b06423aeaadadef8b014fffb03e72d92
