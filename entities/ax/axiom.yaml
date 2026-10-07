@@ -1,0 +1,93 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m49y5n2kmfjgvgn7b9z6smrt
+  slug: axiom
+  slug_aliases: []
+  name: Axiom
+  domains:
+    - value: axiom.co
+      role: primary
+      valid_from: 2026-10-07T01:03:15.027Z
+  category: observability
+profile:
+  summary: Axiom provides a managed event store for logs, traces, metrics, and custom events, with querying, dashboards, and monitoring tools.
+  description: Axiom is a managed machine-data platform for ingesting, storing, querying, and monitoring logs, traces, metrics, and custom events.
+  links:
+    site: https://axiom.co/
+    pricing: https://axiom.co/pricing
+sources:
+  - source_id: src_add1a588c38f41bdb0dd6af9146db534192659064d78bebbb02978646c2d284a
+    url: https://axiom.co/
+  - source_id: src_3db017ea795f4004b63744cea51047e5dee5fc9a5d47fea2999cac120a77b810
+    url: https://axiom.co/axiom-for-startups
+  - source_id: src_a30f1d79ccbe47c38706792be53535d1266c17d40506cc7696470be431713c11
+    url: https://axiom.co/pricing
+programs:
+  - program_id: prg_01m49y5n2kgz59qgze1z6ntr4f
+    program_slug: axiom-for-startups
+    program_slug_aliases: []
+    title: Axiom for Startups
+    summary: Axiom for Startups gives approved Seed through Series A companies a one-year Axiom Cloud platform-fee waiver and a capped compute discount through participating startup organizations.
+    source_ids:
+      - src_3db017ea795f4004b63744cea51047e5dee5fc9a5d47fea2999cac120a77b810
+offers:
+  - offer_id: off_01m49y5n2kptf0b03dm8wcpmz0
+    program_id: prg_01m49y5n2kgz59qgze1z6ntr4f
+    offer_slug: cloud-platform-fee-waiver-and-compute-discount
+    offer_slug_aliases: []
+    title: One-year platform-fee waiver and 30% compute discount
+    summary: Approved Seed through Series A startups get the Axiom Cloud platform fee waived for 12 months and 30% off Data Loading and Query Compute for up to 12 months or USD 10,000 in compute savings.
+    description: The benefits start when an approved organization upgrades to Axiom Cloud. Normal volume pricing applies before the startup compute discount. Included monthly usage does not count toward the compute-savings cap. Remaining usage charges, storage, and add-ons are payable under Axiom Cloud pricing.
+    lifecycle:
+      status: active
+      effective_from: 2026-10-07T01:03:15.027Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          kind: waiver
+          waived_item: Axiom Cloud monthly platform fee
+          description: The USD 25 monthly Axiom Cloud platform fee is waived for 12 months from the approved organization's upgrade to Axiom Cloud. This waiver is separate from the compute-savings cap.
+        - benefit_id: ben_02
+          kind: discount
+          applies_to: Standard Axiom Cloud Data Loading and Query Compute charges
+          percentage:
+            kind: exact
+            basis_points: 3000
+          duration:
+            kind: up-to
+            value: P1Y
+          description: The 30% discount ends after 12 months or USD 10,000 in cumulative startup compute savings, whichever comes first. Normal volume pricing applies first. Included monthly usage is outside the savings cap. The discount cannot combine with committed-use pricing or another promotional compute discount.
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: external-verification
+            statement: The company must be at Seed through Series A stage; Axiom checks a funding announcement, investor portfolio page, accelerator profile, or a confirming contact or access code.
+          - criterion_id: cri_02
+            kind: manual
+            reason: external-verification
+            statement: The company must be new to paid Axiom Cloud. A company using a free Axiom organization can apply before upgrading, but existing paid Axiom Cloud customers are not eligible.
+          - criterion_id: cri_03
+            kind: manual
+            reason: external-verification
+            statement: The company must apply through a participating accelerator, investor, or startup community and identify that organization in the application.
+          - criterion_id: cri_04
+            kind: manual
+            reason: external-verification
+            statement: The company must not have received an Axiom startup benefit before.
+    roles:
+      terms_authority_entity_id: ent_01m49y5n2kmfjgvgn7b9z6smrt
+      access_operator_entity_id: ent_01m49y5n2kmfjgvgn7b9z6smrt
+    access:
+      availability: public
+      method: form
+      url: https://axiom.co/axiom-for-startups
+      instructions: Submit the application form on the vendor page with company and participating-organization details and eligibility evidence. Axiom reviews the application and replies by email. After approval, the program starts when the organization upgrades to Axiom Cloud; benefits do not cover earlier usage, and standard prices resume when the respective benefit ends.
+    terms_url: https://axiom.co/axiom-for-startups
+    source_ids:
+      - src_3db017ea795f4004b63744cea51047e5dee5fc9a5d47fea2999cac120a77b810
+      - src_a30f1d79ccbe47c38706792be53535d1266c17d40506cc7696470be431713c11
