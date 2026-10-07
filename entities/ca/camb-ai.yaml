@@ -1,0 +1,89 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m49kj7fg2ba13ayj40gqtmqg
+  slug: camb-ai
+  slug_aliases: []
+  name: CAMB.AI
+  domains:
+    - value: camb.ai
+      role: primary
+      valid_from: 2026-10-06T21:59:43.700Z
+  category: ai-ml
+profile:
+  summary: CAMB.AI builds speech AI models and APIs for dubbing, text-to-speech, translation, captions, and live voice applications across more than 150 languages.
+  description: CAMB.AI provides localization AI products for agentic dubbing, text-to-speech, live dubbing, AI voices, image translation, and captions and subtitles.
+  links:
+    site: https://www.camb.ai
+sources:
+  - source_id: src_c1df692a7d764546563bb7b6fed71583bf373160566fbfa5d1d68ba609202ca9
+    url: https://www.camb.ai/
+  - source_id: src_0a9053019977dcb02d18ea88c54a6a282d8ef1327d43270c4410287a2df70641
+    url: https://www.camb.ai/startup-grants
+  - source_id: src_b8fe4080b634d04199ec284a072e1100bbedc928f0b71cdb9787da1fd3c37005
+    url: https://www.camb.ai/terms-conditions
+programs:
+  - program_id: prg_01m49kj7fnh1m2t7f8fg6qregb
+    program_slug: camb-ai-startup-program
+    program_slug_aliases: []
+    title: CAMB.AI Startup Program
+    summary: The CAMB.AI Startup Program gives early-stage teams credits for the MARS Text-to-Speech APIs plus direct access to the CAMB.AI engineering team.
+    source_ids: &a1
+      - src_0a9053019977dcb02d18ea88c54a6a282d8ef1327d43270c4410287a2df70641
+      - src_b8fe4080b634d04199ec284a072e1100bbedc928f0b71cdb9787da1fd3c37005
+offers:
+  - offer_id: off_01m49kj7fn57q0d0q6j8fcmwj3
+    program_id: prg_01m49kj7fnh1m2t7f8fg6qregb
+    offer_slug: camb-ai-startup-program-credits
+    offer_slug_aliases: []
+    title: CAMB.AI Startup Program Credits
+    summary: Approved startups receive up to 33 million free TTS API credits and an onboarding call with the CAMB.AI engineering team.
+    lifecycle:
+      status: active
+      effective_from: 2026-10-06T21:59:43.700Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_primary
+          description: Up to 33 million free TTS API credits.
+          kind: other
+        - benefit_id: ben_onboarding
+          description: An onboarding call with the CAMB.AI engineering team.
+          kind: other
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: external-verification
+            statement: The startup is an early-stage startup from pre-seed through Series A.
+          - criterion_id: cri_02
+            kind: manual
+            reason: external-verification
+            statement: The startup was founded within the last 5 years.
+          - criterion_id: cri_03
+            kind: manual
+            reason: external-verification
+            statement: The startup raised under $5M in total funding.
+          - criterion_id: cri_04
+            kind: manual
+            reason: external-verification
+            statement: The startup is building a product that uses voice, speech, or localization AI.
+          - criterion_id: cri_05
+            kind: manual
+            reason: external-verification
+            statement: The startup has not previously received CAMB.AI program credits.
+          - criterion_id: cri_06
+            kind: manual
+            reason: vendor-discretion
+            statement: We look for early-stage teams building real products with speech and localization AI; our team reviews your submission.
+    roles:
+      terms_authority_entity_id: ent_01m49kj7fg2ba13ayj40gqtmqg
+      access_operator_entity_id: ent_01m49kj7fg2ba13ayj40gqtmqg
+    access:
+      availability: public
+      method: form
+      instructions: Fill out the short application below with your company details and what you are building; our team reviews the submission and gets back to you; approved teams receive their credits and an onboarding call with our engineering team.
+      url: https://www.camb.ai/startup-grants
+    source_ids: *a1
