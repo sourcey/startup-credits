@@ -1,0 +1,68 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m4atzfg3546cvbzdts8xrpry
+  slug: ryu
+  slug_aliases: []
+  name: Ryu
+  domains:
+    - value: ryuhq.com
+      role: primary
+      valid_from: 2026-10-07T09:00:35.376Z
+  category: ai-ml
+profile:
+  description: Desktop application for AI agents and workflows using local models or external model providers.
+  summary: Ryu provides a desktop application for AI agents, workflows and connected tools. It supports local models and bring-your-own API keys.
+  links:
+    site: https://ryuhq.com
+sources:
+  - source_id: src_f269f8b6535d7555d9cce74d5e4cd0aaa446f27bfe0ad6f39dc7e0af9a7a7275
+    url: https://ryuhq.com/startups
+programs:
+  - program_id: prg_01m4atzfg3rmvkcqtwdnj9kb0t
+    program_slug: ryu-for-startups-and-students
+    program_slug_aliases: []
+    title: Ryu for startups and students
+    summary: Ryu's access program includes a Pro offer for early-stage companies.
+    source_ids:
+      - src_f269f8b6535d7555d9cce74d5e4cd0aaa446f27bfe0ad6f39dc7e0af9a7a7275
+offers:
+  - offer_id: off_01m4atzfg3gkr5dtgsp4rq9dnq
+    program_id: prg_01m4atzfg3rmvkcqtwdnj9kb0t
+    offer_slug: three-months-free-pro-for-startups
+    offer_slug_aliases: []
+    title: Three months of Ryu Pro for startups
+    summary: Early-stage companies can apply for three months of Ryu desktop Pro without equity or a credit card. Inference and usage credits are not included.
+    description: After the free window, the app can continue with local models or the user's own keys. A paid plan is optional for cloud features.
+    lifecycle:
+      status: active
+      effective_from: 2026-10-07T09:00:35.376Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Three months of Ryu desktop Pro access, without inference or usage credits.
+          kind: free-service
+          service: Ryu desktop Pro
+          duration:
+            kind: exact
+            value: P3M
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: external-verification
+            statement: Applicant is an early-stage company, with or without a backer.
+    roles:
+      terms_authority_entity_id: ent_01m4atzfg3546cvbzdts8xrpry
+      access_operator_entity_id: ent_01m4atzfg3546cvbzdts8xrpry
+    access:
+      availability: public
+      method: form
+      url: https://ryuhq.com/startups
+      instructions: Choose Apply as a startup and provide company and project details. Ryu confirms the tier and sends access details.
+    terms_url: https://ryuhq.com/startups
+    source_ids:
+      - src_f269f8b6535d7555d9cce74d5e4cd0aaa446f27bfe0ad6f39dc7e0af9a7a7275
