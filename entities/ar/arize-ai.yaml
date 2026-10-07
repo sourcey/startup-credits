@@ -1,0 +1,64 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m4c36q1jwrq1xf8mn2bwvenb
+  slug: arize-ai
+  slug_aliases: []
+  name: Arize AI
+  domains:
+    - value: arize.com
+      role: primary
+      valid_from: 2026-10-07T20:52:41.497Z
+  category: observability
+profile:
+  summary: Arize AI provides observability and evaluation tools for AI agents and applications through its Arize AX platform.
+  description: Observability and evaluation tools for AI agents and applications.
+  links:
+    site: https://arize.com/
+sources:
+  - source_id: src_48902656aec36857f6eef83182e4d0b28149b6274dc3b3096cd90b04c3fc4e57
+    url: https://arize.com/arize-for-startups/
+programs:
+  - program_id: prg_01m4c36q1j6359va7xtk31d7h0
+    program_slug: arize-for-startups
+    program_slug_aliases: []
+    title: Arize for Startups
+    summary: Startup access to Arize AX Pro, early access to new betas, and exclusive founder events.
+    source_ids:
+      - src_48902656aec36857f6eef83182e4d0b28149b6274dc3b3096cd90b04c3fc4e57
+offers:
+  - offer_id: off_01m4c36q1jpj3t7hmdp72dzryk
+    program_id: prg_01m4c36q1j6359va7xtk31d7h0
+    offer_slug: six-months-free-ax-pro
+    offer_slug_aliases: []
+    title: Six months of free AX Pro
+    summary: Eligible first-time Arize customers building an AI-native product receive six months of free AX Pro.
+    description: Create a free AX account before applying with the same email. Approved applicants receive a promo code to upgrade to Pro. After six months, the account remains and discount options can be discussed. Inaccurate application information may result in withdrawal of the offer.
+    lifecycle:
+      status: active
+      effective_from: 2026-10-07T20:52:41.497Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          kind: free-service
+          service: AX Pro
+          description: Six months of AX Pro access at no cost through the startup program.
+          duration:
+            kind: exact
+            value: P6M
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: external-verification
+        statement: Applicants must be first-time Arize customers building an AI-native product and either be Series A or earlier or have raised less than $15M. Create a free AX account before applying and use that account's email on the application.
+    roles:
+      terms_authority_entity_id: ent_01m4c36q1jwrq1xf8mn2bwvenb
+      access_operator_entity_id: ent_01m4c36q1jwrq1xf8mn2bwvenb
+    access:
+      availability: public
+      method: form
+      url: https://arize.com/arize-for-startups/
+    source_ids:
+      - src_48902656aec36857f6eef83182e4d0b28149b6274dc3b3096cd90b04c3fc4e57
