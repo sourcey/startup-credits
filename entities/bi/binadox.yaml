@@ -1,0 +1,95 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m4bjxdjsn6sgwb6jm5aa2wfh
+  slug: binadox
+  slug_aliases: []
+  name: Binadox
+  domains:
+    - value: binadox.com
+      role: primary
+      valid_from: '2026-10-07T16:24:59.738Z'
+  category: finance-accounting
+profile:
+  summary: Binadox helps organizations track and optimize cloud infrastructure and SaaS subscription spending.
+  description: Binadox provides cloud cost analysis, rightsizing, SaaS license optimization, renewal tracking and shadow IT discovery.
+  links:
+    site: https://www.binadox.com/
+sources:
+  - source_id: src_a972e374545d121784866937a32676102f420277c7844f660e2776533896dab6
+    url: https://www.binadox.com/startup-program/
+programs:
+  - program_id: prg_01m4bjxdjt1rak2f1scwzmpezv
+    program_slug: startup-program
+    program_slug_aliases: []
+    title: Binadox Startup Program
+    source_ids:
+      - src_a972e374545d121784866937a32676102f420277c7844f660e2776533896dab6
+offers:
+  - offer_id: off_01m4bjxdjta1r9k6dywzrq04hz
+    program_id: prg_01m4bjxdjt1rak2f1scwzmpezv
+    offer_slug: startup-tier-free-year
+    offer_slug_aliases: []
+    title: Premium free for 12 months
+    summary: Eligible independent startups receive 12 months of Binadox Premium free, with unlimited cloud accounts, SaaS applications and seats. Activation requires a payment card; Premium then renews at $499/month unless cancelled.
+    description: The offer is limited to one per company and is non-transferable. There is no automatic extension. After the free year, the account continues on Binadox Premium at $499/month unless cancelled beforehand. Renewal reminders are sent 60, 30 and 7 days in advance.
+    lifecycle:
+      status: active
+      effective_from: '2026-10-07T16:24:59.738Z'
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_startup_tier
+          description: Premium access at no charge for 12 months, with unlimited cloud accounts, SaaS applications and team seats.
+          kind: free-service
+          service: Binadox Premium
+          duration:
+            kind: exact
+            value: P12M
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - kind: manual
+            criterion_id: cri_independent_company
+            statement: The applicant must be an independent company.
+            reason: external-verification
+          - kind: predicate
+            criterion_id: cri_company_age
+            statement: The company must have been founded less than three years ago.
+            fact: company.age_years
+            operator: lt
+            value:
+              type: number
+              value: 3
+          - kind: predicate
+            criterion_id: cri_funding
+            statement: The company must have raised less than USD 5 million.
+            fact: company.funding_usd
+            operator: lt
+            value:
+              type: number
+              value: 5000000
+          - kind: manual
+            criterion_id: cri_website_email
+            statement: The company must have a working website and a corporate email domain.
+            reason: external-verification
+          - kind: manual
+            criterion_id: cri_excluded_businesses
+            statement: Agencies, consultancies and resellers are not eligible.
+            reason: external-verification
+          - kind: manual
+            criterion_id: cri_vendor_approval
+            statement: Binadox manually reviews and approves each application.
+            reason: vendor-discretion
+    roles:
+      terms_authority_entity_id: ent_01m4bjxdjsn6sgwb6jm5aa2wfh
+      access_operator_entity_id: ent_01m4bjxdjsn6sgwb6jm5aa2wfh
+    access:
+      availability: public
+      method: form
+      url: https://www.binadox.com/startup-program/
+      instructions: Apply through the vendor's Startup Program form. Binadox replies within one business day. After approval, add a valid payment card to activate. Cancel before the free year ends to avoid the subsequent Premium subscription charge.
+    terms_url: https://www.binadox.com/terms-of-service/
+    source_ids:
+      - src_a972e374545d121784866937a32676102f420277c7844f660e2776533896dab6
