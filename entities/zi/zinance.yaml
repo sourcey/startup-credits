@@ -1,0 +1,63 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m4bts48d56hxb26cyhcyfg57
+  slug: zinance
+  slug_aliases: []
+  name: Zinance
+  domains:
+    - value: zinance.co
+      role: primary
+      valid_from: 2026-10-08T00:00:00.000Z
+  category: finance-accounting
+profile:
+  summary: Zinance is a startup finance team with bookkeeping, tax, and fractional CFO services under one roof.
+  description: Zinance provides daily bookkeeping, full tax coverage, and CFO support for startups from first check to scale.
+  links:
+    site: https://www.zinance.co
+sources:
+  - source_id: src_65d3132c046762aeb6df2f1b7ca3928287687aecf7d47963ca41850c35541c05
+    url: https://www.zinance.co/partners/startups
+programs: []
+offers:
+  - offer_id: off_01m4bts48gnpbe1qe1mnfkq2tb
+    offer_slug: startup-discount
+    offer_slug_aliases: []
+    title: 50% off for Startups for 6 months
+    summary: The general Zinance offer for startups everywhere is 50% off bookkeeping and CFO services for 6 months.
+    lifecycle:
+      status: active
+      effective_from: 2026-10-08T00:00:00.000Z
+    economics:
+      consideration:
+        kind: variable
+        description: The startup receives 50% off bookkeeping and CFO services for 6 months.
+      benefits:
+        - benefit_id: ben_01
+          kind: discount
+          description: 50% off bookkeeping and CFO services for 6 months.
+          percentage:
+            kind: exact
+            basis_points: 5000
+          duration:
+            kind: exact
+            value: P6M
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: predicate
+        fact: company.stage
+        operator: eq
+        value:
+          type: string
+          value: startup
+        statement: The offer is for startup founders.
+    roles:
+      terms_authority_entity_id: ent_01m4bts48d56hxb26cyhcyfg57
+      access_operator_entity_id: ent_01m4bts48d56hxb26cyhcyfg57
+    access:
+      availability: public
+      method: form
+      url: https://www.zinance.co/partners/startups
+      instructions: Use the Get Started control on the Zinance for Startups page.
+    source_ids:
+      - src_65d3132c046762aeb6df2f1b7ca3928287687aecf7d47963ca41850c35541c05
