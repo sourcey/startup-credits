@@ -27,17 +27,16 @@ offers:
     title: CRMown Pro startup first-year discount
     summary: Eligible startups affiliated with a CRMown partner program receive 50% off CRMown Pro for
       their first 12 months.
-    description: The startup discount is limited to one program discount per organization and cannot be
-      combined with nonprofit, vertical, or other partner discounts. After the first year, Pro
-      renews at standard pricing on a month-to-month basis; customers can change plans or cancel.
+    description: The startup offer cannot be combined with nonprofit, vertical, or other partner
+      discounts. Pro renews at standard monthly pricing after the promotional period.
     lifecycle:
       status: active
       effective_from: 2026-10-07T04:02:19.695Z
     economics:
       consideration:
-        kind: variable
-        description: A paid CRMown Pro subscription is required. Discounted billing applies for the first 12
-          months, followed by standard pricing.
+        kind: unknown
+        description: The startup page quotes $90/mo for Pro during the first 12 months, followed by standard
+          pricing. It does not explicitly identify the currency.
       benefits:
         - benefit_id: ben_pro_discount
           kind: discount
@@ -51,37 +50,21 @@ offers:
             value: P12M
     eligibility:
       rule:
-        kind: all
-        rules:
-          - kind: any
-            rules:
-              - kind: predicate
-                criterion_id: cri_company_age
-                statement: Company is under five years old.
-                fact: company.age_months
-                operator: lt
-                value:
-                  type: number
-                  value: 60
-              - kind: manual
-                criterion_id: cri_funding
-                statement: Company has raised under $5 million, as stated on the vendor page.
-                reason: external-verification
-          - kind: manual
-            criterion_id: cri_partner_affiliation
-            statement: Company is affiliated with a CRMown partner program, such as an accelerator, perks
-              marketplace, investor network, or startup community that lists CRMown.
-            reason: external-verification
+        kind: manual
+        criterion_id: cri_startup_partner
+        statement: Company is under five years old or has raised under $5 million, and is affiliated with a
+          CRMown partner program such as an accelerator, perks marketplace, investor network, or
+          startup community that lists CRMown.
+        reason: external-verification
     roles:
       terms_authority_entity_id: ent_01m4a8dhxfwhg6jpmvymy6jcms
       access_operator_entity_id: ent_01m4a8dhxfwhg6jpmvymy6jcms
     access:
-      availability: referral
-      method: automatic
-      url: https://crmown.com/startups
-      instructions: Follow the CRMown link from a participating partner, create an account, and select
-        CRMown Pro. The 50% discount is applied automatically and is visible at checkout before
-        payment. If the startup community is not a partner, use the contact route on this page.
-    terms_url: https://crmown.com/startups
+      availability: public
+      method: form
+      url: https://app.crmown.io/signup?promo=STARTUP50
+      instructions: Follow a participating partner link, sign up, and select CRMown Pro. The startup
+        discount is applied at checkout.
+    terms_url: https://crmown.com/terms
     source_ids:
       - src_614c875a4386c299005e04ac1e55ab65bfe908aa9e8704942857a4bf4b050f15
