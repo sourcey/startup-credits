@@ -1,0 +1,17 @@
+id: dash0
+name: Dash0
+website: https://www.dash0.com
+description: Observability platform for engineering teams
+programs:
+  - id: dash0-for-startups
+    name: Dash0 for Startups
+    type: startup-program
+    discount:
+      value: 50
+      unit: percent
+      duration: year-one
+    max_spend:
+      value: 100000
+      currency: USD
+    eligibility: Startups without a Dash0-network investor
+    source: https://www.dash0.com/dash0-for-startups
