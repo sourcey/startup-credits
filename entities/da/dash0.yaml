@@ -1,0 +1,97 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m49ced1p5rpnbpc3jftzwgfw
+  slug: dash0
+  slug_aliases: []
+  name: Dash0
+  domains:
+    - value: dash0.com
+      role: primary
+      valid_from: 2026-10-06T19:53:27.076Z
+  category: observability
+profile:
+  summary: Dash0 provides an OpenTelemetry-native observability platform.
+  description: Dash0 provides an OpenTelemetry-native platform for observing software in production.
+  links:
+    site: https://www.dash0.com/
+sources:
+  - source_id: src_2041fb1c98f762daa07de98bcaeef74d1a33dd92d87c4b784f819b5c54f987d6
+    url: https://www.dash0.com/dash0-for-startups
+programs:
+  - program_id: prg_01m49ced1xk7vz80x6qxgcv255
+    program_slug: dash0-for-startups
+    program_slug_aliases: []
+    title: Dash0 for Startups
+    summary: Dash0 for Startups offers first-year discounts to eligible early-stage companies.
+    source_ids:
+      - src_2041fb1c98f762daa07de98bcaeef74d1a33dd92d87c4b784f819b5c54f987d6
+offers:
+  - offer_id: off_01m49ced1xs1t81bqxs80vsvn4
+    program_id: prg_01m49ced1xk7vz80x6qxgcv255
+    offer_slug: dash0-startup-standard-discount
+    offer_slug_aliases: []
+    title: 50% off Dash0 in year one for startups
+    summary: Eligible startups without a Dash0 partner-network investor get 50% off list price in year one, on up to $100,000 of spend.
+    lifecycle:
+      status: active
+      effective_from: 2026-10-06T19:53:27.076Z
+    economics:
+      benefits:
+        - benefit_id: ben_startup_discount
+          kind: discount
+          description: 50% off Dash0 list price in year one, applied to a maximum of $100,000 in first-year spend.
+          percentage:
+            kind: exact
+            basis_points: 5000
+          duration:
+            kind: exact
+            value: P1Y
+      consideration:
+        kind: variable
+        description: The startup pays 50% of Dash0 list price for eligible first-year spend.
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_stage
+            kind: manual
+            reason: external-verification
+            statement: The startup is at Series A stage or earlier.
+          - criterion_id: cri_employee_count
+            kind: predicate
+            fact: company.employee_count
+            operator: lt
+            value:
+              type: number
+              value: 40
+            statement: The startup has fewer than 40 employees.
+          - criterion_id: cri_recent_funding
+            kind: predicate
+            fact: company.last_funding_round_months_ago
+            operator: lt
+            value:
+              type: number
+              value: 24
+            statement: The startup's last funding round was less than two years ago.
+          - criterion_id: cri_total_funding
+            kind: predicate
+            fact: company.funding_raised_usd
+            operator: lt
+            value:
+              type: number
+              value: 50000000
+            statement: The startup has raised less than $50 million in total.
+          - criterion_id: cri_investor_network
+            kind: manual
+            reason: external-verification
+            statement: The startup's investor is not in Dash0's partner network.
+    roles:
+      terms_authority_entity_id: ent_01m49ced1p5rpnbpc3jftzwgfw
+      access_operator_entity_id: ent_01m49ced1p5rpnbpc3jftzwgfw
+    access:
+      availability: public
+      method: form
+      url: https://www.dash0.com/dash0-for-startups
+      instructions: Use Apply now on the Dash0 for Startups page to open the application form.
+    source_ids:
+      - src_2041fb1c98f762daa07de98bcaeef74d1a33dd92d87c4b784f819b5c54f987d6
