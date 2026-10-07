@@ -58,9 +58,9 @@ offers:
       access_operator_entity_id: ent_01m48zc8pnjczcmqant7dmzrna
     access:
       availability: public
-      method: contact
+      method: form
       url: https://www.coderaptor.ai/contact/
-      instructions: Contact CodeRaptor about the startup discount and confirm eligibility and pricing before subscribing.
+      instructions: Submit the contact form to ask about the startup discount.
     terms_url: https://www.coderaptor.ai/terms/
     source_ids:
       - src_2187df8fb9d2693cc4038de5b8edbdb79df6408315c4af72e8c381f2e96904ef
