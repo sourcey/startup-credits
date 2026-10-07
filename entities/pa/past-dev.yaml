@@ -38,9 +38,9 @@ offers:
     economics:
       benefits:
         - benefit_id: ben_01
-          description: Flex includes 400,000 credits per month, unlimited recall, five projects, webhooks, and three-year data retention; additional credits are application-specific.
+          description: Early-stage startups receive six months of Flex free after approval.
           kind: free-service
-          service: past.dev Flex plan
+          service: Flex
           duration:
             kind: exact
             value: P6M
@@ -60,6 +60,5 @@ offers:
       method: form
       url: https://www.past.dev/startup-program
       instructions: Submit the startup-program form describing the company, product, Memory API use, and needs. After six months, standard Flex pricing applies unless otherwise agreed.
-    terms_url: https://www.past.dev/startup-program
     source_ids:
       - src_a64f1087ff2a7fc994f03d3a3b80028552823b87c1bd223bacf66c0fe22c2e29
