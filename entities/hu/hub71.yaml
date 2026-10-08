@@ -1,0 +1,83 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m4bxq62rmywy5gdc001j3v5h
+  slug: hub71
+  slug_aliases: []
+  name: Hub71
+  domains:
+    - value: hub71.com
+      role: primary
+      valid_from: 2026-10-07T19:33:49.786Z
+  category: other
+profile:
+  description: Hub71 is an Abu Dhabi technology ecosystem supporting startup growth.
+  summary: Hub71 connects technology startups with investors, partners and resources in Abu Dhabi.
+  links:
+    site: https://www.hub71.com
+sources:
+  - source_id: src_39f04aa5cff6c785fda61bea9bfe39bfa42c0ea1684589e446ebd301e5663e72
+    url: https://www.hub71.com/who-we-are
+  - source_id: src_4ab3a30e26a62be31ea2c61960f0c761470172cb6adc7f4bdd6b58b721251acb
+    url: https://www.hub71.com/program/access-programme
+  - source_id: src_24e03af5a9b3875453e0d12607816e9032e1ffccfe17d800d75f3e851d833e59
+    url: https://www.hub71.com/program/access-programme/apply
+programs:
+  - program_id: prg_01m4bxq62shmfsvxzgdqzejk9k
+    program_slug: access-programme
+    program_slug_aliases: []
+    title: Access Programme
+    summary: A year of support for startups expanding from Abu Dhabi.
+    source_ids:
+      - src_4ab3a30e26a62be31ea2c61960f0c761470172cb6adc7f4bdd6b58b721251acb
+offers:
+  - offer_id: off_01m4bxq62sn6tty4nmxj9bhrs1
+    offer_slug: access-programme-startup-incentives
+    offer_slug_aliases: []
+    program_id: prg_01m4bxq62shmfsvxzgdqzejk9k
+    title: Access Programme startup incentives
+    summary: Selected startups receive AED 250,000 in services and AED 250,000 cash in exchange for equity under a SAFE.
+    lifecycle:
+      status: active
+      effective_from: 2026-10-07T19:33:49.786Z
+    economics:
+      benefits:
+        - benefit_id: ben_services
+          kind: other
+          description: AED 250,000 of flexible service-provider incentives within the 12-month programme.
+        - benefit_id: ben_cash
+          kind: other
+          description: AED 250,000 in cash incentives for onboarded startups, in exchange for equity.
+        - benefit_id: ben_conditional_topup
+          kind: other
+          description: Up to AED 250,000 additional cash for selected high-performing startups after the programme or one year, for further equity.
+      consideration:
+        kind: variable
+        description: Cash incentives require equity through a SAFE note; a top-up requires additional equity. The page does not specify percentages.
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - kind: manual
+            criterion_id: cri_stage
+            reason: vendor-discretion
+            statement: Pre-seed through Series A startups seeking to establish and grow in Abu Dhabi.
+          - kind: manual
+            criterion_id: cri_relocation
+            reason: external-verification
+            statement: At least one founder must commit to long-term relocation and building a team in Abu Dhabi.
+          - kind: manual
+            criterion_id: cri_selection
+            reason: vendor-discretion
+            statement: Complete application and PDF pitch deck, followed by Hub71's four-stage selection.
+    roles:
+      terms_authority_entity_id: ent_01m4bxq62rmywy5gdc001j3v5h
+      access_operator_entity_id: ent_01m4bxq62rmywy5gdc001j3v5h
+    access:
+      availability: public
+      method: form
+      url: https://www.hub71.com/program/access-programme/apply
+      instructions: Cohort 21 applications are open with a February 2027 deadline and September 2027 start; later applications enter the next cohort.
+    terms_url: https://www.hub71.com/program/access-programme
+    source_ids:
+      - src_4ab3a30e26a62be31ea2c61960f0c761470172cb6adc7f4bdd6b58b721251acb
+      - src_24e03af5a9b3875453e0d12607816e9032e1ffccfe17d800d75f3e851d833e59
