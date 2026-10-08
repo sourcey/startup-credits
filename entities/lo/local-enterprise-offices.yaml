@@ -1,0 +1,101 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m485sfe2fh78f9x282k29e7b
+  slug: local-enterprise-offices
+  slug_aliases:
+    - leo
+  name: Local Enterprise Offices
+  domains:
+    - value: localenterprise.ie
+      role: primary
+      valid_from: 2026-10-06T00:00:00.000Z
+  category: other
+profile:
+  summary: Local Enterprise Offices provide state-funded business supports, including start-up grants, to microenterprises across Ireland.
+  description: Local Enterprise Offices deliver local enterprise development supports, including start-up grants to Irish microenterprises.
+  links:
+    site: https://www.localenterprise.ie/
+sources:
+  - source_id: src_3070b9610ba96aa0357fe6653c223920c6f7a3e613244d653b87c4f9953b072b
+    url: https://www.localenterprise.ie/discover-business-supports/funding-and-grants/financial-supports/priming-grant/
+programs:
+  - program_id: prg_01m485sfe7p067sjtaa7z50d22
+    program_slug: priming-grant
+    program_slug_aliases: []
+    title: Priming Grant
+    summary: A business start-up grant for microenterprises within their first 18 months, covering capital, salary, consultancy, innovation, marketing and general overhead costs.
+    source_ids:
+      - src_3070b9610ba96aa0357fe6653c223920c6f7a3e613244d653b87c4f9953b072b
+offers:
+  - offer_id: off_01m485sfe7gbrvgz9315r7cyfd
+    program_id: prg_01m485sfe7p067sjtaa7z50d22
+    offer_slug: priming-grant
+    offer_slug_aliases: []
+    title: Priming Grant for new microenterprises
+    summary: Eligible microenterprises within their first 18 months can receive a Priming Grant of up to 50% of eligible investment, capped at EUR 80,000, or up to EUR 150,000 in exceptional cases.
+    description: The grant can be used for capital items, salary costs, consultancy, innovation and marketing costs, and general overhead costs. Grant amounts at or above EUR 50,000, or with a cumulative value of EUR 100,000 over three years, require Enterprise Ireland approval. Employment support is capped at EUR 15,000 per full-time job created, subject to the 50% limit.
+    lifecycle:
+      status: active
+      effective_from: 2026-10-06T00:00:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: >-
+            Up to 50% of eligible investment for qualifying start-up costs,
+            normally capped at EUR 80,000. Exceptional projects with a clear
+            potential to graduate to Enterprise Ireland may qualify for up to
+            EUR 150,000.
+          kind: credit
+          value:
+            amount:
+              currency: EUR
+              minor_units: 8000000
+            kind: up-to
+      consideration:
+        kind: variable
+        description: >-
+          The applicant co-funds at least 50% of the eligible investment. Grant
+          values at or above EUR 50,000 or cumulative EUR 100,000 over three
+          years require Enterprise Ireland approval.
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: vendor-discretion
+            statement: The enterprise must be within its first 18 months of start-up.
+          - criterion_id: cri_02
+            kind: predicate
+            fact: company.employee_count
+            operator: lte
+            value:
+              type: number
+              value: 10
+            statement: The enterprise must not employ more than 10 people.
+          - criterion_id: cri_03
+            kind: manual
+            reason: external-verification
+            statement: The enterprise must be established, registered and operate within the geographic location of the Local Enterprise Office.
+          - criterion_id: cri_04
+            kind: manual
+            reason: external-verification
+            statement: The enterprise must operate in the commercial sphere.
+          - criterion_id: cri_05
+            kind: manual
+            reason: external-verification
+            statement: The enterprise must demonstrate a market for its product or service.
+          - criterion_id: cri_06
+            kind: manual
+            reason: external-verification
+            statement: The enterprise must show potential for growth in domestic and/or export markets and potential for new job creation.
+    roles:
+      terms_authority_entity_id: ent_01m485sfe2fh78f9x282k29e7b
+      access_operator_entity_id: ent_01m485sfe2fh78f9x282k29e7b
+    access:
+      availability: public
+      method: form
+      url: https://www.localenterprise.ie/discover-business-supports/funding-and-grants/financial-supports/priming-grant/
+      instructions: Apply through your Local Enterprise Office; a local advisor confirms eligibility and the application process for the Priming Grant.
+    source_ids:
+      - src_3070b9610ba96aa0357fe6653c223920c6f7a3e613244d653b87c4f9953b072b
