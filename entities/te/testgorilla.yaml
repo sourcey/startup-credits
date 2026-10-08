@@ -1,0 +1,91 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m484n3q432s3nn7hfx7z0mab
+  slug: testgorilla
+  slug_aliases: []
+  name: TestGorilla
+  domains:
+    - value: testgorilla.com
+      role: primary
+      valid_from: 2026-10-06T08:18:04.333Z
+  category: hr-people
+profile:
+  description: TestGorilla is a skills-based hiring platform with pre-employment skills tests, assessments, and AI interviews for screening candidates.
+  summary: TestGorilla helps companies screen and hire candidates with science-backed skills tests, assessments, and automated AI interviews.
+  links:
+    site: https://www.testgorilla.com
+sources:
+  - source_id: src_d326eded0f65103420c9a1da1615aef54a719dd97eb9466dfc73afceaff57a24
+    url: https://www.testgorilla.com/partnerships/startup/
+  - source_id: src_2e1463705510bb28065013199bbef4fa5b021ddbf86aacd34f12bf127f954e66
+    url: https://www.testgorilla.com/partnerships/startup/application-form/
+programs:
+  - program_id: prg_01m484nqsp75bhk6kx0kvfnten
+    program_slug: startup-program
+    program_slug_aliases: []
+    title: TestGorilla Startup Program
+    summary: A multi-year, commitment-based discount program for VC- or accelerator-backed startups affiliated with an approved TestGorilla Startup Partner, with Start, Grow, and Scale tracks by funding stage.
+    source_ids:
+      - src_d326eded0f65103420c9a1da1615aef54a719dd97eb9466dfc73afceaff57a24
+offers:
+  - offer_id: off_01m484n3qawr75kyyskrm0j2sb
+    program_id: prg_01m484nqsp75bhk6kx0kvfnten
+    offer_slug: startup-program-start-track
+    offer_slug_aliases: []
+    title: TestGorilla Startup Program Start track discount
+    summary: Early-stage partner-backed startups get up to 75% off TestGorilla in year one, 50% in year two, and 25% in year three on a 2- or 3-year agreement.
+    lifecycle:
+      status: active
+      effective_from: 2026-10-06T08:18:04.333Z
+    economics:
+      consideration:
+        kind: variable
+        description: The program is commitment-based; startups must sign a 2-year or 3-year agreement on a discounted TestGorilla plan, and second- and third-year discounts apply only to the same or higher value Plus plans.
+      benefits:
+        - benefit_id: ben_01
+          applies_to: TestGorilla plan
+          description: "Year 1: up to 75% discount"
+          kind: discount
+          percentage:
+            kind: up-to
+            basis_points: 7500
+          duration:
+            kind: exact
+            value: P1Y
+        - benefit_id: ben_02
+          applies_to: TestGorilla Plus plan
+          description: "Year 2: 50% discount"
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 5000
+          duration:
+            kind: exact
+            value: P1Y
+        - benefit_id: ben_03
+          applies_to: TestGorilla Plus plan
+          description: "Year 3: 25% discount"
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 2500
+          duration:
+            kind: exact
+            value: P1Y
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_01
+        statement: Start track startups must be under 5 years old, have raised less than 2M in funding (shown as EUR 2M on the track card and USD 2M in the program FAQ), be backed by a VC or accelerator, and be affiliated with one of TestGorilla's approved Startup Partners; proof of funding and incorporation documents are required.
+        reason: external-verification
+    roles:
+      terms_authority_entity_id: ent_01m484n3q432s3nn7hfx7z0mab
+      access_operator_entity_id: ent_01m484n3q432s3nn7hfx7z0mab
+    access:
+      availability: membership
+      method: form
+      url: https://www.testgorilla.com/partnerships/startup/application-form/
+      instructions: Fill out the application form with your company website and funding stage, provide proof of funding and incorporation documents for verification, then meet TestGorilla to choose a credit package and a 2- or 3-year plan.
+    source_ids:
+      - src_d326eded0f65103420c9a1da1615aef54a719dd97eb9466dfc73afceaff57a24
+      - src_2e1463705510bb28065013199bbef4fa5b021ddbf86aacd34f12bf127f954e66
