@@ -1,0 +1,71 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m4cqpp9frvfam83y7az2a63k
+  slug: trackdesk
+  slug_aliases: []
+  name: Trackdesk
+  domains:
+    - value: trackdesk.com
+      role: primary
+      valid_from: 2026-10-08T03:07:56.880Z
+  category: marketing
+profile:
+  description: Trackdesk is an affiliate management platform that businesses and startups use to launch and scale in-house affiliate programs.
+  summary: Trackdesk is affiliate management software that helps companies run in-house affiliate programs with tracking, analytics, commissions, and payouts.
+  links:
+    site: https://trackdesk.com
+sources:
+  - source_id: src_74469a3b0f865fdb261c2b2222a38dcc89d49121a636e471f7be5e957758efce
+    url: https://trackdesk.com/startup-offer
+programs: []
+offers:
+  - offer_id: off_01m4cqpp9txmftbsy1hg1s3h8q
+    offer_slug: startup-launch-plan
+    offer_slug_aliases: []
+    title: Trackdesk Startup Launch Plan
+    summary: Startups launching an affiliate program with fewer than 50 employees and under $25,000 in monthly affiliate revenue get 80% off an annual Trackdesk Business Plan.
+    lifecycle:
+      status: active
+      effective_from: 2026-10-08T03:07:56.880Z
+    economics:
+      consideration:
+        kind: variable
+        description: The discount is on an annual Business Plan subscription, so the qualified company pays for that annual subscription at the discounted price.
+      benefits:
+        - benefit_id: ben_01
+          applies_to: annual Business Plan subscription
+          description: 80% off the annual Business Plan subscription
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 8000
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_00
+            kind: manual
+            reason: external-verification
+            statement: Small to medium-sized business looking to scale its in-house affiliate program
+          - criterion_id: cri_01
+            fact: company.employee_count
+            kind: predicate
+            operator: lt
+            statement: Fewer than 50 employees
+            value:
+              type: number
+              value: 50
+          - criterion_id: cri_02
+            kind: manual
+            reason: external-verification
+            statement: Monthly affiliate revenue of less than $25,000
+    roles:
+      terms_authority_entity_id: ent_01m4cqpp9frvfam83y7az2a63k
+      access_operator_entity_id: ent_01m4cqpp9frvfam83y7az2a63k
+    access:
+      availability: public
+      method: form
+      url: https://trackdesk.com/startup-offer
+      instructions: On the Startup Launch Plan page, select See If You Qualify and fill out the form to get your discount code.
+    source_ids:
+      - src_74469a3b0f865fdb261c2b2222a38dcc89d49121a636e471f7be5e957758efce
