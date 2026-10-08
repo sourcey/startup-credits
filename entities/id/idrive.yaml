@@ -1,0 +1,58 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m2gphmph8tje9ywy13wwzhx6
+  slug: idrive
+  slug_aliases: []
+  name: IDrive
+  domains:
+    - value: idrive.com
+      role: primary
+      valid_from: 2026-09-14T19:33:00.000Z
+  category: hosting-infra
+profile:
+  summary: IDrive provides cloud backup and storage for home and business users, including IDrive e2, an S3-compatible object storage service.
+  description: IDrive provides cloud backup and storage services, including IDrive e2 S3-compatible object storage for applications, backups, and media workloads.
+  links:
+    site: https://www.idrive.com/
+sources:
+  - source_id: src_b793fe09a6722461fb377209424f68cb2ea7910a89fcd2596e4c2bb1b680a2ee
+    url: https://www.idrive.com/
+  - source_id: src_2bac39b310234ef0eb458718795f4ff552965f8b06f1094a9d5ff6a96048f025
+    url: https://www.idrive.com/s3-storage-e2/
+  - source_id: src_80a601b58c6770303bb3ce5e6db873b9e09dfb2de8e70e9d95a1d5d392ca257a
+    url: https://www.idrive.com/s3-storage-e2/idrive-for-startups
+programs: []
+offers:
+  - offer_id: off_01m2gphmpkykggeb2aqw06n3j9
+    offer_slug: startup-storage
+    offer_slug_aliases: []
+    title: 100 TB of free IDrive e2 storage for startups
+    summary: Qualified startups, including those from Y Combinator and other accelerators, receive 100 TB of IDrive e2 S3-compatible object storage free and pay only when they exceed it.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-14T19:33:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_startup_storage
+          kind: free-service
+          service: IDrive e2 S3-compatible object storage
+          description: 100 TB of IDrive e2 S3-compatible object storage, free for eligible startups
+      consideration:
+        kind: variable
+        description: Startups pay only when they exceed the free 100 TB.
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_startup_approval
+        reason: vendor-discretion
+        statement: Qualified startups confirm eligibility with incorporation proof or membership in a recognized accelerator or incubator, such as YC, Techstars, or 500 Global.
+    roles:
+      terms_authority_entity_id: ent_01m2gphmph8tje9ywy13wwzhx6
+      access_operator_entity_id: ent_01m2gphmph8tje9ywy13wwzhx6
+    access:
+      availability: public
+      method: form
+      instructions: Submit the application form on the IDrive for Startups page with company and product details, eligibility proof, your use case, and whether you need cloud or on-premises deployment. An IDrive executive then reaches out.
+      url: https://www.idrive.com/s3-storage-e2/idrive-for-startups
+    source_ids:
+      - src_80a601b58c6770303bb3ce5e6db873b9e09dfb2de8e70e9d95a1d5d392ca257a
