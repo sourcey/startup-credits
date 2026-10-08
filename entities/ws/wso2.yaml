@@ -18,7 +18,7 @@ sources:
   - source_id: src_321224bf8ab94bc75959d29f669998e6b904cdf18ec3bf91edc1b34b5db077c8
     url: https://wso2.com
   - source_id: src_53026272a3ee63294d5a32c9fee2cd290cfa66e55d97d874d8a8facbbe840bbe
-    url: https://wso2.com/landing/startups/
+    url: https://wso2.com/solutions/startups/
 programs:
   - program_id: prg_01m4bttepeye66knkn5xxqvkd3
     program_slug: wso2-for-startups
@@ -80,7 +80,7 @@ offers:
       availability: public
       instructions: Contact WSO2 through the published startup-program email address to apply.
       method: contact
-      url: https://wso2.com/landing/startups/
-    terms_url: https://wso2.com/landing/startups/
+      url: https://wso2.com/solutions/startups/
+    terms_url: https://wso2.com/solutions/startups/
     source_ids:
       - src_53026272a3ee63294d5a32c9fee2cd290cfa66e55d97d874d8a8facbbe840bbe
