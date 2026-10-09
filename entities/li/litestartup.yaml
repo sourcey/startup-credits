@@ -1,0 +1,86 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m492ckdns7rvbgm6ja06cayf
+  slug: litestartup
+  slug_aliases: []
+  name: LiteStartup
+  domains:
+    - value: litestartup.com
+      role: primary
+      valid_from: 2026-10-06T00:00:00.000Z
+  category: communication
+profile:
+  summary: LiteStartup provides email sending and receiving, domain email, websites, documentation, and AI tools for small teams.
+  description: LiteStartup provides an email, website, documentation, and AI platform with a Pro subscription and separately billed AI usage.
+  links:
+    site: https://www.litestartup.com
+sources:
+  - source_id: src_64c528395e5ef2e3673a38842f7c9b16928a6a9e1efd77c1bf2a8433bff8084d
+    url: https://www.litestartup.com/docs/en/pricing
+programs:
+  - program_id: prg_01m492ckdpzjwykyaef600tw3z
+    program_slug: litestartup-startup-program
+    program_slug_aliases: []
+    title: Startup Program
+    summary: LiteStartup offers eligible young registered businesses a temporary Pro subscription discount, priority support, and free consultation.
+    source_ids:
+      - src_64c528395e5ef2e3673a38842f7c9b16928a6a9e1efd77c1bf2a8433bff8084d
+offers:
+  - offer_id: off_01m492ckdpq8zwd2bwdach9c6r
+    program_id: prg_01m492ckdpzjwykyaef600tw3z
+    offer_slug: pro-six-month-startup-discount
+    offer_slug_aliases: []
+    title: LiteStartup Pro startup discount
+    summary: Eligible startups receive 80% off the LiteStartup Pro plan for six months, priority support, and free consultation. AI usage is billed separately from the subscription.
+    lifecycle:
+      status: active
+      effective_from: 2026-10-06T00:00:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 8000
+          duration:
+            kind: exact
+            value: P6M
+          applies_to: LiteStartup Pro plan subscription fees
+          description: 80% off the Pro plan subscription for six months. AI usage is separately metered and billed.
+        - benefit_id: ben_02
+          kind: other
+          description: Priority support is included in the startup offer.
+        - benefit_id: ben_03
+          kind: free-service
+          service: LiteStartup consultation
+          description: Free consultation is included in the startup offer.
+      consideration:
+        kind: variable
+        description: Discounted Pro subscription fees apply. AI usage and email overages are billed separately under the published pricing.
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: external-verification
+            statement: The startup was founded within the last year.
+          - criterion_id: cri_02
+            kind: manual
+            reason: external-verification
+            statement: The startup has annual income below US$50,000; the source uses annual income without defining a revenue or profit metric.
+          - criterion_id: cri_03
+            kind: manual
+            reason: external-verification
+            statement: The startup has valid business registration.
+    roles:
+      terms_authority_entity_id: ent_01m492ckdns7rvbgm6ja06cayf
+      access_operator_entity_id: ent_01m492ckdns7rvbgm6ja06cayf
+    access:
+      availability: public
+      method: contact
+      url: https://www.litestartup.com/docs/en/pricing
+      instructions: Use the sales contact published on the pricing page to apply for the Startup Program.
+    terms_url: https://www.litestartup.com/docs/en/pricing
+    source_ids:
+      - src_64c528395e5ef2e3673a38842f7c9b16928a6a9e1efd77c1bf2a8433bff8084d
