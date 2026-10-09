@@ -1,0 +1,67 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m4ajmehc7pj552tzpbfth6kb
+  slug: airwallex
+  slug_aliases: []
+  name: Airwallex
+  domains:
+    - value: airwallex.com
+      role: primary
+      valid_from: 2026-10-07T07:00:51Z
+  category: payments-fintech
+profile:
+  description: Global financial platform for businesses, offering multi-currency accounts, international payments, foreign exchange, and spend management.
+  links:
+    site: https://www.airwallex.com
+sources:
+  - source_id: src_4b1e3e42e0624abdee5d2c13a38a7965730404aa198b9608f11e4f6252120492
+    url: https://www.airwallex.com/nz/startups
+programs:
+  - program_id: prg_01m4ajmehhvahamj2mbynncf7a
+    program_slug: airwallex-for-startups
+    program_slug_aliases: []
+    title: Airwallex for Startups
+    summary: Program for venture-backed, globally-minded founders that combines Airwallex's cross-border financial platform with fee waivers, ecosystem partner perks, and hands-on support.
+    source_ids:
+      - src_4b1e3e42e0624abdee5d2c13a38a7965730404aa198b9608f11e4f6252120492
+offers:
+  - offer_id: off_01m4ajmehhb8df859pdw7c2nse
+    program_id: prg_01m4ajmehhvahamj2mbynncf7a
+    offer_slug: airwallex-for-startups-seed
+    offer_slug_aliases: []
+    title: Airwallex for Startups — Seed stage
+    summary: Eligible seed-stage startups receive 3 months of the Airwallex Grow tier with no fees, waived fees on the first NZD$100,000 of payment collection, fee-free FX on the first NZD$100,000 of conversions, and access to Airwallex Yield.
+    lifecycle:
+      status: active
+      effective_from: 2026-10-07T07:00:51Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_01
+          description: 3 months of the Airwallex Grow tier with no fees.
+          kind: other
+        - benefit_id: ben_02
+          description: Waived fees on the first NZD$100,000 of payment collection.
+          kind: other
+        - benefit_id: ben_03
+          description: Fee-free FX conversions on the first NZD$100,000.
+          kind: other
+        - benefit_id: ben_04
+          description: Access to Airwallex Yield for competitive returns on AUD and USD funds.
+          kind: other
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Venture-backed startup with global ambitions and a business entity registered in Australia or New Zealand with a valid ABN or NZBN. Airwallex prioritises startups that have raised external funding (angel, seed, or institutional rounds). Requires an active Airwallex account; new customers sign up and access the offers in the Rewards tab of the web app. No cost to join; standard Airwallex fees and pricing apply after the promotional offers end. Terms and conditions apply.
+    roles:
+      terms_authority_entity_id: ent_01m4ajmehc7pj552tzpbfth6kb
+      access_operator_entity_id: ent_01m4ajmehc7pj552tzpbfth6kb
+    access:
+      availability: public
+      method: other
+      url: https://www.airwallex.com/nz/startups
+    source_ids:
+      - src_4b1e3e42e0624abdee5d2c13a38a7965730404aa198b9608f11e4f6252120492
