@@ -74,7 +74,11 @@ offers:
             value: P1Y
         - benefit_id: ben_year_two
           kind: discount
-          description: Discounted Professional plan pricing during year two
+          description: 30% to 50% off Professional during year two across the cited Aircall pages
+          percentage:
+            kind: range
+            minimum_basis_points: 3000
+            maximum_basis_points: 5000
           applies_to: Professional plan in year two
           duration:
             kind: exact
