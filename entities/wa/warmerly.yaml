@@ -1,0 +1,79 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m4bef9xkqawznnpjyj52x94q
+  slug: warmerly
+  slug_aliases: []
+  name: Warmerly
+  domains:
+    - value: warmerly.com
+      role: primary
+      valid_from: 2026-10-07T15:06:00Z
+  category: communication
+profile:
+  summary: Warmerly provides email warmup, deliverability monitoring, and outreach campaign tools.
+  description: Warmerly provides email warmup, deliverability monitoring, and outreach campaign tools.
+  links:
+    site: https://warmerly.com
+sources:
+  - source_id: src_bf0458b586f900ac98192a2037c39e54d5c2a1a2a425e95080941972ca80f8cb
+    url: https://warmerly.com/startups
+  - source_id: src_b87e5e3c2b567772e32ce6c3ddcc0a8cf74bc48a8c76e6070942b423ff0e2797
+    url: https://docs.warmerly.com/help/warmerly-for-startups
+programs:
+  - program_id: prg_01m4bef9xk2pa9t63xk9sd73p1
+    program_slug: startups
+    program_slug_aliases: []
+    title: Warmerly for Startups
+    source_ids:
+      - src_bf0458b586f900ac98192a2037c39e54d5c2a1a2a425e95080941972ca80f8cb
+offers:
+  - offer_id: off_01m4bef9xk8qydh9cp423g9pke
+    program_id: prg_01m4bef9xk2pa9t63xk9sd73p1
+    offer_slug: agency-startup-pricing
+    offer_slug_aliases: []
+    title: Agency startup pricing
+    summary: Approved startups get Agency free for 90 days, then 50% off for nine months.
+    lifecycle:
+      status: active
+      effective_from: 2026-10-07T15:06:00Z
+    economics:
+      consideration:
+        kind: variable
+        description: Card required to activate. After 90 free days, Agency costs USD 89.50 per month for nine months, then USD 179 per month. Cancel before day 91 to avoid charges; cancellation during the free period ends access immediately.
+      benefits:
+        - benefit_id: ben_free_period
+          kind: discount
+          description: Agency subscription free for the first 90 days.
+          percentage:
+            kind: exact
+            basis_points: 10000
+          duration:
+            kind: exact
+            value: P90D
+        - benefit_id: ben_discount_period
+          kind: discount
+          description: After the initial 90 days, 50% off Agency for the next nine months.
+          percentage:
+            kind: exact
+            basis_points: 5000
+          duration:
+            kind: exact
+            value: P9M
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_startup
+        reason: external-verification
+        statement: Company founded in the last three years and raised less than USD 5 million, including bootstrapped companies. Must do outreach for its own product; lead-generation agencies and resellers are excluded. Applications are reviewed by a person.
+    roles:
+      terms_authority_entity_id: ent_01m4bef9xkqawznnpjyj52x94q
+      access_operator_entity_id: ent_01m4bef9xkqawznnpjyj52x94q
+    access:
+      availability: public
+      method: form
+      url: https://warmerly.com/startups
+      instructions: Submit the startup application with company and work contact details. Approval arrives by email and attaches to the workspace; activate with a payment card. Existing paid workspaces should reply to the approval email to arrange transfer. LinkedIn is sold separately. The discount covers Agency only; add-ons bill at normal prices after the free period. Promo codes cannot be stacked. Plan changes during the free or discounted period require contacting support. Activate on the Agency workspace, not a client workspace.
+    terms_url: https://warmerly.com/startups
+    source_ids:
+      - src_bf0458b586f900ac98192a2037c39e54d5c2a1a2a425e95080941972ca80f8cb
+      - src_b87e5e3c2b567772e32ce6c3ddcc0a8cf74bc48a8c76e6070942b423ff0e2797
