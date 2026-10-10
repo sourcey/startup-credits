@@ -1,0 +1,84 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m14s1z717cyvv3kh8yzc36cd
+  slug: recruitly
+  slug_aliases: []
+  name: Recruitly
+  domains:
+    - value: recruitly.io
+      role: primary
+      valid_from: 2026-08-28T18:10:33.000Z
+  category: hr-people
+profile:
+  summary: Recruitly is a recruiting CRM for agencies that combines applicant tracking, business development, sourcing, job multi-posting, campaigns, e-signature, and billing in one platform.
+  description: Recruitly provides recruiting agencies with CRM, applicant tracking, sourcing, marketing, automation, communication, and job-board tools.
+  links:
+    site: https://recruitly.io
+sources:
+  - source_id: src_6254c6cc3c29f6979a0244ab345f9afe4499a69325969cdd617fb5401ea4d553
+    url: https://recruitly.io/startups/
+programs:
+  - program_id: prg_01m14s1z79phsmgyb8ycdh5hj9
+    program_slug: recruitly-startup-program
+    program_slug_aliases: []
+    title: Recruitly recruiting startup programme
+    summary: Recruitly's recruiting startup programme gives new agencies 75% off the Professional and Enterprise plans for three years, plus a dedicated agency success manager and network access.
+    source_ids:
+      - src_6254c6cc3c29f6979a0244ab345f9afe4499a69325969cdd617fb5401ea4d553
+offers:
+  - offer_id: off_01m14s1z794bqejbfw049eez6q
+    program_id: prg_01m14s1z79phsmgyb8ycdh5hj9
+    offer_slug: seventy-five-percent-off-for-three-years
+    offer_slug_aliases: []
+    title: 75% off Recruitly Professional and Enterprise for three years
+    summary: New recruiting agencies get 75% off Recruitly Professional ($25 instead of $100 per seat a month) or Enterprise ($37.50 instead of $150), billed annually for three years.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-28T18:10:33.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: New agencies get 75% off Professional and Enterprise for three years.
+          duration:
+            kind: exact
+            value: P3Y
+          kind: discount
+          percentage:
+            basis_points: 7500
+            kind: exact
+      consideration:
+        kind: variable
+        description: The agency receives 75% off Professional and Enterprise for three years.
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.age_months
+            kind: predicate
+            operator: lte
+            statement: The agency was founded in the last 3 years.
+            value:
+              type: number
+              value: 36
+          - criterion_id: cri_02
+            kind: manual
+            reason: external-verification
+            statement: The agency has fewer than 10 recruiters when it applies.
+          - criterion_id: cri_03
+            fact: company.annual_revenue_usd
+            kind: predicate
+            operator: lt
+            statement: The agency has under $500K in annual revenue, measured when it applies.
+            value:
+              type: number
+              value: 500000
+    roles:
+      terms_authority_entity_id: ent_01m14s1z717cyvv3kh8yzc36cd
+      access_operator_entity_id: ent_01m14s1z717cyvv3kh8yzc36cd
+    access:
+      availability: public
+      method: form
+      url: https://recruitly.io/startups/
+    source_ids:
+      - src_6254c6cc3c29f6979a0244ab345f9afe4499a69325969cdd617fb5401ea4d553
