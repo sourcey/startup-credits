@@ -1,0 +1,92 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m49zsayfwjakznepc00sezz9
+  slug: truecaas
+  slug_aliases: []
+  name: TrueCaaS
+  domains:
+    - value: truecaas.io
+      role: primary
+      valid_from: 2026-10-07T01:31:28.591Z
+  category: auth-security
+profile:
+  description: TrueCaaS provides identity infrastructure for software products, covering authentication and authorization.
+  summary: TrueCaaS provides identity infrastructure for software products that need authentication and authorization.
+  links:
+    site: https://www.truecaas.io
+sources:
+  - source_id: src_980820e98a5808d9d328089a5c94487325adb41a61d94311a8fe89102cd41501
+    url: https://www.truecaas.io/startups
+  - source_id: src_79642c8c4b80d22e761c57cad8f6eee968ce990c9ff50e90258cd8db1f10b111
+    url: https://www.truecaas.io/startups/offer
+  - source_id: src_df5d371f6571c657f55857708624e90950f76af883f974bccff892390e545111
+    url: https://www.truecaas.io/startups/eligibility
+  - source_id: src_ea5f0b6f6e755ffc8eb752291a24b41c9d45ea05b87d615238093ab3ab9599b9
+    url: https://www.truecaas.io/startups/faqs
+programs:
+  - program_id: prg_01m49zsayfds9nzs4cax1b4487
+    program_slug: truecaas-for-startups
+    program_slug_aliases: []
+    title: TrueCaaS for Startups
+    summary: A manually reviewed startup program offering a temporary subscription discount and one introductory technical onboarding session.
+    source_ids:
+      - src_980820e98a5808d9d328089a5c94487325adb41a61d94311a8fe89102cd41501
+      - src_79642c8c4b80d22e761c57cad8f6eee968ce990c9ff50e90258cd8db1f10b111
+offers:
+  - offer_id: off_01m49zsayf9ek6a87v88bnzyqa
+    program_id: prg_01m49zsayfds9nzs4cax1b4487
+    offer_slug: startup-monthly-subscription-discount
+    offer_slug_aliases: []
+    title: 50% off Starter or Growth for six months
+    summary: Approved startups receive 50% off a monthly Starter or Growth base subscription for six months, plus one introductory technical onboarding session.
+    lifecycle:
+      status: active
+      effective_from: 2026-10-07T01:31:28.591Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          kind: discount
+          applies_to: Monthly SaaS Starter or Growth base subscription
+          description: 50% off the monthly base subscription for six months. Taxes, usage charges, SMS charges, add-ons, and additional services are excluded. One introductory technical onboarding session is included.
+          percentage:
+            kind: exact
+            basis_points: 5000
+          duration:
+            kind: exact
+            value: P6M
+      consideration:
+        kind: variable
+        description: Purchase a monthly Starter or Growth subscription after approval. Published discounted base prices are $49.50 per month for Starter or $174.50 for Growth for six months; standard pricing then applies. Pricing and offer dates are confirmed before activation.
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: not-machine-evaluable
+            statement: Early-stage software company with a working product or MVP, an identity or authorization need, and someone to lead integration. Venture funding is not required.
+          - criterion_id: cri_02
+            kind: manual
+            reason: not-machine-evaluable
+            statement: Intended for new paid SaaS customers using monthly Starter or Growth subscriptions. Existing customers and teams considering annual billing, Licensed, or Managed deployments should contact TrueCaaS.
+          - criterion_id: cri_03
+            kind: manual
+            reason: not-machine-evaluable
+            statement: Selection depends on product fit, integration readiness, and onboarding capacity. Applying does not guarantee approval or reserve a place.
+          - criterion_id: cri_04
+            kind: manual
+            reason: not-machine-evaluable
+            statement: One offer per company; cannot be combined with another promotion.
+    roles:
+      terms_authority_entity_id: ent_01m49zsayfwjakznepc00sezz9
+      access_operator_entity_id: ent_01m49zsayfwjakznepc00sezz9
+    access:
+      availability: public
+      method: form
+      url: https://www.truecaas.io/startups/apply
+    terms_url: https://www.truecaas.io/startups/offer
+    source_ids:
+      - src_980820e98a5808d9d328089a5c94487325adb41a61d94311a8fe89102cd41501
+      - src_79642c8c4b80d22e761c57cad8f6eee968ce990c9ff50e90258cd8db1f10b111
+      - src_df5d371f6571c657f55857708624e90950f76af883f974bccff892390e545111
+      - src_ea5f0b6f6e755ffc8eb752291a24b41c9d45ea05b87d615238093ab3ab9599b9
