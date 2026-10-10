@@ -1,0 +1,65 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_0194c1qf480040fykdbwazydrd
+  slug: sarvam
+  slug_aliases:
+    - sarvam-ai
+  name: Sarvam AI
+  domains:
+    - value: sarvam.ai
+      role: primary
+      valid_from: 2026-08-27T00:00:00.000Z
+  category: ai-ml
+profile:
+  summary: Sarvam AI provides speech, vision, and language model APIs with native support for 22 Indian languages and English.
+  description: Sarvam AI provides developer APIs for speech-to-text, text-to-speech, translation, chat completion, text processing, and document intelligence.
+  links:
+    site: https://www.sarvam.ai
+sources:
+  - source_id: src_c3b0c07fb827b8ce780b19e9f2077b09cd214e0a9bad6cba18de95463d6d13ca
+    url: https://www.sarvam.ai/startup-program
+programs:
+  - program_id: prg_01f7en5z9rdbbtw2n1w9j88bs0
+    program_slug: sarvam-ai-startup-program
+    program_slug_aliases:
+      - sarvam-startup-program
+    title: Sarvam AI Startup Program
+    summary: The Sarvam Startup Program gives approved startups API credits, priority support, and launch visibility across Sarvam's speech, vision, and LLM APIs.
+    source_ids:
+      - src_c3b0c07fb827b8ce780b19e9f2077b09cd214e0a9bad6cba18de95463d6d13ca
+offers:
+  - offer_id: off_01pq268zd2h7eqg4ytd9mxjh69
+    program_id: prg_01f7en5z9rdbbtw2n1w9j88bs0
+    offer_slug: sarvam-startup-program-api-credits
+    offer_slug_aliases: []
+    title: 6 to 12 months of Sarvam AI API credits
+    summary: Approved startups receive 6 to 12 months of Sarvam API credits sized to their use case, stage, and expected scale, plus priority support and launch visibility.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-27T00:00:00.000Z
+    economics:
+      consideration:
+        kind: variable
+        description: Program participants are expected to display "Powered by Sarvam" in their product as a condition of the program.
+      benefits:
+        - benefit_id: ben_01
+          description: 6 to 12 months of API credits matched to the startup's scale.
+          kind: other
+        - benefit_id: ben_02
+          description: Priority support with direct access to Sarvam's engineering team.
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_01
+        reason: vendor-discretion
+        statement: The applicant is a startup that applies to the program with details about the startup and how it plans to use Sarvam's APIs.
+    roles:
+      terms_authority_entity_id: ent_0194c1qf480040fykdbwazydrd
+      access_operator_entity_id: ent_0194c1qf480040fykdbwazydrd
+    access:
+      availability: public
+      method: form
+      url: https://www.sarvam.ai/startup-program
+    source_ids:
+      - src_c3b0c07fb827b8ce780b19e9f2077b09cd214e0a9bad6cba18de95463d6d13ca
