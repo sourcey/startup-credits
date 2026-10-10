@@ -1,0 +1,109 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m4b8ejkce4e7haf0hm8qjw7y
+  slug: nethunt
+  slug_aliases: []
+  name: NetHunt CRM
+  domains:
+    - value: nethunt.com
+      role: primary
+      valid_from: 2026-10-07T13:22:07.596Z
+  category: crm-sales
+profile:
+  summary: NetHunt CRM manages contacts, sales pipelines, workflows and multichannel conversations. It
+    integrates with Gmail and Google Workspace.
+  description: NetHunt CRM combines contact and pipeline management, sales automation and multichannel
+    communication with Gmail and Google Workspace.
+  links:
+    site: https://nethunt.com/
+    pricing: https://nethunt.com/pricing
+sources:
+  - source_id: src_66336747fdcebfda153b6c25f08a67e25ab86977eccc9098b71767c13736a5a6
+    url: https://nethunt.com/crm-for-startups
+  - source_id: src_1f14c6e4997dc913596c6d62f8ad9dd49f0b02b143e966aae2aa561e37350593
+    url: https://nethunt.com/blog/top-pipedrive-crm-alternatives/
+  - source_id: src_ea4717901194689e9c839de9eca557f870979515dbc7cf5c2c89b3eec0f08cbc
+    url: https://nethunt.com/legal/terms
+programs:
+  - program_id: prg_01m4b8ejkctm7a9g600ed3j9bk
+    program_slug: startup-program
+    program_slug_aliases: []
+    title: NetHunt CRM for Startups Program
+    summary: A two-year Business plan program for startups three years old or younger, available after
+      application review.
+    source_ids:
+      - src_66336747fdcebfda153b6c25f08a67e25ab86977eccc9098b71767c13736a5a6
+      - src_1f14c6e4997dc913596c6d62f8ad9dd49f0b02b143e966aae2aa561e37350593
+offers:
+  - offer_id: off_01m4b8ejkcp557rsbgkr6xsf19
+    program_id: prg_01m4b8ejkctm7a9g600ed3j9bk
+    offer_slug: business-plan-startup-offer
+    offer_slug_aliases: []
+    title: Business plan startup offer
+    summary: "Startups up to three years old can apply for the Business plan: three months free, nine at
+      $15 per user/month, then 50% off in year two."
+    description: This is one two-year application bundle. The first three months are free; the next nine
+      months cost $15 per user/month; months 13 through 24 receive 50% off. Business plan features
+      and onboarding support are included. Standard pricing applies after the program.
+    lifecycle:
+      status: active
+      effective_from: 2026-10-07T13:22:07.596Z
+    economics:
+      consideration:
+        kind: variable
+        description: The first three months are free. The next nine months cost $15 per user/month, and the
+          second year costs 50% of the standard plan price. Standard pricing applies after the
+          two-year program.
+      benefits:
+        - benefit_id: ben_free_first_three_months
+          description: Business plan access is free for the first three months of the startup program.
+          kind: free-service
+          service: NetHunt CRM Business plan
+          duration:
+            kind: exact
+            value: P3M
+        - benefit_id: ben_reduced_next_nine_months
+          description: After the first three free months, the next nine months cost $15 per user/month for the
+            Business plan.
+          kind: other
+        - benefit_id: ben_half_price_second_year
+          description: The Business plan receives a 50% discount during the twelve months of the second
+            program year.
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 5000
+          applies_to: NetHunt CRM Business plan during months 13 through 24
+          duration:
+            kind: exact
+            value: P12M
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - kind: predicate
+            criterion_id: cri_company_age
+            statement: The startup company must be three years old or younger.
+            fact: company.age_years
+            operator: lte
+            value:
+              type: number
+              value: 3
+          - kind: manual
+            criterion_id: cri_application_review
+            statement: NetHunt reviews the startup application before the applicant joins the program.
+            reason: vendor-discretion
+    roles:
+      terms_authority_entity_id: ent_01m4b8ejkce4e7haf0hm8qjw7y
+      access_operator_entity_id: ent_01m4b8ejkce4e7haf0hm8qjw7y
+    access:
+      availability: public
+      method: form
+      url: https://nethunt.com/crm-for-startups
+      instructions: Complete the startup application form with company and team details. NetHunt states it
+        will review the application and reply within one to two business days.
+    terms_url: https://nethunt.com/legal/terms
+    source_ids:
+      - src_66336747fdcebfda153b6c25f08a67e25ab86977eccc9098b71767c13736a5a6
+      - src_1f14c6e4997dc913596c6d62f8ad9dd49f0b02b143e966aae2aa561e37350593
+      - src_ea4717901194689e9c839de9eca557f870979515dbc7cf5c2c89b3eec0f08cbc
