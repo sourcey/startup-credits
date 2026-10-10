@@ -37,9 +37,9 @@ offers:
     offer_slug: startup-professional-step-down
     offer_slug_aliases: []
     title: Aircall startup Professional plan bundle
-    summary: Eligible startups receive 84% off Professional and 500 free AI voice
-      agent minutes per month in year one, then 45% off Professional and 50% off
-      AI voice agent minutes in year two.
+    summary: Eligible startups receive discounted Professional plan pricing with
+      500 free AI voice agent minutes per month in year one and a discounted
+      second-year bundle before returning to list pricing in year three.
     description: The bundle requires at least three seats. Discounts apply to
       Professional, not Essentials or Custom, and exclude other add-ons. Year
       three returns to list pricing. Approved applicants have 14 days to accept
@@ -74,10 +74,7 @@ offers:
             value: P1Y
         - benefit_id: ben_year_two
           kind: discount
-          description: 45% off Professional during year two
-          percentage:
-            kind: exact
-            basis_points: 4500
+          description: Discounted Professional plan pricing during year two
           applies_to: Professional plan in year two
           duration:
             kind: exact
