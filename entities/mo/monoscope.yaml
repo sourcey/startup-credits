@@ -1,0 +1,68 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1nq9x42yavs0jg9f7sgdgdk
+  slug: monoscope
+  slug_aliases: []
+  name: Monoscope
+  domains:
+    - value: monoscope.tech
+      role: primary
+      valid_from: 2026-09-04T08:01:00Z
+  category: observability
+profile:
+  summary: Monoscope is an API-first monitoring and observability platform that helps teams find and fix production errors and breaking changes.
+  description: Monoscope is an API-first monitoring and observability platform for engineers and customer support teams.
+  links:
+    site: https://monoscope.tech/
+sources:
+  - source_id: src_740f370ed41238a5b2774d5d86f2b6c64e97edfc414a7528903fa029b2ddfc00
+    url: https://monoscope.tech/pricing/
+  - source_id: src_40e5f37a455da8df2c60211c51c6b22e6bc0c3d276f45d7455376de3a21f24fc
+    url: https://monoscope.tech/
+programs:
+  - program_id: prg_01m1nq9x464v872z37hxfpra7q
+    program_slug: monoscope-startup-program
+    program_slug_aliases: []
+    title: Startup Program
+    summary: Monoscope's Startup Program covers up to 100% of a qualifying startup's Monoscope costs in its first year, saving up to $10,000.
+    source_ids:
+      - src_740f370ed41238a5b2774d5d86f2b6c64e97edfc414a7528903fa029b2ddfc00
+offers:
+  - offer_id: off_01m1nq9x46e1gpn7q4kbf23gr1
+    program_id: prg_01m1nq9x464v872z37hxfpra7q
+    offer_slug: first-year-startup-credits
+    offer_slug_aliases: []
+    title: Save up to $10,000 on your first year
+    summary: SaaS and software startups under 2 years old, with fewer than 5 team members and under $100k raised, can have up to 100% of Monoscope costs covered in the first year, saving up to $10,000.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-04T08:01:00Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Save up to $10,000 on your first year, with up to 100% of your Monoscope costs covered.
+          duration:
+            kind: exact
+            value: P1Y
+          kind: discount
+          percentage:
+            basis_points: 10000
+            kind: up-to
+      consideration:
+        kind: variable
+        description: The startup receives up to 100% of its Monoscope costs covered, saving up to $10,000 on its first year.
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: not-machine-evaluable
+        statement: You qualify if you have under 2 years since founding, under 5 team members, under $100k in funding raised, and a SaaS or software product.
+    roles:
+      terms_authority_entity_id: ent_01m1nq9x42yavs0jg9f7sgdgdk
+      access_operator_entity_id: ent_01m1nq9x42yavs0jg9f7sgdgdk
+    access:
+      availability: public
+      method: form
+      url: https://tally.so/r/n9vVkY
+    source_ids:
+      - src_740f370ed41238a5b2774d5d86f2b6c64e97edfc414a7528903fa029b2ddfc00
