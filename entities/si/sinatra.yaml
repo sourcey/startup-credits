@@ -1,0 +1,69 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1sc2b1ct8yzpsj0y547ynwc
+  slug: sinatra
+  slug_aliases: []
+  name: Sinatra
+  domains:
+    - value: sinatra.dev
+      role: primary
+      valid_from: 2026-09-05T18:07:37.512Z
+  category: devtools-other
+profile:
+  summary: Sinatra turns assigned software issues into pull requests.
+  description: Sinatra turns assigned software issues into pull requests.
+  links:
+    site: https://www.sinatra.dev/
+sources:
+  - source_id: src_4ba85e28c689830f66d6dee6c2a6328d22bedbac60aefd9fd63a19653b5bd5e8
+    url: https://www.sinatra.dev/startups
+programs:
+  - program_id: prg_01m1sc2b1dvrvy3sdm6sr57jgc
+    program_slug: startup-program
+    program_slug_aliases: []
+    title: Sinatra for startups
+    summary: Sinatra's startup program gives approved teams 50% off the USD 20 seat for their first 12 months.
+    source_ids:
+      - src_4ba85e28c689830f66d6dee6c2a6328d22bedbac60aefd9fd63a19653b5bd5e8
+offers:
+  - offer_id: off_01m1sc2b1d1cc0z5ab5pf36eqc
+    program_id: prg_01m1sc2b1dvrvy3sdm6sr57jgc
+    offer_slug: startup-discount
+    offer_slug_aliases: []
+    title: 50% off Sinatra seats for 12 months
+    summary: Approved startup teams pay USD 10 per member per month instead of USD 20 for their first 12 months, on every seat in the workspace. LLM provider usage is billed separately by the provider.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T18:07:37.512Z
+    economics:
+      consideration:
+        kind: variable
+        description: The startup receives 50% off the $20 seat for its first 12 months, so $10 a member.
+      benefits:
+        - benefit_id: ben_discount
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 5000
+          duration:
+            kind: exact
+            value: P12M
+          applies_to: Every seat in the workspace
+          description: 50% off the USD 20 seat for the first 12 months, so USD 10 a member.
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_1
+        reason: vendor-discretion
+        statement: Aimed at teams under 100 people. Sinatra checks the company URL; there is no funding stage or investor list to prove. Bigger teams can still apply.
+    roles:
+      terms_authority_entity_id: ent_01m1sc2b1ct8yzpsj0y547ynwc
+      access_operator_entity_id: ent_01m1sc2b1ct8yzpsj0y547ynwc
+    access:
+      availability: public
+      method: form
+      url: https://www.sinatra.dev/startups
+      instructions: Apply with the form on the Sinatra startups page; approved teams get a single-use code by email to enter at checkout on the monthly plan.
+    terms_url: https://www.sinatra.dev/startups
+    source_ids:
+      - src_4ba85e28c689830f66d6dee6c2a6328d22bedbac60aefd9fd63a19653b5bd5e8
