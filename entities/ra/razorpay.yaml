@@ -1,0 +1,101 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1fqkzp0x8avdj1j7wv3cjc4
+  slug: razorpay
+  slug_aliases: []
+  name: Razorpay
+  domains:
+    - value: razorpay.com
+      role: primary
+      valid_from: 2026-09-02T00:14:00.000Z
+  category: payments-fintech
+profile:
+  summary: Razorpay is an Indian payments and business banking company offering a payment gateway, payment links, international payments, current accounts, payroll, and corporate cards.
+  description: Razorpay is an Indian full-stack payments and business-banking platform covering payment gateway, international payments, payroll, and corporate cards for startups and businesses.
+  links:
+    site: https://razorpay.com
+sources:
+  - source_id: src_44b71b61cda85048f978132c95c492726aba7677e832b149f864cc8566067372
+    url: https://razorpay.com/m/startup-perks/
+  - source_id: src_a82f2c583a36e69a9c7699c27afb6308f2f8f38e5c70d6089b82eb134e7a6a65
+    url: https://razorpay.com/m/startup-perks/terms/
+programs:
+  - program_id: prg_01m1fqkzp009pm6dxaq0w8tht4
+    program_slug: razorpay-startup-perks
+    program_slug_aliases: []
+    title: Razorpay Startup Perks
+    summary: Razorpay Startup Perks offers funded startups up to ₹1Cr in benefits, including free payment credits, Magic Checkout, and dedicated support.
+    source_ids:
+      - src_44b71b61cda85048f978132c95c492726aba7677e832b149f864cc8566067372
+      - src_a82f2c583a36e69a9c7699c27afb6308f2f8f38e5c70d6089b82eb134e7a6a65
+offers:
+  - offer_id: off_01m1fqkzp0fhhcz8j5bnzgtzd1
+    program_id: prg_01m1fqkzp009pm6dxaq0w8tht4
+    offer_slug: up-to-1cr-startup-perks-payment-credits
+    offer_slug_aliases: []
+    title: Up to ₹1 Cr in Startup Perks payment credits and benefits
+    summary: Funded Indian startups new to Razorpay can get up to ₹30L in domestic and ₹20L in international payment credits, free Magic Checkout for up to 6 months, and dedicated support.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-02T00:14:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to ₹30,00,000 in free domestic payment credits
+          kind: credit
+          value:
+            amount:
+              currency: INR
+              minor_units: 300000000
+            kind: up-to
+          duration:
+            kind: up-to
+            value: P3M
+        - benefit_id: ben_02
+          description: Up to ₹20,00,000 in free international payment credits
+          kind: credit
+          value:
+            amount:
+              currency: INR
+              minor_units: 200000000
+            kind: up-to
+          duration:
+            kind: up-to
+            value: P3M
+        - benefit_id: ben_03
+          description: Magic checkout free for 6 months
+          kind: free-service
+          service: Magic Checkout
+          duration:
+            kind: up-to
+            value: P6M
+        - benefit_id: ben_04
+          description: One year of free intelligent payment routing for VC-funded startups
+          kind: free-service
+          service: Intelligent payment routing
+          duration:
+            kind: exact
+            value: P1Y
+        - benefit_id: ben_07
+          description: Dedicated manager and round-the-clock support
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: external-verification
+        statement: Any funded startup is eligible to apply, whether seed-funded, backed by angel investors, Shark Tank-funded, or having raised Series A to Series C rounds; the program is currently open to new merchants who haven't actively used the Razorpay ecosystem in the past 3 months or more.
+    roles:
+      terms_authority_entity_id: ent_01m1fqkzp0x8avdj1j7wv3cjc4
+      access_operator_entity_id: ent_01m1fqkzp0x8avdj1j7wv3cjc4
+    access:
+      availability: public
+      method: form
+      instructions: Fill out the application form on the Razorpay Startup Perks page, or write to the startups email address listed there. Razorpay reviews the application and replies within 1 to 2 business days.
+      url: https://razorpay.com/m/startup-perks/
+    terms_url: https://razorpay.com/m/startup-perks/terms/
+    source_ids:
+      - src_44b71b61cda85048f978132c95c492726aba7677e832b149f864cc8566067372
+      - src_a82f2c583a36e69a9c7699c27afb6308f2f8f38e5c70d6089b82eb134e7a6a65
