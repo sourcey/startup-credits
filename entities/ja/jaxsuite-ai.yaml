@@ -1,0 +1,88 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m0zpgrcvgj11d1b0fsbt8dzy
+  slug: jaxsuite-ai
+  slug_aliases: []
+  name: JaxSuite AI
+  domains:
+    - value: jaxsuite.com
+      role: primary
+      valid_from: 2026-08-26T18:50:00.475Z
+  category: crm-sales
+profile:
+  summary: JaxSuite AI is a cold outreach and CRM platform that combines contact data, email campaigns, deliverability tools, and meeting booking in one account.
+  description: JaxSuite AI provides cold email outreach, a database of 300M+ verified contacts, email deliverability tools, a CRM, and booking and lead forms in one sales platform.
+  links:
+    site: https://www.jaxsuite.com
+sources:
+  - source_id: src_eb060abc7091f0fbb65cecd297293b57a6526b4989144d0d2d359ad78c825d05
+    url: https://www.jaxsuite.com/startups
+  - source_id: src_ae28ee237d7cfcc4547054cb2c77a190d9e794ac5a8fb12085ab123e83ad3617
+    url: https://www.jaxsuite.com/
+programs:
+  - program_id: prg_01m0zpgrcv6ye0h0a23rxb105a
+    program_slug: jaxsuite-for-startups
+    program_slug_aliases: []
+    title: JaxSuite AI for Startups
+    summary: The JaxSuite AI for Startups program gives accepted early-stage companies 50% off Outreach and CRM subscriptions for 12 months.
+    source_ids:
+      - src_eb060abc7091f0fbb65cecd297293b57a6526b4989144d0d2d359ad78c825d05
+offers:
+  - offer_id: off_01m0zpgrcvpb11ry6npbm73zvy
+    program_id: prg_01m0zpgrcv6ye0h0a23rxb105a
+    offer_slug: jaxsuite-startup-50-percent-off
+    offer_slug_aliases: []
+    title: 50% off JaxSuite AI Outreach and CRM for 12 months
+    summary: Accepted pre-seed through Series B startups that have never held a paid JaxSuite AI subscription receive 50% off Outreach and CRM plans for 12 months, with savings of up to $45,000.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-26T18:50:00.475Z
+    economics:
+      benefits:
+        - applies_to: JaxSuite AI Outreach and CRM subscription plans
+          benefit_id: ben_01
+          description: 50% off the Outreach and CRM plans for 12 consecutive months.
+          duration:
+            kind: exact
+            value: P1Y
+          kind: discount
+          percentage:
+            basis_points: 5000
+            kind: exact
+      consideration:
+        kind: variable
+        description: The startup receives a 50% discount on both the Outreach and CRM subscription plans for 12 months.
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: external-verification
+            statement: The company is an early-stage startup from pre-seed through Series B.
+          - criterion_id: cri_02
+            fact: company.is_current_customer
+            kind: predicate
+            operator: eq
+            statement: The company has not previously held a paid JaxSuite AI subscription.
+            value:
+              type: boolean
+              value: false
+          - criterion_id: cri_03
+            kind: manual
+            reason: external-verification
+            statement: The applicant is a founder or senior team member applying on behalf of the company.
+          - criterion_id: cri_04
+            kind: manual
+            reason: external-verification
+            statement: One discount per company; the application is the company's first JaxSuite AI Startup Program application.
+    roles:
+      terms_authority_entity_id: ent_01m0zpgrcvgj11d1b0fsbt8dzy
+      access_operator_entity_id: ent_01m0zpgrcvgj11d1b0fsbt8dzy
+    access:
+      availability: public
+      method: form
+      url: https://www.jaxsuite.com/startups
+      instructions: Sign up for a free JaxSuite AI account, then submit the startup application with the signup email; the discount is applied to the workspace within 3 business days of approval.
+    source_ids:
+      - src_eb060abc7091f0fbb65cecd297293b57a6526b4989144d0d2d359ad78c825d05
