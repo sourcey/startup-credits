@@ -1,0 +1,130 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m490ety7m5kz7qwj1dcsvdyv
+  slug: affonso
+  slug_aliases: []
+  name: Affonso
+  domains:
+    - value: affonso.io
+      role: primary
+      valid_from: 2026-10-06T00:00:00.000Z
+  category: marketing
+profile:
+  summary: Affonso helps SaaS companies find affiliates, manage partner programs, track commissions, and handle partner payouts.
+  description: Affonso provides affiliate and partner program management software for SaaS companies.
+  links:
+    site: https://affonso.io
+sources:
+  - source_id: src_e0716778e62add64f19eac12f7197084a397776384207755429dd14d2620e764
+    url: https://affonso.io/startups
+  - source_id: src_f27e829b8649877f50d8bf125c326c94709ca549302e457aa4febccd912a459b
+    url: https://affonso.io/help/account/affonso-for-startups
+programs:
+  - program_id: prg_01m490etybgy77m6vrz8xxd8yz
+    program_slug: affonso-for-startups
+    program_slug_aliases: []
+    title: Affonso for Startups
+    summary: Affonso for Startups gives eligible early-stage SaaS companies a reduced price on its Elite plan for three years.
+    source_ids:
+      - src_e0716778e62add64f19eac12f7197084a397776384207755429dd14d2620e764
+      - src_f27e829b8649877f50d8bf125c326c94709ca549302e457aa4febccd912a459b
+offers:
+  - offer_id: off_01m490etybyhey9mq3ye6gsdeq
+    program_id: prg_01m490etybgy77m6vrz8xxd8yz
+    offer_slug: elite-three-year-startup-discount
+    offer_slug_aliases: []
+    title: Affonso Elite startup discount
+    summary: Approved SaaS startups receive 50% off the Elite plan in year one, 25% in year two, and 10% in year three. The regular Elite price applies after year three.
+    lifecycle:
+      status: active
+      effective_from: 2026-10-06T00:00:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          applies_to: The regular Affonso Elite plan price during program year one
+          description: 50% off the regular Elite plan price during the first program year.
+          duration:
+            kind: exact
+            value: P1Y
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 5000
+        - benefit_id: ben_02
+          applies_to: The regular Affonso Elite plan price during program year two
+          description: 25% off the regular Elite plan price during the second program year.
+          duration:
+            kind: exact
+            value: P1Y
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 2500
+        - benefit_id: ben_03
+          applies_to: The regular Affonso Elite plan price during program year three
+          description: 10% off the regular Elite plan price during the third program year.
+          duration:
+            kind: exact
+            value: P1Y
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 1000
+      consideration:
+        kind: variable
+        description: Discounted Elite subscription fees apply for three years, then regular Elite pricing applies. Affonso confirms billing details before enrollment.
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: external-verification
+            statement: The applicant is a SaaS company.
+          - criterion_id: cri_02
+            kind: predicate
+            fact: company.age_months
+            operator: lt
+            value:
+              type: number
+              value: 36
+            statement: The company was founded less than three years ago.
+          - criterion_id: cri_03
+            kind: predicate
+            fact: company.mrr_usd
+            operator: lt
+            value:
+              type: number
+              value: 25000
+            statement: The company has under US$25,000 in monthly recurring revenue.
+          - criterion_id: cri_04
+            kind: predicate
+            fact: company.funding_raised_usd
+            operator: lt
+            value:
+              type: number
+              value: 3000000
+            statement: The company has raised less than US$3 million in total funding; bootstrapped companies can apply.
+          - criterion_id: cri_05
+            kind: manual
+            reason: external-verification
+            statement: The company has never been on a paid Affonso plan.
+          - criterion_id: cri_06
+            kind: manual
+            reason: external-verification
+            statement: Apply before signing up for Affonso or within 90 days of creating a free account or starting a trial.
+          - criterion_id: cri_07
+            kind: manual
+            reason: external-verification
+            statement: Affonso reviews each application individually; meeting the criteria does not automatically enroll the company.
+    roles:
+      terms_authority_entity_id: ent_01m490ety7m5kz7qwj1dcsvdyv
+      access_operator_entity_id: ent_01m490ety7m5kz7qwj1dcsvdyv
+    access:
+      availability: public
+      method: form
+      url: https://affonso.io/startups
+    terms_url: https://affonso.io/help/account/affonso-for-startups
+    source_ids:
+      - src_e0716778e62add64f19eac12f7197084a397776384207755429dd14d2620e764
+      - src_f27e829b8649877f50d8bf125c326c94709ca549302e457aa4febccd912a459b
