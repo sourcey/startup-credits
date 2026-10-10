@@ -1,0 +1,78 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1769k3p4zjf9xg68fgxpdm1
+  slug: airwallex
+  slug_aliases: []
+  name: Airwallex
+  domains:
+    - value: airwallex.com
+      role: primary
+      valid_from: 2026-08-29T16:43:01.010Z
+  category: payments-fintech
+profile:
+  summary: Airwallex is a global financial platform with multi-currency business accounts, international transfers, corporate cards, online payments, billing, and embedded finance APIs.
+  description: Airwallex provides multi-currency business accounts, FX and international transfers, corporate cards, expense management, online payments, billing, and embedded finance APIs.
+  links:
+    site: https://www.airwallex.com/
+sources:
+  - source_id: src_ce95da2feac3786c7d927a4e7c6eb826d0905ae66ec8d73b0426c88241c06797
+    url: https://www.airwallex.com/en-au/startups
+  - source_id: src_77cbeda8b4f27f175a37d24ff1ef30f4d66cc1855400e01528b15935fbb47e82
+    url: https://www.airwallex.com/en-au/terms/rewards/airwallex-for-startups
+programs:
+  - program_id: prg_01m1769k3q58arnv48erppzbrr
+    program_slug: airwallex-for-startups
+    program_slug_aliases: []
+    title: Airwallex for Startups
+    summary: Airwallex for Startups gives new Australian and New Zealand venture-backed startups stage-based perks, including free months on paid tiers and fee waivers on payments and FX.
+    source_ids:
+      - src_ce95da2feac3786c7d927a4e7c6eb826d0905ae66ec8d73b0426c88241c06797
+      - src_77cbeda8b4f27f175a37d24ff1ef30f4d66cc1855400e01528b15935fbb47e82
+offers:
+  - offer_id: off_01m1769k3qhxx280cg4zrt49yj
+    program_id: prg_01m1769k3q58arnv48erppzbrr
+    offer_slug: airwallex-for-startups
+    offer_slug_aliases: []
+    title: Airwallex for Startups seed-stage offers
+    summary: New seed-stage startups get 3 months of the Airwallex Grow tier with no fees, no fees on the first AUD$100,000 of payments collected, fee-free FX on the first AUD$100,000 converted, and access to Yield.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-29T16:43:01.010Z
+    economics:
+      benefits:
+        - benefit_id: ben_tier_access
+          description: Free access to the Airwallex Grow tier for 3 months.
+          kind: waiver
+          waived_item: Airwallex Grow tier fees for 3 months
+        - benefit_id: ben_payment_fees
+          description: No fees on the first AUD$100,000 of payments collected, credited as a monthly cashback.
+          kind: waiver
+          waived_item: Payment method fees on the first AUD$100,000 of payments collected
+        - benefit_id: ben_fx_fees
+          description: Fee-free FX for the first AUD$100,000 worth of conversions, credited as a monthly cashback.
+          kind: waiver
+          waived_item: FX conversion fees on the first AUD$100,000 of conversions
+        - benefit_id: ben_treasury
+          description: Access to Airwallex Yield for competitive returns on AUD and USD funds.
+          kind: other
+      consideration:
+        kind: variable
+        description: There is no cost to join the program or redeem the perks; standard Airwallex fees and pricing still apply.
+    eligibility:
+      rule:
+        criterion_id: cri_requirement_01
+        kind: manual
+        reason: external-verification
+        statement: Eligible seed stage startups that are new Airwallex customers with a business entity registered in Australia or New Zealand and a valid ABN or NZBN; Airwallex prioritises startups that have raised external funding.
+    roles:
+      terms_authority_entity_id: ent_01m1769k3p4zjf9xg68fgxpdm1
+      access_operator_entity_id: ent_01m1769k3p4zjf9xg68fgxpdm1
+    access:
+      availability: public
+      instructions: Apply from the Airwallex for Startups page or an approved accelerator or VC partner sign-up link, open an Airwallex account, and redeem the offers in the Rewards tab of the web app.
+      method: form
+      url: https://www.airwallex.com/en-au/startups
+    terms_url: https://www.airwallex.com/en-au/terms/rewards/airwallex-for-startups
+    source_ids:
+      - src_ce95da2feac3786c7d927a4e7c6eb826d0905ae66ec8d73b0426c88241c06797
+      - src_77cbeda8b4f27f175a37d24ff1ef30f4d66cc1855400e01528b15935fbb47e82
