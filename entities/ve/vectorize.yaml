@@ -11,7 +11,7 @@ entity:
   category: ai-ml
 profile:
   summary: Vectorize builds Hindsight, an agent memory layer that lets AI agents remember users across sessions and learn over time, available open source or as Hindsight Cloud.
-  description: Vectorize builds Hindsight, an open-source and fully managed memory platform for AI agents, with per-user memory, cross-session persistence, and fast recall.
+  description: Vectorize offers Hindsight Cloud, a fully managed service that provides memory for AI agents.
   links:
     site: https://vectorize.io
 sources:
@@ -55,7 +55,14 @@ offers:
         criterion_id: cri_requirement_01
         kind: manual
         reason: not-machine-evaluable
-        statement: Incorporated company (a registered business entity; solo founders with an LLC count), under $10M in funding (angel-backed, pre-seed, seed, or early Series A), a product built on Hindsight whose customers use the agents it builds (agencies, custom solution shops, and internal-only deployments do not qualify), and not currently a paying Hindsight Cloud customer.
+        statement: >-
+          Applicant must be an incorporated company with under $10M in funding,
+          be funded or profitable, and ship a customer-facing product built on
+          Hindsight with memory as a core feature and usage that scales with
+          adoption. Applicant must not currently be a paying Hindsight Cloud
+          customer. Agencies, consultancies, AI development studios, custom
+          solution shops, internal-only deployments, and research or
+          exploration projects without a product roadmap do not qualify.
     roles:
       terms_authority_entity_id: ent_01m0s6ee20skktfs8myvv5g3tz
       access_operator_entity_id: ent_01m0s6ee20skktfs8myvv5g3tz
