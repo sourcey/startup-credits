@@ -17,88 +17,20 @@ sources:
   - source_id: src_65083022096f10c52db27a04aa8e3bba73fd9c0d619c10d1027fceec3d80cf19
     url: https://neon.com/startups
 programs:
-  - program_id: prg_01kyh8fpe4n0a9h3p60g60ppdj
-    program_slug: neon-startup-program
-    program_slug_aliases: []
-    title: Neon Startup Program
-    source_ids:
-      - src_65083022096f10c52db27a04aa8e3bba73fd9c0d619c10d1027fceec3d80cf19
   - program_id: prg_01kyyts97vnde5z7v1mc0fcxjf
     program_slug: databricks-startup-program
-    program_slug_aliases: []
+    program_slug_aliases:
+      - neon-startup-program
     title: Databricks Startup Program
     summary: Credits and support for qualifying self-funded and venture-backed startups.
     source_ids:
       - src_65083022096f10c52db27a04aa8e3bba73fd9c0d619c10d1027fceec3d80cf19
 offers:
-  - offer_id: off_01kyh8fpe4n0a9h3p60g60ppdj
-    program_id: prg_01kyh8fpe4n0a9h3p60g60ppdj
-    offer_slug: neon-startup-program-self-funded
-    offer_slug_aliases: []
-    title: Neon Startup Program - Self-Funded
-    summary: Self-funded early-stage startups with less than $1M in funding can get up to $1,000 in Neon credits, onboarding support, and early access to new features.
-    lifecycle:
-      status: active
-      effective_from: 2026-07-27T07:37:13.262Z
-    economics:
-      consideration:
-        kind: unknown
-        description: The source record did not establish separate consideration.
-      benefits:
-        - benefit_id: ben_primary
-          description: Up to $1,000 in Neon credits
-          kind: other
-    eligibility:
-      rule:
-        kind: manual
-        criterion_id: cri_requirement_01
-        statement: Early-stage, self-funded startups with less than $1M in funding building an early-stage product or MVP.
-        reason: not-machine-evaluable
-    roles:
-      terms_authority_entity_id: ent_01kyh8fpe42ws3zbxkkaybx2ea
-      access_operator_entity_id: ent_01kyh8fpe42ws3zbxkkaybx2ea
-    access:
-      availability: public
-      method: form
-      url: https://neon.com/startups
-    source_ids:
-      - src_65083022096f10c52db27a04aa8e3bba73fd9c0d619c10d1027fceec3d80cf19
-  - offer_id: off_01kyh8fpe4scav0qwtt1719kjr
-    program_id: prg_01kyh8fpe4n0a9h3p60g60ppdj
-    offer_slug: neon-startup-program-venture-backed
-    offer_slug_aliases: []
-    title: Neon Startup Program - Venture-Backed
-    summary: VC-backed startups and accelerator participants can receive up to $200K in Neon and Databricks credits, onboarding support, speaking, and co-marketing opportunities.
-    lifecycle:
-      status: active
-      effective_from: 2026-07-27T07:37:13.262Z
-    economics:
-      consideration:
-        kind: unknown
-        description: The source record did not establish separate consideration.
-      benefits:
-        - benefit_id: ben_primary
-          description: Up to $200K in credits
-          kind: other
-    eligibility:
-      rule:
-        kind: manual
-        criterion_id: cri_requirement_01
-        statement: VC-backed startups with at least $1M in funding or participating in recognized accelerators like Y Combinator, building an early-stage product or MVP.
-        reason: not-machine-evaluable
-    roles:
-      terms_authority_entity_id: ent_01kyh8fpe42ws3zbxkkaybx2ea
-      access_operator_entity_id: ent_01kyh8fpe42ws3zbxkkaybx2ea
-    access:
-      availability: public
-      method: form
-      url: https://neon.com/startups
-    source_ids:
-      - src_65083022096f10c52db27a04aa8e3bba73fd9c0d619c10d1027fceec3d80cf19
   - offer_id: off_01kyyts97v9xesen17q0yd2ge9
     program_id: prg_01kyyts97vnde5z7v1mc0fcxjf
     offer_slug: databricks-startup-program-self-funded
-    offer_slug_aliases: []
+    offer_slug_aliases:
+      - neon-startup-program-self-funded
     title: Databricks Startup Program - Self-Funded
     summary: Up to $1,000 in Neon credits, onboarding support, and early access to features for early-stage self-funded startups with less than $1M in funding.
     lifecycle:
@@ -157,7 +89,8 @@ offers:
   - offer_id: off_01kyyts97v1nqhyspc5vgs7yt9
     program_id: prg_01kyyts97vnde5z7v1mc0fcxjf
     offer_slug: databricks-startup-program-venture-backed
-    offer_slug_aliases: []
+    offer_slug_aliases:
+      - neon-startup-program-venture-backed
     title: Databricks Startup Program - Venture-Backed
     summary: Up to $200K in Neon and Databricks credits, onboarding support, feature access, and co-marketing opportunities for VC-backed or accelerator startups.
     lifecycle:
