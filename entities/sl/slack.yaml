@@ -10,6 +10,7 @@ entity:
       valid_from: 2026-08-01T13:50:00.000Z
   category: communication
 profile:
+  summary: Slack is a work platform where a team's people and AI agents work together.
   description: Slack is a work platform that connects a team's people and AI agents, with Slackbot to search and summarise conversations and automate tasks.
   links:
     site: https://slack.com
