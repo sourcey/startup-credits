@@ -10,6 +10,7 @@ entity:
       valid_from: 2026-08-01T13:50:00.000Z
   category: hr-people
 profile:
+  summary: Pave is compensation management software with real-time market data for benchmarking pay.
   description: Pave is compensation management software for benchmarking pay with real-time market data, planning compensation and sending visual offer letters.
   links:
     site: https://pave.com
