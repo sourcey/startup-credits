@@ -10,11 +10,11 @@ entity:
       valid_from: 2026-08-01T13:50:00.000Z
   category: communication
 profile:
-  description: We care about your privacy. Our privacy policy will help you understand what information is collected, how it’s used and what choices you have.
+  description: Slack is a work platform that connects a team's people and AI agents, with Slackbot to search and summarise conversations and automate tasks.
   links:
     site: https://slack.com
 sources:
-  - source_id: src_a5703a08dde126a8dceb545480be5629e0d825b2850010d50a47e9bdfb86b1f0
-    url: https://slack.com/intl/en-au/trust/privacy/privacy-policy
+  - source_id: src_e5d304c1d5d0fd195f815dfd03c1dcc52db5640c8f4d5e118bdb6a8529f7d77d
+    url: https://slack.com/
 programs: []
 offers: []
