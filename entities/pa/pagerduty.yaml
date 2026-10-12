@@ -1,0 +1,58 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m496j3nk8jd35v1pm5xjbkjv
+  slug: pagerduty
+  slug_aliases: []
+  name: PagerDuty
+  domains:
+    - value: pagerduty.com
+      role: primary
+      valid_from: 2026-10-06T18:15:00.000Z
+  category: observability
+profile:
+  summary: PagerDuty is an AI-powered operations platform for incident detection, response, and resolution, trusted by platform engineering teams.
+  description: AI-powered incident management and operations platform for detecting, responding to, and resolving issues before customers notice.
+  links:
+    site: https://www.pagerduty.com
+sources:
+  - source_id: src_89cd57ce725d64ba99590cd0f3e75b172ea0cbf02a5648ca59402cad1f90db58
+    url: https://www.pagerduty.com/startups/
+  - source_id: src_2f1c8a4b6d3e9f0a1b5c7d8e2f4a6b9c0d1e3f5a7b8d9e0f1a2b3c4d5e6f7a8b9
+    url: https://www.pagerduty.com/pricing/
+programs: []
+offers:
+  - offer_id: off_01m496j3nkyh69y085hx0jc8ez
+    offer_slug: pagerduty-for-startups
+    offer_slug_aliases: []
+    title: PagerDuty for Startups
+    summary: Eligible startups get 6 months of PagerDuty Operations Cloud free, including 20 seats per year, 20,000 events, and 1,000 AI actions.
+    lifecycle:
+      status: active
+      effective_from: 2026-10-06T18:15:00.000Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_01
+          description: 6 months of PagerDuty Operations Cloud at $0, including 20 seats per year, 20,000 events, and 1,000 AI actions. Not a discount. Not a demo. No credit card required.
+          duration:
+            kind: exact
+            value: P6M
+          kind: other
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Must be a new PagerDuty customer at Seed, Series A, or Series B funding stage.
+    roles:
+      terms_authority_entity_id: ent_01m496j3nk8jd35v1pm5xjbkjv
+      access_operator_entity_id: ent_01m496j3nk8jd35v1pm5xjbkjv
+    access:
+      availability: public
+      method: other
+      instructions: Submit the "See if you Qualify" form on the startups page with a work email.
+      url: https://www.pagerduty.com/startups/
+    source_ids:
+      - src_89cd57ce725d64ba99590cd0f3e75b172ea0cbf02a5648ca59402cad1f90db58
