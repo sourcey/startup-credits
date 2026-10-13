@@ -1,0 +1,82 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m4bwks6tya3rwppegf9m7hgf
+  slug: sarouvet-technologies
+  slug_aliases: []
+  name: Sarouvet Technologies
+  domains:
+    - value: sarouvettechnologies.com
+      role: primary
+      valid_from: 2026-10-07T19:02:38.243Z
+  category: other
+profile:
+  summary: Sarouvet Technologies provides custom software, AI, web and mobile development, data analytics, and managed technology operations.
+  description: Custom software development, AI engineering, and analytics services.
+  links:
+    site: https://sarouvettechnologies.com/
+sources:
+  - source_id: src_1090ede69a1a8524f47d914a68acf815635c09d3cc5c6dcf5f33ea569f093b86
+    url: https://sarouvettechnologies.com/
+programs:
+  - program_id: prg_01m4bwks6wb5t703vnfqmqznrr
+    program_slug: sarouvet-launch-program
+    program_slug_aliases: []
+    title: Sarouvet Launch Program
+    summary: A discounted services partnership for qualifying early-stage startups building and scaling technology products.
+    source_ids:
+      - src_1090ede69a1a8524f47d914a68acf815635c09d3cc5c6dcf5f33ea569f093b86
+offers:
+  - offer_id: off_01m4bwks6xkzc779wsfnqbqb8f
+    program_id: prg_01m4bwks6wb5t703vnfqmqznrr
+    offer_slug: ninety-percent-off-startup-services
+    offer_slug_aliases: []
+    title: 90% off services for qualifying startups
+    summary: Approved early-stage startups receive 90% off Sarouvet services through a partnership requiring a commitment of at least 12 months.
+    lifecycle:
+      status: active
+      effective_from: 2026-10-07T19:02:38.243Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          kind: discount
+          description: 90% off services supplied through the Sarouvet Launch Program.
+          applies_to: Software, AI, web, app, data, financial analytics, and managed technology services.
+          percentage:
+            basis_points: 9000
+            kind: exact
+      consideration:
+        kind: variable
+        description: The startup pays 10% of service charges and commits to a partnership lasting at least 12 months; service prices are proposal-based.
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: external-verification
+            statement: Pre-seed through Series A startups; bootstrapped, angel-backed, and institutionally funded teams qualify.
+          - criterion_id: cri_02
+            kind: manual
+            reason: external-verification
+            statement: Provide an MVP, paying users, signed letters of intent, or a credible product plan.
+          - criterion_id: cri_03
+            kind: manual
+            reason: external-verification
+            statement: At least one founder must work on the startup as their primary commitment.
+          - criterion_id: cri_04
+            kind: manual
+            reason: vendor-discretion
+            statement: Commit to at least 12 months and align with technology, security, AI, fintech, infrastructure, climate, or govtech.
+          - criterion_id: cri_05
+            kind: manual
+            reason: vendor-discretion
+            statement: Be transparent about unknowns; a founding partner reviews the application.
+    roles:
+      terms_authority_entity_id: ent_01m4bwks6tya3rwppegf9m7hgf
+      access_operator_entity_id: ent_01m4bwks6tya3rwppegf9m7hgf
+    access:
+      availability: public
+      method: form
+      url: https://sarouvettechnologies.com/
+    source_ids:
+      - src_1090ede69a1a8524f47d914a68acf815635c09d3cc5c6dcf5f33ea569f093b86
