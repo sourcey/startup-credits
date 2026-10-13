@@ -19,6 +19,8 @@ sources:
     url: https://www.gameanalytics.com/pricing/startup
   - source_id: src_61a22b960ea42de4ba717ddd8566bc12e9e71522efe4ba3716e324a9e0eadfef
     url: https://www.gameanalytics.com/pricing
+
+  - url: https://www.gameanalytics.com/
 programs:
   - program_id: prg_01m48xhs1gtez7qynegvz98s8b
     program_slug: startup-program
