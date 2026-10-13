@@ -11,7 +11,7 @@ entity:
   category: communication
 profile:
   summary: Slack is a work platform where a team's people and AI agents work together.
-  description: Slack connects a team's people and AI agents, and Slackbot multiplies what they can do.
+  description: Slack connects teams, and Slackbot multiplies what they can do.
   links:
     site: https://slack.com
 sources:
