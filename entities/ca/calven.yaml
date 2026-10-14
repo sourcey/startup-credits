@@ -1,0 +1,81 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m4b4xr0q95kejrzdesm6d3vn
+  slug: calven
+  slug_aliases: []
+  name: Calven
+  domains:
+    - value: calven.ai
+      role: primary
+      valid_from: 2026-10-07T12:20:30.362Z
+  category: marketing
+profile:
+  summary: Calven provides AI tools for product marketing research, positioning, messaging, and sales enablement.
+  description: Calven provides AI tools for product marketing research, positioning, messaging, and sales enablement.
+  links:
+    site: https://calven.ai
+sources:
+  - source_id: src_2756c86e7341a5edb0ecf78f2579d8480467ba6f0943a981f75157aedbafde81
+    url: https://calven.ai/startups
+  - source_id: src_8d22a7faf565caa4e28f406a0c6fb1f987ef9d3c338e91de6d95dcc5e6375baa
+    url: https://calven.ai/startups.md
+  - source_id: src_14ca2d982df62102ff86029109ec64ecd508e16a02ab874a2db1a152b887dd5d
+    url: https://calven.ai/terms
+programs:
+  - program_id: prg_01m4b4xr0tx3ncpjgkmefme9pd
+    program_slug: calven-for-startups
+    program_slug_aliases: []
+    title: Calven for Startups
+    summary: Qualifying small companies can use Calven Professional at startup pricing for 12 months.
+    source_ids:
+      - src_2756c86e7341a5edb0ecf78f2579d8480467ba6f0943a981f75157aedbafde81
+      - src_8d22a7faf565caa4e28f406a0c6fb1f987ef9d3c338e91de6d95dcc5e6375baa
+offers:
+  - offer_id: off_01m4b4xr0tarpsp65yxpk4qhey
+    program_id: prg_01m4b4xr0tx3ncpjgkmefme9pd
+    offer_slug: professional-startup-pricing-for-one-year
+    offer_slug_aliases: []
+    title: Calven Professional startup pricing for 12 months
+    summary: Approved companies with under $1 million in annual recurring revenue and fewer than 10 employees pay $200 per month billed annually or $250 monthly for Calven Professional for 12 months.
+    lifecycle:
+      status: active
+      effective_from: 2026-10-07T12:20:30.362Z
+    economics:
+      consideration:
+        kind: variable
+        description: The applicant pays $200 per month billed annually or $250 per month when paying monthly for the Professional subscription.
+      benefits:
+        - benefit_id: ben_01
+          description: Startup pricing for the full Professional tier for 12 months instead of the standard $800 per month billed annually or $1,000 per month paid monthly.
+          duration:
+            kind: exact
+            value: P1Y
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 7500
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: not-machine-evaluable
+            statement: Company has under $1M in annual recurring revenue.
+          - criterion_id: cri_02
+            kind: manual
+            reason: not-machine-evaluable
+            statement: Company has fewer than 10 employees.
+    roles:
+      terms_authority_entity_id: ent_01m4b4xr0q95kejrzdesm6d3vn
+      access_operator_entity_id: ent_01m4b4xr0q95kejrzdesm6d3vn
+    access:
+      availability: public
+      method: form
+      url: https://calven.ai/startups
+      instructions: Apply using the form on Calven's startup program page; Calven reviews the application before assigning startup pricing.
+    terms_url: https://calven.ai/terms
+    source_ids:
+      - src_2756c86e7341a5edb0ecf78f2579d8480467ba6f0943a981f75157aedbafde81
+      - src_8d22a7faf565caa4e28f406a0c6fb1f987ef9d3c338e91de6d95dcc5e6375baa
+      - src_14ca2d982df62102ff86029109ec64ecd508e16a02ab874a2db1a152b887dd5d
