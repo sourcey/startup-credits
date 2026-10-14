@@ -23,7 +23,7 @@ programs:
     program_slug: deepinfra-deepstart
     program_slug_aliases: []
     title: DeepStart
-    summary: DeepInfra's DeepStart program gives qualifying early-stage startups one billion free inference tokens.
+    summary: DeepInfra's DeepStart program gives qualifying early-stage startups ~50,000,000,000 free inference tokens.
     source_ids:
       - src_a7c7bf4c549ba204b628e64f3bbea4108093945a3cd9c3b1190d438433eb226f
 offers:
@@ -31,15 +31,15 @@ offers:
     program_id: prg_01kyyts97w2qshjx2e2yqz6as2
     offer_slug: free-ai-inference-tokens-with-deepinfra-deepstart
     offer_slug_aliases: []
-    title: 1 billion free inference tokens with DeepStart
-    summary: Qualifying startups receive 1,000,000,000 free tokens, valued at DeepSeek V3.1 prices, to run models on DeepInfra.
+    title: ~50,000,000,000 free inference tokens with DeepStart
+    summary: Qualifying startups receive ~50,000,000,000 free tokens, valued at DeepSeek V4 Flash prices, to run models on DeepInfra.
     lifecycle:
       status: active
       effective_from: 2026-08-01T08:13:34.662Z
     economics:
       benefits:
         - benefit_id: ben_01
-          description: 1,000,000,000 free tokens at DeepSeek V3.1 prices
+          description: ~50,000,000,000 free tokens at DeepSeek V4 Flash prices, expiring 1 year after approval
           kind: other
       consideration:
         kind: none
