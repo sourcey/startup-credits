@@ -1,0 +1,89 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m4927tsg1a9wt7asj3gfnzg9
+  slug: runtime
+  slug_aliases: []
+  name: Runtime
+  domains:
+    - value: withruntime.com
+      role: primary
+      valid_from: 2026-10-06T00:00:00.000Z
+  category: hosting-infra
+profile:
+  summary: Runtime provides cloud sandboxes for AI agents, with isolated compute, network access, custom domains, and usage-based billing.
+  description: Runtime provides isolated cloud sandboxes for software agents, charging for the CPU resources they use.
+  links:
+    site: https://withruntime.com
+sources:
+  - source_id: src_a067ae5af7f24a9801cc7d5c616cbbeda1e12a7c9729f46e88e4b7907ca3ee35
+    url: https://withruntime.com/startups
+  - source_id: src_d9bd776e5498477a8af9a2cee1273480cb9773c34aa394f5a3c83a3011a11acd
+    url: https://withruntime.com/legal/terms
+programs:
+  - program_id: prg_01m4927tsg84h5fdtte02raaw5
+    program_slug: runtime-for-startups
+    program_slug_aliases: []
+    title: Runtime for Startups
+    summary: Runtime for Startups provides usage credits and paid-account access to approved venture-backed companies building AI-agent products.
+    source_ids: &a1
+      - src_a067ae5af7f24a9801cc7d5c616cbbeda1e12a7c9729f46e88e4b7907ca3ee35
+      - src_d9bd776e5498477a8af9a2cee1273480cb9773c34aa394f5a3c83a3011a11acd
+offers:
+  - offer_id: off_01m4927tshnp5exy5vkfke8390
+    program_id: prg_01m4927tsg84h5fdtte02raaw5
+    offer_slug: startup-sandbox-credits
+    offer_slug_aliases: []
+    title: Runtime startup sandbox credits
+    summary: Approved venture-backed AI-agent startups receive US$5,000 in Runtime usage credits across 12 monthly installments and paid-account access without a card or top-up. All credits expire 12 months after acceptance.
+    lifecycle:
+      status: active
+      effective_from: 2026-10-06T00:00:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          kind: credit
+          value:
+            kind: exact
+            amount:
+              currency: USD
+              minor_units: 500000
+          duration:
+            kind: exact
+            value: P1Y
+          description: US$5,000 of Runtime usage credit, added in 12 monthly installments of approximately US$417. Unused credit carries over; all expires 12 months after acceptance. Credit has no cash value and is not transferable or refundable.
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: external-verification
+            statement: The company is building a product with AI agents that write or run code, use tools, or operate software for customers.
+          - criterion_id: cri_02
+            kind: manual
+            reason: external-verification
+            statement: "The company is venture-backed: it has raised from an accelerator, a pre-seed round, a seed round, or a Series A. A public page must substantiate the investment; Runtime verifies it before acceptance."
+          - criterion_id: cri_03
+            kind: manual
+            reason: external-verification
+            statement: The company has a website, and an owner, admin, or billing member applies from the Runtime account that will receive the credit.
+          - criterion_id: cri_04
+            kind: manual
+            reason: external-verification
+            statement: The company has not previously participated in Runtime for Startups; each company may receive the credit once.
+          - criterion_id: cri_05
+            kind: manual
+            reason: vendor-discretion
+            statement: Runtime reviews every application and may decline it. False information, fraud, abuse, or a terms breach can result in revoked credits and account suspension.
+    roles:
+      terms_authority_entity_id: ent_01m4927tsg1a9wt7asj3gfnzg9
+      access_operator_entity_id: ent_01m4927tsg1a9wt7asj3gfnzg9
+    access:
+      availability: public
+      method: form
+      url: https://withruntime.com/startups
+      instructions: Sign in to the Runtime account, apply as an owner, admin, or billing member, and name the investor with a public link to the funding round. Runtime responds by email.
+    terms_url: https://withruntime.com/legal/terms
+    source_ids: *a1
