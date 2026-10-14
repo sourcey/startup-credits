@@ -1,0 +1,71 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m4bakczag3adr9vh9escttf6
+  slug: nirvana-labs
+  slug_aliases: []
+  name: Nirvana Labs
+  domains:
+    - value: nirvanalabs.io
+      role: primary
+      valid_from: 2026-10-06T14:46:26.000Z
+  category: hosting-infra
+profile:
+  summary: Nirvana Labs is a cloud infrastructure provider focused on high-performance storage, compute, managed Kubernetes, and agent sandboxes for stateful workloads.
+  description: High-performance cloud infrastructure for AI, blockchain, databases, and stateful agent workloads.
+  links:
+    site: https://nirvanalabs.io
+sources:
+  - source_id: src_1bf8f14d9dbbec74cdebe9dda7d313c2c1ba0223d5ff0abcdfcb9f9d5c1e1df7
+    url: https://nirvanalabs.io/startup-credits
+  - source_id: src_6c5a77d92639c6368dde05976a0e8110eb1afaa5806387152bfc86562b23bf62
+    url: https://nirvanalabs.io/blog/nirvana-startup-credits
+programs:
+  - program_id: prg_01m4bakczagxrkgzgdvtjhzbbz
+    program_slug: nirvana-labs-startup-credits
+    program_slug_aliases: []
+    title: Nirvana Labs Startup Credits
+    summary: Nirvana Labs offers startup-specific cloud service credits for eligible early-stage companies, with a self-serve Founders tier and larger backed tiers.
+    source_ids:
+      - src_1bf8f14d9dbbec74cdebe9dda7d313c2c1ba0223d5ff0abcdfcb9f9d5c1e1df7
+      - src_6c5a77d92639c6368dde05976a0e8110eb1afaa5806387152bfc86562b23bf62
+offers:
+  - offer_id: off_01m4bakczbs5nzs25vc96frhwf
+    program_id: prg_01m4bakczagxrkgzgdvtjhzbbz
+    offer_slug: nirvana-labs-founders
+    offer_slug_aliases: []
+    title: Nirvana Labs Startup Credits - Founders
+    summary: Eligible pre-Series B startups can receive $1,000 in Nirvana Labs service credits for 12 months without an investor or accelerator requirement.
+    lifecycle:
+      status: active
+      effective_from: 2026-10-06T14:46:26.000Z
+    economics:
+      benefits:
+        - benefit_id: founders_credit
+          description: $1,000 in Nirvana Labs service credits valid for 12 months
+          kind: credit
+          value:
+            kind: exact
+            amount:
+              currency: USD
+              minor_units: 100000
+          duration:
+            kind: exact
+            value: P1Y
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: nirvana_founders_eligibility
+        statement: Company must be privately held, under 10 years old, pre-Series B, apply with a business email, keep a valid payment method on file, and not have previously received Nirvana Labs credit of equal or greater value.
+        reason: external-verification
+    roles:
+      terms_authority_entity_id: ent_01m4bakczag3adr9vh9escttf6
+      access_operator_entity_id: ent_01m4bakczag3adr9vh9escttf6
+    access:
+      availability: public
+      method: form
+      url: https://nirvanalabs.io/startup-credits
+    source_ids:
+      - src_1bf8f14d9dbbec74cdebe9dda7d313c2c1ba0223d5ff0abcdfcb9f9d5c1e1df7
+      - src_6c5a77d92639c6368dde05976a0e8110eb1afaa5806387152bfc86562b23bf62
