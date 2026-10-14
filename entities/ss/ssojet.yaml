@@ -35,63 +35,74 @@ offers:
       status: active
       effective_from: 2026-08-01T07:37:11.016Z
     economics:
+      consideration:
+        kind: variable
+        description: The remaining 50% cost of the chosen paid plan
       benefits:
-        - applies_to: all paid plans
-          benefit_id: ben_01
+        - benefit_id: ben_01
           description: 50% discount on all paid plans for 12 months
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 5000
+          applies_to: all paid plans
           duration:
             kind: exact
             value: P12M
-          kind: discount
-          percentage:
-            basis_points: 5000
-            kind: exact
-      consideration:
-        kind: none
     eligibility:
       rule:
         kind: any
         rules:
           - kind: all
             rules:
-              - criterion_id: cri_01
-                fact: company.funding_raised_usd
-                kind: predicate
-                operator: lt
-                statement: Less than $5M in total funding OR less than $3M ARR
-                value:
-                  type: number
-                  value: 5000000
-              - criterion_id: cri_02
-                fact: company.age_months
-                kind: predicate
-                operator: lte
+              - kind: any
+                rules:
+                  - kind: predicate
+                    criterion_id: cri_01_funding
+                    statement: Less than $5M in total funding
+                    fact: company.funding_raised_usd
+                    operator: lt
+                    value:
+                      type: number
+                      value: 5000000
+                  - kind: predicate
+                    criterion_id: cri_01_arr
+                    statement: less than $3M ARR
+                    fact: company.arr_usd
+                    operator: lt
+                    value:
+                      type: number
+                      value: 3000000
+              - kind: predicate
+                criterion_id: cri_02
                 statement: Founded in the last 5 years
+                fact: company.age_months
+                operator: lte
                 value:
                   type: number
                   value: 60
-              - criterion_id: cri_03
-                kind: manual
-                reason: not-machine-evaluable
+              - kind: manual
+                criterion_id: cri_03
                 statement: B2B SaaS product with enterprise sales motion
-              - criterion_id: cri_04
-                kind: manual
                 reason: not-machine-evaluable
+              - kind: manual
+                criterion_id: cri_04
                 statement: Commitment to implementing within 30 days
+                reason: not-machine-evaluable
           - kind: all
             rules:
-              - criterion_id: cri_05
-                kind: manual
-                reason: external-verification
+              - kind: manual
+                criterion_id: cri_05
                 statement: Registered 501(c)(3) or equivalent non-profit organization
-              - criterion_id: cri_06
-                kind: manual
                 reason: external-verification
+              - kind: manual
+                criterion_id: cri_06
                 statement: Valid proof of non-profit status required
-              - criterion_id: cri_07
-                kind: manual
-                reason: not-machine-evaluable
+                reason: external-verification
+              - kind: manual
+                criterion_id: cri_07
                 statement: Using SSOJet for organizational or mission-driven purposes
+                reason: not-machine-evaluable
     roles:
       terms_authority_entity_id: ent_01kyy6rm115469bs2038mts3wv
       access_operator_entity_id: ent_01kyy6rm115469bs2038mts3wv
