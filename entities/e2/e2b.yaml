@@ -13,7 +13,7 @@ profile:
   description: E2B is an open-source sandbox platform that gives AI agents isolated machines.
   links:
     site: https://e2b.dev
-  summary: E2B is an open-source sandbox platform that gives AI agents isolated machines.
+  summary: E2B gives every AI agent an isolated machine.
 sources:
   - source_id: src_0e33303f9e66813d619253e4b5f2b39c6abce3ddad223c01cbe96accd65a8293
     url: https://e2b.dev/privacy
