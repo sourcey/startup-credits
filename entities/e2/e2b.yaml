@@ -10,9 +10,10 @@ entity:
       valid_from: 2026-08-01T13:50:00.000Z
   category: other
 profile:
-  description: E2B Gives AI Agents Secure Computers with Real-World Tools. E2B is Used by 88% of Fortune 100 Companies for Frontier Agentic Workflows.
+  description: E2B is an open-source sandbox platform that gives AI agents isolated machines.
   links:
     site: https://e2b.dev
+  summary: E2B is an open-source sandbox platform that gives AI agents isolated machines.
 sources:
   - source_id: src_0e33303f9e66813d619253e4b5f2b39c6abce3ddad223c01cbe96accd65a8293
     url: https://e2b.dev/privacy
@@ -23,7 +24,7 @@ programs:
     program_slug: e2b-for-startups-program
     program_slug_aliases: []
     title: E2B for Startups Program
-    summary: E2B program providing startup credits and Pro Tier plan access to eligible early-stage AI agent startups.
+    summary: Early-stage teams building AI agents receive a one-time $20,000 in E2B credits and the Pro tier.
     source_ids:
       - src_a534ac470b986affc207b6f52ec5e66f285bf7972ac2f6026137f7d743b0c1e8
 offers:
@@ -32,14 +33,14 @@ offers:
     offer_slug: e2b-for-startups-program
     offer_slug_aliases: []
     title: E2B for Startups Program
-    summary: Eligible early-stage startups get $20,000 in one-time E2B credits and membership in the E2B Pro Tier plan.
+    summary: Early-stage teams building AI agents receive a one-time $20,000 in E2B credits and membership in the Pro tier.
     lifecycle:
       status: active
       effective_from: 2026-08-01T11:36:15.140Z
     economics:
       benefits:
         - benefit_id: ben_01
-          description: $20,000 of usage in credits
+          description: One-time $20,000 in E2B credits
           kind: credit
           value:
             amount:
@@ -47,9 +48,8 @@ offers:
               minor_units: 2000000
             kind: exact
         - benefit_id: ben_02
-          description: Membership in E2B Pro Tier plan
-          kind: free-service
-          service: E2B Pro Tier plan
+          description: Membership in the Pro tier
+          kind: other
       consideration:
         kind: none
     eligibility:
