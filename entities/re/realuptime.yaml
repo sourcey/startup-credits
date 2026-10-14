@@ -1,0 +1,83 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m4b6fr3n8jfj4f9v0h72nzxx
+  slug: realuptime
+  slug_aliases: []
+  name: RealUptime
+  domains:
+    - value: realuptime.io
+      role: primary
+      valid_from: 2026-10-07T12:47:48.856Z
+  category: observability
+profile:
+  summary: RealUptime provides uptime monitoring, status pages, and error tracking.
+  description: RealUptime provides uptime monitoring, status pages, and error tracking.
+  links:
+    site: https://realuptime.io/
+sources:
+  - source_id: src_fd6c5a249145874a194a8b99b7eadf5826981ab473c78c442cb63cb7d76c771a
+    url: https://realuptime.io/programs
+  - source_id: src_192090150e3a8c70110aa2649b019c0b5f8db9de7c599c76e46ae504a2753a56
+    url: https://realuptime.io/
+programs: []
+offers:
+  - offer_id: off_01m4b6fr3r2jq4a7ee114np2ns
+    offer_slug: six-months-free-growth-for-startups
+    offer_slug_aliases: []
+    title: Six months of RealUptime Growth free for startups
+    summary: Startups less than two years old and either under $1M raised or backed by a recognized accelerator can apply for six months of Growth free.
+    lifecycle:
+      status: active
+      effective_from: 2026-10-07T12:47:48.856Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          kind: free-service
+          service: RealUptime Growth plan
+          description: Full Growth access for six months from the first Growth invoice, on monthly or yearly billing. Scale and MSP plans are excluded. After six months, Growth bills at the published list price.
+          duration:
+            kind: exact
+            value: P6M
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: predicate
+            fact: company.age_years
+            operator: lt
+            value:
+              type: number
+              value: 2
+            statement: The startup is less than two years old.
+          - kind: any
+            rules:
+              - criterion_id: cri_02
+                kind: predicate
+                fact: company.funding_raised_usd
+                operator: lt
+                value:
+                  type: number
+                  value: 1000000
+                statement: The startup has raised less than $1 million.
+              - criterion_id: cri_03
+                kind: manual
+                reason: external-verification
+                statement: The startup is backed by a recognized accelerator.
+          - criterion_id: cri_04
+            kind: manual
+            reason: external-verification
+            statement: RealUptime reviews eligibility using a company registry entry, accelerator cohort page, or funding announcement; close cases may be considered individually.
+    roles:
+      terms_authority_entity_id: ent_01m4b6fr3n8jfj4f9v0h72nzxx
+      access_operator_entity_id: ent_01m4b6fr3n8jfj4f9v0h72nzxx
+    access:
+      availability: public
+      method: form
+      url: https://realuptime.io/programs
+      instructions: Select Startup and provide the account email and evidence link. Applicants without an account may use the email they will register with.
+    terms_url: https://realuptime.io/programs
+    source_ids:
+      - src_fd6c5a249145874a194a8b99b7eadf5826981ab473c78c442cb63cb7d76c771a
