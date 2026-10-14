@@ -1,0 +1,77 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m4a92vfvvaxft01q9jmxcp23
+  slug: medal-social
+  slug_aliases: []
+  name: Medal Social
+  domains:
+    - value: medalsocial.com
+      role: primary
+      valid_from: 2026-10-07T04:13:57.622Z
+  category: marketing
+profile:
+  summary: Medal Social provides an AI marketing platform for social publishing, CRM, email campaigns, automations, and websites.
+  description: Medal Social provides an AI marketing platform for social publishing, CRM, email campaigns, automations, and websites.
+  links:
+    site: https://www.medalsocial.com/
+sources:
+  - source_id: src_afd229e90be9d23f9c79636dd1921ed68b8f110b6ef469a290d4d2b4103724b0
+    url: https://www.medalsocial.com/
+  - source_id: src_91f19131ac59282ff99a976b54f6931bddc0612b5145e2a5fe4246c5b30225e6
+    url: https://www.medalsocial.com/pricing/startups
+programs:
+  - program_id: prg_01m4a92vfvqkp5zwhrg882n81w
+    program_slug: medal-social-startup-program
+    program_slug_aliases: []
+    title: Medal Social Startup Program
+    summary: Medal Social's Startup Program provides approved pre-seed and seed teams with free Business-plan access and quarterly founder office hours.
+    source_ids:
+      - src_91f19131ac59282ff99a976b54f6931bddc0612b5145e2a5fe4246c5b30225e6
+offers:
+  - offer_id: off_01m4a92vfvkxaz1fwxhpgt2hxm
+    program_id: prg_01m4a92vfvqkp5zwhrg882n81w
+    offer_slug: medal-social-startup-business-plan
+    offer_slug_aliases: []
+    title: Medal Social Startup Business Plan
+    summary: Approved pre-seed and seed teams receive the Business plan free for up to 12 months, ending sooner at $1M ARR or 18 months from incorporation.
+    description: >-
+      The startup period requires no card or payment details. The page advertises
+      12 months free and states that access lasts until $1M ARR or 18 months from
+      incorporation, whichever comes first. Its FAQ states that after 12 months
+      the workspace rolls onto the paid Business plan at $249 per month with
+      annual billing or $311.25 per month with monthly billing, with 30 days'
+      notice and cancellation available at any time.
+    lifecycle:
+      status: active
+      effective_from: 2026-10-07T04:13:57.622Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_01
+          kind: free-service
+          service: Medal Social Business plan
+          description: Business-plan access is free for up to 12 months, ending sooner at $1M ARR or 18 months from incorporation, whichever comes first.
+          duration:
+            kind: up-to
+            value: P1Y
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: >-
+          Published qualification is pre-seed or seed, under $5M raised in total,
+          under $1M ARR, and less than 18 months from incorporation. Medal Social
+          reviews each application, and its FAQ says it is flexible about
+          qualification.
+    roles:
+      terms_authority_entity_id: ent_01m4a92vfvvaxft01q9jmxcp23
+      access_operator_entity_id: ent_01m4a92vfvvaxft01q9jmxcp23
+    access:
+      availability: public
+      method: form
+      url: https://www.medalsocial.com/pricing/startups
+      instructions: Submit the public startup application. Medal Social reviews applications within five business days; approval is required to enable the Startup plan.
+    source_ids:
+      - src_91f19131ac59282ff99a976b54f6931bddc0612b5145e2a5fe4246c5b30225e6
