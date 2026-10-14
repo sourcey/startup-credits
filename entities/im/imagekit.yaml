@@ -60,7 +60,7 @@ offers:
             statement: Must rely heavily on images or videos.
           - criterion_id: cri_02
             kind: manual
-            statement: Must be associated with an accelerator, incubator, or VC firm mentioned here. Proof, such as a public announcement, a verification email, or a partner letter, would be required to establish this.
+            statement: Must be associated with an accelerator, incubator, or VC firm on ImageKit's partner list. Proof, such as a public announcement, a verification email, or a partner letter, would be required to establish this.
             reason: external-verification
           - kind: any
             rules:
