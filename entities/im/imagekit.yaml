@@ -36,15 +36,12 @@ offers:
       effective_from: 2026-08-01T12:56:03.394Z
     economics:
       benefits:
-        - applies_to: ImageKit media delivery, storage, processing, and usage-based features
-          benefit_id: ben_01
-          description: "Exclusive startup discounts on all billing components: bandwidth ($0.10/GB), storage ($8/100GB), Video Processing Units ($8/10K units), Extension Units ($8/5K units), Custom Domain ($8/month), and additional users ($8 each) with no monthly fixed costs."
-          kind: discount
-          percentage:
-            basis_points: 10000
-            kind: exact
+        - benefit_id: ben_01
+          description: "Exclusive startup discounts on all billing components: Media delivery bandwidth at $0.10 per GB, Digital Asset Management storage at $8 per 100GB, Video Processing Units at $8 per 10K units, Extension Units at $8 per 5K units, Custom Domain Name at $8 per domain/month, and 3 users included with additional users at $8 each."
+          kind: other
       consideration:
-        kind: none
+        kind: variable
+        description: Completely usage-based pricing - no monthly fixed costs.
     eligibility:
       rule:
         kind: all
@@ -53,35 +50,41 @@ offers:
             fact: company.age_months
             kind: predicate
             operator: lt
-            statement: Startup must be less than 4 years old.
+            statement: Startups that are less than 4 years old.
             value:
               type: number
               value: 48
+          - criterion_id: cri_01_rely
+            kind: manual
+            reason: vendor-discretion
+            statement: Must rely heavily on images or videos.
           - criterion_id: cri_02
             kind: manual
+            statement: Must be associated with an accelerator, incubator, or VC firm mentioned here. Proof, such as a public announcement, a verification email, or a partner letter, would be required to establish this.
             reason: external-verification
-            statement: Must be associated with an accelerator, incubator, or VC firm mentioned by ImageKit, supported by proof (public announcement, verification email, or partner letter).
-          - criterion_id: cri_03
-            fact: company.funding_raised_usd
-            kind: predicate
-            operator: lte
-            statement: Must have raised up to $20 million in funding.
-            value:
-              type: number
-              value: 20000000
+          - kind: any
+            rules:
+              - kind: predicate
+                criterion_id: cri_03_funding
+                statement: Must have raised up to $20 million in funding.
+                fact: company.funding_raised_usd
+                operator: lte
+                value:
+                  type: number
+                  value: 20000000
+              - kind: manual
+                criterion_id: cri_03_stage
+                statement: Must have raised up to a series B round.
+                reason: external-verification
           - criterion_id: cri_04
-            fact: company.has_working_website_or_app
-            kind: predicate
-            operator: eq
+            kind: manual
             statement: Must have a working company website or app.
-            value:
-              type: boolean
-              value: true
+            reason: external-verification
           - criterion_id: cri_05
-            fact: company.is_current_customer
             kind: predicate
-            operator: eq
             statement: Must not be an existing paid customer of ImageKit.
+            fact: company.is_current_customer
+            operator: eq
             value:
               type: boolean
               value: false
@@ -89,17 +92,17 @@ offers:
             kind: manual
             reason: external-verification
             statement: Must not have received previous ImageKit credits.
-          - criterion_id: cri_07
-            kind: manual
-            reason: external-verification
+          - kind: manual
+            criterion_id: cri_07
             statement: Must sign up using a business email.
+            reason: external-verification
     roles:
       terms_authority_entity_id: ent_01kyypqp9xhfg48ahr7mzen3ks
       access_operator_entity_id: ent_01kyypqp9xhfg48ahr7mzen3ks
     access:
-      availability: public
+      availability: membership
       method: form
-      url: https://imagekit.io/startup-program
+      url: https://pages.imagekit.io/imagekit-startup-program-application
     terms_url: https://imagekit.io/startup-program
     source_ids:
       - src_cecce3421b2866fa66624dbeb4abce438ce0a05bf59d1b7058f967f84d795e24
