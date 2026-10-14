@@ -10,9 +10,10 @@ entity:
       valid_from: 2026-08-01T10:27:09.837Z
   category: ai-ml
 profile:
-  description: Cerebras is the go-to platform for fast and effortless AI training.
+  description: Cerebras provides AI inference on wafer chips.
   links:
     site: https://cerebras.ai
+  summary: Cerebras provides AI inference on wafer chips.
 sources:
   - source_id: src_1f007d1fc9ecf96aa64cd3ce2c190873f30e2ea303557c3ad9019b788775f09a
     url: https://cerebras.ai/yc-startup-deal
@@ -57,6 +58,6 @@ offers:
     access:
       availability: membership
       method: form
-      url: https://cerebras.ai/yc-startup-deal
+      url: https://share.hsforms.com/1QLmMv1-PSaKs7y2EXlK4jQ5c85x
     source_ids:
       - src_1f007d1fc9ecf96aa64cd3ce2c190873f30e2ea303557c3ad9019b788775f09a
