@@ -37,18 +37,11 @@ offers:
     economics:
       benefits:
         - benefit_id: ben_01
-          description: $50 per month discount on any ChartMogul plan for 12 months (total value $600)
-          duration:
-            kind: exact
-            value: P1Y
-          kind: credit
-          value:
-            amount:
-              currency: USD
-              minor_units: 5000
-            kind: exact
+          description: $50 per month discount on any of our plans for 12 months
+          kind: other
       consideration:
-        kind: none
+        kind: variable
+        description: Any ChartMogul plan, billed monthly
     eligibility:
       rule:
         kind: all
