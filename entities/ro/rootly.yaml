@@ -36,7 +36,8 @@ offers:
       effective_from: 2026-08-02T07:11:41.000Z
     economics:
       consideration:
-        kind: none
+        kind: variable
+        description: The startup pays for Rootly.
       benefits:
         - benefit_id: ben_01
           description: Up to 50% off Rootly
