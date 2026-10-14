@@ -65,14 +65,10 @@ offers:
                     value:
                       type: number
                       value: 5000000
-                  - kind: predicate
+                  - kind: manual
                     criterion_id: cri_01_arr
-                    statement: less than $3M ARR
-                    fact: company.arr_usd
-                    operator: lt
-                    value:
-                      type: number
-                      value: 3000000
+                    statement: Less than $3M ARR
+                    reason: not-machine-evaluable
               - kind: predicate
                 criterion_id: cri_02
                 statement: Founded in the last 5 years
