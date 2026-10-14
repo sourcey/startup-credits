@@ -1,0 +1,53 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m4aqzaqtv453fgy6qmhwt0nc
+  slug: next-auth
+  slug_aliases: []
+  name: NextAuth.js
+  domains:
+    - value: next-auth.js.org
+      role: primary
+      valid_from: 2026-10-07T08:34:11.000Z
+  category: auth-security
+profile:
+  summary: NextAuth.js is an open-source authentication library for Next.js applications with built-in OAuth, email/passwordless, and credentials sign-in.
+  description: Open-source authentication library for Next.js supporting OAuth, email/passwordless, and credentials sign-in with your own database or none.
+  links:
+    site: https://next-auth.js.org
+sources:
+  - source_id: src_a90cf3cd7b895319ad5758d8f06382c0e4aba138bfb4b127d2d013995f99b906
+    url: https://next-auth.js.org
+programs: []
+offers:
+  - offer_id: off_01m4aqzaqw13nhcjcnbkqfweet
+    offer_slug: free-open-source-library
+    offer_slug_aliases: []
+    title: NextAuth.js open-source authentication library
+    summary: "NextAuth.js is an open-source authentication library for Next.js: install via npm, configure providers from the docs. Built-in OAuth, email/passwordless sign-in, and any username/password store, with your own database or none."
+    lifecycle:
+      status: active
+      effective_from: 2026-10-07T08:34:11.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Open-source NextAuth.js authentication library for Next.js apps, installed via npm
+          kind: free-service
+          service: NextAuth.js open-source library
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_requirement_01
+        kind: manual
+        reason: not-machine-evaluable
+        statement: Any developer can add the library to a Next.js app by installing the npm package and configuring providers from the documentation.
+    roles:
+      terms_authority_entity_id: ent_01m4aqzaqtv453fgy6qmhwt0nc
+      access_operator_entity_id: ent_01m4aqzaqtv453fgy6qmhwt0nc
+    access:
+      availability: public
+      method: other
+      url: https://next-auth.js.org
+      instructions: Install the next-auth npm package and configure providers using the documentation on next-auth.js.org.
+    source_ids:
+      - src_a90cf3cd7b895319ad5758d8f06382c0e4aba138bfb4b127d2d013995f99b906
