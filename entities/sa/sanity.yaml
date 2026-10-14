@@ -28,8 +28,7 @@ offers:
       effective_from: 2026-07-27T07:42:06.232Z
     economics:
       consideration:
-        kind: unknown
-        description: The source record did not establish separate consideration.
+        kind: none
       benefits:
         - benefit_id: ben_primary
           description: 1 year free Growth plan ($9,000 value)
