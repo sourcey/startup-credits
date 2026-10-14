@@ -56,7 +56,7 @@ offers:
               minor_units: 1000000
             kind: exact
         - benefit_id: ben_03
-          description: $7,000 in inference credits, allocated as $1,000 for each of seven participating providers.
+          description: $7,000 in inference credits, $1,000 with each of seven participating inference partners.
           kind: credit
           value:
             amount:
@@ -70,14 +70,14 @@ offers:
         criterion_id: cri_01
         kind: manual
         reason: vendor-discretion
-        statement: Applicant must be a net-new, early-stage startup with voice, video, or physical AI core to its product, fewer than 50 employees, incorporation or active incorporation, a live website and identifiable founding team, real end users, production use or launch within six months, and generally under $5 million raised and pre-Series A; applications above $5 million may be reviewed case by case.
+        statement: Applicant must be a net-new, early-stage startup with voice, video, or physical AI core to its product, fewer than 50 employees, incorporation or active incorporation, a live website and identifiable founding team, real end users, production use or launch within six months, and generally under $5 million raised and pre-Series A; applications above $5 million may be reviewed case by case. YC-backed companies apply to LiveKit's separate YC offer instead, and the two offers cannot be combined.
     roles:
       terms_authority_entity_id: ent_01m2x164yvb2h82afa89yhsscg
       access_operator_entity_id: ent_01m2x164yvb2h82afa89yhsscg
     access:
       availability: public
       method: form
-      instructions: Apply through the LiveKit Startup Program page. Approved startups receive a promo code and enter it at checkout when starting Cloud Scale.
+      instructions: Apply through the LiveKit Startup Program page. Approved startups receive a promo code and enter it at checkout when starting Cloud Scale; a card on file is required to enroll.
       url: https://livekit.com/startups
     source_ids:
       - src_9b42e6d14ad8a8083a827ea9aee1e7d73350b22281103ecf6c1a7198178d1f7b
