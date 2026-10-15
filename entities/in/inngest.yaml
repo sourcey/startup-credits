@@ -24,7 +24,7 @@ programs:
     program_slug: yc-deal
     program_slug_aliases: []
     title: YC Deal
-    summary: Inngest offers Y Combinator companies and alumni the Cloud Pro plan free for the first year.
+    summary: Inngest offers Y Combinator companies and alumni the Pro plan free for the first year.
     source_ids:
       - src_435228e4e8c2c663ee87e24f71f389c3849cbf7f92fcbf990c53ccd2c1e7379b
 offers:
@@ -33,8 +33,7 @@ offers:
     offer_slug: yc-pro-plan-first-year
     offer_slug_aliases: []
     title: Pro plan free for the first year
-    summary: Y Combinator companies and alumni can request the Inngest Cloud Pro plan free for the first
-      year through Inngest's YC Deal form.
+    summary: Y Combinator companies and alumni can request the Pro plan free for the first year through Inngest's YC Deal form.
     lifecycle:
       status: active
       effective_from: 2026-08-14T11:37:57Z
@@ -43,8 +42,8 @@ offers:
         kind: none
       benefits:
         - benefit_id: ben_01
-          applies_to: Inngest Cloud Pro
-          description: The Inngest Cloud Pro plan is free for the first year.
+          applies_to: Pro plan
+          description: The Pro plan is free for the first year.
           kind: discount
           percentage:
             kind: exact
@@ -77,7 +76,7 @@ offers:
       access_operator_entity_id: ent_01m00110wgxafza4pf2am3ftz3
     access:
       availability: membership
-      instructions: Submit your name, company email, and YC verification badge URL on the Inngest YC Deal form.
+      instructions: Submit a name, company email, and YC verification badge URL on the Inngest YC Deal form.
       method: form
       url: https://www.inngest.com/yc
     terms_url: https://www.inngest.com/yc
