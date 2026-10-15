@@ -1,0 +1,82 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m4aejc1wz3f9j3jqdyxzyvxd
+  slug: dhtmlx
+  slug_aliases: []
+  name: DHTMLX
+  domains:
+    - value: dhtmlx.com
+      role: primary
+      valid_from: 2026-10-07T05:49:48.989Z
+  category: devtools-other
+profile:
+  summary: DHTMLX develops JavaScript components for web applications, including Gantt charts,
+    schedulers, and user interface widgets.
+  description: DHTMLX provides JavaScript libraries for building web application interfaces.
+  links:
+    site: https://dhtmlx.com/
+sources:
+  - source_id: src_2e2ca1fb1f9d3e86b543baed480bad97afef297d6e3588653b6d2a31f7fb730d
+    url: https://dhtmlx.com/docs/startups/
+  - source_id: src_a9f9df378a6fd7b72661e8d7b1789e6258449f8783de25cfec94acf88a62af61
+    url: https://dhtmlx.com/docs/products/startup-license/
+programs:
+  - program_id: prg_01m4aejc1x33f5vjh1rj3xsbgb
+    program_slug: dhtmlx-startup-program
+    program_slug_aliases: []
+    title: DHTMLX Startup Program
+    summary: DHTMLX offers discounted one-year component licenses to startups that pass its
+      qualification review.
+    source_ids:
+      - src_2e2ca1fb1f9d3e86b543baed480bad97afef297d6e3588653b6d2a31f7fb730d
+offers:
+  - offer_id: off_01m4aejc1x2rn2edrhzsdjavzc
+    program_id: prg_01m4aejc1x33f5vjh1rj3xsbgb
+    offer_slug: startup-license-discount
+    offer_slug_aliases: []
+    title: 70% off a one-year DHTMLX Startup license
+    summary: Approved startups get 70% off one-year licenses for DHTMLX Gantt, Scheduler, or Suite,
+      covering up to three developers and one project, including SaaS.
+    description: "The license includes updates and 30 support requests during its one-year term. It is
+      not perpetual: continuing product use after expiry requires an appropriate license."
+    lifecycle:
+      status: active
+      effective_from: 2026-10-07T05:49:48.989Z
+    economics:
+      consideration:
+        kind: variable
+        description: Purchase a qualifying Startup license after approval. Listed USD prices are $569 for
+          Gantt, $539 for Scheduler, and $659 for Suite; the cost depends on the components
+          selected.
+      benefits:
+        - benefit_id: ben_startup_license
+          kind: discount
+          description: 70% off the original three-developer, one-project license price for the selected
+            component or components.
+          applies_to: DHTMLX Gantt, Scheduler, and Suite Startup licenses
+          percentage:
+            kind: exact
+            basis_points: 7000
+          duration:
+            kind: exact
+            value: P1Y
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_startup_qualification
+        reason: vendor-discretion
+        statement: Companies and individuals must complete DHTMLX's qualification questionnaire and pass
+          vendor review. Approval is discretionary; applying does not guarantee the startup
+          discount.
+    roles:
+      terms_authority_entity_id: ent_01m4aejc1wz3f9j3jqdyxzyvxd
+      access_operator_entity_id: ent_01m4aejc1wz3f9j3jqdyxzyvxd
+    access:
+      availability: public
+      method: form
+      url: https://dhtmlx.com/docs/startups/
+      instructions: Submit the startup request form to receive a qualification questionnaire. Approved
+        applicants receive a discounted purchase link.
+    terms_url: https://dhtmlx.com/docs/products/startup-license/
+    source_ids:
+      - src_2e2ca1fb1f9d3e86b543baed480bad97afef297d6e3588653b6d2a31f7fb730d
