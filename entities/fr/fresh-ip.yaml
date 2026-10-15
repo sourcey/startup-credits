@@ -61,8 +61,8 @@ offers:
           description: Possible introductions to Fresh IP's investor network when Fresh IP considers the startup investment-ready.
           kind: other
       consideration:
-        kind: unknown
-        description: The cited source does not establish separate consideration.
+        kind: variable
+        description: Startups pay for the discounted IP and legal services.
     eligibility:
       rule:
         criterion_id: cri_01
@@ -75,7 +75,7 @@ offers:
     access:
       availability: public
       method: form
-      url: https://freship.com/start-up-program/
+      url: https://form.jotform.com/220674453634053
       instructions: Use the application link on Fresh IP's Startup Program page and upload the required investment pitch deck.
     terms_url: https://freship.com/start-up-program/
     source_ids:
