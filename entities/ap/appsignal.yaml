@@ -28,8 +28,8 @@ offers:
       effective_from: 2026-08-08T01:48:54.467Z
     economics:
       consideration:
-        kind: unknown
-        description: The source record did not establish separate consideration.
+        kind: variable
+        description: The startup pays for AppSignal at a discounted rate.
       benefits:
         - benefit_id: ben_primary
           description: Up to 25% off the complete AppSignal platform while the startup qualifies
