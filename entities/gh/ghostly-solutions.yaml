@@ -10,8 +10,8 @@ entity:
       valid_from: 2026-09-01T00:00:00.000Z
   category: auth-security
 profile:
-  summary: Privacy-first security products spanning anti-phishing, brand protection, and advanced threat detection.
-  description: Ghostly Solutions builds privacy-first security products, from anti-phishing and brand protection to advanced threat detection.
+  summary: Ghostly Solutions provides privacy-first security products for anti-phishing, brand protection, and threat detection.
+  description: Ghostly Solutions offers enterprise-grade security products for early-stage startups, including browser protection against phishing, endpoint protection for workstations, and bot blocking for web applications.
   links:
     site: https://ghostlysolutions.com
 sources:
