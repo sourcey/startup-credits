@@ -52,7 +52,7 @@ offers:
         criterion_id: cri_01
         kind: manual
         reason: vendor-discretion
-        statement: Tapflare evaluates applicants against several criteria, including a software-based product or service, founding within five years, $50,000 to $5 million in funding, and a valid website and email address.
+        statement: Tapflare evaluates applicants against several criteria, including a software-based product or service, founding within five years, $50,000 to $5 million in funding, a founder with a LinkedIn profile, and a valid website and email address.
     roles:
       terms_authority_entity_id: ent_01m1awnj8c6g1qg8gegx0fevg6
       access_operator_entity_id: ent_01m1awnj8c6g1qg8gegx0fevg6
