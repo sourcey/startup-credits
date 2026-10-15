@@ -11,7 +11,7 @@ entity:
   category: communication
 profile:
   summary: AnnounceKit is a product communication platform providing changelogs, in-app notification widgets, feature request voting, and NPS surveys for SaaS teams.
-  description: AnnounceKit helps software teams publish product updates, collect user feedback, manage feature requests, and run NPS satisfaction surveys across web and mobile applications.
+  description: AnnounceKit is a product communication platform for SaaS teams providing changelogs and news feeds, in-app notification widgets, multi-channel updates, feature request voting, and NPS satisfaction surveys.
   links:
     site: https://announcekit.app
     pricing: https://announcekit.app/pricing
@@ -52,8 +52,8 @@ offers:
             kind: exact
             value: P12M
       consideration:
-        kind: unknown
-        description: Approved startups pay 50% of the listed plan price during the first 12 months (combinable with the 15% annual billing discount) and transition to the standard listed rate afterward.
+        kind: variable
+        description: Pick any AnnounceKit product and pay 50% of the listed price for the first 12 months, then continue at the standard listed price afterward.
     eligibility:
       rule:
         criterion_id: cri_01
