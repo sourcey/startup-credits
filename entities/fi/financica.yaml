@@ -10,10 +10,10 @@ entity:
       valid_from: 2026-08-14T14:38:31.633Z
   category: finance-accounting
 profile:
-  description: Financica is a bookkeeping and financial operations platform with AI-assisted
-    accounting, cash-flow tracking, e-invoicing, and multi-currency support.
+  description: Financica provides double-entry accounting, bookkeeping, burn rate tracking, e-invoicing and multi-currency support with an AI assistant.
   links:
     site: https://financica.app
+  summary: Financica provides accounting and bookkeeping with an AI assistant.
 sources:
   - source_id: src_1dc3065a5e0f9fb4b13cedbb4f9ef62ac9da122a5eaa08d22530c205b534670f
     url: https://financica.app/for/startups
