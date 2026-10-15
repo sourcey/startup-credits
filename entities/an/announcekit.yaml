@@ -11,7 +11,7 @@ entity:
   category: communication
 profile:
   summary: AnnounceKit is a product communication platform providing changelogs, in-app notification widgets, feature request voting, and NPS surveys for SaaS teams.
-  description: AnnounceKit is a product communication platform for SaaS teams providing changelogs and news feeds, in-app notification widgets, multi-channel updates, feature request voting, and NPS satisfaction surveys.
+  description: AnnounceKit provides modular product communication tools including Changelog, Feature Requests and Roadmap, Knowledge Base, NPS surveys, In-app Notifications, and Product Tours.
   links:
     site: https://announcekit.app
     pricing: https://announcekit.app/pricing
