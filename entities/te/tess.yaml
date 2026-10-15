@@ -10,9 +10,10 @@ entity:
       valid_from: 2026-09-01T07:38:46.486Z
   category: ai-ml
 profile:
-  description: TESS is an AI agent platform that orchestrates multiple models for research, engineering, marketing, operations, content creation, and business workflows.
+  description: TESS is an AI platform with access to over 250 models for collaborative intelligence that deploys AI agents across research, engineering, marketing, and operations.
   links:
     site: https://tess.im
+  summary: TESS is an AI platform that deploys AI agents across research, engineering, marketing, and operations.
 sources:
   - source_id: src_58ae94fc790bc26224d8ffdab1a5e5d2e0882b97235fa83bc3906ab06bf9ed43
     url: https://tess.im/startup
