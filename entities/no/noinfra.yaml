@@ -1,0 +1,66 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m48zqntwdgqwxkzfbggh1hbe
+  slug: noinfra
+  slug_aliases: []
+  name: NoInfra
+  domains:
+    - value: noinfra.ai
+      role: primary
+      valid_from: 2026-10-06T16:00:00Z
+  category: ai-ml
+profile:
+  summary: NoInfra provides hosted AI agents with managed runtimes, memory and connected tools for product integrations and internal workflows.
+  description: NoInfra hosts AI agents with managed runtimes, memory and connected tools, without requiring customers to manage servers or provider keys.
+  links:
+    site: https://noinfra.ai/
+sources:
+  - source_id: src_1a53fb992af07e8cb1c9e3d0628986ad1bee1b3140a520ffc5fd2ae496458ed8
+    url: https://noinfra.ai/startups
+programs:
+  - program_id: prg_01m48zqntwyh98hffze5np8hct
+    program_slug: noinfra-for-startups
+    program_slug_aliases: []
+    title: NoInfra for Startups
+    summary: NoInfra selects ten startups for a first cohort of promotional service credits to build product integrations or internal agent workflows.
+    source_ids:
+      - src_1a53fb992af07e8cb1c9e3d0628986ad1bee1b3140a520ffc5fd2ae496458ed8
+offers:
+  - offer_id: off_01m48zqntwct7hrdq81yg1mefr
+    program_id: prg_01m48zqntwyh98hffze5np8hct
+    offer_slug: first-cohort-startup-credits
+    offer_slug_aliases: []
+    title: $1,000 in NoInfra Startup Credits
+    summary: Ten selected startups receive $1,000 each in promotional NoInfra service credits to build their first agent, with at most one award per company.
+    description: The first cohort has a $10,000 pool. Product integrations receive priority; internal workflows are welcome. Credits are not cash or transferable. Covered usage, credit validity and redemption details are supplied with an approved award.
+    lifecycle:
+      status: active
+      effective_from: 2026-10-06T16:00:00Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: $1,000 in promotional NoInfra service credits, issued after approval; covered usage and validity are specified with the award.
+          kind: credit
+          value:
+            kind: exact
+            amount:
+              currency: USD
+              minor_units: 100000
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Applicant must be a startup team proposing a concrete agent workflow with a named pilot owner and measurable result, and be selected by NoInfra. One application per company; at most one award per company. No NoInfra account is required to apply.
+    roles:
+      terms_authority_entity_id: ent_01m48zqntwdgqwxkzfbggh1hbe
+      access_operator_entity_id: ent_01m48zqntwdgqwxkzfbggh1hbe
+    access:
+      availability: public
+      method: form
+      url: https://noinfra.ai/startups
+    terms_url: https://noinfra.ai/startups
+    source_ids:
+      - src_1a53fb992af07e8cb1c9e3d0628986ad1bee1b3140a520ffc5fd2ae496458ed8
