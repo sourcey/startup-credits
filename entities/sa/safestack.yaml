@@ -1,0 +1,81 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m501rp6ksy0nzh276ynq9h74
+  slug: safestack
+  slug_aliases: []
+  name: SafeStack
+  domains:
+    - value: safestack.io
+      role: primary
+      valid_from: 2026-10-15T15:09:22.008Z
+  category: auth-security
+profile:
+  summary: SafeStack provides application security program management and secure development training for software teams.
+  description: SafeStack helps software teams build secure development practices and meet compliance requirements.
+  links:
+    site: https://safestack.io/
+sources:
+  - source_id: src_c9083e028f394caa6075d107e82eef8d149f47df78ce8aae2a17b3cfa3eeb02e
+    url: https://safestack.io/secure-your-startup-discount
+  - source_id: src_ad03c461a657456de5c6360982abcb0e6afc398e399fe8e005b3edb63f8e75b7
+    url: https://safestack.io/
+programs: []
+offers:
+  - offer_id: off_01m501rp6qs8rgtntdgeb01fmh
+    offer_slug: startup-team-plan-discount
+    offer_slug_aliases: []
+    title: SafeStack startup team plan discount
+    summary: Eligible early-stage companies receive 50% off SafeStack's team plan for the first 12 months, subject to application review.
+    lifecycle:
+      status: active
+      effective_from: 2026-10-15T15:09:22.008Z
+    economics:
+      consideration:
+        kind: variable
+        description: Participants pay the remaining 50% of the team plan price during the first 12 months.
+      benefits:
+        - benefit_id: ben_team_discount
+          kind: discount
+          description: 50% off the team plan for the first 12 months.
+          applies_to: SafeStack team plan
+          percentage:
+            kind: exact
+            basis_points: 5000
+          duration:
+            kind: exact
+            value: P12M
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_new_customer
+            kind: manual
+            reason: external-verification
+            statement: The applicant must be a new SafeStack customer.
+          - criterion_id: cri_developer_count
+            kind: manual
+            reason: external-verification
+            statement: The team must have fewer than 20 developers.
+          - criterion_id: cri_company_age
+            kind: predicate
+            fact: company.age_months
+            operator: lt
+            value:
+              type: number
+              value: 120
+            statement: The company must have been founded less than 10 years ago.
+          - criterion_id: cri_funding_stage
+            kind: manual
+            reason: external-verification
+            statement: The company must be pre-Series A.
+    roles:
+      terms_authority_entity_id: ent_01m501rp6ksy0nzh276ynq9h74
+      access_operator_entity_id: ent_01m501rp6ksy0nzh276ynq9h74
+    access:
+      availability: public
+      method: form
+      url: https://safestack.io/secure-your-startup-discount
+      instructions: Follow Apply now and complete the application form. SafeStack states that its team will review the application within three business days.
+    terms_url: https://safestack.io/secure-your-startup-discount
+    source_ids:
+      - src_c9083e028f394caa6075d107e82eef8d149f47df78ce8aae2a17b3cfa3eeb02e
