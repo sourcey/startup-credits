@@ -10,8 +10,8 @@ entity:
       valid_from: 2026-08-21T23:39:45Z
   category: marketing
 profile:
-  summary: Influship is an AI influencer marketing platform for discovering and evaluating creators, with its creator data also available through an API, AI agent tools, and datasets.
-  description: Influship provides creator intelligence, influencer discovery and search, a creator database, datasets, and an API for marketing products and AI agents.
+  summary: Influship is an AI creator search and influencer intelligence platform.
+  description: Influship provides an AI creator search and influencer intelligence platform to discover, evaluate, and manage creators, as well as an API for creator data.
   links:
     site: https://www.influship.com
 sources:
