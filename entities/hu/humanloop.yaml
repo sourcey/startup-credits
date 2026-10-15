@@ -28,7 +28,8 @@ offers:
       effective_from: 2026-08-10T16:58:00.000Z
     economics:
       consideration:
-        kind: none
+        kind: variable
+        description: The startup pays for a discounted paid subscription.
       benefits:
         - benefit_id: ben_primary
           description: 50% off Humanloop paid subscriptions for 12 months
@@ -50,7 +51,7 @@ offers:
       terms_authority_entity_id: ent_01kzpa2vchv8emya9jarymvg51
       access_operator_entity_id: ent_01kzpa2vchv8emya9jarymvg51
     access:
-      availability: public
+      availability: membership
       method: form
       url: https://humanloop.com/microsoft-for-startups
     source_ids:
