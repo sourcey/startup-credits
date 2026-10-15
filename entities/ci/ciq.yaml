@@ -86,7 +86,6 @@ offers:
       availability: public
       method: form
       url: https://ciq.com/solutions/startups
-      instructions: Select Apply now on the program page to open CIQ's application form.
     terms_url: https://ciq.com/solutions/startups
     source_ids:
       - src_1c12cf3983d44f90cfe0edf15f458d0ebf2e4f2d40d3768a450a823208e5238c
