@@ -10,9 +10,10 @@ entity:
       valid_from: 2026-08-05T16:05:16.000Z
   category: hosting-infra
 profile:
-  description: Serverless GPU platform for running functions and AI workloads across multiple accelerator types.
+  description: Zylora provides GPU credits for startups, researchers, and open source projects to access various GPUs, including H100 and A100 models.
   links:
     site: https://zylora.dev
+  summary: Zylora provides GPU credits for startups, researchers, and open source projects.
 sources:
   - source_id: src_833b9808fb6d35d90efe644d08405a5b80ceb7a538e26a7627de764141a1de2c
     url: https://zylora.dev/free-gpu-credits/
