@@ -11,7 +11,7 @@ entity:
   category: hosting-infra
 profile:
   summary: New Zealand cloud infrastructure for compute, storage, networking, and managed platforms.
-  description: Catalyst Cloud provides New Zealand-based infrastructure and platform cloud services, including compute, storage, networking, Kubernetes, and managed databases.
+  description: Catalyst Cloud provides infrastructure and platform cloud services in New Zealand, including compute, storage, networking, and Kubernetes.
   links:
     site: https://catalystcloud.nz
 sources:
@@ -43,10 +43,14 @@ offers:
         - benefit_id: ben_01
           description: Free Catalyst Cloud usage up to the value of $1,000 per month
           duration:
-            kind: exact
+            kind: at-least
             value: P6M
-          kind: free-service
-          service: Catalyst Cloud usage
+          kind: credit
+          value:
+            kind: up-to
+            amount:
+              currency: NZD
+              minor_units: 100000
       consideration:
         kind: none
     eligibility:
