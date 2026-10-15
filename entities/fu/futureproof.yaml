@@ -41,10 +41,8 @@ offers:
           description: Companies on the Startup Program get the same six-agent team that Launch-tier companies get.
           kind: other
       consideration:
-        amount:
-          currency: USD
-          minor_units: 20000
-        kind: fixed
+        kind: variable
+        description: The program costs $200 per month for the first year and $500 per month for the second year.
     eligibility:
       rule:
         kind: all
