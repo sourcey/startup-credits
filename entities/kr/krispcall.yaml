@@ -55,16 +55,28 @@ offers:
         kind: all
         rules:
           - criterion_id: cri_new_customer
-            kind: manual
+            kind: predicate
             statement: The startup must be a new KrispCall subscriber; current or prior paid users are ineligible.
-            reason: external-verification
+            fact: company.is_current_customer
+            operator: eq
+            value:
+              type: boolean
+              value: false
           - criterion_id: cri_employees
-            kind: manual
+            kind: predicate
             statement: The startup must have fewer than 50 employees.
-            reason: external-verification
+            fact: company.employee_count
+            operator: lt
+            value:
+              type: number
+              value: 50
           - criterion_id: cri_accelerator
             kind: manual
             statement: The startup must participate in an accelerator or incubator program.
+            reason: external-verification
+          - criterion_id: cri_new_company
+            kind: manual
+            statement: The startup must be a new company.
             reason: external-verification
           - criterion_id: cri_applicant_role
             kind: manual
@@ -78,8 +90,8 @@ offers:
             kind: manual
             statement: The applicant and company must not have a history of implication in, or removal for, fraudulent activities.
             reason: external-verification
-          - criterion_id: cri_approval
-            kind: manual
+          - kind: manual
+            criterion_id: cri_approval
             statement: KrispCall assesses eligibility and selects participants at its discretion.
             reason: vendor-discretion
     roles:
