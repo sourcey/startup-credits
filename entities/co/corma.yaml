@@ -22,15 +22,15 @@ offers:
     offer_slug: corma-startup-plan
     offer_slug_aliases: []
     title: Corma Startup Plan
-    summary: Startups with fewer than 50 users can receive up to 50% off all Corma plans.
+    summary: Startups with fewer than 50 users get up to 50% off the Professional plan.
     lifecycle:
       status: active
       effective_from: 2026-08-11T07:03:36.000Z
     economics:
       benefits:
-        - applies_to: All Corma plans
+        - applies_to: Professional plan
           benefit_id: ben_01
-          description: Up to 50% off all Corma plans
+          description: Up to 50% off the Professional plan
           kind: discount
           percentage:
             basis_points: 5000
