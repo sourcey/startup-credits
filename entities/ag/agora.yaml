@@ -47,8 +47,7 @@ offers:
               minor_units: 5000000
             kind: up-to
       consideration:
-        kind: unknown
-        description: The program page does not state separate fees or other consideration for applying.
+        kind: none
     eligibility:
       rule:
         kind: all
@@ -69,7 +68,7 @@ offers:
       terms_authority_entity_id: ent_01kzy6p6zs4ytd7b0syw4dt0f6
       access_operator_entity_id: ent_01kzy6p6zs4ytd7b0syw4dt0f6
     access:
-      availability: public
+      availability: referral
       method: form
       url: https://explore.agora.io/vc-ai-jumpstart-program
     source_ids:
