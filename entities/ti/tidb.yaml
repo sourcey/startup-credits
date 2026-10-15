@@ -10,10 +10,10 @@ entity:
       valid_from: 2026-08-14T14:21:09.289Z
   category: databases
 profile:
-  description: TiDB is an open-source distributed SQL database for transactional, AI, and other modern
-    applications.
+  description: TiDB is an open, unified, distributed SQL database solution.
   links:
     site: https://www.pingcap.com/tidb-ai-startup-program/
+  summary: TiDB is an open, unified, distributed SQL database solution.
 sources:
   - source_id: src_48e5e9a8606d218056f2948abec9889774a8012249f846947c1c13b6f4ca9546
     url: https://www.pingcap.com/tidb-ai-startup-program/
@@ -22,8 +22,7 @@ programs:
     program_slug: tidb-ai-startup-program
     program_slug_aliases: []
     title: TiDB AI Startup Program
-    summary: TiDB supports qualified AI startups from product validation through scale with cloud
-      credits, architecture guidance, technical support, and go-to-market support.
+    summary: TiDB provides qualified AI startups with up to $100,000 in TiDB Cloud credits, architecture assessments, technical guidance, and go-to-market support.
     source_ids:
       - src_48e5e9a8606d218056f2948abec9889774a8012249f846947c1c13b6f4ca9546
 offers:
@@ -32,8 +31,7 @@ offers:
     offer_slug: up-to-100000-in-tidb-cloud-credits
     offer_slug_aliases: []
     title: Up to $100,000 in TiDB Cloud credits
-    summary: Qualified AI startups may receive up to $100,000 in TiDB Cloud credits, a dedicated
-      architecture assessment, direct technical guidance, and go-to-market support.
+    summary: Qualified AI startups receive up to $100,000 in TiDB Cloud credits, a dedicated architecture assessment, technical guidance, and go-to-market support.
     lifecycle:
       status: active
       effective_from: 2026-08-14T14:21:09.289Z
@@ -48,22 +46,45 @@ offers:
               minor_units: 10000000
             kind: up-to
         - benefit_id: ben_02
-          description: Dedicated AI architecture assessment and direct technical guidance from TiDB engineers
+          description: Dedicated architecture assessment and direct technical guidance from TiDB engineers
           kind: other
         - benefit_id: ben_03
           description: Technical content, customer-story, webinar, and ecosystem visibility opportunities
           kind: other
       consideration:
-        kind: unknown
-        description: The public program page does not establish separate consideration.
+        kind: none
     eligibility:
       rule:
-        criterion_id: cri_01
-        kind: manual
-        reason: vendor-discretion
-        statement: TiDB describes strong-fit applicants as AI teams with a live product or launch expected
-          within three months, building specified AI workloads for global markets on AWS or Alibaba
-          Cloud; benefits are for qualified startups.
+        kind: all
+        rules:
+          - kind: manual
+            criterion_id: cri_01
+            statement: Building for markets such as the United States, Southeast Asia, Japan, or Europe
+            reason: vendor-discretion
+          - kind: predicate
+            criterion_id: cri_02
+            statement: Startup is at the pre-seed to Series B stage
+            fact: company.stage
+            operator: in
+            value:
+              type: string-set
+              values:
+                - pre-seed
+                - seed
+                - Series A
+                - Series B
+          - kind: manual
+            criterion_id: cri_03
+            statement: Developing AI agents, Agentic SaaS, RAG applications, knowledge platforms, coding agents, sandboxes, or AI infrastructure
+            reason: vendor-discretion
+          - kind: manual
+            criterion_id: cri_04
+            statement: Need to manage user state, long-term memory, vector search, real-time analytics, multi-tenant workloads, or multi-region deployment
+            reason: vendor-discretion
+          - kind: manual
+            criterion_id: cri_05
+            statement: Application runs on AWS or Alibaba Cloud
+            reason: vendor-discretion
     roles:
       terms_authority_entity_id: ent_01m00abv95w3m39r2mbgxe21mg
       access_operator_entity_id: ent_01m00abv95w3m39r2mbgxe21mg
