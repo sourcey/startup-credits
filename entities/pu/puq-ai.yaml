@@ -10,9 +10,10 @@ entity:
       valid_from: 2026-08-08T05:17:59.235Z
   category: no-code
 profile:
-  description: puq.ai is a workflow-automation platform with visual workflows, app integrations, AI agents, code execution, monitoring, and collaboration tools.
+  description: puq.ai is a workflow automation platform that includes app integrations, an AI CoPilot, code execution, webhooks, and analytics.
   links:
     site: https://puq.ai
+  summary: puq.ai provides workflow automation.
 sources:
   - source_id: src_4f58b0cf6aad615d99bcbe816b7cd6eb0bc254420710f89bafd7b4e0d1723e31
     url: https://puq.ai/startups
