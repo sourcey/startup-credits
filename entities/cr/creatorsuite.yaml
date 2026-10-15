@@ -10,9 +10,10 @@ entity:
       valid_from: 2026-08-13T02:50:00.000Z
   category: marketing
 profile:
-  description: CreatorSuite provides analytics, AI-assisted scripting, competitor intelligence, content workflow, and team tools for creators and media teams.
+  description: CreatorSuite provides analytics, scripting, workflows and team roles for creators and media teams.
   links:
     site: https://creatorssuite.ai
+  summary: CreatorSuite provides tools for creators and teams.
 sources:
   - source_id: src_715c5ecab17bc73275786f39cd8c281deee875f36b5730eed09f80d0d50d0373
     url: https://creatorssuite.ai/startup-program
