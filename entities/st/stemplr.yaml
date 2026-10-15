@@ -1,0 +1,74 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m501165qsaybggrhwx2ktf1e
+  slug: stemplr
+  slug_aliases: []
+  name: stemplr
+  domains:
+    - value: stemplr.com
+      role: primary
+      valid_from: 2026-10-15T14:56:32.000Z
+  category: hr-people
+profile:
+  summary: stemplr is a digital time tracking, team planning, and workforce management platform with web, mobile, and kiosk clock-in tools.
+  description: stemplr provides digital time tracking, break compliance, employee profile management, project hour logging, and payroll-ready Excel and PDF exports for growing teams.
+  links:
+    site: https://stemplr.com/en/
+    pricing: https://stemplr.com/en/pricing/
+sources:
+  - source_id: src_310a666ba840423faca727edfd3030b90544c9c14a5783e38034425568b99429
+    url: https://stemplr.com/en/startup-program/
+  - source_id: src_793ceb5d70efccfeb1224bf74430f0c0b92a5186a969b10df67d316da82ffedf
+    url: https://stemplr.com/en/pricing/
+programs:
+  - program_id: prg_01m501165r4tz6dvbgtarzy97d
+    program_slug: stemplr-startup-program
+    program_slug_aliases: []
+    title: stemplr Startup Program
+    summary: stemplr offers qualifying startups 50% off all base time tracking and workforce management plans for their first 12 months.
+    source_ids:
+      - src_310a666ba840423faca727edfd3030b90544c9c14a5783e38034425568b99429
+      - src_793ceb5d70efccfeb1224bf74430f0c0b92a5186a969b10df67d316da82ffedf
+offers:
+  - offer_id: off_01m501165t3kx68wm0swfgfn66
+    program_id: prg_01m501165r4tz6dvbgtarzy97d
+    offer_slug: fifty-percent-off-base-plans-first-year
+    offer_slug_aliases: []
+    title: 50% off stemplr base plans for 12 months
+    summary: Qualifying startups no older than 5 years with fewer than 50 employees receive 50% off any stemplr base plan (Basic, Pro, or Enterprise) for 12 months from activation.
+    lifecycle:
+      status: active
+      effective_from: 2026-10-15T14:56:32.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 50% off any stemplr base plan (Basic, Pro, or Enterprise) for 12 months from activation
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 5000
+          applies_to: stemplr base plans (Basic, Pro, and Enterprise)
+          duration:
+            kind: exact
+            value: P12M
+      consideration:
+        kind: unknown
+        description: Approved startups pay 50% of the chosen base plan price for 12 months (add-ons such as kiosk licenses, mileage tracking, and planning are priced separately) and move to regular list pricing afterward.
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: external-verification
+        statement: The company is no older than 5 years, has fewer than 50 employees, has no existing active stemplr subscription, and submits a brief startup description for individual review.
+    roles:
+      terms_authority_entity_id: ent_01m501165qsaybggrhwx2ktf1e
+      access_operator_entity_id: ent_01m501165qsaybggrhwx2ktf1e
+    access:
+      availability: public
+      method: form
+      url: https://stemplr.com/en/startup-program/
+      instructions: Fill out the startup application form on the stemplr Startup Program page; applications are reviewed within 3 to 5 business days and approved startups receive a single-use 50% coupon code for checkout.
+    terms_url: https://stemplr.com/en/startup-program/
+    source_ids:
+      - src_310a666ba840423faca727edfd3030b90544c9c14a5783e38034425568b99429
+      - src_793ceb5d70efccfeb1224bf74430f0c0b92a5186a969b10df67d316da82ffedf
