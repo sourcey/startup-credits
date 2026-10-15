@@ -49,30 +49,34 @@ offers:
       rule:
         kind: all
         rules:
-          - criterion_id: cri_01
-            kind: manual
-            reason: external-verification
-            statement: The startup is at pre-seed, seed, or Series A stage.
+          - criterion_id: cri_03
+            kind: predicate
+            statement: The startup was founded within the last 3 years.
+            fact: company.age_months
+            operator: lte
+            value:
+              type: number
+              value: 36
           - criterion_id: cri_02
             fact: company.funding_raised_usd
             kind: predicate
             operator: lt
-            statement: The startup has raised less than $5 million in total funding.
+            statement: The startup has raised less than $2M in total funding.
             value:
               type: number
-              value: 5000000
-          - criterion_id: cri_03
-            fact: company.age_months
-            kind: predicate
-            operator: lte
-            statement: The startup was founded within the last three years.
-            value:
-              type: number
-              value: 36
-          - criterion_id: cri_04
+              value: 2000000
+          - criterion_id: cri_05
             kind: manual
+            statement: The startup has a working product with active or onboarding users.
             reason: external-verification
-            statement: The applicant is not currently a paying Dalo customer.
+          - criterion_id: cri_04
+            kind: predicate
+            statement: The startup is not currently a paying Dalo customer.
+            fact: company.is_current_customer
+            operator: eq
+            value:
+              type: boolean
+              value: false
     roles:
       terms_authority_entity_id: ent_01kzfwwthcyc44xfn95hsmatnx
       access_operator_entity_id: ent_01kzfwwthcyc44xfn95hsmatnx
