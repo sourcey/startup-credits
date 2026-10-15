@@ -10,9 +10,10 @@ entity:
       valid_from: 2026-08-09T09:26:42.675Z
   category: ai-ml
 profile:
-  description: Linkup provides production-grade web search, content extraction, and deep research APIs for AI applications and agents.
+  description: Linkup provides a production-grade web search API for AI and an open-source sparse embedding model.
   links:
     site: https://www.linkup.so
+  summary: Linkup provides a production-grade web search API for AI.
 sources:
   - source_id: src_99124f308acbdef0011ece7a9a927fb74bec2133fa5b606c00c24c2fd5e4b185
     url: https://www.linkup.so/startups
