@@ -10,8 +10,8 @@ entity:
       valid_from: 2026-08-28T18:15:39.000Z
   category: devtools-other
 profile:
-  summary: LicenseSpring is a software licensing platform that lets software vendors license, protect, and monetize their products with flexible licensing models, usage analytics, and SDKs.
-  description: LicenseSpring provides cloud-based software licensing, entitlement management, activation, usage metering, and SDKs for software and hardware vendors.
+  summary: LicenseSpring helps software vendors license and monetize their products.
+  description: LicenseSpring provides modern licensing, entitlement management, and monetization for software vendors.
   links:
     site: https://licensespring.com
 sources:
