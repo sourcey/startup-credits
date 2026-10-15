@@ -38,12 +38,7 @@ offers:
       benefits:
         - benefit_id: ben_01
           description: Generous Turso credits to run databases.
-          kind: credit
-          value:
-            amount:
-              currency: USD
-              minor_units: 1
-            kind: at-least
+          kind: other
         - benefit_id: ben_02
           description: Priority access to engineering team for onboarding, architecture reviews, and ongoing support.
           kind: other
