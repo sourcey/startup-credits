@@ -10,8 +10,8 @@ entity:
       valid_from: 2026-09-01T10:07:37.339Z
   category: no-code
 profile:
-  summary: Appsmith is an open source platform for building internal tools such as admin panels, dashboards, CRUD frontends, and back-office apps.
-  description: Appsmith is a platform for building internal applications and tools with visual components, data-source connections, and custom code.
+  summary: Appsmith is a platform for building tools and apps.
+  description: Appsmith is a platform for building support, operations, sales, engineering, and admin tools, as well as dashboards that get data from various databases.
   links:
     site: https://www.appsmith.com
 sources:
