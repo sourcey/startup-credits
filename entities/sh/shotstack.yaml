@@ -10,10 +10,10 @@ entity:
       valid_from: 2026-08-14T08:14:41.000Z
   category: hosting-infra
 profile:
-  description: Shotstack provides cloud APIs and SDKs for programmatic video editing, media
-    generation, hosting, and workflow automation.
+  description: Shotstack provides a cloud-based video editing API for automated video editing, media generation, hosting and automation workflows.
   links:
     site: https://shotstack.io/
+  summary: Shotstack provides a cloud-based video editing API.
 sources:
   - source_id: src_5509789ad225542a84a90c6c2d81e163bc2787b224a85b2a0fa3eb4017fbf05c
     url: https://shotstack.io/solutions/startups/
