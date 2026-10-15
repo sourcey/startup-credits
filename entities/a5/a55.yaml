@@ -10,9 +10,10 @@ entity:
       valid_from: 2026-08-08T13:37:07.362Z
   category: payments-fintech
 profile:
-  description: a55 provides checkout and cross-border payment infrastructure for commerce businesses operating across Latin America.
+  description: a55 provides enterprise payment orchestration with direct card network connectivity and localized acquiring and settlement.
   links:
     site: https://a55.tech
+  summary: a55 provides enterprise payment orchestration.
 sources:
   - source_id: src_a44f00a952149cbce1a337d1fda556d44de9cb953b210ccc8a25bbf35d26bafc
     url: https://a55.tech/activate
@@ -64,6 +65,6 @@ offers:
     access:
       availability: public
       method: form
-      url: https://a55.tech/activate
+      url: https://a55.tech/signup
     source_ids:
       - src_a44f00a952149cbce1a337d1fda556d44de9cb953b210ccc8a25bbf35d26bafc
