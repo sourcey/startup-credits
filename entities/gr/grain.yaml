@@ -49,7 +49,8 @@ offers:
             basis_points: 5000
             kind: exact
       consideration:
-        kind: none
+        kind: variable
+        description: The startup pays the discounted price of the plan.
     eligibility:
       rule:
         kind: all
@@ -86,8 +87,8 @@ offers:
       terms_authority_entity_id: ent_01m00r1g5qx1fqaxgej3mqfh3r
       access_operator_entity_id: ent_01m00r1g5qx1fqaxgej3mqfh3r
     access:
-      availability: public
+      availability: membership
       method: form
-      url: https://grain.com/startups
+      url: https://forms.gle/nqSoV66vY89mpX377
     source_ids:
       - src_88694639531c1560c2e7483c5178311a2d965639e84284e3029280cf59c2cbfb
