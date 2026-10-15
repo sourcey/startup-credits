@@ -36,8 +36,7 @@ offers:
       effective_from: 2026-08-03T06:15:54Z
     economics:
       consideration:
-        kind: unknown
-        description: The public grant page does not state separate monetary consideration.
+        kind: none
       benefits:
         - benefit_id: ben_01
           description: Cohere API compute credits applied to usage under a Production API key
