@@ -33,25 +33,24 @@ offers:
     program_id: prg_01m00avnkd2vtceb3srfcqgbr3
     offer_slug: 10000-in-tequity-service-credits
     offer_slug_aliases: []
-    title: $10,000 in Tequity service credits
-    summary: Selected student or pre-funding founders receive $10,000 in service credits usable across
-      Tequity's product design, engineering, AI development, QA, and release-support services.
+    title: Up to $10,000 in Tequity service credits
+    summary: Selected student or pre-funding founders receive up to $10,000 in service credits usable across Tequity's product design, engineering, AI development, QA, and release-support services.
     lifecycle:
       status: active
       effective_from: 2026-08-14T14:29:47.757Z
     economics:
       benefits:
         - benefit_id: ben_01
-          description: $10,000 in credits usable across Tequity service lines
+          description: Up to $10,000 in credits usable across Tequity service lines
           kind: credit
           value:
             amount:
               currency: USD
               minor_units: 1000000
-            kind: exact
+            kind: up-to
       consideration:
-        kind: unknown
-        description: The public grant page does not establish separate consideration.
+        kind: variable
+        description: Startups must provide their logo, a testimonial, and a case study.
     eligibility:
       rule:
         criterion_id: cri_01
