@@ -10,8 +10,8 @@ entity:
       valid_from: 2026-08-30T20:53:48.157Z
   category: no-code
 profile:
-  summary: Zenphi provides no-code AI agents and workflow automation for Google Workspace, including integrations, forms, document generation, and operational dashboards.
-  description: Zenphi provides no-code AI agents and workflow automation for Google Workspace, with integrations, forms, document generation, and operational dashboards.
+  summary: Zenphi provides no-code AI agents and workflow automation for Google Workspace, including integrations, forms, and document generation.
+  description: Zenphi provides no-code AI agents and workflow automation for Google Workspace, with integrations, forms, and document generation.
   links:
     site: https://zenphi.com
 sources:
