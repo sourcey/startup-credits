@@ -79,9 +79,9 @@ offers:
       access_operator_entity_id: ent_01m1rr3w4h8hbspth6ckmjdqqa
     access:
       availability: public
-      method: contact
-      url: https://lettermint.co/promo-codes-and-discounts/startups
-      instructions: Create and verify a free Lettermint account with the domain and project set up, then create a support request from the dashboard asking for the startup discount. Lettermint emails you once the credit is applied.
+      method: form
+      url: https://app.lettermint.co/support/tickets/new
+      instructions: Create and verify a free Lettermint account with the domain and project set up, then create a support request from the dashboard asking for the startup discount. Lettermint emails the startup once the credit is applied.
     terms_url: https://lettermint.co/promo-codes-and-discounts/startups
     source_ids:
       - src_9ab3f3ff9aae910fa06db6bbdde00123b6fa32a48c93d6c5f7c8232756dcb0b7
