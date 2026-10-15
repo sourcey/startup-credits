@@ -7,6 +7,7 @@ entity:
   domains:
   - value: commented.io
     role: primary
+    valid_from: '2026-10-15T02:49:58.817Z'
   category: productivity
 profile:
   summary: Commented provides website and mobile feedback tools with annotations,
@@ -37,6 +38,7 @@ offers:
     naming a calendar year on the program page.
   lifecycle:
     status: active
+    effective_from: '2026-10-15T02:49:58.817Z'
   economics:
     benefits:
     - benefit_id: ben_business_discount
