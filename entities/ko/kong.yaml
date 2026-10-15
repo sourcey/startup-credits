@@ -61,8 +61,8 @@ offers:
           description: Direct technical support through a dedicated Slack channel, architecture reviews, office hours, and priority responses for launch blockers.
           kind: other
       consideration:
-        description: The public program page does not establish separate consideration.
-        kind: unknown
+        description: Startups pay 50% of Kong Konnect Plus list pricing for 24 months after credits expire or for any usage beyond the credit balance.
+        kind: variable
     eligibility:
       rule:
         criterion_id: cri_01
