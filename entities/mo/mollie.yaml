@@ -38,8 +38,8 @@ offers:
       benefits:
         - benefit_id: ben_01
           description: Payment processing fees waived on the next EUR 75,000 in payment volume.
-          kind: waiver
-          waived_item: Fees on the next EUR 75,000 in payment processing
+          kind: free-service
+          service: Payment processing on the next EUR 75,000
       consideration:
         kind: none
     eligibility:
