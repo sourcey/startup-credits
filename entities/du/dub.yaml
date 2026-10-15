@@ -35,8 +35,8 @@ offers:
       effective_from: 2026-08-10T00:00:00.000Z
     economics:
       consideration:
-        kind: unknown
-        description: The source record did not establish separate consideration.
+        kind: variable
+        description: The startup pays a discounted price for the Advanced plan.
       benefits:
         - benefit_id: ben_primary
           description: 50% discount on the first year of the Advanced plan
@@ -52,10 +52,40 @@ offers:
             basis_points: 2500
     eligibility:
       rule:
-        kind: manual
-        criterion_id: cri_requirement_01
-        statement: Must be founded less than 5 years ago, have fewer than 15 employees, have a team member to own the partner program, and not currently be a Dub customer (current customers reviewed case by case).
-        reason: not-machine-evaluable
+        kind: all
+        rules:
+          - kind: predicate
+            criterion_id: cri_age
+            statement: Founded less than 5 years ago
+            fact: company.age_months
+            operator: lt
+            value:
+              type: number
+              value: 60
+          - kind: manual
+            criterion_id: cri_funded
+            statement: The company is funded
+            reason: not-machine-evaluable
+          - kind: predicate
+            criterion_id: cri_employees
+            statement: Fewer than 15 employees
+            fact: company.employee_count
+            operator: lt
+            value:
+              type: number
+              value: 15
+          - kind: manual
+            criterion_id: cri_team
+            statement: A team member to own the program
+            reason: not-machine-evaluable
+          - kind: predicate
+            criterion_id: cri_new_customer
+            statement: Not currently a Dub customer
+            fact: company.is_current_customer
+            operator: eq
+            value:
+              type: boolean
+              value: false
     roles:
       terms_authority_entity_id: ent_01kzn77epmx2f0vgz4qn1sxd1m
       access_operator_entity_id: ent_01kzn77epmx2f0vgz4qn1sxd1m
