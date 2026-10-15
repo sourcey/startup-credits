@@ -10,8 +10,8 @@ entity:
       valid_from: 2026-09-01T08:35:09.7904464Z
   category: communication
 profile:
-  summary: Notification infrastructure for product and engineering teams.
-  description: SuprSend provides APIs and workflow tooling for delivering transactional and product notifications across email, SMS, push, inbox, chat, and other channels.
+  summary: SuprSend provides a centralized platform to manage communication channels and deploy notification infrastructure.
+  description: SuprSend provides a unified API and flexible infrastructure to automate notification workflows and trigger notifications across channels including email, SMS, push, WhatsApp, and Slack.
   links:
     site: https://www.suprsend.com
 sources:
@@ -68,10 +68,9 @@ offers:
       terms_authority_entity_id: ent_9tvpgkwe2xqjd99n8jada4jsb1
       access_operator_entity_id: ent_9tvpgkwe2xqjd99n8jada4jsb1
     access:
-      availability: public
-      instructions: Use the application link on the SuprSend for Startups page and submit the applicant's startup and partner-portfolio details for review.
+      availability: membership
       method: form
-      url: https://www.suprsend.com/suprsend-for-startups
+      url: https://app.suprsend.com/en/signup/
     terms_url: https://www.suprsend.com/suprsend-for-startups
     source_ids:
       - src_b1a4f7c68eda2d07fa0fb6e61dbdeb6ecbb912956484d578aca75ae2ff98a81f
