@@ -39,16 +39,8 @@ offers:
         kind: none
       benefits:
         - benefit_id: ben_01
-          description: Up to $30,000 USD in Runware API credits
-          duration:
-            kind: exact
-            value: P12M
-          kind: credit
-          value:
-            amount:
-              currency: USD
-              minor_units: 3000000
-            kind: up-to
+          description: Up to $30,000 in API credits for 12 months of Runware API access
+          kind: other
         - benefit_id: ben_02
           description: Direct access to the Runware team and builder community channels
           kind: other
