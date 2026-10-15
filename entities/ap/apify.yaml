@@ -10,9 +10,10 @@ entity:
       valid_from: 2026-08-05T11:56:24.000Z
   category: data-analytics
 profile:
-  description: Apify provides a web scraping and browser automation platform for collecting and processing web data with Actors, APIs, proxies, and managed services.
+  description: Apify offers tools to automate businesses, get real-time web data, track competitors, generate leads, and integrate applications and AI agents.
   links:
     site: https://apify.com
+  summary: Apify provides tools to automate businesses and get real-time web data.
 sources:
   - source_id: src_0f8f3e4f3ee9fbbc9259d9f84623cd431f88fcfe1446608271067275dadad263
     url: https://apify.com/resources/startups
