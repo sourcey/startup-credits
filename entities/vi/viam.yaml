@@ -10,8 +10,8 @@ entity:
       valid_from: 2026-09-01T06:58:12.352Z
   category: devtools-other
 profile:
-  summary: Software for building, deploying, and managing robots and smart machines.
-  description: Viam is a software platform for building, deploying, managing, and scaling robotics and smart-machine applications across hardware fleets.
+  summary: Viam provides a software platform for building and scaling robotics and hardware.
+  description: Viam is a software platform that allows engineers to build, prototype and scale robotics and hardware fleets.
   links:
     site: https://www.viam.com/
 sources:
@@ -22,7 +22,7 @@ programs:
     program_slug: viam-for-startups
     program_slug_aliases: []
     title: Viam for Startups
-    summary: Viam supports eligible early-stage robotics and hardware companies with platform credits and direct engineering assistance.
+    summary: Viam for Startups provides early-stage robotics and hardware companies with platform credits and engineering support.
     source_ids:
       - src_674dc2b373c662784d35a189b4264bc5964c2d09a1547f66f2d3ff57550695db
 offers:
@@ -31,7 +31,7 @@ offers:
     offer_slug: thirty-thousand-platform-credits-for-one-year
     offer_slug_aliases: []
     title: $30,000 in Viam Platform Credits for One Year
-    summary: Eligible startups receive $30,000 in Viam platform credits, distributed as $2,500 per month for 12 months, plus dedicated engineering time and direct Slack access to Viam's Forward Deployed Engineering team.
+    summary: Startups receive $30,000 in platform credits distributed as $2,500 per month over 12 months, plus dedicated time with Viam engineers and direct access to the Forward Deployed Engineering team via Slack.
     lifecycle:
       status: active
       effective_from: 2026-09-01T06:58:12.352Z
@@ -91,6 +91,5 @@ offers:
       availability: public
       method: form
       url: https://www.viam.com/platform/demo-request
-      instructions: Submit Viam's demo-request form and select "Applying to Viam for Startups."
     source_ids:
       - src_674dc2b373c662784d35a189b4264bc5964c2d09a1547f66f2d3ff57550695db
