@@ -30,7 +30,8 @@ offers:
       effective_from: 2026-08-04T00:00:00.000Z
     economics:
       consideration:
-        kind: none
+        kind: variable
+        description: The startup pays for a paid Buffer plan.
       benefits:
         - benefit_id: ben_01kz5hkd1wz8dpq132hmqcr0e6
           description: 50% off any paid Buffer plan for the first 12 months.
