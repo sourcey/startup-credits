@@ -68,6 +68,6 @@ offers:
     access:
       availability: public
       method: form
-      url: https://www.billbasket.app/social-support-programs/startup
+      url: https://accounts.billbasket.app/signup
     source_ids:
       - src_2bd5cc2e0d393e0b582c7e7e3d17a1dae01b1f006dbb9f6e2115035005172be9
