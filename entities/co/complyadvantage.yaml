@@ -11,7 +11,7 @@ entity:
   category: legal-compliance
 profile:
   summary: ComplyAdvantage provides financial crime risk data and AML compliance software for customer screening, ongoing monitoring, and transaction monitoring.
-  description: ComplyAdvantage offers sanctions, watchlist, PEP and adverse media data with customer and company screening, ongoing monitoring, transaction monitoring, and payment screening.
+  description: ComplyAdvantage offers a financial crime platform with customer screening and transaction monitoring solutions.
   links:
     site: https://complyadvantage.com
 sources:
