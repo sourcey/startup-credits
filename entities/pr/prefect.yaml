@@ -33,24 +33,28 @@ offers:
     offer_slug: team-plan-startup-credits
     offer_slug_aliases: []
     title: Startup credits and savings on Prefect Cloud Team
-    summary: Approved startups receive credits and savings on Prefect Cloud's Team plan; Prefect does not publish a fixed credit amount or discount percentage.
+    summary: Startups with up to $20M in funding receive credits and savings on the Team plan.
     lifecycle:
       status: active
       effective_from: 2026-08-07T16:48:51.572Z
     economics:
       consideration:
         kind: unknown
-        description: The public program and pricing pages do not state the discounted Team plan price or any separate consideration.
+        description: The pages do not state the discounted Team plan price or any separate consideration.
       benefits:
         - benefit_id: ben_01
-          description: Credits and savings on Prefect Cloud's Team plan, with the value determined during application review.
+          description: Credits and savings on the Team plan.
           kind: other
     eligibility:
       rule:
-        kind: manual
+        kind: predicate
         criterion_id: cri_01
-        statement: Applicant must be a startup with no more than $20 million in funding and is subject to Prefect's application review.
-        reason: vendor-discretion
+        statement: Startups with up to $20M in funding.
+        fact: company.funding_raised_usd
+        operator: lte
+        value:
+          type: number
+          value: 20000000
     roles:
       terms_authority_entity_id: ent_01kzej0vw01scng55n0fksv1rr
       access_operator_entity_id: ent_01kzej0vw01scng55n0fksv1rr
