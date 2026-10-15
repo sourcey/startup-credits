@@ -1,0 +1,74 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m501165vrjk0gazhrcxwy0fj
+  slug: sinatra
+  slug_aliases: []
+  name: Sinatra
+  domains:
+    - value: sinatra.dev
+      role: primary
+      valid_from: 2026-10-15T14:56:32.000Z
+  category: devtools-other
+profile:
+  summary: Sinatra is a coding agent platform that turns assigned Linear tickets and GitHub issues into pull requests using a team's own LLM credentials.
+  description: Sinatra runs coding agents on assigned issues and tickets across a workspace, executing concurrent and queued tasks while billing flat workspace pricing and letting teams bring their own model provider credentials.
+  links:
+    site: https://www.sinatra.dev
+    pricing: https://www.sinatra.dev/pricing
+sources:
+  - source_id: src_69e1b5ac6432e18936591b3538d9af89d2b5ea60b3990e7d9d9187f71dfea9dc
+    url: https://www.sinatra.dev/startups
+  - source_id: src_259e2029e8ea94aeef59114f484744e58e0e5314c6fbe5e04d8032439e259563
+    url: https://www.sinatra.dev/pricing
+programs:
+  - program_id: prg_01m501165wwfkapeb509ytjq4t
+    program_slug: sinatra-for-startups
+    program_slug_aliases: []
+    title: Sinatra for Startups
+    summary: Sinatra offers startups 50% off its Team workspace plan for 12 months.
+    source_ids:
+      - src_69e1b5ac6432e18936591b3538d9af89d2b5ea60b3990e7d9d9187f71dfea9dc
+      - src_259e2029e8ea94aeef59114f484744e58e0e5314c6fbe5e04d8032439e259563
+offers:
+  - offer_id: off_01m501165xwhg1pgwsyj6sswdj
+    program_id: prg_01m501165wwfkapeb509ytjq4t
+    offer_slug: team-plan-50-percent-off-12-months
+    offer_slug_aliases: []
+    title: 50% off Sinatra Team plan for 12 months
+    summary: Approved startups receive the Sinatra Team plan for $49.50 per month instead of $99 per month for 12 months across the entire workspace.
+    lifecycle:
+      status: active
+      effective_from: 2026-10-15T14:56:32.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 50% off the Sinatra Team plan ($49.50/month instead of $99/month for 10 concurrent tasks and 25 queued tasks across the workspace) for 12 months
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 5000
+          applies_to: Sinatra Team plan
+          duration:
+            kind: exact
+            value: P12M
+      consideration:
+        kind: unknown
+        description: Approved workspaces pay $49.50 per month on month-to-month billing during the first 12 months (returning to $99 per month at month 13) and pay their own LLM provider directly for model usage.
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Aimed at startup teams under 100 people with a verified company URL, though larger teams may also apply for manual review by Sinatra.
+    roles:
+      terms_authority_entity_id: ent_01m501165vrjk0gazhrcxwy0fj
+      access_operator_entity_id: ent_01m501165vrjk0gazhrcxwy0fj
+    access:
+      availability: public
+      method: form
+      url: https://www.sinatra.dev/startups
+      instructions: Submit the startup application form on the Sinatra for Startups page; approved teams receive a single-use discount code to enter at checkout when starting the Team plan from workspace settings.
+    terms_url: https://www.sinatra.dev/startups
+    source_ids:
+      - src_69e1b5ac6432e18936591b3538d9af89d2b5ea60b3990e7d9d9187f71dfea9dc
+      - src_259e2029e8ea94aeef59114f484744e58e0e5314c6fbe5e04d8032439e259563
