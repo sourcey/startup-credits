@@ -10,8 +10,8 @@ entity:
       valid_from: 2026-09-07T16:14:00.000Z
   category: ai-ml
 profile:
-  summary: Inference infrastructure for AI-native teams to run, monitor, and optimize production AI workloads.
-  description: Inference.net provides managed inference infrastructure for AI-native teams to run, monitor, and optimize production AI workloads.
+  summary: Inference.net provides managed AI infrastructure for deploying and monitoring models.
+  description: Inference.net provides managed AI infrastructure to deploy, monitor, trace, train, and evaluate AI models.
   links:
     site: https://inference.net/
 sources:
