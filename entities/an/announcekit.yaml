@@ -1,0 +1,74 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m501165yw1449spg3tfe3e4a
+  slug: announcekit
+  slug_aliases: []
+  name: AnnounceKit
+  domains:
+    - value: announcekit.app
+      role: primary
+      valid_from: 2026-10-15T14:56:32.000Z
+  category: communication
+profile:
+  summary: AnnounceKit is a product communication platform providing changelogs, in-app notification widgets, feature request voting, and NPS surveys for SaaS teams.
+  description: AnnounceKit helps software teams publish product updates, collect user feedback, manage feature requests, and run NPS satisfaction surveys across web and mobile applications.
+  links:
+    site: https://announcekit.app
+    pricing: https://announcekit.app/pricing
+sources:
+  - source_id: src_2c1b05c1c7bd072c5ac976a08a244fca33576c281bfc82ac772d58f4199570ff
+    url: https://announcekit.app/startup
+  - source_id: src_1ed582349e729de3c1798d05b0b4b65e1f1ad842717a3ef7209f699e2c42ed1b
+    url: https://announcekit.app/pricing
+programs:
+  - program_id: prg_01m501165zx08ygj8zv2vgqcjx
+    program_slug: announcekit-startup-program
+    program_slug_aliases: []
+    title: AnnounceKit Startup Program
+    summary: AnnounceKit offers qualifying early-stage startups 50% off any AnnounceKit plan or add-on for their first 12 months.
+    source_ids:
+      - src_2c1b05c1c7bd072c5ac976a08a244fca33576c281bfc82ac772d58f4199570ff
+      - src_1ed582349e729de3c1798d05b0b4b65e1f1ad842717a3ef7209f699e2c42ed1b
+offers:
+  - offer_id: off_01m5011660asf5sqe76kcvgvhf
+    program_id: prg_01m501165zx08ygj8zv2vgqcjx
+    offer_slug: fifty-percent-off-any-plan-12-months
+    offer_slug_aliases: []
+    title: 50% off any AnnounceKit plan for 12 months
+    summary: Early-stage startups with fewer than 5 employees, under 2 years since incorporation, and $1M or less in total funding receive 50% off any AnnounceKit plan for 12 months.
+    lifecycle:
+      status: active
+      effective_from: 2026-10-15T14:56:32.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 50% off the listed price on any AnnounceKit product or add-on (including Changelog, Knowledge Base, and NPS) for the first 12 months
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 5000
+          applies_to: Any AnnounceKit plan or add-on
+          duration:
+            kind: exact
+            value: P12M
+      consideration:
+        kind: unknown
+        description: Approved startups pay 50% of the listed plan price during the first 12 months (combinable with the 15% annual billing discount) and transition to the standard listed rate afterward.
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: external-verification
+        statement: The company has fewer than 5 employees (including founders and part-time members), was incorporated within the last 24 months, has raised $1M or less in total funding (bootstrapped companies qualify), and has a live product or a product in active development.
+    roles:
+      terms_authority_entity_id: ent_01m501165yw1449spg3tfe3e4a
+      access_operator_entity_id: ent_01m501165yw1449spg3tfe3e4a
+    access:
+      availability: public
+      method: contact
+      url: https://announcekit.app/startup
+      instructions: Use the Apply via email link on the AnnounceKit Startup Program page to submit your company name, website, team size, and founding date for review within 2 business days.
+    terms_url: https://announcekit.app/startup
+    source_ids:
+      - src_2c1b05c1c7bd072c5ac976a08a244fca33576c281bfc82ac772d58f4199570ff
+      - src_1ed582349e729de3c1798d05b0b4b65e1f1ad842717a3ef7209f699e2c42ed1b
