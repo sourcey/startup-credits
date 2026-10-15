@@ -22,24 +22,45 @@ offers:
     offer_slug: posthog-for-startups
     offer_slug_aliases: []
     title: PostHog for Startups
-    summary: Eligible early-stage startups get $50,000 in PostHog credits valid for 12 months, applicable across all PostHog products, along with merch and partner perks.
+    summary: Eligible early-stage startups get $50,000 in PostHog credits valid for 12 months, applicable across most PostHog products, along with merch and partner perks.
     lifecycle:
       status: active
       effective_from: 2026-07-27T07:37:32.419Z
     economics:
       consideration:
-        kind: unknown
-        description: The source record did not establish separate consideration.
+        kind: none
       benefits:
         - benefit_id: ben_primary
           description: $50,000 in credits
           kind: other
     eligibility:
       rule:
-        kind: manual
-        criterion_id: cri_requirement_01
-        statement: Company must be less than 2 years old, have raised less than $5M in funding, and have signed up on or after January 1st, 2023.
-        reason: not-machine-evaluable
+        kind: all
+        rules:
+          - kind: predicate
+            criterion_id: cri_age
+            statement: Company must be less than 2 years old.
+            fact: company.age_months
+            operator: lt
+            value:
+              type: number
+              value: 24
+          - kind: predicate
+            criterion_id: cri_funding
+            statement: Company must have raised less than $5M in funding.
+            fact: company.funding_raised_usd
+            operator: lt
+            value:
+              type: number
+              value: 5000000
+          - kind: manual
+            criterion_id: cri_signup
+            statement: Signed up on or after January 1st, 2023.
+            reason: not-machine-evaluable
+          - kind: manual
+            criterion_id: cri_domain
+            statement: PostHog account uses the company's email domain.
+            reason: not-machine-evaluable
     roles:
       terms_authority_entity_id: ent_01kyh8fpe4h2ykh2786fd0krzp
       access_operator_entity_id: ent_01kyh8fpe4h2ykh2786fd0krzp
