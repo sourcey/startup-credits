@@ -10,10 +10,10 @@ entity:
       valid_from: 2026-08-15T05:13:45.000Z
   category: hosting-infra
 profile:
-  description: CloudingHost provides VPS, web hosting, domains, SSL certificates, and business email
-    services across a global infrastructure network.
+  description: CloudingHost provides VPS, hosting, domains and cloud infrastructure across a global network.
   links:
     site: https://www.cloudinghost.com/en/
+  summary: CloudingHost is a cloud infrastructure provider that offers VPS, hosting and domains.
 sources:
   - source_id: src_a67bc76fdd7c15bc26a5c6b57a07155a836cc8edd911cbff55f0ac492d3c4989
     url: https://www.cloudinghost.com/en/startup-program/
