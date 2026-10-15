@@ -66,7 +66,8 @@ offers:
             basis_points: 1500
             kind: exact
       consideration:
-        kind: none
+        kind: variable
+        description: The startup pays discounted rates for RemotePass services.
     eligibility:
       rule:
         criterion_id: cri_01
