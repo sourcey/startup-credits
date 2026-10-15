@@ -1,0 +1,70 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m4yqe8pskz9mt8j8nr7gjqjf
+  slug: commented
+  slug_aliases: []
+  name: Commented
+  domains:
+  - value: commented.io
+    role: primary
+  category: productivity
+profile:
+  summary: Commented provides website and mobile feedback tools with annotations,
+    comments, team collaboration, and task management.
+  description: Commented is a collaboration and annotation tool for feedback on websites
+    and mobile applications.
+  links:
+    site: https://www.commented.io
+sources:
+- source_id: src_4523249caa41a3a957544fbcd0c73b3a9391f019dcaee31253db2db4a521a4af
+  url: https://www.commented.io/startup-program
+programs:
+- program_id: prg_01m4yqe8ps2p54yz4dy37q4new
+  program_slug: startup-accelerator-plan
+  program_slug_aliases: []
+  title: Commented Startup Accelerator Plan
+  source_ids:
+  - src_4523249caa41a3a957544fbcd0c73b3a9391f019dcaee31253db2db4a521a4af
+offers:
+- offer_id: off_01m4yqe8psgbjg2jv12kv73px7
+  program_id: prg_01m4yqe8ps2p54yz4dy37q4new
+  offer_slug: startup-business-plan-discount
+  offer_slug_aliases: []
+  title: Commented Business Startup Discount
+  summary: Qualifying startups can apply for up to 75% off the Commented Business
+    Plan for one year.
+  description: The vendor asks applicants to sign up before the end of the year, without
+    naming a calendar year on the program page.
+  lifecycle:
+    status: active
+  economics:
+    benefits:
+    - benefit_id: ben_business_discount
+      description: Up to 75% off the Commented Business Plan for one year.
+      kind: discount
+      percentage:
+        kind: up-to
+        basis_points: 7500
+      duration:
+        kind: exact
+        value: P1Y
+    consideration:
+      kind: unknown
+      description: The program page does not publish the final discounted subscription
+        price.
+  eligibility:
+    rule:
+      kind: manual
+      criterion_id: cri_startup
+      statement: Applicants must have incorporated less than two years ago and raised
+        no more than USD 1 million in total funding.
+      reason: external-verification
+  roles:
+    terms_authority_entity_id: ent_01m4yqe8pskz9mt8j8nr7gjqjf
+    access_operator_entity_id: ent_01m4yqe8pskz9mt8j8nr7gjqjf
+  access:
+    availability: public
+    method: form
+    url: https://www.commented.io/startup-program
+  source_ids:
+  - src_4523249caa41a3a957544fbcd0c73b3a9391f019dcaee31253db2db4a521a4af
