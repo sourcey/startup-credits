@@ -11,7 +11,7 @@ entity:
   category: data-analytics
 profile:
   summary: Formo is a data platform for crypto teams, with product analytics, wallet intelligence, onchain attribution, and token-gated forms.
-  description: Formo is a data platform for onchain applications with product analytics, wallet intelligence, attribution, segmentation, and retention tools.
+  description: Formo is an analytics and data platform for onchain Web3 applications that offers product analytics, wallet intelligence, attribution, audiences, forms, and alerts.
   links:
     site: https://formo.so
 sources:
