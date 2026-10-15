@@ -34,7 +34,7 @@ offers:
     offer_slug_aliases: []
     title: Up to $10,000 in usage credits
     summary: Venture-backed AI-native startups at Series B or earlier that are new Novita users can get up to $10,000 in credits for Model APIs and Agent Sandbox, redeemable for one year.
-    description: The first $1,000 is provided upfront. The next $5,000 is matched 1:1 on spend, and for the final $4,000 every $2 spent earns $1 in credit. Up to $5,000 applies to Agent Sandbox and up to $5,000 to Model API usage.
+    description: "The program provides up to $1,000 in credits upfront. The next $5,000 is matched at a 1:1 ratio, where every dollar spent earns one dollar in credit, and for the final $4,000, every two dollars spent earns one dollar in credit. Credits are split across Novita AI's startup products: up to $5,000 for Agent Sandbox usage and up to $5,000 for Model API usage."
     lifecycle:
       status: active
       effective_from: 2026-09-01T20:14:00.000Z
@@ -56,7 +56,7 @@ offers:
           kind: other
       consideration:
         kind: variable
-        description: Beyond the first $1,000, credits are earned through spend on Novita AI; the next $5,000 is matched 1:1 and the final $4,000 is earned at $1 of credit for every $2 spent.
+        description: Beyond the first up to $1,000 provided upfront, the next $5,000 is matched at a 1:1 ratio where every dollar spent earns one dollar in credit, and for the final $4,000, every two dollars spent earns one dollar in credit.
     eligibility:
       rule:
         kind: all
