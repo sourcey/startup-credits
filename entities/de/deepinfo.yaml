@@ -58,15 +58,39 @@ offers:
           - criterion_id: cri_01
             kind: manual
             reason: not-machine-evaluable
-            statement: Applicant is a venture-backed or bootstrapped startup operating in technology, software, or a technology-adjacent sector.
+            statement: Venture-backed or bootstrapped, the program is for companies that already run a product customers log into and hold data those customers care about.
           - criterion_id: cri_02
-            kind: manual
-            reason: vendor-discretion
-            statement: Applicant meets Deepinfo's indicative early-stage criteria, including being founded within the last 5 years, having fewer than 50 employees, and being under the current funding ceiling.
+            kind: predicate
+            statement: Founded within the last five years.
+            fact: company.age_months
+            operator: lte
+            value:
+              type: number
+              value: 60
           - criterion_id: cri_03
-            kind: manual
+            kind: predicate
+            statement: Fewer than 50 employees.
+            fact: company.employee_count
+            operator: lt
+            value:
+              type: number
+              value: 50
+          - kind: manual
+            criterion_id: cri_04
+            statement: Total funding under the ceiling set in the current program rules.
             reason: not-machine-evaluable
-            statement: Applicant is not a subsidiary of a larger organization that does not qualify for the program.
+          - kind: manual
+            criterion_id: cri_05
+            statement: Operating in technology or a technology-adjacent sector.
+            reason: not-machine-evaluable
+          - kind: manual
+            criterion_id: cri_06
+            statement: Not a subsidiary of a larger organization that wouldn’t qualify itself.
+            reason: not-machine-evaluable
+          - kind: manual
+            criterion_id: cri_07
+            statement: Final eligibility is confirmed during the application.
+            reason: vendor-discretion
     roles:
       terms_authority_entity_id: ent_01m1q4j3mcpk6wqff4r9deywaq
       access_operator_entity_id: ent_01m1q4j3mcpk6wqff4r9deywaq
