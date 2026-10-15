@@ -47,10 +47,28 @@ offers:
         kind: none
     eligibility:
       rule:
-        criterion_id: cri_01
-        kind: manual
-        reason: external-verification
-        statement: Company must have been founded within the last six months, provide an official document showing the founding date, and apply for its own team rather than a reseller or service provider.
+        kind: all
+        rules:
+          - kind: predicate
+            criterion_id: cri_01
+            statement: Company must have been founded within the last six months.
+            fact: company.age_months
+            operator: lte
+            value:
+              type: number
+              value: 6
+          - kind: manual
+            criterion_id: cri_02
+            statement: Company must provide an official document showing the founding date.
+            reason: external-verification
+          - kind: manual
+            criterion_id: cri_03
+            statement: Company must apply for its own team rather than a reseller or service provider.
+            reason: other
+          - kind: manual
+            criterion_id: cri_04
+            statement: Each company can apply once.
+            reason: other
     roles:
       terms_authority_entity_id: ent_01kz8x4s4hzw97ajp8pszrvrg2
       access_operator_entity_id: ent_01kz8x4s4hzw97ajp8pszrvrg2
