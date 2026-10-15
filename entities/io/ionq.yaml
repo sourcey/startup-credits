@@ -10,9 +10,10 @@ entity:
       valid_from: 2026-09-01T10:34:43.092Z
   category: hosting-infra
 profile:
-  description: IonQ develops trapped-ion quantum computers and provides cloud access to quantum-computing systems.
+  description: IonQ builds quantum computers and provides access to them through the IonQ Quantum Cloud and partner cloud providers.
   links:
     site: https://www.ionq.com
+  summary: IonQ builds quantum computers.
 sources:
   - source_id: src_2d09ab4eb68769314203d1fe7e3fe1a55c82b1cbc4fef5a30cab1eba61e02910
     url: https://www.ionq.com/programs/research-credits
