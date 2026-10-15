@@ -1,0 +1,85 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m4z13whr05zn7djj9xjatxnw
+  slug: agentgrown
+  slug_aliases: []
+  name: AgentGrown
+  domains:
+    - value: agentgrown.com
+      role: primary
+      valid_from: 2026-10-08T00:00:00.000Z
+  category: marketing
+profile:
+  summary: AgentGrown supplies coding agents with Google keyword, Search Console and Analytics data through an MCP server.
+  description: SEO data tools for coding agents, combining keyword research with Search Console and Google Analytics.
+  links:
+    site: https://agentgrown.com/
+sources:
+  - source_id: src_936882b8523d98c605db49480df02e0f5d2bba6b431d863b0a5ecaa1aad04b20
+    url: https://agentgrown.com/startups
+  - source_id: src_a8e081d8d47c1323980c485b4bc2dd26ca3d394dd4f364c2afc234d715723a86
+    url: https://agentgrown.com/
+programs:
+  - program_id: prg_01m4z13whttxge4pzj6780cnaw
+    program_slug: startups-program
+    program_slug_aliases: []
+    title: AgentGrown Startups Program
+    summary: Manually approved platform credit for eligible early-stage startups.
+    source_ids:
+      - src_936882b8523d98c605db49480df02e0f5d2bba6b431d863b0a5ecaa1aad04b20
+offers:
+  - offer_id: off_01m4z13whttqy1506yyeytf86q
+    program_id: prg_01m4z13whttxge4pzj6780cnaw
+    offer_slug: startup-platform-credit
+    offer_slug_aliases: []
+    title: AgentGrown Startup Platform Credit
+    summary: Approved startups receive $300 in AgentGrown credit, unlocked by an agent call within 30 days of approval and expiring six months after unlock.
+    description: Credit covers any tool at standard rates. It has no cash value and cannot be transferred, sold, refunded or combined with another AgentGrown startup offer. Unused credit can be removed for misuse.
+    lifecycle:
+      status: active
+      effective_from: 2026-10-08T00:00:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: $300 platform credit expiring six months after activation; usage determines how long it lasts.
+          kind: credit
+          value:
+            kind: exact
+            amount:
+              currency: USD
+              minor_units: 30000
+          duration:
+            kind: exact
+            value: P6M
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: external-verification
+            statement: Company founded within five years, with less than $10M raised; bootstrapped companies qualify.
+          - criterion_id: cri_02
+            kind: manual
+            reason: external-verification
+            statement: Own a live production website connected to AgentGrown with Google Search Console.
+          - criterion_id: cri_03
+            kind: manual
+            reason: external-verification
+            statement: New customers only; accounts with more than $100 of purchased credit are ineligible. One application per company and account.
+          - criterion_id: cri_04
+            kind: manual
+            reason: vendor-discretion
+            statement: Manual application approval required; activate through an agent call within 30 days of approval or the offer lapses.
+    roles:
+      terms_authority_entity_id: ent_01m4z13whr05zn7djj9xjatxnw
+      access_operator_entity_id: ent_01m4z13whr05zn7djj9xjatxnw
+    access:
+      availability: public
+      method: form
+      url: https://agentgrown.com/startups
+      instructions: Sign in with Google, connect the site and Search Console, then apply. Review usually takes two to three days. An already connected agent unlocks credit on approval.
+    source_ids:
+      - src_936882b8523d98c605db49480df02e0f5d2bba6b431d863b0a5ecaa1aad04b20
