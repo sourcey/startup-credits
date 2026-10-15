@@ -10,9 +10,10 @@ entity:
       valid_from: 2026-08-03T22:36:44.504Z
   category: devtools-other
 profile:
-  description: DronaHQ is a low-code platform for building internal tools, dashboards, forms, workflows, and custom applications.
+  description: DronaHQ is a no-code platform for building internal tools, dashboards, forms, and custom applications.
   links:
     site: https://www.dronahq.com
+  summary: DronaHQ provides a no-code platform to build custom applications.
 sources:
   - source_id: src_f1ecc6e4c082ecf85df50414e8a8b240ee01457192293ea2e7be3233a6a3e0df
     url: https://www.dronahq.com/startup-program/
