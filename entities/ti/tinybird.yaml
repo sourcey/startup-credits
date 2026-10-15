@@ -10,9 +10,10 @@ entity:
       valid_from: 2026-08-01T07:08:28.136Z
   category: data-analytics
 profile:
-  description: All the infrastructure you need to ship analytics in your app. Capture, store, transform, and serve data without dependencies on external tools or teams.
+  description: Tinybird is a managed ClickHouse service with flexible deployment options used to quickly integrate real-time, user-facing analytics features into projects.
   links:
     site: https://www.tinybird.co
+  summary: Tinybird is a managed ClickHouse service for integrating real-time analytics features.
 sources:
   - source_id: src_7fb5b5e82f4a81615b777cc0141b5c340103178a3a81b8e0dbd78a836a23a4eb
     url: https://www.tinybird.co/open-source-program
@@ -63,7 +64,8 @@ offers:
           description: Tinybird Swag Kits (one per founder/maintainer)
           kind: other
       consideration:
-        kind: none
+        kind: variable
+        description: The startup pays the discounted price of the Tinybird Developer Plan.
     eligibility:
       rule:
         kind: all
