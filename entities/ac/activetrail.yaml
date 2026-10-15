@@ -11,9 +11,10 @@ entity:
       valid_from: 2026-08-03T11:09:34+00:00
   category: marketing
 profile:
-  description: ActiveTrail provides email marketing, marketing automation, landing pages, SMS marketing, signup forms, and online survey tools.
+  description: ActiveTrail provides communication tools including emails, signup forms, landing pages, and surveys.
   links:
     site: https://www.activetrail.com
+  summary: ActiveTrail provides communication tools.
 sources:
   - source_id: src_821b334635a318d5c42784781af7783748de97d762c7270ac6541b8206ce7575
     url: https://www.activetrail.com/exclusive-startups-offer/
