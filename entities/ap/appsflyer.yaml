@@ -10,9 +10,10 @@ entity:
       valid_from: 2026-08-09T09:09:37.801Z
   category: marketing
 profile:
-  description: AppsFlyer provides mobile marketing measurement, attribution, analytics, deep linking, and campaign optimization tools.
+  description: AppsFlyer provides a platform to unify measurement, deep linking, data collaboration, and AI across mobile, web, CTV, and console.
   links:
     site: https://www.appsflyer.com
+  summary: AppsFlyer provides a platform for measurement, deep linking, data collaboration, and AI.
 sources:
   - source_id: src_b44318b708b941f5d224345a80ea0d603ecd61c4623064a5a2c00c042dcb2287
     url: https://www.appsflyer.com/start/aws/
