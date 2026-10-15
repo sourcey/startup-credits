@@ -10,9 +10,10 @@ entity:
       valid_from: 2026-08-04T16:30:57.768Z
   category: marketing
 profile:
-  description: Mirava provides pricing localization, analytics, and bulk price management for App Store, Google Play, and Stripe products.
+  description: Mirava is a monetisation intelligence platform that helps optimize an app's subscription pricing across over 170 countries.
   links:
     site: https://www.mirava.io
+  summary: Mirava is a monetisation intelligence platform for app-store pricing.
 sources:
   - source_id: src_2c10505ca4118aefb7ce120fb258556a5380e02cf5de4c208bd45a26000dec06
     url: https://www.mirava.io/startup-program
