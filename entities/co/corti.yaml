@@ -86,6 +86,6 @@ offers:
     access:
       availability: public
       method: form
-      url: https://www.corti.ai/corti-for-startups
+      url: https://www.corti.ai/startups
     source_ids:
       - src_6aa1946fed974ccf46129bdb6fabb3e5c538a4b924eb8935598eb7c27ba829a8
