@@ -10,7 +10,7 @@ entity:
       valid_from: 2026-09-01T08:18:14.1911726Z
   category: auth-security
 profile:
-  summary: DMARC reporting, monitoring, and email-domain authentication platform.
+  summary: DMARCwise provides DMARC monitoring and reporting to protect domains from abuse.
   description: DMARCwise provides DMARC reporting and monitoring, domain validation, SPF and DKIM monitoring, SMTP TLS reporting, hosted DMARC and MTA-STS services, diagnostics, and DNS history.
   links:
     site: https://dmarcwise.io
