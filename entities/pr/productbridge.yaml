@@ -1,0 +1,103 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m5011661nzxqdwq5he8q87gh
+  slug: productbridge
+  slug_aliases: []
+  name: ProductBridge
+  domains:
+    - value: productbridge.io
+      role: primary
+      valid_from: 2026-10-15T14:56:32.000Z
+  category: support
+profile:
+  summary: ProductBridge is an AI-native customer support and product feedback platform combining support chat, feedback boards, roadmaps, changelogs, surveys, and a help center.
+  description: ProductBridge unifies customer support chat, feedback collection, duplicate request grouping, public roadmaps, changelogs, help center articles, and in-app surveys on a flat-priced workspace plan.
+  links:
+    site: https://productbridge.io
+sources:
+  - source_id: src_e2539a2f135658aef2abc9e8ca9d58f4828bf7c32da93cd061a3a8a345eb08f6
+    url: https://productbridge.io/early-stage-program
+  - source_id: src_6ed962d896fe50e5c32d90d6cd8da1833dceef638812efc8f5a035985cfe0b1b
+    url: https://productbridge.io
+programs:
+  - program_id: prg_01m5011662hb4enm9kqd23x3qb
+    program_slug: productbridge-early-stage-program
+    program_slug_aliases: []
+    title: ProductBridge Early Stage Program
+    summary: ProductBridge gives early-stage startups 6 months free on its Growth plan followed by a stepped discount across months 7 through 24.
+    source_ids:
+      - src_e2539a2f135658aef2abc9e8ca9d58f4828bf7c32da93cd061a3a8a345eb08f6
+      - src_6ed962d896fe50e5c32d90d6cd8da1833dceef638812efc8f5a035985cfe0b1b
+offers:
+  - offer_id: off_01m5011663yts1wxdg0zqx8sdd
+    program_id: prg_01m5011662hb4enm9kqd23x3qb
+    offer_slug: growth-plan-24-month-stepped-startup-discount
+    offer_slug_aliases: []
+    title: 6 months free on Growth plan plus stepped discounts through month 24
+    summary: Qualifying early-stage startups get 100% off the ProductBridge Growth plan ($59/mo) in months 1-6, 75% off ($14/mo) in months 7-12, 50% off ($29/mo) in months 13-18, and 25% off ($44/mo) in months 19-24.
+    lifecycle:
+      status: active
+      effective_from: 2026-10-15T14:56:32.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 100% off the ProductBridge Growth plan ($0/month against the $59/month list price) for months 1 to 6
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 10000
+          applies_to: ProductBridge Growth plan
+          duration:
+            kind: exact
+            value: P6M
+        - benefit_id: ben_02
+          description: 75% off the ProductBridge Growth plan ($14/month against the $59/month list price) for months 7 to 12
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 7500
+          applies_to: ProductBridge Growth plan
+          duration:
+            kind: exact
+            value: P6M
+        - benefit_id: ben_03
+          description: 50% off the ProductBridge Growth plan ($29/month against the $59/month list price) for months 13 to 18
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 5000
+          applies_to: ProductBridge Growth plan
+          duration:
+            kind: exact
+            value: P6M
+        - benefit_id: ben_04
+          description: 25% off the ProductBridge Growth plan ($44/month against the $59/month list price) for months 19 to 24
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 2500
+          applies_to: ProductBridge Growth plan
+          duration:
+            kind: exact
+            value: P6M
+      consideration:
+        kind: unknown
+        description: Approved companies pay $0/month in months 1-6, $14/month in months 7-12, $29/month in months 13-18, and $44/month in months 19-24 on monthly billing before moving to the $59/month list price in month 25.
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: external-verification
+        statement: The company has raised less than $1M in funding, was founded less than 2 years ago, and has never been on a paid ProductBridge plan.
+    roles:
+      terms_authority_entity_id: ent_01m5011661nzxqdwq5he8q87gh
+      access_operator_entity_id: ent_01m5011661nzxqdwq5he8q87gh
+    access:
+      availability: public
+      method: form
+      url: https://productbridge.io/early-stage-program
+      instructions: Apply through the ProductBridge Early Stage Program page; applications are reviewed manually within one working day and approved companies have 30 days to activate their subscription.
+    terms_url: https://productbridge.io/early-stage-program
+    source_ids:
+      - src_e2539a2f135658aef2abc9e8ca9d58f4828bf7c32da93cd061a3a8a345eb08f6
+      - src_6ed962d896fe50e5c32d90d6cd8da1833dceef638812efc8f5a035985cfe0b1b
