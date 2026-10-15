@@ -11,7 +11,7 @@ entity:
   category: design
 profile:
   summary: Interactive 3D and augmented-reality presentation platform.
-  description: JigSpace lets teams create interactive 3D and augmented-reality presentations from CAD and other 3D files, add animations and guided steps, and share presentations across mobile, desktop, and spatial-computing devices.
+  description: JigSpace lets teams create 3D and augmented reality presentations from CAD files, add animations, and share presentations across iOS, Android, and desktop devices.
   links:
     site: https://www.jig.com
 sources:
