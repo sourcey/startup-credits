@@ -10,8 +10,8 @@ entity:
       valid_from: 2026-09-01T04:36:00.000Z
   category: devtools-other
 profile:
-  summary: Documentation platform for publishing product documentation, API references, and AI-assisted reader support.
-  description: Relevate is a documentation platform for publishing product documentation, API references, and AI-assisted reader support.
+  summary: Knowledge base platform providing docs, email, and status features.
+  description: Relevate is a knowledge base platform that provides docs, email, and status features.
   links:
     site: https://relevate.app/
 sources:
@@ -22,7 +22,7 @@ programs:
     program_slug: relevate-startup-program
     program_slug_aliases: []
     title: Relevate Startup Program
-    summary: Relevate gives eligible early-stage startups 50% off its Pro plan, priority onboarding, and early access to new features.
+    summary: Relevate gives eligible early-stage startups 50% off its Growth plan, priority onboarding, and early access to new features.
     source_ids:
       - src_b23df5d4b758912c5f20a49f66a277540c058bd8d4d40bc83a8853a336762b11
 offers:
@@ -30,15 +30,15 @@ offers:
     program_id: prg_hcyy4re36bmt0ga88wk0mfwdf6
     offer_slug: fifty-percent-off-pro-for-eligible-startups
     offer_slug_aliases: []
-    title: 50% Off Relevate Pro While Eligible
-    summary: Eligible startups receive 50% off Relevate Pro for as long as they continue to qualify, plus priority onboarding and early feature access.
+    title: 50% Off Relevate Growth While Eligible
+    summary: Eligible startups receive 50% off Relevate Growth for as long as they continue to qualify, plus priority onboarding and early feature access.
     lifecycle:
       status: active
       effective_from: 2026-09-01T04:36:00.000Z
     economics:
       benefits:
         - benefit_id: ben_01
-          description: 50% off Pro as long as the startup is eligible.
+          description: 50% off Growth as long as the startup is eligible.
           kind: discount
           percentage:
             kind: exact
