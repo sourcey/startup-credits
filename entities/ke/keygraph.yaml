@@ -41,12 +41,12 @@ offers:
     economics:
       benefits:
         - benefit_id: ben_01
-          description: 100% free Keygraph Pro, until you graduate from the program.
+          description: The offer provides 100% free Keygraph Pro until the startup graduates from the program.
           kind: free-service
           service: Keygraph Pro
       consideration:
         kind: variable
-        description: You connect your own AI provider key and pay your provider directly for inference usage.
+        description: A startup connects its own AI provider key and pays its provider directly for inference usage.
     eligibility:
       rule:
         kind: manual
@@ -60,7 +60,7 @@ offers:
       availability: public
       method: form
       url: https://docs.google.com/forms/d/e/1FAIpQLSeQs4HV97_0p3L4gZnHCAdBLnd2eqrbTnZPhbSuhdLqSQLygQ/viewform
-    terms_url: https://keygraph.io/terms
+    terms_url: https://keygraph.io/community-program
     source_ids:
       - src_d49cc59d5fcdf0f7d6ca686ba70e70e7ae56ae6c15b8abfa488331cc3299d894
       - src_ddbbca4e16fd70fdc25ae83d92ee233a2688fc296b9e989f55905315f8ce3535
