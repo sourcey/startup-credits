@@ -1,0 +1,74 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m4ywzabnn64fgt47kv06akyd
+  slug: invohydra
+  slug_aliases: []
+  name: InvoHydra
+  domains:
+    - value: invohydra.com
+      role: primary
+      valid_from: 2026-10-15T04:26:21.880Z
+  category: finance-accounting
+profile:
+  summary: InvoHydra provides integrated billing, customer management, HR and payroll software for businesses.
+  description: InvoHydra connects invoicing, accounting, customer management and people operations in one platform.
+  links:
+    site: https://www.invohydra.com/
+sources:
+  - source_id: src_45b7829d398208620a1ff6d5427689b01db79682a00de546ea11ee86218cc164
+    url: https://www.invohydra.com/startup-programs
+  - source_id: src_6aa70c8e92363eb81d3eec8b3a516aaf601706b8ef665b41e4e5d93541221cde
+    url: https://www.invohydra.com/terms
+programs:
+  - program_id: prg_01m4ywzabq5dtse359z4k7x1fs
+    program_slug: invohydra-startup-program
+    program_slug_aliases: []
+    title: InvoHydra Startup Program
+    source_ids:
+      - src_45b7829d398208620a1ff6d5427689b01db79682a00de546ea11ee86218cc164
+offers:
+  - offer_id: off_01m4ywzabrzrnh2a9ex5fwrncp
+    program_id: prg_01m4ywzabq5dtse359z4k7x1fs
+    offer_slug: startup-plan-discount
+    offer_slug_aliases: []
+    title: InvoHydra startup plan discount
+    summary: Eligible recently incorporated companies may receive 30–50% off selected InvoHydra plans after document verification and vendor approval.
+    lifecycle:
+      status: active
+      effective_from: 2026-10-15T04:26:21.880Z
+    economics:
+      benefits:
+        - benefit_id: ben_startup_discount
+          kind: discount
+          description: Potential discount on selected plans; the final offer requires approval. Discount duration is not published.
+          percentage:
+            kind: range
+            minimum_basis_points: 3000
+            maximum_basis_points: 5000
+      consideration:
+        kind: variable
+        description: Selected plan pricing and additional terms are confirmed by InvoHydra after review.
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_incorporation
+            kind: manual
+            reason: not-machine-evaluable
+            statement: Company incorporated within the three years preceding application; a valid Certificate of Incorporation is mandatory.
+          - criterion_id: cri_approval
+            kind: manual
+            reason: vendor-discretion
+            statement: InvoHydra verifies eligibility and confirms qualifying plans and the final discount; approval and the maximum discount are not guaranteed.
+    roles:
+      terms_authority_entity_id: ent_01m4ywzabnn64fgt47kv06akyd
+      access_operator_entity_id: ent_01m4ywzabnn64fgt47kv06akyd
+    access:
+      availability: public
+      method: contact
+      url: https://www.invohydra.com/startup-programs
+      instructions: Use the contact options on the startup program page to submit company details and incorporation documents for review.
+    terms_url: https://www.invohydra.com/terms
+    source_ids:
+      - src_45b7829d398208620a1ff6d5427689b01db79682a00de546ea11ee86218cc164
+      - src_6aa70c8e92363eb81d3eec8b3a516aaf601706b8ef665b41e4e5d93541221cde
