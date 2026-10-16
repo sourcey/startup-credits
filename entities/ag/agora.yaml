@@ -70,7 +70,6 @@ offers:
     access:
       availability: other
       method: other
-      url: https://explore.agora.io/vc-ai-jumpstart-program
       instructions: A venture capital firm applies through the form on the program page for its portfolio companies.
     source_ids:
       - src_cd68c6e66e17e06fe24fd7d51291d063a09330467e48ba04beaef478652d72b6
