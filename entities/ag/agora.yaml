@@ -68,8 +68,9 @@ offers:
       terms_authority_entity_id: ent_01kzy6p6zs4ytd7b0syw4dt0f6
       access_operator_entity_id: ent_01kzy6p6zs4ytd7b0syw4dt0f6
     access:
-      availability: public
-      method: form
+      availability: other
+      method: other
       url: https://explore.agora.io/vc-ai-jumpstart-program
+      instructions: A venture capital firm applies through the form on the program page for its portfolio companies.
     source_ids:
       - src_cd68c6e66e17e06fe24fd7d51291d063a09330467e48ba04beaef478652d72b6
