@@ -10,7 +10,7 @@ entity:
       valid_from: 2026-07-27T07:35:15.230Z
   category: hosting-infra
 profile:
-  description: Vercel enables founders to deploy faster, scale globally, and ship world-class AI products.
+  description: Vercel provides hosting and tools for building and deploying web applications.
   links:
     site: https://vercel.com
 sources:
