@@ -19,18 +19,17 @@ sources:
     url: https://claude.com/programs/startups
   - source_id: src_565b5fa1fe378b99c96415d199b295e771d941a58c6eb4ed6f7af52c105878c0
     url: https://claude.com/resources/articles/were-expanding-the-claude-startups-program-to-help-founders-build
-  - source_id: src_30b242fda39e4a5436c9c893d3476854f1e433b5cc310f5e05fccfa8c2304431
-    url: https://platform.claude.com/claude-for-startups
 programs: []
 offers:
   - offer_id: off_01kyh8fpe1kd3rx9h97ke87dbz
     offer_slug: claude-for-startups-program-credits-and-priority-rate-limits
     offer_slug_aliases: []
-    title: Claude Startups benefits for current members
-    summary: Approved members can use their Claude API credit, Claude Team benefit and partner offers, and join group sessions and events. The current cohort is full and new applications are closed.
+    title: Claude Startups program
+    summary: Anthropic's Claude Startups program gives members a year of Claude Team, a one-time $1,000 Claude API credit and partner offers. Its current cohort is full, and Anthropic is not accepting new applications.
     lifecycle:
-      status: active
+      status: ended
       effective_from: 2026-07-27T07:35:35.548Z
+      effective_until: 2026-10-13T00:00:00Z
     economics:
       consideration:
         kind: none
@@ -51,7 +50,7 @@ offers:
           kind: free-service
           service: Claude Team
         - benefit_id: ben_stack
-          description: Partner discounts and credits through the Claude Startup Stack; actual value depends on the offers redeemed
+          description: Partner discounts and credits worth up to $45,000 through the Claude Startup Stack; actual value depends on the offers redeemed
           kind: other
         - benefit_id: ben_events
           description: Group sessions with Anthropic's Applied AI team and invitations to startup events
@@ -60,17 +59,15 @@ offers:
       rule:
         kind: manual
         criterion_id: cri_requirement_01
-        statement: Already approved as a Claude Startups member.
+        statement: Startups founded in the last five years or funded in the last two.
         reason: not-machine-evaluable
     roles:
       terms_authority_entity_id: ent_01kyh8fpe15bvn8rdb84vmk85d
       access_operator_entity_id: ent_01kyh8fpe15bvn8rdb84vmk85d
     access:
-      availability: membership
-      method: other
-      instructions: Existing members can sign in to the Claude Startups portal to use their benefits.
-      url: https://platform.claude.com/claude-for-startups
+      availability: public
+      method: form
+      url: https://claude.com/programs/startups
     source_ids:
       - src_9cda0b77bc2bd94c6d922eb1c010e2efaf00a0b72a54651169cc1034120989f6
       - src_565b5fa1fe378b99c96415d199b295e771d941a58c6eb4ed6f7af52c105878c0
-      - src_30b242fda39e4a5436c9c893d3476854f1e433b5cc310f5e05fccfa8c2304431
