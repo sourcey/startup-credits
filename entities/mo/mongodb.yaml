@@ -10,9 +10,10 @@ entity:
       valid_from: 2026-07-27T07:41:47.670Z
   category: databases
 profile:
-  description: MongoDB for Startups offers free MongoDB Atlas credits, Voyage AI tokens, one-on-one technical advice, co-marketing opportunities, and access to our partner network.
+  description: MongoDB for Startups offers free MongoDB Atlas credits, Voyage AI tokens, one-on-one technical advice, co-marketing opportunities, and access to the MongoDB partner network.
   links:
     site: https://www.mongodb.com
+  summary: MongoDB offers a startup program that provides Atlas credits, Voyage AI tokens, and technical support to eligible companies.
 sources:
   - source_id: src_87fa40e252a9c0c03f4ac9ffad48bd99a2d2b8e7777d03753698a2b1458074fe
     url: https://www.mongodb.com/solutions/startups
@@ -57,45 +58,32 @@ offers:
             fact: company.age_months
             kind: predicate
             operator: lt
-            statement: Startup must be less than 7 years old
+            statement: Less than 7 years old
             value:
               type: number
               value: 84
           - criterion_id: cri_02
-            fact: company.stage
-            kind: predicate
-            operator: in
-            statement: Startup funding stage must be Series A or earlier
-            value:
-              type: string-set
-              values:
-                - Bootstrapped
-                - Pre-seed
-                - Seed
-                - Series A
+            kind: manual
+            statement: Series A or earlier
+            reason: other
           - criterion_id: cri_03
-            fact: company.industry
-            kind: predicate
-            operator: neq
-            statement: Startup must be focused on a single software-based product or service
-            value:
-              type: string
-              value: agency_or_dev_shop
+            kind: manual
+            statement: "Focused on a single software-based product or service (note: development shops and agencies are not eligible)"
+            reason: other
           - criterion_id: cri_04
-            fact: company.is_current_customer
-            kind: predicate
-            operator: absent
-            statement: Must not be a previous participant accepted into MongoDB for Startups
+            kind: manual
+            statement: Not previously accepted into the MongoDB for Startups program
+            reason: other
           - criterion_id: cri_05
             kind: manual
             reason: external-verification
-            statement: Must have an active company website and LinkedIn profile
+            statement: Have an active company website and LinkedIn profile
     roles:
       terms_authority_entity_id: ent_01kyh8fpe4ys74qx1k4zfcqpjv
       access_operator_entity_id: ent_01kyh8fpe4ys74qx1k4zfcqpjv
     access:
       availability: public
       method: form
-      url: https://www.mongodb.com/startups
+      url: https://www.mongodb.com/solutions/startups
     source_ids:
       - src_e0bda57ca6e319ab92324c417a2a85c8ebc6df9632a7fa410a23ae14b296fa6e
