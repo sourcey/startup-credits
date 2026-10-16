@@ -1,0 +1,74 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m504nxdw9xa4z0b4xnayy5ge
+  slug: fal
+  slug_aliases: []
+  name: fal
+  domains:
+    - value: fal.ai
+      role: primary
+      valid_from: 2026-10-15T15:59:33.000Z
+  category: ai-ml
+profile:
+  summary: fal is a generative media platform offering pay-per-use AI model APIs and serverless GPUs for image, video, audio, and 3D.
+  description: fal provides pay-per-use image, video, audio, and 3D model APIs alongside serverless GPU compute for generative media.
+  links:
+    site: https://fal.ai
+    pricing: https://fal.ai/pricing
+sources:
+  - source_id: src_de1be93ecce2cc24a6566889413cdab0b62ac3bc6217545d49087ccc683e5d2f
+    url: https://fal.ai/startups
+  - source_id: src_6166a28de734ac8d4df19b395679c8bda6aa1b1a6b056c11e466994ff0c27cab
+    url: https://fal.ai/pricing
+programs:
+  - program_id: prg_01m504nxe01wad0xz0e143sp5x
+    program_slug: fal-startup-program
+    program_slug_aliases: []
+    title: fal Startup Program
+    summary: fal offers early-stage startups with traction or venture backing credits starting at $1,000 and scaling up to $5,000 based on usage.
+    source_ids:
+      - src_de1be93ecce2cc24a6566889413cdab0b62ac3bc6217545d49087ccc683e5d2f
+      - src_6166a28de734ac8d4df19b395679c8bda6aa1b1a6b056c11e466994ff0c27cab
+offers:
+  - offer_id: off_01m504nxe0vs60jda1w81ppqky
+    program_id: prg_01m504nxe01wad0xz0e143sp5x
+    offer_slug: startup-pack-credits
+    offer_slug_aliases: []
+    title: fal Startup Program
+    summary: Startups with traction or venture backing receive $1,000 in credits to start, with the opportunity to scale up to $5,000 as monthly usage grows.
+    lifecycle:
+      status: active
+      effective_from: 2026-10-15T15:59:33.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: $1,000 in credits to start, scaling up to $5,000 as usage scales on fal
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 100000
+            kind: exact
+        - benefit_id: ben_02
+          description: Partner perks from infrastructure partners
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: external-verification
+        statement: The Startup Program is for companies with traction or venture backing scaling generative media on fal.
+    roles:
+      terms_authority_entity_id: ent_01m504nxdw9xa4z0b4xnayy5ge
+      access_operator_entity_id: ent_01m504nxdw9xa4z0b4xnayy5ge
+    access:
+      availability: public
+      method: form
+      url: https://fal.ai/startups
+      instructions: Apply via the application form on fal.ai/startups with company details, traction, or venture backing.
+    terms_url: https://fal.ai/startups
+    source_ids:
+      - src_de1be93ecce2cc24a6566889413cdab0b62ac3bc6217545d49087ccc683e5d2f
+      - src_6166a28de734ac8d4df19b395679c8bda6aa1b1a6b056c11e466994ff0c27cab
