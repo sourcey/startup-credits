@@ -1,0 +1,69 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m50djjnm7a60errhq1ew9na0
+  slug: solami
+  slug_aliases: []
+  name: Solami
+  domains:
+    - value: solami.dev
+      role: primary
+      valid_from: 2026-10-15T18:35:44.692Z
+  category: hosting-infra
+profile:
+  summary: Solami provides RPC endpoints, streaming data, and transaction-delivery infrastructure for applications on Solana.
+  description: Solami provides Solana blockchain infrastructure and developer tools.
+  links:
+    site: https://solami.dev
+sources:
+  - source_id: src_8d61c148c849188f2806e05a7974914a3c267e4d92532441e28520642c493ae5
+    url: https://solami.dev/startup-program
+programs:
+  - program_id: prg_01m50djjnm4nftzx7f0amd92ta
+    program_slug: startup-program
+    program_slug_aliases: []
+    title: Solami Startup Program
+    summary: Startup infrastructure credits with eligibility and benefits varying by stage.
+    source_ids:
+      - src_8d61c148c849188f2806e05a7974914a3c267e4d92532441e28520642c493ae5
+offers:
+  - offer_id: off_01m50djjnm67vd1adexnyypnqm
+    program_id: prg_01m50djjnm4nftzx7f0amd92ta
+    offer_slug: early-tier-infrastructure-credits
+    offer_slug_aliases: []
+    title: Early-tier startup infrastructure credits
+    summary: Approved Early-tier startups receive $500 in infrastructure credits, usable across Solami products for 12 months from onboarding, without a payment commitment.
+    lifecycle:
+      status: active
+      effective_from: 2026-10-15T18:35:44.692Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          kind: credit
+          description: Credits cover all Solami products and expire 12 months after onboarding.
+          value:
+            kind: exact
+            amount:
+              currency: USD
+              minor_units: 50000
+          duration:
+            kind: exact
+            value: P12M
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: external-verification
+        statement: Pre-seed founders and bootstrapped builders with a working concept or early product may apply for the Early tier. Solami reviews applications. Existing customers may qualify subject to an account review and additional conditions.
+    roles:
+      terms_authority_entity_id: ent_01m50djjnm7a60errhq1ew9na0
+      access_operator_entity_id: ent_01m50djjnm7a60errhq1ew9na0
+    access:
+      availability: public
+      method: form
+      url: https://solami.dev/contact
+      instructions: Apply through the contact form with team, product, and stage details. Approval and onboarding precede credit issuance; the Early tier requires no payment.
+    terms_url: https://solami.dev/startup-program
+    source_ids:
+      - src_8d61c148c849188f2806e05a7974914a3c267e4d92532441e28520642c493ae5
