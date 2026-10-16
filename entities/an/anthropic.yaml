@@ -27,7 +27,7 @@ offers:
     title: Claude Startups program
     summary: Anthropic's Claude Startups program gives members a year of Claude Team, a one-time $1,000 Claude API credit and partner offers. Its current cohort is full, and Anthropic is not accepting new applications.
     lifecycle:
-      status: ended
+      status: paused
       effective_from: 2026-07-27T07:35:35.548Z
     economics:
       consideration:
