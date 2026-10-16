@@ -31,7 +31,7 @@ programs:
     program_slug: aws-activate
     program_slug_aliases: []
     title: AWS Activate
-    summary: AWS Activate provides credits, technical guidance, and resources to help startups test, build, and scale.
+    summary: AWS Activate offers startup credits through Founders and Portfolio, with different eligibility and credit limits for each route.
     source_ids:
       - src_e7804e1c8a7ac1fff655584c226c25f4be1e67fee3e9e2659ff6f336ffe95894
       - src_f6197d69cf4158099548005ec44644b6d0d768eff10c139830a6989688f59fd0
