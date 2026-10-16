@@ -57,7 +57,7 @@ offers:
       rule:
         kind: manual
         criterion_id: cri_01
-        statement: Commerce startups from stealth through Series B+ whose founders are building for conversion, speed, and consumer experience may apply.
+        statement: The program is for commerce startups from stealth through Series B+, founders building for conversion, speed, and consumer experience, and teams ready to replace clunky checkouts.
         reason: vendor-discretion
     roles:
       terms_authority_entity_id: ent_01kzgsex92jy29myfev6c0cs5t
