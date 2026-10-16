@@ -1,0 +1,76 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m4zx4jgbd71zzc5x3n2ga6rd
+  slug: stackblaze
+  slug_aliases: []
+  name: StackBlaze
+  domains:
+    - value: stackblaze.com
+      role: primary
+      valid_from: 2026-10-15T13:48:28.887Z
+  category: hosting-infra
+profile:
+  summary: StackBlaze is an all-in-one cloud platform for deploying applications, databases, and services without managing servers.
+  description: StackBlaze is a managed cloud platform that deploys apps, databases, and services from Git or Docker with private networking, TLS, and observability.
+  links:
+    site: https://www.stackblaze.com/
+sources:
+  - source_id: src_36e310555d80e8e8f8644159ce93664529bb0a7d106fb939e41c0f445d77e6b0
+    url: https://www.stackblaze.com/
+  - source_id: src_024ea2b497e162132e798fea6965823720756d9fc5d35c3ff5a13538c34a5273
+    url: https://www.stackblaze.com/startups
+programs:
+  - program_id: prg_01m4zx4jgh2j09dgbjwb9fs3rf
+    program_slug: startup-credits
+    program_slug_aliases: []
+    title: StackBlaze Startup Credits
+    summary: Early-stage startups can apply for platform credit on StackBlaze to spend across compute, databases, storage, and bandwidth.
+    source_ids:
+      - src_024ea2b497e162132e798fea6965823720756d9fc5d35c3ff5a13538c34a5273
+offers:
+  - offer_id: off_01m4zx4jghys6xrsxm6bpvq0sz
+    program_id: prg_01m4zx4jgh2j09dgbjwb9fs3rf
+    offer_slug: five-hundred-platform-credit
+    offer_slug_aliases: []
+    title: $500 StackBlaze platform credit for startups
+    summary: Approved early-stage startups receive $500 in StackBlaze platform credit, valid for 12 months, usable across compute, databases, storage, and bandwidth.
+    lifecycle:
+      status: active
+      effective_from: 2026-10-15T13:48:28.887Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_01
+          kind: credit
+          description: $500 in platform credit that offsets StackBlaze usage charges across compute, databases, storage, and bandwidth. Once approved, the credit applies automatically. Valid for 12 months.
+          duration:
+            kind: exact
+            value: P1Y
+          value:
+            amount:
+              currency: USD
+              minor_units: 50000
+            kind: exact
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_stage
+            kind: manual
+            statement: Applicant must be an early-stage startup, typically pre-seed to Series A.
+            reason: external-verification
+          - criterion_id: cri_approval
+            kind: manual
+            statement: StackBlaze reviews applications and applies approved credit to the StackBlaze account; most applications are reviewed within a few business days.
+            reason: vendor-discretion
+    roles:
+      terms_authority_entity_id: ent_01m4zx4jgbd71zzc5x3n2ga6rd
+      access_operator_entity_id: ent_01m4zx4jgbd71zzc5x3n2ga6rd
+    access:
+      availability: public
+      method: form
+      url: https://www.stackblaze.com/startups
+      instructions: Apply on the StackBlaze startups page. No credit card is required. Sign up with the same email used in the application so approved credit can be applied.
+    source_ids:
+      - src_024ea2b497e162132e798fea6965823720756d9fc5d35c3ff5a13538c34a5273
