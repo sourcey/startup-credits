@@ -1,0 +1,66 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m50bxmqh6ntnvbfhcww213kr
+  slug: deepidv
+  slug_aliases: []
+  name: deepidv
+  domains:
+    - value: deepidv.com
+      role: primary
+      valid_from: 2026-10-15T18:06:50.097Z
+  category: auth-security
+profile:
+  summary: deepidv provides APIs for identity checks, screening, fraud detection, and ongoing monitoring.
+  description: deepidv provides identity verification and fraud detection APIs.
+  links:
+    site: https://www.deepidv.com
+sources:
+  - source_id: src_f3dcd631812cb976292a97181f7f14ac46d9f4a7f9b82620d9e90b57c8bc369e
+    url: https://www.deepidv.com/startups
+programs:
+  - program_id: prg_01m50bxmqh8xbezgpk6bc5mm7w
+    program_slug: startup-program
+    program_slug_aliases: []
+    title: deepidv Start-Up Program
+    summary: Qualified startups can apply for a limited period of free API access.
+    source_ids:
+      - src_f3dcd631812cb976292a97181f7f14ac46d9f4a7f9b82620d9e90b57c8bc369e
+offers:
+  - offer_id: off_01m50bxmqhqhtcy0gm5jk01gx6
+    program_id: prg_01m50bxmqh8xbezgpk6bc5mm7w
+    offer_slug: free-startup-api-access
+    offer_slug_aliases: []
+    title: Free startup API access for 6 to 12 months
+    summary: Approved startups receive free API access for 6 to 12 months, with duration determined during a discovery call.
+    lifecycle:
+      status: active
+      effective_from: 2026-10-15T18:06:50.097Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          kind: free-service
+          service: Verification, screening, fraud detection, and monitoring APIs
+          description: Full API access without usage limits during the approved period.
+          duration:
+            kind: range
+            minimum: P6M
+            maximum: P12M
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: external-verification
+        statement: Startups from idea stage through Series A, including bootstrapped and solo founders worldwide, may apply. The vendor reviews product fit for identity, fraud, or compliance infrastructure through an application and discovery call; other verticals remain eligible alongside the listed priority industries.
+    roles:
+      terms_authority_entity_id: ent_01m50bxmqh6ntnvbfhcww213kr
+      access_operator_entity_id: ent_01m50bxmqh6ntnvbfhcww213kr
+    access:
+      availability: public
+      method: form
+      url: https://www.deepidv.com/startups
+      instructions: Apply using the vendor form and complete a discovery call. No credit card is required.
+    terms_url: https://www.deepidv.com/startups
+    source_ids:
+      - src_f3dcd631812cb976292a97181f7f14ac46d9f4a7f9b82620d9e90b57c8bc369e
