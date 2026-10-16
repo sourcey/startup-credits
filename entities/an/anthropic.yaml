@@ -17,23 +17,39 @@ profile:
 sources:
   - source_id: src_9cda0b77bc2bd94c6d922eb1c010e2efaf00a0b72a54651169cc1034120989f6
     url: https://claude.com/programs/startups
+  - source_id: src_565b5fa1fe378b99c96415d199b295e771d941a58c6eb4ed6f7af52c105878c0
+    url: https://claude.com/resources/articles/were-expanding-the-claude-startups-program-to-help-founders-build
 programs: []
 offers:
   - offer_id: off_01kyh8fpe1kd3rx9h97ke87dbz
     offer_slug: claude-for-startups-program-credits-and-priority-rate-limits
     offer_slug_aliases: []
     title: Claude Startups membership
-    summary: Claude Startups continues for current members, with offers on AI-native tools, group sessions and events. Anthropic is not accepting new applications while the current cohort is full.
+    summary: The current Claude Startups cohort is full and new applications are closed. Approved members retain access to their credits, Claude Team benefit, partner offers and events.
     lifecycle:
-      status: active
+      status: ended
       effective_from: 2026-07-27T07:35:35.548Z
     economics:
       consideration:
-        kind: unknown
-        description: The source record did not establish separate consideration.
+        kind: none
       benefits:
         - benefit_id: ben_primary
-          description: Offers on AI-native tools through the Claude Startup Stack
+          description: One-time $1,000 credit for the first-party Claude API
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 100000
+            kind: exact
+        - benefit_id: ben_team
+          description: One year of Claude Team for up to five Premium seats, for companies new to Team
+          duration:
+            kind: exact
+            value: P1Y
+          kind: free-service
+          service: Claude Team
+        - benefit_id: ben_stack
+          description: Partner discounts and credits through the Claude Startup Stack; actual value depends on the offers redeemed
           kind: other
         - benefit_id: ben_events
           description: Group sessions with Anthropic's Applied AI team and invitations to startup events
@@ -42,15 +58,16 @@ offers:
       rule:
         kind: manual
         criterion_id: cri_requirement_01
-        statement: Current Claude Startups membership is required. Anthropic is not accepting new applications for this cohort.
+        statement: Already approved for the current Claude Startups cohort; new applications are closed.
         reason: not-machine-evaluable
     roles:
       terms_authority_entity_id: ent_01kyh8fpe15bvn8rdb84vmk85d
       access_operator_entity_id: ent_01kyh8fpe15bvn8rdb84vmk85d
     access:
-      availability: membership
+      availability: other
       method: other
-      instructions: Current members can sign in from the program page. Anthropic is not accepting new applications for this cohort.
-      url: https://claude.com/programs/startups
+      instructions: Existing members can sign in to the Claude Startups portal to use their benefits. New applications are closed.
+      url: https://platform.claude.com/claude-for-startups
     source_ids:
       - src_9cda0b77bc2bd94c6d922eb1c010e2efaf00a0b72a54651169cc1034120989f6
+      - src_565b5fa1fe378b99c96415d199b295e771d941a58c6eb4ed6f7af52c105878c0
