@@ -1,0 +1,64 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m508m47z1vyz7xdby7wjfnvx
+  slug: zeni
+  slug_aliases: []
+  name: Zeni
+  domains:
+    - value: zeni.ai
+      role: primary
+      valid_from: 2026-08-01T12:27:57.374Z
+  category: finance-accounting
+profile:
+  summary: Zeni is an AI-powered finance concierge for startups offering bookkeeping, accounting, CFO, and tax services.
+  description: Zeni is an AI-powered finance concierge for startups offering full-service bookkeeping, accounting, CFO, and tax services and a real-time financial dashboard.
+  links:
+    site: https://www.zeni.ai
+sources:
+  - source_id: src_078940ac018c343633b7767e9585c438cab40111d8e65ed3520c075733d112a2
+    url: https://www.zeni.ai/
+  - source_id: src_5af15c175b972ada7f6e0487dc9385f214ca5825c52bf7ecdb54e53d1946183d
+    url: https://pulley.com/perks
+programs: []
+offers:
+  - offer_id: off_01m508m47z7n0zfn88my4ky7ds
+    offer_slug: 25-off-first-6-months-of-zeni-services-plus-waived-setup-fees
+    offer_slug_aliases: []
+    title: 25% off your first 6-months of Zeni services, plus waived setup fees
+    summary: 25% off your first 6-months of Zeni services, plus waived setup fees for U.S.-based startups.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-01T12:27:57.374Z
+    economics:
+      benefits:
+        - applies_to: Zeni services
+          benefit_id: ben_01
+          description: 25% off your first 6 months of Zeni services
+          duration:
+            kind: exact
+            value: P6M
+          kind: discount
+          percentage:
+            basis_points: 2500
+            kind: exact
+        - benefit_id: ben_02
+          description: Waived setup fees
+          kind: waiver
+          waived_item: setup fees
+      consideration:
+        kind: variable
+        description: Paying discounted service fees for Zeni services during the first 6 months.
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: not-machine-evaluable
+        statement: Available to U.S.-based startups.
+    roles:
+      terms_authority_entity_id: ent_01m508m47z1vyz7xdby7wjfnvx
+      access_operator_entity_id: ent_01m508m47z1vyz7xdby7wjfnvx
+    access:
+      availability: membership
+      method: other
+    source_ids:
+      - src_5af15c175b972ada7f6e0487dc9385f214ca5825c52bf7ecdb54e53d1946183d
