@@ -1,0 +1,65 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m4zy6dqf3dytq9xhyg47m1km
+  slug: threaddesk
+  slug_aliases: []
+  name: ThreadDesk
+  domains:
+    - value: threaddesk.io
+      role: primary
+      valid_from: 2026-10-15T14:06:57.778Z
+  category: support
+profile:
+  summary: ThreadDesk provides AI-powered customer support, marketing messaging, and CRM across WhatsApp, Instagram, email, and web chat.
+  description: ThreadDesk unifies AI-powered customer support, omnichannel messaging, and CRM tools.
+  links:
+    site: https://threaddesk.io/
+sources:
+  - source_id: src_d90fb7c7f2c0206eb88f5e763a80ab49335953933e8b07bfbdd00ea3a137501c
+    url: https://threaddesk.io/startups
+programs: []
+offers:
+  - offer_id: off_01m4zy6dqhqqy41gxnafj9hwhv
+    offer_slug: threaddesk-for-startups
+    offer_slug_aliases: []
+    title: ThreadDesk for Startups
+    summary: Eligible early-stage startups receive ThreadDesk Max free for six months, followed by 50% off the subscription for another six months.
+    lifecycle:
+      status: active
+      effective_from: 2026-10-15T14:06:57.778Z
+    economics:
+      benefits:
+        - benefit_id: ben_free
+          description: ThreadDesk Max subscription free for six months.
+          kind: free-service
+          service: ThreadDesk Max
+          duration:
+            kind: exact
+            value: P6M
+        - benefit_id: ben_discount
+          description: 50% off the subscription for the next six months.
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 5000
+          duration:
+            kind: exact
+            value: P6M
+      consideration:
+        kind: unknown
+        description: The program includes six free months followed by a discounted paid subscription.
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_01
+        statement: Applicants must have raised under $2M, or be bootstrapped with under $500k revenue; have a company website and matching-domain work email; and be new to paid ThreadDesk plans.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01m4zy6dqf3dytq9xhyg47m1km
+      access_operator_entity_id: ent_01m4zy6dqf3dytq9xhyg47m1km
+    access:
+      availability: public
+      method: form
+      url: https://threaddesk.io/startups
+    source_ids:
+      - src_d90fb7c7f2c0206eb88f5e763a80ab49335953933e8b07bfbdd00ea3a137501c
