@@ -19,15 +19,17 @@ sources:
     url: https://claude.com/programs/startups
   - source_id: src_565b5fa1fe378b99c96415d199b295e771d941a58c6eb4ed6f7af52c105878c0
     url: https://claude.com/resources/articles/were-expanding-the-claude-startups-program-to-help-founders-build
+  - source_id: src_30b242fda39e4a5436c9c893d3476854f1e433b5cc310f5e05fccfa8c2304431
+    url: https://platform.claude.com/claude-for-startups
 programs: []
 offers:
   - offer_id: off_01kyh8fpe1kd3rx9h97ke87dbz
     offer_slug: claude-for-startups-program-credits-and-priority-rate-limits
     offer_slug_aliases: []
-    title: Claude Startups membership
-    summary: The current Claude Startups cohort is full and new applications are closed. Approved members retain access to their credits, Claude Team benefit, partner offers and events.
+    title: Claude Startups benefits for current members
+    summary: Approved members can use their Claude API credit, Claude Team benefit and partner offers, and join group sessions and events. The current cohort is full and new applications are closed.
     lifecycle:
-      status: ended
+      status: active
       effective_from: 2026-07-27T07:35:35.548Z
     economics:
       consideration:
@@ -58,16 +60,17 @@ offers:
       rule:
         kind: manual
         criterion_id: cri_requirement_01
-        statement: Already approved for the current Claude Startups cohort; new applications are closed.
+        statement: Already approved as a Claude Startups member.
         reason: not-machine-evaluable
     roles:
       terms_authority_entity_id: ent_01kyh8fpe15bvn8rdb84vmk85d
       access_operator_entity_id: ent_01kyh8fpe15bvn8rdb84vmk85d
     access:
-      availability: other
+      availability: membership
       method: other
-      instructions: Existing members can sign in to the Claude Startups portal to use their benefits. New applications are closed.
+      instructions: Existing members can sign in to the Claude Startups portal to use their benefits.
       url: https://platform.claude.com/claude-for-startups
     source_ids:
       - src_9cda0b77bc2bd94c6d922eb1c010e2efaf00a0b72a54651169cc1034120989f6
       - src_565b5fa1fe378b99c96415d199b295e771d941a58c6eb4ed6f7af52c105878c0
+      - src_30b242fda39e4a5436c9c893d3476854f1e433b5cc310f5e05fccfa8c2304431
