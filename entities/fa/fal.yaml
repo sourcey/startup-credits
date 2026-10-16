@@ -1,0 +1,77 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m4xq4dc75vrzcw3j3wf5gwfn
+  slug: fal
+  slug_aliases: []
+  name: fal
+  domains:
+    - value: fal.ai
+      role: primary
+      valid_from: 2026-10-14T00:00:00.000Z
+  category: ai-ml
+profile:
+  summary: fal is a generative media platform that hosts image, video, and audio model inference through an API.
+  description: fal is a generative media cloud that serves image, video, and audio models through a hosted inference API.
+  links:
+    site: https://fal.ai
+sources:
+  - source_id: src_5bca1cbe64eae3cd6cc979e8f0797538b71a2c01174212be88b843f185fd54a1
+    url: https://fal.ai/startup-program
+programs:
+  - program_id: prg_01m4xq4dccg30hyr4zzr2spsyh
+    program_slug: fal-startup-program
+    program_slug_aliases: []
+    title: fal Startup Program
+    summary: fal's startup program grants approved early-stage companies compute credits that start at $1,000 and scale up to $5,000 as their monthly spend on fal grows.
+    source_ids:
+      - src_5bca1cbe64eae3cd6cc979e8f0797538b71a2c01174212be88b843f185fd54a1
+offers:
+  - offer_id: off_01m4xq4dcc9bnpkeyh3afht67b
+    program_id: prg_01m4xq4dccg30hyr4zzr2spsyh
+    offer_slug: fal-startup-program-credits
+    offer_slug_aliases: []
+    title: fal Startup Program credits
+    summary: Approved startups receive $1,000 in fal credits, rising to $2,500 or $5,000 as their monthly fal spend reaches $1,000 or $2,500.
+    description: Every approved team starts on the Startup pack at $1,000. Teams already spending at a higher volume on fal can be placed directly on the Scale ($2,500) or Growth ($5,000) pack.
+    lifecycle:
+      status: active
+      effective_from: 2026-10-14T00:00:00.000Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_01
+          description: $1,000 in fal credits for every approved team, scaling to $2,500 at $1,000/month of fal spend and $5,000 at $2,500/month of fal spend.
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 100000
+            kind: up-to
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: not-machine-evaluable
+            statement: The company shows a proven track record through real users, meaningful traction, or revenue, or is VC-backed by an institutional investor.
+          - criterion_id: cri_02
+            kind: manual
+            reason: not-machine-evaluable
+            statement: The team is based in Europe or Asia.
+          - criterion_id: cri_03
+            kind: manual
+            reason: not-machine-evaluable
+            statement: One application per company every 3 months; credits may not be resold or transferred.
+    roles:
+      terms_authority_entity_id: ent_01m4xq4dc75vrzcw3j3wf5gwfn
+      access_operator_entity_id: ent_01m4xq4dc75vrzcw3j3wf5gwfn
+    access:
+      availability: public
+      instructions: Submit the Startup Program application form on the fal site; an intro call is usually part of approval.
+      method: form
+      url: https://fal.ai/startup-program
+    terms_url: https://fal.ai/startup-program
+    source_ids:
+      - src_5bca1cbe64eae3cd6cc979e8f0797538b71a2c01174212be88b843f185fd54a1
