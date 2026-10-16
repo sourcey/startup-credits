@@ -1,0 +1,54 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m4wph20qzmpgkv56knhtf5hw
+  slug: orq-ai
+  slug_aliases:
+    - orq
+  name: Orq.ai
+  domains:
+    - value: orq.ai
+      role: primary
+      valid_from: 2026-10-14T07:55:14.328Z
+  category: ai-ml
+profile:
+  summary: AI gateway and platform for LLM routing, observability, governance and managed agents.
+  description: Orq.ai provides an AI gateway, MCP gateway, observability, governance and managed agents for teams building AI applications.
+  links:
+    site: https://orq.ai/
+sources:
+  - source_id: src_57fdba8a4d32abbe01d7ffa20bcf1e3b5619e688d187282f8f718b86e5b18d9d
+    url: https://orq.ai/pricing
+programs: []
+offers:
+  - offer_id: off_01m4wph20q8ev67pxcesc5za8z
+    offer_slug: early-stage-startup-discount
+    offer_slug_aliases: []
+    title: Discounts for startups, education, nonprofits and open source
+    summary: Startups, educational users, nonprofits and open-source projects can ask Orq.ai for tailored discounts. Discount size and duration are not published.
+    lifecycle:
+      status: active
+      effective_from: 2026-10-14T07:55:14.328Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Tailored pricing discounts for startups, educational users, nonprofits and open-source projects; amount and duration are not publicly specified.
+          kind: other
+      consideration:
+        kind: unknown
+        description: The pricing page does not establish separate consideration for the discount.
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Orq.ai asks applicants to contact support for a tailored proposal; the page does not publish detailed eligibility requirements.
+    roles:
+      terms_authority_entity_id: ent_01m4wph20qzmpgkv56knhtf5hw
+      access_operator_entity_id: ent_01m4wph20qzmpgkv56knhtf5hw
+    access:
+      availability: public
+      method: contact
+      instructions: Request a tailored discount proposal through the support contact published in the Discounts section of the pricing page.
+      url: https://orq.ai/pricing
+    source_ids:
+      - src_57fdba8a4d32abbe01d7ffa20bcf1e3b5619e688d187282f8f718b86e5b18d9d
