@@ -1,0 +1,66 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m4ywh6e35ey4vn8mm3adxaaw
+  slug: fathom
+  slug_aliases: []
+  name: Fathom
+  domains:
+    - value: fathom.ai
+      role: primary
+      valid_from: 2026-10-15T04:16:00.000Z
+  category: productivity
+profile:
+  description: Fathom records meetings and turns conversations into searchable summaries and action items.
+  summary: Fathom is an AI meeting assistant that records conversations, summarizes them, and helps teams search and share meeting insights.
+  links:
+    site: https://www.fathom.ai/
+sources:
+  - source_id: src_9f9de47fce01a07a203918237462b9f58624fa56eed78640ef4493a741335e66
+    url: https://www.fathom.ai/qualified-portfolio-partners
+  - source_id: src_8b72d5043a553291f5f4ba0ea43165b213adb73f2ed133f6677e06dacd326cb8
+    url: https://www.fathom.ai/pricing
+programs:
+  - program_id: prg_01m4ywh6e35hhdss9y23j50kyn
+    program_slug: qualified-portfolio-partner-program
+    program_slug_aliases: []
+    title: Fathom Qualified Portfolio Partner Program
+    summary: Fathom offers special pricing and additional support to companies affiliated with its participating venture capital firms and accelerator programs.
+    source_ids:
+      - src_9f9de47fce01a07a203918237462b9f58624fa56eed78640ef4493a741335e66
+offers:
+  - offer_id: off_01m4ywh6e34p6qj9d1368wgj8s
+    program_id: prg_01m4ywh6e35hhdss9y23j50kyn
+    offer_slug: up-to-two-years-free-fathom-team
+    offer_slug_aliases: []
+    title: Up to two years of Fathom Team free for eligible portfolio startups
+    summary: Startups affiliated with selected venture capital firms and accelerators can apply for up to two years of Fathom Team free through its Qualified Portfolio Partner Program.
+    lifecycle:
+      status: active
+      effective_from: 2026-10-15T04:16:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to two years of Fathom Team free for qualifying portfolio startups.
+          duration:
+            kind: up-to
+            value: P2Y
+          kind: free-service
+          service: Fathom Team
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: external-verification
+        statement: The startup must be affiliated with a venture capital firm or accelerator participating in Fathom's Qualified Portfolio Partner Program and qualify through the program's redemption process.
+    roles:
+      terms_authority_entity_id: ent_01m4ywh6e35ey4vn8mm3adxaaw
+      access_operator_entity_id: ent_01m4ywh6e35ey4vn8mm3adxaaw
+    access:
+      availability: membership
+      method: form
+      url: https://fathomvideo.typeform.com/to/tLb1WMVu
+    source_ids:
+      - src_9f9de47fce01a07a203918237462b9f58624fa56eed78640ef4493a741335e66
+      - src_8b72d5043a553291f5f4ba0ea43165b213adb73f2ed133f6677e06dacd326cb8
