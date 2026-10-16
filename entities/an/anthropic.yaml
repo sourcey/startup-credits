@@ -20,9 +20,8 @@ sources:
 programs: []
 offers:
   - offer_id: off_01kyh8fpe1kd3rx9h97ke87dbz
-    offer_slug: claude-startups-membership
-    offer_slug_aliases:
-      - claude-for-startups-program-credits-and-priority-rate-limits
+    offer_slug: claude-for-startups-program-credits-and-priority-rate-limits
+    offer_slug_aliases: []
     title: Claude Startups membership
     summary: Claude Startups continues for current members, with offers on AI-native tools, group sessions and events. Anthropic is not accepting new applications while the current cohort is full.
     lifecycle:
