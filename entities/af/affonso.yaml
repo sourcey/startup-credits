@@ -41,7 +41,7 @@ offers:
     economics:
       benefits:
         - benefit_id: ben_01
-          applies_to: The regular Affonso Elite plan price during program year one
+          applies_to: the regular Affonso Elite plan price during program year one
           description: 50% off the regular Elite plan price during the first program year.
           duration:
             kind: exact
@@ -51,7 +51,7 @@ offers:
             kind: exact
             basis_points: 5000
         - benefit_id: ben_02
-          applies_to: The regular Affonso Elite plan price during program year two
+          applies_to: the regular Affonso Elite plan price during program year two
           description: 25% off the regular Elite plan price during the second program year.
           duration:
             kind: exact
@@ -61,7 +61,7 @@ offers:
             kind: exact
             basis_points: 2500
         - benefit_id: ben_03
-          applies_to: The regular Affonso Elite plan price during program year three
+          applies_to: the regular Affonso Elite plan price during program year three
           description: 10% off the regular Elite plan price during the third program year.
           duration:
             kind: exact
