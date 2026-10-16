@@ -1,0 +1,74 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m4xg3wa86ha1nfxa19fdrt7z
+  slug: veraid
+  slug_aliases: []
+  name: VeraID
+  domains:
+  - value: veraid.io
+    role: primary
+    valid_from: '2026-10-14T15:22:25Z'
+  category: auth-security
+profile:
+  summary: VeraID provides identity security and governance for workforce and machine
+    identities.
+  description: VeraID provides identity security and governance for workforce and
+    machine identities.
+  links:
+    site: https://www.veraid.io/
+sources:
+- source_id: src_1a91f6ed7edcc58f5153f965999ccd0a8390594922438b00729bd76dccb50f9c
+  url: https://www.veraid.io/pricing/
+programs:
+- program_id: prg_01m4xg3wa8a1gvw8xpw7y3v5f6
+  program_slug: veraid-startup-discount
+  program_slug_aliases: []
+  title: VeraID startup discount
+  summary: Startups with under $5M raised may qualify for 50% off the first year after
+    VeraID reviews eligibility.
+  source_ids:
+  - src_1a91f6ed7edcc58f5153f965999ccd0a8390594922438b00729bd76dccb50f9c
+offers:
+- offer_id: off_01m4xg3wa82aqwc7rcbqf01b4z
+  program_id: prg_01m4xg3wa8a1gvw8xpw7y3v5f6
+  offer_slug: veraid-startup-discount
+  offer_slug_aliases: []
+  title: VeraID startup discount
+  summary: Startups with under $5M raised may qualify for 50% off the first year after
+    VeraID reviews eligibility.
+  lifecycle:
+    status: active
+    effective_from: '2026-10-14T15:22:25Z'
+  economics:
+    benefits:
+    - benefit_id: ben_01
+      kind: discount
+      description: 50% off the first year for qualifying startups.
+      percentage:
+        kind: exact
+        basis_points: 5000
+      duration:
+        kind: exact
+        value: P1Y
+    consideration:
+      kind: variable
+      description: A paid subscription is required; applicable pricing and discount
+        terms must be confirmed with VeraID.
+  eligibility:
+    rule:
+      criterion_id: cri_01
+      kind: manual
+      reason: not-machine-evaluable
+      statement: Startup with under $5M raised; eligibility is reviewed by VeraID
+        during a call.
+  roles:
+    terms_authority_entity_id: ent_01m4xg3wa86ha1nfxa19fdrt7z
+    access_operator_entity_id: ent_01m4xg3wa86ha1nfxa19fdrt7z
+  access:
+    availability: public
+    method: form
+    url: https://www.veraid.io/contact/
+    instructions: Contact VeraID about startup discount eligibility.
+  source_ids:
+  - src_1a91f6ed7edcc58f5153f965999ccd0a8390594922438b00729bd76dccb50f9c
+  terms_url: https://www.veraid.io/pricing/
