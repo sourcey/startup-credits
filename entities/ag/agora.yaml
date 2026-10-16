@@ -68,7 +68,7 @@ offers:
       terms_authority_entity_id: ent_01kzy6p6zs4ytd7b0syw4dt0f6
       access_operator_entity_id: ent_01kzy6p6zs4ytd7b0syw4dt0f6
     access:
-      availability: referral
+      availability: public
       method: form
       url: https://explore.agora.io/vc-ai-jumpstart-program
     source_ids:
