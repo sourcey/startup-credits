@@ -1,0 +1,73 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m4z4qwgy5pjphhtdsfmdnwcx
+  slug: hanzo
+  slug_aliases: []
+  name: Hanzo AI
+  domains:
+    - value: hanzo.ai
+      role: primary
+      valid_from: 2026-10-15T13:30:00.000Z
+  category: ai-ml
+profile:
+  description: Hanzo AI is an AI cloud and app builder. Describe an app, an agent or a company, and Hanzo builds it, ships it and runs it.
+  summary: Hanzo AI provides an AI cloud and app builder for shipping apps, agents, and companies.
+  links:
+    site: https://hanzo.ai
+sources:
+  - source_id: src_e95d40a8e70aaea46bf75c4f1924207bcbac1b74d0ce825bf232365bc6054228
+    url: https://hanzo.ai/startups
+  - source_id: src_620c803df36bbc9a306acc15cb39cdb9902c2810d3eaf03376692cd0fe97ca60
+    url: https://hanzo.ai/
+programs:
+  - program_id: prg_01m4z4qwh1hecg0d1xaj2wcxnt
+    program_slug: hanzo-startup-program
+    program_slug_aliases: []
+    title: The Hanzo Startup Program
+    summary: Hanzo AI's startup program offers up to $150,000 in credits to venture-backed startups building on its AI cloud.
+    source_ids:
+      - src_e95d40a8e70aaea46bf75c4f1924207bcbac1b74d0ce825bf232365bc6054228
+offers:
+  - offer_id: off_01m4z4qwh14kb90ed0s30c7fs2
+    program_id: prg_01m4z4qwh1hecg0d1xaj2wcxnt
+    offer_slug: startup-program-credits
+    offer_slug_aliases: []
+    title: Up to $150,000 in credits for venture-backed startups
+    summary: Venture-backed startups can apply for up to $150,000 in Hanzo credits; tier-1 VC backing is required for the credits program. Applications are reviewed weekly.
+    lifecycle:
+      status: active
+      effective_from: 2026-10-15T13:30:00.000Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_01
+          description: Up to $150,000 in credits
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 15000000
+            kind: up-to
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            statement: The startup must be venture-backed; tier-1 VC backing is required for the credits program.
+            reason: external-verification
+          - criterion_id: cri_02
+            kind: manual
+            statement: Hanzo reviews applications weekly and matches each startup to a tier.
+            reason: vendor-discretion
+    roles:
+      terms_authority_entity_id: ent_01m4z4qwgy5pjphhtdsfmdnwcx
+      access_operator_entity_id: ent_01m4z4qwgy5pjphhtdsfmdnwcx
+    access:
+      availability: public
+      method: form
+      url: https://hanzo.ai/startups
+      instructions: Complete the application form on the startup program page. Hanzo reviews applications weekly.
+    source_ids:
+      - src_e95d40a8e70aaea46bf75c4f1924207bcbac1b74d0ce825bf232365bc6054228
