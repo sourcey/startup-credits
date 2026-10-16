@@ -10,12 +10,15 @@ entity:
       valid_from: 2026-07-27T07:35:15.230Z
   category: hosting-infra
 profile:
+  summary: Vercel hosts and deploys web applications.
   description: Vercel provides hosting and tools for building and deploying web applications.
   links:
     site: https://vercel.com
 sources:
   - source_id: src_497e9d5468f44a628928715a0ad19b4002b56c14e9e45c33e783b97634d1092f
     url: https://vercel.com/startups/credits
+  - source_id: src_2b470a6bc8531d60fd6ab870bada2bb5cbc7cad477495694d2b50b57ed949049
+    url: https://vercel.com/docs
 programs: []
 offers:
   - offer_id: off_01kyh8fpe6ra6jbxm33zvbndx9
