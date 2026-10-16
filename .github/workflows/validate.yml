@@ -15,4 +15,4 @@ concurrency:
 
 jobs:
   validate:
-    uses: sourcey/catalog-verifier/.github/workflows/validate.yml@eea1a1ec56eff012308ebcc3bbf1676c71ab73fb
+    uses: sourcey/catalog-verifier/.github/workflows/validate.yml@cdb668480415a63ebe96fed2ce1be4649cac38e6
