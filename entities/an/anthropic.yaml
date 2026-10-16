@@ -29,7 +29,6 @@ offers:
     lifecycle:
       status: ended
       effective_from: 2026-07-27T07:35:35.548Z
-      effective_until: 2026-10-13T00:00:00Z
     economics:
       consideration:
         kind: none
