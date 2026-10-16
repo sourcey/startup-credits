@@ -10,6 +10,7 @@ entity:
       valid_from: 2026-07-27T07:35:35.548Z
   category: ai-ml
 profile:
+  summary: Anthropic develops Claude and offers the Claude API.
   description: Anthropic makes Claude and offers an API for developers building products with its models.
   links:
     site: https://claude.com
@@ -19,12 +20,13 @@ sources:
 programs: []
 offers:
   - offer_id: off_01kyh8fpe1kd3rx9h97ke87dbz
-    offer_slug: claude-for-startups-program-credits-and-priority-rate-limits
-    offer_slug_aliases: []
-    title: Claude for Startups Program Credits and Priority Rate Limits
-    summary: Applications to Claude Startups are closed while the current cohort is full. Current members retain access to the program; Anthropic says startups backed by partner VCs may qualify for additional API credits through their VC.
+    offer_slug: claude-startups-membership
+    offer_slug_aliases:
+      - claude-for-startups-program-credits-and-priority-rate-limits
+    title: Claude Startups membership
+    summary: Claude Startups continues for current members, with offers on AI-native tools, group sessions and events. Anthropic is not accepting new applications while the current cohort is full.
     lifecycle:
-      status: ended
+      status: active
       effective_from: 2026-07-27T07:35:35.548Z
     economics:
       consideration:
@@ -32,21 +34,24 @@ offers:
         description: The source record did not establish separate consideration.
       benefits:
         - benefit_id: ben_primary
-          description: API credits and priority rate limits
+          description: Offers on AI-native tools through the Claude Startup Stack
+          kind: other
+        - benefit_id: ben_events
+          description: Group sessions with Anthropic's Applied AI team and invitations to startup events
           kind: other
     eligibility:
       rule:
         kind: manual
         criterion_id: cri_requirement_01
-        statement: Company must have received equity funding from an institutional investor, been founded within the last four years, and not previously received Anthropic startup credits. Requires a Claude Console account, company email, website, and project description.
+        statement: Current Claude Startups membership is required. Anthropic is not accepting new applications for this cohort.
         reason: not-machine-evaluable
     roles:
       terms_authority_entity_id: ent_01kyh8fpe15bvn8rdb84vmk85d
       access_operator_entity_id: ent_01kyh8fpe15bvn8rdb84vmk85d
     access:
-      availability: other
+      availability: membership
       method: other
-      instructions: Anthropic is not accepting applications for the current cohort. Check the program page for the next application window.
+      instructions: Current members can sign in from the program page. Anthropic is not accepting new applications for this cohort.
       url: https://claude.com/programs/startups
     source_ids:
       - src_9cda0b77bc2bd94c6d922eb1c010e2efaf00a0b72a54651169cc1034120989f6
