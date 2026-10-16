@@ -10,7 +10,7 @@ entity:
       valid_from: 2026-07-27T07:35:35.548Z
   category: ai-ml
 profile:
-  description: Support your startup’s potential with access to resources, API credits, priority rate limits, and founder tools.
+  description: Anthropic makes Claude and offers an API for developers building products with its models.
   links:
     site: https://claude.com
 sources:
@@ -22,9 +22,9 @@ offers:
     offer_slug: claude-for-startups-program-credits-and-priority-rate-limits
     offer_slug_aliases: []
     title: Claude for Startups Program Credits and Priority Rate Limits
-    summary: Eligible early-stage startups can apply to receive Claude API credits and priority rate limits to build and scale products.
+    summary: Applications to Claude Startups are closed while the current cohort is full. Current members retain access to the program; Anthropic says startups backed by partner VCs may qualify for additional API credits through their VC.
     lifecycle:
-      status: active
+      status: ended
       effective_from: 2026-07-27T07:35:35.548Z
     economics:
       consideration:
@@ -44,8 +44,9 @@ offers:
       terms_authority_entity_id: ent_01kyh8fpe15bvn8rdb84vmk85d
       access_operator_entity_id: ent_01kyh8fpe15bvn8rdb84vmk85d
     access:
-      availability: public
-      method: form
+      availability: other
+      method: other
+      instructions: Anthropic is not accepting applications for the current cohort. Check the program page for the next application window.
       url: https://claude.com/programs/startups
     source_ids:
       - src_9cda0b77bc2bd94c6d922eb1c010e2efaf00a0b72a54651169cc1034120989f6
