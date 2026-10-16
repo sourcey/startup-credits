@@ -1,0 +1,67 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m4xyms6bfd59v77fsp5rhsnx
+  slug: dockhive
+  slug_aliases: []
+  name: DockHive
+  domains:
+    - value: dockhive.io
+      role: primary
+      valid_from: 2026-10-14T19:36:19.000Z
+  category: hosting-infra
+profile:
+  summary: DockHive is a developer cloud for deploying apps, managed databases, cloud dev environments, n8n workflows and tunnels on compute from a decentralized node network.
+  description: DockHive is a developer cloud platform with app hosting, an AI deploy agent, cloud dev environments, managed databases and tunnels.
+  links:
+    site: https://www.dockhive.io
+sources:
+  - source_id: src_8ad4944c03402d8c3a027a290a11228775e65d696b54b47465f796f1f5d91a14
+    url: https://www.dockhive.io/startups
+programs:
+  - program_id: prg_01m4xyms6jw1t40bhtb428tqry
+    program_slug: dockhive-for-startups
+    program_slug_aliases: []
+    title: DockHive for Startups
+    summary: Startup program giving early-stage founders, from idea to Series A, free cloud credits to build and host their product on DockHive.
+    source_ids:
+      - src_8ad4944c03402d8c3a027a290a11228775e65d696b54b47465f796f1f5d91a14
+offers:
+  - offer_id: off_01m4xyms6j005eas2ben8z1sjj
+    program_id: prg_01m4xyms6jw1t40bhtb428tqry
+    offer_slug: dockhive-startup-credits
+    offer_slug_aliases: []
+    title: $5,000 in DockHive cloud credits
+    summary: Approved early-stage startups, bootstrapped or funded up to Series A, receive $5,000 in DockHive cloud credits valid for 12 months, with no credit card required.
+    lifecycle:
+      status: active
+      effective_from: 2026-10-14T19:36:19.000Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_01
+          description: $5,000 in credits usable on anything run on DockHive, including apps, managed databases, HivePods, n8n workspaces, tunnels and bandwidth in every region; valid for 12 months from approval.
+          duration:
+            kind: exact
+            value: P1Y
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 500000
+            kind: exact
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_01
+        reason: vendor-discretion
+        statement: Early-stage startups building their own product, from idea to Series A, bootstrapped or funded, anywhere in the world, with a website, landing page or demo. Agencies and freelancers building for clients and accounts that already received DockHive startup credit are not eligible. Every application is reviewed by a person.
+    roles:
+      terms_authority_entity_id: ent_01m4xyms6bfd59v77fsp5rhsnx
+      access_operator_entity_id: ent_01m4xyms6bfd59v77fsp5rhsnx
+    access:
+      availability: public
+      method: form
+      url: https://www.dockhive.io/startups
+    source_ids:
+      - src_8ad4944c03402d8c3a027a290a11228775e65d696b54b47465f796f1f5d91a14
