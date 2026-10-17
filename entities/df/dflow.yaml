@@ -1,0 +1,65 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m4xfncw8rvqbadntmzqx9f7z
+  slug: dflow
+  slug_aliases: []
+  name: dFlow
+  domains:
+    - value: dflow.sh
+      role: primary
+      valid_from: 2026-10-14T15:45:00.000Z
+  category: hosting-infra
+profile:
+  description: dFlow is a cloud deployment platform for shipping products with multi-stage scaling and forecastable billing.
+  summary: dFlow is a cloud deployment platform that lets startups ship products with multi-stage scaling and predictable billing.
+  links:
+    site: https://dflow.sh
+sources:
+  - source_id: src_c36e1f319491f0462e5735042f91175ebbf14d70578f2a2b022a7d23ff14b973
+    url: https://dflow.sh/apply-startup
+programs:
+  - program_id: prg_01m4xfncw9ecygbw13ympzsd6m
+    program_slug: dflow-early-stage-startup-program
+    program_slug_aliases: []
+    title: dFlow Early Stage Startup Program
+    summary: dFlow Early Stage Startup Program gives eligible early-stage startups a 66% discount on the Cloud Pro plan for six months.
+    source_ids:
+      - src_c36e1f319491f0462e5735042f91175ebbf14d70578f2a2b022a7d23ff14b973
+offers:
+  - offer_id: off_01m4xfncwa0pmkxm12be49pek8
+    program_id: prg_01m4xfncw9ecygbw13ympzsd6m
+    offer_slug: dflow-early-stage-startup-program
+    offer_slug_aliases: []
+    title: dFlow Early Stage Startup Program
+    summary: Eligible startups under 3 years old with fewer than 15 employees get 66% off the dFlow Cloud Pro plan for six months.
+    lifecycle:
+      status: active
+      effective_from: 2026-10-14T15:45:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 66% discount on the dFlow Cloud Pro plan for six months for eligible early-stage startups.
+          duration:
+            kind: exact
+            value: P6M
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 6600
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Company must be under 3 years old with fewer than 15 employees; application subject to individual human review.
+    roles:
+      terms_authority_entity_id: ent_01m4xfncw8rvqbadntmzqx9f7z
+      access_operator_entity_id: ent_01m4xfncw8rvqbadntmzqx9f7z
+    access:
+      availability: public
+      method: other
+      url: https://dflow.sh/apply-startup
+    source_ids:
+      - src_c36e1f319491f0462e5735042f91175ebbf14d70578f2a2b022a7d23ff14b973
