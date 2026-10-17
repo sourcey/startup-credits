@@ -1,0 +1,64 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m4xcctrd6e9jnc602pwkev4k
+  slug: hatchet
+  slug_aliases: []
+  name: Hatchet
+  domains:
+  - value: hatchet.run
+    role: primary
+    valid_from: '2026-10-14T14:13:39Z'
+  category: devtools-other
+profile:
+  summary: Hatchet provides an orchestration engine for AI agents, background tasks
+    and workflows.
+  description: Hatchet provides an orchestration engine for AI agents, background
+    tasks and workflows.
+  links:
+    site: https://hatchet.run/
+sources:
+- source_id: src_55a1081fca8fc6e39c9ca24837e0dcc0c2a7379dc5920b9a073e88db47da4667
+  url: https://hatchet.run/pricing
+programs:
+- program_id: prg_01m4xcctrdx4shxatycdhtxt3w
+  program_slug: hatchet-startup-program
+  program_slug_aliases: []
+  title: Hatchet startup program
+  summary: Hatchet offers startup discounts and asks applicants to contact its team
+    for program details.
+  source_ids:
+  - src_55a1081fca8fc6e39c9ca24837e0dcc0c2a7379dc5920b9a073e88db47da4667
+offers:
+- offer_id: off_01m4xcctrddgdpkn62gkrywg2m
+  program_id: prg_01m4xcctrdx4shxatycdhtxt3w
+  offer_slug: hatchet-startup-discount
+  offer_slug_aliases: []
+  title: Hatchet startup discount
+  summary: Startups can contact Hatchet about its startup discount program. The public
+    page does not quantify the discount or duration.
+  lifecycle:
+    status: active
+    effective_from: '2026-10-14T14:13:39Z'
+  economics:
+    benefits:
+    - benefit_id: ben_01
+      kind: other
+      description: Startup discount; amount and duration are not published.
+    consideration:
+      kind: variable
+      description: Startup discounts.
+  eligibility:
+    rule:
+      criterion_id: cri_01
+      kind: manual
+      reason: not-machine-evaluable
+      statement: Startup discounts are offered.
+  roles:
+    terms_authority_entity_id: ent_01m4xcctrd6e9jnc602pwkev4k
+    access_operator_entity_id: ent_01m4xcctrd6e9jnc602pwkev4k
+  access:
+    availability: public
+    method: contact
+    url: https://hatchet.run/pricing
+  source_ids:
+  - src_55a1081fca8fc6e39c9ca24837e0dcc0c2a7379dc5920b9a073e88db47da4667
