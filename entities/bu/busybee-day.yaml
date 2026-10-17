@@ -1,0 +1,89 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m50ah9zn0arra01exgt5jyt9
+  slug: busybee-day
+  slug_aliases: []
+  name: BusyBee.Day
+  domains:
+    - value: busybee.day
+      role: primary
+      valid_from: 2026-10-15T17:28:52.223Z
+  category: productivity
+profile:
+  summary: BusyBee.Day combines project and task management, calendars, documents, and team collaboration with AI bots that work through connected apps.
+  description: A team workspace for projects, tasks, calendars, and documents, with AI bots that use connected apps.
+  links:
+    site: https://busybee.day/
+    pricing: https://busybee.day/pricing
+sources:
+  - source_id: src_2e85d737f22b1a89577cfa8b33116de8f080a176df0b028a89b3f30f06dfe73d
+    url: https://busybee.day/pricing/startups
+  - source_id: src_23ba5a9d9ba5710f45c6a708924e2674d45bbdde415f1457d5fde3e72a6b9a9a
+    url: https://busybee.day/
+  - source_id: src_5f15bd9413d01f6e1b764e91d9a50d029835ff110d33f1abac017bca723e80f3
+    url: https://busybee.day/terms
+programs:
+  - program_id: prg_01m50ah9zsgjna4vqh9q454kqg
+    program_slug: startup-program
+    program_slug_aliases: []
+    title: Startup Program
+    summary: BusyBee.Day offers special pricing for eligible early-stage companies through its Startup Program.
+    source_ids:
+      - src_2e85d737f22b1a89577cfa8b33116de8f080a176df0b028a89b3f30f06dfe73d
+offers:
+  - offer_id: off_01m50ah9zs5ma8mgwrkr05r1bt
+    program_id: prg_01m50ah9zsgjna4vqh9q454kqg
+    offer_slug: startup-first-year-discount
+    offer_slug_aliases: []
+    title: 25% off BusyBee.Day for the first year
+    summary: Eligible early-stage companies get 25% off BusyBee.Day pricing for the first year. Renewal options are mentioned without published renewal rates or conditions.
+    description: The startup page does not identify covered paid plans or renewal terms. General paid-plan terms separately describe automatic renewal until cancelled and a 14-day trial requiring a payment card.
+    lifecycle:
+      status: active
+      effective_from: 2026-10-15T17:28:52.223Z
+    economics:
+      benefits:
+        - benefit_id: ben_first_year_discount
+          kind: discount
+          description: 25% off for the first year.
+          percentage:
+            kind: exact
+            basis_points: 2500
+          duration:
+            kind: exact
+            value: P1Y
+      consideration:
+        kind: variable
+        description: Paid subscription at the startup rate; covered plans and the payable amount are not stated on the startup page. General paid-plan terms provide monthly or annual billing and automatic renewal until cancelled.
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_funding
+            kind: manual
+            reason: external-verification
+            statement: Less than $5M in funding.
+          - criterion_id: cri_founded
+            kind: manual
+            reason: external-verification
+            statement: Founded within the last 3 years.
+          - criterion_id: cri_employees
+            kind: predicate
+            fact: company.employee_count
+            operator: lt
+            statement: Under 50 employees.
+            value:
+              type: number
+              value: 50
+    roles:
+      terms_authority_entity_id: ent_01m50ah9zn0arra01exgt5jyt9
+      access_operator_entity_id: ent_01m50ah9zn0arra01exgt5jyt9
+    access:
+      availability: public
+      method: form
+      url: https://busybee.day/pricing/startups
+      instructions: Use the Apply for Startup Pricing button on the startup page, which links to the registration route.
+    terms_url: https://busybee.day/terms
+    source_ids:
+      - src_2e85d737f22b1a89577cfa8b33116de8f080a176df0b028a89b3f30f06dfe73d
+      - src_5f15bd9413d01f6e1b764e91d9a50d029835ff110d33f1abac017bca723e80f3
