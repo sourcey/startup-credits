@@ -1,0 +1,60 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m4xg3w9bjsz6hfbhz85dkb4e
+  slug: hookdeck
+  slug_aliases: []
+  name: Hookdeck
+  domains:
+  - value: hookdeck.com
+    role: primary
+    valid_from: '2026-10-14T15:22:25Z'
+  category: devtools-other
+profile:
+  summary: Hookdeck provides an event gateway for managing inbound webhooks and events.
+  description: Hookdeck provides an event gateway for managing inbound webhooks and
+    events.
+  links:
+    site: https://hookdeck.com/
+sources:
+- source_id: src_258c11eac97eb6c020cdde1bd6d9017ee8e84eb4dc5cdae86d1e3b8372f4d17a
+  url: https://hookdeck.com/pricing
+programs:
+- program_id: prg_01m4xg3w9bmr64rxrn6j571f31
+  program_slug: hookdeck-startup-discount
+  program_slug_aliases: []
+  title: Hookdeck startup discount
+  summary: Eligible startups can request discounts on Hookdeck Event Gateway Growth.
+    The amount and duration are not published.
+  source_ids:
+  - src_258c11eac97eb6c020cdde1bd6d9017ee8e84eb4dc5cdae86d1e3b8372f4d17a
+offers:
+- offer_id: off_01m4xg3w9bc2014qgm29krrfaw
+  program_id: prg_01m4xg3w9bmr64rxrn6j571f31
+  offer_slug: hookdeck-startup-discount
+  offer_slug_aliases: []
+  title: Hookdeck startup discount
+  summary: Eligible startups can request discounts on Hookdeck Event Gateway Growth.
+    The amount and duration are not published.
+  lifecycle:
+    status: active
+    effective_from: '2026-10-14T15:22:25Z'
+  economics:
+    benefits:
+    - benefit_id: ben_01
+      kind: other
+      description: Discount on the Hookdeck Event Gateway Growth plan; amount and
+        duration are not published.
+    consideration:
+      kind: variable
+      description: A paid subscription is required; applicable pricing and discount
+        terms must be confirmed with Hookdeck.
+  roles:
+    terms_authority_entity_id: ent_01m4xg3w9bjsz6hfbhz85dkb4e
+    access_operator_entity_id: ent_01m4xg3w9bjsz6hfbhz85dkb4e
+  access:
+    availability: public
+    method: form
+    url: https://hookdeck.com/contact
+    instructions: Contact Hookdeck about startup discount eligibility.
+  source_ids:
+  - src_258c11eac97eb6c020cdde1bd6d9017ee8e84eb4dc5cdae86d1e3b8372f4d17a
