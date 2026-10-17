@@ -1,0 +1,75 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m4y0v0pze10cxn4t5ham6d0p
+  slug: craci
+  slug_aliases: []
+  name: CRACI
+  domains:
+    - value: craci.com
+      role: primary
+      valid_from: 2026-10-14T20:14:00.000Z
+  category: ci-cd
+profile:
+  summary: CRACI provides secure CI runners, build-time software bills of materials, and vulnerability monitoring for software teams.
+  description: CRACI provides secure CI runners, build-time software bills of materials, and vulnerability monitoring.
+  links:
+    site: https://craci.com/
+sources:
+  - source_id: src_8258d39ba785e8a19412ceb86d2a2034929e863f46531008fa7ec779cfff3a73
+    url: https://craci.com/
+  - source_id: src_34da1de6f2d0ae2d5c44d68bf520a46f72d5171c2772cb00f237f3a2f010f264
+    url: https://craci.com/startups
+programs:
+  - program_id: prg_01m4y0v0q3tq5mzzn3nyxb9935
+    program_slug: startup-program
+    program_slug_aliases: []
+    title: Startup program
+    summary: CRACI's startup program offers free build minutes and hands-on onboarding to early-stage startups.
+    source_ids:
+      - src_34da1de6f2d0ae2d5c44d68bf520a46f72d5171c2772cb00f237f3a2f010f264
+offers:
+  - offer_id: off_01m4y0v0q3hetqmrr146cywpzs
+    program_id: prg_01m4y0v0q3tq5mzzn3nyxb9935
+    offer_slug: startup-free-build-minutes-and-onboarding
+    offer_slug_aliases: []
+    title: At least 100,000 free build minutes and onboarding
+    summary: Early-stage startups can apply for a minimum of 100,000 free CRACI build minutes and hands-on onboarding, using a work email address.
+    lifecycle:
+      status: active
+      effective_from: 2026-10-14T20:14:00.000Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The public startup page does not establish separate consideration.
+      benefits:
+        - benefit_id: ben_build_minutes
+          kind: free-service
+          service: CRACI build minutes
+          description: A minimum of 100,000 free build minutes.
+        - benefit_id: ben_onboarding
+          kind: free-service
+          service: Hands-on onboarding
+          description: Hands-on onboarding from the CRACI team.
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_early_stage
+            kind: manual
+            reason: not-machine-evaluable
+            statement: The program is for early-stage startups.
+          - criterion_id: cri_work_email
+            kind: manual
+            reason: not-machine-evaluable
+            statement: Apply with a work email address. Personal email addresses such as Gmail are not accepted.
+    roles:
+      terms_authority_entity_id: ent_01m4y0v0pze10cxn4t5ham6d0p
+      access_operator_entity_id: ent_01m4y0v0pze10cxn4t5ham6d0p
+    access:
+      availability: public
+      method: form
+      url: https://craci.com/startups
+      instructions: Complete the startup program application with your name and work email and indicate whether the startup is VC-backed. Role, current CI, and referral fields are optional.
+    terms_url: https://craci.com/startups
+    source_ids:
+      - src_34da1de6f2d0ae2d5c44d68bf520a46f72d5171c2772cb00f237f3a2f010f264
