@@ -1,0 +1,90 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m4ztx5hsewmnr945600gxevs
+  slug: mailazy
+  slug_aliases: []
+  name: Mailazy
+  domains:
+    - value: mailazy.com
+      role: primary
+      valid_from: 2026-10-15T13:09:49.805Z
+  category: communication
+profile:
+  description: Mailazy is an email platform for product teams that runs onboarding, newsletters, and behaviour-triggered emails through the team's own SMTP.
+  summary: Mailazy helps product teams send onboarding, newsletters, and behaviour-triggered emails while using their own SMTP provider.
+  links:
+    site: https://mailazy.com
+sources:
+  - source_id: src_e4a2b2874300cfe14677ef539703fe3dfaa76ce1325fff26c08956f589ce281d
+    url: https://mailazy.com/startup-program/
+programs: []
+offers:
+  - offer_id: off_01m4ztx5j09jevawrpny0g1q5a
+    offer_slug: startup-programme
+    offer_slug_aliases: []
+    title: Mailazy Startup programme
+    summary: Eligible young startups pay $172 for the first year of Mailazy Pro instead of the $490 yearly list price, a 65% discount, with every Pro feature included.
+    lifecycle:
+      status: active
+      effective_from: 2026-10-15T13:09:49.805Z
+    economics:
+      consideration:
+        kind: variable
+        description: The qualified startup pays $172 for the first year of the yearly Pro plan instead of the $490 list price; after that year the account renews at the normal yearly Pro price unless the plan is changed.
+      benefits:
+        - benefit_id: ben_01
+          applies_to: yearly Pro plan
+          description: 65% off the yearly Pro plan for the first year ($172 instead of $490)
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 6500
+          duration:
+            kind: exact
+            value: P1Y
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_00
+            fact: company.age_months
+            kind: predicate
+            operator: lt
+            statement: Incorporated less than 12 months ago, counted from the certificate of incorporation date
+            value:
+              type: number
+              value: 12
+          - criterion_id: cri_01
+            fact: company.funding_raised_usd
+            kind: predicate
+            operator: lt
+            statement: Under $3M raised in total across all rounds, including pre-seed, SAFEs, notes and grants; bootstrapped companies qualify
+            value:
+              type: number
+              value: 3000000
+          - criterion_id: cri_02
+            fact: company.employee_count
+            kind: predicate
+            operator: lt
+            statement: Fewer than 25 people, full-time equivalents, founders included
+            value:
+              type: number
+              value: 25
+          - criterion_id: cri_03
+            fact: company.is_current_customer
+            kind: predicate
+            operator: eq
+            statement: New to paid Mailazy; the programme is for teams starting out, not a cheaper renewal for existing paid accounts
+            value:
+              type: boolean
+              value: false
+    roles:
+      terms_authority_entity_id: ent_01m4ztx5hsewmnr945600gxevs
+      access_operator_entity_id: ent_01m4ztx5hsewmnr945600gxevs
+    access:
+      availability: public
+      method: form
+      url: https://mailazy.com/startup-program/
+      instructions: On the Startup programme page, fill out the application form with company details, incorporation date, funding, and team size. After review, apply the emailed discount code at checkout for the yearly Pro plan.
+    source_ids:
+      - src_e4a2b2874300cfe14677ef539703fe3dfaa76ce1325fff26c08956f589ce281d
