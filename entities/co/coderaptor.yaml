@@ -1,0 +1,68 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m48zc8pnjczcmqant7dmzrna
+  slug: coderaptor
+  slug_aliases: []
+  name: CodeRaptor
+  domains:
+    - value: coderaptor.ai
+      role: primary
+      valid_from: 2026-10-06T16:04:40Z
+  category: devtools-other
+profile:
+  summary: CodeRaptor provides AI-powered code review for development teams.
+  description: CodeRaptor reviews pull requests for bugs, security issues, and code quality problems.
+  links:
+    site: https://www.coderaptor.ai/
+    pricing: https://www.coderaptor.ai/pricing/
+sources:
+  - source_id: src_2187df8fb9d2693cc4038de5b8edbdb79df6408315c4af72e8c381f2e96904ef
+    url: https://www.coderaptor.ai/solutions/startups/
+  - source_id: src_b924fa40f7b31b820859a25917ca7f3b60a6fb0b00290a6917a2d519ae331110
+    url: https://www.coderaptor.ai/contact/
+  - source_id: src_b5cb9b4f06a1e51f5dbc1c127b8c90a62d372e2b8f99ea8d75a7fa5bfd61ecf3
+    url: https://www.coderaptor.ai/terms/
+programs: []
+offers:
+  - offer_id: off_01m48zc8pn9qzf301s2cb4w9fj
+    offer_slug: first-year-pro-startup-discount
+    offer_slug_aliases: []
+    title: First-year Pro startup discount
+    summary: Eligible startups can receive 50% off CodeRaptor Pro for their first year by contacting the vendor.
+    lifecycle:
+      status: active
+      effective_from: 2026-10-06T16:04:40Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          kind: discount
+          applies_to: CodeRaptor Pro
+          description: 50% off Pro for the first year
+          percentage:
+            kind: exact
+            basis_points: 5000
+          duration:
+            kind: exact
+            value: P1Y
+      consideration:
+        kind: variable
+        description: Requires a paid Pro subscription; pricing depends on the number of seats. The startup page lists the regular price as USD 15 per seat per month.
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_01
+        reason: external-verification
+        statement: The vendor lists YC companies, Techstars alumni, and teams with less than USD 1 million in funding; contact CodeRaptor to confirm qualification.
+    roles:
+      terms_authority_entity_id: ent_01m48zc8pnjczcmqant7dmzrna
+      access_operator_entity_id: ent_01m48zc8pnjczcmqant7dmzrna
+    access:
+      availability: public
+      method: form
+      url: https://www.coderaptor.ai/contact/
+      instructions: Submit the contact form to ask about the startup discount.
+    terms_url: https://www.coderaptor.ai/terms/
+    source_ids:
+      - src_2187df8fb9d2693cc4038de5b8edbdb79df6408315c4af72e8c381f2e96904ef
+      - src_b924fa40f7b31b820859a25917ca7f3b60a6fb0b00290a6917a2d519ae331110
+      - src_b5cb9b4f06a1e51f5dbc1c127b8c90a62d372e2b8f99ea8d75a7fa5bfd61ecf3
