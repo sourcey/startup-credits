@@ -22,14 +22,14 @@ offers:
     offer_slug: early-stage-startup-program
     offer_slug_aliases: []
     title: Early Stage Startup Program
-    summary: Eligible early-stage startups get 93% off Intercom in year one (helpdesk from $33/month) plus 1 year of Fin AI Agent free, stepping down to 50% off in year two and 25% off in year three.
+    summary: Eligible early-stage startups get 93% off Intercom in year one (helpdesk from $65/month) plus 1 year of Fin AI Agent free, stepping down to 50% off in year two and 25% off in year three.
     lifecycle:
       status: active
       effective_from: 2026-07-27T07:43:43.674Z
     economics:
       consideration:
-        kind: unknown
-        description: The source record did not establish separate consideration.
+        kind: variable
+        description: The offer includes the Intercom Helpdesk from $65 per month.
       benefits:
         - benefit_id: ben_primary
           description: 93% off Year 1 + 1 year Fin free
