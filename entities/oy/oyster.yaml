@@ -22,7 +22,7 @@ offers:
     offer_slug: oyster-startup-discount
     offer_slug_aliases: []
     title: Oyster Startup Discount
-    summary: Save up to $1,200 per team member annually for your first 12 months on Oyster Employer of Record (EOR) service for eligible early-stage or bootstrapped startups.
+    summary: Eligible early-stage or bootstrapped startups save up to $1,200 per team member annually for the first 12 months on Oyster's Employer of Record service.
     lifecycle:
       status: active
       effective_from: 2026-07-31T23:27:27.514Z
@@ -32,7 +32,8 @@ offers:
           description: Save up to $1,200 per team member during the first 12 months of Oyster Employer of Record service.
           kind: other
       consideration:
-        kind: none
+        kind: variable
+        description: The startup pays for the team members it hires.
     eligibility:
       rule:
         kind: all
