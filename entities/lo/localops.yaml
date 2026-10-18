@@ -1,0 +1,73 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m4zwgrrsdxtjjzbbvv5pqphn
+  slug: localops
+  slug_aliases: []
+  name: LocalOps
+  domains:
+    - value: localops.co
+      role: primary
+      valid_from: 2026-10-15T13:39:45.000Z
+  category: hosting-infra
+profile:
+  summary: LocalOps is an internal developer platform that automates provisioning, deployment, monitoring, scaling, and security on AWS, GCP, and Azure.
+  description: LocalOps is an AI-native internal developer platform for provisioning, deploying, monitoring, scaling, and securing services on a team's own AWS, GCP, or Azure cloud account.
+  links:
+    site: https://localops.co
+sources:
+  - source_id: src_ac9a0ba117ff50ee76506f143d7532ec38c2786c3a291b82dd424273b4223796
+    url: https://localops.co/startup-program
+  - source_id: src_dd7e7a8c3cf85c05bf3a2fab6d9ecd700d563843dd1b3f02ddfa32e4fb5b9722
+    url: https://localops.co/pricing
+programs:
+  - program_id: prg_01m4zwgrrtfd8x9rrjesb2n1gw
+    program_slug: localops-startup-program
+    program_slug_aliases: []
+    title: LocalOps Startup Program
+    summary: LocalOps offers partner-backed early-stage startups 50% off its list price for the first six months.
+    source_ids:
+      - src_ac9a0ba117ff50ee76506f143d7532ec38c2786c3a291b82dd424273b4223796
+      - src_dd7e7a8c3cf85c05bf3a2fab6d9ecd700d563843dd1b3f02ddfa32e4fb5b9722
+offers:
+  - offer_id: off_01m4zwgrrts80v8ejthc0r6ey7
+    program_id: prg_01m4zwgrrtfd8x9rrjesb2n1gw
+    offer_slug: fifty-percent-off-first-six-months
+    offer_slug_aliases: []
+    title: 50% off LocalOps for the first 6 months
+    summary: Early-stage startups associated with or funded through a LocalOps partner organization receive 50% off the LocalOps list price for their first six months.
+    lifecycle:
+      status: active
+      effective_from: 2026-10-15T13:39:45.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 50% off the LocalOps list price for the first six months
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 5000
+          applies_to: LocalOps list price
+          duration:
+            kind: exact
+            value: P6M
+      consideration:
+        kind: unknown
+        description: Approved startups receive 50% off the LocalOps list price during the first six months and then move to standard pay-as-you-go pricing.
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: external-verification
+        statement: The applicant is an early-stage startup associated with or funded through a LocalOps partnering accelerator, VC, or cloud partner and provides a valid partner code.
+    roles:
+      terms_authority_entity_id: ent_01m4zwgrrsdxtjjzbbvv5pqphn
+      access_operator_entity_id: ent_01m4zwgrrsdxtjjzbbvv5pqphn
+    access:
+      availability: public
+      method: contact
+      url: https://localops.co/startup-program
+      instructions: Deploy a project on LocalOps and use the startup-program contact link on the program page to submit your partner code for the 50% discount.
+    terms_url: https://localops.co/startup-program
+    source_ids:
+      - src_ac9a0ba117ff50ee76506f143d7532ec38c2786c3a291b82dd424273b4223796
+      - src_dd7e7a8c3cf85c05bf3a2fab6d9ecd700d563843dd1b3f02ddfa32e4fb5b9722
