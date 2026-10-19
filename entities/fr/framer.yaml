@@ -10,9 +10,10 @@ entity:
       valid_from: 2026-07-27T07:40:56.879Z
   category: no-code
 profile:
-  description: The web builder for stunning sites. Design and publish modern sites at any scale.
+  description: Framer is an AI website builder for designers and teams.
   links:
     site: https://www.framer.com
+  summary: Framer provides an AI website builder.
 sources:
   - source_id: src_766b763b293971e8a9baf1c6c12edd5244d42057a6a5b83662a5823afa17bd4c
     url: https://www.framer.com/startups/
@@ -22,21 +23,23 @@ offers:
     offer_slug: framer-startup-program-1-year-free
     offer_slug_aliases: []
     title: Framer Startup Program - 1 Year Free
-    summary: Eligible early-stage startups can receive a 100% discount for their first year on Framer Pro or Startup Plan (worth up to $900).
+    summary: Eligible startups receive a free year of the Framer Pro plan.
     lifecycle:
       status: active
       effective_from: 2026-07-27T07:40:56.879Z
     economics:
       consideration:
-        kind: unknown
-        description: The source record did not establish separate consideration.
+        kind: none
       benefits:
         - benefit_id: ben_primary
-          description: 100% discount for 1 year (worth up to $900)
+          description: A free year of the Framer Pro plan, saving $360
           kind: discount
           percentage:
             kind: exact
             basis_points: 10000
+          duration:
+            kind: exact
+            value: P1Y
     eligibility:
       rule:
         kind: manual
@@ -47,7 +50,7 @@ offers:
       terms_authority_entity_id: ent_01kyh8fpe242bpwff1jm20vnsf
       access_operator_entity_id: ent_01kyh8fpe242bpwff1jm20vnsf
     access:
-      availability: public
+      availability: membership
       method: form
       url: https://www.framer.com/startups/
     source_ids:
