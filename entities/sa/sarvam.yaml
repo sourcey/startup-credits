@@ -1,0 +1,62 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m5cj24wmzn32qs8587rayh1a
+  slug: sarvam
+  slug_aliases: []
+  name: Sarvam AI
+  domains:
+    - value: sarvam.ai
+      role: primary
+      valid_from: 2026-10-20T11:40:00.000Z
+  category: ai-ml
+profile:
+  summary: Developer APIs and infrastructure for speech, vision, and multilingual Indian language AI.
+  description: Developer-first APIs and scale-ready infrastructure for multilingual AI applications with native support for 22 Indian languages and English.
+  links:
+    site: https://www.sarvam.ai
+sources:
+  - source_id: src_c3b0c07fb827b8ce780b19e9f2077b09cd214e0a9bad6cba18de95463d6d13ca
+    url: https://www.sarvam.ai/startup-program
+programs:
+  - program_id: prg_01m5cj24wm5ah3qe7qwj2thvjn
+    program_slug: sarvam-startup-program
+    program_slug_aliases: []
+    title: Sarvam Startup Program
+    summary: Up to 12 months of API credits across speech, vision, and LLM APIs with priority support for AI startups.
+    source_ids:
+      - src_c3b0c07fb827b8ce780b19e9f2077b09cd214e0a9bad6cba18de95463d6d13ca
+offers:
+  - offer_id: off_01m5cj24wmgtqtpees011jj1m5
+    program_id: prg_01m5cj24wm5ah3qe7qwj2thvjn
+    offer_slug: sarvam-startup-program-api-credits
+    offer_slug_aliases: []
+    title: Sarvam Startup Program API Credits
+    summary: Approved startups receive 6 to 12 months of API credits tailored to their scale for STT, TTS, voice agents, and multilingual models.
+    lifecycle:
+      status: active
+      effective_from: 2026-10-20T11:40:00.000Z
+    economics:
+      consideration:
+        kind: variable
+        description: Program participants are expected to display "Powered by Sarvam" in their product as a condition of the program.
+      benefits:
+        - benefit_id: ben_01
+          description: 6 to 12 months of API credits tailored to startup scale across STT, TTS, and LLM APIs.
+          kind: other
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: not-machine-evaluable
+        statement: Startups building with Sarvam APIs across Development, Beta, or Production stages may apply, including existing Sarvam users seeking additional credits.
+    roles:
+      terms_authority_entity_id: ent_01m5cj24wmzn32qs8587rayh1a
+      access_operator_entity_id: ent_01m5cj24wmzn32qs8587rayh1a
+    access:
+      availability: public
+      method: form
+      url: https://www.sarvam.ai/startup-program
+      instructions: Apply online through the startup application form with company name, website, product stage, and API requirements.
+    terms_url: https://www.sarvam.ai/startup-program
+    source_ids:
+      - src_c3b0c07fb827b8ce780b19e9f2077b09cd214e0a9bad6cba18de95463d6d13ca
