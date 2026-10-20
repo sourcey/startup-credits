@@ -1,0 +1,72 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m4zxa7qnw1vyk2rr4ra8zrdz
+  slug: intervue
+  slug_aliases: []
+  name: Intervue
+  domains:
+    - value: intervue.io
+      role: primary
+      valid_from: 2026-10-15T00:00:00.000Z
+  category: hr-people
+profile:
+  summary: Intervue provides technical interview and assessment tools that help startups screen candidates and build tech teams.
+  description: Intervue offers coding interviews, assignments, and candidate screening tools for hiring tech talent.
+  links:
+    site: https://www.intervue.io/
+sources:
+  - source_id: src_54857a5f4df29b08698d65408b919f3ee509f76783817393c706e1e2e39feff0
+    url: https://www.intervue.io/startups
+programs:
+  - program_id: prg_01m4zxa7qqpyxsdhrpx8paf0xn
+    program_slug: intervue-startup-program
+    program_slug_aliases: []
+    title: Intervue Startup Program
+    summary: Intervue's startup program gives eligible startups $5,000 in platform credits valid for six months, plus enterprise-level features on any plan.
+    source_ids:
+      - src_54857a5f4df29b08698d65408b919f3ee509f76783817393c706e1e2e39feff0
+offers:
+  - offer_id: off_01m4zxa7qrjrbdh9grc990th9f
+    program_id: prg_01m4zxa7qqpyxsdhrpx8paf0xn
+    offer_slug: 5000-startup-credits-six-months
+    offer_slug_aliases: []
+    title: $5,000 in Intervue credits for startups, valid 6 months
+    summary: Eligible startups receive $5,000 in Intervue credits usable toward any plan for six months, with access to enterprise-level features regardless of plan.
+    lifecycle:
+      status: active
+      effective_from: 2026-10-15T00:00:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          kind: credit
+          description: $5,000 in credits usable toward any Intervue plan, valid for six months.
+          value:
+            amount:
+              currency: USD
+              minor_units: 500000
+            kind: up-to
+          duration:
+            kind: exact
+            value: P6M
+        - benefit_id: ben_02
+          kind: other
+          description: Access to all enterprise-level features regardless of the plan chosen.
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: not-machine-evaluable
+        statement: The applicant is an eligible startup as determined by Intervue.
+    roles:
+      terms_authority_entity_id: ent_01m4zxa7qnw1vyk2rr4ra8zrdz
+      access_operator_entity_id: ent_01m4zxa7qnw1vyk2rr4ra8zrdz
+    access:
+      availability: public
+      method: form
+      url: https://www.intervue.io/startups
+      instructions: Sign up using the form on the startup program page to get started right away.
+    terms_url: https://www.intervue.io/startups
+    source_ids:
+      - src_54857a5f4df29b08698d65408b919f3ee509f76783817393c706e1e2e39feff0
