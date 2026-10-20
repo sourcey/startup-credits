@@ -37,8 +37,7 @@ offers:
       effective_from: 2026-07-27T07:40:56.959Z
     economics:
       consideration:
-        kind: unknown
-        description: The source record did not establish separate consideration.
+        kind: none
       benefits:
         - benefit_id: ben_primary
           description: 6 months free
