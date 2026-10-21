@@ -10,9 +10,10 @@ entity:
       valid_from: 2026-07-27T07:38:29.820Z
   category: devtools-other
 profile:
-  description: Retool is a development platform that helps teams build custom internal tools, workflows, and customer portals faster.
+  description: Retool helps developers build custom internal tools and customer portals to speed up internal processes.
   links:
     site: https://retool.com
+  summary: Retool helps developers build internal tools and customer portals.
 sources:
   - source_id: src_2c260c8dd6a9079c604130e734a975f82a5622d52a3004095d5e47609388fdde
     url: https://retool.com/startups
@@ -28,8 +29,8 @@ offers:
       effective_from: 2026-07-27T07:38:29.820Z
     economics:
       consideration:
-        kind: unknown
-        description: The source record did not establish separate consideration.
+        kind: variable
+        description: The startup must be a new customer on a monthly Team or Business plan.
       benefits:
         - benefit_id: ben_primary
           description: 100% off for 1 year (up to $60k value), then 25% off year 2
@@ -39,16 +40,22 @@ offers:
             basis_points: 10000
     eligibility:
       rule:
-        kind: manual
-        criterion_id: cri_requirement_01
-        statement: Must be bootstrapped, angel-funded, debt-funded, pre-seed, seed, or Series A with under $10M in total funding, founded within the last 10 years, and a new customer on a monthly Team or Business plan.
-        reason: not-machine-evaluable
+        kind: all
+        rules:
+          - kind: manual
+            criterion_id: cri_requirement_01
+            statement: Must be bootstrapped, angel-funded, debt-funded, pre-seed, seed, or Series A with under $10M in total funding, founded within the last 10 years, and a new customer on a monthly Team or Business plan.
+            reason: not-machine-evaluable
+          - kind: manual
+            criterion_id: cri_requirement_02
+            statement: The offer cannot be used in conjunction with other discounts offered by sales.
+            reason: not-machine-evaluable
     roles:
       terms_authority_entity_id: ent_01kyh8fpe5f7abnzn52hyvnsy9
       access_operator_entity_id: ent_01kyh8fpe5f7abnzn52hyvnsy9
     access:
       availability: public
       method: form
-      url: https://retool.com/startups
+      url: https://share.hsforms.com/2H3PWbX5wQ9Wq_i3-P_wmZw4k765
     source_ids:
       - src_2c260c8dd6a9079c604130e734a975f82a5622d52a3004095d5e47609388fdde
