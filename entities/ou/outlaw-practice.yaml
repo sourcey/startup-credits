@@ -1,0 +1,62 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m5hdn95gqjksgn9zbhtw2z52
+  slug: outlaw-practice
+  slug_aliases: []
+  name: Outlaw Practice
+  domains:
+    - value: outlawpractice.com
+      role: primary
+      valid_from: 2026-10-22T09:05:00.000Z
+  category: legal-compliance
+profile:
+  summary: Outlaw Practice makes practice-management software for small law firms, covering cases, client intake, documents, time tracking and billing.
+  description: Practice-management software for small law firms, with cases, client intake, document management, time tracking, billing and reporting.
+  links:
+    site: https://www.outlawpractice.com/
+    pricing: https://www.outlawpractice.com/pricing/
+sources:
+  - source_id: src_098062005e191e3bd82bd2bca46b6e5ecdb600cb98f824fa92a10fe822f61c80
+    url: https://www.outlawpractice.com/pricing/
+programs:
+  - program_id: prg_01m5hdn95hkkdpvcbxtc3ey5f2
+    program_slug: outlaw-practice-startup-program
+    program_slug_aliases: []
+    title: Outlaw Practice Startup Program
+    summary: A subscription-discount program for brand-new law firms.
+    source_ids:
+      - src_098062005e191e3bd82bd2bca46b6e5ecdb600cb98f824fa92a10fe822f61c80
+offers:
+  - offer_id: off_01m5hdn95hn4qhtdjvyr6e4qxc
+    program_id: prg_01m5hdn95hkkdpvcbxtc3ey5f2
+    offer_slug: subscription-discount-for-brand-new-firms
+    offer_slug_aliases: []
+    title: Subscription discount for brand-new law firms
+    summary: Brand-new law firms can ask Outlaw Practice about a discounted subscription through its Startup Program. The public page does not specify the discount amount or duration.
+    lifecycle:
+      status: active
+      effective_from: 2026-10-22T09:05:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          kind: other
+          description: A discount on the Outlaw Practice subscription for brand-new law firms; the public pricing page does not state its percentage, amount or duration.
+      consideration:
+        kind: unknown
+        description: The discounted subscription price is not published. Firms must ask the vendor about the Startup Program.
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: The Startup Program is for brand-new law firms. The public page invites firms to ask the vendor about the program and does not publish further eligibility criteria.
+    roles:
+      terms_authority_entity_id: ent_01m5hdn95gqjksgn9zbhtw2z52
+      access_operator_entity_id: ent_01m5hdn95gqjksgn9zbhtw2z52
+    access:
+      availability: public
+      method: contact
+      url: https://www.outlawpractice.com/pricing/
+      instructions: Use the Startup Program contact link in the pricing page's Discounts where they matter section to ask the vendor about the discount.
+    source_ids:
+      - src_098062005e191e3bd82bd2bca46b6e5ecdb600cb98f824fa92a10fe822f61c80
