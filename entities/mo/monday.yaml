@@ -1,0 +1,90 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m5hh9xh3aapmj81m1rj33g2j
+  slug: monday
+  slug_aliases:
+    - monday-com
+  name: monday.com
+  domains:
+    - value: monday.com
+      role: primary
+      valid_from: '2026-10-22T00:00:00.000Z'
+  category: productivity
+profile:
+  summary: monday.com is a work operating system for project management, team collaboration, and workflow automation, used by more than 225,000 customers worldwide.
+  description: monday.com provides a cloud work OS with boards, dashboards, and automations for managing projects and team workflows.
+  links:
+    site: https://monday.com
+sources:
+  - source_id: src_4428535017d0c460dcaf0f846d9303d20163220994e8f9714589b028d955a6ca
+    url: https://monday.com/ap/devforstartups
+  - source_id: src_ead51cceb6919d0ba1945bf6fd3b3faa9b920a115f0912c8e0cffeff18cf34c3
+    url: https://monday.com/l/miscellaneous/startup/
+programs:
+  - program_id: prg_01m5hh9xh59h89q75jrnv63wc0
+    program_slug: monday-dev-startup-program
+    program_slug_aliases: []
+    title: monday dev Startup Program
+    summary: monday.com gives qualifying early-stage startups ten monday dev seats with access to all features at $2 per seat per month for their first year.
+    source_ids:
+      - src_4428535017d0c460dcaf0f846d9303d20163220994e8f9714589b028d955a6ca
+      - src_ead51cceb6919d0ba1945bf6fd3b3faa9b920a115f0912c8e0cffeff18cf34c3
+offers:
+  - offer_id: off_01m5hh9xh50z0rqx7g1a2fk8rm
+    program_id: prg_01m5hh9xh59h89q75jrnv63wc0
+    offer_slug: monday-dev-ten-seats-two-usd
+    offer_slug_aliases: []
+    title: Ten monday dev seats at $2 per seat per month for one year
+    summary: Eligible startups receive ten monday dev seats with access to all features at $2 per seat per month for their first year, saving over $2,000 versus standard pricing.
+    description: The benefit covers a one-year subscription for a 10-seat monday dev Pro plan at a one-off payment of $240 USD. The benefit is not transferable and does not apply to subsequent upgrades or renewals. monday.com reserves the right to discontinue the program at any time.
+    lifecycle:
+      status: active
+      effective_from: '2026-10-22T00:00:00.000Z'
+    economics:
+      consideration:
+        kind: unknown
+        description: Eligible startups pay a one-off discounted subscription of $240 USD for ten seats for the first year.
+      benefits:
+        - benefit_id: ben_startup_discount
+          description: Ten monday dev seats with access to all features at $2 per seat per month for the first year, saving over $2,000 versus standard pricing.
+          kind: discount
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - kind: predicate
+            criterion_id: cri_company_age
+            statement: The startup must have been founded within the last two years.
+            fact: company.age_years
+            operator: lt
+            value:
+              type: number
+              value: 2
+          - kind: manual
+            criterion_id: cri_vc_backed
+            statement: The startup must be backed by a venture capital firm, startup accelerator, or incubator.
+            reason: external-verification
+          - kind: manual
+            criterion_id: cri_company_size
+            statement: The startup must have up to 50 employees.
+            reason: external-verification
+          - kind: manual
+            criterion_id: cri_no_paid_account
+            statement: The startup must not hold a non-trial account for monday dev, monday CRM, monday services, or monday work management at the time of applying.
+            reason: external-verification
+          - kind: manual
+            criterion_id: cri_vendor_approval
+            statement: monday.com manually reviews each application and emails an access code to approved startups.
+            reason: vendor-discretion
+    roles:
+      terms_authority_entity_id: ent_01m5hh9xh3aapmj81m1rj33g2j
+      access_operator_entity_id: ent_01m5hh9xh3aapmj81m1rj33g2j
+    access:
+      availability: public
+      method: form
+      url: https://monday.com/ap/devforstartups
+      instructions: Start a free monday dev trial, complete the application form on the program page, and submit. monday.com reviews the application and emails an access code to approved startups, followed by a one-time payment link to claim the discount for the first year.
+    terms_url: https://monday.com/l/miscellaneous/startup/
+    source_ids:
+      - src_4428535017d0c460dcaf0f846d9303d20163220994e8f9714589b028d955a6ca
+      - src_ead51cceb6919d0ba1945bf6fd3b3faa9b920a115f0912c8e0cffeff18cf34c3
