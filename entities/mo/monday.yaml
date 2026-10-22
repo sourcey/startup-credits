@@ -20,6 +20,8 @@ sources:
     url: https://monday.com/ap/devforstartups
   - source_id: src_ead51cceb6919d0ba1945bf6fd3b3faa9b920a115f0912c8e0cffeff18cf34c3
     url: https://monday.com/l/miscellaneous/startup/
+  - source_id: src_7f3a1c9d2e4b4a6f8c0d1e2f3a4b5c6d7e8f90a1b2c3d4e5f6a7b8c9d0e1f2a3
+    url: https://monday.com/dev/pricing
 programs:
   - program_id: prg_01m5hh9xh59h89q75jrnv63wc0
     program_slug: monday-dev-startup-program
@@ -29,6 +31,7 @@ programs:
     source_ids:
       - src_4428535017d0c460dcaf0f846d9303d20163220994e8f9714589b028d955a6ca
       - src_ead51cceb6919d0ba1945bf6fd3b3faa9b920a115f0912c8e0cffeff18cf34c3
+      - src_7f3a1c9d2e4b4a6f8c0d1e2f3a4b5c6d7e8f90a1b2c3d4e5f6a7b8c9d0e1f2a3
 offers:
   - offer_id: off_01m5hh9xh50z0rqx7g1a2fk8rm
     program_id: prg_01m5hh9xh59h89q75jrnv63wc0
@@ -46,8 +49,15 @@ offers:
         description: Eligible startups pay a one-off discounted subscription of $240 USD for ten seats for the first year.
       benefits:
         - benefit_id: ben_startup_discount
-          description: Ten monday dev seats with access to all features at $2 per seat per month for the first year, saving over $2,000 versus standard pricing.
+          description: Ten monday dev seats with access to all features at $2 per seat per month for the first year, 90% off the $20 per seat per month list price of the monday dev Pro plan billed annually.
           kind: discount
+          percentage:
+            kind: exact
+            basis_points: 9000
+          applies_to: monday dev Pro plan
+          duration:
+            kind: exact
+            value: P12M
     eligibility:
       rule:
         kind: all
@@ -88,3 +98,4 @@ offers:
     source_ids:
       - src_4428535017d0c460dcaf0f846d9303d20163220994e8f9714589b028d955a6ca
       - src_ead51cceb6919d0ba1945bf6fd3b3faa9b920a115f0912c8e0cffeff18cf34c3
+      - src_7f3a1c9d2e4b4a6f8c0d1e2f3a4b5c6d7e8f90a1b2c3d4e5f6a7b8c9d0e1f2a3
