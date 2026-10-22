@@ -17,8 +17,6 @@ profile:
 sources:
   - source_id: src_49028cb5466b7d092afc95d88e840c34d1a6f5e20b4d1e3e513678ecace057c2
     url: https://www.anyscale.com/startup
-  - source_id: src_f454e42afd089b33bc9ba1d8d6490c335ab43878199a9be5561c2bf7a59ddb69
-    url: https://www.anyscale.com/contact-sales
 programs:
   - program_id: prg_01m505gsjsga5w9js3ktcphrb7
     program_slug: anyscale-ai-startup-program
@@ -57,16 +55,13 @@ offers:
         criterion_id: cri_01
         kind: manual
         reason: vendor-discretion
-        statement: Early-stage teams building AI-native applications may apply for Anyscale startup credits and technical support.
+        statement: Eligibility is generally open to companies at various stages, though factors such as level of funding, technical maturity, and current cloud infrastructure may be considered during the review.
     roles:
       terms_authority_entity_id: ent_01m505gsjcbc678ve89swhbnbh
       access_operator_entity_id: ent_01m505gsjcbc678ve89swhbnbh
     access:
       availability: public
-      instructions: Contact the Anyscale sales team to apply for startup credits and technical support.
       method: form
-      url: https://www.anyscale.com/contact-sales
-    terms_url: https://www.anyscale.com/startup
+      url: https://www.anyscale.com/startup
     source_ids:
       - src_49028cb5466b7d092afc95d88e840c34d1a6f5e20b4d1e3e513678ecace057c2
-      - src_f454e42afd089b33bc9ba1d8d6490c335ab43878199a9be5561c2bf7a59ddb69
