@@ -1,0 +1,54 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m5hb3xjyq478t12x7xsyhwjb
+  slug: permit-io
+  slug_aliases: []
+  name: Permit.io
+  domains:
+    - value: permit.io
+      role: primary
+      valid_from: 2026-10-22T08:19:52.544Z
+  category: auth-security
+profile:
+  summary: Permit.io provides fine-grained authorization for applications, APIs, and AI agents.
+  description: Permit.io provides fine-grained authorization for applications, APIs, and AI agents.
+  links:
+    site: https://www.permit.io/
+sources:
+  - source_id: src_cbcaba73629ce0daa9177648f6882cd2c32950048d1c84aac8d3ac8c3c302870
+    url: https://www.permit.io/mcp-gateway/pricing
+  - source_id: src_3277cef41149cc4c3d98d8ba7b7d723f6a62a6b5dc4c9f104aec462ff7a22225
+    url: https://www.permit.io/
+programs: []
+offers:
+  - offer_id: off_01m5hb3xk0qkk4y06hbrxq27wa
+    offer_slug: mcp-gateway-special-pricing-for-startups
+    offer_slug_aliases: []
+    title: MCP Gateway Special Pricing for Early-Stage Startups
+    summary: Early-stage startups can contact Permit.io via Slack or email to ask about special MCP Gateway pricing.
+    lifecycle:
+      status: active
+      effective_from: 2026-10-22T08:19:52.544Z
+    economics:
+      benefits:
+        - benefit_id: ben_special_pricing
+          kind: other
+          description: Special MCP Gateway pricing for early-stage startups; the public FAQ does not specify an amount or duration.
+      consideration:
+        kind: unknown
+        description: The public FAQ asks applicants to contact Permit.io for special pricing and does not publish the resulting price.
+    eligibility:
+      rule:
+        criterion_id: cri_early_stage_startup
+        kind: manual
+        reason: vendor-discretion
+        statement: Applicant is an early-stage startup; contact Permit.io via Slack or email to learn more.
+    roles:
+      terms_authority_entity_id: ent_01m5hb3xjyq478t12x7xsyhwjb
+      access_operator_entity_id: ent_01m5hb3xjyq478t12x7xsyhwjb
+    access:
+      availability: public
+      method: contact
+      url: https://www.permit.io/mcp-gateway/pricing
+    source_ids:
+      - src_cbcaba73629ce0daa9177648f6882cd2c32950048d1c84aac8d3ac8c3c302870
