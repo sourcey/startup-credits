@@ -1,0 +1,89 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m5jj7gh4ebqh726gxa7h6dcm
+  slug: helpdocs
+  slug_aliases: []
+  name: HelpDocs
+  domains:
+    - value: helpdocs.io
+      role: primary
+      valid_from: 2026-10-22T19:45:00.000Z
+  category: support
+profile:
+  summary: HelpDocs is knowledge base software for building and hosting a public help center with AI-assisted writing and in-app answers.
+  description: HelpDocs is help center software with AI drafting, a Lighthouse widget for in-app answers, SSO, permissions and content analytics.
+  links:
+    site: https://www.helpdocs.io
+    pricing: https://www.helpdocs.io/pricing/
+sources:
+  - source_id: src_05c6aa190a69d512d763b5c15d14c8a9a9234cfc768b88cbdf800178a09f1a9c
+    url: https://www.helpdocs.io/startups/
+  - source_id: src_7f1dd70750c32c2f938ea8e3a6e2ef65429a97ff35ce30918e09650e167059a2
+    url: https://www.helpdocs.io/pricing/
+programs:
+  - program_id: prg_01m5jj7gh9rbbs381t6jyc942v
+    program_slug: helpdocs-greenhouse
+    program_slug_aliases: []
+    title: HelpDocs Greenhouse
+    summary: HelpDocs Greenhouse gives early-stage teams half price documentation software for two years plus 3,000 bonus AI credits.
+    source_ids:
+      - src_05c6aa190a69d512d763b5c15d14c8a9a9234cfc768b88cbdf800178a09f1a9c
+offers:
+  - offer_id: off_01m5jj7gh9nkr4vwbrd2372w1s
+    program_id: prg_01m5jj7gh9rbbs381t6jyc942v
+    offer_slug: half-price-plans-for-24-months
+    offer_slug_aliases: []
+    title: 50% off Sprout, Bloom or Harvest for 24 months
+    summary: Startups under three years old with five or fewer employees get half price on any HelpDocs plan for 24 months, plus 3,000 bonus AI credits.
+    description: The half-price term runs 24 months on the Sprout, Bloom or Harvest plan chosen at signup, and the 3,000 AI credits are added on top of the plan's monthly AI allowance.
+    lifecycle:
+      status: active
+      effective_from: 2026-10-22T19:45:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01m5jj7gh97gjbeebdcenhnqsm
+          description: 50% off the Sprout, Bloom or Harvest plan for 24 months.
+          duration:
+            kind: exact
+            value: P2Y
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 5000
+        - benefit_id: ben_02
+          description: 3,000 bonus AI credits on top of the plan's monthly allowance.
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.age_months
+            kind: predicate
+            operator: lt
+            statement: The company is under three years old.
+            value:
+              type: number
+              value: 36
+          - criterion_id: cri_02
+            fact: company.employee_count
+            kind: predicate
+            operator: lte
+            statement: The company has five or fewer employees.
+            value:
+              type: number
+              value: 5
+    roles:
+      terms_authority_entity_id: ent_01m5jj7gh4ebqh726gxa7h6dcm
+      access_operator_entity_id: ent_01m5jj7gh4ebqh726gxa7h6dcm
+    access:
+      availability: public
+      method: form
+      url: https://www.helpdocs.io/startups/
+      instructions: Use the Apply to Greenhouse link on the program page to submit the application form.
+    terms_url: https://www.helpdocs.io/startups/
+    source_ids:
+      - src_05c6aa190a69d512d763b5c15d14c8a9a9234cfc768b88cbdf800178a09f1a9c
+      - src_7f1dd70750c32c2f938ea8e3a6e2ef65429a97ff35ce30918e09650e167059a2
