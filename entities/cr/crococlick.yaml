@@ -10,8 +10,8 @@ entity:
       valid_from: 2026-09-06T10:49:25.674Z
   category: crm-sales
 profile:
-  summary: CrocoClick provides CRM, websites, billing, calendars, and marketing automation.
-  description: CrocoClick provides CRM, websites, billing, calendars, and marketing automation software.
+  summary: CrocoClick Unlimited includes CRM, websites, billing, online calendars and automations.
+  description: The CrocoClick Unlimited plan includes funnels, websites, CRM, automations, pipelines, documents and electronic signatures, billing, and online calendars.
   links:
     site: https://crococlick.com
     pricing: https://crococlick.com/pricing
