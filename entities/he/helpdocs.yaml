@@ -54,7 +54,8 @@ offers:
           description: 3,000 bonus AI credits on top of the plan's monthly allowance.
           kind: other
       consideration:
-        kind: none
+        kind: variable
+        description: The startup pays the remaining half of the chosen plan; Sprout lists at USD 129 per month, Bloom at USD 299 per month and Harvest at USD 499 per month.
     eligibility:
       rule:
         kind: all
