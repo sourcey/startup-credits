@@ -1,0 +1,71 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m5h6yvcc21mctreteprh5pez
+  slug: zoominfo
+  slug_aliases: []
+  name: ZoomInfo
+  domains:
+    - value: zoominfo.com
+      role: primary
+      valid_from: 2026-10-22T07:07:12.402Z
+  category: crm-sales
+profile:
+  description: ZoomInfo is a go-to-market platform that combines B2B company and contact data with sales and marketing software for lead generation, prospecting, and account-based marketing.
+  summary: ZoomInfo provides B2B contact and company data plus sales and marketing tools that help businesses find prospects, generate leads, and accelerate sales.
+  links:
+    site: https://www.zoominfo.com
+sources:
+  - source_id: src_fc11255f4a6d8f210c23328948f7a36044387c2d2455bce4396f83f0290b3689
+    url: https://www.zoominfo.com/offers/start-ups
+  - source_id: src_0cab7b64b5d9bc22f188b86122db4e0ae6814d9e78ef6a629614c5079117f2f8
+    url: https://www.zoominfo.com/
+programs: []
+offers:
+  - offer_id: off_01m5h6yvcmf3f941gjv391s6bq
+    offer_slug: zoominfo-for-startups
+    offer_slug_aliases: []
+    title: ZoomInfo for Startups
+    summary: Startups that raised up to a Series A through an approved incubator, accelerator, or VC partner can get ZoomInfo at startup pricing, with 50% off for the first two years for those under $4 million in funding.
+    lifecycle:
+      status: active
+      effective_from: 2026-10-22T07:07:12.402Z
+    economics:
+      consideration:
+        kind: variable
+        description: Eligible startups pay ZoomInfo's startup pricing, which is 50% off for the first two years.
+      benefits:
+        - benefit_id: ben_01
+          description: 50% off ZoomInfo for the first two years (restrictions apply)
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 5000
+          duration:
+            kind: exact
+            value: P2Y
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.funding_raised_usd
+            kind: predicate
+            operator: lt
+            statement: Raised under $4 million in funding
+            value:
+              type: number
+              value: 4000000
+          - criterion_id: cri_02
+            kind: manual
+            reason: external-verification
+            statement: Raised up to a Series A funding round via an approved incubator, accelerator, or venture capital partner
+    roles:
+      terms_authority_entity_id: ent_01m5h6yvcc21mctreteprh5pez
+      access_operator_entity_id: ent_01m5h6yvcc21mctreteprh5pez
+    access:
+      availability: public
+      method: form
+      url: https://www.zoominfo.com/free-trial
+      instructions: Use the Free Trial request on the ZoomInfo for Startups page; startups that raised up to a Series A via an approved incubator, accelerator, or venture capital partner are eligible, and restrictions apply to the 50% pricing.
+    source_ids:
+      - src_fc11255f4a6d8f210c23328948f7a36044387c2d2455bce4396f83f0290b3689
