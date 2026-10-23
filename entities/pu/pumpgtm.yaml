@@ -1,0 +1,79 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m5kbm666cpmfgdhz3g4426d9
+  slug: pumpgtm
+  slug_aliases: []
+  name: PumpGTM
+  domains:
+    - value: pumpgtm.com
+      role: primary
+      valid_from: 2026-10-23T03:07:00.000Z
+  category: crm-sales
+profile:
+  summary: PumpGTM is an AI-native multichannel outbound sales platform for finding buyers and running outreach across LinkedIn, X, and email.
+  description: PumpGTM connects to MCP-compatible AI tools and runs founder-led prospect discovery and outreach across LinkedIn, X, email, and Instagram.
+  links:
+    site: https://pumpgtm.com
+    pricing: https://pumpgtm.com/pricing
+sources:
+  - source_id: src_d15205b476975719544f75047fa8d654c5736bcd2799cbc92578eb89d6e6e7a1
+    url: https://pumpgtm.com/startups
+  - source_id: src_467682875da7510cfceba40bb05c244f3d43e27615a37c6f7375894dc6e94ef1
+    url: https://pumpgtm.com/pricing
+programs:
+  - program_id: prg_01m5kbm666gbskj7xrj2q1mxm9
+    program_slug: pumpgtm-for-startups
+    program_slug_aliases: []
+    title: PumpGTM for Startups
+    summary: PumpGTM for Startups gives early-stage founders 50% off new monthly Starter or Hypergrowth subscriptions for three months.
+    source_ids:
+      - src_d15205b476975719544f75047fa8d654c5736bcd2799cbc92578eb89d6e6e7a1
+offers:
+  - offer_id: off_01m5kbm666gyn9pa553xswz209
+    program_id: prg_01m5kbm666gbskj7xrj2q1mxm9
+    offer_slug: 50-percent-off-first-3-months
+    offer_slug_aliases: []
+    title: 50% off Starter or Hypergrowth monthly plans for 3 months
+    summary: Bootstrapped, pre-seed, and seed-stage startups receive 50% off a new monthly Starter or Hypergrowth subscription for the first three months.
+    description: The discount reduces Starter from $75/month to $37.50/month per LinkedIn account and Hypergrowth from $149/month to $74.50/month per LinkedIn account for the first three months, after which standard monthly pricing applies. Annual plans and energy top-ups are excluded.
+    lifecycle:
+      status: active
+      effective_from: 2026-10-23T03:07:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          kind: discount
+          description: 50% off a new monthly Starter ($37.50/month instead of $75/month) or Hypergrowth ($74.50/month instead of $149/month) subscription per LinkedIn account for 3 months.
+          percentage:
+            kind: exact
+            basis_points: 5000
+          duration:
+            kind: exact
+            value: P3M
+      consideration:
+        kind: variable
+        description: Applying is free; accepted startups pay the remaining 50% of the chosen monthly Starter or Hypergrowth subscription at checkout for the first three months, then the regular monthly rate unless cancelled.
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: external-verification
+            statement: Bootstrapped, pre-seed, and seed-stage startups (including teams validating an idea or building before launch) that submit a startup website and a founder GitHub, LinkedIn, or X profile.
+          - criterion_id: cri_02
+            kind: manual
+            reason: not-machine-evaluable
+            statement: Valid for a new monthly Starter or Hypergrowth subscription only; limited to one offer per company, and annual plans, energy top-ups, and other purchases are excluded.
+    roles:
+      terms_authority_entity_id: ent_01m5kbm666cpmfgdhz3g4426d9
+      access_operator_entity_id: ent_01m5kbm666cpmfgdhz3g4426d9
+    access:
+      availability: public
+      method: form
+      url: https://pumpgtm.com/startups
+      instructions: Use Apply to the program on the PumpGTM for Startups page to submit your startup website, product and buyer description, and a founder GitHub, LinkedIn, or X profile.
+    terms_url: https://pumpgtm.com/startups
+    source_ids:
+      - src_d15205b476975719544f75047fa8d654c5736bcd2799cbc92578eb89d6e6e7a1
+      - src_467682875da7510cfceba40bb05c244f3d43e27615a37c6f7375894dc6e94ef1
