@@ -1,0 +1,84 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m5kbm6654h774tw6g3t6b4x2
+  slug: surrealdb
+  slug_aliases: []
+  name: SurrealDB
+  domains:
+    - value: surrealdb.com
+      role: primary
+      valid_from: 2026-10-23T03:07:00.000Z
+  category: databases
+profile:
+  summary: SurrealDB is a multi-model database and AI agent memory platform for documents, graphs, vectors, and relational data.
+  description: SurrealDB provides a multi-model ACID database engine, managed SurrealDB Cloud clusters, and persistent Agent Memory for AI applications.
+  links:
+    site: https://surrealdb.com
+    pricing: https://surrealdb.com/pricing
+sources:
+  - source_id: src_f5b165359d85c288cb20d65006c700409741b25f6425047a69e98d2e505ad3f4
+    url: https://surrealdb.com/startups
+  - source_id: src_60c12b182bf7504ca9a4eacada777df549117591972faa0cda4db731f1cc085e
+    url: https://surrealdb.com/pricing
+programs:
+  - program_id: prg_01m5kbm666n4efmsscvxzq6nk3
+    program_slug: surrealdb-startup-programme
+    program_slug_aliases: []
+    title: SurrealDB Startup Programme
+    summary: The SurrealDB Startup Programme provides $5,000 in SurrealDB Cloud and Agent Memory credits for 12 months plus a dedicated Solutions Engineer.
+    source_ids:
+      - src_f5b165359d85c288cb20d65006c700409741b25f6425047a69e98d2e505ad3f4
+offers:
+  - offer_id: off_01m5kbm666cya5v3wvms6g7gqa
+    program_id: prg_01m5kbm666n4efmsscvxzq6nk3
+    offer_slug: startup-programme-5000-credits
+    offer_slug_aliases: []
+    title: $5,000 in SurrealDB Cloud and Agent Memory credits for 12 months
+    summary: Early-stage startups from Seed to Series A building on SurrealDB receive $5,000 in organisation-level Cloud and Agent Memory credits for 12 months and engineer access.
+    description: Credits apply at the organisation level across SurrealDB Cloud and Agent Memory in any split and last 12 months from the day they are applied. When credits run out, instances continue running at standard pricing.
+    lifecycle:
+      status: active
+      effective_from: 2026-10-23T03:07:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          kind: credit
+          description: $5,000 in organisation-level credits usable across SurrealDB Cloud and Agent Memory in any split for 12 months.
+          value:
+            kind: exact
+            amount:
+              currency: USD
+              minor_units: 500000
+          duration:
+            kind: exact
+            value: P1Y
+        - benefit_id: ben_02
+          kind: other
+          description: Direct access to a named Solutions Engineer for schema design, query performance, and stack migration, plus joint launch amplification and optional reduced-rate Startup Support.
+      consideration:
+        kind: variable
+        description: Joining the programme is free. Participants collaborate on a joint case study published only after word-for-word approval and provide honest product feedback; Startup Support is an optional paid add-on at a reduced startup rate.
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: external-verification
+            statement: Startups funded from Seed to Series A that are building a product where SurrealDB does real work in the architecture.
+          - criterion_id: cri_02
+            kind: manual
+            reason: not-machine-evaluable
+            statement: Credits apply only to managed SurrealDB Cloud and Agent Memory workloads, not self-hosted deployments.
+    roles:
+      terms_authority_entity_id: ent_01m5kbm6654h774tw6g3t6b4x2
+      access_operator_entity_id: ent_01m5kbm6654h774tw6g3t6b4x2
+    access:
+      availability: public
+      method: form
+      url: https://surrealdb.com/startups
+      instructions: Use Apply now on the SurrealDB Startup Programme page to submit the short application form with company details, team size, funding stage, and contact information; no pitch deck is required.
+    terms_url: https://surrealdb.com/startups
+    source_ids:
+      - src_f5b165359d85c288cb20d65006c700409741b25f6425047a69e98d2e505ad3f4
+      - src_60c12b182bf7504ca9a4eacada777df549117591972faa0cda4db731f1cc085e
