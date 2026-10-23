@@ -1,0 +1,78 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m5kf55554h774tw6g3t6b4x9
+  slug: stackit
+  slug_aliases: []
+  name: STACKIT
+  domains:
+    - value: stackit.com
+      role: primary
+      valid_from: 2026-10-23T05:55:00.000Z
+  category: hosting-infra
+profile:
+  summary: STACKIT is a sovereign European cloud provider from Schwarz Digits offering GDPR-compliant compute, Kubernetes, databases, and AI infrastructure.
+  description: STACKIT provides ISO 27001 and BSI C5 certified European cloud infrastructure including compute, GPU instances, managed Kubernetes, relational and NoSQL databases, and AI model serving.
+  links:
+    site: https://stackit.com/en
+sources:
+  - source_id: src_2d52fb43e91e3acc16b76c0ddbbbda0950968fd0872839605101b07592691709
+    url: https://stackit.com/en/why-stackit/benefits/startup-program
+  - source_id: src_2d0c45f710998679835dbddda6d9e392e089ab8bcdb799ccb510761e94aed118
+    url: https://stackit.com/en
+programs:
+  - program_id: prg_01m5kf5555n4efmsscvxzq6nk9
+    program_slug: stackit-startup-program
+    program_slug_aliases: []
+    title: STACKIT Startup Program
+    summary: The STACKIT Startup Program provides EU-based software startups under 5 years old with tailored cloud credits, 1-on-1 expert mentoring, and access to the Schwarz Group ecosystem.
+    source_ids:
+      - src_2d52fb43e91e3acc16b76c0ddbbbda0950968fd0872839605101b07592691709
+offers:
+  - offer_id: off_01m5kf5555cya5v3wvms6g7gq9
+    program_id: prg_01m5kf5555n4efmsscvxzq6nk9
+    offer_slug: stackit-cloud-credits-and-mentoring
+    offer_slug_aliases: []
+    title: Tailored STACKIT cloud credits, technical coaching, and Schwarz Group PoC access
+    summary: Eligible EU software startups under 5 years old receive tailored cloud credits across the STACKIT service portfolio, 1-on-1 expert coaching, and PoC opportunities with Schwarz Group business units.
+    description: Selected startups receive a cloud credit package tailored to project stage and technical complexity usable across the entire STACKIT portfolio, plus 1-on-1 coaching from cloud, AI, and cybersecurity experts, investor connections, and potential Proof of Concept (PoC) rollouts with Schwarz Group units.
+    lifecycle:
+      status: active
+      effective_from: 2026-10-23T05:55:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          kind: other
+          description: Tailored STACKIT cloud credits usable across the entire STACKIT service portfolio, awarded based on project stage and technical complexity.
+        - benefit_id: ben_02
+          kind: other
+          description: One-on-one coaching from business development, AI, cybersecurity, and cloud experts, investor connections, joint marketing visibility, and PoC matching with Schwarz Group business units.
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.age_months
+            kind: predicate
+            operator: lt
+            statement: Startup must be less than 5 years (60 months) old.
+            value:
+              type: number
+              value: 60
+          - criterion_id: cri_02
+            kind: manual
+            reason: not-machine-evaluable
+            statement: Startup must be headquartered within the European Union and have a software-based core product or digital business model scalable on cloud infrastructure.
+    roles:
+      terms_authority_entity_id: ent_01m5kf55554h774tw6g3t6b4x9
+      access_operator_entity_id: ent_01m5kf55554h774tw6g3t6b4x9
+    access:
+      availability: public
+      method: form
+      url: https://stackit.com/en/why-stackit/benefits/startup-program
+      instructions: Register online via Apply now on the STACKIT Startup Program page to join the Schwarz Group startup database and have your cloud credit package assessed.
+    terms_url: https://stackit.com/en/why-stackit/benefits/startup-program
+    source_ids:
+      - src_2d52fb43e91e3acc16b76c0ddbbbda0950968fd0872839605101b07592691709
+      - src_2d0c45f710998679835dbddda6d9e392e089ab8bcdb799ccb510761e94aed118
