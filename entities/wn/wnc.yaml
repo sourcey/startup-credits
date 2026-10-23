@@ -1,0 +1,68 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m5kyxjjd9nc2nt9zp2nvm2nt
+  slug: wnc
+  slug_aliases: []
+  name: WNC
+  domains:
+    - value: we-nocode.com
+      role: primary
+      valid_from: 2026-10-23T08:40:00.000Z
+  category: ai-ml
+profile:
+  summary: WNC develops AI agents, automation and custom software.
+  description: WNC develops AI agents, automation and custom software.
+  links:
+    site: https://www.we-nocode.com/
+sources:
+  - source_id: src_61f7cbbb1f63668530f80eef5bfa03360c0bce9e2b8f548d462ab87743389e9c
+    url: https://www.we-nocode.com/
+  - source_id: src_8341cade2f12a2d8094ba3d374602730e21419299731010f939378c39c600e95
+    url: https://www.we-nocode.com/ai-program
+programs:
+  - program_id: prg_01m5kyxjjdggg3svy93hxrakqg
+    program_slug: wnc-startup-program
+    program_slug_aliases: []
+    title: WNC Startup Program
+    summary: Software access and support for AI startups.
+    source_ids:
+      - src_8341cade2f12a2d8094ba3d374602730e21419299731010f939378c39c600e95
+offers:
+  - offer_id: off_01m5kyxjjd3vp5f8t85gfzhng6
+    program_id: prg_01m5kyxjjdggg3svy93hxrakqg
+    offer_slug: wnc-startup-program-six-months
+    offer_slug_aliases: []
+    title: WNC Startup Program - Six Months Free
+    summary: AI startups can apply for six months of Atflow, Alt Auth and SponsorSheep access, with hands-on support.
+    lifecycle:
+      status: active
+      effective_from: 2026-10-23T08:40:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          kind: free-service
+          service: Atflow, Alt Auth and SponsorSheep access
+          description: Six months of software access, with no card required.
+          duration:
+            kind: exact
+            value: P6M
+        - benefit_id: ben_02
+          kind: other
+          description: Hands-on support from WNC.
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_01
+        reason: external-verification
+        statement: AI startups apply for review by WNC. Acceptance is discretionary.
+    roles:
+      terms_authority_entity_id: ent_01m5kyxjjd9nc2nt9zp2nvm2nt
+      access_operator_entity_id: ent_01m5kyxjjd9nc2nt9zp2nvm2nt
+    access:
+      availability: public
+      method: form
+      url: https://www.we-nocode.com/ai-program
+    source_ids:
+      - src_8341cade2f12a2d8094ba3d374602730e21419299731010f939378c39c600e95
