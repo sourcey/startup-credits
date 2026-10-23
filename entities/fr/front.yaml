@@ -1,0 +1,74 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m5m9pe92awwmh3ytnwyhg1jn
+  slug: front
+  slug_aliases: []
+  name: Front
+  domains:
+    - value: front.com
+      role: primary
+      valid_from: 2026-10-23T11:52:45.000Z
+  category: support
+profile:
+  summary: Front is an AI-powered customer service platform where teams coordinate customer work across email, chat, SMS, and WhatsApp.
+  description: Front is a customer service platform, powered by AI, built for complex customer work across email, chat, SMS, and WhatsApp.
+  links:
+    site: https://front.com/
+sources:
+  - source_id: src_affa300175f65388d3f1959d42c0d201bee221fcff8c9b70669434ebe7485192
+    url: https://front.com/
+  - source_id: src_6e8886556afd86ae9bc1680333771df445601bdd2471c25a6c1a53768421f271
+    url: https://mercury.com/perks/front
+programs: []
+offers:
+  - offer_id: off_01m5m9pe94prxqkn3bcc7akef8
+    offer_slug: six-months-free-front-growth-plan
+    offer_slug_aliases: []
+    title: Six months free on Front's Growth Plan via Mercury Perks
+    summary: Eligible Mercury customers new to Front get the Front Growth Plan free for 6 months for up to 15 users (a stated $7,200 value); startups need under 50 employees and no more than $10 million raised.
+    lifecycle:
+      status: active
+      effective_from: 2026-10-23T11:52:45.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Free access to Front's Growth Plan for 6 months, for up to 15 users; stated value $7,200
+          kind: free-service
+          service: Front Growth Plan
+          duration:
+            kind: exact
+            value: P6M
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: external-verification
+            statement: The applicant must be a Mercury customer; the offer is available exclusively to qualified Mercury customers.
+          - criterion_id: cri_02
+            kind: manual
+            reason: external-verification
+            statement: The applicant must be a new Front customer; existing Front customers are not eligible.
+          - criterion_id: cri_03
+            kind: manual
+            reason: external-verification
+            statement: The applicant must have less than 50 employees.
+          - criterion_id: cri_04
+            kind: manual
+            reason: external-verification
+            statement: The applicant must have raised up to $10 million in funding (Angel, Pre-Seed, Seed, or Series A).
+          - criterion_id: cri_05
+            kind: manual
+            reason: external-verification
+            statement: The applicant must show a public funding profile (Crunchbase, Pitchbook, etc.) or proof of association with an accelerator program with current funding status.
+    roles:
+      terms_authority_entity_id: ent_01m5m9pe92awwmh3ytnwyhg1jn
+      access_operator_entity_id: ent_01kyyn497fymbxq5b9t4er223p
+    access:
+      availability: membership
+      method: other
+    source_ids:
+      - src_6e8886556afd86ae9bc1680333771df445601bdd2471c25a6c1a53768421f271
