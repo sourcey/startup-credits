@@ -1,84 +1,73 @@
 schema_version: sourcey.entity-authoring/v1alpha1
 entity:
-  entity_id: ent_01kyxthgpxq146yxej7dfwammx
+  entity_id: ent_01m5keetdm8wq8cwtkv10q6a9w
   slug: clever-cloud
   slug_aliases: []
   name: Clever Cloud
   domains:
-    - value: clever-cloud.com
+    - value: clever.cloud
       role: primary
-      valid_from: 2026-07-31T23:23:47.646Z
+      valid_from: 2026-10-23T03:55:00.000Z
   category: hosting-infra
 profile:
-  description: Clever Cloud provides platform-as-a-service cloud hosting, support, and infrastructure services.
+  summary: Clever Cloud is a Platform-as-a-Service providing automated application deployment, managed databases, object storage, and Kubernetes hosting.
+  description: Clever Cloud provides managed PaaS runtimes, databases, storage, and Kubernetes infrastructure to build, deploy, and scale cloud applications.
   links:
-    site: https://www.clever-cloud.com
+    site: https://www.clever.cloud/
 sources:
-  - source_id: src_ade1e10b6dcf9f6814d2c38366d1ec2a878affde2ef740d48ea51954d1eb1c15
-    url: https://www.clever-cloud.com/up-program
+  - source_id: src_cfcd41b79cdbd7bb0a7130efd87a961e29c05aa74d67d85279f1637f967f62f0
+    url: https://www.clever.cloud/up-program/
 programs:
-  - program_id: prg_01kyxthgpxt6jhsmgwkqaywt35
-    program_slug: up-program
+  - program_id: prg_01m5keetdnajmdk0h6v551f9e7
+    program_slug: up-programme
     program_slug_aliases: []
-    title: UP Program
-    summary: Clever Cloud startup program providing cloud credits, technical onboarding, coaching, and support to early-stage businesses.
+    title: Clever Cloud UP Programme
+    summary: Clever Cloud UP Programme supports technology startups with up to €10,000 in first-year cloud credits, engineer onboarding, coaching, premium support, mentoring, and Angel Start financial planning tools.
     source_ids:
-      - src_ade1e10b6dcf9f6814d2c38366d1ec2a878affde2ef740d48ea51954d1eb1c15
+      - src_cfcd41b79cdbd7bb0a7130efd87a961e29c05aa74d67d85279f1637f967f62f0
 offers:
-  - offer_id: off_01kyxthgpx5071sgbr3y0pmhh0
-    program_id: prg_01kyxthgpxt6jhsmgwkqaywt35
-    offer_slug: up-program-startup-credits
+  - offer_id: off_01m5keetdpj2m80trexqfydhb1
+    program_id: prg_01m5keetdnajmdk0h6v551f9e7
+    offer_slug: up-programme-cloud-credits
     offer_slug_aliases: []
-    title: UP Program
-    summary: Clever Cloud startup program offering up to €10,000 in cloud credits for the first year along with personalized onboarding, technical training, coaching, and support.
+    title: Up to €10,000 in Clever Cloud credits for the first year
+    summary: Selected technology startups receive up to €10,000 in Clever Cloud credits for their first year plus engineer onboarding, monthly coaching, premium support, workshops, mentoring, and Angel Start access.
+    description: Selected startups join an UP Programme cohort and receive up to €10,000 in cloud credits during their first year along with Technical Account Manager onboarding, certification training with Ecole Hexagone, monthly coaching, support, mentoring, visibility, and Angel Start financial planning tools.
     lifecycle:
       status: active
-      effective_from: 2026-07-31T23:23:47.646Z
+      effective_from: 2026-10-23T03:55:00.000Z
     economics:
       benefits:
         - benefit_id: ben_01
-          description: Up to 10 000€ cloud credits for your first year
-          duration:
-            kind: exact
-            value: P1Y
           kind: credit
+          description: Up to €10,000 in Clever Cloud credits for the first year.
           value:
+            kind: up-to
             amount:
               currency: EUR
               minor_units: 1000000
-            kind: up-to
+          duration:
+            kind: exact
+            value: P1Y
         - benefit_id: ben_02
-          description: Onboarding on our platform and training with our Engineers
           kind: other
-        - benefit_id: ben_03
-          description: Monthly coaching session
-          kind: other
-        - benefit_id: ben_04
-          description: Premium access to our all-stars support
-          kind: other
-        - benefit_id: ben_05
-          description: Workshop and Masterclass for your technical teams
-          kind: other
-        - benefit_id: ben_06
-          description: Mentoring for founders and for your technical teams
-          kind: other
-        - benefit_id: ben_07
-          description: Visibility on Clever Cloud media, network and events
-          kind: other
+          description: Platform onboarding and engineer training, certification training with Ecole Hexagone, monthly coaching session, premium support access, technical workshops and masterclasses, founder and technical mentoring, media and event visibility, and access to Angel Start financial planning tools.
       consideration:
         kind: none
     eligibility:
       rule:
-        criterion_id: cri_01
         kind: manual
+        criterion_id: cri_01
         reason: vendor-discretion
-        statement: Qualify through application form and scheduled introductory call with Startup Program Manager
+        statement: Open to technology startups in France and internationally, including MVP or beta projects and startups entering an acceleration phase, with no minimum MRR, prior legal entity, or existing Clever Cloud account required; applications are selected holistically by cohort based on product stage, usage growth, startup maturity, technical context, and infrastructure needs.
     roles:
-      terms_authority_entity_id: ent_01kyxthgpxq146yxej7dfwammx
-      access_operator_entity_id: ent_01kyxthgpxq146yxej7dfwammx
+      terms_authority_entity_id: ent_01m5keetdm8wq8cwtkv10q6a9w
+      access_operator_entity_id: ent_01m5keetdm8wq8cwtkv10q6a9w
     access:
       availability: public
       method: form
-      url: https://www.clever-cloud.com/up-program/
+      url: https://www.clever.cloud/up-program/
+      instructions: Submit the application form on the UP Programme page with startup details, product stage, team, technical context, and challenges, followed by a 30-minute call with the Startup Program Manager for cohort selection.
+    terms_url: https://www.clever.cloud/up-program/
     source_ids:
-      - src_ade1e10b6dcf9f6814d2c38366d1ec2a878affde2ef740d48ea51954d1eb1c15
+      - src_cfcd41b79cdbd7bb0a7130efd87a961e29c05aa74d67d85279f1637f967f62f0
