@@ -1,0 +1,70 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m5kf99994h774tw6g3t6b4xd
+  slug: clay
+  slug_aliases: []
+  name: Clay
+  domains:
+    - value: clay.com
+      role: primary
+      valid_from: 2026-10-22T00:00:00.000Z
+  category: crm-sales
+profile:
+  summary: Clay provides infrastructure to get data, run agentic workflows, and launch go-to-market plays.
+  description: Clay provides data enrichment, Claygent AI research, and go-to-market workflow automation to help teams source accounts, enrich leads, and run outbound plays.
+  links:
+    site: https://www.clay.com/
+sources:
+  - source_id: src_a0d94e42407f2b093a7cf06618c4220593652bca1ba51422fb44421225128502
+    url: https://www.clay.com/clay-for-startups
+  - source_id: src_9b8f5537f3cac06c119720a51dc671c639b010651ba2a49073711a88168b2057
+    url: https://cohorts.clay.com/wedge
+  - source_id: src_908f513779080968a6958ccf1880b0ce80ca7d8d249ccc2b2c19e04896ce44b8
+    url: https://www.clay.com/
+programs: []
+offers:
+  - offer_id: off_01m5kf9999cya5v3wvms6g7gqd
+    offer_slug: clay-for-startups-wedge
+    offer_slug_aliases: []
+    title: Clay Wedge startup GTM accelerator and Clay credits
+    summary: Wedge is Clay virtual GTM acceleration program for pre-seed to Series A venture-backed startups, providing thousands of Clay credits and hands-on support from GTME experts and coaches.
+    lifecycle:
+      status: active
+      effective_from: 2026-10-22T00:00:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          kind: other
+          description: Earn thousands of credits throughout the two-week live and async programs, plus hands-on support from GTME experts and coaches at Clay.
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.stage
+            kind: predicate
+            operator: in
+            statement: Pre-seed to Series A stage; companies past Series A are not eligible.
+            value:
+              type: string-set
+              values:
+                - pre-seed
+                - Seed
+                - Series A
+          - criterion_id: cri_02
+            kind: manual
+            reason: not-machine-evaluable
+            statement: Built for founders and first GTM hires at VC-backed startups on an operating GTM team; non-VC-backed companies, non-GTM roles (engineering, product, design, customer success, support, data, finance, legal, HR), and interns or people still in school are not eligible.
+    roles:
+      terms_authority_entity_id: ent_01m5kf99994h774tw6g3t6b4xd
+      access_operator_entity_id: ent_01m5kf99994h774tw6g3t6b4xd
+    access:
+      availability: public
+      method: form
+      url: https://cohorts.clay.com/wedge
+    source_ids:
+      - src_a0d94e42407f2b093a7cf06618c4220593652bca1ba51422fb44421225128502
+      - src_9b8f5537f3cac06c119720a51dc671c639b010651ba2a49073711a88168b2057
+      - src_908f513779080968a6958ccf1880b0ce80ca7d8d249ccc2b2c19e04896ce44b8
