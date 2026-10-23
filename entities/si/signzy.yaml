@@ -1,0 +1,62 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m5kf66664h774tw6g3t6b4xa
+  slug: signzy
+  slug_aliases: []
+  name: Signzy
+  domains:
+    - value: signzy.com
+      role: primary
+      valid_from: 2026-10-23T05:55:00.000Z
+  category: apis-integration
+profile:
+  summary: Signzy is a digital onboarding, KYC, KYB, AML, and fintech API infrastructure platform.
+  description: Signzy provides over 240 plug-and-play APIs and a no-code AI platform for identity verification, business verification, background checks, credit risk assessment, and fraud detection.
+  links:
+    site: https://www.signzy.com
+sources:
+  - source_id: src_d7dd696a176fcbe5ec5df161266ffb135c05fd1480e3394c1c8f4d661b3a6c46
+    url: https://www.signzy.com/fintech-apis/startups
+  - source_id: src_95c5fe8b684700ca22fb92af2736c4e596541fd4bca55c3ae6c8246346acc316
+    url: https://www.signzy.com
+programs: []
+offers:
+  - offer_id: off_01m5kf6666cya5v3wvms6g7gqa
+    offer_slug: signzy-startups-api-sandbox-credits
+    offer_slug_aliases: []
+    title: 5,000 INR in free Signzy API sandbox credits and startup rates
+    summary: Signzy for Startups offers free credits worth 5,000 INR for Signzy API sandbox, startup-friendly rates, mentoring from seasoned professionals and industry experts, and access to top BFSIs and Venture Capitalists.
+    lifecycle:
+      status: active
+      effective_from: 2026-10-23T05:55:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          kind: credit
+          description: Free credits worth 5,000 INR for Signzy API sandbox testing.
+          value:
+            kind: exact
+            amount:
+              currency: INR
+              minor_units: 500000
+        - benefit_id: ben_02
+          kind: other
+          description: Startup-friendly API pricing, mentoring from industry professionals, and access to Signzy BFSI and Venture Capitalist networks.
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_01
+        reason: vendor-discretion
+        statement: Applicant is a startup seeking to improve its customer onboarding and KYC processes.
+    roles:
+      terms_authority_entity_id: ent_01m5kf66664h774tw6g3t6b4xa
+      access_operator_entity_id: ent_01m5kf66664h774tw6g3t6b4xa
+    access:
+      availability: public
+      method: form
+      url: https://www.signzy.com/fintech-apis/startups
+    source_ids:
+      - src_d7dd696a176fcbe5ec5df161266ffb135c05fd1480e3394c1c8f4d661b3a6c46
+      - src_95c5fe8b684700ca22fb92af2736c4e596541fd4bca55c3ae6c8246346acc316
