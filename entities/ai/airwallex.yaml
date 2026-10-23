@@ -1,0 +1,82 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m5kg651zf97k558kbnw4n1p2
+  slug: airwallex
+  slug_aliases: []
+  name: Airwallex
+  domains:
+    - value: airwallex.com
+      role: primary
+      valid_from: 2026-10-23T04:26:57Z
+  category: finance-accounting
+profile:
+  summary: Airwallex is a global financial platform for businesses, offering multi-currency accounts, cross-border payments, payouts, and spend management.
+  description: Airwallex provides businesses a global financial platform with multi-currency accounts, cross-border payments, payouts, and cards.
+  links:
+    site: https://www.airwallex.com
+sources:
+  - source_id: src_4fbd104cf4e6ddc30505aa953aea4ec57787b4c43eaca6bf2e6da79a9557d183
+    url: https://www.airwallex.com/en-us/startups
+programs:
+  - program_id: prg_01m5kg65250qgjkb6wj43x0dqj
+    program_slug: airwallex-for-startups
+    program_slug_aliases: []
+    title: Airwallex for Startups
+    summary: Airwallex for Startups gives accepted venture-backed startups $150K in fee credits usable across FX, payments, payouts, and platform fees for 12 months.
+    source_ids:
+      - src_4fbd104cf4e6ddc30505aa953aea4ec57787b4c43eaca6bf2e6da79a9557d183
+offers:
+  - offer_id: off_01m5kg65255y5mhp08n6f49fjj
+    program_id: prg_01m5kg65250qgjkb6wj43x0dqj
+    offer_slug: startup-fee-credits-150k
+    offer_slug_aliases: []
+    title: Airwallex for Startups $150K fee credits
+    summary: Accepted venture-backed startups get $150,000 in Airwallex fee credits usable across FX, payments, payouts, and platform fees for 12 months.
+    lifecycle:
+      status: active
+      effective_from: 2026-10-23T04:26:57Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: $150,000 in fee credits usable across FX, payments, payouts, and platform fees, valid for 12 months.
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 15000000
+            kind: exact
+          duration:
+            kind: exact
+            value: P1Y
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: not-machine-evaluable
+            statement: The program is designed for venture-backed startups from pre-seed through Series A that have raised $500K or more.
+          - criterion_id: cri_02
+            kind: manual
+            reason: external-verification
+            statement: Existing Airwallex customers are not eligible; the applicant must be a new Airwallex customer.
+          - criterion_id: cri_03
+            kind: manual
+            reason: not-machine-evaluable
+            statement: This offering is focused on startups with a US-registered business entity.
+          - criterion_id: cri_04
+            kind: manual
+            reason: not-machine-evaluable
+            statement: Airwallex prioritizes startups that have raised external funding, typically angel, seed, or institutional rounds.
+    roles:
+      terms_authority_entity_id: ent_01m5kg651zf97k558kbnw4n1p2
+      access_operator_entity_id: ent_01m5kg651zf97k558kbnw4n1p2
+    access:
+      availability: public
+      instructions: Apply via the Apply now form on the Airwallex for Startups page; questions to startups@airwallex.com. Joining the program is free.
+      method: form
+      url: https://www.airwallex.com/en-us/startups
+    source_ids:
+      - src_4fbd104cf4e6ddc30505aa953aea4ec57787b4c43eaca6bf2e6da79a9557d183
