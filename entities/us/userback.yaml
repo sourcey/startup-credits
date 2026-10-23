@@ -1,0 +1,88 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m5kf77774h774tw6g3t6b4xb
+  slug: userback
+  slug_aliases: []
+  name: Userback
+  domains:
+    - value: userback.io
+      role: primary
+      valid_from: 2026-10-22T00:00:00.000Z
+  category: data-analytics
+profile:
+  summary: Userback is a user feedback platform for collecting in-app feedback, surveys, session replays, and feature requests.
+  description: Userback helps product teams collect, understand, and act on user feedback with feedback widgets, in-app surveys, session replays, and a feature portal.
+  links:
+    site: https://userback.io/
+sources:
+  - source_id: src_1da5a4f2c8ee9f24f125fe78536b86543a5f897be3bf8597ab1f599384623435
+    url: https://userback.io/offer/startups/
+  - source_id: src_61ce2c276afaae52dcd64ffd389e33749c73ce671983454a81db37a9ef3b6257
+    url: https://userback.io/
+programs: []
+offers:
+  - offer_id: off_01m5kf7777cya5v3wvms6g7gqb
+    offer_slug: userback-startup-program-25-percent-off
+    offer_slug_aliases: []
+    title: 25% off Userback annual plans for the first year
+    summary: Userback Startup Program offers 25% off all annual plans for the first year for eligible early-stage SaaS startups.
+    lifecycle:
+      status: active
+      effective_from: 2026-10-22T00:00:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          kind: discount
+          description: 25% off all annual plans for your first year.
+          applies_to: Annual plans
+          percentage:
+            kind: exact
+            basis_points: 2500
+          duration:
+            kind: exact
+            value: P1Y
+      consideration:
+        kind: variable
+        description: The startup pays the remaining discounted price on an annual plan; the page compares the Business plan at $59.25 per month billed annually.
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.funding_raised_usd
+            kind: predicate
+            operator: lte
+            statement: Up to $1M in funding.
+            value:
+              type: number
+              value: 1000000
+          - criterion_id: cri_02
+            fact: company.employee_count
+            kind: predicate
+            operator: lt
+            statement: Less than 10 employees.
+            value:
+              type: number
+              value: 10
+          - criterion_id: cri_03
+            fact: company.age_months
+            kind: predicate
+            operator: lte
+            statement: Founded within the last 2 years.
+            value:
+              type: number
+              value: 24
+          - criterion_id: cri_04
+            kind: manual
+            reason: not-machine-evaluable
+            statement: Primarily a SaaS business.
+    roles:
+      terms_authority_entity_id: ent_01m5kf77774h774tw6g3t6b4xb
+      access_operator_entity_id: ent_01m5kf77774h774tw6g3t6b4xb
+    access:
+      availability: public
+      method: form
+      url: https://userback.io/offer/startups/
+    source_ids:
+      - src_1da5a4f2c8ee9f24f125fe78536b86543a5f897be3bf8597ab1f599384623435
+      - src_61ce2c276afaae52dcd64ffd389e33749c73ce671983454a81db37a9ef3b6257
