@@ -1,0 +1,68 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m50me4bkh9x4cyg8zc190g4k
+  slug: byteplus
+  slug_aliases: []
+  name: BytePlus
+  domains:
+    - value: byteplus.com
+      role: primary
+      valid_from: 2026-10-15T00:00:00.000Z
+  category: hosting-infra
+profile:
+  summary: BytePlus is ByteDance's enterprise cloud platform offering cloud infrastructure, AI model services, and data products.
+  description: BytePlus is ByteDance's enterprise technology arm, providing cloud infrastructure, AI model services, data analytics and content delivery to businesses worldwide.
+  links:
+    site: https://www.byteplus.com/
+sources:
+  - source_id: src_54275932bf0bc7427abe258de1c2dc774fab05f0063bb5fe7f06516c976877e9
+    url: https://www.byteplus.com/en/contact-us/vstart
+  - source_id: src_fd51614aef2c31e85c674ea75f5defcd15bcbabb5bc8e49a3ef32c24706d7769
+    url: https://docs.byteplus.com/en/docs/legal/tnc_ve-start_global_startups
+programs:
+  - program_id: prg_01m50me4bw8psx5q2ft5f19yc5
+    program_slug: v-start-global-startups-accelerator
+    program_slug_aliases: []
+    title: V-Start Global Startups Accelerator
+    summary: BytePlus V-Start is a startup accelerator that grants cloud coupons, AI model credits and workshops to qualifying early-stage companies.
+    source_ids:
+      - src_54275932bf0bc7427abe258de1c2dc774fab05f0063bb5fe7f06516c976877e9
+      - src_fd51614aef2c31e85c674ea75f5defcd15bcbabb5bc8e49a3ef32c24706d7769
+offers:
+  - offer_id: off_01m50me4bx3f6829n8qg2kwx32
+    program_id: prg_01m50me4bw8psx5q2ft5f19yc5
+    offer_slug: v-start-up-to-100000-usd-in-cloud-coupons
+    offer_slug_aliases: []
+    title: V-Start up to $100,000 USD in cloud coupons
+    summary: Approved startups at or before Series D can receive up to $100,000 USD in BytePlus cloud coupons, $6,500 in voice AI model credits, and 10 billion or more LLM tokens.
+    lifecycle:
+      status: active
+      effective_from: 2026-10-15T00:00:00.000Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_cloud_coupons
+          kind: other
+          description: Up to $100,000 USD in BytePlus cloud coupons.
+        - benefit_id: ben_ai_credits
+          kind: other
+          description: $6,500 in voice AI model credits and 10 billion or more LLM tokens.
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Participants must be a legally registered business at or before Series D funding, submit an application with authority to bind the company, and are accepted at BytePlus's sole discretion.
+    roles:
+      terms_authority_entity_id: ent_01m50me4bkh9x4cyg8zc190g4k
+      access_operator_entity_id: ent_01m50me4bkh9x4cyg8zc190g4k
+    access:
+      availability: public
+      method: form
+      url: https://www.byteplus.com/en/contact-us/vstart
+      instructions: Submit the V-Start application form on the BytePlus website with your company and funding details.
+    terms_url: https://docs.byteplus.com/en/docs/legal/tnc_ve-start_global_startups
+    source_ids:
+      - src_54275932bf0bc7427abe258de1c2dc774fab05f0063bb5fe7f06516c976877e9
+      - src_fd51614aef2c31e85c674ea75f5defcd15bcbabb5bc8e49a3ef32c24706d7769
