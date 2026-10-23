@@ -1,0 +1,93 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m5ke22224h774tw6g3t6b4x4
+  slug: partnerstack
+  slug_aliases: []
+  name: PartnerStack
+  domains:
+    - value: partnerstack.com
+      role: primary
+      valid_from: 2026-10-23T04:33:00.000Z
+  category: crm-sales
+profile:
+  summary: PartnerStack is a B2B partner ecosystem and partnership management platform for affiliate, referral, reseller, and co-sell programs.
+  description: PartnerStack provides partner recruitment, onboarding, link-based attribution tracking, automated commission payouts, and marketplace discovery across a network of over 80,000 active B2B partners.
+  links:
+    site: https://partnerstack.com
+    pricing: https://partnerstack.com/pricing
+sources:
+  - source_id: src_a29526ab8495de33ef89c435742b9a4a160e9f3fdaacde2cdd746371da777e83
+    url: https://partnerstack.com/for-startups
+  - source_id: src_9455f30d1a0342ee0972cd233dd50477fc6c06574bad6c3e39c24c894402d5dc
+    url: https://partnerstack.com/pricing
+programs:
+  - program_id: prg_01m5ke2222n4efmsscvxzq6nk4
+    program_slug: partnerstack-for-startups
+    program_slug_aliases: []
+    title: PartnerStack for Startups
+    summary: PartnerStack for Startups offers startup-friendly pricing, expert onboarding and setup, an 8-week partnerships bootcamp, Slack community access, workshops, and office hours for early-stage B2B SaaS startups.
+    source_ids:
+      - src_a29526ab8495de33ef89c435742b9a4a160e9f3fdaacde2cdd746371da777e83
+offers:
+  - offer_id: off_01m5ke2222cya5v3wvms6g7gq4
+    program_id: prg_01m5ke2222n4efmsscvxzq6nk4
+    offer_slug: partnerstack-for-startups-program
+    offer_slug_aliases: []
+    title: PartnerStack for Startups pricing, 8-week bootcamp, and onboarding
+    summary: Qualifying B2B SaaS startups with fewer than 50 employees, up to $5M in funding, and under 5 years old receive startup-friendly PartnerStack pricing, expert onboarding, and an 8-week partnerships bootcamp.
+    description: Approved startup applicants receive tailored startup-friendly pricing to launch their first partner program, expert onboarding and setup, access to the 8-week PartnerStack for Startups Bootcamp, Slack community access, Customer Success Manager workshops and webinars, and office hours.
+    lifecycle:
+      status: active
+      effective_from: 2026-10-23T04:33:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          kind: other
+          description: Startup-friendly pricing tailored for early-stage B2B SaaS startups launching their first partner program, plus expert onboarding and setup, 8-week PartnerStack for Startups Bootcamp, Slack community access, Customer Success Manager workshops and webinars, and strategy office hours.
+      consideration:
+        kind: variable
+        description: Paid subscription at startup-friendly pricing arranged through a demo consultation; only a limited number of startups are accepted at a time.
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.employee_count
+            kind: predicate
+            operator: lt
+            statement: B2B SaaS startup with fewer than 50 employees.
+            value:
+              type: number
+              value: 50
+          - criterion_id: cri_02
+            fact: company.funding_raised_usd
+            kind: predicate
+            operator: lte
+            statement: Up to $5M in total funding raised.
+            value:
+              type: number
+              value: 5000000
+          - criterion_id: cri_03
+            fact: company.age_months
+            kind: predicate
+            operator: lt
+            statement: Less than 5 years (60 months) old.
+            value:
+              type: number
+              value: 60
+          - criterion_id: cri_04
+            kind: manual
+            reason: not-machine-evaluable
+            statement: Must be a B2B SaaS company, a new PartnerStack customer (previous or active customers do not qualify), and have no established partner program.
+    roles:
+      terms_authority_entity_id: ent_01m5ke22224h774tw6g3t6b4x4
+      access_operator_entity_id: ent_01m5ke22224h774tw6g3t6b4x4
+    access:
+      availability: public
+      method: contact
+      url: https://partnerstack.com/for-startups
+      instructions: Request admission via Book a demo on the PartnerStack for Startups page to qualify for startup pricing and bootcamp onboarding.
+    terms_url: https://partnerstack.com/for-startups
+    source_ids:
+      - src_a29526ab8495de33ef89c435742b9a4a160e9f3fdaacde2cdd746371da777e83
+      - src_9455f30d1a0342ee0972cd233dd50477fc6c06574bad6c3e39c24c894402d5dc
