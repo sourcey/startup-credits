@@ -1,0 +1,73 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m5mpmmymjasanfpb00wwbz6p
+  slug: zitadel
+  slug_aliases: []
+  name: ZITADEL
+  domains:
+    - value: zitadel.com
+      role: primary
+      valid_from: 2026-01-01T00:00:00.000Z
+  category: auth-security
+profile:
+  summary: ZITADEL provides an open-source identity infrastructure platform for authentication, authorization, and user management.
+  description: ZITADEL is the identity infrastructure platform that is built for developers and works for all users and applications.
+  links:
+    site: https://zitadel.com/
+sources:
+  - source_id: src_d902cd6e61d70b573ed4b026420b29c427a2bf11d99f42374f405e86dacb28b5
+    url: https://zitadel.com/startup
+  - source_id: src_a375accadfa35ebeaa5b343444df1d745b154966e2289e93208f8f399055b4bb
+    url: https://zitadel.com/
+programs: []
+offers:
+  - offer_id: off_01m5mpmmymdhj45nnh5ffpz4zc
+    offer_slug: zitadel-startup-program
+    offer_slug_aliases: []
+    title: ZITADEL Startup Program
+    summary: Eligible startups receive financial credits, all features of ZITADEL Cloud, and direct engineering sessions for their first 12 months.
+    description: Build your product with confidence. Validate identity management with our engineers. What you get in the first 12 months - Use all features of ZITADEL Cloud, Talk directly to our engineers, and Financial credits.
+    lifecycle:
+      status: active
+      effective_from: 2026-01-01T00:00:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Financial credits toward ZITADEL Cloud
+          kind: other
+        - benefit_id: ben_02
+          description: Use all features of ZITADEL Cloud
+          kind: other
+        - benefit_id: ben_03
+          description: Talk directly to our engineers
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_funding
+            kind: manual
+            reason: external-verification
+            statement: Less than $2M funding
+          - criterion_id: cri_age
+            kind: manual
+            reason: external-verification
+            statement: No more than 2 years old
+          - criterion_id: cri_backing
+            kind: manual
+            reason: external-verification
+            statement: Backed by an investor or accelerator
+    roles:
+      terms_authority_entity_id: ent_01m5mpmmymjasanfpb00wwbz6p
+      access_operator_entity_id: ent_01m5mpmmymjasanfpb00wwbz6p
+    access:
+      availability: public
+      instructions: Register and fill out the startup program form on the ZITADEL startup page.
+      method: form
+      url: https://zitadel.com/startup
+    terms_url: https://zitadel.com/startup
+    source_ids:
+      - src_d902cd6e61d70b573ed4b026420b29c427a2bf11d99f42374f405e86dacb28b5
+      - src_a375accadfa35ebeaa5b343444df1d745b154966e2289e93208f8f399055b4bb
