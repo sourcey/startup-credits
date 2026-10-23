@@ -1,0 +1,73 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m5kf33334h774tw6g3t6b4x7
+  slug: holded
+  slug_aliases: []
+  name: Holded
+  domains:
+    - value: holded.com
+      role: primary
+      valid_from: 2026-10-23T05:55:00.000Z
+  category: finance-accounting
+profile:
+  summary: Holded is a cloud business management, invoicing, accounting, CRM, and project management platform for startups and SMBs.
+  description: Holded unifies automated invoicing, bank reconciliation, real-time accounting and tax reporting, expense management, CRM pipelines, and team time tracking in one dashboard.
+  links:
+    site: https://www.holded.com
+    pricing: https://www.holded.com/pricing
+sources:
+  - source_id: src_97c565f6ef64026c7f047047936a9249d3dc80a9eb6f54609e068617f52f2a8c
+    url: https://www.holded.com/startups
+  - source_id: src_b8d7defa0235c1bb4186721e3230e5b3107d064379de3b90e8de52485ff448ac
+    url: https://www.holded.com/pricing
+programs:
+  - program_id: prg_01m5kf3333n4efmsscvxzq6nk7
+    program_slug: holded-for-startups
+    program_slug_aliases: []
+    title: Holded for Startups
+    summary: Holded for Startups offers early-stage companies 50% off for 3 months across all Holded invoicing, accounting, CRM, and project management features.
+    source_ids:
+      - src_97c565f6ef64026c7f047047936a9249d3dc80a9eb6f54609e068617f52f2a8c
+offers:
+  - offer_id: off_01m5kf3333cya5v3wvms6g7gq7
+    program_id: prg_01m5kf3333n4efmsscvxzq6nk7
+    offer_slug: holded-startups-50-percent-off-3-months
+    offer_slug_aliases: []
+    title: 50% off Holded for 3 months for startups
+    summary: Eligible startups receive a 14-day free trial followed by 50% off for 3 months across every Holded feature with no commitment after the discount period.
+    description: Startups claiming the Holded startup offer get half-price access for 3 months to the full Holded platform including automated invoicing, accounting, expense classification, CRM, and project management.
+    lifecycle:
+      status: active
+      effective_from: 2026-10-23T05:55:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          kind: discount
+          description: 50% off Holded subscription plans for 3 months across all Holded features.
+          percentage:
+            kind: exact
+            basis_points: 5000
+          duration:
+            kind: exact
+            value: P3M
+      consideration:
+        kind: variable
+        description: 50% discounted subscription rate during the 3-month promotional period, with no long-term commitment required afterward.
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_01
+        reason: not-machine-evaluable
+        statement: Exclusive for startups.
+    roles:
+      terms_authority_entity_id: ent_01m5kf33334h774tw6g3t6b4x7
+      access_operator_entity_id: ent_01m5kf33334h774tw6g3t6b4x7
+    access:
+      availability: public
+      method: form
+      url: https://www.holded.com/startups
+      instructions: Click Claim your discount on the Holded for Startups page to create an account and activate the 50% startup discount.
+    terms_url: https://www.holded.com/startups
+    source_ids:
+      - src_97c565f6ef64026c7f047047936a9249d3dc80a9eb6f54609e068617f52f2a8c
+      - src_b8d7defa0235c1bb4186721e3230e5b3107d064379de3b90e8de52485ff448ac
