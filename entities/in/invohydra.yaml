@@ -1,0 +1,69 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m5mf0rrn0c4cemzxqhvsd02j
+  slug: invohydra
+  slug_aliases: []
+  name: InvoHydra
+  domains:
+    - value: invohydra.com
+      role: primary
+      valid_from: 2026-01-01T00:00:00.000Z
+  category: finance-accounting
+profile:
+  summary: InvoHydra provides cloud-based GST billing, invoicing, accounting, inventory, and payroll management software for growing businesses.
+  description: InvoHydra provides GST billing, e-invoicing, inventory management, CRM, and payroll software designed for small businesses and growing enterprises.
+  links:
+    site: https://www.invohydra.com/
+sources:
+  - source_id: src_2adfade5c9bd884bda44870a96753b7e7484ba860e0305aa74dc933f3bc4acca
+    url: https://www.invohydra.com/startup-programs
+  - source_id: src_edea4b1999095f61efa12490b4cc5941fa67d77b2da8924fbc408bb4981749d1
+    url: https://www.invohydra.com/
+programs: []
+offers:
+  - offer_id: off_01m5mf0rrrhccg4v3m2s9s5agv
+    offer_slug: 30-to-50-percent-off-for-startups
+    offer_slug_aliases: []
+    title: 30–50% off for startups
+    summary: Eligible startups incorporated within the last 3 years with a valid Certificate of Incorporation get 30% to 50% off selected InvoHydra plans.
+    lifecycle:
+      status: active
+      effective_from: 2026-01-01T00:00:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 30% to 50% discount on selected InvoHydra plans
+          kind: discount
+          percentage:
+            kind: range
+            maximum_basis_points: 5000
+            minimum_basis_points: 3000
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_age
+            fact: company.age_months
+            kind: predicate
+            operator: lte
+            statement: Company incorporated within the last 3 years.
+            value:
+              type: number
+              value: 36
+          - criterion_id: cri_coi
+            kind: manual
+            reason: external-verification
+            statement: A valid Certificate of Incorporation (COI) is provided for verification.
+    roles:
+      terms_authority_entity_id: ent_01m5mf0rrn0c4cemzxqhvsd02j
+      access_operator_entity_id: ent_01m5mf0rrn0c4cemzxqhvsd02j
+    access:
+      availability: public
+      instructions: Contact the InvoHydra team and submit your Certificate of Incorporation via the startup program page.
+      method: form
+      url: https://www.invohydra.com/startup-programs
+    source_ids:
+      - src_2adfade5c9bd884bda44870a96753b7e7484ba860e0305aa74dc933f3bc4acca
+      - src_edea4b1999095f61efa12490b4cc5941fa67d77b2da8924fbc408bb4981749d1
