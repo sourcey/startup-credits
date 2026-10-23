@@ -1,0 +1,60 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m5mnr4vd2phkv1d67cnndvpk
+  slug: zilliz
+  slug_aliases: []
+  name: Zilliz
+  domains:
+    - value: zilliz.com
+      role: primary
+      valid_from: 2026-01-01T00:00:00.000Z
+  category: databases
+profile:
+  summary: Zilliz provides a fully managed Vector Lakebase service powered by Milvus for AI applications.
+  description: Zilliz offers a fully managed Vector Lakebase powered by Milvus, unifying real-time vector search, lake-scale discovery, and AI data operations. Available across AWS, Google Cloud, and Azure regions worldwide.
+  links:
+    site: https://zilliz.com/
+sources:
+  - source_id: src_35de662a4bd0df2c377347860cc3cbec50f90fdc2e702477dc1882c2a5b74b24
+    url: https://zilliz.com/zilliz-for-startups
+  - source_id: src_cf826e81d253af7b6c2cd82675e2f959b2175711921a08a12686b647b44a9ed0
+    url: https://zilliz.com/
+programs: []
+offers:
+  - offer_id: off_01m5mnr4vdnaz3epnzqa6zkbv9
+    offer_slug: zilliz-ai-startup-program
+    offer_slug_aliases: []
+    title: Zilliz AI Startup Program
+    summary: Early-stage AI startups receive program discounts on Zilliz Cloud, technical guidance from Zilliz experts, and go-to-market exposure.
+    description: Apply for discounts to power development, testing, and early production workloads, plus hands-on technical guidance on architecture reviews and vector search optimization.
+    lifecycle:
+      status: active
+      effective_from: 2026-01-01T00:00:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Apply for discounts to power development, testing, and early production workloads
+          kind: other
+        - benefit_id: ben_02
+          description: Get access to guidance on architecture reviews, performance optimization, and best practices for large-scale vector search
+          kind: other
+      consideration:
+        kind: unknown
+        description: The source does not state a separate consideration or discount amount.
+    eligibility:
+      rule:
+        criterion_id: cri_early_stage_ai_startup
+        kind: manual
+        reason: external-verification
+        statement: The Zilliz AI Startup Program is designed to support early-stage AI startups building retrieval-powered AI applications, including RAG, semantic search, multimodal, and agent-based workflows. Whether you're a startup building your first prototype or preparing to scale after product–market fit, apply now for program discounts and get hands-on technical guidance from Zilliz experts.
+    roles:
+      terms_authority_entity_id: ent_01m5mnr4vd2phkv1d67cnndvpk
+      access_operator_entity_id: ent_01m5mnr4vd2phkv1d67cnndvpk
+    access:
+      availability: public
+      instructions: Apply via the startup program application form on the Zilliz website.
+      method: form
+      url: https://zilliz.com/zilliz-for-startups
+    source_ids:
+      - src_35de662a4bd0df2c377347860cc3cbec50f90fdc2e702477dc1882c2a5b74b24
+      - src_cf826e81d253af7b6c2cd82675e2f959b2175711921a08a12686b647b44a9ed0
