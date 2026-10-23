@@ -1,0 +1,61 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m5mehqp2ccwk994he8wafhv2
+  slug: bavest
+  slug_aliases: []
+  name: Bavest
+  domains:
+    - value: bavest.co
+      role: primary
+      valid_from: 2026-01-01T00:00:00.000Z
+  category: data-analytics
+profile:
+  summary: Bavest provides financial data APIs, market infrastructure, portfolio analytics, and sentiment data for fintechs and financial applications.
+  description: Bavest provides financial market data APIs, stock analytics, ESG metrics, and portfolio tracking infrastructure for fintech builders.
+  links:
+    site: https://www.bavest.co
+sources:
+  - source_id: src_d5547c419aa1158004c33b1fabac53124046d9afe7eb3d85b3960f5395dcf0d5
+    url: https://www.bavest.co/en/stock-api
+  - source_id: src_ab316983324b05a08763b2e56e92e06669cbe13ead9d40b6147ba707cd68227f
+    url: https://www.bavest.co/
+programs: []
+offers:
+  - offer_id: off_01m5mehqp4g0vevjsbgv1cytt3
+    offer_slug: up-to-70-percent-off-financial-api-for-startups
+    offer_slug_aliases: []
+    title: Up to 70% off stock API for startups
+    summary: Young startups receive an exclusive discount of up to 70% in their first year and up to 50% in their second year on Bavest financial data APIs.
+    lifecycle:
+      status: active
+      effective_from: 2026-01-01T00:00:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to 70% discount in Year 1 + up to 50% discount in Year 2 on Bavest financial data API
+          duration:
+            kind: exact
+            value: P2Y
+          kind: discount
+          percentage:
+            basis_points: 7000
+            kind: up-to
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: external-verification
+        statement: Available to young startups building financial and fintech applications.
+    roles:
+      terms_authority_entity_id: ent_01m5mehqp2ccwk994he8wafhv2
+      access_operator_entity_id: ent_01m5mehqp2ccwk994he8wafhv2
+    access:
+      availability: public
+      instructions: Contact the Bavest team via the startup contact route on the stock API page.
+      method: form
+      url: https://www.bavest.co/en/company/contact
+    source_ids:
+      - src_d5547c419aa1158004c33b1fabac53124046d9afe7eb3d85b3960f5395dcf0d5
+      - src_ab316983324b05a08763b2e56e92e06669cbe13ead9d40b6147ba707cd68227f
