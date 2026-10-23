@@ -12,7 +12,7 @@ entity:
   category: no-code
 profile:
   summary: CodeDesign.ai is an AI website builder for generating, editing, and publishing websites, funnels, and landing pages.
-  description: CodeDesign.ai is an AI website builder with AI writing tools, templates, a visual builder, domain registration, and team collaboration.
+  description: CodeDesign.ai is an AI website builder that generates responsive websites that users can edit visually or by chat, host on a custom domain, publish to WordPress, or export as HTML/CSS or React code.
   links:
     site: https://codedesign.ai
 sources:
