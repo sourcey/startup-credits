@@ -1,0 +1,87 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m5me2tj6tkb7ya1p3mkpyhfr
+  slug: datalab
+  slug_aliases: []
+  name: Datalab
+  domains:
+    - value: datalab.to
+      role: primary
+      valid_from: 2026-01-01T00:00:00.000Z
+  category: ai-ml
+profile:
+  summary: Datalab provides high-precision document intelligence and parsing models for AI workflows, model training data, and RAG indexing.
+  description: Datalab provides document extraction and OCR APIs designed for LLM embeddings, model training, and agentic document workflows.
+  links:
+    site: https://www.datalab.to
+sources:
+  - source_id: src_b2d5800a8649cc990c430a4b91cae5740ae03abc9389f0c644575c356807da86
+    url: https://app.datalab.to/startups
+  - source_id: src_0635558ff48494e340e28411416c69ecad07d61911388ac925e88913de043d28
+    url: https://app.datalab.to/pricing
+programs: []
+offers:
+  - offer_id: off_01m5me2tj8j872g0qy2zsamy7t
+    offer_slug: 33-percent-off-pricing-for-first-year
+    offer_slug_aliases: []
+    title: 33% off pricing for your first year
+    summary: Startups under 3 years old with under $15M raised and under $5M ARR get 33% off per-page rates and Team fee for 12 months.
+    lifecycle:
+      status: active
+      effective_from: 2026-01-01T00:00:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 33% off both per-page rates and the Team fee for twelve months
+          duration:
+            kind: exact
+            value: P1Y
+          kind: discount
+          percentage:
+            basis_points: 3300
+            kind: exact
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.age_months
+            kind: predicate
+            operator: lt
+            statement: The company is under 3 years old.
+            value:
+              type: number
+              value: 36
+          - criterion_id: cri_02
+            fact: company.funding_raised_usd
+            kind: predicate
+            operator: lt
+            statement: The company has raised less than $15M in total funding.
+            value:
+              type: number
+              value: 15000000
+          - criterion_id: cri_03
+            fact: company.annual_revenue_usd
+            kind: predicate
+            operator: lt
+            statement: The company has less than $5M in ARR.
+            value:
+              type: number
+              value: 5000000
+          - criterion_id: cri_04
+            kind: manual
+            reason: external-verification
+            statement: Document processing is core to the applicant's product.
+    roles:
+      terms_authority_entity_id: ent_01m5me2tj6tkb7ya1p3mkpyhfr
+      access_operator_entity_id: ent_01m5me2tj6tkb7ya1p3mkpyhfr
+    access:
+      availability: public
+      instructions: Apply via the startup program form on the Datalab website.
+      method: form
+      url: https://app.datalab.to/startups
+    source_ids:
+      - src_b2d5800a8649cc990c430a4b91cae5740ae03abc9389f0c644575c356807da86
+      - src_0635558ff48494e340e28411416c69ecad07d61911388ac925e88913de043d28
