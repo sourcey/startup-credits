@@ -1,0 +1,70 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m5kf44444h774tw6g3t6b4x8
+  slug: zilliz
+  slug_aliases: []
+  name: Zilliz
+  domains:
+    - value: zilliz.com
+      role: primary
+      valid_from: 2026-10-23T05:55:00.000Z
+  category: databases
+profile:
+  summary: Zilliz provides Zilliz Cloud, a fully managed Vector Lakebase service, and Milvus, an open-source vector database built for billion-scale vector similarity search.
+  description: Zilliz provides Zilliz Cloud, a fully managed Vector Lakebase service designed for high reliability, performance, and cost efficiency at scale, alongside open-source Milvus for billion-scale vector similarity search.
+  links:
+    site: https://zilliz.com
+    pricing: https://zilliz.com/pricing
+sources:
+  - source_id: src_35de662a4bd0df2c377347860cc3cbec50f90fdc2e702477dc1882c2a5b74b24
+    url: https://zilliz.com/zilliz-for-startups
+  - source_id: src_2e918182626b6ac229c7c10f4e41c6b3a75e0f8c84991716b6f20328901a58ad
+    url: https://zilliz.com/pricing
+programs:
+  - program_id: prg_01m5kf4444n4efmsscvxzq6nk8
+    program_slug: zilliz-ai-startup-program
+    program_slug_aliases: []
+    title: Zilliz AI Startup Program
+    summary: The Zilliz AI Startup Program supports early-stage AI startups with exclusive Zilliz Cloud discounts, technical architecture reviews, go-to-market exposure, and partner enablement.
+    source_ids:
+      - src_35de662a4bd0df2c377347860cc3cbec50f90fdc2e702477dc1882c2a5b74b24
+offers:
+  - offer_id: off_01m5kf4444cya5v3wvms6g7gq8
+    program_id: prg_01m5kf4444n4efmsscvxzq6nk8
+    offer_slug: zilliz-for-startups-discounts-and-support
+    offer_slug_aliases: []
+    title: Zilliz Cloud startup discounts, technical guidance, and GTM support
+    summary: Early-stage AI startups building retrieval-powered applications receive program discounts on Zilliz Cloud, architecture reviews from Zilliz engineers, and joint marketing opportunities.
+    description: Accepted startups receive exclusive discounts on Zilliz Cloud for development, testing, and early production workloads, plus hands-on guidance on architecture reviews and vector search optimization, joint marketing showcases, and partner ecosystem introductions.
+    lifecycle:
+      status: active
+      effective_from: 2026-10-23T05:55:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          kind: other
+          description: Exclusive program discounts on Zilliz Cloud to power development, testing, and early production vector search workloads.
+        - benefit_id: ben_02
+          kind: other
+          description: Hands-on technical support including architecture reviews and performance optimization, plus joint GTM exposure and partner ecosystem enablement.
+      consideration:
+        kind: variable
+        description: Discounted Zilliz Cloud usage terms tailored upon application review.
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_01
+        reason: vendor-discretion
+        statement: Designed to support early-stage AI startups building retrieval-powered AI applications, including RAG, semantic search, multimodal, and agent-based workflows, whether building a first prototype or preparing to scale after product-market fit.
+    roles:
+      terms_authority_entity_id: ent_01m5kf44444h774tw6g3t6b4x8
+      access_operator_entity_id: ent_01m5kf44444h774tw6g3t6b4x8
+    access:
+      availability: public
+      method: form
+      url: https://zilliz.com/zilliz-for-startups
+      instructions: Apply through the Zilliz for Startups program form on the Zilliz website.
+    terms_url: https://zilliz.com/zilliz-for-startups
+    source_ids:
+      - src_35de662a4bd0df2c377347860cc3cbec50f90fdc2e702477dc1882c2a5b74b24
+      - src_2e918182626b6ac229c7c10f4e41c6b3a75e0f8c84991716b6f20328901a58ad
