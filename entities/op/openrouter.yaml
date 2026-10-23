@@ -62,7 +62,7 @@ offers:
             fact: company.stage
             kind: predicate
             operator: eq
-            statement: Pre-Series B stage startup
+            statement: Pre-Series B, venture-scalable startup
             value:
               type: string
               value: Pre-Series B
@@ -74,6 +74,10 @@ offers:
             value:
               type: string
               value: AI
+          - criterion_id: cri_08
+            kind: manual
+            reason: external-verification
+            statement: Building the product full-time, not as a side project
           - criterion_id: cri_03
             kind: manual
             reason: external-verification
