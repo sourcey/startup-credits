@@ -1,0 +1,85 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m5kd11114h774tw6g3t6b4x3
+  slug: socialbu
+  slug_aliases: []
+  name: SocialBu
+  domains:
+    - value: socialbu.com
+      role: primary
+      valid_from: 2026-10-23T04:15:00.000Z
+  category: marketing
+profile:
+  summary: SocialBu is a social media management, scheduling, analytics, and AI automation platform for teams and startups.
+  description: SocialBu enables teams to publish, respond, monitor keywords, curate content, analyze social performance, and automate workflows across major social networks.
+  links:
+    site: https://socialbu.com
+    pricing: https://socialbu.com/pricing
+sources:
+  - source_id: src_3a2d9aa517b8abd54ce1c5f8941f95fdba1d8c79005af79c9abaab9b7f93dbdb
+    url: https://socialbu.com/startups
+  - source_id: src_313115a39bee11f3aa4b5c61039a8af5fe6050a97306846bf29bf04dc0f0342f
+    url: https://socialbu.com/pricing
+programs:
+  - program_id: prg_01m5kd1111n4efmsscvxzq6nk3
+    program_slug: socialbu-for-startups
+    program_slug_aliases: []
+    title: SocialBu for Startups
+    summary: The SocialBu for Startups program provides 6 months of free premium access to the full SocialBu suite, workshops, community access, and in-house expert support.
+    source_ids:
+      - src_3a2d9aa517b8abd54ce1c5f8941f95fdba1d8c79005af79c9abaab9b7f93dbdb
+offers:
+  - offer_id: off_01m5kd1111cya5v3wvms6g7gq3
+    program_id: prg_01m5kd1111n4efmsscvxzq6nk3
+    offer_slug: socialbu-6-months-free
+    offer_slug_aliases: []
+    title: 6 months of SocialBu free for startups
+    summary: Eligible early-stage startups with fewer than 50 team members receive 6 months of free premium access to the full SocialBu suite, early feature access, community access, and expert support.
+    description: Accepted startups receive 6 months of free access to SocialBu tools and workshops, including premium access to the full SocialBu suite, early access to new features, access to the SocialBu community, and support from in-house experts.
+    lifecycle:
+      status: active
+      effective_from: 2026-10-23T04:15:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          kind: discount
+          description: 100% off premium access to the full SocialBu suite and workshops for 6 months.
+          percentage:
+            kind: exact
+            basis_points: 10000
+          duration:
+            kind: exact
+            value: P6M
+        - benefit_id: ben_02
+          kind: other
+          description: Early access to new features, access to the SocialBu digital community, and support from in-house experts.
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.employee_count
+            kind: predicate
+            operator: lt
+            statement: Team must have fewer than 50 members.
+            value:
+              type: number
+              value: 50
+          - criterion_id: cri_02
+            kind: manual
+            reason: not-machine-evaluable
+            statement: Startup must be new to SocialBu and active on at least one social media platform; seed or early-stage funding is a plus.
+    roles:
+      terms_authority_entity_id: ent_01m5kd11114h774tw6g3t6b4x3
+      access_operator_entity_id: ent_01m5kd11114h774tw6g3t6b4x3
+    access:
+      availability: public
+      method: form
+      url: https://socialbu.com/startups
+      instructions: Apply through the SocialBu for Startups page; applications are reviewed within five business days and accepted startups receive redemption instructions by email.
+    terms_url: https://socialbu.com/startups
+    source_ids:
+      - src_3a2d9aa517b8abd54ce1c5f8941f95fdba1d8c79005af79c9abaab9b7f93dbdb
+      - src_313115a39bee11f3aa4b5c61039a8af5fe6050a97306846bf29bf04dc0f0342f
