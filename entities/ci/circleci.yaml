@@ -10,9 +10,10 @@ entity:
       valid_from: 2026-08-02T15:21:08.558Z
   category: ci-cd
 profile:
-  description: Continuous integration and delivery platform for automating software builds, tests, and deployment workflows.
+  description: CircleCI is a continuous integration and continuous delivery platform.
   links:
     site: https://circleci.com
+  summary: CircleCI is a continuous integration and continuous delivery platform.
 sources:
   - source_id: src_e5a5ed476ffee42b40459b102d2dd846b9b34a19ac568e98ed1ce703a86f5645
     url: https://circleci.com/startup-program/
@@ -55,8 +56,7 @@ offers:
           description: Guided onboarding and pipeline configuration support
           kind: other
       consideration:
-        kind: unknown
-        description: The public program page does not establish separate consideration.
+        kind: none
     eligibility:
       rule:
         criterion_id: cri_requirement_01
@@ -69,7 +69,7 @@ offers:
     access:
       availability: public
       method: form
-      url: https://circleci.com/startup-program/
+      url: https://r2hyl.share.hsforms.com/26qTJZ9w7QtS2Pib6nO2w_g
     terms_url: https://circleci.com/startup-program/
     source_ids:
       - src_e5a5ed476ffee42b40459b102d2dd846b9b34a19ac568e98ed1ce703a86f5645
