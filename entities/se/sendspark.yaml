@@ -1,0 +1,62 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m5kf22224h774tw6g3t6b4x6
+  slug: sendspark
+  slug_aliases: []
+  name: Sendspark
+  domains:
+    - value: sendspark.com
+      role: primary
+      valid_from: 2026-10-23T05:55:00.000Z
+  category: marketing
+profile:
+  summary: Sendspark is a video outreach platform to record and request personalized videos, embed videos in emails, and share video messages.
+  description: Sendspark is a video outreach platform to record yourself or your screen, personalize video thumbnails, request customer video testimonials, embed videos in emails, and share video messages across LinkedIn, Slack, and SMS.
+  links:
+    site: https://www.sendspark.com
+    pricing: https://www.sendspark.com/pricing
+sources:
+  - source_id: src_0fc0b4135a0ee0b3bebc3427b3fbbec7605eb2bf2fcdae1b5671eab5066480b8
+    url: https://www.sendspark.com/video/startups
+  - source_id: src_2e3791b9ee62a6481d5606b5f8728862fc32c55aae2077382a9321804953bda8
+    url: https://www.sendspark.com/pricing
+programs: []
+offers:
+  - offer_id: off_01m5kf2222cya5v3wvms6g7gq6
+    offer_slug: sendspark-50-percent-off-1-year
+    offer_slug_aliases: []
+    title: 50% off Sendspark for up to 1 year
+    summary: Startups get 50% off Sendspark for up to 1 year through Sendspark for Startups.
+    lifecycle:
+      status: active
+      effective_from: 2026-10-23T05:55:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          kind: discount
+          description: Startups get 50% off for up to 1 year.
+          percentage:
+            kind: exact
+            basis_points: 5000
+          duration:
+            kind: up-to
+            value: P1Y
+      consideration:
+        kind: variable
+        description: Participants pay the remaining discounted Sendspark price; the startup page states 50% off for up to 1 year without specifying a plan or resulting price.
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_01
+        reason: not-machine-evaluable
+        statement: Available for startups.
+    roles:
+      terms_authority_entity_id: ent_01m5kf22224h774tw6g3t6b4x6
+      access_operator_entity_id: ent_01m5kf22224h774tw6g3t6b4x6
+    access:
+      availability: public
+      method: form
+      url: https://www.sendspark.com/video/startups
+    source_ids:
+      - src_0fc0b4135a0ee0b3bebc3427b3fbbec7605eb2bf2fcdae1b5671eab5066480b8
+      - src_2e3791b9ee62a6481d5606b5f8728862fc32c55aae2077382a9321804953bda8
