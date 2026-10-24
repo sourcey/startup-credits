@@ -1,0 +1,67 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m5qg1am65jj28gmkf9m0nyzm
+  slug: sendspark
+  slug_aliases: []
+  name: Sendspark
+  domains:
+    - value: sendspark.com
+      role: primary
+      valid_from: 2026-10-24T17:41:17.000Z
+  category: marketing
+profile:
+  description: Sendspark is a video outreach platform for recording and sharing personalized sales and marketing videos.
+  summary: Sendspark is a video outreach platform for recording and sharing personalized sales and marketing videos.
+  links:
+    site: https://www.sendspark.com
+sources:
+  - source_id: src_e32daef9ca42a29bab5ab8ce32c0321436bf5f34e6fe6a95f988e9dacaf4a8a3
+    url: https://www.sendspark.com/video/startups
+programs:
+  - program_id: prg_01m5qg1amamv9rw81njm4g38za
+    program_slug: sendspark-for-startups
+    program_slug_aliases: []
+    title: Sendspark for Startups
+    summary: Eligible startups receive 50% off Sendspark for up to one year.
+    source_ids:
+      - src_e32daef9ca42a29bab5ab8ce32c0321436bf5f34e6fe6a95f988e9dacaf4a8a3
+offers:
+  - offer_id: off_01m5qg1amahek1j34ke8pnc13b
+    program_id: prg_01m5qg1amamv9rw81njm4g38za
+    offer_slug: fifty-percent-off-for-one-year
+    offer_slug_aliases: []
+    title: 50% off Sendspark for startups for up to one year
+    summary: Approved startups get 50% off Sendspark for up to one year.
+    lifecycle:
+      status: active
+      effective_from: 2026-10-24T17:41:17.000Z
+    economics:
+      consideration:
+        kind: variable
+        description: The startup pays the discounted price of its selected plan after approval; the public source does not publish the resulting price.
+      benefits:
+        - benefit_id: ben_01
+          description: 50% off Sendspark for up to one year
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 5000
+          duration:
+            kind: exact
+            value: P1Y
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_01
+        statement: Applicant is a startup approved through the Sendspark for Startups application
+        reason: external-verification
+    roles:
+      terms_authority_entity_id: ent_01m5qg1am65jj28gmkf9m0nyzm
+      access_operator_entity_id: ent_01m5qg1am65jj28gmkf9m0nyzm
+    access:
+      availability: public
+      method: form
+      url: https://www.sendspark.com/video/startups
+    terms_url: https://www.sendspark.com/video/startups
+    source_ids:
+      - src_e32daef9ca42a29bab5ab8ce32c0321436bf5f34e6fe6a95f988e9dacaf4a8a3
