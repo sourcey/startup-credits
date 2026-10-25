@@ -1,22 +1,17 @@
 {
-  "schema_version": "sourcey.root-set/v1alpha1",
-  "generation": 1,
-  "threshold": 2,
-  "keys": [
-    {
-      "key_id": "key_sourcey_root_primary_2026_01",
-      "algorithm": "ed25519",
-      "public_key_pem": "-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAeA2umcrFaKnikc381A55//I/x0zXpyQ7YuOVyYuPejk=\n-----END PUBLIC KEY-----\n"
-    },
-    {
-      "key_id": "key_sourcey_root_secondary_2026_01",
-      "algorithm": "ed25519",
-      "public_key_pem": "-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEATEuX1Yql+cZSb5f5poBy+dl90ogCXuK5GWfGossNIMQ=\n-----END PUBLIC KEY-----\n"
-    },
-    {
-      "key_id": "key_sourcey_root_recovery_2026_01",
-      "algorithm": "ed25519",
-      "public_key_pem": "-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEArFyVLoz3egHSUAqEM28MMAjrOyqNOKm8FCW3kbPf1T8=\n-----END PUBLIC KEY-----\n"
+  "vendors": {
+    "polar": {
+      "name": "Polar",
+      "url": "https://polar.sh/startup-program",
+      "description": "Scale plan free for 12 months ($400/mo value) with prioritized ticket support and a dedicated Slack channel.",
+      "tags": ["startup-program", "payments", "saas"],
+      "offers": [
+        {
+          "title": "Polar Startup Program",
+          "description": "Scale plan free for 12 months, 3.40% + $0.30 transaction fees apply, prioritized ticket support, dedicated Slack channel.",
+          "url": "https://polar.sh/startup-program"
+        }
+      ]
     }
-  ]
+  }
 }
