@@ -80,7 +80,7 @@ offers:
       terms_authority_entity_id: ent_01kz1ve26g2rkj6w37js1yrz0z
       access_operator_entity_id: ent_01kz1ve26g2rkj6w37js1yrz0z
     access:
-      availability: public
+      availability: membership
       method: form
       url: https://airbyte.com/company/ycombinator-startup-promotion
     source_ids:
