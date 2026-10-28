@@ -1,0 +1,84 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m5hhqwb4gdqh580t7hh3chvf
+  slug: fal
+  slug_aliases:
+    - fal-ai
+  name: fal
+  domains:
+    - value: fal.ai
+      role: primary
+      valid_from: '2026-10-22T00:00:00.000Z'
+  category: ai-ml
+profile:
+  summary: fal is a developer platform for generative media, hosting more than 1000 image, video, audio and 3D model APIs plus serverless GPUs for custom models.
+  description: fal provides a generative media API platform with 1000+ hosted image, video, audio and 3D models and serverless GPU infrastructure.
+  links:
+    site: https://fal.ai
+sources:
+  - source_id: src_26e6f391d3c166890365b7b9edadd0eb65b06bed626a9bbdef9dcdd9deb51f8d
+    url: https://fal.ai/startups
+programs:
+  - program_id: prg_01m5hhqwb50qkymsmdfspt203h
+    program_slug: startup-program
+    program_slug_aliases: []
+    title: fal Startup Program
+    summary: fal gives approved startups in Europe and Asia $1,000 in platform credits, growing to $5,000 as their monthly spend on fal scales, plus partner perks.
+    source_ids:
+      - src_26e6f391d3c166890365b7b9edadd0eb65b06bed626a9bbdef9dcdd9deb51f8d
+offers:
+  - offer_id: off_01m5hhqwb6mgkaq8p6tv496vkp
+    program_id: prg_01m5hhqwb50qkymsmdfspt203h
+    offer_slug: startup-program-credits
+    offer_slug_aliases: []
+    title: $1,000 in credits, growing to $5,000 with usage
+    summary: Approved startups receive $1,000 in fal platform credits, growing to $2,500 at $1,000 per month of fal spend and $5,000 at $2,500 per month, plus bundled partner perks.
+    description: Every approved team starts with the $1,000 Startup pack. Once monthly spend on fal crosses $1,000, fal adds $1,500 more on request (Scale pack); at $2,500 per month of fal spend, fal adds another $2,500 (Growth pack), for a $5,000 total. Teams already at a threshold when they apply can start at the matching pack. Partner perks from fal's partners come bundled with acceptance.
+    lifecycle:
+      status: active
+      effective_from: '2026-10-22T00:00:00.000Z'
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_startup_credits
+          description: $1,000 in fal platform credits on approval, growing to $5,000 total as monthly fal spend crosses $1,000 and $2,500 thresholds, plus bundled partner perks.
+          kind: credit
+          value:
+            kind: range
+            minimum:
+              currency: USD
+              minor_units: 100000
+            maximum:
+              currency: USD
+              minor_units: 500000
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - kind: manual
+            criterion_id: cri_region
+            statement: The company must be based in Europe or Asia.
+            reason: external-verification
+          - kind: manual
+            criterion_id: cri_traction_or_funding
+            statement: The company must show a proven track record (real users, meaningful traction, or revenue) or be backed by an institutional venture investor.
+            reason: external-verification
+          - kind: manual
+            criterion_id: cri_application_limit
+            statement: One application per company every 3 months; credits cannot be resold or transferred.
+            reason: not-machine-evaluable
+          - kind: manual
+            criterion_id: cri_vendor_approval
+            statement: fal manually reviews each application, usually including a short intro call, and sizes the credits to the team's usage.
+            reason: vendor-discretion
+    roles:
+      terms_authority_entity_id: ent_01m5hhqwb4gdqh580t7hh3chvf
+      access_operator_entity_id: ent_01m5hhqwb4gdqh580t7hh3chvf
+    access:
+      availability: public
+      method: form
+      url: https://fal.ai/startups
+      instructions: Share your company details, traction or funding, and how you plan to use fal, add a partner referral code if you have one, and complete the short intro call. fal reviews the application and applies the credits to approved fal accounts.
+    source_ids:
+      - src_26e6f391d3c166890365b7b9edadd0eb65b06bed626a9bbdef9dcdd9deb51f8d
