@@ -1,0 +1,56 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m5mkx8j2mr2r3c85rerec599
+  slug: hookdeck
+  slug_aliases: []
+  name: Hookdeck
+  domains:
+    - value: hookdeck.com
+      role: primary
+      valid_from: 2026-01-01T00:00:00.000Z
+  category: devtools-other
+profile:
+  summary: Hookdeck provides reliable webhook infrastructure to ensure every event is received, processed, and monitored reliably at scale.
+  description: From webhooks to external event streams, Hookdeck ensures every event is received, processed, and monitored reliably at scale, giving you complete visibility and control.
+  links:
+    site: https://hookdeck.com/
+sources:
+  - source_id: src_258c11eac97eb6c020cdde1bd6d9017ee8e84eb4dc5cdae86d1e3b8372f4d17a
+    url: https://hookdeck.com/pricing
+  - source_id: src_0eca5838e1584dda903768f727e896aa797a73b9341396540f6c2a6dd9bdca54
+    url: https://hookdeck.com/
+programs: []
+offers:
+  - offer_id: off_01m5mkx8j259j4s6f3gke3hhqd
+    offer_slug: hookdeck-growth-plan-startup-discount
+    offer_slug_aliases: []
+    title: Hookdeck Growth plan startup discount
+    summary: Hookdeck offers Growth plan discounts for eligible startups to manage and monitor webhook and event streams.
+    lifecycle:
+      status: active
+      effective_from: 2026-01-01T00:00:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Growth plan discounts for eligible startups
+          kind: other
+      consideration:
+        description: Startups pay the discounted price for the Hookdeck Growth plan.
+        kind: variable
+    eligibility:
+      rule:
+        criterion_id: cri_eligibility
+        kind: manual
+        reason: external-verification
+        statement: We offer Growth plan discounts for eligible startups.
+    roles:
+      terms_authority_entity_id: ent_01m5mkx8j2mr2r3c85rerec599
+      access_operator_entity_id: ent_01m5mkx8j2mr2r3c85rerec599
+    access:
+      availability: public
+      instructions: Contact us for more information.
+      method: contact
+      url: https://hookdeck.com/contact
+    source_ids:
+      - src_258c11eac97eb6c020cdde1bd6d9017ee8e84eb4dc5cdae86d1e3b8372f4d17a
+      - src_0eca5838e1584dda903768f727e896aa797a73b9341396540f6c2a6dd9bdca54
