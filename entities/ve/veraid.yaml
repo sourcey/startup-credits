@@ -1,0 +1,71 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m5mf5kv0egnyh5zc1xvq8v7d
+  slug: veraid
+  slug_aliases: []
+  name: VeraID
+  domains:
+    - value: veraid.io
+      role: primary
+      valid_from: 2026-01-01T00:00:00.000Z
+  category: auth-security
+profile:
+  summary: VeraID provides unified machine identity security, non-human identity (NHI) governance, threat detection, and lifecycle automation across multi-cloud.
+  description: VeraID provides machine identity security, threat detection, and governance for service accounts, API keys, CI/CD tokens, and AI agents.
+  links:
+    site: https://www.veraid.io/
+sources:
+  - source_id: src_3fec0d3976343089e52b1f837e1a85159e7a83c011c88e65df8cd61dd01ce0e0
+    url: https://www.veraid.io/pricing/
+  - source_id: src_a9f43261c27909e287a5c4481a394f9729a9434ac799e7bed0970cc783c8715a
+    url: https://www.veraid.io/
+programs: []
+offers:
+  - offer_id: off_01m5mf5kv2mrnba4cbgt2y4t8r
+    offer_slug: 50-percent-off-first-year-for-startups
+    offer_slug_aliases: []
+    title: 50% off first year for startups
+    summary: Eligible startups with under $5M in total funding raised can qualify for 50% off their first year on VeraID.
+    lifecycle:
+      status: active
+      effective_from: 2026-01-01T00:00:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 50% discount on the first year of VeraID plans
+          duration:
+            kind: exact
+            value: P1Y
+          kind: discount
+          percentage:
+            basis_points: 5000
+            kind: exact
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_funding
+            fact: company.funding_raised_usd
+            kind: predicate
+            operator: lt
+            statement: Startups with under $5M raised.
+            value:
+              type: number
+              value: 5000000
+          - criterion_id: cri_call
+            kind: manual
+            reason: external-verification
+            statement: Subject to VeraID eligibility review during an introductory call.
+    roles:
+      terms_authority_entity_id: ent_01m5mf5kv0egnyh5zc1xvq8v7d
+      access_operator_entity_id: ent_01m5mf5kv0egnyh5zc1xvq8v7d
+    access:
+      availability: public
+      instructions: Book a call on the VeraID website and mention the startup discount during your consultation.
+      method: form
+      url: https://www.veraid.io/pricing/
+    source_ids:
+      - src_3fec0d3976343089e52b1f837e1a85159e7a83c011c88e65df8cd61dd01ce0e0
+      - src_a9f43261c27909e287a5c4481a394f9729a9434ac799e7bed0970cc783c8715a
