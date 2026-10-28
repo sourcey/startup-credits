@@ -1,0 +1,78 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m5mqnh69s17wt8f6zqraqcer
+  slug: ultralytics
+  slug_aliases: []
+  name: Ultralytics
+  domains:
+    - value: ultralytics.com
+      role: primary
+      valid_from: 2026-01-01T00:00:00.000Z
+  category: ai-ml
+profile:
+  summary: Ultralytics provides real-time computer vision models including YOLO, alongside the Ultralytics Platform for dataset annotation, training, and deployment.
+  description: The most widely used real-time computer vision models. License Ultralytics YOLO for your products, or annotate, train and deploy on Ultralytics Platform.
+  links:
+    site: https://www.ultralytics.com/
+sources:
+  - source_id: src_888ee1e3ee2041d4f4e06a8dc7fa4ced1f2b498ab428061702887fb74c5becbe
+    url: https://www.ultralytics.com/startups
+  - source_id: src_1b74e4e1fb4b13de34a1e76bb91b05bfb4b635f47a633de8a54bf3b6f2bad770
+    url: https://www.ultralytics.com/
+programs: []
+offers:
+  - offer_id: off_01m5mqnh69rmzpn413sr0mymq4
+    offer_slug: ultralytics-for-startups
+    offer_slug_aliases: []
+    title: Ultralytics for Startups
+    summary: Venture-backed startups building computer vision applications receive up to $10,000 in Platform credits, Enterprise Licensing savings, and expert guidance.
+    description: VC-backed startups from Seed through later rounds get Ultralytics Platform credits, first-year Enterprise Licensing savings, and expert guidance to move from dataset to production with Ultralytics YOLO.
+    lifecycle:
+      status: active
+      effective_from: 2026-01-01T00:00:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to $10,000 in Ultralytics Platform credits across eligible services to organize datasets, train models, and prepare deployments
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 1000000
+            kind: up-to
+        - benefit_id: ben_02
+          description: Savings on the first year of an Ultralytics Enterprise License for private and commercial YOLO products
+          kind: other
+        - benefit_id: ben_03
+          description: Guidance from computer vision experts to shape training, deployment, and scale
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_seed_stage_or_later
+            kind: manual
+            reason: external-verification
+            statement: Privately held, for-profit startups that have raised institutional Seed, Series A, Series B, Series C, or later funding.
+          - criterion_id: cri_computer_vision_product
+            kind: manual
+            reason: external-verification
+            statement: Computer vision is central to your product or planned for a concrete use case within the next 90 days.
+          - criterion_id: cri_ready_to_build
+            kind: manual
+            reason: external-verification
+            statement: Your team has a company website, a business email, and enough product context to begin evaluating or building now.
+    roles:
+      terms_authority_entity_id: ent_01m5mqnh69s17wt8f6zqraqcer
+      access_operator_entity_id: ent_01m5mqnh69s17wt8f6zqraqcer
+    access:
+      availability: public
+      instructions: Submit the startup application form on the Ultralytics website with your company, funding, and computer vision use case details.
+      method: form
+      url: https://www.ultralytics.com/startups
+    terms_url: https://www.ultralytics.com/startups
+    source_ids:
+      - src_888ee1e3ee2041d4f4e06a8dc7fa4ced1f2b498ab428061702887fb74c5becbe
+      - src_1b74e4e1fb4b13de34a1e76bb91b05bfb4b635f47a633de8a54bf3b6f2bad770
