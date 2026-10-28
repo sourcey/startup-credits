@@ -22,21 +22,18 @@ offers:
     offer_slug: signoz-startup-program
     offer_slug_aliases: []
     title: SigNoz Startup Program
-    summary: Eligible early-stage startups receive 50% off standard SigNoz pricing, getting the Teams plan for $19/month instead of $49/month.
+    summary: Eligible startups get SigNoz Cloud for $19/month for the first 12 months instead of $49/month.
     lifecycle:
       status: active
       effective_from: 2026-07-27T07:43:11.233Z
     economics:
       consideration:
-        kind: unknown
-        description: The source record did not establish separate consideration.
+        kind: variable
+        description: The startup pays $19/month for the first 12 months.
       benefits:
         - benefit_id: ben_primary
-          description: 50% off ($19/month instead of $49/month)
-          kind: discount
-          percentage:
-            kind: exact
-            basis_points: 5000
+          description: SigNoz Cloud for $19/month for the first 12 months instead of $49/month
+          kind: other
     eligibility:
       rule:
         kind: manual
@@ -49,6 +46,6 @@ offers:
     access:
       availability: public
       method: form
-      url: https://signoz.io/pricing/
+      url: https://signoz.io/startups/
     source_ids:
       - src_5de4da2e2534f762fd16ac9ac0c85959a80e29e399911ff848ec9f1cba770f4e
