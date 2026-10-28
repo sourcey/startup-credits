@@ -1,0 +1,63 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m5mjy0wkg0y3tmb9k4vr891f
+  slug: signzy
+  slug_aliases: []
+  name: Signzy
+  domains:
+    - value: signzy.com
+      role: primary
+      valid_from: 2026-01-01T00:00:00.000Z
+  category: apis-integration
+profile:
+  summary: Signzy provides fintech APIs and AI infrastructure for digital customer onboarding, KYC, KYB, and fraud detection.
+  description: Signzy provides AI-powered fintech APIs for startups, including KYC, KYB, AML screening, and onboarding automation solutions.
+  links:
+    site: https://www.signzy.com/
+sources:
+  - source_id: src_d7dd696a176fcbe5ec5df161266ffb135c05fd1480e3394c1c8f4d661b3a6c46
+    url: https://www.signzy.com/fintech-apis/startups
+  - source_id: src_95c5fe8b684700ca22fb92af2736c4e596541fd4bca55c3ae6c8246346acc316
+    url: https://www.signzy.com/
+programs: []
+offers:
+  - offer_id: off_01m5mjy0wkv2c6hn8m1v79y8a4
+    offer_slug: signzy-for-startups-api-sandbox-credits
+    offer_slug_aliases: []
+    title: Signzy for Startups 5,000 INR API Sandbox Credits
+    summary: Signzy for Startups offers free credits worth 5,000 INR for Signzy API sandbox testing, affordable startup rates, and expert mentoring.
+    lifecycle:
+      status: active
+      effective_from: 2026-01-01T00:00:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Free credits worth 5,000 INR for Signzy API sandbox
+          kind: credit
+          value:
+            amount:
+              currency: INR
+              minor_units: 500000
+            kind: exact
+        - benefit_id: ben_02
+          description: Affordable startup friendly rates, mentoring from seasoned professionals, and access to top Venture Capitalists
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: constant
+        statement: Sign up for Signzy for Startups.
+        value: true
+    roles:
+      terms_authority_entity_id: ent_01m5mjy0wkg0y3tmb9k4vr891f
+      access_operator_entity_id: ent_01m5mjy0wkg0y3tmb9k4vr891f
+    access:
+      availability: public
+      instructions: Submit the signup request on the Signzy for Startups page to access the API sandbox.
+      method: form
+      url: https://www.signzy.com/fintech-apis/startups
+    source_ids:
+      - src_d7dd696a176fcbe5ec5df161266ffb135c05fd1480e3394c1c8f4d661b3a6c46
+      - src_95c5fe8b684700ca22fb92af2736c4e596541fd4bca55c3ae6c8246346acc316
