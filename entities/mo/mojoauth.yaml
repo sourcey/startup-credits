@@ -10,9 +10,10 @@ entity:
       valid_from: 2026-08-01T07:24:19.707Z
   category: auth-security
 profile:
-  description: MojoAuth provides passwordless authentication solutions supporting magic links, biometrics, OTPs, passkeys, and social logins for web and mobile applications.
+  description: MojoAuth provides high-concurrency passwordless authentication for consumer apps, supporting passkeys, magic links, OTPs, social login, One Tap, and Mobile Silent Auth through a single API.
   links:
     site: https://mojoauth.com/startup/
+  summary: MojoAuth provides high-concurrency passwordless authentication for consumer apps.
 sources:
   - source_id: src_f531867c7c84fc043f4d8583bce8c4b741a8a0a8a4186d76b1b47268939ec364
     url: https://mojoauth.com/startup
@@ -36,7 +37,8 @@ offers:
             basis_points: 5000
             kind: exact
       consideration:
-        kind: none
+        kind: variable
+        description: Startups pay a discounted annual rate based on their chosen MAU plan.
     eligibility:
       rule:
         kind: all
@@ -72,7 +74,7 @@ offers:
           - criterion_id: cri_04
             kind: manual
             reason: external-verification
-            statement: Ensure the business email in your application matches your organization's website domain.
+            statement: The business email in the application must match the organization's website domain.
           - criterion_id: cri_05
             fact: company.website_url
             kind: predicate
