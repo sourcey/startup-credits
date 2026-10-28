@@ -22,19 +22,18 @@ offers:
     offer_slug: chargebee-for-startups
     offer_slug_aliases: []
     title: Chargebee for Startups
-    summary: Eligible early-stage startups receive access to Chargebee Billing's Performance plan (normally $599/month) for free until processing $1 million in cumulative billed revenue.
+    summary: Eligible startups receive Chargebee Billing for free until they reach $1 million in cumulative billing.
     lifecycle:
       status: active
       effective_from: 2026-07-27T07:39:34.183Z
     economics:
       consideration:
-        kind: unknown
-        description: The source record did not establish separate consideration.
+        kind: none
       benefits:
         - benefit_id: ben_primary
-          description: Free up to $1M in cumulative revenue ($599/mo value)
+          description: Chargebee Billing completely free until $1 million in cumulative billing
           kind: free-service
-          service: Free up to $1M in cumulative revenue ($599/mo value)
+          service: Chargebee Billing
     eligibility:
       rule:
         kind: manual
@@ -45,8 +44,8 @@ offers:
       terms_authority_entity_id: ent_01kyh8fpe1grkqm2hf1qpqm3he
       access_operator_entity_id: ent_01kyh8fpe1grkqm2hf1qpqm3he
     access:
-      availability: public
+      availability: membership
       method: form
-      url: https://www.chargebee.com/chargebee-for-startups/
+      url: https://www.chargebee.com/startups/
     source_ids:
       - src_120ff2bcc04d7dc53308053605f921ae0c323c3eb5e9b215d69b3b71bc52be00
