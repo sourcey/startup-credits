@@ -62,51 +62,48 @@ offers:
       rule:
         kind: all
         rules:
-          - criterion_id: cri_01
-            fact: company.employee_count
+          - criterion_id: cri_website
+            fact: company.website_url
             kind: predicate
-            operator: gte
-            statement: Company must employ at least one developer.
-            value:
-              type: number
-              value: 1
-          - criterion_id: cri_02
-            fact: company.website_status
-            kind: predicate
-            operator: eq
-            statement: Company must maintain a working website.
-            value:
-              type: string
-              value: working
-          - criterion_id: cri_03
+            operator: present
+            statement: Members must maintain a working website.
+          - criterion_id: cri_incorp
             fact: company.is_incorporated
             kind: predicate
             operator: eq
-            statement: Company must be officially incorporated.
+            statement: Members must be officially incorporated.
             value:
               type: boolean
               value: true
-          - criterion_id: cri_04
+          - criterion_id: cri_age
             fact: company.age_months
             kind: predicate
             operator: lt
-            statement: Company must be less than 10 years old.
+            statement: Members must be less than 10 years old.
             value:
               type: number
               value: 120
+          - criterion_id: cri_usecase
+            kind: manual
+            statement: Members must have a clear use case for NVIDIA technology.
+            reason: not-machine-evaluable
+          - kind: manual
+            criterion_id: cri_founder
+            statement: Members must be actively operated by at least one founder.
+            reason: not-machine-evaluable
           - kind: not
             rule:
-              criterion_id: cri_05
+              criterion_id: cri_excl_consulting
               fact: company.industry
               kind: predicate
               operator: eq
               statement: Consulting and outsourced development firms do not qualify.
               value:
                 type: string
-                value: consulting_or_outsourced_development
+                value: Consulting and outsourced development firms
           - kind: not
             rule:
-              criterion_id: cri_06
+              criterion_id: cri_excl_crypto
               fact: company.industry
               kind: predicate
               operator: eq
@@ -116,34 +113,26 @@ offers:
                 value: cryptocurrency
           - kind: not
             rule:
-              criterion_id: cri_07
+              criterion_id: cri_excl_cloud
               fact: company.industry
               kind: predicate
               operator: eq
               statement: Cloud service providers do not qualify.
               value:
                 type: string
-                value: cloud_service_provider
+                value: Cloud service providers
           - kind: not
             rule:
-              criterion_id: cri_08
-              fact: company.business_model
-              kind: predicate
-              operator: eq
+              criterion_id: cri_excl_resellers
+              kind: manual
               statement: Resellers and distributors do not qualify.
-              value:
-                type: string
-                value: reseller_or_distributor
+              reason: not-machine-evaluable
           - kind: not
             rule:
-              criterion_id: cri_09
-              fact: company.is_public
-              kind: predicate
-              operator: eq
+              kind: manual
+              criterion_id: cri_excl_public
               statement: Public companies do not qualify.
-              value:
-                type: boolean
-                value: true
+              reason: not-machine-evaluable
     lifecycle:
       effective_from: 2026-08-01T07:07:27.100Z
       status: active
