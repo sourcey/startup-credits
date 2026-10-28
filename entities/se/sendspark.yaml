@@ -1,0 +1,62 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m5mkkq968sep2gtf54nhj248
+  slug: sendspark
+  slug_aliases: []
+  name: Sendspark
+  domains:
+    - value: sendspark.com
+      role: primary
+      valid_from: 2026-01-01T00:00:00.000Z
+  category: marketing
+profile:
+  summary: Sendspark is an AI video platform for B2B sales, allowing teams to personalize videos with voice cloning and dynamic backgrounds.
+  description: The AI video platform for B2B sales. Record one video and personalize thousands with voice cloning and dynamic backgrounds. Start free.
+  links:
+    site: https://www.sendspark.com/
+sources:
+  - source_id: src_0fc0b4135a0ee0b3bebc3427b3fbbec7605eb2bf2fcdae1b5671eab5066480b8
+    url: https://www.sendspark.com/video/startups
+  - source_id: src_bae7965da67e4ef2b1c8afae408fc618c7fdc5317817332a6b08a8b7a90c80d7
+    url: https://www.sendspark.com/
+programs: []
+offers:
+  - offer_id: off_01m5mkkq96cfvsk0xxpwmhmct1
+    offer_slug: startups-get-50-percent-off-for-up-to-1-year
+    offer_slug_aliases: []
+    title: Startups get 50% off for up to 1 year
+    summary: Eligible startups receive 50% off Sendspark video platform plans for up to 1 year.
+    lifecycle:
+      status: active
+      effective_from: 2026-01-01T00:00:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Startups get 50% off for up to 1 year
+          duration:
+            kind: exact
+            value: P1Y
+          kind: discount
+          percentage:
+            basis_points: 5000
+            kind: exact
+      consideration:
+        description: Startups pay the discounted price of 50% off the standard Sendspark subscription for up to 1 year.
+        kind: variable
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: constant
+        statement: Apply now to see if you qualify.
+        value: true
+    roles:
+      terms_authority_entity_id: ent_01m5mkkq968sep2gtf54nhj248
+      access_operator_entity_id: ent_01m5mkkq968sep2gtf54nhj248
+    access:
+      availability: public
+      instructions: Complete the 60-second application form on Google Forms to apply for the startup discount.
+      method: form
+      url: https://docs.google.com/forms/d/e/1FAIpQLSdyFif-t3j5aoXMsYQxTJUyJw5KUdrxJGPD6zux4IC6CI4WRg/viewform
+    source_ids:
+      - src_0fc0b4135a0ee0b3bebc3427b3fbbec7605eb2bf2fcdae1b5671eab5066480b8
+      - src_bae7965da67e4ef2b1c8afae408fc618c7fdc5317817332a6b08a8b7a90c80d7
