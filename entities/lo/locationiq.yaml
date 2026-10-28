@@ -1,0 +1,77 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m5mr2r8mnn6heg4bmv8m2f8j
+  slug: locationiq
+  slug_aliases: []
+  name: LocationIQ
+  domains:
+    - value: locationiq.com
+      role: primary
+      valid_from: 2026-01-01T00:00:00.000Z
+  category: apis-integration
+profile:
+  summary: LocationIQ provides location intelligence APIs, including reverse geocoding, geocoding, map tiles, and routing.
+  description: Affordable Google Maps alternative for Reverse Geocoding, Geocoding, Maps and Routing APIs. Generous free tier, offering Enterprise-grade APIs for everyone!
+  links:
+    site: https://locationiq.com/
+sources:
+  - source_id: src_8e02d9d755c213b11622697c7599da6dd9a920fb35c9adde60d5bcbcaef9c4cc
+    url: https://locationiq.com/pricing
+  - source_id: src_9a708c9be01a11b80a7e3d5f1b37d5f1a7ba1e64dc817838fc8a1dd2a8c0bb4d
+    url: https://locationiq.com/
+  - source_id: src_ca1b7c618d7a8ec798c6f6f717890b31cbec2e315b5090ce5fe14d57ef36d122
+    url: https://forms.locationiq.com/startup-program
+programs: []
+offers:
+  - offer_id: off_01m5mr2r8mc20he1g0vgk0h5qm
+    offer_slug: locationiq-for-startups
+    offer_slug_aliases: []
+    title: LocationIQ for Startups Program
+    summary: Early-stage startups founded less than 2 years ago get up to 50% off LocationIQ plans for their first 12 months.
+    description: Your startup deserves a head start. Give it a great one with the LocationIQ for Startups Program. If you're an early stage company founded less than 2 years ago, you can get upto 50% off for the first 12 months.
+    lifecycle:
+      status: active
+      effective_from: 2026-01-01T00:00:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to 50% off on all our plans for 12 months (25% discount on Maps Lite plan)
+          kind: discount
+          percentage:
+            kind: up-to
+            basis_points: 5000
+          duration:
+            kind: exact
+            value: P1Y
+      consideration:
+        kind: variable
+        description: The startup pays the discounted price on its chosen LocationIQ plan during the 12-month period.
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_age
+            kind: manual
+            reason: external-verification
+            statement: Founded less than two years ago
+          - criterion_id: cri_funding
+            kind: manual
+            reason: external-verification
+            statement: Raised no more than $1MM USD in total funding
+          - criterion_id: cri_new_customer
+            kind: manual
+            reason: external-verification
+            statement: Not an existing LocationIQ/ Unwired Labs customer
+    roles:
+      terms_authority_entity_id: ent_01m5mr2r8mnn6heg4bmv8m2f8j
+      access_operator_entity_id: ent_01m5mr2r8mnn6heg4bmv8m2f8j
+    access:
+      availability: public
+      instructions: Apply through the LocationIQ for Startups Program application form.
+      method: form
+      url: https://forms.locationiq.com/startup-program
+    terms_url: https://locationiq.com/pricing
+    source_ids:
+      - src_8e02d9d755c213b11622697c7599da6dd9a920fb35c9adde60d5bcbcaef9c4cc
+      - src_9a708c9be01a11b80a7e3d5f1b37d5f1a7ba1e64dc817838fc8a1dd2a8c0bb4d
+      - src_ca1b7c618d7a8ec798c6f6f717890b31cbec2e315b5090ce5fe14d57ef36d122
