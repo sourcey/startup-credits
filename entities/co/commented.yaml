@@ -1,0 +1,76 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m5mev9zn4c1y02pzv8hxx6gw
+  slug: commented
+  slug_aliases: []
+  name: Commented
+  domains:
+    - value: commented.io
+      role: primary
+      valid_from: 2026-01-01T00:00:00.000Z
+  category: productivity
+profile:
+  summary: Commented provides live website annotation, visual commenting, and collaboration SDKs for product design, QA, and engineering teams.
+  description: Commented provides visual feedback, webpage annotations, task management, and mobile SDKs for cross-functional product and engineering teams.
+  links:
+    site: https://www.commented.io/
+sources:
+  - source_id: src_da75e25976ed871abfffe2c8ab81ae7507e53afa9c7b7d2e48ea7993cd7b50d3
+    url: https://www.commented.io/startup-program
+  - source_id: src_69cc6d0f5da27259216daca98b2c72b25a454c3e58e63cf0a79ac0311d909c62
+    url: https://www.commented.io/
+programs: []
+offers:
+  - offer_id: off_01m5mev9zqezs3pgjvwbqycfra
+    offer_slug: up-to-75-percent-off-business-plan-for-startups
+    offer_slug_aliases: []
+    title: Up to 75% off Business Plan for startups
+    summary: Startups incorporated less than 2 years ago with no more than $1M in total funding get up to 75% off a Commented Business Plan for one year.
+    lifecycle:
+      status: active
+      effective_from: 2026-01-01T00:00:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          applies_to: Commented Business Plan
+          description: Up to 75% discount on the Commented Business Plan for one full year
+          duration:
+            kind: exact
+            value: P1Y
+          kind: discount
+          percentage:
+            basis_points: 7500
+            kind: up-to
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_age
+            fact: company.age_months
+            kind: predicate
+            operator: lt
+            statement: Incorporated less than 2 years ago.
+            value:
+              type: number
+              value: 24
+          - criterion_id: cri_funding
+            fact: company.funding_raised_usd
+            kind: predicate
+            operator: lte
+            statement: Raised no more than $1M in total funding.
+            value:
+              type: number
+              value: 1000000
+    roles:
+      terms_authority_entity_id: ent_01m5mev9zn4c1y02pzv8hxx6gw
+      access_operator_entity_id: ent_01m5mev9zn4c1y02pzv8hxx6gw
+    access:
+      availability: public
+      instructions: Submit the startup application form on the Commented startup program page.
+      method: form
+      url: https://www.commented.io/startup-program
+    source_ids:
+      - src_da75e25976ed871abfffe2c8ab81ae7507e53afa9c7b7d2e48ea7993cd7b50d3
+      - src_69cc6d0f5da27259216daca98b2c72b25a454c3e58e63cf0a79ac0311d909c62
