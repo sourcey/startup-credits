@@ -1,7 +1,11 @@
 # Contributing
 
-Normal pull requests add or update one or more files under
+Normal pull requests add or update one company's file under
 `entities/{shard}/`.
+
+You can open a pull request directly, or use the
+[submission form](https://sourcey.com/submit?type=startup-credits). No issue,
+reservation or maintainer permission is required before submitting.
 
 The shard is the first two characters of the Entity slug (or the whole slug
 when it is shorter), and the filename is exactly `{slug}.yaml`; CI verifies
@@ -92,8 +96,23 @@ not rewrite a supported fact merely to make it match a source sentence word for 
 Before starting a new Entity, search the
 [open pull requests](https://github.com/sourcey/startup-credits/pulls) and
 [missing-record issues](https://github.com/sourcey/startup-credits/issues?q=is%3Aissue+is%3Aopen).
-If it is not already covered, open a missing-record issue and comment there before doing the work;
-that issue is the lightweight reservation surface.
+If it is not already covered, open your pull request. A missing-record issue is
+optional when you want to suggest an addition without preparing it yourself.
+
+## Sign off your contribution
+
+Sign off every commit to certify the
+[Developer Certificate of Origin](https://developercertificate.org/):
+
+```bash
+git commit --signoff -m "data(offers): add acme startup offer"
+```
+
+The sign-off certifies your right to contribute. It is not a cryptographic
+signature, vendor authority or Sourcey verification; you do not need to set up
+a GPG key. Community contributions are welcome without representing the vendor.
+The web form uses your signed-in Sourcey account and does not require a Git
+commit.
 
 If DCO fails only on the latest commit, add the sign-off and update the same pull request:
 
@@ -122,6 +141,29 @@ Sourcey's separate required `sourcey/admission` check proves that private,
 replayable evidence and authority were admitted for the exact pull-request Git
 tree; contributors never upload that private material. Once both statuses pass and
 the pull request is merged, publication and live activation are automatic.
+
+## If a check does not pass
+
+- **A file or fact needs a change:** the result names the field and the
+  supporting source it needs. Correct it on the same pull request.
+- **A new company does not meet the automatic listing rule:** the admission
+  result links to its page on Sourcey, where you can review and purchase human
+  verification. You do not need to recreate the submission. Paying does not
+  bypass invalid facts, identity conflicts or unsafe links.
+- **A check could not finish:** Sourcey retries its provider failure; it is not
+  a paid requirement. The result page lets you check progress again.
+
+An admitted company does not repeat the new-company eligibility check when
+you add a supported offer. Human verification is also available later for an
+existing listing.
+
+## If you represent the company
+
+After the company is listed, use **Claim this record** on its Sourcey page.
+Confirm domain control by domain email, DNS TXT, an HTTPS file or a signed
+inbound email, as available. Claiming is free and attests only the exact
+current company record. Offers need their own explicit attestation; neither a
+DCO sign-off nor a company claim signs their terms.
 
 For an exact local preflight, run this from a checkout with `origin/main` fetched:
 

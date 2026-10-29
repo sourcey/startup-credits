@@ -12,4 +12,8 @@ List the first-party URLs supporting the change.
 - [ ] Public sources substantiate every submitted factual value; any Sourcey-written prose is a
       neutral summary, not a fabricated vendor quote.
 - [ ] I did not author verification, provenance, freshness, or signature claims.
-- [ ] My commits include a `Signed-off-by` line.
+- [ ] Every commit includes a DCO `Signed-off-by` line (`git commit --signoff`).
+
+No reservation issue is required. The Sourcey admission result links to human
+verification if the new company does not meet the automatic listing rule.
+Sign-off certifies the contribution, not vendor ownership or verified status.
