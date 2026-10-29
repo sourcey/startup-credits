@@ -125,13 +125,14 @@ adding a new one.
 
 ## If it's your company
 
-Claim it and the record carries your signature instead of our reading of your
-page. Prove the domain whichever way suits you: DNS, a file on your site, a role
-address, or a reply from any mailbox on your domain. Claiming establishes who you
-are and never signs your offers for you; you attest to those separately, by exact
-revision.
+Set `authority_intent: entity` when submitting for your company. Follow the
+Sourcey check to review your details and prove domain control by DNS, an HTTPS
+file, domain email or aligned signed inbound email. Your record is published
+only after you approve its exact details. Company, Program and Offer approval
+remain explicit; none signs a future revision.
 
-Free, now and later. Start at `sourcey.com/claim/<your-slug>`.
+Already listed through an independent contribution? Use **Claim this record**
+on your company page. Signing is free, now and later.
 
 ## Licence
 
