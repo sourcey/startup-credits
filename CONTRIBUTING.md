@@ -159,11 +159,18 @@ existing listing.
 
 ## If you represent the company
 
-After the company is listed, use **Claim this record** on its Sourcey page.
-Confirm domain control by domain email, DNS TXT, an HTTPS file or a signed
-inbound email, as available. Claiming is free and attests only the exact
-current company record. Offers need their own explicit attestation; neither a
-DCO sign-off nor a company claim signs their terms.
+Set `authority_intent: entity` at the top level of the Entity YAML when you
+represent the company. Sourcey's check links to a private preview of your exact
+submission. Review its company, Program and Offer details, then confirm control
+by domain email, DNS TXT, an HTTPS file or signed inbound email, as available.
+The Sourcey record stays unpublished until you approve those details. Changed details
+need fresh approval; an unexpired control proof can be reused by your account.
+
+Independent contributors use `authority_intent: community`. Sourcey checks
+their public sources and publishes admitted facts as observed, not vendor-signed.
+Existing independent contributions without this field use the same community path.
+DCO sign-off and paid human verification never replace company confirmation.
+Signing is free. The same pull request continues if company verification is needed.
 
 For an exact local preflight, run this from a checkout with `origin/main` fetched:
 
