@@ -55,10 +55,9 @@ offers:
       terms_authority_entity_id: ent_01kzzggm7hhja0q8y7emaw9dzw
       access_operator_entity_id: ent_01kzzggm7hhja0q8y7emaw9dzw
     access:
-      availability: public
+      availability: membership
       method: form
-      instructions: Click Claim offer on the page to open a registration form asking for company details,
-        with an optional pitch deck upload; Swoop follows up directly.
+      instructions: Click Claim offer on the page to open a registration form asking for company details, with an optional pitch deck upload; Swoop follows up directly.
       url: https://swoopfunding.com/microsoft-for-startups-founders-hub/
     source_ids:
       - src_afbe90ece372e53794f37c44d17ba5cfa1985f7dc5e67ae57c94ae457fe233e8
