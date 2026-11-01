@@ -54,7 +54,7 @@ offers:
         criterion_id: cri_01
         kind: manual
         reason: vendor-discretion
-        statement: Applicants submit a startup or project for EmberCloud's manual review; the program is presented for startups and indie hackers.
+        statement: EmberCloud reviews all applications.
     roles:
       terms_authority_entity_id: ent_01kz98vy52ef818r6mb2w73xhg
       access_operator_entity_id: ent_01kz98vy52ef818r6mb2w73xhg
