@@ -10,9 +10,10 @@ entity:
       valid_from: 2026-08-01T07:46:37.843Z
   category: productivity
 profile:
-  description: Everything your startup needs to think, plan, and build—faster. Free for 12 months in one powerful workspace.
+  description: Whimsical provides a unified workspace for startups to think, plan, and build, replacing scattered apps.
   links:
     site: https://whimsical.com
+  summary: Whimsical provides a unified workspace for startups.
 sources:
   - source_id: src_78464d3ae9df230bf2d7992272072a79cfe3fc5dfeda7050c90ef5cbbcb4324b
     url: https://whimsical.com/startups
@@ -30,17 +31,17 @@ offers:
     offer_slug: whimsical-startup-program-revenue-under-1m
     offer_slug_aliases: []
     title: Whimsical Startup Program (Revenue under $1M)
-    summary: Eligible startups backed by a Whimsical partner with under $1M in revenue receive 12 months of Whimsical Pro for free.
+    summary: Eligible startups backed by a Whimsical partner with under $1M in revenue receive 6 months of Whimsical Pro for free.
     lifecycle:
       status: active
       effective_from: 2026-08-01T07:46:37.843Z
     economics:
       benefits:
         - benefit_id: ben_01
-          description: 12 months of Whimsical Pro for free
+          description: 6 months of Whimsical Pro for free
           duration:
             kind: exact
-            value: P1Y
+            value: P6M
           kind: free-service
           service: Whimsical Pro
       consideration:
