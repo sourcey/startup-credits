@@ -10,9 +10,10 @@ entity:
       valid_from: 2026-08-01T07:52:32.793Z
   category: hosting-infra
 profile:
-  description: Heroku is a cloud application platform based on a managed container system, providing PaaS features and managed data services.
+  description: Heroku is a cloud application platform and a Salesforce company.
   links:
     site: https://www.heroku.com/
+  summary: Heroku is a cloud application platform.
 sources:
   - source_id: src_d382abbba5efb102619acb5f82ed5b847d8e5be62c9ee1bd05d2c745443c74ae
     url: https://www.heroku.com/open-source-credit-program
