@@ -10,9 +10,10 @@ entity:
       valid_from: 2026-08-06T17:45:40.000Z
   category: payments-fintech
 profile:
-  description: Polar is a billing and monetization platform and merchant of record for software and AI products, handling payments, subscriptions and sales tax.
+  description: Polar is an open source monetization platform and merchant of record for software companies, handling payments, subscriptions, usage-based billing and global tax compliance.
   links:
     site: https://polar.sh
+  summary: Polar is a monetization platform and merchant of record for software companies.
 sources:
   - source_id: src_d1a8fe30cf1d27de0d3bc51f84a063154b9fbb56d33b116f10c87c0e085099dc
     url: https://polar.sh/startup-program
@@ -56,15 +57,23 @@ offers:
           - criterion_id: cri_01
             kind: manual
             reason: not-machine-evaluable
-            statement: Applicant must be an early stage startup building digital products such as SaaS, AI or developer tools.
+            statement: Applicant must be an early-stage startup building digital products such as SaaS, AI or developer tools.
           - criterion_id: cri_02
-            kind: manual
-            reason: not-machine-evaluable
-            statement: Polar typically looks for teams under 50 people.
+            kind: predicate
+            statement: Applicant must have fewer than 50 employees.
+            fact: company.employee_count
+            operator: lt
+            value:
+              type: number
+              value: 50
           - criterion_id: cri_03
-            kind: manual
-            reason: not-machine-evaluable
-            statement: Polar typically looks for startups that have raised less than $5 million.
+            kind: predicate
+            statement: Applicant must have raised less than $5,000,000 in funding.
+            fact: company.funding_raised_usd
+            operator: lt
+            value:
+              type: number
+              value: 5000000
           - criterion_id: cri_04
             kind: manual
             reason: vendor-discretion
