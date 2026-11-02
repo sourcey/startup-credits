@@ -38,19 +38,8 @@ offers:
     economics:
       benefits:
         - benefit_id: ben_01
-          description: Set monthly credit allocation for 12 months, expected to range between $25 and $500 USD per month, applicable to Heroku products like Dynos, Postgres, and Key-Value Store.
-          duration:
-            kind: exact
-            value: P1Y
-          kind: credit
-          value:
-            kind: range
-            maximum:
-              currency: USD
-              minor_units: 50000
-            minimum:
-              currency: USD
-              minor_units: 2500
+          description: A set monthly credit allocation for 12 months, determined by Salesforce based on project need and use, applicable to Heroku products.
+          kind: other
       consideration:
         kind: none
     eligibility:
