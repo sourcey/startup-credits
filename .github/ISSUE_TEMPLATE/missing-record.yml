@@ -4,7 +4,10 @@ title: "Missing: "
 body:
   - type: markdown
     attributes:
-      value: Search open issues and pull requests first. One issue is the shared reservation surface for one vendor.
+      value: |
+        The quickest way to add an offer is to submit it at https://sourcey.com/submit, which checks it against the pages it cites as you go, or to open a pull request following [CONTRIBUTING.md](https://github.com/sourcey/startup-credits/blob/main/CONTRIBUTING.md). Use this form to reserve a vendor you're about to add, or to ask for one.
+
+        Search open issues and pull requests first. One issue is the shared reservation surface for one vendor.
   - type: input
     id: vendor
     attributes:
