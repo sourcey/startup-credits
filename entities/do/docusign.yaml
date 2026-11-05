@@ -10,9 +10,10 @@ entity:
       valid_from: 2026-07-27T07:40:57.129Z
   category: legal-compliance
 profile:
-  description: Easily create and manage your agreements so you can stay focused on accelerating revenue, reducing risk and making data-backed decisions.
+  description: Docusign provides solutions to create and manage agreements, helping companies accelerate revenue, reduce risk, and make data-backed decisions.
   links:
     site: https://www.docusign.com
+  summary: Docusign provides solutions to create and manage agreements.
 sources:
   - source_id: src_4d6baab6900df6a22ea48e2a83201e742faf5e0f54842d9be5e46739f2c2362e
     url: https://www.docusign.com/lp/startups
@@ -28,8 +29,8 @@ offers:
       effective_from: 2026-07-27T07:40:57.129Z
     economics:
       consideration:
-        kind: unknown
-        description: The source record did not establish separate consideration.
+        kind: variable
+        description: The startup pays the discounted price of its subscription.
       benefits:
         - benefit_id: ben_primary
           description: 30% - 40% off for 2 years
@@ -47,7 +48,7 @@ offers:
       terms_authority_entity_id: ent_01kyh8fpe2f0v3g3q3v99cvqsr
       access_operator_entity_id: ent_01kyh8fpe2f0v3g3q3v99cvqsr
     access:
-      availability: public
+      availability: membership
       method: form
       url: https://www.docusign.com/lp/startups
     source_ids:
