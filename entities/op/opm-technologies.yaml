@@ -10,10 +10,10 @@ entity:
       valid_from: 2026-08-19T00:00:00.000Z
   category: productivity
 profile:
-  description: OPM Technologies provides integrated software for project management, HR, learning,
-    finance, and commerce operations.
+  description: OPM Technologies builds SaaS products for HR, accounting, billing, sales, forms and project management.
   links:
     site: https://opmtechnologies.com
+  summary: OPM Technologies builds SaaS products for HR, accounting, billing, sales, forms and project management.
 sources:
   - source_id: src_1dbce6775a9f59b288a1ab201a389cf38fa10684c0260d1896d1e2acfa75d530
     url: https://opmtechnologies.com/startups
@@ -22,8 +22,7 @@ programs:
     program_slug: opm-startup-program
     program_slug_aliases: []
     title: OPM Startup Program
-    summary: OPM's startup program offers stage-based discounts on eligible OPM products to approved
-      early-stage companies.
+    summary: Approved startups get up to ₹25,000 in OPM Credits to spend on Workforce, Finpilot, OPM Billing, OPM CRM, Airform and OPM Projects.
     source_ids:
       - src_1dbce6775a9f59b288a1ab201a389cf38fa10684c0260d1896d1e2acfa75d530
 offers:
@@ -31,28 +30,26 @@ offers:
     program_id: prg_01m0d7m9q5j7p0v72qbwv10zhq
     offer_slug: startup-recognition-fifty-percent-off
     offer_slug_aliases: []
-    title: 50% off OPM for up to 12 months
-    summary: Officially recognized early-stage startups can receive 50% off eligible OPM products for up
-      to 12 months.
+    title: Up to ₹25,000 in OPM Credits
+    summary: Approved startups get up to ₹25,000 in OPM Credits to spend on Workforce, Finpilot, OPM Billing, OPM CRM, Airform and OPM Projects.
     lifecycle:
       status: active
       effective_from: 2026-08-19T00:00:00.000Z
     economics:
       consideration:
-        kind: unknown
-        description: The startup pays the remaining discounted subscription price; the public program page
-          does not publish a fixed post-discount price.
+        kind: none
       benefits:
         - benefit_id: ben_01
-          description: Officially recognized early-stage startups can receive 50% off eligible OPM products
-            for up to 12 months.
+          description: Approved startups get up to ₹25,000 in OPM Credits to spend on Workforce, Finpilot, OPM Billing, OPM CRM, Airform and OPM Projects, valid for 12 months.
           duration:
-            kind: up-to
-            value: P1Y
-          kind: discount
-          percentage:
             kind: exact
-            basis_points: 5000
+            value: P12M
+          kind: credit
+          value:
+            kind: up-to
+            amount:
+              currency: INR
+              minor_units: 2500000
     eligibility:
       rule:
         kind: all
@@ -60,31 +57,25 @@ offers:
           - criterion_id: cri_01
             kind: manual
             reason: not-machine-evaluable
-            statement: Applicant is an officially recognized startup with government startup-recognition
-              certification for the 50% Startup Recognition tier.
+            statement: Applicant is an early-stage startup (pre-Series A or equivalent).
           - criterion_id: cri_02
             kind: manual
             reason: not-machine-evaluable
-            statement: Applicant is an early-stage company at pre-Series A stage.
+            statement: Applicant has a valid certificate of incorporation, in India or abroad.
           - criterion_id: cri_03
             kind: manual
             reason: not-machine-evaluable
-            statement: Applicant has a valid certificate of incorporation and an active product or business in
-              the market.
+            statement: Applicant has an active product or business in market, or a clear plan to build one.
           - criterion_id: cri_04
             kind: manual
             reason: vendor-discretion
-            statement: Applicant's revenue and funding are below OPM Technologies' published program threshold.
-          - criterion_id: cri_05
-            kind: manual
-            reason: not-machine-evaluable
-            statement: The startup discount is not combined with another enterprise or promotional discount.
+            statement: The vendor reviews each application by hand.
     roles:
       terms_authority_entity_id: ent_01m0d7m9q5k503epmypf85zeak
       access_operator_entity_id: ent_01m0d7m9q5k503epmypf85zeak
     access:
       availability: public
       method: form
-      url: https://opmtechnologies.com/startups
+      url: https://www.opmtechnologies.com/startups/apply
     source_ids:
       - src_1dbce6775a9f59b288a1ab201a389cf38fa10684c0260d1896d1e2acfa75d530
