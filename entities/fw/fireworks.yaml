@@ -1,0 +1,60 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m6qw4r8432e51ybpyveqzddh
+  slug: fireworks
+  slug_aliases: []
+  name: Fireworks AI
+  domains:
+    - value: fireworks.ai
+      role: primary
+      valid_from: 2026-11-06T00:00:00.000Z
+  category: ai-ml
+profile:
+  description: Fireworks AI provides fast inference and fine-tuning for generative AI models.
+  links:
+    site: https://fireworks.ai
+  summary: Fireworks AI provides fast inference and fine-tuning for generative AI models.
+sources:
+  - source_id: src_f334220a704ef8e271635a25fc13a6072632b5bb9ad0d05870c6309247e1298
+    url: https://fireworks.ai/solutions/startups
+programs: []
+offers:
+  - offer_id: off_01m6qw4r84eeegz7zftyma2pmh
+    offer_slug: startup-program-credits
+    offer_slug_aliases: []
+    title: Fireworks for Startups
+    summary: Eligible startups receive platform credits (valid 12 months) for on-demand inference usage, plus higher rate limits, applied AI engineering support, and community access. Apply via the startup program form.
+    lifecycle:
+      status: active
+      effective_from: 2026-11-06T00:00:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Platform credits for on-demand AI inference usage, expiring after 1 year
+          kind: credit
+          value:
+            kind: unspecified
+        - benefit_id: ben_02
+          description: Higher rate limits and applied AI engineering support
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        fact: company.stage
+        kind: predicate
+        operator: gte
+        statement: Startup building an AI product; application reviewed by Fireworks
+        value:
+          type: string
+          value: early-stage AI startup
+    roles:
+      terms_authority_entity_id: ent_01m6qw4r8432e51ybpyveqzddh
+      access_operator_entity_id: ent_01m6qw4r8432e51ybpyveqzddh
+    access:
+      availability: membership
+      method: form
+      url: https://fireworks.ai/startup-program
+    source_ids:
+      - src_f334220a704ef8e271635a25fc13a6072632b5bb9ad0d05870c6309247e1298
