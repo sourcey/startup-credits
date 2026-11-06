@@ -54,6 +54,7 @@ offers:
       access_operator_entity_id: ent_01m6q9j2smk6xsywgdt5ctppwa
     access:
       availability: membership
+      instructions: On the ZoomInfo for Startups page, click Free Trial and submit the free trial form; startup pricing eligibility is confirmed by ZoomInfo.
       method: form
       url: https://www.zoominfo.com/free-trial
     source_ids:
