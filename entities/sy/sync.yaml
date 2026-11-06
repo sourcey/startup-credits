@@ -1,0 +1,76 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+authority_intent: community
+entity:
+  entity_id: ent_01m6qhtwgkd4k4skmjw9s3t17q
+  slug: sync
+  slug_aliases: []
+  name: Sync
+  domains:
+    - value: sync.so
+      role: primary
+      valid_from: 2026-11-06T04:25:00.000Z
+  category: ai-ml
+profile:
+  summary: Sync provides AI lipsync, dialogue-editing and visual-dubbing models, APIs and studio tools for video, podcast, game and animation content.
+  description: AI lipsync, dialogue editing and visual dubbing APIs, models and studio tools by Synchronicity Labs Inc.
+  links:
+    site: https://sync.so
+sources:
+  - source_id: src_5a9664208beb7093715528ef2b6f376fbdd8cb3ea5c9f7068dc384a865f60f94
+    url: https://sync.so/startups
+  - source_id: src_8757b557ffd2bcdeaa20ae34f38c41c942830deb56774eb77737ce456021274f
+    url: https://support.sync.so/articles/4535453636-how-to-get-started-with-startup-program-credits
+programs:
+  - program_id: prg_01m6qhtwgnnrkdbvwvafp8gc5z
+    program_slug: sync-startup-program
+    program_slug_aliases: []
+    title: Sync Startup Program
+    summary: Startup program from Sync providing invited startups with $1,000 in account credits toward subscriptions and usage.
+    source_ids:
+      - src_5a9664208beb7093715528ef2b6f376fbdd8cb3ea5c9f7068dc384a865f60f94
+      - src_8757b557ffd2bcdeaa20ae34f38c41c942830deb56774eb77737ce456021274f
+offers:
+  - offer_id: off_01m6qhtwgnr8b97c82x4mzdjha
+    program_id: prg_01m6qhtwgnnrkdbvwvafp8gc5z
+    offer_slug: startup-program-1000-credits
+    offer_slug_aliases: []
+    title: Sync Startup Program $1,000 credits
+    summary: Invited startups in the Sync Startup Program receive $1,000 in account credits that cover subscription plans such as Scale and remaining usage charges.
+    lifecycle:
+      status: active
+      effective_from: 2026-11-06T04:25:00.000Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_01
+          description: $1,000 in Sync account credits applied toward subscription plans and usage charges
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 100000
+            kind: exact
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: vendor-discretion
+            statement: Applicant must apply through the Sync Startup Program application and receive an invitation email from Sync.
+          - criterion_id: cri_02
+            kind: manual
+            reason: not-machine-evaluable
+            statement: Must sign in using the invited email address, select the startup program organisation, and enter payment card details on the billing subscription page to activate the $1,000 credits without the card being charged.
+    roles:
+      terms_authority_entity_id: ent_01m6qhtwgkd4k4skmjw9s3t17q
+      access_operator_entity_id: ent_01m6qhtwgkd4k4skmjw9s3t17q
+    access:
+      availability: public
+      method: form
+      url: https://sync.so/startups
+      instructions: Apply on the Sync Startup Program page. Once invited by email, log in with the invited email, select the startup program organisation from the top-left dropdown, go to https://sync.so/billing/subscription, and select the Scale plan (or a lower-tier subscription) so the $1,000 credit balance covers the subscription and remaining usage.
+    source_ids:
+      - src_5a9664208beb7093715528ef2b6f376fbdd8cb3ea5c9f7068dc384a865f60f94
+      - src_8757b557ffd2bcdeaa20ae34f38c41c942830deb56774eb77737ce456021274f
