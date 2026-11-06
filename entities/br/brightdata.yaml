@@ -1,0 +1,59 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m6r5p10d9d5dazgjpej0eqva
+  slug: brightdata
+  slug_aliases: []
+  name: Bright Data
+  domains:
+    - value: brightdata.com
+      role: primary
+      valid_from: 2026-11-06T00:00:00.000Z
+  category: data-infrastructure
+profile:
+  description: Bright Data provides web data platform infrastructure including proxies, Web Unlocker, SERP API and datasets for AI builders.
+  links:
+    site: https://brightdata.com
+  summary: Bright Data provides web data platform infrastructure for AI builders.
+sources:
+  - source_id: src_4fa68e361231066fbfb4420fde66e39ff7912acd8240a286bb0196ab523d14b2
+    url: https://brightdata.com/ai/ai-startups-program
+programs: []
+offers:
+  - offer_id: off_01m6r5p10fnnyn0hykj3chc5n1
+    offer_slug: ai-startup-program
+    offer_slug_aliases: []
+    title: AI Startup Program
+    summary: AI-native startups receive up to $20,000 in credits for Bright Data's web data platform, plus office hours with solution architects, technical training resources, and co-marketing opportunities. Apply through the program form; approval includes a qualification meeting and most teams activate in about 7 business days.
+    lifecycle:
+      status: active
+      effective_from: 2026-11-06T00:00:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Platform credits for Bright Data's web data platform, up to $20,000 in value
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 2000000
+            kind: up-to
+        - benefit_id: ben_02
+          description: Office hours with solution architects, technical training resources, and co-marketing opportunities
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: external-verification
+        statement: Applicants must be AI-native startups (AI is the foundational component of the core product), funded pre-seed to Series A up to $20M; bootstrapped companies are eligible for a limited amount, and must be using public web data for growth at scale. Approval includes a qualification meeting.
+    roles:
+      terms_authority_entity_id: ent_01m6r5p10d9d5dazgjpej0eqva
+      access_operator_entity_id: ent_01m6r5p10d9d5dazgjpej0eqva
+    access:
+      availability: public
+      method: form
+      url: https://brightdata.com/ai/ai-startups-program
+    source_ids:
+      - src_4fa68e361231066fbfb4420fde66e39ff7912acd8240a286bb0196ab523d14b2
