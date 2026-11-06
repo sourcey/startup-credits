@@ -1,0 +1,85 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+authority_intent: community
+entity:
+  entity_id: ent_01m6qmfved3fwyhd0d831q4yad
+  slug: tinyfish
+  slug_aliases: []
+  name: TinyFish
+  domains:
+    - value: tinyfish.ai
+      role: primary
+      valid_from: 2026-11-06T05:20:00.000Z
+  category: ai-ml
+profile:
+  summary: TinyFish provides web APIs for AI agents, including TinySearch, TinyFetch, TinyAgent, and TinyBrowser, for live web search, content fetching, web automation, and cloud browser sessions.
+  description: "TinyFish offers a suite of web APIs for AI agents: structured web search, URL-to-content fetching, multi-step web automation, and cloud browser sessions, all using one API key."
+  links:
+    site: https://www.tinyfish.ai
+    pricing: https://www.tinyfish.ai/pricing
+sources:
+  - source_id: src_3973b9975a94f6df76c4e212d3b0e3aa4008de6c4c9de57ca3fc6d6500f36591
+    url: https://www.tinyfish.ai/startups
+  - source_id: src_3f4ee542f20fca1cfe5ddb63d3b318a6d311a3af922416fece7cf8e9a67fe4fb
+    url: https://www.tinyfish.ai/
+  - source_id: src_07484a4d5b7e4baa72faaa24d0b523aa276eb9c61a225b3f0a739daa4336d43c
+    url: https://www.tinyfish.ai/blog/startup-credits
+programs:
+  - program_id: prg_01m6qmfvehc1m8n61h6zpd9a2n
+    program_slug: tinyfish-for-startups
+    program_slug_aliases: []
+    title: TinyFish for Startups
+    summary: TinyFish for Startups gives eligible early-stage teams free TinySearch and TinyFetch with four times the default rate limits, wallet credit for TinyAgent and TinyBrowser, and up to $12,000 in value across two tiers.
+    source_ids:
+      - src_3973b9975a94f6df76c4e212d3b0e3aa4008de6c4c9de57ca3fc6d6500f36591
+offers:
+  - offer_id: off_01m6qmfvehs9pq47d7kfkf5k13
+    program_id: prg_01m6qmfvehc1m8n61h6zpd9a2n
+    offer_slug: tinyfish-for-startups-tier-1
+    offer_slug_aliases: []
+    title: TinyFish for Startups - Tier 1
+    summary: Independent, pre-production teams receive TinySearch and TinyFetch at four times the default rate limits for six months, $100 in wallet credit each month for six months, and 50 concurrent TinyAgent and TinyBrowser runs.
+    description: TinyFish states that the Tier 1 package is worth up to $7,000. Wallet credit can be spent on TinyAgent, TinyBrowser, and TinyMonitor, and unused monthly credit does not roll over.
+    lifecycle:
+      status: active
+      effective_from: 2026-11-06T05:20:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          kind: credit
+          description: $100 added to the TinyFish wallet every month for six months, usable on TinyAgent, TinyBrowser, and TinyMonitor.
+          value:
+            kind: exact
+            amount:
+              currency: USD
+              minor_units: 10000
+          duration:
+            kind: exact
+            value: P6M
+        - benefit_id: ben_02
+          kind: other
+          description: TinySearch and TinyFetch rate limits raised to four times the default for six months.
+        - benefit_id: ben_03
+          kind: other
+          description: 50 concurrent TinyAgent and TinyBrowser runs.
+        - benefit_id: ben_04
+          kind: other
+          description: TinyFish states the Tier 1 package is worth up to $7,000 in total.
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: "Tier 1 is for independent, pre-production teams with no accelerator or investors."
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01m6qmfved3fwyhd0d831q4yad
+      access_operator_entity_id: ent_01m6qmfved3fwyhd0d831q4yad
+    access:
+      availability: public
+      method: form
+      url: https://www.tinyfish.ai/startups
+      instructions: Use Apply now on the TinyFish for Startups page to open the application form; TinyFish reviews applications in weekly batches, replies by email either way, and does not guarantee approval.
+    terms_url: https://www.tinyfish.ai/startups
+    source_ids:
+      - src_3973b9975a94f6df76c4e212d3b0e3aa4008de6c4c9de57ca3fc6d6500f36591
