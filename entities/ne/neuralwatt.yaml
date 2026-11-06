@@ -1,0 +1,82 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m6qh8jm8qrysqzcj7665bg2m
+  slug: neuralwatt
+  slug_aliases: []
+  name: Neuralwatt
+  domains:
+    - value: neuralwatt.com
+      role: primary
+      valid_from: 2026-11-06T04:18:25.000Z
+  category: ai-ml
+profile:
+  description: Neuralwatt is an AI inference cloud that measures GPU energy per request and bills that energy instead of tokens.
+  summary: Neuralwatt provides AI inference priced by energy use, with models, a playground, and startup credit programs.
+  links:
+    site: https://neuralwatt.com
+sources:
+  - source_id: src_37eaa410bb1441c1ca250272aab1f3908e6ca0b2ceab7dbe3e21b8e5f6cdc9d8
+    url: https://neuralwatt.com/startups
+programs:
+  - program_id: prg_01m6qh8jmec8dzk2r2p1h9q3n9
+    program_slug: neuralwatt-startup-programs
+    program_slug_aliases: []
+    title: Neuralwatt startup programs
+    summary: Neuralwatt offers three startup programs—Spark, Launch, and Scale—with AI request credits billed by energy use at public rates.
+    source_ids:
+      - src_37eaa410bb1441c1ca250272aab1f3908e6ca0b2ceab7dbe3e21b8e5f6cdc9d8
+offers:
+  - offer_id: off_01m6qh8jmf29k756bedtkatc3w
+    program_id: prg_01m6qh8jmec8dzk2r2p1h9q3n9
+    offer_slug: neuralwatt-spark-500-credits
+    offer_slug_aliases: []
+    title: Neuralwatt Spark $500 AI request credits
+    summary: Eligible startups with a company email, a live website or product, and 50 people or fewer receive $500 in Neuralwatt AI request credits that expire 90 days after grant.
+    lifecycle:
+      status: active
+      effective_from: 2026-11-06T04:18:25.000Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_01
+          description: $500 in Neuralwatt AI request credits at public rates, Standard tier concurrency of 5 requests at a time, welcome email, docs and Discord, and joint marketing
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 50000
+            kind: exact
+          duration:
+            kind: exact
+            value: P90D
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: not-machine-evaluable
+            statement: Apply with a company email whose domain matches the company website
+          - criterion_id: cri_02
+            kind: manual
+            reason: not-machine-evaluable
+            statement: Have a live company website or product
+          - criterion_id: cri_03
+            kind: manual
+            reason: not-machine-evaluable
+            statement: 50 people or fewer
+          - criterion_id: cri_04
+            kind: manual
+            reason: vendor-discretion
+            statement: One program grant per company domain ever; Neuralwatt reviews each application and may reject without giving a reason
+    roles:
+      terms_authority_entity_id: ent_01m6qh8jm8qrysqzcj7665bg2m
+      access_operator_entity_id: ent_01m6qh8jm8qrysqzcj7665bg2m
+    access:
+      availability: public
+      method: form
+      url: https://neuralwatt.com/startups#apply
+      instructions: Create a Neuralwatt account at portal.neuralwatt.com with your company email, then submit the Spark application form on the Neuralwatt startups page. Neuralwatt replies within 2 business days and adds credits on approval.
+    source_ids:
+      - src_37eaa410bb1441c1ca250272aab1f3908e6ca0b2ceab7dbe3e21b8e5f6cdc9d8
