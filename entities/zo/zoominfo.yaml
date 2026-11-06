@@ -53,7 +53,7 @@ offers:
     access:
       availability: public
       method: form
-      url: https://www.zoominfo.com/free-trial?camp_id=7014y000001YVwhAAG
+      url: https://www.zoominfo.com/offers/start-ups
       instructions: Select Free Trial on the ZoomInfo for Startups page and complete the free trial form.
     source_ids:
       - src_9291e9de798dde36f1a357d0d02ab712837f371f4e01ff9f132760714517ca24
