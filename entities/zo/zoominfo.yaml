@@ -17,6 +17,8 @@ profile:
 sources:
   - source_id: src_9291e9de798dde36f1a357d0d02ab712837f371f4e01ff9f132760714517ca24
     url: https://www.zoominfo.com/offers/start-ups
+  - source_id: src_557a2e8076e60a757241a46a83ec4faa5764a4b5cd256a3f54a2b9eafe736465
+    url: https://www.zoominfo.com/free-trial?camp_id=7014y000001YVwhAAG
 programs: []
 offers:
   - offer_id: off_01m6q9j2sqxkwt9axmwe33xba7
@@ -51,8 +53,9 @@ offers:
       terms_authority_entity_id: ent_01m6q9j2smk6xsywgdt5ctppwa
       access_operator_entity_id: ent_01m6q9j2smk6xsywgdt5ctppwa
     access:
-      availability: referral
+      availability: public
       method: form
-      url: https://www.zoominfo.com/offers/start-ups
+      url: https://www.zoominfo.com/free-trial?camp_id=7014y000001YVwhAAG
     source_ids:
       - src_9291e9de798dde36f1a357d0d02ab712837f371f4e01ff9f132760714517ca24
+      - src_557a2e8076e60a757241a46a83ec4faa5764a4b5cd256a3f54a2b9eafe736465
