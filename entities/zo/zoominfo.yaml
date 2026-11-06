@@ -1,0 +1,55 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m6q9j2smk6xsywgdt5ctppwa
+  slug: zoominfo
+  slug_aliases: []
+  name: ZoomInfo
+  domains:
+    - value: zoominfo.com
+      role: primary
+      valid_from: 2026-11-06T02:04:00.000Z
+  category: crm-sales
+profile:
+  summary: ZoomInfo provides B2B company and contact data plus sales, marketing and go-to-market software.
+  description: ZoomInfo is a go-to-market data and software platform offering B2B contact and company data, intent signals and sales engagement tools.
+  links:
+    site: https://www.zoominfo.com
+sources:
+  - source_id: src_9291e9de798dde36f1a357d0d02ab712837f371f4e01ff9f132760714517ca24
+    url: https://www.zoominfo.com/offers/start-ups
+programs: []
+offers:
+  - offer_id: off_01m6q9j2sqxkwt9axmwe33xba7
+    offer_slug: zoominfo-for-startups
+    offer_slug_aliases: []
+    title: ZoomInfo for Startups
+    summary: Startups with under $4 million in funding can get 50% off ZoomInfo for the first two years; restrictions apply.
+    lifecycle:
+      status: active
+      effective_from: 2026-11-06T02:04:00.000Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source does not state separate consideration beyond purchasing ZoomInfo at the discounted price.
+      benefits:
+        - benefit_id: ben_primary
+          description: 50% off for the first two years (restrictions apply)
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 5000
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Startups that have raised up to a Series A round via an approved incubator, accelerator, or venture capital partner, with under $4 million in funding.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01m6q9j2smk6xsywgdt5ctppwa
+      access_operator_entity_id: ent_01m6q9j2smk6xsywgdt5ctppwa
+    access:
+      availability: public
+      method: form
+      url: https://www.zoominfo.com/offers/start-ups
+    source_ids:
+      - src_9291e9de798dde36f1a357d0d02ab712837f371f4e01ff9f132760714517ca24
