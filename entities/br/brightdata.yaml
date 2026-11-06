@@ -8,7 +8,7 @@ entity:
     - value: brightdata.com
       role: primary
       valid_from: 2026-11-06T00:00:00.000Z
-  category: data-infrastructure
+  category: other
 profile:
   description: Bright Data provides web data platform infrastructure including proxies, Web Unlocker, SERP API and datasets for AI builders.
   links:
