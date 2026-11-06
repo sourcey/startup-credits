@@ -1,0 +1,81 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m6qac1x4jf34yxxhcbff030q
+  slug: spacexsi
+  slug_aliases:
+    - xai
+  name: SpaceXSI
+  domains:
+    - value: x.ai
+      role: primary
+      valid_from: 2026-11-06T02:17:59.000Z
+  category: ai-ml
+profile:
+  summary: SpaceXSI develops Grok and offers the Grok API.
+  description: SpaceXSI develops Grok and offers access through Grok and the Grok API.
+  links:
+    site: https://x.ai
+sources:
+  - source_id: src_60ed5259fa47f02de38b69c59123cb27799e71a083d98eb1f562bbe804defa86
+    url: https://x.ai/startups
+  - source_id: src_1ae3e239df737ff83a690c6682c49fe0641176753dccb1bec2d5380bdc0cfe02
+    url: https://x.ai/legal/startup-program-terms
+  - source_id: src_bd22c8f398ba89c90ae360f59eae2bab4c06ea3fc9c6c0fd046d0285c27b2bac
+    url: https://x.ai/startups/apply
+programs:
+  - program_id: prg_01m6qac1x65kqx955ty18jh29x
+    program_slug: grok-for-startups
+    program_slug_aliases: []
+    title: Grok for Startups
+    summary: Credits and support across Grok, Grok Build, Grok Bot, the Grok API, and Cursor, all in one place.
+    source_ids:
+      - src_60ed5259fa47f02de38b69c59123cb27799e71a083d98eb1f562bbe804defa86
+offers:
+  - offer_id: off_01m6qac1x6qtw9s3jxdnm1ay8n
+    program_id: prg_01m6qac1x65kqx955ty18jh29x
+    offer_slug: grok-for-startups-credits
+    offer_slug_aliases: []
+    title: Grok for Startups credits
+    summary: Venture-backed startups with a live product get promotional credits for Grok, Grok Build, Grok Bot and the Grok API from one balance, sized to their goals; 20% on approval and 80% once up and running.
+    lifecycle:
+      status: active
+      effective_from: 2026-10-22T00:00:00.000Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_credits
+          description: Promotional credits for Grok, Grok Build, Grok Bot and the Grok API from one balance, sized to the startup's goals; SpaceXSI aims to offer six to twelve months of real usage. 20% of the credits are released on approval and the other 80% once the startup is up and running; credits expire six months after they are applied.
+          kind: other
+        - benefit_id: ben_onboarding
+          description: Hands-on onboarding and a direct line to the SpaceXSI startups team.
+          kind: other
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - kind: manual
+            criterion_id: cri_01
+            statement: The applicant is a venture-backed startup with a live product.
+            reason: external-verification
+          - kind: manual
+            criterion_id: cri_02
+            statement: The applicant applies with a company email that matches its website.
+            reason: not-machine-evaluable
+          - kind: manual
+            criterion_id: cri_03
+            statement: Only one grant is available per company.
+            reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01m6qac1x4jf34yxxhcbff030q
+      access_operator_entity_id: ent_01m6qac1x4jf34yxxhcbff030q
+    access:
+      availability: public
+      instructions: Create a team in the xAI console, copy the Team ID, and submit the application form with a work email on the same domain as the company website.
+      method: form
+      url: https://x.ai/startups/apply
+    terms_url: https://x.ai/legal/startup-program-terms
+    source_ids:
+      - src_60ed5259fa47f02de38b69c59123cb27799e71a083d98eb1f562bbe804defa86
+      - src_1ae3e239df737ff83a690c6682c49fe0641176753dccb1bec2d5380bdc0cfe02
+      - src_bd22c8f398ba89c90ae360f59eae2bab4c06ea3fc9c6c0fd046d0285c27b2bac
