@@ -1,0 +1,90 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+authority_intent: community
+entity:
+  entity_id: ent_01m6q6zx9qxhgb3vxxaa00h766
+  slug: fal
+  slug_aliases: []
+  name: fal
+  domains:
+  - value: fal.ai
+    role: primary
+    valid_from: '2026-11-06T01:16:00.000Z'
+  category: ai-ml
+profile:
+  summary: fal provides hosted generative-media model APIs and serverless GPU infrastructure.
+  description: fal provides image, video, audio and 3D model APIs and serverless GPU
+    infrastructure.
+  links:
+    site: https://fal.ai
+sources:
+- source_id: src_d53f7cae002c0e9de790a2aa4292ac991ddc4965e8a1cf66e41dbe5060042ee1
+  url: https://fal.ai/startup-program
+- source_id: src_29c75c92e78d7639af05a42c51a90dbc955189c2b1471e4fdb6b3be56bf1589a
+  url: https://fal.ai/startups
+programs:
+- program_id: prg_01m6q6zx9qrj0xf75htc111s4y
+  program_slug: fal-startup-program
+  program_slug_aliases: []
+  title: fal Startup Program
+  summary: For startups in Europe & Asia with real traction or venture backing, plus perks from our partners.
+  source_ids:
+  - src_d53f7cae002c0e9de790a2aa4292ac991ddc4965e8a1cf66e41dbe5060042ee1
+  - src_29c75c92e78d7639af05a42c51a90dbc955189c2b1471e4fdb6b3be56bf1589a
+offers:
+- offer_id: off_01m6q6zx9qxtd098p3az6bpwxe
+  program_id: prg_01m6q6zx9qrj0xf75htc111s4y
+  offer_slug: startup-program-entry-credits
+  offer_slug_aliases: []
+  title: fal Startup Program entry credits
+  summary: Approved startups in Europe or Asia building generative-media products
+    start with USD 1,000 in fal credits, with higher credit packs available as fal
+    usage scales.
+  lifecycle:
+    status: active
+    effective_from: '2026-11-06T01:16:00.000Z'
+  economics:
+    benefits:
+    - benefit_id: ben_01
+      description: USD 1,000 entry credit for every approved Startup Program team
+      kind: credit
+      value:
+        amount:
+          currency: USD
+          minor_units: 100000
+        kind: exact
+    consideration:
+      kind: none
+  eligibility:
+    rule:
+      kind: all
+      rules:
+      - criterion_id: cri_01
+        kind: manual
+        reason: not-machine-evaluable
+        statement: Team must be based in Europe or Asia and generative media must
+          power core product features.
+      - criterion_id: cri_02
+        kind: manual
+        reason: vendor-discretion
+        statement: Company must demonstrate real users, meaningful traction or revenue,
+          or backing from an institutional investor; acceptance is reviewed by fal.
+      - criterion_id: cri_03
+        kind: manual
+        reason: not-machine-evaluable
+        statement: A fal account is required before applying; one application per
+          company every three months. Credits cannot be resold or transferred.
+  roles:
+    terms_authority_entity_id: ent_01m6q6zx9qxhgb3vxxaa00h766
+    access_operator_entity_id: ent_01m6q6zx9qxhgb3vxxaa00h766
+  access:
+    availability: public
+    method: form
+    url: https://fal.ai/startup-program
+    instructions: 'Create or sign into a free fal account, submit company traction
+      or funding and planned fal use through the Startup Program application. A short
+      introductory call is usually part of approval. Higher packs depend on fal monthly
+      spend: USD 2,500 credit at USD 1,000/month and USD 5,000 credit at USD 2,500/month;
+      reach out to fal when eligible.'
+  source_ids:
+  - src_d53f7cae002c0e9de790a2aa4292ac991ddc4965e8a1cf66e41dbe5060042ee1
+  - src_29c75c92e78d7639af05a42c51a90dbc955189c2b1471e4fdb6b3be56bf1589a
