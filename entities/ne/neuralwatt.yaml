@@ -22,7 +22,7 @@ programs:
     program_slug: neuralwatt-startup-programs
     program_slug_aliases: []
     title: Neuralwatt startup programs
-    summary: Neuralwatt offers three startup programs (Spark, Launch, and Scale)—with AI request credits billed by energy use at public rates.
+    summary: Neuralwatt offers three startup programs (Spark, Launch, and Scale) - with AI request credits billed by energy use at public rates.
     source_ids:
       - src_37eaa410bb1441c1ca250272aab1f3908e6ca0b2ceab7dbe3e21b8e5f6cdc9d8
 offers:
