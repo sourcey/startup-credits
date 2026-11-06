@@ -1,0 +1,69 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m6q6zh4eym029xf1kagk3r2n
+  slug: sail-research
+  slug_aliases: []
+  name: Sail Research
+  domains:
+    - value: sail.industries
+      role: primary
+      valid_from: 2026-11-06T01:18:42.000Z
+  category: ai-ml
+profile:
+  summary: Sail Research provides serverless open-model inference and persistent computers for long-running AI agents and model workloads.
+  description: Sail Research provides open-model inference and persistent Sailbox computers for agents, rollouts, evaluations, and AI applications.
+  links:
+    site: https://sail.industries
+sources:
+  - source_id: src_b9d87a29f200cded7dfad36551f71878d5471360bd42a747de73fe14aaa8506a
+    url: https://sail.industries/startups
+programs:
+  - program_id: prg_01m6q6zh4g6e3x109h6axq2mjv
+    program_slug: sail-for-startups
+    program_slug_aliases: []
+    title: Sail for Startups
+    summary: Sail for Startups offers credits shared across open-model inference and persistent Sailbox computers, plus hands-on support and community benefits.
+    source_ids:
+      - src_b9d87a29f200cded7dfad36551f71878d5471360bd42a747de73fe14aaa8506a
+offers:
+  - offer_id: off_01m6q6zh4grt558x5gqs6ykwvw
+    program_id: prg_01m6q6zh4g6e3x109h6axq2mjv
+    offer_slug: up-to-10000-in-sail-credits
+    offer_slug_aliases: []
+    title: Up to $10,000 in Sail credits
+    summary: Approved bootstrapped or funded startups building with Sail receive up to $10,000 in credits shared across inference and Sailboxes, plus hands-on support.
+    lifecycle:
+      status: active
+      effective_from: 2026-11-06T01:18:42.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          kind: credit
+          description: Up to $10,000 in free credits shared between Sail open-model inference and persistent Sailbox computers.
+          value:
+            kind: up-to
+            amount:
+              currency: USD
+              minor_units: 1000000
+        - benefit_id: ben_02
+          kind: other
+          description: Hands-on onboarding and building support in a dedicated shared Slack channel, community events, Sail swag, and coworking for selected teams subject to availability.
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: external-verification
+        statement: Bootstrapped and funded startups building with Sail may apply; Sail reviews each company and workload individually.
+    roles:
+      terms_authority_entity_id: ent_01m6q6zh4eym029xf1kagk3r2n
+      access_operator_entity_id: ent_01m6q6zh4eym029xf1kagk3r2n
+    access:
+      availability: public
+      method: form
+      url: https://sail.industries/startups
+      instructions: Create a Sail account, then complete the application on the startup program page using the account email and describe the company and planned Sail usage.
+    terms_url: https://sail.industries/startups
+    source_ids:
+      - src_b9d87a29f200cded7dfad36551f71878d5471360bd42a747de73fe14aaa8506a
