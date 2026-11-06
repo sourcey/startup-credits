@@ -64,3 +64,40 @@ offers:
       url: https://www.gmicloud.ai/en/company/scale
     source_ids:
       - src_2691aaa035e154b84713f8ea91967e7f2474dc89e46797319dbbe6ca5f3b76d4
+  - offer_id: off_01m6qyap5kt2y599sck6trq6wv
+    program_id: prg_01kzwdd8q3pqmm0svh2v1by0kp
+    offer_slug: scale-maas-builder-matching
+    offer_slug_aliases: []
+    title: SCALE MaaS Builder Matching
+    summary: SCALE participants earn 1:1 credit matching up to $4,500 in MaaS credits by adding their own spend and publishing weekly build logs with shipped or beta product.
+    lifecycle:
+      status: active
+      effective_from: 2026-11-06T08:00:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 1:1 matching of the startup's own MaaS spend with GMI Cloud credits, capped at $4,500.
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 450000
+            kind: up-to
+      consideration:
+        kind: unknown
+        description: The public program page does not state whether other consideration applies.
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Applicant must be accepted into the SCALE program and unlock matching by adding MaaS spend, publishing a weekly build log, and shipping product or a beta.
+        reason: vendor-discretion
+    roles:
+      terms_authority_entity_id: ent_01kzwdd8pzn9tdjfnnzhgevfdx
+      access_operator_entity_id: ent_01kzwdd8pzn9tdjfnnzhgevfdx
+    access:
+      availability: public
+      method: form
+      url: https://www.gmicloud.ai/en/company/scale
+    source_ids:
+      - src_2691aaa035e154b84713f8ea91967e7f2474dc89e46797319dbbe6ca5f3b76d4
