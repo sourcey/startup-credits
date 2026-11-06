@@ -58,40 +58,10 @@ offers:
         description: A card on file is required before credit activates; on the Founders tier nothing is charged until the $1,000 is spent, after which usage is billed at list prices.
     eligibility:
       rule:
-        kind: all
-        rules:
-          - criterion_id: cri_01
-            fact: company.is_private
-            kind: predicate
-            operator: eq
-            statement: The company is privately held.
-            value:
-              type: boolean
-              value: true
-          - criterion_id: cri_02
-            fact: company.age_years
-            kind: predicate
-            operator: lt
-            statement: The company is under 10 years old.
-            value:
-              type: number
-              value: 10
-          - criterion_id: cri_03
-            kind: manual
-            reason: not-machine-evaluable
-            statement: The company has not raised beyond a Pre-Series B round.
-          - criterion_id: cri_04
-            kind: manual
-            reason: not-machine-evaluable
-            statement: The applicant uses a business email address, not a personal email address.
-          - criterion_id: cri_05
-            kind: manual
-            reason: not-machine-evaluable
-            statement: A card is on file before any credit activates.
-          - criterion_id: cri_06
-            kind: manual
-            reason: not-machine-evaluable
-            statement: The company has not received prior Nirvana Labs credits of equal value.
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: The Founders tier is self-serve and needs no investor or accelerator; qualifying companies are pre-Series B (if raised, the most recent round within the last 12 months), under 10 years old and privately held, apply from a business email on the company's own domain, keep a card on file before any credit activates, and have not previously received Nirvana Labs credit of equal or greater value.
+        reason: not-machine-evaluable
     roles:
       terms_authority_entity_id: ent_01m6qnxakqa7kc1yzcbbnqr7kt
       access_operator_entity_id: ent_01m6qnxakqa7kc1yzcbbnqr7kt
