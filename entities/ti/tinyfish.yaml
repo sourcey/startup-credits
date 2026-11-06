@@ -21,6 +21,8 @@ sources:
     url: https://www.tinyfish.ai/startups
   - source_id: src_3f4ee542f20fca1cfe5ddb63d3b318a6d311a3af922416fece7cf8e9a67fe4fb
     url: https://www.tinyfish.ai/
+  - source_id: src_07484a4d5b7e4baa72faaa24d0b523aa276eb9c61a225b3f0a739daa4336d43c
+    url: https://www.tinyfish.ai/blog/startup-credits
 programs:
   - program_id: prg_01m6qmfvehc1m8n61h6zpd9a2n
     program_slug: tinyfish-for-startups
@@ -66,16 +68,10 @@ offers:
         kind: none
     eligibility:
       rule:
-        kind: all
-        rules:
-          - criterion_id: cri_01
-            kind: manual
-            reason: not-machine-evaluable
-            statement: The team is not part of an accelerator and is not backed by investors.
-          - criterion_id: cri_02
-            kind: manual
-            reason: not-machine-evaluable
-            statement: The product is still pre-production, at the idea, prototype, or private beta stage.
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: "Tier 1 is for independent, pre-production teams with no accelerator or investors."
+        reason: not-machine-evaluable
     roles:
       terms_authority_entity_id: ent_01m6qmfved3fwyhd0d831q4yad
       access_operator_entity_id: ent_01m6qmfved3fwyhd0d831q4yad
