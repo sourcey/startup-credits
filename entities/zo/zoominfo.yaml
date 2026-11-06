@@ -10,8 +10,8 @@ entity:
       valid_from: 2026-11-06T02:04:00.000Z
   category: crm-sales
 profile:
-  summary: ZoomInfo provides B2B company and contact data plus sales, marketing and go-to-market software.
-  description: ZoomInfo is a go-to-market data and software platform offering B2B contact and company data, intent signals and sales engagement tools.
+  summary: ZoomInfo is an AI go-to-market (GTM) platform that turns B2B intelligence into pipeline.
+  description: ZoomInfo is an AI GTM platform providing B2B contact and company data that helps businesses increase leads, accelerate sales, and grow.
   links:
     site: https://www.zoominfo.com
 sources:
@@ -29,8 +29,8 @@ offers:
       effective_from: 2026-11-06T02:04:00.000Z
     economics:
       consideration:
-        kind: unknown
-        description: The source does not state separate consideration beyond purchasing ZoomInfo at the discounted price.
+        kind: variable
+        description: Eligible startups pay ZoomInfo's discounted startup pricing, 50% off for the first two years.
       benefits:
         - benefit_id: ben_primary
           description: 50% off for the first two years (restrictions apply)
@@ -38,6 +38,9 @@ offers:
           percentage:
             kind: exact
             basis_points: 5000
+          duration:
+            kind: exact
+            value: P2Y
     eligibility:
       rule:
         kind: manual
@@ -48,8 +51,9 @@ offers:
       terms_authority_entity_id: ent_01m6q9j2smk6xsywgdt5ctppwa
       access_operator_entity_id: ent_01m6q9j2smk6xsywgdt5ctppwa
     access:
-      availability: public
+      availability: membership
       method: form
       url: https://www.zoominfo.com/offers/start-ups
+      instructions: Use the Free Trial form on the ZoomInfo for Startups page; startups that raised up to a Series A via an approved incubator, accelerator, or venture capital partner are eligible.
     source_ids:
       - src_9291e9de798dde36f1a357d0d02ab712837f371f4e01ff9f132760714517ca24
