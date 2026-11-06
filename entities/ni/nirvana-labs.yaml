@@ -1,0 +1,105 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+authority_intent: community
+entity:
+  entity_id: ent_01m6qnxakqa7kc1yzcbbnqr7kt
+  slug: nirvana-labs
+  slug_aliases: []
+  name: Nirvana Labs
+  domains:
+    - value: nirvanalabs.io
+      role: primary
+      valid_from: 2026-11-06T06:05:00.000Z
+  category: hosting-infra
+profile:
+  summary: Nirvana Labs is a cloud provider built for high-performance workloads, offering virtual machines, persistent agent sandboxes, storage, and networking.
+  description: "Nirvana Labs provides cloud compute, persistent agent sandboxes, storage, and networking for high-IOPS databases, vector search, retrieval, and agent workloads."
+  links:
+    site: https://nirvanalabs.io
+    pricing: https://nirvanalabs.io/pricing
+sources:
+  - source_id: src_d36c7c34e5c07383a768482faef4a1e7be83f11b7439a96cb03452686514b22a
+    url: https://nirvanalabs.io/startup-credits
+  - source_id: src_11fc2494e2d11cf3f6710cae51e197758a8f87cc9d4c8aec75f96c69e656d4b9
+    url: https://nirvanalabs.io/
+programs:
+  - program_id: prg_01m6qnxakv9d70nbhb2x6vz244
+    program_slug: nirvana-labs-startup-credits
+    program_slug_aliases: []
+    title: Nirvana Labs Startup Credits
+    summary: Nirvana Labs offers startup cloud credits in three tiers, from a self-serve $1,000 Founders tier to $50,000 for agent-focused teams.
+    source_ids:
+      - src_d36c7c34e5c07383a768482faef4a1e7be83f11b7439a96cb03452686514b22a
+offers:
+  - offer_id: off_01m6qnxakvm5m09n3swa5p7qd2
+    program_id: prg_01m6qnxakv9d70nbhb2x6vz244
+    offer_slug: nirvana-labs-startup-credits-founders
+    offer_slug_aliases: []
+    title: Nirvana Labs Startup Credits - Founders Tier
+    summary: The Founders tier gives eligible startups $1,000 in Nirvana Labs credits on a self-serve basis, with no investor or accelerator required.
+    description: The page states that credits cover invoices in full until spent and that the Founders tier has 12 months to spend them; a business email and a card on file are required, and nothing is charged on the Founders tier until the $1,000 is spent.
+    lifecycle:
+      status: active
+      effective_from: 2026-11-06T06:05:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          kind: credit
+          description: $1,000 in Nirvana Labs credits, applied in full against invoices until spent.
+          value:
+            kind: exact
+            amount:
+              currency: USD
+              minor_units: 100000
+          duration:
+            kind: exact
+            value: P1Y
+      consideration:
+        kind: variable
+        description: A card on file is required before credit activates; on the Founders tier nothing is charged until the $1,000 is spent, after which usage is billed at list prices.
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.is_private
+            kind: predicate
+            operator: eq
+            statement: The company is privately held.
+            value:
+              type: boolean
+              value: true
+          - criterion_id: cri_02
+            fact: company.age_years
+            kind: predicate
+            operator: lt
+            statement: The company is under 10 years old.
+            value:
+              type: number
+              value: 10
+          - criterion_id: cri_03
+            kind: manual
+            reason: not-machine-evaluable
+            statement: The company has not raised beyond a Pre-Series B round.
+          - criterion_id: cri_04
+            kind: manual
+            reason: not-machine-evaluable
+            statement: The applicant uses a business email address, not a personal email address.
+          - criterion_id: cri_05
+            kind: manual
+            reason: not-machine-evaluable
+            statement: A card is on file before any credit activates.
+          - criterion_id: cri_06
+            kind: manual
+            reason: not-machine-evaluable
+            statement: The company has not received prior Nirvana Labs credits of equal value.
+    roles:
+      terms_authority_entity_id: ent_01m6qnxakqa7kc1yzcbbnqr7kt
+      access_operator_entity_id: ent_01m6qnxakqa7kc1yzcbbnqr7kt
+    access:
+      availability: public
+      method: form
+      url: https://nirvanalabs.io/startup-credits
+      instructions: Create an account, choose the Founders tier, and submit the workload form; the page states the Founders tier needs no investor and no call, and most decisions take 48 hours.
+    terms_url: https://nirvanalabs.io/startup-credits
+    source_ids:
+      - src_d36c7c34e5c07383a768482faef4a1e7be83f11b7439a96cb03452686514b22a
