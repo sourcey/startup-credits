@@ -1,0 +1,93 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m6q6x2bew925skmpqmzvnh2h
+  slug: stackby
+  slug_aliases: []
+  name: Stackby
+  domains:
+    - value: stackby.com
+      role: primary
+      valid_from: 2026-11-06T01:17:48.000Z
+  category: no-code
+profile:
+  description: Stackby combines spreadsheets, relational databases, AI fields and agents, and automations in one no-code workspace for teams.
+  summary: Stackby is a no-code spreadsheet-database workspace with AI fields, agents, and automations for startup workflows.
+  links:
+    site: https://stackby.com
+sources:
+  - source_id: src_65dc52b539169ba4b650e7dee6b306fd88125f7673914a48e1699450aa22e666
+    url: https://stackby.com/startup-program
+programs:
+  - program_id: prg_01m6q6x2bkeq3ggg5bk689fm2w
+    program_slug: stackby-for-startups
+    program_slug_aliases: []
+    title: Stackby for Startups
+    summary: A startup program that grants $500 in Stackby credits toward Economy or Business plans, a Business plan workspace, and free onboarding resources.
+    source_ids:
+      - src_65dc52b539169ba4b650e7dee6b306fd88125f7673914a48e1699450aa22e666
+offers:
+  - offer_id: off_01m6q6x2bk6y61ank2s9bgfq55
+    program_id: prg_01m6q6x2bkeq3ggg5bk689fm2w
+    offer_slug: stackby-for-startups-500-credits
+    offer_slug_aliases: []
+    title: Stackby for Startups $500 credits
+    summary: Eligible startups receive $500 in Stackby credits redeemable for Economy or Business plans (one year for 15 seats on Economy, or six seats on Business), a Business plan workspace, and free onboarding resources.
+    lifecycle:
+      status: active
+      effective_from: 2026-11-06T01:17:48.000Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_01
+          description: $500 in Stackby credits redeemable for Economy or Business premium plans (Economy covers one year for 15 people; Business covers one year for 6 people)
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 50000
+            kind: exact
+          duration:
+            kind: exact
+            value: P1Y
+        - benefit_id: ben_02
+          description: Business plan workspace
+          kind: free-service
+          service: Stackby Business plan workspace
+        - benefit_id: ben_03
+          description: Free onboarding resources
+          kind: other
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.age_months
+            kind: predicate
+            operator: lt
+            statement: Incorporated less than 5 years ago
+            value:
+              type: number
+              value: 60
+          - criterion_id: cri_02
+            kind: manual
+            reason: not-machine-evaluable
+            statement: Have raised a maximum of Series A funding
+          - criterion_id: cri_03
+            kind: manual
+            reason: not-machine-evaluable
+            statement: New to Stackby or currently on the free forever plan
+          - criterion_id: cri_04
+            kind: manual
+            reason: vendor-discretion
+            statement: Applications are verified by Stackby; startups affiliated with an approved funding partner are immediately verified with a partner code, and other startups may still apply for team verification
+    roles:
+      terms_authority_entity_id: ent_01m6q6x2bew925skmpqmzvnh2h
+      access_operator_entity_id: ent_01m6q6x2bew925skmpqmzvnh2h
+    access:
+      availability: public
+      method: form
+      url: https://stackby.com/form/frshr1598269756782345f28
+      instructions: Apply on the Stackby for Startups program page or the linked application form. Startups with an approved funding partner code are verified immediately; other applicants are reviewed by the Stackby team.
+    source_ids:
+      - src_65dc52b539169ba4b650e7dee6b306fd88125f7673914a48e1699450aa22e666
