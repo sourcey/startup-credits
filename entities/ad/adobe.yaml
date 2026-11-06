@@ -1,0 +1,103 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m6r6020gj7n1zmv155vm72wj
+  slug: adobe
+  slug_aliases: []
+  name: Adobe
+  domains:
+    - value: adobe.com
+      role: primary
+      valid_from: 2026-11-06T10:52:00.000Z
+  category: design
+profile:
+  description: Adobe provides creative, document, and marketing software, including Firefly, Acrobat, and Adobe Express, for design, content, and business productivity.
+  summary: Adobe provides creative, document, and marketing software for design and business productivity. Its Adobe for Startups program gives eligible early-stage startups 12 months of free access to Firefly Pro Plus, Acrobat Studio, and Semrush.
+  links:
+    site: https://www.adobe.com
+sources:
+  - source_id: src_d0785e9fb0d19c7342aaa0b5c1e35782e4119d9095c44f8124c3559168de1ae8
+    url: https://business.adobe.com/in/solutions/startups.html
+  - source_id: src_0f784a8ed870df9b1a84f3b8b5031e470ec06b13a924d2c362c372c74f7d354f
+    url: https://blog.adobe.com/en/publish/2026/11/02/introducing-adobe-for-startups
+programs:
+  - program_id: prg_01m6r6020gg49hwwhnsmqjaes1
+    program_slug: adobe-for-startups
+    program_slug_aliases: []
+    title: Adobe for Startups
+    summary: Adobe's program offering eligible early-stage startups 12 months of free access to Adobe Firefly Pro Plus, Acrobat Studio, and Semrush.
+    source_ids:
+      - src_d0785e9fb0d19c7342aaa0b5c1e35782e4119d9095c44f8124c3559168de1ae8
+      - src_0f784a8ed870df9b1a84f3b8b5031e470ec06b13a924d2c362c372c74f7d354f
+offers:
+  - offer_id: off_01m6r6020garbhkecw7vy8mqjf
+    program_id: prg_01m6r6020gg49hwwhnsmqjaes1
+    offer_slug: adobe-for-startups-12-months-free
+    offer_slug_aliases: []
+    title: Adobe for Startups, 12 months free
+    summary: Eligible early-stage startups receive 12 months of free access to Adobe Firefly Pro Plus, Acrobat Studio including Adobe Express Premium, and Semrush, for up to five seats per team.
+    lifecycle:
+      status: active
+      effective_from: 2026-11-02T00:00:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 12 months of free access to Adobe Firefly Pro Plus
+          duration:
+            kind: exact
+            value: P1Y
+          kind: free-service
+          service: Adobe Firefly Pro Plus
+        - benefit_id: ben_02
+          description: 12 months of free access to Acrobat Studio including Adobe Express Premium
+          duration:
+            kind: exact
+            value: P1Y
+          kind: free-service
+          service: Acrobat Studio including Adobe Express Premium
+        - benefit_id: ben_03
+          description: 12 months of free access to Semrush
+          duration:
+            kind: exact
+            value: P1Y
+          kind: free-service
+          service: Semrush
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.age_months
+            kind: predicate
+            operator: lt
+            statement: Startup incorporated within the past 5 years
+            value:
+              type: number
+              value: 60
+          - criterion_id: cri_02
+            fact: company.has_professional_email_and_website
+            kind: predicate
+            operator: eq
+            statement: Company website and business email address
+            value:
+              type: boolean
+              value: true
+          - criterion_id: cri_03
+            kind: manual
+            reason: vendor-discretion
+            statement: Early-stage company (Seed through Series A) that has raised less than $15 million in venture capital; Adobe reviews each application and verifies eligibility before acceptance.
+          - criterion_id: cri_04
+            kind: manual
+            reason: not-machine-evaluable
+            statement: The free offer can be redeemed one time only, for 12 consecutive months, for up to five seats per team.
+    roles:
+      terms_authority_entity_id: ent_01m6r6020gj7n1zmv155vm72wj
+      access_operator_entity_id: ent_01m6r6020gj7n1zmv155vm72wj
+    access:
+      availability: public
+      method: form
+      url: https://business.adobe.com/in/solutions/startups.html
+    source_ids:
+      - src_d0785e9fb0d19c7342aaa0b5c1e35782e4119d9095c44f8124c3559168de1ae8
+      - src_0f784a8ed870df9b1a84f3b8b5031e470ec06b13a924d2c362c372c74f7d354f
