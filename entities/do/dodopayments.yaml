@@ -1,0 +1,54 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m6r6fc9qfrz0nkj21yt70f8a
+  slug: dodopayments
+  slug_aliases: []
+  name: Dodo Payments
+  domains:
+    - value: dodopayments.com
+      role: primary
+      valid_from: 2026-11-06T00:00:00.000Z
+  category: payments-fintech
+profile:
+  description: Dodo Payments is a billing and payments platform for AI and SaaS startups, handling global tax, compliance, chargebacks, and fraud in 220+ countries.
+  links:
+    site: https://dodopayments.com
+  summary: Dodo Payments is a billing and payments platform for AI and SaaS startups selling globally.
+sources:
+  - source_id: src_4762697cd4e578eb269745dd3b37e189411df6eecc25483a7fbda270f1cd9e31
+    url: https://dodopayments.com/startups
+programs: []
+offers:
+  - offer_id: off_01m6r6fc9s5zatxysvk5ycs51p
+    offer_slug: dodo-for-startups
+    offer_slug_aliases: []
+    title: Dodo for Startups
+    summary: Startups get up to 12 months of free credits applied upfront, forever startup pricing, and the full Dodo Payments platform for global billing.
+    lifecycle:
+      status: active
+      effective_from: 2026-11-06T00:00:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to 12 months of free platform credits, applied upfront
+          kind: other
+        - benefit_id: ben_02
+          description: Forever startup pricing — preferential rates that scale as the startup grows, with the full platform and no tier gating
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: external-verification
+        statement: For early-stage startups and startups scaling through early revenue, building SaaS, AI, or digital products, selling or planning to sell internationally, from bootstrapped through Series B. Apply through the program form.
+    roles:
+      terms_authority_entity_id: ent_01m6r6fc9qfrz0nkj21yt70f8a
+      access_operator_entity_id: ent_01m6r6fc9qfrz0nkj21yt70f8a
+    access:
+      availability: public
+      method: form
+      url: https://dodopayments.com/startups
+    source_ids:
+      - src_4762697cd4e578eb269745dd3b37e189411df6eecc25483a7fbda270f1cd9e31
