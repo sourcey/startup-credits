@@ -32,8 +32,6 @@ offers:
         - benefit_id: ben_01
           description: Platform credits for on-demand AI inference usage, expiring after 1 year
           kind: credit
-          value:
-            kind: unspecified
         - benefit_id: ben_02
           description: Higher rate limits and applied AI engineering support
           kind: other
@@ -42,13 +40,9 @@ offers:
     eligibility:
       rule:
         criterion_id: cri_01
-        fact: company.stage
-        kind: predicate
-        operator: gte
-        statement: Startup building an AI product; application reviewed by Fireworks
-        value:
-          type: string
-          value: early-stage AI startup
+        kind: manual
+        reason: external-verification
+        statement: Applicants must be early-stage startups building AI products; applications are reviewed by Fireworks.
     roles:
       terms_authority_entity_id: ent_01m6qw4r8432e51ybpyveqzddh
       access_operator_entity_id: ent_01m6qw4r8432e51ybpyveqzddh
