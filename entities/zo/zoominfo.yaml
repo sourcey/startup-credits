@@ -10,8 +10,8 @@ entity:
       valid_from: 2026-11-06T02:04:00.000Z
   category: crm-sales
 profile:
-  summary: ZoomInfo is an AI go-to-market (GTM) platform that turns B2B intelligence into pipeline.
-  description: ZoomInfo is an AI GTM platform providing B2B contact and company data that helps businesses increase leads, accelerate sales, and grow.
+  summary: ZoomInfo provides B2B contact and company data that helps businesses find buyers, increase leads, and accelerate sales.
+  description: ZoomInfo is a GTM data platform offering professional profiles and B2B contact data, from direct dials to verified email addresses, with advanced company filters to define and navigate an addressable market.
   links:
     site: https://www.zoominfo.com
 sources:
@@ -51,9 +51,9 @@ offers:
       terms_authority_entity_id: ent_01m6q9j2smk6xsywgdt5ctppwa
       access_operator_entity_id: ent_01m6q9j2smk6xsywgdt5ctppwa
     access:
-      availability: membership
+      availability: public
       method: form
-      url: https://www.zoominfo.com/offers/start-ups
-      instructions: Use the Free Trial form on the ZoomInfo for Startups page; startups that raised up to a Series A via an approved incubator, accelerator, or venture capital partner are eligible.
+      url: https://www.zoominfo.com/free-trial?camp_id=7014y000001YVwhAAG
+      instructions: Select Free Trial on the ZoomInfo for Startups page and complete the free trial form.
     source_ids:
       - src_9291e9de798dde36f1a357d0d02ab712837f371f4e01ff9f132760714517ca24
