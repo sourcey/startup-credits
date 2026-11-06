@@ -30,8 +30,8 @@ offers:
     economics:
       benefits:
         - benefit_id: ben_01
-          description: Platform credits for on-demand AI inference usage, expiring after 1 year
-          kind: credit
+          description: Platform credits for on-demand AI inference usage, expiring after 1 year (credit amount not published by Fireworks)
+          kind: other
         - benefit_id: ben_02
           description: Higher rate limits and applied AI engineering support
           kind: other
