@@ -10,18 +10,18 @@ entity:
       role: primary
       valid_from: 2026-11-06T02:17:59.000Z
   category: ai-ml
-  profile:
-    summary: SpaceXSI develops Grok and offers the Grok API.
-    description: SpaceXSI develops Grok and offers access through Grok and the Grok API.
-    links:
-      site: https://x.ai
-    sources:
-      - source_id: src_60ed5259fa47f02de38b69c59123cb27799e71a083d98eb1f562bbe804defa86
-        url: https://x.ai/startups
-      - source_id: src_1ae3e239df737ff83a690c6682c49fe0641176753dccb1bec2d5380bdc0cfe02
-        url: https://x.ai/legal/startup-program-terms
-      - source_id: src_bd22c8f398ba89c90ae360f59eae2bab4c06ea3fc9c6c0fd046d0285c27b2bac
-        url: https://x.ai/startups/apply
+profile:
+  summary: SpaceXSI develops Grok and offers the Grok API.
+  description: SpaceXSI develops Grok and offers access through Grok and the Grok API.
+  links:
+    site: https://x.ai
+sources:
+  - source_id: src_60ed5259fa47f02de38b69c59123cb27799e71a083d98eb1f562bbe804defa86
+    url: https://x.ai/startups
+  - source_id: src_1ae3e239df737ff83a690c6682c49fe0641176753dccb1bec2d5380bdc0cfe02
+    url: https://x.ai/legal/startup-program-terms
+  - source_id: src_bd22c8f398ba89c90ae360f59eae2bab4c06ea3fc9c6c0fd046d0285c27b2bac
+    url: https://x.ai/startups/apply
 programs:
   - program_id: prg_01m6qac1x65kqx955ty18jh29x
     program_slug: grok-for-startups
@@ -82,7 +82,7 @@ offers:
       instructions: Create a team in the xAI console, copy the Team ID, and submit the application form with a work email on the same domain as the company website.
       method: form
       url: https://x.ai/startups/apply
-      terms_url: https://x.ai/legal/startup-program-terms
+    terms_url: https://x.ai/legal/startup-program-terms
     source_ids:
       - src_60ed5259fa47f02de38b69c59123cb27799e71a083d98eb1f562bbe804defa86
       - src_1ae3e239df737ff83a690c6682c49fe0641176753dccb1bec2d5380bdc0cfe02
