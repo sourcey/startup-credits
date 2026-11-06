@@ -8,6 +8,12 @@ entity:
     - value: adobe.com
       role: primary
       valid_from: 2026-11-06T10:52:00.000Z
+    - value: blog.adobe.com
+      role: alias
+      valid_from: 2026-11-06T10:52:00.000Z
+    - value: business.adobe.com
+      role: alias
+      valid_from: 2026-11-06T10:52:00.000Z
   category: design
 profile:
   description: Adobe provides creative, document, and marketing software, including Firefly, Acrobat, and Adobe Express, for design, content, and business productivity.
@@ -19,6 +25,14 @@ sources:
     url: https://business.adobe.com/in/solutions/startups.html
   - source_id: src_0f784a8ed870df9b1a84f3b8b5031e470ec06b13a924d2c362c372c74f7d354f
     url: https://blog.adobe.com/en/publish/2026/11/02/introducing-adobe-for-startups
+  - source_id: src_444ab2ca405b810776f304993f347eb7d734438747c40ce761732050a537ade4
+    url: https://www.adobe.com
+  - source_id: src_9e0633a6bd1aeb68bd6973134e3a44ca2c0a8dc104f08105491376a477fe9401
+    url: https://www.adobe.com/products/firefly.html
+  - source_id: src_cfb0f182763f1f76c87533f346ed9852fc8a6fd18da31c313e0cba011835c04e
+    url: https://www.adobe.com/acrobat/acrobat-studio.html
+  - source_id: src_59ddb4c1237ce0ce0743052fbcc47eaf25d994a62678ffbe446c4fa6246c37fa
+    url: https://www.adobe.com/express/
 programs:
   - program_id: prg_01m6r6020gg49hwwhnsmqjaes1
     program_slug: adobe-for-startups
@@ -101,3 +115,6 @@ offers:
     source_ids:
       - src_d0785e9fb0d19c7342aaa0b5c1e35782e4119d9095c44f8124c3559168de1ae8
       - src_0f784a8ed870df9b1a84f3b8b5031e470ec06b13a924d2c362c372c74f7d354f
+      - src_9e0633a6bd1aeb68bd6973134e3a44ca2c0a8dc104f08105491376a477fe9401
+      - src_cfb0f182763f1f76c87533f346ed9852fc8a6fd18da31c313e0cba011835c04e
+      - src_59ddb4c1237ce0ce0743052fbcc47eaf25d994a62678ffbe446c4fa6246c37fa
