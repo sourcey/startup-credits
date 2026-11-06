@@ -26,8 +26,7 @@ programs:
   program_slug: fal-startup-program
   program_slug_aliases: []
   title: fal Startup Program
-  summary: A startup credit program for European and Asian companies building generative-media
-    products with traction or institutional backing.
+  summary: For startups in Europe & Asia with real traction or venture backing, plus perks from our partners.
   source_ids:
   - src_d53f7cae002c0e9de790a2aa4292ac991ddc4965e8a1cf66e41dbe5060042ee1
   - src_29c75c92e78d7639af05a42c51a90dbc955189c2b1471e4fdb6b3be56bf1589a
@@ -54,9 +53,7 @@ offers:
           minor_units: 100000
         kind: exact
     consideration:
-      kind: unknown
-      description: The public application pages do not establish separate consideration
-        for the entry grant.
+      kind: none
   eligibility:
     rule:
       kind: all
