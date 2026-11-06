@@ -76,7 +76,7 @@ offers:
     access:
       availability: public
       method: form
-      url: https://neuralwatt.com/startups#apply
+      url: https://neuralwatt.com/startups
       instructions: Create a Neuralwatt account at portal.neuralwatt.com with your company email, then submit the Spark application form on the Neuralwatt startups page. Neuralwatt replies within 2 business days and adds credits on approval.
     source_ids:
       - src_37eaa410bb1441c1ca250272aab1f3908e6ca0b2ceab7dbe3e21b8e5f6cdc9d8
