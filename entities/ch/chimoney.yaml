@@ -98,7 +98,7 @@ offers:
       availability: public
       method: form
       url: https://chimoney.io/startups/
-      instructions: Use the Apply now button on the Chimoney for Startups page to submit an application; Chimoney reviews eligibility.
+      instructions: Use the Apply now button on the Chimoney for Startups page.
     terms_url: https://chimoney.io/startups/
     source_ids:
       - src_b260946438382b2fb96297a399d364aa4507e06eb546de706e0d1491177830fd
