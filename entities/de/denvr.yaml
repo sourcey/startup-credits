@@ -1,0 +1,75 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+authority_intent: community
+entity:
+  entity_id: ent_01m6r4wkjcprk6c8s01djzq9rc
+  slug: denvr
+  slug_aliases: []
+  name: Denvr
+  domains:
+    - value: denvr.com
+      role: primary
+      valid_from: 2026-11-06T00:00:00.000Z
+  category: hosting-infra
+profile:
+  summary: Denvr provides AI cloud compute, inference, and data services.
+  description: Denvr provides cloud infrastructure and private platforms for AI workloads.
+  links:
+    site: https://www.denvr.com/
+sources:
+  - source_id: src_7a7358221707fa7798998a0a199f4c7b23367adeb7b59909d437844e477cdfaf
+    url: https://www.denvr.com/ai-ascend
+  - source_id: src_2232818b89a42530bc29d779eb190924ebb254eddd2d12e2b5d09869e56bda97
+    url: https://www.denvr.com/
+programs:
+  - program_id: prg_01m6r4wkjec9r83p7qqepkew62
+    program_slug: denvr-ai-ascend
+    program_slug_aliases: []
+    title: Denvr AI Ascend
+    summary: Denvr AI Ascend supports early-stage AI teams with compute access, tools, and technical support.
+    source_ids:
+      - src_7a7358221707fa7798998a0a199f4c7b23367adeb7b59909d437844e477cdfaf
+offers:
+  - offer_id: off_01m6r4wkjedh3wq61knsv5276w
+    program_id: prg_01m6r4wkjec9r83p7qqepkew62
+    offer_slug: complimentary-ai-compute-access
+    offer_slug_aliases: []
+    title: Complimentary AI compute access through Denvr AI Ascend
+    summary: Approved AI startups and other qualified AI teams receive complimentary Denvr AI Compute access, with onboarding and technical support. Allocation and access length depend on program fit.
+    lifecycle:
+      status: active
+      effective_from: 2026-11-06T00:00:00.000Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_compute
+          kind: free-service
+          service: Denvr AI Compute Services
+          description: Complimentary access to Denvr AI Compute Services for development and experimentation; allocation and access length depend on program fit.
+        - benefit_id: ben_support
+          kind: free-service
+          service: Onboarding and technical support
+          description: Onboarding support, setup guidance, and access to technical expertise through the AI Ascend program.
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_ai_focus
+            kind: manual
+            reason: external-verification
+            statement: Applicant is an early-stage AI startup, research or development team, AI-driven enterprise, or another qualified team building and scaling AI applications.
+          - criterion_id: cri_approval
+            kind: manual
+            reason: external-verification
+            statement: Denvr evaluates the project's alignment with program goals, AI development focus, and resource requirements before approval.
+    roles:
+      terms_authority_entity_id: ent_01m6r4wkjcprk6c8s01djzq9rc
+      access_operator_entity_id: ent_01m6r4wkjcprk6c8s01djzq9rc
+    access:
+      availability: public
+      method: form
+      url: https://www.denvr.com/ai-ascend
+      instructions: Complete the AI Ascend application form. Applications are accepted globally and reviewed by Denvr. Paid services may follow the complimentary access period.
+    terms_url: https://www.denvr.com/ai-ascend
+    source_ids:
+      - src_7a7358221707fa7798998a0a199f4c7b23367adeb7b59909d437844e477cdfaf
