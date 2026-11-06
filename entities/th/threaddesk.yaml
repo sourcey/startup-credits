@@ -1,89 +1,80 @@
 schema_version: sourcey.entity-authoring/v1alpha1
 entity:
-  entity_id: ent_01m6r1ccccssk5tjyhx5e4zdn7
+  entity_id: ent_01m6qkfnjdsej52am14s65gaxn
   slug: threaddesk
   slug_aliases: []
   name: ThreadDesk
   domains:
     - value: threaddesk.io
       role: primary
-      valid_from: 2026-11-06T09:00:00.000Z
+      valid_from: 2026-11-05T12:00:00.000Z
   category: support
 profile:
-  summary: ThreadDesk is an AI-powered customer support platform that unifies WhatsApp, Instagram, Messenger, email and web chat into one inbox with automations and a built-in CRM.
-  description: ThreadDesk provides AI-powered customer support software with an omnichannel inbox, automations, marketing tools, and a built-in CRM.
+  summary: ThreadDesk is an AI-powered customer support, omnichannel inbox, marketing, and CRM workspace across WhatsApp, Instagram, email, and web chat.
+  description: ThreadDesk unifies an AI support agent, omnichannel inbox, marketing tools, and customer CRM across WhatsApp, Instagram, Messenger, email, and web chat.
   links:
-    site: https://threaddesk.io/
+    site: https://threaddesk.io
 sources:
-  - source_id: src_ca1e093a5594b7c5812e161032b078a4e68c2caa012cebd2c540b238299ca536
+  - source_id: src_912da9046867a1fc4407a91fb17a2760e7c2285177228847e96158cf970a0bea
     url: https://threaddesk.io/
-  - source_id: src_8d0da7ea5e012f466f450e6c62595dc54481c0cadbc6551f9a0e42dc23149e3f
+  - source_id: src_c48fa2fb6a90980b60534c466fd8e29aecde6dfa394e411702ba4dbd8aceeb18
     url: https://threaddesk.io/startups
 programs:
-  - program_id: prg_01m6r1cccd01751wrv0dhms3by
+  - program_id: prg_01m6qkfnjdnaspd9j10cdh78p6
     program_slug: threaddesk-for-startups
     program_slug_aliases: []
     title: ThreadDesk for Startups
-    summary: ThreadDesk for Startups gives eligible early-stage startups six months of the ThreadDesk Max plan free, followed by 50% off for the next six months, plus onboarding help and priority founder support.
+    summary: ThreadDesk's startup program offering 6 months of ThreadDesk Max free followed by 50% off for the next 6 months, plus guided WhatsApp API setup and AI agent tuning.
     source_ids:
-      - src_8d0da7ea5e012f466f450e6c62595dc54481c0cadbc6551f9a0e42dc23149e3f
+      - src_c48fa2fb6a90980b60534c466fd8e29aecde6dfa394e411702ba4dbd8aceeb18
 offers:
-  - offer_id: off_01m6r1ccce7vkxkpvjpydgvwkw
-    program_id: prg_01m6r1cccd01751wrv0dhms3by
-    offer_slug: threaddesk-for-startups-max-free-access
+  - offer_id: off_01m6qkfnjey33caqd7wp8r8has
+    program_id: prg_01m6qkfnjdnaspd9j10cdh78p6
+    offer_slug: threaddesk-max-startup-plan
     offer_slug_aliases: []
-    title: ThreadDesk for Startups Max free access
-    summary: Eligible early-stage startups receive six months of ThreadDesk Max free, then 50% off the Max plan for the next six months, with onboarding help and priority founder support.
+    title: ThreadDesk for Startups Max Plan Offer
+    summary: Eligible early-stage startups receive 6 months of ThreadDesk Max for free followed by 50% off for the next 6 months, plus guided WhatsApp API setup and AI agent tuning.
     lifecycle:
       status: active
-      effective_from: 2026-11-06T09:00:00.000Z
+      effective_from: 2026-11-05T12:00:00.000Z
     economics:
-      benefits:
-        - benefit_id: ben_01
-          description: Free use of the ThreadDesk Max plan for six months.
-          duration:
-            kind: exact
-            value: P6M
-          kind: free-service
-          service: ThreadDesk Max plan
-        - benefit_id: ben_02
-          description: 50% off the ThreadDesk Max plan for the six months after the free period.
-          duration:
-            kind: exact
-            value: P6M
-          kind: discount
-          percentage:
-            basis_points: 5000
-            kind: exact
-        - benefit_id: ben_03
-          description: Onboarding call, WhatsApp API setup help, AI agent tuning and priority founder support during the programme.
-          kind: other
       consideration:
         kind: variable
-        description: Participant pays nothing for the first six months, then 50% of the Max plan for six months, then standard pricing. WhatsApp conversation fees billed by Meta are passed through at cost.
+        description: Free for the first 6 months on ThreadDesk Max, then billed at 50% off standard pricing for the following 6 months.
+      benefits:
+        - benefit_id: ben_01
+          description: 6 months of ThreadDesk Max plan for free (including all channels, AI agent, automations, and built-in CRM)
+          kind: free-service
+          service: ThreadDesk Max plan
+          duration:
+            kind: exact
+            value: P6M
+        - benefit_id: ben_02
+          applies_to: ThreadDesk Max plan
+          description: 50% discount on ThreadDesk Max for the next 6 months
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 5000
+          duration:
+            kind: exact
+            value: P6M
+        - benefit_id: ben_03
+          description: Guided WhatsApp API setup, AI agent tuning on your website and docs, and priority founder support
+          kind: other
     eligibility:
       rule:
-        kind: all
-        rules:
-          - criterion_id: cri_01
-            kind: manual
-            reason: vendor-discretion
-            statement: Applicant is an early-stage startup that has raised under $2,000,000 or is bootstrapped with under $500,000 in revenue.
-          - criterion_id: cri_02
-            kind: manual
-            reason: not-machine-evaluable
-            statement: Applicant has a company website and a work email on the same domain.
-          - criterion_id: cri_03
-            kind: manual
-            reason: not-machine-evaluable
-            statement: Applicant is a first-time user of a paid ThreadDesk plan.
+        kind: manual
+        criterion_id: cri_01
+        statement: Must have raised under $2M (or be bootstrapped with under $500k in revenue), have a company website and a work email on the same domain, and be a first-time customer on a paid ThreadDesk plan.
+        reason: not-machine-evaluable
     roles:
-      terms_authority_entity_id: ent_01m6r1ccccssk5tjyhx5e4zdn7
-      access_operator_entity_id: ent_01m6r1ccccssk5tjyhx5e4zdn7
+      terms_authority_entity_id: ent_01m6qkfnjdsej52am14s65gaxn
+      access_operator_entity_id: ent_01m6qkfnjdsej52am14s65gaxn
     access:
       availability: public
-      method: contact
+      method: form
       url: https://threaddesk.io/startups
-    terms_url: https://threaddesk.io/startups
+      instructions: Apply through the ThreadDesk for Startups application form using a work email matching your company website domain.
     source_ids:
-      - src_8d0da7ea5e012f466f450e6c62595dc54481c0cadbc6551f9a0e42dc23149e3f
+      - src_c48fa2fb6a90980b60534c466fd8e29aecde6dfa394e411702ba4dbd8aceeb18
