@@ -1,0 +1,75 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+authority_intent: community
+entity:
+  entity_id: ent_01m6qt0ftg74a1mjzfyct22tgf
+  slug: tigergraph
+  slug_aliases: []
+  name: TigerGraph
+  domains:
+    - value: tigergraph.com
+      role: primary
+      valid_from: 2026-11-05T00:30:00.000Z
+  category: databases
+profile:
+  summary: TigerGraph is a graph database and analytics platform for connected-data workloads such as identity, fraud detection, and GraphRAG for AI agents.
+  description: TigerGraph provides a scalable graph database and graph analytics platform used to model relationships across large connected datasets.
+  links:
+    site: https://www.tigergraph.com/
+    pricing: https://www.tigergraph.com/pricing/
+sources:
+  - source_id: src_0b95155d7f22797a6e64afc71b59806dcbaae20c9937e25aa85a8a567fc67598
+    url: https://www.tigergraph.com/startups/
+programs:
+  - program_id: prg_01m6qt0ftkzfjjw4kgj0m9r9qh
+    program_slug: tigergraph-for-startups
+    program_slug_aliases: []
+    title: TigerGraph for Startups
+    summary: TigerGraph for Startups gives early-stage companies free build time and a production runway on the graph platform, with architecture guidance.
+    source_ids:
+      - src_0b95155d7f22797a6e64afc71b59806dcbaae20c9937e25aa85a8a567fc67598
+offers:
+  - offer_id: off_01m6qt0ftkmg91ysq5tpa6gma4
+    program_id: prg_01m6qt0ftkzfjjw4kgj0m9r9qh
+    offer_slug: tigergraph-for-startups
+    offer_slug_aliases: []
+    title: TigerGraph for Startups
+    summary: Accepted startups build for 90 days free, then run TigerGraph in production at no license cost for up to 12 months within the program allowance.
+    description: The page states the program gives 90 days to build at no license cost and then up to 12 months to run TigerGraph in production at no license cost within the program allowance, with no per-customer licensing during the program.
+    lifecycle:
+      status: active
+      effective_from: 2026-11-05T00:30:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          kind: free-service
+          description: 90 days of TigerGraph at no license cost while building and validating the architecture.
+          service: TigerGraph license during the build phase
+          duration:
+            kind: exact
+            value: P90D
+        - benefit_id: ben_02
+          kind: free-service
+          description: Run TigerGraph as part of a commercial product at no license cost for up to 12 months within the program allowance.
+          service: TigerGraph license in production within the program allowance
+          duration:
+            kind: exact
+            value: P1Y
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: The program targets early-stage AI and software companies building repeatable commercial products where relationships are central, with a working product or MVP, a credible path to production, an engaged technical founder, CTO or engineering leader, and TigerGraph becoming part of the product delivered to customers; priority is given to venture-backed or revenue-generating companies through Series B.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01m6qt0ftg74a1mjzfyct22tgf
+      access_operator_entity_id: ent_01m6qt0ftg74a1mjzfyct22tgf
+    access:
+      availability: public
+      method: form
+      url: https://www.tigergraph.com/startups/
+      instructions: Apply through the Apply Now form on the TigerGraph for Startups page; accepted startups work directly with TigerGraph experts on graph modeling and production architecture.
+    terms_url: https://www.tigergraph.com/startups/
+    source_ids:
+      - src_0b95155d7f22797a6e64afc71b59806dcbaae20c9937e25aa85a8a567fc67598
