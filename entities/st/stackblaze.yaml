@@ -1,0 +1,74 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+authority_intent: community
+entity:
+  entity_id: ent_01m6qmttsdc5ddx6rcdm0y40vm
+  slug: stackblaze
+  slug_aliases: []
+  name: StackBlaze
+  domains:
+    - value: stackblaze.com
+      role: primary
+      valid_from: 2026-11-06T05:22:00.000Z
+  category: hosting-infra
+profile:
+  description: StackBlaze is a deployment platform for applications, databases, and services, with managed Postgres, MariaDB, and Redis.
+  summary: StackBlaze is a cloud deployment platform that builds, hosts, and runs applications, databases, and services from a Git repository, with managed Postgres, MariaDB, and Redis.
+  links:
+    site: https://www.stackblaze.com/
+sources:
+  - source_id: src_c8d47dfd9113ec46a4ca9487df0f75115251a1db94331844c417d11477ddf5a2
+    url: https://www.stackblaze.com/startups
+  - source_id: src_e7fd6bf58625b3a05d6a1915c06e2feabb51b0328b69bcdbe33e1ca6c9852a27
+    url: https://www.stackblaze.com/
+  - source_id: src_8018a1da16536ad1e70c8661962ce1f34d81fcf4fb76268d8e1f7dbee17600d9
+    url: https://www.stackblaze.com/pricing
+programs:
+  - program_id: prg_01m6qmttshgkvghxxzgs0xsc99
+    program_slug: stack-activate
+    program_slug_aliases: []
+    title: Stack Activate
+    summary: Stack Activate is StackBlaze's startup credit program; approved startups receive platform credit that offsets compute, database, storage, and bandwidth usage for 12 months.
+    source_ids:
+      - src_c8d47dfd9113ec46a4ca9487df0f75115251a1db94331844c417d11477ddf5a2
+offers:
+  - offer_id: off_01m6qmttshn0e959kp354daejs
+    program_id: prg_01m6qmttshgkvghxxzgs0xsc99
+    offer_slug: stack-activate-founders-credit
+    offer_slug_aliases: []
+    title: Stack Activate Founders credit
+    summary: Self-funded startups can apply for $1,000 in StackBlaze platform credit, with select startups eligible for up to $5,000; credit is valid for 12 months and offsets compute, database, storage, and bandwidth usage.
+    lifecycle:
+      status: active
+      effective_from: 2026-11-06T05:22:00.000Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_01
+          description: $1,000 in StackBlaze platform credit, applied automatically to usage charges across compute, databases, storage, and bandwidth
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 100000
+            kind: exact
+          duration:
+            kind: exact
+            value: P1Y
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Self-funded startups; anyone can apply and no investor or partner code is required. StackBlaze says select startups can receive up to $5,000 in platform credit.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01m6qmttsdc5ddx6rcdm0y40vm
+      access_operator_entity_id: ent_01m6qmttsdc5ddx6rcdm0y40vm
+    access:
+      availability: public
+      method: form
+      url: https://www.stackblaze.com/startups
+      instructions: Apply through the Stack Activate form on the program page. StackBlaze says no credit card is required and most applications are reviewed within a few business days; approved credit is applied to the account automatically.
+    terms_url: https://www.stackblaze.com/startups
+    source_ids:
+      - src_c8d47dfd9113ec46a4ca9487df0f75115251a1db94331844c417d11477ddf5a2
