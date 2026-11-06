@@ -55,7 +55,7 @@ offers:
     access:
       availability: membership
       method: form
-      url: https://www.zoominfo.com/offers/start-ups
+      url: https://www.zoominfo.com/free-trial
     source_ids:
       - src_9291e9de798dde36f1a357d0d02ab712837f371f4e01ff9f132760714517ca24
       - src_557a2e8076e60a757241a46a83ec4faa5764a4b5cd256a3f54a2b9eafe736465
