@@ -72,10 +72,8 @@ offers:
       terms_authority_entity_id: ent_01m6snq6jr93sey42xn4j2xwf6
       access_operator_entity_id: ent_01m6snq6jr93sey42xn4j2xwf6
     access:
-      availability: public
-      method: form
-      url: https://www.zoominfo.com/offers/start-ups
-      instructions: Request access through the ZoomInfo for Startups page to verify funding stage and partner affiliation.
+      availability: referral
+      method: other
     terms_url: https://www.zoominfo.com/offers/start-ups
     source_ids:
       - src_d975462cd62434d6e21095de3b8abf855f97b2924c128e271d0d72b272fb04dd
