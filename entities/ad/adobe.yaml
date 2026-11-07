@@ -78,15 +78,19 @@ offers:
           - criterion_id: cri_01
             fact: company.age_months
             kind: predicate
-            operator: lt
+            operator: lte
             statement: Startup founded within the last five years
             value:
               type: number
               value: 60
           - criterion_id: cri_02
-            kind: manual
-            reason: vendor-discretion
-            statement: Early-stage company that has raised less than $15 million in funding; Adobe will verify eligibility as part of the application process.
+            fact: company.funding_raised_usd
+            kind: predicate
+            operator: lt
+            statement: Startup has raised less than $15 million in funding
+            value:
+              type: number
+              value: 15000000
     roles:
       terms_authority_entity_id: ent_01m6r6020gj7n1zmv155vm72wj
       access_operator_entity_id: ent_01m6r6020gj7n1zmv155vm72wj
