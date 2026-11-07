@@ -55,10 +55,10 @@ offers:
         kind: none
     eligibility:
       rule:
-        kind: manual
         criterion_id: cri_01
-        reason: not-machine-evaluable
-        statement: The applicant is a startup signing up for Signzy for Startups.
+        kind: constant
+        statement: Open to startups seeking to improve their customer onboarding and KYC processes.
+        value: true
     roles:
       terms_authority_entity_id: ent_01m6snscdbv1dwjhw74grt8cc2
       access_operator_entity_id: ent_01m6snscdbv1dwjhw74grt8cc2
