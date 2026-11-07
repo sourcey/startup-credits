@@ -58,7 +58,7 @@ offers:
         kind: manual
         criterion_id: cri_01
         reason: not-machine-evaluable
-        statement: Applicant is a startup seeking to improve its customer onboarding and KYC processes.
+        statement: The applicant is a startup signing up for Signzy for Startups.
     roles:
       terms_authority_entity_id: ent_01m6snscdbv1dwjhw74grt8cc2
       access_operator_entity_id: ent_01m6snscdbv1dwjhw74grt8cc2
@@ -67,6 +67,5 @@ offers:
       method: form
       url: https://www.signzy.com/fintech-apis/startups
       instructions: Sign up through the Signzy for Startups portal on the program page.
-    terms_url: https://www.signzy.com/fintech-apis/startups
     source_ids:
       - src_a111f79b5d7226d16c3b09cb535d2c97a83575941533d1b7e042b2f925844239
