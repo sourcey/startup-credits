@@ -1,0 +1,81 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+authority_intent: community
+entity:
+  entity_id: ent_01m6snq6jr93sey42xn4j2xwf6
+  slug: zoominfo
+  slug_aliases: []
+  name: ZoomInfo
+  domains:
+    - value: zoominfo.com
+      role: primary
+      valid_from: 2026-11-06T23:30:00.000Z
+  category: crm-sales
+profile:
+  summary: ZoomInfo is a B2B go-to-market intelligence platform providing verified company and contact data, buyer intent signals, conversation intelligence, and sales automation.
+  description: B2B contact database, buyer intent signals, and go-to-market intelligence platform for sales and marketing teams.
+  links:
+    site: https://www.zoominfo.com
+sources:
+  - source_id: src_5f58fb5f16ece97d85fc0f2e157e3544c14a8be718f314f46b55ea19f073ed5b
+    url: https://www.zoominfo.com
+  - source_id: src_d975462cd62434d6e21095de3b8abf855f97b2924c128e271d0d72b272fb04dd
+    url: https://www.zoominfo.com/offers/start-ups
+programs:
+  - program_id: prg_01m6snq6ksexx28b5hg4ff5h6j
+    program_slug: zoominfo-for-startups
+    program_slug_aliases: []
+    title: ZoomInfo for Startups
+    summary: ZoomInfo for Startups offers startup-friendly pricing of up to 50% off for the first two years to eligible seed and Series A startups backed by approved partners.
+    source_ids:
+      - src_d975462cd62434d6e21095de3b8abf855f97b2924c128e271d0d72b272fb04dd
+offers:
+  - offer_id: off_01m6snq6mkhzc3c8ja4m4bjd84
+    program_id: prg_01m6snq6ksexx28b5hg4ff5h6j
+    offer_slug: zoominfo-for-startups-50-percent-off-two-years
+    offer_slug_aliases: []
+    title: ZoomInfo for Startups 50% Off for Two Years
+    summary: Startups with under $4 million in funding backed by an approved incubator, accelerator, or venture capital partner receive 50% off ZoomInfo for the first two years.
+    lifecycle:
+      status: active
+      effective_from: 2026-11-06T23:30:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 50% off ZoomInfo platform subscriptions for the first two years for startups with under $4 million in funding (restrictions apply).
+          duration:
+            kind: exact
+            value: P24M
+          kind: discount
+          percentage:
+            basis_points: 5000
+            kind: exact
+      consideration:
+        kind: variable
+        description: Eligible startups pay 50% of the applicable ZoomInfo subscription price for the first two years.
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.funding_raised_usd
+            kind: predicate
+            operator: lt
+            statement: Startup has under $4 million in total funding for the 50% discount tier.
+            value:
+              type: number
+              value: 4000000
+          - criterion_id: cri_02
+            kind: manual
+            reason: not-machine-evaluable
+            statement: Startup has raised up to a Series A funding round via an approved incubator, accelerator, or venture capital partner.
+    roles:
+      terms_authority_entity_id: ent_01m6snq6jr93sey42xn4j2xwf6
+      access_operator_entity_id: ent_01m6snq6jr93sey42xn4j2xwf6
+    access:
+      availability: public
+      method: form
+      url: https://www.zoominfo.com/offers/start-ups
+      instructions: Request access through the ZoomInfo for Startups page to verify funding stage and partner affiliation.
+    terms_url: https://www.zoominfo.com/offers/start-ups
+    source_ids:
+      - src_d975462cd62434d6e21095de3b8abf855f97b2924c128e271d0d72b272fb04dd
