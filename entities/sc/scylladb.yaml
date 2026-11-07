@@ -18,8 +18,6 @@ profile:
 sources:
 - source_id: src_9942cffefcb93c828d3a69b0ded2b7f9858ad193054116c317d48db5a8e83b86
   url: https://lp.scylladb.com/startups
-- source_id: src_3d979159c3d3234ccb4908845137f18de74a2b4f1bf3b230a438f0a2e18b18bc
-  url: https://www.scylladb.com/wp-content/uploads/ScyllaDB-Startups-License-Agreement.pdf
 - source_id: src_e2d3249950c5a43c3179c3deaef1529234439fde08c449d393945ab868b0fc86
   url: https://www.scylladb.com/
 programs:
@@ -36,10 +34,10 @@ offers:
   offer_slug: startup-software-license
   offer_slug_aliases: []
   title: ScyllaDB startup software license
-  summary: Qualifying startups receive 12 months of free ScyllaDB software licensing without the 50 vCPU and 10 TB usage limits,
-    subject to the startup agreement.
-  description: Renewal is available while within the funding threshold. ScyllaDB may change the program or remove participants
-    at its discretion. This offer concerns software licensing, not managed cloud hosting.
+  summary: Eligible startups can receive free ScyllaDB software licensing for 12 months, with renewal while they remain below
+    the program's funding threshold.
+  description: The program offers enterprise-grade software without a deployment scale ceiling. Licensing is subject to
+    ScyllaDB's Master Software License Agreement.
   lifecycle:
     status: active
     effective_from: '2026-11-06T06:54:57.526Z'
@@ -50,7 +48,7 @@ offers:
     - benefit_id: ben_startup_license
       kind: free-service
       service: ScyllaDB software licensing
-      description: Free software licensing without the 50 vCPU and 10 TB usage limits.
+      description: Free software licensing for enterprise-grade ScyllaDB, with no deployment scale ceiling.
       duration:
         kind: exact
         value: P12M
@@ -67,8 +65,6 @@ offers:
     availability: public
     method: form
     url: https://lp.scylladb.com/startups
-    instructions: Complete the Apply here form and accept the linked Startups Program Agreement.
-  terms_url: https://www.scylladb.com/wp-content/uploads/ScyllaDB-Startups-License-Agreement.pdf
+    instructions: Apply through the form on the ScyllaDB for Startups page.
   source_ids:
   - src_9942cffefcb93c828d3a69b0ded2b7f9858ad193054116c317d48db5a8e83b86
-  - src_3d979159c3d3234ccb4908845137f18de74a2b4f1bf3b230a438f0a2e18b18bc
