@@ -11,15 +11,17 @@ entity:
       valid_from: 2026-11-06T23:30:00.000Z
   category: ai-ml
 profile:
-  summary: Datalab provides document intelligence APIs and SDKs that convert, extract, and structure PDFs, spreadsheets, slides, and complex documents for AI workflows.
-  description: Document parsing, OCR, and structured extraction API platform for engineering and AI teams.
+  summary: Datalab is a research lab that trains document intelligence models to convert PDFs, scans, spreadsheets, and slides into Markdown, HTML, JSON, or structured fields.
+  description: High-precision document parsing and extraction API that converts PDFs, scans, spreadsheets, and slides into Markdown, HTML, JSON, or structured fields.
   links:
     site: https://www.datalab.to
 sources:
   - source_id: src_55ab3fffbd1d66bf3557018d17d8e6ff98bca7c8a16979da3b052abda79f4258
     url: https://www.datalab.to
   - source_id: src_637c7d8ccbed7d0ab904b7693d99229a27e51be71780a451ffbb952efdc05cd3
-    url: https://app.datalab.to/pricing
+    url: https://www.datalab.to/pricing
+  - source_id: src_98bc4e7c6a109f44d21e88317a55b309e41c772019ab3489ef12cd409812ab34
+    url: https://www.datalab.to/startups
 programs:
   - program_id: prg_01m6snq6f6zm8mnnvq110pmx2g
     program_slug: datalab-for-startups
@@ -82,8 +84,7 @@ offers:
     access:
       availability: public
       method: form
-      url: https://app.datalab.to/pricing
-      instructions: Apply to the Datalab for Startups program from the Datalab pricing page.
-    terms_url: https://app.datalab.to/pricing
+      url: https://www.datalab.to/startups
     source_ids:
+      - src_98bc4e7c6a109f44d21e88317a55b309e41c772019ab3489ef12cd409812ab34
       - src_637c7d8ccbed7d0ab904b7693d99229a27e51be71780a451ffbb952efdc05cd3
