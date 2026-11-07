@@ -1,0 +1,90 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+authority_intent: community
+entity:
+  entity_id: ent_01m6snq6ec1anfamfqwa0yw2bh
+  slug: datalab
+  slug_aliases: []
+  name: Datalab
+  domains:
+    - value: datalab.to
+      role: primary
+      valid_from: 2026-11-06T23:30:00.000Z
+  category: ai-ml
+profile:
+  summary: Datalab is a research lab that trains document intelligence models to convert PDFs, scans, spreadsheets, and slides into Markdown, HTML, JSON, or structured fields.
+  description: High-precision document parsing and extraction API that converts PDFs, scans, spreadsheets, and slides into Markdown, HTML, JSON, or structured fields.
+  links:
+    site: https://www.datalab.to
+sources:
+  - source_id: src_55ab3fffbd1d66bf3557018d17d8e6ff98bca7c8a16979da3b052abda79f4258
+    url: https://www.datalab.to
+  - source_id: src_637c7d8ccbed7d0ab904b7693d99229a27e51be71780a451ffbb952efdc05cd3
+    url: https://www.datalab.to/pricing
+  - source_id: src_98bc4e7c6a109f44d21e88317a55b309e41c772019ab3489ef12cd409812ab34
+    url: https://www.datalab.to/startups
+programs:
+  - program_id: prg_01m6snq6f6zm8mnnvq110pmx2g
+    program_slug: datalab-for-startups
+    program_slug_aliases: []
+    title: Datalab for Startups
+    summary: Datalab for Startups gives eligible early-stage companies 33% off both per-page processing rates and the monthly Team plan fee for twelve months.
+    source_ids:
+      - src_637c7d8ccbed7d0ab904b7693d99229a27e51be71780a451ffbb952efdc05cd3
+offers:
+  - offer_id: off_01m6snq6g2taxsjdghbsddbj9j
+    program_id: prg_01m6snq6f6zm8mnnvq110pmx2g
+    offer_slug: datalab-for-startups-33-percent-discount
+    offer_slug_aliases: []
+    title: Datalab for Startups 33% Discount for 12 Months
+    summary: Eligible startups under three years old with less than $15M raised and under $5M ARR receive 33% off per-page processor rates and the Team plan fee for 12 months.
+    lifecycle:
+      status: active
+      effective_from: 2026-11-06T23:30:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 33% off per-page processing rates and the Team plan monthly fee for twelve months. Does not stack with the 25% data-retention discount.
+          duration:
+            kind: exact
+            value: P12M
+          kind: discount
+          percentage:
+            basis_points: 3300
+            kind: exact
+      consideration:
+        kind: variable
+        description: Startups pay 67% of standard per-page processor rates and Team plan fees during the 12-month startup discount period.
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.age_months
+            kind: predicate
+            operator: lt
+            statement: Company is under 3 years old.
+            value:
+              type: number
+              value: 36
+          - criterion_id: cri_02
+            fact: company.funding_raised_usd
+            kind: predicate
+            operator: lt
+            statement: Company has raised less than $15M in total funding.
+            value:
+              type: number
+              value: 15000000
+          - criterion_id: cri_03
+            kind: manual
+            reason: not-machine-evaluable
+            statement: Company has less than $5M in annual recurring revenue (ARR) and document processing is core to its product.
+    roles:
+      terms_authority_entity_id: ent_01m6snq6ec1anfamfqwa0yw2bh
+      access_operator_entity_id: ent_01m6snq6ec1anfamfqwa0yw2bh
+    access:
+      availability: public
+      method: form
+      url: https://www.datalab.to/startups
+    source_ids:
+      - src_98bc4e7c6a109f44d21e88317a55b309e41c772019ab3489ef12cd409812ab34
+      - src_637c7d8ccbed7d0ab904b7693d99229a27e51be71780a451ffbb952efdc05cd3
