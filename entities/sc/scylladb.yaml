@@ -12,7 +12,7 @@ entity:
 profile:
   summary: ScyllaDB develops a distributed NoSQL database for data-intensive applications requiring high throughput and low
     latency.
-  description: ScyllaDB provides database software and managed cloud database services.
+  description: ScyllaDB is a NoSQL database for companies of different sizes.
   links:
     site: https://www.scylladb.com/
 sources:
