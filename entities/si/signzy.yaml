@@ -58,7 +58,7 @@ offers:
         kind: manual
         criterion_id: cri_01
         reason: not-machine-evaluable
-        statement: Applicant is a startup seeking to integrate customer onboarding, KYC, or fintech verification APIs through the Signzy for Startups program.
+        statement: Applicant is a startup seeking to improve its customer onboarding and KYC processes.
     roles:
       terms_authority_entity_id: ent_01m6snscdbv1dwjhw74grt8cc2
       access_operator_entity_id: ent_01m6snscdbv1dwjhw74grt8cc2
