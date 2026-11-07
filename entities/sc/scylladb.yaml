@@ -1,0 +1,70 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m6qt76zpwnegtna22a1mf94c
+  slug: scylladb
+  slug_aliases: []
+  name: ScyllaDB
+  domains:
+  - value: scylladb.com
+    role: primary
+    valid_from: '2026-11-06T06:54:57.526Z'
+  category: databases
+profile:
+  summary: ScyllaDB develops a distributed NoSQL database for data-intensive applications requiring high throughput and low
+    latency.
+  description: ScyllaDB provides database software and managed cloud database services.
+  links:
+    site: https://www.scylladb.com/
+sources:
+- source_id: src_9942cffefcb93c828d3a69b0ded2b7f9858ad193054116c317d48db5a8e83b86
+  url: https://lp.scylladb.com/startups
+- source_id: src_e2d3249950c5a43c3179c3deaef1529234439fde08c449d393945ab868b0fc86
+  url: https://www.scylladb.com/
+programs:
+- program_id: prg_01m6qt76zp6qd1xjp2ct2vjq90
+  program_slug: scylladb-for-startups
+  program_slug_aliases: []
+  title: ScyllaDB for Startups Program
+  summary: A software licensing program for startups with less than USD 20 million in total funding.
+  source_ids:
+  - src_9942cffefcb93c828d3a69b0ded2b7f9858ad193054116c317d48db5a8e83b86
+offers:
+- offer_id: off_01m6qt76zp8tgykffqxj11pxdy
+  program_id: prg_01m6qt76zp6qd1xjp2ct2vjq90
+  offer_slug: startup-software-license
+  offer_slug_aliases: []
+  title: ScyllaDB startup software license
+  summary: Eligible startups can receive free ScyllaDB software licensing for 12 months, with renewal while they remain below
+    the program's funding threshold.
+  description: The program offers enterprise-grade software without a deployment scale ceiling. Licensing is subject to
+    ScyllaDB's Master Software License Agreement.
+  lifecycle:
+    status: active
+    effective_from: '2026-11-06T06:54:57.526Z'
+  economics:
+    consideration:
+      kind: none
+    benefits:
+    - benefit_id: ben_startup_license
+      kind: free-service
+      service: ScyllaDB software licensing
+      description: Free software licensing for enterprise-grade ScyllaDB, with no deployment scale ceiling.
+      duration:
+        kind: exact
+        value: P12M
+  eligibility:
+    rule:
+      kind: manual
+      criterion_id: cri_startup_funding
+      statement: The applicant must be a startup with less than USD 20 million in total funding.
+      reason: external-verification
+  roles:
+    terms_authority_entity_id: ent_01m6qt76zpwnegtna22a1mf94c
+    access_operator_entity_id: ent_01m6qt76zpwnegtna22a1mf94c
+  access:
+    availability: public
+    method: form
+    url: https://lp.scylladb.com/startups
+    instructions: Apply through the form on the ScyllaDB for Startups page.
+  source_ids:
+  - src_9942cffefcb93c828d3a69b0ded2b7f9858ad193054116c317d48db5a8e83b86
