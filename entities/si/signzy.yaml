@@ -1,0 +1,71 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+authority_intent: community
+entity:
+  entity_id: ent_01m6snscdbv1dwjhw74grt8cc2
+  slug: signzy
+  slug_aliases: []
+  name: Signzy
+  domains:
+    - value: signzy.com
+      role: primary
+      valid_from: 2026-11-06T23:30:00.000Z
+  category: auth-security
+profile:
+  summary: Signzy provides identity verification, KYC, KYB, AML screening, fraud detection, and compliance onboarding APIs for financial institutions and fintech companies.
+  description: Identity verification, KYC/KYB, AML compliance, and no-code onboarding API platform for fintechs and banks.
+  links:
+    site: https://www.signzy.com
+sources:
+  - source_id: src_e0efa23f40d2d40ff46a4882fd5f98a65cb2314742111d4a6f9b71f31dc7be72
+    url: https://www.signzy.com
+  - source_id: src_a111f79b5d7226d16c3b09cb535d2c97a83575941533d1b7e042b2f925844239
+    url: https://www.signzy.com/fintech-apis/startups
+programs:
+  - program_id: prg_01m6snsce300rjsf1xv8tf8kb5
+    program_slug: signzy-for-startups
+    program_slug_aliases: []
+    title: Signzy for Startups
+    summary: Signzy for Startups provides early-stage companies with 5,000 INR in free API sandbox credits, startup-friendly pricing across 240+ APIs, and mentoring.
+    source_ids:
+      - src_a111f79b5d7226d16c3b09cb535d2c97a83575941533d1b7e042b2f925844239
+offers:
+  - offer_id: off_01m6snscezvg6rc1p5npjae1d8
+    program_id: prg_01m6snsce300rjsf1xv8tf8kb5
+    offer_slug: signzy-for-startups-api-sandbox-credits
+    offer_slug_aliases: []
+    title: Signzy for Startups 5,000 INR API Sandbox Credits
+    summary: Startups receive free credits worth 5,000 INR for Signzy's API sandbox, startup-friendly API pricing, and mentoring from industry experts.
+    lifecycle:
+      status: active
+      effective_from: 2026-11-06T23:30:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Free credits worth 5,000 INR for Signzy's API sandbox across 240+ identity, KYC, KYB, lending, and payment verification APIs.
+          kind: credit
+          value:
+            kind: exact
+            amount:
+              currency: INR
+              minor_units: 500000
+        - benefit_id: ben_02
+          description: Startup-friendly rates, access to BFSI and venture capital networks, and mentoring from industry professionals.
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: constant
+        statement: Open to startups seeking to improve their customer onboarding and KYC processes.
+        value: true
+    roles:
+      terms_authority_entity_id: ent_01m6snscdbv1dwjhw74grt8cc2
+      access_operator_entity_id: ent_01m6snscdbv1dwjhw74grt8cc2
+    access:
+      availability: public
+      method: form
+      url: https://www.signzy.com/fintech-apis/startups
+      instructions: Sign up through the Signzy for Startups portal on the program page.
+    source_ids:
+      - src_a111f79b5d7226d16c3b09cb535d2c97a83575941533d1b7e042b2f925844239
