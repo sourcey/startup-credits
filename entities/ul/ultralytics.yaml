@@ -50,6 +50,12 @@ offers:
             amount:
               currency: USD
               minor_units: 1000000
+        - benefit_id: ben_licensing_savings
+          kind: other
+          description: Qualified startups can save on the first year of an Ultralytics Enterprise License for private and commercial YOLO products.
+      consideration:
+        kind: variable
+        description: Qualified startups can save on the first year of an Ultralytics Enterprise License for private and commercial YOLO products.
     eligibility:
       rule:
         kind: all
