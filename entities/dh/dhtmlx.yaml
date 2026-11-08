@@ -55,6 +55,12 @@ offers:
       consideration:
         kind: variable
         description: The discount is calculated based on the price of the license for 3 developers and one SaaS project.
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_early_stage_startup
+        reason: external-verification
+        statement: Eligible early-stage startups can get 70% off a one-year DHTMLX license for up to 3 developers, including use in SaaS applications, full PRO functionality, and official technical support.
     roles:
       terms_authority_entity_id: ent_01m6y3qtn97bpf3vrnbbsv6f7b
       access_operator_entity_id: ent_01m6y3qtn97bpf3vrnbbsv6f7b
