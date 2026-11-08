@@ -58,7 +58,7 @@ offers:
         kind: manual
         criterion_id: cri_work_email
         reason: not-machine-evaluable
-        statement: Please apply with your work email address.
+        statement: Please apply with your work email address
     roles:
       terms_authority_entity_id: ent_01m6yd8aj2c0ezw89wsd0zcwtw
       access_operator_entity_id: ent_01m6yd8aj2c0ezw89wsd0zcwtw
