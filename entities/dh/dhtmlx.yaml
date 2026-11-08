@@ -59,7 +59,7 @@ offers:
       rule:
         kind: manual
         criterion_id: cri_questionnaire_verification
-        statement: Only those who meet the criteria for the program will be able to get a Startup license as our special offer.
+        statement: We ask companies and individuals to fill out a questionnaire and send it to us in order to run a verification process; after the verification, we reserve the right to decline an application.
         reason: external-verification
     roles:
       terms_authority_entity_id: ent_01m6y3qtn97bpf3vrnbbsv6f7b
