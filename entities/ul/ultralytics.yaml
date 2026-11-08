@@ -50,25 +50,14 @@ offers:
             amount:
               currency: USD
               minor_units: 1000000
-        - benefit_id: ben_expert_guidance
-          kind: other
-          description: Guidance from Ultralytics computer vision experts to shape a practical path from the use case and data to training, deployment and scale.
       consideration:
         kind: none
     eligibility:
       rule:
-        kind: predicate
-        criterion_id: cri_stage
-        fact: company.stage
-        operator: in
-        statement: Privately held, for-profit startups that have raised institutional Seed, Series A, Series B, Series C, or later funding.
-        value:
-          type: string-set
-          values:
-            - seed
-            - series-a
-            - series-b
-            - series-c
+        kind: manual
+        criterion_id: cri_program_criteria
+        statement: We prioritize funded startups from Seed through later rounds with a credible product and a near-term computer vision plan.
+        reason: external-verification
     roles:
       terms_authority_entity_id: ent_01m6y36chb5aek1cn5bj18f0gx
       access_operator_entity_id: ent_01m6y36chb5aek1cn5bj18f0gx
