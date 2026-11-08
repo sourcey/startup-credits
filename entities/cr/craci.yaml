@@ -10,14 +10,16 @@ entity:
       valid_from: '2026-11-08T20:30:00Z'
   category: ci-cd
 profile:
-  summary: CRACI runs hosted CI runners that record a build-time software bill of materials and gate builds on vulnerability policy.
-  description: CRACI provides hosted GitHub Actions style CI runners that record every package downloaded during a build, produce a build-time SBOM, match known CVEs and can stop a build before a vulnerable artifact ships.
+  summary: CRACI records build dependencies, identifies releases affected by vulnerabilities, and tracks the response from triage to a fixed release.
+  description: CRACI records build dependencies, identifies releases affected by vulnerabilities, and tracks the response from triage to a fixed release.
   links:
     site: https://craci.com
     pricing: https://craci.com/pricing
 sources:
   - source_id: src_d33fa20dfcce997bb5e5d5598217eb6ab17f86803e0403daf9a6700e68e63a32
     url: https://craci.com/startups
+  - source_id: src_affd68f9b6d9b552ba5ab5a3ca6a249dcfd75a5ae5c2dff70bb3467e784ac2bd
+    url: https://craci.com/
   - source_id: src_7cca8e2a3ea4e4c3b5effb33c171dd05de0c0f5ca6599cb7edf664f18abf5860
     url: https://craci.com/pricing
 programs:
@@ -34,8 +36,8 @@ offers:
     offer_slug: craci-startup-free-build-minutes
     offer_slug_aliases: []
     title: A minimum of 100k free build minutes for startups
-    summary: Startups accepted into CRACI for Startups receive a minimum of 100,000 free build minutes plus hands-on onboarding from the CRACI team.
-    description: The startup page states a minimum of 100k free build minutes and hands-on onboarding. It does not state an expiry date, a per-month split of the minutes, or the size of the runner the minutes apply to.
+    summary: CRACI for Startups gives eligible startups a minimum of 100k free build minutes and hands-on onboarding from the CRACI team.
+    description: The startup page states a minimum of 100k free build minutes and hands-on onboarding from the CRACI team. It does not state an expiry date, a monthly split of the minutes, or which runner size the minutes apply to.
     lifecycle:
       status: active
       effective_from: '2026-11-08T20:30:00Z'
@@ -53,16 +55,10 @@ offers:
         description: Applying is free. Paying customers are billed only for build minutes they use, with no monthly fee and no charge per SBOM, at USD 0.004 per minute for the default 2 vCPU Linux runner.
     eligibility:
       rule:
-        kind: all
-        rules:
-          - criterion_id: cri_eligible_startup
-            kind: manual
-            reason: external-verification
-            statement: CRACI for Startups gives eligible startups a minimum of 100k free build minutes and hands-on onboarding from our team.
-          - criterion_id: cri_work_email
-            kind: manual
-            reason: not-machine-evaluable
-            statement: The application form requires a company work email address and does not accept personal addresses such as Gmail.
+        kind: manual
+        criterion_id: cri_eligible_startup
+        reason: external-verification
+        statement: CRACI for Startups gives eligible startups a minimum of 100k free build minutes and hands-on onboarding from our team.
     roles:
       terms_authority_entity_id: ent_01m6yd8aj2c0ezw89wsd0zcwtw
       access_operator_entity_id: ent_01m6yd8aj2c0ezw89wsd0zcwtw
@@ -74,4 +70,5 @@ offers:
     terms_url: https://craci.com/startups
     source_ids:
       - src_d33fa20dfcce997bb5e5d5598217eb6ab17f86803e0403daf9a6700e68e63a32
+      - src_affd68f9b6d9b552ba5ab5a3ca6a249dcfd75a5ae5c2dff70bb3467e784ac2bd
       - src_7cca8e2a3ea4e4c3b5effb33c171dd05de0c0f5ca6599cb7edf664f18abf5860
