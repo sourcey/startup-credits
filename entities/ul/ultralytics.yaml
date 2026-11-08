@@ -35,7 +35,7 @@ offers:
     offer_slug: ultralytics-for-startups-platform-credits
     offer_slug_aliases: []
     title: Up to $10,000 in Ultralytics Platform credits for startups
-    summary: Up to $10,000 in Platform credits to organize datasets, train YOLO26 models and prepare production deployments.
+    summary: Up to $10,000 in Platform credits and first-year Enterprise Licensing savings for qualified startups.
     description: Credits are used across eligible Ultralytics Platform services to organize datasets, train YOLO26 models, and prepare production deployments; the page states they are not general-purpose cloud credits.
     lifecycle:
       status: active
@@ -50,9 +50,6 @@ offers:
             amount:
               currency: USD
               minor_units: 1000000
-      consideration:
-        kind: none
-    eligibility:
       rule:
         kind: all
         rules:
