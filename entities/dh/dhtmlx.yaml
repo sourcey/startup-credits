@@ -1,0 +1,68 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m6y3qtn97bpf3vrnbbsv6f7b
+  slug: dhtmlx
+  slug_aliases: []
+  name: DHTMLX
+  domains:
+    - value: dhtmlx.com
+      role: primary
+      valid_from: 2026-11-08T17:40:00Z
+  category: devtools-other
+profile:
+  summary: DHTMLX sells JavaScript UI components for building web application interfaces.
+  description: DHTMLX provides commercial JavaScript libraries including Gantt, Scheduler, Suite UI and Grid for building data-heavy web interfaces, with developer-seat licensing.
+  links:
+    site: https://dhtmlx.com
+sources:
+  - source_id: src_3371031e54fb8586459ae2db1e9184ba02d80bc44459d13c7cea7cb0e1600312
+    url: https://dhtmlx.com/
+programs:
+  - program_id: prg_01m6y3qtn9msmxzd7rwqt842y9
+    program_slug: dhtmlx-startup-program
+    program_slug_aliases: []
+    title: DHTMLX Startup Program
+    summary: The DHTMLX Startup Program gives early-stage startups 70% off a one-year license for up to three developers, including SaaS use and Premium support.
+    source_ids:
+      - src_3371031e54fb8586459ae2db1e9184ba02d80bc44459d13c7cea7cb0e1600312
+offers:
+  - offer_id: off_01m6y3qtn9ea5bk0c0xt8pnc7c
+    program_id: prg_01m6y3qtn9msmxzd7rwqt842y9
+    offer_slug: dhtmlx-startup-70-percent-discount
+    offer_slug_aliases: []
+    title: 70% off a one-year DHTMLX license for startups
+    summary: Eligible early-stage startups get 70% off a one-year DHTMLX license for up to three developer seats, including SaaS application use and Premium technical support.
+    description: The discounted license covers full PRO functionality across DHTMLX JS components such as Gantt, Scheduler and Suite UI including Grid.
+    lifecycle:
+      status: active
+      effective_from: 2026-11-08T17:40:00Z
+    economics:
+      benefits:
+        - benefit_id: ben_startup_discount
+          kind: discount
+          description: 70% off a one-year DHTMLX license for up to 3 developers, including use in SaaS applications, full PRO functionality and official technical support.
+          percentage:
+            kind: exact
+            basis_points: 7000
+          duration:
+            kind: exact
+            value: P1Y
+      consideration:
+        kind: variable
+        description: The startup pays 30% of the DHTMLX license price for the discounted one-year term.
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_early_stage
+        statement: The company must be an early-stage startup, subject to DHTMLX eligibility review.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01m6y3qtn97bpf3vrnbbsv6f7b
+      access_operator_entity_id: ent_01m6y3qtn97bpf3vrnbbsv6f7b
+    access:
+      availability: public
+      method: contact
+      url: https://dhtmlx.com/
+      instructions: Contact DHTMLX through the company site to join the startup program and confirm early-stage eligibility before purchasing the discounted license.
+    source_ids:
+      - src_3371031e54fb8586459ae2db1e9184ba02d80bc44459d13c7cea7cb0e1600312
