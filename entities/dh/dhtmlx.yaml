@@ -59,7 +59,7 @@ offers:
       rule:
         kind: manual
         criterion_id: cri_questionnaire_verification
-        statement: Submit your request - we'll send a short qualification form straight to your inbox.
+        statement: We ask companies and individuals to fill out a questionnaire and send it to us in order to run a verification process. After the verification, we reserve the right to decline an application.
         reason: external-verification
     roles:
       terms_authority_entity_id: ent_01m6y3qtn97bpf3vrnbbsv6f7b
