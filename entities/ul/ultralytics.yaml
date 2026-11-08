@@ -5,9 +5,12 @@ entity:
   slug_aliases: []
   name: Ultralytics
   domains:
-    - value: ultralytics.com
+    - value: www.ultralytics.com
       role: primary
-      valid_from: 2026-11-08T17:35:00Z
+      valid_from: '2026-11-08T17:35:00Z'
+    - value: ultralytics.com
+      role: alias
+      valid_from: '2026-11-08T17:35:00Z'
   category: ai-ml
 profile:
   summary: Ultralytics builds and maintains the YOLO computer vision models and a platform to train and deploy them.
