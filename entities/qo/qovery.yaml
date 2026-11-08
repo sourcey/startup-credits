@@ -57,7 +57,8 @@ offers:
           description: One-to-one onboarding with Qovery community engineers
           kind: other
       consideration:
-        kind: none
+        kind: variable
+        description: The startup pays for an annual subscription at a discounted rate after the free period.
     eligibility:
       rule:
         kind: any
