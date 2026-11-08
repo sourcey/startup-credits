@@ -13,7 +13,7 @@ entity:
       valid_from: '2026-11-08T17:35:00Z'
   category: ai-ml
 profile:
-  summary: One workspace connects data, models, experiments and deployments: Ultralytics Platform with the Ultralytics YOLO models for computer vision.
+  summary: Ultralytics Platform connects data, models, experiments and deployments in one workspace, with the Ultralytics YOLO models for computer vision.
   description: Ultralytics Platform provides smart annotation across 6 annotation tasks, cloud-accelerated training on 26 GPU configurations, and deployment to dedicated endpoints in 42 global regions or export to 23 optimized formats.
   links:
     site: https://www.ultralytics.com
