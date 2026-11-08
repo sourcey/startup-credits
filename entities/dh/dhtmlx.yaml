@@ -10,8 +10,8 @@ entity:
       valid_from: '2026-11-08T17:40:00Z'
   category: devtools-other
 profile:
-  summary: DHTMLX sells JavaScript UI components for building web application interfaces such as Gantt charts, schedulers, data grids and spreadsheets.
-  description: DHTMLX provides commercial JavaScript widgets for project management, data analysis and content management, licensed per developer seat.
+  summary: DHTMLX provides JavaScript UI components, including JS Gantt Chart, JS Scheduler, JS Data Grid, JS Spreadsheet and a Suite UI library with 20+ full-featured widgets.
+  description: DHTMLX supplies JavaScript UI components for project management, data analysis and content management, including Gantt, Scheduler, Suite, Grid and Spreadsheet.
   links:
     site: https://dhtmlx.com
 sources:
@@ -56,8 +56,8 @@ offers:
     eligibility:
       rule:
         kind: manual
-        criterion_id: cri_startup_verification
-        statement: The company or individual must be an early-stage startup that submits the qualification questionnaire and passes DHTMLX verification.
+        criterion_id: cri_questionnaire_verification
+        statement: Filling in the form does not guarantee the 70% discount; DHTMLX analyses the answers, runs a verification process and reserves the right to decline an application.
         reason: external-verification
     roles:
       terms_authority_entity_id: ent_01m6y3qtn97bpf3vrnbbsv6f7b
