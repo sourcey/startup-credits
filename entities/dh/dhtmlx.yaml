@@ -54,12 +54,12 @@ offers:
           description: The Startup license grants free 30 support requests within a year, with a response time of up to 2 business days.
       consideration:
         kind: variable
-        description: The startup pays 30% of the three-developer, one-SaaS-project license price for the discounted one-year term.
+        description: The discount is calculated based on the price of the license for 3 developers and one SaaS project.
     eligibility:
       rule:
         kind: manual
         criterion_id: cri_questionnaire_verification
-        statement: We ask companies and individuals to fill out a questionnaire and send it to us in order to run a verification process; only those who meet the criteria for the program will be able to get a Startup license.
+        statement: Only those who meet the criteria for the program will be able to get a Startup license as our special offer.
         reason: external-verification
     roles:
       terms_authority_entity_id: ent_01m6y3qtn97bpf3vrnbbsv6f7b
