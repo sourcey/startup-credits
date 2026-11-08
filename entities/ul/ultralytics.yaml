@@ -26,7 +26,7 @@ programs:
     program_slug: ultralytics-for-startups
     program_slug_aliases: []
     title: Ultralytics for Startups
-    summary: VC-backed startups from Seed through later rounds get Ultralytics Platform credits, first-year Enterprise Licensing savings, and expert guidance.
+    summary: A program for venture-backed startups that provides Ultralytics Platform credits and expert guidance to move from dataset to production.
     source_ids:
       - src_40ab6d2773a6167dcc3d4355ae6df1063fa2af90e5ade3e9973ad3c7b4196bb2
 offers:
@@ -35,7 +35,7 @@ offers:
     offer_slug: ultralytics-for-startups-platform-credits
     offer_slug_aliases: []
     title: Up to $10,000 in Ultralytics Platform credits for startups
-    summary: Up to $10,000 in Platform credits to organize datasets, train YOLO26 models and prepare production deployments, plus first-year Enterprise Licensing savings and expert guidance.
+    summary: Up to $10,000 in Platform credits to organize datasets, train YOLO26 models and prepare production deployments.
     description: Credits are used across eligible Ultralytics Platform services to organize datasets, train YOLO26 models, and prepare production deployments; the page states they are not general-purpose cloud credits.
     lifecycle:
       status: active
@@ -54,10 +54,20 @@ offers:
         kind: none
     eligibility:
       rule:
-        kind: manual
-        criterion_id: cri_program_criteria
-        statement: We prioritize funded startups from Seed through later rounds with a credible product and a near-term computer vision plan.
-        reason: external-verification
+        kind: all
+        rules:
+          - criterion_id: cri_stage
+            kind: manual
+            reason: external-verification
+            statement: Seed stage or later: Privately held, for-profit startups that have raised institutional Seed, Series A, Series B, Series C, or later funding.
+          - criterion_id: cri_vision_product
+            kind: manual
+            reason: external-verification
+            statement: Computer vision product: Computer vision is central to your product or planned for a concrete use case within the next 90 days.
+          - criterion_id: cri_ready_to_build
+            kind: manual
+            reason: external-verification
+            statement: Ready to build: Your team has a company website, a business email, and enough product context to begin evaluating or building now.
     roles:
       terms_authority_entity_id: ent_01m6y36chb5aek1cn5bj18f0gx
       access_operator_entity_id: ent_01m6y36chb5aek1cn5bj18f0gx
