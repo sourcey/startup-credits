@@ -58,7 +58,7 @@ offers:
         kind: manual
         criterion_id: cri_work_email
         reason: not-machine-evaluable
-        statement: "Personal addresses like Gmail aren't accepted."
+        statement: Eligible startups get a minimum of 100k free build minutes and hands on onboarding from our team.
     roles:
       terms_authority_entity_id: ent_01m6yd8aj2c0ezw89wsd0zcwtw
       access_operator_entity_id: ent_01m6yd8aj2c0ezw89wsd0zcwtw
