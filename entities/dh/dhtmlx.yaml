@@ -10,7 +10,7 @@ entity:
       valid_from: '2026-11-08T17:40:00Z'
   category: devtools-other
 profile:
-  summary: DHTMLX widgets include JavaScript Gantt Chart, JavaScript Scheduler, JavaScript Data Grid and JavaScript Spreadsheet in a Suite UI library of 20+ full-featured widgets.
+  summary: DHTMLX sells JavaScript UI components for building web application interfaces, including JavaScript Gantt Chart, JavaScript Scheduler, JavaScript Data Grid and JavaScript Spreadsheet.
   description: DHTMLX supplies JavaScript UI components for project management, data analysis and content management, including Gantt, Scheduler, Suite, Grid and Spreadsheet.
   links:
     site: https://dhtmlx.com
@@ -59,7 +59,7 @@ offers:
       rule:
         kind: manual
         criterion_id: cri_questionnaire_verification
-        statement: We ask companies and individuals to fill out a questionnaire and send it to us in order to run a verification process; after the verification, we reserve the right to decline an application.
+        statement: Submit your request - we'll send a short qualification form straight to your inbox.
         reason: external-verification
     roles:
       terms_authority_entity_id: ent_01m6y3qtn97bpf3vrnbbsv6f7b
