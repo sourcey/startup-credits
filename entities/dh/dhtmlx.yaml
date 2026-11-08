@@ -59,7 +59,7 @@ offers:
       rule:
         kind: manual
         criterion_id: cri_questionnaire_verification
-        statement: We ask companies and individuals to fill out a questionnaire and send it to us in order to run a verification process. After the verification, we reserve the right to decline an application.
+        statement: If you qualify for the startup program, you will get a much-reduced price for the DHTMLX license, which lets you kickstart your project with minimal budget and effort.
         reason: external-verification
     roles:
       terms_authority_entity_id: ent_01m6y3qtn97bpf3vrnbbsv6f7b
@@ -72,3 +72,4 @@ offers:
     terms_url: https://dhtmlx.com/docs/startups/
     source_ids:
       - src_3371031e54fb8586459ae2db1e9184ba02d80bc44459d13c7cea7cb0e1600312
+      - src_b0e5c4d2a1f87f93b6d4e21c8a9f70352ca86d11e4b937a2f05618cd9e24a7b3
