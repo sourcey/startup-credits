@@ -10,13 +10,15 @@ entity:
       valid_from: '2026-11-08T17:40:00Z'
   category: devtools-other
 profile:
-  summary: DHTMLX provides JavaScript UI components, including JS Gantt Chart, JS Scheduler, JS Data Grid, JS Spreadsheet and a Suite UI library with 20+ full-featured widgets.
+  summary: DHTMLX widgets include JavaScript Gantt Chart, JavaScript Scheduler, JavaScript Data Grid and JavaScript Spreadsheet in a Suite UI library of 20+ full-featured widgets.
   description: DHTMLX supplies JavaScript UI components for project management, data analysis and content management, including Gantt, Scheduler, Suite, Grid and Spreadsheet.
   links:
     site: https://dhtmlx.com
 sources:
   - source_id: src_3371031e54fb8586459ae2db1e9184ba02d80bc44459d13c7cea7cb0e1600312
     url: https://dhtmlx.com/docs/startups/
+  - source_id: src_b0e5c4d2a1f87f93b6d4e21c8a9f70352ca86d11e4b937a2f05618cd9e24a7b3
+    url: https://dhtmlx.com/
 programs:
   - program_id: prg_01m6y3qtn9msmxzd7rwqt842y9
     program_slug: dhtmlx-startup-program
@@ -31,7 +33,7 @@ offers:
     offer_slug: dhtmlx-startup-70-percent-discount
     offer_slug_aliases: []
     title: 70% off a one-year DHTMLX startup license
-    summary: Qualifying startups get 70% off a one-year DHTMLX license for up to three developers, usable in one project and in SaaS applications, with 30 support requests.
+    summary: The Startup license is for 1 year, up to 3 developers and 1 project including SaaS apps, with 30 support requests and a 48 hour response time, at 70% off.
     description: The Startup license covers one year, up to 3 developers, 1 project including SaaS apps, and 30 support requests with a 48 hour response time, and applies to Gantt, Scheduler and Suite.
     lifecycle:
       status: active
@@ -49,7 +51,7 @@ offers:
             value: P1Y
         - benefit_id: ben_startup_support
           kind: other
-          description: The Startup license includes a premium support plan with 30 support requests and a response time of up to 2 business days.
+          description: The Startup license grants free 30 support requests within a year, with a response time of up to 2 business days.
       consideration:
         kind: variable
         description: The startup pays 30% of the three-developer, one-SaaS-project license price for the discounted one-year term.
@@ -57,7 +59,7 @@ offers:
       rule:
         kind: manual
         criterion_id: cri_questionnaire_verification
-        statement: Filling in the form does not guarantee the 70% discount; DHTMLX analyses the answers, runs a verification process and reserves the right to decline an application.
+        statement: We ask companies and individuals to fill out a questionnaire and send it to us in order to run a verification process; only those who meet the criteria for the program will be able to get a Startup license.
         reason: external-verification
     roles:
       terms_authority_entity_id: ent_01m6y3qtn97bpf3vrnbbsv6f7b
