@@ -59,15 +59,15 @@ offers:
           - criterion_id: cri_stage
             kind: manual
             reason: external-verification
-            statement: Seed stage or later: Privately held, for-profit startups that have raised institutional Seed, Series A, Series B, Series C, or later funding.
+            statement: "Seed stage or later: Privately held, for-profit startups that have raised institutional Seed, Series A, Series B, Series C, or later funding."
           - criterion_id: cri_vision_product
             kind: manual
             reason: external-verification
-            statement: Computer vision product: Computer vision is central to your product or planned for a concrete use case within the next 90 days.
+            statement: "Computer vision product: Computer vision is central to your product or planned for a concrete use case within the next 90 days."
           - criterion_id: cri_ready_to_build
             kind: manual
             reason: external-verification
-            statement: Ready to build: Your team has a company website, a business email, and enough product context to begin evaluating or building now.
+            statement: "Ready to build: Your team has a company website, a business email, and enough product context to begin evaluating or building now."
     roles:
       terms_authority_entity_id: ent_01m6y36chb5aek1cn5bj18f0gx
       access_operator_entity_id: ent_01m6y36chb5aek1cn5bj18f0gx
