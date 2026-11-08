@@ -1,0 +1,85 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m6y36chb5aek1cn5bj18f0gx
+  slug: ultralytics
+  slug_aliases: []
+  name: Ultralytics
+  domains:
+    - value: www.ultralytics.com
+      role: primary
+      valid_from: '2026-11-08T17:35:00Z'
+    - value: ultralytics.com
+      role: alias
+      valid_from: '2026-11-08T17:35:00Z'
+  category: ai-ml
+profile:
+  summary: Ultralytics Platform connects data, models, experiments and deployments in one workspace, with the Ultralytics YOLO models for computer vision.
+  description: Ultralytics Platform provides smart annotation across 6 annotation tasks, cloud-accelerated training on 26 GPU configurations, and deployment to dedicated endpoints in 42 global regions or export to 23 optimized formats.
+  links:
+    site: https://www.ultralytics.com
+    pricing: https://www.ultralytics.com/pricing
+sources:
+  - source_id: src_40ab6d2773a6167dcc3d4355ae6df1063fa2af90e5ade3e9973ad3c7b4196bb2
+    url: https://www.ultralytics.com/startups
+programs:
+  - program_id: prg_01m6y36chff9xqhr28tq79ft9x
+    program_slug: ultralytics-for-startups
+    program_slug_aliases: []
+    title: Ultralytics for Startups
+    summary: A program for venture-backed startups that provides Ultralytics Platform credits and expert guidance to move from dataset to production.
+    source_ids:
+      - src_40ab6d2773a6167dcc3d4355ae6df1063fa2af90e5ade3e9973ad3c7b4196bb2
+offers:
+  - offer_id: off_01m6y36chfp2s3f4f2337vqct8
+    program_id: prg_01m6y36chff9xqhr28tq79ft9x
+    offer_slug: ultralytics-for-startups-platform-credits
+    offer_slug_aliases: []
+    title: Up to $10,000 in Ultralytics Platform credits for startups
+    summary: Up to $10,000 in Platform credits to organize datasets, train YOLO26 models and prepare production deployments.
+    description: Credits are used across eligible Ultralytics Platform services to organize datasets, train YOLO26 models, and prepare production deployments; the page states they are not general-purpose cloud credits.
+    lifecycle:
+      status: active
+      effective_from: '2026-11-08T17:35:00Z'
+    economics:
+      benefits:
+        - benefit_id: ben_platform_credits
+          kind: credit
+          description: Up to $10,000 in Platform credits used across eligible Ultralytics Platform services; the page states these are not general-purpose cloud credits.
+          value:
+            kind: up-to
+            amount:
+              currency: USD
+              minor_units: 1000000
+        - benefit_id: ben_licensing_savings
+          kind: other
+          description: Qualified startups can save on the first year of an Ultralytics Enterprise License for private and commercial YOLO products.
+      consideration:
+        kind: variable
+        description: Qualified startups can save on the first year of an Ultralytics Enterprise License for private and commercial YOLO products.
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_stage
+            kind: manual
+            reason: external-verification
+            statement: "Seed stage or later: Privately held, for-profit startups that have raised institutional Seed, Series A, Series B, Series C, or later funding."
+          - criterion_id: cri_vision_product
+            kind: manual
+            reason: external-verification
+            statement: "Computer vision product: Computer vision is central to your product or planned for a concrete use case within the next 90 days."
+          - criterion_id: cri_ready_to_build
+            kind: manual
+            reason: external-verification
+            statement: "Ready to build: Your team has a company website, a business email, and enough product context to begin evaluating or building now."
+    roles:
+      terms_authority_entity_id: ent_01m6y36chb5aek1cn5bj18f0gx
+      access_operator_entity_id: ent_01m6y36chb5aek1cn5bj18f0gx
+    access:
+      availability: public
+      method: form
+      url: https://www.ultralytics.com/startups
+      instructions: Use Apply now on the Ultralytics for Startups page and submit first name, last name, business email, team size, company website, funding stage, capital raised, annual revenue, lead investors, a pitch deck link and what you are building.
+    terms_url: https://www.ultralytics.com/startups
+    source_ids:
+      - src_40ab6d2773a6167dcc3d4355ae6df1063fa2af90e5ade3e9973ad3c7b4196bb2
