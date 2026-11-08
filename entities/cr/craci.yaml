@@ -56,9 +56,9 @@ offers:
     eligibility:
       rule:
         kind: manual
-        criterion_id: cri_eligible_startup
-        reason: external-verification
-        statement: CRACI for Startups gives eligible startups a minimum of 100k free build minutes and hands-on onboarding from our team.
+        criterion_id: cri_work_email
+        reason: not-machine-evaluable
+        statement: Applications must use a company work email address; personal addresses such as Gmail are not accepted.
     roles:
       terms_authority_entity_id: ent_01m6yd8aj2c0ezw89wsd0zcwtw
       access_operator_entity_id: ent_01m6yd8aj2c0ezw89wsd0zcwtw
