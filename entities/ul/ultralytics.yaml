@@ -50,9 +50,6 @@ offers:
             amount:
               currency: USD
               minor_units: 1000000
-        - benefit_id: ben_licensing_savings
-          kind: other
-          description: Qualified startups can save on the first year of an Ultralytics Enterprise License for private and commercial YOLO products.
         - benefit_id: ben_expert_guidance
           kind: other
           description: Guidance from Ultralytics computer vision experts to shape a practical path from the use case and data to training, deployment and scale.
@@ -60,10 +57,18 @@ offers:
         kind: none
     eligibility:
       rule:
-        kind: manual
-        criterion_id: cri_application_review
-        statement: Our team reviews your application and works with qualified startups to define the right benefit and activation path, prioritising funded startups from Seed through later rounds with a credible product and a near-term computer vision plan.
-        reason: external-verification
+        kind: predicate
+        criterion_id: cri_stage
+        fact: company.stage
+        operator: in
+        statement: Privately held, for-profit startups that have raised institutional Seed, Series A, Series B, Series C, or later funding.
+        value:
+          type: string-set
+          values:
+            - seed
+            - series-a
+            - series-b
+            - series-c
     roles:
       terms_authority_entity_id: ent_01m6y36chb5aek1cn5bj18f0gx
       access_operator_entity_id: ent_01m6y36chb5aek1cn5bj18f0gx
