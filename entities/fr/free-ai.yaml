@@ -32,7 +32,7 @@ offers:
     source_ids:
       - src_111cc56c07a4e71af5559ea1e60e7127ef7619a1c534daa966f248b1826bf87d
     title: Free.ai Startup Credits
-    summary: Accepted startups receive free credits for more than 200 AI tools and the Free.ai API; the amount varies by stage and planned usage.
+    summary: Accepted startups receive a grant of 15,000,000 tokens for Free.ai's self-hosted models and Pro-tier API access.
     lifecycle:
       status: active
       effective_from: 2026-08-08T00:00:00Z
@@ -41,7 +41,7 @@ offers:
         kind: none
       benefits:
         - benefit_id: ben_primary
-          description: Free credits usable across more than 200 AI tools and the Free.ai API; the credit amount varies by startup stage and planned usage.
+          description: A grant of 15,000,000 tokens for web tools and API endpoints that run on Free.ai's self-hosted open models, plus API keys at the Pro request tier.
           kind: other
     eligibility:
       rule:
