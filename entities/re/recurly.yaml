@@ -52,7 +52,7 @@ offers:
       access_operator_entity_id: ent_01kyygma82ztm6pmnrj8rmgcx9
     access:
       availability: public
-      method: automatic
-      url: https://recurly.com/pricing/
+      method: form
+      url: https://app.recurly.com/signup/
     source_ids:
       - src_8e771f2e65a895cee88d63fb0da6db1f5a29d3fa51547435adc34998a280705b
