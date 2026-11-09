@@ -10,9 +10,10 @@ entity:
       valid_from: 2026-08-04T05:26:40.869Z
   category: crm-sales
 profile:
-  description: HappyFox CRM is an AI-native customer relationship management platform for B2B SaaS teams, covering sales, expansion, renewals, and retention.
+  description: HappyFox CRM is an AI CRM built for early-stage SaaS and software companies.
   links:
     site: https://www.happyfox.com/crm/
+  summary: HappyFox CRM is an AI CRM built for early-stage SaaS and software companies.
 sources:
   - source_id: src_008deec0da4631ca20df95f76de6c54323a1b13f117a5bd3e0a5b7df98b0bd23
     url: https://www.happyfox.com/crm/startup/
@@ -20,8 +21,8 @@ programs:
   - program_id: prg_01kz5ksfzg2mqsxqhrff23evr8
     program_slug: happyfox-crm-startup-pass
     program_slug_aliases: []
-    title: HappyFox CRM Startup Pass
-    summary: HappyFox CRM Startup Pass gives eligible SaaS and AI-native startups one year of HappyFox CRM at no cost, with unlimited users and 50,000 AI credits.
+    title: HappyFox CRM Startup Program
+    summary: The HappyFox CRM Startup Program gives eligible SaaS and AI-native startups HappyFox CRM with no per-user fees for 12 months, 50,000 AI credits, founder Slack, and monthly office hours.
     source_ids:
       - src_008deec0da4631ca20df95f76de6c54323a1b13f117a5bd3e0a5b7df98b0bd23
 offers:
@@ -29,20 +30,20 @@ offers:
     program_id: prg_01kz5ksfzg2mqsxqhrff23evr8
     offer_slug: one-year-free-happyfox-crm-startup-pass
     offer_slug_aliases: []
-    title: One year free HappyFox CRM Startup Pass
-    summary: Eligible SaaS and AI-native startups receive HappyFox CRM free for 12 months with unlimited users, 50,000 AI credits, founder Slack, and monthly office hours.
+    title: HappyFox CRM Startup Program
+    summary: Eligible SaaS and AI-native startups receive HappyFox CRM with no per-user fees for 12 months, 50,000 AI credits, founder Slack, and monthly office hours.
     lifecycle:
       status: active
       effective_from: 2026-08-04T05:26:40.869Z
     economics:
       benefits:
         - benefit_id: ben_01
-          description: HappyFox CRM at no cost for 12 months with unlimited users
+          description: HappyFox CRM with no per-user fees for 12 months
           duration:
             kind: exact
             value: P1Y
           kind: free-service
-          service: HappyFox CRM with unlimited users
+          service: HappyFox CRM with no per-user fees
         - benefit_id: ben_02
           description: 50,000 AI credits total for the first year
           kind: other
