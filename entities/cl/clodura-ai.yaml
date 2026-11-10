@@ -45,8 +45,8 @@ offers:
             kind: up-to
             basis_points: 5000
       consideration:
-        kind: unknown
-        description: The public pages do not establish separate consideration for receiving the startup-program discount.
+        kind: variable
+        description: The startup pays the discounted price of the Clodura.AI Self-Service Max Plan.
     eligibility:
       rule:
         criterion_id: cri_01
