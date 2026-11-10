@@ -22,7 +22,7 @@ offers:
     offer_slug: svix-for-startups
     offer_slug_aliases: []
     title: Svix for Startups
-    summary: Eligible startups get $12,000 of free Svix credits valid for 12 months ($1,000 per month) plus concierge onboarding.
+    summary: Eligible startups get $12,000 of free Svix credits valid for 12 months ($1,000 per month) plus concierge onboarding. Companies in the current YC batch get $50,000.
     lifecycle:
       status: active
       effective_from: 2026-08-01T11:46:59.243Z
@@ -70,6 +70,6 @@ offers:
     access:
       availability: public
       method: form
-      url: https://www.svix.com/startups/
+      url: https://form.jotform.com/243116844210144
     source_ids:
       - src_303b8048f9094ad5c9b8820bd5bdd79824ae7bef300d9aa4af9ba938d4de31db
