@@ -10,9 +10,10 @@ entity:
       valid_from: 2026-08-04T00:00:00.000Z
   category: ai-ml
 profile:
-  description: smallest.ai provides voice AI infrastructure for building real-time conversational products and voice agents.
+  description: smallest.ai provides a voice agent platform for building voice products.
   links:
     site: https://smallest.ai
+  summary: smallest.ai provides a voice agent platform.
 sources:
   - source_id: src_b59d74fd4eb170359f774175fc1aff56e0a084d3678f3a8339aa4f7bc6077909
     url: https://smallest.ai/grants
@@ -21,7 +22,7 @@ programs:
     program_slug: startup-grants-program-for-voice-ai
     program_slug_aliases: []
     title: Startup Grants Program for Voice AI
-    summary: smallest.ai's global grant program supports startups building voice as a core product capability with platform credits, onboarding, and ecosystem access.
+    summary: The smallest.ai Startup Grants Program provides startups worldwide with credits, developer onboarding support, and community access.
     source_ids:
       - src_b59d74fd4eb170359f774175fc1aff56e0a084d3678f3a8339aa4f7bc6077909
 offers:
@@ -30,7 +31,7 @@ offers:
     offer_slug: startup-grants-program-for-voice-ai
     offer_slug_aliases: []
     title: Startup Grants Program for Voice AI
-    summary: Selected startups receive $10,000 in smallest.ai Voice Agent Platform credits for up to six months, plus developer onboarding and community access.
+    summary: Selected startups receive $10,000 in credits to build with the smallest.ai Voice Agent Platform for up to 6 months, plus developer onboarding support and community access.
     lifecycle:
       status: active
       effective_from: 2026-08-04T00:00:00.000Z
@@ -77,6 +78,6 @@ offers:
     access:
       availability: public
       method: form
-      url: https://smallest.ai/grants
+      url: https://smallest.ai/grants-application
     source_ids:
       - src_b59d74fd4eb170359f774175fc1aff56e0a084d3678f3a8339aa4f7bc6077909
