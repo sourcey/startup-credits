@@ -23,7 +23,7 @@ programs:
     program_slug: simplesat-for-startups
     program_slug_aliases: []
     title: Simplesat for Startups
-    summary: Qualifying startups receive all features of Simplesat Standard and live customer support free for six months.
+    summary: Qualifying startups receive all features of the Simplesat Starter plan and live customer support free for six months.
     source_ids:
       - src_881e6b7af294f47b336e15dc1bb9552de60c90fb491df0272d1a821d4a92e703
 offers:
@@ -31,8 +31,8 @@ offers:
     program_id: prg_01kz2jjg3vf0mjy8mb4sseegnf
     offer_slug: six-months-free-standard
     offer_slug_aliases: []
-    title: Six months free on Simplesat Standard
-    summary: Six months of Simplesat Standard at no cost, with live customer support, for qualifying first-time startup customers.
+    title: Six months free on the Simplesat Starter plan
+    summary: Six months of the Simplesat Starter plan at no cost, with live customer support, for qualifying first-time startup customers.
     lifecycle:
       status: active
       effective_from: 2026-08-03T01:08:18Z
@@ -41,9 +41,9 @@ offers:
         kind: none
       benefits:
         - benefit_id: ben_01
-          description: Six months of the Simplesat Standard plan at no cost
+          description: Six months of the Simplesat Starter plan at no cost
           kind: free-service
-          service: Simplesat Standard plan
+          service: Simplesat Starter plan
           duration:
             kind: exact
             value: P6M
