@@ -1,0 +1,75 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+authority_intent: community
+entity:
+  entity_id: ent_01m6r8k0mj9sgzn090dtpwpgh0
+  slug: cockroachlabs
+  slug_aliases: []
+  name: Cockroach Labs
+  domains:
+    - value: cockroachlabs.com
+      role: primary
+      valid_from: 2026-11-06T00:00:00.000Z
+  category: databases
+profile:
+  summary: Cockroach Labs provides CockroachDB, a cloud-native distributed SQL database engineered for resilient transactional applications.
+  description: Cockroach Labs builds CockroachDB, a distributed SQL database delivering high availability and global scalability.
+  links:
+    site: https://www.cockroachlabs.com/
+sources:
+  - source_id: src_cd338f5396a23091b00cbe5e92f40f91f4bc03014d0ce85d75e253a846116d77
+    url: https://www.cockroachlabs.com/solutions/verticals/startups/
+  - source_id: src_4ecc46c84750c715e8567db6136c22e0ad4e8880b36b7870bdf66ec5ff4f9702
+    url: https://www.cockroachlabs.com/
+programs:
+  - program_id: prg_01m6r8k0mxerhwhwsg672eqprw
+    program_slug: cockroachdb-for-startups
+    program_slug_aliases: []
+    title: CockroachDB for Startups
+    summary: CockroachDB for Startups supports early-stage companies with distributed SQL database architecture guides and cloud credit options.
+    source_ids:
+      - src_cd338f5396a23091b00cbe5e92f40f91f4bc03014d0ce85d75e253a846116d77
+offers:
+  - offer_id: off_01m6r8k0mxj7172201cvet4e5w
+    program_id: prg_01m6r8k0mxerhwhwsg672eqprw
+    offer_slug: cockroachdb-cloud-starter-access
+    offer_slug_aliases: []
+    title: CockroachDB Cloud Access and Architecture Support for Startups
+    summary: Qualified startups access CockroachDB Cloud with complimentary development tiers, architecture scaling blueprints, and failure-resilient database infrastructure.
+    lifecycle:
+      status: active
+      effective_from: 2026-11-06T00:00:00.000Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_db_access
+          kind: free-service
+          service: CockroachDB Cloud Database Infrastructure
+          description: Access to CockroachDB Cloud distributed SQL database instances for testing, development, and scaling.
+        - benefit_id: ben_guidance
+          kind: free-service
+          service: Startup Database Architecture Guidance
+          description: Migration blueprints, multi-region scaling guides, and architectural best-practices support for startups.
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_startup_scale
+            kind: manual
+            reason: external-verification
+            statement: Applicant is an early-stage startup building applications requiring distributed SQL or multi-region database resilience.
+          - criterion_id: cri_evaluation
+            kind: manual
+            reason: external-verification
+            statement: Applications are evaluated by Cockroach Labs for project fit and architectural requirements.
+    roles:
+      terms_authority_entity_id: ent_01m6r8k0mj9sgzn090dtpwpgh0
+      access_operator_entity_id: ent_01m6r8k0mj9sgzn090dtpwpgh0
+    access:
+      availability: public
+      method: form
+      url: https://www.cockroachlabs.com/solutions/verticals/startups/
+      instructions: Sign up and register project details through the CockroachDB for Startups page on the website.
+    terms_url: https://www.cockroachlabs.com/solutions/verticals/startups/
+    source_ids:
+      - src_cd338f5396a23091b00cbe5e92f40f91f4bc03014d0ce85d75e253a846116d77
