@@ -10,8 +10,8 @@ entity:
       valid_from: 2026-09-14T00:00:00.000Z
   category: ai-ml
 profile:
-  description: Runway provides generative AI tools and APIs for creating, editing, and deploying video and interactive media.
-  summary: Runway builds generative AI tools and APIs for video and interactive media, including the Runway Characters platform for startup builders.
+  description: Runway provides generative video and conversational AI tools, including the Runway Characters API for real-time conversational avatars.
+  summary: Runway provides generative video and conversational AI tools, including the Runway Characters API for real-time conversational avatars.
   links:
     site: https://runway.com
 sources:
