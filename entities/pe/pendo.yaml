@@ -10,9 +10,10 @@ entity:
       valid_from: 2026-07-31T23:27:27.796Z
   category: data-analytics
 profile:
-  description: Product analytics, in-app guides, and NPS built for startups—no dev team required.
+  description: Pendo.io provides product analytics, in-app guides, and NPS tools for startups without requiring a development team.
   links:
     site: https://www.pendo.io
+  summary: Pendo.io provides product analytics and in-app guides for startups.
 sources:
   - source_id: src_349ecc8ad2b97a1af0be16c8890361e77de3f12b4fac0f81d60797ef2f367eb9
     url: https://www.pendo.io/pendo-for-startups
