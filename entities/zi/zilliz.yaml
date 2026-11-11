@@ -1,0 +1,75 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+authority_intent: community
+entity:
+  entity_id: ent_01m6r7n9xs1g374yjg9w832hpy
+  slug: zilliz
+  slug_aliases: []
+  name: Zilliz
+  domains:
+    - value: zilliz.com
+      role: primary
+      valid_from: 2026-11-06T00:00:00.000Z
+  category: databases
+profile:
+  summary: Zilliz provides fully managed cloud vector database infrastructure powered by Milvus for AI and RAG applications.
+  description: Zilliz builds managed cloud vector database infrastructure and developer tools powered by Milvus.
+  links:
+    site: https://zilliz.com/
+sources:
+  - source_id: src_b74f75e99e456a2b75f2308df8aa076a7d56e699b5637cb77e0bc09cc17c6ecd
+    url: https://zilliz.com/zilliz-for-startups
+  - source_id: src_43636c66fe750590b8627903fb0ec8df05e5c627bf1bc2fcf31b72c1321184ec
+    url: https://zilliz.com/
+programs:
+  - program_id: prg_01m6r7n9y44bef1p8gcex9az2b
+    program_slug: zilliz-ai-startup-program
+    program_slug_aliases: []
+    title: Zilliz AI Startup Program
+    summary: The Zilliz AI Startup Program provides cloud discounts, technical guidance, and go-to-market support for early-stage AI startups.
+    source_ids:
+      - src_b74f75e99e456a2b75f2308df8aa076a7d56e699b5637cb77e0bc09cc17c6ecd
+offers:
+  - offer_id: off_01m6r7n9y4rc57k67knzsbrxy3
+    program_id: prg_01m6r7n9y44bef1p8gcex9az2b
+    offer_slug: zilliz-cloud-discounts-and-support
+    offer_slug_aliases: []
+    title: Zilliz Cloud Discounts and Technical Support for AI Startups
+    summary: Early-stage AI startups building RAG and semantic search applications receive exclusive discounts on Zilliz Cloud, dedicated technical guidance, and ecosystem exposure.
+    lifecycle:
+      status: active
+      effective_from: 2026-11-06T00:00:00.000Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_discounts
+          kind: free-service
+          service: Zilliz Cloud Vector Database
+          description: Program discounts for development, testing, and production vector database workloads on Zilliz Cloud.
+        - benefit_id: ben_support
+          kind: free-service
+          service: Vector Database Technical Support
+          description: Hands-on architecture guidance and technical support from Zilliz vector database engineers.
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_ai_focus
+            kind: manual
+            reason: external-verification
+            statement: Applicant is an early-stage startup building retrieval-powered AI applications such as RAG, semantic search, or AI agents.
+          - criterion_id: cri_review
+            kind: manual
+            reason: external-verification
+            statement: Applications are reviewed and approved by the Zilliz startup team based on use case fit.
+    roles:
+      terms_authority_entity_id: ent_01m6r7n9xs1g374yjg9w832hpy
+      access_operator_entity_id: ent_01m6r7n9xs1g374yjg9w832hpy
+    access:
+      availability: public
+      method: form
+      url: https://zilliz.com/zilliz-for-startups
+      instructions: Submit an application using the Zilliz for Startups form on the website.
+    terms_url: https://zilliz.com/zilliz-for-startups
+    source_ids:
+      - src_b74f75e99e456a2b75f2308df8aa076a7d56e699b5637cb77e0bc09cc17c6ecd
