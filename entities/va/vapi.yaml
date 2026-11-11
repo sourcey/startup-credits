@@ -1,0 +1,83 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+authority_intent: community
+entity:
+  entity_id: ent_01m6r6kj0b6hgwgz2d53dwnhg7
+  slug: vapi
+  slug_aliases: []
+  name: Vapi
+  domains:
+    - value: vapi.ai
+      role: primary
+      valid_from: 2026-11-06T00:00:00.000Z
+  category: ai-ml
+profile:
+  summary: Vapi provides voice AI infrastructure and APIs for building conversational voice agents.
+  description: Vapi builds developer platforms and APIs for voice artificial intelligence agents.
+  links:
+    site: https://vapi.ai
+sources:
+  - source_id: src_0c9ffd48034333d1be11d271759b2d6316ee48503c442915b4adf3fa0db6a78c
+    url: https://vapi.ai/startups
+  - source_id: src_62f55e027f5d522e53838dda34959b08f669b5e6f6d9cd66cabeb11fb47ec0d0
+    url: https://vapi.ai/
+programs:
+  - program_id: prg_01m6r6kj0rwvv66kywqb3fhnqt
+    program_slug: vapi-for-startups
+    program_slug_aliases: []
+    title: Vapi for Startups
+    summary: Vapi for Startups provides voice AI usage minutes, engineering support, and community access for early-stage teams.
+    source_ids:
+      - src_0c9ffd48034333d1be11d271759b2d6316ee48503c442915b4adf3fa0db6a78c
+offers:
+  - offer_id: off_01m6r6kj0rdgs6rqc2agsqzdzd
+    program_id: prg_01m6r6kj0rwvv66kywqb3fhnqt
+    offer_slug: vapi-startups-grant
+    offer_slug_aliases: []
+    title: 90,000 Free Minutes and Dedicated Support through Vapi for Startups
+    summary: Qualified early-stage voice AI startups receive 90,000 free usage minutes over 12 months, dedicated private Slack engineering support, and priority feature access.
+    lifecycle:
+      status: active
+      effective_from: 2026-11-06T00:00:00.000Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_minutes
+          kind: free-service
+          service: Vapi Voice AI Platform Usage
+          description: 90,000 free usage minutes allocated as 7,500 minutes per month for 12 months.
+        - benefit_id: ben_support
+          kind: free-service
+          service: Dedicated technical support
+          description: Direct access to a private Slack channel with the Vapi engineering team.
+        - benefit_id: ben_features
+          kind: free-service
+          service: Priority feature access
+          description: Early access to new voice AI tools and features before public release.
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_voice_focus
+            kind: manual
+            reason: external-verification
+            statement: Applicant is a startup building voice AI products or features with plans to launch within 6 months.
+          - criterion_id: cri_funding_stage
+            kind: manual
+            reason: external-verification
+            statement: Pre-seed to Series A company with $250k or more in total funding.
+          - criterion_id: cri_approval
+            kind: manual
+            reason: external-verification
+            statement: Applications are subject to review and selection by the Vapi team.
+    roles:
+      terms_authority_entity_id: ent_01m6r6kj0b6hgwgz2d53dwnhg7
+      access_operator_entity_id: ent_01m6r6kj0b6hgwgz2d53dwnhg7
+    access:
+      availability: public
+      method: form
+      url: https://vapi.ai/startups
+      instructions: Submit an application through the Vapi for Startups form on the website.
+    terms_url: https://vapi.ai/startups
+    source_ids:
+      - src_0c9ffd48034333d1be11d271759b2d6316ee48503c442915b4adf3fa0db6a78c
