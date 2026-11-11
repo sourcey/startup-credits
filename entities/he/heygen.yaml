@@ -1,0 +1,75 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+authority_intent: community
+entity:
+  entity_id: ent_01m6r8nkaybsk93971j8t0vvm4
+  slug: heygen
+  slug_aliases: []
+  name: HeyGen
+  domains:
+    - value: heygen.com
+      role: primary
+      valid_from: 2026-11-06T00:00:00.000Z
+  category: ai-ml
+profile:
+  summary: HeyGen provides an AI video generation and avatar platform that turns text, audio, and scripts into studio-quality videos.
+  description: HeyGen builds generative AI video technology, custom avatars, and visual video production infrastructure.
+  links:
+    site: https://www.heygen.com/
+sources:
+  - source_id: src_3dcd87d249e61f8a3175acc3c648bbe5619f6cff828dbf538be5abfa9cf0a0fb
+    url: https://www.heygen.com/founders-program
+  - source_id: src_9aa4e3d751c92a0553ff28b302c961b0a46e010504b1a7e1d4f37f6d86084406
+    url: https://www.heygen.com/
+programs:
+  - program_id: prg_01m6r8nkb739b4epfnea77r2ph
+    program_slug: heygen-founders-program
+    program_slug_aliases: []
+    title: HeyGen Founders Program
+    summary: The HeyGen Founders Program supports early-stage companies and founders using video as a core engine with credits and strategy coaching.
+    source_ids:
+      - src_3dcd87d249e61f8a3175acc3c648bbe5619f6cff828dbf538be5abfa9cf0a0fb
+offers:
+  - offer_id: off_01m6r8nkb8dapy1d8pzwx44yx8
+    program_id: prg_01m6r8nkb739b4epfnea77r2ph
+    offer_slug: heygen-founders-unlimited-access
+    offer_slug_aliases: []
+    title: 6 Months Video Access and Strategy Coaching via HeyGen Founders Program
+    summary: Accepted founders receive 6 months of comprehensive feature access across HeyGen's AI video generation suite, 1:1 content strategy coaching, and cohort support.
+    lifecycle:
+      status: active
+      effective_from: 2026-11-06T00:00:00.000Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_video_suite
+          kind: free-service
+          service: HeyGen AI Video Generation Platform
+          description: 6 months of comprehensive platform access for AI video creation, custom avatars, and product demo generation.
+        - benefit_id: ben_coaching
+          kind: free-service
+          service: Content Strategy and Video Coaching
+          description: 1:1 training with the HeyGen team on video scripting, prompting, avatar performance, and distribution strategy.
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_founder_fit
+            kind: manual
+            reason: external-verification
+            statement: Applicant is a founder or early-stage business with audience traction or revenue using video as a core growth channel.
+          - criterion_id: cri_cohort_review
+            kind: manual
+            reason: external-verification
+            statement: Selection is cohort-based and subject to review and admission by the HeyGen team.
+    roles:
+      terms_authority_entity_id: ent_01m6r8nkaybsk93971j8t0vvm4
+      access_operator_entity_id: ent_01m6r8nkaybsk93971j8t0vvm4
+    access:
+      availability: public
+      method: form
+      url: https://www.heygen.com/founders-program
+      instructions: Submit an application through the HeyGen Founders Program form on the website.
+    terms_url: https://www.heygen.com/founders-program
+    source_ids:
+      - src_3dcd87d249e61f8a3175acc3c648bbe5619f6cff828dbf538be5abfa9cf0a0fb
