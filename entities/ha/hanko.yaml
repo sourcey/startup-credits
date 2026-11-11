@@ -11,7 +11,7 @@ entity:
   category: auth-security
 profile:
   summary: Hanko is an open-source authentication company. Its Hanko Cloud service covers login and user management, with pre-built Hanko Elements UI components and a Flow API for teams that want to build their own frontend.
-  description: Hanko provides passkey-first authentication infrastructure with hosted login flows, user management, and an identity API for web and mobile applications.
+  description: Hanko provides authentication and user management features, including web components for user onboarding and login, and an API that handles authentication flows.
   links:
     site: https://www.hanko.io
 sources:
@@ -29,17 +29,17 @@ offers:
       effective_from: 2026-09-04T10:19:29.478Z
     economics:
       consideration:
-        kind: none
+        kind: variable
+        description: The offer can be used on the Hanko Free tier or included in a Hanko Pro subscription at $29 per month.
       benefits:
         - benefit_id: ben_primary
           description: One million free monthly active users for the startup's Hanko Cloud organization, on the Free plan or a Pro subscription
-          kind: free-service
-          service: Hanko Cloud
+          kind: other
         - benefit_id: ben_support
           description: Free consulting and setup support
           kind: other
         - benefit_id: ben_backlinks
-          description: Backlinks from our case study page to your domain to help with SEO
+          description: Backlinks from Hanko's case study page to the startup's domain to help with SEO
           kind: other
     eligibility:
       rule:
