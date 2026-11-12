@@ -11,7 +11,7 @@ entity:
   category: devtools-other
 profile:
   summary: SimpleLocalize is a software localization platform with a web-based translation editor, auto-translation, translation hosting, and a CLI.
-  description: SimpleLocalize provides translation management with a web-based editor, auto-translation, QA checks, translation hosting on a global CDN, and a CLI.
+  description: SimpleLocalize is a localization platform that provides a web-based translation editor, auto-translation, QA checks, translation hosting, an API, and a CLI.
   links:
     site: https://simplelocalize.io
 sources:
@@ -52,7 +52,7 @@ offers:
         criterion_id: cri_01
         kind: manual
         reason: vendor-discretion
-        statement: The offer is for genuine startups, not a loophole to reduce costs for established companies; SimpleLocalize primarily supports early-stage teams, individuals, and small businesses building new products, and the Developer Plan is free for the first year if you contribute to the community.
+        statement: The offer is for genuine startups, early-stage teams, individuals, and small businesses building new products, and not for established companies.
     roles:
       terms_authority_entity_id: ent_01m1qb7dnxnxdfygk0ak64t4xz
       access_operator_entity_id: ent_01m1qb7dnxnxdfygk0ak64t4xz
@@ -60,6 +60,6 @@ offers:
       availability: public
       method: form
       url: https://simplelocalize.io/startup-form/
-      instructions: Submit the startup form with a link to the product, a short description of what you are building, and how you plan to contribute. If approved, SimpleLocalize sends a discount code for the Startup Plan.
+      instructions: Submit the startup form with a link to the product, a short description of what the startup is building, and how it plans to contribute. If approved, SimpleLocalize sends a discount code for the Startup Plan.
     source_ids:
       - src_9fe40e5b6a3d89e410625aea0710b6c5b6f9374a561b138b3f5227dfb4057e76
