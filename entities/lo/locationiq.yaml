@@ -1,0 +1,71 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m7a0n6b9twv40p11t6t4mp8k
+  slug: locationiq
+  slug_aliases: []
+  name: LocationIQ
+  domains:
+    - value: locationiq.com
+      role: primary
+      valid_from: 2026-11-13T08:33:46.000Z
+  category: apis-integration
+profile:
+  summary: LocationIQ provides geocoding, maps, and routing APIs that turn location data into addresses, map views, and routes, powered by OpenStreetMap, OpenAddresses, and other sources.
+  description: LocationIQ provides geocoding, maps, and routing APIs as an affordable Google Maps alternative for websites and apps.
+  links:
+    site: https://locationiq.com
+    pricing: https://locationiq.com/pricing
+sources:
+  - source_id: src_6a32343357cad1a1dcfb5592f985f19ba442b9cf6dd7af0a2f4a1d9452ae52dd
+    url: https://locationiq.com/pricing
+  - source_id: src_d0972f4ce94374d5f645355773f3cc2169865fb7678c5e93108c3dc54f1b36b8
+    url: https://locationiq.com/
+programs:
+  - program_id: prg_01m7a0n6bak3k4sc7g7w4bcks9
+    program_slug: locationiq-for-startups
+    program_slug_aliases: []
+    title: LocationIQ for Startups
+    summary: LocationIQ for Startups gives early-stage companies founded less than two years ago up to 50% off LocationIQ services for their first 12 months.
+    source_ids:
+      - src_6a32343357cad1a1dcfb5592f985f19ba442b9cf6dd7af0a2f4a1d9452ae52dd
+offers:
+  - offer_id: off_01m7a0n6bbzf7c5yn8eph1ykvb
+    program_id: prg_01m7a0n6bak3k4sc7g7w4bcks9
+    offer_slug: locationiq-for-startups-discount
+    offer_slug_aliases: []
+    title: Up to 50% off LocationIQ for the first 12 months for startups
+    summary: Early-stage companies founded less than two years ago can get up to 50% off LocationIQ services for their first 12 months through the LocationIQ for Startups Program.
+    description: The LocationIQ pricing page states the program gives an early stage company founded less than 2 years ago up to 50% off for the first 12 months. It does not state which plans the discount applies to or how the exact percentage within the up-to-50% range is decided.
+    lifecycle:
+      status: active
+      effective_from: 2026-11-13T08:33:46.000Z
+    economics:
+      benefits:
+        - applies_to: LocationIQ services
+          benefit_id: ben_01
+          description: Up to 50% off LocationIQ services for the first 12 months.
+          kind: discount
+          percentage:
+            basis_points: 5000
+            kind: up-to
+      consideration:
+        kind: variable
+        description: The startup pays the discounted price of its chosen LocationIQ plan; plans are billed monthly or yearly (for example, the plan named Startup is USD 200 billed monthly).
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: The applicant is an early stage company founded less than 2 years ago.
+    roles:
+      terms_authority_entity_id: ent_01m7a0n6b9twv40p11t6t4mp8k
+      access_operator_entity_id: ent_01m7a0n6b9twv40p11t6t4mp8k
+    access:
+      availability: public
+      method: form
+      url: https://forms.locationiq.com/startup-program
+      instructions: Apply through the Startup Program form linked from the LocationIQ pricing page.
+    terms_url: https://locationiq.com/pricing
+    source_ids:
+      - src_6a32343357cad1a1dcfb5592f985f19ba442b9cf6dd7af0a2f4a1d9452ae52dd
+      - src_d0972f4ce94374d5f645355773f3cc2169865fb7678c5e93108c3dc54f1b36b8
