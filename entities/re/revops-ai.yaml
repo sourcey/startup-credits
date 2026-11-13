@@ -104,7 +104,7 @@ offers:
       terms_authority_entity_id: ent_01kzzhc9f67tzjeqt8kfeefxgq
       access_operator_entity_id: ent_01kzzhc9f67tzjeqt8kfeefxgq
     access:
-      availability: public
+      availability: membership
       method: form
       url: https://revops.ai/startups
     terms_url: https://revops.ai/startups
