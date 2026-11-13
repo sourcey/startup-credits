@@ -45,9 +45,6 @@ offers:
           percentage:
             basis_points: 10000
             kind: exact
-        - benefit_id: ben_02
-          description: Hex provisions the Enterprise workspace within 1-3 business days after the startup submits the redemption form.
-          kind: other
     eligibility:
       rule:
         kind: all
@@ -68,11 +65,11 @@ offers:
       terms_authority_entity_id: ent_01m7a0ahjpar5zfgjf1hc8k6xe
       access_operator_entity_id: ent_01m7a0ahjpar5zfgjf1hc8k6xe
     access:
-      availability: public
-      instructions: Start a Hex trial through the Claude Startups Program signup link, then submit the redemption form with the same email address; Hex's team provisions the Enterprise workspace within 1-3 business days. After 6 months the workspace downgrades to the Community plan unless the startup arranges a paid plan with Hex sales.
+      availability: membership
+      instructions: Open the Claude Startups Program offer page, start a Hex trial through the program signup link, and fill out the form on the page using the same email address; Hex's team provisions the Enterprise workspace within 1-3 business days. The offer includes 5 seats; after 6 months the workspace downgrades to the Community plan unless the startup arranges a paid plan with Hex sales via the contact link on the offer page.
       method: form
-      url: https://app.hex.tech/signup/claude-startups
-    terms_url: https://learn.hex.tech/docs/legal/hex-service-agreement
+      url: https://hex.tech/conversion/claude-startups-program/
+    terms_url: https://hex.tech/conversion/claude-startups-program/
     source_ids:
       - src_1c00d9a5cce2d5c61f8e97e6ced36e64108fb76817dba02e19aad8174481696a
       - src_5fade6d25def4b0cbd0b33166a441b2ec05a6f9b8b16ea8e2689aea5c8b94901
