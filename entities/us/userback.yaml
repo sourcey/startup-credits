@@ -33,7 +33,7 @@ offers:
       benefits:
         - benefit_id: ben_01
           kind: discount
-          description: 25% off all annual plans for your first year.
+          description: 25% off all Userback annual plans for the first year.
           applies_to: Annual plans
           percentage:
             kind: exact
@@ -43,7 +43,7 @@ offers:
             value: P1Y
       consideration:
         kind: variable
-        description: The startup pays the remaining discounted price on an annual plan; the page compares the Business plan at $59.25 per month billed annually.
+        description: The startup pays the remaining discounted price on an annual plan; the page compares the Business plan at $66.75 per month billed annually.
     eligibility:
       rule:
         kind: all
