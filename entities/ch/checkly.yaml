@@ -24,7 +24,7 @@ offers:
     access:
       availability: public
       method: form
-      url: https://www.checklyhq.com/pricing/
+      url: https://forms.gle/V5fMnaD1ABCfPNfdA
     economics:
       benefits:
         - applies_to: all plans
@@ -35,7 +35,8 @@ offers:
             basis_points: 3000
             kind: exact
       consideration:
-        kind: none
+        kind: variable
+        description: Startups pay the discounted price of their chosen plan.
     eligibility:
       rule:
         criterion_id: cri_01
