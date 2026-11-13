@@ -1,0 +1,75 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m7a0ahjpar5zfgjf1hc8k6xe
+  slug: hex
+  slug_aliases: []
+  name: Hex
+  domains:
+    - value: hex.tech
+      role: primary
+      valid_from: 2026-11-13T08:28:15Z
+  category: data-analytics
+profile:
+  summary: Hex is an AI analytics platform combining agentic notebooks, conversational self-serve analytics, and a context engine that governs AI answers using semantic models and organizational context.
+  description: Hex is an AI analytics platform for data exploration, agentic notebooks, self-serve analytics, and interactive data apps grounded in a shared context engine.
+  links:
+    site: https://hex.tech
+sources:
+  - source_id: src_1c00d9a5cce2d5c61f8e97e6ced36e64108fb76817dba02e19aad8174481696a
+    url: https://hex.tech/conversion/claude-startups-program/
+  - source_id: src_5fade6d25def4b0cbd0b33166a441b2ec05a6f9b8b16ea8e2689aea5c8b94901
+    url: https://learn.hex.tech/docs/legal/hex-service-agreement
+  - source_id: src_7f0cca40eeb90136d949bfd6058c7dffc7585f91736e8b0af2631454850d5729
+    url: https://hex.tech/
+programs: []
+offers:
+  - offer_id: off_01m7a0ahjrzawjha01g4n927a3
+    offer_slug: hex-enterprise-for-claude-startups
+    offer_slug_aliases: []
+    title: Free 6-month Hex Enterprise plan for Claude Startups Program members
+    summary: Members of Anthropic's Claude Startups Program who are new Hex customers get a free 6-month Hex Enterprise plan with 5 seats, provisioned by Hex within 1-3 business days after applying through the program signup form.
+    lifecycle:
+      status: active
+      effective_from: 2026-11-13T08:28:15Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_01
+          applies_to: Hex Enterprise plan
+          description: Hex Enterprise plan free for 6 months, including 5 seats.
+          duration:
+            kind: exact
+            value: P6M
+          kind: discount
+          percentage:
+            basis_points: 10000
+            kind: exact
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: external-verification
+            statement: The applicant's startup must be a member of Anthropic's Claude Startups Program.
+          - criterion_id: cri_02
+            fact: company.is_current_customer
+            kind: predicate
+            operator: eq
+            statement: The offer is restricted to startups that are not current Hex customers.
+            value:
+              type: boolean
+              value: false
+    roles:
+      terms_authority_entity_id: ent_01m7a0ahjpar5zfgjf1hc8k6xe
+      access_operator_entity_id: ent_01m7a0ahjpar5zfgjf1hc8k6xe
+    access:
+      availability: membership
+      instructions: Open the Claude Startups Program offer page, start a Hex trial through the program signup link, and fill out the form on the page using the same email address; Hex's team provisions the Enterprise workspace within 1-3 business days. The offer includes 5 seats; after 6 months the workspace downgrades to the Community plan unless the startup arranges a paid plan with Hex sales via the contact link on the offer page.
+      method: form
+      url: https://hex.tech/conversion/claude-startups-program/
+    terms_url: https://hex.tech/conversion/claude-startups-program/
+    source_ids:
+      - src_1c00d9a5cce2d5c61f8e97e6ced36e64108fb76817dba02e19aad8174481696a
+      - src_5fade6d25def4b0cbd0b33166a441b2ec05a6f9b8b16ea8e2689aea5c8b94901
