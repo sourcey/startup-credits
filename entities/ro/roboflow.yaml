@@ -67,7 +67,7 @@ offers:
       access_operator_entity_id: ent_01kyyjpn04wzrm50s4m4p2w6p4
     access:
       availability: membership
-      instructions: Email your program manager or visit your program's perks and discounts list, or use Roboflow's published startup contact details to connect your program manager.
-      method: contact
+      instructions: A startup emails its program manager or visits its program's perks and discounts list to find instructions to redeem the offer, or uses Roboflow's published startup contact details to connect its program manager.
+      method: other
     source_ids:
       - src_3cc962408d7eefc1591ee05f8af8096b75b08a174a77ad7544799895d7a13513
