@@ -37,16 +37,50 @@ offers:
           service: 10 Free Seats for Life
     eligibility:
       rule:
-        kind: manual
-        criterion_id: cri_requirement_01
-        statement: Must be a new Dialpad startup customer with up to 25 employees, affiliated with an incubator or accelerator partner, and located in the US, Canada, UK, Australia, or New Zealand. Angel/VC funding required unless applying via Tech for Black Founders or Diversity in Tech.
-        reason: not-machine-evaluable
+        kind: all
+        rules:
+          - kind: manual
+            criterion_id: cri_requirement_01
+            statement: Must be a startup company (new technology, or uses tech in a unique way to sell a product).
+            reason: not-machine-evaluable
+          - kind: manual
+            criterion_id: cri_requirement_02
+            statement: Company has secured accredited Angel/VC investment (not required in the Tech for Black Founders and Diversity in Tech Program).
+            reason: not-machine-evaluable
+          - kind: manual
+            criterion_id: cri_requirement_03
+            statement: Business is scalable, and will leverage the program through scale (i.e. expected users stated in application is past the 10 free lifetime seats).
+            reason: not-machine-evaluable
+          - kind: manual
+            criterion_id: cri_requirement_04
+            statement: Public link to accelerator/incubator affiliation and accredited investment (Crunchbase or similar).
+            reason: not-machine-evaluable
+          - kind: predicate
+            criterion_id: cri_requirement_05
+            statement: Free tier only available to companies with up to 25 employees, larger startups can apply for other discounts.
+            fact: company.employee_count
+            operator: lte
+            value:
+              type: number
+              value: 25
+          - kind: manual
+            criterion_id: cri_requirement_06
+            statement: New companies only. Not available to current or recent customers. Not available through Dialpad Channel Partners.
+            reason: not-machine-evaluable
+          - kind: manual
+            criterion_id: cri_requirement_07
+            statement: The company must be located in US, Canada, U.K, Australia, or New Zealand when applying to Dialpad for Startups. The Tech for Black Founders and Diversity in Tech Program is currently only offered in US/Canada.
+            reason: not-machine-evaluable
+          - kind: manual
+            criterion_id: cri_requirement_08
+            statement: Must be affiliated with an incubator or accelerator on the application Partner List.
+            reason: not-machine-evaluable
     roles:
       terms_authority_entity_id: ent_01kyh8fpe2yrzp327gvkmrfepq
       access_operator_entity_id: ent_01kyh8fpe2yrzp327gvkmrfepq
     access:
-      availability: public
+      availability: membership
       method: form
-      url: https://www.dialpad.com/dialpad-for-startups/
+      url: https://www.dialpad.com/dialpadforgood/apply/
     source_ids:
       - src_8c3fd4920e7ae1cc21c00ee4b5854ac0350d3c5f5c53292e659f86705fd79da2
