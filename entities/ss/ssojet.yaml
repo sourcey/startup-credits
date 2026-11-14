@@ -10,9 +10,10 @@ entity:
       valid_from: 2026-08-01T07:37:11.016Z
   category: auth-security
 profile:
-  description: SSOJet provides a turnkey solution for B2B SaaS companies to integrate any SSO provider, eliminating complexity and accelerating enterprise customer onboarding.
+  description: SSOJet provides enterprise single sign-on integration that works with existing authentication systems.
   links:
     site: https://ssojet.com
+  summary: SSOJet provides enterprise single sign-on integration.
 sources:
   - source_id: src_c53f8c0d22be1cfbf7b674bb5776bb964996edbc75d41c15cb4cfe5e250187cd
     url: https://ssojet.com/startup
