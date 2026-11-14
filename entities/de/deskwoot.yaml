@@ -10,9 +10,10 @@ entity:
       valid_from: 2026-08-05T12:07:34.000Z
   category: support
 profile:
-  description: Deskwoot is an AI-powered customer support platform with a multichannel inbox, help center, automation, and AI-assisted replies.
+  description: Deskwoot is a customer support software that provides an AI agent, an AI copilot, a multichannel inbox, a help center, and automation rules.
   links:
     site: https://deskwoot.com
+  summary: Deskwoot is a customer support software.
 sources:
   - source_id: src_92ceadbaf86eb1bbc874c852ae2f0ae0c97650561108cad844d956f8daceda03
     url: https://deskwoot.com/startups
@@ -21,7 +22,7 @@ programs:
     program_slug: startup-program
     program_slug_aliases: []
     title: Deskwoot Startup Program
-    summary: Deskwoot's startup program provides qualifying newly founded companies with six months of Enterprise access for 10 agent seats at no charge.
+    summary: Deskwoot's startup program provides companies founded within the last six months with six months of Deskwoot Enterprise for 10 agent seats at no charge.
     source_ids:
       - src_92ceadbaf86eb1bbc874c852ae2f0ae0c97650561108cad844d956f8daceda03
 offers:
@@ -30,14 +31,14 @@ offers:
     offer_slug: six-months-enterprise-for-10-agent-seats
     offer_slug_aliases: []
     title: Six months of Enterprise for 10 agent seats
-    summary: Startups founded within the last six months receive six months of Deskwoot Enterprise for 10 agent seats at no charge, a stated $720 list value.
+    summary: Startups founded within the last six months receive six months of Deskwoot Enterprise for 10 agent seats at no charge, with a stated list value of $720.
     lifecycle:
       status: active
       effective_from: 2026-08-05T12:07:34.000Z
     economics:
       benefits:
         - benefit_id: ben_01
-          description: Deskwoot Enterprise for 10 agent seats at no charge, with a stated total list value of $720
+          description: Six months of Deskwoot Enterprise for 10 agent seats at no charge, with a stated list value of $720.
           duration:
             kind: exact
             value: P6M
