@@ -10,10 +10,10 @@ entity:
       valid_from: 2026-08-14T14:36:27.638Z
   category: finance-accounting
 profile:
-  description: Nuvio is a finance operations platform for invoices, expenses, cash flow, financial
-    analytics, and AI-assisted financial administration.
+  description: Nuvio is a financial analytics and tracking tool that uses AI to manage finances, track income and expenses, cash flow, and bills on a single platform.
   links:
     site: https://www.nuvio.io
+  summary: Nuvio is a financial analytics and tracking tool.
 sources:
   - source_id: src_aff4d5f315f7d30de4e72248c89970321395f8e422bb0ab78b96976971b07401
     url: https://www.nuvio.io/startup-program-application
@@ -57,7 +57,7 @@ offers:
         criterion_id: cri_01
         kind: manual
         reason: vendor-discretion
-        statement: Nuvio reviews applications and determines whether a startup qualifies for the program.
+        statement: Nuvio reviews applications and determines whether a startup qualifies.
     roles:
       terms_authority_entity_id: ent_fdb6d35449da2a85bb8e46735f
       access_operator_entity_id: ent_fdb6d35449da2a85bb8e46735f
@@ -65,6 +65,6 @@ offers:
       availability: public
       method: form
       url: https://www.nuvio.io/startup-program-application
-    terms_url: https://www.nuvio.io/startup-program-application
+    terms_url: https://nuvio.io/startup-program-application
     source_ids:
       - src_aff4d5f315f7d30de4e72248c89970321395f8e422bb0ab78b96976971b07401
