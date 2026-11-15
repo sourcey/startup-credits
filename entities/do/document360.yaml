@@ -10,9 +10,10 @@ entity:
       valid_from: 2026-08-01T07:51:51.676Z
   category: support
 profile:
-  description: Instantly create a knowledge base for your customers and teams. Build FAQ, User guides, Product Documentation, Standard Operating Procedures and many more
+  description: Document360 is an AI-powered knowledge base platform for creating, managing and publishing documentation.
   links:
     site: https://document360.com
+  summary: Document360 provides an AI-powered knowledge base platform.
 sources:
   - source_id: src_d492f932dbaec08ed988c2cd06512cba203a77e7ae00747c82de83def97bd0f6
     url: https://www.document360.com/partners/startup-program
@@ -47,7 +48,7 @@ offers:
             basis_points: 5000
             kind: exact
         - benefit_id: ben_02
-          description: Wow site – personalized setup and implementation for your knowledge base site
+          description: Wow site – a personalized setup and implementation for a knowledge base site
           kind: other
       consideration:
         description: Billed for six months of subscription
