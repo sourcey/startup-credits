@@ -31,20 +31,23 @@ offers:
     offer_slug: up-to-5000-decodo-proxy-credits
     offer_slug_aliases: []
     title: Up to $5,000 in Decodo Proxy Credits
-    summary: Eligible startups receive up to $5,000 in Decodo proxy credits that remain active until used, plus 24/7 technical support and potential co-marketing opportunities.
+    summary: Eligible startups receive up to $5,000 in Decodo proxy credits valid for 3 months, plus 24/7 technical support and potential co-marketing opportunities.
     lifecycle:
       status: active
       effective_from: 2026-08-31T00:00:00.000Z
     economics:
       benefits:
         - benefit_id: ben_01
-          description: Up to $5,000 in proxy credits that remain active until fully used.
+          description: Up to $5,000 in proxy credits valid for 3 months.
           kind: credit
           value:
             amount:
               currency: USD
               minor_units: 500000
             kind: up-to
+          duration:
+            kind: exact
+            value: P3M
         - benefit_id: ben_02
           description: 24/7 technical support for setup, integration, troubleshooting, and performance optimization.
           kind: free-service
@@ -58,25 +61,51 @@ offers:
       rule:
         kind: all
         rules:
-          - criterion_id: cri_01
-            fact: company.stage
+          - criterion_id: cri_04
+            fact: company.is_incorporated
             kind: predicate
-            operator: in
-            statement: Startup must be early-stage, from pre-seed through Series A.
+            operator: eq
+            statement: Startup must be an incorporated company.
             value:
-              type: string-set
-              values:
-                - pre-seed
-                - seed
-                - series-a
-          - criterion_id: cri_02
+              type: boolean
+              value: true
+          - criterion_id: cri_05
+            kind: predicate
+            statement: Startup must be founded in the last 5 years.
+            fact: company.age_months
+            operator: lte
+            value:
+              type: number
+              value: 60
+          - criterion_id: cri_06
             kind: manual
             reason: external-verification
-            statement: Startup must be backed by a venture-capital firm or supported by an accelerator.
-          - criterion_id: cri_03
-            kind: manual
+            statement: Startup must have raised at least $250K from institutional investors, or be in, or have graduated in the last 24 months from, a recognised accelerator.
+          - kind: manual
+            criterion_id: cri_07
+            statement: Startup must use public web data for its own product or operations.
             reason: external-verification
-            statement: Startup must be actively building or scaling data-driven workflows.
+          - kind: manual
+            criterion_id: cri_08
+            statement: Startup must be new to Decodo, with no paid account in the last 12 months and no previous program credits.
+            reason: external-verification
+          - kind: manual
+            criterion_id: cri_09
+            statement: Startup must apply with a work email on its company domain.
+            reason: external-verification
+          - kind: predicate
+            criterion_id: cri_10
+            statement: Startup must have a live website.
+            fact: company.website_url
+            operator: present
+          - kind: manual
+            criterion_id: cri_11
+            statement: Startup must pass a KYC check and share proof of funding if asked.
+            reason: external-verification
+          - kind: manual
+            criterion_id: cri_12
+            statement: Individuals, students, proxy or scraping providers and resellers, agencies using credits for client work, companies in sanctioned countries, and prohibited use cases are not eligible.
+            reason: external-verification
     roles:
       terms_authority_entity_id: ent_01m1d4bvbac4fxstmvffv9rp9w
       access_operator_entity_id: ent_01m1d4bvbac4fxstmvffv9rp9w
