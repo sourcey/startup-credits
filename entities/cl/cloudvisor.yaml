@@ -10,8 +10,8 @@ entity:
       valid_from: 2026-09-14T20:34:53.000Z
   category: hosting-infra
 profile:
-  summary: AWS billing and cloud cost management services for startups.
-  description: Cloudvisor provides AWS Resell billing and cloud cost management services for startups.
+  summary: Cloudvisor is an authorized AWS reseller that helps startups reduce AWS costs and scale their cloud infrastructure.
+  description: Cloudvisor is an authorized AWS reseller that helps startups reduce AWS costs, improve reliability, and migrate to the cloud. The company offers an AWS Resell program that provides automatic discounts, a dedicated AWS Success Manager, and a customer portal for full visibility into AWS spend.
   links:
     site: https://cloudvisor.co/
 sources:
@@ -44,7 +44,7 @@ offers:
         criterion_id: cri_01
         kind: manual
         reason: external-verification
-        statement: Applicant is a startup that becomes a Cloudvisor AWS Resell customer.
+        statement: Become a Cloudvisor customer.
     roles:
       terms_authority_entity_id: ent_01m2gt2exwcstjwkn5t4ry5jnp
       access_operator_entity_id: ent_01m2gt2exwcstjwkn5t4ry5jnp
