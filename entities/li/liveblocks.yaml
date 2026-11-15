@@ -23,31 +23,55 @@ offers:
   - offer_id: off_01m1smgem4608ep793kayf8qyc
     offer_slug: liveblocks-startup-program-discount
     offer_slug_aliases: []
-    title: Liveblocks startup program discount
-    summary: Startups can apply for a discount on Liveblocks. The public application
-      page does not specify the discount amount or duration.
+    title: Liveblocks for Startups
+    summary: Startups can apply for the Liveblocks for Startups program. The public application page does not specify the exact benefits.
     lifecycle:
       status: active
       effective_from: 2026-09-05T20:35:08.539Z
     economics:
       consideration:
         kind: unknown
-        description: The startup page does not publish the discounted price or a
-          required purchase commitment.
+        description: The startup page does not publish the specific benefits or a required purchase commitment.
       benefits:
         - benefit_id: ben_primary
           kind: other
-          description: Startup program discount; amount and duration are not published on
-            the application page.
+          description: Liveblocks for Startups program; specific benefits are not published on the application page.
     eligibility:
       rule:
-        kind: manual
-        criterion_id: cri_startup_application
-        statement: Startups apply through the vendor form, which requests company
-          details, team size, funding, annual revenue, and estimated monthly
-          active users. Liveblocks reviews applications; the page does not
-          publish eligibility thresholds.
-        reason: vendor-discretion
+        kind: all
+        rules:
+          - kind: predicate
+            criterion_id: cri_new_customer
+            statement: New Liveblocks customers
+            fact: company.is_current_customer
+            operator: eq
+            value:
+              type: boolean
+              value: false
+          - kind: predicate
+            criterion_id: cri_employees
+            statement: Less than 10 employees
+            fact: company.employee_count
+            operator: lt
+            value:
+              type: number
+              value: 10
+          - kind: predicate
+            criterion_id: cri_funding
+            statement: Up to $2M raised
+            fact: company.funding_raised_usd
+            operator: lte
+            value:
+              type: number
+              value: 2000000
+          - kind: predicate
+            criterion_id: cri_revenue
+            statement: Up to $1M ARR
+            fact: company.annual_revenue_usd
+            operator: lte
+            value:
+              type: number
+              value: 1000000
     roles:
       terms_authority_entity_id: ent_01m1smgekvfa4wnn4sg6qp1g9t
       access_operator_entity_id: ent_01m1smgekvfa4wnn4sg6qp1g9t
