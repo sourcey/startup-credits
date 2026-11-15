@@ -38,7 +38,7 @@ offers:
     economics:
       benefits:
         - benefit_id: ben_01
-          description: Get 75% off for 11 months if you qualify.
+          description: Startups receive a 75% discount for 11 months.
           duration:
             kind: exact
             value: P11M
@@ -47,8 +47,8 @@ offers:
             kind: exact
             basis_points: 7500
       consideration:
-        kind: unknown
-        description: Get 75% off for 11 months if you qualify.
+        kind: variable
+        description: Startups receive a 75% discount for 11 months.
     eligibility:
       rule:
         kind: all
