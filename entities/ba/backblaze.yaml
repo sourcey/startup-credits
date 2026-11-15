@@ -10,9 +10,10 @@ entity:
       valid_from: 2026-08-04T00:00:00.000Z
   category: hosting-infra
 profile:
-  description: Backblaze provides cloud object storage and computer backup services for businesses, developers, and individuals.
+  description: Backblaze provides cloud storage and computer backup services for businesses and individuals.
   links:
     site: https://www.backblaze.com
+  summary: Backblaze provides cloud storage and computer backup services.
 sources:
   - source_id: src_8c7086883e0f5ff71946863b13736d4d5d64b5790c0b6d2b302ea55653c08138
     url: https://www.backblaze.com/flamethrower
