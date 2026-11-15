@@ -53,7 +53,8 @@ offers:
           kind: waiver
           waived_item: OpenRouter platform and BYOK processing fees for 12 months
       consideration:
-        kind: none
+        kind: variable
+        description: Startups pay standard OpenRouter pricing after their credits are exhausted or expire.
     eligibility:
       rule:
         kind: all
