@@ -10,9 +10,10 @@ entity:
       valid_from: 2026-08-01T13:50:00.000Z
   category: auth-security
 profile:
-  description: Snyk is the AI Security Fabric — the independent validator that makes AI-generated code, AI agents, and AI-native applications trustworthy. Unleash AI innovation securely.
+  description: Snyk provides an AI security platform that secures the code AI writes, the agents it runs, and the applications it builds.
   links:
     site: https://snyk.io
+  summary: Snyk is an AI security company.
 sources:
   - source_id: src_17babe7f787baa5cf68240f15ac676878012927f58631cad5c60f380e16f28f3
     url: https://snyk.io/
