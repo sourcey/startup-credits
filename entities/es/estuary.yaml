@@ -10,9 +10,10 @@ entity:
       valid_from: 2026-08-05T19:32:02.000Z
   category: data-analytics
 profile:
-  description: Estuary provides managed real-time and batch data integration, change data capture, and pipelines across databases, SaaS apps, streams, warehouses, and lakes.
+  description: Estuary provides real-time data integration and automated pipelines from databases, cloud apps, and streams into data warehouses and lakes.
   links:
     site: https://estuary.dev
+  summary: Estuary provides real-time data integration and automated pipelines.
 sources:
   - source_id: src_a5abcf41ed03082a9bca23c1b3a49796cd3a030bed74596b62a386f85b93ddbb
     url: https://estuary.dev/startup/
@@ -60,14 +61,14 @@ offers:
             fact: company.funding_raised_usd
             kind: predicate
             operator: lt
-            statement: Startup has raised less than $5 million in total funding.
+            statement: Raised less than $5 million in total funding.
             value:
               type: number
               value: 5000000
           - criterion_id: cri_02
             kind: manual
-            reason: vendor-discretion
-            statement: Applicant must not be a current or former Estuary customer.
+            reason: not-machine-evaluable
+            statement: Not a current or former Estuary customer.
     roles:
       terms_authority_entity_id: ent_01kz9pjmaq71h292a7y83rns5z
       access_operator_entity_id: ent_01kz9pjmaq71h292a7y83rns5z
