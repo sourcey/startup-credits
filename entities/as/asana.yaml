@@ -28,18 +28,24 @@ offers:
       effective_from: 2026-07-27T07:35:36.030Z
     economics:
       consideration:
-        kind: unknown
-        description: The source record did not establish separate consideration.
+        kind: variable
+        description: Startups pay a discounted rate for an eligible paid Asana plan for the first 12 months.
       benefits:
         - benefit_id: ben_primary
           description: Discounted access to Starter or Advanced annual plans for 12 months
           kind: other
     eligibility:
       rule:
-        kind: manual
-        criterion_id: cri_requirement_01
-        statement: Must be an early-stage startup (Series A or earlier) and a new user or on a free plan. Organizations currently on paid plans or upgraded within the last 60 days are ineligible.
-        reason: not-machine-evaluable
+        kind: all
+        rules:
+          - kind: manual
+            criterion_id: cri_requirement_01
+            statement: Must be an early-stage startup (Series A or earlier) and a new user or on a free plan, and not currently on a paid plan or upgraded to a paid plan within the last 60 days.
+            reason: not-machine-evaluable
+          - kind: manual
+            criterion_id: cri_requirement_02
+            statement: Must have a discount code given by an existing partner.
+            reason: not-machine-evaluable
     roles:
       terms_authority_entity_id: ent_01kyh8fpe12771dg7fafgdgfcy
       access_operator_entity_id: ent_01kyh8fpe12771dg7fafgdgfcy
