@@ -10,9 +10,10 @@ entity:
       valid_from: 2026-07-27T07:39:12.506Z
   category: devtools-other
 profile:
-  description: Get your company off on the right foot with the preferred software development suite of over 50,000 startups worldwide.
+  description: Atlassian provides software tools to plan, track, and collaborate on work from MVP to IPO.
   links:
     site: https://www.atlassian.com/software/startups
+  summary: Atlassian provides software tools for project management and collaboration.
 sources:
   - source_id: src_0ae96c1deb268dd0e0f182ab374c56a6c8fb07c35d55920c498a6c4ba15ca24f
     url: https://www.atlassian.com/software/startups
@@ -28,8 +29,7 @@ offers:
       effective_from: 2026-07-27T07:39:12.506Z
     economics:
       consideration:
-        kind: unknown
-        description: The source record did not establish separate consideration.
+        kind: none
       benefits:
         - benefit_id: ben_primary
           description: $0 for 12 months for up to 50 users
