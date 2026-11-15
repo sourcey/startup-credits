@@ -10,9 +10,10 @@ entity:
       valid_from: 2026-08-05T19:32:02.000Z
   category: observability
 profile:
-  description: OpenObserve is an OpenTelemetry-compatible observability platform for logs, metrics, traces, frontend monitoring, pipelines, alerts, and dashboards.
+  description: OpenObserve is an OpenTelemetry-compatible observability platform for logs, metrics, traces, and frontend monitoring.
   links:
     site: https://openobserve.ai
+  summary: OpenObserve is an open source observability platform.
 sources:
   - source_id: src_057ba3ab120430cfb62287a6772a5f1881fe642174ca35677edf39d22d29e9e3
     url: https://openobserve.ai/startup/
@@ -85,6 +86,10 @@ offers:
             kind: manual
             reason: not-machine-evaluable
             statement: Startup is actively backed by a venture capital firm or participates in a recognized startup accelerator.
+          - kind: manual
+            criterion_id: cri_05
+            statement: Only one application per company is permitted.
+            reason: not-machine-evaluable
     roles:
       terms_authority_entity_id: ent_01kz9pjmbykag96hzt5ff289yk
       access_operator_entity_id: ent_01kz9pjmbykag96hzt5ff289yk
