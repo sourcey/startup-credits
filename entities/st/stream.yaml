@@ -37,7 +37,8 @@ offers:
             basis_points: 2500
             kind: exact
       consideration:
-        kind: none
+        kind: variable
+        description: The startup pays a discounted rate for Stream APIs.
     eligibility:
       rule:
         kind: all
@@ -85,7 +86,8 @@ offers:
             basis_points: 1500
             kind: exact
       consideration:
-        kind: none
+        kind: variable
+        description: The startup pays a discounted rate for Stream APIs.
     eligibility:
       rule:
         kind: all
@@ -183,6 +185,6 @@ offers:
       availability: public
       method: form
       url: https://getstream.io/maker-account/
-    terms_url: https://getstream.io/terms/
+    terms_url: https://getstream.io/maker-account/
     source_ids:
       - src_eaebbb45fbc11438d7174ce8cbdf133c75f0952abcf82795eb9ea09de9b9543c
