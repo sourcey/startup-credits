@@ -21,7 +21,7 @@ programs:
     program_slug: inception
     program_slug_aliases: []
     title: NVIDIA Inception Program
-    summary: NVIDIA Inception is a free program guiding AI startups from prototype to production with technical training, preferred pricing on hardware and software, partner cloud credits, and investor access.
+    summary: NVIDIA Inception is a free program that guides AI startups through the NVIDIA platform and ecosystem.
     source_ids:
       - src_f7c1020816fa353e5a80ce3916288595bf4779b64b7d7163ca19626fab3a7844
 offers:
@@ -139,7 +139,7 @@ offers:
     roles:
       terms_authority_entity_id: ent_01kyy3083w3k33krxmrqx1kr4c
       access_operator_entity_id: ent_01kyy3083w3k33krxmrqx1kr4c
-    summary: Free membership program for AI, data science, and HPC startups offering preferred pricing on select NVIDIA hardware and software, free self-paced courses, cloud credits, and investor exposure.
+    summary: NVIDIA Inception is a free program that guides AI startups through the NVIDIA platform and ecosystem.
     title: NVIDIA Inception Program for Startups
     source_ids:
       - src_f7c1020816fa353e5a80ce3916288595bf4779b64b7d7163ca19626fab3a7844
