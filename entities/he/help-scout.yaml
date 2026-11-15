@@ -10,9 +10,10 @@ entity:
       valid_from: 2026-07-27T07:40:56.959Z
   category: support
 profile:
-  description: Help Scout provides customer support software featuring shared inboxes, docs knowledge bases, live chat, and AI assistants to help growing businesses support their customers.
+  description: Help Scout provides a customer support platform featuring shared inboxes, chat, and AI agents.
   links:
     site: https://www.helpscout.com
+  summary: Help Scout provides a customer support platform.
 sources:
   - source_id: src_05ba8d34222f2831b597e210e029fd69a347b4be2c4b3e658b256d675beca04a
     url: https://www.helpscout.com/startups/
@@ -31,7 +32,7 @@ offers:
     offer_slug: help-scout-for-startups
     offer_slug_aliases: []
     title: Help Scout for Startups
-    summary: Eligible startups receive six months free of Help Scout Plus, which includes shared inboxes, messaging, AI Answers, and integrations.
+    summary: Eligible startups receive six months free of Help Scout Plus, which includes shared inboxes, advanced automation, and an AI agent.
     lifecycle:
       status: active
       effective_from: 2026-07-27T07:40:56.959Z
