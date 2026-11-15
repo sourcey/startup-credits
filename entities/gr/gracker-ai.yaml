@@ -10,9 +10,10 @@ entity:
       valid_from: 2026-08-01T07:22:13.864Z
   category: marketing
 profile:
-  description: Cybersecurity and DevTools startups get 50% off GrackerAI. Become the brand AI search engines cite when buyers ask 'What's the best [your category] tool?' Other B2B SaaS startups welcome to apply.
+  description: GrackerAI is an AEO and GEO platform that helps companies get cited by AI search engines when buyers ask for the best tool.
   links:
     site: https://gracker.ai
+  summary: GrackerAI is an AEO and GEO platform that helps companies get cited by AI search engines.
 sources:
   - source_id: src_7d43a5c544b34600b29fb06a5e2be68f7f12cfe379c95aac09627ebe146854ad
     url: https://gracker.ai/startup
@@ -22,15 +23,15 @@ offers:
     offer_slug: grackerai-for-startups
     offer_slug_aliases: []
     title: GrackerAI for Startups
-    summary: Qualified Cybersecurity, DevTools, and B2B SaaS startups receive a 50% discount on the GrackerAI Scale plan for 12 months in exchange for participating in a published case study after seeing results.
+    summary: Qualified cybersecurity, DevTools, and B2B SaaS startups receive a 50% discount on the GrackerAI Team plan for 12 months in exchange for participating in a published case study after seeing results.
     lifecycle:
       status: active
       effective_from: 2026-08-01T07:22:13.864Z
     economics:
       benefits:
-        - applies_to: GrackerAI Scale plan
+        - applies_to: GrackerAI Team plan
           benefit_id: ben_01
-          description: 50% off the standard Scale plan for 12 months.
+          description: 50% off the standard Team plan for 12 months.
           duration:
             kind: exact
             value: P12M
