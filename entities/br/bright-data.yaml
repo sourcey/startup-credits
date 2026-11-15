@@ -10,9 +10,10 @@ entity:
       valid_from: 2026-08-01T07:20:42.184Z
   category: data-analytics
 profile:
-  description: Bright Data provides web data platform services, proxy infrastructure, web access APIs, and dataset solutions.
+  description: Bright Data provides a web data platform, proxy infrastructure, and web access tools.
   links:
     site: https://brightdata.com
+  summary: Bright Data provides a web data platform and proxy infrastructure.
 sources:
   - source_id: src_23f98d23d268fa2ce9d9dbcf099506f5e72aa586e5245e650affc4e67352acae
     url: https://brightdata.com/ai/ai-startups-program
@@ -59,12 +60,12 @@ offers:
           - criterion_id: cri_01
             kind: manual
             reason: not-machine-evaluable
-            statement: AI is central to your product
+            statement: AI is central to the company's product.
           - criterion_id: cri_02
             fact: company.stage
             kind: predicate
             operator: in
-            statement: Startup stage must be between Pre-Seed and Series A
+            statement: The company is at the Pre-Seed to Series A stage.
             value:
               type: string-set
               values:
@@ -74,7 +75,7 @@ offers:
           - criterion_id: cri_03
             kind: manual
             reason: not-machine-evaluable
-            statement: You need public web data to grow
+            statement: The company needs public web data to grow.
     roles:
       terms_authority_entity_id: ent_01kyy6rm0zntgna8jr7617kxrm
       access_operator_entity_id: ent_01kyy6rm0zntgna8jr7617kxrm
