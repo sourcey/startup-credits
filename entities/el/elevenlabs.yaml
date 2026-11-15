@@ -22,24 +22,53 @@ offers:
     offer_slug: elevenlabs-startup-grant-program
     offer_slug_aliases: []
     title: ElevenLabs Startup Grant Program
-    summary: Get 12 months of free access to ElevenLabs, including 33,000,000 text characters (a $4,000+ value), community access, and founder events for early-stage startups building conversational AI products.
+    summary: Get 12 months of free access to ElevenLabs, including 33,000,000 text characters (more than $5,500+ in value), community access, and founder events for early-stage startups building conversational AI products.
     lifecycle:
       status: active
       effective_from: 2026-07-27T07:36:12.089Z
     economics:
       consideration:
-        kind: unknown
-        description: The source record did not establish separate consideration.
+        kind: none
       benefits:
         - benefit_id: ben_primary
-          description: 33,000,000 characters ($4,000+ value) over 12 months
+          description: 33,000,000 characters (more than $5,500+ in value) over 12 months
           kind: other
     eligibility:
       rule:
-        kind: manual
-        criterion_id: cri_requirement_01
-        statement: Open to startups with under 25 employees at time of application with a monetization strategy building long-term products. Excludes agencies, consulting firms, projects for minors, and enterprise customers. Must display ElevenLabs Grants logo/link for 12 months.
-        reason: not-machine-evaluable
+        kind: all
+        rules:
+          - kind: predicate
+            criterion_id: cri_employees
+            statement: Less than 25 employees at the time of receiving the application
+            fact: company.employee_count
+            operator: lt
+            value:
+              type: number
+              value: 25
+          - kind: manual
+            criterion_id: cri_monetization
+            statement: Only applications with a business or monetization strategy and valid business emails will be considered.
+            reason: not-machine-evaluable
+          - kind: manual
+            criterion_id: cri_long_term
+            statement: Grants will only be awarded to companies seeking to build products they intend to take to market for the long term. One-off projects and campaigns will not be considered.
+            reason: not-machine-evaluable
+          - kind: manual
+            criterion_id: cri_no_minors
+            statement: Unable to award grants to companies that are building projects for children aged 18 or under.
+            reason: not-machine-evaluable
+          - kind: manual
+            criterion_id: cri_no_agencies
+            statement: Agencies, consulting firms and SMBs are not eligible for an ElevenLabs Grant.
+            reason: not-machine-evaluable
+          - kind: manual
+            criterion_id: cri_no_enterprise
+            statement: Existing enterprise customers are not eligible for grants.
+            reason: not-machine-evaluable
+          - kind: manual
+            criterion_id: cri_one_app
+            statement: Each company can only submit one application.
+            reason: not-machine-evaluable
     roles:
       terms_authority_entity_id: ent_01kyh8fpe2v7nn170nerzx3wm6
       access_operator_entity_id: ent_01kyh8fpe2v7nn170nerzx3wm6
