@@ -28,8 +28,8 @@ offers:
       effective_from: 2026-07-27T07:37:32.358Z
     economics:
       consideration:
-        kind: unknown
-        description: The source record did not establish separate consideration.
+        kind: variable
+        description: The startup pays the discounted price for Qdrant Cloud.
       benefits:
         - benefit_id: ben_primary
           description: 20% discount for 1 year
@@ -39,10 +39,56 @@ offers:
             basis_points: 2000
     eligibility:
       rule:
-        kind: manual
-        criterion_id: cri_requirement_01
-        statement: Must be a new Qdrant Cloud user (or account created within 30 days), Pre-seed, Seed, or Series A startup (<5 years old) with <$5M in funding, building an AI-driven product or service, with a live website and direct billing.
-        reason: not-machine-evaluable
+        kind: all
+        rules:
+          - kind: manual
+            criterion_id: cri_new_user
+            statement: New user of Qdrant Cloud or account created within the last 30 days.
+            reason: not-machine-evaluable
+          - kind: predicate
+            criterion_id: cri_stage
+            statement: Pre-seed, Seed, or Series A startups
+            fact: company.stage
+            operator: in
+            value:
+              type: string-set
+              values:
+                - Pre-seed
+                - Seed
+                - Series A
+          - kind: predicate
+            criterion_id: cri_age
+            statement: under five years old
+            fact: company.age_months
+            operator: lt
+            value:
+              type: number
+              value: 60
+          - kind: predicate
+            criterion_id: cri_funding
+            statement: less than $5M in funding
+            fact: company.funding_raised_usd
+            operator: lt
+            value:
+              type: number
+              value: 5000000
+          - kind: manual
+            criterion_id: cri_not_participated
+            statement: Have not previously participated in the Qdrant for Startups program
+            reason: not-machine-evaluable
+          - kind: manual
+            criterion_id: cri_ai_driven
+            statement: Building an AI-driven product or services (agencies or devshops are not eligible)
+            reason: not-machine-evaluable
+          - kind: predicate
+            criterion_id: cri_website
+            statement: Provide a link to a live, functional website
+            fact: company.website_url
+            operator: present
+          - kind: manual
+            criterion_id: cri_billing
+            statement: Billing will be done directly with Qdrant (not through a marketplace)
+            reason: not-machine-evaluable
     roles:
       terms_authority_entity_id: ent_01kyh8fpe4gcx7z5278986a6zg
       access_operator_entity_id: ent_01kyh8fpe4gcx7z5278986a6zg
