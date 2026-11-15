@@ -10,9 +10,10 @@ entity:
       valid_from: 2026-08-09T00:00:00Z
   category: communication
 profile:
-  description: Daily provides programmable video and audio APIs, SDKs, live streaming, recording, and real-time communications infrastructure.
+  description: Daily provides a video API that enables developers to add live streaming, recording, compositing, and real-time WebRTC experiences to their applications.
   links:
     site: https://www.daily.co
+  summary: Daily provides a video API for live streaming and real-time communications.
 sources:
   - source_id: src_84ed4dc6f166e4444081393963671f0c1c3409b82f373c56f917375253d10462
     url: https://www.daily.co/products/live-streaming/
@@ -59,7 +60,7 @@ offers:
           - criterion_id: cri_01
             kind: manual
             reason: not-machine-evaluable
-            statement: Applicant must be a startup seeking to build video or audio functionality with Daily.
+            statement: Applicant must be a startup.
     roles:
       terms_authority_entity_id: ent_01kzhwv7xd6w0d8zrdh5s1zejn
       access_operator_entity_id: ent_01kzhwv7xd6w0d8zrdh5s1zejn
