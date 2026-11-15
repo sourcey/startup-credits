@@ -24,7 +24,7 @@ offers:
       - resend-yc-deal
     access:
       availability: membership
-      instructions: Get your YC verification link to claim deal.
+      instructions: Get a YC verification link to claim the deal.
       method: form
       url: https://resend.com/yc
     economics:
@@ -44,7 +44,7 @@ offers:
           description: Dedicated Slack channel with the founders and engineers
           kind: other
         - benefit_id: ben_03
-          description: Feature your company as a use case on the Resend website (optional)
+          description: Feature the company as a use case on the Resend website (optional)
           kind: other
         - benefit_id: ben_04
           description: Direct access to the CEO's phone number on WhatsApp or text
@@ -53,14 +53,20 @@ offers:
         kind: none
     eligibility:
       rule:
-        criterion_id: cri_01
-        fact: company.partner_memberships
-        kind: predicate
-        operator: contains
-        statement: Must be a company in the current YC batch.
-        value:
-          type: string
-          value: YC current batch
+        kind: all
+        rules:
+          - kind: predicate
+            criterion_id: cri_01
+            statement: Must be a company in the current YC batch.
+            fact: company.partner_memberships
+            operator: contains
+            value:
+              type: string
+              value: Y Combinator
+          - kind: manual
+            criterion_id: cri_02
+            statement: Sign up before Demo Day.
+            reason: other
     lifecycle:
       effective_from: 2026-08-01T06:45:24.386Z
       status: active
@@ -76,7 +82,7 @@ offers:
     offer_slug_aliases: []
     access:
       availability: membership
-      instructions: Get your YC verification link to claim deal.
+      instructions: Get a YC verification link to claim the deal.
       method: form
       url: https://resend.com/yc
     economics:
@@ -93,7 +99,7 @@ offers:
           description: Dedicated Slack channel with the founders and engineers
           kind: other
         - benefit_id: ben_03
-          description: Feature your company as a use case on the Resend website (optional)
+          description: Feature the company as a use case on the Resend website (optional)
           kind: other
         - benefit_id: ben_04
           description: Direct access to the CEO's phone number on WhatsApp or text
@@ -102,14 +108,20 @@ offers:
         kind: none
     eligibility:
       rule:
-        criterion_id: cri_01
-        fact: company.partner_memberships
-        kind: predicate
-        operator: contains
-        statement: Must be a YC alumni company.
-        value:
-          type: string
-          value: YC alumni
+        kind: all
+        rules:
+          - kind: predicate
+            criterion_id: cri_01
+            statement: Must be a YC alumni company.
+            fact: company.partner_memberships
+            operator: contains
+            value:
+              type: string
+              value: Y Combinator
+          - kind: manual
+            criterion_id: cri_02
+            statement: Sign up before Demo Day.
+            reason: other
     lifecycle:
       effective_from: 2026-08-01T06:45:24.386Z
       status: active
