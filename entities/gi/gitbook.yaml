@@ -10,9 +10,10 @@ entity:
       valid_from: 2026-08-02T16:22:29.018Z
   category: productivity
 profile:
-  description: GitBook is a documentation platform for publishing developer documentation, API references, help centers, and internal knowledge bases.
+  description: GitBook is a knowledge platform for creating, maintaining, and improving product documentation for users, teams, and AI agents.
   links:
     site: https://www.gitbook.com/industries/startups
+  summary: GitBook is a knowledge platform for creating, maintaining, and improving product documentation for users, teams, and AI agents.
 sources:
   - source_id: src_ee1aef6bdd4a28432e6afb9794ff23595e5f9cd236a1cd7062b7f35c99443043
     url: https://www.gitbook.com/industries/startups
