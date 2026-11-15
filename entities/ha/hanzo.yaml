@@ -11,7 +11,7 @@ entity:
   category: ai-ml
 profile:
   summary: Hanzo provides frontier AI foundation models, autonomous coding agents, inference APIs, and cloud compute infrastructure.
-  description: Better, cheaper, faster. Pick all three. Frontier AI up to 200× faster, 400× cheaper. Build with autonomous coding agents, foundation models, and open cloud infrastructure.
+  description: Hanzo AI is an AI operating system for business that provides chat, development tools, agents, and one API for every model.
   links:
     site: https://hanzo.ai/
 sources:
