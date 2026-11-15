@@ -11,7 +11,7 @@ entity:
   category: ai-ml
 profile:
   summary: Vatis Tech provides speech recognition and audio intelligence tools, including a speech-to-text API for developers building voice-powered products.
-  description: Vatis Tech provides speech-to-text APIs and audio intelligence for developers and businesses.
+  description: Vatis Tech provides a speech-to-text API and audio intelligence.
   links:
     site: https://vatis.tech
 sources:
