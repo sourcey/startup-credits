@@ -29,24 +29,33 @@ offers:
       effective_from: 2026-07-27T07:36:53.450Z
     economics:
       consideration:
-        kind: unknown
-        description: The public program page does not establish separate consideration.
+        kind: none
       benefits:
         - benefit_id: ben_primary
           description: Thousands of free GPU credits
           kind: other
     eligibility:
       rule:
-        kind: any
+        kind: all
         rules:
-          - criterion_id: cri_01
-            kind: manual
-            reason: external-verification
-            statement: Seed to Series A startups that raised any amount of VC funding from Modal's VC partner network, or raised more than $1m from any fund.
-          - criterion_id: cri_02
-            kind: manual
-            reason: external-verification
-            statement: Scaling startups that raised more than $30m or are post-Series B, with a VC in Modal's partner network.
+          - criterion_id: cri_new_customer
+            kind: predicate
+            statement: Customers that are new to Modal
+            fact: company.is_current_customer
+            operator: eq
+            value:
+              type: boolean
+              value: false
+          - kind: any
+            rules:
+              - kind: manual
+                criterion_id: cri_01
+                statement: Seed to Series A startups that raised any amount of VC funding from Modal's VC partner network, or raised more than $1m from any fund.
+                reason: external-verification
+              - kind: manual
+                criterion_id: cri_02
+                statement: Scaling startups that raised more than $30m or are post-Series B, with a VC in Modal's partner network.
+                reason: external-verification
     roles:
       terms_authority_entity_id: ent_01kyh8fpe43gqa08cvashmf19y
       access_operator_entity_id: ent_01kyh8fpe43gqa08cvashmf19y
