@@ -10,8 +10,8 @@ entity:
       valid_from: 2026-10-22T00:00:00.000Z
   category: observability
 profile:
-  summary: PagerDuty is an AI-powered operations platform that engineering teams use to detect, respond, and resolve issues.
-  description: PagerDuty provides the PagerDuty Operations Cloud and AI-powered operations platform for engineering teams to detect, respond, and resolve incidents across their tech stack.
+  summary: PagerDuty provides an AI-powered operations platform that helps teams manage the full incident lifecycle.
+  description: PagerDuty provides an AI-first operations platform that helps teams automate, resolve, and prevent critical issues from detection to resolution.
   links:
     site: https://www.pagerduty.com/
 sources:
