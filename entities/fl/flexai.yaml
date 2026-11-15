@@ -75,8 +75,8 @@ offers:
             basis_points: 5000
             kind: exact
       consideration:
-        description: The public program page does not establish a separate program fee.
-        kind: unknown
+        description: The startup pays for usage at discounted rates.
+        kind: variable
     eligibility:
       rule:
         kind: all
