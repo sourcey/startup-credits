@@ -29,21 +29,21 @@ offers:
     program_id: prg_01kzt8s1ahkyh1wn8pm4hr78xx
     offer_slug: 1000-startup-and-education-grant-credits
     offer_slug_aliases: []
-    title: $1,000 Startup and Education Grant Credits
-    summary: Startup and education projects can receive $1,000 in free Exa credits to build, launch, and test comprehensive web search.
+    title: Startup and Education Grants
+    summary: Startup and education projects can receive up to $1,000 in free Exa credits to build, launch, and test comprehensive web search.
     lifecycle:
       status: active
       effective_from: 2026-08-12T05:32:00.000Z
     economics:
       benefits:
         - benefit_id: ben_01
-          description: $1,000 worth of free Exa credits
+          description: Up to $1,000 worth of free Exa credits
           kind: credit
           value:
             amount:
               currency: USD
               minor_units: 100000
-            kind: exact
+            kind: up-to
       consideration:
         kind: none
     eligibility:
