@@ -1,0 +1,71 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m7yc73kqzpy8q8pwq96tbr1c
+  slug: chainstack
+  slug_aliases: []
+  name: Chainstack
+  domains:
+    - value: chainstack.com
+      role: primary
+      valid_from: 2026-11-21T06:20:36.000Z
+  category: hosting-infra
+profile:
+  description: Chainstack provides managed blockchain infrastructure, including global and dedicated nodes, for teams building across more than 70 supported networks.
+  summary: Chainstack provides managed blockchain infrastructure and node services for web3 teams building across more than 70 networks.
+  links:
+    site: https://chainstack.com
+sources:
+  - source_id: src_1c8ed08ad2cab8dec688cf7a10aa1d7f214fb14900d2f96f764f5dc71bf9ab16
+    url: https://chainstack.com/builders-club/
+programs:
+  - program_id: prg_01m7yc73ks34771vtebqa5zq2x
+    program_slug: chainstack-builders-club
+    program_slug_aliases: []
+    title: Chainstack Builders Club
+    summary: Chainstack Builders Club gives accepted early-stage web3 teams $1,000 in Chainstack credits that never expire, an onboarding session with a Chainstack engineer, and ecosystem visibility.
+    source_ids:
+      - src_1c8ed08ad2cab8dec688cf7a10aa1d7f214fb14900d2f96f764f5dc71bf9ab16
+offers:
+  - offer_id: off_01m7yc73ksfsfpecqyg14arrk5
+    program_id: prg_01m7yc73ks34771vtebqa5zq2x
+    offer_slug: builders-club-credits
+    offer_slug_aliases: []
+    title: Chainstack Builders Club credits
+    summary: Accepted early-stage web3 teams receive $1,000 in Chainstack credits with no expiry date, applied to a paid plan and drawn down against monthly invoices automatically.
+    lifecycle:
+      status: active
+      effective_from: 2026-11-21T06:20:36.000Z
+    economics:
+      consideration:
+        kind: variable
+        description: Credits are applied to the team's paid Chainstack plan and drawn down against its monthly invoices automatically.
+      benefits:
+        - benefit_id: ben_01
+          description: USD 1,000 in Chainstack credits with no expiry date, applied to the team's organization on a paid plan and drawn down against monthly invoices automatically.
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 100000
+            kind: exact
+        - benefit_id: ben_02
+          description: An onboarding session with a Chainstack engineer covering endpoints, archive data, and migration.
+          kind: other
+        - benefit_id: ben_03
+          description: A Chainstack Marketplace listing, co-marketing and social amplification, and introductions to Chainstack's ecosystem partners where there is a fit.
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_01
+        statement: Early-stage web3 teams that have not raised a Series A and have a working prototype, testnet deployment, or live product on a Chainstack-supported network may apply; existing Developer or Growth plan customers may also apply, and teams that already redeemed Chainstack credits are not eligible for a second grant.
+        reason: vendor-discretion
+    roles:
+      terms_authority_entity_id: ent_01m7yc73kqzpy8q8pwq96tbr1c
+      access_operator_entity_id: ent_01m7yc73kqzpy8q8pwq96tbr1c
+    access:
+      availability: public
+      method: form
+      url: https://chainstack.com/builders-club/
+    source_ids:
+      - src_1c8ed08ad2cab8dec688cf7a10aa1d7f214fb14900d2f96f764f5dc71bf9ab16
