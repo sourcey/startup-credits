@@ -1,0 +1,78 @@
+---
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m7xx8r2cry5hq8hcsync7pq4
+  slug: commented
+  slug_aliases: []
+  name: Commented
+  domains:
+    - value: commented.io
+      role: primary
+      valid_from: 2026-11-21T02:05:00.000Z
+  category: productivity
+profile:
+  description: Commented lets product teams annotate live websites and mobile apps with precise comments, tags, and tasks to streamline feedback and collaboration.
+  links:
+    site: https://www.commented.io
+  summary: Commented is a web annotation and feedback tool that lets teams comment, tag, and manage tasks directly on live websites and mobile apps.
+sources:
+  - source_id: src_e18e6ff4382576aa72efd654aa1fd604e1d85d4e877c0faa86871844b5135c50
+    url: https://www.commented.io/startup-program
+programs:
+  - program_id: prg_01m7xx8r2dtdtzem9q4evb66dq
+    program_slug: commented-startup-accelerator-plan
+    program_slug_aliases: []
+    title: Commented Startup Accelerator Plan
+    summary: Commented's Startup Accelerator Plan gives eligible startups up to 75% off a Commented Business plan for one full year.
+    source_ids:
+      - src_e18e6ff4382576aa72efd654aa1fd604e1d85d4e877c0faa86871844b5135c50
+offers:
+  - offer_id: off_01m7xx8r2dyg7aft3rgq0fa4xg
+    program_id: prg_01m7xx8r2dtdtzem9q4evb66dq
+    offer_slug: commented-startup-accelerator-plan
+    offer_slug_aliases: []
+    title: Commented Startup Accelerator Plan
+    summary: Eligible startups get up to 75% off a Commented Business plan for a full year.
+    lifecycle:
+      status: active
+      effective_from: 2026-11-21T02:05:00.000Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Up to 75% off a Commented Business plan for one full year
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 7500
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - kind: predicate
+            criterion_id: cri_age
+            statement: Company must be incorporated less than 2 years ago.
+            fact: company.age_months
+            operator: lt
+            value:
+              type: number
+              value: 24
+          - kind: predicate
+            criterion_id: cri_funding
+            statement: Company must have raised no more than $1M in total funding.
+            fact: company.funding_raised_usd
+            operator: lte
+            value:
+              type: number
+              value: 1000000
+    roles:
+      terms_authority_entity_id: ent_01m7xx8r2cry5hq8hcsync7pq4
+      access_operator_entity_id: ent_01m7xx8r2cry5hq8hcsync7pq4
+    access:
+      availability: public
+      method: form
+      url: https://www.commented.io/startup-program
+    source_ids:
+      - src_e18e6ff4382576aa72efd654aa1fd604e1d85d4e877c0faa86871844b5135c50
