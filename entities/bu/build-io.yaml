@@ -1,0 +1,110 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m7xrya87k39gx53vzmfavgdd
+  slug: build-io
+  slug_aliases: []
+  name: Build.io
+  domains:
+    - value: build.io
+      role: primary
+      valid_from: 2026-11-21T00:43:45.000Z
+  category: hosting-infra
+profile:
+  summary: Build.io is a full-stack cloud platform where product teams deploy and run production applications without managing infrastructure.
+  description: Build.io is the full-stack cloud platform for product teams to deploy and run production applications without managing infrastructure.
+  links:
+    site: https://build.io
+sources:
+  - source_id: src_6384a37177e76efc762c52bf917f3889ea6bff22466f7c5a51d908b3de225ee0
+    url: https://build.io/
+  - source_id: src_960d14d38b4c504ff4bba834efe83e6d9ffa22c18d5ce64a51c2e51d76ca5b70
+    url: https://build.io/startups
+programs:
+  - program_id: prg_01m7xrya879manj8wcj7926emx
+    program_slug: build-io-startup-program
+    program_slug_aliases: []
+    title: Build.io Startup Program
+    summary: The Build.io Startup Program gives partner-referred early-stage companies cloud credits for compute and add-ons, engineer-led support, and migration help.
+    source_ids:
+      - src_960d14d38b4c504ff4bba834efe83e6d9ffa22c18d5ce64a51c2e51d76ca5b70
+offers:
+  - offer_id: off_01m7xrya87113x8pt5mmj65kz5
+    program_id: prg_01m7xrya879manj8wcj7926emx
+    offer_slug: build-io-startup-credits
+    offer_slug_aliases: []
+    title: Up to $200,000 in Build.io Startup Credits
+    summary: Partner-referred startups can get $50,000 in Build.io credits, or $200,000 for AI and data startups, valid for 12 months on compute and add-ons.
+    lifecycle:
+      status: active
+      effective_from: 2026-11-21T00:43:45.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: The For startups tier provides $50,000 in Build.io credits valid for 12 months, covering compute and add-ons.
+          duration:
+            kind: exact
+            value: P1Y
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 5000000
+            kind: up-to
+        - benefit_id: ben_02
+          description: The For AI and data startups tier provides $200,000 in Build.io credits valid for 12 months, covering compute and add-ons.
+          duration:
+            kind: exact
+            value: P1Y
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 20000000
+            kind: up-to
+        - benefit_id: ben_03
+          description: Startups get engineer-led support, hands-on migration help from Heroku, AWS and other providers, and every platform feature included on every plan.
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: external-verification
+            statement: The startup must be referred by a Build.io partner such as a venture capital fund, accelerator or incubator.
+          - criterion_id: cri_02
+            kind: manual
+            reason: external-verification
+            statement: The startup must be a new Build.io customer.
+          - criterion_id: cri_03
+            fact: company.age_months
+            kind: predicate
+            operator: lt
+            statement: The company must be less than 5 years in operation.
+            value:
+              type: number
+              value: 60
+          - criterion_id: cri_04
+            fact: company.stage
+            kind: predicate
+            operator: eq
+            statement: The company must be earlier than Series B.
+            value:
+              type: string
+              value: pre-Series-B
+          - criterion_id: cri_05
+            kind: manual
+            reason: external-verification
+            statement: The company must be building its own product rather than client work; agencies do not qualify.
+    roles:
+      terms_authority_entity_id: ent_01m7xrya87k39gx53vzmfavgdd
+      access_operator_entity_id: ent_01m7xrya87k39gx53vzmfavgdd
+    access:
+      availability: referral
+      method: form
+      instructions: Startups must be referred by a Build.io partner; the startup credits form on the program page asks for the referring partner and the chosen $50K or $200K tier.
+      url: https://build.io/startups
+    source_ids:
+      - src_960d14d38b4c504ff4bba834efe83e6d9ffa22c18d5ce64a51c2e51d76ca5b70
