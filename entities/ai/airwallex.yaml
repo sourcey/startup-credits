@@ -1,0 +1,125 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m7yb45ezbqmxt6b27zbtszm0
+  slug: airwallex
+  slug_aliases: []
+  name: Airwallex
+  domains:
+    - value: airwallex.com
+      role: primary
+      valid_from: 2026-11-21T06:01:31.000Z
+  category: payments-fintech
+profile:
+  summary: Airwallex is a global financial platform providing multi-currency business accounts, FX transfers, corporate cards, payments, and spend management.
+  description: Airwallex provides cross-border business accounts, international FX and transfers, corporate cards, global payments, billing, and financial operations software for startups and enterprises.
+  links:
+    site: https://www.airwallex.com
+    pricing: https://www.airwallex.com/en-us/pricing
+sources:
+  - source_id: src_7f7d4a008b15945c56d8d14c5fb55b1cc9fdd97a648d782cdcac9ac8f1e0eda2
+    url: https://www.airwallex.com/en-us/startups
+programs:
+  - program_id: prg_01m7yb45f0qk4cm721225j2d1j
+    program_slug: airwallex-for-startups
+    program_slug_aliases: []
+    title: Airwallex for Startups
+    summary: Airwallex for Startups gives eligible US-registered venture-backed startups $150,000 in fee credits for 12 months, zero FX fees on the first $50,000 in transfers, free global accounts for 12 months, and 6 months of free t0 AI CFO access.
+    source_ids:
+      - src_7f7d4a008b15945c56d8d14c5fb55b1cc9fdd97a648d782cdcac9ac8f1e0eda2
+offers:
+  - offer_id: off_01m7yb45f1g2spds1hrzs77xcx
+    program_id: prg_01m7yb45f0qk4cm721225j2d1j
+    offer_slug: airwallex-for-startups-us
+    offer_slug_aliases: []
+    title: $150,000 in Airwallex fee credits and 12 months free global accounts
+    summary: Eligible US venture-backed startups (pre-seed to Series A, $500K+ raised) get $150,000 in fee credits for 12 months, zero FX fees on $50,000 in transfers, free global accounts, and 6 months of t0 AI CFO.
+    description: Eligible new US startup customers receive $150,000 in credits across FX, payments, payouts, and platform fees for 12 months, no FX fees on the first $50,000 in transfers, multi-currency global accounts across 60+ countries with no monthly fees for the first 12 months, and 6 months of full t0 AI CFO access. There is no cost to join.
+    lifecycle:
+      status: active
+      effective_from: 2026-11-21T06:01:31.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: $150,000 in fee credits usable across FX, payments, payouts, and platform fees for 12 months.
+          duration:
+            kind: exact
+            value: P12M
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 15000000
+            kind: exact
+        - benefit_id: ben_02
+          description: Zero FX fees on the first $50,000 in currency transfers.
+          kind: other
+        - benefit_id: ben_03
+          description: Multi-currency global accounts across 60+ countries with no monthly fees for the first 12 months.
+          duration:
+            kind: exact
+            value: P12M
+          kind: free-service
+          service: Airwallex Global Accounts
+        - benefit_id: ben_04
+          description: 6 months of full t0 AI CFO access for bookkeeping, reporting, and compliance automation.
+          duration:
+            kind: exact
+            value: P6M
+          kind: free-service
+          service: t0 AI CFO
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.country_code
+            kind: predicate
+            operator: eq
+            statement: Focused on startups with a US-registered business entity.
+            value:
+              type: string
+              value: USA
+          - criterion_id: cri_02
+            fact: company.stage
+            kind: predicate
+            operator: in
+            statement: Designed for venture-backed startups from pre-seed through Series A.
+            value:
+              type: string-set
+              values:
+                - pre-seed
+                - seed
+                - series-a
+          - criterion_id: cri_03
+            fact: company.funding_raised_usd
+            kind: predicate
+            operator: gte
+            statement: Startups that have raised $500,000 or more in external funding.
+            value:
+              type: number
+              value: 500000
+          - criterion_id: cri_04
+            fact: company.is_current_customer
+            kind: predicate
+            operator: eq
+            statement: New customers only; existing Airwallex customers are not eligible.
+            value:
+              type: boolean
+              value: false
+          - criterion_id: cri_05
+            kind: manual
+            reason: external-verification
+            statement: Must be venture-backed and open an active Airwallex account to be eligible.
+    roles:
+      terms_authority_entity_id: ent_01m7yb45ezbqmxt6b27zbtszm0
+      access_operator_entity_id: ent_01m7yb45ezbqmxt6b27zbtszm0
+    access:
+      availability: public
+      method: form
+      url: https://www.airwallex.com/en-us/startups
+      instructions: Use Apply now on the Airwallex for Startups US page to submit an application and open an Airwallex account.
+    terms_url: https://www.airwallex.com/en-us/startups
+    source_ids:
+      - src_7f7d4a008b15945c56d8d14c5fb55b1cc9fdd97a648d782cdcac9ac8f1e0eda2
