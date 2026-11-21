@@ -37,7 +37,8 @@ offers:
       effective_from: 2026-11-21T06:20:36.000Z
     economics:
       consideration:
-        kind: none
+        kind: variable
+        description: Credits are applied to the team's paid Chainstack plan and drawn down against its monthly invoices automatically.
       benefits:
         - benefit_id: ben_01
           description: USD 1,000 in Chainstack credits with no expiry date, applied to the team's organization on a paid plan and drawn down against monthly invoices automatically.
