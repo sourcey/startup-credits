@@ -1,0 +1,87 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m7yah6nt2vwx7n64xj3z9nbt
+  slug: intentchart
+  slug_aliases: []
+  name: INTENTchart
+  domains:
+    - value: intentchart.com
+      role: primary
+      valid_from: 2026-11-21T05:51:10.000Z
+  category: crm-sales
+profile:
+  summary: INTENTchart provides verified B2B sales lead packs checked online with a proof link for each lead.
+  description: INTENTchart sells B2B lead packs checked online with contact names, work emails, and proof links for B2B outbound teams.
+  links:
+    site: https://intentchart.com
+    pricing: https://intentchart.com/pricing
+sources:
+  - source_id: src_e5b6074731e28e1b945f1f175d454224b801fbea01603ea0b6a10bc92c3bb28b
+    url: https://intentchart.com/startups
+  - source_id: src_2a0c5a06f61b13d5f1c474902ec61dc6223a819cb1c489941b1cf1c9b2124f40
+    url: https://intentchart.com/pricing
+programs:
+  - program_id: prg_01m7yah6nwwm73trkzzvc4dd22
+    program_slug: intentchart-for-startups
+    program_slug_aliases: []
+    title: INTENTchart for Startups
+    summary: INTENTchart for Startups gives funded startups 20% off every B2B lead pack for 2 years, up to $10,000 in total savings.
+    source_ids:
+      - src_e5b6074731e28e1b945f1f175d454224b801fbea01603ea0b6a10bc92c3bb28b
+offers:
+  - offer_id: off_01m7yah6nx2cg7y4w5fa38fw03
+    program_id: prg_01m7yah6nwwm73trkzzvc4dd22
+    offer_slug: intentchart-startups-20-percent-off
+    offer_slug_aliases: []
+    title: 20% off every B2B lead pack for 2 years (up to $10,000 savings)
+    summary: Startups that raised a funding round in the last 24 months receive 20% off every INTENTchart B2B lead pack for 2 years, saving up to $10,000.
+    description: Eligible startups receive 20% off the whole invoice on every pack (Pack of 50 at $1,600 instead of $2,000; Pack of 100 at $2,880 instead of $3,600; Pack of 200 at $5,440 instead of $6,800) for 2 years from their first pack or until saving $10,000. No accelerator or investor program is needed. Pilot packs and partner-introduced founders are excluded.
+    lifecycle:
+      status: active
+      effective_from: 2026-11-21T05:51:10.000Z
+    economics:
+      benefits:
+        - applies_to: INTENTchart B2B lead packs (Pack of 50, Pack of 100, and Pack of 200; excludes pilot packs)
+          benefit_id: ben_01
+          description: 20% off every B2B lead pack invoice for 2 years from the first pack or until $10,000 in total savings is reached.
+          duration:
+            kind: exact
+            value: P2Y
+          kind: discount
+          percentage:
+            basis_points: 2000
+            kind: exact
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.last_funding_round_months_ago
+            kind: predicate
+            operator: lte
+            statement: Startup must have raised a funding round in the last 24 months.
+            value:
+              type: number
+              value: 24
+          - criterion_id: cri_02
+            kind: manual
+            reason: external-verification
+            statement: Funding round must be equity, a SAFE, or a convertible note from outside investors, or an accelerator investment (grants, loans, revenue-based financing, and crowdfunding do not qualify).
+          - criterion_id: cri_03
+            kind: manual
+            reason: external-verification
+            statement: Must not be introduced by a partner (partner-introduced founders pay site price without the 20% discount).
+    roles:
+      terms_authority_entity_id: ent_01m7yah6nt2vwx7n64xj3z9nbt
+      access_operator_entity_id: ent_01m7yah6nt2vwx7n64xj3z9nbt
+    access:
+      availability: public
+      method: form
+      url: https://intentchart.com/pricing
+      instructions: Request an invoice on any pack at https://intentchart.com/pricing. INTENTchart verifies your funding round in public news, a funding database, or your investor page (or requests one public link) before sending the invoice at the 20%-off startup price.
+    terms_url: https://intentchart.com/startups
+    source_ids:
+      - src_e5b6074731e28e1b945f1f175d454224b801fbea01603ea0b6a10bc92c3bb28b
+      - src_2a0c5a06f61b13d5f1c474902ec61dc6223a819cb1c489941b1cf1c9b2124f40
