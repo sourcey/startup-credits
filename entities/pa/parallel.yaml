@@ -1,0 +1,79 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+authority_intent: community
+entity:
+  entity_id: ent_01m7ybdep64yj1p21q6fdy76zx
+  slug: parallel
+  slug_aliases: []
+  name: Parallel
+  domains:
+    - value: parallel.ai
+      role: primary
+      valid_from: 2026-11-21T00:00:00Z
+  category: ai-ml
+profile:
+  description: Parallel provides APIs to search, extract, research, and monitor live web data for AI products.
+  summary: Parallel provides web search, extraction, research, and monitoring APIs for AI applications.
+  links:
+    site: https://parallel.ai/
+sources:
+  - source_id: src_bd817b493f2fa37a72b08db1ef6c5a48cfc93736f11cbabbf1e16e7c6c2cf7e9
+    url: https://parallel.ai/startups
+  - source_id: src_94721fef54fff65b892bc767fc31db693462e969a767fabc0bc42ef144dace83
+    url: https://parallel.ai/blog/parallel-for-startups
+programs:
+  - program_id: prg_01m7ybdep9mz8pqyyxgbvnyevd
+    program_slug: parallel-for-startups
+    program_slug_aliases: []
+    title: Parallel for Startups
+    summary: Parallel for Startups provides API credits and technical support to founders building AI products with live web data.
+    source_ids:
+      - src_bd817b493f2fa37a72b08db1ef6c5a48cfc93736f11cbabbf1e16e7c6c2cf7e9
+      - src_94721fef54fff65b892bc767fc31db693462e969a767fabc0bc42ef144dace83
+offers:
+  - offer_id: off_01m7ybdep98eexps5m26nmyp81
+    program_id: prg_01m7ybdep9mz8pqyyxgbvnyevd
+    offer_slug: direct-startup-application-credits
+    offer_slug_aliases: []
+    title: $250 in Parallel API credits for approved direct startup applicants
+    summary: Approved startups applying directly receive $250 in credits for any Parallel API, valid for six months. One program offer is available per company; no credit card is required.
+    lifecycle:
+      status: active
+      effective_from: 2026-11-12T00:00:00Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          kind: credit
+          description: $250 in credits usable across any Parallel API, expiring six months after issuance.
+          value:
+            kind: exact
+            amount:
+              currency: USD
+              minor_units: 25000
+          duration:
+            kind: exact
+            value: P6M
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: not-machine-evaluable
+            statement: An early-stage team building an AI product with live web data must apply directly and be approved by Parallel.
+          - criterion_id: cri_02
+            kind: manual
+            reason: not-machine-evaluable
+            statement: Applicants need a Parallel account and organization ID. Each company can claim one program offer.
+    roles:
+      terms_authority_entity_id: ent_01m7ybdep64yj1p21q6fdy76zx
+      access_operator_entity_id: ent_01m7ybdep64yj1p21q6fdy76zx
+    access:
+      availability: public
+      method: form
+      url: https://parallel.ai/startups#apply
+      instructions: Create a Parallel account, copy the organization ID from Organization settings, and apply through the startup form with company details and a description of what you are building.
+    source_ids:
+      - src_bd817b493f2fa37a72b08db1ef6c5a48cfc93736f11cbabbf1e16e7c6c2cf7e9
+      - src_94721fef54fff65b892bc767fc31db693462e969a767fabc0bc42ef144dace83
