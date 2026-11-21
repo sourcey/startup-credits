@@ -11,7 +11,7 @@ entity:
   category: hosting-infra
 profile:
   summary: Build.io is a cloud application platform for deploying and running apps with managed add-ons.
-  description: Build.io runs apps on Heroku and Cloud Native buildpacks with managed add-ons, migration tooling from Heroku, Render and AWS, and region choice in the US, EU or Japan.
+  description: Build.io deploys apps with Cloud Native and Heroku buildpacks, provisions managed add-ons like Postgres and Redis, migrates from Heroku, Render or AWS, and keeps data in the US, EU or Japan.
   links:
     site: https://build.io
 sources:
@@ -102,9 +102,9 @@ offers:
       terms_authority_entity_id: ent_01m7xrya87k39gx53vzmfavgdd
       access_operator_entity_id: ent_01m7xrya87k39gx53vzmfavgdd
     access:
-      availability: public
+      availability: referral
       method: form
-      instructions: Complete the startup credits application form on the Build.io Startup Program page, naming the referring Build.io partner and choosing the $50K or $200K tier.
+      instructions: Startups must be referred by a Build.io partner; the startup credits form on the program page asks for the referring partner and the chosen $50K or $200K tier.
       url: https://build.io/startups
     source_ids:
       - src_960d14d38b4c504ff4bba834efe83e6d9ffa22c18d5ce64a51c2e51d76ca5b70
