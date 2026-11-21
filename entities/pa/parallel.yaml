@@ -72,7 +72,7 @@ offers:
     access:
       availability: public
       method: form
-      url: https://parallel.ai/startups#apply
+      url: https://parallel.ai/startups
       instructions: Create a Parallel account, copy the organization ID from Organization settings, and apply through the startup form with company details and a description of what you are building.
     source_ids:
       - src_bd817b493f2fa37a72b08db1ef6c5a48cfc93736f11cbabbf1e16e7c6c2cf7e9
