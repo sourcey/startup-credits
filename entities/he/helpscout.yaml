@@ -1,0 +1,60 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+authority_intent: community
+entity:
+  entity_id: ent_01m7y1en3zh9smbkbnjz2y1cqq
+  slug: helpscout
+  slug_aliases: []
+  name: Help Scout
+  domains:
+    - value: helpscout.com
+      role: primary
+      valid_from: 2026-11-21T03:12:29.825Z
+  category: support
+profile:
+  summary: Help Scout is a customer support platform that gives support teams shared inboxes, live chat, a help center, and a built-in AI agent in one place.
+  description: Help Scout provides a customer support platform with shared inboxes, live chat, a help center, and AI tools for support teams.
+  links:
+    site: https://www.helpscout.com
+sources:
+  - source_id: src_aadac5c58ff10ef29b7d8f8d6ca6bd8fafa9a0ca706f53752abb8c2bdd91419e
+    url: https://www.helpscout.com/startups
+programs:
+  - program_id: prg_01m7y1en409d13arknam04kc41
+    program_slug: help-scout-for-startups
+    program_slug_aliases: []
+    title: Help Scout for Startups
+    source_ids:
+      - src_aadac5c58ff10ef29b7d8f8d6ca6bd8fafa9a0ca706f53752abb8c2bdd91419e
+offers:
+  - offer_id: off_01m7y1en41ykqt929w7s9ab53b
+    offer_slug: help-scout-plus-6-months-free
+    offer_slug_aliases: []
+    title: Help Scout for Startups
+    summary: Eligible startups get 6 months free on Help Scout Plus, the premium plan with shared inboxes, all channels, advanced automation, and the Scout AI agent.
+    lifecycle:
+      status: active
+      effective_from: 2026-11-21T03:12:29.825Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: 6 months free on Help Scout Plus
+          kind: free-service
+          service: 6 months free on Help Scout Plus
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a startup; the application form asks for annual revenue and business structure.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01m7y1en3zh9smbkbnjz2y1cqq
+      access_operator_entity_id: ent_01m7y1en3zh9smbkbnjz2y1cqq
+    access:
+      availability: public
+      method: form
+      url: https://www.helpscout.com/startups
+    source_ids:
+      - src_aadac5c58ff10ef29b7d8f8d6ca6bd8fafa9a0ca706f53752abb8c2bdd91419e
