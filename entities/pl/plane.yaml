@@ -1,0 +1,112 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m7y670htdcq9ncy4ymxdsgh8
+  slug: plane
+  slug_aliases: []
+  name: Plane
+  domains:
+    - value: plane.so
+      role: primary
+      valid_from: 2026-11-21T04:35:42.000Z
+  category: productivity
+profile:
+  summary: Plane is an open-source project management, wiki, and AI workspace platform available on Plane Cloud or self-hosted.
+  description: Plane provides project management, work items, cycles, initiatives, wiki, dashboards, intake, and Plane AI on Plane Cloud or self-hosted servers.
+  links:
+    site: https://plane.so
+    pricing: https://plane.so/pricing
+sources:
+  - source_id: src_a126310c71cec576164b7dd6329e6329e614537a687838b9b4013707f4860f60
+    url: https://plane.so/startup-program
+  - source_id: src_b52a0487f3ad11b9640a4d06a7ee0b3b00d525744a4cdfc38efc855fa5d28384
+    url: https://plane.so/pricing
+programs:
+  - program_id: prg_01m7y670hvcfehjmez6v55envf
+    program_slug: plane-for-startups
+    program_slug_aliases: []
+    title: Plane for Startups
+    summary: Plane for Startups gives eligible early-stage startups 6 months of Plane Pro free for up to 25 seats on Plane Cloud or self-hosted, worth up to $2,000 with AI credits included.
+    source_ids:
+      - src_a126310c71cec576164b7dd6329e6329e614537a687838b9b4013707f4860f60
+offers:
+  - offer_id: off_01m7y670hwgj5crjqxzvht89ap
+    program_id: prg_01m7y670hvcfehjmez6v55envf
+    offer_slug: plane-pro-six-months-free-startups
+    offer_slug_aliases: []
+    title: 6 months of Plane Pro free for up to 25 seats
+    summary: Eligible early-stage startups founded 3 years ago or less with up to $1.5M raised receive 6 months of Plane Pro free for up to 25 seats (worth up to $2,000, AI credits included) on Plane Cloud or self-hosted.
+    description: Provides 6 months of Plane Pro free from the day Pro is activated on a Plane Cloud workspace or self-hosted instance for up to 25 seats, worth up to $2,000 with AI credits included. Existing Free workspaces upgrade in place. Each startup can redeem the offer only once, and it cannot be applied to Enterprise Grid.
+    lifecycle:
+      status: active
+      effective_from: 2026-11-21T04:35:42.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 6 months of Plane Pro free for up to 25 seats on Plane Cloud or self-hosted, worth up to $2,000 with AI credits included.
+          duration:
+            kind: exact
+            value: P6M
+          kind: free-service
+          service: Plane Pro (up to 25 seats, Plane Cloud or self-hosted, AI credits included)
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.is_registered
+            kind: predicate
+            operator: eq
+            statement: Company must be registered.
+            value:
+              type: boolean
+              value: true
+          - criterion_id: cri_02
+            fact: company.is_subsidiary
+            kind: predicate
+            operator: eq
+            statement: Company must be independent and not a subsidiary.
+            value:
+              type: boolean
+              value: false
+          - criterion_id: cri_03
+            fact: company.funding_raised_usd
+            kind: predicate
+            operator: lte
+            statement: Up to $1.5M raised (including bootstrapped startups).
+            value:
+              type: number
+              value: 1500000
+          - criterion_id: cri_04
+            fact: company.age_years
+            kind: predicate
+            operator: lte
+            statement: Founded 3 years ago or less.
+            value:
+              type: number
+              value: 3
+          - criterion_id: cri_05
+            kind: manual
+            reason: external-verification
+            statement: Must be new to Plane or on the Free plan today; cannot be applied to Enterprise Grid.
+          - criterion_id: cri_06
+            kind: manual
+            reason: not-machine-evaluable
+            statement: Operates as a product company.
+          - criterion_id: cri_07
+            kind: manual
+            reason: external-verification
+            statement: Each startup can redeem the Plane for Startups offer only once.
+    roles:
+      terms_authority_entity_id: ent_01m7y670htdcq9ncy4ymxdsgh8
+      access_operator_entity_id: ent_01m7y670htdcq9ncy4ymxdsgh8
+    access:
+      availability: public
+      method: form
+      url: https://plane.so/startup-program
+      instructions: Apply directly through the form on the Plane for Startups page using a work email with company details, year founded, funding range, and deployment choice (Plane Cloud or self-hosted). Review takes 7-10 business days (decision by email within 2 weeks), and existing Free workspaces upgrade in place.
+    terms_url: https://plane.so/startup-program
+    source_ids:
+      - src_a126310c71cec576164b7dd6329e6329e614537a687838b9b4013707f4860f60
+      - src_b52a0487f3ad11b9640a4d06a7ee0b3b00d525744a4cdfc38efc855fa5d28384
