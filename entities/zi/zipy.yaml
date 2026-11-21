@@ -1,0 +1,53 @@
+authority_intent: community
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m7ycfdw3sz8hf0998d6zbb1v
+  slug: zipy
+  slug_aliases: []
+  name: Zipy
+  domains:
+    - value: zipy.ai
+      role: primary
+      valid_from: 2026-11-21T00:00:00.000Z
+  category: observability
+profile:
+  summary: Zipy is a debugging platform combining session replay, error monitoring, and analytics for web and mobile apps.
+  description: Zipy provides session replay, error and API monitoring, funnels, and heatmaps that help product and engineering teams debug user issues.
+  links:
+    site: https://zipy.ai
+sources:
+  - source_id: src_ee04222e4d89c7132a66abff7f59fd6cad930ea5bac079014149d5eef5abb95d
+    url: https://zipy.ai/startups
+programs: []
+offers:
+  - offer_id: off_01m7ycfdw3j7v4gfk3w3s2kvj2
+    offer_slug: startups-pack
+    offer_slug_aliases: []
+    title: Zipy for Startups pack
+    summary: Startups get the Zipy for Startups pack with up to 7,500 free user sessions per month, error monitoring, heatmaps and API performance add-ons on request.
+    lifecycle:
+      status: active
+      effective_from: 2026-11-21T00:00:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Get up to 7.5k free user sessions with Zipy
+          kind: free-service
+          service: Zipy for Startups pack
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: constant
+        statement: Available to startups; enroll through the Zipy for Startups form on zipy.ai/startups.
+        value: true
+    roles:
+      terms_authority_entity_id: ent_01m7ycfdw3sz8hf0998d6zbb1v
+      access_operator_entity_id: ent_01m7ycfdw3sz8hf0998d6zbb1v
+    access:
+      availability: public
+      method: form
+      url: https://zipy.ai/startups
+    source_ids:
+      - src_ee04222e4d89c7132a66abff7f59fd6cad930ea5bac079014149d5eef5abb95d
