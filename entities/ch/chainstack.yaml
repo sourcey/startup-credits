@@ -11,6 +11,7 @@ entity:
   category: hosting-infra
 profile:
   description: Chainstack provides managed blockchain infrastructure, including global and dedicated nodes, for teams building across more than 70 supported networks.
+  summary: Chainstack provides managed blockchain infrastructure and node services for web3 teams building across more than 70 networks.
   links:
     site: https://chainstack.com
 sources:
