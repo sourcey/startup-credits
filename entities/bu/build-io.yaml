@@ -11,7 +11,7 @@ entity:
   category: hosting-infra
 profile:
   summary: Build.io is a cloud application platform for deploying and running apps with managed add-ons.
-  description: Build.io provides Heroku and Cloud Native buildpacks, instant Postgres and Redis add-ons, migration from Heroku, Render or AWS, and data regions in the US, EU or Japan.
+  description: Build.io is the full-stack cloud platform for product teams to deploy and run production applications without managing infrastructure.
   links:
     site: https://build.io
 sources:
