@@ -10,7 +10,7 @@ entity:
       valid_from: 2026-11-21T00:43:45.000Z
   category: hosting-infra
 profile:
-  summary: Build.io is a cloud application platform for deploying and running apps with managed add-ons.
+  summary: Build.io is a full-stack cloud platform where product teams deploy and run production applications without managing infrastructure.
   description: Build.io is the full-stack cloud platform for product teams to deploy and run production applications without managing infrastructure.
   links:
     site: https://build.io
