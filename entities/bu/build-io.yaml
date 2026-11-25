@@ -10,8 +10,8 @@ entity:
       valid_from: 2026-11-21T00:43:45.000Z
   category: hosting-infra
 profile:
-  summary: Build.io is a full-stack cloud platform where product teams deploy and run production applications without managing infrastructure.
-  description: Build.io is the full-stack cloud platform for product teams to deploy and run production applications without managing infrastructure.
+  summary: Build.io is the full-stack cloud platform for product teams to deploy and run production applications without managing infrastructure.
+  description: Build.io is a full-stack cloud platform for product teams. Build owns the stack from hardware to runtime for better performance, greater stability and lower costs.
   links:
     site: https://build.io
 sources:
@@ -24,7 +24,7 @@ programs:
     program_slug: build-io-startup-program
     program_slug_aliases: []
     title: Build.io Startup Program
-    summary: The Build.io Startup Program gives partner-referred early-stage companies cloud credits for compute and add-ons, engineer-led support, and migration help.
+    summary: The Build.io Startup Program offers $50,000 or $200,000 in credits to startups referred by a partner VC or accelerator, valid for 12 months, with engineer-led support and hands-on migration help.
     source_ids:
       - src_960d14d38b4c504ff4bba834efe83e6d9ffa22c18d5ce64a51c2e51d76ca5b70
 offers:
@@ -33,14 +33,14 @@ offers:
     offer_slug: build-io-startup-credits
     offer_slug_aliases: []
     title: Up to $200,000 in Build.io Startup Credits
-    summary: Partner-referred startups can get $50,000 in Build.io credits, or $200,000 for AI and data startups, valid for 12 months on compute and add-ons.
+    summary: Startups referred by a partner VC or accelerator can get $50,000 in credits, or $200,000 for AI and data startups, valid for 12 months and covering compute and add-ons.
     lifecycle:
       status: active
       effective_from: 2026-11-21T00:43:45.000Z
     economics:
       benefits:
         - benefit_id: ben_01
-          description: The For startups tier provides $50,000 in Build.io credits valid for 12 months, covering compute and add-ons.
+          description: For startups, $50,000 in credits, valid for 12 months. Credits cover compute and add-ons.
           duration:
             kind: exact
             value: P1Y
@@ -51,7 +51,7 @@ offers:
               minor_units: 5000000
             kind: up-to
         - benefit_id: ben_02
-          description: The For AI and data startups tier provides $200,000 in Build.io credits valid for 12 months, covering compute and add-ons.
+          description: For AI & data startups, $200,000 in credits, valid for 12 months. Credits cover compute and add-ons.
           duration:
             kind: exact
             value: P1Y
@@ -62,7 +62,7 @@ offers:
               minor_units: 20000000
             kind: up-to
         - benefit_id: ben_03
-          description: Startups get engineer-led support, hands-on migration help from Heroku, AWS and other providers, and every platform feature included on every plan.
+          description: Engineer-led support for startups from day one, hands-on migration help from Heroku, AWS and more, and every platform feature included on every plan.
           kind: other
       consideration:
         kind: none
@@ -104,7 +104,7 @@ offers:
     access:
       availability: referral
       method: form
-      instructions: Startups must be referred by a Build.io partner; the startup credits form on the program page asks for the referring partner and the chosen $50K or $200K tier.
+      instructions: Apply for startup credits on the program page. Complete the form below and Build.io will be in touch to get you set up shortly.
       url: https://build.io/startups
     source_ids:
       - src_960d14d38b4c504ff4bba834efe83e6d9ffa22c18d5ce64a51c2e51d76ca5b70
