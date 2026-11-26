@@ -1,20 +1,70 @@
 schema_version: sourcey.entity-authoring/v1alpha1
 entity:
-  entity_id: ent_01kyyts97sxvjdbwprq8swyxw5
+  entity_id: ent_01m8c489z6pjw8frx6f9y1a50x
   slug: airtable
   slug_aliases: []
   name: Airtable
   domains:
     - value: airtable.com
       role: primary
-      valid_from: 2026-08-01T13:50:00.000Z
-  category: no-code
+      valid_from: 2026-11-26T14:30:49.000Z
+  category: productivity
 profile:
-  description: 500,000+ brands use Airtable to enable real-time collaboration, automate repetitive tasks & manual work, and streamline business processes in minutes. Join them.
+  description: Airtable is a cloud platform for building apps, workflows, and AI agents on shared business data.
+  summary: Airtable is a cloud platform for building apps, workflows, and AI agents on shared business data.
   links:
-    site: https://airtable.com
+    site: https://www.airtable.com
 sources:
-  - source_id: src_78242d8f3ebfd297f184895df2c4cb1f76fe53ad45f507c83d9cda105e3df0ac
+  - source_id: src_ba3f3571ad110deb5917697b7a051ac09be786d9d6244f79be9c167a5f05ba1c
+    url: https://www.airtable.com/startups
+  - source_id: src_d7f4fff86cf332612bbe5b5f91bfebca616d8200e5889d73c8118a5d604f3c58
     url: https://www.airtable.com/
-programs: []
-offers: []
+programs:
+  - program_id: prg_01m8c489z7b1n138294tsnpffb
+    program_slug: airtable-for-startups
+    program_slug_aliases: []
+    title: Airtable for Startups
+    summary: Airtable for Startups gives startups $500 in free credit plus exclusive startup content and educational materials; Airtable reviews applications in 3-5 days.
+    source_ids:
+      - src_ba3f3571ad110deb5917697b7a051ac09be786d9d6244f79be9c167a5f05ba1c
+offers:
+  - offer_id: off_01m8c489z71etksg41ex8s3zfh
+    program_id: prg_01m8c489z7b1n138294tsnpffb
+    offer_slug: startups-credits
+    offer_slug_aliases: []
+    title: Airtable for Startups credits
+    summary: Startups with an Airtable account receive $500 in free credit applied to the workspace they plan to upgrade, plus exclusive startup content and educational materials.
+    lifecycle:
+      status: active
+      effective_from: 2026-11-26T14:30:49.000Z
+    economics:
+      consideration:
+        kind: variable
+        description: Credit is added directly to the workspace the applicant plans to upgrade and applied to its billing.
+      benefits:
+        - benefit_id: ben_01
+          description: USD 500 in Airtable credit, applied to the applicant's workspace.
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 50000
+            kind: exact
+        - benefit_id: ben_02
+          description: Exclusive startup content and educational materials.
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_01
+        statement: A startup with an Airtable account may apply using the email tied to its Airtable account and the ID of the workspace it plans to upgrade; Airtable reviews applications in 3-5 days. The program page states no funding limit, stage, or company-age criterion, so approval rests on Airtable's review of each application.
+        reason: vendor-discretion
+    roles:
+      terms_authority_entity_id: ent_01m8c489z6pjw8frx6f9y1a50x
+      access_operator_entity_id: ent_01m8c489z6pjw8frx6f9y1a50x
+    access:
+      availability: public
+      method: form
+      url: https://www.airtable.com/startups
+    source_ids:
+      - src_ba3f3571ad110deb5917697b7a051ac09be786d9d6244f79be9c167a5f05ba1c
