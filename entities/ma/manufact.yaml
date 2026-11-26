@@ -1,0 +1,85 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+authority_intent: community
+entity:
+  entity_id: ent_01m8c3wy4tyab01fcbjq92txwt
+  slug: manufact
+  slug_aliases: []
+  name: Manufact
+  domains:
+    - value: manufact.com
+      role: primary
+      valid_from: 2026-11-26T14:25:00.000Z
+  category: hosting-infra
+profile:
+  summary: Manufact provides an MCP cloud platform for building, deploying, testing, publishing, and monitoring MCP apps and servers across AI clients and marketplaces.
+  description: Manufact is an MCP cloud platform for deploying, testing, publishing, and monitoring MCP apps and servers across AI clients and marketplaces.
+  links:
+    site: https://manufact.com
+    pricing: https://manufact.com/pricing
+sources:
+  - source_id: src_c0e522e5989a0170510f6eb67a117615734d27572a8809ae2e7605cc6949a096
+    url: https://manufact.com/startups
+  - source_id: src_8978c343ffe569cec1bfb23ab85c9a5f831d28f84f48e9ab9a95cd74c3453479
+    url: https://manufact.com/
+  - source_id: src_f608e83de42944b329b9eb5498d931b6441b7890c7feeb3fbef4851aa3ac25a9
+    url: https://manufact.com/pricing
+programs:
+  - program_id: prg_01m8c3wy4zprjkyv6hwekdpshq
+    program_slug: manufact-for-startups
+    program_slug_aliases: []
+    title: Manufact for Startups
+    summary: Manufact for Startups gives early-stage startups with less than $2M in total funding 50% off the Pro plan for 6 months after application review.
+    source_ids:
+      - src_c0e522e5989a0170510f6eb67a117615734d27572a8809ae2e7605cc6949a096
+offers:
+  - offer_id: off_01m8c3wy4z2nwbpsa0fqpgv6eh
+    program_id: prg_01m8c3wy4zprjkyv6hwekdpshq
+    offer_slug: manufact-for-startups-pro-plan-discount
+    offer_slug_aliases: []
+    title: 50% off Manufact Pro for 6 months
+    summary: Startups that have raised less than $2M in total funding, including bootstrapped teams, receive 50% off the Manufact Pro plan ($150/month instead of $300/month) for their first 6 months.
+    lifecycle:
+      status: active
+      effective_from: 2026-11-26T14:25:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          applies_to: Manufact Pro plan
+          kind: discount
+          description: 50% off the Manufact Pro plan price ($150/month instead of $300/month) for the first 6 months, applying to the full Pro plan including $300 in monthly credits.
+          percentage:
+            kind: exact
+            basis_points: 5000
+          duration:
+            kind: exact
+            value: P6M
+      consideration:
+        kind: variable
+        description: Approved startups pay $150/month (50% off the $300/month Pro plan price) for the first 6 months plus any usage beyond included monthly credits, then the standard Pro plan price thereafter.
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: predicate
+            fact: company.funding_raised_usd
+            operator: lt
+            statement: Startup has raised less than $2M in total funding (bootstrapped startups are welcome).
+            value:
+              type: number
+              value: 2000000
+          - criterion_id: cri_02
+            kind: manual
+            reason: vendor-discretion
+            statement: Every application is reviewed individually by the Manufact team to check eligibility; existing Manufact customers may also apply using the email associated with their Manufact account.
+    roles:
+      terms_authority_entity_id: ent_01m8c3wy4tyab01fcbjq92txwt
+      access_operator_entity_id: ent_01m8c3wy4tyab01fcbjq92txwt
+    access:
+      availability: public
+      method: form
+      url: https://manufact.com/startups
+      instructions: Select Request startup access on the Manufact for Startups page to submit the application form; existing customers should use the email associated with their Manufact account. Manufact reviews eligibility and follows up by email.
+    source_ids:
+      - src_c0e522e5989a0170510f6eb67a117615734d27572a8809ae2e7605cc6949a096
+      - src_f608e83de42944b329b9eb5498d931b6441b7890c7feeb3fbef4851aa3ac25a9
