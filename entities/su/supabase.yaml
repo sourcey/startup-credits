@@ -1,0 +1,58 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m8c48nrrsbf35gk3qfr7ye8s
+  slug: supabase
+  slug_aliases: []
+  name: Supabase
+  domains:
+    - value: supabase.com
+      role: primary
+      valid_from: 2026-11-26T14:31:01.000Z
+  category: databases
+profile:
+  description: Supabase provides an open-source managed Postgres database with integrated backend services including Auth, Storage, Edge Functions, and Realtime.
+  links:
+    site: https://supabase.com
+  summary: Supabase is an open-source Postgres development platform with a managed database, authentication, storage, edge functions, and realtime sync.
+sources:
+  - source_id: src_1d7315ece6364556a6159102d20a9182d2bd8c6b8e893ea72bf1165576a51bb8
+    url: https://supabase.com/go/aws-activate-offer
+  - source_id: src_0e4975cb3fa002e518fc1dd262880e2eab1aa7b5f9f14cdccac47fecb257621c
+    url: https://supabase.com
+programs: []
+offers:
+  - offer_id: off_01m8c48nrt0b2wnhpv7qh1xta7
+    offer_slug: supabase-aws-activate-credits
+    offer_slug_aliases: []
+    title: $300 in Supabase credits through AWS Activate
+    summary: VC-backed startups with less than $5M in total funding and an active AWS account can receive $300 in Supabase credits through AWS Activate, usable across any Supabase product.
+    lifecycle:
+      status: active
+      effective_from: 2026-11-26T14:31:01.000Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_01
+          description: $300 in Supabase credits.
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 30000
+            kind: exact
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_01
+        statement: Must be a VC-backed startup with less than $5M in total funding, have an active AWS account, and not have previously redeemed this offer.
+        reason: vendor-discretion
+    roles:
+      terms_authority_entity_id: ent_01m8c48nrrsbf35gk3qfr7ye8s
+      access_operator_entity_id: ent_01m8c48nrrsbf35gk3qfr7ye8s
+    access:
+      availability: public
+      method: form
+      url: https://supabase.com/go/aws-activate-offer
+    source_ids:
+      - src_1d7315ece6364556a6159102d20a9182d2bd8c6b8e893ea72bf1165576a51bb8
