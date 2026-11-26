@@ -71,7 +71,7 @@ offers:
         kind: manual
         criterion_id: cri_01
         reason: not-machine-evaluable
-        statement: "Not part of an accelerator or backed by investors, and still pre-production: idea, prototype, or private beta."
+        statement: "Not part of an accelerator or backed by investors, and still pre-production: idea, prototype, or private beta. A verified business email domain is required. One application per company, one tier at a time."
     roles:
       terms_authority_entity_id: ent_01m8bwf2y0tx64wg11dp8xfg7d
       access_operator_entity_id: ent_01m8bwf2y0tx64wg11dp8xfg7d
