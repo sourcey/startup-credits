@@ -1,0 +1,60 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m8cb6s25thp7cw6a21kk6880
+  slug: bubble
+  slug_aliases: []
+  name: Bubble
+  domains:
+    - value: bubble.io
+      role: primary
+      valid_from: 2026-11-26T16:45:00.000Z
+  category: no-code
+profile:
+  summary: Bubble is a visual no-code platform that lets anyone build and launch fully functional web applications without writing code.
+  description: Bubble is a no-code platform for building and launching full-stack web applications without writing code.
+  links:
+    site: https://bubble.io
+sources:
+  - source_id: src_267ce6ee1eff029967c01b2fbd41abc12505df119422ce1a62755e94117f389a
+    url: https://bubble.io/partnership/microsoft-for-startups
+programs: []
+offers:
+  - offer_id: off_01m8cb6s27vvrqfyj1cjhyq8ax
+    offer_slug: microsoft-for-startups-bubble-credits
+    offer_slug_aliases: []
+    title: $3,000 in Bubble credits for Microsoft for Startups members
+    summary: Microsoft for Startups members who are new paying Bubble users receive $3,000 in Bubble credits valid for six months on monthly subscription plans.
+    lifecycle:
+      status: active
+      effective_from: 2026-11-26T16:45:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: $3,000 in Bubble credits valid for six months
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 300000
+            kind: exact
+          duration:
+            kind: exact
+            value: P6M
+      consideration:
+        kind: unknown
+        description: Credits apply to monthly subscription plans for new paying Bubble users who link a credit card; no separate purchase price for the credits is published.
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Startup must be a Microsoft for Startups member, redeem once per organization as a new paying Bubble user with the same email and a linked credit card; credits apply only to monthly subscription plans, not Dedicated plans or one-time plugin or template purchases, and cannot combine with another Bubble coupon or deal.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01m8cb6s25thp7cw6a21kk6880
+      access_operator_entity_id: ent_01m8cb6s25thp7cw6a21kk6880
+    access:
+      availability: public
+      method: form
+      url: https://bubble.io/partnership/microsoft-for-startups
+    source_ids:
+      - src_267ce6ee1eff029967c01b2fbd41abc12505df119422ce1a62755e94117f389a
