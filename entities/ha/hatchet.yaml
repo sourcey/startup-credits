@@ -1,0 +1,75 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m8bvfr8ws5kk5w0w518t1f1b
+  slug: hatchet
+  slug_aliases: []
+  name: Hatchet
+  domains:
+    - value: hatchet.run
+      role: primary
+      valid_from: 2026-11-26T12:00:00.000Z
+  category: devtools-other
+profile:
+  summary: Hatchet is a platform for running durable background jobs, workflows, and AI agents reliably at scale.
+  description: Hatchet is an open-source platform for durable execution, including background jobs, workflows, cron jobs, and AI agents.
+  links:
+    site: https://hatchet.run
+sources:
+  - source_id: src_1ebb65b1547be6bb48ae175f5682c49bf29de9183e83431dc0afe3796c86356e
+    url: https://hatchet.run/startups
+  - source_id: src_0b126c8b83e5972e95834a03614693dd6587e0613a0e6d34217815c168ba9349
+    url: https://hatchet.run/pricing
+programs:
+  - program_id: prg_01m8bvfr8ypvr4pbhdbgr1n0k2
+    program_slug: hatchet-for-startups
+    program_slug_aliases: []
+    title: Hatchet for Startups
+    summary: Hatchet's startup program giving early-stage teams credits, priority support, and a direct line to the engineers building Hatchet.
+    source_ids:
+      - src_1ebb65b1547be6bb48ae175f5682c49bf29de9183e83431dc0afe3796c86356e
+offers:
+  - offer_id: off_01m8bvfr8ye21wga3cxv883rt0
+    program_id: prg_01m8bvfr8ypvr4pbhdbgr1n0k2
+    offer_slug: hatchet-for-startups
+    offer_slug_aliases: []
+    title: Hatchet for Startups
+    summary: Early-stage startups get $3,000 in Hatchet Cloud credits for their first 12 months, plus priority support, a shared Slack channel, and onboarding help.
+    lifecycle:
+      status: active
+      effective_from: 2026-11-26T12:00:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: $3,000 in Hatchet Cloud credits for your first 12 months, applied to usage past the free tier
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 300000
+            kind: exact
+        - benefit_id: ben_02
+          description: Priority support from the engineers who build Hatchet
+          kind: other
+        - benefit_id: ben_03
+          description: A shared Slack channel with the Hatchet team
+          kind: other
+        - benefit_id: ben_04
+          description: Onboarding help in a working session with an engineer
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Teams founded in the last five years that have raised less than $10M.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01m8bvfr8ws5kk5w0w518t1f1b
+      access_operator_entity_id: ent_01m8bvfr8ws5kk5w0w518t1f1b
+    access:
+      availability: public
+      method: form
+      url: https://hatchet.run/startups
+    source_ids:
+      - src_1ebb65b1547be6bb48ae175f5682c49bf29de9183e83431dc0afe3796c86356e
