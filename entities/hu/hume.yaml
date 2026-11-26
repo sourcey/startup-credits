@@ -1,0 +1,75 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m8c4098qqsnhr8f6jqcjps1s
+  slug: hume
+  slug_aliases: []
+  name: Hume AI
+  domains:
+    - value: hume.ai
+      role: primary
+      valid_from: 2026-11-26T14:26:26Z
+  category: ai-ml
+profile:
+  summary: Hume AI builds the data and evaluation layer for emotionally intelligent voice AI.
+  description: "Hume AI provides the research infrastructure behind expressive, trustworthy voice AI: scientifically grounded datasets, speech models, evaluation frameworks, and human preference pipelines."
+  links:
+    site: https://www.hume.ai
+sources:
+  - source_id: src_1657f7f5ff523aaffb279b27f05743e8b7fe6d1a2376795ef0e792a8135820c1
+    url: https://www.hume.ai/startup-program
+  - source_id: src_e2ac2ffa8430a39f76ade7cbe9886a94cdf2d85dee8569aed7679e816b3c64d9
+    url: https://www.hume.ai/about
+programs: []
+offers:
+  - offer_id: off_01m8c4098qa9ncra768rpekpk4
+    offer_slug: hume-ai-startup-program
+    offer_slug_aliases: []
+    title: Hume AI Startup Program
+    summary: Qualifying startups and small businesses with fewer than 25 employees get 12 months of complimentary access to Hume AI with 40,000,000 free platform credits for voice generation.
+    lifecycle:
+      status: active
+      effective_from: 2026-11-26T14:26:26Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_primary
+          description: 40,000,000 free platform credits over 12 months; each credit equals one voice-generation character
+          kind: other
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - kind: predicate
+            criterion_id: cri_employees
+            statement: Fewer than 25 employees at the time of application
+            fact: company.employee_count
+            operator: lt
+            value:
+              type: number
+              value: 25
+          - kind: manual
+            criterion_id: cri_sanctions
+            statement: Applicants must not be located in, organized under the laws of, or ordinarily resident in any country or territory subject to U.S. export controls or sanctions.
+            reason: not-machine-evaluable
+          - kind: manual
+            criterion_id: cri_one_enrollment
+            statement: Limit one Program enrollment per Recipient; prior Hume AI Startup Program recipients, including their subsidiaries or affiliates, are ineligible.
+            reason: not-machine-evaluable
+          - kind: manual
+            criterion_id: cri_accurate_info
+            statement: Applicants must provide complete and accurate information regarding their intended use of Hume AI's services.
+            reason: not-machine-evaluable
+          - kind: manual
+            criterion_id: cri_application_window
+            statement: Applications are accepted on a rolling basis while the Program is active, for six months, subject to extension or early closure at Hume AI's sole discretion.
+            reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01m8c4098qqsnhr8f6jqcjps1s
+      access_operator_entity_id: ent_01m8c4098qqsnhr8f6jqcjps1s
+    access:
+      availability: public
+      method: form
+      url: https://www.hume.ai/startup-program
+    source_ids:
+      - src_1657f7f5ff523aaffb279b27f05743e8b7fe6d1a2376795ef0e792a8135820c1
