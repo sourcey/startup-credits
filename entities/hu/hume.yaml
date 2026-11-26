@@ -1,6 +1,6 @@
 schema_version: sourcey.entity-authoring/v1alpha1
 entity:
-  entity_id: ent_01M8C4098QQSNHR8F6JQCJPS1S
+  entity_id: ent_01m8c4098qqsnhr8f6jqcjps1s
   slug: hume
   slug_aliases: []
   name: Hume AI
@@ -21,7 +21,7 @@ sources:
     url: https://www.hume.ai/about
 programs: []
 offers:
-  - offer_id: off_01M8C4098QA9NCRA768RPEKPK4
+  - offer_id: off_01m8c4098qa9ncra768rpekpk4
     offer_slug: hume-ai-startup-program
     offer_slug_aliases: []
     title: Hume AI Startup Program
@@ -65,8 +65,8 @@ offers:
             statement: Applications are accepted on a rolling basis while the Program is active, for six months, subject to extension or early closure at Hume AI's sole discretion.
             reason: not-machine-evaluable
     roles:
-      terms_authority_entity_id: ent_01M8C4098QQSNHR8F6JQCJPS1S
-      access_operator_entity_id: ent_01M8C4098QQSNHR8F6JQCJPS1S
+      terms_authority_entity_id: ent_01m8c4098qqsnhr8f6jqcjps1s
+      access_operator_entity_id: ent_01m8c4098qqsnhr8f6jqcjps1s
     access:
       availability: public
       method: form
