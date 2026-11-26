@@ -10,11 +10,13 @@ entity:
       valid_from: 2026-11-26T12:00:00.000Z
   category: devtools-other
 profile:
-  summary: Hatchet is a platform for running durable background jobs, workflows, and AI agents reliably at scale.
-  description: Hatchet is an open-source platform for durable execution, including background jobs, workflows, cron jobs, and AI agents.
+  summary: Hatchet is the orchestration layer for modern apps, a single, scalable platform for orchestrating AI agents, complex workflows, and distributed apps.
+  description: Hatchet is a scalable platform for orchestrating AI agents, complex workflows, and distributed apps.
   links:
     site: https://hatchet.run
 sources:
+  - source_id: src_b413e95b758bd936fbb734fcda0dc35f31d6a59b61e67597c374f2c20bbdd840
+    url: https://hatchet.run
   - source_id: src_1ebb65b1547be6bb48ae175f5682c49bf29de9183e83431dc0afe3796c86356e
     url: https://hatchet.run/startups
   - source_id: src_0b126c8b83e5972e95834a03614693dd6587e0613a0e6d34217815c168ba9349
@@ -57,7 +59,8 @@ offers:
           description: Onboarding help in a working session with an engineer
           kind: other
       consideration:
-        kind: none
+        kind: variable
+        description: Credits are applied to Hatchet Cloud usage past the free tier.
     eligibility:
       rule:
         kind: manual
