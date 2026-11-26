@@ -1,0 +1,69 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+authority_intent: community
+entity:
+  entity_id: ent_01m8bgvj7t53bam7fz2kz397eb
+  slug: postman
+  slug_aliases: []
+  name: Postman
+  domains:
+    - value: postman.com
+      role: primary
+      valid_from: 2026-11-26T08:00:00.000Z
+  category: apis-integration
+profile:
+  summary: Postman is an API platform for designing, building, testing, and publishing APIs, now extended with an Agent Stack that lets AI agents call and manage APIs safely.
+  description: Postman provides an API development platform covering design, testing, documentation, and monitoring, with an Agent Stack for AI agents that consume APIs.
+  links:
+    site: https://www.postman.com
+sources:
+  - source_id: src_034dd73404f01c6c32aeca248d9251c281c90875ad403f8b2ef9025908aad41c
+    url: https://www.postman.com/postman-for-ai-native-startups/
+programs:
+  - program_id: prg_01m8bgvj7wpceg8v32zfrc3tfy
+    program_slug: postman-for-ai-startups
+    program_slug_aliases: []
+    title: Postman for AI Startups
+    summary: Postman's startup program gives eligible AI-native startups the Team plan free for the whole team for three months, plus 25,000 AI Credits for the Agent Stack.
+    source_ids:
+      - src_034dd73404f01c6c32aeca248d9251c281c90875ad403f8b2ef9025908aad41c
+offers:
+  - offer_id: off_01m8bgvj7wcyxabrqv1phwbv5r
+    program_id: prg_01m8bgvj7wpceg8v32zfrc3tfy
+    offer_slug: ai-startups-team-plan-and-credits
+    offer_slug_aliases: []
+    title: Postman for AI Startups free Team plan and AI Credits
+    summary: Approved AI-native startups receive the Postman Team plan free for their entire team for three months, plus 25,000 AI Credits to use Postman's Agent Stack, with extensions available.
+    lifecycle:
+      status: active
+      effective_from: 2026-11-26T08:00:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: The Postman Team plan free for the startup's entire team for three months from activation
+          kind: free-service
+          service: Postman Team plan
+          duration:
+            kind: exact
+            value: P3M
+        - benefit_id: ben_02
+          description: 25,000 AI Credits that apply to eligible Agent Stack usage and expire three months after activation
+          kind: other
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: external-verification
+        statement: Startups building with AI that have raised equity funding from an institutional investor (verified through Crunchbase or a Postman VC partner referral), whose product would not exist without AI (such as agents, LLM-powered apps, or tooling for them), founded after 2020, headquartered in the US or Canada, and new to Postman as a paying customer. One grant per company, and acceptance is at Postman's discretion.
+    roles:
+      terms_authority_entity_id: ent_01m8bgvj7t53bam7fz2kz397eb
+      access_operator_entity_id: ent_01m8bgvj7t53bam7fz2kz397eb
+    access:
+      availability: public
+      instructions: Submit the contact form on the program page; Postman verifies funding and fit, then sets up the workspace and credits for the team.
+      method: form
+      url: https://www.postman.com/postman-for-ai-native-startups/
+    terms_url: https://www.postman.com/postman-for-ai-native-startups/
+    source_ids:
+      - src_034dd73404f01c6c32aeca248d9251c281c90875ad403f8b2ef9025908aad41c
