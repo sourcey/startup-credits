@@ -38,7 +38,6 @@ offers:
     offer_slug_aliases: []
     title: 50% off Manufact Pro for 6 months
     summary: Startups that have raised less than $2M in total funding, including bootstrapped teams, receive 50% off the Manufact Pro plan ($150/month instead of $300/month) for their first 6 months.
-    description: The 50% discount applies to the full Manufact Pro plan ($150/month instead of $300/month) for the first 6 months, after which the subscription continues at the standard Pro price. The Pro plan includes $300 in monthly credits, unlimited projects, 90 days analytics, unlimited team members, cold-start prevention, SOC 2 and ISO 27001, all deployment regions, global region, and dedicated Slack support. Existing Manufact customers can apply using the email associated with their account.
     lifecycle:
       status: active
       effective_from: 2026-11-26T14:25:00.000Z
