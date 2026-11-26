@@ -1,0 +1,70 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m4w49tw6kd6mv8cy5p5xh2d5
+  slug: supabase
+  slug_aliases: []
+  name: Supabase
+  domains:
+    - value: supabase.com
+      role: primary
+      valid_from: 2026-10-14T02:36:43.000Z
+  category: databases
+profile:
+  description: Supabase is the open-source Postgres development platform, offering a hosted database, auth, storage, edge functions, and realtime sync in one suite.
+  summary: Supabase is the open-source Postgres development platform with integrated database, auth, storage, edge functions, and realtime services.
+  links:
+    site: https://supabase.com
+sources:
+  - source_id: src_2ac2a26c3e096847fdda1c3394a47c1f5ed69e309637e2394b0c32327cf786b4
+    url: https://supabase.com/go/aws-activate-offer
+programs: []
+offers:
+  - offer_id: off_01m8c47rfanvcqpf16p7rjyzhw
+    offer_slug: aws-activate-credits
+    offer_slug_aliases: []
+    title: $300 in Supabase credits through AWS Activate
+    summary: VC-backed startups with less than $5M in total funding and an active AWS account receive $300 in Supabase credits through AWS Activate, usable on any Supabase product.
+    lifecycle:
+      status: active
+      effective_from: 2026-11-26T14:30:31.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: $300 in Supabase credits, usable on any Supabase product including database, auth, storage, and edge functions.
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 30000
+            kind: exact
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.funding_raised_usd
+            kind: predicate
+            operator: lt
+            statement: Be a VC-backed startup with less than $5M in total funding.
+            value:
+              type: number
+              value: 5000000
+          - criterion_id: cri_02
+            kind: manual
+            reason: external-verification
+            statement: Have an active AWS account.
+          - criterion_id: cri_03
+            kind: manual
+            reason: vendor-discretion
+            statement: Not have previously redeemed this offer.
+    roles:
+      terms_authority_entity_id: ent_01m4w49tw6kd6mv8cy5p5xh2d5
+      access_operator_entity_id: ent_01m4w49tw6kd6mv8cy5p5xh2d5
+    access:
+      availability: public
+      method: form
+      url: https://supabase.com/go/aws-activate-offer
+    source_ids:
+      - src_2ac2a26c3e096847fdda1c3394a47c1f5ed69e309637e2394b0c32327cf786b4
