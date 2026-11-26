@@ -1,0 +1,63 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m8c7gck2vzhenqea2d0bx7qx
+  slug: okta
+  slug_aliases: []
+  name: Okta
+  domains:
+    - value: okta.com
+      role: primary
+      valid_from: 2026-11-26T15:27:40.000Z
+  category: auth-security
+profile:
+  summary: Okta provides identity tools that help organizations secure access for employees, contractors, and partners through the Okta Identity Cloud.
+  description: Okta provides identity tools for employees, contractors, and partners through the Okta Identity Cloud.
+  links:
+    site: https://www.okta.com/
+sources:
+  - source_id: src_b695f5bff8776d16a497933dc6f28de1cc326e889a90903ec7b5d5d83a3b8d67
+    url: https://www.okta.com/contact-sales-okta-for-startups/
+programs:
+  - program_id: prg_01m8c7gck2rez6pgkg04d8s42c
+    program_slug: okta-for-startups
+    program_slug_aliases: []
+    title: Okta for Startups
+    summary: Okta for Startups gives eligible startups one year of free access to Okta IT Products for up to 25 users, including standard support.
+    source_ids:
+      - src_b695f5bff8776d16a497933dc6f28de1cc326e889a90903ec7b5d5d83a3b8d67
+offers:
+  - offer_id: off_01m8c7gck27wgredmw22pxd698
+    program_id: prg_01m8c7gck2rez6pgkg04d8s42c
+    offer_slug: okta-for-startups
+    offer_slug_aliases: []
+    title: Okta for Startups
+    summary: Eligible startups get one year of free access to Okta IT Products for up to 25 users, including single sign-on, automated provisioning and deprovisioning, basic MFA, and standard support.
+    lifecycle:
+      status: active
+      effective_from: 2026-11-26T15:27:40.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: One year of free access to Okta IT Products for up to 25 users, including standard support
+          duration:
+            kind: exact
+            value: P1Y
+          kind: free-service
+          service: Okta IT Products
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_01
+        statement: Startups; Okta confirms eligibility when contacted through the program form.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01m8c7gck2vzhenqea2d0bx7qx
+      access_operator_entity_id: ent_01m8c7gck2vzhenqea2d0bx7qx
+    access:
+      availability: public
+      method: form
+      url: https://www.okta.com/contact-sales-okta-for-startups/
+    source_ids:
+      - src_b695f5bff8776d16a497933dc6f28de1cc326e889a90903ec7b5d5d83a3b8d67
