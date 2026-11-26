@@ -41,8 +41,8 @@ offers:
       effective_from: 2026-11-26T14:23:11.000Z
     economics:
       consideration:
-        kind: unknown
-        description: The source record did not establish separate consideration.
+        kind: variable
+        description: Applicant pays the discounted plan price; no additional consideration beyond the discounted fee.
       benefits:
         - benefit_id: ben_01
           kind: discount
