@@ -1,0 +1,72 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+authority_intent: community
+entity:
+  entity_id: ent_01m8c3st7nftpm86nsgthvsvrm
+  slug: heygen
+  slug_aliases: []
+  name: HeyGen
+  domains:
+    - value: heygen.com
+      role: primary
+      valid_from: 2026-11-26T14:23:11.000Z
+  category: ai-ml
+profile:
+  summary: HeyGen is an AI video generation platform that turns scripts into studio-quality videos with AI avatars, voice cloning, and translation into 175+ languages.
+  description: "HeyGen offers an AI video generation platform for creating pitch videos, product demos, and localized content with AI avatars and voice cloning."
+  links:
+    site: https://www.heygen.com
+sources:
+  - source_id: src_bd9be80dc62456376363a38e450a8eda3d8ce0a4043fd86c23658d07c6257b1c
+    url: https://www.heygen.com/blog/startup-events-san-francisco
+  - source_id: src_74190d15f09d2dc2285c9918aec30ea4a73bac1a536a993e158ef7a3d4776d0e
+    url: https://www.heygen.com/
+programs:
+  - program_id: prg_01m8c3st7pan8q59m08xreq7zm
+    program_slug: heygen-for-startups
+    program_slug_aliases: []
+    title: HeyGen for Startups
+    summary: HeyGen for Startups gives eligible pre-Series B companies 75-90% discounts on HeyGen plans, including Enterprise access at $7,500 per year instead of $30,000.
+    source_ids:
+      - src_bd9be80dc62456376363a38e450a8eda3d8ce0a4043fd86c23658d07c6257b1c
+offers:
+  - offer_id: off_01m8c3st7pzgp8hspdz24y3kjh
+    program_id: prg_01m8c3st7pan8q59m08xreq7zm
+    offer_slug: heygen-for-startups-discount
+    offer_slug_aliases: []
+    title: HeyGen for Startups - 75-90% discount
+    summary: Eligible pre-Series B startups receive 75-90% off HeyGen plans; Enterprise access costs $7,500 per year instead of $30,000.
+    description: HeyGen states the program is for pre-Series B companies that graduated from a recognized accelerator (Y Combinator, Techstars, 500 Global, Alchemist, etc.) or are backed by venture capital from established firms. Plans start at $24/month for the Creator plan with unlimited video creation.
+    lifecycle:
+      status: active
+      effective_from: 2026-11-26T14:23:11.000Z
+    economics:
+      consideration:
+        kind: variable
+        description: Applicant pays the discounted plan price; no additional consideration beyond the discounted fee.
+      benefits:
+        - benefit_id: ben_01
+          kind: discount
+          description: 75-90% discount on qualifying HeyGen plans for eligible pre-Series B companies.
+          percentage:
+            kind: range
+            minimum_basis_points: 7500
+            maximum_basis_points: 9000
+          applies_to: HeyGen plans through the HeyGen for Startups program
+        - benefit_id: ben_02
+          kind: other
+          description: Enterprise access (normally $30,000 per year) is available for $7,500 per year through the startup program.
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_01
+        reason: not-machine-evaluable
+        statement: "Pre-Series B company that has graduated from a recognized accelerator (Y Combinator, Techstars, 500 Global, Alchemist, etc.) or is backed by venture capital from established firms."
+    roles:
+      terms_authority_entity_id: ent_01m8c3st7nftpm86nsgthvsvrm
+      access_operator_entity_id: ent_01m8c3st7nftpm86nsgthvsvrm
+    access:
+      availability: public
+      method: other
+      url: https://www.heygen.com/blog/startup-events-san-francisco
+    source_ids:
+      - src_bd9be80dc62456376363a38e450a8eda3d8ce0a4043fd86c23658d07c6257b1c
