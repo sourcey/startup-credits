@@ -1,0 +1,52 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m8c579gjzn4rpn5ym68ymraz
+  slug: newrelic
+  slug_aliases: []
+  name: New Relic
+  domains:
+    - value: newrelic.com
+      role: primary
+      valid_from: 2026-11-26T14:48:42.000Z
+  category: observability
+profile:
+  description: New Relic is an observability platform unifying application and infrastructure monitoring, logs, and AI features.
+  links:
+    site: https://newrelic.com
+sources:
+  - source_id: src_7e832d2fd8523d5c8ec89cb5aa61cc5e81f446f317ee4ca7afff72e9e8ba6869
+    url: https://newrelic.com/blog/news/refreshed-startup-program
+programs: []
+offers:
+  - offer_id: off_01m8c579gm9qyyzq33qywqxrve
+    offer_slug: new-relic-for-startups
+    offer_slug_aliases: []
+    title: New Relic for Startups
+    summary: Qualified Series A and earlier startups get free full platform access for 5 users with generous monthly data ingest, every New Relic AI feature, and dedicated engineering support.
+    lifecycle:
+      status: active
+      effective_from: 2026-11-26T14:48:42.000Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free full platform access for 5 users with generous monthly data ingest and all New Relic AI features
+          kind: free-service
+          service: Free full platform access for 5 users with generous monthly data ingest and all New Relic AI features
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Open to vetted startups at Series A stage or earlier, applying directly or through a VC or accelerator referral.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01m8c579gjzn4rpn5ym68ymraz
+      access_operator_entity_id: ent_01m8c579gjzn4rpn5ym68ymraz
+    access:
+      availability: public
+      method: form
+      url: https://newrelic.com/startups
+    source_ids:
+      - src_7e832d2fd8523d5c8ec89cb5aa61cc5e81f446f317ee4ca7afff72e9e8ba6869
