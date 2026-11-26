@@ -1,0 +1,90 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+authority_intent: community
+entity:
+  entity_id: ent_01m8cjdbg5xs5s4xzyfpker8k7
+  slug: sleuth-insights
+  slug_aliases: []
+  name: Sleuth Insights
+  domains:
+    - value: sleuthinsights.com
+      role: primary
+      valid_from: 2026-11-26T18:38:00.000Z
+  category: data-analytics
+profile:
+  summary: Sleuth Insights is a biopharma intelligence platform that maps programs, trials, deals, and companies, pairing a searchable knowledge base and documents with custom analysis in Sleuth Studio, Claude, ChatGPT, and Copilot.
+  description: Biopharma intelligence platform for analyzing drugs, targets, trials, deals, and companies in Sleuth Studio or in AI tools including Claude, ChatGPT, and Copilot.
+  links:
+    site: https://sleuthinsights.com
+    pricing: https://sleuthinsights.com/pricing
+sources:
+  - source_id: src_cefdb0dcedd43702d39722f5b1201c4fda6783425dd4de9a07fddb24eb841c9d
+    url: https://sleuthinsights.com/startups
+  - source_id: src_a4ac3e9588a918da8ff3b00cb08772d7fcb87e0ebba7e6322eecaf8be86f98ca
+    url: https://sleuthinsights.com/
+  - source_id: src_7733767a4b0d6831c4ed2a1e9cb1fa86f0d26e0c3e5314c8423692c3a87f33e1
+    url: https://sleuthinsights.com/pricing
+programs:
+  - program_id: prg_01m8cjdbg9dfwc84n29z5qnaz6
+    program_slug: sleuth-for-startups
+    program_slug_aliases: []
+    title: Sleuth for Startups
+    summary: Sleuth for Startups gives eligible life-science startups that have raised under $10 million 12 months of free whole-team access to Sleuth with 3,000 shared monthly analysis credits.
+    source_ids:
+      - src_cefdb0dcedd43702d39722f5b1201c4fda6783425dd4de9a07fddb24eb841c9d
+      - src_7733767a4b0d6831c4ed2a1e9cb1fa86f0d26e0c3e5314c8423692c3a87f33e1
+offers:
+  - offer_id: off_01m8cjdbg9455z1prqn37hpxek
+    program_id: prg_01m8cjdbg9dfwc84n29z5qnaz6
+    offer_slug: sleuth-for-startups-free-year
+    offer_slug_aliases: []
+    title: 12 months of Sleuth free for startups
+    summary: Eligible life-science companies that have raised under $10 million (including pre-funding teams) receive 12 months of free whole-team access to Sleuth with 3,000 shared monthly analysis credits and all Starter features.
+    lifecycle:
+      status: active
+      effective_from: 2026-11-26T18:38:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          kind: free-service
+          service: Sleuth Studio and Sleuth in Claude, ChatGPT, and Copilot (Starter features for the whole team)
+          description: $0 for 12 months with no credit card required for the whole team, including everything in Starter, 3,000 shared credits a month for custom analysis, unlimited knowledge base browsing and document search, and access in Sleuth Studio, Claude, ChatGPT, or Copilot.
+          duration:
+            kind: exact
+            value: P12M
+        - benefit_id: ben_02
+          kind: other
+          description: Discounted pricing on Sleuth Concierge analyst-run projects for program members, scoped with Sleuth.
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: predicate
+            fact: company.funding_raised_usd
+            operator: lt
+            statement: Company has raised under $10 million in total funding, including companies that have not raised yet.
+            value:
+              type: number
+              value: 10000000
+          - criterion_id: cri_02
+            kind: manual
+            reason: not-machine-evaluable
+            statement: Applicant is a life-science company.
+          - criterion_id: cri_03
+            kind: manual
+            reason: vendor-discretion
+            statement: Every application is reviewed by Sleuth Insights before the team's account is opened.
+    roles:
+      terms_authority_entity_id: ent_01m8cjdbg5xs5s4xzyfpker8k7
+      access_operator_entity_id: ent_01m8cjdbg5xs5s4xzyfpker8k7
+    access:
+      availability: public
+      method: form
+      url: https://sleuthinsights.com/startups
+      instructions: Apply using the form on the Sleuth for Startups page with your company email, total funding raised so far, and first question for Sleuth. Sleuth reviews every application and emails you when your team's account is ready; you may start a 14-day free trial in the meantime.
+    terms_url: https://sleuthinsights.com/startups
+    source_ids:
+      - src_cefdb0dcedd43702d39722f5b1201c4fda6783425dd4de9a07fddb24eb841c9d
+      - src_7733767a4b0d6831c4ed2a1e9cb1fa86f0d26e0c3e5314c8423692c3a87f33e1
