@@ -11,7 +11,7 @@ entity:
   category: ai-ml
 profile:
   summary: Hume AI builds the data and evaluation layer for emotionally intelligent voice AI.
-  description: Hume AI builds the data and evaluation layer for emotionally intelligent voice AI, offering expressive speech models and voice generation for developers and startups.
+  description: "Hume AI provides the research infrastructure behind expressive, trustworthy voice AI: scientifically grounded datasets, speech models, evaluation frameworks, and human preference pipelines."
   links:
     site: https://www.hume.ai
 sources:
