@@ -57,7 +57,8 @@ offers:
             kind: exact
             value: P1Y
       consideration:
-        kind: none
+        kind: variable
+        description: Startups pay Airwallex standard fees beyond the waived amounts, and 50% of T:0 for the first year.
     eligibility:
       rule:
         kind: manual
