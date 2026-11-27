@@ -53,7 +53,7 @@ offers:
       rule:
         kind: manual
         criterion_id: cri_01
-        statement: A startup applies by sending one message in the chat on the startups page. Press Apply and the chat opens with the questions already in it. No Wiro account is needed to send the message, but the credits go onto a Wiro account, so applicants tell Wiro which address the account uses. The message answers company, legal company name, country of registration, website, company LinkedIn URL, your LinkedIn URL, work email, whether signed up on Wiro with that email, product stage (MVP or live), monthly AI or API spend, what you are building, and how you will use Wiro (which models, for which feature, expected volume). A person reviews every application and places the startup in a tier - Ignition ($200) for pre-revenue startups and hobbyists, Velocity ($1,000) for funded teams shipping to production, Hyperdrive ($5,000) for live products with real monthly AI spend - and Wiro replies within 24 hours. The program is for a company or a product with users; coursework, theses and personal projects belong in the Student Program.
+        statement: Startups apply with one chat message on the startups page; no account needed to send it, but credits go onto a Wiro account. The message gives company, legal name, country, website, LinkedIn URLs, work email, signed-up status, product stage, monthly AI/API spend, what is built and how Wiro is used. A person reviews it, assigns a tier and replies within 24 hours. For a company or product with users; coursework, theses and personal projects belong in the Student Program.
         reason: vendor-discretion
     roles:
       terms_authority_entity_id: ent_01m8c61fezpc1ydbyekb617hfy
@@ -62,6 +62,6 @@ offers:
       availability: public
       method: contact
       url: https://wiro.ai/startups
-      instructions: Press Apply for credits on the startups page and the chat opens with the application questions already in it; send one message answering company, legal company name, country of registration, website, company LinkedIn URL, your LinkedIn URL, work email, whether signed up on Wiro with that email, product stage (MVP or live), monthly AI or API spend, what you are building, and how you will use Wiro (which models, for which feature, expected volume).
+      instructions: Press Apply for credits on the startups page; the chat opens with the application questions already in it. Send one message answering company, legal name, country, website, LinkedIn URLs, work email, signed-up status, product stage (MVP or live), monthly AI/API spend, what is built and how Wiro is used.
     source_ids:
       - src_4671503a63f2ff0d83f8a80c5fcf7344cc9b4c464642d0059f17daa539391a7b
