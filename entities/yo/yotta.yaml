@@ -68,7 +68,6 @@ offers:
       consideration:
         kind: variable
         description: Up to 25% tiered discounts on Yotta's hyperscale cloud services.
-        description: Up to 25% tiered discounts on Yotta's hyperscale cloud services.
     eligibility:
       rule:
         kind: manual
