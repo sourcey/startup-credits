@@ -11,8 +11,8 @@ entity:
       valid_from: 2026-10-14T02:36:43.000Z
   category: databases
 profile:
-  description: Supabase is the open-source Postgres development platform, offering a hosted database, auth, storage, edge functions, and realtime sync in one suite.
-  summary: Supabase is the open-source Postgres development platform with integrated database, auth, storage, edge functions, and realtime services.
+  description: Supabase is the easy-to-use, open-source managed Postgres with integrated backend services, with database, auth, storage, edge functions, realtime and vector in an all-in-one suite built on Postgres.
+  summary: Supabase is the easy-to-use, open-source managed Postgres with integrated backend services, an all-in-one suite built on Postgres.
   links:
     site: https://supabase.com
 sources:
