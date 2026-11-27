@@ -1,0 +1,51 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m7xx9k91v0ngweq2q5cehqjb
+  slug: gusto
+  slug_aliases: []
+  name: Gusto
+  domains:
+    - value: gusto.com
+      role: primary
+      valid_from: 2026-11-21T01:59:21.000Z
+  category: hr-people
+profile:
+  description: Gusto is an all-in-one HR platform for payroll, benefits, and people management, trusted by more than 500,000 businesses and their teams.
+  links:
+    site: https://gusto.com
+sources:
+  - source_id: src_22a2817b0830d6e3c7a6a96686b8ab76abd9824926cbe75b6aebb63eddcbcbbb
+    url: https://gusto.com/go/bd/gumshoevc
+programs: []
+offers:
+  - offer_id: off_01m7xx9k916ppakg0scgkctaez
+    offer_slug: gusto-startup-program
+    offer_slug_aliases: []
+    title: Gusto Startup Program
+    summary: Startups that sign up through a Gusto venture capital referral partner link and run a paid payroll get 3 months off any Gusto plan, a value of up to $5,100.
+    lifecycle:
+      status: active
+      effective_from: 2026-11-21T01:59:21.000Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: 3 months free (up to $5,100 value)
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must sign up for Gusto using a Gusto venture capital referral partner's sign up link and run one or more paid payrolls.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01m7xx9k91v0ngweq2q5cehqjb
+      access_operator_entity_id: ent_01m7xx9k91v0ngweq2q5cehqjb
+    access:
+      availability: public
+      method: form
+      url: https://gusto.com/go/bd/gumshoevc
+    source_ids:
+      - src_22a2817b0830d6e3c7a6a96686b8ab76abd9824926cbe75b6aebb63eddcbcbbb
