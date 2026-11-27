@@ -55,13 +55,13 @@ offers:
       rule:
         kind: manual
         criterion_id: cri_requirement_01
-        statement: Startup must be a Microsoft for Startups member using a new Bubble account that has never had a paid plan or received previous perks.
+        statement: Startup must be a Microsoft for Startups member using a completely new Bubble account with no prior paid plans and no previous perk usage, with credits used for original apps created within the new account.
         reason: not-machine-evaluable
     roles:
       terms_authority_entity_id: ent_01m8cb6s25thp7cw6a21kk6880
       access_operator_entity_id: ent_01m8cb6s25thp7cw6a21kk6880
     access:
-      availability: public
+      availability: membership
       method: form
       url: https://bubble.io/perk-application
     source_ids:
