@@ -1,0 +1,96 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+authority_intent: community
+entity:
+  entity_id: ent_01m8d989m2k93qked6mzqegxqg
+  slug: byteplus
+  slug_aliases: []
+  name: BytePlus
+  domains:
+    - value: byteplus.com
+      role: primary
+      valid_from: 2026-11-27T01:17:27.125Z
+  category: hosting-infra
+profile:
+  summary: BytePlus offers AI models, tools and cloud infrastructure for building, deploying and scaling AI.
+  description: BytePlus is an AI-native cloud with models, tools and infrastructure, including ModelArk, a one-stop large language model service platform.
+  links:
+    site: https://www.byteplus.com/en
+sources:
+  - source_id: src_98989fad436a49d74fe546de5ca0b3aedf573e22258f4caeed021dc719ec8ec3
+    url: https://www.byteplus.com/en
+  - source_id: src_fe87c18ae563960a83d2f8301413acf1a728bb2921c5e216c95d17cf63ba5f31
+    url: https://www.byteplus.com/en/contact-us/vstart
+  - source_id: src_bfdb389e8760b7f9da5a263dcf1ab648da50900518f96e007722d1a051824e3b
+    url: https://docs.byteplus.com/en/docs/legal/tnc_ve-start_global_startups
+programs:
+  - program_id: prg_01m8d989m7dff18cm2z2f3tqg3
+    program_slug: byteplus-ai-startups-accelerator
+    program_slug_aliases: []
+    title: BytePlus AI Startups Accelerator
+    summary: BytePlus's accelerator for startups in funding round D or earlier, with cloud coupons, AI model credits, cloud resource subsidies and AI workshops.
+    source_ids:
+      - src_fe87c18ae563960a83d2f8301413acf1a728bb2921c5e216c95d17cf63ba5f31
+offers:
+  - offer_id: off_01m8d989m7hw03h9bqt9b8cnaz
+    program_id: prg_01m8d989m7dff18cm2z2f3tqg3
+    offer_slug: byteplus-ai-startups-accelerator-cloud-coupons
+    offer_slug_aliases: []
+    title: Up to $100,000 in BytePlus cloud coupons
+    summary: Startups in funding round D or earlier can apply for up to $100,000 in BytePlus cloud coupons, plus voice AI and LLM token credits, cloud resource subsidies and AI workshops.
+    description: BytePlus decides whether to grant incentives and sets their value based on factors such as the company's scale, industry and expected consumption growth. Incentives are non-transferable, cannot be redeemed for cash, can only be used for BytePlus products or services and expire if not used by their deadline.
+    lifecycle:
+      status: active
+      effective_from: 2026-11-27T01:17:27.125Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The page and the program terms describe an application and review by BytePlus; they do not publish a separate customer consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Up to $100,000 USD in cloud coupons
+          kind: credit
+          value:
+            kind: up-to
+            amount:
+              currency: USD
+              minor_units: 10000000
+        - benefit_id: ben_02
+          description: $6.5K in voice AI model credits and 10B+ tokens in LLM credits
+          kind: other
+        - benefit_id: ben_03
+          description: $137K+ in cloud resource subsidies
+          kind: other
+        - benefit_id: ben_04
+          description: 5+ AI-powered workshops
+          kind: other
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - kind: manual
+            criterion_id: cri_requirement_01
+            statement: Startups in funding round D or before round D.
+            reason: not-machine-evaluable
+          - kind: manual
+            criterion_id: cri_requirement_02
+            statement: The startup has technical innovation capabilities and broad market prospects for its products or services.
+            reason: not-machine-evaluable
+          - kind: manual
+            criterion_id: cri_requirement_03
+            statement: The company must be a legally constituted and registered business entity, and the person applying must have full legal authority to bind it to the program terms.
+            reason: not-machine-evaluable
+          - kind: manual
+            criterion_id: cri_requirement_04
+            statement: Participation is limited to once per company.
+            reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01m8d989m2k93qked6mzqegxqg
+      access_operator_entity_id: ent_01m8d989m2k93qked6mzqegxqg
+    access:
+      availability: public
+      method: form
+      url: https://www.byteplus.com/en/contact-us/vstart
+      instructions: Submit the application form on the page with your profile, your startup's details, its current funding round and the support you need.
+    source_ids:
+      - src_fe87c18ae563960a83d2f8301413acf1a728bb2921c5e216c95d17cf63ba5f31
+      - src_bfdb389e8760b7f9da5a263dcf1ab648da50900518f96e007722d1a051824e3b
