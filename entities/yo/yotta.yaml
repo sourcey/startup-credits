@@ -1,0 +1,83 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m8dmqkc21xvcj26z4qken16c
+  slug: yotta
+  slug_aliases: []
+  name: Yotta
+  domains:
+    - value: yotta.com
+      role: primary
+      valid_from: 2026-11-27T04:38:02.000Z
+  category: hosting-infra
+profile:
+  description: Yotta provides hyperscale sovereign cloud and AI supercomputing infrastructure, including the Shakti Cloud platform powered by NVIDIA H100 GPUs.
+  summary: Yotta is an Indian cloud and AI infrastructure company operating Shakti Cloud, a supercomputing platform powered by NVIDIA H100 GPUs.
+  links:
+    site: https://www.yotta.com
+sources:
+  - source_id: src_f8f260898af83e72b3c7d26b279c28b9e6202e8137ff03201d1d54ba84163b98
+    url: https://yotta.com/rudra/
+  - source_id: src_8ab83bd3c60a8b1421bdf4ad3ae7529156fa4c3b0a577a57da8f284e3d863f70
+    url: https://www.yotta.com
+programs:
+  - program_id: prg_01m8dmqkc3jkv1sz9q8s2wb8bf
+    program_slug: rudra
+    program_slug_aliases: []
+    title: Rudra
+    summary: Rudra is Yotta's accelerator program for startups in AI, ML, cloud, data science and high-performance compute, offering free cloud credits, discounts, training and go-to-market support.
+    source_ids:
+      - src_f8f260898af83e72b3c7d26b279c28b9e6202e8137ff03201d1d54ba84163b98
+offers:
+  - offer_id: off_01m8dmqkc33t7y5e7xsveydeyk
+    program_id: prg_01m8dmqkc3jkv1sz9q8s2wb8bf
+    offer_slug: rudra-startup-program
+    offer_slug_aliases: []
+    title: Rudra startup program benefits
+    summary: Startups accepted to Rudra immediately unlock up to USD 35,000 in free cloud credits, can progress to up to USD 100,000 in total, and receive up to 25% tiered discounts on Yotta's hyperscale cloud services.
+    lifecycle:
+      status: active
+      effective_from: 2026-11-27T04:38:02.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_credits
+          description: Up to USD 100,000 in free cloud credits in total, with up to USD 35,000 unlocked immediately on acceptance and more as startups progress in the program.
+          kind: credit
+          value:
+            kind: up-to
+            amount:
+              currency: USD
+              minor_units: 10000000
+        - benefit_id: ben_compute
+          description: Access to Shakti Cloud, one of the world's fastest supercomputers, powered by 16,000+ NVIDIA H100 GPUs.
+          kind: other
+        - benefit_id: ben_discount
+          description: Up to 25% tiered discounts on Yotta's hyperscale cloud services.
+          kind: discount
+          percentage:
+            kind: up-to
+            basis_points: 2500
+        - benefit_id: ben_training
+          description: Exclusive training sessions and workshops on cloud, AI and data science, with 1-on-1 access to industry mentors.
+          kind: other
+        - benefit_id: ben_gtm
+          description: Go-to-market support, including showcasing products at Yotta events, connecting with partners, investors and customers, and spotlighting in Yotta marketing campaigns.
+          kind: other
+      consideration:
+        kind: variable
+        description: Cloud usage beyond the free credits is billed at Yotta's rates, with up to 25% tiered discounts on hyperscale cloud services.
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_01
+        statement: Open to startups working in AI, machine learning, cloud, data science or high-performance compute that are pursuing impactful innovation in these fields.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01m8dmqkc21xvcj26z4qken16c
+      access_operator_entity_id: ent_01m8dmqkc21xvcj26z4qken16c
+    access:
+      availability: public
+      method: form
+      url: https://yotta.com/rudra/
+      instructions: Apply for Rudra on the program page; accepted startups immediately unlock up to USD 35,000 in free cloud credits.
+    source_ids:
+      - src_f8f260898af83e72b3c7d26b279c28b9e6202e8137ff03201d1d54ba84163b98
