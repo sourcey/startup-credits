@@ -1,0 +1,76 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+authority_intent: community
+entity:
+  entity_id: ent_01m8dxn1tcxnycd57thfck24my
+  slug: veraid
+  slug_aliases: []
+  name: VeraID
+  domains:
+    - value: veraid.io
+      role: primary
+      valid_from: 2026-11-27T07:13:56.553Z
+  category: auth-security
+profile:
+  summary: VeraID is an identity provider and governance layer for workforce users, service accounts, API keys, CI/CD tokens and AI agents.
+  description: VeraID provides SSO, OIDC, SAML and SCIM for the workforce, plus discovery, ownership mapping and containment for service accounts, API keys, CI/CD tokens and AI agents.
+  links:
+    site: https://www.veraid.io/
+sources:
+  - source_id: src_ce67d7dbaa31d646162568d19b1613b2417446ee656e8faf0efec21c048f209f
+    url: https://www.veraid.io/
+  - source_id: src_4931fbff6f521598daac5606cd87f654b9f013896f3868860298a24c247e4cd4
+    url: https://www.veraid.io/pricing/
+  - source_id: src_7d1610171a6445631f1740ffb5f0b8c4418cf703a298a4beb90809fff870f341
+    url: https://www.veraid.io/contact/
+programs: []
+offers:
+  - offer_id: off_01m8dxn1tkrwx2xq37erkmfrsz
+    offer_slug: veraid-startup-discount
+    offer_slug_aliases: []
+    title: 50% off the first year of VeraID for startups
+    summary: Startups that have raised under $5M may qualify for 50% off their first year of VeraID; VeraID walks through eligibility on a call.
+    lifecycle:
+      status: active
+      effective_from: 2026-11-27T07:13:56.553Z
+    economics:
+      consideration:
+        kind: variable
+        description: The startup pays the remaining 50% of its VeraID plan price during the first year.
+      benefits:
+        - benefit_id: ben_01
+          applies_to: VeraID
+          description: 50% off the first year
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 5000
+          duration:
+            kind: exact
+            value: P1Y
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.funding_raised_usd
+            kind: predicate
+            operator: lt
+            statement: Startups that have raised under $5M
+            value:
+              type: number
+              value: 5000000
+          - criterion_id: cri_02
+            kind: manual
+            reason: external-verification
+            statement: VeraID walks through eligibility on a call where the startup discount is mentioned.
+    roles:
+      terms_authority_entity_id: ent_01m8dxn1tcxnycd57thfck24my
+      access_operator_entity_id: ent_01m8dxn1tcxnycd57thfck24my
+    access:
+      availability: public
+      method: contact
+      url: https://www.veraid.io/contact/
+      instructions: Book a call with VeraID and mention the startup discount; VeraID walks through eligibility on the call.
+    source_ids:
+      - src_4931fbff6f521598daac5606cd87f654b9f013896f3868860298a24c247e4cd4
+      - src_7d1610171a6445631f1740ffb5f0b8c4418cf703a298a4beb90809fff870f341
