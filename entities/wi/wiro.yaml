@@ -1,0 +1,67 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m8c61fezpc1ydbyekb617hfy
+  slug: wiro
+  slug_aliases: []
+  name: Wiro
+  domains:
+    - value: wiro.ai
+      role: primary
+      valid_from: 2026-11-26T15:04:38.000Z
+  category: ai-ml
+profile:
+  description: Wiro is an AI API platform that gives developers access to 1000+ generative AI models for image, video, audio, music, 3D and language through one API, one endpoint and one balance.
+  summary: Wiro is an AI API platform that gives developers access to 1000+ generative AI models for image, video, audio, music, 3D and language through one API, one endpoint and one balance.
+  links:
+    site: https://wiro.ai
+sources:
+  - source_id: src_4671503a63f2ff0d83f8a80c5fcf7344cc9b4c464642d0059f17daa539391a7b
+    url: https://wiro.ai/startups
+  - source_id: src_d350c314892a106801be392a0afebe92bb42e7a4d6292dd2505498702d845cc4
+    url: https://wiro.ai
+programs:
+  - program_id: prg_01m8c61ff0ygts94v5264mn333
+    program_slug: wiro-for-startups
+    program_slug_aliases: []
+    title: Wiro for Startups
+    summary: Wiro for Startups gives approved startups up to $5,000 in API credits across three tiers ($200, $1,000 and $5,000) matched to the startup's stage; Wiro replies within 24 hours.
+    source_ids:
+      - src_4671503a63f2ff0d83f8a80c5fcf7344cc9b4c464642d0059f17daa539391a7b
+offers:
+  - offer_id: off_01m8c61ff0cb9spmwb7d3c565w
+    program_id: prg_01m8c61ff0ygts94v5264mn333
+    offer_slug: startups-credits
+    offer_slug_aliases: []
+    title: Wiro for Startups credits
+    summary: Approved startups receive up to $5,000 in Wiro API credits - $200 for pre-revenue teams, $1,000 for funded teams shipping to production, $5,000 for live products with real monthly AI spend, applied directly to their workspace.
+    lifecycle:
+      status: active
+      effective_from: 2026-11-26T15:04:38.000Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_01
+          description: Up to USD 5,000 in Wiro API credits, applied to the applicant's workspace.
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 500000
+            kind: up-to
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_01
+        statement: Startups apply with one chat message on the startups page; no account needed to send it, but credits go onto a Wiro account. The message gives company, legal name, country, website, LinkedIn URLs, work email, signed-up status, product stage, monthly AI/API spend, what is built and how Wiro is used. A person reviews it, assigns a tier and replies within 24 hours. For a company or product with users; coursework, theses and personal projects belong in the Student Program.
+        reason: vendor-discretion
+    roles:
+      terms_authority_entity_id: ent_01m8c61fezpc1ydbyekb617hfy
+      access_operator_entity_id: ent_01m8c61fezpc1ydbyekb617hfy
+    access:
+      availability: public
+      method: contact
+      url: https://wiro.ai/startups
+      instructions: Press Apply for credits on the startups page; the chat opens with the application questions already in it. Send one message answering company, legal name, country, website, LinkedIn URLs, work email, signed-up status, product stage (MVP or live), monthly AI/API spend, what is built and how Wiro is used.
+    source_ids:
+      - src_4671503a63f2ff0d83f8a80c5fcf7344cc9b4c464642d0059f17daa539391a7b
