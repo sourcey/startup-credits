@@ -1,0 +1,76 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m8dgz443pqfpxfa1rtfc5y6k
+  slug: airwallex
+  slug_aliases: []
+  name: Airwallex
+  domains:
+    - value: airwallex.com
+      role: primary
+      valid_from: 2026-11-27T03:32:14.000Z
+  category: payments-fintech
+profile:
+  description: Airwallex is a global financial platform that lets businesses collect funds, earn yield, optimize foreign exchange, and automate payouts in one place.
+  summary: Airwallex is a global financial platform that lets businesses collect funds, earn yield, optimize foreign exchange, and automate payouts in one place.
+  links:
+    site: https://www.airwallex.com
+sources:
+  - source_id: src_a966d2086b5c9c9949ef4aa87dcb6172ff9576abf5bff4df789022ac0afb45d7
+    url: https://www.airwallex.com/en-us/startups
+  - source_id: src_13ccfc413898bf847202650358435f5cc029571a676f1638569562a246899d25
+    url: https://www.airwallex.com
+programs:
+  - program_id: prg_01m8dgz4453mqxbx1xccrytdp1
+    program_slug: airwallex-for-startups
+    program_slug_aliases: []
+    title: Airwallex for Startups
+    summary: Airwallex for Startups gives venture-backed US startups payment or FX fees waived on the first $25M processed or $10M in FX, 10% cashback for the first 90 days, and 50% off T:0 for the first year.
+    source_ids:
+      - src_a966d2086b5c9c9949ef4aa87dcb6172ff9576abf5bff4df789022ac0afb45d7
+offers:
+  - offer_id: off_01m8dgz445zkhvne7t4eahyhes
+    program_id: prg_01m8dgz4453mqxbx1xccrytdp1
+    offer_slug: startups-program
+    offer_slug_aliases: []
+    title: Airwallex for Startups program benefits
+    summary: Approved startups get payment or FX fees waived on the first $25M processed or $10M in FX, 10% cashback for the first 90 days (2% after), and 50% off T:0 bookkeeping and tax for the first year.
+    lifecycle:
+      status: active
+      effective_from: 2026-11-27T03:32:14.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Payment or FX fees waived on the first USD 25,000,000 processed or the first USD 10,000,000 in foreign exchange.
+          kind: waiver
+          waived_item: Payment or FX fees on the first USD 25,000,000 processed or the first USD 10,000,000 in foreign exchange
+        - benefit_id: ben_02
+          description: 10% cashback for the first 90 days, 2% cashback after that.
+          kind: other
+        - benefit_id: ben_03
+          description: 50% off T:0 (bookkeeping + tax) for the first year.
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 5000
+          applies_to: T:0 (bookkeeping + tax) in the first year
+          duration:
+            kind: exact
+            value: P1Y
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_01
+        statement: Venture-backed startups from pre-seed through Series A that have raised $500K or more, with a US-registered business entity. New Airwallex customers only; existing customers are not eligible. Applicants must have an active Airwallex account. There is no cost to join.
+        reason: vendor-discretion
+    roles:
+      terms_authority_entity_id: ent_01m8dgz443pqfpxfa1rtfc5y6k
+      access_operator_entity_id: ent_01m8dgz443pqfpxfa1rtfc5y6k
+    access:
+      availability: public
+      method: form
+      url: https://www.airwallex.com/en-us/startups
+      instructions: Apply on the Airwallex for Startups page; the program is for venture-backed US startups that have raised $500K or more.
+    source_ids:
+      - src_a966d2086b5c9c9949ef4aa87dcb6172ff9576abf5bff4df789022ac0afb45d7
