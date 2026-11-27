@@ -1,0 +1,74 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+authority_intent: community
+entity:
+  entity_id: ent_01m8ebg826jvxz45zxa79dxsjx
+  slug: bavest
+  slug_aliases: []
+  name: Bavest
+  domains:
+    - value: bavest.co
+      role: primary
+      valid_from: 2026-11-27T11:15:59.053Z
+  category: apis-integration
+profile:
+  summary: Bavest provides financial data through one API, covering over 65,000 stocks, 12,000 ETFs, 165 indices, currencies and more than 120 exchanges.
+  description: Bavest's API delivers market data, quotes, alternative data and portfolio analysis for financial companies.
+  links:
+    site: https://www.bavest.co/en/stock-api
+sources:
+  - source_id: src_12367496709ddae3f73d54cf24afbccfbe067ddf8c52d76b4c86024fe45e5ef0
+    url: https://www.bavest.co/en/stock-api
+  - source_id: src_8f9d1a8730e178408844273bae207aa1b3fd70cbfd8a6833ed3208a34aa10f1c
+    url: https://www.bavest.co/en/company/contact
+programs: []
+offers:
+  - offer_id: off_01m8ebg82b823v21waxqc9jrsd
+    offer_slug: bavest-startup-discount
+    offer_slug_aliases: []
+    title: Up to 70% off Bavest's API for young startups
+    summary: Young start-ups can get a discount of up to 70% on Bavest's financial data API for the first year and up to 50% for the second year.
+    lifecycle:
+      status: active
+      effective_from: 2026-11-27T11:15:59.053Z
+    economics:
+      consideration:
+        kind: variable
+        description: The startup pays the discounted price of its Bavest API subscription.
+      benefits:
+        - benefit_id: ben_01
+          applies_to: Bavest API
+          description: Up to 70% off for the first year
+          kind: discount
+          percentage:
+            kind: up-to
+            basis_points: 7000
+          duration:
+            kind: exact
+            value: P1Y
+        - benefit_id: ben_02
+          applies_to: Bavest API
+          description: Up to 50% off for the second year
+          kind: discount
+          percentage:
+            kind: up-to
+            basis_points: 5000
+          duration:
+            kind: exact
+            value: P1Y
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: external-verification
+        statement: Young start-ups
+    roles:
+      terms_authority_entity_id: ent_01m8ebg826jvxz45zxa79dxsjx
+      access_operator_entity_id: ent_01m8ebg826jvxz45zxa79dxsjx
+    access:
+      availability: public
+      method: contact
+      url: https://www.bavest.co/en/company/contact
+      instructions: Contact Bavest about the startup offer.
+    source_ids:
+      - src_12367496709ddae3f73d54cf24afbccfbe067ddf8c52d76b4c86024fe45e5ef0
+      - src_8f9d1a8730e178408844273bae207aa1b3fd70cbfd8a6833ed3208a34aa10f1c
