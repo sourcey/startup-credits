@@ -7,7 +7,7 @@ entity:
   domains:
     - value: wiro.ai
       role: primary
-      valid_from: 2026-11-26T15:13:00.000Z
+      valid_from: 2026-11-26T15:04:38.000Z
   category: ai-ml
 profile:
   description: Wiro is an AI API platform that gives developers access to 1000+ generative AI models for image, video, audio, music, 3D and language through one API, one endpoint and one balance.
@@ -36,7 +36,7 @@ offers:
     summary: Approved startups receive up to $5,000 in Wiro API credits - $200 for pre-revenue teams, $1,000 for funded teams shipping to production, $5,000 for live products with real monthly AI spend, applied directly to their workspace.
     lifecycle:
       status: active
-      effective_from: 2026-11-26T15:13:00.000Z
+      effective_from: 2026-11-26T15:04:38.000Z
     economics:
       consideration:
         kind: variable
