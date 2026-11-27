@@ -72,7 +72,7 @@ offers:
       rule:
         kind: manual
         criterion_id: cri_01
-        statement: Startups must be working on innovative projects in AI / ML, data science, or high-performance computing. Startups should demonstrate a clear commitment to scaling their AI business and leveraging Yotta's AI / ML / GPU / Cloud and other technologies for competitive advantage. The program is open to startups at various stages of development, from early-stage to growth-stage. The startup must have an active and functioning company website. The startup must have an existing LinkedIn profile (applicant person and startup company). The startup can be bootstrapped or funded up to and including Pre-Seed, Angel, Seed, Debt Financing, and Series A stages. The startup must not have previously received credits of eligible or greater value from Yotta under any other program.
+        statement: Startups must be working on innovative projects in AI, ML, data science or high-performance computing, must have an active and functioning company website and existing LinkedIn profiles for both the applicant person and the startup company, and must not have previously received credits of eligible or greater value from Yotta under any other program.
         reason: not-machine-evaluable
     roles:
       terms_authority_entity_id: ent_01m8dmqkc21xvcj26z4qken16c
