@@ -1,4 +1,5 @@
 schema_version: sourcey.entity-authoring/v1alpha1
+authority_intent: community
 entity:
   entity_id: ent_01m8cb6s25thp7cw6a21kk6880
   slug: bubble
@@ -17,6 +18,8 @@ profile:
 sources:
   - source_id: src_267ce6ee1eff029967c01b2fbd41abc12505df119422ce1a62755e94117f389a
     url: https://bubble.io/partnership/microsoft-for-startups
+  - source_id: src_1bffcf7c6423cefd071b108635ebea16465da58c550a63711ab58800d03992c8
+    url: https://bubble.io/
 programs: []
 offers:
   - offer_id: off_01m8cb6s27vvrqfyj1cjhyq8ax
