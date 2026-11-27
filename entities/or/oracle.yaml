@@ -1,0 +1,69 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m8ejbxvpj7mctxm18fmzmdpa
+  slug: oracle
+  slug_aliases: []
+  name: Oracle
+  domains:
+    - value: oracle.com
+      role: primary
+      valid_from: 2026-11-27T13:16:00.000Z
+  category: hosting-infra
+profile:
+  description: Oracle runs the Oracle Startup Growth Engine, a programme for selected startups ready to build and scale on Oracle Cloud Infrastructure (OCI).
+  links:
+    site: https://www.oracle.com
+  summary: Oracle runs the Oracle Startup Growth Engine, a programme for selected startups ready to build and scale on Oracle Cloud Infrastructure (OCI).
+sources:
+  - source_id: src_19dfa5c62e9d246528477694ce74b8f1b7127e906a3a7310653cb1955df0b742
+    url: https://www.oracle.com/pl/artificial-intelligence/startup-growth-engine/
+  - source_id: src_0789453d686e4aa86336650adab42ba87f9789793032b71f2776b3d596a049e7
+    url: https://www.oracle.com/pl/artificial-intelligence/startup-growth-engine/terms/
+programs:
+  - program_id: prg_01m8ejbxvqsz37brwm1afv2a90
+    program_slug: oracle-startup-growth-engine
+    program_slug_aliases: []
+    title: Oracle Startup Growth Engine
+    summary: Oracle Startup Growth Engine supports selected technology startups building and scaling on Oracle Cloud Infrastructure, with Universal Credits and go-to-market support.
+    source_ids:
+      - src_19dfa5c62e9d246528477694ce74b8f1b7127e906a3a7310653cb1955df0b742
+      - src_0789453d686e4aa86336650adab42ba87f9789793032b71f2776b3d596a049e7
+offers:
+  - offer_id: off_01m8ejbxvqbztdaxyfdk0bfw2e
+    program_id: prg_01m8ejbxvqsz37brwm1afv2a90
+    offer_slug: up-to-60000-in-oci-universal-credits
+    offer_slug_aliases: []
+    title: Up to $60,000 in OCI Universal Credits
+    summary: Selected startups receive USD 5,000 to USD 60,000 in Oracle Cloud Infrastructure Universal Credits, usable for 12 months from availability.
+    lifecycle:
+      status: active
+      effective_from: 2026-11-27T13:16:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Universal Credits for use on Oracle Cloud Infrastructure, ranging from USD 5,000 to USD 60,000 at Oracle's discretion
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 6000000
+            kind: up-to
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Oracle selects participants at its sole discretion. The programme is for startups with a proprietary technology product validated with customers or pilots, building software, data, cloud-native or AI products with a defined Oracle Cloud Infrastructure workload. Public entities are not eligible, and existing Oracle Cloud Infrastructure customers are eligible only with a substantial growth business case.
+    roles:
+      terms_authority_entity_id: ent_01m8ejbxvpj7mctxm18fmzmdpa
+      access_operator_entity_id: ent_01m8ejbxvpj7mctxm18fmzmdpa
+    access:
+      availability: public
+      method: form
+      url: https://www.oracle.com/pl/artificial-intelligence/startup-growth-engine/
+    terms_url: https://www.oracle.com/pl/artificial-intelligence/startup-growth-engine/terms/
+    source_ids:
+      - src_19dfa5c62e9d246528477694ce74b8f1b7127e906a3a7310653cb1955df0b742
+      - src_0789453d686e4aa86336650adab42ba87f9789793032b71f2776b3d596a049e7
