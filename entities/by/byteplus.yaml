@@ -81,6 +81,10 @@ offers:
             reason: not-machine-evaluable
           - kind: manual
             criterion_id: cri_requirement_04
+            statement: The company must comply with the program terms at all times.
+            reason: not-machine-evaluable
+          - kind: manual
+            criterion_id: cri_requirement_05
             statement: Participation is limited to once per company.
             reason: not-machine-evaluable
     roles:
