@@ -11,8 +11,8 @@ entity:
       valid_from: 2026-11-26T16:45:00.000Z
   category: no-code
 profile:
-  summary: Bubble is a visual no-code platform that lets anyone build and launch fully functional web applications without writing code.
-  description: Bubble is a no-code platform for building and launching full-stack web applications without writing code.
+  summary: Bubble is a fully visual AI app builder for web and native mobile apps, with hosting, database management, and user authentication built in.
+  description: Bubble is a fully visual AI app builder for web and native mobile apps, using a no-code visual editor and full-stack visual programming interface.
   links:
     site: https://bubble.io
 sources:
@@ -20,37 +20,42 @@ sources:
     url: https://bubble.io/partnership/microsoft-for-startups
   - source_id: src_1bffcf7c6423cefd071b108635ebea16465da58c550a63711ab58800d03992c8
     url: https://bubble.io/
+  - source_id: src_679f9f6f9ec0a10023c79f79ac1a0a66f2d49face6b3b2b9ea53cf49aa3b57ce
+    url: https://bubble.io/support/en/articles/10560500-what-is-bubble
+  - source_id: src_cd1e3050ed456bc18c20305a7f9ea9ac21af6643bc7271940c4f57bf638196b3
+    url: https://bubble.io/support/en/articles/12702984-what-are-the-eligibility-criteria-for-bubble-s-perk-programs
+  - source_id: src_c7e2eb6138658a1114347c69981b3d508cbdbab9a249450fde0e1fde073d4ac0
+    url: https://bubble.io/support/en/articles/15278803-bubble-credits-faq
+  - source_id: src_f331d5d2cad46ba3d295f9931995a57223f3ec165a25dce3b449df3b577d4ede
+    url: https://forum.bubble.io/t/monthly-community-update-august-2022/218094
 programs: []
 offers:
   - offer_id: off_01m8cb6s27vvrqfyj1cjhyq8ax
     offer_slug: microsoft-for-startups-bubble-credits
     offer_slug_aliases: []
     title: $3,000 in Bubble credits for Microsoft for Startups members
-    summary: Microsoft for Startups members who are new paying Bubble users receive $3,000 in Bubble credits valid for six months on monthly subscription plans.
+    summary: Microsoft for Startups members receive $3,000 in Bubble credits toward monthly subscription plans.
     lifecycle:
       status: active
       effective_from: 2026-11-26T16:45:00.000Z
     economics:
       benefits:
         - benefit_id: ben_01
-          description: $3,000 in Bubble credits valid for six months
+          description: $3,000 in Bubble credits
           kind: credit
           value:
             amount:
               currency: USD
               minor_units: 300000
             kind: exact
-          duration:
-            kind: exact
-            value: P6M
       consideration:
         kind: unknown
-        description: Credits apply to monthly subscription plans for new paying Bubble users who link a credit card; no separate purchase price for the credits is published.
+        description: Bubble credits are applied to monthly subscription charges and require a valid payment method on the account; credits cannot be combined with discounts.
     eligibility:
       rule:
         kind: manual
         criterion_id: cri_requirement_01
-        statement: Startup must be a Microsoft for Startups member, redeem once per organization as a new paying Bubble user with the same email and a linked credit card; credits apply only to monthly subscription plans, not Dedicated plans or one-time plugin or template purchases, and cannot combine with another Bubble coupon or deal.
+        statement: Startup must be a Microsoft for Startups member using a new Bubble account that has never had a paid plan or received previous perks.
         reason: not-machine-evaluable
     roles:
       terms_authority_entity_id: ent_01m8cb6s25thp7cw6a21kk6880
@@ -58,6 +63,9 @@ offers:
     access:
       availability: public
       method: form
-      url: https://bubble.io/partnership/microsoft-for-startups
+      url: https://bubble.io/perk-application
     source_ids:
       - src_267ce6ee1eff029967c01b2fbd41abc12505df119422ce1a62755e94117f389a
+      - src_cd1e3050ed456bc18c20305a7f9ea9ac21af6643bc7271940c4f57bf638196b3
+      - src_c7e2eb6138658a1114347c69981b3d508cbdbab9a249450fde0e1fde073d4ac0
+      - src_f331d5d2cad46ba3d295f9931995a57223f3ec165a25dce3b449df3b577d4ede
