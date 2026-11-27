@@ -15,35 +15,33 @@ profile:
   links:
     site: https://www.akamai.com
 sources:
-  - source_id: src_4889b09213d9fbab40d417524582ba39a38a0a636705049face373259186d014
-    url: https://www.akamai.com/cloud/start-ups/partner
-  - source_id: src_d261980e13355e518c271219ae673deca003152247e6364f9f3ebcf86e34cebe
-    url: https://www.akamai.com/cloud/start-ups
+  - source_id: src_7d05558d5a7e580a98b6654539cb1bcceb42663852a1a8eba4dc6f650acfed77
+    url: https://techdocs.akamai.com/cloud-computing/docs/referral-program
 programs: []
 offers:
-  - offer_id: off_01m8c41109t7mcjdaatkc1q0xg
-    offer_slug: akamai-partner-start-up-program
+  - offer_id: off_01k9a7m2q5x8w3e6r9t2y4v7a3c
+    offer_slug: akamai-cloud-referral-program
     offer_slug_aliases: []
-    title: Akamai Partner Start-Up Program
-    summary: Eligible startups in an Akamai partner's portfolio can receive up to $3,000 per month in Akamai Cloud credits for one year, plus technical enablement sessions.
+    title: Akamai Cloud Referral Program
+    summary: New Akamai Cloud users who sign up through a referral link receive a $100 credit valid for 60 days; the referrer receives a $25 non-expiring credit once the new user has been active for 90 days and spent $25 or more on services.
     lifecycle:
       status: active
-      effective_from: 2026-11-26T14:26:57.000Z
+      effective_from: 2026-11-27T02:01:55.000Z
     economics:
       benefits:
         - benefit_id: ben_01
-          description: Up to $3,000 per month in Akamai Cloud credits for one year.
+          description: A new user receives a $100 60-day credit when signing up through a referral link.
           duration:
             kind: exact
-            value: P1Y
+            value: P60D
           kind: credit
           value:
             amount:
               currency: USD
-              minor_units: 3600000
+              minor_units: 10000
             kind: up-to
         - benefit_id: ben_02
-          description: Technical enablement sessions led by Akamai cloud experts.
+          description: The referrer receives a $25 non-expiring credit after the new user has been active for 90 days and spends $25 or more on services, after the promotional credit has been used or expired.
           kind: other
       consideration:
         kind: none
@@ -51,15 +49,14 @@ offers:
       rule:
         kind: manual
         criterion_id: cri_requirement_01
-        statement: Must be a startup in an Akamai partner's portfolio and a qualified new Akamai Cloud customer; developers can start using credits right away.
+        statement: Must be a new Akamai Cloud user signing up through a referral link, with a valid payment method added before the credit is applied; referrers must have spent at least $25 on Akamai Cloud services, not including promotional credits, to activate the referral program.
         reason: not-machine-evaluable
     roles:
       terms_authority_entity_id: ent_01m8c41108wgr00fna54cptc1j
       access_operator_entity_id: ent_01m8c41108wgr00fna54cptc1j
     access:
       availability: public
-      method: form
-      url: https://www.akamai.com/cloud/start-ups/partner
+      method: link
+      url: https://techdocs.akamai.com/cloud-computing/docs/referral-program
     source_ids:
-      - src_4889b09213d9fbab40d417524582ba39a38a0a636705049face373259186d014
-      - src_d261980e13355e518c271219ae673deca003152247e6364f9f3ebcf86e34cebe
+      - src_7d05558d5a7e580a98b6654539cb1bcceb42663852a1a8eba4dc6f650acfed77
