@@ -10,10 +10,10 @@ entity:
       valid_from: 2026-11-27T13:16:00.000Z
   category: hosting-infra
 profile:
-  description: Oracle Corporation provides Oracle Cloud Infrastructure (OCI), enterprise software, and database products.
+  description: Oracle runs the Oracle Startup Growth Engine, a programme for selected startups ready to build and scale on Oracle Cloud Infrastructure (OCI).
   links:
     site: https://www.oracle.com
-  summary: Oracle Corporation provides Oracle Cloud Infrastructure (OCI), enterprise software, and database products.
+  summary: Oracle runs the Oracle Startup Growth Engine, a programme for selected startups ready to build and scale on Oracle Cloud Infrastructure (OCI).
 sources:
   - source_id: src_19dfa5c62e9d246528477694ce74b8f1b7127e906a3a7310653cb1955df0b742
     url: https://www.oracle.com/pl/artificial-intelligence/startup-growth-engine/
@@ -55,7 +55,7 @@ offers:
         criterion_id: cri_01
         kind: manual
         reason: vendor-discretion
-        statement: Oracle selects participants at its sole discretion. Applicants must be legally registered technology companies developing digital products or platforms with scalable Oracle Cloud Infrastructure use, apply through the official program form, and pass Oracle due diligence; public entities are not eligible.
+        statement: Oracle selects participants at its sole discretion. The programme is for startups with a proprietary technology product validated with customers or pilots, building software, data, cloud-native or AI products with a defined Oracle Cloud Infrastructure workload. Public entities are not eligible, and existing Oracle Cloud Infrastructure customers are eligible only with a substantial growth business case.
     roles:
       terms_authority_entity_id: ent_01m8ejbxvpj7mctxm18fmzmdpa
       access_operator_entity_id: ent_01m8ejbxvpj7mctxm18fmzmdpa
