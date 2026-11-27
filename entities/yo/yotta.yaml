@@ -19,6 +19,8 @@ sources:
     url: https://yotta.com/rudra/
   - source_id: src_8ab83bd3c60a8b1421bdf4ad3ae7529156fa4c3b0a577a57da8f284e3d863f70
     url: https://www.yotta.com
+  - source_id: src_be726dc45c42e104089d1273dac26c1fb398a61e702b9ecc46dd2eb001ceb765
+    url: https://yotta.com/rudra/eligibility-criteria.html
 programs:
   - program_id: prg_01m8dmqkc3jkv1sz9q8s2wb8bf
     program_slug: rudra
@@ -27,6 +29,7 @@ programs:
     summary: Rudra is Yotta's accelerator program for startups in AI, ML, cloud, data science and high-performance compute, offering free cloud credits, discounts, training and go-to-market support.
     source_ids:
       - src_f8f260898af83e72b3c7d26b279c28b9e6202e8137ff03201d1d54ba84163b98
+      - src_be726dc45c42e104089d1273dac26c1fb398a61e702b9ecc46dd2eb001ceb765
 offers:
   - offer_id: off_01m8dmqkc33t7y5e7xsveydeyk
     program_id: prg_01m8dmqkc3jkv1sz9q8s2wb8bf
@@ -64,12 +67,11 @@ offers:
           kind: other
       consideration:
         kind: variable
-        description: Startups pay standard rates for cloud services beyond the free credits, with up to 25% tiered discounts on hyperscale cloud services.
     eligibility:
       rule:
         kind: manual
         criterion_id: cri_01
-        statement: Open to early-stage AI startups developing foundational models, applications or tooling; research groups and labs running real-world AI workloads; businesses deploying or scaling production AI; and other qualified teams building and scaling AI applications.
+        statement: Startups must be working on innovative projects in AI, ML, data science or high-performance computing, must have an active and functioning company website and an existing LinkedIn profile, and can be bootstrapped or funded up to and including Pre-Seed, Angel, Seed, Debt Financing and Series A. Startups that previously received credits of eligible or greater value from Yotta under any other program are not eligible.
         reason: not-machine-evaluable
     roles:
       terms_authority_entity_id: ent_01m8dmqkc21xvcj26z4qken16c
@@ -81,3 +83,4 @@ offers:
       instructions: Apply for Rudra on the program page; accepted startups immediately unlock up to USD 35,000 in free cloud credits.
     source_ids:
       - src_f8f260898af83e72b3c7d26b279c28b9e6202e8137ff03201d1d54ba84163b98
+      - src_be726dc45c42e104089d1273dac26c1fb398a61e702b9ecc46dd2eb001ceb765
