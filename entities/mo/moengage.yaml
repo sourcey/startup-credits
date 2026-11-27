@@ -1,0 +1,55 @@
+---
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01M8EJYJ98GKESJEFNZV195KEK
+  slug: moengage
+  slug_aliases: []
+  name: MoEngage
+  domains:
+    - value: moengage.com
+      role: primary
+      valid_from: 2026-11-27T13:38:00.000Z
+  category: marketing
+profile:
+  description: MoEngage is a customer engagement platform that helps brands deliver personalized cross-channel messaging, analytics, and journey orchestration.
+  links:
+    site: https://www.moengage.com
+sources:
+  - source_id: src_a0733984b97954612ef10657e4c38b9caf247d2a966d441576d706542213093f
+    url: https://www.moengage.com/moengage-for-startups/
+programs: []
+offers:
+  - offer_id: off_01M8EJYJ98YMC77YS6QG24FMCP
+    offer_slug: moengage-for-startups
+    offer_slug_aliases: []
+    title: MoEngage for Startups
+    summary: Eligible startups receive free or discounted access to MoEngage's customer engagement platform for up to 12 months, with pricing tiered by monthly active users.
+    description: Startups with up to 10,000 monthly active users receive free platform access for 1 year; up to 100,000 monthly active users receive free access for the first 6 months and 30% off the list price for the next 6 months; more than 100,000 monthly active users receive 50% off the list price for the first 6 months.
+    lifecycle:
+      status: active
+      effective_from: 2026-11-27T13:38:00.000Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free platform access for 1 year for startups with up to 10,000 monthly active users
+          kind: free-service
+          service: Free platform access for 1 year for startups with up to 10,000 monthly active users
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must have raised Seed, Series A, or Series B funding between $500K and $5M and be less than 48 months old.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01M8EJYJ98GKESJEFNZV195KEK
+      access_operator_entity_id: ent_01M8EJYJ98GKESJEFNZV195KEK
+    access:
+      availability: public
+      method: form
+      url: https://www.moengage.com/moengage-for-startups/
+    source_ids:
+      - src_a0733984b97954612ef10657e4c38b9caf247d2a966d441576d706542213093f
+---
