@@ -63,12 +63,12 @@ offers:
           description: Go-to-market support, including showcasing products at Yotta events, connecting with partners, investors and customers, and spotlighting in Yotta marketing campaigns.
           kind: other
       consideration:
-        kind: none
+        kind: variable
     eligibility:
       rule:
         kind: manual
         criterion_id: cri_01
-        statement: Rudra is designed for startups working in AI, machine learning, cloud, data science and high-performance compute.
+        statement: Open to early-stage AI startups developing foundational models, applications or tooling; research groups and labs running real-world AI workloads; businesses deploying or scaling production AI; and other qualified teams building and scaling AI applications.
         reason: not-machine-evaluable
     roles:
       terms_authority_entity_id: ent_01m8dmqkc21xvcj26z4qken16c
