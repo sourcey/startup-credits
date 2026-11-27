@@ -64,6 +64,7 @@ offers:
           kind: other
       consideration:
         kind: variable
+        description: Startups pay standard rates for cloud services beyond the free credits, with up to 25% tiered discounts on hyperscale cloud services.
     eligibility:
       rule:
         kind: manual
